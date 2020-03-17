@@ -74,7 +74,7 @@ named_lists = {
 		}
 		species_15 = {
 			language = "l_simp_chinese"
-			languagename = 仿生人
+			name = 仿生人
 			plural = 仿生人
 		}
 		species_16 = {
