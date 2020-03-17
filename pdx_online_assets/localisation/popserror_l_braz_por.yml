@@ -1,0 +1,17 @@
+﻿l_braz_por:
+ POPS_invalid-email: "E-mail não é válido"
+ POPS_account-exists: "Uma conta com esse e-mail já existe"
+ POPS_dynamodb-failure: "Falha ao conectar"
+ POPS_ua: "Não é elegível"
+ POPS_not-authorized: "A senha e o e-mail que você colocou não combinam"
+# Isso "nunca" deveria acontecer, deveríamos ter validado antes de enviar os dados
+ POPS_bad-password-length: "Senha é muito curta" #Também pode ser muito longa, mas o limite é 128 caracteres (durante a escrita)
+ POPS_missing-required-account-details-keys: "Faltam informações obrigatórias"
+ POPS_invalid-country-code: "Código de país é inválido"
+ POPS_invalid-language-code: "Código de idioma é inválido"
+ POPS_invalid-ISO-8601-format: "Formato de data é inválido"
+# Isso também não deveria acontecer, mas não está relacionado à validação de nosso formulário
+ POPS_parse-failure: "Falha no Cliente (Análise)"
+ POPS_unsupported-account-details-keys: "Falha no Cliente (Chaves não Apoiadas)"
+ POPS_invalid-script-code: "Falha no Cliente (Script Inválido)"
+ POPS_internal-error: "Erro desconhecido"

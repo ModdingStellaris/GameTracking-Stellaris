@@ -1,0 +1,15 @@
+﻿l_german:
+ POPS_invalid-email: "E-Mail-Adresse ist ungültig"
+ POPS_account-exists: "Es gibt bereits ein Konto mit dieser E-Mail-Adresse"
+ POPS_dynamodb-failure: "Verbindungsversuch gescheitert"
+ POPS_ua: "Unzulässig"
+ POPS_not-authorized: "Die eingegebene E-Mail-Adresse und das Kennwort passen nicht zusammen"
+ POPS_bad-password-length: "Password is too short" #Might be too long to, but upper limit is 128 chars (at the time of writing)
+ POPS_missing-required-account-details-keys: "Sie haben erforderliche Informationen noch nicht eingegeben"
+ POPS_invalid-country-code: "Ländercode ist ungültig"
+ POPS_invalid-language-code: "Sprachcode ist ungültig"
+ POPS_invalid-ISO-8601-format: "Datenformat ist ungültig"
+ POPS_parse-failure: "Client-Fehler (Parse)"
+ POPS_unsupported-account-details-keys: "Client-Fehler (Nicht unterstützte Keys)"
+ POPS_invalid-script-code: "Client-Fehler (Ungültiges Script)"
+ POPS_internal-error: "Unbekannter Fehler"

@@ -1,0 +1,15 @@
+﻿Greetings!
+
+Stellaris has (once again) undergone bold changes! In 2.2 the focus of the changes has been to rework how you develop planets and to deepen the game's economy. The purpose is to make the management of planets more fun and engaging.
+
+Tiles are gone, and have been replaced with Districts, Buildings, and Jobs. You will now instead construct City Districts, Farming Districts, Mining Districts, and Generator Districts, as well as various Buildings with more specialized roles. Districts and buildings provide Jobs, and a job worked by a Pop will produce resources.
+
+As a planet gains more Pops it will unlock more Building Slots. Buildings work similar to how they did before, but now most of them provide Jobs instead of producing resources directly.
+
+2.2 also introduces a new Trade Route system. What you essentially want to do is to collect Trade Value (found in space and produced on planets) by upgrading a nearby starbase. You should then set up a Trade Route leading back to your home system. Trade Value is converted into usable resources when it reaches your Trade Capital.
+
+We recommend you to take a look at the updated tutorial!
+
+---
+
+Due to the size and scope of the changes, saved games from previous versions will not be compatible with version 2.2. If you wish to continue your old save in version 2.2, follow the forum link below and read the thread "How to revert Stellaris to a previous version."

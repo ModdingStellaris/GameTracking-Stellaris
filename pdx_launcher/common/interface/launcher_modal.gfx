@@ -1,0 +1,20 @@
+spriteTypes = {	
+	
+	corneredTileSpriteType = {
+		name = "GFX_modal_bg"
+		size= {x=132 y=132 }
+		texturefile = "pdx_launcher/common/gfx/interface/online_feed_background.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		borderSize = { x=44 y=44 }
+	}	
+
+	textSpriteType = {
+		name = "GFX_modal_button"
+		texturefile = "pdx_online_assets/gfx/interface/common_button.dds"
+	}
+
+	textSpriteType = {
+		name = "GFX_modal_green_button"
+		texturefile = "pdx_launcher/common/gfx/interface/green_button.dds"
+	}
+}

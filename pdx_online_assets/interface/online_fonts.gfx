@@ -1,0 +1,17 @@
+bitmapfonts = {
+	bitmapfont = {
+		name = "newsfeed_title"
+		path = "pdx_online_assets/gfx/fonts/flaunch_18b"
+		color = 0xffffffff
+	}
+	bitmapfont = {
+		name = "newsfeed_timestamp"
+		path = "pdx_online_assets/gfx/fonts/newsfeed_body"
+		color = 0xAAAAAAAA
+	}
+	bitmapfont = {
+		name = "newsfeed_body"
+		path = "pdx_online_assets/gfx/fonts/newsfeed_body"
+		color = 0xffffffff
+	}
+}

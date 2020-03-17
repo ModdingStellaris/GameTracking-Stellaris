@@ -1,0 +1,123 @@
+##############################################################
+########################## VERSION ########################
+##############################################################
+
+###################
+# Expansion Features
+###################
+
+###################
+# Free Features
+###################
+
+###################
+# Balance
+###################
+
+# Buildings
+
+# Colonization
+
+# Diplomacy
+
+# Economy
+
+# Governments
+
+# Leaders
+
+# Factions
+
+# Technology
+
+# Units
+
+# War
+
+# Components
+
+###################
+# AI
+###################
+
+# Diplomacy
+
+# Economy
+
+# Governments
+
+# War
+
+###################
+# User Interface
+###################
+
+# Alerts
+
+# Notifications
+
+# Advisor
+
+# Launcher / Frontend
+
+# Map
+
+# Sounds
+
+# Government screen
+
+# Budget screen
+
+# Policy screen
+
+# Demographics screen
+
+# Planet screen
+
+# Leader screen
+
+# Faction screen
+
+# Contacts screen
+
+# Ship Designer screen
+
+# Situation Log screen
+
+# Technology screen
+
+# Fleet view
+
+# Planet view
+
+# Ship Details screen
+
+# Outliner
+
+# Multiplayer Lobby
+
+###################
+# User modding
+###################
+
+# Console & Commandline
+
+# Effects
+
+# History
+
+# Modifiers
+
+# Nation Designer
+
+# On Action
+
+# Triggers
+
+###################
+# Performance
+###################
+
+###################
+# Bugfixes
+###################

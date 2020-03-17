@@ -1,0 +1,45 @@
+objectTypes = {
+	pdxmesh = {
+		name = "interstellar_assembly_01_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/interstellar_assembly_01.mesh"
+	}
+	
+	pdxmesh = {
+		name = "interstellar_assembly_01_stage_1_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/interstellar_assembly_01_stage_1.mesh"
+	
+		animation = { id = "idle"						type = "interstellar_assembly_01_stage_4_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "interstellar_assembly_01_stage_2_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/interstellar_assembly_01_stage_2.mesh"
+	
+		animation = { id = "idle"						type = "interstellar_assembly_01_stage_4_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "interstellar_assembly_01_stage_3_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/interstellar_assembly_01_stage_3.mesh"
+	
+		animation = { id = "idle"						type = "interstellar_assembly_01_stage_4_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "interstellar_assembly_01_stage_4_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/interstellar_assembly_01_stage_4.mesh"
+	
+		animation = { id = "idle"						type = "interstellar_assembly_01_stage_4_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "interstellar_assembly_effect_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/interstellar_assembly_effect.mesh"
+	}
+	
+	pdxmesh = {
+		name = "interstellar_assembly_01_destroyed_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/interstellar_assembly_01_destroyed.mesh"
+
+	}
+}

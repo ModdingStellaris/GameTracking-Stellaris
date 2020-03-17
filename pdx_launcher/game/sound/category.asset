@@ -1,0 +1,20 @@
+################## UI #############################
+category = {
+ name = "Launcher"
+ soundeffects = {
+
+	launcher_click
+	launcher_start
+ }
+ 
+ compressor = 
+ {
+ enabled = no
+ pregain = 0.0
+ postgain = 0.0
+ ratio = 0.0
+ threshold = 0.0
+ attacktime = 0.0
+ releasetime = 0.0
+ }
+}

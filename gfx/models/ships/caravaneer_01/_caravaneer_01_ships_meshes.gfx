@@ -1,0 +1,55 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "caravaneer_turret_01_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_turret_01.mesh"
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_destroyer_01_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_destroyer_01.mesh"
+		
+		meshsettings = {
+			name = "bodyShape"
+			index = 0
+			texture_diffuse = "caravaneer_destroyer_01_diffuse.dds"
+			texture_normal = "caravaneer_destroyer_01_normal.dds"
+			texture_specular = "caravaneer_destroyer_01_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_station_01_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_station_01.mesh"
+		
+		animation = { id = "idle"						type = "caravaneer_station_01_idle_animation" }
+		animation = { id = "death"						type = "caravaneer_station_01_death_animation" }
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_cruiser_01_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_cruiser_01.mesh"
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_cargoship_01_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_cargoship_01.mesh"
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_billboard_asteroid_01_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_billboard_asteroid_01.mesh"
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_billboard_asteroid_02_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_billboard_asteroid_02.mesh"
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_billboard_asteroid_03_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_billboard_asteroid_03.mesh"
+	}
+	
+}

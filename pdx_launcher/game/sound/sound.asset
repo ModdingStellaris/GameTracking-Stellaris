@@ -1,0 +1,29 @@
+soundeffect = {
+	name = launcher_click
+	sounds = {
+		sound = launcher_click
+	} 
+}
+
+soundeffect = {
+	name = launcher_start
+	sounds = {
+		sound = launcher_click
+	} 
+}
+
+sound =
+{
+	name = launcher_click
+	file = "/sound/ui/click.wav"
+	volume = 0.20
+	always_load = yes
+}
+
+sound =
+{
+	name = "launcher_start"
+	file = "/sound/ui/confirm.wav"
+	volume = 0.25
+	always_load = no
+}

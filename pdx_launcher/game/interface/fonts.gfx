@@ -1,0 +1,355 @@
+bitmapfonts = {
+
+	# Global colors
+	textcolors = {
+		M = { 35 206 255 }
+		L = { 195 176 145 }
+		G = { 41 225 38 }
+		R = { 242 86 70 }
+		Y = { 247 252 52 }
+		H = { 251 170 41 }
+		T = { 255 255 255 }
+		E = { 135 255 207 }
+		S = { 228 156 42 }
+		W = { 255 255 255 }
+		g = { 128 128 128 }
+	}
+
+	bitmapfont = {
+		name = "malgun_goth_24"
+		path = "gfx/fonts/malgun_goth_24"
+		color = 0xffffffff
+		cursor_offset = { -4 -3 }
+		selection_offset = { 0 1 }
+	}	
+
+	bitmapfont = {
+		name = "cg_16b"
+		path = "gfx/fonts/cg_16b"
+		color = 0xffffffff
+		cursor_offset = { -3 -5 }
+		selection_offset = { 0 3 }
+	}
+	
+#	 bitmapfont_override = {
+#		name = "cg_16b"
+#		fontfiles = { 
+#			"gfx/fonts/stellaris_main"
+#		}
+#		languages = { "l_russian" "l_polish" } 
+#	 }		
+	 
+	 bitmapfont_override = {
+		name = "cg_16b"
+        ttf_font = "Easter_normal"
+        ttf_size = "13"
+		languages = { "l_russian" "l_polish" }
+	 }	 
+	 
+	 bitmapfont_override = {
+		name = "cg_16b"
+        ttf_font = "Chinese_normal"
+        ttf_size = "15"
+		vertical_offset  = "2"
+		languages = { "l_simp_chinese" }
+	 }
+	
+	bitmapfont = {
+		name = "language_font"
+		path = "gfx/fonts/cg_16b"
+		color = 0xffffffff
+	}
+	
+	 bitmapfont_override = {
+		name = "language_font"
+        ttf_font = "Easter_normal"
+        ttf_size = "13"
+		languages = { "l_russian" "l_polish" }
+	 }	 
+	 
+	 bitmapfont_override = {
+		name = "language_font"
+        ttf_font = "Chinese_normal"
+        ttf_size = "15"
+		vertical_offset  = "2"
+		languages = { "l_simp_chinese" }
+	 }
+
+	bitmapfont = {
+		name = "large_title_font"
+		path = "gfx/fonts/orbitron"
+		color = 0xffffffff
+	}
+	
+	#	bitmapfont_override = {
+#		name = "large_title_font"
+#		fontfiles = { 
+#			"gfx/fonts/cg_34"
+#		}
+#		languages = { "l_russian" "l_polish" } 
+#	}
+	 	  
+	 bitmapfont_override = {
+		name = "large_title_font"
+        ttf_font = "Easter_bigger"
+        ttf_size = "30"
+		languages = { "l_russian" "l_polish" }
+	 }	
+	 
+	 bitmapfont_override = {
+		name = "large_title_font"
+        ttf_font = "Chinese_bigger"
+        ttf_size = "32"
+		languages = { "l_simp_chinese" } 
+		vertical_offset  = "5"
+	 }
+	
+	bitmapfont = {
+		name = "malgun_goth_24"
+		path = "gfx/fonts/malgun_goth_24"
+		color = 0xffffffff
+		cursor_offset = { -4 -3 }
+		selection_offset = { 0 1 }
+	}	
+
+#	bitmapfont_override = {
+#		name = "malgun_goth_24"
+#		fontfiles = { 
+#			"gfx/fonts/cg_22"
+#		}
+#		languages = { "l_russian" "l_polish" } 
+#	}
+		 
+	 bitmapfont_override = {
+		name = "malgun_goth_24"
+        ttf_font = "Easter_header"
+        ttf_size = "18"
+		languages = { "l_russian" "l_polish" }
+	 }	 
+	
+	 bitmapfont_override = {
+		name = "malgun_goth_24"
+        ttf_font = "Chinese_header"
+        ttf_size = "20"
+		vertical_offset  = "1"
+		languages = { "l_simp_chinese" } 
+	 }
+
+
+	bitmapfont = {
+		name = "hoi_30header"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+
+	bitmapfont = {
+		name = "hoi_36header"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+
+	bitmapfont = {
+		name = "hoi_16mbs"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}	
+	
+	bitmapfont = {
+		name = "hoi_18"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}	
+
+	bitmapfont = {
+		name = "hoi_18s"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}	
+	
+	bitmapfont = {
+		name = "hoi_18b"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}	
+	
+	bitmapfont = {
+		name = "hoi_18mbs"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}	
+	
+	bitmapfont = {
+		name = "hoi_20b"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}		
+	
+	bitmapfont = {
+		name = "hoi_20bs"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}	
+	
+	bitmapfont = {
+		name = "hoi_30bs"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}		
+
+	bitmapfont = {
+		name = "hoi_24header"
+		path = "gfx/fonts/Arial12"
+		cursor_offset = { 0 4 }
+		color = 0xffffffff
+
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+
+	# REPLACE THIS WITH A PROPER EU4 FONT
+
+	# Global text colors
+	textcolors = {
+		L = { 195 176 145 }
+		G = { 41 225 38 }
+		R = { 172 86 70 }
+		Y = { 247 252 52 }
+		H = { 228 156 42 }
+		T = { 255 255 255 }
+		E = { 86 208 162 }
+		S = { 188 255 223 } 
+		#E = { 74 167 132 }
+		#S = { 179 241 212 }
+	}
+
+	bitmapfont = {
+		name = "vic_18"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 44 171 50 }
+			R = { 181 61 61 }
+			Y = { 219 203 71 }
+		}		
+	}
+	bitmapfont = {
+		name = "vic_18_grey"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+				
+		textcolors = {
+			G = { 44 171 50 }
+			R = { 181 61 61 }
+			Y = { 219 203 71 }
+		}
+	}
+	bitmapfont = {
+		name = "vic_22"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 44 171 50 }
+			R = { 181 61 61 }
+			Y = { 219 203 71 }
+		}		
+	}
+	bitmapfont = {
+		name = "vic_36s"
+		path = "gfx/fonts/Arial12"
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 44 171 50 }
+			R = { 181 61 61 }
+			Y = { 219 203 71 }
+		}		
+	}
+}

@@ -1,0 +1,670 @@
+category = {
+ name = "Effects"
+ soundeffects = {
+	sfx_matter_decompressor_hum
+	sfx_matter_decompressor_hum_treble
+	sfx_matter_decompressor_distortion
+	sfx_matter_decompressor_pulse
+	sfx_matter_decompressor_conveyor
+	sfx_mega_art_installation_hum
+	sfx_mega_art_installation_energy
+	sfx_mega_art_installation_glitches
+	sfx_interstellar_assembly_hum
+	sfx_interstellar_assembly_pulse
+	sfx_interstellar_assembly_beats
+	sfx_strategic_coordination_center_hum
+	sfx_strategic_coordination_center_beeps
+	sfx_strategic_coordination_center_pulse
+	sfx_caravaneer_cargo_ship_idle
+	sfx_caravaneer_cruiser_idle
+	sfx_caravaneer_destroyer_idle
+	amb_caravaneer_station_hum
+	amb_caravaneer_station_stinger
+	amb_caravaneer_station_casino_amb
+	amb_caravaneer_asteroid_billboard_hum
+	amb_asteroid_fields
+	amb_city_planet
+	amb_city_planet_flyby
+	event_criminal_activity
+	event_lootbox_bad
+	event_lootbox_good
+	event_lootbox_galatron
+	event_galactic_market
+	event_slot_machine
+ }
+}
+
+category = {
+ name = "Weapon"
+ soundeffects = {
+	
+	
+	}
+}
+
+category = {
+	name = "Menu"
+	soundEffects = {
+		
+	}
+}
+
+#########################################################
+#														#
+#					     ASSETS			    			#
+#														#
+#########################################################
+
+
+############### ALERTS & EVENTS
+
+sound = 
+{
+    name = "evn_criminal_activity_01"
+    file = "evn_criminal_activity_01.wav"
+    volume = 0.6
+}
+sound = 
+{
+    name = "evn_lootbox_bad_01"
+    file = "evn_lootbox_bad_01.wav"
+    volume = 0.6
+}
+sound = 
+{
+    name = "evn_lootbox_good_01"
+    file = "evn_lootbox_good_01.wav"
+    volume = 0.6
+}
+sound = 
+{
+    name = "evn_lootbox_galatron_01"
+    file = "evn_lootbox_galatron_01.wav"
+    volume = 0.6
+}
+sound = 
+{
+    name = "evn_galactic_market_01"
+    file = "evn_galactic_market_01.wav"
+    volume = 0.53
+}
+sound = 
+{
+    name = "evn_slot_machine_01"
+    file = "evn_slot_machine_01.wav"
+    volume = 0.6
+}
+
+############### AMBIANCES
+
+sound = 
+{
+    name = "amb_city_planet_01"
+    file = "amb_city_planet_01.wav"
+    volume = 0.6
+}
+sound = 
+{
+    name = "amb_city_planet_flyby_01"
+    file = "amb_city_planet_flyby_01.wav"
+    volume = 0.3
+}
+sound = 
+{
+    name = "amb_city_planet_flyby_02"
+    file = "amb_city_planet_flyby_02.wav"
+    volume = 0.4
+}
+sound = 
+{
+    name = "amb_city_planet_flyby_03"
+    file = "amb_city_planet_flyby_03.wav"
+    volume = 0.3
+}
+
+############### SHIPS
+
+sound =
+{
+	name = "sfx_caravaneer_cargo_ship_idle_01"
+	file = "sfx_caravaneer_cargo_ship_idle_01.wav"
+	volume = 0.4
+}
+sound =
+{
+	name = "sfx_caravaneer_cruiser_idle_01"
+	file = "sfx_caravaneer_cruiser_idle_01.wav"
+	volume = 0.24
+}
+sound =
+{
+	name = "sfx_caravaneer_destroyer_idle_01"
+	file = "sfx_caravaneer_destroyer_idle_01.wav"
+	volume = 0.22
+}
+
+############### STATIONS
+
+sound =
+{
+	name = "sfx_matter_decompressor_hum_01"
+	file = "sfx_matter_decompressor_hum_01.wav"
+	volume = 0.75
+}
+sound =
+{
+	name = "sfx_matter_decompressor_hum_treble_01"
+	file = "sfx_matter_decompressor_hum_treble_01.wav"
+	volume = 0.58
+}
+sound =
+{
+	name = "sfx_matter_decompressor_distortion_01"
+	file = "sfx_matter_decompressor_distortion_01.wav"
+	volume = 0.6
+}
+sound =
+{
+	name = "sfx_matter_decompressor_pulse_01"
+	file = "sfx_matter_decompressor_pulse_01.wav"
+	volume = 0.7
+}
+sound =
+{
+	name = "sfx_matter_decompressor_conveyor_01"
+	file = "sfx_matter_decompressor_conveyor_01.wav"
+	volume = 0.6
+}
+sound =
+{
+	name = "sfx_mega_art_installation_hum_01"
+	file = "sfx_mega_art_installation_hum_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "sfx_mega_art_installation_energy_01"
+	file = "sfx_mega_art_installation_energy_01.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "sfx_mega_art_installation_glitches_01"
+	file = "sfx_mega_art_installation_glitches_01.wav"
+	volume = 0.7
+}
+sound =
+{
+	name = "sfx_interstellar_assembly_hum_01"
+	file = "sfx_interstellar_assembly_hum_01.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "sfx_interstellar_assembly_pulse_01"
+	file = "sfx_interstellar_assembly_pulse_01.wav"
+	volume = 0.52
+}
+sound =
+{
+	name = "sfx_interstellar_assembly_beats_01"
+	file = "sfx_interstellar_assembly_beats_01.wav"
+	volume = 0.55
+}
+sound =
+{
+	name = "sfx_strategic_coordination_center_hum_01"
+	file = "sfx_strategic_coordination_center_hum_01.wav"
+	volume = 0.6
+}
+sound =
+{
+	name = "sfx_strategic_coordination_center_beeps_01"
+	file = "sfx_strategic_coordination_center_beeps_01.wav"
+	volume = 0.47
+}
+sound =
+{
+	name = "sfx_strategic_coordination_center_pulse_01"
+	file = "sfx_strategic_coordination_center_pulse_01.wav"
+	volume = 0.45
+}
+sound = 
+{
+    name = "amb_caravaneer_station_hum_01"
+    file = "amb_caravaneer_station_hum_01.wav"
+    volume = 0.45
+}
+sound = 
+{
+    name = "amb_caravaneer_station_stinger_01"
+    file = "amb_caravaneer_station_stinger_01.wav"
+    volume = 0.27
+}
+sound = 
+{
+    name = "amb_caravaneer_station_stinger_02"
+    file = "amb_caravaneer_station_stinger_02.wav"  
+    volume = 0.15
+}
+sound = 
+{
+    name = "amb_caravaneer_station_stinger_03"
+    file = "amb_caravaneer_station_stinger_03.wav"   
+    volume = 0.22
+}
+sound = 
+{
+    name = "amb_caravaneer_station_stinger_04"
+    file = "amb_caravaneer_station_stinger_04.wav"  
+    volume = 0.5
+}
+sound = 
+{
+    name = "amb_caravaneer_station_casino_amb_01"
+    file = "amb_caravaneer_station_casino_amb_01.wav"  
+    volume = 0.3
+}
+sound = 
+{
+    name = "amb_caravaneer_asteroid_billboard_hum_01"
+    file = "amb_caravaneer_asteroid_billboard_hum_01.wav"  
+    volume = 0.3
+}
+
+
+#########################################################
+#														#
+#					  SOUNDEFFECTS		    			#
+#														#
+#########################################################
+
+############### ALERTS & EVENTS
+
+soundeffect = {
+	name = event_criminal_activity
+	sounds = {
+		sound = evn_criminal_activity_01
+	} 
+	volume = 0.55
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = event_lootbox_bad
+	sounds = {
+		sound = evn_lootbox_bad_01
+	} 
+	volume = 0.55
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = event_lootbox_good
+	sounds = {
+		sound = evn_lootbox_good_01
+	} 
+	volume = 0.55
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = event_lootbox_galatron
+	sounds = {
+		sound = evn_lootbox_galatron_01
+	} 
+	volume = 0.55
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = event_galactic_market
+	sounds = {
+		sound = evn_galactic_market_01
+	} 
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = event_slot_machine
+	sounds = {
+		sound = evn_slot_machine_01
+	} 
+	volume = 0.55
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+############### AMBIANCES
+
+soundeffect = {
+	name = "amb_city_planet"
+	loop = yes
+	falloff = falloff_ambient
+	sounds = {
+		sound = "amb_city_planet_01"
+	} 
+	is3d = yes
+	max_audible = 2
+	volume = 0.35
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = "amb_city_planet_flyby"
+	volume = 0.4
+    loop = yes
+    is3d = yes
+    max_audible = 1
+	max_audible_behaviour = fail
+    falloff = "falloff_ambient"
+    volume_random_offset = { -0.1 0.05 }
+    delay_random_offset = { 2.0 10.0 }
+    playbackrate_random_offset = { -5.0 3.0 }
+    looping_volume_random_offset = yes
+    looping_delay_random_offset = yes
+    looping_playbackrate_random_offset = yes
+    prevent_random_repetition = yes
+    sounds = {
+        sound = "amb_city_planet_flyby_01"
+		sound = "amb_city_planet_flyby_02"
+		sound = "amb_city_planet_flyby_03"
+	}
+    fade_in = 0.2
+    fade_out = 0.2
+}
+
+############### SHIPS
+
+soundeffect = {
+	name = sfx_caravaneer_cargo_ship_idle
+	sounds = {
+		sound = sfx_caravaneer_cargo_ship_idle_01
+		
+	}
+	volume = 0.3
+	loop = yes
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	falloff = falloff_fleet
+}
+soundeffect = {
+	name = sfx_caravaneer_cruiser_idle
+	sounds = {
+		sound = sfx_caravaneer_cruiser_idle_01
+		
+	}
+	volume = 0.3
+	loop = yes
+	is3d = yes
+	max_audible = 3
+	max_audible_behaviour = fail
+	falloff = falloff_fleet
+}
+soundeffect = {
+	name = sfx_caravaneer_destroyer_idle
+	sounds = {
+		sound = sfx_caravaneer_destroyer_idle_01
+		
+	}
+	volume = 0.3
+	loop = yes
+	is3d = yes
+	max_audible = 3
+	max_audible_behaviour = fail
+	falloff = falloff_fleet
+}
+
+############### STATIONS
+
+soundeffect = {
+	name = "sfx_matter_decompressor_hum"
+	sounds = {
+		sound = "sfx_matter_decompressor_hum_01"
+	}
+	volume = 0.38
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_matter_decompressor_hum_treble"
+	sounds = {
+		sound = "sfx_matter_decompressor_hum_treble_01"
+	}
+	volume = 0.38
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_matter_decompressor_distortion"
+	sounds = {
+		sound = "sfx_matter_decompressor_distortion_01"
+	}
+	volume = 0.35
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_matter_decompressor_pulse"
+	sounds = {
+		sound = "sfx_matter_decompressor_pulse_01"
+	}
+	volume = 0.4
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_matter_decompressor_conveyor"
+	sounds = {
+		sound = "sfx_matter_decompressor_conveyor_01"
+	}
+	volume = 0.4
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_mega_art_installation_hum"
+	sounds = {
+		sound = "sfx_mega_art_installation_hum_01"
+	}
+	volume = 0.4
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_mega_art_installation_energy"
+	sounds = {
+		sound = "sfx_mega_art_installation_energy_01"
+	}
+	volume = 0.45
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_mega_art_installation_glitches"
+	sounds = {
+		sound = "sfx_mega_art_installation_glitches_01"
+	}
+	volume = 0.25
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_interstellar_assembly_hum"
+	sounds = {
+		sound = "sfx_interstellar_assembly_hum_01"
+	}
+	volume = 0.5
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_interstellar_assembly_pulse"
+	sounds = {
+		sound = "sfx_interstellar_assembly_pulse_01"
+	}
+	volume = 0.5
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_interstellar_assembly_beats"
+	sounds = {
+		sound = "sfx_interstellar_assembly_beats_01"
+	}
+	volume = 0.5
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_strategic_coordination_center_hum"
+	sounds = {
+		sound = "sfx_strategic_coordination_center_hum_01"
+	}
+	volume = 0.9
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_strategic_coordination_center_beeps"
+	sounds = {
+		sound = "sfx_strategic_coordination_center_beeps_01"
+	}
+	volume = 0.9
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = falloff_dyson
+}
+soundeffect = {
+	name = "sfx_strategic_coordination_center_pulse"
+	sounds = {
+		sound = "sfx_strategic_coordination_center_pulse_01"
+	}
+	volume = 0.6
+	loop = yes
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	falloff = "falloff_dyson"
+}
+soundeffect =
+{
+    name = "amb_caravaneer_station_hum"
+    volume = 0.4
+    loop = yes
+    is3d = yes
+    max_audible = 1
+	max_audible_behaviour = fail
+    falloff = "falloff_ambient"
+    sounds = {
+        sound = "amb_caravaneer_station_hum_01"
+	}
+    fade_in = 0.2
+    fade_out = 0.2
+}
+soundeffect =
+{
+    name = "amb_caravaneer_station_stinger"
+    volume = 0.2
+    loop = yes
+    is3d = yes
+    max_audible = 1
+	max_audible_behaviour = fail
+    falloff = "falloff_ambient"
+    volume_random_offset = { -0.1 0.05 }
+    delay_random_offset = { 2.0 10.0 }
+    playbackrate_random_offset = { -5.0 3.0 }
+    looping_volume_random_offset = yes
+    looping_delay_random_offset = yes
+    looping_playbackrate_random_offset = yes
+    prevent_random_repetition = yes
+    sounds = {
+        sound = "amb_caravaneer_station_stinger_01"
+        sound = "amb_caravaneer_station_stinger_02"
+        sound = "amb_caravaneer_station_stinger_03"
+        sound = "amb_caravaneer_station_stinger_04"
+	}
+    fade_in = 0.2
+    fade_out = 0.2
+}
+soundeffect =
+{
+    name = "amb_caravaneer_station_casino_amb"
+    volume = 0.4
+    loop = yes
+    is3d = yes
+    max_audible = 1
+	max_audible_behaviour = fail
+    falloff = "falloff_fleet"
+    sounds = {
+        sound = "amb_caravaneer_station_casino_amb_01"
+	}
+    fade_in = 0.2
+    fade_out = 0.2
+}
+soundeffect =
+{
+    name = "amb_caravaneer_asteroid_billboard_hum"
+    volume = 0.25
+    loop = yes
+    is3d = yes
+    max_audible = 3
+	max_audible_behaviour = fail
+    falloff = "falloff_ambient"
+    sounds = {
+        sound = "amb_caravaneer_asteroid_billboard_hum_01"
+	}
+    fade_in = 0.2
+    fade_out = 0.2
+}
+soundeffect = {
+	name = "amb_asteroid_fields"
+	loop = yes
+	falloff = falloff_ambient
+	sounds = {
+		sound = "amb_astroid_fields_01"
+	} 	
+	volume = 0.15
+	is3d = yes
+	max_audible = 3
+	max_audible_behaviour = fail
+}

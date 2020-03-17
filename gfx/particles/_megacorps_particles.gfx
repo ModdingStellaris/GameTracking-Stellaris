@@ -1,0 +1,106 @@
+objectTypes = {
+
+	#########
+	# CARAVANEERS
+	#########
+	
+	pdxparticle = {
+		name = "caravaneer_turret_effect"
+		type = "caravaneer_turret_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "caravaneer_station_neon_sphere_effect"
+		type = "caravaneer_station_neon_sphere_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "caravaneer_station_spotlight_effect"
+		type = "caravaneer_station_spotlight_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "caravaneer_station_barter_smoke_effect"
+		type = "caravaneer_station_barter_smoke_effect"
+		
+		scale = 1.0
+	}
+	
+	#########
+	# MATTER DECOMPRESSOR
+	#########
+	
+	pdxparticle = {
+		name = "matde_core_beam_effect"
+		type = "matde_core_beam_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "matde_platform_beam_effect"
+		type = "matde_platform_beam_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "matde_core_small_beam_effect"
+		type = "matde_core_small_beam_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "matde_platform_small_beam_effect"
+		type = "matde_platform_small_beam_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "matde_black_hole_effect"
+		type = "matde_black_hole_effect"
+		
+		scale = 1.0
+	}
+	
+	#########
+	# MEGA ART INSTALLATION
+	#########
+	
+	pdxparticle = {
+		name = "mega_art_core_effect"
+		type = "mega_art_core_effect"
+		
+		scale = 1.0
+	}
+	
+	#########
+	# INTERSTELLAR ASSEMBLY
+	#########
+	
+	pdxparticle = {
+		name = "interstellar_assembly_effect"
+		type = "interstellar_assembly_effect"
+		
+		scale = 1.0
+	}
+	
+	#########
+	# CITY PLANET
+	#########
+	
+	pdxparticle = {
+		name = "city_planet_surface_ships_effect"
+		type = "city_planet_surface_ships_effect"
+		
+		scale = 1.0
+	}
+}

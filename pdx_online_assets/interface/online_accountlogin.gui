@@ -1,0 +1,180 @@
+@accountlogin_title_font = "malgun_goth_24"
+@accountlogin_label_font = "cg_16b"
+@accountlogin_error_font = "cg_16b"
+@accountlogin_success_font = "cg_16b"
+
+guiTypes = 
+{	
+	windowType = {
+		name = "online_accountlogin_window"
+		backGround = "background"
+		position = { x=0 y=0 }
+		size = { x=200 y=200 }
+		fullscreen=yes
+		moveable = 1
+
+		guiButtonType =	{
+			name = "background"
+			quadTextureSprite = "GFX_pdxo_transparent_black"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}		
+
+		windowType = {
+			name = "content_window"
+			backGround = "background"
+			position = { x=-250 y=-125 }
+			size = { x=500 y=250 }
+			moveable = 0
+			orientation="CENTER"
+
+			guiButtonType =	{
+				name = "background"
+				quadTextureSprite = "online_accountlogin_background"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}		
+		
+			# Title
+			instantTextBoxType={
+				name = "online_accountlogin_title"
+				position = { x= 32 y = 36 }
+				text = "LOG_IN"
+				font = @accountlogin_title_font
+				maxWidth = 500
+				maxHeight = 32	
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+			
+			# Email
+			instantTextBoxType={
+				name = "online_accountlogin_email"
+				position = { x= 32 y = 80 }
+				text = "EMAIL"
+				font = @accountlogin_label_font
+				maxWidth = 500
+				maxHeight = 32	
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+			
+			editBoxType={
+				name = "online_accountlogin_editemail"
+				position = { x= -330 y = 74 }
+				text = ""
+				font = @accountlogin_label_font
+				size = { x=256 y=28 }
+				instantTextBoxType = no
+				use_special_chars = no
+				textureFile = "pdx_online_assets/gfx/interface/online_accountlogin_line.dds"	
+				Orientation = "UPPER_RIGHT"		
+			}
+			
+			# Password
+			instantTextBoxType={
+				name = "online_accountlogin_password"
+				position = { x= 32 y = 110 }
+				text = "PASSWORD"
+				font = @accountlogin_label_font
+				maxWidth = 500
+				maxHeight = 32	
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+
+			editBoxType={
+				name = "online_accountlogin_editpassword"
+				position = { x= -330 y = 104 }
+				text = ""
+				font = @accountlogin_label_font
+				size = { x=256 y=28 }
+				instantTextBoxType = no
+				use_special_chars = no
+				textureFile = "pdx_online_assets/gfx/interface/online_accountlogin_line.dds"	
+				Orientation = "UPPER_RIGHT"		
+			}
+
+			checkboxType = {
+				name = "online_accountlogin_peekpassword"
+				quadTextureSprite = "GFX_peekpassword"
+				position = { x= -70 y = 105 }		
+				Orientation = "UPPER_RIGHT"		
+			}
+
+			
+			guiButtonType = {
+				name = "online_form_submitbutton"
+				quadTextureSprite = "GFX_green_button"
+				position = { x= -205 y = -70 }
+				Orientation = "LOWER_RIGHT"	
+				buttonText = "LOG_IN"
+				buttonFont = @accountlogin_label_font
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+
+			guiButtonType = {
+				name = "online_form_forgot_password"
+				quadTextureSprite = "GFX_common_button"
+				position = { x= 30 y = -70 }
+				Orientation = "LOWER_LEFT"			
+				buttonText = "FORGOT_PASSWORD"
+				buttonFont = @accountlogin_label_font
+			}
+			
+			guiButtonType = {
+				name = "online_form_cancelbutton"
+				quadTextureSprite = "GFX_close_cross"
+				position = { x= -30 y = 16 }
+				Orientation = "UPPER_RIGHT"			
+			}
+
+			# Success
+			instantTextBoxType={
+				name = "online_accountlogin_success"
+				position = { x= 32 y = 150 }
+				text = ""
+				font = @accountlogin_success_font
+				maxWidth = 500
+				maxHeight = 32
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+			
+			# Errors
+			instantTextBoxType={
+				name = "online_accountlogin_error"
+				position = { x= 32 y = 150 }
+				text = ""
+				font = @accountlogin_error_font
+				maxWidth = 500
+				maxHeight = 32
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+
+			# Sandbox Notification (Devs Only)
+			instantTextBoxType={
+				name = "sandbox_mode_warning"
+				position = { x=-250 y=15 }
+				text = "USING_SANDBOX_SERVERS"
+				text_color_code = "Y"
+				font = @accountlogin_error_font
+				maxWidth = 210
+				maxHeight = 32
+				format = right
+				fixedsize = no
+				truncate = no
+				Orientation = "UPPER_RIGHT"
+				hide = yes
+			}
+		}
+	}
+}

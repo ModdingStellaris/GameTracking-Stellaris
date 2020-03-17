@@ -1,0 +1,34 @@
+directory 
+name = common
+sub_directories = yes
+file_extension = .txt
+
+directory 
+name = common
+sub_directories = yes
+file_extension = .lua
+
+directory
+name = common
+sub_directories = yes
+file_extension = .csv
+
+directory
+name = events
+sub_directories = yes
+file_extension = .txt
+
+directory
+name = map
+sub_directories = yes
+file_extension = .lua
+
+directory
+name = map
+sub_directories = yes
+file_extension = .txt
+
+directory
+name = localisation_synced
+sub_directories = yes
+file_extension = .yml

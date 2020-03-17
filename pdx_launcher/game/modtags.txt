@@ -1,0 +1,58 @@
+﻿##################################################
+# Defines which tags should be available in the
+# launcher when creating a new mod.
+##################################################
+
+mod_tags = {
+	platform = "default"
+	tags = {
+		"Balance" 
+		"Buildings"
+		"Diplomacy"
+		"Economy"
+		"Events"
+		"Fixes"
+		"Font"
+		"Galaxy Generation"
+		"Gameplay"
+		"Graphics"
+		"Leaders"
+		"Loading Screen"
+		"Military"
+		"Overhaul"
+		"Sound"
+		"Spaceships"
+		"Species"
+		"Technologies"
+		"Total Conversion"
+		"Translation"
+		"Utilities"
+	}
+}
+
+mod_tags = {
+	platform = "tgp"
+	tags = {
+		"平衡"		# Balance
+		"建筑"		# Buildings
+		"外交"		# Diplomacy
+		"经济"		# Economy
+		"事件"		# Events
+		"优化"		# Fixes
+		"字体"		# Font
+		"银河系"		# Galaxy Generation
+		"玩法"		# Gameplay
+		"图像"		# Graphics
+		"领袖"		# Leaders
+		"加载画面"	# Loading Screen 
+		"军事"		# Military
+		"改造"		# Overhaul
+		"音频"		# Sound
+		"太空船"		# Spaceships
+		"种族"		# Species
+		"科技"		# Technologies
+		"重塑"		# Total Conversion
+		"汉化"		# Translation
+		"工具"		# Utilities
+	}
+}

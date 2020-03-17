@@ -1,0 +1,13 @@
+bitmapfonts = {
+	bitmapfont = {
+		name = "flaunch_16b"
+		path = "pdx_online_assets/gfx/fonts/flaunch_16b"
+		color = 0xffffffff
+		
+		textcolors = {
+			G = { 44 171 50 }
+			R = { 181 61 61 }
+			Y = { 219 203 71 }
+		}		
+	}
+}

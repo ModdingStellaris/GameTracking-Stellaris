@@ -1,0 +1,37 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "mega_art_institution_01_stage_1_mesh"
+		file = "gfx/models/ships/megastructures/mega_art_institution/mega_art_institution_01_stage_1.mesh"
+		
+		animation = { id = "idle"						type = "mega_art_institution_01_stage_1_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "mega_art_institution_01_stage_2_mesh"
+		file = "gfx/models/ships/megastructures/mega_art_institution/mega_art_institution_01_stage_2.mesh"
+		
+		animation = { id = "idle"						type = "mega_art_institution_01_stage_2_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "mega_art_institution_01_stage_3_mesh"
+		file = "gfx/models/ships/megastructures/mega_art_institution/mega_art_institution_01_stage_3.mesh"
+		
+		animation = { id = "idle"						type = "mega_art_institution_01_stage_3_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "mega_art_institution_01_core_effect_mesh"
+		file = "gfx/models/ships/megastructures/mega_art_institution/mega_art_institution_01_core_effect.mesh"
+	}
+
+
+######## Destroyed Mesh ########
+
+	pdxmesh = {
+		name = "mega_art_institution_01_destroyed_mesh"
+		file = "gfx/models/ships/megastructures/mega_art_institution/mega_art_institution_01_destroyed.mesh"
+	}
+	
+}

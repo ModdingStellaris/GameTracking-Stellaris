@@ -1,0 +1,41 @@
+objectTypes = {
+	pdxmesh = {
+		name = "matter_decompressor_01_mesh"
+		file = "gfx/models/ships/megastructures/matter_decompressor/matter_decompressor_01.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "matter_decompressor_01_stage_1_mesh"
+		file = "gfx/models/ships/megastructures/matter_decompressor/matter_decompressor_01_stage_1.mesh"
+		
+		animation = { id = "idle"						type = "matter_decompressor_01_stage_1_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "matter_decompressor_01_stage_2_mesh"
+		file = "gfx/models/ships/megastructures/matter_decompressor/matter_decompressor_01_stage_2.mesh"
+		
+		animation = { id = "idle"						type = "matter_decompressor_01_stage_4_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "matter_decompressor_01_stage_3_mesh"
+		file = "gfx/models/ships/megastructures/matter_decompressor/matter_decompressor_01_stage_3.mesh"
+		
+		animation = { id = "idle"						type = "matter_decompressor_01_stage_4_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "matter_decompressor_01_stage_4_mesh"
+		file = "gfx/models/ships/megastructures/matter_decompressor/matter_decompressor_01_stage_4.mesh"
+		
+		animation = { id = "idle"						type = "matter_decompressor_01_stage_4_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "matter_decompressor_destroyed_01_mesh"
+		file = "gfx/models/ships/megastructures/matter_decompressor/matter_decompressor_destroyed_01.mesh"
+
+	}
+}

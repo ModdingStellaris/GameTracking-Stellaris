@@ -1,0 +1,73 @@
+guiTypes = 
+{	
+	windowType = {
+		name = "online_feed_window"
+		backGround = "bg"
+		position = { x=0 y=0 }
+		size = { x=540 y=400 }
+		moveable = 0
+		orientation="UPPER_LEFT"
+
+		guiButtonType = {
+			name ="bg"
+			spriteType = "GFX_pdxo_transp"
+			position = { x= 0 y = 0 }
+		}	
+		
+		instantTextBoxType={
+			name = "online_feed_title"
+			position = { x=10 y=40 }
+			text = ""
+			font = "malgun_goth_24"
+			maxWidth = 540
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+			alwaystransparent = yes
+		}	
+
+		## NOTE: If you change the size of this, you must also resize "online_feed_image" in the .gfx file.
+		guiButtonType =	{
+			name = "online_feed_image"
+			quadTextureSprite = "online_feed_image"
+			position = { x=5 y=70 }
+			size = { x=520 y=174 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}		
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_online_feed_image_frame"
+			position = { x= 0 y = 65 }
+			alwaystransparent = yes
+		}		
+				
+		instantTextBoxType={
+			name = "online_feed_body"
+			position = { x=11 y=250 }
+			text = ""
+			font = "cg_16b"
+			maxWidth = 515
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType={
+			name = "online_feed_timestamp"
+			position = { x=0 y=370 }
+			text = ""
+			font = "cg_16b"
+			maxWidth = 520
+			maxHeight = 32	
+			format = right
+			fixedsize = no
+			truncate = no
+			alwaystransparent = yes
+		}		
+	}
+}
