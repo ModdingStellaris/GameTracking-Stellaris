@@ -105,6 +105,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = physics_technology
+	picture = GFX_evt_junkheap
 	
 	event_scope = ship_event
 	
@@ -134,6 +135,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = engineering_technology
+	picture = GFX_evt_space_debris
 	
 	event_scope = ship_event
 	
@@ -246,6 +248,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_alien_city
 	
 	event_scope = ship_event
 	
@@ -294,6 +297,7 @@ special_project = {
 	event_chain = "migrating_forests_chain"
 	cost = 10000
 	tech_department = society_technology
+	picture = GFX_evt_alien_nature
 	
 	event_scope = planet_event
 	
@@ -311,6 +315,7 @@ special_project = {
 	event_chain = "migrating_forests_chain"
 	cost = 10000
 	tech_department = engineering_technology
+	picture = GFX_evt_alien_nature
 	
 	same_option_group_as = { MIGRATING_FORESTS_1_PROJECT }
 	
@@ -504,6 +509,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = engineering_technology
+	picture = GFX_evt_space_hangar
 	
 	event_scope = ship_event
 	
@@ -531,6 +537,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = engineering_technology
+	picture = GFX_evt_gas_giant
 	
 	event_scope = ship_event
 	
@@ -560,6 +567,7 @@ special_project = {
 	days_to_research = 180
 	tech_department = physics_technology
 	timelimit = 1080
+	picture = GFX_evt_asteroid_field
 	
 	event_scope = ship_event
 	
@@ -739,6 +747,7 @@ special_project = {
 	days_to_research = 180
 	tech_department = society_technology
 	timelimit = 1080
+	picture = GFX_evt_big_landing_ship
 	
 	event_scope = ship_event
 	
@@ -762,6 +771,7 @@ special_project = {
 	days_to_research = 180
 	tech_department = society_technology
 	timelimit = 1080
+	picture = GFX_evt_gas_giant
 	
 	event_scope = ship_event
 	
@@ -785,6 +795,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_disease_outbreak
 	
 	event_scope = ship_event
 	
@@ -2273,6 +2284,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_society_research
 	
 	event_scope = ship_event
 	
@@ -2297,6 +2309,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_society_research
 	
 	event_scope = ship_event
 	
@@ -2321,6 +2334,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_society_research
 	
 	event_scope = ship_event
 	
@@ -2345,6 +2359,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_society_research
 	
 	event_scope = ship_event
 	
@@ -2369,6 +2384,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_society_research
 	
 	event_scope = ship_event
 	
@@ -2393,6 +2409,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_society_research
 	
 	event_scope = ship_event
 	
@@ -2417,6 +2434,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_society_research
 	
 	event_scope = ship_event
 	
@@ -2441,6 +2459,7 @@ special_project = {
 	cost = 0
 	days_to_research = 180
 	tech_department = society_technology
+	picture = GFX_evt_satellite_in_orbit
 	
 	event_scope = ship_event
 	

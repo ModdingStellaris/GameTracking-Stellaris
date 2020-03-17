@@ -32,6 +32,34 @@ volatile_motes_expenditure_trade = {
 	}	
 }
 
+volatile_motes_expenditure_planets = {
+	resource = volatile_motes 
+	type = expenditure
+	category = planets
+	
+	potential = {
+		always = yes
+	}
+	
+	fraction = {
+		weight = 0.3
+	}	
+}
+
+volatile_motes_upkeep_planets = {
+	resource = volatile_motes 
+	type = upkeep
+	category = planets
+	
+	potential = {
+		always = yes
+	}
+	
+	fraction = {
+		weight = 0.5
+	}	
+}
+
 volatile_motes_upkeep_ships = {
 	resource = volatile_motes 
 	type = upkeep

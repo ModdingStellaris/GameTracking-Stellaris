@@ -106,7 +106,7 @@ ethic_authoritarian = {
 					OR = {
 						has_living_standard = { type = living_standard_utopian }
 						has_living_standard = { type = living_standard_good }
-						has_living_standard = { type = living_standard_shared_burdens }
+						has_living_standard = { type = living_standard_shared_burden }
 					}
 				}
 			}
@@ -260,7 +260,7 @@ ethic_authoritarian = {
 			OR = {
 				has_living_standard = { type = living_standard_utopian }
 				has_living_standard = { type = living_standard_good }
-				has_living_standard = { type = living_standard_shared_burdens }
+				has_living_standard = { type = living_standard_shared_burden }
 			}
 		}			
 	}
@@ -352,7 +352,7 @@ ethic_egalitarian = {
 					OR = {
 						has_living_standard = { type = living_standard_utopian }
 						has_living_standard = { type = living_standard_good }
-						has_living_standard = { type = living_standard_shared_burdens }
+						has_living_standard = { type = living_standard_shared_burden }
 					}
 				}
 			}
@@ -554,7 +554,7 @@ ethic_egalitarian = {
 			OR = {
 				has_living_standard = { type = living_standard_utopian }
 				has_living_standard = { type = living_standard_good }
-				has_living_standard = { type = living_standard_shared_burdens }
+				has_living_standard = { type = living_standard_shared_burden }
 			}
 		}			
 	}	

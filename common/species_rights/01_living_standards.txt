@@ -274,6 +274,7 @@ living_standard_shared_burden = {
 		pop_cat_ruler_happiness = 0.05
 		pop_cat_specialist_happiness = 0.05
 		pop_cat_worker_happiness = 0.05
+		pop_demotion_time_mult = -0.45
 	}
 	
 	allow = {

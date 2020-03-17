@@ -168,6 +168,7 @@ special_project = {
 	days_to_research = 30
 	tech_department = engineering_technology
 	timelimit = 1080
+	picture = GFX_evt_enigmatic_fortress
 	
 	event_scope = ship_event
 
@@ -190,6 +191,7 @@ special_project = {
 	days_to_research = 30
 	tech_department = engineering_technology
 	timelimit = 1080
+	picture = GFX_evt_enigmatic_fortress
 	
 	same_option_group_as = { ENIGMATIC_FORTRESS_1A }
 	
@@ -214,6 +216,7 @@ special_project = {
 	days_to_research = 60
 	tech_department = engineering_technology
 	timelimit = 1080
+	picture = GFX_evt_enigmatic_fortress
 	
 	event_scope = ship_event
 
@@ -238,6 +241,7 @@ special_project = {
 	days_to_research = 120
 	tech_department = engineering_technology
 	timelimit = 1080
+	picture = GFX_evt_enigmatic_fortress
 	
 	event_scope = ship_event
 
@@ -263,6 +267,7 @@ special_project = {
 	days_to_research = 30
 	tech_department = engineering_technology
 	timelimit = 1080
+	picture = GFX_evt_enigmatic_fortress
 	
 	event_scope = ship_event
 
@@ -288,6 +293,7 @@ special_project = {
 	days_to_research = 10
 	tech_department = engineering_technology
 	timelimit = 1080
+	picture = GFX_evt_enigmatic_fortress
 	
 	event_scope = ship_event
 
@@ -428,6 +434,7 @@ special_project = {
 	cost = 50000
 	tech_department = society_technology
 	timelimit = 1800
+	picture = GFX_evt_space_dragon
 	
 	event_scope = planet_event
 

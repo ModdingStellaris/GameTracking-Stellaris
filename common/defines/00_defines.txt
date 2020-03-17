@@ -451,6 +451,7 @@
 
 		POP_ENTRY_GROUPING_THRESHOLD = 8 # the minimum amount of pops in the planet view jobs ui required before we start grouping them together
 		EXPANSION_VIEW_NUM_DISTRICTS = 3
+		DEFICIT_MONTH_LEFT_ALERT = 12 #Show alert when less months left
 	}
 
 	NGameplay = {
@@ -691,7 +692,7 @@
 		LEADER_ADMIRAL_FLEET_COMBAT_BASE_EXPERIENCE					= 10 # Leader Admiral base experience from fleet combat
 		LEADER_ADMIRAL_FLEET_COMBAT_EXPERIENCE_SCALE				= 0.5 # Scale factor used when calculating experience gain for Admiral
 		LEADER_ADMIRAL_FLEET_COMBAT_SHIPS_KILLED_CONVERSION			= 0.25 # Scale factor for total number of ships killed after combat when calculating experience gain for Admiral
-		LEADER_ADMIRAL_FLEET_PIRACY_SUPPRESSION_DAILY				= 0.01 # Leader Admiral base experience from piracy suppression
+		LEADER_ADMIRAL_FLEET_PIRACY_SUPPRESSION_DAILY				= 0.1 # Leader Admiral base experience from piracy suppression
 
 		LEADER_GENERAL_GROUND_COMBAT_BASE_EXPERIENCE				= 100 # Leader General base experience from ground combat
 		LEADER_GENERAL_GROUND_COMBAT_EXPERIENCE_SCALE				= 2.5 # Scale factor used when calculating experience gain for General
@@ -1139,6 +1140,7 @@
 		EXCESS_POWER_BONUS_THRESHOLD_MIN	= 0.05 # min value for excess power to be used.
 		
 		SHIP_EXP_GAIN_COMBAT			= 1.0				# Gained each day ship is in combat
+		SHIP_EXP_GAIN_PIRACY_SUP 		= 0.1				# Gained each day ship suppressing piracy
 		SHIP_EXP_EXPERIENCED			= 100				# Amount of exp to reach experienced rank
 		SHIP_EXP_VETERAN				= 1000				# Amount of exp to reach veteran rank
 		SHIP_EXP_ELITE					= 10000				# Amount of exp to reach elite rank
@@ -1215,8 +1217,8 @@
 		OVERCROWDING_DECLINE_THRESHOLD		= 2.0	# At this amount of overcrowding, pops start declining
 		
 		NEW_POP_SPECIES_RANDOMNESS			= 1.0	# The higher this is, the more random species selection of new pops will be
-		NEW_POP_SAME_SPECIES_WEIGHT			= 1.0	# The higher this is, the more new pops will be weighted by number of exact same species pops
-		NEW_POP_EXACT_SPECIES_WEIGHT		= 0.5	# The higher this is, the more new pops will be weighted by number of same or subspecies pops
+		NEW_POP_SAME_SPECIES_WEIGHT			= 1.0	# The higher this is, the more new pops will be weighted by number of same or subspecies pops
+		NEW_POP_EXACT_SPECIES_WEIGHT		= 0.5	# The higher this is, the more new pops will be weighted by number of exact same species pops
 		NEW_POP_SLAVERY_WEIGHT				= 0.5	# The higher this is, the more new pops will tend to be balanced between enslaved and non-enslaved species
 		NEW_POP_SPECIES_DIV					= 0.5	# The higher this is, the more planets will tend to grow species that are underrepresented on the planet
 		NEW_POP_HABITABILITY_THRESHOLD		= 0.6	# If habitability is under this, apply exponentinally increasing penalties to new pop weight
@@ -1304,9 +1306,9 @@
 		COLONY_MONTHLY_GROWTH				= 1.67		# How much the colonization pop grows every month.
 		COLONY_MAINTENANCE_COST 			= 8		# Base cost per month for a new colony.
 				
-		FLEET_UPGRADE_TIME_COST_MULT		= 0.75		# Upgrade fleet time cost
+		FLEET_UPGRADE_TIME_COST_MULT		= 0.50		# Upgrade fleet time cost
 		FLEET_UPGRADE_SECTION_COST_REFUND_MULT = 0.75	# Refund factor for ship section when upgrading
-		FLEET_UPGRADE_COMPONENT_COST_REFUND_MULT = 0.25 # Refund factor for ship components when upgrading
+		FLEET_UPGRADE_COMPONENT_COST_REFUND_MULT = 0.50 # Refund factor for ship components when upgrading
 		 
 		EXPANSION_COST_MAX					= 1000.0	# Maximum cost of single outpost
 		EXPANSION_COST_BASE					= 75.0		# The influence base cost of outpost
@@ -1327,8 +1329,8 @@
 		
 		TRADE_AMOUNT_MULTIPLIER				= { 1 5 10 50 100 } # Multiplier interval for resource trading base amount
 		MARKET_TRADE_FEE_BASE				= 0.3	# Base procentage for market trade fee
-		MARKET_BUY_FLUCTUATION_BASE			= 0.2		# Basic fluctuation when buying a resource' base amount
-		MARKET_SELL_FLUCTUATION_BASE		= 0.2		# Basic fluctuation when selling a resource' base amount
+		MARKET_FLUCTUATION_ABOVE_BASE_PRICE		= 1	# Base fluctuation when trading a resource' base amount if price is > 0
+		MARKET_FLUCTUATION_BELOW_BASE_PRICE		= 0.2	# Base fluctuation when trading a resource' base amount if price is < 0
 		MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE	= -80	# Min fluctuation from base price
 		MARKET_MAX_FLUCTUATION_FROM_BASE_PRICE	= 400	# Max fluctuation from base price
 		MARKET_DAYS_TO_BASE_PRICE				= 1800	# Days until resource price reaches base price from max or min price
@@ -1339,7 +1341,7 @@
 		INTERNAL_MARKET_SELL_MULTIPLIER		= 0.33	# resource buy price on internal market = MULTIPLIER * base price
 
 		INTERNAL_MARKET_DAYS_TO_BASE_PRICE		= 3	# MARKET_DAYS_TO_BASE_PRICE * VAL for the Internal Market
-		INTERNAL_MARKET_FLUCTUATION_MULT		= 2 # Multiplier of MARKET_BUY_FLUCTUATION_BASE/MARKET_SELL_FLUCTUATION_BASE for Internal Market
+		INTERNAL_MARKET_FLUCTUATION_MULT		= 2 # Multiplier of MARKET_FLUCTUATION_ABOVE_BASE_PRICE/MARKET_FLUCTUATION_BELOW_BASE_PRICE for Internal Market
 
 		MONTHLY_TRADES_ECONOMIC_CATEGORY	= "monthly_trades"
 
@@ -1744,7 +1746,7 @@
 		AI_MIN_CURRENCY_TO_SELL = 400.0			# If the AI has less currency (energy) than this it will consider selling resources
 		AI_MIN_CURRENCY_INCOME_TO_SELL = 10.0	# If the AI has less currency (energy) gain last month than this it will consider selling resources
 
-		AI_MIN_HABITABILITY_TO_COLONIZE = 0.5	# AI will avoid colonizing planets with habitability lower than this.
+		AI_MIN_HABITABILITY_TO_COLONIZE = 0.35	# AI will avoid colonizing planets with habitability lower than this.
 		AI_MIN_BRANCH_OFFICE_WORTH_TO_ESTABLISH = 2.0	# AI megacorporations will not establish branch offices unless value is above this
 
 		SLAVE_BUY_EC_THRESHOLD = 2000 # if we have less ec than this, dont buy slaves

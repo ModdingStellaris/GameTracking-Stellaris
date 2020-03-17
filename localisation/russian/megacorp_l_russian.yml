@@ -740,7 +740,7 @@
  job_technician_drone_desc:0 "Машинисты, операторы и техники, управляющие работой электростанций и осуществляющие контроль за ней."
  job_technician_drone_effect_desc:0 "£job_technician_drone£ $job_technician_drone_plural$ производят такой ресурс, как £energy£ §Y$energy$§!"
  mod_job_technician_drone_add:0 "Деятельность: $job_technician_drone$"
- mod_job_technician_drone_per_pop:0 "§G+1§! $job_technician_dron$ как вид деятельности для $VALUE$ поселений"
+ mod_job_technician_drone_per_pop:0 "§G+1§! $job_technician_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_technician_drone_per_pop_short:0 "\n§G+1§! £mod_job_technician_drone_add£ для $VALUE$ £pop£"
  
  job_spawning_drone:0 "Дрон-няня"
@@ -2188,7 +2188,9 @@
  mod_campaigns_cost_mult:0 "Стоимость кампании"
  mod_edicts_cost_mult:0 "Стоимость указа"
  mod_leaders_cost_mult:0 "Стоимость лидера"
+ MOD_LEADER_COST_EMPIRE_SIZE_MULT:0 "Стоимость лидера"
  mod_leaders_upkeep_mult:0 "Содержание лидера"
+ MOD_LEADER_UPKEEP_EMPIRE_SIZE_MULT:0 "Содержание лидера"
  
  CONSUMED:0 "Потрачено: $VALUE|+=$"
  SHIP_COST:0 "Стоимость"

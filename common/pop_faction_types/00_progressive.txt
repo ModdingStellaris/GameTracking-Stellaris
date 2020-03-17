@@ -161,6 +161,7 @@ progressive = {
 		desc = "PROGRESSIVE_NO_STRATIFIED_DESC"
 
 		unfulfilled_effect = -25
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner

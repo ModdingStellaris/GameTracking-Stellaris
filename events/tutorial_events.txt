@@ -829,7 +829,7 @@ country_event = {
 	title = tutorial.17.name
 	desc = tutorial.17.desc
 	show_sound = tut_suvey_systems_intro
-	# TEMP fix typos in asset
+	# should fix typos in asset
 	
 	is_advisor_event = yes
 	is_triggered_only = yes

@@ -99,55 +99,55 @@ cara_allow_deal1 = {
 
 cara_allow_deal2 = {
 	# Price checks
-	if = {
+	if = { # Numistic Shrine
 		limit = { has_country_flag = fleet2deal1 }
 		resource_stockpile_compare = { resource = energy value >= 2000 }
 	}
-	else_if = {
+	else_if = { # Buy pops
 		limit = { has_country_flag = fleet2deal2 }
 		resource_stockpile_compare = { resource = energy value >= 3500 }
 	}
-	else_if = {
+	else_if = { # Edict
 		limit = { has_country_flag = fleet2deal3 }
 		resource_stockpile_compare = { resource = energy value >= 2500 }
 	}
-	else_if = {
+	else_if = { # Technology
 		limit = { has_country_flag = fleet2deal4 }
 		resource_stockpile_compare = { resource = energy value >= 3500 }
 	}
-	else_if = {
+	else_if = { # Leader
 		limit = { has_country_flag = fleet2deal5 }
 		resource_stockpile_compare = { resource = energy value >= 1500 }
 	}
-	else_if = {
+	else_if = { # Selling pops for crystals
 		limit = { has_country_flag = fleet2deal6 }
 		count_owned_pops = { count > 2 }
 	}
-	else_if = {
+	else_if = { # Cruiser
 		limit = { has_country_flag = fleet2deal7 }
 		resource_stockpile_compare = { resource = energy value >= 2500 }
 	}
-	else_if = {
+	else_if = { # Planetary deposit
 		limit = { has_country_flag = fleet2deal8 }
 		resource_stockpile_compare = { resource = minerals value >= 200 }
 	}
-	else_if = {
+	else_if = { # MI upkeep mod
 		limit = { has_country_flag = fleet2deal9 }
 		resource_stockpile_compare = { resource = influence value >= 100 }
 	}
-	else_if = {
+	else_if = { # MI decision
 		limit = { has_country_flag = fleet2deal10 }
 		resource_stockpile_compare = { resource = minerals value >= 2000 }
 	}
-	else_if = {
+	else_if = { # Repeatable cruiser
 		limit = { has_country_flag = fleet2deal11.a }
 		resource_stockpile_compare = { resource = energy value >= 2500 }
 	}
-	else_if = {
+	else_if = { # Repeatable exotic gases
 		limit = { has_country_flag = fleet2deal11.b }
 		resource_stockpile_compare = { resource = energy value >= 1700 }
 	}
-	else_if = {
+	else_if = { # Repeatable energy
 		limit = { has_country_flag = fleet2deal11.c }
 		resource_stockpile_compare = { resource = alloys value >= 500 }
 	}
@@ -300,10 +300,22 @@ caravaneer_fleet_events_valid = {
 	is_at_war = no
 	any_system_within_border = { caravaneer_fleet_in_system = yes }
 	NOR = {
-		is_hostile = event_target:caravaneer_home_country
-		is_hostile = event_target:caravaneer_fleet1_country
-		is_hostile = event_target:caravaneer_fleet2_country
-		is_hostile = event_target:caravaneer_fleet3_country
+		AND = {
+			exists = event_target:caravaneer_home_country
+			is_hostile = event_target:caravaneer_home_country
+		}
+		AND = {
+			exists = event_target:caravaneer_fleet1_country
+			is_hostile = event_target:caravaneer_fleet1_country
+		}
+		AND = {
+			exists = event_target:caravaneer_fleet2_country
+			is_hostile = event_target:caravaneer_fleet2_country
+		}
+		AND = {
+			exists = event_target:caravaneer_fleet3_country
+			is_hostile = event_target:caravaneer_fleet3_country
+		}
 	}
 }
 

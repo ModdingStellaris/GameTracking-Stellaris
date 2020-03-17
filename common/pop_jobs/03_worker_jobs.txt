@@ -121,7 +121,7 @@ technician = {
 			factor = 1.5
 			OR = {
 				has_trait = trait_robot_superconductive
-				has_trait = trait_thrifty
+				has_trait = trait_ingenious
 				has_trait = trait_nuumismatic_administration
 			}		
 		}
@@ -210,7 +210,17 @@ miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
 		}	
+		modifier = {
+			factor = 10
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}		
 		modifier = {
 			factor = 0.25
 			can_take_servant_job = yes
@@ -269,7 +279,17 @@ crystal_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
 		}	
+		modifier = {
+			factor = 10
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
@@ -330,7 +350,17 @@ gas_extractor = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
 		}	
+		modifier = {
+			factor = 10
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
@@ -391,7 +421,17 @@ mote_harvester = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
 		}	
+		modifier = {
+			factor = 10
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
@@ -498,6 +538,16 @@ farmer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}	
+		modifier = {
+			factor = 10
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
 		}
 		modifier = {
 			factor = 0.25

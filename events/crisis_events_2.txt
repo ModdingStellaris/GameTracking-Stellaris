@@ -138,11 +138,12 @@ country_event = {
 					class = EXD
 					portrait = exd1
 					traits = random
+					effect = { save_event_target_as = extradimensional_species }
 				}
 				create_country = {
 					name = "NAME_Unbidden"
 					type = "extradimensional"
-					species = last_created
+					species = event_target:extradimensional_species
 					name_list = "Extradimensional"
 					effect = { set_country_flag = unbidden }
 					flag = {
@@ -166,18 +167,17 @@ country_event = {
 						add_ship_design = last_created_design
 						create_ship_design = { design = "NAME_Unbidden_Anchor" }
 						add_ship_design = last_created_design
-						set_graphical_culture = extra_dimensional_01
 						save_global_event_target_as = extradimensionals
 						establish_communications_no_message = event_target:portal_holder_1
 						set_faction_hostility = {
 							target = event_target:portal_holder_1
 							set_hostile = no
 						}
+						set_graphical_culture = extra_dimensional_01
+						save_event_target_as = extradimensionals
 					}
 				}
-				last_created_species = { save_event_target_as = extradimensional_species }
-				last_created_country = {
-					save_event_target_as = extradimensionals
+				event_target:extradimensionals = {
 					create_fleet = {
 						name = "NAME_Dimensional_Portal"
 						effect = {
@@ -1224,11 +1224,12 @@ country_event = {
 					class = EXD
 					portrait = exd2
 					traits = random
+					effect = { save_event_target_as = extradimensional_hunters_species }
 				}
 				create_country = {
 					name = "NAME_Aberrant"
 					type = "extradimensional_2"
-					species = last_created
+					species = event_target:extradimensional_hunters_species
 					name_list = "Extradimensional"
 					flag = {
 						icon= {
@@ -1258,12 +1259,11 @@ country_event = {
 							target = event_target:portal_holder_1
 							set_hostile = no
 						}
+						save_event_target_as = extradimensional_hunters
+						set_graphical_culture = extra_dimensional_02
 					}
 				}
-				last_created_species = { save_event_target_as = extradimensional_hunters_species }
-				last_created_country = {
-					set_graphical_culture = extra_dimensional_02
-					save_event_target_as = extradimensional_hunters
+				event_target:extradimensional_hunters = {
 					create_fleet = {
 						name = "NAME_Dimensional_Portal"
 						effect = {
@@ -1371,6 +1371,10 @@ country_event = {
 						}
 					}
 				}
+			}
+			if = {
+				limit = { exists = starbase }
+				starbase = { fleet = { destroy_fleet = this } }
 			}
 			create_starbase = {
 				size = starbase_exd
@@ -1783,11 +1787,12 @@ country_event = {
 						class = EXD
 						portrait = exd3
 						traits = random
+						effect = { save_event_target_as = extradimensional_trespassers_species }
 					}
 					create_country = {
 						name = "NAME_Vehement"
 						type = "extradimensional_3"
-						species = last_created
+						species = event_target:extradimensional_trespassers_species
 						name_list = "Extradimensional"
 						flag = {
 							icon= {
@@ -1817,12 +1822,11 @@ country_event = {
 								target = event_target:portal_holder_1
 								set_hostile = no
 							}
+							set_graphical_culture = extra_dimensional_03
+							save_event_target_as = extradimensional_trespassers
 						}
 					}
-					last_created_species = { save_event_target_as = extradimensional_trespassers_species }
-					last_created_country = {
-						set_graphical_culture = extra_dimensional_03
-						save_event_target_as = extradimensional_trespassers
+					event_target:extradimensional_trespassers = {
 						create_fleet = {
 							name = "NAME_Dimensional_Portal"
 							effect = {
@@ -1930,6 +1934,10 @@ country_event = {
 							}
 						}
 					}
+				}
+				if = {
+					limit = { exists = starbase }
+					starbase = { fleet = { destroy_fleet = this } }
 				}
 				create_starbase = {
 					size = starbase_exd

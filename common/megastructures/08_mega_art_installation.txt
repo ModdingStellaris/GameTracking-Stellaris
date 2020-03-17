@@ -119,7 +119,7 @@ mega_art_installation_1 = {
 		mega_art_installation_0
 	}
 
-	build_time = 1800
+	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
@@ -159,7 +159,7 @@ mega_art_installation_2 = {
 		mega_art_installation_1
 	}
 
-	build_time = 1800
+	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
@@ -253,11 +253,11 @@ mega_art_installation_restored = {
 		mega_art_installation_ruined
 	}
 
-	build_time = 3600
+	build_time = 4800
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
+			alloys = 15000
 		}
 		
 		produces = {

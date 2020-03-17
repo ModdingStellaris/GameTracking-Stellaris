@@ -82,11 +82,14 @@ planet_event = {
 				}
 				count > 3
 			}
+			AND = {
 			count_pops = {
 				limit = { 
-					has_job = scavenger_drone
+					has_job = unemployed
 				}
 				count > 10
+			}
+			owner = { is_gestalt = yes }
 			}
 		}
 	}
@@ -130,20 +133,6 @@ planet_event = {
 				count > 11
 			}
 		}	
-		modifier = {
-			factor = 0.5
-			count_pops = {
-				limit = { has_job = scavenger_drone }
-				count > 20
-			}
-		}
-		modifier = {
-			factor = 0.5
-			count_pops = {
-				limit = { has_job = scavenger_drone }
-				count > 30
-			}
-		}
 	}
 	
 	option = {
@@ -1842,8 +1831,8 @@ event = {
 
 	immediate = {
 		random_list = {
-			150 = {}
-			10 = {
+			19 = {}
+			1 = {
 				random_playable_country = {
 					limit = {
 						any_owned_planet = {
@@ -1865,7 +1854,7 @@ event = {
 							planet_crime < 1
 						}
 						branch_office_owner = { save_event_target_as = office_owner }
-						planet_event = { id = crime.1001 days = 1 random = 29 }
+						planet_event = { id = crime.1001 days = 360 random = 40 }
 					}
 				}
 			}
@@ -1885,18 +1874,18 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		planet_crime < 1
 		has_branch_office = yes
 		branch_office_owner = { 
 			is_criminal_syndicate = yes
 			NOT = { has_country_flag = criminal_branch_closed_cooldown }
 		}
-		planet_crime < 1
 	}
 
 	immediate = {
-		# 20 year cooldown
+		# 10 year cooldown
 		branch_office_owner = { 
-			set_timed_country_flag = { flag = criminal_branch_closed_cooldown days = 7200 }
+			set_timed_country_flag = { flag = criminal_branch_closed_cooldown days = 3600 }
 		}
 	}
 

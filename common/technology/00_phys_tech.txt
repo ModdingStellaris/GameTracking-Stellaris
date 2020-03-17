@@ -24,10 +24,11 @@ tech_basic_science_lab_2 = {
 		
 	weight_modifier = {
 		modifier = {
-			factor = 10
-			OR = {
+			factor = 0
+			NOR = {
 				has_technology = tech_mine_exotic_gases
 				has_technology = tech_exotic_gases
+				has_country_flag = has_market_access
 			}
 		}
 		modifier = {
@@ -1944,10 +1945,11 @@ tech_power_hub_2 = {
 		
 	weight_modifier = {
 		modifier = {
-			factor = 10
-			OR = {
+			factor = 0
+			NOR = {
 				has_technology = tech_mine_exotic_gases
 				has_technology = tech_exotic_gases
+				has_country_flag = has_market_access
 			}
 		}
 		modifier = {

@@ -119,6 +119,7 @@ technologist = {
 				any_relation = {
 					has_communications = root.owner
 					is_country_type = default
+					NOT = { has_government = gov_successor_khanate }
 				}
 				NOR = {
 					has_country_flag = primitives_can_into_space
@@ -133,6 +134,7 @@ technologist = {
 					any_relation = {
 						has_communications = root.owner
 						is_country_type = default
+						NOT = { has_government = gov_successor_khanate }
 						relative_power = {
 							who = root.owner
 							category = technology
@@ -150,6 +152,7 @@ technologist = {
 		desc = "TECHNOLOGIST_RESEARCH_TREATIES_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -177,6 +180,7 @@ technologist = {
 		desc = "TECHNOLOGIST_NO_SYNTH_ENVY_DESC"
 
 		unfulfilled_effect = -10
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -216,6 +220,7 @@ technologist = {
 		desc = "TECHNOLOGIST_SECRET_KNOWLEDGE_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner

@@ -11,7 +11,7 @@ habitat_0 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
+			alloys = 3000
 			influence = 200
 		}
 	}

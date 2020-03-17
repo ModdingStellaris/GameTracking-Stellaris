@@ -644,6 +644,20 @@ generate_earth_deposits_and_blockers = {
 		limit = { owner = { has_valid_civic = civic_machine_servitor } }
 		add_deposit = d_hot_springs
 	}	
+	
+	if = {
+		limit = {
+			owner = {
+				has_civic = civic_life_seeded
+			}
+		}
+
+		set_planet_size = 25	
+		
+		add_deposit = d_dust_caverns
+		add_deposit = d_bubbling_swamp
+		add_deposit = d_crystalline_caverns
+	}
 }
 
 generate_start_buildings_and_districts = {		
@@ -793,10 +807,8 @@ generate_start_buildings_and_districts = {
 			limit = { owner = { has_civic = civic_machine_servitor } }
 			add_district = district_farming	
 			add_district = district_generator
-			add_district = district_generator
 			remove_district = district_nexus
 			remove_district = district_nexus
-			add_building = building_factory_1
 			add_building = building_organic_sanctuary
 		}
 	}
@@ -932,7 +944,7 @@ generate_start_pops = {
 	else_if = {
 		limit = { owner = { is_machine_empire = yes} }
 		while = {
-			limit = { num_pops < 26 }
+			limit = { num_pops < 29 }
 			create_pop = {
 				species = owner_main_species
 				ethos = random

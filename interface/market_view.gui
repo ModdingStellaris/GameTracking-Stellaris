@@ -666,18 +666,11 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "resource_amount"
 			font = "cg_16b"
-			position = { x = 15 y = 6 }
-			maxWidth = 50
-			maxHeight = 30
+			position = { x = -5 y = 6 }
+			maxWidth = 70
+			maxHeight = 20
 			fixedSize = yes
 			format = center
-			alwaysTransparent = yes
-		}
-
-		iconType = {
-			name = "resource_icon"
-			spriteType = "GFX_resource_minerals"
-			position = { x = 6 y = 5 }
 			alwaysTransparent = yes
 		}
 	}

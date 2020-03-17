@@ -210,6 +210,12 @@ auth_corporate = {
 	playable = {
 		host_has_dlc = "Megacorp"
 	}
+	random_weight = {
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Megacorp" }
+		}
+	}
 	
 	country_modifier = {
 		country_admin_cap_add = 20

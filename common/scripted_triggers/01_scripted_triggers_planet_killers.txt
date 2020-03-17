@@ -319,8 +319,6 @@ is_a_planet = {
 		is_planet_class = pc_shrouded
 		is_planet_class = pc_ringworld_habitable
 		is_planet_class = pc_ringworld_habitable_damaged
-		#is_planet_class = pc_broken
-		#is_planet_class = pc_shattered # TEMP TODO [MO]
 	}
 }
 

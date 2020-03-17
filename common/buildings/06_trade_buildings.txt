@@ -45,7 +45,24 @@ building_commercial_zone = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 2
+		modifier = 
+		{
+			factor = 5
+			owner = { 
+				has_monthly_income = {
+					resource = energy
+					value < 10
+				}
+			}
+		}
+	}
+
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
 	}
 }
 
@@ -94,7 +111,14 @@ building_commercial_megaplex = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 10
+	}
+
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
 	}
 }
 
@@ -138,5 +162,12 @@ building_galactic_stock_exchange = {
 	
 	ai_weight = {
 		weight = 10
+	}
+
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
 	}
 }

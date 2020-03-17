@@ -711,8 +711,8 @@ planet_event = {
 			traits = {
 				trait = "trait_mechanical"
 			}
+			effect = { save_global_event_target_as = custodian_bot }
 		}
-		last_created_species = { save_global_event_target_as = custodian_bot }
 		create_species = {
 			name = "NAME_Contingency"
 			class = "ROBOT"
@@ -721,7 +721,7 @@ planet_event = {
 		}
 		create_country = {
 			name = NAME_Contingency
-			species = last_created
+			species = event_target:custodian_bot
 			authority = auth_ancient_machine_intelligence
 			ethos = {
 				ethic = ethic_gestalt_consciousness
@@ -760,10 +760,8 @@ planet_event = {
 				add_ship_design = last_created_design
 				create_ship_design = { design = "NAME_AI_STARBASE" }
 				add_ship_design = last_created_design			
+				save_event_target_as = AI_crisis 
 			}
-		}
-		last_created_country = { 
-			save_event_target_as = AI_crisis 
 		}
 		every_owned_pop = { kill_pop = yes }
 		change_pc = pc_ai

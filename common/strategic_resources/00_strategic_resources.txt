@@ -8,7 +8,7 @@ time = {
 
 energy = {
 	tradable = yes
-	max = 10000
+	max = 50000
 	
 	deficit_modifier = energy_deficit #found in static modifiers
 
@@ -25,7 +25,7 @@ minerals = {
 	tradable = yes
 	market_amount = 100
 	market_price = 100
-	max = 10000
+	max = 15000
 	
 	deficit_modifier = minerals_deficit #found in static modifiers
 
@@ -42,7 +42,7 @@ food = {
 	tradable = yes
 	market_amount = 100
 	market_price = 100
-	max = 10000 
+	max = 15000 
 	
 	deficit_modifier = food_deficit #found in static modifiers
 	
@@ -51,7 +51,7 @@ food = {
 	}
 
 	ai_wants = {
-		base = 300
+		base = 500
 	}
 }
 
@@ -99,7 +99,7 @@ alloys = {
 	tradable = yes
 	market_amount = 25
 	market_price = 100
-	max = 10000
+	max = 15000
 	
 	deficit_modifier = alloys_deficit
 	
@@ -108,7 +108,7 @@ alloys = {
 	}
 
 	ai_wants = {
-		base = 100
+		base = 500
 	}
 }
 
@@ -116,7 +116,7 @@ consumer_goods = {
 	tradable = yes
 	market_amount = 50
 	market_price = 100
-	max = 10000
+	max = 15000
 	
 	deficit_modifier = consumer_goods_deficit #found in static modifiers
 	
@@ -125,7 +125,7 @@ consumer_goods = {
 	}
 
 	ai_wants = {
-		base = 300
+		base = 500
 	}
 }
 
@@ -137,7 +137,7 @@ volatile_motes = {
 	tradable = yes
 	market_amount = 10
 	market_price = 100
-	max = 10000
+	max = 15000
 	
 	prerequisites = { "tech_mine_volatile_motes" }
 	
@@ -152,7 +152,7 @@ exotic_gases = {
 	tradable = yes
 	market_amount = 10
 	market_price = 100
-	max = 10000
+	max = 15000
 	
 	prerequisites = { "tech_mine_exotic_gases" }
 	
@@ -167,7 +167,7 @@ rare_crystals = {
 	tradable = yes
 	market_amount = 10
 	market_price = 100
-	max = 10000
+	max = 15000
 	
 	prerequisites = { "tech_mine_rare_crystals" }
 	
@@ -188,7 +188,7 @@ sr_living_metal = {
 	tradable = yes
 	market_amount = 5
 	market_price = 100
-	max = 10000
+	max = 15000
 	
 	prerequisites = { "tech_mine_living_metal" }
 	visibility_prerequisite = { always = yes }
@@ -203,7 +203,7 @@ sr_zro = {
 	tradable = yes
 	market_amount = 5
 	market_price = 100
-	max = 10000
+	max = 15000
 	
 	prerequisites = { "tech_mine_zro" }
 	visibility_prerequisite = { always = yes }
@@ -218,7 +218,7 @@ sr_dark_matter = {
 	tradable = yes
 	market_amount = 5
 	market_price = 100
-	max = 10000
+	max = 15000
 
 	prerequisites = { "tech_mine_dark_matter" }
 	visibility_prerequisite = { always = yes }
@@ -230,7 +230,7 @@ sr_dark_matter = {
 
 nanites  = {
 	tradable = no
-	max = 10000
+	max = 15000
 
 	visibility_prerequisite = { always = yes }
 	

@@ -208,7 +208,7 @@ on_custom_diplomacy = {
 		leviathans.103
 		leviathans.104
 		#leviathans.200
-		leviathans.300
+		leviathans.299
 		leviathans.313
 		#leviathans.400
 		leviathans.500
@@ -296,6 +296,7 @@ on_planet_attackers_win = {
 		distar.81
 		distar.235
 		graygoo.150
+		unrest.171
 	}
 }
 
@@ -1722,7 +1723,7 @@ on_colony_2_years_old = {
 		#15 = colony.2030 # Assassination
 		#15 = colony.2035 # Infectious Disease
 		#15 = colony.2050 # Clerical Errors
-		2 = colony.3001 # Rogue Moon
+		10 = colony.3001 # Rogue Moon
 		15 = colony.3005 # Dimensional Portal
 
 		### Planet Modifiers - 9
@@ -1770,7 +1771,7 @@ on_colony_3_years_old = {
 		#10 = colony.2030 # Assassination
 		#10 = colony.2035 # Infectious Disease
 		10 = colony.2050 # Clerical Errors
-		1 = colony.3001 # Rogue Moon
+		10 = colony.3001 # Rogue Moon
 		10 = colony.3005 # Dimensional Portal
 
 		### Planet Modifiers - 9
@@ -1969,4 +1970,11 @@ on_system_gained = {
 	events = {
 		galactic_features.298 # Shielded World (Fallen Empire)
 	}
+}
+
+# This = Pop
+# From = Country (buyer)
+# Fromfrom = Country (seller)
+on_slave_sold_on_market = {
+	# TODO [CD]
 }

@@ -674,9 +674,9 @@ guiTypes = {
 
 			iconType = {
 				name = "portrait"
-				position = { x = -48 y = -17 }
+				position = { x = -16 y = 7 }
 				spriteType = "GFX_portrait_character"
-				scale = 0.32
+				scale = 0.26
 				alwaystransparent = yes
 			}
 		}

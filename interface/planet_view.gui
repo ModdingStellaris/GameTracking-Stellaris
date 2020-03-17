@@ -4051,8 +4051,8 @@ guiTypes = {
 				font = "cg_16b"
 				text = "Decision effects go here"
 				position = { x = 5 y = 5 }
-				maxWidth = 220
-				maxHeight = 140
+				maxWidth = 216
+				maxHeight = 128
 				fixedSize = yes
 				format = left
 				alwaysTransparent = yes
@@ -4063,7 +4063,7 @@ guiTypes = {
 			name = "decision_cost"
 			font = "cg_16b"
 			text = "5 minerals 1 apple"
-			position = { x = -3 y = 75 }
+			position = { x = -3 y = 80 }
 			maxWidth = 60
 			maxHeight = 60
 			fixedSize = yes
@@ -4074,7 +4074,7 @@ guiTypes = {
 		iconType = {
 			name = "decision_icon"
 			spriteType = "GFX_decision_unknown"
-			position = { x=6 y= 26 }
+			position = { x=6 y= 31 }
 			alwaysTransparent = yes
 		}		
 

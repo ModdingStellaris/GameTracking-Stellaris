@@ -209,6 +209,7 @@ supremacist = {
 		desc = "SUPREMACIST_NO_MIGRATION_TREATIES_DESC"
 
 		unfulfilled_effect = -10
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -244,6 +245,7 @@ supremacist = {
 		unfulfilled_title = "SUPREMACIST_NO_DOMINATION"
     
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -272,6 +274,7 @@ supremacist = {
 		desc = "SUPREMACIST_FANATIC_PURIFIERS_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -293,6 +296,7 @@ supremacist = {
 		desc = "SUPREMACIST_GIANT_MASSACRE_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner

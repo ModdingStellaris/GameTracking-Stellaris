@@ -8,7 +8,7 @@
  ring_world_1_MEGASTRUCTURE_DETAILS:1 "§Y$pc_ringworld_habitable$§!拥有多个类行星天体的区块，其材料都是取自恒星系中的其他行星天体。"
  ring_world_1_CONSTRUCTION_INFO_DELAYED:0 "一个完整的环形世界由4个完成环形世界部分组成，每个相当于一个有25块地块的盖亚世界。"
 
- dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "§Y$dyson_sphere_5$§!会完全包裹着恒星，将恒星能直接转化为£energy能源。"
+ dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "§Y$dyson_sphere_5$§!会完全包裹着恒星，将恒星能直接转化为£energy£能源。"
  dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "$dyson_sphere_5$会完全遮挡住恒星，导致恒星系中所有行星变成荒芜星球或冰冻星球。"
 
  spy_orb_0_MEGASTRUCTURE_DETAILS:1 "§Y$spy_orb_4$§!的各个阶段会逐渐扩充传感器范围，最终覆盖整个宇宙。"

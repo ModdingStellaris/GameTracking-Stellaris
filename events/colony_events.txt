@@ -509,6 +509,7 @@ planet_event = {
 			is_planet_class = pc_nuked
 			is_planet_class = pc_ringworld_habitable
 			is_planet_class = pc_habitat
+			is_planet_class = pc_city
 		}
 	}
 	
@@ -1940,6 +1941,7 @@ planet_event = {
 			is_planet_class = pc_gaia
 			is_planet_class = pc_ringworld_habitable
 			is_planet_class = pc_habitat
+			is_planet_class = pc_city
 			owner = { has_country_flag = abandoned_terraforming_country }
 			owner = { has_authority = auth_machine_intelligence }
 			AND = {

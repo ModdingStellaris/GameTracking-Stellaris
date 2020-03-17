@@ -31,6 +31,40 @@ basic = {
 		}
 	}
 
+	district = {
+		key = district_hive
+		weight = {
+			weight = 1
+			modifier = {
+				factor = 5
+				free_housing < 0
+			}
+
+			# Let's not go full spam on this.
+			modifier = {
+				factor = 0
+				free_housing >= 0
+			}
+		}
+	}
+
+	district = {
+		key = district_nexus
+		weight = {
+			weight = 1
+			modifier = {
+				factor = 5
+				free_housing < 0
+			}
+
+			# Let's not go full spam on this.
+			modifier = {
+				factor = 0
+				free_housing >= 0
+			}
+		}
+	}
+
 	building = {
 		key = building_luxury_residence
 		weight = {
@@ -71,7 +105,12 @@ basic = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -96,7 +135,12 @@ basic = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -121,7 +165,12 @@ basic = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -146,7 +195,12 @@ basic = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -171,7 +225,12 @@ basic = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -196,7 +255,12 @@ basic = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -256,7 +320,12 @@ basic = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -295,14 +364,24 @@ balanced = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -329,14 +408,24 @@ balanced = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -363,14 +452,24 @@ balanced = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -395,7 +494,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -420,7 +524,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -445,7 +554,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -486,7 +600,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -500,7 +619,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}		
@@ -515,7 +639,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -529,7 +658,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -545,7 +679,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -571,7 +710,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -601,7 +745,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -616,7 +765,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -631,7 +785,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -646,7 +805,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -661,7 +825,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -676,7 +845,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -691,7 +865,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -706,7 +885,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -721,7 +905,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -736,7 +925,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -751,7 +945,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -766,7 +965,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -781,7 +985,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -796,7 +1005,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -811,7 +1025,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -826,7 +1045,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -841,7 +1065,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -856,7 +1085,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -871,7 +1105,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -886,7 +1125,12 @@ balanced = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -925,14 +1169,24 @@ production = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -959,14 +1213,24 @@ production = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -993,14 +1257,24 @@ production = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1025,7 +1299,12 @@ production = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1050,7 +1329,12 @@ production = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1075,7 +1359,12 @@ production = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1116,7 +1405,12 @@ production = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1131,7 +1425,12 @@ production = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1146,7 +1445,12 @@ production = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1161,7 +1465,12 @@ production = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1176,7 +1485,12 @@ production = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1214,14 +1528,24 @@ manufacturing = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1248,14 +1572,24 @@ manufacturing = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1282,14 +1616,24 @@ manufacturing = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1315,7 +1659,12 @@ manufacturing = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1345,7 +1694,12 @@ manufacturing = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1360,7 +1714,12 @@ manufacturing = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1375,7 +1734,12 @@ manufacturing = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1390,7 +1754,12 @@ manufacturing = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1405,7 +1774,12 @@ manufacturing = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1420,7 +1794,12 @@ manufacturing = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1435,7 +1814,12 @@ manufacturing = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1474,14 +1858,24 @@ research = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1508,14 +1902,24 @@ research = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1542,14 +1946,24 @@ research = {
 
 			modifier = {
 				factor = 3
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 
 			# No one to work it anyway
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1564,7 +1978,12 @@ research = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1579,7 +1998,12 @@ research = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}
@@ -1594,7 +2018,12 @@ research = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_owned_pop = { is_unemployed = yes }
+					any_owned_pop = { 
+						OR = { 
+							is_unemployed = yes 
+							has_job = servant 
+						}
+					}
 				}
 			}
 		}

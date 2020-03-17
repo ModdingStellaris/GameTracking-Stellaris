@@ -313,6 +313,16 @@ merchant = {
 		trade_value_add = 8
 	}
 
+	resources = {
+		category = planet_merchants
+		produces = {
+			trigger = { 
+				owner = { has_civic = civic_merchant_guilds	}
+			}
+			unity = 2
+		}
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -343,7 +353,7 @@ merchant = {
 		modifier = {
 			planet_amenities_add = -1
 		}
-	}	
+	}
 	
 	weight = {
 		weight = @ruler_job_weight

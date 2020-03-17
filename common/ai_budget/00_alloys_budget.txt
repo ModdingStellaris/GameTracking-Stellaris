@@ -110,7 +110,7 @@ alloys_expenditure_colonies_expand = {
 	category = colonies
 	
 	potential = {
-		controlled_colonizable > 0
+		ai_colonize_plans > 0
 		has_resource = { type = food amount > 400 }
 		has_monthly_income = {
 			resource = food
@@ -123,7 +123,7 @@ alloys_expenditure_colonies_expand = {
 	}
 
 	static_max = {
-		base = 250
+		base = 300
 	}
 }
 

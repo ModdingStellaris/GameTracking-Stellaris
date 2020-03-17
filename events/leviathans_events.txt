@@ -3416,6 +3416,32 @@ country_event = {
 	}
 }
 
+# Artists Gatekeeper so the from scope doesn't break or refuse to pass trigger when we keep calling leviathans.300 from both on_custom_diplomacy and leviathans.30x events
+country_event = {
+	id = leviathans.299
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			is_country_type = enclave
+			has_country_flag = artist_enclave_country
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = event_target:artist_enclave_country }
+			}
+			from = {
+				save_global_event_target_as = artist_enclave_country
+			}
+		}
+		country_event = { id = leviathans.300 }
+	}
+}
+
 # Artists
 country_event = {
 	id = leviathans.300
@@ -3426,6 +3452,7 @@ country_event = {
 				trigger = has_country_flag
 				artist_enclave_diplomacy_continued = { text = leviathans.300.desc.continued }
 				recently_purchased_art = { text = leviathans.302.a.reply }
+				recently_purchased_ministry = { text = leviathans.316.a.reply }
 				recently_purchased_patron = { text = leviathans.304.a.reply }
 				recently_purchased_festival = { text = leviathans.303.a.reply }
 				default = { text = leviathans.300.desc }
@@ -3438,21 +3465,18 @@ country_event = {
 	custom_gui_option = "enclave_artist_option"
 
 	picture_event_data = {
-		portrait = event_target:artist_enclave
+		portrait = event_target:artist_enclave_country
 		room = enclave_artist_room
 	}
 	
 	trigger = {
-		from = {
-			is_country_type = enclave
-			has_country_flag = artist_enclave_country
-		}
 		OR = {
 			OR = {
 				has_country_flag = artist_enclave_diplomacy_continued
 				NOT = { has_country_flag = artist_enclave_diplomacy_engaged }
 			}
 			has_country_flag = recently_purchased_art
+			has_country_flag = recently_purchased_ministry
 			has_country_flag = recently_purchased_patron
 			has_country_flag = recently_purchased_festival
 		}
@@ -3462,29 +3486,27 @@ country_event = {
 	immediate = {
 		save_event_target_as = my_country
 		set_country_flag = artist_enclave_diplomacy_engaged
-		if = {
-			limit = {
-				NOT = { exists = event_target:artist_enclave }
-			}
-			from = {
-				save_event_target_as = artist_enclave
-			}
-		}
 	}
 
-	#option = { #AUG-18966
-	#	name = leviathans.300.a
-	#	trigger = {
-	#		check_variable = {
-	#			which = artist_monument_purchased
-	#			value < 5
-	#		}
-	#		NOR = { has_valid_civic = civic_fanatic_purifiers has_valid_civic = civic_hive_devouring_swarm has_valid_civic = civic_machine_terminator }
-	#	}
-	#	hidden_effect = {
-	#		country_event = { id = leviathans.302 }
-	#	}
-	#}
+	option = {
+		name = leviathans.300.a
+		trigger = {
+			check_variable = {
+				which = artist_monument_purchased
+				value < 5
+			}
+			NOR = { has_valid_civic = civic_fanatic_purifiers has_valid_civic = civic_hive_devouring_swarm has_valid_civic = civic_machine_terminator }
+		}
+		hidden_effect = {
+			remove_country_flag = artist_enclave_diplomacy_continued
+			remove_country_flag = recently_purchased_art
+			remove_country_flag = recently_purchased_ministry
+			remove_country_flag = recently_purchased_patron
+			remove_country_flag = recently_purchased_festival
+			country_event = { id = leviathans.302 }
+		}
+	}
+	
 	option = {
 		name = leviathans.300.a
 		response_text = leviathans.300.a.reply
@@ -3558,6 +3580,7 @@ country_event = {
 			remove_country_flag = artist_enclave_diplomacy_engaged
 			remove_country_flag = artist_enclave_diplomacy_continued
 			remove_country_flag = recently_purchased_art
+			remove_country_flag = recently_purchased_ministry
 			remove_country_flag = recently_purchased_patron
 			remove_country_flag = recently_purchased_festival
 			country_event = { id = leviathans.303 }
@@ -3584,6 +3607,7 @@ country_event = {
 			remove_country_flag = artist_enclave_diplomacy_engaged
 			remove_country_flag = artist_enclave_diplomacy_continued
 			remove_country_flag = recently_purchased_art
+			remove_country_flag = recently_purchased_ministry
 			remove_country_flag = recently_purchased_patron
 			remove_country_flag = recently_purchased_festival
 			country_event = { id = leviathans.303 }
@@ -3662,6 +3686,7 @@ country_event = {
 			remove_country_flag = artist_enclave_diplomacy_engaged
 			remove_country_flag = artist_enclave_diplomacy_continued
 			remove_country_flag = recently_purchased_art
+			remove_country_flag = recently_purchased_ministry
 			remove_country_flag = recently_purchased_patron
 			remove_country_flag = recently_purchased_festival
 		}
@@ -3674,6 +3699,7 @@ country_event = {
 			remove_country_flag = artist_enclave_diplomacy_engaged
 			remove_country_flag = artist_enclave_diplomacy_continued
 			remove_country_flag = recently_purchased_art
+			remove_country_flag = recently_purchased_ministry
 			remove_country_flag = recently_purchased_patron
 			remove_country_flag = recently_purchased_festival
 		}
@@ -3686,6 +3712,7 @@ country_event = {
 			remove_country_flag = artist_enclave_diplomacy_engaged
 			remove_country_flag = artist_enclave_diplomacy_continued
 			remove_country_flag = recently_purchased_art
+			remove_country_flag = recently_purchased_ministry
 			remove_country_flag = recently_purchased_patron
 			remove_country_flag = recently_purchased_festival
 		}
@@ -3700,6 +3727,7 @@ country_event = {
 			remove_country_flag = artist_enclave_diplomacy_engaged
 			remove_country_flag = artist_enclave_diplomacy_continued
 			remove_country_flag = recently_purchased_art
+			remove_country_flag = recently_purchased_ministry
 			remove_country_flag = recently_purchased_patron
 			remove_country_flag = recently_purchased_festival
 		}
@@ -3710,6 +3738,7 @@ country_event = {
 	#		remove_country_flag = artist_enclave_diplomacy_engaged
 	#		remove_country_flag = artist_enclave_diplomacy_continued
 	#		remove_country_flag = recently_purchased_art
+	#		remove_country_flag = recently_purchased_ministry
 	#		remove_country_flag = recently_purchased_patron
 	#		remove_country_flag = recently_purchased_festival
 	#	}
@@ -3785,87 +3814,87 @@ country_event = {
 }
 
 #Trying to buy an Art Piece
-#country_event = { #AUG-18966
-#	id = leviathans.302
-#	title = leviathans.300.name
-#	desc = leviathans.302.desc
-#	is_triggered_only = yes
-#	diplomatic = yes
-#	custom_gui = "enclave_artist_window"
-#	custom_gui_option = "enclave_artist_option"
-#
-#	picture_event_data = {
-#		portrait = event_target:artist_enclave
-#		room = enclave_artist_room
-#	}
-#	
-#	trigger = {
-#		has_country_flag = artist_enclave_diplomacy_engaged
-#	}
-#
-#	option = {
-#		name = DEAL
-#		add_resource = { energy = -600 }
-#		custom_tooltip = opinion10
-#		custom_tooltip = leviathans.302.a.tooltip
-#		allow = {
-#			resource_stockpile_compare = { resource = energy value >= 600 }
-#		}
-#		hidden_effect = {
-#			event_target:artist_enclave = {
-#				add_trust = {
-#					who = root
-#					amount = 10
-#				}
-#			}
-#			set_country_flag = recently_purchased_art
-#			if = {
-#				limit = {
-#					NOT = { has_country_flag = artist_monument_collector }
-#				}
-#				set_country_flag = artist_monument_collector
-#				set_variable = {
-#					which = artist_monument_purchased
-#					value = 1
-#				}
-#			}
-#			else_if = {
-#				limit = {
-#					has_country_flag = artist_monument_collector
-#				}
-#				change_variable = {
-#					which = artist_monument_purchased
-#					value = 1
-#				}
-#			}
-#		}
-#	}
-#	option = {
-#		name = TOOPOOR
-#		trigger = {
-#			resource_stockpile_compare = { resource = energy value < 600 }
-#		}
-#		hidden_effect = {
-#			set_country_flag = artist_enclave_diplomacy_continued
-#		}
-#	}
-#	option = {
-#		name = NODEAL
-#		default_hide_option = yes
-#		trigger = {
-#			NOT = { resource_stockpile_compare = { resource = energy value < 600 } }
-#		}
-#		hidden_effect = {
-#			set_country_flag = artist_enclave_diplomacy_continued
-#		}
-#	}
-#
-#	after = {
-#		hidden_effect = {
-#			country_event = { id = leviathans.300 }
-#		}
-#	}
-#}
+country_event = {
+	id = leviathans.302
+	title = leviathans.300.name
+	desc = leviathans.302.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "enclave_artist_window"
+	custom_gui_option = "enclave_artist_option"
+
+	picture_event_data = {
+		portrait = event_target:artist_enclave_country
+		room = enclave_artist_room
+	}
+
+	trigger = {
+		has_country_flag = artist_enclave_diplomacy_engaged
+	}
+
+	option = {
+		name = DEAL
+		add_resource = { energy = -600 }
+		custom_tooltip = opinion10
+		custom_tooltip = leviathans.302.a.tooltip
+		allow = {
+			resource_stockpile_compare = { resource = energy value >= 600 }
+		}
+		hidden_effect = {
+			event_target:artist_enclave_country = {
+				add_trust = {
+					who = root
+					amount = 10
+				}
+			}
+			set_country_flag = recently_purchased_art
+			if = {
+				limit = {
+					NOT = { has_country_flag = artist_monument_collector }
+				}
+				set_country_flag = artist_monument_collector
+				set_variable = {
+					which = artist_monument_purchased
+					value = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = artist_monument_collector
+				}
+				change_variable = {
+					which = artist_monument_purchased
+					value = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = TOOPOOR
+		trigger = {
+			resource_stockpile_compare = { resource = energy value < 600 }
+		}
+		hidden_effect = {
+			set_country_flag = artist_enclave_diplomacy_continued
+		}
+	}
+	option = {
+		name = NODEAL
+		default_hide_option = yes
+		trigger = {
+			NOT = { resource_stockpile_compare = { resource = energy value < 600 } }
+		}
+		hidden_effect = {
+			set_country_flag = artist_enclave_diplomacy_continued
+		}
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = artist_enclave_diplomacy_engaged
+			country_event = { id = leviathans.300 }
+		}
+	}
+}
 
 # Option to buy ministry of culture
 country_event = {
@@ -3902,14 +3931,14 @@ country_event = {
 			custom_tooltip = leviathans.322.a.tooltip
 		}
 		ELSE = { custom_tooltip = leviathans.322.a.tooltip.gesta }
-		#response_text = leviathans.302.a.reply
+		#response_text = leviathans.316.a.reply
 		allow = {
 			resource_stockpile_compare = { resource = energy value >= 2000 }
 		}
 		add_resource = { energy = -2000 }
 		hidden_effect = {
 			set_country_flag = artist_building_patron
-			set_country_flag = recently_purchased_art
+			set_country_flag = recently_purchased_ministry
 		}
 	}
 	option = {
@@ -3933,6 +3962,7 @@ country_event = {
 
 	after = {
 		hidden_effect = {
+			remove_country_flag = artist_enclave_diplomacy_engaged
 			country_event = { id = leviathans.300 }
 		}
 	}
@@ -3949,13 +3979,12 @@ country_event = {
 	custom_gui_option = "enclave_artist_option"
 
 	picture_event_data = {
-		portrait = event_target:artist_enclave
+		portrait = event_target:artist_enclave_country
 		room = enclave_artist_room
 	}
 	
 	trigger = {
-		#has_country_flag = artist_enclave_diplomacy_engaged
-		event_target:artist_enclave = {
+		event_target:artist_enclave_country = {
 			trust = {
 				who = root
 				value >= 50
@@ -3969,13 +3998,13 @@ country_event = {
 			resource_stockpile_compare = { resource = energy value >= 1000 }
 		}
 		add_resource = { energy = -1000 }
-		custom_tooltip = opinion5
+		custom_tooltip = opinion15
 		add_modifier = {
 			modifier = enclave_artist_festival
 			days = 1800
 		}
 		hidden_effect = {
-			event_target:artist_enclave = {
+			event_target:artist_enclave_country = {
 				add_trust = {
 					who = root
 					amount = 15
@@ -4021,7 +4050,7 @@ country_event = {
 	custom_gui_option = "enclave_artist_option"
 
 	picture_event_data = {
-		portrait = event_target:artist_enclave
+		portrait = event_target:artist_enclave_country
 		room = enclave_artist_room
 	}
 	
@@ -4723,7 +4752,7 @@ country_event = {
 	custom_gui_option = "enclave_artist_option"
 
 	picture_event_data = {
-		portrait = event_target:artist_enclave
+		portrait = event_target:artist_enclave_country
 		room = enclave_artist_room
 	}
 
@@ -5244,7 +5273,7 @@ country_event = {
 			custom_tooltip = leviathans.322.a.tooltip
 		}
 		ELSE = { custom_tooltip = leviathans.322.a.tooltip.gesta }
-		#response_text = leviathans.302.a.reply
+		#response_text = leviathans.316.a.reply
 		allow = {
 			NOT = { resource_stockpile_compare = { resource = energy value < 2000 } }
 		}
@@ -5632,7 +5661,7 @@ country_event = {
 	custom_gui_option = "enclave_artist_option"
 
 	picture_event_data = {
-		portrait = event_target:artist_enclave
+		portrait = event_target:artist_enclave_country
 		room = enclave_artist_room
 	}
 
@@ -5643,13 +5672,13 @@ country_event = {
 				any_ship_in_system = {
 					exists = owner
 					owner = {
-						is_same_value = event_target:artist_enclave
+						is_same_value = event_target:artist_enclave_country
 					}
 				}
 			}
 			save_event_target_as = artist_system
 		}
-		event_target:artist_enclave = {
+		event_target:artist_enclave_country = {
 			set_country_flag = art_college@root
 		}
 	}
@@ -10218,12 +10247,6 @@ country_event = {
 			fromfrom = {
 				exists = leader
 			}
-			OR = {
-				has_ethic = ethic_fanatic_spiritualist
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_xenophile
-				has_ethic = ethic_xenophile
-			}
 		}
 		fromfrom = {
 			leader = {
@@ -10231,9 +10254,8 @@ country_event = {
 			}
 		}
 		add_resource = { influence = 300 }
-		#custom_tooltip = leviathans.670.spiritphile.tooltip #AUG-19610
-		hidden_effect = {
-			set_country_flag = dragon_slayer
+		capital_scope = {
+			add_deposit = d_dragon_monument
 		}
 	}
 
@@ -10245,75 +10267,11 @@ country_event = {
 					exists = leader
 				}
 			}
-			OR = {
-				has_ethic = ethic_fanatic_spiritualist
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_xenophile
-				has_ethic = ethic_xenophile
-			}
 		}
 		add_resource = { influence = 300 }
-		#custom_tooltip = leviathans.670.spiritphile.tooltip #AUG-19610
-		hidden_effect = {
-			set_country_flag = dragon_slayer
+		capital_scope = {
+			add_deposit = d_dragon_monument
 		}
-	}
-
-	option = {
-		name = leviathans.670.a
-		trigger = {
-			fromfrom = {
-				exists = leader
-			}
-			NOR = {
-				has_ethic = ethic_fanatic_spiritualist
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_xenophile
-				has_ethic = ethic_xenophile
-			}
-		}
-		fromfrom = {
-			leader = {
-				add_trait = leader_trait_dragonslayer
-			}
-		}
-		add_resource = { influence = 300 }
-		custom_tooltip = leviathans.670.tooltip
-		hidden_effect = {
-			set_country_flag = dragon_slayer
-		}
-	}
-
-	option = {
-		name = leviathans.670.a
-		trigger = {
-			fromfrom = {
-				NOT = {
-					exists = leader
-				}
-			}
-			NOR = {
-				has_ethic = ethic_fanatic_spiritualist
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_xenophile
-				has_ethic = ethic_xenophile
-			}
-		}
-		add_resource = { influence = 300 }
-		custom_tooltip = leviathans.670.tooltip
-		hidden_effect = {
-			set_country_flag = dragon_slayer
-		}
-	}
-}
-
-country_event = {
-	id = leviathans.671
-	hide_window = yes
-	trigger = { always = no }
-
-	immediate = {
-		set_country_flag = dragon_slayer
 	}
 }
 

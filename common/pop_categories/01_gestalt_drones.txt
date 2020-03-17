@@ -81,11 +81,33 @@ simple_drone = {
 
 	unemployment_resources = {
 		category = unemployment_resources
+		produces = {
+			trigger = {
+				owner = {
+					is_hive_empire = yes 
+				}
+			}
+			minerals = 1
+		}
 		# Standby Mode Crime event
 		upkeep = {
 			trigger = {
 				planet = {
 					has_modifier = standby_mode
+				}
+				owner = {
+						is_machine_empire = yes
+				}
+			}
+			energy = 2
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					has_modifier = standby_mode
+				}
+				owner = {
+						is_hive_empire = yes
 				}
 			}
 			energy = 2

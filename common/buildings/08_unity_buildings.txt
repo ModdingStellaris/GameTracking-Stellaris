@@ -146,7 +146,7 @@ building_hypercomms_forum = {
 	}
 	
 	planet_modifier = {
-		job_culture_worker_add = 4
+		job_culture_worker_add = 7
 	}
 	
 	prerequisites = {
@@ -196,11 +196,11 @@ building_autocurating_vault = {
 		category = planet_buildings 
 		cost = {
 			minerals = 1000
-			rare_crystals = 50
+			rare_crystals = 100
 		}
 		upkeep = {
 			energy = 4
-			rare_crystals = 1
+			rare_crystals = 2
 		}
 	}
 	
@@ -401,11 +401,11 @@ building_citadel_of_faith = {
 		category = planet_buildings
 		cost = {
 			minerals = 1000
-			rare_crystals = 50
+			rare_crystals = 100
 		}	
 		upkeep = {
 			energy = 4
-			rare_crystals = 1
+			rare_crystals = 2
 		}		
 	}
 	
@@ -735,7 +735,7 @@ building_system_conflux = {
 	}
 	
 	planet_modifier = {
-		job_coordinator_add = 6
+		job_coordinator_add = 7
 	}
 	
 	upgrades = {
@@ -786,11 +786,11 @@ building_alpha_hub = {
 		category = planet_buildings
 		cost = {
 			minerals = 1000
-			rare_crystals = 50
+			rare_crystals = 100
 		}	
 		upkeep = {
 			energy = 4
-			rare_crystals = 1
+			rare_crystals = 2
 		}		
 	}
 	
@@ -833,7 +833,7 @@ building_organic_sanctuary = {
 	planet_modifier = {
 		planet_housing_add = 10
 		job_bio_trophy_add = 10
-		job_maintenance_drone_add = 2
+		job_maintenance_drone_add = 1
 	}
 	
 	resources = {
@@ -882,7 +882,7 @@ building_organic_paradise = {
 	planet_modifier = {
 		planet_housing_add = 20
 		job_bio_trophy_add = 20
-		job_maintenance_drone_add = 4
+		job_maintenance_drone_add = 2
 	}
 	
 	resources = {
@@ -1099,11 +1099,11 @@ building_corporate_vault = {
 		category = planet_buildings 
 		cost = {
 			minerals = 1000
-			rare_crystals = 50
+			rare_crystals = 100
 		}
 		upkeep = {
 			energy = 5
-			rare_crystals = 1
+			rare_crystals = 2
 		}
 	}
 	

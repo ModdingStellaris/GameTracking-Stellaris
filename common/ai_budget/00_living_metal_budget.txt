@@ -4,10 +4,10 @@
 #################
 ## Expenditure ##
 #################
-living_metal_expenditure_buffer = {
+living_metal_expenditure_ships = {
 	resource = sr_living_metal 
 	type = expenditure
-	category = buffer
+	category = ships
 	
 	potential = {
 		always = yes
@@ -29,5 +29,47 @@ living_metal_expenditure_trade = {
 	
 	fraction = {
 		weight = 0.5
+	}	
+}
+
+living_metal_expenditure_planets = {
+	resource = sr_living_metal 
+	type = expenditure
+	category = planets
+	
+	potential = {
+		always = yes
+	}
+	
+	fraction = {
+		weight = 0.3
+	}	
+}
+
+living_metal_upkeep_planets = {
+	resource = sr_living_metal 
+	type = upkeep
+	category = planets
+	
+	potential = {
+		always = yes
+	}
+	
+	fraction = {
+		weight = 0.5
+	}	
+}
+
+living_metal_upkeep_ships = {
+	resource = sr_living_metal 
+	type = upkeep
+	category = ships
+	
+	potential = {
+		always = yes
+	}
+	
+	fraction = {
+		weight = 1
 	}	
 }

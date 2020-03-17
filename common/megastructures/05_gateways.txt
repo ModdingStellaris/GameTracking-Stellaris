@@ -12,7 +12,7 @@ gateway_0 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
+			alloys = 2500
 			influence = 100
 		}
 	}
@@ -111,8 +111,8 @@ gateway_final = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
-			energy = 10000
+			alloys = 2500
+			energy = 6000
 		}
 	}
 	construction_blocks_others = no
@@ -175,8 +175,8 @@ gateway_restored = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
-			energy = 10000
+			alloys = 2500
+			energy = 6000
 		}
 	}
 	construction_blocks_others = no

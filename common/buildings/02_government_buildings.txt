@@ -166,32 +166,28 @@ building_precinct_house = {
 	
 	ai_weight = {
 		weight = 1
-		#modifier = {
-		#	factor = 0
-		#	planet_crime < 5
-		#}
 
 		modifier = {
 			factor = 10
-			planet_crime > 4
-			planet_crime < 15
+			planet_crime > 10
+			planet_crime < 25
 		}
 
 		modifier = {
-			factor = 20
-			planet_crime > 14
-			planet_crime < 30
-		}
-
-		modifier = {
-			factor = 40
-			planet_crime > 29
+			factor = 15
+			planet_crime > 25
 			planet_crime < 50
 		}
 
 		modifier = {
-			factor = 50
-			planet_crime > 49
+			factor = 20
+			planet_crime > 50
+		}
+
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_precinct_house value > 3 }
+			num_buildings = { type = building_hall_judgment value > 0 }
 		}
 	}
 }
@@ -237,32 +233,28 @@ building_hall_judgment = {
 	
 	ai_weight = {
 		weight = 1
-		#modifier = {
-		#	factor = 0
-		#	planet_crime < 5
-		#}
 
 		modifier = {
 			factor = 10
-			planet_crime > 4
-			planet_crime < 15
+			planet_crime > 10
+			planet_crime < 25
 		}
 
 		modifier = {
-			factor = 20
-			planet_crime > 14
-			planet_crime < 30
-		}
-
-		modifier = {
-			factor = 40
-			planet_crime > 29
+			factor = 15
+			planet_crime > 25
 			planet_crime < 50
 		}
 
 		modifier = {
-			factor = 50
-			planet_crime > 49
+			factor = 20
+			planet_crime > 50
+		}
+
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_precinct_house value > 3 }
+			num_buildings = { type = building_hall_judgment value > 0 }
 		}
 	}
 }
@@ -308,6 +300,11 @@ building_sentinel_posts = {
 		modifier = {
 			factor = 0
 			planet_crime < 50
+		}
+
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_sentinel_posts value > 2 }
 		}
 	}
 }

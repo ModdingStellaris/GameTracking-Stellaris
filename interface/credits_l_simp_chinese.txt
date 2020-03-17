@@ -1,451 +1,791 @@
-﻿# 《群星：利维坦》 / 《视界信号》开发小组
+﻿
+#《群星：MegaCorp》开发小组
 --------
+##执行副总经理 创意策划
+
+Johan Andersson
+
 ##游戏总监
+
 Martin Anward
 
-##项目组长
-Rikard Åslund
+##制作人
+
+Aziz Faghihinejad
+Jamie Wood
 
 ##设计
+
 Martin Anward
+Daniel Moregård
+Markus Veit
+
+##技术总监
+
+Gwenael Tranvouez
+
+##程序
+
+Carl Carenvall
+Zack Holmgren
+Emelie Nordstrand Lindgren
+Ilya Nikitin
+Gustav Palmqvist
+Lysann Schlegel
+Magne Skjæran
+
+##内容设计
+
+David Ballantyne
+Miranda van den Brink
+Dee Majek
+Maximilian Olbers
+Henrik Thyrwall
+
+##用户体验设计
+
+Tomas Friberg
+
+##本地化经理
+
+Sara Wendel-Örtqvist
+
+##艺术调度
+
+Adrian Banninga
+
+##艺术总监
+
+Fredrik Toll
+
+##2D美工
+
+Simon Gunnarsson
+Ylva Ljungqvist
+
+##3D美工
+
+Johan Lundqvist
+
+##附加美工
+
+Mattias Larsson
+Flavio Verna
+N-iX
+
+##动画&特效
+
+Niklas Tammpere
+
+##质保经理
+
+Felix Gladitz
+
+##中央质保团队总监
+
+Filippa Gannholm Kirsten
+
+##内部质保
+
+Eva Mayer
+Markus Veit
+
+##质保测试
+
+Ewan Cowhig Croft
+Joseph Gardener
+Markus Grebe
+Tegan Harris
+Anna Johansson
+Jesper Norberg
+William Riggott
+Albin Wallin
+Andreas Witzén
+
+##QLOC质保项目经理
+
+Maciej Grabowski
+
+## QLOC质保团队总监
+
+Karolina Jagnyziak
+Justyna Janicka
+Marcin Jankowski
+
+## QLOC质保测试（专门）
+
+Maciej Gutkowski
+Olga Kowaluk
+
+## QLOC质保测试（核心）
+
+Bartosz Maciejewski
+Oskar Nowak
+Uros Rudolf
+Jan Starosz
+Maksymilian Szczepanczyk
+Gabriel Urban
+
+## QLOC质保测试（附加）
+
+Maciej Bartnik
+Dominik Jastrzebski
+Jedrzej Korpak
+Jakub Potapczyk
+Piotr Szafranowski
+Stanislaw Szczerbik
+Bartlomiej Wyciszkiewicz
+
+##音效总监
+
+Björn Iversen
+
+##高级音效设计师
+
+Franco Freda
+
+##音效设计师
+
+David Schlein-Andersen
+
+##作曲
+
+Meyer
+
+##录音工作室
+
+SIDE UK
+
+##配音项目经理
+
+Craig Holanhan
+
+##配音总监
+
+Kate Saxon
+
+##工人
+
+Kola Krauze
+
+##圆滑的企业
+
+Christina Cole
+
+##无情的集团
+
+Eric Meyers
+
+##VIR之声
+
+Kola Krauze
+
+##Beta测试者
+
+George Bancroft
+Philip Curtis
+Lukasz Delra
+Harel Eilam
+Mikael Hagman
+Musa von Homeyer
+Paul Howell
+Rajeev D. Majumdar
+Anton Panas
+Marc Schmelzer
+Dylan Skoda
+Francesco Teruzzi
+Matthew Walsh
+Djordje Zivanovic
+
+##产品所有人
+
+Bevan Davies
+
+##产品营销经理
+
+Sebastian Forsström
+
+##伙伴账户经理
+
+Fang Chen
+
+##分析师
+
+Kayle Sneed
+
+##用户调研
+
+Henrik Edlund
+Hanna Löhman
+Jean-Luc Potte
+
+##社区经理
+
+Dale Emasiri
+
+##首席老爹笑话官员
+
+Rikard The Pun-isher
+
+##人体枕头调度
+
+Mercedes Romero
+
+#派拉多克斯《群星》开发组
+--------
+##执行副总经理 创意策划
+
+Johan Andersson
+
+##游戏总监
+
+Martin Anward
+Henrik Fåhraeus
+
+##项目组长
+
+Rikard Åslund
+Jamie Wood
+
+##制作人
+
+Anna Norrevik
+
+##设计
+
+Joakim Andreasson
+Martin Anward
+Henrik Fåhraeus
 Daniel Moregård
 
 ##附加设计
-Henrik Fåhraeus
+
+Johan Andersson
 
 ##客座作家
-Alexis Kennedy (视界信号)
+
+Alexis Kennedy （视界信号）
+
+##技术总监
+
+Daniel Eriksson
 
 ##程序
-Daniel Eriksson
-Alexander Ivannikov
+
+Rikard Åslund
 Mehrnaz Amanat Bari
 Joakim Bennedich
+Alexander Ivannikov
 Hampus Liljekvist
+Gustav Palmqvist
+Lysann Schlegel
+Gwenael Tranvouez
+
+##附加程序
+
+Mohammed Al-Sader
+Martin Anward
+Mikael Berg
+Alexander Ivannikov
+Johan Lerström
+Hans Rönnbäck
+Niklas Strid
+Jonas Wickerström
+
+##首席内容设计
+
+Henrik Thyrwall
 
 ##内容设计
-Maximilian Olbers
+
+David Ballantyne
+Linus Dilén
 Niclas Karlsson
+Drikus Kuiper
+Dee Majek
+Maximilian Olbers
 Rufus Tronde
-Henrik Eklund
 Miranda van den Brink
 
 ##本地化经理
+
 Sara Wendel-Örtqvist
 
 ##用户模组调度
+
 Joel Hansson
 Niklas Strid
 
 ##艺术调度
+
 Pernilla Sparrhult
 
 ##艺术总监
+
 Fredrik Toll
 
 ##2D美工
-Simon Gunnarsson
-Jonas Jakobsson
+
 Frida Eriksson
-
-##3D美工
-Helena Kasper
-Joacim Carlberg
-Johan Lundqvist
-
-##动画&特效
-Niklas Tammpere
-
-##艺术原画
-Ylva Ljungqvist
-
-##质保经理
-Mario Lasan
-
-##内部质保
-Aziz Faghihinejad
-Leo Larsson
-
-##社区质保
-Carsten 't Mannetje
-
-##质保测试
-Albin Wallin
-Arthur Bialecki
-Carmille Gidfors
-Daniel Sjöberg
-Jesper Norberg
-Malin Jakobsson
-Markus Grebe
-Olga Koter
-Patric Lindbergh
-Peter Skager
-Sebastian Borg
-
-##音效总监
-Björn Iversen
-
-##作曲
-Andreas Waldetoft
-
-##附加音效总监
-David Schlein-Andersen
-
-## Beta测试者
-Mark Charters
-Lukasz Damentko
-Dylan Anthony Skoda
-Cathrine Zangerl
-Michael Aaron Hoselton
-Jeroen Elfrink
-Christopher Kenneth O'Keefe
-Kamil Kowalczyk
-Erik Brian Olmstead
-Them Bo Bojesen Jensen
-Peter Deadman
-Richard Williams
-David Lockwood
-Edward Earl Chaney II
-Pablo Agustín Eralio
-Mitchell Alexander Cumming
-
-
-#派拉多克斯群星开发组
---------
-##执行副总经理 创意策划
-Johan Andersson
-
-##游戏总监
-Henrik Fåhraeus
-
-##项目组长
-Rikard Åslund
-
-##制作人
-Anna Norrevik
-
-##设计师
-Henrik Fåhraeus
-Joakim Andreasson
-Daniel Moregård
-
-##附加设计
-Johan Andersson
-
-##程序
-Daniel Eriksson
-Alexander Ivannikov
-Mehrnaz Amanat Bari
-Rikard Åslund
-Joakim Bennedich
-
-##附加程序
-Johan Lerström
-Jonas Wickerström
-Martin Anward
-Mohammed Al-Sader
-Niklas Strid
-
-##首席内容设计
-Henrik Eklund
-
-##内容设计
-Maximilian Olbers
-Niclas Karlsson
-David Ballantyne
-Rufus Tronde
-
-##艺术总监
-Fredrik Toll
-
-##2D美工
 Aline Gladh
 Simon Gunnarsson
-Jonas Jakobsson
 Jenny Holmer
+Jonas Jakobsson
 
-##艺术原画
+##概念原画
+
+Ylva Ljungqvist
 Erik Nilsson
 
-##封面设计
+##封面美工
+
 Aline Gladh
 
 ##附加2D美工
+
 Frida Eriksson
 Anton Hultdin
+Emma Jonsson
+Kentaro Kanamoto
+Timor Khanagov
+Ylva Ljungqvist
+Carlos Lundhall
 Johan Lundqvist
 Pontus Olofsson
-Timor Khanagov
-Carlos Lundhall
+Room 8 Studio
 
 ##3D美工
-Joakim Larsen
+
+Joacim Carlberg
+Helena Kasper
 Markus Krantz
-Viktor Nyström
+Joakim Larsen
+Johan Lundqvist
+Staffan Norling
 Magnus Nyström
+Viktor Nyström
+Marcus Persson
 Maxemilian Roberts
 Robin Skog
-Helena Kasper
-Staffan Norling
-Marcus Persson
 Fredrik Toll
 
-##动画师
-Niklas Tammpere
-Nancy Lai
+##附加3D美工
 
-##附加动画师
+N-iX
+
+##动画&特效
+
+Nancy Lai
+Niklas Tammpere
+
+##附加动画
+
 Patrick Kling
 
+##质保经理
+
+Felix Gladitz
+Mario Lasan
+
 ##内部质保
-Olga Koter
+
+Sebastian Borg
 Aziz Faghihinejad
+Olga Koter
 Leo Larsson
 Karim Muammar
-
-##质保
 Peter Skager
-Daniel Sjöberg
-Daniel Olsson
-Patric Lindbergh
+Markus Veit
+
+##质保测试
+
+Arthur Bialecki
+Niall Bird
+Sebastian Borg
+Linus Dilén
+Joshua Evans
+Matthew Frary
+Carmille Gidfors
+Markus Grebe
+Tegan Harris
 Malin Jakobsson
-Rufus Magnusson
-Carsten t'Mannetje
+Olga Koter
+Patric Lindbergh
+Katya Magnusson
+Carsten 't Mannetje
+Eva Mayer
+Daniel Moore
+Jesper Norberg
+Daniel Olsson
+Olga Shcherbak
+Daniel Sjöberg
+Peter Skager
+Daniel Teige
+Emil Tisander
+Albin Wallin
 
 ##附加质保
+
 Alexander Lundström
 
+##社区质保
+
+Carsten 't Mannetje
+
+##QLOC质保项目经理
+
+Maciej Grabowski
+
+## QLOC质保团队总监
+
+Karolina Jagnyziak
+Marcin Jankowski
+
+## QLOC质保测试（核心）
+
+Bartosz Maciejewski
+Oskar Nowak
+Uros Rudolf
+Jan Starosz
+Maksymilian Szczepanczyk
+Gabriel Urban
+
+## QLOC质保测试（附加）
+
+Abel Perez Abalde
+Sofiane Boukoffa
+Filip Gutowski
+Tomasz Lisek
+Jakub Potapczyk
+Michal Wagrocki
+
 ##音效总监
+
 Björn Iversen
 
-##编曲
+#音效设计
+
+David Schlein-Andersen
+
+##作曲
+
 Andreas Waldetoft
 
-##配音演员
+##混音
+
+Meyer
+
+##录音工作室
+
+Red Pipe Studios
+
+##音效工程
+
+Kim Creutzer
+Robert Eklund
+
+##VIR之声
+
 Kola Krauze
 
+##可选VIR配音演员
+
+Authoritarian VIR - Antony Hartley
+Diplomat VIR - Bernadette O'Neill
+Egalitarian VIR - David Bradish
+Hive Mind VIR - The Paradox Hive Mind
+Militarist VIR - Bernadette O'Neill
+Pacifist VIR - Jessica Calmhede
+Spiritualist VIR - Erika Moldenhauer
+Xenophile VIR - Noha Mousbah
+Xenophobe VIR - John Power
+Materalist VIR - Josh Lenn
+Machine Intelligence VIR - Bryan McAllister
+Soldier VIR - Talya Pulver-Lindqvist
+Technocrat VIR - Alan Adler
+
 ##附加音效设计
+
+David Schlein-Andersen
 Martin Skogehall
 
-##界面设计
+##用户体验设计
+
+Tomas Friberg
 Daniel Moregård
 
 ##手册
+
 Troy Goodfellow
 
 
 #派拉多克斯开发工作室
 --------
 ##执行副总经理 工作室
+
 Mattias Lilja
 
 ##副总开发
+
 Thomas Johansson
 
 ##执行总监
+
 Linda Kiby
 
 ##制作人
+
 Anna Norrevik
 
 ##总监助理/编辑/本地化经理
+
 Sara Wendel-Örtqvist
 
-##DLC管理
+##艺术经理
+
+Adrian Banninga
+
+##DLC经理
+
 Pernilla Sparrhult
 
 ##百科创建与维护
+
 Magne Skjæran
 
 ##技术脚本
-Niklas Strid
+
 Joel Hansson
+Niklas Strid
 
 ##技术总监
+
 Fredrik Zetterman
 
-##执行引擎总监
+##引擎总监
+
 John Wordsworth
 
-##程序管理
+##程序总监
+
 Olof Björk
 
 ##引擎编程
+
 Marcus Beausang
-John Wordsworth
 Rickard Nyberg
+John Wordsworth
 
 ##版本工程师
+
 Per Hasselström
 
 ##工具编程
+
 Johan Yngman
 
-##3D美工管理
+##3D美工总监
+
 Fredrik Toll
 
-##2D美工管理
+##2D美工总监
+
 Pontus Olofsson
 
-##脚本管理
+##脚本总监
+
 Tobias Bodlund
 
-##质保管理
+##质保总监
+
 Mario Lasan
 
 ##质保
-Filippa Gannholm
-Zeke Lugmair
+
+Filippa Gannholm Kirsten
 Jake Leiper-Ritchie
+Zeke Lugmair
 Jesper Norberg
 Alexander Oltner
 Emil Tisander
 
-##社区管理
+##社区经理
+
 Björn Blomberg
 
-##引擎组
-John Wordsworth
+##引擎团队
+
 Marcus Beausang
 Per Hasselström
-Johan Yngman
 Richard Nyberg
+John Wordsworth
+Johan Yngman
 
 ##内容设计
-Jakob Have
-Marcus Olsen
-Henrik Lohmander
+
 Mathilda Bjarnehed
+Jakob Have
 Camilla Isaksson
+Henrik Lohmander
+Marcus Olsen
 Petter Vilberg
 
 ##程序
-Henrik Hansson
-Jimmy Rönn
-Ilya Nikitin
+
 Igor Aleksandrowicz
-Gwenael Tranvouez
-Gustav Palmqvist
-Tomasz Kowalczyk
 Carl Carenvall
-Martin Hesselborn
-Rickard Lagerbäck
+Henrik Hansson
 Petter Hansson
+Martin Hesselborn
+Tomasz Kowalczyk
+Rickard Lagerbäck
+Ilya Nikitin
+Gustav Palmqvist
+Jimmy Rönn
+Gwenael Tranvouez
 
 ##美工
-Staffan Norling
-Mats Virtanen 
+
 Bjarne Hallberg
+Staffan Norling
+Mats Virtanen
+
 
 ##设计
+
 Chris King
 Dan Lind
 
-##项目组长
-Anna Norrevik
+##项目总监
+
 Martin Anward
+Anna Norrevik
 
 
 #派拉多克斯《群星》团队
 --------
 ##品牌管理
+
+Bevan Davies
 Tomas Härenstam
 
-##市场
+##市场营销
+
 Steven K Wells
 
 ##社区
-Graham Murphy
+
 Björn Blomberg
+Graham Murphy
 
 ##销售
+
 Daniel Lagergren
 Fang Chen
 
-质保项目调度
-Niklas Ivarsson
+##质保项目调度
+
 Malin Furöstam
+Niklas Ivarsson
 
 
 #派拉多克斯互动
 --------
 #管理层
- 
+
 ##首席执行官
+
 Fredrik Wester
 
 ##财务总监
+
 Andras Vajlok
 
 ##首席运营官
+
 Susana Meza Graham
 
 ##首席产品官
+
 Johan Sjöberg
 
-##首席信息官 
+##首席信息官
+
 John Hargelid
 
 ##派拉多克斯工作室经理
+
 Mattias Lilja
 
 ##产品副总裁
+
 Shams Jorjani
 
 ##首席市场官
 Daniela Sjunnesson
-Production Team
 
+#产品团队
+--------
 ##产品经理
+
 Jörgen Björklund
 
 ##高级制作人
+
+Joe Fricano
 Andreas Renström
 Florian Schwarzer
-Joe Fricano
 
 ##制作人
+
 Staffan Berglén
 Patrick Berglind
-Kandra Dahlgren
 Robin Cederholm
+Kandra Dahlgren
 
 ##制作人助理
-Angelica Uhlan
+
 Peter Cornelius
 Niklas Lundström
+Angelica Uhlan
 
-
-#用户调研组
+#游戏用户调研团队
 --------
 ##用户调研经理
+
 Karl Leino
 
 ##用户调研
-Tobias Viklund
-Jean-Luc Potte
-Henrik Edlund
+
 Johan Dorell
+Henrik Edlund
+Jean-Luc Potte
+Tobias Viklund
 
 ##用户调研助理
+
 Anna Ström
 
-#质保团队 
+#质保团队
 
-##高级质保管理
+##高级质保经理
+
 Artur Foxander
 
-##质保管理
+##质保经理
+
 Loke Norman
 
 ##质保专员
+
 Felix Gladitz
 Niklas Ivarsson
 Andrei Zainea
 
 ##质保测试
-Pontus Anehäll
+
 Emil Andersson
+Pontus Anehäll
 Bengin Bayrak
 Erik Elgerot
 Malin Furöstam
@@ -454,96 +794,130 @@ Kimberly Stinson
 Daniel Teige
 
 
-#品牌管理组
+#品牌管理团队
 --------
 ##品牌经理
+
 Marco Behrmann
 Stefan Eld
 Tomas Härenstam
 Jakob Munthe
 
-##进度管理
+##进度经理
+
 Martin Park
 
 ##采编助理
+
 Nils Brolin
 
 #市场&销售
 
-##首席市场管理
+##首席市场经理
+
 Daniela Sjunnesson
 
-##副市场管理
+##副市场经理
+
 Petra Takeva
 
 ##营销创意总监
+
 Steven K Wells
 
 ##预告&视频制作
+
 Marcus Herbertsson
 
 ##直播制作
+
 Anders Carlsson
- 
-##活动制作
+
+##活动制作经理
+
 Veronica Gunlycke
- 
+
 ##高级社区经理
+
 Malin Söderberg
 
+##社区经理
+
+Susan McBeth
+
 ##社区开发
+
 Zeke Lugmair
 
-##论坛与论坛维护管理
+##论坛与支持管理
+
 Christian Arvidsson
- 
+
 ##线上营销经理
+
 Mats Wall
 
 ##前端开发
+
 Alberto Blázquez
 
 ##邮件营销经理
+
 Andreas Nyberg
 
 ##用户获取经理
+
 Mi Ahnhem Thomsen
 
 ##图像制作
+
 Max Collin
 Adam Skarin
 
 ##销售经理
-Filip Sirc
+
 Fang Chen
+Filip Sirc
 
 ##直销开发
+
 Daniel Lagergren
 
 
 #技术，分析与开发
 --------
 ##技术总监
+
 Christian Westman
 
-##高级后端开发
+##高级项目经理
+
+Kristian Laustsen
+
+##高级后台开发
+
 Anders Törlind
 
-##后端开发
+##后台开发
+
 Alexander Altanis
 Mikael Berg
 
 ##网络开发
+
 Johan Li
 
 ##分析团队
+
 Magnus Eriksson
 Niklas Nordansjö
 
 ##IT经理
+
 Henrik Hjelm
 
 ##IT技术
+
 Johannes Ek
 Richard Lindkvist
 
@@ -551,58 +925,71 @@ Richard Lindkvist
 #法律
 --------
 ##高级法律顾问
+
 Juliette Auverny-Bennetot
 
 ##法律顾问
+
 Andreas Ruthberg-Sällquist
 
 ##律师助理
+
 Emilia Oscarsson
 
 
 #特别鸣谢
 --------
-Matthijs Hoving 
+Matthijs Hoving
 
 
 #外部合作
 --------
-##本地化
-西班牙语 - QLOC
-法语 - S&H Entertainment Localization
-德语 - S&H Entertainment Localization
+##Localization
+
+巴西葡萄牙语 - S&H Entertainment Localization
+法语 - Nicolas Fouqué
+德语 - Kai Bagehorn
 波兰语 - QLOC
 俄语 - The Most Games
-巴西葡萄语 - S&H Entertainment Localization
+西班牙语 - QLOC
 
 ##Beta测试者
-Markus Grebe
-Lukasz Damentko
-Magne Skjæran
-Kamil Kowalczyk
-Michael Aaron Hoselton
-Peter Deadman
-Dylan Anthony Skoda
-Christopher Kenneth O'Keefe
-Cathrine Zangerl
-Jeroen Elfrink
-Erik Brian Olmstead
-Them Bo Bojesen Jensen
-Tomasz Wieczorek
-Mark Charters
-Samuel Frederick Allessandro Marrello
-Isaac Lamb
-Christian Borrelli
-Fabian Schneider
 
-##配音录制工作室:
+Christian Borrelli
+Edward Earl Chaney II
+Mark Charters
+Mitchell Alexander Cumming
+Lukasz Damentko
+Peter Deadman
+Jeroen Elfrink
+Pablo Agustín Eralio
+Markus Grebe
+Michael Aaron Hoselton
+Them Bo Bojesen Jensen
+Kamil Kowalczyk
+Isaac Lamb
+David Lockwood
+Samuel Frederick Allessandro Marrello
+Christopher Kenneth O'Keefe
+Erik Brian Olmstead
+Fabian Schneider
+Magne Skjæran
+Dylan Anthony Skoda
+Tomasz Wieczorek
+Richard Williams
+Cathrine Zangerl
+
+##配音录制工作室：
+
 Cineast Dub AB
 
 
 --------
 
+
 在此特别感谢我们的论坛，粉丝们与合作伙伴们。
 没有你们就没有我们今天的成功。
+
 
 
 FORZA DJURGÅR'N!

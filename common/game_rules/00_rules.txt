@@ -978,11 +978,29 @@ can_enter_system_by_jump = {
 }
 
 
-# This = Planet
+# This = pop
 can_resettle_pop = {
+	OR = {
+		owner = { has_policy_flag = resettlement_allowed }
+		owner = { is_gestalt = yes }
+		is_shackled_robot = yes
+	}
+}
+
+# This = Planet
+can_resettle_planet = {
 	is_controlled_by = owner
 	has_ground_combat = no
 	has_orbital_bombardment = no
+	owner = {
+		OR = {
+			has_policy_flag = resettlement_allowed
+			is_gestalt = yes
+			any_owned_pop = {
+				is_shackled_robot = yes
+			}
+		}
+	}
 	custom_tooltip = {
 		text = "RESETTLE_PLANET_UNDER_COLONIZATION"
 		exists = this
@@ -1092,6 +1110,18 @@ can_build_branch_office_on_planet = {
 			root = { is_criminal_syndicate = yes }
 			owner = { has_commercial_pact = root }
 			owner = { is_in_federation_with = root }
+
+			# allow branch offices in subsidiaries and vice versa
+			root = {
+				is_subject = yes
+				is_subject_type = subsidiary
+				overlord = { is_same_value = owner }
+			}
+			owner = {
+				is_subject = yes
+				is_subject_type = subsidiary
+				overlord = { is_same_value = root }
+			}
 		}	
 	}
 	custom_tooltip = {

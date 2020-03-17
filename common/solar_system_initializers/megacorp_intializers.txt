@@ -131,7 +131,7 @@ megacorp_caravaneer_init = {
 					}
 				}
 				ethos = {
-					ethic = ethic_individualist
+					ethic = ethic_egalitarian
 					ethic = ethic_pacifist
 					ethic = ethic_xenophile
 				}
@@ -284,6 +284,7 @@ megacorp_caravaneer_init = {
 						name = "NAME_Caravaneer_Fleet1_fleet"
 						settings = { spawn_debris = no }
 						effect = {
+							set_fleet_stance = passive
 							set_formation_scale = 2.5
 							set_owner = prev
 							create_ship = {
@@ -361,7 +362,7 @@ megacorp_caravaneer_init = {
 					}
 				}
 				ethos = {
-					ethic = ethic_individualist
+					ethic = ethic_egalitarian
 					ethic = ethic_pacifist
 					ethic = ethic_xenophile
 				}
@@ -371,9 +372,10 @@ megacorp_caravaneer_init = {
 					set_graphical_culture = caravaneer_01
 					save_global_event_target_as = caravaneer_fleet2_country
 					create_fleet = {
-						name = "NAME_Caravaneer_Coalition_Base"
+						name = "NAME_Caravaneer_Fleet2_fleet"
 						settings = { spawn_debris = no }
 						effect = {
+							set_fleet_stance = passive
 							set_formation_scale = 2.5
 							set_owner = prev
 							create_ship = {
@@ -476,6 +478,7 @@ megacorp_caravaneer_init = {
 						name = "NAME_Caravaneer_Fleet3_fleet"
 						settings = { spawn_debris = no }
 						effect = {
+							set_fleet_stance = passive
 							set_formation_scale = 2.5
 							set_owner = prev
 							create_ship = {

@@ -468,7 +468,12 @@ planet_event = {
 
 	option = {
 		trigger = {
-			owner = { NOR = { has_policy_flag = ai_outlawed has_authority = auth_machine_intelligence } }
+			owner = {
+				NOR = {
+					has_policy_flag = ai_outlawed
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
 		}
 		name = "distar.26.a"
 		custom_tooltip = "distar.26.a.tooltip"
@@ -11398,7 +11403,9 @@ ship_event = {
 			owner = { pop_lcluster_event = yes }
 		}
 		owner = {
-			add_resource = { minerals = 100 }
+			add_resource = { alloys = 100 }
+			add_resource = { rare_crystals = 50 }
+			add_resource = { volatile_motes = 50 }
 		}
 	}
 	option = {

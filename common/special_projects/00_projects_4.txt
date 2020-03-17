@@ -273,7 +273,7 @@ special_project = {
 	
 	on_success = {
 		random_list = {
-			10 = { planet_event = { id = colony.3002 days = 10 random = 5 } }
+			90 = { planet_event = { id = colony.3002 days = 10 random = 5 } }
 			10 = { planet_event = { id = colony.3003 days = 10 random = 5 } }
 		}
 	}

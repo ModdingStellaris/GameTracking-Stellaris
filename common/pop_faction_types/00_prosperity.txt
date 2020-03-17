@@ -99,6 +99,7 @@ prosperity = {
 		desc = "PROSPERITY_LIQUIDITY_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = { # TODO get a reasonable trigger for counting colonies?
 			exists = owner
@@ -175,6 +176,7 @@ prosperity = {
 		desc = "PROSPERITY_NOT_AGGRESSOR_DESC"
 
 		unfulfilled_effect = -30
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner

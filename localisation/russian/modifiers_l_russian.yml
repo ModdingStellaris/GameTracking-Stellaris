@@ -105,7 +105,7 @@
  MOD_POP_WAR_HAPPINESS:0 "Счастье от войны"
  MOD_POP_PEACE_HAPPINESS:0 "Счастье от перемирия"
  MOD_POP_XENOPHOBIA:0 "Ксенофобия"
- MOD_POP_GOVERNMENT_ETHIC_ATTRACTION:0 "Привлекательность руководящих принципов"
+ MOD_POP_GOVERNMENT_ETHIC_ATTRACTION:0 "Привлекательность руководящих повышена"
  MOD_POP_GOVERNMENT_ETHIC_ATTRACTION_DESC:0 "Этот параметр влияет на базовую привлекательность принципов правительства для поселений."
  MOD_POP_ROBOT_UPKEEP_MULT:0 "Содержание роботов"
  MOD_POP_ROBOT_UPKEEP_MULT_DESC:0 "Изменяет расход энергии на содержание поселений роботов."

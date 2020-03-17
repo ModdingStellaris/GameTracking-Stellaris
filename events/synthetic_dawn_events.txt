@@ -1677,38 +1677,24 @@ country_event = {
 	}
 
 	immediate = {
-		set_country_flag = no_machine_uprising
-		# TODO: Fix
-		#if = {
-		#	limit = { # robots in sector
-		#		any_owned_planet = {
-		#			any_owned_pop = {
-		#				has_trait = trait_mechanical
-		#			}
-		#			is_capital = no
-		#			exists = sector
-		#			sector = {
-		#				is_core_sector = no
-		#			}
-		#		}
-		#	}
-		#	random_owned_planet = {
-		#		limit = {
-		#			any_owned_pop = {
-		#				has_trait = trait_mechanical
-		#			}
-		#			is_capital = no
-		#			
-		#			exists = sector
-		#			sector = {
-		#				is_core_sector = no
-		#			}
-		#		}
-		#		planet_event = { id = syndaw.1020 }
-		#	}
-		#}
-		#else_if
-		if = { # robots in core
+		# no robots, no uprising
+		if = {
+			limit = {
+				NOT = {
+					any_owned_planet = {
+						any_owned_pop = {
+							has_trait = trait_mechanical
+						}
+					}
+				}
+			}
+			set_timed_country_flag = {
+				flag = no_machine_uprising
+				days = 3600
+			}
+		}
+		# uprising on colony
+		else_if = {
 			limit = {
 				any_owned_planet = {
 					any_owned_pop = {
@@ -1727,32 +1713,13 @@ country_event = {
 				planet_event = { id = syndaw.1020 }
 			}
 		}
-		# TODO: Fix
-		#else_if = { # random sector
-		#	limit = {
-		#		any_owned_planet = {
-		#			is_capital = no
-		#			exists = sector
-		#			sector = {
-		#				is_core_sector = no
-		#			}
-		#		}
-		#	}
-		#	random_owned_planet = {
-		#		limit = {
-		#			is_capital = no
-		#			exists = sector
-		#			sector = {
-		#				is_core_sector = no
-		#			}
-		#		}
-		#		planet_event = { id = syndaw.1020 }
-		#	}
-		#}
-		else = { # random core
+		# uprising wherever
+		else = {
 			random_owned_planet = {
 				limit = {
-					is_capital = no
+					any_owned_pop = {
+						has_trait = trait_mechanical
+					}
 				}
 				planet_event = { id = syndaw.1020 }
 			}
@@ -2095,8 +2062,9 @@ country_event = {
 		# baseline resource stockpile
 		add_resource = {
 			energy = 5000
-			minerals = 3000
+			minerals = 5000
 			influence = 500
+			alloys = 5000
 		}
 		add_100_unity_per_year_passed = yes # scripted effect
 
@@ -2399,8 +2367,15 @@ country_event = {
 		if = {
 			limit = { has_civic = civic_machine_terminator }
 			
-			# exterminator fleets, 400% naval cap
+			# exterminator fleets, 150% naval cap
 			
+			create_fleet_from_naval_cap = 0.2
+			random_owned_planet = {
+				last_created_fleet = {
+					set_location = prev
+				}
+			}
+
 			create_fleet_from_naval_cap = 0.3
 			random_owned_planet = {
 				last_created_fleet = {
@@ -2408,42 +2383,35 @@ country_event = {
 				}
 			}
 
-			create_fleet_from_naval_cap = 0.8
-			random_owned_planet = {
-				last_created_fleet = {
-					set_location = prev
-				}
-			}
-
-			create_fleet_from_naval_cap = 1.2
-			random_owned_planet = {
-				last_created_fleet = {
-					set_location = prev
-				}
-			}
-
-			create_fleet_from_naval_cap = 1.7
-			#capital_scope = {
-				last_created_fleet = {
-					set_location = root.capital_scope
-				}
-			#}
-		}
-		else = {
-			# regular fleets, 200% naval cap
 			create_fleet_from_naval_cap = 0.4
 			random_owned_planet = {
 				last_created_fleet = {
 					set_location = prev
 				}
 			}
+
 			create_fleet_from_naval_cap = 0.6
 			random_owned_planet = {
 				last_created_fleet = {
 					set_location = prev
 				}
 			}
-			create_fleet_from_naval_cap = 1.0
+		}
+		else = {
+			# regular fleets, 80% naval cap
+			create_fleet_from_naval_cap = 0.1
+			random_owned_planet = {
+				last_created_fleet = {
+					set_location = prev
+				}
+			}
+			create_fleet_from_naval_cap = 0.3
+			random_owned_planet = {
+				last_created_fleet = {
+					set_location = prev
+				}
+			}
+			create_fleet_from_naval_cap = 0.4
 			random_owned_planet = {
 				last_created_fleet = {
 					set_location = prev

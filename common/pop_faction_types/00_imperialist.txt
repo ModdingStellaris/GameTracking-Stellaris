@@ -84,6 +84,7 @@ imperialist = {
 		desc = "IMPERIALIST_PHILOSOPHY_DESC"
 
 		unfulfilled_effect = -30
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -112,6 +113,7 @@ imperialist = {
 		desc = "IMPERIALIST_CONQUEST_DESC"
 		
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -137,6 +139,7 @@ imperialist = {
 		desc = "SUPREMACIST_FANATIC_PURIFIERS_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -189,6 +192,7 @@ imperialist = {
 		desc = "IMPERIALIST_RIVALS_DESC2"
 		
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -228,6 +232,7 @@ imperialist = {
 		desc = "IMPERIALIST_RIVALS_DESC3"
 		
 		fulfilled_effect = 15
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -261,6 +266,7 @@ imperialist = {
 		desc = "IMPERIALIST_OVERLORD_DESC"
 
 		fulfilled_effect = 5
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -283,6 +289,7 @@ imperialist = {
 		desc = "IMPERIALIST_UNDERLING_DESC"
 
 		unfulfilled_effect = -25
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -304,6 +311,7 @@ imperialist = {
 		desc = "IMPERIALIST_SLAYER_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner

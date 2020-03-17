@@ -418,7 +418,7 @@ decision_consecrated_worlds = {
 				}
 				custom_tooltip = consecrated_worlds_unsuitable
 				random_list = {
-					60 = {
+					80 = {
 						modifier = {
 							factor = 10
 							OR = {
@@ -439,7 +439,7 @@ decision_consecrated_worlds = {
 							}
 						}
 					}
-					40 = {
+					20 = {
 						add_modifier = {
 							modifier = consecrated_quality_2
 							days = -1
@@ -493,7 +493,7 @@ decision_consecrated_worlds = {
 							}
 						}
 					}
-					60 = {
+					70 = {
 						add_modifier = {
 							modifier = consecrated_quality_2
 							days = -1
@@ -505,7 +505,7 @@ decision_consecrated_worlds = {
 							}
 						}
 					}
-					30 = {
+					20 = {
 						add_modifier = {
 							modifier = consecrated_quality_3
 							days = -1
@@ -550,7 +550,7 @@ decision_consecrated_worlds = {
 							}
 						}
 					}
-					40 = {
+					50 = {
 						add_modifier = {
 							modifier = consecrated_quality_2
 							days = -1
@@ -562,7 +562,7 @@ decision_consecrated_worlds = {
 							}
 						}
 					}
-					50 = {
+					40 = {
 						add_modifier = {
 							modifier = consecrated_quality_3
 							days = -1
@@ -639,6 +639,19 @@ decision_consecrated_worlds = {
 								value = 4
 							}
 						}
+					}
+				}
+			}
+			# fallback
+			else = {
+				add_modifier = {
+					modifier = consecrated_quality_1
+					days = -1
+				}
+				from = {
+					change_variable = {
+						which = consecrated_variable
+						value = 1
 					}
 				}
 			}
@@ -758,6 +771,8 @@ decision_arcology_project = {
 		NOR = {
 			is_planet_class = pc_city
 			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
 		}
 		habitable_structure = no
 		exists = owner
@@ -772,9 +787,10 @@ decision_arcology_project = {
 			num_districts = { type = district_mining value < 1 }
 			num_districts = { type = district_generator value < 1 }
 		}
+		num_uncleared_blockers < 1
 	}
 	
-	effect = {	
+	effect = {
 		# Make city-planet
 		custom_tooltip = decision_arcology_project_effects
 		hidden_effect = {		
@@ -1169,5 +1185,97 @@ decision_divine_algorithm  = {
 			modifier = divine_algorithm
 			days = 3600
 		}
+	}
+}
+
+# Artisan Troupe Art Monument
+decision_art_monument  = {
+	icon = decision_art_monument
+
+	owned_planets_only = yes
+
+	resources = {
+		category = decisions
+	}
+	
+	potential = {
+		owner = {
+			has_country_flag = artist_monument_collector
+			OR = {
+				AND = {
+					check_variable = { which = artist_monument_erected value < 1 }
+					check_variable = { which = artist_monument_purchased value = 1 }
+				}
+				AND = {
+					check_variable = { which = artist_monument_erected value < 2 }
+					check_variable = { which = artist_monument_purchased value = 2 }
+				}
+				AND = {
+					check_variable = { which = artist_monument_erected value < 3 }
+					check_variable = { which = artist_monument_purchased value = 3 }
+				}
+				AND = {
+					check_variable = { which = artist_monument_erected value < 4 }
+					check_variable = { which = artist_monument_purchased value = 4 }
+				}
+				AND = {
+					check_variable = { which = artist_monument_erected value < 5 }
+					check_variable = { which = artist_monument_purchased value = 5 }
+				}
+			}
+		}
+		NOT = { has_modifier = artist_monument_erected }
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = artist_monument_erected
+		}
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						check_variable = { which = artist_monument_erected value < 1 }
+					}
+					set_variable = {
+						which = artist_monument_erected
+						value = 1
+					}
+				}
+				else = {
+					change_variable = {
+						which = artist_monument_erected
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Artisan Troupe Art Monument
+decision_demolish_art_monument  = {
+	icon = decision_art_monument
+
+	owned_planets_only = yes
+
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+		has_modifier = artist_monument_erected
+	}
+	
+	effect = {
+		remove_modifier = artist_monument_erected
+	}
+	
+	ai_weight = {
+		weight = 1
 	}
 }

@@ -38,10 +38,10 @@ food_expenditure_colonies_expand = {
 	category = colonies
 	
 	potential = {
-		controlled_colonizable > 0
-		has_resource = { type = alloys amount > 400 }
+		ai_colonize_plans > 0
+		has_resource = { type = food amount > 400 }
 		has_monthly_income = {
-			resource = alloys
+			resource = food
 			value > 0
 		}
 	}

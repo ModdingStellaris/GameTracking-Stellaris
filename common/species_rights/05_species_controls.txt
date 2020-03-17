@@ -132,8 +132,8 @@ colonization_control_yes = {
 			from = { has_authority = auth_machine_intelligence }
 			OR = {
 				has_trait = trait_machine_unit
-				has_trait = trait_mechanical	
-			}			
+				has_trait = trait_mechanical
+			}
 		}
 	}
 
@@ -144,16 +144,17 @@ colonization_control_yes = {
 				OR = {
 					has_citizenship_type = { country = from type = citizenship_purge }
 					has_citizenship_type = { country = from type = citizenship_purge_machine }
-					has_citizenship_type = { country = from type = citizenship_servitude }				
+					has_citizenship_type = { type = citizenship_slavery }
+					has_citizenship_type = { type = citizenship_robot_servitude }
 				}
 			}
 			always = yes
-		}	
+		}
 		else = {
 			custom_tooltip = {
 				fail_text = same_species_disallowed
 				NOT = { is_same_species = from }
-			}	
+			}
 		}
 	}
 

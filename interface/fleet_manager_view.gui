@@ -1077,7 +1077,7 @@ guiTypes = {
 			name = "name"
 			font = "cg_16b"
 			position = { x = 40 y = 6 }
-			maxWidth = 304
+			maxWidth = 70
 			maxHeight = 20
 			fixedSize = yes
 			format = left
@@ -1088,8 +1088,8 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "cost"
 			font = "cg_16b"
-			position = { x = -70 y = 6 }
-			maxWidth = 60
+			position = { x = -210 y = 6 }
+			maxWidth = 200
 			maxHeight = 20
 			fixedSize = yes
 			format = right

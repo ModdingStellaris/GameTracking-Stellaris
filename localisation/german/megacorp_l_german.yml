@@ -740,7 +740,7 @@
  job_technician_drone_desc:1 "Die Maschinisten, Bedienern und Techniker, die den Kraftwerksbetrieb leiten und überwachen."
  job_technician_drone_effect_desc:0 "£job_technician_drone£ $job_technician_drone_plural$ produzieren £energy£ §Y$energy$§!"
  mod_job_technician_drone_add:0 "Job $job_technician_drone$"
- mod_job_technician_drone_per_pop:0 "§G+1§! $job_technician_dron$ pro $VALUE$ Bewohner"
+ mod_job_technician_drone_per_pop:0 "§G+1§! $job_technician_drone$ pro $VALUE$ Bewohner"
  mod_job_technician_drone_per_pop_short:0 "\n§G+1§! £mod_job_technician_drone_add£ pro $VALUE$ £pop£"
  
  job_spawning_drone:0 "Laich-Drohne"
@@ -2188,7 +2188,9 @@
  mod_campaigns_cost_mult:0 "Kosten (Kampagnen)"
  mod_edicts_cost_mult:0 "Kosten (Erlasse)"
  mod_leaders_cost_mult:0 "Kosten (Anführer)"
+ MOD_LEADER_COST_EMPIRE_SIZE_MULT:0 "Kosten (Anführer)"
  mod_leaders_upkeep_mult:0 "Unterhalt (Anführer)"
+ MOD_LEADER_UPKEEP_EMPIRE_SIZE_MULT:0 "Unterhalt (Anführer)"
 
  CONSUMED:0 "Konsumiert: $VALUE|+=$"
  SHIP_COST:0 "Kosten"

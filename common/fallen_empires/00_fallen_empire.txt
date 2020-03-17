@@ -3,10 +3,6 @@ fallen_empire_1 = {
 	graphical_culture = "fallen_empire_02"
 	initializer = "fallen_1"
 	
-	possible = {
-		host_has_dlc = "Synthetic Dawn Story Pack"
-	}
-	
 	create_country_effect = {
 		create_species = {
 			name = random

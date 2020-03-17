@@ -1760,6 +1760,40 @@ event = {
 		}
 	}
 }
+
+country_event = { #Removes the "Free at Last" modifier when the planet is conquered or reconquered
+	id = unrest.171
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		fromfrom = {
+			OR = {
+				has_modifier = slaves_defected
+				has_modifier = insurgents_free
+				has_modifier = free_at_last #No longer in use but for backwards comp
+			}
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			if = {
+				limit = { has_modifier = slaves_defected }
+				remove_modifier = slaves_defected
+			}
+			if = {
+				limit = { has_modifier = insurgents_free }
+				remove_modifier = insurgents_free
+			}
+			if = {
+				limit = { has_modifier = free_at_last }
+				remove_modifier = free_at_last
+			}
+		}
+	}
+}
+
 ######## SECESSION/NATIONALIST REVOLT ##########
 
 # check if original_owner matches any pop on planet, if so defect to them, otherwise form independent nation

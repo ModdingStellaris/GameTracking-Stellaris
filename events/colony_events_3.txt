@@ -954,6 +954,7 @@ planet_event = { # Rogue moon
 		has_moon = yes
 		any_moon = {
 			habitable_planet = no
+			NOT = { is_planet_class = pc_habitat }
 		}
 	}
 	
@@ -1481,7 +1482,9 @@ planet_event = { #null void
 				}
 		}
 		custom_tooltip = portal_void_tooltip
-		planet_event = { id = colony.3040 days = 1825 random = 1825 }
+		hidden_effect = {
+			planet_event = { id = colony.3040 days = 1825 random = 1825 }
+		}
 	}
 }
 

@@ -85,6 +85,7 @@ totalitarian = {
 		desc = "TOTALITARIAN_AUTOCRACY_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -109,6 +110,7 @@ totalitarian = {
 		desc = "TOTALITARIAN_DEMOCRACY_DESC"
 
 		unfulfilled_effect = -25
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -141,14 +143,22 @@ totalitarian = {
 
 		trigger = {
 			owner = {
-				NOT = {
+				OR = {
+					NOT = {
+						any_owned_pop = {
+							NOR = {
+								has_living_standard = { type = living_standard_stratified }
+								has_living_standard = { type = living_standard_academic_privilege }
+							}
+						}				
+					}
 					any_owned_pop = {
-						NOR = {
-							has_living_standard = { type = living_standard_stratified }
+						OR = {
 							has_citizenship_type = { type = citizenship_slavery }
 							has_citizenship_type = { type = citizenship_purge }
+							has_citizenship_type = { type = citizenship_ai_servitude }
 						}
-					}				
+					}
 				}
 			}
 		}
@@ -188,6 +198,7 @@ totalitarian = {
 		desc = "TOTALITARIAN_EXTRANATIONAL_AUTHORITY_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -209,6 +220,7 @@ totalitarian = {
 		desc = "TOTALITARIAN_UNDERLING_DESC"
 
 		unfulfilled_effect = -10
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner

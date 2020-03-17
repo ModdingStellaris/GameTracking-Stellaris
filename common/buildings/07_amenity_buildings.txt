@@ -56,12 +56,12 @@ building_luxury_residence = {
 		weight = 1
 		modifier = {
 			factor = 2
-			free_housing < 0
+			free_housing < -2
 		}
 
 		modifier = {
 			factor = 3
-			free_amenities < 2
+			free_amenities < -5
 		}
 	}
 }
@@ -120,22 +120,16 @@ building_paradise_dome = {
 		}
 	}
 	
-	
 	prerequisites = {
 		"tech_paradise_dome"
 	}
 	
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
 
-		modifier = 
-		{
+		modifier = {
 			factor = 3
-			free_amenities < 2
+			free_amenities < 0
 		}
 	}
 }
@@ -349,6 +343,9 @@ building_drone_megastorage = {
 
 	allow = {
 		has_upgraded_capital = yes
+	}
+	potential = {
+		owner = { is_machine_empire = yes }
 	}
 	
 	convert_to = {

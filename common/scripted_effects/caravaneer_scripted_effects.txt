@@ -479,7 +479,7 @@ cara_generate_deal2 = {
 				has_country_flag = fleet2deal3 # Edict that lowers consumer goods
 				has_country_flag = fleet2deal4 # Technology
 				has_country_flag = fleet2deal5 # Spiritual Leader
-				has_country_flag = fleet2deal6 # Buying pops for crystals
+				has_country_flag = fleet2deal6 # Selling pops for crystals
 				has_country_flag = fleet2deal7 # Cruiser
 				has_country_flag = fleet2deal8 # Unique Planetary Deposit
 				has_country_flag = fleet2deal9 # MI Upkeep Mod
@@ -490,7 +490,7 @@ cara_generate_deal2 = {
 			}
 		}
 		random_list = {
-			100 = {
+			100 = { # Numistic Shrine
 				modifier = {
 					factor = 0
 					OR = {
@@ -506,7 +506,7 @@ cara_generate_deal2 = {
 				}
 				set_timed_country_flag = { flag = fleet2deal1 days = @fleet2dealdecay }
 			}
-			100 = {
+			100 = { # Buy Corporate Drones
 				set_timed_country_flag = { flag = fleet2deal2 days = @fleet2dealdecay }
 				modifier = {
 					factor = 0
@@ -522,7 +522,7 @@ cara_generate_deal2 = {
 					NOT = { exists = event_target:fleet2_recent_pop_species }	
 				}
 			}
-			100 = {
+			100 = { # Edict
 				modifier = {
 					factor = 0
 					has_ethic = ethic_gestalt_consciousness
@@ -534,7 +534,7 @@ cara_generate_deal2 = {
 				}
 				set_timed_country_flag = { flag = fleet2deal3 days = @fleet2dealdecay }
 			}
-			100 = {
+			100 = { # tech
 				modifier = {
 					factor = 0
 					has_technology = tech_prescient_data_modeling
@@ -542,7 +542,7 @@ cara_generate_deal2 = {
 				set_timed_country_flag = { flag = fleet2deal4 days = @fleet2dealdecay }
 			}
 			100 = {
-				modifier = {
+				modifier = { # leader
 					factor = 0
 					OR = {
 						any_owned_leader = {
@@ -553,7 +553,7 @@ cara_generate_deal2 = {
 				}
 				set_timed_country_flag = { flag = fleet2deal5 days = @fleet2dealdecay }
 			}
-			100 = {
+			100 = { # Selling pops for crystals
 				set_timed_country_flag = { flag = fleet2deal6 days = @fleet2dealdecay }
 				modifier = {
 					factor = 0
@@ -564,7 +564,7 @@ cara_generate_deal2 = {
 					has_country_flag = sold_pops_for_crystals
 				}
 			}
-			100 = {
+			100 = { # Cruiser
 				set_timed_country_flag = { flag = fleet2deal7 days = @fleet2dealdecay }
 				modifier = {
 					factor = 0
@@ -599,7 +599,7 @@ cara_generate_deal2 = {
 				}
 				set_timed_country_flag = { flag = fleet2deal9 days = @fleet2dealdecay }
 			}
-			100 = {
+			100 = { # MI Decision
 				modifier = {
 					factor = 0
 					OR = {
@@ -740,17 +740,22 @@ cara_execute_deal2 = {
 			set_country_flag = bought_numistic_pops
 			capital_scope = {
 				# let's try creating a new species rather than modifying the existing one
-				event_target:fleet2_recent_pop_species = {
-					create_species = {
-						name = event_target:fleet2_recent_pop_species
-						plural = event_target:fleet2_recent_pop_species
-						class = this
-						name_list = event_target:fleet2_recent_pop_species
-						portrait = event_target:fleet2_recent_pop_species
-						traits = {
-							trait = trait_nuumismatic_administration
-						}
-					}
+				#event_target:fleet2_recent_pop_species = {
+				#	create_species = {
+				#		name = event_target:fleet2_recent_pop_species
+				#		plural = event_target:fleet2_recent_pop_species
+				#		class = this
+				#		name_list = event_target:fleet2_recent_pop_species
+				#		portrait = event_target:fleet2_recent_pop_species
+				#		traits = {
+				#			trait = trait_nuumismatic_administration
+				#		}
+				#	}
+				#}
+				modify_species = {
+    				species = event_target:fleet2_recent_pop_species
+    				add_trait = trait_nuumismatic_administration
+    				ideal_planet_class = root.capital_scope
 				}
 				while = {
 					count = 2
@@ -1861,6 +1866,8 @@ fleet3_reset_journey = {
 recalculate_consecrated_world_modifier = {
 	switch = {
 		trigger = has_modifier
+		consecrated_modifier_12 = { remove_modifier = consecrated_modifier_12 }
+		consecrated_modifier_11 = { remove_modifier = consecrated_modifier_11 }
 		consecrated_modifier_10 = { remove_modifier = consecrated_modifier_10 }
 		consecrated_modifier_9 = { remove_modifier = consecrated_modifier_9 }
 		consecrated_modifier_8 = { remove_modifier = consecrated_modifier_8 }
@@ -1873,6 +1880,30 @@ recalculate_consecrated_world_modifier = {
 		consecrated_modifier_1 = { remove_modifier = consecrated_modifier_1 }
 	}
 	if = {
+		limit = {
+			check_variable = {
+				which = consecrated_variable
+				value >= 12
+			}
+		}
+		add_modifier = {
+			modifier = consecrated_modifier_12
+			days = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = consecrated_variable
+				value = 11
+			}
+		}
+		add_modifier = {
+			modifier = consecrated_modifier_11
+			days = -1
+		}
+	}
+	else_if = {
 		limit = {
 			check_variable = {
 				which = consecrated_variable

@@ -152,7 +152,7 @@ building_foundry_2 = {
 			volatile_motes = 50
 		}
 		upkeep = {
-			energy = 4
+			energy = 5
 			volatile_motes = 1
 		}
 	}
@@ -227,7 +227,7 @@ building_foundry_3 = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_alloy_drone_add = 10
+			job_alloy_drone_add = 8
 		}
 	}
 	
@@ -237,7 +237,7 @@ building_foundry_3 = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_alloy_drone_add = 10
+			job_alloy_drone_add = 8
 		}
 	}
 	
@@ -247,7 +247,7 @@ building_foundry_3 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_foundry_add = 10
+			job_foundry_add = 8
 		}
 	}
 	
@@ -258,7 +258,7 @@ building_foundry_3 = {
 			volatile_motes = 100
 		}
 		upkeep = {
-			energy = 4
+			energy = 6
 			volatile_motes = 2
 		}
 	}
@@ -459,7 +459,7 @@ building_factory_2 = {
 			rare_crystals = 50
 		}	
 		upkeep = {
-			energy = 4
+			energy = 5
 			rare_crystals = 1				
 		}
 	}	
@@ -542,7 +542,7 @@ building_factory_3 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_artisan_add = 10
+			job_artisan_add = 8
 		}
 	}	
 	
@@ -552,7 +552,7 @@ building_factory_3 = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_artisan_drone_add = 10
+			job_artisan_drone_add = 8
 		}
 	}	
 	
@@ -563,7 +563,7 @@ building_factory_3 = {
 			rare_crystals = 100	
 		}	
 		upkeep = {
-			energy = 4
+			energy = 6
 			rare_crystals = 2
 		}
 	}	

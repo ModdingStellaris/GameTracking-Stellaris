@@ -2141,6 +2141,11 @@ spriteTypes = {
 	### DLCs ###
 
 	spriteType = {
+		name = "GFX_megacorp"
+		texturefile = "gfx/interface/icons/dlc/megacorp.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_apocalypse"
 		texturefile = "gfx/interface/icons/dlc/apocalypse.dds"
 	}

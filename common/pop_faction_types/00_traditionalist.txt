@@ -86,6 +86,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_NO_ROBOTS_DESC"
 		
 		unfulfilled_effect = -5
+		fulfilled_effect = 0.001
 		
 		potential = {
 			exists = owner
@@ -104,6 +105,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_NO_ROBOT_RIGHTS_DESC"
 
 		unfulfilled_effect = -10
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -126,6 +128,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_NO_FULL_ROBOT_RIGHTS_DESC"
 
 		unfulfilled_effect = -20
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -170,6 +173,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_NO_TOMB_WORLDS_DESC"
 
 		unfulfilled_effect = -5
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -203,6 +207,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_GAIA_WORLDS_DESC"
 
 		fulfilled_effect = 5
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -234,6 +239,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_PSIONIC_PURSUIT_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			host_has_dlc = "Utopia"
@@ -259,6 +265,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_FLESH_IS_STRONG_DESC"
 
 		unfulfilled_effect = -30
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -282,6 +289,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_SPIRITUALIST_POPS_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -310,6 +318,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_UNSPIRITUALIST_DESC"
 
 		unfulfilled_effect = -10
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -337,6 +346,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_SHROUD_BOON_DESC"
 
 		fulfilled_effect = 5
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -358,6 +368,7 @@ traditionalist = {
 		desc = "TRADITIONALIST_SHROUD_CURSE_DESC"
 
 		fulfilled_effect = -5
+		unfulfilled_effect = 0.001
 
 		potential = {
 			exists = owner

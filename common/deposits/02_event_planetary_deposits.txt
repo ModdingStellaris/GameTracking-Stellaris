@@ -219,6 +219,7 @@ d_the_zone = {
 	icon = d_levitating_rocks
 
 	resources = {
+		category = planet_deposits
 		produces = {
 			unity = 3
 		}
@@ -692,6 +693,7 @@ d_cryonic_clones = {
 	icon = d_monument
 	
 	resources = {
+		category = planet_deposits
 		produces = {
 			society_research = 6
 		}
@@ -754,6 +756,7 @@ d_processing_pens = {
 	icon = d_quarantine_zone
 	
 	resources = {
+		category = planet_deposits
 		produces = {
 			food = 14
 		}
@@ -1203,6 +1206,7 @@ d_ancient_one = {
 	}
 
 	resources = {
+		category = planet_deposits
 		produces = {
 			society_research = 4
 		}

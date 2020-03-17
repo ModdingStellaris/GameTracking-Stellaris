@@ -382,11 +382,13 @@ country_event = {
 					portrait = random
 					traits = random
 					immortal = yes
+
+					effect = { save_event_target_as = prethoryn_species }
 				}
 				create_country = {
 					name = "NAME_Prethoryn_Scourge"
 					type = "swarm"
-					species = last_created
+					species = event_target:prethoryn_species
 					name_list = "Prethoryn"
 					flag = {
 						icon= {
@@ -405,6 +407,7 @@ country_event = {
 						}
 					}
 					effect = {
+						save_event_target_as = prethoryn
 						save_event_target_as = prethoryn_vgrd
 						create_ship_design = { design = "NAME_Swarm_Transport" }
 						add_ship_design = last_created_design
@@ -445,21 +448,19 @@ country_event = {
 							is_country_type = awakened_fallen_empire
 						}
 					}
-					establish_communications_no_message = last_created_country
+					establish_communications_no_message = event_target:prethoryn
 					add_opinion_modifier = {
-						who = last_created_country
+						who = event_target:prethoryn
 						modifier = opinion_swarm
 					}
-					last_created_country = {
+					event_target:prethoryn = {
 						add_opinion_modifier = {
 							who = PREV
 							modifier = opinion_prey
 						}
 					}
 				}
-				last_created_country = {
-					save_event_target_as = prethoryn
-					owner_species = { save_event_target_as = prethoryn_species }
+				event_target:prethoryn = {
 					
 					### FIRST SYSTEM
 
@@ -498,7 +499,7 @@ country_event = {
 				}
 				set_star_flag = swarm_invasion_target_2
 				random_system_planet = {
-					last_created_country = {
+					event_target:prethoryn = {
 
 						swarm_vanguard = yes
 						swarm_vanguard = yes
@@ -540,7 +541,7 @@ country_event = {
 				}
 				set_star_flag = swarm_invasion_target_3
 				random_system_planet = {
-					last_created_country = {
+					event_target:prethoryn = {
 
 						swarm_vanguard = yes
 						swarm_vanguard = yes
@@ -583,7 +584,7 @@ country_event = {
 				}
 				set_star_flag = swarm_invasion_target_4
 				random_system_planet = {
-					last_created_country = {
+					event_target:prethoryn = {
 
 						swarm_vanguard = yes
 						swarm_vanguard = yes
@@ -2349,11 +2350,13 @@ event = {
 							portrait = random
 							traits = random
 							immortal = yes
+
+							effect = { save_event_target_as = feral_prethoryn_species }
 						}
 						create_country = {
 							name = "NAME_Feral_Prethoryn" 
 							type = "feral_prethoryn"
-							species = last_created
+							species = event_target:feral_prethoryn_species
 							name_list = "Prethoryn"
 							flag = {
 								icon= {
@@ -2547,7 +2550,7 @@ country_event = {
 			create_country = {
 				name = "NAME_Feral_Prethoryn" 
 				type = "feral_prethoryn_infighting"
-				species = last_created
+				species = event_target:feral_prethoryn_species
 				name_list = "Prethoryn"
 				flag = {
 					icon= {

@@ -32,6 +32,34 @@ dark_matter_expenditure_trade = {
 	}	
 }
 
+dark_matter_expenditure_planets = {
+	resource = sr_dark_matter 
+	type = expenditure
+	category = planets
+	
+	potential = {
+		always = yes
+	}
+	
+	fraction = {
+		weight = 0.3
+	}	
+}
+
+dark_matter_upkeep_planets = {
+	resource = sr_dark_matter 
+	type = upkeep
+	category = planets
+	
+	potential = {
+		always = yes
+	}
+	
+	fraction = {
+		weight = 0.5
+	}	
+}
+
 dark_matter_upkeep_ships = {
 	resource = sr_dark_matter 
 	type = upkeep

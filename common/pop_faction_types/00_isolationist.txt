@@ -112,6 +112,7 @@ isolationist = {
 		desc = "ISOLATIONIST_PHILOSOPHY_DESC"
 
 		unfulfilled_effect = -25
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -137,6 +138,7 @@ isolationist = {
 		desc = "ISOLATIONIST_NO_AGGRESSIVE_WAR_DESC"
 
 		unfulfilled_effect = -25
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -162,6 +164,7 @@ isolationist = {
 		desc = "SUPREMACIST_ISOLATIONIST_NO_FEDERATION_DESC"
 		
 		unfulfilled_effect = -25
+		fulfilled_effect = 0.001
 		
 		potential = {
 			exists = owner
@@ -183,6 +186,7 @@ isolationist = {
 		desc = "ISOLATIONIST_MOVEMENT_RESTRICTED_DESC"
 		
 		unfulfilled_effect = -10
+		fulfilled_effect = 0.001
 		
 		potential = {
 			exists = owner
@@ -217,6 +221,7 @@ isolationist = {
 		desc = "ISOLATIONIST_NON_AGGRESSION_DESC1"
 		
 		fulfilled_effect = 5
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -246,6 +251,7 @@ isolationist = {
 		desc = "ISOLATIONIST_NON_AGGRESSION_DESC2"
 		
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -284,6 +290,7 @@ isolationist = {
 		desc = "ISOLATIONIST_NON_AGGRESSION_DESC3"
 		
 		fulfilled_effect = 15
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -316,6 +323,7 @@ isolationist = {
 		desc = "ISOLATIONIST_PEACE_DESC1"
 		
 		fulfilled_effect = 5
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -339,6 +347,7 @@ isolationist = {
 		desc = "ISOLATIONIST_PEACE_DESC2"
 		
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -365,6 +374,7 @@ isolationist = {
 		desc = "ISOLATIONIST_PEACE_DESC3"
 		
 		fulfilled_effect = 15
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner

@@ -96,136 +96,20 @@ energy_upkeep_buffer = {	# Buffer, will not be spent
 	}
 	
 	fraction = {
-		weight = 0.02
+		weight = 0.01
 	}	
 }
 
-energy_upkeep_armies_low = {
+energy_upkeep_country = { # Covers most other things
 	resource = energy 
 	type = upkeep
-	category = armies
+	category = country
 	
 	potential = {
 		always = yes
 	}
 	
 	fraction = {
-		weight = 0.05
-	}	
-}
-
-energy_upkeep_armies_high = {
-	resource = energy 
-	type = upkeep
-	category = armies
-	
-	potential = {
-		highest_threat > 20
-	}
-	
-	fraction = {
-		weight = 0.15
-	}	
-}
-
-energy_upkeep_ships = {
-	resource = energy 
-	type = upkeep
-	category = ships
-	
-	potential = {
-		always = yes
-	}
-	
-	fraction = {
-		weight = 0.20
-	}	
-}
-
-energy_upkeep_stations = {
-	resource = energy 
-	type = upkeep
-	category = stations
-	
-	potential = {
-		always = yes
-	}
-	
-	fraction = {
-		weight = 0.15
-	}	
-}
-
-energy_upkeep_starbases = {
-	resource = energy 
-	type = upkeep
-	category = starbases
-	
-	potential = {
-		always = yes
-	}
-	
-	fraction = {
-		weight = 0.3
-	}	
-}
-
-energy_upkeep_planets_starbase_focus = {
-	resource = energy 
-	type = upkeep
-	category = planets
-	
-	potential = {
-		exploitable_planets > 1
-	}
-	
-	fraction = {
-		weight = 0.50
-	}
-}
-
-energy_upkeep_planets_planet_focus = {
-	resource = energy 
-	type = upkeep
-	category = planets
-	
-	potential = {
-		exploitable_planets < 2
-	}
-	
-	fraction = {
-		weight = 0.75
-	}
-}
-
-energy_upkeep_leaders = {
-	resource = energy 
-	type = upkeep
-	category = leaders
-	
-	potential = {
-		always = yes
-	}
-	
-	fraction = {
-		weight = 0.15
-	}	
-}
-
-energy_upkeep_colonies = {
-	resource = energy 
-	type = upkeep
-	category = colonies
-	
-	potential = {
-		ai_colonize_plans > 0
-	}
-
-	static_min = {
-		base = 1
-		modifier = {
-			add = 1
-			ai_colonize_plans > 1
-		}
+		weight = 1
 	}	
 }

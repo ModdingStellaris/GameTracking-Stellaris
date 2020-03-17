@@ -49,15 +49,27 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "sector_name"
 			font = "cg_16b"
-			position = { x = 15 y = 38 }
+			position = { x = 20 y = 48 }
 			format = left
-			alwaysTransparent = yes
+			text_color_code = "H"
+			alwaysTransparent = no
+		}
+
+		instantTextBoxType = {
+			name = "stockpile_label"
+			font = "cg_16b"
+			text = "SECTOR_STOCKPILE_LABEL"
+			position = { x = 20 y = 68 }
+			maxWidth = 140
+			maxHeight = 20
+			text_color_code = "E"
+			fixedSize = yes
 		}
 
 		containerWindowType = {
 			name = "amount_bg_box_1"
 			size = { width = 60 height = 23 }
-			position = { x = 237 y = 36 }
+			position = { x = 165 y = 68 }
 			clipping = no
 
 			background = {
@@ -68,30 +80,32 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "stockpile_label"
-			font = "cg_16b"
-			text = "SECTOR_STOCKPILE_LABEL"
-			position = { x = 170 y = 38 }
-			maxWidth = 50
-			maxHeight = 20
-			fixedSize = yes
-			format = center
-		}
-
-		instantTextBoxType = {
 			name = "current_amount"
 			font = "cg_16b"
-			position = { x = 242 y = 38 }
+			position = { x = 170 y = 70 }
 			maxWidth = 50
 			maxHeight = 20
 			format = center
 			alwaysTransparent = yes
+			text_color_code = "E"
+		}
+
+		instantTextBoxType = {
+			name = "click_to_transfer_desc"
+			font = "cg_16b"
+			position = { x = 250 y = 65 }
+			maxWidth = 100
+			maxHeight = 40
+			fixedSize = yes
+			format = center
+			alwaysTransparent = no
+			text = "CLICK_TO_TRANSFER_RESOURCES"
 		}
 
 		containerWindowType = {
 			name = "resources"
 			size = { width = 330 height = 100%% }
-			position = { x = 15 y = 70 }
+			position = { x = 20 y = 110 }
 
 			gridBoxType = {
 				name = "resources_grid"
@@ -146,14 +160,14 @@ guiTypes = {
 			name = "transfer"
 			font = "cg_16b"
 			spriteType = "GFX_button_35_24"
-			position = { x = 222 y = -14 }
+			position = { x = 252 y = -14 }
 		}
 
 		instantTextBoxType = {
 			name = "factor"
 			font = "cg_16b"
 			text = "YYYY"
-			position = { x = 226 y = 2 }
+			position = { x = 256 y = 2 }
 			format = center
 			maxWidth = 50
 			alwaysTransparent = yes

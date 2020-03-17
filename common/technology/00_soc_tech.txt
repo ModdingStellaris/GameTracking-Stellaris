@@ -43,10 +43,11 @@ tech_space_trading = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 10
-			OR = {
+			factor = 0
+			NOR = {
 				has_technology = tech_mine_rare_crystals
 				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
 			}
 		}
 		modifier = {
@@ -516,10 +517,11 @@ tech_food_processing_1 = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 10
-			OR = {
+			factor = 0
+			NOR = {
 				has_technology = tech_mine_volatile_motes
 				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
 			}
 		}
 		modifier = {
@@ -532,13 +534,13 @@ tech_food_processing_1 = {
 					num_districts = { type = district_farming value > 0 }
 				}
 			}
-		}		
+		}
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_biology"
-			}			
+			}
 		}
 	}
 	
@@ -574,13 +576,13 @@ tech_food_processing_2 = {
 					num_districts = { type = district_farming value > 0 }
 				}
 			}
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_biology"
-			}			
+			}
 		}
 	}
 	
@@ -1141,10 +1143,11 @@ tech_frontier_hospital = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 10
-			OR = {
+			factor = 0
+			NOR = {
 				has_technology = tech_mine_exotic_gases
 				has_technology = tech_exotic_gases
+				has_country_flag = has_market_access
 			}
 		}
 		modifier = {
@@ -5179,10 +5182,11 @@ tech_hyper_entertainment_forum = {
 
 	weight_modifier = {	
 		modifier = {
-			factor = 10
-			OR = {
+			factor = 0
+			NOR = {
 				has_technology = tech_mine_exotic_gases
 				has_technology = tech_exotic_gases
+				has_country_flag = has_market_access
 			}
 		}
 		modifier = {
@@ -5222,10 +5226,11 @@ tech_paradise_dome = {
 
 	weight_modifier = {	
 		modifier = {
-			factor = 10
-			OR = {
+			factor = 0
+			NOR = {
 				has_technology = tech_mine_rare_crystals
 				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
 			}
 		}
 		modifier = {
@@ -5303,10 +5308,11 @@ tech_heritage_site = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 10
-			OR = {
+			factor = 0
+			NOR = {
 				has_technology = tech_mine_volatile_motes
 				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
 			}
 		}
 		modifier = {
@@ -5420,10 +5426,11 @@ tech_holographic_rituals = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 10
-			OR = {
+			factor = 0
+			NOR = {
 				has_technology = tech_mine_rare_crystals
 				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
 			}
 		}
 		modifier = {

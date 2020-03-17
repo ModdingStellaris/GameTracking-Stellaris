@@ -1191,7 +1191,7 @@ building_hab_capital = {
 	resources = {
 		category = planet_buildings
 		upkeep = {
-			energy = 5
+			energy = 3
 			alloys = 5
 		}		
 	}

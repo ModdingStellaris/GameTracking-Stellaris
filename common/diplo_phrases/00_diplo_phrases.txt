@@ -25324,7 +25324,7 @@ action_guarantee_independence = {
 }
 action_break_guarantee = {
 	select = {
-		01_REVOKE_GUARANTEE_SELECT_01 = {
+		01_REVOKE_GUARANTEE_SELECT = {
 			trigger = {
 				NOR = {
 					has_authority = auth_machine_intelligence
@@ -31257,16 +31257,16 @@ action_form_commercial_pact = {
 				always = yes
 			}
 		}
-		#02_FORM_COMMERCIAL_PACT_PROPOSE = {
-		#	trigger = {
-		#		always = yes
-		#	}
-		#}
-		#03_FORM_COMMERCIAL_PACT_PROPOSE = {
-		#	trigger = {
-		#		always = yes
-		#	}
-		#}
+		02_FORM_COMMERCIAL_PACT_PROPOSE = {
+			trigger = {
+				always = yes
+			}
+		}
+		03_FORM_COMMERCIAL_PACT_PROPOSE = {
+			trigger = {
+				always = yes
+			}
+		}
 	}
 	accept = {
 		01_FORM_COMMERCIAL_PACT_ACCEPT = {
@@ -31274,11 +31274,11 @@ action_form_commercial_pact = {
 				always = yes
 			}
 		}
-		#02_FORM_COMMERCIAL_PACT_ACCEPT = {
-		#	trigger = {
-		#		always = yes
-		#	}
-		#}
+		02_FORM_COMMERCIAL_PACT_ACCEPT = {
+			trigger = {
+				always = yes
+			}
+		}
 		03_FORM_COMMERCIAL_PACT_ACCEPT = {
 			trigger = {
 				always = yes

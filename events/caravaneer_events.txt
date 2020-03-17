@@ -1321,12 +1321,39 @@ fleet_event = {
 	}
 
 	immediate = {
-		solar_system = {
-			closest_system = {
-				min_steps = 2
-				limit = { NOT = { has_star_flag = hostile_system } }
-				root = {
-					set_location = prev.star
+		# randomize escape jump distance
+		random_list = {
+			1 = {
+				solar_system = {
+					closest_system = {
+						min_steps = 2
+						limit = { NOT = { has_star_flag = hostile_system } }
+						root = {
+							set_location = prev.star
+						}
+					}
+				}
+			}
+			1 = {
+				solar_system = {
+					closest_system = {
+						min_steps = 4
+						limit = { NOT = { has_star_flag = hostile_system } }
+						root = {
+							set_location = prev.star
+						}
+					}
+				}
+			}
+			1 = {
+				solar_system = {
+					closest_system = {
+						min_steps = 6
+						limit = { NOT = { has_star_flag = hostile_system } }
+						root = {
+							set_location = prev.star
+						}
+					}
 				}
 			}
 		}
@@ -1898,12 +1925,39 @@ fleet_event = {
 	}
 
 	immediate = {
-		solar_system = {
-			closest_system = {
-				min_steps = 2
-				limit = { NOT = { has_star_flag = hostile_system } }
-				root = {
-					set_location = prev.star
+		# randomize escape jump distance
+		random_list = {
+			1 = {
+				solar_system = {
+					closest_system = {
+						min_steps = 2
+						limit = { NOT = { has_star_flag = hostile_system } }
+						root = {
+							set_location = prev.star
+						}
+					}
+				}
+			}
+			1 = {
+				solar_system = {
+					closest_system = {
+						min_steps = 4
+						limit = { NOT = { has_star_flag = hostile_system } }
+						root = {
+							set_location = prev.star
+						}
+					}
+				}
+			}
+			1 = {
+				solar_system = {
+					closest_system = {
+						min_steps = 6
+						limit = { NOT = { has_star_flag = hostile_system } }
+						root = {
+							set_location = prev.star
+						}
+					}
 				}
 			}
 		}
@@ -2597,12 +2651,39 @@ fleet_event = {
 	}
 
 	immediate = {
-		solar_system = {
-			closest_system = {
-				min_steps = 2
-				limit = { NOT = { has_star_flag = hostile_system } }
-				root = {
-					set_location = prev.star
+		# randomize escape jump distance
+		random_list = {
+			1 = {
+				solar_system = {
+					closest_system = {
+						min_steps = 2
+						limit = { NOT = { has_star_flag = hostile_system } }
+						root = {
+							set_location = prev.star
+						}
+					}
+				}
+			}
+			1 = {
+				solar_system = {
+					closest_system = {
+						min_steps = 4
+						limit = { NOT = { has_star_flag = hostile_system } }
+						root = {
+							set_location = prev.star
+						}
+					}
+				}
+			}
+			1 = {
+				solar_system = {
+					closest_system = {
+						min_steps = 6
+						limit = { NOT = { has_star_flag = hostile_system } }
+						root = {
+							set_location = prev.star
+						}
+					}
 				}
 			}
 		}
@@ -3276,16 +3357,27 @@ country_event = {
 			exists = space_owner
 			space_owner = { is_same_value = root }
 		}
+		# a caravan fleet still exists
+		OR = {
+			exists = event_target:caravaneer_fleet1_country
+			exists = event_target:caravaneer_fleet2_country
+			exists = event_target:caravaneer_fleet3_country
+		}
 	}
 
 	option = { # Accept
 		name = cara.930.a
 		custom_tooltip = cara.930.a.tooltip
 		hidden_effect = {
+			# replacing starbase so it can be destroyed rather than flipped
 			event_target:cara_home_new_location.starbase = {
-				set_owner = event_target:caravaneer_home_country
+				fleet  = { destroy_fleet = this }
 			}
 			event_target:cara_home_new_location = {
+				create_starbase = {
+					size = "starbase_caravaneer"
+					owner = event_target:caravaneer_home_country
+				}
 				save_global_event_target_as = caravaneer_home_system
 				star = {
 					save_global_event_target_as = caravaneer_home_star
@@ -3736,8 +3828,11 @@ country_event = {
 		NOT = { has_country_flag = caravan_pops_join_recent }
 		NOT = { has_country_flag = caravan_recent_event }
 		any_owned_planet = {
-			is_colony = yes
 			solar_system = { caravaneer_fleet_in_system = yes}
+			is_colony = yes
+			count_pops = {
+					count > 2
+			}
 			#free_housing > 6
 		}
 	}
@@ -3745,8 +3840,11 @@ country_event = {
 	immediate = {
 		random_owned_planet = {
 			limit = {
-				is_colony = yes
 				solar_system = { caravaneer_fleet_in_system = yes}
+				is_colony = yes
+				count_pops = {
+					count > 2
+				}
 				#free_housing > 6
 			}
 			save_event_target_as = caravan_pops_join_planet
@@ -4054,6 +4152,16 @@ country_event = {
 							}
 						}
 					}
+					modifier = {
+						factor = 0
+						event_target:pleased_planet = {
+							NOT = {
+								any_pop = {
+									is_organic_species = yes
+								}
+							}
+						}
+					}
 					country_event = { id = cara.4041 days = 200 random = 140}
 				}
 				20 = {
@@ -4094,11 +4202,13 @@ country_event = {
 				limit = {
 					any_pop = {
 						is_xenophile = yes	
+						is_organic_species = yes
 					}
 				}
 				random_pop = {
 					limit = {
 						is_xenophile = yes	
+						is_organic_species = yes
 					}
 					save_event_target_as = party_goer
 				}
@@ -4107,17 +4217,22 @@ country_event = {
 				limit = {
 					any_pop = {
 						is_xenophobe = no
+						is_organic_species = yes
 					}
 				}
 				random_pop = {
 					limit = {
 						is_xenophobe = yes	
+						is_organic_species = yes
 					}
 					save_event_target_as = party_goer
 				}
 			}
 			else = {
 				random_pop = {
+					limit = {
+						is_organic_species = yes
+					}
 					save_event_target_as = party_goer
 				}
 			}
@@ -4620,7 +4735,16 @@ planet_event = { #Caravan pops organize a rowdy festival (timed stability modifi
 						}
 					}
 					owner = {
-						country_event = { id = cara.4041 days = 200 random = 140 }
+						if = {
+							limit = {
+								event_target:pleased_planet = {
+									any_pop = {
+										is_organic_species = yes
+									}
+								}
+							}
+							country_event = { id = cara.4041 days = 200 random = 140 }
+						}
 					}
 				}
 				20 = {
@@ -4729,16 +4853,20 @@ planet_event = { #Megacorpse
 				THIS = {
 					has_moon = yes
 					any_moon = {
-						NOT = { 
+						NOR = { 
 							is_planet_class = pc_shattered
+							habitable_planet = yes
+							is_planet_class = pc_habitat 
 						}
 					}
 				}
 			}
 			random_moon = {
 				limit = {
-					NOT = { 
+					NOR = { 
 						is_planet_class = pc_shattered
+						habitable_planet = yes
+						is_planet_class = pc_habitat 
 					}
 				}
 				save_event_target_as = punchmoon

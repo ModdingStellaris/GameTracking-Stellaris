@@ -150,41 +150,41 @@ slave_toiler = {
 	}
 }
 
-scavenger_drone = {
-	category = simple_drone
-	is_capped_by_modifier = no
-	building_icon = building_residence
-	clothes_texture_index = 2
-	icon = mining_drone
-	
-	possible = {
-		exists = owner
-		owner = { is_hive_empire = yes } 
-		drone_job_check_trigger = yes
-		days_passed >= 1 # So drones are not assigned this job before other jobs are created by the game start
-	}
-	
-	resources = {
-		category = planet_jobs
-		produces = {
-			minerals = 1
-		}
-		
-		upkeep = {
-			trigger = { 
-				planet = {
-					has_modifier = activity_program
-				}
-			}
-			food = 1
-		}
-	}	
-		
-	weight = {
-		weight = @special_job_weight
-	}
-}
-
+#scavenger_drone = {
+#	category = simple_drone
+#	is_capped_by_modifier = no
+#	building_icon = building_residence
+#	clothes_texture_index = 2
+#	icon = mining_drone
+#	
+#	possible = {
+#		exists = owner
+#		owner = { is_hive_empire = yes } 
+#		drone_job_check_trigger = yes
+#		days_passed >= 1 # So drones are not assigned this job before other jobs are created by the game start
+#	}
+#	
+#	resources = {
+#		category = planet_jobs
+#		produces = {
+#			minerals = 1
+#		}
+#		
+#		upkeep = {
+#			trigger = { 
+#				planet = {
+#					has_modifier = activity_program
+#				}
+#			}
+#			food = 1
+#		}
+#	}	
+#		
+#	weight = {
+#		weight = @special_job_weight
+#	}
+#}
+#
 organic_battery = {
 	category = worker
 	is_capped_by_modifier = no
@@ -317,6 +317,17 @@ criminal = {
 	clothes_texture_index = 2
 	building_icon = building_residence
 	
+	possible = {
+		# check that this is not a robot in servitude
+		exists = owner
+		NOT = { 
+			has_citizenship_type = { 
+				country = owner 
+				type = citizenship_robot_servitude
+			}
+		}
+	}
+
 	planet_modifier = {
 		trade_value_add = -1
 	}

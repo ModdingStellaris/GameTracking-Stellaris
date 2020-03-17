@@ -1463,7 +1463,7 @@ fallen_shielded_1 = {
 	planet = {
 		count = 1
 		orbit_distance = 20
-		class = pc_shielded
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = 16
 		modifiers = none
@@ -1471,6 +1471,10 @@ fallen_shielded_1 = {
 
 		init_effect = {
 			prevent_anomaly = yes
+			change_pc = {
+				class = pc_shielded
+				inherit_entity = yes
+			}
 		}
 
 		change_orbit = @base_moon_distance
@@ -1544,7 +1548,7 @@ fallen_shielded_2 = {
 	planet = {
 		count = 1
 		orbit_distance = 20
-		class = pc_shielded
+		class = random_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = 16
 		modifiers = none
@@ -1552,6 +1556,10 @@ fallen_shielded_2 = {
 
 		init_effect = {
 			prevent_anomaly = yes
+			change_pc = {
+				class = pc_shielded
+				inherit_entity = yes
+			}
 		}
 
 		change_orbit = @base_moon_distance
@@ -1626,7 +1634,7 @@ fallen_shielded_3 = {
 	planet = {
 		count = 1
 		orbit_distance = 20
-		class = pc_shielded
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		size = 16
 		modifiers = none
@@ -1634,6 +1642,10 @@ fallen_shielded_3 = {
 
 		init_effect = {
 			prevent_anomaly = yes
+			change_pc = {
+				class = pc_shielded
+				inherit_entity = yes
+			}
 		}
 
 		change_orbit = @base_moon_distance
@@ -1730,7 +1742,7 @@ fallen_holy_01 = {
 	}
 
 	init_effect = {
-		random_list = { # 30% chance outpost is "broken" TEMP TODO
+		random_list = { # 30% chance outpost is "broken"
 			30 = {
 				random_system_planet = {
 					limit = { is_star = yes }
@@ -1810,7 +1822,7 @@ fallen_holy_02 = {
 	}
 
 	init_effect = {
-		random_list = { # 30% chance outpost is "broken" TEMP TODO
+		random_list = { # 30% chance outpost is "broken"
 			30 = {
 				random_system_planet = {
 					limit = { is_star = yes }
@@ -1883,7 +1895,7 @@ fallen_holy_03 = {
 	}
 
 	init_effect = {
-		random_list = { # 30% chance outpost is "broken" TEMP TODO
+		random_list = { # 30% chance outpost is "broken"
 			30 = {
 				random_system_planet = {
 					limit = { is_star = yes }
@@ -1951,7 +1963,7 @@ fallen_holy_04 = {
 	}
 
 	init_effect = {
-		random_list = { # 30% chance outpost is "broken" TEMP TODO
+		random_list = { # 30% chance outpost is "broken"
 			30 = {
 				random_system_planet = {
 					limit = { is_star = yes }

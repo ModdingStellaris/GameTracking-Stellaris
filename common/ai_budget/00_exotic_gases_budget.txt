@@ -32,6 +32,34 @@ exotic_gases_expenditure_trade = {
 	}	
 }
 
+exotic_gases_expenditure_planets = {
+	resource = exotic_gases 
+	type = expenditure
+	category = planets
+	
+	potential = {
+		always = yes
+	}
+	
+	fraction = {
+		weight = 0.3
+	}	
+}
+
+exotic_gases_upkeep_planets = {
+	resource = exotic_gases 
+	type = upkeep
+	category = planets
+	
+	potential = {
+		always = yes
+	}
+	
+	fraction = {
+		weight = 0.5
+	}	
+}
+
 exotic_gases_upkeep_ships = {
 	resource = exotic_gases 
 	type = upkeep

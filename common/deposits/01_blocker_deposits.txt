@@ -990,7 +990,7 @@ d_dead_subterraneans = {
 }
 
 d_ruined_arcology = {
-	time = 100
+	time = 365
 	icon = d_city_ruins
 	
 	is_for_colonizeable = yes
@@ -1005,7 +1005,8 @@ d_ruined_arcology = {
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 500
+			energy = 1000
+			minerals = 1000
 		}
 	}
 }

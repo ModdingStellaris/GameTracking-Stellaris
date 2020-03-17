@@ -148,7 +148,12 @@ district_generator = {
 
 		modifier = {
 			factor = 3
-			any_owned_pop = { is_unemployed = yes }
+			any_owned_pop = { 
+				OR = { 
+					is_unemployed = yes 
+					has_job = servant 
+				}
+			}
 		}
 
 		# No one to work it anyway
@@ -156,7 +161,12 @@ district_generator = {
 			factor = 0
 			free_housing > 0
 			NOT = {
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 		}
 	}
@@ -317,7 +327,12 @@ district_mining = {
 
 		modifier = {
 			factor = 3
-			any_owned_pop = { is_unemployed = yes }
+			any_owned_pop = { 
+				OR = { 
+					is_unemployed = yes 
+					has_job = servant 
+				}
+			}
 		}
 
 		# No one to work it anyway
@@ -325,7 +340,12 @@ district_mining = {
 			factor = 0
 			free_housing > 0
 			NOT = {
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 		}
 	}
@@ -497,7 +517,12 @@ district_farming = {
 
 		modifier = {
 			factor = 3
-			any_owned_pop = { is_unemployed = yes }
+			any_owned_pop = { 
+				OR = { 
+					is_unemployed = yes 
+					has_job = servant 
+				}
+			}
 		}
 
 		# No one to work it anyway
@@ -505,7 +530,12 @@ district_farming = {
 			factor = 0
 			free_housing > 0
 			NOT = {
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 		}
 	}
@@ -662,7 +692,12 @@ district_generator_uncapped = {
 
 		modifier = {
 			factor = 3
-			any_owned_pop = { is_unemployed = yes }
+			any_owned_pop = { 
+				OR = { 
+					is_unemployed = yes 
+					has_job = servant 
+				}
+			}
 		}
 
 		# No one to work it anyway
@@ -670,7 +705,12 @@ district_generator_uncapped = {
 			factor = 0
 			free_housing > 0
 			NOT = {
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 		}
 	}
@@ -830,7 +870,12 @@ district_mining_uncapped = {
 
 		modifier = {
 			factor = 3
-			any_owned_pop = { is_unemployed = yes }
+			any_owned_pop = { 
+				OR = { 
+					is_unemployed = yes 
+					has_job = servant 
+				}
+			}
 		}
 
 		# No one to work it anyway
@@ -838,7 +883,12 @@ district_mining_uncapped = {
 			factor = 0
 			free_housing > 0
 			NOT = {
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 		}
 	}
@@ -1006,7 +1056,12 @@ district_farming_uncapped = {
 
 		modifier = {
 			factor = 3
-			any_owned_pop = { is_unemployed = yes }
+			any_owned_pop = { 
+				OR = { 
+					is_unemployed = yes 
+					has_job = servant 
+				}
+			}
 		}
 
 		# No one to work it anyway
@@ -1014,7 +1069,12 @@ district_farming_uncapped = {
 			factor = 0
 			free_housing > 0
 			NOT = {
-				any_owned_pop = { is_unemployed = yes }
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
 			}
 		}
 	}

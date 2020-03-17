@@ -136,7 +136,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "effects_header"
 			font = "cg_16b"
-			position = { x = 25 y = 325 }
+			position = { x = 25 y = 320 }
 			maxWidth = 520
 			maxHeight = 18
 			fixedSize = yes
@@ -147,7 +147,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "effects_desc"
 			font = "cg_16b"
-			position = { x=25 y=338 }
+			position = { x = 25 y = 340 }
 			maxWidth = 520
 			maxHeight = 50
 			fixedSize = yes
@@ -156,50 +156,79 @@ guiTypes = {
 			format = left
 		}
 		
-		instantTextBoxType = {
-			name = "production_header"
-			font = "cg_16b"
-			position = { x = 0 y = 370 }
-			maxWidth = 316
-			maxHeight = 30
-			fixedSize = yes
-			#alwaysTransparent = yes
-			text = "PRODUCTION"
-			format = centre
-		}
-		
-		gridBoxType = {
-			name = "production"
-			position = { x = 0 y = 400 }
-			size = { width = 316 height = 30 }
-			slotSize = { width = 77 height = 20 }
-			max_slots_horizontal = 3
-			format = CENTERED_UP
+		containerWindowType = {
+			name = "production_box"
+			size = { width = 125 height = 60 }
+			position = { x = 25 y = 370 }	
+
+			background = {
+				name = "background"
+				spriteType = "GFX_dark_area_cut"
+			}
+
+			instantTextBoxType = {
+				name = "production_header"
+				font = "cg_16b"
+				text = "PRODUCTION"
+				position = { x = 0 y = 3 }
+				maxWidth = 125
+				maxHeight = 20
+				fixedSize = yes
+				format = center
+				orientation = upper_left
+				text_color_code = "H"
+			}
+
+			instantTextBoxType={
+				name = "production_amount"
+				font = "cg_16b"
+				position = { x = 0  y = 20 }
+				text = "10"
+				maxWidth = 125
+				maxHeight = 40
+				fixedSize = yes
+				format = center
+			}		
 		}
 
-		instantTextBoxType = {
-			name = "maintenance_header"
-			font = "cg_16b"
-			position = { x = 325 y = 370 }
-			maxWidth = 166
-			maxHeight = 30
-			fixedSize = yes
-			#alwaysTransparent = yes
-			text = "MAINTENANCE"
-			format = centre
-		}
-		gridBoxType = {
-			name = "maintenance"
-			position = { x = 350 y = 400 }
-			size = { width = 120 height = 30 }
-			slotSize = { width = 77 height = 20 }
-			max_slots_horizontal = 3
-			format = CENTERED_UP
+		containerWindowType = {
+			name = "upkeep_box"
+			size = { width = 125 height = 60 }
+			position = { x = 410 y = 370 }	
+
+			background = {
+				name = "background"
+				spriteType = "GFX_dark_area_cut"
+			}
+
+			instantTextBoxType = {
+				name = "upkeep_header"
+				font = "cg_16b"
+				text = "MAINTENANCE"
+				position = { x = 0 y = 3 }
+				maxWidth = 125
+				maxHeight = 20
+				fixedSize = yes
+				format = center
+				orientation = upper_left
+				text_color_code = "H"
+			}
+
+			instantTextBoxType={
+				name = "upkeep_amount"
+				font = "cg_16b"
+				position = { x = 0  y = 20 }
+				text = "10"
+				maxWidth = 125
+				maxHeight = 30
+				fixedSize = yes
+				format = center
+			}		
 		}
 		
 		containerWindowType = {
 			name = "possible_upgrades_content"
-			position = { x = 0 y = 345 }
+			position = { x = 0 y = 347 }
 			size = { width = 100% height = 40% }
 			
 			instantTextBoxType = {
@@ -214,8 +243,8 @@ guiTypes = {
 			}
 			smoothListboxType = {
 				name = "upgrades"
-				position = { x = 120 y = 30 }
-				size = { x = 475 y = 100 }
+				position = { x = 150 y = 30 }
+				size = { x = 260 y = 100 }
 				borderSize = { x = 0 y = 0 }
 				orientation = "UPPER_LEFT"
 				spacing = 1
@@ -229,16 +258,17 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "upgrade_remaining"
 				font = "cg_16b"
-				position = { x = 110 y = 51 }
-				maxWidth = 315
+				position = { x = 160 y = 51 }
+				maxWidth = 250
 				maxHeight = 20
+				fixedSize = yes
 				format = center
 				text = "(clock) X days remaining."
 			}
 			iconType = {
 				name = "upgrade_progress"
-				spriteType = "GFX_infra_progressbar"
-				position = { x = 63 y = 70 }
+				spriteType = "GFX_queue_progressbar_229"
+				position = { x = 166 y = 70 }
 			}			
 		}		
 	}
@@ -249,50 +279,32 @@ guiTypes = {
 		
 		background = {
 			name = "bg"
-			spriteType = "GFX_button_animated_265_80"
+			spriteType = "GFX_standard_button_240_34_button"
 			clicksound = "megastructure_upgraded"
 		}
 		
 		instantTextBoxType = {
 			name = "title"
-			font = "malgun_goth_24"
-			position = { x = 0 y = 13 }
-			maxWidth = 316
+			font = "cg_16b"
+			position = { x = 15 y = 14 }
+			maxWidth = 232
 			maxHeight = 20
 			format = centre
 			fixedSize = yes
-			alwaysTransparent = yes
+			alwaysTransparent = no
+			text_color_code = "H"
 			text = "ring_world_2_intermediate"
 		}
 		instantTextBoxType = {
 			name = "cost"
 			font = "cg_16b"
-			position = { x = 5 y = 42 }
-			maxWidth = 290
+			position = { x = 15 y = 30 }
+			maxWidth = 232
 			maxHeight = 20
 			format = center
 			fixedSize = yes
-			alwaysTransparent = yes
+			alwaysTransparent = no
 			text = "DBG_MEGA_STRUCTURE_GUI_TEXT"
-		}
-	}
-	containerWindowType = {
-		name = "megastructure_production_entry"
-		background = {
-			name = "planet_view_module_spaceport_orbital_entry_background"
-			spriteType = "GFX_interface_list_light"
-		}
-		size = { width = 75 height = 30 }
-		instantTextBoxType = {
-			name = "text"
-			font = "cg_16b"
-			position = { x = 0 y = 5 }
-			maxWidth = 75
-			maxHeight = 30
-			format = center
-			fixedSize = yes
-			alwaysTransparent = yes
-			text = ""
 		}
 	}
 }

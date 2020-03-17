@@ -2836,6 +2836,7 @@ ship_event = {
 					days = -1
 				}
 				add_deposit = d_engineering_3
+				add_deposit = d_engineering_3
 			}
 		}
 	}

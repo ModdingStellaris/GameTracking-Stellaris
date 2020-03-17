@@ -140,7 +140,7 @@ building_research_lab_2 = {
 			exotic_gases = 50
 		}
 		upkeep = {
-			energy = 4
+			energy = 5
 			exotic_gases = 1
 		}
 	}
@@ -198,7 +198,7 @@ building_research_lab_3 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_researcher_add = 10
+			job_researcher_add = 8
 		}
 	}
 	
@@ -208,7 +208,7 @@ building_research_lab_3 = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 10
+			job_brain_drone_add = 8
 		}
 	}
 	
@@ -218,7 +218,7 @@ building_research_lab_3 = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 10
+			job_calculator_add = 8
 		}
 	}
 
@@ -229,7 +229,7 @@ building_research_lab_3 = {
 			exotic_gases = 100
 		}
 		upkeep = {
-			energy = 4
+			energy = 6
 			exotic_gases = 2
 		}
 	}

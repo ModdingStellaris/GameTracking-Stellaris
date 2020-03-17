@@ -48,7 +48,7 @@ district_hab_housing = {
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 4
+			factor = 12
 			free_housing < 0
 		}
 	}
@@ -100,14 +100,53 @@ district_hab_energy = {
 	
 	ai_weight = {
 		weight = 1
+		modifier = 
+		{
+			factor = 3
+			owner = { 
+				has_monthly_income = {
+					resource = energy
+					value < 8
+				}
+			}
+		}
+
+		modifier = {
+			factor = 2
+			free_housing < 0
+		}
+
+		modifier = {
+			factor = 3
+			any_owned_pop = { 
+				OR = { 
+					is_unemployed = yes 
+					has_job = servant 
+				}
+			}
+		}
+
+		# No one to work it anyway
+		modifier = {
+			factor = 0
+			free_housing > 0
+			NOT = {
+				any_owned_pop = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+			}
+		}
 	}
 
-	#ai_resource_production = {
-	#	energy = 1
-	#	trigger = {
-	#		always = yes
-	#	}
-	#}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 district_hab_cultural = {
@@ -150,15 +189,11 @@ district_hab_cultural = {
 	ai_weight = {
 		weight = 1
 
-		# Boost if low on amenities
-		#modifier = 
-		#{
-		#	factor = 2
-		#	has_monthly_income = {
-		#		resource = 
-		#		value < 0
-		#	}
-		#}
+		modifier = 
+		{
+			factor = 3
+			free_amenities < 2
+		}
 	}
 
 	ai_resource_production = {
@@ -246,7 +281,7 @@ district_hab_science = {
 	}	
 	
 	ai_weight = {
-		weight = 1
+		weight = 2
 	}
 
 	#ai_resource_production = {
@@ -292,15 +327,11 @@ district_hab_commercial = {
 	ai_weight = {
 		weight = 1
 
-		# Boost if low on amenities
-		#modifier = 
-		#{
-		#	factor = 2
-		#	has_monthly_income = {
-		#		resource = 
-		#		value < 0
-		#	}
-		#}
+		modifier = 
+		{
+			factor = 5
+			free_amenities < 2
+		}
 	}
 
 	ai_resource_production = {

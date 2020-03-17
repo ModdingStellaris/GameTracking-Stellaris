@@ -118,6 +118,7 @@ xenoist = {
 		desc = "XENOIST_NO_SLAVES_DESC"
 
 		unfulfilled_effect = -25
+		fulfilled_effect = 0.001
 		
 		potential = {
 			exists = owner
@@ -147,6 +148,7 @@ xenoist = {
 		desc = "XENOIST_NO_PURGE_DESC"
 
 		unfulfilled_effect = -25
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -168,6 +170,7 @@ xenoist = {
 		desc = "XENOIST_MULTICULTURALISM_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -222,6 +225,7 @@ xenoist = {
 		desc = "XENOIST_ENCLAVE_BORDERS_DESC"
 
 		fulfilled_effect = 5
+		unfulfilled_effect = -0.001
 		
 		potential = {
 			exists = owner
@@ -251,6 +255,7 @@ xenoist = {
 		desc = "XENOIST_RECENT_UPLIFT_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -272,6 +277,7 @@ xenoist = {
 		desc = "XENOIST_RECENT_ENLIGHTENMENT_DESC"
 
 		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -297,6 +303,7 @@ xenoist = {
 		desc = "XENOIST_PRE_SAPIENT_SURVIVAL_DESC"
 
 		unfulfilled_effect = -10
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -321,6 +328,7 @@ xenoist = {
 		desc = "XENOIST_NO_PRIMITIVE_INVASION_DESC"
 
 		unfulfilled_effect = -15
+		fulfilled_effect = 0.001
 
 		potential = {
 			exists = owner
@@ -340,6 +348,7 @@ xenoist = {
 		desc = "XENOIST_FEDERATED_DESC"
 
 		fulfilled_effect = 20
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner
@@ -361,6 +370,7 @@ xenoist = {
 		desc = "XENOIST_RECENT_COMMS_DESC"
 
 		fulfilled_effect = 5
+		unfulfilled_effect = -0.001
 
 		potential = {
 			exists = owner

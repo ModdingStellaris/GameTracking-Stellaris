@@ -4180,6 +4180,18 @@ distantstars_init_00 = {
 			factor = 0
 			has_star_flag = empire_cluster
 		}
+		modifier = {
+			factor = 0										# we don't want gateways too close to each other
+			any_neighbor_system = {
+				has_megastructure = lgate_base
+			}
+		}
+		modifier = {
+			factor = 0										# we don't want gateways too close to each other
+			any_neighbor_system = {
+				has_megastructure = gateway_ruined
+			}
+		}
 	}
 
 	max_instances = 9
@@ -4238,6 +4250,18 @@ distantstars_init_06 = {
 		modifier = {
 			factor = 0
 			has_star_flag = empire_cluster
+		}
+		modifier = {
+			factor = 0										# we don't want gateways too close to each other
+			any_neighbor_system = {
+				has_megastructure = lgate_base
+			}
+		}
+		modifier = {
+			factor = 0										# we don't want gateways too close to each other
+			any_neighbor_system = {
+				has_megastructure = gateway_ruined
+			}
 		}
 	}
 

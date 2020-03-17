@@ -14,22 +14,45 @@ consumer_goods_expenditure_buffer = { # Buffer, will not be spent
 	}
 	
 	fraction = {
-		weight = 0.5
+		weight = 0.4
 	}	
 }
 
-consumer_goods_expenditure_colonies = {
-	resource = consumer_goods
+#consumer_goods_expenditure_colonies = {
+#	resource = consumer_goods
+#	type = expenditure
+#	category = colonies
+	
+#	potential = {
+#		always = yes
+#	}
+	
+#	fraction = {
+#		weight = 0.3
+#	}	
+#}
+
+consumer_goods_expenditure_colonies_expand = {
+	resource = consumer_goods 
 	type = expenditure
 	category = colonies
 	
 	potential = {
-		always = yes
+		ai_colonize_plans > 0
+		has_resource = { type = food amount > 400 }
+		has_monthly_income = {
+			resource = food
+			value > 0
+		}
 	}
 	
 	fraction = {
-		weight = 0.3
-	}	
+		weight = 1.2
+	}
+
+	static_max = {
+		base = 250
+	}
 }
 
 consumer_goods_expenditure_decisions  = {

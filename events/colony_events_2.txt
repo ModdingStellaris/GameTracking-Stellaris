@@ -520,6 +520,7 @@ planet_event = {
 			is_planet_class = pc_arid
 			is_planet_class = pc_desert
 			is_planet_class = pc_savannah
+			is_planet_class = pc_city
 		}
 		has_ground_combat = no
 		is_occupied_flag = no

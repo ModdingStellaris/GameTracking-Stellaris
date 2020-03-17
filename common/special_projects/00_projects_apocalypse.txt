@@ -6,7 +6,6 @@ special_project = {
 	tech_department = engineering_technology
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_planet_beam
-	#picture = GFX_evt_colossus # TEMP TODO [MO]
 	location = no
 	
 	event_scope = planet_event
