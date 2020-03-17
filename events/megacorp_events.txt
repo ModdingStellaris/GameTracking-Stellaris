@@ -85,7 +85,7 @@ country_event = {
 		is_country_type = default
 		has_ascension_perk = ap_consecrated_worlds
 		from = {
-			any_planet = {
+			any_system_planet = {
 				has_planet_flag = consecrated@root
 			}
 		}

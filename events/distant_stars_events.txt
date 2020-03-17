@@ -6396,7 +6396,7 @@ country_event = { #Spawn Ratlings #Root = Global Event Country
 		}
 		any_system = {
 			has_star_flag = ratling_system
-			any_planet = {
+			any_system_planet = {
 				has_planet_flag = ratling_planet
 				NOT = { is_planet_class = "pc_broken" }
 			}
@@ -6561,7 +6561,7 @@ country_event = { #Alert that the pre-space Ketlings have emerged
 					system = prev
 				}
 			}
-			any_planet = {
+			any_system_planet = {
 				exists = owner
 				owner = {
 					is_same_value = event_target:ratling_pre_space_country
@@ -6598,7 +6598,7 @@ country_event = { #Alert that the pre-space Ketlings have emerged
 							system = prev
 						}
 					}
-					any_planet = {
+					any_system_planet = {
 						has_planet_flag = ratling_planet
 						any_owned_pop = {
 							is_same_species = event_target:ratling_species
@@ -6908,7 +6908,7 @@ country_event = { #Switch owner on ground invasion successful to prevent endless
 		trigger = {
 			any_system = {
 				has_star_flag = ratling_system
-				any_planet = {
+				any_system_planet = {
 					has_planet_flag = ratling_planet
 					NOT = { is_same_value = fromfrom }
 					any_pop = { is_same_species = event_target:ratling_species }
@@ -6922,7 +6922,7 @@ country_event = { #Switch owner on ground invasion successful to prevent endless
 			NOT = {
 				any_system = {
 					has_star_flag = ratling_system
-					any_planet = {
+					any_system_planet = {
 						has_planet_flag = ratling_planet
 						NOT = { is_same_value = fromfrom }
 						any_pop = { is_same_species = event_target:ratling_species }
@@ -6937,7 +6937,7 @@ country_event = { #Switch owner on ground invasion successful to prevent endless
 			has_civic = civic_machine_assimilator
 			any_system = {
 				has_star_flag = ratling_system
-				any_planet = {
+				any_system_planet = {
 					has_planet_flag = ratling_planet
 					NOT = { is_same_value = fromfrom }
 					any_pop = { is_same_species = event_target:ratling_species }
@@ -6952,7 +6952,7 @@ country_event = { #Switch owner on ground invasion successful to prevent endless
 			NOT = {
 				any_system = {
 					has_star_flag = ratling_system
-					any_planet = {
+					any_system_planet = {
 						has_planet_flag = ratling_planet
 						NOT = { is_same_value = fromfrom }
 						any_pop = { is_same_species = event_target:ratling_species }
@@ -7036,7 +7036,7 @@ country_event = { #Bounce to make sure we do not spawn Ratlings during ongoing p
 							is_constructing = starbase
 						}
 			 		}
-			 		any_planet = {
+			 		any_system_planet = {
 						has_planet_flag = ratling_planet
 						exists = owner
 						owner = {
@@ -7056,7 +7056,7 @@ country_event = { #Bounce to make sure we do not spawn Ratlings during ongoing p
 				exists = event_target:ratling_pre_space_country
 				any_system = {
 			 		has_star_flag = ratling_system
-			 		any_planet = {
+			 		any_system_planet = {
 						has_planet_flag = ratling_planet
 						exists = owner
 						owner = {
@@ -7091,7 +7091,7 @@ country_event = { #Create Full Ratling Empire #Root = Global Event Country
 					is_constructing = starbase
 				}
 			}
-			any_planet = {
+			any_system_planet = {
 				has_planet_flag = ratling_planet
 				exists = owner
 				owner = {
@@ -9691,7 +9691,7 @@ country_event = { #Atomic Clock follow-up: Selection
 				modifier = {
 					add = 1
 					FROMFROM.solar_system = {
-						any_planet = {
+						any_system_planet = {
 							habitable_planet = no
 							has_anomaly = no
 							planet_size > 8
@@ -10129,7 +10129,7 @@ fleet_event = {
 			NOT = { has_planet_flag = triggered_vol_transmission }
 		}
 		solar_system = {
-			any_planet = {
+			any_system_planet = {
 				is_same_value = event_target:utopian_planet
 			}
 		}
@@ -10345,7 +10345,7 @@ ship_event = {
 		}
 		FROM = {
 			solar_system = {
-				any_planet = {
+				any_system_planet = {
 					is_same_value = event_target:utopian_planet
 				}
 			}
@@ -11426,6 +11426,9 @@ ship_event = {
 		hidden_effect = {
 			owner = { pop_lcluster_event = yes }
 		}
+		owner = {
+			add_resource = { influence = 200 }
+		}
 		custom_tooltip = distar.1040.c.tooltip
 	}
 }
@@ -12134,7 +12137,7 @@ country_event = {
 		random_owned_planet = {
 			add_deposit = d_alien_pets_deposit
 			add_deposit = d_alien_pets_deposit
-			set_planet_flag = azizian_pet_planet
+			hidden_effect = { set_planet_flag = azizian_pet_planet }
 		}
 	}
 # Adds Azizian army
@@ -12974,7 +12977,7 @@ ship_event = {
 		exists = event_target:time_loop_world
 		exists = solar_system
 		solar_system = {
-			any_planet = {
+			any_system_planet = {
 				is_same_value = event_target:time_loop_world
 			}
 		}
@@ -13720,7 +13723,7 @@ country_event = {
 									} 
 								}
 							}
-							any_planet = {
+							any_system_planet = {
 								is_colony = yes
 								NOT = { has_planet_flag = has_been_scanned }
 							}
@@ -13769,7 +13772,7 @@ country_event = {
 									root = { is_hostile = prev }
 								}
 							}
-							any_planet = {
+							any_system_planet = {
 								is_colony = yes
 								NOT = { has_planet_flag = has_been_scanned }
 							}
@@ -14025,7 +14028,7 @@ ship_event = {
 						is_at_war = no
 						NOT = { is_hostile = root.owner }
 					}
-					any_planet = {
+					any_system_planet = {
 						is_colony = yes
 						NOT = { has_planet_flag = has_been_scanned }
 					}
@@ -14170,7 +14173,7 @@ country_event = {
 						is_at_war = no
 						NOT = { is_hostile = root.owner }
 					}
-					any_planet = {
+					any_system_planet = {
 						is_colony = yes
 						NOT = { has_planet_flag = has_been_scanned }
 					}
@@ -14556,7 +14559,7 @@ country_event = {
 	}
 	option = {
 		name = distar.5064.f
-		response_text = anomaly.5064.f.response
+		response_text = distar.5064.f.response
 	}
 }
 # Gatekeeper - triggers Enigmatic Dreams
@@ -14903,15 +14906,7 @@ country_event = {
 					species = this
 					add_trait = trait_enigmatic_intelligence
 				}
-			}
-			if = {
-				limit = {
-					has_trait = trait_intelligent
-				}
-				modify_species = {
-					species = this
-					remove_trait = trait_intelligent
-				}
+				root = { set_country_flag = applied_enigmatic_intelligence }
 			}
 			if = {
 				limit = {
@@ -14920,24 +14915,6 @@ country_event = {
 				modify_species = {
 					species = this
 					remove_trait = trait_slow_learners
-				}
-			}
-			if = {
-				limit = {
-					has_trait = trait_talented
-				}
-				modify_species = {
-					species = this
-					remove_trait = trait_talented
-				}
-			}
-			if = {
-				limit = {
-					has_trait = trait_quick_learners
-				}
-				modify_species = {
-					species = this
-					remove_trait = trait_quick_learners
 				}
 			}
 		}
@@ -14958,6 +14935,12 @@ country_event = {
 
 	option = {
 		name = distar.5063.a
+		if = {
+			limit = {
+				has_country_flag = applied_enigmatic_intelligence
+			}
+			custom_tooltip = applied_enigmatic_intelligence.tooltip
+		}
 	}
 }
 
@@ -14989,6 +14972,7 @@ country_event = {
 					species = this
 					add_trait = trait_enigmatic_intelligence
 				}
+				root = { set_country_flag = applied_enigmatic_intelligence }
 			}
 			if = {
 				limit = {
@@ -14998,15 +14982,7 @@ country_event = {
 					modifier = enigmatic_sadness
 					days = 3600
 				}
-			}
-			if = {
-				limit = {
-					has_trait = trait_intelligent
-				}
-				modify_species = {
-					species = this
-					remove_trait = trait_intelligent
-				}
+				root = { set_country_flag =  applied_enigmatic_sadness }
 			}
 			if = {
 				limit = {
@@ -15017,24 +14993,6 @@ country_event = {
 					remove_trait = trait_slow_learners
 				}
 			}
-			if = {
-				limit = {
-					has_trait = trait_talented
-				}
-				modify_species = {
-					species = this
-					remove_trait = trait_talented
-				}
-			}
-			if = {
-				limit = {
-					has_trait = trait_quick_learners
-				}
-				modify_species = {
-					species = this
-					remove_trait = trait_quick_learners
-				}
-			}
 		}
 		every_owned_pop = {
 			limit = {
@@ -15042,7 +15000,6 @@ country_event = {
 			}
 			remove_modifier = enigmatic_fatigue
 		}
-
 		every_owned_pop = {
 			limit = {
 				has_modifier = enigmatic_slumber
@@ -15053,6 +15010,14 @@ country_event = {
 
 	option = {
 		name = distar.5068.a
+		if = {
+			limit = { has_country_flag = applied_enigmatic_intelligence }
+			custom_tooltip = applied_enigmatic_intelligence.tooltip
+		}
+		if = {
+			limit = { has_country_flag = applied_enigmatic_sadness }
+			custom_tooltip = applied_enigmatic_sadness.tooltip
+		}
 	}
 }
 
@@ -15089,6 +15054,7 @@ country_event = {
 					species = this
 					add_trait = trait_enigmatic_intelligence_poor
 				}
+				root = { set_country_flag = applied_enigmatic_intelligence_poor }
 			}
 			if = {
 				limit = {
@@ -15100,6 +15066,7 @@ country_event = {
 					modifier = enigmatic_madness
 					days = 3600
 				}
+				root = { set_country_flag = applied_enigmatic_madness }
 			}
 
 			if = {
@@ -15111,6 +15078,7 @@ country_event = {
 					add_trait = trait_enigmatic_intelligence_failed
 				}
 				remove_modifier = enigmatic_slumber
+				root = { set_country_flag = applied_enigmatic_intelligence_failed }
 			}
 
 			if = {
@@ -15139,6 +15107,18 @@ country_event = {
 
 	option = {
 		name = distar.5074.a
+		if = {
+			limit = { has_country_flag = applied_enigmatic_intelligence_poor }
+			custom_tooltip = applied_enigmatic_intelligence_poor.tooltip
+		}
+		if = {
+			limit = { has_country_flag = applied_enigmatic_madness }
+			custom_tooltip = applied_enigmatic_madness.tooltip
+		}
+		if = {
+			limit = { has_country_flag = trait_enigmatic_intelligence_failed }
+			custom_tooltip = trait_enigmatic_intelligence_failed.tooltip
+		}
 	}
 }
 
@@ -15278,7 +15258,7 @@ ship_event = {
 					min_steps = 2
 					limit = {
 						has_access_fleet = root.owner
-						any_planet = {
+						any_system_planet = {
 							is_asteroid = yes
 						}
 					}
@@ -16026,7 +16006,7 @@ country_event = { # Planetfall on planet X after being shoot into deep space. Re
 
 	trigger = {
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				is_colonizable = yes
 				has_owner = no
 				is_colony = no
@@ -16184,7 +16164,7 @@ country_event = { # Helpful relocation was a success
 
 	trigger = {
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				is_colonizable = yes
 				has_owner = no
 				is_colony = no
@@ -17126,7 +17106,7 @@ country_event = { # Alien Box opened
 				}
 				modify_species = {
 					species = this
-					remove_trait = trait_enduring
+					#remove_trait = trait_enduring
 					add_trait = trait_limited_regeneration
 				}
 				set_country_flag = enduring_removed_venerable_added
@@ -19472,7 +19452,7 @@ country_event = {
 					limit = {
 						NOR = {
 							has_star_flag = dragon_point
-							any_planet = { is_colony = yes }
+							any_system_planet = { is_colony = yes }
 						}
 					}
 					set_star_flag = dragon_point

@@ -5175,7 +5175,7 @@ country_event = {
 		}
 		random_system = {
 			limit = {
-				any_planet = {
+				any_system_planet = {
 					has_planet_flag = guardians_artists_planet
 				}
 				root = {
@@ -5253,7 +5253,7 @@ country_event = {
 		set_country_flag = enclave_artist_patron_event_1
 		random_system = {
 			limit = {
-				any_planet = {
+				any_system_planet = {
 					has_planet_flag = guardians_artists_planet
 				}
 				root = {
@@ -5332,7 +5332,7 @@ country_event = {
 		set_country_flag = enclave_artist_patron_event_2
 		random_system = {
 			limit = {
-				any_planet = {
+				any_system_planet = {
 					has_planet_flag = guardians_artists_planet
 				}
 				root = {
@@ -5406,7 +5406,7 @@ country_event = {
 		set_country_flag = enclave_artist_patron_event_3
 		random_system = {
 			limit = {
-				any_planet = {
+				any_system_planet = {
 					has_planet_flag = guardians_artists_planet
 				}
 				root = {
@@ -10558,7 +10558,7 @@ country_event = {
 							id = leviathans.1009.trigger.2
 							exists = space_owner
 							space_owner = { has_country_flag = stellarite_in_pursuit }
-							any_planet = {
+							any_system_planet = {
 								OR = {
 									has_mining_station = yes
 									has_research_station = yes
@@ -10658,7 +10658,7 @@ fleet_event = {
 							id = leviathans.1010.trigger.2
 							exists = space_owner
 							space_owner = { has_country_flag = stellarite_in_pursuit }
-							any_planet = {
+							any_system_planet = {
 								OR = {
 									has_mining_station = yes
 									has_research_station = yes
@@ -10744,7 +10744,7 @@ fleet_event = {
 						id = leviathans.1011.trigger.2
 						exists = space_owner
 						space_owner = { has_country_flag = stellarite_in_pursuit }
-						any_planet = {
+						any_system_planet = {
 							OR = {
 								has_mining_station = yes
 								has_research_station = yes
@@ -10840,7 +10840,7 @@ country_event = {
 							id = leviathans.1012.trigger.2
 							exists = space_owner
 							space_owner = { has_country_flag = stellarite_in_pursuit }
-							any_planet = {
+							any_system_planet = {
 								OR = {
 									has_mining_station = yes
 									has_research_station = yes
@@ -11137,8 +11137,10 @@ country_event = {
 				has_ethic = ethic_fanatic_xenophobe
 			} 
 		}
-		custom_tooltip = leviathans.1016.b.tooltip
 		add_resource = { influence = 500 }
+		capital_scope = {
+			add_deposit = d_stellarite_trophy
+		}
 		hidden_effect = {
 			set_country_flag = stellarite_trophy_allowed
 			random_ambient_object = {
@@ -12610,7 +12612,7 @@ event = {
 
 	trigger = {
 		any_system = {
-			any_planet = { has_planet_flag = guardians_wraith_pulsar }
+			any_system_planet = { has_planet_flag = guardians_wraith_pulsar }
 		}
 	}
 
@@ -12673,7 +12675,7 @@ event = {
 
 	trigger = {
 		any_system = {
-			any_planet = { has_modifier = germinating_wraith }
+			any_system_planet = { has_modifier = germinating_wraith }
 		}
 	}
 

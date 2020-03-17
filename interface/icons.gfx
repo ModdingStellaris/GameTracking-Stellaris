@@ -1706,6 +1706,11 @@ spriteTypes = {
 		name = "GFX_ship_part_orbital_trash_dispersal"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_orbital_trash_dispersal.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ship_part_null_void_weapon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_null_void_weapon.dds"
+	}
 
 	## Spaceport Modules ##
 

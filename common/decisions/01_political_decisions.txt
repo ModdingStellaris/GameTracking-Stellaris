@@ -38,7 +38,7 @@ decision_end_martial_law = {
 	}
 	
 	potential = {
-		owner = { is_regular_empire = yes }
+		#owner = { is_regular_empire = yes } #if you conquer the planet as a different type you need to be able to disable it
 		has_modifier = martial_law
 	}
 	
@@ -91,7 +91,7 @@ decision_end_martial_law_machine = {
 	}
 	
 	potential = {
-		owner = { is_machine_empire = yes }
+		#owner = { is_machine_empire = yes }
 		has_modifier = compliance_protocols
 	}
 	
@@ -141,7 +141,7 @@ decision_end_martial_law_hive = {
 	}
 	
 	potential = {
-		owner = { is_hive_empire = yes }
+		#owner = { is_hive_empire = yes }
 		has_modifier = hunter_killer_drones
 	}
 	
@@ -280,6 +280,77 @@ decision_end_population_control_gestalt = {
 		}
 	}
 }
+
+# Stop Robot/Droid Assembly
+decision_enact_robot_assembly_control = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+		owner = {
+			is_regular_empire = yes
+			NOT = { has_policy_flag = robots_outlawed }
+			OR = {
+				AND = {
+					has_policy_flag = ai_full_rights
+					has_policy_flag = population_controls_allowed
+				}
+				NOT = {
+					has_policy_flag = ai_full_rights
+				}
+			}
+		}
+		NOT = { has_modifier = planet_robot_assembly_control }
+	}
+	
+	effect = {
+		add_modifier = { modifier = "planet_robot_assembly_control" days = -1 }
+	}
+
+	ai_weight = {
+		weight = 5
+
+		modifier = {
+			factor = 0
+			free_housing > 0
+		}
+	}
+}
+
+decision_end_robot_assembly_control = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+		has_modifier = planet_robot_assembly_control
+	}
+
+	effect = {
+		remove_modifier = "planet_robot_assembly_control"
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 5
+			free_housing < -1
+		}
+	}
+}
+
 
 # Expel Excess Population
 decision_expel_population = {

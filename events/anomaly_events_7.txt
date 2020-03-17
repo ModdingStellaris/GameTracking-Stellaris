@@ -232,7 +232,7 @@ country_event = {
 					has_star_flag = guardian
 					has_star_flag = enclave
 				}
-				any_planet = {
+				any_system_planet = {
 					habitable_planet = yes 
 					has_anomaly = no
 					is_colony = no
@@ -249,7 +249,7 @@ country_event = {
 					has_star_flag = guardian
 					has_star_flag = enclave
 				}
-				any_planet = {
+				any_system_planet = {
 					habitable_planet = yes 
 					has_anomaly = no
 					is_colony = no
@@ -289,7 +289,7 @@ country_event = {
 						has_star_flag = enclave
 						has_star_flag = primitive_system
 					}
-					any_planet = {
+					any_system_planet = {
 						habitable_planet = yes 
 						has_anomaly = no
 						is_colony = no
@@ -310,7 +310,7 @@ country_event = {
 						has_star_flag = enclave
 						has_star_flag = primitive_system
 					}
-					any_planet = {
+					any_system_planet = {
 						habitable_planet = yes
 						has_anomaly = no
 						is_colony = no
@@ -754,7 +754,7 @@ country_event = {
 					has_star_flag = enclave
 					has_star_flag = primitive_system
 				}
-				any_planet = {
+				any_system_planet = {
 					habitable_planet = yes
 					has_anomaly = no
 					#is_colony = no
@@ -778,7 +778,7 @@ country_event = {
 					has_star_flag = enclave
 					has_star_flag = primitive_system
 				}
-				any_planet = {
+				any_system_planet = {
 					habitable_planet = yes 
 					has_anomaly = no
 					#is_colony = no
@@ -801,7 +801,7 @@ country_event = {
 						has_star_flag = enclave
 						has_star_flag = primitive_system
 					}
-					any_planet = {
+					any_system_planet = {
 						habitable_planet = yes
 						has_anomaly = no
 						is_colony = no

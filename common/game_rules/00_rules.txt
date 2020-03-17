@@ -980,10 +980,17 @@ can_enter_system_by_jump = {
 
 # This = pop
 can_resettle_pop = {
-	OR = {
-		owner = { has_policy_flag = resettlement_allowed }
-		owner = { is_gestalt = yes }
+	IF = { #Done as an IF/ELSE so the tooltip isn't hideous and unreadable
+		limit = { is_shackled_robot = yes }
 		is_shackled_robot = yes
+	}
+	ELSE = {
+		owner = {
+			OR = {
+				has_policy_flag = resettlement_allowed
+				is_gestalt = yes
+			}
+		}
 	}
 }
 
@@ -1035,8 +1042,8 @@ can_pops_grow_on_planet = {
 # This = planet
 can_pops_assemble_on_planet = {
 	NOR = { 
-		has_modifier = planet_population_control
-		has_modifier = planet_population_control_gestalt  
+		has_modifier = planet_robot_assembly_control
+		has_modifier = planet_population_control_gestalt
 	}
 }
 

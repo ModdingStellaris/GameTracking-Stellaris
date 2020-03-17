@@ -2,7 +2,7 @@
 # resources, resource and amount
 # potential trigger (planet scope)
 # blocked_modifier - applied to planet
-# constant_modifier - applied to planet always
+# planet_modifier - applied to planet always
 # station = station class in orbit to gather
 
 @high = 16
@@ -1155,8 +1155,28 @@ d_underground_contact_zone = {
 	planet_modifier = {
 		district_generator_max = 2
 		planet_max_districts_add = 2
-		job_underground_trade_worker_add = 1
-		job_underground_trade_worker_per_pop = 0.05 # 1 per 20
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_underground_trade_worker_add = 1
+			job_underground_trade_worker_per_pop = 0.05 # 1 per 20
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_underground_contact_drone_add = 1
+			job_underground_contact_drone_per_pop = 0.05 # 1 per 20
+		}
 	}
 	
 	drop_weight = {
@@ -1170,9 +1190,21 @@ d_portal_research_zone = {
 	
 	icon = d_crystalline_caverns
 	
-	planet_modifier = {
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
 		job_dimensional_portal_researcher_add = 1
 		job_dimensional_portal_researcher_per_pop = 0.025 # 1 per 40
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		job_dimensional_portal_researcher_gestalt_add = 1
+		job_dimensional_portal_researcher_gestalt_per_pop = 0.025 # 1 per 40
 	}
 	
 	drop_weight = {
@@ -1180,13 +1212,25 @@ d_portal_research_zone = {
 	}
 }
 
-d_portal_research_zone_gestalt = {
+d_portal_research_zone_gestalt = { #this is a bit redundant now that triggered jobs work
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 	
 	icon = d_crystalline_caverns
 	
-	planet_modifier = {
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		job_dimensional_portal_researcher_add = 1
+		job_dimensional_portal_researcher_per_pop = 0.025 # 1 per 40
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
 		job_dimensional_portal_researcher_gestalt_add = 1
 		job_dimensional_portal_researcher_gestalt_per_pop = 0.025 # 1 per 40
 	}

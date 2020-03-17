@@ -77,6 +77,12 @@ high_priest = {
 		category = planet_priests
 		produces = {
 			unity = 5
+		}
+		produces = {
+			trigger = {
+				owner = { has_valid_civic = civic_exalted_priesthood }
+			}
+			unity = 1
 		}				
 	}
 	

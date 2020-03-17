@@ -1128,7 +1128,7 @@ fleet_event = {
 		if = {
 			limit = {
 				any_system = {
-					any_planet = { has_planet_flag = fleet1_capital_destination }
+					any_system_planet = { has_planet_flag = fleet1_capital_destination }
 				}
 			}
 			every_planet = {
@@ -1288,7 +1288,7 @@ fleet_event = {
 		solar_system = {
 			closest_system = {
 				limit = {
-					any_planet = { has_planet_flag = fleet1_capital_destination }
+					any_system_planet = { has_planet_flag = fleet1_capital_destination }
 				}
 				random_system_planet = {
 					limit = { has_planet_flag = fleet1_capital_destination }
@@ -1732,7 +1732,7 @@ fleet_event = {
 		if = {
 			limit = {
 				any_system = {
-					any_planet = { has_planet_flag = fleet2_capital_destination }
+					any_system_planet = { has_planet_flag = fleet2_capital_destination }
 				}
 			}
 			every_planet = {
@@ -1892,7 +1892,7 @@ fleet_event = {
 		solar_system = {
 			closest_system = {
 				limit = {
-					any_planet = { has_planet_flag = fleet2_capital_destination }
+					any_system_planet = { has_planet_flag = fleet2_capital_destination }
 				}
 				random_system_planet = {
 					limit = { has_planet_flag = fleet2_capital_destination }
@@ -2458,7 +2458,7 @@ fleet_event = {
 		if = {
 			limit = {
 				any_system = {
-					any_planet = { has_planet_flag = fleet3_capital_destination }
+					any_system_planet = { has_planet_flag = fleet3_capital_destination }
 				}
 			}
 			every_planet = {
@@ -2618,7 +2618,7 @@ fleet_event = {
 		solar_system = {
 			closest_system = {
 				limit = {
-					any_planet = { has_planet_flag = fleet3_capital_destination }
+					any_system_planet = { has_planet_flag = fleet3_capital_destination }
 				}
 				random_system_planet = {
 					limit = { has_planet_flag = fleet3_capital_destination }
@@ -3259,7 +3259,7 @@ country_event = {
 				limit = {
 					exists = space_owner
 					NOT = {
-						any_planet = {
+						any_system_planet = {
 							habitable_planet = yes
 						}
 					}
@@ -3449,7 +3449,7 @@ country_event = {
 						limit = {
 							exists = space_owner
 							NOT = {
-								any_planet = {
+								any_system_planet = {
 									habitable_planet = yes
 								}
 							}
@@ -3495,7 +3495,7 @@ country_event = {
 						limit = {
 							exists = space_owner
 							NOT = {
-								any_planet = {
+								any_system_planet = {
 									habitable_planet = yes
 								}
 							}
@@ -3740,7 +3740,7 @@ country_event = {
 		caravaneer_fleet_events_valid = yes
 		any_system_within_border = {
 			caravaneer_fleet_in_system = yes
-			any_planet = {
+			any_system_planet = {
 				is_colony = yes
 				count_pops = {
 					count > 5
@@ -4396,7 +4396,7 @@ country_event = {
 					}
 				}
 			}
-			any_planet = {
+			any_system_planet = {
 					is_colony = yes
 			}
 		}
@@ -4418,7 +4418,7 @@ country_event = {
 					}
 				}
 			}
-				any_planet = {
+				any_system_planet = {
 					is_colony = yes
 				}
 			}

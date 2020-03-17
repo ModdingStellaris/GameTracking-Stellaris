@@ -2120,7 +2120,7 @@ spawn_vultaum_anomaly = {
 	random_system_within_border = {
 		limit = {
 			has_star_flag = precursor_1
-			any_planet = { 
+			any_system_planet = { 
 				uninhabitable_regular_planet = yes
 				NOT = { has_planet_flag = precursor_world }
 				has_owner = no
@@ -2158,7 +2158,7 @@ spawn_yuht_anomaly = {
 	random_system_within_border = {
 		limit = {
 			has_star_flag = precursor_2
-			any_planet = { 
+			any_system_planet = { 
 				uninhabitable_regular_planet = yes
 				NOT = { has_planet_flag = precursor_world }
 				has_owner = no
@@ -2196,7 +2196,7 @@ spawn_league_anomaly = {
 	random_system_within_border = {
 		limit = {
 			has_star_flag = precursor_3
-			any_planet = { 
+			any_system_planet = { 
 				uninhabitable_regular_planet = yes
 				NOT = { has_planet_flag = precursor_world }
 				has_owner = no
@@ -2234,7 +2234,7 @@ spawn_irassian_anomaly = {
 	random_system_within_border = {
 		limit = {
 			has_star_flag = precursor_4
-			any_planet = { 
+			any_system_planet = { 
 				uninhabitable_regular_planet = yes
 				NOT = { has_planet_flag = precursor_world }
 				has_owner = no
@@ -2272,7 +2272,7 @@ spawn_cybrex_anomaly = {
 	random_system_within_border = {
 		limit = {
 			has_star_flag = precursor_5
-			any_planet = { 
+			any_system_planet = { 
 				uninhabitable_regular_planet = yes
 				NOT = { has_planet_flag = precursor_world }
 				has_owner = no

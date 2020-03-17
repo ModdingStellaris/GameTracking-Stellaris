@@ -2074,6 +2074,11 @@ tech_epigenetic_triggers = {
 	}
 	
 	potential = {
+		NOT = {
+			has_valid_civic = civic_fanatic_purifiers
+			#has_valid_civic = civic_machine_terminator # covered by not being machine
+			#has_valid_civic = civic_hive_devouring_swarm # can uplift to make delicious
+		}
 		OR = {
 			NOT = { has_authority = auth_machine_intelligence }
 			has_civic = civic_machine_assimilator

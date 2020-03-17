@@ -33,7 +33,7 @@ matter_decompressor_0 = {
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
-				any_planet = {
+				any_system_planet = {
 					is_surveyed = {
 						who = prev.from
 						status = no
@@ -44,7 +44,7 @@ matter_decompressor_0 = {
 		custom_tooltip = {
 			fail_text = "requires_no_habitable_planets"
 			NOT = {
-				any_planet = {
+				any_system_planet = {
 					colonizeable_planet = yes
 				}
 			}

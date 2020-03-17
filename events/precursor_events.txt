@@ -4837,7 +4837,7 @@ country_event = {
 				}
 				any_system_within_border = {
 					has_star_flag = precursor_1
-					any_planet = {
+					any_system_planet = {
 						NOT = { has_planet_flag = precursor_world }
 						uninhabitable_regular_planet = yes
 						has_owner = no
@@ -4859,7 +4859,7 @@ country_event = {
 				}
 				any_system_within_border = {
 					has_star_flag = precursor_2
-					any_planet = {
+					any_system_planet = {
 						uninhabitable_regular_planet = yes
 						NOT = { has_planet_flag = precursor_world }
 						has_owner = no
@@ -4881,7 +4881,7 @@ country_event = {
 				}
 				any_system_within_border = {
 					has_star_flag = precursor_3
-					any_planet = {
+					any_system_planet = {
 						uninhabitable_regular_planet = yes
 						NOT = { has_planet_flag = precursor_world }
 						has_owner = no
@@ -4903,7 +4903,7 @@ country_event = {
 				}
 				any_system_within_border = {
 					has_star_flag = precursor_4
-					any_planet = {
+					any_system_planet = {
 						uninhabitable_regular_planet = yes
 						NOT = { has_planet_flag = precursor_world }
 						has_owner = no
@@ -4925,7 +4925,7 @@ country_event = {
 				}
 				any_system_within_border = {
 					has_star_flag = precursor_5
-					any_planet = {
+					any_system_planet = {
 						uninhabitable_regular_planet = yes
 						NOT = { has_planet_flag = precursor_world }
 						has_owner = no

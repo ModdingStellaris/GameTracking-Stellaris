@@ -456,7 +456,7 @@ tech_mine_dark_matter = {
 			factor = 0
 			NOR = {
 				has_country_flag = dark_matter_found
-				any_system_within_border = { any_planet = { has_resource = { type = sr_dark_matter amount > 0 } } }
+				any_system_within_border = { any_system_planet = { has_resource = { type = sr_dark_matter amount > 0 } } }
 				any_relation = {
 					AND = {
 						is_country_type = default
@@ -496,7 +496,7 @@ tech_nanite_transmutation = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = { any_system_within_border = { any_planet = { has_resource = { type = nanites amount > 0 } } } }
+			NOT = { any_system_within_border = { any_system_planet = { has_resource = { type = nanites amount > 0 } } } }
 		}
 		modifier = {
 			factor = 1.25

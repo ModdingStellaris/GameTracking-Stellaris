@@ -2263,7 +2263,7 @@ country_event = {
 					
 					closest_system = {
 						limit = {
-							any_planet = {
+							any_system_planet = {
 								exists = owner
 								owner = { is_same_value = event_target:marauder_target }
 								num_pops > 0
@@ -4545,7 +4545,7 @@ country_event = {
 					
 					closest_system = {
 						limit = {
-							any_planet = {
+							any_system_planet = {
 								exists = owner
 								owner = { is_same_value = root }
 								num_pops > 0
@@ -6626,7 +6626,7 @@ event = {
 							
 							closest_system = {
 								limit = {
-									any_planet = {
+									any_system_planet = {
 										exists = owner
 										owner = { is_same_value = event_target:marauder_target }
 										num_pops > 0

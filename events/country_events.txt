@@ -1412,7 +1412,7 @@ country_event = {
 	trigger = {
 		has_country_flag = museum_of_exobiology
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				is_surveyed = {
 					who = ROOT
 					status = yes
@@ -1434,7 +1434,7 @@ country_event = {
 			}
 		}
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				is_surveyed = {
 					who = ROOT
 					status = yes
@@ -1456,7 +1456,7 @@ country_event = {
 			}
 		}
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				is_surveyed = {
 					who = ROOT
 					status = yes
@@ -1478,7 +1478,7 @@ country_event = {
 			}
 		}
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				is_surveyed = {
 					who = ROOT
 					status = yes
@@ -1500,7 +1500,7 @@ country_event = {
 			}
 		}
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				is_surveyed = {
 					who = ROOT
 					status = yes
@@ -1522,7 +1522,7 @@ country_event = {
 			}
 		}
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				is_surveyed = {
 					who = ROOT
 					status = yes
@@ -1544,7 +1544,7 @@ country_event = {
 			}
 		}
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				is_surveyed = {
 					who = ROOT
 					status = yes
@@ -2892,7 +2892,7 @@ country_event = {
 					limit = {
 						NOR = { 
 							has_star_flag = hostile_system
-							any_planet = { has_owner = yes }
+							any_system_planet = { has_owner = yes }
 							root = { intel_level = { level > low system = prev } }
 						}
 						is_surveyed = {
@@ -3107,7 +3107,7 @@ country_event = {
 						status = no
 					}
 					is_pirate_system = no
-					any_planet = {
+					any_system_planet = {
 						is_asteroid = no
 						is_star = no
 					}
@@ -3567,7 +3567,7 @@ country_event = {
 					has_star_flag = hyacinth_system_3
 				}
 				NOT = {
-					any_planet = {
+					any_system_planet = {
 						is_surveyed = {
 							who = from
 							status = no

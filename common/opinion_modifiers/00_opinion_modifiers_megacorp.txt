@@ -58,7 +58,10 @@ triggered_opinion_of_interstellar_assembly_4 = {
 	trigger = {			
 		FROM = {
 			any_owned_megastructure = {
-				is_megastructure_type = interstellar_assembly_4
+				OR = {
+					is_megastructure_type = interstellar_assembly_4
+					is_megastructure_type = interstellar_assembly_restored
+				}
 			}
 		}
 	}

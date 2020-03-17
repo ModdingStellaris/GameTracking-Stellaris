@@ -1255,7 +1255,7 @@ fallen_orbitals_1 = {
 	
 		if = {
 			limit = {
-				any_planet = {
+				any_system_planet = {
 					is_owned_by = root
 				}
 			}	
@@ -1343,7 +1343,7 @@ fallen_orbitals_2 = {
 
 		if = {
 			limit = {
-				any_planet = {
+				any_system_planet = {
 					is_owned_by = root
 				}
 			}	

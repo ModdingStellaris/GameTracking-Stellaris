@@ -363,6 +363,28 @@ living_metal_construction  = {
 	}	
 }
 
+nanite_actuators  = {
+	length = @EdictDuration
+	resources = {
+		category = rare_edicts
+		cost = {
+			nanites = 50
+		}
+	}	
+	
+	potential = {
+		has_resource = { type = nanites amount > 0 }
+	}
+
+	modifier = {
+		all_technology_research_speed = 0.10
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}
+
 fuel_gases = {
 	length = @EdictDuration
 	resources = {

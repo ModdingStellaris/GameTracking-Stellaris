@@ -1996,7 +1996,7 @@ country_event = {
 		set_country_flag = injured_swarm_queen
 		random_system = {
 			limit = {
-				any_planet = {
+				any_system_planet = {
 					exists = owner
 					owner = { is_country_type = swarm }
 				}
@@ -2314,7 +2314,7 @@ event = {
 		any_system = {
 			AND = {
 				has_owner = no
-				any_planet = { has_planet_flag = previously_infested }
+				any_system_planet = { has_planet_flag = previously_infested }
 				NOT = { has_star_flag = feral_prethoryn_system }
 			}
 		}
@@ -2339,7 +2339,7 @@ event = {
 					random_system = {
 						limit = {
 							has_owner = no
-							any_planet = { has_planet_flag = previously_infested }
+							any_system_planet = { has_planet_flag = previously_infested }
 							NOT = { has_star_flag = feral_prethoryn_system }
 						}
 						set_star_flag = feral_prethoryn_system
@@ -2416,7 +2416,7 @@ event = {
 					random_system = {
 						limit = {
 							has_owner = no
-							any_planet = { has_planet_flag = previously_infested }
+							any_system_planet = { has_planet_flag = previously_infested }
 							NOT = { has_star_flag = feral_prethoryn_system }
 						}
 						set_star_flag = feral_prethoryn_system
@@ -3053,7 +3053,7 @@ event = {
 					num_ships < 2
 					NOT = {
 						any_system = {
-							any_planet = {
+							any_system_planet = {
 								exists = controller
 								controller = { is_country_type = swarm }
 							}
@@ -3061,7 +3061,7 @@ event = {
 					}
 					NOT = {
 						any_system = {
-							any_planet = {
+							any_system_planet = {
 								exists = owner
 								owner = { is_country_type = swarm }
 							}

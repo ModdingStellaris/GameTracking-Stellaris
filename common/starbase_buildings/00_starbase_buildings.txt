@@ -608,7 +608,7 @@ deep_space_black_site = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
 			solar_system = {
-				any_planet = {
+				any_system_planet = {
 					is_owned_by = from
 				}
 			}
@@ -1018,7 +1018,7 @@ trader_proxy_office = {
 			fail_text = "requires_trade_enclave"
 			solar_system = {
 				OR = {
-					any_planet = {
+					any_system_planet = {
 						exists = owner
 						owner = { is_country_type = default }
 					}

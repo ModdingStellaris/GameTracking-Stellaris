@@ -166,6 +166,60 @@ underground_trade_worker = {
 	}
 }
 
+underground_contact_drone = {	
+	category = simple_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_holo_theatres
+	clothes_texture_index = 3
+	icon = spawning_drone
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+	
+	planet_modifier = {
+		planet_amenities_add = 3
+	}
+	
+	triggered_pop_modifier = {
+		pop_housing_usage_add = -1
+	}
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			trigger = { 
+				owner = {
+						is_hive_empire = yes
+				}
+			}
+			energy = 3
+			food = 2
+		}
+		produces = {
+			trigger = { 
+				owner = {
+						is_machine_empire = yes
+				}
+			}
+			energy = 6
+		}
+	}
+		
+		
+	weight = {
+		weight = @simple_drone_job_weight
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_charismatic
+		}
+	}
+}
+
 dimensional_portal_researcher = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -453,7 +507,7 @@ dimensional_portal_researcher_gestalt = {
 						has_planet_flag = dportal_void
 				}
 			}
-			sr_dark_matter = 0.2 # TODO DB - upgrade later
+			sr_dark_matter = 0.2 
 		}
 		upkeep = {
 			trigger = { 

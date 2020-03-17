@@ -66,7 +66,7 @@ ship_event = {
 			}
 			FROM = {
 				solar_system = {
-					any_planet = {
+					any_system_planet = {
 						is_capital = yes
 						is_owned_by = PREVPREVPREV
 					}
@@ -438,7 +438,7 @@ country_event = {
 				closest_system = {
 					max_steps = 10
 					limit = {
-						any_planet = {
+						any_system_planet = {
 							is_capital = no
 							is_surveyed = { who = ROOT status = yes }
 							OR = {
@@ -557,7 +557,7 @@ country_event = {
 				closest_system = {
 					max_steps = 10
 					limit = {
-						any_planet = {
+						any_system_planet = {
 							is_capital = no
 							is_surveyed = { who = ROOT status = yes }
 							OR = {
@@ -937,7 +937,7 @@ ship_event = {
 			FROM = {
 				solar_system = {
 					NOT = {
-						any_planet = {
+						any_system_planet = {
 							is_capital = yes
 							is_owned_by = PREVPREVPREV
 						}
@@ -2568,7 +2568,7 @@ country_event = {
 				closest_system = {
 					max_steps = 15
 					limit = {
-						any_planet = {
+						any_system_planet = {
 							is_capital = no
 							is_surveyed = { who = ROOT status = yes }
 							NOT = { has_orbital_station = yes }
@@ -3166,7 +3166,7 @@ ship_event = {
 			NOT = { has_country_flag = homesystem_surveyed }
 			FROM = {
 				solar_system = {
-					any_planet = {
+					any_system_planet = {
 						is_capital = yes
 						is_owned_by = PREVPREVPREV
 					}

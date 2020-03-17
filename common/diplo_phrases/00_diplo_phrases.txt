@@ -13918,15 +13918,6 @@ greetings = {
 			}
 		}
 	}
-	CORP_WAR_GREETING_01 = {
-		weight = {
-			weight = 3
-		}
-		trigger = {
-			has_authority = auth_corporate
-			is_at_war_with = FROM
-		}
-	}
 	CORP_WAR_GREETING_02 = {
 		weight = {
 			weight = 3

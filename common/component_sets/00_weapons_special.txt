@@ -102,7 +102,7 @@ component_set = {
 component_set = {
 	key = "NULL_VOID"
 	
-	icon = "GFX_ship_part_space_whale_weapon_1"
+	icon = "GFX_ship_part_null_void_weapon"
 	icon_frame = 1	
 }
 

@@ -165,7 +165,7 @@ achievement_terraform = {
 	
 	happened = {
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				terraformed_by = prevprev
 			}
 		}
@@ -768,7 +768,7 @@ achievement_paradise_found = {
 
 	happened = {
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				terraformed_by = prevprev
 				is_planet_class = pc_gaia
 			}

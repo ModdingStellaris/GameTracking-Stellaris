@@ -1329,6 +1329,7 @@
 		
 		TRADE_AMOUNT_MULTIPLIER				= { 1 5 10 50 100 } # Multiplier interval for resource trading base amount
 		MARKET_TRADE_FEE_BASE				= 0.3	# Base procentage for market trade fee
+		MARKET_TRADE_FEE_MIN				= 0.05	# Minumum trade fee percentage 
 		MARKET_FLUCTUATION_ABOVE_BASE_PRICE		= 1	# Base fluctuation when trading a resource' base amount if price is > 0
 		MARKET_FLUCTUATION_BELOW_BASE_PRICE		= 0.2	# Base fluctuation when trading a resource' base amount if price is < 0
 		MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE	= -80	# Min fluctuation from base price
@@ -1336,6 +1337,7 @@
 		MARKET_DAYS_TO_BASE_PRICE				= 1800	# Days until resource price reaches base price from max or min price
 		MARKET_FLUCTUATION_EPSILON			= 0.5	# If | fluctuation | < epsilon, reset fluctuation to zero
 		MARKET_MONTHLY_TRADE_FRACTION		= 0.1	# market base amount will be multiplied by this when determining starting amount of a monthly market trade
+		MARKET_MAX_BASE_AMOUNTS				= 200 	# Max resource base amounts that the player is allowed to trade in a single trade
 
 		INTERNAL_MARKET_BUY_MULTIPLIER		= 3		# resource sell price on internal market = MULTIPLIER * base price
 		INTERNAL_MARKET_SELL_MULTIPLIER		= 0.33	# resource buy price on internal market = MULTIPLIER * base price

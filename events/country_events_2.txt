@@ -1673,7 +1673,7 @@ country_event = {
 					exists = space_owner
 					has_star_flag = hostile_system
 					is_star_class = sc_black_hole
-					any_planet = {
+					any_system_planet = {
 						has_planet_flag = massex_1_planet
 						has_planet_flag = massex_2_planet
 						has_planet_flag = massex_3_planet
@@ -1682,7 +1682,7 @@ country_event = {
 					}
 				}
 				is_pirate_system = no
-				any_planet = { is_planet_class = pc_asteroid }
+				any_system_planet = { is_planet_class = pc_asteroid }
 				distance = {
 					source = event_target:capital_location
 					use_bypasses = no
@@ -1714,7 +1714,7 @@ country_event = {
 					exists = space_owner
 					has_star_flag = hostile_system
 					is_star_class = sc_black_hole
-					any_planet = {
+					any_system_planet = {
 						has_planet_flag = massex_1_planet
 						has_planet_flag = massex_2_planet
 						has_planet_flag = massex_3_planet
@@ -1723,7 +1723,7 @@ country_event = {
 					}
 				}
 				is_pirate_system = no
-				any_planet = { is_planet_class = pc_molten }
+				any_system_planet = { is_planet_class = pc_molten }
 				distance = {
 					source = event_target:capital_location
 					use_bypasses = no
@@ -1755,7 +1755,7 @@ country_event = {
 					exists = space_owner
 					has_star_flag = hostile_system
 					is_star_class = sc_black_hole
-					any_planet = {
+					any_system_planet = {
 						has_planet_flag = massex_1_planet
 						has_planet_flag = massex_2_planet
 						has_planet_flag = massex_3_planet
@@ -1764,7 +1764,7 @@ country_event = {
 					}
 				}
 				is_pirate_system = no
-				any_planet = { is_planet_class = pc_barren }
+				any_system_planet = { is_planet_class = pc_barren }
 				distance = {
 					source = event_target:capital_location
 					use_bypasses = no
@@ -1796,7 +1796,7 @@ country_event = {
 					exists = space_owner
 					has_star_flag = hostile_system
 					is_star_class = sc_black_hole
-					any_planet = {
+					any_system_planet = {
 						has_planet_flag = massex_1_planet
 						has_planet_flag = massex_2_planet
 						has_planet_flag = massex_3_planet
@@ -1805,7 +1805,7 @@ country_event = {
 					}
 				}
 				is_pirate_system = no
-				any_planet = { is_planet_class = pc_toxic }
+				any_system_planet = { is_planet_class = pc_toxic }
 				distance = {
 					source = event_target:capital_location
 					use_bypasses = no
@@ -1837,7 +1837,7 @@ country_event = {
 					exists = space_owner
 					has_star_flag = hostile_system
 					is_star_class = sc_black_hole
-					any_planet = {
+					any_system_planet = {
 						has_planet_flag = massex_1_planet
 						has_planet_flag = massex_2_planet
 						has_planet_flag = massex_3_planet
@@ -1846,7 +1846,7 @@ country_event = {
 					}
 				}
 				is_pirate_system = no
-				any_planet = { is_planet_class = pc_frozen }
+				any_system_planet = { is_planet_class = pc_frozen }
 				distance = {
 					source = event_target:capital_location
 					use_bypasses = no
@@ -1887,7 +1887,7 @@ ship_event = {
 			has_event_chain = mass_extinction_chain
 		}
 		from = {
-			any_planet = {
+			any_system_planet = {
 				OR = {
 					has_planet_flag = massex_1_planet
 					has_planet_flag = massex_2_planet
@@ -1903,7 +1903,7 @@ ship_event = {
 		if = {
 			limit = {
 				from = {
-					any_planet = { has_planet_flag = massex_1_planet }
+					any_system_planet = { has_planet_flag = massex_1_planet }
 				}
 			}
 			owner = { country_event = { id = country.1105 } }
@@ -1911,7 +1911,7 @@ ship_event = {
 		if = {
 			limit = {
 				from = {
-					any_planet = { has_planet_flag = massex_2_planet }
+					any_system_planet = { has_planet_flag = massex_2_planet }
 				}
 			}
 			owner = { country_event = { id = country.1110 } }
@@ -1919,7 +1919,7 @@ ship_event = {
 		if = {
 			limit = {
 				from = {
-					any_planet = { has_planet_flag = massex_3_planet }
+					any_system_planet = { has_planet_flag = massex_3_planet }
 				}
 			}
 			owner = { country_event = { id = country.1115 } }
@@ -1927,7 +1927,7 @@ ship_event = {
 		if = {
 			limit = {
 				from = {
-					any_planet = { has_planet_flag = massex_4_planet }
+					any_system_planet = { has_planet_flag = massex_4_planet }
 				}
 			}
 			owner = { country_event = { id = country.1120 } }
@@ -1935,7 +1935,7 @@ ship_event = {
 		if = {
 			limit = {
 				from = {
-					any_planet = { has_planet_flag = massex_5_planet }
+					any_system_planet = { has_planet_flag = massex_5_planet }
 				}
 			}
 			owner = { country_event = { id = country.1125 } }
@@ -1967,7 +1967,7 @@ country_event = {
 		if = {
 			limit = {
 				fromfrom = {
-					any_planet = { has_planet_flag = massex_1_planet } 
+					any_system_planet = { has_planet_flag = massex_1_planet } 
 					has_access_fleet = root
 				}
 			}
@@ -2001,7 +2001,7 @@ country_event = {
 						exists = space_owner
 						has_star_flag = hostile_system
 						is_star_class = sc_black_hole
-						any_planet = {
+						any_system_planet = {
 							has_planet_flag = massex_1_planet
 							has_planet_flag = massex_2_planet
 							has_planet_flag = massex_3_planet
@@ -2010,7 +2010,7 @@ country_event = {
 						}
 					}
 					is_pirate_system = no
-					any_planet = { is_planet_class = pc_asteroid }
+					any_system_planet = { is_planet_class = pc_asteroid }
 					distance = {
 						source = event_target:capital_location
 						use_bypasses = no
@@ -2082,7 +2082,7 @@ country_event = {
 		if = {
 			limit = {
 				fromfrom = {
-					any_planet = { has_planet_flag = massex_2_planet } 
+					any_system_planet = { has_planet_flag = massex_2_planet } 
 					has_access_fleet = root
 				}
 			}
@@ -2114,7 +2114,7 @@ country_event = {
 						exists = space_owner
 						has_star_flag = hostile_system
 						is_star_class = sc_black_hole
-						any_planet = {
+						any_system_planet = {
 							has_planet_flag = massex_1_planet
 							has_planet_flag = massex_2_planet
 							has_planet_flag = massex_3_planet
@@ -2123,7 +2123,7 @@ country_event = {
 						}
 					}
 					is_pirate_system = no
-					any_planet = { is_planet_class = pc_molten }
+					any_system_planet = { is_planet_class = pc_molten }
 					distance = {
 						source = event_target:capital_location
 						use_bypasses = no
@@ -2195,7 +2195,7 @@ country_event = {
 		if = {
 			limit = {
 				fromfrom = {
-					any_planet = { has_planet_flag = massex_3_planet } 
+					any_system_planet = { has_planet_flag = massex_3_planet } 
 					has_access_fleet = root
 				}
 			}
@@ -2227,7 +2227,7 @@ country_event = {
 						exists = space_owner
 						has_star_flag = hostile_system
 						is_star_class = sc_black_hole
-						any_planet = {
+						any_system_planet = {
 							has_planet_flag = massex_1_planet
 							has_planet_flag = massex_2_planet
 							has_planet_flag = massex_3_planet
@@ -2236,7 +2236,7 @@ country_event = {
 						}
 					}
 					is_pirate_system = no
-					any_planet = { is_planet_class = pc_barren }
+					any_system_planet = { is_planet_class = pc_barren }
 					distance = {
 						source = event_target:capital_location
 						use_bypasses = no
@@ -2308,7 +2308,7 @@ country_event = {
 		if = {
 			limit = {
 				fromfrom = {
-					any_planet = { has_planet_flag = massex_4_planet } 
+					any_system_planet = { has_planet_flag = massex_4_planet } 
 					has_access_fleet = root
 				}
 			}
@@ -2340,7 +2340,7 @@ country_event = {
 						exists = space_owner
 						has_star_flag = hostile_system
 						is_star_class = sc_black_hole
-						any_planet = {
+						any_system_planet = {
 							has_planet_flag = massex_1_planet
 							has_planet_flag = massex_2_planet
 							has_planet_flag = massex_3_planet
@@ -2349,7 +2349,7 @@ country_event = {
 						}
 					}
 					is_pirate_system = no
-					any_planet = { is_planet_class = pc_toxic }
+					any_system_planet = { is_planet_class = pc_toxic }
 					distance = {
 						source = event_target:capital_location
 						use_bypasses = no
@@ -2421,7 +2421,7 @@ country_event = {
 		if = {
 			limit = {
 				fromfrom = {
-					any_planet = { has_planet_flag = massex_5_planet } 
+					any_system_planet = { has_planet_flag = massex_5_planet } 
 					has_access_fleet = root
 				}
 			}
@@ -2453,7 +2453,7 @@ country_event = {
 						exists = space_owner
 						has_star_flag = hostile_system
 						is_star_class = sc_black_hole
-						any_planet = {
+						any_system_planet = {
 							has_planet_flag = massex_1_planet
 							has_planet_flag = massex_2_planet
 							has_planet_flag = massex_3_planet
@@ -2462,7 +2462,7 @@ country_event = {
 						}
 					}
 					is_pirate_system = no
-					any_planet = { is_planet_class = pc_frozen }
+					any_system_planet = { is_planet_class = pc_frozen }
 					distance = {
 						source = event_target:capital_location
 						use_bypasses = no

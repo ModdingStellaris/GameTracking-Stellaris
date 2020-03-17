@@ -622,6 +622,7 @@ country_event = {
 			name = "NAME_Foundling"
 			settings = { spawn_debris = no }
 			effect = {
+				set_fleet_stance = evasive
 				set_owner = root
 				create_ship_design = {
 					design = "NAME_Returned_Science_Ship"
@@ -3637,6 +3638,7 @@ planet_event = {
 						is_planet_class = pc_habitat
 						is_planet_class = pc_asteroid
 						is_planet_class = pc_ice_asteroid
+						is_planet_class = pc_city
 						is_star = yes
 					}
 					planet_size < 26
@@ -3697,6 +3699,7 @@ planet_event = {
 					}
 				}
 				change_pc = pc_nuked
+				reroll_planet = yes
 			}
 			random_system_planet = {
 				limit = { is_star = yes }

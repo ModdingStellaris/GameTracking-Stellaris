@@ -92,7 +92,15 @@ building_artist_patron = {
 	base_cap_amount = 1
 	
 	potential = {
-		owner = { has_country_flag = artist_building_patron }
+		custom_tooltip = {
+			text = EMPIRE_UNIQUE_BUILDING
+			owner = {
+				has_country_flag = artist_building_patron
+				NOT = {
+					has_country_flag = built_one_ministry
+				}
+			}
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -129,6 +137,22 @@ building_artist_patron = {
 			owner = { has_ethic = ethic_gestalt_consciousness }	
 		}
 		text = job_coordinator_effect_desc
+	}
+
+	on_queued = {
+		owner = { remove_country_flag = artist_building_patron }
+	}
+
+	on_unqueued = {
+		owner = { set_country_flag = artist_building_patron }
+	}
+
+	on_built = {
+		owner = { set_country_flag = built_one_ministry }
+	}
+
+	on_destroy = {
+		owner = { remove_country_flag = built_one_ministry }
 	}
 }
 building_waste_reprocessing_center = {

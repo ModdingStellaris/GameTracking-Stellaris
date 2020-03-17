@@ -823,9 +823,9 @@ guiTypes = {
 					instantTextBoxType = {
 						name = "trade_value_amount"
 						font = "malgun_goth_24"
-						position = { x = 36 y = 10 }
+						position = { x = 30 y = 12 }
 						text = "5"
-						maxWidth = 40
+						maxWidth = 50
 						maxHeight = 20
 						fixedSize = yes
 						format = center

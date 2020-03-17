@@ -559,7 +559,7 @@ ship_event = {
 #					max_distance <= 120
 #					min_distance >= 1
 #				}
-#				any_planet = {
+#				any_system_planet = {
 #					is_surveyed = { who = root.owner status = no }
 #					has_owner = no
 #				}

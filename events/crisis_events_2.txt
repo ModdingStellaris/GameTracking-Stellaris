@@ -2321,7 +2321,7 @@ event = {
 
 					NOT = {
 						any_system = {
-							any_planet = {
+							any_system_planet = {
 								controller = {
 									OR = {
 										is_country_type = extradimensional
@@ -2335,7 +2335,7 @@ event = {
 
 					NOT = {
 						any_system = {
-							any_planet = {
+							any_system_planet = {
 								owner = {
 									OR = {
 										is_country_type = extradimensional

@@ -380,7 +380,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "navy_group"
-				size = { width = 64 height = 35 }
+				size = { width = 84 height = 35 }
 				position = { x = 250 y = 0 }
 
 				background = {
@@ -391,7 +391,7 @@ guiTypes = {
 				iconType = {
 					name = "icon"
 					spriteType = "GFX_fleet_size_icon"
-					position = { x = 20 y = 2 }
+					position = { x = 30 y = 2 }
 					tooltip_mode_enabled = yes
 					alwaysTransparent = yes
 				}
@@ -400,7 +400,7 @@ guiTypes = {
 					name = "amount"
 					font = "cg_16b"
 					position = { x = 2 y = 16 }
-					maxWidth = 60
+					maxWidth = 80
 					maxHeight = 16
 					text = "0 / 0"
 					format = center

@@ -1235,7 +1235,7 @@ country_event = {
 						has_star_flag = hostile_system
 						any_ship_in_system = { always = yes }
 					}
-					any_planet = { is_asteroid = yes }
+					any_system_planet = { is_asteroid = yes }
 				}
 			}
 			random_system = {
@@ -1251,7 +1251,7 @@ country_event = {
 						has_star_flag = hostile_system
 						any_ship_in_system = { always = yes }
 					}
-					any_planet = { is_asteroid = yes }
+					any_system_planet = { is_asteroid = yes }
 				}
 				set_star_flag = ransomeer_system
 				save_event_target_as = the_ransomeer_system
@@ -1267,7 +1267,7 @@ country_event = {
 						max_jumps = 6
 					}
 					is_owned_by = ROOT
-					any_planet = { is_asteroid = yes }
+					any_system_planet = { is_asteroid = yes }
 				}
 				set_star_flag = ransomeer_system
 				save_event_target_as = the_ransomeer_system
@@ -1858,7 +1858,7 @@ country_event = {
 							system = prev
 						}
 					}
-					any_planet = { is_asteroid = yes }
+					any_system_planet = { is_asteroid = yes }
 					NOT = { has_star_flag = hostile_system }
 				}
 				min_steps = 20

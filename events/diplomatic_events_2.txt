@@ -45,7 +45,7 @@ country_event = {
 					root = { is_loyal_to = prev }
 				}
 			}
-			any_planet = {
+			any_system_planet = {
 				NOT = { is_capital = yes }
 			}
 		}
@@ -79,7 +79,7 @@ country_event = {
 						}
 					}
 					NOT = {
-						any_planet = { is_capital = yes }
+						any_system_planet = { is_capital = yes }
 					}
 				}
 			}

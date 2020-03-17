@@ -739,7 +739,7 @@ generate_start_buildings_and_districts = {
 		add_district = district_generator
 		add_district = district_generator		
 		
-		# 6 jobs
+		# 5 jobs
 		add_building = building_hive_capital
 		
 		# 3 jobs
@@ -778,13 +778,9 @@ generate_start_buildings_and_districts = {
 		add_district = district_generator
 		add_district = district_generator
 		add_district = district_generator
-		add_district = district_generator
 		
 		# 6 jobs
 		add_building = building_machine_capital	
-		
-		# 4 jobs
-		add_building = building_maintenance_depot
 
 		# 2 jobs
 		add_building = building_research_lab_1
@@ -924,7 +920,7 @@ generate_start_pops = {
 	else_if = {
 		limit = { owner = { is_hive_empire = yes } }
 		while = {
-			limit = { num_pops < 34 }
+			limit = { num_pops < 32 }
 			create_pop = {
 				species = owner_main_species
 				ethos = random

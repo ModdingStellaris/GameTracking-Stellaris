@@ -93,10 +93,6 @@ col_city = {
 		modifier = {
 			add = 0.75
 			num_districts = { type = district_city value > 19 }		
-		}
-		modifier = {
-			add = 0.75
-			num_districts = { type = district_city value > 0 }		
 		}	
 		modifier = {
 			add = 0.75

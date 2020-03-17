@@ -1905,7 +1905,7 @@ planet_event = { #uprising
 						}
 					}
 					solar_system = { # never flip any planets in the capital system
-						NOT = { any_planet = { is_same_value = root.owner.capital_scope } }
+						NOT = { any_system_planet = { is_same_value = root.owner.capital_scope } }
 					}
 				}
 				effect = {

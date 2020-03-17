@@ -134,7 +134,7 @@ country_event = {
 					has_owner = no
 					owner = { is_same_value = root }
 				}
-				any_planet = { is_planet_class = pc_gas_giant }
+				any_system_planet = { is_planet_class = pc_gas_giant }
 			}
 			min_steps = 1
 			random_system_planet = {
@@ -295,7 +295,7 @@ country_event = {
 						has_owner = no
 						owner = { is_same_value = root }
 					}
-					any_planet = { 
+					any_system_planet = { 
 						is_planet_class = pc_gas_giant
 						NOR = { 
 							has_planet_flag = baldarak 

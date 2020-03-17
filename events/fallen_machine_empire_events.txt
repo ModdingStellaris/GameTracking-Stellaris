@@ -1074,7 +1074,7 @@ country_event = {
 				is_within_borders_of = root
 				is_neighbor_of = root
 			}
-			any_planet = {
+			any_system_planet = {
 				is_colony = no
 				can_colonize = { who = root status = yes }
 			}
@@ -1174,7 +1174,7 @@ country_event = {
 		has_global_flag = fe_task_colonize_planet_active
 		has_country_flag = fe_task_colonize_planet
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				has_planet_flag = fe_task_colonize_planet_target
 				is_colony = yes
 				is_owned_by = root
@@ -1237,7 +1237,7 @@ country_event = {
 		has_country_flag = fe_task_colonize_planet
 		NOT = {
 			any_system = {
-				any_planet = {
+				any_system_planet = {
 					is_colony = yes
 					has_planet_flag = fe_task_colonize_planet_target
 					is_owned_by = root
@@ -1247,7 +1247,7 @@ country_event = {
 		OR = {
 			NOT = { has_country_flag = fe_task_colonize_planet_timer }
 			any_system = {
-				any_planet = {
+				any_system_planet = {
 					is_colony = yes
 					has_planet_flag = fe_task_colonize_planet_target
 					NOT = { is_owned_by = root }

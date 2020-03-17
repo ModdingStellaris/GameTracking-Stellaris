@@ -74,7 +74,7 @@ is_shackled_robot = { # The pop is a non-free robot
 	has_trait = "trait_mechanical"
 	NAND = {
 		exists = owner
-		owner = { 
+		owner = {
 			OR = {
 				has_policy_flag = ai_full_rights 
 				is_mechanical_empire = yes
@@ -299,6 +299,7 @@ habitable_planet = {
 		is_planet_class = pc_alpine
 		is_planet_class = pc_savannah
 		is_planet_class = pc_gaia
+		is_planet_class = pc_city
 	}
 }
 
@@ -546,7 +547,7 @@ has_any_megastructure_in_empire = {
 			has_megastructure = dyson_sphere_2
 			has_megastructure = dyson_sphere_3
 			has_megastructure = dyson_sphere_4
-			has_megastructure = dyson_sphere_5	
+			has_megastructure = dyson_sphere_5
 			has_megastructure = ring_world_2_intermediate
 			has_megastructure = dyson_sphere_ruined
 			has_megastructure = dyson_sphere_restored
@@ -555,7 +556,19 @@ has_any_megastructure_in_empire = {
 			has_megastructure = think_tank_ruined
 			has_megastructure = think_tank_restored
 			has_megastructure = ring_world_ruined
-			has_megastructure = ring_world_restored						
+			has_megastructure = ring_world_restored
+			has_megastructure = matter_decompressor_4
+			has_megastructure = matter_decompressor_ruined
+			has_megastructure = matter_decompressor_restored
+			has_megastructure = strategic_coordination_center_3
+			has_megastructure = strategic_coordination_center_ruined
+			has_megastructure = strategic_coordination_center_restored
+			has_megastructure = mega_art_installation_3
+			has_megastructure = mega_art_installation_ruined
+			has_megastructure = mega_art_installation_restored
+			has_megastructure = interstellar_assembly_4
+			has_megastructure = interstellar_assembly_ruined
+			has_megastructure = interstellar_assembly_restored
 		}
 	}
 }

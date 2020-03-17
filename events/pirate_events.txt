@@ -231,7 +231,7 @@ ship_event = {
 		from = {
 			solar_system = {
 				NOT = {
-					any_planet = {
+					any_system_planet = {
 						is_homeworld = yes
 					}
 				}
@@ -585,7 +585,7 @@ fleet_event = {
 				find_closest_system = {
 					trigger = {
 						id = pirate.20.a
-						any_planet = {
+						any_system_planet = {
 							is_same_value = event_target:target_capital
 						}
 					}

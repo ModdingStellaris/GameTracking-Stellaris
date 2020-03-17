@@ -152,6 +152,12 @@ priest = {
 			unity = 3
 			society_research = 2
 		}
+		produces = {
+			trigger = {
+				owner = { has_valid_civic = civic_exalted_priesthood }
+			}
+			unity = 1
+		}
 		upkeep = {
 			consumer_goods = 2
 		}

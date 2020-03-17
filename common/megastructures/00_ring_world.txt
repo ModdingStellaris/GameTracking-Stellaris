@@ -32,7 +32,7 @@ ring_world_1 = {
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
-				any_planet = {
+				any_system_planet = {
 					is_surveyed = {
 						who = prev.from
 						status = no
@@ -43,7 +43,7 @@ ring_world_1 = {
 		custom_tooltip = {
 			fail_text = "requires_no_habitable_planets"
 			NOT = {
-				any_planet = {
+				any_system_planet = {
 					colonizeable_planet = yes
 				}
 			}
@@ -91,7 +91,7 @@ ring_world_1 = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_planets_for_material"
-				hidden:solar_system = { any_planet = { NOT = { is_star = yes } } }
+				hidden:solar_system = { any_system_planet = { NOT = { is_star = yes } } }
 			}
 		}
 	}
@@ -357,7 +357,7 @@ ring_world_restored = {
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
-				any_planet = {
+				any_system_planet = {
 					is_surveyed = {
 						who = prev.from
 						status = no

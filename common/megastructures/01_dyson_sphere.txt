@@ -35,7 +35,7 @@ dyson_sphere_0 = {
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
-				any_planet = {
+				any_system_planet = {
 					is_surveyed = {
 						who = prev.from
 						status = no
@@ -46,7 +46,7 @@ dyson_sphere_0 = {
 		custom_tooltip = {
 			fail_text = "requires_no_habitable_planets"
 			NOT = {
-				any_planet = {
+				any_system_planet = {
 					AND = {
 						colonizeable_planet = yes
 					}

@@ -219,7 +219,7 @@ ship_event = {
 					# Early Space Age Humans
 					AND = {
 						has_star_flag = primitive_sol
-						any_planet = {
+						any_system_planet = {
 							exists = owner
 							owner = {
 								has_country_flag = humans_early_space_age
@@ -255,7 +255,7 @@ ship_event = {
 						# Early Space Age Humans
 						AND = {
 							has_star_flag = primitive_sol
-							any_planet = {
+							any_system_planet = {
 								exists = owner
 								owner = {
 									has_country_flag = humans_early_space_age
@@ -506,7 +506,7 @@ ship_event = {
 					# Early Space Age Humans
 					AND = {
 						has_star_flag = primitive_sol
-						any_planet = {
+						any_system_planet = {
 							exists = owner
 							owner = {
 								has_country_flag = humans_early_space_age
@@ -542,7 +542,7 @@ ship_event = {
 						# Early Space Age Humans
 						AND = {
 							has_star_flag = primitive_sol
-							any_planet = {
+							any_system_planet = {
 								exists = owner
 								owner = {
 									has_country_flag = humans_early_space_age
@@ -1079,7 +1079,7 @@ ship_event = {
 					has_star_flag = hostile_system
 					is_same_value = root.solar_system
 					is_pirate_system = yes
-					any_planet = { is_colony = yes }
+					any_system_planet = { is_colony = yes }
 				}
 				has_access_fleet = root.owner
 			}
@@ -1094,7 +1094,7 @@ ship_event = {
 					has_star_flag = hostile_system
 					is_same_value = root.solar_system
 					is_pirate_system = yes
-					any_planet = { is_colony = yes }
+					any_system_planet = { is_colony = yes }
 				}
 				has_access_fleet = root.owner
 			}
@@ -1110,7 +1110,7 @@ ship_event = {
 					is_same_value = root.solar_system
 					has_star_flag = hostile_system
 					is_pirate_system = yes
-					any_planet = { is_colony = yes }
+					any_system_planet = { is_colony = yes }
 				}
 				has_access_fleet = root.owner
 			}

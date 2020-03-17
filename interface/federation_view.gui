@@ -437,8 +437,8 @@ guiTypes = {
 		instantTextBoxType={
 			name = "technology_power_amount"
 			font = "cg_16b"
-			maxWidth = 30
-			position = { x = 470 y = @entry_info_height }
+			maxWidth = 50
+			position = { x = 460 y = @entry_info_height }
 			format = center
 		}
 		

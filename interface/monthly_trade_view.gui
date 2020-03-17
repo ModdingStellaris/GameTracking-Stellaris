@@ -87,7 +87,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "amount_text"
 			font = "cg_16b"
-			position = { x = 30 y = 200 }
+			position = { x = 30 y = 217 }
 			text = "AMOUNT"
 			maxWidth = 100
 			maxHeight = 50
@@ -97,7 +97,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "price_text"
 			font = "cg_16b"
-			position = { x = 30 y = 232 }
+			position = { x = 30 y = 242 }
 			text = "PRICE"
 			maxWidth = 100
 			maxHeight = 50
@@ -107,7 +107,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "per_unit_text"
 			font = "cg_16b"
-			position = { x = 245 y = 232 }
+			position = { x = 245 y = 242 }
 			text = "MONTHLY_TRADE_PER_UNIT"
 			maxWidth = 100
 			maxHeight = 50
@@ -148,7 +148,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "editable_amount"
 			size = { width = 200 height = 28 }
-			position = { x = -109 y = 195 }
+			position = { x = -109 y = 212 }
 
 			iconType = {
 				name = "value_bg"
@@ -183,7 +183,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "editable_price"
 			size = { width = 200 height = 28 }
-			position = { x = -109 y = 227 }
+			position = { x = -109 y = 237 }
 
 			iconType = {
 				name = "value_bg"

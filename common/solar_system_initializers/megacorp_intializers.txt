@@ -539,6 +539,24 @@ megacorp_caravaneer_init = {
 							}
 						}
 					}
+					else = {
+						create_species = {
+							name = "NAME_Caravaneer_Fleet3_robot"
+							plural = "NAME_Caravaneer_Fleet3_robot_plural"
+							class = ROBOT
+							namelist = "MACHINE4"
+							portrait = "default_robot"
+							traits = {
+								trait = "trait_mechanical"
+								trait = "trait_robot_superconductive"
+								trait = "trait_robot_bulky"
+								trait = "trait_robot_repurposed_hardware"
+							}
+							effect = {
+								save_global_event_target_as = racket_robot_species
+							}
+						}
+					}
 					create_leader = { #This leader has to exist to 'hold' the robot species
 						class = governor
 						species = event_target:racket_robot_species

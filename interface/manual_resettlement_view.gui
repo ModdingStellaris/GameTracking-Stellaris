@@ -303,7 +303,7 @@ guiTypes = {
 			iconType = {
 				name = "pop_status"
 				spriteType = "GFX_pop_status"
-				position = { x = 0 y = 27 }
+				position = { x = 0 y = 33 }
 				scale = 0.71
 			}
             

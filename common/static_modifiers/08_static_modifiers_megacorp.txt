@@ -468,6 +468,14 @@ planet_population_control_gestalt = {
 	planet_pop_assemblers_upkeep_mult = -0.75
 }
 
+planet_robot_assembly_control = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_politics.dds"
+	icon_frame = 2
+	custom_tooltip = STOPS_ROBOT_ASSEMBLY
+	show_only_custom_tooltip = no
+	planet_pop_assemblers_upkeep_mult = -0.75
+}
+
 planet_growth_discouraged = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_politics.dds"
 	icon_frame = 2

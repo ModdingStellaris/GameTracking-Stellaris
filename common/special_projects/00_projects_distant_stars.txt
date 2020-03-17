@@ -1334,7 +1334,6 @@ special_project = {
 	timelimit = -1
 	picture = GFX_evt_circuitry_modification
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	location = no
 
 	event_scope = ship_event
 

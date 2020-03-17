@@ -4858,7 +4858,7 @@ country_event = {
 						}
 					}
 				}
-				any_planet = {
+				any_system_planet = {
 					has_owner = no
 					is_colonizable = yes				
 				}
@@ -4876,7 +4876,7 @@ country_event = {
 		random_system = {
 			limit = {
 				root = { NOT = { has_country_flag = exile_world } }
-				any_planet = {
+				any_system_planet = {
 					has_owner = no
 					is_colonizable = yes				
 				}
@@ -5187,7 +5187,7 @@ fleet_event = {
 		event_target:the_end_of_the_cycle = { is_same_value = root }	
 		is_fleet_idle = yes
 		any_system = {
-			any_planet = {
+			any_system_planet = {
 				OR = {
 					is_colonizable = yes
 					has_owner = yes
@@ -5196,7 +5196,7 @@ fleet_event = {
 					NOT = { has_planet_flag = exile_planet }
 					NOT = {
 						any_system = {
-							any_planet = {
+							any_system_planet = {
 								OR = {
 									is_colonizable = yes
 									has_owner = yes
@@ -5218,7 +5218,7 @@ fleet_event = {
 		set_timed_global_flag = { flag = end_of_the_cycle_orders_cooldown days = 30 }
 		closest_system = {
 			limit = {
-				any_planet = {
+				any_system_planet = {
 					OR = {
 						is_colonizable = yes
 						has_owner = yes
@@ -5227,7 +5227,7 @@ fleet_event = {
 						NOT = { has_planet_flag = exile_planet }
 						NOT = {
 							any_system = {
-								any_planet = {
+								any_system_planet = {
 									OR = {
 										is_colonizable = yes
 										has_owner = yes
@@ -5249,7 +5249,7 @@ fleet_event = {
 						NOT = { has_planet_flag = exile_planet }
 						NOT = {
 							any_system = {
-								any_planet = {
+								any_system_planet = {
 									OR = {
 										is_colonizable = yes
 										has_owner = yes
@@ -5267,7 +5267,7 @@ fleet_event = {
 			find_closest_system = {
 				trigger = {
 					id = utopia.3323.t1
-					any_planet = {
+					any_system_planet = {
 						is_same_value = event_target:move_to_planet
 					}
 				}
