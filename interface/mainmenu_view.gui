@@ -137,14 +137,24 @@ guiTypes = {
 				name = "privacy"
 				quadTextureSprite = "GFX_standard_button_large_211_40"
 				position = { x= -115 y = 520  }
-				buttonText = "MAIN_VIEW_PP"
-				buttonFont = "malgun_goth_24"
 				Orientation = "CENTER_UP"
 				clicksound = "back_click"
 				oversound = mouse_over
 				defaultSelection = yes
 				navUp = "resume"
 				navDown = "save"
+			}
+
+			instantTextBoxType = {
+				name = "privacy_text"
+				font = "malgun_goth_24"
+				text = "MAIN_VIEW_PP"
+				position = { x = 80 y = 540  }
+				maxWidth = 210
+				maxHeight = 20
+				fixedSize = yes
+				format = center
+				alwaysTransparent = yes
 			}
 
 			instantTextBoxType = {
@@ -157,6 +167,7 @@ guiTypes = {
 				fixedSize = yes
 				format = left
 			}
+
 			buttonType = {
 				name = "version_button"
 				spriteType = "GFX_invisible"

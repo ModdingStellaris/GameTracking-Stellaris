@@ -9,15 +9,17 @@ planet_event = {
 	show_sound = event_air_raid_siren
 	location = root
 
+	pre_triggers = {
+		has_owner = yes
+		has_ground_combat = no
+	}
 	trigger = {
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
 		exists = controller
 		controller = { is_same_value = root.owner }
-		has_ground_combat = no
 		has_orbital_bombardment = no
 		planet_stability < @stabilitylevel2
 		NOR = {
@@ -84,8 +86,12 @@ planet_event = {
 	show_sound = event_air_raid_siren
 	location = root
 
+	pre_triggers = {
+		has_owner = yes
+		has_ground_combat = no
+	}
+
 	trigger = {
-		exists = owner
 		owner = { 
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
@@ -94,7 +100,6 @@ planet_event = {
 		controller = { is_same_value = root.owner }
 		has_planet_flag = unrest_terror
 		planet_stability < @stabilitylevel2
-		has_ground_combat = no
 		has_orbital_bombardment = no
 	}
 
@@ -145,10 +150,13 @@ planet_event = {
 	show_sound = event_celebration
 	location = root
 
-	trigger = {
+	pre_triggers = {
+		has_owner = yes
 		has_ground_combat = no
+	}
+
+	trigger = {
 		has_orbital_bombardment = no
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
@@ -218,10 +226,13 @@ planet_event = {
 	show_sound = event_mystic_reveal
 	location = root
 
-	trigger = {
+	pre_triggers = {
+		has_owner = yes
 		has_ground_combat = no
+	}
+
+	trigger = {
 		has_orbital_bombardment = no
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
@@ -290,10 +301,13 @@ planet_event = {
 	show_sound = event_celebration
 	location = root
 
-	trigger = {
+	pre_triggers = {
+		has_owner = yes
 		has_ground_combat = no
+	}
+
+	trigger = {
 		has_orbital_bombardment = no
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
@@ -362,10 +376,13 @@ planet_event = {
 	show_sound = event_public_unrest
 	location = root
 
-	trigger = {
+	pre_triggers = {
+		has_owner = yes
 		has_ground_combat = no
+	}
+
+	trigger = {
 		has_orbital_bombardment = no
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
@@ -443,8 +460,11 @@ planet_event = {
 	show_sound = event_cityscape
 	location = root
 
+	pre_triggers = {
+		has_owner = yes
+	}
+	
 	trigger = {
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
@@ -513,10 +533,13 @@ planet_event = {
 	show_sound = event_public_unrest
 	location = root
 
-	trigger = {
+	pre_triggers = {
+		has_owner = yes
 		has_ground_combat = no
+	}
+
+	trigger = {
 		has_orbital_bombardment = no
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
@@ -594,16 +617,19 @@ planet_event = {
 	show_sound = event_celebration
 	location = root
 
-	trigger = {
+	pre_triggers = {
+		has_owner = yes
 		has_ground_combat = no
+	}
+
+	trigger = {
 		has_orbital_bombardment = no
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
 		exists = controller
-controller = { is_same_value = root.owner }
+		controller = { is_same_value = root.owner }
 		planet_stability < @stabilitylevel2
 		NOR = {
 			has_planet_flag = recent_unrest_event
@@ -668,16 +694,19 @@ planet_event = {
 	show_sound = event_public_unrest
 	location = root
 
-	trigger = {
+	pre_triggers = {
+		has_owner = yes
 		has_ground_combat = no
+	}
+
+	trigger = {
 		has_orbital_bombardment = no
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
 		exists = controller
-controller = { is_same_value = root.owner }
+		controller = { is_same_value = root.owner }
 		planet_stability < @stabilitylevel2
 		NOR = {
 			has_planet_flag = recent_unrest_event
@@ -740,16 +769,19 @@ planet_event = {
 	show_sound = event_alien_signal
 	location = root
 
-	trigger = {
+	pre_triggers = {
+		has_owner = yes
 		has_ground_combat = no
+	}
+
+	trigger = {
 		has_orbital_bombardment = no
-		exists = owner
 		owner = {
 			is_country_type = default
 			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
 		exists = controller
-controller = { is_same_value = root.owner }
+		controller = { is_same_value = root.owner }
 		planet_stability < @stabilitylevel2
 		NOR = {
 			has_planet_flag = recent_unrest_event
@@ -815,13 +847,16 @@ planet_event = {
 	show_sound = event_planetary_riot
 	location = root
 
+	pre_triggers = {
+		has_owner = yes
+		has_ground_combat = no
+	}
+
 	trigger = {
-		exists = owner
 		owner = { is_country_type = default }
 		exists = controller
-controller = { is_same_value = root.owner }
+		controller = { is_same_value = root.owner }
 		planet_stability < @stabilitylevel3
-		has_ground_combat = no
 		has_orbital_bombardment = no
  		any_owned_pop = {
 			NOT = { has_trait = trait_mechanical }
@@ -870,15 +905,18 @@ planet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	pre_triggers = {
+		has_owner = yes
+		has_ground_combat = no
+	}
+
 	trigger = {
-		exists = owner
 		owner = {
 			is_country_type = default
 			has_country_flag = slave_revolt_chain_active
 		}
 		exists = controller
-controller = { is_same_value = root.owner }
-		has_ground_combat = no
+		controller = { is_same_value = root.owner }
 		has_orbital_bombardment = no
 	}
 	immediate = {
@@ -949,8 +987,11 @@ planet_event = {
 	id = unrest.158
 	hide_window = yes
 
+	pre_triggers = {
+		has_owner = yes
+	}
+	
 	trigger = {
-		exists = owner
 		owner = { is_country_type = default }
 		exists = controller
 		controller = { is_same_value = root.owner }
@@ -1086,11 +1127,14 @@ planet_event = {
 	show_sound = event_planetary_riot
 	location = root
 
+	pre_triggers = {
+		has_owner = yes
+	}
+	
 	trigger = {
-		exists = owner
 		owner = { is_country_type = default }
 		exists = controller
-controller = { is_same_value = root.owner }
+		controller = { is_same_value = root.owner }
 		planet_stability < @stabilitylevel1
  		any_owned_pop = {
 			is_enslaved = yes
@@ -1148,8 +1192,11 @@ planet_event = {
 	show_sound = event_planetary_riot
 	location = root
 
+	pre_triggers = {
+		has_owner = yes
+	}
+	
 	trigger = {
-		exists = owner
 		owner = { is_country_type = default }
 		exists = controller
 controller = { is_same_value = root.owner }
@@ -1836,6 +1883,10 @@ planet_event = {
 	location = root
 
 	mean_time_to_happen = { months = 600 }
+	pre_triggers = {
+		has_ground_combat = no
+	}
+
 	trigger = {
 		planet_stability < @stabilitylevel1
 		check_variable = {
@@ -1849,7 +1900,6 @@ planet_event = {
 			has_planet_flag = slave_riots
 			has_planet_flag = slave_revolt
 		}
-		has_ground_combat = no
 		has_orbital_bombardment = no
 		exists = controller
 controller = { is_same_value = root.owner }

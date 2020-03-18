@@ -186,6 +186,26 @@ planet_event = {
 	}
 }
 
+# Ecumenopolis complete (Relic World)
+planet_event = {
+	id = mega.201
+	title = mega.200.name
+	desc = mega.201.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_cityscape
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_city
+	}
+
+	option = {
+		name = mega.200.a
+	}
+}
+
 #country_event = {
 #	id = mega.1000
 #	title = mega.1000.name

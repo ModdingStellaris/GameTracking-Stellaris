@@ -339,40 +339,14 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "persistent_chat_entry"
-		size = { width = 1280 height = 20 }
-
-		instantTextBoxType = {
-			name = "channel"
-			position = { x = 0 y = 0 }
-			font = "cg_16b"
-			borderSize = { x = 0 y = 0 }	
-			maxWidth = 75
-			maxHeight = 18
-			fixedSize = yes
-			alwaysTransparent = yes
-			text = "Channel"
-		}
-
-
-		instantTextBoxType = {
-			name = "user"
-			position = { x = 80 y = 0 }
-			font = "cg_16b"
-			borderSize = { x = 0 y = 0 }	
-			maxWidth = 75
-			maxHeight = 18
-			fixedSize = yes
-			alwaysTransparent = yes
-		}
+		size = { width = 1280 height = 20 } # will be resized in code to accomodate long messages
 
 		instantTextBoxType = {
 			name = "message"
-			position = { x = 160 y = 0 }
+			position = { x = 0 y = 0 }
 			font = "cg_16b"
 			borderSize = { x = 0 y = 0 }	
-			maxWidth = 1235
-			maxHeight = 18
-			fixedSize = yes
+			maxWidth = 1280
 			alwaysTransparent = yes
 		}
 	}

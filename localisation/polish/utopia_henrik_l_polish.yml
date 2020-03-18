@@ -607,7 +607,7 @@
  UNAVAILABLE_ASCENSION_PERK_SLOT:0 "Miejsce niedostępne"
  UNAVAILABLE_ASCENSION_PERK_SLOT_DESC:0 "To miejsce jest niedostępne. $ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT$"
  UNAVAILABLE_ASCENSION_PERK_SLOT_DELAYED:0 "§GKliknij, aby przejrzeć listę dostępnych korzyści z rozwoju§!"
- ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT:0 "Aby odblokować korzyść z rozwoju, musisz ukończyć grupę tradycji, przyjmując wszystkie należące do niej tradycje."
+ ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT:0 "Skompletuj grupę tradycji, przyjmując wszystkie znajdujące się w niej tradycje, albo opracuj teorię rozwoju, żeby odblokować korzyść z rozwoju."
  ASCENSION_PERKS_VIEW_SHOW_UNAVAILABLE:0 "Pokaż niedostępne"
  ASCENSION_PERKS_VIEW_SHOW_UNAVAILABLE_DESC:0 "Pokazuje wszystkie korzyści z rozwoju, nawet jeśli aktualnie nie spełniamy ich wymagań."
  utopia.2000.name:0 "Budowa świata pierścieniowego"

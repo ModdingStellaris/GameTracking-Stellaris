@@ -38,7 +38,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "hotjoin_requests_window"
-		size = { width = 325 height = 400 }
+		size = { width = 325 height = 470 }
 		moveable = yes
 		show_position = { x = 0 y = 160 }
 		hide_position = { x = -200 y = 160 }
@@ -85,7 +85,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "hotjoin_request_confirm_button"
-			position = { x = 78 y = 330 }
+			position = { x = 78 y = 400 }
 			size = { x = 150 y = 20 }
 			quadTextureSprite = "GFX_button_animated_142"
 			text = "HOTJOIN_CONFIRM"

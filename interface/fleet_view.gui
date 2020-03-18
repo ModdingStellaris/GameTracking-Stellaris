@@ -699,6 +699,7 @@ guiTypes = {
 				spriteType = "GFX_precom_fleet_xenophobe"
 				position = { x = 6 y = 55 }
 				alwaysTransparent = yes
+				scale = 0.9
 			}
 
 			buttonType = {
@@ -706,7 +707,7 @@ guiTypes = {
 				font = "cg_16b"
 				spriteType = "GFX_button_150_24"
 				buttonText = "FLEET_VIEW_CONTACT"
-				position = { x = 300 y = 150 }
+				position = { x = 295 y = 160 }
 			}
 		}
 

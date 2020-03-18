@@ -101,7 +101,7 @@
 
  tr_expansion_finish:0 "Ausbreitungstraditionen abgeschlossen"
  tr_expansion_finish_machine:0 "Verbreitungstraditionen abgeschlossen"
- tr_expansion_finish_effect:4 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_expansion_adopt$ erlaubt all Euren Planeten, die kein Habitat sind, den Bau §Y1§! zusätzlichen Distrikts."
+ tr_expansion_finish_effect:4 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_expansion_adopt$ erlaubt all Euren Planeten den Bau von §Y1§! zusätzlichen Distrikt (Dies zählt nicht für Habitate oder Ringwelten)."
  tr_expansion_finish_hive_effect:0 "$tr_expansion_finish_machine_effect$"
 
  ################################################################
@@ -524,7 +524,7 @@
  tr_discovery_faith_in_science_machine_desc:1 "Unsere Planeten erhalten für je §Y20§! £pop£ Bewohner §Y1§! £job_calculator£ §Y$job_calculator$§!"
  tr_discovery_faith_in_science_machine_delayed:0 "Die Verringerung der Verzögerung vom Orbit zur Oberfläche um 3,8% führte zu einer erhöhten Forschungsgeschwindigkeit von 5,2%. Wir werden die überschüssige Rechenleistung einsetzten, um zu versuchen, die erhaltene überschüssige Rechenleistung zu erklären."
  tr_discovery_faith_in_science_hive:0 "Synaptische Übertragung"
- tr_discovery_faith_in_science_hive_desc:1 "Unsere Planeten erhalten für je §Y20§! £pop£ Bewohner §Y1§! £job_brain_drone£ §Y$job_brain_drone$ Job§!"
+ tr_discovery_faith_in_science_hive_desc:1 "Unsere Planeten erhalten für je §Y20§! £pop£ Bewohner §Y1§! £job_brain_drone£ §Y$job_brain_drone$§!"
  tr_discovery_faith_in_science_hive_delayed:0 "Durch die strategische Anwendung von synaptischen Sendern können wir den Willen des Schwarms aus der Umlaufbahn auf den ganzen Planeten übertragen."
 
  tr_discovery_finish:0 "Entdeckungstraditionen abgeschlossen"
@@ -660,9 +660,11 @@
  requires_technology_gene_tailoring:1 "$TRIGGER_FAIL$Erfordert die Technologie £society£ §Y$tech_gene_tailoring$§!."
  requires_technology_starbase_4:0 "$TRIGGER_FAIL$Erfordet die Technologie £engineering£ §Y$tech_starbase_4$§!."
  requires_technology_starbase_5:0 "$TRIGGER_FAIL$Erfordert die Technologie £engineering£ §Y$tech_starbase_5$§!."
+ requires_technology_habitat_1:0 "$TRIGGER_FAIL$Erfordert die Technologie £engineering£ §Y$tech_habitat_1$§!."
  requires_technology_battleships:0 "$TRIGGER_FAIL$Erfordert die Technologie £engineering£ §Y$tech_battleships$§!."
  requires_technology_glandular_acclimation:0 "$TRIGGER_FAIL$Erfordert die Technologie £society£ §Y$tech_glandular_acclimation$§!."
  requires_mega_engineering:1 "$TRIGGER_FAIL$Erfordert die Technologie £engineering£ §Y$tech_mega_engineering$§!."
+ requires_built_or_repaired_megastructure:0 "$TRIGGER_FAIL$Erfordert eine vollständig reparierte oder verbesserte Megastruktur."
  hive_mind_biological_ascension_only1:0 "$TRIGGER_FAIL$Ein Schwarmbewusstsein kann den Weg des psionischen Aufstiegs nicht beschreiten."
  hive_mind_biological_ascension_only2:0 "$TRIGGER_FAIL$Ein Schwarmbewusstsein kann den Weg des synthetischen Aufstiegs nicht beschreiten."
  requires_zero_point_power:1 "$TRIGGER_FAIL$Erfordert die Technologie £physics£ §Y$tech_zero_point_power$§!."
@@ -743,7 +745,7 @@
  ap_galactic_contender_desc:0 "Die Gefallenen Reiche klammern sich in ständiger Angst vor den jüngeren und dynamischeren Rassen, die sie umgeben, an die Ruinen ihrer uralten Zivilisationen. Ihre Zeit ist schon lange vorbei."
  ap_technological_ascendancy_desc:0 "Technologien, die wir noch vor wenigen Generationen mit Magie verwechselt hätten, sind jetzt in unserer Reichweite. Ein neues Zeitalter der Technologie hat begonnen."
  ap_mastery_of_nature_desc:0 "Wir beherrschen die Natur unserer Heimatwelt zwar schon seit langer Zeit, die Alien-Biome aber, auf die wir getroffen sind, stellen neue Herausforderungen für uns dar. Aber auch diese werden wir überwinden."
- ap_voidborn_desc:1 "Die Leere, die einst als kalte und unüberwindbare Barriere angesehen wurde, ist ein zweites Zuhause für uns geworden. Dauerhafter Aufenthalt in den Tiefen des Weltalls ist jetzt möglich."
+ ap_voidborn_desc:1 "Die Leere, die einst als kalte und unüberwindbare Barriere angesehen wurde, ist ein zweites Zuhause für uns geworden. Wir haben uns auf den dauerhaften Aufenthalt in den Tiefen des Weltraums eingestellt, so dass wir weniger Infrastruktur benötigen und mehr Platz für unsere Habitate für andere Systeme haben."
  ap_the_circle_of_life_desc:0 "Eine gewaltige, ringförmige Megastruktur mit künstlichen Habitaten, gebaut um den Orbit eines Sterns. Theoretisch ist das machbar ..."
  ap_galactic_wonders_desc:0 "Megastrukturen werden zurecht als die Wunder unserer Zeit betrachtet. Vor wenigen Generationen noch wäre das Ausmaß eines solchen Projekts unvorstellbar gewesen."
  ap_interstellar_dominion_desc:2 "Die Sterne rufen und wir folgen. Möge nichts zwischen uns und ihnen stehen."
@@ -764,4 +766,4 @@
  ap_galactic_wonders_utopia_and_megacorp:2 "$ap_galactic_wonders$"
  ap_galactic_wonders_utopia_and_megacorp_desc:1 "$ap_galactic_wonders_desc$"
 
- ap_technological_ascendancy_rare:0 "§MSeletene Technologien§! tauchen nun §G50%§! öfter auf."
+ ap_technological_ascendancy_rare:2 "§MSeltene Technologien§! tauchen nun zu einer Rate von §Y1.5§! des normalen auf. Dies ändert eine Wahrscheinlichkeit von §Y1%§! auf §Y1.5%§!."

@@ -229,6 +229,21 @@ guiTypes = {
 		name = "planet_map_icon_type_bg_offset"
 		position = { x = 5 y = 7 }
 	}
+
+	positionType = {
+		name = "planet_map_icon_arch_site_offset"
+		position = { x = 9 y = 7 }
+	}
+	
+	positionType = {
+		name = "planet_map_icon_arch_site_bg_offset"
+		position = { x = 7 y = 7 }
+	}
+
+	positionType = {
+		name = "planet_map_icon_arch_site_progress_offset"
+		position = { x = 36 y = 11 }
+	}
 	
 	positionType = {
 		name = "planet_map_icon_bg_capital_size_offset"
@@ -322,6 +337,27 @@ guiTypes = {
 			name = "type_bg"
 			position = { x = 0 y = 0 }
 			quadTextureSprite = "GFX_type_frame"
+		}
+
+		buttonType = {
+			name ="arch_site"
+			spriteType = "GFX_archaeology_map_icon"
+			position = { x= 0 y = 0 }
+			scale = 0.8
+		}
+		
+		iconType = {
+			name = "arch_site_bg"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_type_frame"
+			alwaysTransparent = yes
+			scale = 1
+		}
+
+		iconType = {
+			name = "arch_site_progress"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_planet_map_icon_health"
 		}
 		
 		buttonType = {
@@ -876,4 +912,29 @@ guiTypes = {
 		}
 	}
 
+	# Archaeological Site -----------------------------------------------
+
+	containerWindowType = {
+		name = "archaeological_site_map_icon"
+		position = { x = 0 y = 0 }
+		size = { width = 50 height = 50 }
+		
+		buttonType = {
+			name = "icon"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_archaeology_map_icon"
+			size = { x = 36 y = 40 }
+			format = center
+			scale = 0.9
+		}
+
+		iconType = {
+			name = "progress"
+			position = { x = 31 y = 6 }
+			spriteType = "GFX_planet_map_icon_health"
+			frame = 1
+		}
+	}
+
+	# -------------------------------------------------------------------
 }

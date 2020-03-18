@@ -621,7 +621,7 @@
  UNAVAILABLE_ASCENSION_PERK_SLOT:0 "Vaga não disponível"
  UNAVAILABLE_ASCENSION_PERK_SLOT_DESC:0 "Esta vaga não está disponível. $ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT$"
  UNAVAILABLE_ASCENSION_PERK_SLOT_DELAYED:0 "§GClique para ver a lista de Regalias da Ascensão disponíveis§!"
- ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT:0 "Finalize um grupo de Tradição ao adotar todas as suas Tradições para liberar uma Regalia da Ascensão."
+ ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT:0 "Finalize um grupo de Tradição ao adotar todas as suas Tradições, ou pesquise a tecnologia Teoria da Ascensão para liberar uma Regalia da Ascensão."
  MISSING_ASCENSION_PERK_SLOT:0 "$TRIGGER_FAIL$Requer uma §Yvaga vazia de Regalia da Ascensão§!. $ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT$"
  ASCENSION_PERKS_VIEW_SHOW_UNAVAILABLE:0 "Mostrar Indisponíveis"
  ASCENSION_PERKS_VIEW_SHOW_UNAVAILABLE_DESC:0 "Mostrar todas as Regalias da Ascensão, mesmo se não cumprirmos todos os requerimentos."

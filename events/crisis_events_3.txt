@@ -568,6 +568,16 @@ country_event = {
 					days = -1
 				}
 			}
+			if = {
+				limit = {
+					has_country_flag = synthetic_empire
+				}
+				enable_special_project = {
+					name = "AI_CRISIS_PROJECT"
+					location = capital_scope
+					owner = root
+				}
+			}
 		}
 		else_if = {
 			limit = { has_authority = auth_machine_intelligence }
@@ -1749,6 +1759,14 @@ planet_event = {
 	
 	immediate = {
 		event_target:final_machine_world_destroyer = { set_country_flag = does_not_compute }
+		if = {
+			limit = {
+				event_target:final_machine_world_destroyer = { is_ai = no }
+			}
+			event_target:final_machine_world_destroyer = {
+				country_event = { id = crisis.2480 days = 10 random = 10 }
+			}
+		}
 		remove_global_flag = synth_terror
 		remove_global_flag = ai_ghost_signal
 		remove_global_flag = ai_invasion_ongoing
@@ -3037,9 +3055,10 @@ planet_event = {
 	
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_ground_combat = no
 	}
+
 	
 	option = {
 		name = crisis.2091.a
@@ -3073,6 +3092,10 @@ planet_event = {
 	
 	is_triggered_only = yes
 
+	pre_triggers = {
+		has_ground_combat = no
+	}
+
 	trigger = {
 		solar_system = {
 			exists = starbase
@@ -3083,7 +3106,6 @@ planet_event = {
 		NOT = {
 			owner = { has_country_flag = synth_spaceport_bombing }
 		}
-		has_ground_combat = no
 	}
 
 	immediate = {
@@ -3110,11 +3132,14 @@ planet_event = {
 	
 	is_triggered_only = yes
 
+	pre_triggers = {
+		has_ground_combat = no
+	}
+
 	trigger = {
 		NOT = {
 			owner = { has_country_flag = synth_fear }
 		}
-		has_ground_combat = no
 	}
 
 	immediate = {
@@ -3541,6 +3566,12 @@ country_event = {
 	desc = "crisis.2403.desc_03"
 	desc = "crisis.2403.desc_04"
 	desc = "crisis.2403.desc_05"
+	desc = {
+		trigger = {
+			has_relic = r_war_forge
+		}
+		text = "crisis.2403.desc_06"
+	}
 	
 	diplomatic = yes
 	
@@ -4040,16 +4071,35 @@ planet_event = {
 	
 	is_triggered_only = yes
 
+	pre_triggers = {
+		has_owner = yes
+		has_ground_combat = no
+	}
+
 	trigger = {
-		exists = owner
 		owner = { is_country_type = ai_empire }
 		planet_devastation >= 100
 		NOT = { is_planet_class = pc_ai }
-		has_ground_combat = no
 		from = { is_country_type = cybrex_empire }
 	}
 	
 	immediate = {
 		destroy_colony = yes
+	}
+}
+
+# Mainframe Core Salvaged
+country_event = {
+	id = crisis.2480
+	title = "crisis.2480.name"
+	desc = "crisis.2480.desc"
+	picture = GFX_evt_shattered_planet
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	option = {
+		name = GOOD
+		add_relic = r_contingency_core
 	}
 }

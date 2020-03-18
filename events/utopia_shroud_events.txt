@@ -258,10 +258,21 @@ country_event = {
 				}
 				10 = { country_event = { id = utopia.3200 } }
 			}
-			add_modifier = {
-				modifier = "shroud_cooldown"
-				days = 1800
-			}
+			if = {
+				limit = { 
+					has_relic = r_zro_crystal
+				}
+				add_modifier = {
+					modifier = "shroud_cooldown"
+					days = 900
+				}
+			}				
+			else = {
+				add_modifier = {
+					modifier = "shroud_cooldown"
+					days = 1800
+				}
+			}				
 		}
 	}
 	option = {
@@ -1653,8 +1664,20 @@ country_event = {
 			random_list = {
 				35 = { country_event = { id = utopia.3020 }}
 				35 = { country_event = { id = utopia.3021 }}
-				20 = { country_event = { id = utopia.3022 }}
-				10 = { country_event = { id = utopia.3023 }}
+				20 = { 
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3022 }
+				}
+				10 = { 
+					modifier = {
+						factor = 0
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3023 }
+				}
 			}
 		}
 	}
@@ -1887,8 +1910,20 @@ country_event = {
 			random_list = {
 				35 = { country_event = { id = utopia.3020 }}
 				35 = { country_event = { id = utopia.3021 }}
-				20 = { country_event = { id = utopia.3022 }}
-				10 = { country_event = { id = utopia.3023 }}
+				20 = { 
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3022 }
+				}
+				10 = { 
+					modifier = {
+						factor = 0
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3023 }
+				}
 			}
 		}
 	}
@@ -3066,6 +3101,10 @@ country_event = {
 					country_event = { id = utopia.3151 }
 				}
 				40 = {
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
 					country_Event = { id = utopia.3152 }
 				}
 			}
@@ -3218,7 +3257,13 @@ country_event = {
 		hidden_effect = {
 			random_list = {
 				60 = { country_event = { id = utopia.3161 } }
-				40 = { country_event = { id = utopia.3162 } }
+				40 = { 
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3162 } 
+				}
 			}
 		}
 	}
@@ -3330,6 +3375,10 @@ country_event = {
 					country_event = { id = utopia.3171 }
 				}
 				40 = {
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
 					country_Event = { id = utopia.3172 }
 				}
 			}
@@ -3444,6 +3493,10 @@ country_event = {
 					country_event = { id = utopia.3181 }
 				}
 				40 = {
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
 					country_Event = { id = utopia.3182 }
 				}
 			}
@@ -3517,10 +3570,21 @@ country_event = {
 		name = "exit.shroud"
 		default_hide_option = yes
 		hidden_effect = {
-			remove_modifier = "shroud_cooldown"
-			add_modifier = {
-				modifier = "shroud_precog_cooldown"
-				days = 3600
+			remove_modifier = "shroud_cooldown"			
+			if = {
+				limit = { 
+					has_relic = r_zro_crystal
+				}
+				add_modifier = {
+					modifier = "shroud_precog_cooldown"
+					days = 1800
+				}
+			}				
+			else = {
+				add_modifier = {
+					modifier = "shroud_precog_cooldown"
+					days = 3600
+				}
 			}
 		}
 	}
@@ -3702,7 +3766,13 @@ country_event = {
 			random_list = {
 				70 = { country_event = { id = utopia.3191 }}
 				20 = { country_event = { id = utopia.3192 }}
-				10 = { country_event = { id = utopia.3193 }}
+				10 = { 
+					modifier = {
+						factor = 0
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3193 }
+				}
 			}
 		}
 	}
@@ -3717,7 +3787,13 @@ country_event = {
 			random_list = {
 				50 = { country_event = { id = utopia.3191 }}
 				30 = { country_event = { id = utopia.3192 }}
-				20 = { country_event = { id = utopia.3193 }}
+				20 = { 
+					modifier = {
+						factor = 0
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3193 }
+				}
 			}
 		}
 	}
@@ -3732,7 +3808,13 @@ country_event = {
 			random_list = {
 				30 = { country_event = { id = utopia.3191 }}
 				40 = { country_event = { id = utopia.3192 }}
-				30 = { country_event = { id = utopia.3193 }}
+				30 = { 
+					modifier = {
+						factor = 0
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3193 }
+				}
 			}
 		}
 	}
@@ -4274,9 +4356,21 @@ country_event = {
 		}		
 		else = {
 			random_list = {
-				33 = { set_country_flag = patron_deity_chance_high }
+				33 = { 
+					modifier = {
+						factor = 2
+						has_relic = r_zro_crystal
+					}
+					set_country_flag = patron_deity_chance_high 
+				}
 				33 = { set_country_flag = patron_deity_chance_medium }
-				33 = { set_country_flag = patron_deity_chance_low }
+				33 = { 
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
+					set_country_flag = patron_deity_chance_low 
+				}
 			}			
 		}
 	}
@@ -5156,8 +5250,11 @@ planet_event = {
 	id = utopia.3322
 	hide_window = yes
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
+	}
+
+	trigger = {
 		owner = {
 			OR = {
 				has_modifier = covenant_end_of_the_cycle

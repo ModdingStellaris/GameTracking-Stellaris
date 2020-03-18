@@ -19,16 +19,19 @@ planet_event = { #Irradiated
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_modifier = "irradiated_planet"
 		NOT = { has_planet_flag = irradiated_colony_flag } 
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	immediate = {
@@ -148,16 +151,19 @@ planet_event = { #titanic life
 	location = ROOT
 	trackable = yes
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_modifier = "titanic_life"
 		NOT = { has_planet_flag = titanic_life_colony_flag }
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	immediate = {
@@ -326,16 +332,19 @@ planet_event = {
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_modifier = "unstable_tectonics"
 		NOT = { has_modifier = "recent_quake" }
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -425,16 +434,19 @@ planet_event = {
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_modifier = "asteroid_belt"
 		NOT = { has_modifier = "recent_comet" } 
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -458,17 +470,20 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		owner = { NOT = { has_ethic = ethic_gestalt_consciousness } }
 		has_modifier = "atmospheric_hallucinogen"
 		NOT = { has_planet_flag = atmospheric_hallucinogen_colony_flag }
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	immediate = {
@@ -549,17 +564,20 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		NOT = { has_planet_flag = asteroid_defences_colony_flag }
 		has_modifier = "asteroid_impacts"
 		NOT = { has_modifier = "recent_impact" }
-		has_ground_combat = no
 		num_pops > 1
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -621,20 +639,23 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		NOT = { has_planet_flag = asteroid_defences_colony_flag }
 		has_modifier = "asteroid_impacts"
 		num_pops > 1
-		is_capital = no
 		NOR = { 
 			has_modifier = "recent_impact"
 			has_deposit = d_impact_crater
 		}
-		has_ground_combat = no
 	}
 	
 	is_triggered_only = yes
@@ -676,18 +697,21 @@ planet_event = { #strong magnetic field good
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_modifier = "strong_magnetic_field"
 		NOT = { has_modifier = "magnetic_research_boost" }
 		NOT = { has_modifier = "magnetic_disruption" }
 		NOT = { has_planet_flag = magnetic_mystery_solved }
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	immediate = {
@@ -731,18 +755,21 @@ planet_event = { #strong magnetic field bad
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_modifier = "strong_magnetic_field"
 		NOT = { has_modifier = "magnetic_research_boost" }
 		NOT = { has_modifier = "magnetic_disruption" }
 		NOT = { has_planet_flag = magnetic_mystery_solved }
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	immediate = {
@@ -1142,7 +1169,9 @@ planet_event = { #hell
 
 	option = {
 		trigger = {
-			is_spiritualist = no
+		owner = {
+				is_spiritualist = no
+			}
 		}
 		name = colony.3006.science 
 		enable_special_project = {
@@ -1155,9 +1184,9 @@ planet_event = { #hell
 	option = {
 		name = colony.3006.psi.prayer
 		trigger = {
-			is_spiritualist = yes
 			owner = {
-					has_technology = tech_psionic_theory
+				is_spiritualist = yes
+				has_technology = tech_psionic_theory
 			}
 		}
 		enable_special_project = {
@@ -1169,8 +1198,8 @@ planet_event = { #hell
 	option = {
 		name = colony.3006.prayer
 		trigger = {
-			is_spiritualist = yes
 			owner = {
+				is_spiritualist = yes
 				NOT = {	has_technology = tech_psionic_theory }
 			}
 		}
@@ -1865,7 +1894,7 @@ country_event = { #Mirror portal followup events
 					has_modifier = dportal_trade_normal
 				}
 				random_list = {
-					100 = { } #no effect
+					60 = { } #no effect
 					10 = { planet_event = { id = colony.3031 }} #trade goes up
 					10 = { planet_event = { id = colony.3032 }} #trade goes down	
 				}
@@ -1885,7 +1914,7 @@ country_event = { #Mirror portal followup events
 					has_modifier = dportal_trade_high
 				}
 				random_list = {
-					40 = {} #no effect
+					30 = {} #no effect
 					10 = { planet_event = { id = colony.3031 }} #trade goes up
 					20 = { planet_event = { id = colony.3032 }} #trade goes down	
 				}

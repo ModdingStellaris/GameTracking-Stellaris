@@ -509,10 +509,26 @@ add_random_leader_trait = {
 				5 = {
 					if = {
 						limit = {
-							NOT = { has_trait = leader_trait_archaeologist }
+							NOR = { 
+								has_trait = leader_trait_archaeologist
+								has_trait = leader_trait_archaeologist_ancrel 
+							}
 						}
-						add_trait = leader_trait_archaeologist
-						set_timed_leader_flag = { flag = gained_leader_trait_archaeologist days = 7 }
+						if = {
+							limit = {
+								owner = { has_ancrel = yes }
+							}
+							add_trait = leader_trait_archaeologist_ancrel 
+							set_timed_leader_flag = { flag = leader_trait_archaeologist_ancrel days = 7 }
+						}
+						if = {
+							limit = {
+								owner = { has_ancrel = no }
+							}
+							add_trait = leader_trait_archaeologist
+							set_timed_leader_flag = { flag = leader_trait_archaeologist days = 7 }
+						}
+
 						set_timed_leader_flag = { flag = has_gained_trait days = 7 }
 					}
 				}
@@ -2434,21 +2450,111 @@ remove_shroud_flags = {
 
 randomize_shroud_flags = {
 	random_list = {
-		25 = { set_country_flag = high.1 }
-		25 = { set_country_flag = high.2 }
-		25 = { set_country_flag = high.3 }
-		25 = { set_country_flag = high.4 }
-		25 = { set_country_flag = high.5 }
-		25 = { set_country_flag = high.6 }
-		25 = { set_country_flag = high.7 }
-		25 = { set_country_flag = high.8 }
-		25 = { set_country_flag = high.9 }
-		25 = { set_country_flag = high.10 }
-		25 = { set_country_flag = high.11 }
-		25 = { set_country_flag = high.12 }
-		25 = { set_country_flag = high.13 }
-		25 = { set_country_flag = high.14 }
-		25 = { set_country_flag = high.15 }
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.1
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.2
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.3
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.4
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.5
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.6
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.7
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.8
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.9
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.10
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.11
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.12
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.13
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.14
+		}
+		25 = { 
+			modifier = {
+					factor = 2
+					has_relic = r_zro_crystal
+			}
+			set_country_flag = high.15
+		}
 		25 = { 
 			if = {
 				limit = {

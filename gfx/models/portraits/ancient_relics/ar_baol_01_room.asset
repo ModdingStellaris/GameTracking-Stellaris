@@ -1,0 +1,34 @@
+entity = {
+	name = "ar_baol_01_room_background_entity"
+	pdxmesh = "ar_baol_01_room_background_mesh"
+	
+	locator = { name = root }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2
+		event = { time = 0 node = effect_locator particle = ar_baol_bg_effect keep_particle = yes trigger_once = yes }
+	}
+	
+	attach = { root = "ar_baol_01_room_dust_entity" }
+	attach = { root = "ar_baol_01_room_foreground_entity" }
+	
+	scale = 1.3
+}
+entity = {
+	name = "ar_baol_01_room_dust_entity"
+	pdxmesh = "ar_baol_01_room_dust_mesh"
+	
+	game_data = {
+		uv_animation_speed 		= 0.005
+		uv_animation_direction 	= { 0.5 -1.0 }
+	}
+}
+entity = {
+	name = "ar_baol_01_room_foreground_entity"
+	pdxmesh = "ar_baol_01_room_foreground_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 10
+		event = { time = 0 node = effect_locator particle = ar_baol_fg_effect keep_particle = yes trigger_once = yes }
+	}
+}

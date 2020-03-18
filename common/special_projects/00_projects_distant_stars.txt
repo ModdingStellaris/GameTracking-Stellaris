@@ -918,8 +918,8 @@ special_project = {
 ### Breathing Rift ###
 special_project = {
 	key = "breathing_rift_project"
-	#tech_department = physics_technology
-	days_to_research = 180
+	tech_department = physics_technology
+	cost = 1000
 	timelimit = -1
 	location = no
 	picture = GFX_evt_wormhole

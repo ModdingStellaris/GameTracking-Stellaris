@@ -247,7 +247,7 @@ special_project = {
 	days_to_research = 60
 	tech_department = society_technology
 	timelimit = -1
-	picture = GFX_evt_asteroid
+	picture = GFX_evt_asteroid_field
 	
 	event_scope = ship_event
 	

@@ -887,7 +887,13 @@ country_event = {
 				}
 			}
 			stop_crisis_sound = yes
-			FROM = { save_event_target_as = portal_killer }
+			FROM = { 
+				save_event_target_as = portal_killer
+				if = {
+					limit = { is_ai = no }
+					country_event = { id = crisis.1250 days = 10 random = 10 }
+				}
+			}
 			observer_event = { id = observer.35 }
 			every_playable_country = {
 				if = {
@@ -1660,6 +1666,12 @@ country_event = {
 				country_event = { id = crisis.1116 }
 			}
 			FROM = { save_event_target_as = portal_killer }
+			if = {
+				limit = {
+					from = { is_ai = no }
+				}
+				country_event = { id = crisis.1250 days = 10 random = 10 }
+			}
 			every_country = {
 				limit = {
 					is_country_type = default
@@ -2173,6 +2185,12 @@ country_event = {
 				country_event = { id = crisis.1216 }
 			}
 			FROM = { save_event_target_as = portal_killer }
+			if = {
+				limit = {
+					from = { is_ai = no }
+				}
+				country_event = { id = crisis.1250 days = 10 random = 10 }
+			}
 			every_country = {
 				limit = {
 					is_country_type = default
@@ -3886,5 +3904,21 @@ country_event = {
 	immediate = {
 		set_crisis_sound = extradimensional_crisis_ambient_stage_2
 		set_crisis_stage_2 = yes
+	}
+}
+
+# Warlock Captured
+country_event = {
+	id = crisis.1250
+	title = "crisis.1250.name"
+	desc = "crisis.1250.desc"
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	option = {
+		name = GOOD
+		add_relic = r_unbidden_warlock
 	}
 }

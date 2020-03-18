@@ -2517,3 +2517,5 @@
  exercise_diplomatic_canceled:0 "Cancelamos las maniobras de nuestra flota para mejorar las relaciones con el [From.GetName]. El ejército no estará complacido.\n\n"
  colony.107.desc.nuked_pref:0 "El proceso interrumpido de terraformación en [Root.GetName] se ha completado. Desconocemos qué formas de vida alienígena crearon el equipo de terraformación, pero su fisiología era similar a la nuestra. Ahora el planeta tiene una atmósfera de nitrógeno-oxígeno y grandes niveles de radiación en la superficie. Se ha convertido en un §Y$pc_nuked$§!.\n\nPor suerte, los [Root.Owner.GetSpeciesName]s se han adaptado a sobrevivir a estas condiciones tan extremas."
  colony.107.a.tooltip:0 "§HToda la §!§Ypob. no $trait_mechanical$ §! §Hy sin§! §Y$trait_pc_nuked_preference$§! §Hen [Root.GetName]:§! muere"
+ DIG:0 "¡Seguid cavando!"
+ crisis.2403.desc_06:0 "¿Esa es nuestra forja de guerra?\n\nPorque se parece."

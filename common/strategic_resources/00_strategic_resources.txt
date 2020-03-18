@@ -239,3 +239,11 @@ nanites  = {
 		weight = 100
 	}
 }
+
+minor_artifacts = {
+	tradable = no
+	
+	ai_weight = {
+		weight = 1
+	}
+}

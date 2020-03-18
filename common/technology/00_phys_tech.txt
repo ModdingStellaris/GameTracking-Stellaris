@@ -130,7 +130,7 @@ tech_curator_lab = {
 	}
 }
 
-tech_archeology_lab = {
+tech_archeology_lab_ancrel = {
 	area = physics
 	category = { computing }
 	tier = 2
@@ -138,10 +138,10 @@ tech_archeology_lab = {
 	is_reverse_engineerable = no
 	is_rare = yes
 	weight = @tier2weight1
+	icon = "tech_archeology_lab"
 	
 	modifier = {
-		ship_anomaly_generation_chance_mult = 0.10
-		ship_anomaly_research_speed_mult = 0.25	
+		ship_archeaological_site_clues_add = 2
 	}
 	
 	weight_modifier = {
@@ -177,6 +177,60 @@ tech_archeology_lab = {
 			title = "TECH_UNLOCK_CURATOR_LAB_2_TITLE"
 			desc = "TECH_UNLOCK_CURATOR_LAB_2_DESC"
 		}
+	}
+
+	potential = {
+		has_ancrel = yes
+	}
+}
+
+tech_archeology_lab = {
+	area = physics
+	category = { computing }
+	tier = 2
+	cost = @tier2cost1
+	is_reverse_engineerable = no
+	is_rare = yes
+	weight = @tier2weight1
+	
+	modifier = {
+		ship_anomaly_generation_chance_mult = 0.10
+		ship_anomaly_research_speed_mult = 0.25	
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.50
+			has_modifier = "curator_insight"
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_curator"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				has_modifier = "curator_insight"	
+			}
+		}
+	}
+		
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_CURATOR_LAB_2_TITLE"
+			desc = "TECH_UNLOCK_CURATOR_LAB_2_DESC"
+		}
+	}
+
+	potential = {
+		has_ancrel = no
 	}
 }
 
@@ -2180,159 +2234,6 @@ tech_wormhole_stabilization = {
 		modifier = {
 			factor = 4
 			owns_any_bypass = wormhole
-		}
-	}
-	
-	ai_weight = {
-		factor = 4 #FTL techs are good
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-	}
-}
-
-tech_gateway_activation = {
-	cost = @tier4cost3
-	area = physics
-	tier = 4
-	category = { particles }
-	is_rare = yes
-	is_reverse_engineerable = no
-	weight = @tier4weight3
-	prerequisites = { "tech_hyper_drive_3" }
-	
-	feature_flags = { gateway_activation }
-	
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.1
-			NOR = {
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_particles"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_spark_of_genius"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_maniacal"
-				}
-			}		
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_discovery_adopt
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-		modifier = {
-			factor = 0
-			NOR = { 
-				OR = {
-					has_seen_any_bypass = gateway
-					has_seen_any_bypass = lgate
-				}
-				any_relation = {
-					is_country_type = default
-					has_communications = ROOT
-					has_technology = tech_gateway_activation
-				}
-			}
-		}
-		modifier = {
-			factor = 4
-			OR = {
-				owns_any_bypass = gateway
-				owns_any_bypass = lgate
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 4 #FTL techs are good
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-	}
-}
-
-tech_gateway_construction = {
-	cost = @tier5cost3
-	area = physics
-	tier = 5
-	category = { particles }
-	is_rare = yes
-	is_reverse_engineerable = no
-	weight = @tier5cost3
-	prerequisites = { "tech_gateway_activation" "tech_mega_engineering"}
-	
-	feature_flags = { gateway_construction }
-	
-	weight_modifier = {
-		factor = 0.5
-		modifier = {
-			factor = 0.1
-			NOR = {
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_particles"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_spark_of_genius"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_maniacal"
-				}
-			}		
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_discovery_adopt
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-		modifier = {
-			factor = 4
-			owns_any_bypass = gateway
 		}
 	}
 	

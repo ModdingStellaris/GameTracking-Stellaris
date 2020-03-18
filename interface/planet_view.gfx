@@ -6,6 +6,12 @@ spriteTypes = {
 		borderSize = { x=14 y=14 }
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 	}
+
+	corneredTileSpriteType = {
+		name = "GFX_horizontal_fade"
+		textureFile = "gfx/interface/horizontal_fade.dds"
+		borderSize = { x=5 y=5 }
+	}
 	
 	progressbarType = {
 		name = "GFX_planetview_health"
@@ -218,11 +224,11 @@ spriteTypes = {
 		name = "GFX_planet_bg_top"
 		textureFile = "gfx/interface/planetview/planet_view_top.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_colony_type"
 		textureFile = "gfx/interface/planetview/colony_type.dds"
-		noOfFrames = 18
+		noOfFrames = 28
 	}	
 	
 	spriteType = {
@@ -975,6 +981,13 @@ spriteTypes = {
 	}
 
 	corneredTileSpriteType = {
+		name = "GFX_planet_designation_button"
+		textureFile = "gfx/interface/planetview/planet_designation_background.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 1
+	}
+
+	corneredTileSpriteType = {
 		name = "GFX_tile_large_bg"
 		textureFile = "gfx/interface/tiles/tile_large_bg.dds"
 		borderSize = { x=330 y=296 }
@@ -1604,7 +1617,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_planet_view_bombarded"
 		texturefile = "gfx/interface/icons/planet_modifiers/pm_under_orbital_bombardment.dds"
-		noOfFrames = 4
+		noOfFrames = 5
 	}
 
 	spriteType = {
@@ -1761,5 +1774,29 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_purging_bg"
 		texturefile = "gfx/interface/icons/planet_backgrounds/pc_declining_purge.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_open_sector_view"
+		texturefile = "gfx/interface/buttons/button_open_sector_view.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_button_sector_new"
+		texturefile = "gfx/interface/buttons/button_sector_new.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_button_move_sector_capital"
+		texturefile = "gfx/interface/buttons/button_move_sector_capital.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_button_sector_delete"
+		texturefile = "gfx/interface/buttons/button_sector_delete.dds"
+		noOfFrames = 3
 	}
 }

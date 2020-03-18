@@ -11,9 +11,7 @@ think_tank_0 = {
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
-
 	entity_offset = { x = @entity_x y = @entity_y }
-
 	build_time = 1800
 	resources = {
 		category = megastructures
@@ -27,9 +25,7 @@ think_tank_0 = {
 		}
 	}
 	
-	potential = {
-		has_gw_think_tank = yes
-	}
+	prerequisites = { "tech_science_nexus" }
 	
 	possible = {
 		exists = starbase
@@ -41,22 +37,25 @@ think_tank_0 = {
 			fail_text = "requires_no_existing_megastructure"
 			has_no_non_gate_megastructure = yes
 		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_think_tank"
+			from = { NOT = { has_country_flag = built_think_tank } }
+		}
 	}
 	
 	placement_rules = {
 		planet_possible = {
-			custom_tooltip = {
-				fail_text = "requires_no_existing_megastructure"
-				solar_system = { has_no_non_gate_megastructure = yes }
-				NOR = {
-					has_planet_flag = megastructure
-					has_planet_flag = has_megastructure
-				}
-			}
-			custom_tooltip = {
-				fail_text = "requires_no_existing_think_tank"
-				from = { NOT = { has_country_flag = built_think_tank } }
-			}			
 			custom_tooltip = {
 				fail_text = "requires_survey_not_habitable"
 				is_surveyed = {			# prevent leaking habitability information
@@ -69,8 +68,6 @@ think_tank_0 = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-
- 			# balance for think tanks
 			custom_tooltip = {
 				fail_text = "requires_not_minor_planetary_body"
 				NOR = {
@@ -133,19 +130,9 @@ think_tank_0 = {
 think_tank_1 = {
 	entity = "thinktank_phase_01_entity"
 	construction_entity = "thinktank_phase_01_entity"
-	portrait = "GFX_megastructure_construction_background"
-	
+	portrait = "GFX_megastructure_construction_background"	
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	
-	upgrade_from = {
-		think_tank_0
-	}
-	
-	country_modifier = {
-		all_technology_research_speed = 0.05
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -164,8 +151,14 @@ think_tank_1 = {
 		}
 	}
 	
-	possible = {
-		from = { has_gw_think_tank = yes }
+	upgrade_from = {
+		think_tank_0
+	}
+	
+	prerequisites = { "tech_science_nexus" }
+	
+	country_modifier = {
+		all_technology_research_speed = 0.05
 	}
 }
 
@@ -173,18 +166,8 @@ think_tank_2 = {
 	entity = "thinktank_phase_02_entity"
 	construction_entity = "thinktank_phase_02_entity"
 	portrait = "GFX_megastructure_construction_background"
-
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	
-	upgrade_from = {
-		think_tank_1
-	}
-	
-	country_modifier = {
-		all_technology_research_speed = 0.10
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -202,9 +185,15 @@ think_tank_2 = {
 			physics_research = @stage_2_research_bonus
 		}
 	}
+
+	upgrade_from = {
+		think_tank_1
+	}
 	
-	possible = {
-		from = { has_gw_think_tank = yes }
+	prerequisites = { "tech_science_nexus" }
+	
+	country_modifier = {
+		all_technology_research_speed = 0.10
 	}
 }
 
@@ -212,18 +201,8 @@ think_tank_3 = {
 	entity = "thinktank_phase_03_entity"
 	construction_entity = "thinktank_phase_03_entity"
 	portrait = "GFX_megastructure_think_tank_background"
-
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	
-	upgrade_from = {
-		think_tank_2
-	}
-	
-	country_modifier = {
-		all_technology_research_speed = 0.15
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -241,9 +220,16 @@ think_tank_3 = {
 			physics_research = @stage_3_research_bonus
 		}
 	}
+
+	upgrade_from = {
+		think_tank_2
+	}
 	
-	possible = {
-		from = { has_gw_think_tank = yes }
+	prerequisites = { "tech_science_nexus" }
+	show_prereqs = yes
+	
+	country_modifier = {
+		all_technology_research_speed = 0.15
 	}
 }
 
@@ -252,22 +238,8 @@ think_tank_4 = {
 	entity = "thinktank_phase_03_entity"
 	construction_entity = "thinktank_phase_03_entity"
 	portrait = "GFX_megastructure_think_tank_background"
-
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-
-	# used from script only
-	upgrade_desc = hide
-	potential = { always = no }
-	
-	upgrade_from = {
-		think_tank_3
-	}
-	
-	country_modifier = {
-		all_technology_research_speed = 0.15
-	}
-
 	build_time = 20
 	resources = {
 		category = megastructures
@@ -280,6 +252,25 @@ think_tank_4 = {
 			engineering_research = @stage_4_research_bonus
 			physics_research = @stage_4_research_bonus
 		}
+	}
+	upgrade_from = {
+		think_tank_3
+	}
+
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+		}
+	}
+	
+	prerequisites = { "tech_science_nexus" }
+
+	# used from script only
+	upgrade_desc = hide
+	potential = { always = no }
+
+	country_modifier = {
+		all_technology_research_speed = 0.15
 	}
 }
 
@@ -301,18 +292,8 @@ think_tank_restored = {
 	entity = "thinktank_phase_03_entity"
 	construction_entity = "thinktank_phase_03_entity"
 	portrait = "GFX_megastructure_think_tank_background"
-
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-
-	upgrade_from = {
-		think_tank_ruined
-	}
-	
-	country_modifier = {
-		all_technology_research_speed = 0.15
-	}
-	
 	build_time = 4800
 	resources = {
 		category = megastructures
@@ -331,8 +312,16 @@ think_tank_restored = {
 		}
 	}
 
+	upgrade_from = {
+		think_tank_ruined
+	}	
+
 	possible = {
 		from = { has_technology = tech_mega_engineering }	
+	}
+	
+	country_modifier = {
+		all_technology_research_speed = 0.15
 	}
 
 	on_build_start = {
@@ -344,6 +333,7 @@ think_tank_restored = {
 	on_build_complete = {
 		every_system_ambient_object = { destroy_ambient_object = this }
 		from = {
+			set_country_flag = has_built_or_repaired_megastructure
 			country_event = { id = utopia.2013 }
 		}
 	}

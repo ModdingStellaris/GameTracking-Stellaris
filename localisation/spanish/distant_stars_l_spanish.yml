@@ -1331,7 +1331,7 @@
  story.305.aa:0 "$story.201.aa$"
  story.305.bb:0 "Un autómata fascinante."
  story.332.name:1 "$story.333.name$"
- story.332.desc:0 "Hemos destruido la base de los drones mineros y conseguido hacernos con la mayoría de sus almacenes de minerales procesados."
+ story.332.desc:1 "Hemos destruido la base de los drones mineros y conseguido hacernos con la mayoría de sus almacenes de minerales procesados y de aleaciones preciosas."
  story.332.a:0 "Riquezas indescriptibles."
  CRYSTALS_PROJECT:0 "Estudio de los cristales"
  CRYSTALS_PROJECT_DESC:0 "$CRYSTALS_1_PROJECT_DESC$"
@@ -2247,3 +2247,4 @@
  distar.5078.name:0 "Ascensión enigmática terminada"
  distar.5078.desc:0 "En las tumultuosas secuelas de la pérdida de [FromFromFrom.GetName] ante las fuerzas invasoras [From.GetSpeciesName]s, BALDOR XXXXIII se ha desmaterializado y se ha acabado la ascensión de nuestro pueblo. Creemos que el ente tubular alienígena, que ya estaba muy maltrecho, se ha visto alcanzado por accidente por el fuego enemigo y ha sufrido un daño importante en sus funciones básicas. Mientras se esfumaba, ha transmitido un último mensaje de socorro: "Soy BALDOR XXX..."."
  distar.5078.a:0 "Los [From.GetSpeciesName]s lo pagarán."
+ story.332.b:0 "...y un extraño dispositivo..."

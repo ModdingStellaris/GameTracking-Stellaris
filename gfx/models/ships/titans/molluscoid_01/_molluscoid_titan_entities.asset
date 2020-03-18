@@ -1,3 +1,5 @@
+@titan_scale = 20
+
 entity = {
 	name = "molluscoid_01_titan_entity"
 	pdxmesh = "molluscoid_01_titan_frame_mesh"
@@ -20,6 +22,10 @@ entity = {
 		event = { time = 7.5 node = "explosion_locator_04" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ship_explosion" } }
 		event = { time = 9.5 node = "explosion_locator_05" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ship_explosion" } }
 		event = { time = 12.5 node = "ship_main" particle = "dreadnought_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "amb_titan_ship_death" } }
+	}
+	
+	game_data = {
+		size = @titan_scale
 	}
 	
 	#attach = { part1 = "molluscoid_01_titan_bow_entity" }

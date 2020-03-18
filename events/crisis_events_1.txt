@@ -3569,3 +3569,101 @@ event = {
 		}
 	}
 }
+
+# Brood-Queen Relic Activation
+country_event = {
+	id = crisis.250
+	title = "crisis.250.name"
+	desc = "crisis.250.desc"
+	picture = GFX_evt_unidentified_monster
+	show_sound = event_mystic_reveal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GOOD
+		hidden_effect = {
+			capital_scope = {
+				create_fleet = {
+					name = "NAME_Loyal_Brood"
+					effect = {
+						set_owner = root
+						while = {
+							count = 6
+							create_ship = {
+								name = random
+								prefix = no
+								design = "NAME_Swarm_Large"
+								graphical_culture = "swarm_01"
+							}
+						}
+						while = {
+							count = 16
+							create_ship = {
+								name = random
+								prefix = no
+								design = "NAME_Swarm_Small"
+								graphical_culture = "swarm_01"
+							}
+						}
+						set_location = {
+							target = prev
+							distance = 45
+							angle = random
+						}
+					}
+					settings = {
+						can_change_composition = yes
+						uses_naval_capacity = no
+						can_disband = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+# Brood-Queen Captured (HIDDEN)
+country_event = {
+	id = crisis.251
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = brood_queen_captured }
+		is_country_type = swarm
+		exists = from
+		fromfrom = { is_ship_size = queen_swarm }
+		from = { is_ai = no }
+	}
+	
+	immediate = {
+		random_list = {
+			100 = {}
+			5 = {
+				set_global_flag = brood_queen_captured
+				fromfromfrom = {
+					solar_system = { save_event_target_as = battle_system }
+				}
+				from = { country_event = { id = crisis.252 } }
+			}
+		}
+	}
+}
+
+# Brood-Queen Captured
+country_event = {
+	id = crisis.252
+	title = "crisis.252.name"
+	desc = "crisis.252.desc"
+	picture = GFX_evt_unidentified_monster
+	show_sound = event_mystic_reveal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+		add_relic = "r_prethoryn_queen"
+	}
+}

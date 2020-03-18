@@ -1331,7 +1331,7 @@
  story.305.aa:0 "$story.201.aa$"
  story.305.bb:0 "Fascynujący automat."
  story.332.name:1 "$story.333.name$"
- story.332.desc:0 "Zniszczyliśmy bazę dronów górniczych i przejęliśmy większość przechowywanych tam przetworzonych minerałów."
+ story.332.desc:1 "Zniszczyliśmy bazę dronów górniczych i przejęliśmy większość przechowywanych tam przetworzonych minerałów oraz cennych stopów."
  story.332.a:0 "Niezmierzone bogactwa."
  CRYSTALS_PROJECT:0 "Badanie kryształów"
  CRYSTALS_PROJECT_DESC:0 "$CRYSTALS_1_PROJECT_DESC$"
@@ -2246,3 +2246,4 @@
  distar.5078.name:0 "Przerwano tajemniczy rozwój"
  distar.5078.desc:0 "[FromFromFrom.GetName]: po przegranym starciu z siłami uderzeniowymi [From.GetSpeciesAdj], BALDOR XXXXIII uległ dematerializacji, a rozwój naszego ludu został przerwany. Uważamy, że rurowata obca istota, która już wcześniej była w złym stanie, została ostrzelana przez wroga, co doprowadziło do rozległych uszkodzeń jej podstawowych funkcji. Odchodząc, nadała ostatni komunikat alarmowy "Jestem BALDOR XXX"."
  distar.5078.a:0 "Przeklęci [From.GetSpeciesName] zapłacą za to."
+ story.332.b:0 "i jakieś dziwne urządzenie..."

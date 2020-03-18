@@ -244,6 +244,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_map_icon_flag_capital_decoration"
 		textureFile = "gfx/interface/system/map_gui_capital_decoration.dds"
+		noOfFrames = 2
 	}
 	
 	spriteType = {

@@ -69,6 +69,7 @@ architectural_renaissance = {
 	
 	modifier = {
 		megastructure_build_speed_mult = 0.50
+		country_megastructure_build_cap_add = 1
 		planet_building_build_speed_mult = 1.00
 	}	
 	

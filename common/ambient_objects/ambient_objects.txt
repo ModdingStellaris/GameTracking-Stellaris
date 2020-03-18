@@ -318,3 +318,12 @@ ambient_object = {
 	tooltip = "derelict_particle_accelerator_desc"
 	description = "derelict_particle_accelerator_desc"
 }
+# Grunur Research Facility
+ambient_object = {
+	name = "grunur_research_facility"
+	entity = "station_generic_01_damaged_entity"
+	selectable = yes
+	show_name = yes
+	tooltip = "grunur_research_facility_desc"
+	description = "grunur_research_facility_desc"
+}

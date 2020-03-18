@@ -1265,10 +1265,13 @@ planet_event = {
 
 	is_triggered_only = yes
 
+	pre_triggers = {
+		is_occupied_flag = no
+	}
+
 	trigger = {
 		host_has_dlc = "Synthetic Dawn Story Pack"
 		owner = { is_same_value = event_target:syndaw_520_planet_owner }
-		is_occupied_flag = no
 	}
 
 	option = {
@@ -1848,9 +1851,12 @@ planet_event = { #uprising
 	show_sound = event_ai_started
 	is_triggered_only = yes
 
+	pre_triggers = {
+		has_owner = yes
+	}
+	
 	trigger = {
 		host_has_dlc = "Synthetic Dawn Story Pack"
-		exists = owner
 	}
 	
 	immediate = {

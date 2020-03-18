@@ -94,3 +94,39 @@ fleet_event = {
 		owner = { set_country_flag = emissary }
 	}
 }
+
+# Unlimited Power!
+country_event = {
+	id = achievement.5
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no 
+		NOT = { has_country_flag = unlimited_power_achievement }
+	}
+
+	immediate = {
+		set_country_flag = unlimited_power_achievement
+	}
+}
+
+# Archaeologist
+fleet_event = {
+	id = achievement.6
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { 
+			is_ai = no 
+			NOT = { has_country_flag = archaeologist_achievement }
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = archaeologist_achievement }
+	}
+}

@@ -732,4 +732,6 @@
  ap_hive_worlds_desc:0 "Stworzymy żyjące światy, które będą częścią Roju tak samo, jak mieszkające w nich jednostki."
  tr_synchronicity_kinship_gestalt_delayed:0 "Agentom o podobnych celach należy wydawać rozkazy jako grupa, zmniejszając obciążenie Nadświadomości."
  tr_diplomacy_secure_shipping_desc:0 "Podstawowa ochrona handlowa dla Trade Routes wzrosła o §G5§!."
- ap_technological_ascendancy_rare:0 "§MRzadkie technologie§! pojawiają się teraz o §G50%§! częściej."
+ ap_technological_ascendancy_rare:2 "§MRzadkie technologie§! pojawiają się teraz §Y1,5§! raza częściej. Ten efekt zmieni §Y1%§! szans na §Y1,5%§!."
+ requires_technology_habitat_1:0 "$TRIGGER_FAIL$Wymaga technologii £engineering£ §Y$tech_habitat_1$§!."
+ requires_built_or_repaired_megastructure:0 "$TRIGGER_FAIL$Wymaga posiadania naprawionej lub w pełni ulepszonej superkonstrukcji."

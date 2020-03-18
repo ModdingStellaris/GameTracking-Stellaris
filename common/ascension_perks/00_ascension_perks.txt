@@ -119,7 +119,7 @@ ap_colossus = {
 		}
 		modifier = {
 			factor = 0.25
-			is_pacifist = yes
+			is_ethics_aligned = { ARG1 = pacifist }
 		}
 		modifier = {
 			factor = 2
@@ -824,13 +824,6 @@ ap_mastery_of_nature = {
 	}
 	modifier = {
 		deposit_blockers_cost_mult = -0.33
-	}	
-	
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
-		}
 	}
 	
 	potential = {
@@ -952,13 +945,29 @@ ap_voidborn = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_technology_starbase_4"
-			has_technology = tech_starbase_4
+			fail_text = "requires_technology_habitat_1"
+			has_technology = tech_habitat_1
 		}
 	}
 	
 	on_enabled = {
-		custom_tooltip = "allow_habitats"
+		custom_tooltip = "ap_master_builders_habitat_size"
+		hidden_effect = {
+			every_planet_within_border = {
+				limit = {
+					is_planet_class = pc_habitat 
+					NOT = { has_modifier = master_builders_habitats }
+				}
+				add_modifier = {
+					modifier = master_builders_habitats
+					days = -1
+				}
+			}
+		}
+	}
+
+	modifier = {
+		pc_habitat_habitability = 0.2
 	}
 	
 	ai_weight = {
@@ -987,37 +996,17 @@ ap_master_builders = {
 				has_galactic_wonders = yes
 			}
 		}
+
 		custom_tooltip = {
-			fail_text = "requires_technology_zero_point_power"
-			has_technology = tech_zero_point_power
-		}		
+			fail_text = "requires_mega_engineering"
+			has_technology = tech_mega_engineering
+		}			
 	}
 	modifier = {
 		megastructure_build_speed_mult = 0.5
+		country_megastructure_build_cap_add = 1
 	}
-	
-	on_enabled = {
-		custom_tooltip = "ap_master_builders_habitat_size"
-		hidden_effect = {
-			every_planet_within_border = {
-				limit = {
-					is_planet_class = pc_habitat 
-					NOT = { has_modifier = master_builders_habitats }
-				}
-				add_modifier = {
-					modifier = master_builders_habitats
-					days = -1
-				}
-			}
-		}
-		if = {
-			limit = { 
-				NOT = { has_technology = tech_mega_engineering }
-			}
-			add_research_option = tech_mega_engineering
-		}		
-	}
-	
+		
 	potential = {
 		host_has_dlc = "Utopia"
 		NOT = {
@@ -1040,20 +1029,31 @@ ap_master_builders = {
 
 ap_galactic_wonders_utopia = {
 	on_enabled = {
-		custom_tooltip = "allow_spy_orb"
-		custom_tooltip = "allow_think_tank"
-		custom_tooltip = "allow_dyson_sphere"
-		custom_tooltip = "allow_ring_world"
+		custom_tooltip = "add_research_options_galactic_wonders_utopia"
+		hidden_effect = {
+			if = {
+				limit = { 
+					NOT = { has_technology = tech_ring_world }
+				}
+				add_research_option = tech_ring_world
+			}
+			if = {
+				limit = { 
+					NOT = { has_technology = tech_dyson_sphere }
+				}
+				add_research_option = tech_dyson_sphere
+			}
+		}
 	}
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
-		}
-		custom_tooltip = {
 			fail_text = "requires_mega_engineering"
 			has_technology = tech_mega_engineering
+		}
+		custom_tooltip = {
+			fail_text = "requires_built_or_repaired_megastructure"
+			has_country_flag = has_built_or_repaired_megastructure
 		}
 	}				
 	
@@ -1080,21 +1080,23 @@ ap_galactic_wonders_utopia = {
 
 ap_galactic_wonders_megacorp = {
 	on_enabled = {
-		custom_tooltip = "allow_matter_decompressor"
-		custom_tooltip = "allow_strategic_coordination_center"
-		custom_tooltip = "allow_mega_art_installation"
-		custom_tooltip = "allow_interstellar_assembly"
+		if = {
+			limit = { 
+				NOT = { has_technology = tech_matter_decompressor }
+			}
+			add_research_option = tech_matter_decompressor
+		}
 	}
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
-		}
-		custom_tooltip = {
 			fail_text = "requires_mega_engineering"
 			has_technology = tech_mega_engineering
-		}		
+		}
+		custom_tooltip = {
+			fail_text = "requires_built_or_repaired_megastructure"
+			has_country_flag = has_built_or_repaired_megastructure
+		}
 	}				
 	
 	potential = {
@@ -1120,25 +1122,39 @@ ap_galactic_wonders_megacorp = {
 
 ap_galactic_wonders_utopia_and_megacorp = {
 	on_enabled = {
-		custom_tooltip = "allow_spy_orb"
-		custom_tooltip = "allow_think_tank"
-		custom_tooltip = "allow_dyson_sphere"
-		custom_tooltip = "allow_ring_world"
-		custom_tooltip = "allow_matter_decompressor"
-		custom_tooltip = "allow_strategic_coordination_center"
-		custom_tooltip = "allow_mega_art_installation"
-		custom_tooltip = "allow_interstellar_assembly"
+		custom_tooltip = "add_research_options_galactic_wonders_utopia_megacorp"
+		hidden_effect = {
+			if = {
+				limit = { 
+					NOT = { has_technology = tech_ring_world }
+				}
+				add_research_option = tech_ring_world
+			}
+			if = {
+				limit = { 
+					NOT = { has_technology = tech_dyson_sphere }
+				}
+				add_research_option = tech_dyson_sphere
+			}
+			if = {
+				limit = { 
+					NOT = { has_technology = tech_matter_decompressor }
+				}
+				add_research_option = tech_matter_decompressor
+			}		
+		}
 	}
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
-		}
-		custom_tooltip = {
 			fail_text = "requires_mega_engineering"
 			has_technology = tech_mega_engineering
-		}		
+		}
+		custom_tooltip = {
+			fail_text = "requires_built_or_repaired_megastructure"
+			has_country_flag = has_built_or_repaired_megastructure
+		}
+		
 	}				
 	
 	potential = {
@@ -1203,6 +1219,13 @@ ap_machine_worlds = {
 	on_enabled = {
 		custom_tooltip = "allow_machine_worlds"
 		custom_tooltip = "describe_machine_worlds"
+
+		if = {
+			limit = { has_civic = civic_machine_servitor }  
+			custom_tooltip = "01_BERSERK_MACHINE_EMPIRE_ERROR"
+			custom_tooltip = "anomaly.3060.c"
+			custom_tooltip = "01_BERSERK_MACHINE_EMPIRE_ERROR"
+		}
 	}
 
 	potential = {

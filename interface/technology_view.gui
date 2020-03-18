@@ -869,7 +869,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = ""
 			position = { x = 5 y = 0 } # Please don't move from (0,0)
-			maxWidth = 360
+			maxWidth = 345
 			maxHeight = 60
 			format = left
 			fixedsize = yes

@@ -1651,11 +1651,14 @@ country_event = {
 planet_event = {
 	id = observation.1022
 	hide_window = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
 	
 	trigger = {
 		has_observation_outpost = yes
 		observation_outpost = { has_mission = specimen_collection }
-		exists = owner
 		observation_outpost_owner = { 
 			is_ai = no
 			has_relation_flag = {
@@ -1969,10 +1972,13 @@ planet_event = {
 	id = observation.1034
 	hide_window = yes
 	
+	pre_triggers = {
+		has_owner = yes
+	}
+	
 	trigger = {
 		has_observation_outpost = yes
 		observation_outpost = { has_mission = specimen_collection }
-		exists = owner
 		owner = {
 			NOT = {
 				has_ethic = "ethic_fanatic_xenophobe"
@@ -2021,10 +2027,13 @@ planet_event = {
 	id = observation.1036
 	hide_window = yes
 	
+	pre_triggers = {
+		has_owner = yes
+	}
+	
 	trigger = {
 		has_observation_outpost = yes
 		observation_outpost = { has_mission = specimen_collection }
-		exists = owner
 		owner = {
 			NOT = {
 				has_ethic = "ethic_fanatic_spiritualist"
@@ -5065,6 +5074,10 @@ planet_event = {
 	id = observation.3134
 	hide_window = yes
 	
+	pre_triggers = {
+		has_owner = yes
+	}
+	
 	trigger = {
 		has_observation_outpost = yes
 		observation_outpost_owner = { exists = this }
@@ -5078,7 +5091,6 @@ planet_event = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
-		exists = owner
 		owner = {
 			is_country_type = primitive
 			OR = {

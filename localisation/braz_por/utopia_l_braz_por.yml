@@ -6,7 +6,7 @@
  think_tank_0_CONSTRUCTION_INFO_DELAYED:0 "§E$think_tank_1$\n£physics£ §G15§! £society£ §G15§! £engineering£ §G15§!\n£minerals£ §Y20000§! £time£ §H2400§!\n\n$think_tank_2$\n£physics£ §G30§! £society£ §G30§! £engineering£ §G30§!\n£minerals£ §Y20000§! £time£ §H2400§!\n\n$think_tank_3$\n£physics£ §G50§! £society£ §G50§! £engineering£ §G50§!\n£minerals£ §Y20000§! £time£ §H2400§!§!"
 
  ring_world_1_MEGASTRUCTURE_DETAILS:1 "Um §Y$pc_ringworld_habitable$§! permite várias zonas similares a planetas, canibalizando todos os demais planetas no sistema em busca de materiais."
- ring_world_1_CONSTRUCTION_INFO_DELAYED:3 "Um Mundo Anel completo consiste de 4 Seções de Mundo Anel Concluídas, cada uma equivalente ao tamanho de 25 mundos Gaia."
+ ring_world_1_CONSTRUCTION_INFO_DELAYED:4 "Um Mundo Anel completo consiste de 4 Seções de Mundo Anel Concluídas, cada uma equivalente a um mundo Gaia gigantesco."
 
  dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "Uma §Y$dyson_sphere_5$§! envolve completamente uma estrela qualquer, convertendo toda a produção solar diretamente em £energy£ Créditos Energéticos."
  dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "Uma $dyson_sphere_5$ apagará o sol, transformando todos os planetas do sistema em Mundos Estéreis ou Congelados."
@@ -143,7 +143,7 @@
  leader_trait_scientist_erudite_desc:0 "Este líder possui um intelecto amplamente aprimorado, melhorando sua capacidade como cientista."
  leader_trait_ruler_erudite:0 "$leader_trait_admiral_erudite$"
  leader_trait_ruler_erudite_desc:0 "Este líder possui um intelecto amplamente aprimorado, melhorando sua capacidade de governar."
- ap_master_builders_habitat_size:1 "§HHabitats§! de propriedade do nosso Império possuem espaço para §Y2§! distritos adicionais."
+ ap_master_builders_habitat_size:2 "§HHabitats§! de propriedade do nosso Império possuem espaço para §Y2§! distritos adicionais."
  maneuvers_canceled:0 "Manobras de Frota Canceladas"
  maneuvers_canceled_desc:0 "§LGrandes segmentos da nossa liderança militar estão descontentes devido ao cancelamento recente das nossas manobras de frota planejadas. Eles acham que é um sinal de fraqueza inaceitável e que nossos vizinhos certamente se aproveitarão disso.§!"
  opinion_maneuvers_canceled:0 "Manobras de Frota Canceladas"

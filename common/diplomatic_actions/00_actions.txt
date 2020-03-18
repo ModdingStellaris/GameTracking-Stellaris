@@ -390,6 +390,14 @@ action_form_commercial_pact = {
 			}
 		}
 		custom_tooltip = {
+			fail_text = "requires_recipient_not_inward_perfection"
+			from = { NOT = { has_valid_civic = civic_inwards_perfection	} }
+		}
+		custom_tooltip = {
+			fail_text = "requires_actor_not_inward_perfection"
+			NOT = { has_valid_civic = civic_inwards_perfection }
+		}
+		custom_tooltip = {
 			fail_text = "requires_actor_not_gestalt_consciousness"
 			is_gestalt = no
 		}
@@ -447,6 +455,14 @@ action_form_research_agreement = {
 		custom_tooltip = {
 			fail_text = "requires_recipient_not_devouring_swarm"
 			from = { NOT = { has_valid_civic = civic_hive_devouring_swarm } }
+		}
+		custom_tooltip = {
+			fail_text = "requires_recipient_not_inward_perfection"
+			from = { NOT = { has_valid_civic = civic_inwards_perfection	} }
+		}
+		custom_tooltip = {
+			fail_text = "requires_actor_not_inward_perfection"
+			NOT = { has_valid_civic = civic_inwards_perfection }
 		}
 		custom_tooltip = {
 			fail_text = "requires_actor_not_machine_terminator"

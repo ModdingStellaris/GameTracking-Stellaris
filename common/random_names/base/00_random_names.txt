@@ -1764,6 +1764,18 @@ star_names = {
 	Mayer
 	Jezemei
 	Seb
+	Witzen
+	Sigge
+	Meredith
+	Flunph
+	Sjoberg
+	Gardener
+	Norberg
+	Cowhig
+	Charna
+	Kahkonen
+	Riggott
+	Meryl
 	"Il_Ya"
 }
 

@@ -17,7 +17,7 @@ d_metal_boneyard = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 	
-	planet_modifier = { 
+	planet_modifier = {
 		district_mining_max = 4
 		planet_jobs_society_research_produces_mult = 0.10
 	}
@@ -33,7 +33,7 @@ d_migrating_forests = {
 	
 	icon = d_huge_tree
 	
-	planet_modifier = { 
+	planet_modifier = {
 		district_mining_max = -1
 		district_farming_max = -1
 		district_generator_max = -1
@@ -50,7 +50,7 @@ d_migrating_forest_reserve = {
 	
 	icon = d_huge_tree
 	
-	planet_modifier = { 
+	planet_modifier = {
 		planet_jobs_society_research_produces_mult = 0.2
 	}
 	
@@ -540,9 +540,25 @@ d_odd_factory = {
 	category = deposit_cat_rare
 	
 	icon = d_building
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_odd_factory_worker_add = 1
+		}
+	}
 	
-	planet_modifier = {
-		job_odd_factory_worker_add = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_odd_factory_drone_add = 1
+		}
 	}
 	
 	drop_weight = {

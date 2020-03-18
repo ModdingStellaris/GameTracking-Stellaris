@@ -2117,10 +2117,13 @@ ship_event = {
 planet_event = {
 	id = akx.9399
 	hide_window = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
 	
 	trigger = {
 		has_observation_outpost = yes
-		exists = owner
 		owner = {
 			is_country_type = primitive
 			OR = {
@@ -2610,13 +2613,17 @@ planet_event = {
 	
 	is_triggered_only = yes
 
+	pre_triggers = {
+		has_owner = yes
+	}
+
 	trigger = {
 		NOR = {
 			is_planet_class = pc_habitat
 			is_planet_class = pc_ringworld_habitable
 			is_planet_class = pc_city
+			is_planet_class = pc_relic
 		}
-		exists = owner
 		owner = {
 			has_country_flag = worm_events_available
 			NOT = {
@@ -3496,9 +3503,12 @@ planet_event = {
 
 	is_triggered_only = yes
 
+	pre_triggers = {
+		is_ai = no
+	}
+
 	trigger = {
 		owner = {
-			is_ai = no
 			has_event_chain = WORM_CHAIN_1
 			NOT = { has_country_flag = alignment_built }
 		}
@@ -3622,7 +3632,9 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = { owner = { is_ai = no } }
+	pre_triggers = {
+		is_ai = no
+	}
 
 	immediate = {
 		solar_system = {
@@ -3640,6 +3652,7 @@ planet_event = {
 						is_planet_class = pc_asteroid
 						is_planet_class = pc_ice_asteroid
 						is_planet_class = pc_city
+						is_planet_class = pc_relic
 						is_star = yes
 					}
 					planet_size < 26
@@ -3736,7 +3749,6 @@ country_event = {
 	location = root
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	trigger = {
 		has_country_flag = worm_events_available
@@ -3773,6 +3785,10 @@ country_event = {
 			value = 36
 			min = 1000
 			max = 8000
+		}
+		if = {
+			limit = { has_ancrel = yes }
+			add_relic = r_worm_scales
 		}
 	}
 }

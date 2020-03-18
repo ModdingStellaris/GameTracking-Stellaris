@@ -1,0 +1,17 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in 
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+portraits = {
+
+	# Baol_room
+	baol_room = {
+		entity = "ar_baol_01_room_background_entity"	clothes_selector = "no_texture"	hair_selector = "no_texture"	greeting_sound = "mammalian_01_greetings"
+	}	
+}

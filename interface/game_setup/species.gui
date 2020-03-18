@@ -681,6 +681,11 @@ guiTypes = {
 			quadTextureSprite ="GFX_ethics"
 			tooltip_mode_enabled = yes
 		}
+		iconType = {
+			name = "timed_overlay"
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="GFX_timed_overlay"
+		}
 	}
 
 	containerWindowType = {

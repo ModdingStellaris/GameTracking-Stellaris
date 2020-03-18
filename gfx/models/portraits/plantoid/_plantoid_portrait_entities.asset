@@ -210,3 +210,15 @@ entity = {
 	state = { name = "idle"       animation = "idle4"   chance = 1.0 looping = no next_state = idle	}
 	scale = 1.0
 }
+
+entity = {
+	name = "portrait_plantoid_hivemind_entity"
+	pdxmesh = "portrait_plantoid_hivemind_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle2"   chance = 0.5 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle3"   chance = 0.5 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle4"   chance = 1.0 looping = no next_state = idle	}
+	scale = 1.0
+}

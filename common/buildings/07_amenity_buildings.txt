@@ -9,9 +9,31 @@ building_luxury_residence = {
 	potential = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { has_modifier = slave_colony }		
+		exists = owner
 		owner = { 
 			is_regular_empire = yes
 			NOT = { has_valid_civic = civic_shared_burden }
+		}
+	}
+
+	allow = {
+		buildings_simple_allow = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			AND = {
+				free_building_slots = 0
+				free_jobs = 0
+				free_housing > 10
+				owner = {
+					is_ai = yes
+				}
+			}
+			owner = { is_regular_empire = no }
+			owner = { has_valid_civic = civic_shared_burden }
+			has_modifier = slave_colony
 		}
 	}
 	
@@ -53,20 +75,24 @@ building_luxury_residence = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 2
-			free_housing < -2
+			weight = 7000 #High weight to gurantee that if the below is true then the AI should build it
+			free_housing < 5 #Prevents the AI from running out of residences when nearly out of tiles
+			OR = {
+				free_jobs > 0 #prevents spamming of residence buildings when no jobs are open
+				AND = {
+					free_housing <= 0 #Prevents the AI from running out of residences when nearly out of tiles
+					not = { any_owned_pop = { is_unemployed = yes } }
+				}
+			}
+			free_district_slots = 0 #Do not build when city districts can still be built
+			NOT = { is_planet_class = pc_habitat }
 		}
-
-		modifier = {
-			factor = 3
-			free_amenities < -5
-		}
-		
 		modifier = {
 			factor = 0
-			free_housing > 1
+			has_building = building_luxury_residence
+			owner = { has_technology = tech_paradise_dome }
 		}
 	}
 }
@@ -78,16 +104,20 @@ building_paradise_dome = {
 	category = amenity
 	
 	potential = {
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { has_modifier = slave_colony }
-		owner = { 
-			is_regular_empire = yes
-			NOT = { has_valid_civic = civic_shared_burden }
-		}
+		has_building = building_luxury_residence
 	}
 
 	allow = {
 		has_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			owner = { has_valid_civic = civic_shared_burden }
+			has_modifier = slave_colony
+		}
 	}
 	
 	convert_to = {
@@ -138,21 +168,15 @@ building_paradise_dome = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 3
-			free_amenities < 0
-		}
-		
-		modifier = {
-			factor = 5
-			free_housing < 1
-		}
-		
+		weight = 1#Needs to be higher than base building to gurantee the AI upgrades before it builds a new regular housing building
 		modifier = {
 			factor = 0
-			free_housing > 1
+			owner = { has_country_flag = buildings_new_crystal_building }
+		}
+	}#Should always upgrade
+	on_built = {
+		planet = { 
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 480 } }
 		}
 	}
 }
@@ -166,9 +190,36 @@ building_communal_housing = {
 	potential = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { has_modifier = slave_colony }
+		exists = owner
 		owner = { 
 			is_regular_empire = yes
 			has_valid_civic = civic_shared_burden
+		}
+	}
+
+	allow = {
+		buildings_simple_allow = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			AND = {
+				free_building_slots = 0
+				free_jobs = 0
+				free_housing > 10
+				owner = {
+					is_ai = yes
+				}
+			}
+			NOR = {
+				NOT = { is_planet_class = pc_habitat }
+				NOT = { has_modifier = slave_colony }
+				owner = { 
+					is_regular_empire = yes
+					has_valid_civic = civic_shared_burden
+				}
+			}
 		}
 	}
 	
@@ -210,24 +261,24 @@ building_communal_housing = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 2
-			free_housing < 0
+			weight = 7000 #High weight to gurantee that if the below is true then the AI should build it
+			free_housing < 5 #Prevents the AI from running out of residences when nearly out of tiles
+			OR = {
+				free_jobs > 0 #prevents spamming of residence buildings when no jobs are open
+				AND = {
+					free_housing <= 0 #Prevents the AI from running out of residences when nearly out of tiles
+					not = { any_owned_pop = { is_unemployed = yes } }
+				}
+			}
+			free_district_slots = 0 #Do not build when city districts can still be built
+			NOT = { is_planet_class = pc_habitat }
 		}
-
-		modifier = {
-			factor = 3
-			free_amenities < 2
-		}
-		
 		modifier = {
 			factor = 0
-			free_housing > 1
-		}
-		modifier = {
-			factor = 0.5
-			free_district_slots > 1
+			has_building = building_communal_housing
+			owner = { has_technology = tech_paradise_dome }
 		}
 	}
 }
@@ -240,16 +291,23 @@ building_communal_housing_large = {
 	category = amenity
 
 	potential = {
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { has_modifier = slave_colony }
-		owner = { 
-			is_regular_empire = yes
-			has_valid_civic = civic_shared_burden
-		}
+		has_building = building_communal_housing
 	}	
 	
 	allow = {
 		has_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		NOR = {
+			NOT = { is_planet_class = pc_habitat }
+			NOT = { has_modifier = slave_colony }
+			owner = { 
+				is_regular_empire = yes
+				has_valid_civic = civic_shared_burden
+			}
+		}
 	}
 	
 	show_tech_unlock_if = { 
@@ -303,21 +361,15 @@ building_communal_housing_large = {
 	}
 	
 	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-
-		modifier = 
-		{
-			factor = 3
-			free_amenities < 2
-		}
-		
+		weight = 1#Needs to be higher than base building to gurantee the AI upgrades before it builds a new regular housing building
 		modifier = {
 			factor = 0
-			free_housing > 1
+			owner = { has_country_flag = buildings_new_crystal_building }
+		}
+	}#Should always upgrade
+	on_built = {
+		planet = { 
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 480 } }
 		}
 	}
 }
@@ -329,7 +381,29 @@ building_drone_storage = {
 	category = amenity
 	
 	potential = {
+		exists = owner
 		owner = { is_machine_empire = yes }
+	}
+
+	allow = {
+		buildings_simple_allow = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			AND = {
+				free_building_slots = 0
+				free_jobs = 0
+				free_housing > 10
+				owner = {
+					is_ai = yes
+				}
+			}
+			NOR = {
+				owner = { is_machine_empire = yes }
+			}
+		}
 	}
 	
 	convert_to = {
@@ -358,24 +432,33 @@ building_drone_storage = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 3
-			free_housing < 0
-		}
-
-		modifier = 
-		{
-			factor = 3
-			free_amenities < 2
+			weight = 7000 #High weight to gurantee that if the below is true then the AI should build it
+			free_housing < 5 #Prevents the AI from running out of residences when nearly out of tiles
+			OR = {
+				free_jobs > 0 #prevents spamming of residence buildings when no jobs are open
+				AND = {
+					free_housing <= 0 #Prevents the AI from running out of residences when nearly out of tiles
+					not = { any_owned_pop = { is_unemployed = yes } }
+				}
+			}
+			free_district_slots = 0 #Do not build when city districts can still be built
+			NOT = { is_planet_class = pc_habitat }
 		}
 		modifier = {
-			factor = 0.5
-			free_district_slots > 1
+			weight = 7000 #High weight to gurantee that if the below is true then the AI should build it
+			is_planet_class = pc_habitat
+			free_housing < 4
+			OR = {
+				not = { any_owned_pop = { is_unemployed = yes } }
+				free_jobs > 0 #Servitors can run into a situation with no houses but free jobs open
+			}
 		}
 		modifier = {
 			factor = 0
-			free_housing > 0
+			has_building = building_drone_storage
+			owner = { has_technology = tech_micro_replicators }
 		}
 	}
 }
@@ -390,7 +473,13 @@ building_drone_megastorage = {
 		has_upgraded_capital = yes
 	}
 	potential = {
-		owner = { is_machine_empire = yes }
+		has_building = building_drone_storage
+	}
+	destroy_trigger = {
+		exists = owner
+		NOR = {
+			owner = { is_machine_empire = yes }
+		}
 	}
 	
 	convert_to = {
@@ -434,21 +523,26 @@ building_drone_megastorage = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0#Needs to be higher than base building to gurantee the AI upgrades before it builds a new regular housing building
 		modifier = {
-			factor = 2
-			free_housing < 0
+			weight = 1
+			OR = {
+				buildings_has_crystals = yes
+				num_buildings = { type = building_drone_storage value > 1 }
+			}
 		}
-
-		modifier = 
-		{
-			factor = 3
-			free_amenities < 2
+		modifier = {
+			factor = 10
+			is_planet_class = pc_habitat
 		}
-		
 		modifier = {
 			factor = 0
-			free_housing > 1
+			owner = { has_country_flag = buildings_new_crystal_building }
+		}
+	}#Should always upgrade
+	on_built = {
+		planet = { 
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 480 } }
 		}
 	}
 }
@@ -460,7 +554,35 @@ building_hive_warren = {
 	category = amenity
 	
 	potential = {
+		exists = owner
 		owner = { is_hive_empire = yes }
+	}
+
+	allow = {
+		buildings_simple_allow = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			AND = {
+				owner = { is_ai = yes }
+				years_passed < 3
+			}#Blow up the one on the homeworld.
+			AND = {
+				planet = {
+					free_building_slots = 0
+					free_jobs = 0
+					free_housing > 10
+					owner = {
+						is_ai = yes
+					}
+				}
+			}
+			NOR = {
+				owner = { is_hive_empire = yes }
+			}
+		}
 	}
 	
 	convert_to = {
@@ -489,25 +611,33 @@ building_hive_warren = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 3
-			free_housing < 0
+			weight = 7000 #High weight to gurantee that if the below is true then the AI should build it
+			free_housing < 5 #Prevents the AI from running out of residences when nearly out of tiles
+			OR = {
+				free_jobs > 0 #prevents spamming of residence buildings when no jobs are open
+				AND = {
+					free_housing <= 0 #Prevents the AI from running out of residences when nearly out of tiles
+					not = { any_owned_pop = { is_unemployed = yes } }
+				}
+			}
+			free_district_slots = 0 #Do not build when city districts can still be built
+			NOT = { is_planet_class = pc_habitat }
 		}
-
-		modifier = 
-		{
-			factor = 3
-			free_amenities < 2
+		modifier = {
+			weight = 7000 #High weight to gurantee that if the below is true then the AI should build it
+			is_planet_class = pc_habitat
+			free_housing < 4
+			OR = {
+				not = { any_owned_pop = { is_unemployed = yes } }
+				free_jobs > 0 #Servitors can run into a situation with no houses but free jobs open
+			}
 		}
-		
 		modifier = {
 			factor = 0
-			free_housing > 1
-		}
-		modifier = {
-			factor = 0.5
-			free_district_slots > 1
+			has_building = building_hive_warren
+			owner = { has_technology = tech_housing_2 }
 		}
 	}
 }
@@ -519,7 +649,7 @@ building_expanded_warren = {
 	category = amenity
 	
 	potential = {
-		owner = { is_hive_empire = yes }
+		has_building = building_hive_warren
 	}
 
 	allow = {
@@ -528,6 +658,13 @@ building_expanded_warren = {
 	
 	show_tech_unlock_if = { 
 		owner = { is_hive_empire = yes }
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		NOR = {
+			owner = { is_hive_empire = yes }
+		}
 	}
 	
 	convert_to = {
@@ -571,21 +708,26 @@ building_expanded_warren = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0#Needs to be higher than base building to gurantee the AI upgrades before it builds a new regular housing building
 		modifier = {
-			factor = 2
-			free_housing < 0
+			weight = 1
+			OR = {
+				buildings_has_crystals = yes
+				num_buildings = { type = building_hive_warren value > 1 }
+			}
 		}
-
-		modifier = 
-		{
-			factor = 3
-			free_amenities < 2
+		modifier = {
+			factor = 10
+			is_planet_class = pc_habitat
 		}
-		
 		modifier = {
 			factor = 0
-			free_housing > 1
+			owner = { has_country_flag = buildings_new_crystal_building }
+		}
+	}#Should always upgrade
+	on_built = {
+		planet = { 
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 480 } }
 		}
 	}
 }
@@ -596,17 +738,41 @@ building_holo_theatres = {
 	category = amenity
 	
 	potential = {
-		NOR = {
-			is_planet_class = pc_habitat
-			has_modifier = slave_colony
-		}		
+		NOT = {	has_modifier = slave_colony	}		
 		owner = { is_regular_empire = yes }
 	}
 	
 	destroy_trigger = {
+		exists = owner
 		OR = {
 			owner = { is_regular_empire = no }
 			has_modifier = slave_colony
+			AND = {
+				free_building_slots = 0
+				owner = { is_ai = yes }
+				OR = {
+					free_amenities > 30
+					AND = {
+						count_pops = { limit = { is_sapient = yes } count < 75 }
+						owner = {
+							is_ai = yes
+							has_technology = tech_frontier_health 
+						}
+						NOR = {
+							has_building = building_clinic
+							has_building = building_hospital
+						}
+					}
+					AND = {
+						owner = {
+							is_ai = yes
+							NOT = { has_policy_flag = robots_outlawed }
+							has_technology = tech_robotic_workers 
+						}
+						NOT = { has_building = building_robot_assembly_plant }
+					}
+				}
+			}
 		}
 	}
 		
@@ -673,19 +839,41 @@ building_holo_theatres = {
 	}
 
 	ai_weight = {
-		weight = 1
-
-		modifier = 
-		{
-			factor = 5
-			free_amenities < 2
+		weight = 0
+		modifier = {
+			weight = 12000
+			free_amenities < 5
+			OR = {
+				free_jobs < 3 #makes it come before any free_jobs = 0 building checks. This makes the build a high priority building.
+				NOT = { has_building = building_holo_theatres }
+				NOT = { has_building = building_hyper_entertainment_forum }
+			}
 		}
-		# There are already unworked jobs
-		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
-		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			free_jobs > 0 
+			OR = {
+				free_amenities > 30
+				AND = {
+					count_pops = { limit = { is_sapient = yes } count < 75 }
+					owner = {
+						is_ai = yes
+						has_technology = tech_frontier_health 
+					}
+					NOR = {
+						has_building = building_clinic
+						has_building = building_hospital
+					}
+				}
+				AND = {
+					owner = {
+						is_ai = yes
+						NOT = { has_policy_flag = robots_outlawed }
+						has_technology = tech_robotic_workers 
+					}
+					count_pops = { limit = { is_sapient = yes } count < 75 }
+					NOT = { has_building = building_robot_assembly_plant }
+				}
+			}
 		}
 	}
 }
@@ -697,7 +885,7 @@ building_hyper_entertainment_forum = {
 	category = amenity
 	
 	potential = {
-		owner = { is_regular_empire = yes }
+		has_building = building_holo_theatres
 	}
 	
 	allow = {
@@ -705,7 +893,11 @@ building_hyper_entertainment_forum = {
 	}
 	
 	destroy_trigger = {
-		owner = { is_regular_empire = no }
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = slave_colony
+		}
 	}	
 		
 	triggered_planet_modifier = {
@@ -770,18 +962,27 @@ building_hyper_entertainment_forum = {
 
 	ai_weight = {
 		weight = 1
-
-		modifier = 
-		{
-			factor = 5
-			free_amenities < 2
-		}
-		# There are already unworked jobs
-		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
-		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			free_jobs > 0 
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value <= 4
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			buildings_has_exotic_gases = no
+		}
+		modifier = {
+			factor = 0
+			owner = { has_country_flag = buildings_new_gas_building }
+		}
+	}
+	on_built = {
+		planet = { 
+			owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 480 } }
 		}
 	}
 }
@@ -796,11 +997,17 @@ building_clinic = {
 		owner = { is_regular_empire = yes }
 		NOT = { has_modifier = slave_colony }
 	}	
-	
-	allow = {}
-	
+
 	destroy_trigger = {
-		owner = { is_regular_empire = no }
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = slave_colony
+			AND = {
+				buildings_stop_pop = yes
+				owner = { is_ai = yes }
+			}
+		}
 	}
 	
 	planet_modifier = {
@@ -830,18 +1037,17 @@ building_clinic = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 5
-			free_amenities < 2
-		}
-		# There are already unworked jobs
-		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
-		# Will be improved... at some point
+		weight = 75000
 		modifier = {
 			factor = 0
-			free_jobs > 0 
+			OR = {
+				is_planet_class = pc_habitat
+				buildings_stop_pop = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			count_pops = { limit = { is_sapient = yes } count > 75 }
 		}
 	}
 }
@@ -853,8 +1059,7 @@ building_hospital = {
 	category = amenity
 	
 	potential = {
-		owner = { is_regular_empire = yes }
-		NOT = { has_modifier = slave_colony }
+		has_building = building_clinic
 	}
 	
 	allow = {
@@ -862,7 +1067,16 @@ building_hospital = {
 	}
 	
 	destroy_trigger = {
-		owner = { is_regular_empire = no }
+		exists = owner
+		OR = {
+			owner = { is_regular_empire = no }
+			has_modifier = slave_colony
+			buildings_has_exotic_gases = no
+			AND = {
+				buildings_stop_pop = yes
+				owner = { is_ai = yes }
+			}
+		}
 	}
 	
 	planet_modifier = {
@@ -894,18 +1108,10 @@ building_hospital = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 5
-			free_amenities < 2
-		}
-		# There are already unworked jobs
-		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
-		# Will be improved... at some point
+		weight = 5
 		modifier = {
 			factor = 0
-			free_jobs > 0 
+			buildings_has_exotic_gases = no
 		}
 	}
 }
@@ -920,7 +1126,15 @@ building_maintenance_depot = {
 	}
 	
 	destroy_trigger = {
-		owner = { is_gestalt = no }
+		exists = owner
+		OR = {
+			owner = { is_gestalt = no }
+			AND = {
+				owner = { is_ai = yes }
+				free_amenities > 30
+				free_building_slots = 0
+			}
+		}
 	}
 		
 	planet_modifier = {
@@ -974,22 +1188,28 @@ building_maintenance_depot = {
 	}
 
 	ai_weight = {
-		weight = 1
-
+		weight = 0
 		modifier = {
-			factor = 5
-			free_amenities < 2
-		}
-		modifier = {
-			factor = 0
-			count_owned_pops = { 
+			weight = 500
+			free_amenities < 3
+			OR = {
+				free_jobs < 3
+				NOT = { has_building = building_maintenance_depot }
+			}
+			if = {
 				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
+					owner = { is_hive_empire = yes }
 				}
-				count < 2
+				has_building = building_spawning_pool
+			}
+			if = {
+				limit = {
+					owner = { has_valid_civic = civic_machine_servitor }
+				}
+				OR = {
+					has_building = building_organic_sanctuary
+					has_building = building_organic_paradise
+				}
 			}
 		}
 	}
@@ -1003,9 +1223,14 @@ building_spawning_pool = {
 	
 	potential = {
 		owner = { is_hive_empire = yes }
+		or = {
+			num_buildings = { type = any value < 15 }
+			owner = { is_ai = no }
+		}
 	}
 	
 	destroy_trigger = {
+		exists = owner
 		owner = { is_hive_empire = no }
 	}
 	
@@ -1028,25 +1253,8 @@ building_spawning_pool = {
 	}	
 
 	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 5
-			free_amenities < 2
-		}
-		modifier = {
-			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
-		}
-	}
+		weight = 500000
+	}#Best hive mind building in the game - should always be built.
 }
 
 building_slave_huts = {
@@ -1060,6 +1268,7 @@ building_slave_huts = {
 	}
 	
 	destroy_trigger = {
+		exists = owner
 		OR = {
 			owner = { is_regular_empire = no }
 			NOT = { has_modifier = slave_colony }
@@ -1081,15 +1290,12 @@ building_slave_huts = {
 	}	
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-
-		modifier = {
-			factor = 3
-			free_amenities < 2
+			weight = 7 #High weight to gurantee that if the below is true then the AI should build it
+			free_housing < 5 #Prevents the AI from running out of residences when nearly out of tiles
+			free_jobs > 0 #prevents spamming of residence buildings when no jobs are open
+			free_district_slots = 0 #Do not build when city districts can still be built
 		}
 	}
 }
@@ -1127,10 +1333,11 @@ building_overseer_homes = {
 	}	
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 3
-			planet_crime > 0
+			weight = 3
+			planet_crime > 15 #under 15 is usually handled by the planet upgrading its capital
+			free_jobs < 2 
 		}
 	}
 }

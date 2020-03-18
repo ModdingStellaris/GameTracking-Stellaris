@@ -516,12 +516,11 @@ special_project = {
 # Opening up the cryopod
 special_project = {
 	key = "CRYOPOD_OPENING_PROJECT"
-	#cost = 0
-	days_to_research = 50
-	tech_department = society_technology
+	tech_department = engineering_technology
+	cost = 500
 	timelimit = -1
 	location = no
-	picture = GFX_evt_society_research
+	picture = GFX_evt_engineering_research
 	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
 
 	event_scope = planet_event

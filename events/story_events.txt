@@ -1456,7 +1456,270 @@ country_event = {
 
 	option = {
 		name = story.332.a
-		add_resource = { minerals = 12000 }
+		trigger = { has_ancrel = no }
+		add_resource = { minerals = 4000 alloys = 500 }
+	}
+	
+	option = {
+		name = story.332.b
+		trigger = { has_ancrel = yes }
+		add_resource = { minerals = 4000 alloys = 500 }
+		add_relic = r_surveyor
+	}
+}
+
+# Surveyor Activated
+country_event = {
+	id = story.335
+	title = story.335.name
+	desc = story.335.desc
+	picture = GFX_evt_mining_operations
+	location = event_target:chosen_planet
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_planet_within_border = { 
+			limit = { habitable_planet = no }
+			save_event_target_as = chosen_planet
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+
+		locked_random_list = {
+
+			# Energy
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { energy_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_energy_5 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { energy_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_energy_7 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { energy_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_energy_9 }
+			}
+
+			# Minerals
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { mineral_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_minerals_5 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { mineral_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_minerals_7 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { mineral_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_minerals_9 }
+			}
+
+			# Physics
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { research_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_physics_5 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { research_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_physics_7 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { research_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_physics_9 }
+			}
+
+			# Society
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { research_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_society_5 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { research_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_society_7 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { research_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_society_9 }
+			}
+
+			# Engineering
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { research_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_engineering_5 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { research_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_engineering_7 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { research_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_engineering_9 }
+			}
+
+			# Trade
+			10 = {
+				modifier = {
+					factor = 0
+					is_gestalt = yes
+				}
+				event_target:chosen_planet = { add_deposit = d_trade_value_5 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					is_gestalt = yes
+				}
+				event_target:chosen_planet = { add_deposit = d_trade_value_7 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					is_gestalt = yes
+				}
+				event_target:chosen_planet = { add_deposit = d_trade_value_9 }
+			}
+
+			# Alloys
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { alloy_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_alloys_3 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { alloy_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_alloys_4 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { alloy_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_alloys_5 }
+			}
+
+			# Exotic Gas
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { exotic_gas_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_exotic_gases_3 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { exotic_gas_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_exotic_gases_4 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { exotic_gas_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_exotic_gases_5 }
+			}
+
+			# Rare Crystals
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { rare_crystal_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_rare_crystals_3 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { rare_crystal_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_rare_crystals_4 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { rare_crystal_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_rare_crystals_5 }
+			}
+
+			# Volatile Motes
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { volatile_motes_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_volatile_motes_3 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { volatile_motes_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_volatile_motes_4 }
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { volatile_motes_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_volatile_motes_5 }
+			}
+		}
 	}
 }
 

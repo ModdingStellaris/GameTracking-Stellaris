@@ -19,7 +19,7 @@ habitat_0 = {
 
 	potential = {
 		OR = {
-			has_ascension_perk = ap_voidborn
+			has_technology = tech_habitat_1
 			has_civic = civic_diadochi
 			has_civic = civic_great_khans_legacy
 			has_country_flag = democratic_khanate_flag
@@ -117,7 +117,7 @@ habitat_0 = {
 			size = 6
 			has_ring = no
 			
-			init_effect = {
+			init_effect = {				
 				set_name = "HABITAT_PLANET_NAME"
 				set_planet_entity = {
 					entity = "orbital_habitat_entity"
@@ -131,7 +131,7 @@ habitat_0 = {
 				clear_blockers = yes
 				if = {
 					limit = {
-						from = { has_ascension_perk = ap_master_builders }
+						from = { has_ascension_perk = ap_voidborn }
 						NOT = { has_modifier = master_builders_habitats }
 					}
 					add_modifier = {
@@ -141,6 +141,239 @@ habitat_0 = {
 				}
 				set_planet_flag = megastructure
 				set_planet_flag = habitat
+
+				if = {
+					limit = {
+						OR = {
+							fromfrom.planet = { has_deposit = d_minerals_1 }
+							fromfrom.planet = { has_deposit = d_minerals_2 }
+							fromfrom.planet = { has_deposit = d_minerals_3 }
+							fromfrom.planet = { has_deposit = d_minerals_4 }
+							fromfrom.planet = { has_deposit = d_minerals_5 }
+							fromfrom.planet = { has_deposit = d_minerals_6 }
+							fromfrom.planet = { has_deposit = d_minerals_7 }
+							fromfrom.planet = { has_deposit = d_minerals_8 }
+							fromfrom.planet = { has_deposit = d_minerals_9 }
+							fromfrom.planet = { has_deposit = d_minerals_10 }
+						}
+					}
+					set_planet_flag = mining_habitat
+				}
+
+				if = {
+					limit = {
+						OR = {
+							fromfrom.planet = { has_deposit = d_energy_1 }
+							fromfrom.planet = { has_deposit = d_energy_2 }
+							fromfrom.planet = { has_deposit = d_energy_3 }
+							fromfrom.planet = { has_deposit = d_energy_4 }
+							fromfrom.planet = { has_deposit = d_energy_5 }
+							fromfrom.planet = { has_deposit = d_energy_6 }
+							fromfrom.planet = { has_deposit = d_energy_7 }
+							fromfrom.planet = { has_deposit = d_energy_8 }
+							fromfrom.planet = { has_deposit = d_energy_9 }
+							fromfrom.planet = { has_deposit = d_energy_10 }
+						}
+					}
+					set_planet_flag = energy_habitat
+				}
+
+				if = {
+					limit = { fromfrom.planet = { has_deposit_for = shipclass_research_station } }
+					set_planet_flag = research_habitat
+				}
+
+				if = {
+					limit = {
+						OR = {
+							fromfrom.planet = { has_deposit = d_trade_value_1 }
+							fromfrom.planet = { has_deposit = d_trade_value_2 }
+							fromfrom.planet = { has_deposit = d_trade_value_3 }
+							fromfrom.planet = { has_deposit = d_trade_value_4 }
+							fromfrom.planet = { has_deposit = d_trade_value_5 }
+							fromfrom.planet = { has_deposit = d_trade_value_6 }
+							fromfrom.planet = { has_deposit = d_trade_value_7 }
+							fromfrom.planet = { has_deposit = d_trade_value_8 }
+							fromfrom.planet = { has_deposit = d_trade_value_9 }
+							fromfrom.planet = { has_deposit = d_trade_value_10 }
+						}
+					}
+					set_planet_flag = commercial_habitat
+				}
+
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_exotic_gases_1 }
+					}
+					add_deposit = d_hab_gas_1
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_exotic_gases_2 }
+					}
+					add_deposit = d_hab_gas_2
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_exotic_gases_3 }
+					}
+					add_deposit = d_hab_gas_3
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_exotic_gases_4 }
+					}
+					add_deposit = d_hab_gas_4
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_exotic_gases_5 }
+					}
+					add_deposit = d_hab_gas_5
+				}
+
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_rare_crystals_1 }
+					}
+					add_deposit = d_hab_crystal_1
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_rare_crystals_2 }
+					}
+					add_deposit = d_hab_crystal_2
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_rare_crystals_3 }
+					}
+					add_deposit = d_hab_crystal_3
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_rare_crystals_4 }
+					}
+					add_deposit = d_hab_crystal_4
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_rare_crystals_5 }
+					}
+					add_deposit = d_hab_crystal_5
+				}
+				
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_volatile_motes_1 }
+					}
+					add_deposit = d_hab_mote_1
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_volatile_motes_2 }
+					}
+					add_deposit = d_hab_mote_2
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_volatile_motes_3 }
+					}
+					add_deposit = d_hab_mote_3
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_volatile_motes_4 }
+					}
+					add_deposit = d_hab_mote_4
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_volatile_motes_5 }
+					}
+					add_deposit = d_hab_mote_5
+				}
+
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_zro_deposit_1 }
+					}
+					add_deposit = d_hab_zro_1
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_zro_deposit_2 }
+					}
+					add_deposit = d_hab_zro_2
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_zro_deposit_3 }
+					}
+					add_deposit = d_hab_zro_3
+				}
+
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_dark_matter_deposit_1 }
+					}
+					add_deposit = d_hab_dark_matter_1
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_dark_matter_deposit_2 }
+					}
+					add_deposit = d_hab_dark_matter_2
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_dark_matter_deposit_3 }
+					}
+					add_deposit = d_hab_dark_matter_3
+				}
+
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_living_metal_deposit }
+					}
+					add_deposit = d_hab_living_metal_1
+				}
+				
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_1 }
+					}
+					add_deposit = d_hab_alloy_1
+					set_planet_flag = mining_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_2 }
+					}
+					add_deposit = d_hab_alloy_2
+					set_planet_flag = mining_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_3 }
+					}
+					add_deposit = d_hab_alloy_3
+					set_planet_flag = mining_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_4 }
+					}
+					add_deposit = d_hab_alloy_4
+					set_planet_flag = mining_habitat
+				}
+				if = {
+					limit = {
+						fromfrom.planet = { has_deposit = d_alloys_5 }
+					}
+					add_deposit = d_hab_alloy_5
+					set_planet_flag = mining_habitat
+				}
 			}
 		}
 		fromfrom.planet = {

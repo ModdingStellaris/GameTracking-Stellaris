@@ -18,9 +18,7 @@ dyson_sphere_0 = {
 		}
 	}
 
-	potential = {
-		has_gw_dyson_sphere = yes
-	}
+	prerequisites = { "tech_dyson_sphere" }
 	
 	possible = {
 		exists = starbase
@@ -138,9 +136,6 @@ dyson_sphere_1 = {
 	entity = "dyson_sphere_phase_01_entity"
 	construction_entity = "dyson_sphere_frame_entity"
 	portrait = "GFX_megastructure_construction_background"
-	upgrade_from = {
-		dyson_sphere_0
-	}
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -148,10 +143,12 @@ dyson_sphere_1 = {
 			alloys = 10000
 		}
 	}
-
-	possible = {
-		from = { has_gw_dyson_sphere = yes }
+	
+	upgrade_from = {
+		dyson_sphere_0
 	}
+
+	prerequisites = { "tech_dyson_sphere" }
 }
 
 #Partial Dyson Sphere
@@ -159,84 +156,6 @@ dyson_sphere_2 = {
 	entity = "dyson_sphere_phase_02_entity"
 	construction_entity = "dyson_sphere_part_1_entity"
 	portrait = "GFX_megastructure_construction_background"
-	upgrade_from = {
-		dyson_sphere_1
-	}
-	build_time = 3600
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 10000
-		}
-
-		produces = {
-			energy = 250
-		}
-	}
-
-	possible = {
-		from = { has_gw_dyson_sphere = yes }
-	}
-}
-
-#Partial Dyson Sphere
-dyson_sphere_3 = {
-	entity = "dyson_sphere_phase_03_entity"
-	construction_entity = "dyson_sphere_part_2_entity"
-	portrait = "GFX_megastructure_construction_background"
-	upgrade_from = {
-		dyson_sphere_2
-	}
-	build_time = 3600
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 10000
-		}
-
-		produces = {
-			energy = 500
-		}
-	}
-
-	possible = {
-		from = { has_gw_dyson_sphere = yes }
-	}
-}
-
-#Partial Dyson Sphere
-dyson_sphere_4 = {
-	entity = "dyson_sphere_phase_04_entity"
-	construction_entity = "dyson_sphere_part_3_entity"
-	portrait = "GFX_megastructure_construction_background"
-	upgrade_from = {
-		dyson_sphere_3
-	}
-	build_time = 3600
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 10000
-		}
-
-		produces = {
-			energy = 750
-		}
-	}
-
-	possible = {
-		from = { has_gw_dyson_sphere = yes }
-	}
-}
-
-#Dyson Sphere
-dyson_sphere_5 = {
-	entity = "dyson_sphere_phase_05_entity"
-	construction_entity = "dyson_sphere_part_4_entity"
-	portrait = "GFX_megastructure_dyson_sphere_background"
-	upgrade_from = {
-		dyson_sphere_4
-	}
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -248,12 +167,91 @@ dyson_sphere_5 = {
 			energy = 1000
 		}
 	}
+	
+	upgrade_from = {
+		dyson_sphere_1
+	}
+	
+	prerequisites = { "tech_dyson_sphere" }
+}
 
-	possible = {
-		from = { has_gw_dyson_sphere = yes }
+#Partial Dyson Sphere
+dyson_sphere_3 = {
+	entity = "dyson_sphere_phase_03_entity"
+	construction_entity = "dyson_sphere_part_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+
+		produces = {
+			energy = 2000
+		}
+	}
+	
+	upgrade_from = {
+		dyson_sphere_2
 	}
 
+	prerequisites = { "tech_dyson_sphere" }
+}
+
+#Partial Dyson Sphere
+dyson_sphere_4 = {
+	entity = "dyson_sphere_phase_04_entity"
+	construction_entity = "dyson_sphere_part_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+
+		produces = {
+			energy = 3000
+		}
+	}
+
+	upgrade_from = {
+		dyson_sphere_3
+	}
+
+	prerequisites = { "tech_dyson_sphere" }
+}
+
+#Dyson Sphere
+dyson_sphere_5 = {
+	entity = "dyson_sphere_phase_05_entity"
+	construction_entity = "dyson_sphere_part_4_entity"
+	portrait = "GFX_megastructure_dyson_sphere_background"
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+
+		produces = {
+			energy = 4000
+		}
+	}
+
+	upgrade_from = {
+		dyson_sphere_4
+	}
+
+	prerequisites = { "tech_dyson_sphere" }
+	show_prereqs = yes
+
 	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+		}
+
 		every_system_planet = {
 			limit = {
 				OR = {
@@ -287,9 +285,6 @@ dyson_sphere_restored = {
 	entity = "dyson_sphere_phase_05_entity"
 	construction_entity = "dyson_sphere_part_4_entity"
 	portrait = "GFX_megastructure_dyson_sphere_background"
-	upgrade_from = {
-		dyson_sphere_ruined
-	}
 	build_time = 7200
 	resources = {
 		category = megastructures
@@ -298,12 +293,15 @@ dyson_sphere_restored = {
 		}
 
 		produces = {
-			energy = 1000
+			energy = 4000
 		}
+	}
+	upgrade_from = {
+		dyson_sphere_ruined
 	}
 
 	possible = {
-		from = { has_technology = tech_mega_engineering }		
+		from = { has_technology = tech_mega_engineering }	
 	}
 
 	on_build_start = {
@@ -312,7 +310,7 @@ dyson_sphere_restored = {
 		}
 	}
 
-	on_build_complete = {
+	on_build_complete = {		
 		every_system_planet = {
 			limit = {
 				OR = {
@@ -330,6 +328,7 @@ dyson_sphere_restored = {
 		}
 		every_system_ambient_object = { destroy_ambient_object = this }
 		from = {
+			set_country_flag = has_built_or_repaired_megastructure
 			country_event = { id = utopia.2011 }
 		}
 	}

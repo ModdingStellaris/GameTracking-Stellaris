@@ -65,6 +65,10 @@ ship_event = {
 				max = @tier1materialmax
 			}
 			pop_lcluster_event = yes
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 		}
 	}
 }

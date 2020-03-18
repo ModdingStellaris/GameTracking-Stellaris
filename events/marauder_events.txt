@@ -4397,35 +4397,35 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_monthly_income = { resource = minerals value >= 51 }
+				has_monthly_income = { resource = minerals value >= 50 }
 				has_monthly_income = { resource = minerals value <= 100 }
 			}
 			set_country_flag = marauder_tribute_2@event_target:raiding_marauder
 		}
 		if = {
 			limit = {
-				has_monthly_income = { resource = minerals value >= 101 }
+				has_monthly_income = { resource = minerals value > 100 }
 				has_monthly_income = { resource = minerals value <= 150 }
 			}
 			set_country_flag = marauder_tribute_3@event_target:raiding_marauder
 		}
 		if = {
 			limit = {
-				has_monthly_income = { resource = minerals value >= 151 }
+				has_monthly_income = { resource = minerals value > 150 }
 				has_monthly_income = { resource = minerals value <= 200 }
 			}
 			set_country_flag = marauder_tribute_4@event_target:raiding_marauder
 		}
 		if = {
 			limit = {
-				has_monthly_income = { resource = minerals value >= 201 }
+				has_monthly_income = { resource = minerals value > 200 }
 				has_monthly_income = { resource = minerals value <= 250 }
 			}
 			set_country_flag = marauder_tribute_5@event_target:raiding_marauder
 		}
 		if = {
 			limit = {
-				has_monthly_income = { resource = minerals value >= 251 }
+				has_monthly_income = { resource = minerals value > 250 }
 			}
 			set_country_flag = marauder_tribute_6@event_target:raiding_marauder
 		}
@@ -7816,6 +7816,10 @@ country_event = {
 		from = { 
 			save_event_target_as = khan_destroyer 
 			set_country_flag = no_khan_do
+			if = {
+				limit = { is_ai = no }
+				country_event = { id = marauder.710 days = 10 random = 10 }
+			}
 		}
 		fromfrom = {
 			solar_system = { save_event_target_as = khan_death_system }
@@ -10037,5 +10041,21 @@ country_event = {
 	option = {
 		name = marauder.707.a
 		add_resource = { energy = 400 }
+	}
+}
+
+# Great Khan's Throne
+country_event = {
+	id = marauder.710
+	title = "marauder.710.name"
+	desc = "marauder.710.desc"
+	picture = GFX_evt_space_walk
+	show_sound = event_ship_thrusters
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+		add_relic = r_khans_throne
 	}
 }

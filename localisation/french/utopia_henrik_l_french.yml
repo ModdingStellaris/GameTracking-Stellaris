@@ -622,7 +622,7 @@
  UNAVAILABLE_ASCENSION_PERK_SLOT:0 "Emplacement indisponible"
  UNAVAILABLE_ASCENSION_PERK_SLOT_DESC:0 "Cet emplacement n'est pas disponible. $ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT$"
  UNAVAILABLE_ASCENSION_PERK_SLOT_DELAYED:0 "§GCliquer pour afficher la liste des atouts disponibles§!"
- ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT:0 "Pour obtenir un atout de l'ascension, il faut adopter au préalable toutes les traditions d'un ensemble de traditions."
+ ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT:0 "Pour obtenir un atout de l'ascension, il faut adopter au préalable toutes les traditions d'un ensemble de traditions ou avoir découvert la technologie Théorie de l'ascension."
  MISSING_ASCENSION_PERK_SLOT:0 "$TRIGGER_FAIL$ Nécessite un §Yemplacement d'atout vide§!. $ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT$"
  ASCENSION_PERKS_VIEW_SHOW_UNAVAILABLE:0 "Afficher tous les atouts"
  ASCENSION_PERKS_VIEW_SHOW_UNAVAILABLE_DESC:0 "Affiche la liste complète des atouts de l'ascension, même si nous ne répondons pas à toutes les conditions requises pour les adopter."

@@ -141,6 +141,7 @@ d_searing_desert = {
 		OR = {
 			is_planet_class = pc_gaia
 			is_planet_class = pc_nuked
+			is_planet_class = pc_relic
 			is_dry = yes
 		}
 	}
@@ -174,6 +175,7 @@ d_frozen_gas_lake = {
 	potential = {
 		OR = {
 			is_planet_class = pc_gaia
+			is_planet_class = pc_relic
 			is_cold = yes
 		}
 	}
@@ -243,6 +245,7 @@ d_underwater_vent = {
 	potential = {
 		OR = {
 			is_planet_class = pc_gaia
+			is_planet_class = pc_relic
 			is_planet_class = pc_ocean	
 			is_planet_class = pc_nuked
 		}
@@ -279,6 +282,7 @@ d_tempestous_mountain = {
 			is_planet_class = pc_tropical
 			is_planet_class = pc_alpine
 			is_planet_class = pc_gaia
+			is_planet_class = pc_relic
 			is_planet_class = pc_continental
 		}
 	}
@@ -391,6 +395,7 @@ d_prosperous_mesa = {
 			is_planet_class = pc_savannah
 			is_planet_class = pc_desert
 			is_planet_class = pc_gaia
+			is_planet_class = pc_relic
 		}
 	}
 	
@@ -428,6 +433,7 @@ d_ore_rich_caverns = {
 			is_planet_class = pc_tundra
 			is_planet_class = pc_nuked
 			is_planet_class = pc_gaia
+			is_planet_class = pc_relic
 		}
 	}
 	
@@ -465,6 +471,7 @@ d_rich_mountain = {
 			is_planet_class = pc_arid
 			is_planet_class = pc_tundra
 			is_planet_class = pc_gaia
+			is_planet_class = pc_relic
 		}
 	}
 	
@@ -500,6 +507,7 @@ d_submerged_ore_veins = {
 			is_planet_class = pc_savannah
 			is_planet_class = pc_nuked
 			is_planet_class = pc_gaia
+			is_planet_class = pc_relic
 		}
 	}
 	
@@ -1522,5 +1530,583 @@ d_natural_farmland = {
 	drop_weight = {
 		weight = 0.01
 		#does not occur naturally, but needs a non-zero weight
+	}
+}
+
+# HABITAT SPECIAL DEPOSITS
+d_hab_gas_1 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_gas_extractors_max = 1
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight	
+	}
+}
+
+d_hab_gas_2 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_gas_extractors_max = 2
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight		
+	}
+}
+
+d_hab_gas_3 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_gas_extractors_max = 3
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight		
+	}
+}
+
+d_hab_gas_4 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_gas_extractors_max = 4
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_gas_5 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_gas_extractors_max = 5
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_crystal_1 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_crystal_mines_max = 1
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_crystal_2 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_crystal_mines_max = 2
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_crystal_3 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_crystal_mines_max = 3
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_crystal_4 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_crystal_mines_max = 4
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_crystal_5 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = { 
+		building_crystal_mines_max = 5
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_mote_1 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	planet_modifier = { 
+		building_mote_harvesters_max = 1
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_mote_2 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	planet_modifier = { 
+		building_mote_harvesters_max = 2
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_mote_3 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	planet_modifier = { 
+		building_mote_harvesters_max = 3
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_mote_4 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	planet_modifier = { 
+		building_mote_harvesters_max = 4
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_mote_5 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	planet_modifier = { 
+		building_mote_harvesters_max = 5
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_zro_1 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			trigger = { 
+				exists = owner
+				owner = { has_technology = tech_mine_zro } 
+			}
+			sr_zro = 1
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_zro_2 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			trigger = { 
+				exists = owner
+				owner = { has_technology = tech_mine_zro } 
+			}
+			sr_zro = 2
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_zro_3 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			trigger = { 
+				exists = owner
+				owner = { has_technology = tech_mine_zro } 
+			}
+			sr_zro = 3
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_dark_matter_1 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			trigger = { 
+				exists = owner
+				owner = { has_technology = tech_mine_dark_matter } 
+			}
+			sr_dark_matter = 1
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_dark_matter_2 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			trigger = { 
+				exists = owner
+				owner = { has_technology = tech_mine_dark_matter } 
+			}
+			sr_dark_matter = 2
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_dark_matter_3 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			trigger = { 
+				exists = owner
+				owner = { has_technology = tech_mine_dark_matter } 
+			}
+			sr_dark_matter = 3
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_living_metal_1 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			trigger = { 
+				exists = owner
+				owner = { has_technology = tech_mine_living_metal } 
+			}
+			sr_living_metal = 1
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_alloy_1 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			alloys = 1
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_alloy_2 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			alloys = 2
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_alloy_3 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			alloys = 3
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_alloy_4 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			alloys = 4
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
+	}
+}
+
+d_hab_alloy_5 = {
+	icon = "unused/d_space_walk"
+	is_for_colonizeable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			alloys = 5
+		}
+	}
+	
+	drop_weight = {
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight			
 	}
 }

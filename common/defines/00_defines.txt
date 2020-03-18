@@ -28,7 +28,6 @@
 
 		GALAXY_SHOW_FLEETS_ZOOM 		= 2300 # Camera zoom interval to show fleet icons
 		GALAXY_SHOW_STARNAME_ZOOM 		= 800 # Camera zoom interval to show star name
-		GALAXY_SHOW_FILTERICONS_ZOOM 	= 300 # Camera zoom interval to show filter icons
 
 		SHOW_FLEETS_ZOOM 			= 300 # Show fleet icons instead of ship icons above this height
 		HIDE_ORBITS_ZOOM 			= 0
@@ -37,25 +36,16 @@
 		# ZOOM_STEPS_SYSTEM_PERCENTAGES = { 0.01 0.05 0.25 0.5 1.0 1.5 3.0 } # System zoom steps in percent relative to the system size
 		ZOOM_STEPS_SYSTEM_PERCENTAGES = { 0.025 0.1 0.25 0.5 1.0 1.5 3.0 } # System zoom steps in percent relative to the system size
 		ZOOM_STEPS_SHOW_FLEET_HEALTH_BARS 		= { 3 4 5 6 } # on which zoom steps per-fleet health bars should be shown
-		LEAVE_SYSTEM_BIAS			= 15000.0 # Leave system if we are 10 distance from step
-		LEAVE_GALAXY_BIAS			= 55.0 # Leave galaxy if we are 10 distance from step
 
 		LEAVE_SYSTEM_ZOOM_STEP 			= 1 # Controls which zoom step is used after leaving system
 		ENTER_SYSTEM_ZOOM_STEP 			= 6 # Controls which zoom step is used after entering system
-		SYSTEM_FOCUS_PLANET_STEP 		= 2 # Controls which zoom step to planet zoom to in a system
-		FOCUS_PLANET_DBLCLICK_X_OFFSET 	= 10.0
 
 		SYSTEM_SPACE_SCALE_MULT 	= 10.0
 		GALAXY_SPACE_SCALE_MULT 	= 2.0
-		GALAXY_RANGE_MULT			= 0.05f
 
 		SYSTEM_HOVER_RANGE 			= 0.005
 
-		DEFAULT_ACCELERATION 		= 0.8
-		FOCUS_ACCELERATION 			= 1.6
 
-		VELOCITY_FACTOR				= 0.13
-		VELOCITY_FACTOR_TRANSITION	= 0.06
 
 		BORDER_NAMES_FADEOUT_ZOOM	= 600
 		BORDER_NAMES_FADEOUT_SPEED	= 4.0
@@ -64,8 +54,6 @@
 		NEBULA_NAMES_FADEOUT_ZOOM	= 250
 		NEBULA_NAMES_FADEOUT_SPEED	= 1.5
 
-		PARTICLE_GALAXY_TRANSITION_OFFSET	= 30.0
-		PARTICLE_SYSTEM_TRANSITION_OFFSET	= 20.0
 
 		EDGE_SCROLLING_PIXELS					= 3	# how many pixels from window edge that will trigger edge scrolling
 		SCROLL_SPEED							= 0.035 	# higher values = faster camera. NOTE that this is tweakables from settings as well!
@@ -86,7 +74,6 @@
 		ROTATION_RADIANS_PER_MOUSE_UNIT			= 0.004 # moving the mouse 1 pixel results in rotation of X radians * sensitivity from settings
 		MOUSE_MOVEMENT_TO_START_ROTATION_SQ		= 16	 # how far (squared) you need to move the mouse before the game recognizes this as a camera rotation action
 
-		OFFSET_ANOMALY_VIEW					= 50	# how far from the right the anomaly view will pop up when toggling in galaxy view
 
 		SYSTEM_SLIDE_RADIUS_FACTOR = 4.0
 		SYSTEM_SLIDE_SPEED = 100.0
@@ -135,9 +122,8 @@
 		GALAXY_NEBULA_DUST_SIZE 			= 10.0
 		GALAXY_NEBULA_DUST_SIZE_EXTRA 		= 25.0
 		GALAXY_NEBULA_DUST_ROTATION_SPEED	= 0.002
-		GALAXY_TERRA_INCOGNITA_MULTIPLIER	= 0.2
 
-		SHIP_ZOOM_SCALE_MULT				= 200.0
+		ARCHAEOLOGICAL_SITE_MAP_ICON_OFFSET = -0.5
 
 		PLANET_TILT_FROM_SUN				 = 0.52  # Tilt away from sun
 		PLANET_RING_TILT_FROM_SUN			 = -0.16
@@ -206,17 +192,12 @@
 		NAVIGATION_ARROW_FONT_SIZE = 32
 		NAVIGATION_ARROW_TEXT_KERNING = 8
 
-		SHIP_HEALTH_BAR_COLOR 		= { 0.0 1.0 0.0 1.0 }
-		SHIP_HEALTH_BAR_BG_COLOR 	= { 0.5 0.0 0.0 1.0 }
-		SHIP_SHIELD_BAR_COLOR 		= { 0.0 0.4 1.0 1.0 }
-		SHIP_SHIELD_BAR_BG_COLOR 	= { 0.0 0.0 0.5 1.0 }
 
 		SHIP_TURRET_PROJECTILE_SPAWN_LOCATOR = "turret_muzzle_01"
 		STRIKE_CRAFT_PROJECTILE_SPAWN_LOCATOR = "projectile_spawn"
 		SHIP_TARGET_LOCATOR = "target_locator_"
 
 		MISSILE_HEIGHT_OFFSET		= 10.0	# how high up missiles will fly
-		MISSILE_ROTATION_RATE		= 17.0 # how fast missiles will adjust their rotation. High values can cause visible snaps each micro update
 
 		MISSILE_RANDOM_OFFSET_MIN_RADIUS = 5.0		# random spread of missiles
 		MISSILE_RANDOM_OFFSET_MAX_RADIUS = 10.0
@@ -292,10 +273,6 @@
 
 		ALIENFX_DEFAULT_COLOR = { 0.43 0.8 0.61 }
 		
-		AURA_EFFECT_COLOR_ALLIED_FRIENDLY 	= { 0.35 1 1 0.05 }
-		AURA_EFFECT_COLOR_ALLIED_HOSTILE 	= { 0.58 1 1 0.05 } 
-		AURA_EFFECT_COLOR_ENEMY_FRIENDLY 	= { 0.1 1 1.0 0.05  }
-		AURA_EFFECT_COLOR_ENEMY_HOSTILE 	= { 0.00 1 0.3 0.1 }
 		
 		MAX_GFX_PROJECTILES = 100
 		MAX_GFX_PRIO_PROJECTILES = 100
@@ -318,6 +295,8 @@
 		HYPERLANE_DEFAULT_COLOR = { 0.0 1.0 1.0 }
 		HYPERLANE_NO_ACCESS_COLOR = { 0.9 0.15 0.0 }
 		MODIFIER_TEXT_ICON_SCALE = 0.70
+
+		CELESTIAL_WARNING_COORDINATE_VALUE = 500			# System size at which you get errors for the system being too big (500 is the normal values, as graphics can glitch with bigger values)
 	}
 
 	NInterface = {
@@ -332,10 +311,8 @@
 		TOOLTIP_DELAYED_TIME 			= 0.8
 		TOOLTIP_POSITION_OFFSET 		= { 21 24 }
 		TOOLTIP_POSITION_OFFSET_STAR 	= { 6.4 0 }
-		COUNTRY_ICONS = 23
 
-		FLEET_VIEW_RESERVE_ABOVE = 230
-		FLEET_VIEW_RESERVE_INSIDE = 134
+		PERSISTENT_CHAT_LINE_HEIGHT = 20 # default y-size of persistent chat messages
 
 		NOTIFICATION_MESSAGE_XPOS 				= 130	# X-position where notification message starts
 		NOTIFICATION_MESSAGE_YPOS 				= 44	# Y-position where notification message stops
@@ -345,17 +322,12 @@
 		NOTIFICATION_MESSAGE_SPEED				= 120.0
 		NOTIFICATION_MESSAGE_DURATION_STANDARD	= 30	# How many days the notification should be shown
 
-		TECH_VIEW_ZOOM_STEPS					= { 1.0 0.75 0.5 0.3 }
-		TECH_VIEW_CAMERA_SPEED					= 6.0
-		TECH_VIEW_CAMERA_EDGE_SPEED				= 3000.0
+		ARCH_VIEW_DEFAULT_MAX_CHAPTERS = 6 # default number of supported chapters in a site, will be overriden if a site is scripted to have more
+		ARCH_VIEW_TEXTBOX_SMALL = 200	# height of textbox when not showing an event
+		ARCH_VIEW_TEXTBOX_LARGE = 265	# height of textbox when showing an event
 
 		PLANETVIEW_ORBITAL_RED_HEALTH 			= 50 # How high percentage health before orbital health bar turns red in planet view.
 		PLANETVIEW_ORBITAL_YELLOW_HEALTH 		= 75 # How high percentage health before orbital health bar turns yellow in planet view.
-		PLANETVIEW_DETACH_POP_DISTANCE			= 20 # How far the pop has to be dragged before actually detaching from a tile
-
-		GROWING_POP_ALPHA						= 0.60 # Used in planet view surface tab
-		QUEUED_BUILDING_ALPHA					= 0.60 # Used in planet view surface tab
-		POTENTIAL_ARMY_ALPHA					= 0.45 # Used in planet view army tab
 		
 		DEFAULT_CITY_POP_LEVEL					= 4 # Shown in empire designer
 		POPS_TO_SHOW_CITY_LEVEL 				= { 1 20 60 100 200 } # Decides how many pops are required to show the next level of city-infrastructure in city_frame
@@ -368,8 +340,6 @@
 		SHIP_NAME_CAP_LENGTH					= 175	# Fleet name max width to limit Henrik Thyrwall's imagination
 		SHIP_NAME_SIZE_MAX						= 26	# Max number of letters in ship names
 		SPECIES_NAME_SIZE_MAX					= 20   # Max number of letters in army names
-		SPECIES_NAME_CAP_LENGTH					= 175   # Max name width for army names
-		EMPIRE_NAME_CAP_LENGTH					= 280 	# Width based on galaxy view entry name for empires
 
 		MUSIC_SILENCE_CHANCE					= 15
 		MUSIC_SILENCE_TIME_FIXED				= 5
@@ -393,10 +363,11 @@
 
 		MAX_NUM_SAVE_GAMES						= 100
 		
-		DANGEROUS_FACTIONS_WHITE 				= 0.3 # How much support a faction must have to be listed as a white dangerous faction.
-		DANGEROUS_FACTIONS_YELLOW				= 0.5 # How much support a faction must have to be listed as a yellow dangerous faction.
-		DANGEROUS_FACTIONS_RED					= 0.8 # How much support a faction must have to be listed as a red dangerous faction.
-		
+		DAYS_PENDING_ARCHAEOLOGY_NOTIFICATIONS = 30 # num of days archaeological notifications are shown		
+		ARCHAEOLOGICAL_SITE_IN_PROGRESS_SPRITE = "GFX_evt_archaeological_site_in_progress"
+
+		SITUATION_LOG_ARCHAEOLOGY_PICTURE_SPRITE = "GFX_evt_archaeological_dig"
+		SITUATION_LOG_ARCHAEOLOGY_ICON_FILENAME		= "gfx/interface/icons/situation_log/situation_log_archaeology.dds"
 		SITUATION_LOG_DEBRIS_PICTURE_SPRITE		= "GFX_situation_log_debris_picture"
 		SITUATION_LOG_DEBRIS_ICON_FILENAME		= "gfx/interface/icons/situation_log/situation_log_debris.dds"
 		SITUATION_LOG_MODIFICATION_PICTURE_SPRITE 	= "GFX_situation_log_modification_picture"
@@ -441,9 +412,6 @@
 		OUTLINER_STARBASE_SHIPYARD_CONSTRUCTION_MAX_ENTRIES	= 6 # The max number of starbase shipyard construction progress bars to show in the outliner,
 																# make sure to also update the progress bar sizes
 		WAROVERVIEW_BATTLE_RESULT_BASE_EXHAUSTION			= 0.10	# In order to avoid a very small win with no losses on one side looking like it was "overwhelming"
-		WAROVERVIEW_BATTLE_RESULT_MAX_RELATIVE_DRAW			= 0.05	# 0..1; at this percentage of war exhaustion on one side a battle becomes a victory/defeat as opposed to a draw
-		WAROVERVIEW_BATTLE_RESULT_MIN_RELATIVE_OVERWHELMING	= 0.75	# 0..1; at this percentage of war exhaustion on one side a battle becomes a overwhelming victory/defeat as opposed to a regular victory/defeat
-		WAROVERVIEW_BATTLE_RESULT_MIN_OVERWHELMING			= 0.05	# minimum war exhaustion to let a victory or defeat count as overwhelming
 
 		PERSISTENT_CHAT_LINES_DURATION = 60		# in seconds
 		PERSISTENT_CHAT_LINES_FADE = 1			# in sceonds
@@ -510,8 +478,6 @@
 		DECADENCE_INCREASE = 2	# How much does decadence increase per time?
 		DECADENCE_MAX = 100		# Max decadence
 	
-		ALLOW_MANAGE_SECTOR_PLANETS = 1	# Can empire manually manage sector tiles?
-		SECTOR_PENALTY_MAX_MULT = 20					# Max number of times that sector penalty is multiplied		
 	
 		FTL_MAGNET_DISTANCE = 50	# The distance at which ships will warp in when caught by an FTL snare
 		
@@ -556,8 +522,6 @@
 		MIN_PLANET_RELATIVE_HOUSING			= 0.5 	# Mult of housing to housing needs
 		MAX_PLANET_RELATIVE_HOUSING			= 4.0 	# Mult of housing to housing needs
 		
-		MIN_PLANET_RELATIVE_EMPLOYMENT		= 0.0 	# Mult of jobs to pops
-		MAX_PLANET_RELATIVE_EMPLOYMENT		= 2.0 	# Mult of jobs to pops
 			
 		MIN_BLOCKED_DEPOSITS = 1		# Always try to have this many blocker deposits on planets when generating the galaxy
 		MIN_UNBLOCKED_DEPOSITS = 3		# Always try to have this many non-blocker deposits on planets when generating the galaxy
@@ -579,8 +543,6 @@
 		QUICK_CLEAR_BLOCKER_SPECIFIC_MODIFIER_WEIGHT = 1	# How heavily should specific-type max districts modifier be considered for quick-clear blocker
 		
 		ALLOW_EMPIRE_DESIGN_CHEATS = no
-		VICTORY_CONDITION_DOMINATION = 0.4
-		VICTORY_CONDITION_FEDERATION = 0.6
 		
 		# Not used for crisis faction, mainly for FEs/AEs
 		SCALED_DIFFICULTY_MAX_GALAXY_SIZE = 1000	# At this galaxy size, the full scaled difficulty modifier is applied
@@ -608,18 +570,13 @@
 		TI_TEXTURE_SIZE = 256					# size of the internal terra incognita texture high resolutions can cause stuttering and will increase memory demand and save file size.
 		TI_CORE_SCALE = 0.9
 		START_YEAR = 2200
-		MIN_ANOMALIES = -1
-		MAX_ANOMALIES = 1
 		SYSTEM_INNER_RADIUS_OFFSET = 30
 		SYSTEM_MIN_INNER_RADIUS = 150
 		SYSTEM_OUTER_RADIUS_OFFSET = 100
 		SYSTEM_BOTTLENECK_RADIUS = 2				# System will be considered bottleneck if within N systems there are no intersections between all of the directions
-		SHIP_SUBLIGHT_SPEED_MULT = 5 				# General speed multiplier for ship movement within solar systems
-		MISSILE_SUBLIGHT_SPEED_MULT = 5 			# General speed multiplier for ship movement within solar systems
 		
 		SHIP_DESIGN_SAME_NAME_FACTOR = 10			# The higher this is, the more likely a design of the same name is to be picked when upgrading to latest design
 
-		FTL_MIN_DIST = 1 							# Min distance to FTL point to start the FTL
 		JUMP_DRIVE_COOLDOWN = 200					# Days between uses of Jump Drive
 		
 		RELEVANT_DISTANCE = 150				# Within this distance we're considered to be diplomatically relevant
@@ -650,7 +607,6 @@
 			5760	#9 levels below anomaly
 		}
 
-		SENSOR_KNOWLEDGE_HIGH_DIST_PERC = 0.30		# See planet classes if distance is 30% of total sensor range sq distance
 
 		HYPERLANE_GEN_REMOVE_PERC = 0.15			# Try to remove 40% of the longest edges
 		HYPERLANE_GEN_REMOVED_MAX_DIST = 20 		# Don't remove an edge if you have to travel more than 20 stars to reach the same position
@@ -659,7 +615,6 @@
 		GALAXY_GENERATION_RELAX_ITERATIONS = 1		#Higher values means that systems will be more evenly spaced. Too high values will break spiral galaxies
 		GALAXY_GENERATION_CENTER_DUMMY_POINTS = 256 #number of dummy points that occupy empty space when relaxing the system positions
  
-		NORMAL_TAX_LEVEL 		= 0.25				# Tax level without happiness penalty
 		PLANET_ORBIT_DISTANCE_MIN_SIZE 	= 10				
 		PLANET_ORBIT_DISTANCE_SIZE_SCALE 	= 0.33		# extra orbit distance per planet size over PLANET_ORBIT_DISTANCE_MIN_SIZE 
 		PLANET_SHIP_ORBIT_DISTANCE 	= 10.0				# how far from the planet ships will orbit
@@ -673,15 +628,9 @@
 
 		LEADER_POOL_SIZE		= 3				# Each leader pool will consist of this many leaders
 		LEADER_POOL_LEAD_TIME	= 10				# Years leaders will remain in the leader pool until replaced
-		LEADER_HIRING_COST 		= 200
-		LEADER_BASE_CAP			= 10
-		LEADER_EXPERIENCE_INIT_RAND_MOD 	= 0.35
-		LEADER_EXPERIENCE_INIT_ADD 			= 0.25
 		LEADER_BASE_SKILL_CAP	= 5
 		LEADER_MAX_SKILL_CAP	= 10
 		LEADER_SKILL_MIN		= 1
-		LEADER_EXP_MIN			= 200
-		LEADER_EXP_MAX			= 400
 		LEADER_AGE_HEIR_MIN		= 18				# Min age of generated heirs in dynastic governments
 		LEADER_AGE_HEIR_MAX		= 26				# Max age of generated heirs in dynastic governments
 		LEADER_AGE_MIN			= 28				# Min age of generated leaders
@@ -706,7 +655,7 @@
 		LEADER_SCIENTIST_SURVEY_EXPERIENCE							= 10 	# Experience gained from surveyed planet
 		LEADER_SCIENTIST_SUCCESSFUL_ANOMALY_RESEARCH_EXPERIENCE		= 50 	# Experience gained from a successful discovery research
 		LEADER_SCIENTIST_COMPLETED_SPECIAL_PROJECT_EXPERIENCE		= 100	# Experience gained from completing a special project
-		LEADER_SCIENTIST_DEEP_SCAN_EXPERIENCE						= 200	# Experience gained from a deep scan
+		LEADER_SCIENTIST_COMPLETED_ARCHAEOLOGICAL_SITE_STAGE_EXPERIENCE = 75	# Experience gained from a successful archaeological site roll
 		LEADER_SCIENTIST_ASSIST_RESEARCH							= 0.10 	# Experience gained from assisting research per day
 		LEADER_SCIENTIST_ASSIST_RESEARCH_MULT						= 0.20	# Assist Research modifier-mult per skill level (this value times skill level equals modifier)
 
@@ -717,15 +666,11 @@
 		LEADER_AGE_HIGH_DEATH_CHANCE_AGE = 100		# Above this age, death chance increases drastically
 		LEADER_AGE_HIGH_DEATH_CHANCE_INC = 0.02		# Increase with these % for each year above HIGH_DEATH_CHANCE_AGE
 		
-		GENERAL_DAMAGE_EXP_MULT		= 1.0				# Multiplier of how much damage translates into experience.
-		GENERAL_DEFENSE_EXP_MULT	= 1.0				# Multiplier of how much defense translates into experience.
 
 		HABITABILITY_IDEAL_PLANET		= 1.00			# Habitability of Gaia worlds
 		HABITABILITY_WRONG_PLANET		= 0.70			# Below which point we color habitability icons and text yellow
 		HABITABILITY_OPPOSITE_PLANET	= 0.40			# Below which point we color habitability icons and text red
 
-		PLANETARY_BUILDING_ADD_FACTOR 	= 20		# Used in the calculation of the planetary building progress
-		ORBITAL_BUILDING_DIV_FACTOR		= 6		# Used in the calculation of the orbital building progress
 
 		WAR_EXHAUSTION_NAVAL_CAP_ADD		  = 100
 		WAR_EXHAUSTION_SHIP_KILLED_MULT		  = 2.00	# Multiplier of war exhaustion gained from ships
@@ -740,8 +685,6 @@
 		ENFORCE_STATUS_QUO_ENABLED	 		  = yes		# Can status quo be enforced at high WE?
 		ENFORCE_STATUS_QUO_MONTHS			  = 24
 		
-		REBELS_JOIN_DISTANCE_SQRT			= 100.0		# Distance threshold if rebels are to join an already existing rebel.
-		REBELS_POWER_THRESHOLD 				= 0.5 		# A Threshold that controls when rebels think they have a chance Higher = more unwilling
 		
 		PLANET_HEALTH_MAX 					= 100
 		PLANET_HEALTH_REGEN					= 0.05			# Each day
@@ -760,7 +703,6 @@
 		NEW_RULER_MESSAGE_DAYS				= 45 	# Days player can see message of new ruler
 
 		ETHOS_MAX_POINTS					= 3	# Number of points which you can spend on ethos.
-		ETHOS_DISTRIBUTION_FACTOR 			= 0.5	# The higher this is the more evenly ethics will be distributed among playable empires
 
 		GOVERNMENT_CIVIC_POINTS_BASE		= 2		# Base amount of civic points (to "pay" for government civic costs)
 	
@@ -771,13 +713,11 @@
 		POP_ETHOS_DIVERGENCE_RATE_MULT				= 0.02	# Chance of a pop evaluating its ethics every year
 		POP_CHANGE_FACTION_CHANCE					= 0.02	# Once every month a pop has X chance to change faction but only if the pop wants to
 		POP_CURRENT_FACTION_WEIGHT					= 1.25	# Weight for current faction is multiplied by this much for pops
-		POP_CURRENT_FACTION_LAST_MEMBER_WEIGHT		= 100.0	# Weight for current faction is multiplied by this much for pops when they are the last faction member
 		POP_FACTION_APPROVAL_VERY_LOW				= 0.20	# Below this level of approval a faction will have severe happiness penalties
 		POP_FACTION_APPROVAL_LOW					= 0.40	# Below this level of approval a faction will have severe happiness penalties
 		POP_FACTION_APPROVAL_BASE					= 0.50	# Base faction approval
 		POP_FACTION_APPROVAL_HIGH					= 0.60	# Above this level of approval a faction will have some bonus happiness
 		POP_FACTION_APPROVAL_VERY_HIGH				= 0.80	# Above this level of approval a faction will have more bonus happiness
-		POP_FACTION_SIZE_ATTRACTION					= 1	# How much does the current size of membership affect attraction (higher number = lower attraction when large)
 		POP_FACTION_MIN_POTENTIAL_MEMBERS			= 5 # If a faction has less potential members than this, do not form
 		POP_FACTION_CREATION_COOLDOWN				= 180 # Wait this many days after creating a faction to create another one (not applied to hidden factions)
 
@@ -793,20 +733,15 @@
 		DEBRIS_DAYS							= 1800	# How many days the debris is visible for
 		DEBRIS_RESEARCH_TIME				= 90	# How many days it takes to analyze 1 debris.
 
-		BASE_FLEET_SIZE						= 10	# Number of ships allowed in a fleet at game start
 
 		SPECIAL_PROJECT_BASE_PROGRESS		= 1	# i in the equation for special project time: x = (k * i) / (i + (y1 - z1) + (y2 - z2)... + (yn - zn))
-		MONUMENTAL_UNDERTAKING_DAYS			= 730	# project time to consider it a monumental undertaking.
-		MODERATE_UNDERTAKING_DAYS			= 180	# project time to consider it a moderate undertaking.
 
 		SCIENCE_SHIP_SPECIAL_PROJECT_DIST	= 25.0	# Distance to be able to progress a special project
 
 		PLANET_SENSOR_RANGE					= 1		# Base Sensor range for system that contain fully owned planets in it
 		PLANET_HYPERLANE_RANGE				= 2		# Base Hyperlane Detection range for system that contain fully owned planets in it
 		EVENT_AUTOSELECT_MONTHS				= 9 	# After these months an event option will be autoselected
-		REVOLT_RISK_ALERT					= 0.5	# This is the threshold for the revolt risk alert
 
-		SURRENDER_MONTHS					= 6 	# For how many months should a war be active after a surrender
 		TRUCE_YEARS							= 10 	# Truce last for X years
 
 		INSULT_COOLDOWN_DAYS				= 30 	# How often can you send insults?
@@ -825,10 +760,7 @@
 		FALLEN_EMPIRE_OUTER_BOUNDARY  		= 100	# Outer boundary of galaxy that fallen empire generation will try to avoid
 		FALLEN_EMPIRE_INNER_BOUNDARY		= 0		# Inner boundary of galaxy that fallen empire generation will try to avoid
 		
-		PRESCRIPTED_PLANETS_NUM				= 2	# The number of prescripted ideal colonies in empire_initializers.txt (don't change one without changing the other)
-		PRESCRIPTED_PLANETS_MAX_DISTANCE 	= 50	# Max distance of prescripted ideal colonies in empire_initializers.txt (don't change one without changing the other)
 		
-		START_ARMIES = 5					# This amount of defense armies will be generated on home planet
 		
 		ADVANCED_EMPIRE_EXTRA_WARSHIPS_MIN = 3	# How many extra war ships do advanced empires start with?
 		ADVANCED_EMPIRE_EXTRA_WARSHIPS_MAX = 7
@@ -838,9 +770,9 @@
 		ADVANCED_EMPIRE_ALWAYS_COLONIZE_HABITABILITY = 0.70 # If habitability is at least this, always colonize planet in advanced empire's borders
 
 		MATURE_GALAXY_YEARS = 100
-		MATURE_GALAXY_COLONY_DISTANCE_FIXED = 50	# max dist at which planets can be taken (fixed)
-		MATURE_GALAXY_COLONY_DISTANCE_RANDOM = 100	# max dist at which planets can be taken (random)
-		MATURE_GALAXY_COLONY_DISTANCE_SURVEYED = 100	# additional dist outside borders that has been surveyed
+		MATURE_GALAXY_COLONY_DISTANCE_FIXED = 4	# max dist at which planets can be taken (fixed)
+		MATURE_GALAXY_COLONY_DISTANCE_RANDOM = 2	# max dist at which planets can be taken (random)
+		MATURE_GALAXY_COLONY_DISTANCE_SURVEYED = 6	# additional dist outside borders that has been surveyed
 		MATURE_GALAXY_TECH_TIER = 3
 		MATURE_GALAXY_NAVY_SIZE = 1.0 # of naval capacity
 		MATURE_GALAXY_EXTRA_MINERALS = 10000
@@ -857,11 +789,13 @@
 		MATURE_GALAXY_COLONY_MINE	= "building_mining_network_3"
 		MATURE_GALAXY_COLONY_LAB	= "building_basic_science_lab_1"
 		MATURE_GALAXY_ARMY = "assault_army"
+		MATURE_GALAXY_HOME_POPS = 50
+		MATURE_GALAXY_HOME_BUILDINGS = 10
 		
 		ADVANCED_GALAXY_YEARS = 200
-		ADVANCED_GALAXY_COLONY_DISTANCE_FIXED = 100	# max dist at which planets can be taken (fixed)
-		ADVANCED_GALAXY_COLONY_DISTANCE_RANDOM = 100	# max dist at which planets can be taken (random)
-		ADVANCED_GALAXY_COLONY_DISTANCE_SURVEYED = 500	# additional dist outside borders that has been surveyed
+		ADVANCED_GALAXY_COLONY_DISTANCE_FIXED = 5	# max dist at which planets can be taken (fixed)
+		ADVANCED_GALAXY_COLONY_DISTANCE_RANDOM = 5	# max dist at which planets can be taken (random)
+		ADVANCED_GALAXY_COLONY_DISTANCE_SURVEYED = 10	# additional dist outside borders that has been surveyed
 		ADVANCED_GALAXY_TECH_TIER = 4
 		ADVANCED_GALAXY_NAVY_SIZE = 1.0 # of naval capacity
 		ADVANCED_GALAXY_EXTRA_MINERALS = 20000
@@ -878,6 +812,8 @@
 		ADVANCED_GALAXY_COLONY_MINE	= "building_mining_network_4"
 		ADVANCED_GALAXY_COLONY_LAB	= "building_basic_science_lab_1"
 		ADVANCED_GALAXY_ARMY = "assault_army"
+		ADVANCED_GALAXY_HOME_POPS = 150
+		ADVANCED_GALAXY_HOME_BUILDINGS = 25
 	
 		# Bombardment damage to planets from ships
 		ORBITAL_BOMBARDMENT_DAMAGE_MAX_SCALE			= 200		
@@ -894,7 +830,6 @@
 		COLLATERAL_DAMAGE_DEFENDER_MULT					= 0.50	# Collateral damage from defending units is multiplied by this
 		COLLATERAL_DAMAGE_MAX_PER_DAY					= 0.25	# Per combat side
 		COLLATERAL_DAMAGE_KILL_POP_CHANCE				= 0.1	# Multiplied by damage dealt		
-		COLLATERAL_DAMAGE_MIN_POPS_TO_KILL_POP			= 5
 		
 		STATION_SELF_REPAIR_TIMER_DAYS			= 10	# Number of days after taking damage before a station will start self-repairing
 
@@ -958,19 +893,10 @@
 		ELECTION_INDEPENDENT_SUPPORT			= 0.20	# Independent candidates get this much extra support
 		ELECTION_SKILL_EFFECT					= 0.10  # Candidates get this much extra support per skill level (multiplicative)
 		
-		AI_BANNED_POLICY_FLAG = "ai_outlawed"
-		AI_SERVITUDE_POLICY_FLAG = "ai_servitude"
 		AI_FULL_RIGHTS_POLICY_FLAG = "ai_full_rights"
-		PRE_SAPIENTS_PURGE_POLICY_FLAG = "pre_sapients_purge"
-		PRE_SAPIENTS_LIVESTOCK_POLICY_FLAG = "pre_sapients_eat"
-		PRE_SAPIENTS_PURGE_POLICY_FLAG = "pre_sapients_purge"
-		REFUGEES_ALLOWED_POLICY_FLAG = "refugees_allowed"
-		REFUGEES_ONLY_CITIZENS_POLICY_FLAG = "refugees_only_citizens"
 		BORDERS_OPEN_POLICY_FLAG = "border_policy_open"
 
 		SET_DEFENDER_WAR_GOAL_TIME_LIMIT		= 360	# Days defender have to set war goal after war started.
-		PEACE_OFFER_DECLINE_THRESHOLD			= 0.3	# War exhaustion diff threshold for when declining a peace offer has a cost applied.
-		PEACE_OFFER_DECLINE_COST				= 100.0 # Cost for declining an offer the AI would accept.
 		
 		OCCUPATION_BASE_VALUE 					= 5		# Base value of occupied system, used for calculating relative occupation score of empire
 		OCCUPATION_PLANET_VALUE 				= 10	# Per planet in system
@@ -981,8 +907,6 @@
 		
 		RESOURCE_CLUSTER_COUNT					= 6 	# Number of resource clusters containing special resources
 		
-		POP_SLAVERY_NOT_ALLOWED_POLICY_FLAG	= "slavery_not_allowed" # Policy flag for pop slavery not allowed 
-		POP_PURGE_NOT_ALLOWED_POLICY_FLAG	= "purge_not_allowed" # Policy flag for pop purge not allowed 
 	
 		RESEARCH_AGREEMENT_SPEED_MULT			= 0.25	# Research speed increased by this for trade research agreement deal
 
@@ -1016,8 +940,6 @@
 		
 		EVADE_HOSTILE_CANCEL_ORDERS_THRESHOLD_DAYS = 180 # When evading hostiles ships will cancel orders that would take more than X days to reach.
 
-		GATEWAYS_MIN_DISTANCE	= 200		# Min distance between generated shortcuts and their endpoint
-		GALAXY_GENERATION_GATEWAYS_PERCENTAGE	= 0.05		# percentage of systems that will have a shortcut at game start
 
 		EDICT_MAX_RESOURCE_COST 			= 1000000
 		EXPERIMENTAL_SUBSPACE_NAVIGATION_TIME_MULT 			= 3.0		# value * hyperlane distance to system defines the MIA time (travel time in days) for a Science Ship MIA Jump	
@@ -1028,11 +950,21 @@
 		HIGH_PIRACY_RISK					= 0.8	#ratio of dangerous actual piracy to trade protection
 
 		MACHINE_EMPIRE_EXCLUSION_TRAIT		= "trait_mechanical"		# pops with this trait will not be built by machine empires
+
+		ARCHAEOLOGICAL_SITE_DICE_ROLL_MIN = 1
+		ARCHAEOLOGICAL_SITE_DICE_ROLL_MAX = 10
+		ARCHAEOLOGICAL_SITE_DISCOVERY_SCORE = 14
+		ARCHAEOLOGICAL_SITE_DISCOVERY_DAYS = 90
+
+		RELIC_VIEW_SLOTS_PER_ROW = 3
+		RELIC_VIEW_SLOTS_PER_ROW_WIDE	= 4
+		RELIC_VIEW_DEFAULT_ROW_COUNT = 2
+
+		MEGASTRUCTURE_BUILD_CAP_BASE		= 1.0
 	}
 
 	NSpecies = {
 		MIN_ETHIC_POINTS 					= 3
-		MAX_ETHIC_POINTS 					= 3
 		
 		HALF_BREED_BASE_CHANCE				= 0.1
 		HALF_BREED_SAME_CLASS_CHANCE_ADD	= 0.3
@@ -1064,33 +996,13 @@
 		DESIGNER_WEAPON_PREF_MUL			= 1.33			# How much does weapon preference tags in the ship designer affect the weight it assigns a weapon?
 		DESIGNER_WEAPON_STACKING_DIV		= 0.25			# The higher this is the more the ship designer will try to vary which weapon types are used on its sections
 		
-		ENERGY_MAINTENANCE_MUL				= 0.005		# Ship Maintenance Multiplier Percentage of the cost of the ship
-		MINERAL_MAINTENANCE_MUL				= 0.010		# Ship Maintenance Multiplier Percentage of the cost of the ship
 		ABANDONED_STATION_DECAY_RATE		= 0.003		# Abandoned stations lose this amount of health per day
-		POOR_MAINTENANCE_PENALTY			= 0.01		# 1% percent max hit points penalty each day for poor maintenance (energy under 0)
 		
-		FALLEN_EMPIRE_MAINTENANCE_MULT		= 0.25
-		AWAKENED_FALLEN_EMPIRE_MAINTENANCE_MULT		= 0.5
-		AWAKENED_FALLEN_EMPIRE_NAVAL_PLANET_MIN 	= 10
 		
 		STRIKE_CRAFT_COMBAT_REGEN 			= 0.2
 
 		MOVE_SHIP_TO_FLEET_MAX_DIST			= 50.0
 
-		COST_SECTION_MUL					= 0.25
-	    COST_SECTION_BASE					= 50.0
-	    COST_SECTION_ADD_SMALL_WEAPON_SLOT	= 10.0
-		COST_SECTION_ADD_MEDIUM_WEAPON_SLOT	= 20.0
-		COST_SECTION_ADD_LARGE_WEAPON_SLOT	= 30.0
-		COST_SECTION_ADD_TORPEDO_WEAPON_SLOT = 20.0
-		COST_SECTION_ADD_EXTRA_LARGE_WEAPON_SLOT	= 30.0
-		COST_SECTION_ADD_TITANIC_WEAPON_SLOT		= 30.0
-		COST_SECTION_ADD_PLANET_KILLER_WEAPON_SLOT = 0.0
-		COST_SECTION_ADD_AUX_WEAPON_SLOT	= 10.0
-		COST_SECTION_ADD_SMALL_UTIL_SLOT	= 10.0
-		COST_SECTION_ADD_MEDIUM_UTIL_SLOT	= 30.0
-		COST_SECTION_ADD_LARGE_UTIL_SLOT	= 60.0
-		COST_SECTION_ADD_AUX_UTIL_SLOT		= 10.0
 		
 		OUT_OF_COMBAT_SHIELD_REGEN_MULT		= 5.0		# Shields recharge this much faster outside combat
 
@@ -1098,7 +1010,6 @@
 
 		SHIP_MAX_EVASION					= 0.9		# The maximum evasion value a ship is allowed to have (percent)
 
-		FLEET_MOVE_MAX_DIST_SHIPS			= 10.0		# Max distance that ships are allowed to travel before last ship
 
 		FLEET_BASE_FORMATION_SCALE			= 2.0
 		FLEET_BASE_FORMATION_DIV			= 10
@@ -1112,7 +1023,6 @@
 
 		HYPERLANE_WINDUP 					= 150	# In micro updates ( 10/day )
 		HYPERLANE_WINDDOWN					= 0	# In micro updates
-		HYPERLANE_WINDUP_OUTSIDE_BORDER		= 5.0	# How much more windup time is there for systems which are 100% away from friendly territory
 		HYPERDRIVE_INTERSTELLAR_TRAVEL_SPEED = 1.0 # In micro updates ( 10/day )
 		RULER_SHIP_SCALE_MULT				= 0.5	# Scale up of unique ruler ship.
 		JUMP_DRIVE_WINDUP					= 14	# Jump drive windup in days
@@ -1191,7 +1101,6 @@
 		COMBAT_EMERGENCY_FTL_LOST_RISK 			= 0.01 # x% risk of ship becoming forever lost when jumping.
 		COMBAT_EMERGENCY_FTL_DAMAGE_RISK 		= 0.10 # x% chance of ship taking damage in emergency ftl jump
 		COMBAT_EMERGENCY_FTL_DAMAGE_AMOUNT 		= 0.20 # x% of damage that emergency ftl can potentially cause
-		COMBAT_EMERGENCY_FTL_WINDUP				= 2.0 	# how many days it takes from the button press to the actual jump. same timer for all FTL types
 		COMBAT_BASE_DAYS_UNTIL_EMERGENCY_FTL 	= 30.0	# how many days a fleet should be in combat until they can emergency ftl
 
 		MISSILE_HIGH_CONTROL_DISTANCE				= 5.0 # if the missile is closer to the target than MISSILE_HIGH_CONTROL_DISTANCE it will turn sharply
@@ -1252,10 +1161,7 @@
 		LOW_HAPPINESS 						= 0.40		# Below this happiness, show bar as red
 		HIGH_HAPPINESS 						= 0.60		# Above this happiness, show bar as green
 
-		HAPPINESS_PROGRESS_BAR_GREEN 		= 60 	# Happiness percentage min where bar is showed as green
-		HAPPINESS_PROGRESS_BAR_YELLOW 		= 40	# Happiness percentage min where bar is showed as yellow; below this value bar will be shown in red
 
-		BASE_RESEARCH						= 1.0	# Base value of pop research
 		BASE_PRODUCTION						= 1.0  # Base value of pop production
 		BASE_HAPPINESS						= 0.50  # Base value of pop happiness
 	
@@ -1266,8 +1172,6 @@
 	}
 
 	NArmy = {
-		BASE_MAINTENANCE_FACTOR 		= 1					# global base maintenance cost
-		REINFORCE_MAINTENANCE_FACTOR 	= 2.0				# increase of maintenance cost while reinforcing
 		MONTHLY_REINFORCE 				= 0.2				# Monthly health percentage reinforcement of armies
 
 		BASE_HEALTH						= 200.0				# Base health
@@ -1349,8 +1253,6 @@
 		MARKET_MONTHLY_TRADE_FRACTION		= 0.1	# market base amount will be multiplied by this when determining starting amount of a monthly market trade
 		MARKET_MAX_BASE_AMOUNTS				= 200 	# Max resource base amounts that the player is allowed to trade in a single trade
 
-		INTERNAL_MARKET_BUY_MULTIPLIER		= 3		# resource sell price on internal market = MULTIPLIER * base price
-		INTERNAL_MARKET_SELL_MULTIPLIER		= 0.33	# resource buy price on internal market = MULTIPLIER * base price
 
 		INTERNAL_MARKET_DAYS_TO_BASE_PRICE		= 3	# MARKET_DAYS_TO_BASE_PRICE * VAL for the Internal Market
 		INTERNAL_MARKET_FLUCTUATION_MULT		= 2 # Multiplier of MARKET_FLUCTUATION_ABOVE_BASE_PRICE/MARKET_FLUCTUATION_BELOW_BASE_PRICE for Internal Market
@@ -1379,10 +1281,6 @@
 
 		MONTHLY_SUBJECT_TAX_ECONOMIC_CATEGORY = "subject_tax"
 		MONTHLY_SUBJECT_INTEGRATION_ECONOMIC_CATEGORY = "subject_integration"
-	}
-
-	NEngine = {
-		EVENT_PROCESS_OFFSET = 20 			# OBSOLETE: MTTH events are now checked monthly. [Events are checked every X day per country or planet (1 is ideal but CPU heavy)]
 	}
 
 	NAI = {
@@ -1425,8 +1323,6 @@
 		SPACE_MONSTER_WANDER_FACTOR	= 0.75			# The higher this is, the further space monsters will tend to wander from their spawn point (range: 0.0 - 1.0)
 		
 		TERRAFORM_SAVE_CREDITS = 2000				# AI wants to have at least this much energy over after starting a terraforming
-		BLOCKERS_SAVE_CREDITS = 300					# Sector AI wants to have at least this much energy over after starting to clear a blocker
-		MEGASTRUCTURE_SAVE_INFLUENCE = 200			# AI wants to have at least this much influence over after starting a megastructure project
 	
 		EXTRADIMENSIONAL_MIN_FLEETS = 3				# At less fleets than this, extradimensionals pull back to the portal
 		
@@ -1438,12 +1334,10 @@
 		CRISIS_MILITARY_POWER_MULT_DEFAULT = 1.5		# AI willing to engage crisis factions at these odds normally
 		CRISIS_MILITARY_POWER_MULT_CRISIS_FIGHTER = 0.6		# AI willing to engage crisis factions at these odds if they prioritize crisis fighting
 		CRISIS_MILITARY_POWER_MULT_INHABITED_SYSTEM = 0.5		# AI willing to engage crisis factions at these odds in systems of others under attack by crisis
-		CRISIS_MILITARY_POWER_MULT_ALLIED_SYSTEM = 0.4		# AI willing to engage crisis factions at these odds in systems of allies under attack by crisis
 		CRISIS_MILITARY_POWER_MULT_OWN_SYSTEM = 0.33		# AI willing to engage crisis factions at these odds in their own systems
 		CRISIS_MILITARY_POWER_MULT_DESPERATION = 0.10		# AI willing to engage crisis factions at these odds when down to their last few worlds
 		
 		BOSS_MILITARY_POWER = 40000			# The military power at which AI feels safe to engage a 'boss' creature
-		FALLEN_EMPIRE_FLEET_SIZE = 100		# Fallen empires will have fleets of max this size
 	
 		WAS_HUMAN_MONTHS = 60							# Amount of months that the AI will refrain from making large changes to the empire if it's taking over from a player
 		
@@ -1489,12 +1383,6 @@
 		MONTHLY_TRUST_AT_WAR = -2.00
 		MONTHLY_TRUST_RIVAL = -2.00
 	
-		DEFICIT_SPENDING_START_WAR = 0.25				# If at war and energy is at this fraction of max storage deficit spend energy
-		DEFICIT_SPENDING_START_PEACE = 0.75			# If at peace and energy is at this fraction of max storage deficit spend energy
-		DEFICIT_SPENDING_STOP_WAR = 0.1				# If at war and energy is at this fraction of max storage stop deficit spending
-		DEFICIT_SPENDING_STOP_PEACE = 0.5				# If at peace and energy is at this fraction of max storage stop deficit spending
-		DEFICIT_SPENDING_MONTHLY_PEACE = 0.003				# This percentage of max storage should be deficit spent each month when at peace
-		DEFICIT_SPENDING_MONTHLY_WAR = 0.005				# This percentage of max storage should be deficit spent each month when at war
 	
 		BROKEN_TRADE_DEAL_FACTOR = 0.5				# How much does broken trade deal affect opinion (based on value of deal)
 	
@@ -1524,8 +1412,6 @@
 		AI_AGGRESSIVENESS_BOXED_IN_MULT = 4	# When an AI can no longer peacefully expand aggression is multiplied by this value
 		AI_AGGRESSIVENESS_NO_COLONY_TARGET_MULT = 2 # When an AI has no immediate colony targets and at least MAX_PLANETS_FOR_BUDGET_FACTOR planets (but is not boxed in) aggression is multiplied by this value
 	
-		MAX_RESOURCE_SCORE = 1000				# Maximum amount AI will value a resource at
-		MAX_RESOURCE_SCORE_DIV = 100			# Resources that aren't critical prio are divided by this amount
 	
 		ACTION_MIN_DAYS_REJECTED = 10000		# AI will remember a rejection at least this time
 		ACTION_DAYS_REJECTED_RANDOM = 5000		# Max random extra days AI will reject offer
@@ -1629,7 +1515,6 @@
 		OFFER_VASSALIZATION_ACCEPTANCE_ATTITUDE_VASSALIZE = 100
 		OFFER_VASSALIZATION_ACCEPTANCE_OTHER_ATTITUDE = -1000	
 		
-		OFFER_TRADE_ACCEPTANCE_ATTITUDE_FACTOR = -0.3 # trade willingness reduced by this much if don't have an attitude amenable to trade
 		OFFER_TRADE_ACCEPTANCE_ATTITUDE = -1000	# if attitude is trade = no
 		OFFER_TRADE_MIN_RESOURCE_THRESHOLD = 0.8 # if ai want for an accumulative resource is at least max * this it won't trade away that resource
 		
@@ -1644,34 +1529,16 @@
 		
 		MIN_WILLINGNESS_TO_OFFER_TRADE = 0.75 # AIs with a personality whose trade willingness is below this will not offer trades
 		
-		CAPITAL_RESOURCE_IMPORTANCE = 4 	# How important is it for the AI to place its colonial capital on suitable resources?
-		CAPITAL_WRONG_RESOURCE_IMPORTANCE = 2 	# How important is it for the AI to avoid placing its colonial capital on non-suitable resources?
-		CAPITAL_STRATEGIC_RESOURCE_IMPORTANCE = 20 # How important is it for the AI to not put its capital on strategic resources?
-		CAPITAL_ADJACENCY_IMPORTANCE = 5 # How important is it for the AI to place the capital so that it has numerous adjacent tiles
-		CAPITAL_ADJACENCY_BLOCKER_IMPORTANCE = 1 # How important is it for the AI to place the capital so that it isn't surrounded by tile blockers
 	
 		TRADE_VALUE_RESOURCE_INCOME_BASE = 50	# used for calculating resource income effect (lower = more value reduction from higher income)
 		TRADE_VALUE_RESOURCE = 2	# for minerals and energy (scaled by income & need)
 		TRADE_VALUE_RESOURCE_MONTHLY_MULT = 0.5 # value of monthly resources is multiplied by this compared to lump-sum
-		TRADE_VALUE_STRATEGIC_RESOURCE = 1 # for 1 strategic resource (per year)
-		TRADE_VALUE_STRATEGIC_RESOURCE_POP = 0.002 # Extra strategic resource value per pop
-		TRADE_VALUE_STRATEGIC_RESOURCE_MAX_POPS = 500 # Over this, additional pops do not count
 		TRADE_VALUE_SYSTEM = 5
 		TRADE_VALUE_COLONY = 0.2 # Per pop
 		TRADE_VALUE_SENSOR_CHARTS = 2 # Per new comms
 		TRADE_VALUE_SENSOR_CHARTS_MAX = 10
 		TRADE_VALUE_SENSOR_LINK = 0.05 # Per system within their borders
 		TRADE_VALUE_SENSOR_LINK_MAX = 1.0 # Multiplied by treaty years
-		TRADE_VALUE_NON_AGGRESSION_PACT = 1 # Multiplied by relative power
-		TRADE_VALUE_NON_AGGRESSION_PACT_MAX = 5 # Multiplied by treaty years
-		TRADE_VALUE_GUARANTEE = 1 # Multiplied by relative power
-		TRADE_VALUE_GUARANTEE_MAX = 5 # Multiplied by treaty years
-		TRADE_VALUE_SUPPORT_INDEPENDENCE = 1 # Multiplied by relative power
-		TRADE_VALUE_SUPPORT_INDEPENDENCE_MAX = 5 # Multiplied by treaty years
-		TRADE_VALUE_MIGRATION_ACCESS = 0.1 # Per planet they own
-		TRADE_VALUE_MIGRATION_ACCESS_MAX = 1 # Multiplied by treaty years
-		TRADE_VALUE_RESEARCH_AGREEMENT = 0.1 # Per tech they have that we don't
-		TRADE_VALUE_RESEARCH_AGREEMENT_MAX = 5 # Multiplied by treaty years			
 		# Above are various acceptance factors for specific actions
 	
 		AI_BUDGETING_START_YEARS = 15					# These variables are used for some of the AI's budgeting to ensure it prioritizes the right things early on
@@ -1686,12 +1553,10 @@
 		ASSAULT_ARMIES_PER_POP = 0.01
 		
 		BUILDING_EXISTS_DIV_SCORE = 1		# The higher this is, the more the AI will avoid building the same building on planets
-		DISTRICT_EXISTS_DIV_SCORE = 1		# The higher this is, the more the AI will avoid building the same district on planets
 		
 		NUM_TRADITIONS_FOR_EDICTS = 49			# How many traditions does the AI want before spending Unity on edicts (there are 49 in total in the base game counting adoption & completion effects)
 
 		MAX_PLANETS_FOR_BUDGET_FACTOR = 5		# At this amount of planets budget is normalized
-		MAX_SYSTEMS_FOR_BUDGET_FACTOR = 10 # At this amount of systems budget priority shifts to colonies	
 
 		MIN_NAVY_SIZE_FOR_ADMIRAL = 10		# AI wants a navy of at least this fleetsize before buying an admiral
 
@@ -1717,19 +1582,10 @@
 
 		MIN_WANTED_SCIENTISTS = 1						# Below this AI prioritizes energy spending to get more scientists
 				
-		INFLUENCE_FRACTION_EDICTS = 0.20		# Fraction of AI Influence that goes to edicts
-		INFLUENCE_FRACTION_STARBASES = 0.60		# Fraction of AI influence that is used for starbases
-		INFLUENCE_FRACTION_CLAIMS = 0.20		# Fraction of AI influence that is used for claims
-		INFLUENCE_FRACTION_RESETTLEMENT = 0.00	# Fraction of AI influence that is used for resettlement		
 		
-		INFLUENCE_MAX_EDICTS = 300		# Max influence stored for edicts
-		INFLUENCE_MAX_STARBASES = 200		# Max influence stored for starbases
-		INFLUENCE_MAX_CLAIMS = 300		# Max influence stored for claims
-		INFLUENCE_MAX_RESETTLEMENT = 100	# Max influence stored for resettlement
 		
 		ENEMY_FLEET_POWER_MULT = 1.2			# AI will need the fleet power of the enemy multiplied by this value to become offensive in an offensive war
 		ENEMY_ARMY_POWER_MULT = 1.0				# AI will need the military power of the enemy multiplied by this value to land armies on planet
-		ENEMY_NEUTRALS_FLEET_POWER_MULT = 2	# AI will need the fleet power of the enemy multiplied by this value to attack neutrals and space hostiles
 		ENEMY_FLEET_POWER_HOME_SYSTEM_MULT = 1.0 # AI will need the fleet power of the enemy multiplied by this value to attack hostiles in own systems
 
 		CRISIS_NAVY_SIZE_LIMIT = 100				# Crisis fleets will aim for this size before attacking targets

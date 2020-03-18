@@ -1,5 +1,5 @@
-@gaiaCost = 10000
-@gaiaTime = 7200
+@gaiaCost = 7500
+@gaiaTime = 3600
 
 @machineCost = 10000
 @machineTime = 7200
@@ -504,6 +504,90 @@ terraform_link = {
 	
 	potential = {
 		has_ascension_perk = "ap_world_shaper"
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0	
+			resource_stockpile_compare = { resource = energy value < 40000 }
+		}
+		# TODO: Fix
+		#modifier = {
+		#	factor = 0		
+		#	from = { sector_controlled = yes }
+		#}
+		modifier = {
+			factor = 0
+			OR = {
+				is_mechanical_empire = yes
+				is_cyborg_empire = yes
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_barren"
+	to = "pc_gaia"
+	
+	energy = @gaiaCost
+	duration = @gaiaTime
+	
+	potential = {
+		has_ascension_perk = "ap_world_shaper"
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+	
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0	
+			resource_stockpile_compare = { resource = energy value < 40000 }
+		}
+		# TODO: Fix
+		#modifier = {
+		#	factor = 0		
+		#	from = { sector_controlled = yes }
+		#}
+		modifier = {
+			factor = 0
+			OR = {
+				is_mechanical_empire = yes
+				is_cyborg_empire = yes
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_gaia"
+	
+	energy = @gaiaCost
+	duration = @gaiaTime
+	
+	potential = {
+		has_ascension_perk = "ap_world_shaper"
+		from = { has_modifier = terraforming_candidate }
+	}
+	
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+	
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
 	}
 	
 	ai_weight = {

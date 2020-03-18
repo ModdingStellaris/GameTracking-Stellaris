@@ -1779,12 +1779,12 @@ hostile_init_11 = {
 									random = 1000
 								}
 							}
-							else = {
-								queue_actions = {
-									wait = { # Cooldown until they start moving
-										duration = 5000
-										random = 1000
-									}
+						}
+						else = {
+							queue_actions = {
+								wait = { # Cooldown until they start moving
+									duration = 5000
+									random = 1000
 								}
 							}
 						}
@@ -1840,12 +1840,12 @@ hostile_init_12 = {
 	planet = {
 		class = pc_asteroid
 		orbit_distance = 0
-		orbit_angle = { min = 0 max 150 }
+		orbit_angle = { min = 0 max = 150 }
 	}
 	planet = {
 		class = pc_asteroid
 		orbit_distance = 0
-		orbit_angle = { min = 160 max 330 }
+		orbit_angle = { min = 160 max = 330 }
 	}
 	
 	planet = {
@@ -1958,12 +1958,12 @@ hostile_init_12_mining_drones = {
 	planet = {
 		class = pc_asteroid
 		orbit_distance = 0
-		orbit_angle = { min = 0 max 150 }
+		orbit_angle = { min = 0 max = 150 }
 	}
 	planet = {
 		class = pc_asteroid
 		orbit_distance = 0
-		orbit_angle = { min = 160 max 330 }
+		orbit_angle = { min = 160 max = 330 }
 	}
 	
 	planet = {
@@ -2087,12 +2087,12 @@ hostile_init_12_drone_destroyer = {
 	planet = {
 		class = pc_asteroid
 		orbit_distance = 0
-		orbit_angle = { min = 0 max 150 }
+		orbit_angle = { min = 0 max = 150 }
 	}
 	planet = {
 		class = pc_asteroid
 		orbit_distance = 0
-		orbit_angle = { min = 160 max 330 }
+		orbit_angle = { min = 160 max = 330 }
 	}
 	
 	planet = {
@@ -2483,10 +2483,10 @@ hostile_init_14 = {
 						set_fleet_flag = ore_grinder
 					}
 				}
-				else = {
-					create_mining_station = {
-						owner = event_target:drone_country
-					}
+			}
+			else = {
+				create_mining_station = {
+					owner = event_target:drone_country
 				}
 			}
 		}
@@ -2795,7 +2795,7 @@ hostile_init_18 = {
 	planet = {
 		class = pc_asteroid
 		orbit_distance = 0
-		orbit_angle = { min = 0 max 150 }
+		orbit_angle = { min = 0 max = 150 }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -2805,7 +2805,7 @@ hostile_init_18 = {
 	planet = {
 		class = pc_asteroid
 		orbit_distance = 0
-		orbit_angle = { min = 160 max 330 }
+		orbit_angle = { min = 160 max = 330 }
 
 		init_effect = {
 			prevent_anomaly = yes

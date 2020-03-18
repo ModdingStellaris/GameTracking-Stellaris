@@ -887,7 +887,6 @@ ship_event = {
 
 	option = {
 		name = anomaly.3080.a
-		custom_tooltip = anomaly.3080.a.tooltip
 		from = {
 			add_deposit = d_toy_factory_complex
 		}

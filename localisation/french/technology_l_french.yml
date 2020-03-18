@@ -1160,3 +1160,7 @@
  tech_micro_replicators_desc:0 "Des outils microscopiques, capables d'assister nos unités de réplication en créant les circuits les plus complexes nécessaires pour les nouveaux drones."
  tech_self_assembling_components:0 "Composants auto-assemblés"
  tech_self_assembling_components_desc:0 "Modelés à partir d'ADN organique, ces intellects mécaniques microscopiques sont capables d'assembler en totale autonomie la plupart des composants nécessaires pour les nouveaux drones."
+ tech_habitat_1:0 "Habitats orbitaux"
+ tech_habitat_1_desc:0 "Permet la construction d'habitats orbitaux largement autosuffisants."
+ tech_archeology_lab_ancrel:0 "$tech_archeology_lab$"
+ tech_archeology_lab_ancrel_desc:0 "$tech_archeology_lab_desc$"

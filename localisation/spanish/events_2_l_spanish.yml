@@ -1176,7 +1176,7 @@
  galactic_features.361.a.phile:0 "Fascinante."
  galactic_features.361.a.spiri:0 "Que los dioses nos protejan."
  galactic_features.361.a.tooltip:0 "Una §Rnube de vacío§! ha aparecido en el sistema §Y[From.From.From.GetStarName]§!."
- anomaly_failure.2670.desc:0 "Parece que el entusiasta examen de los sistemas realizado por el oficial científico [Root.GetLeaderName] tuvo un efecto contraproducente.\n\nAntes de que los antiguos circuitos se quemasen del todo, el [Root.GetName] logró activar a distancia los propulsores posicionales de la estación orbital. Esto la sacó de su órbita y la puso en el pozo gravitatorio de la estrella local."
+ anomaly_failure.2670.desc:1 "Parece que el entusiasta examen de los viejos sistemas de construcción realizado por el [Root.GetName] tuvo un efecto contraproducente.\n\nAntes de que los antiguos circuitos se quemasen, el [Root.GetName] logró activar a distancia los propulsores posicionales de la estación orbital. Esto la sacó de su órbita y la puso en el pozo gravitatorio de la estrella. El desafortunado desenlace de la misión le ha afectado profundamente al almirante de la nave, [Root.GetLeaderName], que ha aprendido de la experiencia."
  anomaly_failure.2670.a:0 "[Root.GetLeaderName]... ¿la lanzó hacia el sol?"
  anomaly_failure.2670.a.tooltip:0 "§YAntigua fábrica§! destruida.\n"
  communications_spread.1.name:0 "Comunicaciones interceptadas"

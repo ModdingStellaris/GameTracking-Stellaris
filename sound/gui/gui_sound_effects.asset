@@ -50,6 +50,8 @@ soundeffect = {
 	} 
 	fade_out = 0.15
 	volume = 0.55
+	max_audible = 1
+	max_audible_behaviour = fail
 }
 soundeffect = {
 	name = ui_galaxy_map_open
@@ -2236,6 +2238,56 @@ soundeffect = {
 	max_audible = 1
 	max_audible_behaviour = fail
 }
+
+soundeffect = {
+	name = tut_msg_ARCHAEOLOGY_VIEW
+	sounds = {
+		sound = tut_msg_archaeology_view_01
+	}
+	volume = 0.45
+	fade_out = 0.4
+	fade_in = 0.05
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+
+soundeffect = {
+	name = tut_msg_NUDGE_VIEW
+	sounds = {
+		sound = tut_msg_nudge_view_01
+	}
+	volume = 0.45
+	fade_out = 0.4
+	fade_in = 0.05
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = tut_RELICS_VIEW
+	sounds = {
+		sound = tut_relics_view_01
+	}
+	volume = 0.45
+	fade_out = 0.4
+	fade_in = 0.05
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = tut_msg_FRONTIER_PLANET
+	sounds = {
+		sound = tut_msg_frontier_planet_01
+	}
+	volume = 0.45
+	fade_out = 0.4
+	fade_in = 0.05
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
 ############# ADVISOR LIMITED TUTORIAL EVENTS #######################
 # First Discovery
 soundeffect = {

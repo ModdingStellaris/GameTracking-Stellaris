@@ -367,7 +367,7 @@ sol_neighbor_t1_first_colony = {
 		name = "NAME_Alpha_Centauri_B"
 		count = 1
 		class = pc_k_star
-		orbit_distance = 320
+		orbit_distance = 260
 		orbit_angle = 40
 		size = 27
 		has_ring = no
@@ -376,7 +376,7 @@ sol_neighbor_t1_first_colony = {
 			name = "NAME_Alpha_Centauri_B_I"
 			class = pc_molten
 			size = 18
-			orbit_distance = 65
+			orbit_distance = 35
 		}
 		planet = {
 			name = "NAME_Alpha_Centauri_B_II"
@@ -398,7 +398,7 @@ sol_neighbor_t1_first_colony = {
 		name = "NAME_Proxima_Centauri"
 		count = 1
 		class = pc_m_star
-		orbit_distance = 35
+		#orbit_distance = 35
 		orbit_angle = 130
 		size = 15
 		has_ring = no
@@ -418,7 +418,7 @@ sol_neighbor_t1_first_colony = {
 		}
 	}
 	
-	change_orbit = -320
+	change_orbit = -260
 
 	planet = {
 		count = 2
@@ -441,7 +441,7 @@ sol_neighbor_t1_first_colony = {
 	}
 	
 	planet = {
-		count = 3
+		count = 2
 		orbit_distance = 25
 		
 		change_orbit = @base_moon_distance
@@ -1357,7 +1357,7 @@ fen_habbanis_system = {
 	
 	planet = {
 		name = "NAME_Fen_Habbanis_III"
-		class = "pc_city"
+		class = "pc_relic"
 		orbit_distance = 40
 		orbit_angle = 190
 		size = 25
@@ -1381,22 +1381,15 @@ fen_habbanis_system = {
 			add_deposit = d_ruined_arcology
 			
 			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology
-			add_deposit = d_ruined_arcology #20 total	
+			add_deposit = d_ruined_arcology # 7 total
+
+			add_deposit = d_relic_dense_ruins
+			add_deposit = d_collapsed_spire
+			add_deposit = d_massive_crevice
+			add_deposit = d_shattered_solar_array
+			add_deposit = d_flooded_reactor_pits
+			add_deposit = d_crumbling_mining_tunnels
+			add_deposit = d_relic_metal_boneyard
 		}
 	}
 	

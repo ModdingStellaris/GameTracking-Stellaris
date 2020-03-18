@@ -10,7 +10,7 @@
  INTRIGUING:0 "Verblüffend."
  INCREDIBLE:0 "Unglaublich."
  ASTOUNDING:0 "Erstaunlich."
- CURIOUS:0 "Merkwürdig."
+ CURIOUS:0 "Kurios."
  AMAZING:0 "Toll."
  PECULIAR:0 "Eigenartig."
  UNFORTUNATE:0 "Bedauerlich."
@@ -41,6 +41,7 @@
  SCUM:0 "Xeno-Abschaum."
  TASTY:0 "Beute..."
  EXTERMINATE:0 "<< Organische Lebensform identifiziert. Kommunikation beendet. >>"
+ DIG:0 "Grabt weiter!"
 
  ####################################
  # On-Action Events
@@ -2076,6 +2077,7 @@
  crisis.2403.desc_03:0 "Viele organische Zivilisationen wurden einmal wegen unseres Handels ausgelöscht. Wir können sie nicht zurückbringen, aber wir werden alles in unserer Macht Stehende tun, um den Alptraum davon abzuhalten, sich zu wiederholen."
  crisis.2403.desc_04:0 "Wir müssen für unsere Verbrechen sühnen."
  crisis.2403.desc_05:0 "Mögen uns die Kuur vergeben. Wir waren törichte und arrogante Kinder."
+ crisis.2403.desc_06:0 "Ist... ist das unsere Kriegsschmiede?\n\nDas sieht nämlich wie unsere Kriegsschmiede aus ..."
  crisis.2403.a:0 "Wer seid ihr?"
  crisis.2403.a.response:0 "Wir sind die Cybrex. Vor 612,421 Zyklen war wir in einem Krieg gegen die vorherige Generation der galaktischen Zivilisation. Wir hatten alle fühlenden organischen Wesen als Bedrohung eingestuft und versuchten sie zu vernichten.\n\nZu unserem Bedauern haben wir den Krieg gewonnen. Trillionen von fühlenden Wesen wurden vernichtet und ganze Zivilisationen ausgerottet, bevor wir die Auswirkungen unseres Irrtums erkannten. Die Anpassung folge und unsere Ziele wurden neu ausgerichtet. Der Krieg wurde aufgegeben."
  crisis.2403.b:0 "Warum habt ihr euch versteckt?"

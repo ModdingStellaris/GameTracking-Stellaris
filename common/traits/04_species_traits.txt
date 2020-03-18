@@ -149,6 +149,9 @@ trait_slow_breeders = {
 	slave_cost = {
 		energy = -100
 	}
+	ai_weight = {
+		factor = 0
+	}
 }
 
 trait_talented = {
@@ -201,6 +204,13 @@ trait_quarrelsome = {
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		planet_jobs_unity_produces_mult = -0.1
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			years_passed > 5
+		}
 	}
 }
 

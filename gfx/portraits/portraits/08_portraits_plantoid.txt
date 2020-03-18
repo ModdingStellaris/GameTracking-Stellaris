@@ -148,5 +148,13 @@ portraits = {
 					"gfx/models/portraits/plantoid/plantoid_15_black_orange_red.dds"
 					"gfx/models/portraits/plantoid/plantoid_15_black_yellow_red.dds"				
 			}
+	}
+	pla16_baol = {	entity = "portrait_plantoid_hivemind_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "plantoid_greetings" 
+			character_textures = {
+					"gfx/models/portraits/plantoid/plantoid_hivemind.dds"
+					"gfx/models/portraits/plantoid/plantoid_hivemind_pink.dds"
+					"gfx/models/portraits/plantoid/plantoid_hivemind_purple.dds"
+					"gfx/models/portraits/plantoid/plantoid_hivemind_gray.dds"
+			}
 	}	
 }

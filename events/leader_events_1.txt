@@ -1117,6 +1117,7 @@ country_event = {
 					gained_leader_trait_carefree = { text = leader.newtrait }
 					gained_leader_trait_roamer = { text = leader.newtrait }
 					gained_leader_trait_archaeologist = { text = leader.newtrait }
+					gained_leader_trait_archaeologist_ancrel = { text = leader.newtrait }
 					gained_leader_trait_maniacal = { text = leader.newtrait }
 					gained_leader_trait_custom_AI_assistant = { text = leader.newtrait }
 					gained_leader_trait_expertise_materials = { text = leader.newtrait }
@@ -1209,6 +1210,10 @@ country_event = {
 				if = { 
 					limit = { has_leader_flag = gained_leader_trait_archaeologist }
 					add_trait = leader_trait_archaeologist
+				}
+				if = { 
+					limit = { has_leader_flag = gained_leader_trait_archaeologist_ancrel }
+					add_trait = leader_trait_archaeologist_ancrel
 				}
 				if = { 
 					limit = { has_leader_flag = gained_leader_trait_maniacal }

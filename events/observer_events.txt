@@ -1331,3 +1331,21 @@ observer_event = {
 		name = OK
 	}
 }
+
+### Ancient Relics
+
+# Last Baol System Found
+observer_event = {
+	id = observer.85
+	title = ancrel.3999.name
+	desc = ancrel.3999.desc
+	picture = GFX_evt_interior_battle
+	show_sound = event_radio_chatter
+	location = fromfrom
+
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+	}
+}

@@ -26,7 +26,7 @@ worm_quarantined = {
 }
 
 worm_manifestation = {
-	ship_armor_mult = -0.98
-	ship_weapon_damage = -0.98
-	ship_shield_mult = -0.98
+	ship_armor_mult = -0.8
+	ship_weapon_damage = -0.8
+	ship_shield_mult = -0.8
 }

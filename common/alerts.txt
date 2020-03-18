@@ -130,10 +130,19 @@ alerts = {
 	alert_high_piracy_risk = {
 		category = MEDIUM
 		sound  = "alert_negative"
-	}	
+	}
 	alert_cannot_afford_monthly_trade = {
 		category = MEDIUM
 		sound  = "alert_negative"
-	}	
+	}
+	alert_activate_relic = {
+		category = LOW
+		sound  = "tradition_available"
+	}
+	alert_site_event = {
+		category = LOW
+		sound  = "archeology_notifications_chapter_complete"
+	}
+
 	alert_deprecated = { category = disabled }
 }

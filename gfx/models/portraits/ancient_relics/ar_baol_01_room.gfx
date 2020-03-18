@@ -1,0 +1,41 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ar_baol_01_room_background_mesh"
+		file = "gfx/models/portraits/ancient_relics/ar_baol_01_room_background.mesh"
+
+		meshsettings = {
+			name = "BackgroundShape"
+			index = 0
+			texture_diffuse = "ar_baol01_room.dds"
+			texture_normal = "nospec.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshPortrait"
+		}
+	}
+	pdxmesh = {
+		name = "ar_baol_01_room_dust_mesh"
+		file = "gfx/models/portraits/ancient_relics/ar_baol_01_room_dust.mesh"
+
+		meshsettings = {
+			name = "DustShape"
+			index = 0
+			texture_diffuse = "ar_baol01_room_dust.dds"
+			texture_normal = "nospec.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+	pdxmesh = {
+		name = "ar_baol_01_room_foreground_mesh"
+		file = "gfx/models/portraits/ancient_relics/ar_baol_01_room_foreground.mesh"
+
+		meshsettings = {
+			name = "ForegroundShape"
+			index = 0
+			texture_diffuse = "ar_baol01_room.dds"
+			texture_normal = "nospec.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshPortrait"
+		}
+	}
+}

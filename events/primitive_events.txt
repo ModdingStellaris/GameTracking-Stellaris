@@ -1044,10 +1044,13 @@ planet_event = {
 	id = primitive.130
 	hide_window = yes
 
+	pre_triggers = {
+		has_owner = yes
+	}
+
 	trigger = {
 		NOT = { is_planet_class = pc_habitat }
 		NOT = { is_planet_class = pc_ringworld_habitable }
-		has_owner = yes
 		owner = {
 			is_country_type = primitive
 			OR = {

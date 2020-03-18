@@ -6,7 +6,7 @@ servant = {
 	is_capped_by_modifier = no
 	building_icon = building_luxury_residence
 	clothes_texture_index = 2
-		
+
 	possible = {
 		can_take_servant_job = yes
 	}
@@ -55,10 +55,13 @@ slave_overseer = {
 	building_icon = building_crude_huts
 	clothes_texture_index = 3
 	icon = enforcer
-		
-	possible = {
+
+	possible_pre_triggers = {
 		is_enslaved = yes
-		exists = planet
+		has_planet = yes
+	}
+
+	possible = {
 		planet = { has_modifier = slave_colony } 		
 	}
 	
@@ -114,10 +117,13 @@ slave_toiler = {
 	building_icon = building_crude_huts
 	clothes_texture_index = 3
 	icon = primitive_laborer
-		
-	possible = {
+
+	possible_pre_triggers = {
 		is_enslaved = yes
-		exists = planet
+		has_planet = yes
+	}
+
+	possible = {
 		planet = { has_modifier = slave_colony } 		
 	}
 	
@@ -157,8 +163,14 @@ slave_toiler = {
 #	clothes_texture_index = 2
 #	icon = mining_drone
 #	
+#	possible_pre_triggers = {
+#		has_owner = yes
+#		is_being_purged = no
+#		is_enslaved = no
+#		is_being_assimilated = no
+#	}
+#
 #	possible = {
-#		exists = owner
 #		owner = { is_hive_empire = yes } 
 #		drone_job_check_trigger = yes
 #		days_passed >= 1 # So drones are not assigned this job before other jobs are created by the game start
@@ -194,6 +206,10 @@ organic_battery = {
 		pop_housing_usage_add = -0.5
 	}
 	
+	possible_pre_triggers = {
+		is_enslaved = yes
+	}
+
 	possible = {
 		has_citizenship_type = { type = citizenship_slavery }
 		has_slavery_type = { type = slavery_matrix }
@@ -219,7 +235,11 @@ livestock = {
 	pop_modifier = {
 		pop_housing_usage_add = -0.5
 	}
-		
+
+	possible_pre_triggers = {
+		is_enslaved = yes
+	}
+
 	possible = {
 		has_citizenship_type = { type = citizenship_slavery }
 		has_slavery_type = { type = slavery_livestock }
@@ -405,6 +425,41 @@ crisis_purge = {
 	}
 }
 
+assimilation = {
+	category = assimilation
+	is_capped_by_modifier = no
+	clothes_texture_index = 2
+		
+	possible = {
+		has_citizenship_type = { type = citizenship_assimilation }
+	}	
+
+	resources = {
+		category = planet_jobs
+		upkeep = {
+			trigger = { 
+				is_organic_species = yes
+			}
+			food = @living_standard_food_normal
+		}		
+		upkeep = {
+			trigger = { 
+				is_robotic_species = yes
+			}
+			energy = @living_standard_energy_normal
+		}		
+	}	
+		
+	weight = {
+		weight = @special_job_weight
+
+		modifier = {
+			factor = 200 # brings @special_job_weight up to 2
+			is_being_assimilated = yes
+		}
+	}
+}
+
 criminal = {
 	category = criminal
 	is_capped_by_modifier = yes
@@ -412,9 +467,12 @@ criminal = {
 	clothes_texture_index = 2
 	building_icon = building_residence
 	
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
 		# check that this is not a robot in servitude
-		exists = owner
 		NOT = { 
 			has_citizenship_type = { 
 				country = owner 
@@ -442,8 +500,11 @@ deviant_drone = {
 	clothes_texture_index = 2
 	icon = criminal
 		
+	possible_pre_triggers = {
+		has_planet = yes
+	}
+
 	possible = {
-		exists = planet
 		planet = { has_modifier = drone_deviancy }
 	}
 	
@@ -466,8 +527,10 @@ corrupt_drone = {
 	clothes_texture_index = 2
 	icon = criminal
 		
+	possible_pre_triggers = {
+		has_planet = yes
+	}
 	possible = {
-		exists = planet
 		planet = { has_modifier = drone_corruption }
 	}
 

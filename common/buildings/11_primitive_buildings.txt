@@ -59,6 +59,12 @@ building_primitive_dwellings = {
 		}
 	}
 	
+	destroy_trigger = {
+		owner = { 
+			is_primitive = no
+		}
+	}
+	
 	planet_modifier = {
 		planet_housing_add = 6
 	}
@@ -269,6 +275,12 @@ building_primitive_capital = {
 				has_country_flag = atomic_age
 				has_country_flag = early_space_age
 			}
+		}
+	}
+	
+	destroy_trigger = {
+		owner = { 
+			is_primitive = no
 		}
 	}
 	

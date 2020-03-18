@@ -9,15 +9,24 @@ building_noble_estates = {
 	category = government
 	
 	potential = {
+		exists = owner
+		planet = {
+			or = {
+				has_building = building_noble_estates
+				owner = { is_ai = no }
+			}
+		}
 		owner = { has_valid_civic = civic_aristocratic_elite }
 		NOT = { has_modifier = slave_colony }
 	}
 	
 	allow = {
 		has_upgraded_capital = yes
+		buildings_simple_allow = yes
 	}
 	
 	destroy_trigger = {
+		exists = owner
 		NOT = {
 			owner = { has_civic = civic_aristocratic_elite }
 		}
@@ -43,7 +52,11 @@ building_noble_estates = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 5
+		modifier = {
+			factor = 0
+			buildings_build_building = no
+		}
 	}
 }
 
@@ -54,6 +67,7 @@ building_bureaucratic_complex = {
 	category = government
 	
 	potential = {
+		exists = owner
 		owner = { has_valid_civic = civic_byzantine_bureaucracy }
 		NOT = { has_modifier = slave_colony }
 	}
@@ -63,6 +77,7 @@ building_bureaucratic_complex = {
 	}
 	
 	destroy_trigger = {
+		exists = owner
 		NOT = {
 			owner = { has_civic = civic_byzantine_bureaucracy }
 		}
@@ -87,7 +102,11 @@ building_bureaucratic_complex = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 5
+		modifier = {
+			factor = 0
+			buildings_build_building = no
+		}
 	}
 }
 
@@ -111,6 +130,7 @@ building_slave_processing = {
 		OR = {
 			owner = { is_regular_empire = no }
 			NOT = { owner = { has_policy_flag = slavery_allowed } }
+			has_modifier = resort_colony
 		}
 	}
 	
@@ -134,11 +154,10 @@ building_slave_processing = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
+		weight = 5
 		modifier = {
-			factor = 10
-			any_owned_pop = { is_enslaved = yes }
+			factor = 0
+			NOT = { any_owned_pop = { is_enslaved = yes } }
 		}
 	}
 }
@@ -154,8 +173,13 @@ building_precinct_house = {
 	}
 	
 	destroy_trigger = {
-		NOT = {
-			owner = { is_regular_empire = yes }
+		exists = owner
+		OR = {
+			NOT = {	owner = { is_regular_empire = yes }	}
+			AND = {
+				owner = { is_ai = yes } #Players dont like random buildings blowing up
+				planet = { has_building = building_hall_judgment }
+			}#This way the AI gets to reclaim its tiles that it sunk into this expense
 		}
 	}
 		
@@ -190,44 +214,18 @@ building_precinct_house = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
+		weight = 0
 		modifier = {
-			factor = 10
-			planet_crime > 10
-			planet_crime <= 25
-		}
-
-		modifier = {
-			factor = 15
-			planet_crime > 25
-			planet_crime < 50
-		}
-
-		modifier = {
-			factor = 20
-			planet_crime >= 50
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				planet_crime < 5
-				num_buildings = { type = building_precinct_house value >= 2 }
+			weight = 100
+			planet_crime > 15
+			NOR = {
 				AND = {
-					num_buildings = { type = building_hall_judgment value > 0 }
-					num_buildings = { type = building_precinct_house value >= 1 }
+					has_building = building_precinct_house
+					owner = { has_technology = tech_colonial_centralization }
 				}
-				num_buildings = { type = building_hall_judgment value > 1 }	
+				has_building = building_hall_judgment
+				num_buildings = { type = building_precinct_house value = 3 }
 			}
-		}
-
-		# There are already unworked jobs
-		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
-		# Will be improved... at some point
-		modifier = {
-			factor = 0
-			free_jobs > 0 
 		}
 	}
 }
@@ -244,6 +242,7 @@ building_hall_judgment = {
 	}
 	
 	destroy_trigger = {
+		exists = owner
 		NOT = {
 			owner = { is_regular_empire = yes }
 		}
@@ -279,36 +278,6 @@ building_hall_judgment = {
 	
 	ai_weight = {
 		weight = 1
-
-		modifier = {
-			factor = 10
-			planet_crime > 10
-			planet_crime < 25
-		}
-
-		modifier = {
-			factor = 15
-			planet_crime > 25
-			planet_crime < 50
-		}
-
-		modifier = {
-			factor = 20
-			planet_crime > 50
-		}
-
-		modifier = {
-			factor = 0
-			planet_crime < 10
-		}
-
-		# There are already unworked jobs
-		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
-		# Will be improved... at some point
-		modifier = {
-			factor = 0
-			free_jobs > 0 
-		}
 	}
 }
 
@@ -319,10 +288,12 @@ building_sentinel_posts = {
 	category = government
 	
 	potential = {
+		exists = owner
 		owner = { is_gestalt = yes }
 	}
 	
 	destroy_trigger = {
+		exists = owner
 		NOT = {
 			owner = { is_gestalt = yes }
 		}
@@ -355,33 +326,11 @@ building_sentinel_posts = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
+		weight = 0
 		modifier = {
-			factor = 10
-			planet_crime > 10
-			planet_crime < 25
-		}
-
-		modifier = {
-			factor = 15
-			planet_crime > 25
-			planet_crime < 50
-		}
-
-		modifier = {
-			factor = 20
-			planet_crime > 50
-		}
-		
-		modifier = {
-			factor = 0
-			planet_crime < 10
-		}
-		
-		modifier = {
-			factor = 0
-			num_buildings = { type = building_sentinel_posts value > 2 }
+			weight = 10
+			planet_crime > 15
+			buildings_build_building = yes
 		}
 	}
 }
@@ -406,9 +355,11 @@ building_psi_corps = {
 	
 	allow = {
 		has_major_upgraded_capital = yes
+		buildings_simple_allow = yes
 	}
 	
 	destroy_trigger = {
+		exists = owner
 		NOT = {
 			owner = { has_ascension_perk = ap_mind_over_matter }
 		}
@@ -434,7 +385,11 @@ building_psi_corps = {
 	}	
 	
 	ai_weight = {
-		weight = 0
+		weight = 5
+		modifier = {
+			factor = 0
+			buildings_build_building = no
+		}
 	}
 }
 
@@ -447,13 +402,24 @@ building_clone_vats = {
 	base_cap_amount = 1
 	
 	potential = {
+		exists = owner
 		owner = { has_ascension_perk = ap_engineered_evolution }
 		NOT = { has_modifier = resort_colony }
 	}
 	
 	destroy_trigger = {
+		exists = owner
+		OR = {
+			AND = {
+				owner = { is_ai = yes }
+				planet = {
+					free_district_slots = 0
+					free_building_slots = 0
+				}
+			}
 		NOT = {
 			owner = { has_ascension_perk = ap_engineered_evolution }
+			}
 		}
 	}
 
@@ -472,6 +438,14 @@ building_clone_vats = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 100
+		modifier = {
+			factor = 0
+			OR = {
+				free_district_slots = 0
+				num_buildings = { type = any value >= 14 }
+				is_planet_class = pc_habitat
+			}
+		}
 	}
 }

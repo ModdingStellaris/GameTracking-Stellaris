@@ -1,4 +1,233 @@
-﻿
+﻿#Stellaris: Ancient Relics Game Team
+--------
+##EVP Creative Direction
+
+Johan Andersson
+
+##Game Director
+
+Daniel Moregård
+
+##Producers
+
+Aziz Faghihinejad
+Jamie Wood
+
+##Designers
+
+Mikael Andersson
+Stephen Muray
+Markus Veit
+
+##Technical Lead
+
+Gwenael Tranvouez
+
+##Programmers
+
+Carl Carenvall
+Zack Holmgren
+Emelie Nordstrand Lindgren
+Ilya Nikitin
+Gustav Palmqvist
+Evan Wu
+
+##Content Design Lead
+
+Henrik Thyrwall
+
+##Content Designers
+
+David Ballantyne
+Miranda van den Brink
+Douglas Furen
+Dee Majek
+Maximilian Olbers
+Rufus Tronde
+
+##Additional Writing
+
+Jamie Wood
+
+##UX Designer
+
+Doyle Merlin Daigle II
+
+##Localization Manager
+
+Sara Wendel-Örtqvist
+
+##Art Manager
+
+Adrian Banninga
+
+##Art Director
+
+Fredrik Toll
+
+##Art Producer
+
+Philipp Glietsch
+
+##2D Art
+
+Simon Gunnarsson
+Ylva Ljungqvist
+
+##3D Art
+
+Johan Lundqvist
+
+##Additional Art
+
+N-iX
+
+##Animation & Effects
+
+Ylva Ljungqvist
+
+##Verification Manager
+
+Andreas Renström
+
+##QA Managers
+
+Felix Gladitz
+Tegan Harris
+
+##QA Team Lead - Central
+
+Filippa Gannholm Kirsten
+
+##Embedded QA
+
+Eva Mayer
+Markus Veit
+
+##Project Coordinators
+
+Anna Johansson
+William Riggott
+
+##QA Testers
+
+Ewan Cowhig Croft
+Paul Depre
+Joseph Gardener
+Anna Johansson
+Jesper Norberg
+Nicholas Meredith
+William Riggott
+
+##QLOC QA Project Manager
+
+Maciej Grabowski
+
+## QLOC QA Team Leaders
+
+Justyna Janicka
+Marcin Jankowski
+Grzegorz Niedziela
+
+## QLOC QA Testers (Dedicated)
+
+Maciej Gutkowski
+Olga Kowaluk
+Jedrzej Korpak
+
+## QLOC QA Testers (Additional)
+
+Jozef Brzostek
+Bartlomiej Hajdyla
+Piotr Jedut
+Grzegorz Lewinski
+Tomasz Lisek
+Rafal Mucha
+Piotr Mugerman
+Bartlomiej Mycyk
+Maciej Osica
+Angela Pellegrino
+Lukasz Rembisz
+Alex Schuncke
+Michal Siwiecki
+Jan Starosz
+Maksymilian Szczepanczyk
+Stanislaw Szczerbik
+Gabriel Urban
+Bartlomiej Wyciszkiewicz
+  
+##Audio Director
+
+Björn Iversen
+
+##Senior Sound Designer
+
+Franco Freda
+
+##Composer
+
+Meyer
+
+##The Voice of VIR
+
+Kola Krauze
+
+##Beta Testers
+
+George Bancroft
+Philip Curtis
+Lukasz Delra
+Sergey Demidov
+Harel Eilam
+Mikael Hagman
+Musa von Homeyer
+Paul Howell
+Rajeev D. Majumdar
+Anton Panas
+Marc Schmelzer
+Dylan Skoda
+Francesco Teruzzi
+Matthew Walsh
+Maik Wrba
+Djordje Zivanovic
+
+With special thanks to Glavius for valued contributions in AI
+
+##Product Owner
+
+Bevan Davies
+
+##Product Marketing Managers
+
+Sebastian Forsström
+Pontus Rundqvist
+
+##Partner Account Manager
+
+Fang Chen
+
+##Analytics
+
+Kayle Sneed
+
+##User Researchers
+
+Henrik Edlund
+Hanna Löhman
+Jean-Luc Potte
+
+##Community Manager
+
+Dale Emasiri
+
+##Chief Dad Joke Officer
+
+Rikard The Pun-isher
+
+##Body Pillow Coordinator
+
+Mercedes Romero
+
 #Stellaris: MegaCorp Game Team
 --------
 ##EVP Creative Direction
@@ -108,33 +337,36 @@ Maciej Grabowski
 
 ## QLOC QA Team Leaders
 
-Karolina Jagnyziak
 Justyna Janicka
 Marcin Jankowski
+Grzegorz Niedziela
 
 ## QLOC QA Testers (Dedicated)
 
 Maciej Gutkowski
+Jedrzej Korpak
 Olga Kowaluk
-
-## QLOC QA Testers (Core)
-
-Bartosz Maciejewski
-Oskar Nowak
-Uros Rudolf
-Jan Starosz
-Maksymilian Szczepanczyk
-Gabriel Urban
 
 ## QLOC QA Testers (Additional)
 
+Ewa Angielska
 Maciej Bartnik
-Dominik Jastrzebski
-Jedrzej Korpak
-Jakub Potapczyk
-Piotr Szafranowski
+Sofiane Boukoffa
+Piotr Jedut
+Joanna Kucharzyk
+Grzegorz Lewinski
+Tomasz Lisek
+Mateusz Marczak
+Piotr Mugerman
+Bartlomiej Mycyk
+Jan Nowakowski
+Angela Pellegrino
+Tomasz Prusicki
+Michal Siwiecki
+Jan Starosz
+Maksymilian Szczepanczyk
 Stanislaw Szczerbik
-Bartlomiej Wyciszkiewicz
+Gabriel Urban
 
 ##Audio Director
 
@@ -987,6 +1219,7 @@ Cineast Dub AB
 
 --------
 
+Stellaris uses the Noto Sans CJK font for Asian languages, Copyright © 2014, 2015 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name "Noto Sans CJK"
 
 Special thanks to all our forum members,
 partners and supporters,

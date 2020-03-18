@@ -103,6 +103,14 @@ poi_tracker = {
 	duration		= -1
 }
 
+archaeological_site_tracker = {
+	system_entity 	= "project_tracker_system_effect_entity"
+	galaxy_entity 	= "project_tracker_galaxy_effect_entity"
+	system_normal_zoom = 3000
+	galaxy_normal_zoom = 400
+	duration		= -1
+}
+
 outliner_selection = {
 	system_entity 	= "project_tracker_system_effect_entity"
 	galaxy_entity 	= "project_tracker_galaxy_effect_entity"

@@ -11,7 +11,7 @@ matter_decompressor_0 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 3000
+			alloys = 5000
 			influence = 300
 		}
 
@@ -19,6 +19,8 @@ matter_decompressor_0 = {
 			energy = 5
 		}
 	}
+
+	prerequisites = { "tech_matter_decompressor" }
 
 	potential = {
 		has_gw_matter_decompressor = yes
@@ -134,11 +136,6 @@ matter_decompressor_1 = {
 	rotate_to_center = yes
 	scale_offset = yes
 	place_entity_on_planet_plane = no
-
-	upgrade_from = {
-		matter_decompressor_0
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -147,17 +144,19 @@ matter_decompressor_1 = {
 		}
 
 		produces = {
-			minerals = 250
+			minerals = 500
 		}
 
 		upkeep = {
 			energy = 25
 		}
 	}
-
-	possible = {
-		from = { has_gw_matter_decompressor = yes }
+	
+	upgrade_from = {
+		matter_decompressor_0
 	}
+
+	prerequisites = { "tech_matter_decompressor" }
 
 	on_build_complete = {
 		from = { country_event = { id = mega.9010 } }
@@ -173,11 +172,6 @@ matter_decompressor_2 = {
 	rotate_to_center = yes
 	scale_offset = yes
 	place_entity_on_planet_plane = no
-
-	upgrade_from = {
-		matter_decompressor_1
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -186,17 +180,18 @@ matter_decompressor_2 = {
 		}
 
 		produces = {
-			minerals = 500
+			minerals = 1000
 		}
 
 		upkeep = {
 			energy = 50
 		}
 	}
-
-	possible = {
-		from = { has_gw_matter_decompressor = yes }
+	upgrade_from = {
+		matter_decompressor_1
 	}
+
+	prerequisites = { "tech_matter_decompressor" }
 
 	on_build_complete = {
 		from = { country_event = { id = mega.9011 } }
@@ -212,11 +207,6 @@ matter_decompressor_3 = {
 	rotate_to_center = yes
 	scale_offset = yes
 	place_entity_on_planet_plane = no
-
-	upgrade_from = {
-		matter_decompressor_2
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -225,7 +215,7 @@ matter_decompressor_3 = {
 		}
 
 		produces = {
-			minerals = 750
+			minerals = 1500
 		}
 
 		upkeep = {
@@ -233,10 +223,12 @@ matter_decompressor_3 = {
 		}
 	}
 
-	possible = {
-		from = { has_gw_matter_decompressor = yes }
+	upgrade_from = {
+		matter_decompressor_2
 	}
 
+	prerequisites = { "tech_matter_decompressor" }
+	
 	on_build_complete = {
 		from = { country_event = { id = mega.9012 } }
 	}
@@ -251,11 +243,6 @@ matter_decompressor_4 = {
 	rotate_to_center = yes
 	scale_offset = yes
 	place_entity_on_planet_plane = no
-
-	upgrade_from = {
-		matter_decompressor_3
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -264,7 +251,7 @@ matter_decompressor_4 = {
 		}
 
 		produces = {
-			minerals = 1000
+			minerals = 2000
 		}
 
 		upkeep = {
@@ -272,13 +259,19 @@ matter_decompressor_4 = {
 		}
 	}
 
-	possible = {
-		from = { has_gw_matter_decompressor = yes }
+	upgrade_from = {
+		matter_decompressor_3
 	}
+
+	prerequisites = { "tech_matter_decompressor" }
+	show_prereqs = yes
 
 	on_build_complete = {
 		set_star_flag = matter_decompressor_built
-		from = { country_event = { id = mega.9013 } }
+		from = { 
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9013 } 
+		}
 	}
 }
 
@@ -306,13 +299,7 @@ matter_decompressor_restored = {
 	rotate_to_center = yes
 	scale_offset = yes
 	place_entity_on_planet_plane = no
-
-	upgrade_from = {
-		matter_decompressor_ruined
-	}
-
 	build_time = 4800
-
 	resources = {
 		category = megastructures
 		cost = {
@@ -320,12 +307,16 @@ matter_decompressor_restored = {
 		}
 
 		produces = {
-			minerals = 1000
+			minerals = 2000
 		}
 
 		upkeep = {
 			energy = 100
 		}
+	}
+
+	upgrade_from = {
+		matter_decompressor_ruined
 	}
 
 	possible = {
@@ -341,6 +332,9 @@ matter_decompressor_restored = {
 	on_build_complete = {
 		every_system_ambient_object = { destroy_ambient_object = this }
 		set_star_flag = matter_decompressor_built
-		from = { country_event = { id = mega.9101 } }
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9101 } 
+		}
 	}
 }

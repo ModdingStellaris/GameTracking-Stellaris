@@ -1324,7 +1324,7 @@
  story.305.aa:0 "$story.201.aa$"
  story.305.bb:0 "Ces automates sont fascinants"
  story.332.name:1 "$story.333.name$"
- story.332.desc:0 "Nous avons détruit la base des drones miniers et sommes parvenus à récupérer la plus grande partie du minéral qu'ils avaient déjà traité."
+ story.332.desc:1 "Nous avons détruit la base des drones miniers et sommes parvenus à récupérer la plus grande partie du minéral et des précieux alliages qu'ils y avaient déjà traités."
  story.332.a:0 "Richesses incommensurables !"
  CRYSTALS_PROJECT:0 "Étude des entités cristallines"
  CRYSTALS_PROJECT_DESC:0 "$CRYSTALS_1_PROJECT_DESC$"
@@ -2246,3 +2246,4 @@
  distar.5078.name:0 "Ascension énigmatique interrompue"
  distar.5078.desc:0 "Conséquence tumultueuse de la perte de [FromFromFrom.GetName] face à la force d'invasion [From.GetSpeciesName], BALDOR XXXXIII s'est dématérialisé et l'ascension de la population a été interrompue. Toute laisse supposer que l'entité tubulaire alien, déjà en piteux état, s'est trouvée prise accidentellement sous le feu ennemi et que ses fonctions essentielles ont subi des dommages importants. En partant, elle a toutefois transmis un dernier message de détresse : « Je suis BALDOR XXX. »"
  distar.5078.a:0 "Ces [From.GetSpeciesNamePlural] le paieront"
+ story.332.b:0 "...et un étrange appareil..."

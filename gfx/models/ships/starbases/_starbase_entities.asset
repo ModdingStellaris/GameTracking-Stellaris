@@ -2491,6 +2491,23 @@ animation = {
 	##################################################################
 
 entity = {
+	name = "fallen_empire_01_starbase_fe_outpost_entity"
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "part2" 	position = { 0 0 0 } }
+	locator = { name = "part3" 	position = { 0 0 0 } }
+	locator = { name = "part4" 	position = { 0 0 0 } }
+	locator = { name = "part5" 	position = { 0 0 0 } }
+	locator = { name = "part6" 	position = { 0 0 0 } }
+	locator = { name = "part7" 	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_fallen_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" } }
+	}
+}
+
+entity = {
 	name = "fallen_empire_01_starbase_outpost_entity"
 	locator = { name = "part1" 	position = { 0 0 0 } }
 	locator = { name = "part2" 	position = { 0 0 0 } }
@@ -2626,6 +2643,23 @@ entity = {
 	##################################################################
 	
 entity = {
+	name = "fallen_empire_02_starbase_fe_outpost_entity"
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "part2" 	position = { 0 0 0 } }
+	locator = { name = "part3" 	position = { 0 0 0 } }
+	locator = { name = "part4" 	position = { 0 0 0 } }
+	locator = { name = "part5" 	position = { 0 0 0 } }
+	locator = { name = "part6" 	position = { 0 0 0 } }
+	locator = { name = "part7" 	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_fallen_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" } }
+	}
+}
+
+entity = {
 	name = "fallen_empire_02_starbase_outpost_entity"
 	locator = { name = "part1" 	position = { 0 0 0 } }
 	locator = { name = "part2" 	position = { 0 0 0 } }
@@ -2756,6 +2790,22 @@ entity = {
 	######														######
 	##################################################################
 
+entity = {
+	name = "fallen_empire_03_starbase_fe_outpost_entity"
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "part2" 	position = { 0 0 0 } }
+	locator = { name = "part3" 	position = { 0 0 0 } }
+	locator = { name = "part4" 	position = { 0 0 0 } }
+	locator = { name = "part5" 	position = { 0 0 0 } }
+	locator = { name = "part6" 	position = { 0 0 0 } }
+	locator = { name = "part7" 	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_fallen_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" } }
+	}
+}
 	
 entity = {
 	name = "fallen_empire_03_starbase_outpost_entity"
@@ -2888,6 +2938,23 @@ entity = {
 	######						Fallen Empire 04				######
 	######														######
 	##################################################################
+
+entity = {
+	name = "fallen_empire_04_starbase_fe_outpost_entity"
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "part2" 	position = { 0 0 0 } }
+	locator = { name = "part3" 	position = { 0 0 0 } }
+	locator = { name = "part4" 	position = { 0 0 0 } }
+	locator = { name = "part5" 	position = { 0 0 0 } }
+	locator = { name = "part6" 	position = { 0 0 0 } }
+	locator = { name = "part7" 	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_fallen_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" } }
+	}
+}
 
 entity = {
 	name = "fallen_empire_04_starbase_outpost_entity"

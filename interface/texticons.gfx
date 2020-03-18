@@ -101,6 +101,31 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/text_icons/text_icon_military_transport.dds"
 	}
 
+	spriteType = {
+		name = "GFX_text_shipclass_starbase"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_defense_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_shipclass_mining_station"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_construction_ship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_shipclass_research_station"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_science_ship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_shipclass_observation_station"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_science_ship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_shipclass_military_special"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_military_ship.dds"
+	}
+
 	###
 
 	spriteType = {
@@ -414,5 +439,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_text_slavery"
 		textureFile = "gfx/interface/icons/text_icons/slavery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_plus"
+		textureFile = "gfx/interface/icons/text_icons/icon_text_plus.dds"
 	}
 }

@@ -21,7 +21,7 @@ font = {
 	
 	fontstyle = {
 		style = regular
-		file = "gfx/fonts/NotoSansCJKjp-DemiLight.otf"
+		file = "gfx/fonts/NotoSansCJKsc-DemiLight.otf"
 	}
 }
 
@@ -30,7 +30,7 @@ font = {
 	
 	fontstyle = {
 		style = regular
-		file = "gfx/fonts/NotoSansCJKjp-DemiLight.otf"
+		file = "gfx/fonts/NotoSansCJKsc-DemiLight.otf"
 	}
 }
 
@@ -39,7 +39,7 @@ font = {
 	
 	fontstyle = {
 		style = regular
-		file = "gfx/fonts/NotoSansCJKjp-Regular.otf"
+		file = "gfx/fonts/NotoSansCJKsc-Regular.otf"
 	}
 }
 
@@ -48,7 +48,7 @@ font = {
 	
 	fontstyle = {
 		style = regular
-		file = "gfx/fonts/NotoSansCJKjp-Medium.otf"
+		file = "gfx/fonts/NotoSansCJKsc-Medium.otf"
 	}
 }
 

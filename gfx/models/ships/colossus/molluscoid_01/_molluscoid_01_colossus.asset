@@ -1,3 +1,5 @@
+@colossus_scale = 24
+
 entity = {
 	name = "molluscoid_01_colossus_entity"
 	pdxmesh = "molluscoid_01_colossus_frame_mesh"
@@ -27,6 +29,10 @@ entity = {
 				"working" = 100
 			}
 		}
+	}
+	
+	game_data = {
+		size = @colossus_scale
 	}
 	
 	#attach = { frame_ship_rotation = "molluscoid_01_colossus_ship_entity" }

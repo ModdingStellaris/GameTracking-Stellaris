@@ -523,6 +523,13 @@ country_event = {
 			1 = {
 				modifier = {
 					factor = 0
+					has_ancrel = no
+				}
+				set_country_flag = good2c
+			}
+			1 = {
+				modifier = {
+					factor = 0
 					has_modifier = extended_payout_goodest
 				}
 				set_country_flag = good3
@@ -597,6 +604,17 @@ country_event = {
 			country_event = { id = cara.200 }
 		}
 		exclusive_trigger = { has_country_flag = good2b }
+	}
+	
+	option = {
+		custom_gui = "enclave_caravaneer_option"
+		name = KACHING
+		small_artifact_reward = yes
+		hidden_effect = {
+			remove_country_flag = good2c
+			country_event = { id = cara.200 }
+		}
+		exclusive_trigger = { has_country_flag = good2c }
 	}
 
 	option = {
@@ -1114,10 +1132,7 @@ country_event = {
 	option = {
 		custom_gui = "enclave_caravaneer_option"
 		name = cara.320.d
-		add_modifier = {
-			modifier = galatron_modifier
-			days = -1
-		}
+		add_relic = r_galatron
 		default_hide_option = yes
 	}
 }
@@ -2269,6 +2284,12 @@ country_event = {
 		text = fleet2dealdesc11.c
 		trigger = {
 			has_country_flag = fleet2deal11.c
+		}
+	}
+	desc = {
+		text = fleet2dealdesc12
+		trigger = {
+			has_country_flag = fleet2deal12
 		}
 	}
 	
@@ -3565,6 +3586,16 @@ country_event = {
 	show_sound = event_lootbox_galatron
 	
 	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				is_ai = no
+				NOT = { has_country_flag = relic_robbery_achievement }
+			}
+			set_country_flag = relic_robbery_achievement
+		}
+	}
 	
 	option = {
 		name = cara.950.a
@@ -3725,6 +3756,43 @@ event = {
 					}
 				}
 			}
+		}
+	}
+}
+
+# Galatron Relic Activated
+country_event = {
+	id = cara.970
+	title = cara.970.name
+	desc = cara.970.1.desc
+	desc = cara.970.2.desc
+	desc = cara.970.3.desc
+	desc = cara.970.4.desc
+	desc = cara.970.5.desc
+	desc = cara.970.6.desc
+	desc = cara.970.7.desc
+	desc = cara.970.8.desc
+	desc = cara.970.9.desc
+	desc = cara.970.10.desc
+	desc = cara.970.11.desc
+	picture = GFX_evt_caravaneers
+	show_sound = event_mystic_reveal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = cara.970.a
+		locked_random_list = {
+			10 = { add_resource = { alloys = 5000 } }
+			10 = { add_resource = { energy = 8000 } }
+			10 = { add_resource = { minerals = 8000 } }
+			10 = { add_resource = { food = 8000 } }
+			10 = { add_resource = { alloys = 5000 } }
+			10 = { add_resource = { minor_artifacts = 30 } }
+			10 = { add_resource = { rare_crystals = 500 } }
+			10 = { add_resource = { volatile_motes  = 500 } }
+			10 = { add_resource = { consumer_goods = 5000 } }
+			10 = { add_resource = { exotic_gases = 500 } }
 		}
 	}
 }

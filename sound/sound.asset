@@ -5335,6 +5335,29 @@ sound =
 	name = "tut_msg_tuturial_govermentview_01"
 	file = "vo/tutorial/tut_msg_tuturial_govermentview_01.wav"
 }
+sound = 
+{
+	name = "tut_msg_archaeology_view_01"
+	file = "vo/tutorial/tut_msg_archaeology_view_01.wav"
+}
+sound = 
+{
+	name = "tut_msg_nudge_view_01"
+	file = "vo/tutorial/tut_msg_nudge_view_01.wav"
+}
+sound = 
+{
+	name = "tut_relics_view_01"
+	file = "vo/tutorial/tut_relics_view_01.wav"
+}
+sound = 
+{
+	name = "tut_msg_frontier_planet_01"
+	file = "vo/tutorial/tut_msg_frontier_planet_01.wav"
+}
+
+
+
 ########## ADVISOR LIMITED TUTORIAL EVENT ###########
 
 sound =

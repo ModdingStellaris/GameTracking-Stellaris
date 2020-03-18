@@ -18,16 +18,18 @@ strategic_coordination_center_0 = {
 		}
 	}
 
-	potential = {
-		has_gw_strategic_coordination_center = yes
-	}
+	prerequisites = { "tech_strategic_coordination" }
 	
 	possible = {
 		exists = starbase
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
-		}		
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
+		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
@@ -40,42 +42,39 @@ strategic_coordination_center_0 = {
 			}
 		}
 		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			#will be changed to type-specific string with next translation pass
-			#fail_text = "requires_no_existing_strategic_coordination_center"
-			from = {
-				NOT = {
-					any_owned_megastructure = {
-						OR = {
-							is_megastructure_type = strategic_coordination_center_0
-							is_megastructure_type = strategic_coordination_center_1
-							is_megastructure_type = strategic_coordination_center_2
-							is_megastructure_type = strategic_coordination_center_3
-							#is_megastructure_type = strategic_coordination_center_restored
-						}
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
+			fail_text = "requires_no_existing_strategic_coordination_center"
+			from = { NOT = { has_country_flag = built_strategic_coordination_center_site } }
 		}
 	}
 	
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
-				fail_text = "must_build_around_star"
-				is_star = yes
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizeable_planet = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
 			custom_tooltip = {
-				fail_text = "requires_no_orbital_station"
-				has_orbital_station = no
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
 			}
 		}
 	}
@@ -115,10 +114,6 @@ strategic_coordination_center_1 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-		strategic_coordination_center_0
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -130,16 +125,17 @@ strategic_coordination_center_1 = {
 			energy = 25
 		}
 	}
+	upgrade_from = {
+		strategic_coordination_center_0
+	}
+
+	prerequisites = { "tech_strategic_coordination" }
 
 	country_modifier = {
 		country_naval_cap_add = 50
 		country_starbase_capacity_add = 2
 		starbase_defense_platform_capacity_add = 4
 		ship_speed_mult = 0.05
-	}
-
-	possible = {
-		from = { has_gw_strategic_coordination_center = yes }
 	}
 
 	on_build_complete = {
@@ -155,9 +151,6 @@ strategic_coordination_center_2 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-		strategic_coordination_center_1
-	}
 
 	build_time = 3600
 	resources = {
@@ -171,15 +164,17 @@ strategic_coordination_center_2 = {
 		}
 	}
 
+	upgrade_from = {
+		strategic_coordination_center_1
+	}
+
+	prerequisites = { "tech_strategic_coordination" }
+	
 	country_modifier = {
 		country_naval_cap_add = 100
 		country_starbase_capacity_add = 4
 		starbase_defense_platform_capacity_add = 8
 		ship_speed_mult = 0.10
-	}
-
-	possible = {
-		from = { has_gw_strategic_coordination_center = yes }
 	}
 
 	on_build_complete = {
@@ -195,10 +190,6 @@ strategic_coordination_center_3 = {
 	portrait = "GFX_megastructure_strategic_coordination_center_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-		strategic_coordination_center_2
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -211,6 +202,13 @@ strategic_coordination_center_3 = {
 		}
 	}
 
+	upgrade_from = {
+		strategic_coordination_center_2
+	}
+	
+	prerequisites = { "tech_strategic_coordination" }
+	show_prereqs = yes
+
 	country_modifier = {
 		country_naval_cap_add = 150
 		country_starbase_capacity_add = 6
@@ -218,13 +216,12 @@ strategic_coordination_center_3 = {
 		ship_speed_mult = 0.15
 	}
 
-	possible = {
-		from = { has_gw_strategic_coordination_center = yes }
-	}
-
 	on_build_complete = {
 		set_star_flag = strategic_coordination_center_built
-		from = { country_event = { id = mega.9005 } }
+		from = { 
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9005 } 
+		}
 	}
 }
 
@@ -246,10 +243,6 @@ strategic_coordination_center_restored = {
 	portrait = "GFX_megastructure_strategic_coordination_center_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-		strategic_coordination_center_ruined
-	}
-
 	build_time = 4800
 	resources = {
 		category = megastructures
@@ -261,16 +254,20 @@ strategic_coordination_center_restored = {
 			energy = 75
 		}
 	}
+	
+	upgrade_from = {
+		strategic_coordination_center_ruined
+	}
+
+	possible = {
+		from = { has_technology = tech_mega_engineering }
+	}
 
 	country_modifier = {
 		country_naval_cap_add = 150
 		country_starbase_capacity_add = 6
 		starbase_defense_platform_capacity_add = 12
 		ship_speed_mult = 0.15
-	}
-
-	possible = {
-		from = { has_technology = tech_mega_engineering }
 	}
 
 	on_build_start = {
@@ -282,6 +279,9 @@ strategic_coordination_center_restored = {
 	on_build_complete = {
 		set_star_flag = strategic_coordination_center_built
 		every_system_ambient_object = { destroy_ambient_object = this }
-		from = { country_event = { id = mega.9111 } }
+		from = { 
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9111 } 
+		}
 	}
 }

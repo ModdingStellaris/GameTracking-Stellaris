@@ -9,7 +9,6 @@ spy_orb_0 = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @phase_0_entity_x y = @phase_0_entity_y }
 	build_time = 1800
-
 	resources = {
 		category = megastructures
 		cost = {
@@ -22,15 +21,17 @@ spy_orb_0 = {
 		}
 	}
 
-	potential = {
-		has_gw_spy_orb = yes
-	}
+	prerequisites = { "tech_sentry_array" }
 	
 	possible = {
 		exists = starbase
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
 		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
@@ -63,40 +64,22 @@ spy_orb_0 = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-
-			#custom_tooltip = { # balance for think tanks
-			#	fail_text = "requires_major_planetary_body"
-			#	NOR = {
-			#		is_asteroid = yes
-			#		is_moon = yes
-			#		is_star = yes
-			#	}
-			#}
 			custom_tooltip = {
-				fail_text = "must_build_around_star"
-				is_star = yes
-			}
-
-			custom_tooltip = {
-				fail_text = "requires_no_existing_megastructure"
-				solar_system = {
-					has_no_non_gate_megastructure = yes
-					NOR = {
-						#has_any_megastructure = yes
-						any_system_planet = {
-							OR = {
-								is_planet_class = pc_ringworld_habitable
-								is_planet_class = pc_ringworld_habitable_damaged
-								is_planet_class = pc_ringworld_tech
-								is_planet_class = pc_ringworld_tech_damaged
-								is_planet_class = pc_ringworld_seam
-								is_planet_class = pc_ringworld_seam_damaged
-							}
-						}
-					}
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
 				}
 			}
-		} # use these for all non-star megastructures
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
 	}	
 
 	# root = system
@@ -142,9 +125,6 @@ spy_orb_1 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	upgrade_from = {
-		spy_orb_0
-	}
 	build_time = 1800
 	resources = {
 		category = megastructures
@@ -157,9 +137,11 @@ spy_orb_1 = {
 		}
 	}
 
-	possible = {
-		from = { has_gw_spy_orb = yes }
+	upgrade_from = {
+		spy_orb_0
 	}
+
+	prerequisites = { "tech_sentry_array" }
 
 	sensor_range = 20
 	hyperlane_range = 30
@@ -171,9 +153,6 @@ spy_orb_2 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	upgrade_from = {
-		spy_orb_1
-	}
 	build_time = 1800
 	resources = {
 		category = megastructures
@@ -185,10 +164,13 @@ spy_orb_2 = {
 			energy = 60
 		}
 	}
-
-	possible = {
-		from = { has_gw_spy_orb = yes }
+	
+	upgrade_from = {
+		spy_orb_1
 	}
+
+	prerequisites = { "tech_sentry_array" }
+	
 	sensor_range = 40
 	hyperlane_range = 60
 }
@@ -200,9 +182,6 @@ spy_orb_3 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	upgrade_from = {
-		spy_orb_2
-	}
 	build_time = 1800
 	resources = {
 		category = megastructures
@@ -214,10 +193,12 @@ spy_orb_3 = {
 			energy = 80
 		}
 	}
-
-	possible = {
-		from = { has_gw_spy_orb = yes }
+	upgrade_from = {
+		spy_orb_2
 	}
+
+	prerequisites = { "tech_sentry_array" }
+	
 	sensor_range = 60
 	hyperlane_range = 90
 }
@@ -228,9 +209,6 @@ spy_orb_4 = {
 	portrait = "GFX_megastructure_spy_orb_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	upgrade_from = {
-		spy_orb_3
-	}
 	build_time = 1800
 	resources = {
 		category = megastructures
@@ -242,10 +220,18 @@ spy_orb_4 = {
 			energy = 100
 		}
 	}
-
-	possible = {
-		from = { has_gw_spy_orb = yes }
+	upgrade_from = {
+		spy_orb_3
 	}
+
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+		}
+	}
+
+	prerequisites = { "tech_sentry_array" }
+	show_prereqs = yes
 
 	# effect implementation in game_rules (has_full_sensor_range)
 }
@@ -270,9 +256,6 @@ spy_orb_restored = {
 	portrait = "GFX_megastructure_spy_orb_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	upgrade_from = {
-		spy_orb_ruined
-	}
 	build_time = 4800
 	resources = {
 		category = megastructures
@@ -283,6 +266,10 @@ spy_orb_restored = {
 		upkeep = {
 			energy = 100
 		}
+	}
+	
+	upgrade_from = {
+		spy_orb_ruined
 	}
 
 	possible = {
@@ -300,6 +287,7 @@ spy_orb_restored = {
 	on_build_complete = {
 		every_system_ambient_object = { destroy_ambient_object = this }
 		from = {
+			set_country_flag = has_built_or_repaired_megastructure
 			country_event = { id = utopia.2015 }
 		}
 	}

@@ -106,6 +106,10 @@
  tech_defense_platform_hull_1:0 "Verbesserte strukturelle Integrität"
  tech_defense_platform_hull_1_desc:0 "Ein verstärkter Rahmen und Schutzschilde mit erhöhter Einschlagsabsorption gewährleisten die strukturelle Integrität der Plattform, selbst unter immensem Druck."
  
+ tech_habitat_1:0 "Orbitalhabitate"
+ tech_habitat_1_desc:0 "Ermöglicht den Bau weitgehend autarker Orbitalhabitate."
+ 
+
  #Spaceport Modules
  #tech_corvette_assembly:0 ""
  #tech_corvette_assembly_desc:0 ""
@@ -1107,6 +1111,8 @@
  tech_curator_lab_desc:1 "Diese Schiffslabors sind mit fortschrittlichen Technologien des uralten Kurator-Ordens ausgerüstet, um die Erkundungsgeschwindigkeit weiter zu beschleunigen."
  tech_archeology_lab:0 "Kurator-Archäologielabor"
  tech_archeology_lab_desc:1 "Ein Schiffslabor mit fortschrittlicher archäologischer Ausrüstung, einschließlich einer umfangreichen Datenbank des Kurator-Ordens für schnelle Querverweise bei Neuentdeckungen."
+ tech_archeology_lab_ancrel:0 "$tech_archeology_lab$"
+ tech_archeology_lab_ancrel_desc:0 "$tech_archeology_lab_desc$"
 
  #####################################
  # Machine Empire Techs

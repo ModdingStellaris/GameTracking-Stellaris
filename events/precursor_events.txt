@@ -34,6 +34,8 @@ ship_event = {
 				has_country_flag = first_league_intro
 				has_country_flag = irassian_intro
 				has_country_flag = cybrex_intro
+				has_country_flag = zroni_intro
+				has_country_flag = baol_intro
 			}
 		}
 	}
@@ -49,6 +51,10 @@ ship_event = {
 			begin_event_chain = {
 				event_chain = "vultaum_chain"
 				target = THIS
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
 			}
 		}
 	}
@@ -96,6 +102,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -154,6 +164,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -212,6 +226,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -270,6 +288,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -328,6 +350,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -386,6 +412,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -444,6 +474,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -502,6 +536,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -560,6 +598,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -618,6 +660,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -670,6 +716,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "vultaum_chain" 
 				counter = "vultaum_artifacts" 
@@ -843,6 +893,11 @@ ship_event = {
 	option = {
 		name = "FASCINATING"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				add_relic = r_reality_perforator
+				large_artifact_reward = yes
+			}
 			add_monthly_resource_mult = {
 				resource = unity
 				value = 120
@@ -866,6 +921,10 @@ ship_event = {
 				value = @tier3researchreward
 				min = @tier3researchmin
 				max = @tier3researchmax
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = vultaum_artifact_research_unlocked
 			}
 		}
 	}
@@ -929,6 +988,51 @@ ship_event = {
 	
 	option = {
 		name = "UNFORTUNATE"
+
+		if = {
+			limit = { has_ancrel = yes }
+			custom_tooltip = vultaum_artifact_research_unlocked
+		}
+	}
+}
+
+# Vultaum Reality Perforator Activated
+country_event = {
+	id = precursor.105
+	title = "precursor.105.name"
+	desc = "precursor.105.desc"
+	picture = GFX_evt_surreal_visions
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "precursor.105.a"
+		locked_random_list = {
+			10 = {
+				add_modifier = {
+					modifier = "reality_perforator_1" 
+					days = 360
+				}	
+			}
+			10 = {
+				add_modifier = {
+					modifier = "reality_perforator_2" 
+					days = 360
+				}
+			}
+			10 = {
+				add_modifier = {
+					modifier = "reality_perforator_3" 
+					days = 360
+				}
+			}
+			10 = {
+				add_modifier = {
+					modifier = "reality_perforator_4" 
+					days = 360
+				}
+			}
+		}
 	}
 }
 
@@ -959,6 +1063,8 @@ ship_event = {
 				has_country_flag = first_league_intro
 				has_country_flag = irassian_intro
 				has_country_flag = cybrex_intro
+				has_country_flag = zroni_intro
+				has_country_flag = baol_intro
 			}
 		}
 	}
@@ -974,6 +1080,10 @@ ship_event = {
 			begin_event_chain = {
 				event_chain = "yuht_chain"
 				target = THIS
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
 			}
 		}
 	}
@@ -1021,6 +1131,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "yuht_chain" 
 				counter = "yuht_artifacts" 
@@ -1079,6 +1193,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "yuht_chain" 
 				counter = "yuht_artifacts" 
@@ -1137,6 +1255,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "yuht_chain" 
 				counter = "yuht_artifacts" 
@@ -1195,6 +1317,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "yuht_chain" 
 				counter = "yuht_artifacts" 
@@ -1253,6 +1379,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "yuht_chain" 
 				counter = "yuht_artifacts" 
@@ -1311,6 +1441,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "yuht_chain" 
 				counter = "yuht_artifacts" 
@@ -1369,6 +1503,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "yuht_chain" 
 				counter = "yuht_artifacts" 
@@ -1427,6 +1565,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "yuht_chain" 
 				counter = "yuht_artifacts" 
@@ -1485,6 +1627,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "yuht_chain" 
 				counter = "yuht_artifacts" 
@@ -1649,6 +1795,11 @@ ship_event = {
 	option = {
 		name = "FASCINATING"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				add_relic = r_cryo_core				
+				large_artifact_reward = yes
+			}
 			add_monthly_resource_mult = {
 				resource = unity
 				value = 120
@@ -1666,6 +1817,11 @@ ship_event = {
 				value = @tier4materialreward
 				min = @tier4materialmin
 				max = @tier4materialmax
+			}
+
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = yuht_artifact_research_unlocked
 			}
 		}
 	}
@@ -1729,6 +1885,13 @@ ship_event = {
 	
 	option = {
 		name = "UNFORTUNATE"
+
+		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = yuht_artifact_research_unlocked
+			}
+		}
 	}
 }
 
@@ -1758,6 +1921,8 @@ ship_event = {
 				has_country_flag = first_league_intro
 				has_country_flag = irassian_intro
 				has_country_flag = cybrex_intro
+				has_country_flag = zroni_intro
+				has_country_flag = baol_intro
 			}
 		}
 	}
@@ -1773,6 +1938,10 @@ ship_event = {
 			begin_event_chain = {
 				event_chain = "first_league_chain"
 				target = THIS
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
 			}
 		}
 	}
@@ -1820,6 +1989,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -1878,6 +2051,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -1936,6 +2113,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -1994,6 +2175,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2052,6 +2237,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2110,6 +2299,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2168,6 +2361,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2226,6 +2423,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2284,6 +2485,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2342,6 +2547,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2400,6 +2609,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2458,6 +2671,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2516,6 +2733,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2574,6 +2795,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "first_league_chain" 
 				counter = "first_league_artifacts" 
@@ -2756,6 +2981,11 @@ ship_event = {
 				min = @tier4influencemin
 				max = @tier4influencemax
 			}
+
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = league_artifact_research_unlocked
+			}
 		}
 	}
 	
@@ -2841,6 +3071,11 @@ ship_event = {
 	
 	option = {
 		name = "UNFORTUNATE"
+
+		if = {
+			limit = { has_ancrel = yes }
+			custom_tooltip = league_artifact_research_unlocked
+		}
 	}
 }
 
@@ -2870,6 +3105,8 @@ ship_event = {
 				has_country_flag = first_league_intro
 				has_country_flag = irassian_intro
 				has_country_flag = cybrex_intro
+				has_country_flag = zroni_intro
+				has_country_flag = baol_intro
 			}
 		}
 	}
@@ -2885,6 +3122,10 @@ ship_event = {
 			begin_event_chain = {
 				event_chain = "irassian_chain"
 				target = ROOT
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
 			}
 		}
 	}
@@ -2932,6 +3173,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -2990,6 +3235,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3048,6 +3297,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3106,6 +3359,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3164,6 +3421,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3222,6 +3483,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3280,6 +3545,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3338,6 +3607,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3396,6 +3669,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3454,6 +3731,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3512,6 +3793,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "irassian_chain" 
 				counter = "irassian_artifacts" 
@@ -3687,6 +3972,11 @@ ship_event = {
 	option = {
 		name = "FASCINATING"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				add_relic = r_pox_sample
+				large_artifact_reward = yes
+			}
 			add_monthly_resource_mult = {
 				resource = unity
 				value = 120
@@ -3704,6 +3994,11 @@ ship_event = {
 				value = @tier4materialreward
 				min = @tier4materialmin
 				max = @tier4materialmax
+			}
+
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = irassian_artifact_research_unlocked
 			}
 		}
 	}
@@ -3767,8 +4062,16 @@ ship_event = {
 	
 	option = {
 		name = "UNFORTUNATE"
+
+		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = irassian_artifact_research_unlocked
+			}
+		}
 	}
 }
+
 
 ### The Cybrex
 
@@ -3796,6 +4099,8 @@ ship_event = {
 				has_country_flag = first_league_intro
 				has_country_flag = irassian_intro
 				has_country_flag = cybrex_intro
+				has_country_flag = zroni_intro
+				has_country_flag = baol_intro
 			}
 		}
 	}
@@ -3811,6 +4116,10 @@ ship_event = {
 			begin_event_chain = {
 				event_chain = "cybrex_chain"
 				target = ROOT
+			}
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
 			}
 		}
 	}
@@ -3858,6 +4167,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -3916,6 +4229,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -3974,6 +4291,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -4032,6 +4353,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -4090,6 +4415,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -4148,6 +4477,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -4206,6 +4539,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -4264,6 +4601,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -4322,6 +4663,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -4380,6 +4725,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -4438,6 +4787,10 @@ ship_event = {
 	option = {
 		name = "precursor.completed.a"
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				small_artifact_reward = yes
+			}
 			add_event_chain_counter = { 
 				event_chain = "cybrex_chain" 
 				counter = "cybrex_artifacts" 
@@ -4615,6 +4968,11 @@ ship_event = {
 			}
 		}
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				add_relic = r_war_forge
+				large_artifact_reward = yes
+			}
 			add_monthly_resource_mult = {
 				resource = unity
 				value = 120
@@ -4634,6 +4992,10 @@ ship_event = {
 				max = @tier4materialmax
 			}
 			end_event_chain = "cybrex_chain"
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = cybrex_artifact_research_unlocked
+			}
 		}
 	}
 
@@ -4645,6 +5007,11 @@ ship_event = {
 			}
 		}
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				add_relic = r_war_forge
+				large_artifact_reward = yes
+			}
 			add_monthly_resource_mult = {
 				resource = unity
 				value = 120
@@ -4664,6 +5031,10 @@ ship_event = {
 				max = @tier4materialmax
 			}
 			end_event_chain = "cybrex_homeworld_chain"
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = cybrex_artifact_research_unlocked
+			}
 		}
 	}
 
@@ -4678,6 +5049,11 @@ ship_event = {
 			}
 		}
 		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				add_relic = r_war_forge
+				large_artifact_reward = yes
+			}
 			add_monthly_resource_mult = {
 				resource = unity
 				value = 120
@@ -4696,6 +5072,11 @@ ship_event = {
 				min = @tier4materialmin
 				max = @tier4materialmax
 			}
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = cybrex_artifact_research_unlocked
+			}
+
 		}
 	}
 }
@@ -4760,6 +5141,13 @@ ship_event = {
 	
 	option = {
 		name = "UNFORTUNATE"
+
+		owner = {
+			if = {
+				limit = { has_ancrel = yes }
+				custom_tooltip = cybrex_artifact_research_unlocked
+			}
+		}
 	}
 }
 

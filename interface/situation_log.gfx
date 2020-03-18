@@ -166,6 +166,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_situation_log_archaeology"
+		texturefile = "gfx/interface/icons/situation_log/situation_log_archaeology.dds"		
+	}
+	
+	spriteType = {
 		name = "GFX_situation_or_button"
 		texturefile = "gfx/interface/situation_log/situation_log_or_button.dds"		
 	}

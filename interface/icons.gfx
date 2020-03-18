@@ -290,6 +290,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_timed_overlay"
+		texturefile = "gfx/interface/icons/traits/leader_traits/trait_timed.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
 		name = "GFX_government_civic"
 		texturefile = "gfx/interface/icons/governments/civics/unknown.dds"
 		noOfFrames = 1
@@ -354,7 +360,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ship_class_small"
 		textureFile = "gfx/interface/icons/ship_classes.dds"
-		noOfFrames = 29
+		noOfFrames = 30
 	}
 
 	spriteType = {
@@ -378,7 +384,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ship_class_medium"
 		textureFile = "gfx/interface/icons/ship_classes_medium.dds"
-		noOfFrames = 29
+		noOfFrames = 30
 	}
 
 	spriteType = {
@@ -473,6 +479,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_message_event_completion"
 		texturefile = "gfx/interface/icons/message/message_event_completion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_archeology_complete"
+		texturefile = "gfx/interface/icons/message/message_archeology_complete.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_archeology_chapter_finished"
+		texturefile = "gfx/interface/icons/message/message_archeology_chapter_finished.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_archeology_discovered"
+		texturefile = "gfx/interface/icons/message/message_archeology_discovered.dds"
 	}
 
 	#spriteType = {
@@ -1992,6 +2013,30 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_button_automate"
+		texturefile = "gfx/interface/buttons/button_automate.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_button_automate_selected"
+		texturefile = "gfx/interface/buttons/button_automate_selected.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_button_manual"
+		texturefile = "gfx/interface/buttons/button_manual.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_button_manual_selected"
+		texturefile = "gfx/interface/buttons/button_manual_selected.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
 		name = "GFX_sector_focus_type_industrial"
 		texturefile = "gfx/interface/buttons/sector_industrial.dds"
 		noOfFrames = 3
@@ -2012,7 +2057,6 @@ spriteTypes = {
 		name = "GFX_sector_focus_type_research_selected"
 		texturefile = "gfx/interface/buttons/sector_research_selected.dds"
 	}
-
 
 	spriteType = {
 		name = "GFX_sector_focus_type_financial"

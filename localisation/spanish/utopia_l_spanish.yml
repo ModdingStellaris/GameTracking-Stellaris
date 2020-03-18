@@ -9,7 +9,7 @@
  think_tank_0_CONSTRUCTION_INFO_DELAYED:0 "§E$think_tank_1$\n£physics£ §G15§! £society£ §G15§! £engineering£ §G15§!\n£minerals£ §Y20000§! £time£ §H2400§!\n\n$think_tank_2$\n£physics£ §G30§! £society£ §G30§! £engineering£ §G30§!\n£minerals£ §Y20000§! £time£ §H2400§!\n\n$think_tank_3$\n£physics£ §G50§! £society£ §G50§! £engineering£ §G50§!\n£minerals£ §Y20000§! £time£ §H2400§!§!"
 
  ring_world_1_MEGASTRUCTURE_DETAILS:1 "Un §Y$pc_ringworld_habitable$§! puede tener múltiples zonas pseudoplanetarias mediante la canibalización del resto de planetas en el sistema para conseguir materiales."
- ring_world_1_CONSTRUCTION_INFO_DELAYED:3 "Un mundo anillo consiste en cuatro secciones del mundo anillo completas, cada una equivalente a un mundo Gaia de tamaño 25."
+ ring_world_1_CONSTRUCTION_INFO_DELAYED:4 "Un mundo anillo consiste en cuatro secciones del mundo anillo completas, cada una equivalente a un mundo Gaia inmenso."
 
  dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "Una §Y$dyson_sphere_5$§! envuelve completamente una estrella y convierte toda su energía solar en £energy£ créditos energéticos."
  dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "Una $dyson_sphere_5$ oscurecerá el sol y convertirá a todos los planetas del sistema en mundos yermos o helados."
@@ -158,7 +158,7 @@
  leader_trait_scientist_erudite_desc:0 "Este/a líder tiene un intelecto enormemente mejorado, lo cual aumenta su habilidad como científico."
  leader_trait_ruler_erudite:0 "$leader_trait_admiral_erudite$"
  leader_trait_ruler_erudite_desc:0 "Este/a líder tiene un intelecto enormemente mejorado, lo cual aumenta su habilidad para dirigir."
- ap_master_builders_habitat_size:1 "Los §Hhábitats§! de nuestro imperio tienen espacio para §Y2§! distritos adicionales."
+ ap_master_builders_habitat_size:2 "Los §Hhábitats§! de nuestro imperio tienen espacio para §Y2§! distritos adicionales."
  maneuvers_canceled:0 "Maniobras de flota canceladas"
  maneuvers_canceled_desc:0 "§LUna gran parte de nuestros mandos militares protesta por la reciente cancelación de las maniobras previstas de la flota. Les parece una señal de debilidad inaceptable que sin duda aprovecharán nuestros vecinos.§!"
  opinion_maneuvers_canceled:0 "Maniobras de flota canceladas"

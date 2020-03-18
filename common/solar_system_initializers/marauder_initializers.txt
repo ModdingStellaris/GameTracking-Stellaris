@@ -1410,7 +1410,7 @@ marauder_2_1 = {
 		}
 	}
 
-	change_orbit = 255
+	change_orbit = 250
 
 	planet = {
 		class = "pc_asteroid"
@@ -1628,7 +1628,7 @@ marauder_2_1 = {
 
 	planet = {
 		class = pc_barren_cold
-		orbit_distance = 50
+		orbit_distance = 40
 		size = 10
 		orbit_angle = 125
 
@@ -1660,7 +1660,7 @@ marauder_2_1 = {
 
 	planet = {
 		class = pc_frozen
-		orbit_distance = 50
+		orbit_distance = 40
 		size = 6
 		orbit_angle = 225
 

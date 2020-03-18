@@ -612,6 +612,7 @@ pc_machine = {
 	modifier = {
 		planet_jobs_produces_mult = 0.10
 		pop_housing_usage_mult = -0.10
+		pop_environment_tolerance = 0.0
 	}
 	
 	spawn_odds = 0
@@ -782,7 +783,7 @@ pc_cybrex = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 50
+	planet_size = 5
 	moon_size = 1
 	colonizable = no
 	show_city = no
@@ -1098,13 +1099,17 @@ pc_ringworld_habitable = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 50
+	planet_size = 5
 	moon_size = 1
 	colonizable = yes
 	ideal = yes
 	starting_planet = no
 	orbit_lines = no
 	has_colonization_influence_cost = no		# applies when within own borders
+
+	modifier = {
+		planet_housing_add = 20
+	}
 }
 
 pc_ringworld_habitable_damaged = {
@@ -1122,7 +1127,7 @@ pc_ringworld_habitable_damaged = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 10
+	planet_size = 5
 	moon_size = 1
 	colonizable = no
 	orbit_lines = no
@@ -1143,7 +1148,7 @@ pc_ringworld_tech = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 10
+	planet_size = 5
 	moon_size = 1
 	colonizable = no
 	orbit_lines = no
@@ -1164,7 +1169,7 @@ pc_ringworld_tech_damaged = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 10
+	planet_size = 5
 	moon_size = 1
 	colonizable = no
 	orbit_lines = no
@@ -1185,7 +1190,7 @@ pc_ringworld_seam = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 10
+	planet_size = 5
 	moon_size = 1
 	colonizable = no
 	orbit_lines = no
@@ -1206,7 +1211,7 @@ pc_ringworld_seam_damaged = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 10
+	planet_size = 5
 	moon_size = 1
 	colonizable = no
 	orbit_lines = no
@@ -1232,14 +1237,15 @@ pc_habitat = {
 	planet_size = 6
 	moon_size = 1
 	colonizable = yes
-	ideal = yes
+#	ideal = yes
 	starting_planet = no
 	orbit_lines = no
 	has_colonization_influence_cost = no			# applies when within own borders
 	
 	modifier = {
 		planet_colony_development_speed_mult = 2.0 # Habitats should be fast to colonize
-	}
+		pop_environment_tolerance = 0.70
+	}	
 }
 
 pc_shrouded = {

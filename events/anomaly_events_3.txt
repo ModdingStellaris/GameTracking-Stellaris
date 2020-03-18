@@ -2201,15 +2201,14 @@ ship_event = {
 
 	option = {
 		name = FANTASTIC
-		custom_tooltip = anomaly.215.a.tooltip
-		hidden_effect = {
-			from = {
+		from = {
+			hidden_effect = {
 				add_modifier = {
 					modifier = "cornucopia"
 					days = -1
 				}
-				add_deposit = d_hyperfertile_valley
 			}
+			add_deposit = d_hyperfertile_valley
 		}
 	}
 }
@@ -2228,17 +2227,15 @@ ship_event = {
 
 	option = {
 		name = FANTASTIC
-		custom_tooltip = anomaly.220.a.tooltip
-
-		hidden_effect = {
-			from = {
+		from = {
+			hidden_effect = {
 				add_modifier = {
 					modifier = "raw_materials"
 					days = -1
 				}
-				add_deposit = d_rich_mountain
-				add_deposit = d_submerged_ore_veins
 			}
+			add_deposit = d_rich_mountain
+			add_deposit = d_submerged_ore_veins
 		}
 	}
 }

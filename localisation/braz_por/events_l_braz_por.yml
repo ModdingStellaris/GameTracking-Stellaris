@@ -2502,3 +2502,5 @@
  exercise_diplomatic_canceled:0 "Cancelamos nossas manobras de frota para melhorar as relações com o [From.GetName]. Os militares não ficarão satisfeitos.\n\n"
  colony.107.desc.nuked_pref:0 "O processo de terraformação abortado em [Root.GetName] foi concluído. Qualquer que seja a forma alienígena que desenvolveu o equipamento, a fisiologia deles deveria ser parecida com a nossa. O planeta agora possui uma atmosfera de nitrogênio e oxigênio, e altos níveis de radiação na superfície - ele se tornou um §Y$pc_nuked$§!.\n\nFelizmente, os [Root.Owner.GetSpeciesName] se adaptaram para prosperar precisamente em tais condições extremas."
  colony.107.a.tooltip:0 "§HTodo §!§Pop não-Y$trait_mechanical$§! §Hsem§! §Y$trait_pc_nuked_preference$§! §Hem [Root.GetName]:§! Morre."
+ DIG:0 "Continue cavando!"
+ crisis.2403.desc_06:0 "Por acaso... por acaso essa é nossa fornalha de guerra?\n\nPorque parece bastante com nossa fornalha de guerra."

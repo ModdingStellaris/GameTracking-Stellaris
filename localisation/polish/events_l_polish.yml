@@ -2517,3 +2517,5 @@
  exercise_diplomatic_canceled:0 "Anulowaliśmy trwające manewry floty, żeby poprawić stosunki z imperium [From.GetAdj]. Wojskowi nie będą zadowoleni.\n\n"
  colony.107.desc.nuked_pref:0 "[Root.GetName]: przerwany proces terraformowania został zakończony. Gatunek, który stworzył te urządzenia terraformujące, musiał posiadać fizjologię zbliżoną do naszej. Obecnie planeta posiada atmosferę opartą na azocie i tlenie, a na powierzchni panuje duże natężenie promieniowania. Teraz ma ona status: §Y$pc_nuked$§!.\n\nNa szczęście [Root.Owner.GetSpeciesName] są przystosowani do życia w tak ekstremalnych warunkach."
  colony.107.a.tooltip:0 "§HWszystkie populacje, które nie są §!§Y$trait_mechanical$§!, §Hnie mają§! §Y$trait_pc_nuked_preference$§! i znajdują się §Hna [Root.GetName],§! giną."
+ DIG:0 "Kopcie dalej!"
+ crisis.2403.desc_06:0 "Czy... czy to nasza fabryka wojenna?\n\nBo wygląda zupełnie jak nasza fabryka wojenna."

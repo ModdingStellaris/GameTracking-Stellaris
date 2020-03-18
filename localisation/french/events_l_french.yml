@@ -2516,3 +2516,5 @@
  exercise_diplomatic_canceled:0 "Les manoeuvres en cours de la flotte vont être annulées pour améliorer nos relations avec la [From.GetName]. Les militaires ne vont guère s'en réjouir toutefois.\n\n"
  colony.107.desc.nuked_pref:0 "La terraformation de [Root.GetName], qui avait été abandonnée en plein cours, a enfin été achevée. Quelle que soit la forme de vie alien qui avait conçu ce matériel, sa physiologie devait être similaire à la nôtre : la [Root.GetPlanetMoon] possède maintenant une atmosphère constituée pour l'essentiel d'azote et d'oxygène et permet d'importantes radiations de surface - devenant dans les faits un §Ymonde mort§!.\n\nFort heureusement, les [Root.Owner.GetSpeciesNamePlural] sont précisément adaptés pour vivre dans des conditions aussi extrêmes."
  colony.107.a.tooltip:0 "§HChaque§! §Y£pop£pop mécanique§! §Hprésente sur [Root.GetName] sans§! §Ypréférence pour les mondes morts§! §Hmeurt.§!"
+ DIG:0 "Poursuivons les travaux !"
+ crisis.2403.desc_06:0 "Serait-ce... Serait-ce notre forge militaire ?\n\nParce que ça y ressemble beaucoup..."

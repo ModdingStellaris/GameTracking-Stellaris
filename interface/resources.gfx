@@ -105,6 +105,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/resources/unity_grey.dds"
 	}
 
+	spriteType = {
+		name = "GFX_resource_minor_artifacts"
+		textureFile = "gfx/interface/icons/resources/minor_artifacts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_minor_artifacts_grey"
+		textureFile = "gfx/interface/icons/resources/minor_artifacts_grey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_resource_minor_artifacts"
+		textureFile = "gfx/interface/icons/resources/minor_artifacts.dds"
+	}
+
 	# LARGE ICONS
 	spriteType = {
 		name = "GFX_resource_food_large"
@@ -162,7 +177,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_resource_arcane_technology_large"
-		textureFile = "gfx/interface/icons/resources/arcane_technology_large.dds"
+		name = "GFX_resource_minor_artifacts_large"
+		textureFile = "gfx/interface/icons/resources/minor_artifacts_large.dds"
 	}
 }

@@ -421,16 +421,16 @@ guiTypes = {
 		instantTextBoxType={
 			name = "economy_power_amount"
 			font = "cg_16b"
-			maxWidth = 30
-			position = { x = 310 y = @entry_info_height }
+			maxWidth = 50
+			position = { x = 300 y = @entry_info_height }
 			format = center
 		}
 
 		instantTextBoxType={
 			name = "fleet_power_amount"
 			font = "cg_16b"
-			maxWidth = 30
-			position = { x = 390 y = @entry_info_height }
+			maxWidth = 50
+			position = { x = 380 y = @entry_info_height }
 			format = center
 		}
 
@@ -446,7 +446,7 @@ guiTypes = {
 			name = "their_opinion"
 			font = "cg_16b"
 			text = "-"
-			maxWidth = 40
+			maxWidth = 50
 			position = { x = 550 y = @entry_info_height }
 			format = center
 		}

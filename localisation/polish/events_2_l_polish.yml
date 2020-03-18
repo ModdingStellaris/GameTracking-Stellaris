@@ -1174,7 +1174,7 @@
  galactic_features.361.a.phile:0 "Fascynujące."
  galactic_features.361.a.spiri:0 "Niech bogowie nas chronią."
  galactic_features.361.a.tooltip:0 "§RChmura próżniowa§! powstała w układzie §Y[From.From.From.GetStarName]§!."
- anomaly_failure.2670.desc:0 "Zdaje się, że entuzjastyczne próby zbadania układów tej starej konstrukcji podjęte przez oficera naukowego [Root.GetLeaderName] spowodowały kłopoty.\n\nZanim stare obwody przepaliły się, silniki manewrowe stacji orbitalnej zostały uruchomione przez imperium [Root.GetName]. Stacja zeszła z łagodnej orbity i trafiła w studnię grawitacyjną miejscowej gwiazdy."
+ anomaly_failure.2670.desc:1 "Zdaje się, że entuzjastyczne próby zbadania układów tej starej konstrukcji, których inicjatorem było imperium [Root.GetName], spowodowały kłopoty.\n\nZanim stare obwody przepaliły się, silniki manewrowe stacji orbitalnej zostały uruchomione przez imperium [Root.GetName]. Stacja zeszła z łagodnej orbity i trafiła w studnię grawitacyjną miejscowej gwiazdy. Niefortunne zakończenie misji miało przemożny wpływ na admirała okrętu ([Root.GetLeaderName]), który wyciągnął wnioski z tego doświadczenia."
  anomaly_failure.2670.a:0 "[Root.GetLeaderName]... kieruje ją ku słońcu?"
  anomaly_failure.2670.a.tooltip:0 "§YPradawna manufaktura§! została zniszczona.\n"
  communications_spread.1.name:0 "Przechwycone połączenia"

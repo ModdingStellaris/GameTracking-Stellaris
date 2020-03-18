@@ -1,0 +1,17 @@
+objectTypes = {
+	
+	pdxparticle = {
+		name = "ar_baol_bg_effect"
+		type = "ar_baol_bg_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ar_baol_fg_effect"
+		type = "ar_baol_fg_effect"
+		
+		scale = 1.0
+	}
+	
+}

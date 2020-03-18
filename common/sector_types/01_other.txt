@@ -1,4 +1,4 @@
-frontier_sector = {
+normal_sector = {
 
 	system_scores = {
 		base = 1
@@ -13,5 +13,5 @@ frontier_sector = {
 		minerals = 1
 	}
 
-	max_jumps = 3
+	max_jumps = 4
 }

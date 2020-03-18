@@ -992,28 +992,15 @@ trader_proxy_office = {
 				fleet = { has_fleet_flag = trader_enclave_station }
 			}
 		}
-	}	
-	
+	}
+
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starport"
 			has_starbase_size >= starbase_starport
 		}
-		NOT = { has_starbase_module = trader_proxy_office }
-	}
+		NOT = { has_starbase_building = trader_proxy_office }
 
-	resources = {
-		category = starbase_buildings
-		cost = {
-			alloys = 100
-		}
-	}
-	
-	country_modifier = {
-		country_trade_fee = -0.05
-	}
-	
-	possible = {
 		custom_tooltip = {
 			fail_text = "requires_trade_enclave"
 			solar_system = {
@@ -1034,6 +1021,17 @@ trader_proxy_office = {
 				}
 			}
 		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+	}
+	
+	country_modifier = {
+		country_trade_fee = -0.05
 	}
 	
 	ai_build_at_chokepoint = no

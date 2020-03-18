@@ -713,7 +713,7 @@
  ####################################
  # Buildings
  ####################################
- building_cryonic_clones:0 "Kryionische Klone"
+ building_cryonic_clones:0 "Kryonische Klone"
  building_cryonic_clones_desc:0 "Hunderte von Alienklonen wurden Kryostasiskammern versiegelt, als diese Ringwelt noch eine Ruine war. Jetzt, wo sie vollständig ist, sind die Klone weiterhin in diesem Monument enthalten."
  building_the_zone:0 "Zone A"
  building_the_zone_desc:0 "Ein dreizehn mal dreizehn Kilometer langes Stück Land auf diesem Planeten ist eine Ruine unbekannter Herkunft. Sie ist mit vielen bizarren und einzigartigen Artefakten übersät. Erstaunlicherweise erzeugt es auch Gefühle der tiefen Zufriedenheit unter seinen Besuchern."
@@ -721,7 +721,6 @@
  building_junkheap_desc:0 "Ein verrostetes und verstrahltes Durcheinander von eingestürzter Infrastruktur, zerstörten Gebäuden und verfallenen Trümmern einer unbekannten Zivilisation."
  building_livestock_processing_center:0 "Verarbeitungszentrum"
  building_livestock_processing_center_desc:0 "Die Fungoide, die auf diesem Planeten heimisch sind, wurden gentechnisch gezüchtet, um fügsam und schmackhaft zu sein. Dieses Verarbeitungszentrum nährt sie und erntet sie anschließend."
-
  ####################################
  # Tile Blockers
  ####################################
@@ -1735,8 +1734,9 @@
 
  # drone station destroyed
  story.332.name:1 "$story.333.name$"
- story.332.desc:0 "Wir haben die Basis der Bergbaudrohnen zerstört und konnten die meisten ihrer Mineral-Lagerstätten zurückgewinnen."
+ story.332.desc:1 "Wir haben die Basis der Bergbaudrohnen zerstört und konnten die meisten ihrer Mineral-Lagerstätten und wertvollen Legierungen zurückgewinnen."
  story.332.a:0 "Unzählige Reichtümer."
+ story.332.b:0 "...und eine merkwürdige Apparatur ..."
 
  CRYSTALS_PROJECT:0 "Kristallines Studium"
  CRYSTALS_PROJECT_DESC:0 "$CRYSTALS_1_PROJECT_DESC$"

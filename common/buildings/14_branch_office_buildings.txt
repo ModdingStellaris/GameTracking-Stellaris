@@ -10,7 +10,10 @@ building_private_mining_consortium = {
 	
 	potential = {
 		has_branch_office = yes
-		branch_office_owner = { is_criminal_syndicate = no }
+		branch_office_owner = { 
+			is_criminal_syndicate = no
+			NOT = { is_ai = yes }
+		}
 		habitable_structure = no
 		NOR = { 
 			is_planet_class = pc_hive
@@ -37,7 +40,7 @@ building_private_mining_consortium = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		factor = 0
 	}
 }
 
@@ -48,12 +51,14 @@ building_food_conglomerate = {
 	
 	potential = {
 		has_branch_office = yes
-		branch_office_owner = { is_criminal_syndicate = no }
+		branch_office_owner = { 
+			is_criminal_syndicate = no
+			NOT = { is_ai = yes }
+		}
 		NOR = { 
-			is_planet_class = pc_habitat
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
-			is_planet_class = pc_city 
+			is_planet_class = pc_relic
 		}	
 	}
 	
@@ -75,8 +80,8 @@ building_food_conglomerate = {
 	}
 	
 	ai_weight = {
-		weight = 1
-	}
+		factor = 0
+	}#AI has many other sources for this resource
 }
 
 building_virtual_entertainment_studios = {
@@ -107,7 +112,7 @@ building_virtual_entertainment_studios = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 
 		modifier = 
 		{
@@ -115,7 +120,7 @@ building_virtual_entertainment_studios = {
 			branch_office_owner = { 
 				has_monthly_income = {
 					resource = consumer_goods
-					value < 5
+					value < 10
 				}
 			}
 		}
@@ -129,7 +134,10 @@ building_private_shipyards = {
 	
 	potential = {
 		has_branch_office = yes
-		branch_office_owner = { is_criminal_syndicate = no }		
+		branch_office_owner = { 
+			is_criminal_syndicate = no
+			NOT = { is_ai = yes }
+		}
 	}
 	
 	planet_modifier = {
@@ -150,18 +158,8 @@ building_private_shipyards = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 5
-			branch_office_owner = { 
-				has_monthly_income = {
-					resource = alloys
-					value < 5
-				}
-			}
-		}
-	}
+		weight = 0
+	}#Check resource income for a need
 }
 
 building_military_contractors = {
@@ -171,7 +169,10 @@ building_military_contractors = {
 	
 	potential = {
 		has_branch_office = yes
-		branch_office_owner = { is_criminal_syndicate = no }	
+		branch_office_owner = { 
+			is_criminal_syndicate = no
+			NOT = { is_ai = yes }
+		}
 	}
 	
 	country_modifier = {
@@ -197,16 +198,8 @@ building_military_contractors = {
 	}
 	
 	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 3
-			branch_office_owner = { 
-				used_naval_capacity_percent > 0.8
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
-	}
+		factor = 0
+	}#Not really useful given the changes to strongholds
 }
 
 building_public_relations_office = {
@@ -273,7 +266,7 @@ building_private_research_initiative = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 300
 	}
 }
 
@@ -303,14 +296,14 @@ building_amusement_megaplex = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
+		weight = 2
+		
 		modifier = {
-			factor = 3
-			branch_office_owner = { 
+			weight = 0
+			branch_office_owner = {
 				has_monthly_income = {
 					resource = energy
-					value < 8
+					value > 50
 				}
 			}
 		}
@@ -344,22 +337,7 @@ building_commercial_forum = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 3
-			branch_office_value = {
-				who = branch_office_owner
-				value > 12
-			}
-			
-			branch_office_owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 8
-				}
-			}
-		}
+		weight = 3
 	}
 }
 
@@ -371,7 +349,10 @@ building_wildcat_miners = {
 	
 	potential = {
 		has_branch_office = yes
-		branch_office_owner = { is_criminal_syndicate = yes }
+		branch_office_owner = { 
+			is_criminal_syndicate = yes
+			NOT = { is_ai = yes }
+		}
 		habitable_structure = no
 		NOR = { 
 			is_planet_class = pc_hive
@@ -399,7 +380,7 @@ building_wildcat_miners = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		factor = 0
 	}
 }
 
@@ -410,12 +391,14 @@ building_bio_reprocessing_facilities = {
 	
 	potential = {
 		has_branch_office = yes
-		branch_office_owner = { is_criminal_syndicate = yes }
+		branch_office_owner = { 
+			is_criminal_syndicate = yes
+			NOT = { is_ai = yes }
+		}
 		NOR = { 
-			is_planet_class = pc_habitat
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
-			is_planet_class = pc_city 
+			is_planet_class = pc_relic
 		}				
 	}
 	
@@ -438,7 +421,7 @@ building_bio_reprocessing_facilities = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		factor = 0
 	}
 }
 
@@ -472,13 +455,21 @@ building_underground_chemists = {
 	
 	ai_weight = {
 		weight = 1
-
 		modifier = {
-			factor = 5
+			weight = 5
 			branch_office_owner = { 
 				has_monthly_income = {
 					resource = consumer_goods
-					value < 5
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			branch_office_owner = { 
+				has_monthly_income = {
+					resource = consumer_goods
+					value >= 10
 				}
 			}
 		}
@@ -492,7 +483,10 @@ building_wrecking_yards = {
 	
 	potential = {
 		has_branch_office = yes
-		branch_office_owner = { is_criminal_syndicate = yes }		
+		branch_office_owner = { 
+			is_criminal_syndicate = yes
+			NOT = { is_ai = yes }
+		}	
 	}
 	
 	planet_modifier = {
@@ -514,17 +508,7 @@ building_wrecking_yards = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 5
-			branch_office_owner = { 
-				has_monthly_income = {
-					resource = alloys
-					value < 5
-				}
-			}
-		}
+		factor = 0
 	}
 }
 
@@ -535,7 +519,10 @@ building_pirate_haven = {
 	
 	potential = {
 		has_branch_office = yes
-		branch_office_owner = { is_criminal_syndicate = yes }	
+		branch_office_owner = { 
+			is_criminal_syndicate = yes
+			NOT = { is_ai = yes }
+		}
 	}
 	
 	country_modifier = {
@@ -562,16 +549,7 @@ building_pirate_haven = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 3
-			branch_office_owner = { 
-				used_naval_capacity_percent > 0.8
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
+		factor = 0
 	}
 }
 
@@ -605,11 +583,20 @@ building_underground_clubs = {
 		weight = 1
 
 		modifier = {
-			factor = 6
+			factor = 3
 			branch_office_owner = { 
 				has_monthly_income = {
 					resource = energy
-					value < 8
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			weight = -3
+			branch_office_owner = { 
+				has_monthly_income = {
+					resource = energy
+					value > 35
 				}
 			}
 		}
@@ -682,7 +669,7 @@ building_illicit_research_labs = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 3
 	}
 }
 
@@ -715,26 +702,6 @@ building_smuggling_rings = {
 	
 	ai_weight = {
 		weight = 2
-
-		modifier = {
-			factor = 2
-			planet_crime < 25
-		}
-
-		modifier = {
-			factor = 2
-			planet_crime < 50
-		}
-
-		modifier = {
-			factor = 2
-			planet_crime < 75
-		}
-
-		modifier = {
-			factor = 0
-			planet_crime >= 100
-		}
 	}
 }
 
@@ -767,21 +734,7 @@ building_temple_of_prosperity = {
 	}
 	
 	ai_weight = {
-		weight = 1
-
-		modifier = {
-			factor = 2
-			branch_office_owner = { 
-				has_ethic = ethic_spiritualist
-			}
-		}
-
-		modifier = {
-			factor = 6
-			branch_office_owner = { 
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
+		weight = 50
 	}
 }
 
@@ -797,6 +750,9 @@ building_executive_retreat = {
 	
 	potential = {
 		has_branch_office = yes	
+		branch_office_owner = { 
+			NOT = { is_ai = yes }
+		}
 	}
 	
 	allow = {
@@ -824,7 +780,7 @@ building_executive_retreat = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		factor = 0
 	}
 }
 
@@ -838,6 +794,9 @@ building_xeno_tourism_agency = {
 	
 	potential = {
 		has_branch_office = yes	
+		branch_office_owner = { 
+			NOT = { is_ai = yes }
+		}
 	}
 	
 	allow = {
@@ -865,7 +824,7 @@ building_xeno_tourism_agency = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 	}
 }
 

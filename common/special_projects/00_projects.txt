@@ -364,7 +364,7 @@ special_project = {
 	cost = 5000
 	tech_department = engineering_technology
 	picture = GFX_evt_nuclear_explosion
-	timelimit = 360
+	timelimit = 2
 	
 	same_option_group_as = { SEISMIC_DISTURBANCE_1_PROJECT }
 	
@@ -376,6 +376,17 @@ special_project = {
 	}
 	
 	on_fail = {
+		end_event_chain = "subterranean_civilization_chain"
+		if = {
+			limit = {
+				FROM = {
+					owner = {
+						is_homicidal = yes
+					}
+				}
+			}
+			FROM = { planet_event = { id = colony.54 } }
+		}
 	}
 }
 

@@ -18,16 +18,18 @@ interstellar_assembly_0 = {
 		}
 	}
 
-	potential = {
-		has_gw_interstellar_assembly = yes
-	}
+	prerequisites = { "tech_interstellar_assembly" }
 
 	possible = {
 		exists = starbase
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
-		}		
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			has_no_non_gate_megastructure = yes
+		}	
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
@@ -40,48 +42,44 @@ interstellar_assembly_0 = {
 			}
 		}
 		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			#will be changed to type-specific string with next translation pass
-			#fail_text = "requires_no_existing_interstellar_assembly"
-			from = {
-				NOT = {
-					any_owned_megastructure = {
-						OR = {
-							is_megastructure_type = interstellar_assembly_0
-							is_megastructure_type = interstellar_assembly_1
-							is_megastructure_type = interstellar_assembly_2
-							is_megastructure_type = interstellar_assembly_3
-							is_megastructure_type = interstellar_assembly_4
-							#is_megastructure_type = insterstellar_assembly_restored
-						}
-					}
-				}
-			}
+			fail_text = "requires_no_existing_interstellar_assembly"
+			from = { NOT = { has_country_flag = built_interstellar_assembly_site } }
 		}
-		custom_tooltip = {
-			fail_text = "requires_capital_system"
-			from.capital_scope.solar_system = { is_same_value = root }
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_capital_system"
+		#	from.capital_scope.solar_system = { is_same_value = root }
+		#}
 	}
 	
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
-				fail_text = "must_build_around_star"
-				is_star = yes
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+				colonizeable_planet = no
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-			#custom_tooltip = {
-			#	fail_text = "requires_no_orbital_station"
-			#	has_orbital_station = no
-			#}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
 		}
 	}
 	
@@ -120,32 +118,27 @@ interstellar_assembly_1 = {
 	portrait = GFX_megastructure_construction_background
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-		interstellar_assembly_0
-	}
-
 	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-		
-		produces = {
-		}
 
 		upkeep = {
-			consumer_goods = 10
+			energy = 10
 		}
 	}
+
+	upgrade_from = {
+		interstellar_assembly_0
+	}
+
+	prerequisites = { "tech_interstellar_assembly" }
 
 	country_modifier = {
 		planet_immigration_pull_mult = 0.25
 		# enables triggered_opinion_of_interstellar_assembly_1
-	}
-
-	possible = {
-		from = { has_gw_interstellar_assembly = yes }
 	}
 
 	on_build_complete = {
@@ -160,32 +153,27 @@ interstellar_assembly_2 = {
 	portrait = GFX_megastructure_construction_background
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-		interstellar_assembly_1
-	}
-
 	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-		
-		produces = {
-		}
 
 		upkeep = {
-			consumer_goods = 20
+			energy = 20
 		}
 	}
+
+	upgrade_from = {
+		interstellar_assembly_1
+	}
+
+	prerequisites = { "tech_interstellar_assembly" }
 
 	country_modifier = {
 		planet_immigration_pull_mult = 0.50
 		# enables triggered_opinion_of_interstellar_assembly_2
-	}
-
-	possible = {
-		from = { has_gw_interstellar_assembly = yes }
 	}
 
 	on_build_complete = {
@@ -200,10 +188,6 @@ interstellar_assembly_3 = {
 	portrait = GFX_megastructure_construction_background
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-		interstellar_assembly_2
-	}
-
 	build_time = 1800
 	resources = {
 		category = megastructures
@@ -211,21 +195,20 @@ interstellar_assembly_3 = {
 			alloys = 10000
 		}
 
-		produces = {
-		}
-
 		upkeep = {
-			consumer_goods = 30
+			energy = 30
 		}
 	}
 
+	upgrade_from = {
+		interstellar_assembly_2
+	}
+
+	prerequisites = { "tech_interstellar_assembly" }
+	
 	country_modifier = {
 		planet_immigration_pull_mult = 0.75
 		# enables triggered_opinion_of_interstellar_assembly_3
-	}
-
-	possible = {
-		from = { has_gw_interstellar_assembly = yes }
 	}
 
 	on_build_complete = {
@@ -240,37 +223,36 @@ interstellar_assembly_4 = {
 	portrait = "GFX_megastructure_interstellar_assembly_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-		interstellar_assembly_3
-	}
-
 	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-		
-		produces = {
-		}
 
 		upkeep = {
-			consumer_goods = 30
+			energy = 40
 		}
 	}
+	
+	upgrade_from = {
+		interstellar_assembly_3
+	}
+
+	prerequisites = { "tech_interstellar_assembly" }
+	show_prereqs = yes
 
 	country_modifier = {
 		planet_immigration_pull_mult = 1
 		# enables triggered_opinion_of_interstellar_assembly_4
 	}
 
-	possible = {
-		from = { has_gw_interstellar_assembly = yes }
-	}
-
 	on_build_complete = {
 		set_star_flag = interstellar_assembly_built
-		from = { country_event = { id = mega.9009 } }
+		from = { 
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9009 } 
+		}
 	}
 }
 
@@ -296,32 +278,29 @@ interstellar_assembly_restored = {
 	portrait = "GFX_megastructure_interstellar_assembly_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	upgrade_from = {
-		interstellar_assembly_ruined
-	}
-
 	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
-		}
-		
-		produces = {
+			alloys = 10000
 		}
 
 		upkeep = {
-			consumer_goods = 30
+			energy = 40
 		}
+	}
+	
+	upgrade_from = {
+		interstellar_assembly_ruined
+	}
+
+	possible = {
+		from = { has_technology = tech_mega_engineering }
 	}
 
 	country_modifier = {
 		planet_immigration_pull_mult = 1
 		# enables triggered_opinion_of_interstellar_assembly_4
-	}
-
-	possible = {
-		from = { has_technology = tech_mega_engineering }
 	}
 
 	on_build_start = {
@@ -333,6 +312,9 @@ interstellar_assembly_restored = {
 	on_build_complete = {
 		set_star_flag = interstellar_assembly_built
 		every_system_ambient_object = { destroy_ambient_object = this }
-		from = { country_event = { id = mega.9131 } }
+		from = { 
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9131 } 
+		}
 	}
 }

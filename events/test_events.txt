@@ -735,3 +735,47 @@ planet_event = {
 		}
 	}
 }
+
+# Add Archaeology Site
+planet_event = {
+	id = henrik.120
+	hide_window = yes
+
+	trigger = {
+		always = no
+	}
+
+	immediate = {
+		create_archaeological_site = site_hunting_ground
+	}
+}
+
+namespace = daniel
+# Add Archaeology Site
+planet_event = {
+	id = daniel.1
+	hide_window = yes
+
+	trigger = {
+		always = no
+	}
+
+	immediate = {
+		create_archaeological_site = site_hidden_lab_a
+	}
+}
+
+ship_event = {
+	id = henrik.1337
+	hide_window = yes
+
+	trigger = {
+		always = no
+	}
+
+	immediate = {
+		leader = {
+			add_timed_trait = { trait = leader_trait_stubborn years = 1 }
+		}
+	}
+}

@@ -474,7 +474,7 @@ guiTypes = {
 			# Districts
 			gridBoxType = {
 				name = "districts_grid_box"
-				position = { x = 9 y = 44 }
+				position = { x = 4 y = 44 }
 				size = { width = 270 height = 200 }
 				format = "UPPER_LEFT"
 				slotsize = { width = 64 height = 140 }

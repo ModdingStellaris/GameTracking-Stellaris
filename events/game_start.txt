@@ -582,7 +582,9 @@ planet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
-	trigger = { is_capital = yes }
+	pre_triggers = {
+		is_capital = yes
+	}
 
 	immediate = {
 		clear_blockers = yes		

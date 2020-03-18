@@ -630,7 +630,7 @@
  anomaly_failure.2665.desc:0 "Na sua última mensagem, a tripulação do [Root.GetName] relatou um aumento na atividade em [From.From.GetName] enquanto eles se aproximavam da superfície. As comunicações foram cortadas logo após, e a nave e todos os que estavam a bordo estão desaparecidos, dados como mortos."
  anomaly_failure.2670.a.tooltip:0 "A §YFábrica Antiga§! foi destruída.\n"
  anomaly_failure.2670.a:0 "[Root.GetLeaderName]... lançou-a para o sol?"
- anomaly_failure.2670.desc:0 "Parece que a sondagem entusiástica do Oficial Científico [Root.GetLeaderName] dos antigos sistemas da construção foi um tiro pela culatra, um tanto literalmente.\n\nAntes de os circuitos antigos finalmente fritarem, o [Root.GetName] conseguiu ativar remotamente os propulsores posicionais da estação orbital - tirando-a imediatamente de sua órbita gentil e levando-a para dentro do poço gravitacional do astro."
+ anomaly_failure.2670.desc:1 "Parece que a sondagem entusiástica feita por [Root.GetName] dos antigos sistemas da construção foi um tiro pela culatra, literalmente mesmo.\n\nAntes dos circuitos antigos finalmente fritarem, [Root.GetName] conseguiu ativar remotamente os propulsores posicionais da estação orbital - tirando-a imediatamente de sua órbita suave e levando-a para dentro do poço gravitacional do astro." O resultado infeliz da missão teve um profundo impacto sobre o almirante da nave, [Root.GetLeaderName], que aprendeu com a experiência."
  atrocities_stopped:0 "Atrocidades Interrompidoas"
  battlefield_located:0 "Campo de Batalha Investigado"
  captive_crew_rescued:0 "Tripulação Prisioneira Resgatada"

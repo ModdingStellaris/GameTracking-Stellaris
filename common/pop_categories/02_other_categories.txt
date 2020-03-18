@@ -27,6 +27,7 @@ purge = {
 			}
 		}
 	}
+
 	weight = {
 		weight = 20
 	}
@@ -421,6 +422,34 @@ criminal = {
 			consumer_goods = @living_standard_luxuries_very_low
 		}
 	}		
+}
+
+assimilation = {
+	rank = 0
+	assign_to_pop = {
+		is_being_assimilated = yes
+	}
+
+	weight = {
+		weight = 15
+	}
+	
+	# scope: pop to be resettled
+	allow_resettlement = {
+		always = yes
+	}
+
+	resettlement_cost = {
+		energy = 100
+	}
+	
+	pop_modifier = {
+		pop_political_power = -1
+	}
+
+	resources = {
+		category = pop_category_assimilation
+	}
 }
 
 deviant_drone = {
@@ -916,6 +945,13 @@ pre_sapients = {
 	rank = 0
 	clothes_texture_index = 3
 	
+	assign_to_pop = {
+		NOT = { exists = owner }
+	}
+	weight = {
+		weight = 1
+	}
+
 	pop_modifier = {
 		pop_political_power = -1
 		pop_housing_usage_base = -1

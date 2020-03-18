@@ -41,7 +41,8 @@ fallen_empire_1 = {
 				add_global_ship_design = "NAME_Sage"
 				add_global_ship_design = "NAME_Cloaker"
 				add_global_ship_design = "NAME_Librarian"
-				add_global_ship_design = "NAME_Seeker"						
+				add_global_ship_design = "NAME_Seeker"
+				add_global_ship_design = "NAME_FE_Starbase"
 			}
 		}
 	}
@@ -83,13 +84,14 @@ fallen_empire_2 = {
 					influence = 500
 				}							
 				# must initialize global designs here
-				add_global_ship_design = "NAME_Cleanser"				
+				add_global_ship_design = "NAME_Cleanser"
 				add_global_ship_design = "NAME_Eternal"
 				add_global_ship_design = "NAME_Avatar"
 				add_global_ship_design = "NAME_Zealot"
 				add_global_ship_design = "NAME_Penitent"
 				add_global_ship_design = "NAME_Faith"
-				add_global_ship_design = "NAME_Pilgrim"							
+				add_global_ship_design = "NAME_Pilgrim"
+				add_global_ship_design = "NAME_FE_Starbase"
 			}
 		}
 	}
@@ -137,7 +139,8 @@ fallen_empire_3 = {
 				add_global_ship_design = "NAME_Warden"
 				add_global_ship_design = "NAME_Watcher"
 				add_global_ship_design = "NAME_Seeder"
-				add_global_ship_design = "NAME_Builder"				
+				add_global_ship_design = "NAME_Builder"
+				add_global_ship_design = "NAME_FE_Starbase"
 			}
 		}
 	}
@@ -186,7 +189,8 @@ fallen_empire_4 = {
 				add_global_ship_design = "NAME_Glory"
 				add_global_ship_design = "NAME_Devastator"
 				add_global_ship_design = "NAME_Servitor"
-				add_global_ship_design = "NAME_Destiny"					
+				add_global_ship_design = "NAME_Destiny"
+				add_global_ship_design = "NAME_FE_Starbase"
 			}
 		}
 	}
@@ -251,6 +255,7 @@ fallen_machine_empire = {
 				add_global_ship_design = "NAME_Theta"
 				add_global_ship_design = "NAME_Tau"
 				add_global_ship_design = "NAME_Sigma"
+				add_global_ship_design = "NAME_FE_Starbase"
 			}
 		}
 	}

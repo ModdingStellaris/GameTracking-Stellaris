@@ -151,4 +151,14 @@ objectTypes = {
 		animation = { id = "idle4"	type = "plantoid_15_happy_4_animation" }
 		scale = 1.0
 	}
+	
+	pdxmesh = {
+		name = "portrait_plantoid_hivemind_mesh"
+		file = "gfx/models/portraits/plantoid/plantoid_hivemind.mesh"
+		animation = { id = "idle"	type = "plantoid_hivemind_idle_1_animation" }
+		animation = { id = "idle2"	type = "plantoid_hivemind_idle_2_animation" }
+		animation = { id = "idle3"	type = "plantoid_hivemind_idle_3_animation" }
+		animation = { id = "idle4"	type = "plantoid_hivemind_idle_4_animation" }
+		scale = 1.0
+	}
 }

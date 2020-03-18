@@ -171,7 +171,10 @@ spriteTypes = {
 		name = "GFX_wg_take_galatron"
 		texturefile = "gfx/interface/icons/diplomacy/diplomacy_closed_borders.dds"
 	}
-	
+		spriteType = {
+		name = "GFX_wg_steal_galatron"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_closed_borders.dds"
+	}
 	spriteType = {
 		name = "GFX_wg_expel_corp"
 		texturefile = "gfx/interface/icons/diplomacy/diplomacy_commercial_pact.dds"

@@ -35,10 +35,15 @@ spriteTypes = {
 	}
 	
 	### MODIFIERS
-	
+
 	spriteType = {
 		name = "GFX_mod_planet_jobs_robotic_produces_mult"
 		texturefile = "gfx/interface/icons/modifiers/mod_planet_jobs_robotic_produces_mult.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mod_planet_jobs_simple_drone_produces_mult"
+		texturefile = "gfx/interface/icons/modifiers/mod_planet_jobs_simple_drone_produces_mult.dds"
 	}
 
 	spriteType = {
@@ -403,10 +408,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/text_icons/tooltip_upgrade.dds"
 	}
 	spriteType = {
-		name = "GFX_mod_planet_jobs_simple_drone_produces_mult"
-		textureFile = "gfx/interface/icons/text_icons/tooltip_upgrade.dds"
-	}
-	spriteType = {
 		name = "GFX_mod_planet_jobs_worker_produces_mult"
 		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
 	}
@@ -564,5 +565,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mod_job_researcher_produces_add"
 		texturefile = "gfx/interface/icons/modifiers/mod_job_researcher_add.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mod_ship_archaeological_site_excavation_speed_mult"
+		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mod_ship_archaeological_site_clues_add"
+		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
 	}
 }

@@ -10,7 +10,7 @@ pre_sapient = {
 	is_pre_sapient = yes
 	clothes_texture_index = 2
 
-	possible = {
+	possible_pre_triggers = {
 		is_sapient = no
 	}
 
@@ -33,8 +33,11 @@ hunter_gatherer = {
 	is_capped_by_modifier = no
 	clothes_texture_index = 2
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			has_country_flag = stone_age 
@@ -63,8 +66,11 @@ peasant = {
 	building_icon = building_primitive_farm
 	clothes_texture_index = 2
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -95,8 +101,11 @@ primitive_warrior = {
 	building_icon = building_primitive_dwellings
 	clothes_texture_index = 2
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -132,8 +141,11 @@ primitive_noble = {
 	building_icon = building_primitive_capital
 	clothes_texture_index = 1
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -168,8 +180,11 @@ primitive_researcher = {
 	building_icon = building_primitive_labs
 	clothes_texture_index = 2
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -210,8 +225,11 @@ primitive_priest = {
 	building_icon = building_temple
 	clothes_texture_index = 3
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -254,8 +272,11 @@ primitive_laborer = {
 	building_icon = building_primitive_factory
 	clothes_texture_index = 2
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -292,8 +313,11 @@ primitive_miner = {
 	icon = miner
 	clothes_texture_index = 2
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -325,8 +349,11 @@ primitive_technician = {
 	icon = technician
 	clothes_texture_index = 2
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -357,8 +384,11 @@ primitive_farmer = {
 	building_icon = building_primitive_farm
 	clothes_texture_index = 2
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -389,8 +419,11 @@ primitive_researcher_2 = {
 	building_icon = building_primitive_labs
 	clothes_texture_index = 3
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -430,8 +463,11 @@ primitive_priest_2 = {
 	building_icon = building_temple
 	clothes_texture_index = 3
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -473,8 +509,11 @@ primitive_warrior_2 = {
 	building_icon = building_residence
 	clothes_texture_index = 2
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {
@@ -510,8 +549,11 @@ primitive_bureaucrat = {
 	building_icon = building_primitive_capital
 	clothes_texture_index = 3
 		
+	possible_pre_triggers = {
+		has_owner = yes
+	}
+
 	possible = {
-		hidden_trigger = { exists = owner }
 		owner = {
 			is_primitive = yes
 			OR = {

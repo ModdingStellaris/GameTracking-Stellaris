@@ -1,5 +1,4 @@
-
-
+@colossus_scale = 24
 
 entity = {
 	name = "arthropoid_01_colossus_entity"
@@ -34,6 +33,10 @@ entity = {
 	
 	locator = { name = "part1" position = { -50 0 0 } }
 	locator = { name = "part3" position = { -50 0 0 } }
+	
+	game_data = {
+		size = @colossus_scale
+	}
 	
 	#attach = { frame_ship = "arthropoid_01_colossus_ship_entity" }
 }

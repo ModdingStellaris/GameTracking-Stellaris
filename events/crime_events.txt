@@ -69,11 +69,12 @@ planet_event = {
 			has_modifier = mob_rule
 		}
 		NOT = { has_planet_flag = criminal_underworld_disappeared } # Cooldown
-		num_pops > 0
+		num_pops > 3
 		OR = {
 			AND = {
 				count_pops = {
 					limit = { 
+						is_shackled_robot = no
 						has_job = unemployed
 						NOR = {
 							has_living_standard = { type = living_standard_utopian }

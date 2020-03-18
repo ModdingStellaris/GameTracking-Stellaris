@@ -1,3 +1,5 @@
+@colossus_scale = 24
+
 entity = {
 	name = "fungoid_01_colossus_entity"
 	pdxmesh = "molluscoid_01_colossus_frame_mesh"
@@ -27,6 +29,10 @@ entity = {
 				"working" = 100
 			}
 		}
+	}
+	
+	game_data = {
+		size = @colossus_scale
 	}
 	
 	locator = { name = "part1" position = { -50 0 0 } }

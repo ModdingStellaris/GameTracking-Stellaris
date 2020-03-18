@@ -391,7 +391,16 @@ guiTypes = {
 					spriteType = "GFX_tiles_dark_area_cut_8"
 				}
 			}				
+			containerWindowType = {
+				name = "game_setup_bar24_box"
+				size = { width = 1103 height = 36 }
+				position = { x = 42 y = 920 }
 
+				background = {
+					name = "game_setup_bar3"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+			}	
 			# Size
 			containerWindowType = {
 				id = "pick_size"
@@ -2064,7 +2073,6 @@ guiTypes = {
 					navDown = "ironman_spinner"
 				}
 			}
-			
 			### Guaranteed Colonies
 			containerWindowType = {
 				name = "guaranteed_colonies"
@@ -2148,13 +2156,76 @@ guiTypes = {
 					navUp = "num_fallen_empires_slider"
 					navDown = "aggressiveness_spinner"
 				}
-			}				
+			}
+			# Caravaneers
+			containerWindowType = {
+				name = "caravaneer"
+				position = { x = 72 y = 885 }
 
+				instantTextBoxType = {
+					name = "caravaneers_label"
+					position = { x = -20 y = 0 }
+					font = "malgun_goth_24"
+					maxWidth = 400
+					maxHeight = 52
+					orientation = "UPPER_LEFT"
+					text = "CARAVANEERS_LABEL"
+					pdx_tooltip = "CARAVANEERS_LABEL_TOOLTIP"
+					tooltip_mode_enabled = yes
+				}
+
+				instantTextBoxType={
+					name = "value"
+					font = "malgun_goth_24"
+					text = "ON"
+					position = { x = 790 y = 0 }
+					maxWidth = 220
+					maxHeight = 35
+					fixedSize = yes
+					format = center
+				}
+
+				spinnerType = {
+					id = "galaxy_caravaneers_spinner"
+					name = "galaxy_caravaneers_spinner"
+					leftbutton = "spinner_upButton"
+					rightbutton = "spinner_downButton"
+					size = {x = 307 y = 30 }
+					position = {x= 747 y =0}
+					priority = 100
+					borderSize = {x =16 y = 16}
+					horizontal = 1
+					maxValue = 100
+					startValue = 0
+
+					guiButtonType = {
+						name = "spinner_upButton"
+						quadTextureSprite = "scrollbar_leftbutton"
+						position = { x=30 y =0}
+					}
+					guiButtonType = {
+						name = "spinner_downButton"
+						quadTextureSprite = "scrollbar_rightbutton"
+						position = { x=30 y =120}
+					}
+					
+					overlay = {
+						name = "selected_overlay"
+						spriteType = "GFX_glow_tile_orange_no_padding"
+						overSprite = "GFX_glow_tile_line"					
+						position = { x = @spinnerOverlayPosX y = @spinnerOverlayPosY }
+						size = { x = @spinnerOverlaySizeX y = @spinnerOverlaySizeY }
+					}
+
+					navUp = "galaxy_caravaneers_up_button"
+					navDown = "galaxy_caravaneers_down_button"
+				}
+			}
 			# Ironman
 			containerWindowType = {
 				id = "ironman"
 				name = "ironman"
-				position = { x = 72 y = 915 }
+				position = { x = 72 y = 955 }
 
 				iconType = {
 					name = "ironman_icon"

@@ -1623,7 +1623,7 @@ guiTypes = {
 						name = "guaranteed_colonies_label"
 						position = { x = 10 y = 5 }
 						font = "cg_16b"
-						maxWidth = 204
+						maxWidth = 164
 						maxHeight = 52	
 						#alwaysTransparent = yes
 						orientation = "UPPER_LEFT"
@@ -1686,7 +1686,61 @@ guiTypes = {
 							position = { x = 30 y = 120 }
 						}
 					}
-				}				
+				}
+				# Caravaneers
+				containerWindowType = {
+				name = "caravaneer"
+				position = { x = 0 y = 880 }
+					size={ width=@SettingEntrySizeX height=@SettingEntrySizeY }
+
+				instantTextBoxType = {
+						name = "caravaneer_label"
+						position = { x = 10 y = 4 }
+						font = "cg_16b"
+						maxWidth = 204
+						maxHeight = 52	
+						alwaysTransparent = yes
+						orientation = "UPPER_LEFT"
+						text = "CARAVANEERS_LABEL"
+						pdx_tooltip = "CARAVANEERS_LABEL_TOOLTIP"
+					}
+
+					instantTextBoxType={
+						name = "value"
+						font = "malgun_goth_24"
+						text = "FTL_WARP"
+						position = { x = 195 y = 0 }
+						maxWidth = 204
+						maxHeight = 35
+						fixedSize = yes
+						format = center
+					}
+
+				spinnerType = {
+						id = "galaxy_caravaneers_spinner"
+						name = "galaxy_caravaneers_spinner"	
+						leftbutton = "spinner_upButton"
+						rightbutton = "spinner_downButton"
+						size = { x = 204 y = 30 }
+						position = { x = 195 y = 0 }
+						priority = 100			
+						borderSize = { x = 16 y = 16 }	
+						horizontal = 1
+						maxValue = 100
+						startValue = 0
+							
+						guiButtonType = {
+							name = "spinner_upButton"
+							quadTextureSprite = "scrollbar_leftbutton"
+							position = { x=30 y =0}	
+						}
+						guiButtonType = {
+							name = "spinner_downButton"
+							quadTextureSprite = "scrollbar_rightbutton"
+							position = { x = 30 y = 120 }	
+						}		
+					}
+				}
 			}
 		}
 		

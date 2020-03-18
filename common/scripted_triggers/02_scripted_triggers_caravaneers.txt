@@ -183,6 +183,10 @@ cara_allow_deal2 = {
 			NOT = { has_country_flag = divine_algorithm }
 		}
 	}
+	else_if = { # Minor Artifacts
+		limit = { has_country_flag = fleet2deal12 }
+		resource_stockpile_compare = { resource = alloys value >= 300 }
+	}
 	else_if = { # Repeatable cruiser
 		limit = { has_country_flag = fleet2deal11.a }
 		resource_stockpile_compare = { resource = energy value >= 2500 }

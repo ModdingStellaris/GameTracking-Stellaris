@@ -599,6 +599,11 @@ category = {
 	tut_msg_PLANETVIEW_CORPORATE
 	tut_msg_GOVERNMENTVIEW_POLICIES
 
+	tut_msg_ARCHAEOLOGY_VIEW
+	tut_msg_NUDGE_VIEW
+	tut_RELICS_VIEW
+	tut_msg_FRONTIER_PLANET
+
 	########## LIMITED TUTORIAL
 	event_first_discovery_advisor
 	event_potential_colony_advisor

@@ -8899,6 +8899,10 @@ country_event = {
 			society_research = 1000
 			engineering_research = 1000
 		}
+		if = {
+			limit = { has_ancrel = yes }
+			medium_artifact_reward = yes
+		}
 	}
 }
 
@@ -10207,6 +10211,7 @@ country_event = {
 	trigger = {
 		from = {
 			is_country_type = guardian_dragon
+			NOT = { has_country_flag = rubricator_dragon_country }
 		}
 		#fromfromfrom = {
 		#	has_fleet_flag = dragon_fleet
@@ -10254,6 +10259,7 @@ country_event = {
 			}
 		}
 		add_resource = { influence = 300 }
+		add_relic = r_dragon_trophy
 		capital_scope = {
 			add_deposit = d_dragon_monument
 		}
@@ -10269,6 +10275,7 @@ country_event = {
 			}
 		}
 		add_resource = { influence = 300 }
+		add_relic = r_dragon_trophy
 		capital_scope = {
 			add_deposit = d_dragon_monument
 		}

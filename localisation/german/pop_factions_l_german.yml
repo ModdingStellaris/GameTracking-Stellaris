@@ -82,8 +82,13 @@
  SUPREMACIST_ISOLATIONIST_NO_FEDERATION:0 "Alleine stark"
  SUPREMACIST_ISOLATIONIST_NO_FEDERATION_DESC:1 "Wenn wir durch den §YBeitritt zu einer Föderation§! zulassen, dass [Root.Owner.GetName] ausgebeutet wird, um den Interessen von Aliens zu dienen, sorgt das für Missfallen bei [Root.GetName]."
  SUPREMACIST_ISOLATIONIST_FEDERATION:1 "$SUPREMACIST_ISOLATIONIST_NO_FEDERATION$"
+ SUPREMACIST_PROCLAIM_SUPREMACY:0 "Verachtung von Geschichte"
+ SUPREMACIST_NO_PROCLAIM_SUPREMACY:0 "$SUPREMACIST_PROCLAIM_SUPREMACY$"
+ SUPREMACIST_PROCLAIM_SUPREMACY_DESC:0 "Die Verachtung für alte Zivilisationen durch die Zerstörung ihrer kleineren Artefakte zu zeigen, sorgt vorübergehend für Zustimmung bei [Root.GetName]."
+ SUPREMACIST_CELEBRATE_DIVERSITY:0 "Schwächen anpreisen"
+ SUPREMACIST_NO_CELEBRATE_DIVERSITY:0 "$SUPREMACIST_CELEBRATE_DIVERSITY$"
+ SUPREMACIST_CELEBRATE_DIVERSITY_DESC:0 "Das Ausstellen kleinerer Artefakte von minderwertigen Zivilisationen sorgt vorübergehend für Missfallen bei [Root.GetName]."
 
- 
  # XENOISTS
  XENOIST_PASSIVE_STUDY:0 "Indirekte Xenologie"
  XENOIST_PASSIVE_STUDY_DESC:0 "Die legislative Festlegung einer passiven Haltung in puncto Xeno-Studien sorgt für Zustimmung bei [Root.GetName]."
@@ -127,6 +132,12 @@
  XENOIST_RECENT_COMMS:0 "Neuer Kontakt"
  XENOIST_NO_RECENT_COMMS:0 "$XENOIST_RECENT_COMMS$"
  XENOIST_RECENT_COMMS_DESC:0 "Die Kontaktaufnahme mit anderen Reichen sorgt vorübergehend für Zustimmung bei [Root.GetName]."
+ XENOIST_CELEBRATE_DIVERSITY:0 "Vielfalt feiern"
+ XENOIST_NO_CELEBRATE_DIVERSITY:0 "$XENOIST_CELEBRATE_DIVERSITY$"
+ XENOIST_CELEBRATE_DIVERSITY_DESC:0 "Die Vielfalt des Lebens im Universum durch die Ausstellung kleinerer Artefakte zu feiern, sorgt vorübergehend für Zustimmung bei [Root.GetName]."
+ XENOIST_PROCLAIM_SUPREMACY:0 "Bücherverbrennung"
+ XENOIST_NO_PROCLAIM_SUPREMACY:0 "$XENOIST_PROCLAIM_SUPREMACY$"
+ XENOIST_PROCLAIM_SUPREMACY_DESC:0 "Die Zerstörung kleinerer Artefakte, um Xenophobe auf die Barrikaden zu bringen, sorgt vorübergehend für Missfallen bei [Root.GetName]."
 
  # IMPERIALISTS
  IMPERIALIST_PHILOSOPHY:0 "Aggressive Diplomatie"
@@ -159,7 +170,12 @@
  IMPERIALIST_UNDERLING:0 "Untergebener Staat"
  IMPERIALIST_NOT_UNDERLING:0 "$IMPERIALIST_UNDERLING$"
  IMPERIALIST_UNDERLING_DESC:0 "Der Untertan eines fremden §YLehnsherrn§! zu sein, sogt für großes Missfallen bei [Root.GetName]."
-
+ IMPERIALIST_MILITARY_APPLICATIONS:0 "Militärische Anwendung von Artefakten"
+ IMPERIALIST_NO_MILITARY_APPLICATIONS:0 "$IMPERIALIST_MILITARY_APPLICATIONS$"
+ IMPERIALIST_MILITARY_APPLICATIONS_DESC:0 "Militärische Anwendungsmöglichkeiten für Eure kleineren Artefakte zu finden, sorgt vorübergehend für Zustimmung bei [Root.GetName]."
+ IMPERIALIST_PEACEFUL_APPLICATIONS:0 "Verschwendung von Artefakten"
+ IMPERIALIST_NO_PEACEFUL_APPLICATIONS:0 "$IMPERIALIST_PEACEFUL_APPLICATIONS$"
+ IMPERIALIST_PEACEFUL_APPLICATIONS_DESC:0 "Das Verschwenden von kleinen Artefakten für Kleinigkeiten, sorgt vorübergehend für Missfallen bei [Root.GetName]."
  
  # ISOLATIONISTS
  ISOLATIONIST_PHILOSOPHY:0 "Unerschütterliche Verteidigung"
@@ -257,6 +273,9 @@
  TRADITIONALIST_HARMONY:0 "Harmonisches Reich"
  TRADITIONALIST_NO_HARMONY:0 "$TRADITIONALIST_HARMONY$"
  TRADITIONALIST_HARMONY_DESC:0 "Die Annahme von §YHarmonie§!-Traditionen sorgt für Zustimmung bei [Root.GetName]."
+ TRADITIONALIST_RELIGIOUS_FINDING:0 "Komfort durch Vergangenheit"
+ TRADITIONALIST_NO_RELIGIOUS_FINDING:0 "$TRADITIONALIST_RELIGIOUS_FINDING$"
+ TRADITIONALIST_RELIGIOUS_FINDING_DESC:0 "Religiöse Bedeutung in kleineren Artefakten zu suchen, sorgt vorübergehend für Zustimmung bei [Root.GetName]."
 
  # TECHNOLOGISTS
  TECHNOLOGIST_ROBOTS:0 "Maschinenliebe"
@@ -280,6 +299,12 @@
  TECHNOLOGIST_SECRET_KNOWLEDGE:0 "Geheimes Wissen"
  TECHNOLOGIST_NO_SECRET_KNOWLEDGE:0 "$TECHNOLOGIST_SECRET_KNOWLEDGE$"
  TECHNOLOGIST_SECRET_KNOWLEDGE_DESC:0 "Zugriff auf Geheimes Wissen - eine Art uralter §YEinsicht§! oder §YDaten-Cache§! - sorgt für Zustimmung bei [Root.GetName]."
+ TECHNOLOGIST_ARCANA:0 "Wissen durch Vergangenheit"
+ TECHNOLOGIST_NO_ARCANA:0 "$TECHNOLOGIST_ARCANA$"
+ TECHNOLOGIST_ARCANA_DESC:0 "Das Studium kleinerer Artefakte sorgt vorübergehend für Zustimmung bei [Root.GetName]."
+ TECHNOLOGIST_PRECURSOR_SECRETS:0 "Geheimnisse der Vorläufer"
+ TECHNOLOGIST_NO_PRECURSOR_SECRETS:0 "$TECHNOLOGIST_PRECURSOR_SECRETS$"
+ TECHNOLOGIST_PRECURSOR_SECRETS_DESC:0 "Die mysteriösen Geheimnisse der Vorläufer zu enträtseln, sorgt für Zustimmung bei [Root.GetName]."
 
  # PROGRESSIVES
  PROGRESSIVE_NO_AUTO:0 "Anti-autokratisch"
@@ -361,6 +386,12 @@
  PROSPERITY_NOT_AGGRESSOR:0 "Gewaltlosigkeit"
  PROSPERITY_AGGRESSOR:0 "$PROSPERITY_NOT_AGGRESSOR$"
  PROSPERITY_NOT_AGGRESSOR_DESC:0 "Der Verlust von Leben und Ressourcen in Angriffskriegen sorgt für großes Missfallen bei [Root.GetName]."
+ PROSPERITY_MILITARY_APPLICATIONS:0 "Verschwendung von Artefakten"
+ PROSPERITY_NO_MILITARY_APPLICATIONS:0 "$PROSPERITY_MILITARY_APPLICATIONS$"
+ PROSPERITY_MILITARY_APPLICATIONS_DESC:0 "Kleinere Artefakte für die militärische Verwendung zu benutzen, sorgt vorübergehend für Missfallen bei [Root.GetName]."
+ PROSPERITY_PEACEFUL_APPLICATIONS:0 "Einbindung der Gesellschaft"
+ PROSPERITY_NO_PEACEFUL_APPLICATIONS:0 "$PROSPERITY_PEACEFUL_APPLICATIONS$"
+ PROSPERITY_PEACEFUL_APPLICATIONS_DESC:0 "Kleinere Artefakte für das zivile Wohl zu benutzen, sorgt vorübergehend für Zustimmung bei [Root.GetName]."
 
  FACTION_COUNTRY_SEPARATIST:0 "[parameter:owner.GetSpeciesAdj]e Separatisten"
 

@@ -366,3 +366,28 @@
 		name = "plantoid_15_happy_4_animation"
 		file = "plantoid_15_portrait_happy_4.anim"
 	}
+	
+	
+	
+	
+	# Plantoid hivemind
+	
+	animation = {
+		name = "plantoid_hivemind_idle_1_animation"
+		file = "plantoid_hivemind_idle_1.anim"
+	}
+	
+	animation = {
+		name = "plantoid_hivemind_idle_2_animation"
+		file = "plantoid_hivemind_idle_2.anim"
+	}
+	
+	animation = {
+		name = "plantoid_hivemind_idle_3_animation"
+		file = "plantoid_hivemind_idle_3.anim"
+	}
+	
+	animation = {
+		name = "plantoid_hivemind_idle_4_animation"
+		file = "plantoid_hivemind_idle_4.anim"
+	}

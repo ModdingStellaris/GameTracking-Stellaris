@@ -2117,8 +2117,8 @@ fallen_machine = {
 			add_building = building_ancient_cryo_chamber	
 			
 			while = {
-				count = 50
-				add_district = district_nexus
+				count = 5
+				add_district = district_rw_science
 			}
 			while = {
 				count = 105
@@ -2177,8 +2177,8 @@ fallen_machine = {
 			add_building = building_nano_forge
 			
 			while = {
-				count = 25
-				add_district = district_nexus
+				count = 5
+				add_district = district_rw_nexus
 			}
 			while = {
 				count = 50
@@ -2220,8 +2220,8 @@ fallen_machine = {
 			add_building = building_class_4_singularity
 			
 			while = {
-				count = 25
-				add_district = district_nexus
+				count = 5
+				add_district = district_rw_generator
 			}
 			while = {
 				count = 22

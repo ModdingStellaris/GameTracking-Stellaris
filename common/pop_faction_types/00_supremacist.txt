@@ -31,10 +31,13 @@ supremacist = {
 		}
 	}
 	
-	can_join_faction = {
+	can_join_pre_triggers = {
 		is_enslaved = no
-		is_shackled_robot = no
 		is_being_purged = no
+	}
+
+	can_join_faction = {
+		is_shackled_robot = no
 		has_culture_shock = no
 		NOT = { has_trait = trait_nerve_stapled }
 		OR = {
@@ -325,6 +328,50 @@ supremacist = {
 		trigger = {
 			owner = {
 				has_country_flag = killed_guardian
+			}
+		}
+	}
+
+	demand = {
+		title = "SUPREMACIST_PROCLAIM_SUPREMACY"
+		unfulfilled_title = "SUPREMACIST_NO_PROCLAIM_SUPREMACY"
+		desc = "SUPREMACIST_PROCLAIM_SUPREMACY_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -0.001
+
+		potential = {
+			exists = owner
+			owner = {
+				has_modifier = proclaim_superiority
+			}
+		}
+
+		trigger = {
+			owner = {
+				has_modifier = proclaim_superiority
+			}
+		}
+	}
+
+	demand = {
+		title = "SUPREMACIST_CELEBRATE_DIVERSITY"
+		unfulfilled_title = "SUPREMACIST_NO_CELEBRATE_DIVERSITY"
+		desc = "SUPREMACIST_CELEBRATE_DIVERSITY_DESC"
+
+		unfulfilled_effect = -5
+		fulfilled_effect = 0.001
+
+		potential = {
+			exists = owner
+			owner = {
+				has_modifier = celebrate_diversity
+			}
+		}
+
+		trigger = {
+			owner = {
+				NOT = { has_modifier = celebrate_diversity }
 			}
 		}
 	}

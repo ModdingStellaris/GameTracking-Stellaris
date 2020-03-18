@@ -18,18 +18,21 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
 		owner = { 
-			is_ai = no
 			NOT = { has_authority = auth_machine_intelligence }
 		}
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 		OR = {
 			is_planet_class = pc_continental
 			is_planet_class = pc_tropical
@@ -134,14 +137,17 @@ planet_event = {
 	location = ROOT
 	
 	auto_opens = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
 	
 	trigger = {
 		NOT = { has_planet_flag = burned_forests_rampage }
 		has_planet_flag = burned_forests
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -228,16 +234,19 @@ planet_event = {
 	show_sound = event_scanner
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = burned_forests
 		NOR = {
 			has_planet_flag = burned_forest_precious
 			has_planet_flag = burned_forest_minerals
 		}
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -271,6 +280,13 @@ planet_event = {
 	show_sound = event_scanner
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = burned_forests
 		NOR = {
@@ -278,10 +294,6 @@ planet_event = {
 			has_planet_flag = burned_forest_minerals
 		}
 		has_any_strategic_resource = no
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -315,13 +327,16 @@ planet_event = {
 	show_sound = event_alien_nature
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = burned_forests
 		NOT = { has_planet_flag = burned_forest_damage }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -351,13 +366,16 @@ planet_event = {
 	show_sound = event_alien_nature
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = forest_pheremones
 		NOT = { has_planet_flag = forest_pheremones_adaptation }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -387,13 +405,16 @@ planet_event = {
 	show_sound = event_alien_nature
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = forest_pheremones
 		NOT = { has_planet_flag = forest_pheremones_studies }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -427,13 +448,16 @@ planet_event = {
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = forest_pheremones
 		NOT = { has_planet_flag = forest_pheremones_fire }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -493,16 +517,18 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
-		#owner = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+		original_owner = yes
 		has_ground_combat = no
-		is_occupied_flag = no
-		num_pops > 0
 		is_capital = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
+		#owner = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+		num_pops > 0
 		NOR = {
 			has_global_flag = seismic_disturbance_global
 			has_planet_flag = colony_event
@@ -510,6 +536,7 @@ planet_event = {
 			is_planet_class = pc_ringworld_habitable
 			is_planet_class = pc_habitat
 			is_planet_class = pc_city
+			is_planet_class = pc_relic
 		}
 	}
 	
@@ -954,12 +981,15 @@ planet_event = {
 	show_sound = event_ground_battle
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_war
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -1127,13 +1157,16 @@ planet_event = {
 	show_sound = event_structural_collapse
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_war
 		NOT = { has_planet_flag = seismic_disturbance_collapse }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		has_army = yes
 		num_pops > 0
 	}
@@ -1162,13 +1195,16 @@ planet_event = {
 	show_sound = event_ground_battle
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_war
 		NOT = { has_planet_flag = seismic_disturbance_raid }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -1198,13 +1234,16 @@ planet_event = {
 	show_sound = event_ground_battle
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_war
 		NOT = { has_planet_flag = seismic_disturbance_attack }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 1
 	}
 	
@@ -1233,12 +1272,15 @@ planet_event = {
 	show_sound = event_scanner
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_destroyed
 		NOT = { has_planet_flag = seismic_disturbance_pocket }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
 		has_ground_combat = no
 		num_pops > 0
 	}
@@ -1297,14 +1339,17 @@ planet_event = {
 	show_sound = event_construction
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_destroyed
 		NOT = { has_planet_flag = seismic_disturbance_expansion }
 		#has_any_strategic_resource = no
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 		#planet_size < 25
 	}
@@ -1336,13 +1381,16 @@ planet_event = {
 	show_sound = event_mystic_reveal
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_destroyed
 		NOT = { has_planet_flag = seismic_disturbance_gold }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -1378,13 +1426,16 @@ planet_event = {
 	show_sound = event_radio_chatter
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_destroyed
 		NOT = { has_planet_flag = seismic_disturbance_treasury }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -1418,13 +1469,16 @@ planet_event = {
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_destroyed
 		NOT = { has_planet_flag = seismic_disturbance_quake }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -1455,13 +1509,16 @@ planet_event = {
 	show_sound = event_primitive_civilization
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_friendly
 		NOT = { has_planet_flag = seismic_disturbance_famine }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -1512,13 +1569,16 @@ planet_event = {
 	show_sound = event_primitive_civilization
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_friendly
 		NOT = { has_planet_flag = seismic_disturbance_gift }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 		check_variable = { 
 			which = "angry_subterraneans" 
@@ -1556,13 +1616,16 @@ planet_event = {
 	show_sound = event_primitive_civilization
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_friendly
 		NOT = { has_planet_flag = seismic_disturbance_refugees }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 		#free_housing > 0
 	}
@@ -1622,13 +1685,16 @@ planet_event = {
 	show_sound = event_primitive_civilization
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_friendly
 		NOT = { has_planet_flag = seismic_disturbance_anthropologists }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 		check_variable = {
 			which = "angry_subterraneans"
@@ -1666,13 +1732,16 @@ planet_event = {
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_friendly
 		NOT = { has_planet_flag = seismic_disturbance_quake2 }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -1721,13 +1790,16 @@ planet_event = {
 	show_sound = event_primitive_civilization
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_friendly
 		NOT = { has_planet_flag = seismic_disturbance_tech }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -1783,11 +1855,14 @@ planet_event = {
 	show_sound = event_primitive_civilization
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+	}
+	
 	trigger = {
 		has_planet_flag = seismic_disturbance_friendly
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
 		check_variable = {
 			which = "angry_subterraneans"
 			value > 2
@@ -1859,15 +1934,18 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
 		has_ground_combat = no
-		is_occupied_flag = no
-		num_pops > 0
 		is_capital = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
+		num_pops > 0
 		NOR = {
 			has_planet_flag = abandoned_terraforming_planet
 			has_planet_flag = colony_event
@@ -1876,6 +1954,7 @@ planet_event = {
 			is_planet_class = pc_ringworld_habitable
 			is_planet_class = pc_habitat
 			is_planet_class = pc_city
+			is_planet_class = pc_relic
 			owner = { has_country_flag = abandoned_terraforming_country }
 			owner = { has_authority = auth_machine_intelligence }
 			AND = {
@@ -2002,13 +2081,16 @@ planet_event = {
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = did_not_terraform
 		NOT = { has_planet_flag = terraforming_unstable_weather }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -2038,13 +2120,16 @@ planet_event = {
 	show_sound = event_planetary_riot
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = did_not_terraform
 		NOT = { has_planet_flag = terraforming_drought }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -2552,13 +2637,16 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		has_ground_combat = no
+	}
+	
 	trigger = {
 		has_planet_flag = terraforming_mutants_defeated
 		NOT = { has_planet_flag = terraforming_mutant_stalker }
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		has_ground_combat = no
 		num_pops > 0
 	}
 	
@@ -2753,6 +2841,16 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
 	trigger = {
 		NOT = { has_global_flag = underground_vault_global }
 		NOT = { has_planet_flag = armageddon_nuked }
@@ -2765,17 +2863,10 @@ planet_event = {
 				}
 			}
 		}
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
 		owner = {
-			is_ai = no
 			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -3016,6 +3107,16 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
 	trigger = {
 		NOT = { has_planet_flag = armageddon_nuked }
 		is_planet_class = pc_nuked
@@ -3027,14 +3128,7 @@ planet_event = {
 				}
 			}
 		}
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		owner = { is_ai = no }
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -3098,6 +3192,16 @@ planet_event = {
 	show_sound = event_laboratory_sound
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
 	trigger = {
 		NOT = { has_planet_flag = armageddon_nuked }
 		is_planet_class = pc_nuked
@@ -3109,14 +3213,7 @@ planet_event = {
 				}
 			}
 		}
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		owner = { is_ai = no }
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -3140,6 +3237,16 @@ planet_event = {
 	show_sound = event_administrative_work
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
 	trigger = {
 		NOT = { has_planet_flag = armageddon_nuked }
 		is_planet_class = pc_nuked
@@ -3151,14 +3258,7 @@ planet_event = {
 				}
 			}
 		}
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		owner = { is_ai = no }
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -3187,6 +3287,16 @@ planet_event = {
 	show_sound = event_ship_bridge
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
 	trigger = {
 		NOT = { has_planet_flag = armageddon_nuked }
 		is_planet_class = pc_nuked
@@ -3199,14 +3309,7 @@ planet_event = {
 				}
 			}
 		}
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		owner = { is_ai = no }
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -3239,6 +3342,16 @@ planet_event = {
 	show_sound = event_administrative_work
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
 	trigger = {
 		NOT = { has_planet_flag = armageddon_nuked }
 		is_planet_class = pc_nuked
@@ -3250,15 +3363,8 @@ planet_event = {
 				}
 			}
 		}
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		owner = { is_ai = no }
 		owner = { NOT = { has_ethic = ethic_gestalt_consciousness } }
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -3287,6 +3393,16 @@ planet_event = {
 	show_sound = event_administrative_work
 	location = ROOT
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
 	trigger = {
 		NOT = { has_planet_flag = armageddon_nuked }
 		is_planet_class = pc_nuked
@@ -3298,15 +3414,8 @@ planet_event = {
 				}
 			}
 		}
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		owner = { is_ai = no }
 		owner = { NOT = { has_ethic = ethic_gestalt_consciousness } }
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 		any_pop = {
 			NOR = {
 				pop_has_trait = trait_mechanical
@@ -3462,6 +3571,16 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
 	trigger = {
 		NOT = { has_planet_flag = armageddon_nuked }
 		is_planet_class = pc_nuked
@@ -3474,14 +3593,7 @@ planet_event = {
 				}
 			}
 		}
-		has_owner = yes
-		original_owner = yes
-		is_homeworld = no
-		owner = { is_ai = no }
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 	}
 	
 	is_triggered_only = yes
@@ -3630,15 +3742,18 @@ planet_event = {
 	show_sound = event_air_raid_siren
 	location = ROOT
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
 		has_ground_combat = no
-		is_occupied_flag = no
-		num_pops > 0
 		is_capital = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
+		num_pops > 0
 		years_passed < 50
 		NOR = {
 			is_planet_class = pc_habitat

@@ -19,17 +19,20 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 	
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
 		owner = {
-			is_ai = no
 			NOT = { has_country_flag = FLDrone_country }
 		}
-		is_capital = no
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
 		NOR = {
 			is_planet_class = pc_habitat
@@ -70,8 +73,11 @@ planet_event = {
 	
 	is_triggered_only = yes
 
+	pre_triggers = {
+		has_owner = yes
+	}
+
 	trigger = {
-		exists = owner
 		owner = { has_country_flag = FLDrone_country }
 	}
 
@@ -501,12 +507,18 @@ planet_event = {
 	location = ROOT
 	trackable = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+	
+	trigger = {
 		owner = {
-			is_ai = no
 			NOT = { has_country_flag = pheromone_country }
 			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
@@ -521,11 +533,9 @@ planet_event = {
 			is_planet_class = pc_desert
 			is_planet_class = pc_savannah
 			is_planet_class = pc_city
+			is_planet_class = pc_relic
 		}
-		has_ground_combat = no
-		is_occupied_flag = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	is_triggered_only = yes
@@ -558,16 +568,19 @@ planet_event = {
 
 	is_triggered_only = yes
 
+	pre_triggers = {
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+
 	trigger = {
 		owner = {
-			is_ai = no
 			has_country_flag = pheromone_country
 		}
 		has_planet_flag = pheromone_planet
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	option = {
@@ -617,16 +630,19 @@ planet_event = {
 
 	is_triggered_only = yes
 
+	pre_triggers = {
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+
 	trigger = {
 		owner = {
-			is_ai = no
 			has_country_flag = pheromone_country
 		}
 		has_planet_flag = pheromone_planet
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	option = {
@@ -655,16 +671,19 @@ planet_event = {
 
 	is_triggered_only = yes
 
+	pre_triggers = {
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
 	trigger = {
 		owner = {
-			is_ai = no
 			has_country_flag = pheromone_country
 		}
 		has_planet_flag = pheromone_planet
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	option = {
@@ -694,16 +713,19 @@ planet_event = {
 
 	is_triggered_only = yes
 
+	pre_triggers = {
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
 	trigger = {
 		owner = {
-			is_ai = no
 			has_country_flag = pheromone_country
 		}
 		has_planet_flag = pheromone_planet
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	option = {
@@ -726,17 +748,20 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_planet_flag = pheromone_planet
 		has_global_flag = pheromonefrenzy_global
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	auto_opens = yes
@@ -766,17 +791,20 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_planet_flag = pheromone_planet
 		has_global_flag = pheromonefrenzy_global
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	auto_opens = yes
@@ -797,17 +825,20 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_planet_flag = pheromone_planet
 		has_global_flag = pheromonefrenzy_global
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	auto_opens = yes
@@ -828,17 +859,20 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_planet_flag = pheromone_planet
 		has_global_flag = pheromonefrenzy_global
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	auto_opens = yes
@@ -892,17 +926,20 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_planet_flag = pheromone_planet
 		has_global_flag = pheromonefrenzy_global
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	option = {
@@ -922,11 +959,14 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+	}
+	
+	trigger = {
 		has_planet_flag = pheromone_planet
 		has_global_flag = pheromonefrenzy_global
 		has_planet_flag = colony_event
@@ -953,17 +993,20 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_planet_flag = pheromone_planet
 		has_global_flag = pheromonefrenzy_global
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	immediate = {
@@ -1015,17 +1058,20 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+	}
+	
+	trigger = {
 		has_planet_flag = pheromone_planet
 		has_global_flag = pheromonefrenzy_global
 		has_planet_flag = colony_event
-		has_ground_combat = no
 		num_pops > 0
-		is_capital = no
 	}
 
 	auto_opens = yes
@@ -1092,10 +1138,13 @@ country_event = {
 
 	is_triggered_only = yes
 
+	pre_triggers = {
+		has_owner = no
+	}
+	
 	trigger = {
 		has_global_flag = pheromonefrenzy_global
 		from = {
-			has_owner = no
 			is_planet_class = pc_toxic
 		}
 	}
@@ -1126,11 +1175,14 @@ planet_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
+	pre_triggers = {
 		has_owner = yes
-		original_owner = yes
 		is_homeworld = no
-		owner = { is_ai = no }
+		original_owner = yes
+		is_ai = no
+	}
+	
+	trigger = {
 		has_global_flag = pheromonefrenzy_global
 		has_planet_flag = pheromone_planet
 		has_planet_flag = colony_event

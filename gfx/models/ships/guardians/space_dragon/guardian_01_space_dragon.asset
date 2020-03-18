@@ -433,9 +433,21 @@ entity = {
 	
 	game_data = { size = 50 }
 }
-
 entity = {
-	name = "space_dragon_blue_entity"
+	name =  "space_dragon_blue_entity"
+	pdxmesh = "locator_mesh"
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+
+	cull_radius = 10.0
+	game_data = {
+  		raytrace_projectiles = no
+  		dissolve_on_death = 8.0
+		ship_color = hsv { 0.07 1.0 0.75 1.0 }
+ 	}
+}
+entity = {
+	name = "space_dragon_blue_section_entity"
 	pdxmesh = "space_dragon_blue_mesh"
 	scale = 1.0
 	

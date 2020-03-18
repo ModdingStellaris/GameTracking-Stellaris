@@ -608,7 +608,7 @@
  UNAVAILABLE_ASCENSION_PERK_SLOT:0 "Espacio no disponible"
  UNAVAILABLE_ASCENSION_PERK_SLOT_DESC:0 "Este espacio no se encuentra disponible. $ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT$"
  UNAVAILABLE_ASCENSION_PERK_SLOT_DELAYED:0 "§GClic - ver la lista de ventajas de ascenso disponibles§!"
- ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT:0 "Adopta todas las tradiciones de un grupo para completarlo y desbloquear una ventaja de ascenso."
+ ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT:0 "Adopta todas las tradiciones de un grupo o indaga para completarlo o investiga la tecnología Teoría de la ascensión para desbloquear una ventaja de ascenso."
  ASCENSION_PERKS_VIEW_SHOW_UNAVAILABLE:0 "Mostrar no disponibles"
  ASCENSION_PERKS_VIEW_SHOW_UNAVAILABLE_DESC:0 "Muestra todas las ventajas de ascenso, aunque todavía no cumplamos todos sus requisitos."
  utopia.2000.name:0 "Construcción de mundo anillo"

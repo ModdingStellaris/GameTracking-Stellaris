@@ -197,12 +197,12 @@ species_can_live_on_planet = {
 			has_trait = trait_mechanical
 			AND = {
 				has_trait = trait_cybernetic
-				exists = owner
-				owner = {
+				exists = root.owner
+				root.owner = {
 					has_authority = auth_machine_intelligence
 					has_civic = civic_machine_assimilator # Assimilator empire
 				}
-			}			
+			}
 		}
 	}
 	NAND = {
@@ -467,6 +467,17 @@ can_declare_war = {
 		custom_tooltip = {
 			text = "CAN_DECLARE_WAR_POLICY"
 			always = no
+		}
+	}
+	if = {
+		limit = {
+			exists = root
+			ROOT = {
+				is_ai = yes
+			}
+		}
+		ROOT = { 
+			is_at_war = no 
 		}
 	}
 }
@@ -1029,6 +1040,7 @@ is_new_colony = {
 pop_generates_crime = {
 	is_sapient = yes
 	is_non_sapient_robot = no
+	is_being_assimilated = no
 }
 
 # This = planet
@@ -1236,5 +1248,18 @@ can_be_sold_on_slave_market = {
 		is_enslaved = yes
 		is_non_sapient_robot = yes
 		is_shackled_robot = yes
+	}
+	OR ={
+		ROOT = { is_ai = no }
+		has_citizenship_rights = no
+		AND = {
+			is_unemployed = yes
+			planet = {
+				count_pops = {
+					count > 3
+					limit = { is_unemployed = yes }
+				}
+			}
+		}
 	}
 }

@@ -64,7 +64,64 @@ ship_event = {
 	option = {
 		name = anomaly_failure.2670.a
 		custom_tooltip = anomaly_failure.2670.a.tooltip
-		leader = { add_trait = leader_trait_expertise_computing }
+		leader = {
+			random_list = {
+				0 = { # ALL
+					modifier = {
+						add = 50
+						NOT = {
+							has_trait = leader_trait_engineer
+						}
+					}
+					add_trait = leader_trait_engineer
+				}
+				0 = {
+					modifier = { # ALL
+						add = 50
+						NOR = { 
+							has_trait = leader_trait_cautious
+							has_trait = leader_trait_aggressive
+						}
+					}
+					add_trait = leader_trait_cautious
+				}
+				0 = { # NOT Gestalts
+					modifier = {
+						add = 25
+						NOR = {
+							has_trait = leader_trait_adaptable
+							has_trait = leader_trait_stubborn
+							owner = { has_ethic = "ethic_gestalt_consciousness" }
+						}
+					}
+					add_trait = leader_trait_adaptable
+				}
+				0 = { # Machine Intelligence
+					modifier = {
+						add = 50
+						NOT = { 
+							has_trait = leader_trait_newboot
+						}
+						owner = { has_authority = "auth_machine_intelligence" }
+					}
+					add_trait = leader_trait_newboot
+				}
+				0 = { # Machine Intelligence
+					modifier = {
+						add = 25
+						NOR = { 
+							has_trait = leader_trait_flexible_programming
+							has_trait = leader_trait_rigid_programming
+						}
+						owner = { has_authority = "auth_machine_intelligence" }
+					}
+					add_trait = leader_trait_flexible_programming
+				}
+				5 = { #ALL
+					add_experience = 200
+				}
+			}
+		}
 	}
 }
 
