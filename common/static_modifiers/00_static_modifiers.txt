@@ -1151,7 +1151,6 @@ sponsored_rebels = {
 	ships_upkeep_mult = -0.25
 	armies_upkeep_mult = -0.5
 	country_naval_cap_mult = 1.0
-	starbase_shipyard_build_time_mult = -0.25
 	armies_cost_mult = -0.25
 	planet_army_build_speed_mult = 1.0
 	country_base_influence_produces_add = 3

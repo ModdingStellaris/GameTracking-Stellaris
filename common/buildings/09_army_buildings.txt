@@ -67,6 +67,18 @@ building_military_academy = {
 	
 	ai_weight = {
 		weight = 0.5
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 }
 
@@ -136,6 +148,18 @@ building_stronghold = {
 	
 	ai_weight = {
 		weight = 0.5
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 }
 
@@ -205,6 +229,18 @@ building_fortress = {
 	
 	ai_weight = {
 		weight = 0.5
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 }
 

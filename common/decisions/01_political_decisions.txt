@@ -213,7 +213,7 @@ decision_end_population_control = {
 	}
 
 	ai_weight = {
-		weight = 5
+		weight = 20
 
 		modifier = { # don't end if less than 1 housing
 			factor = 0
@@ -274,7 +274,7 @@ decision_end_population_control_gestalt = {
 	}
 
 	ai_weight = {
-		weight = 5
+		weight = 20
 
 		modifier = { # don't end if less than 1 housing
 			factor = 0
@@ -345,7 +345,7 @@ decision_end_robot_assembly_control = {
 	}
 
 	ai_weight = {
-		weight = 5
+		weight = 20
 		
 		modifier = { # don't end if less than 1 housing
 			factor = 0
@@ -515,10 +515,11 @@ decision_end_discourage_growth = {
 	}
 
 	ai_weight = {
-		weight = 5
-		modifier = {
-			factor = 5
-			free_housing < -1
+		weight = 20
+		
+		modifier = { # don't end if less than 1 housing
+			factor = 0
+			free_housing < 1
 		}
 	}
 }

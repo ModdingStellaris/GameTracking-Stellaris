@@ -40,6 +40,10 @@ PLANT = {
 		colonizer = {
 			"种子太空舱" "果实携带者"
 		}
+
+		sponsored_colonizer = {
+			"种子太空舱" "果实携带者"
+		}
 		
 		constructor = {
 			"分生组织"

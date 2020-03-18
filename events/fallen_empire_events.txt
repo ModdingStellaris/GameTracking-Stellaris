@@ -369,6 +369,10 @@ country_event = {
 		city_level = from
 		room = from.ruler
 	}
+
+	immediate = {
+		from = { save_event_target_as = fallen_empire_humiliator }
+	}
 	
 	option = {
 		name = fallen_empires.8.a
@@ -377,10 +381,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				fleet_power > 50000
-			}			
-		}		
-		from = { save_event_target_as = fallen_empire_humiliator }
+			}
+		}
 		fallen_empire_humiliate_effect = yes
+		from = { save_event_target_as = fallen_empire_humiliator }
+		tooltip = {
+			add_modifier = { modifier = humiliated days = 3600 }
+		}
+		custom_tooltip = "fallen_empires.8.a.tooltip"
 		hidden_effect = { remove_country_flag = fe_demand_made }
 	}
 	
@@ -408,8 +416,8 @@ country_event = {
 	mean_time_to_happen = {
 		months = 1
 	}
-	
-	trigger = {
+
+		trigger = {
 		OR = {
 			is_country_type = fallen_empire
 			is_country_type = awakened_fallen_empire

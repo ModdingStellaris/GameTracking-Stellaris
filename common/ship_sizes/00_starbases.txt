@@ -23,9 +23,21 @@ starbase_outpost = {
 	resources = {
 		category = starbase_stations
 		cost = {
+			trigger = {
+				from = {
+					is_machine_empire = no 
+				}
+			}
 			alloys = 100
 		}
-
+		cost = {
+			trigger = {
+				from = {
+					is_machine_empire = yes 
+				}
+			}
+			alloys = 150
+		}
 		upkeep = {
 			energy = 1
 		}

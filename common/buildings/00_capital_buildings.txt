@@ -776,7 +776,7 @@ building_deployment_post = {
 		planet_housing_add = 3
 		planet_amenities_add = 3
 		job_coordinator_add = 1
-		job_replicator_add = 1
+		job_replicator_add = 2
 		job_patrol_drone_add = 1
 		job_maintenance_drone_add = 1
 	}
@@ -860,6 +860,15 @@ building_machine_capital = {
 		job_maintenance_drone_add = 2
 	}
 	
+	triggered_planet_modifier = {
+		potential = {
+			num_pops >= 10
+		}
+		modifier = {
+			job_replicator_add = 1
+		}
+	}
+	
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -926,11 +935,27 @@ building_machine_major_capital = {
 	
 	planet_modifier = {
 		job_coordinator_add = 3
-		job_replicator_add = 3
+		job_replicator_add = 2
 		planet_housing_add = 8
 		planet_amenities_add = 8
 		job_patrol_drone_add = 2
 		job_maintenance_drone_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			num_pops >= 10
+		}
+		modifier = {
+			job_replicator_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			num_pops >= 40
+		}
+		modifier = {
+			job_replicator_add = 1
+		}
 	}
 	
 	resources = {
@@ -1002,9 +1027,25 @@ building_machine_system_capital = {
 		planet_housing_add = 10
 		planet_amenities_add = 10
 		job_coordinator_add = 5
-		job_replicator_add = 4
+		job_replicator_add = 2
 		job_patrol_drone_add = 3
 		job_maintenance_drone_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			num_pops >= 10
+		}
+		modifier = {
+			job_replicator_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			num_pops >= 40
+		}
+		modifier = {
+			job_replicator_add = 1
+		}
 	}
 	
 	resources = {

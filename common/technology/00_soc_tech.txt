@@ -213,7 +213,7 @@ tech_eco_simulation = {
 	weight = @tier1weight1
 	
 	modifier = {
-		planet_farmers_food_produces_mult = 0.1
+		planet_farmers_food_produces_mult = 0.2
 	}
 	
 	weight_modifier = {
@@ -267,15 +267,15 @@ tech_eco_simulation = {
 
 #Gene Crops
 tech_gene_crops = {
-	cost = @tier2cost3
+	cost = @tier2cost1
 	area = society
 	tier = 2
 	category = { biology }
 	prerequisites = { "tech_eco_simulation" }
-	weight = @tier2weight3
+	weight = @tier2weight1
 	
 	modifier = {
-		planet_farmers_food_produces_mult = 0.1
+		planet_farmers_food_produces_mult = 0.2
 	}
 	
 	weight_modifier = {
@@ -329,15 +329,15 @@ tech_gene_crops = {
 
 #Nano-Vitality Crops
 tech_nano_vitality_crops = {
-	cost = @tier4cost2
+	cost = @tier3cost1
 	area = society
-	tier = 4
+	tier = 3
 	category = { biology }	
 	prerequisites = { "tech_gene_crops" }
-	weight = @tier4weight2
+	weight = @tier3weight1
 	
 	modifier = {
-		planet_farmers_food_produces_mult = 0.1
+		planet_farmers_food_produces_mult = 0.2
 	}
 	
 	weight_modifier = {

@@ -34,7 +34,7 @@ tech_basic_science_lab_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = engineering
+				area = physics
 				has_trait = "leader_trait_expertise_computing"
 			}			
 		}
@@ -44,7 +44,7 @@ tech_basic_science_lab_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = engineering
+				area = physics
 				has_trait = "leader_trait_expertise_computing"
 			}
 		}
@@ -64,7 +64,7 @@ tech_basic_science_lab_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = engineering
+				area = physics
 				has_trait = "leader_trait_expertise_computing"
 			}			
 		}
@@ -74,7 +74,7 @@ tech_basic_science_lab_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = engineering
+				area = physics
 				has_trait = "leader_trait_expertise_computing"
 			}
 		}
@@ -1792,7 +1792,7 @@ tech_power_plant_2 = {
 	weight = @tier1weight1
 		
 	modifier = {
-		planet_technician_energy_produces_mult = 0.1
+		planet_technician_energy_produces_mult = 0.2
 	}
 	
 	weight_modifier = {
@@ -1823,15 +1823,15 @@ tech_power_plant_2 = {
 
 #Power Plant III
 tech_power_plant_3 = {
-	cost = @tier2cost3
+	cost = @tier2cost1
 	area = physics
 	tier = 2
 	category = { field_manipulation }
 	prerequisites = { "tech_power_plant_2" }
-	weight = @tier2weight3
+	weight = @tier2weight1
 		
 	modifier = {
-		planet_technician_energy_produces_mult = 0.1
+		planet_technician_energy_produces_mult = 0.2
 	}
 	
 	weight_modifier = {
@@ -1862,15 +1862,15 @@ tech_power_plant_3 = {
 
 #Power Plant IV
 tech_power_plant_4 = {
-	cost = @tier4cost2
+	cost = @tier3cost1
 	area = physics
-	tier = 4
+	tier = 3
 	category = { field_manipulation }
 	prerequisites = { "tech_power_plant_3" }
-	weight = @tier4weight2
+	weight = @tier3weight1
 		
 	modifier = {
-		planet_technician_energy_produces_mult = 0.1
+		planet_technician_energy_produces_mult = 0.2
 	}
 	
 	weight_modifier = {
@@ -1901,12 +1901,12 @@ tech_power_plant_4 = {
 
 #Global Energy Management
 tech_power_hub_1 = {
-	cost = @tier1cost2
+	cost = @tier1cost3
 	area = physics
 	tier = 1
 	category = { field_manipulation }	
 	prerequisites = { "tech_power_plant_1" }
-	weight = @tier1weight2
+	weight = @tier1weight3
 		
 	weight_modifier = {
 		factor = 2

@@ -68,6 +68,10 @@ district_hab_energy = {
 		owner = { is_gestalt = yes }
 	}
 	
+	convert_to = {
+		district_hab_cultural
+	}
+	
 	resources = {
 		category = planet_districts
 		cost = {
@@ -161,6 +165,10 @@ district_hab_cultural = {
 	potential = {
 		is_planet_class = pc_habitat
 		owner = { is_gestalt = no }
+	}
+	
+	convert_to = {
+		district_hab_energy
 	}
 	
 	resources = {

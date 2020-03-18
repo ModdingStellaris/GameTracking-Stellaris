@@ -40,6 +40,10 @@ MACHINE1 = {
 		colonizer = {
 			Replicator Founder Spawner Seeder Inductor Developer
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			Replicator Founder Spawner Seeder Inductor Developer
+		}
 		
 		constructor = {
 			Assembler Fabricator Compiler

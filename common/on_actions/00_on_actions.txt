@@ -447,6 +447,7 @@ on_entering_system_fleet = {
 		distar.230
 		distar.240
 		distar.242
+		cara.4170 # chor's compass
 	}
 	random_events = {
 		99 = 0
@@ -485,7 +486,6 @@ on_survey = {
 		anomaly.6660
 		anomaly.6661
 		anomaly.6662
-		anomaly.6663
 		action.12
 		tutorial.50
 		tutorial.55

@@ -843,6 +843,8 @@ decision_market_nomination = {
 							has_modifier = market_nominee_level_1
 							has_modifier = market_nominee_level_2
 							has_modifier = market_nominee_level_3
+							has_modifier = market_nominee_level_4 # boosted once
+							has_modifier = market_nominee_level_5 # boosted twice
 						}
 					}
 				}

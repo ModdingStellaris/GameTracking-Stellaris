@@ -41,6 +41,12 @@ HUMAN1 = {
 			Olympus Persepolis "Sierra de la Plata" Sparta Valhalla "Crystal Palace" Alaska Angola Australia Brazil Canada Congo Guinea India Indonesia 
 			Jamaica Macau Mozambique Philippines Somalia "Sri Lanka" Taiwan
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			Mayflower Abundance Bountiful Felicity Hope Opportunity Serenity Unity Destiny Britannia Byzantium Caledonia "El Dorado" Knossos Memphis 
+			Olympus Persepolis "Sierra de la Plata" Sparta Valhalla "Crystal Palace" Alaska Angola Australia Brazil Canada Congo Guinea India Indonesia 
+			Jamaica Macau Mozambique Philippines Somalia "Sri Lanka" Taiwan
+		}
 		
 		science = {
 			Aldrin Armstrong Columbus Copernicus Cortez Drake Hubble Goddard Galileo Einstein Gagarin Tereshkova "Zheng He" "Leif Ericson" Magellan "James Cook" "Marco Polo" Newton Tesla "Von Braun" "Walter Raleigh" Asimov Clarke Sagan "Ibn Battuta" Kepler Ptolemy Pytheas Azophi Discovery Voyager Tradewind Scout Pioneer Explorer Sojourner "Santa Maria" Hawking Earhart Nobel Kelvin Fahrenheit Equinox Lagrange Tsiolkovsky Darwin Grissom Archimedes
@@ -547,12 +553,12 @@ HUMAN1 = {
 		names11 = {
 			weight = 15
 			first_names_male = {
-				Mario Luigi Giovanni Guiseppe Antonio Roberto Andrea Stefano Marco Franscesco Angelo Vincenzo Pietro Salvatore Carlo Franco
+				Mario Luigi Giovanni Giuseppe Antonio Roberto Andrea Stefano Marco Franscesco Angelo Vincenzo Pietro Salvatore Carlo Franco
 				Domenico Bruno Paulo Michele Giorgio Sergio Luciano Alessandro Alfonso Benito Fabrizio Cesare Enrico Gustavo Silvio Umberto
 				Nicola Matteo Ignazio Camillo Daniele Cristian Alberto Guido Lorenzo Tommaso Fabio
 			}
 			first_names_female = {
-				Maria Anna Guiseppina Rosa Angela Giovanna Teresa Lucia Carmela Caterina Francesca Antonietta Carla Elena Concetta Rita
+				Maria Anna Giuseppina Rosa Angela Giovanna Teresa Lucia Carmela Caterina Francesca Antonietta Carla Elena Concetta Rita
 				Margherita Franca Paola Vittoria Arianna Orietta Nicoletta Clara Stefania Gisella Claudia Lorenza Gabriella Isabella Valeria
 				Lucrezia Dina Benedetta Pietra
 			}

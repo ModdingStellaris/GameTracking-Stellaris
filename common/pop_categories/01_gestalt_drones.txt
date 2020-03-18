@@ -97,8 +97,16 @@ simple_drone = {
 		upkeep = {
 			trigger = { 
 				is_robotic_species = yes
+				is_unemployed = no
 			}
 			energy = @living_standard_energy_normal
-		}		
+		}	
+		upkeep = {
+			trigger = { 
+				is_robotic_species = yes
+				is_unemployed = yes
+			}
+			energy = @living_standard_energy_unemployed
+		}
 	}	
 }

@@ -39,6 +39,10 @@ PLANT4 = {
 		colonizer = {
 			"Viva Crea" "Viva Nila" "Viva Nevo" "Viva Moro" "Viva Velo" "Viva Helon"  "Viva Elora" "Viva Calex" "Viva Hyan" "Viva Verum" "Viva Luzum" "Viva Aenora" "Viva Aemon" "Viva Nimon" "Viva Elorum" "Viva Evanes" "Viva Ilum" "Viva Ydris" "Viva Lilon" "Viva Myara" "Viva Idra" "Viva Strantum" "Viva Bellus" "Viva Daikon"
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			"Viva Crea" "Viva Nila" "Viva Nevo" "Viva Moro" "Viva Velo" "Viva Helon"  "Viva Elora" "Viva Calex" "Viva Hyan" "Viva Verum" "Viva Luzum" "Viva Aenora" "Viva Aemon" "Viva Nimon" "Viva Elorum" "Viva Evanes" "Viva Ilum" "Viva Ydris" "Viva Lilon" "Viva Myara" "Viva Idra" "Viva Strantum" "Viva Bellus" "Viva Daikon"
+		}
 		
 		constructor = {
 			"Cresco Staxx" "Cresco Vora" "Cresco Andens" "Cresco Paanon" "Cresco Draeus" "Cresco Phyte" "Cresco Treenor" "Cresco Callox"

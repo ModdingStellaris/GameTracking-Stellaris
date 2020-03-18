@@ -35,6 +35,10 @@ AVI3 = {
 		colonizer = {
 			"Eggcarrier I" "Eggcarrier II" "Eggcarrier III" "Eggcarrier IV" "Eggcarrier V" "Eggcarrier VI" "Eggcarrier VII" "Eggcarrier VIII" "Eggcarrier IX" "Eggcarrier X" "Eggcarrier XI" "Eggcarrier XII" "Eggcarrier XIII" "Eggcarrier XIV" "Eggcarrier XV" "Eggcarrier XVI" "Eggcarrier XVII" "Eggcarrier XVIII" "Eggcarrier XIX" "Eggcarrier XX"
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			"Eggcarrier I" "Eggcarrier II" "Eggcarrier III" "Eggcarrier IV" "Eggcarrier V" "Eggcarrier VI" "Eggcarrier VII" "Eggcarrier VIII" "Eggcarrier IX" "Eggcarrier X" "Eggcarrier XI" "Eggcarrier XII" "Eggcarrier XIII" "Eggcarrier XIV" "Eggcarrier XV" "Eggcarrier XVI" "Eggcarrier XVII" "Eggcarrier XVIII" "Eggcarrier XIX" "Eggcarrier XX"
+		}
 		
 		science = {
 			"Inner Eye" "Third Eye" "Viewing Eye" "Examining Eye" "Analysing Eye" "Contemplating Eye" "Considering Eye" "Evaluating Eye" "Thinking Eye" "Appraising Eye" "Assessing Eye"  "Classifying Eye" "Estimating Eye" "Determening Eye" "Inspecting Eye" "Studying Eye" "Investigating Eye" "Probing Eye" "Observing Eye"

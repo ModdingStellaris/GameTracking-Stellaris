@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "pirate_02_turret_missile_small_mesh"
+		file = "gfx/models/ships/pirate_01/pirate_02_turret_missile_small.mesh"
+
+	}
+}

@@ -714,6 +714,14 @@ is_mechanical_empire = {
 	}
 }
 
+is_robot_empire = {
+	OR = {	
+		owner_species = { has_trait = trait_mechanical }	
+		has_country_flag = synthetic_empire
+		has_authority = auth_machine_intelligence
+	}
+}
+
 is_country_type_with_subjects = {
 	OR = {
 		is_country_type = default

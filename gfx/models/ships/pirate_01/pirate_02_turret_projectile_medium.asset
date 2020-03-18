@@ -1,0 +1,4 @@
+entity = {
+	name = "pirate_02_turret_projectile_medium_entity"
+	pdxmesh = "pirate_02_turret_projectile_medium_mesh"
+}

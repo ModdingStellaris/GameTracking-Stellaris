@@ -12,7 +12,7 @@ graygoo = {
 		}
 
 		graygoo_interdictor = {
-			Reconstituter
+			Reconstitutor
 		}
 	}
 }

@@ -42,6 +42,10 @@ MACHINE3 = {
 		colonizer = {
 			"复制模块"
 		}
+
+		sponsored_colonizer = {
+			"复制模块"
+		}
 		
 		constructor = { 
 			"建造模块"

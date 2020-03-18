@@ -60,20 +60,6 @@ influence_expenditure_stations = {
 	}	
 }
 
-influence_expenditure_megastructures = {
-	resource = influence 
-	type = expenditure
-	category = megastructures
-	
-	potential = {
-		always = yes
-	}
-	
-	fraction = {
-		weight = 0.10
-	}	
-}
-
 influence_expenditure_claims = {
 	resource = influence 
 	type = expenditure
@@ -118,5 +104,24 @@ influence_expenditure_claims_fanatic_militarist = {
 	
 	fraction = {
 		weight = 0.15
+	}
+}
+
+influence_expenditure_megastructures = {
+	resource = influence
+	type = expenditure
+	category = megastructures
+	
+	potential = {
+		is_at_war = no
+		has_galactic_wonders = yes
+	}
+	
+	fraction = {
+		weight = 0.1
+	}
+
+	static_max = {
+		base = 300 # only used by construction sites
 	}
 }

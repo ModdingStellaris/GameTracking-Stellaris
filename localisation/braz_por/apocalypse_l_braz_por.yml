@@ -383,7 +383,7 @@
  enclave_mineral_trade_ended:0 "£energy£ §HCréditos Energéticos§! insuficientes para manter os acordos comerciais com os Enclaves Comerciais."
  leviathans.173.name:0 "Comércio Mineral Cancelado"
  leviathans.173.desc:0 "Com o esgotamento de nossas reservas minerais, não conseguimos mais manter nossos acordos comerciais que dependiam deste recurso. Todos os acordos deste tipo com Enclaves Comerciais foram cancelados."
- enclave_energy_trade_ended:1 "£energy §HCréditos Energéticos§! insuficientes para manter os acordos de recursos com os Enclaves Comerciantes."
+ enclave_energy_trade_ended:1 "£energy£ §HCréditos Energéticos§! insuficientes para manter os acordos de recursos com os Enclaves Comerciantes."
  leviathans.111.e:0 "Isso é tudo."
 
  not_barren_molten_frozen_toxic_test_fire:0 "O alvo é um alvo teste de disparo ! §Y$pc_barren$§!, §Y$pc_molten$§!, §Y$pc_frozen$§! ou §Y$pc_toxic$§! §YHabitável§!"

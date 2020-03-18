@@ -10512,7 +10512,7 @@
  CANNOT_ADD_CLAIM_ASSIMILATOR:0 "§RNie musimy wysuwać roszczeń wobec układów będących celami asymilacji.§!"
  building_hab_stronghold:0 "Strefa bezpieczeństwa"
  building_hab_stronghold_desc:0 "Ta sekcja stacji mieszkalnej jest przeznaczona dla sił bezpieczeństwa i zapewnia zbrojny oddział ochrony, strzegący stacji przed zagrożeniami wewnętrznymi i zewnętrznymi."
- civic_tooltip_citizen_service_effects:2 "\n£job_soldier£ §Y$job_soldier_plural$§! wytwarzają też §Y1§! £unity£ jedności.\n§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! §G+15%§!."
+ civic_tooltip_citizen_service_effects:3 "\n£job_soldier£ §Y$job_soldier_plural$§! wytwarzają też §Y2§! £unity£ jedności.\n§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! §G+15%§!."
  TECH_UNLOCK_DARK_MATTER_PROPULSION_TITLE:0 "§HOdblokowuje komponent§! $SHIP_THRUSTER_5$"
  TECH_UNLOCK_DARK_MATTER_PROPULSION_DESC:0 "§H$SHIP_THRUSTER_5$§!\n$SHIP_THRUSTER_5_DESC$"
  SHIP_THRUSTER_5:0 "Silniki manewrowe ciemnej materii"

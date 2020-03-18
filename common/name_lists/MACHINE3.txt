@@ -41,6 +41,10 @@ MACHINE3 = {
 		colonizer = {
 			"Replication Module"
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			"Replication Module"
+		}
 		
 		constructor = { 
 			"Construction Module"

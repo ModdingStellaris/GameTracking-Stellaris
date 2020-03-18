@@ -40,6 +40,10 @@ PLANT2 = {
 		colonizer = { 
 			末梢 波纹机 锭盘 叶柄
 		}
+
+		sponsored_colonizer = { 
+			末梢 波纹机 锭盘 叶柄
+		}
 		
 		constructor = { 
 			"绿创造者" "褐创造者" "金创造者"

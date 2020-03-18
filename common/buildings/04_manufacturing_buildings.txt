@@ -95,6 +95,39 @@ building_foundry_1 = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					is_capital  = no
+					OR = {
+						num_buildings = { type = building_foundry_1 value >= 2 }
+						num_buildings = { type = building_foundry_2 value >= 1 }
+						num_buildings = { type = building_foundry_3 value >= 1 }
+					}
+				}
+				AND = {
+					is_capital  = yes
+					OR = {
+						num_buildings = { type = building_foundry_1 value >= 3 }
+						num_buildings = { type = building_foundry_2 value >= 1 }
+						num_buildings = { type = building_foundry_3 value >= 1 }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 
 	ai_resource_production = {
@@ -201,6 +234,18 @@ building_foundry_2 = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 
 	ai_resource_production = {
@@ -237,7 +282,7 @@ building_foundry_3 = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_alloy_drone_add = 8
+			job_fabricator_add = 8
 		}
 	}
 	
@@ -303,6 +348,18 @@ building_foundry_3 = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 
 	ai_resource_production = {
@@ -328,6 +385,19 @@ building_factory_1 = {
 		}		
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+	}
+	
+	destroy_trigger = { # destroys if true
+		OR = {
+				owner = {
+					AND = {
+						is_gestalt = yes
+						NOT = { has_valid_civic = civic_machine_servitor }
+					}
+				}
+				has_modifier = resort_colony
+				has_modifier = slave_colony 
+			}
 	}
 	
 	triggered_planet_modifier = {
@@ -400,6 +470,39 @@ building_factory_1 = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					is_capital  = no
+					OR = {
+						num_buildings = { type = building_factory_1 value >= 2 }
+						num_buildings = { type = building_factory_2 value >= 1 }
+						num_buildings = { type = building_factory_3 value >= 1 }
+					}
+				}
+				AND = {
+					is_capital  = yes
+					OR = {
+						num_buildings = { type = building_factory_1 value >= 3 }
+						num_buildings = { type = building_factory_2 value >= 1 }
+						num_buildings = { type = building_factory_3 value >= 1 }
+					}
+				}
+			}
+		}
 	}
 
 	ai_resource_production = {
@@ -430,6 +533,19 @@ building_factory_2 = {
 		}		
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+	}
+	
+	destroy_trigger = { # destroys if true
+		OR = {
+				owner = {
+					AND = {
+						is_gestalt = yes
+						NOT = { has_valid_civic = civic_machine_servitor }
+					}
+				}
+				has_modifier = resort_colony
+				has_modifier = slave_colony 
+			}
 	}
 	
 	triggered_planet_modifier = {
@@ -490,8 +606,7 @@ building_factory_2 = {
 	
 	ai_weight = {
 		weight = 2
-		modifier = 
-		{
+		modifier = {
 			factor = 5
 			owner = { 
 				has_monthly_income = {
@@ -502,6 +617,18 @@ building_factory_2 = {
 					resource = minerals
 					value > 6
 				}
+			}
+		}
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
 			}
 		}
 	}
@@ -534,6 +661,19 @@ building_factory_3 = {
 		}		
 		NOT = { has_modifier = resort_colony }	
 		NOT = { has_modifier = slave_colony }
+	}
+	
+	destroy_trigger = { # destroys if true
+		OR = {
+				owner = {
+					AND = {
+						is_gestalt = yes
+						NOT = { has_valid_civic = civic_machine_servitor }
+					}
+				}
+				has_modifier = resort_colony
+				has_modifier = slave_colony 
+			}
 	}
 	
 	triggered_planet_modifier = {
@@ -590,8 +730,7 @@ building_factory_3 = {
 	
 	ai_weight = {
 		weight = 2
-		modifier = 
-		{
+		modifier = {
 			factor = 5
 			owner = { 
 				has_monthly_income = {
@@ -602,6 +741,18 @@ building_factory_3 = {
 					resource = minerals
 					value > 6
 				}
+			}
+		}
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
 			}
 		}
 	}
@@ -680,6 +831,31 @@ building_refinery = {
 	
 	ai_weight = {
 		weight = 2
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
+		modifier = {
+			factor = 5
+			owner = { 
+				has_monthly_income = {
+					resource = exotic_gases
+					value < 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_refinery value >= 2 }
+		}
 	}
 
 	ai_resource_production = {
@@ -756,6 +932,38 @@ building_chemical_plant = {
 	
 	ai_weight = {
 		weight = 2
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
+		modifier = {
+			factor = 5
+			owner = { 
+				has_monthly_income = {
+					resource = volatile_motes
+					value < 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_chemical_plant value >= 2 }
+		}
+	}
+	
+	ai_resource_production = {
+		volatile_motes = 1
+		trigger = {
+			always = yes
+		}
 	}
 }
 
@@ -825,6 +1033,31 @@ building_crystal_plant = {
 	
 	ai_weight = {
 		weight = 2
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
+		modifier = {
+			factor = 5
+			owner = { 
+				has_monthly_income = {
+					resource = rare_crystals
+					value < 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_crystal_plant value >= 2 }
+		}
 	}
 
 	ai_resource_production = {
@@ -871,6 +1104,37 @@ building_nanite_transmuter = {
 	
 	ai_weight = {
 		weight = 2
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = { 
+				OR = {
+					has_monthly_income = {
+						resource = exotic_gases
+						value < 5
+					}
+					has_monthly_income = {
+						resource = volatile_motes
+						value < 5
+					}
+					has_monthly_income = {
+						resource = rare_crystals
+						value < 5
+					}
+				}
+			}
+		}
 	}
 
 	ai_resource_production = {

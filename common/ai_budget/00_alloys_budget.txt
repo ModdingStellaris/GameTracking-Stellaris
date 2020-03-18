@@ -130,6 +130,7 @@ alloys_expenditure_colonies_expand = {
 	category = colonies
 	
 	potential = {
+		is_machine_empire = no
 		ai_colonize_plans > 0
 		has_resource = { type = food amount > 400 }
 		has_monthly_income = {
@@ -144,6 +145,71 @@ alloys_expenditure_colonies_expand = {
 
 	static_max = {
 		base = 300
+	}
+}
+
+alloys_expenditure_colonies_expand_machine = {
+	resource = alloys 
+	type = expenditure
+	category = colonies
+	
+	potential = {
+		is_machine_empire = yes
+		ai_colonize_plans > 0
+	}
+	
+	fraction = {
+		weight = 1.5
+	}
+
+	static_max = {
+		base = 400
+	}
+}
+
+alloys_expenditure_megastructures = {
+	resource = alloys 
+	type = expenditure
+	category = megastructures
+	
+	potential = {
+		is_country_type = default
+		is_at_war = no
+		has_galactic_wonders = yes
+	}
+	
+	fraction = {
+		weight = 0.4
+
+		# increase budget if megastructures are unfinished
+		modifier = {
+			factor = 3
+			any_owned_megastructure = {
+				NOR = {
+					is_megastructure_type = dyson_sphere_5
+					is_megastructure_type = dyson_sphere_restored
+					is_megastructure_type = spy_orb_4
+					is_megastructure_type = spy_orb_restored
+					is_megastructure_type = think_tank_4
+					is_megastructure_type = think_tank_restored
+					is_megastructure_type = gateway_final
+					is_megastructure_type = gateway_restored
+					is_megastructure_type = matter_decompressor_4
+					is_megastructure_type = matter_decompressor_restored
+					is_megastructure_type = strategic_coordination_center_3
+					is_megastructure_type = strategic_coordination_center_restored
+					is_megastructure_type = mega_art_installation_3
+					is_megastructure_type = mega_art_installation_restored
+					is_megastructure_type = interstellar_assembly_4
+					is_megastructure_type = interstellar_assembly_restored
+					is_megastructure_type = lgate_base
+				}
+			}
+		}
+	}
+
+	static_max = {
+		base = 20000 # current max alloy cost for a stage
 	}
 }
 
@@ -175,5 +241,5 @@ alloys_upkeep_ships = {
 	
 	fraction = {
 		weight = 0.5
-	}	
+	}
 }

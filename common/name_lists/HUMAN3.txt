@@ -38,6 +38,10 @@ HUMAN3 = {
 		colonizer = {
 			Achaea Belgica Germania Africa Aegyptus Anatolia Arabia Ariana Asia Britannia Caledonia Cilicia Gallia Dacia Cyrenaica Cambria Graecia Hispania Illyria Italia Libya Lusitania
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			Achaea Belgica Germania Africa Aegyptus Anatolia Arabia Ariana Asia Britannia Caledonia Cilicia Gallia Dacia Cyrenaica Cambria Graecia Hispania Illyria Italia Libya Lusitania
+		}
 		
 		constructor = {
 			Macedonia Mauretania Noricum Numidia Palaestina Parthia Phoenicia Ruthenia Scythia Serica Syria Thracia Hibernia

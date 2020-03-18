@@ -39,6 +39,10 @@ REP4 = {
 		colonizer = {
 			Aiku Globi-Tsaru Pururi-Tsaru Orori-Tsaru Aikiku-Tsaru Glupp Glorp-Kreck Krisch Krakki Klosch Klisch-Klosch Krihi-Ruru Uru-Ru Grepp Kimi-Tsaru Vimi-Tsaru
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			Aiku Globi-Tsaru Pururi-Tsaru Orori-Tsaru Aikiku-Tsaru Glupp Glorp-Kreck Krisch Krakki Klosch Klisch-Klosch Krihi-Ruru Uru-Ru Grepp Kimi-Tsaru Vimi-Tsaru
+		}
 		
 		constructor = {
 			Globi-Karu Pururi-Karu Orori-Karu Aikiku-Karu Kuhani Glupp Glorp-Kreck Krakki Klosch Klisch-Klosch Krihi-Ruru Uru-Ru Grepp Kimi-Karu

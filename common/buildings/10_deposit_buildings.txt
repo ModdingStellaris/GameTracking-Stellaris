@@ -50,6 +50,18 @@ building_mote_harvesters = {
 	
 	ai_weight = {
 		weight = 10	
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 }
 
@@ -101,6 +113,18 @@ building_gas_extractors = {
 	
 	ai_weight = {
 		weight = 10	
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 }
 
@@ -151,6 +175,18 @@ building_crystal_mines = {
 	
 	ai_weight = {
 		weight = 10	
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 }
 
@@ -216,6 +252,18 @@ building_betharian_power_plant = {
 	
 	ai_weight = {
 		weight = 10	
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -262,5 +310,17 @@ building_xeno_zoo = {
 
 	ai_weight = {
 		factor = 10
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }

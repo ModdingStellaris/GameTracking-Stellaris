@@ -38,6 +38,10 @@ PLANT = {
 		colonizer = {
 			"Seed Capsule" "Fruit Carrier"
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			"Seed Capsule" "Fruit Carrier"
+		}
 		
 		constructor = {
 			Meristem

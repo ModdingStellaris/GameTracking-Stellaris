@@ -363,7 +363,7 @@ colonizer = {
 					is_machine_empire = yes 
 				}
 			}
-			alloys = 300
+			alloys = 400
 		}
 		cost = {
 			trigger = {

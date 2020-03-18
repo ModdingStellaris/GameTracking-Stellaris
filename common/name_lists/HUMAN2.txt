@@ -38,6 +38,10 @@ HUMAN2 = {
 		colonizer = {
 			Godspeed Prophecy "Manifest Destiny" Virtue Potential Expansion "Pioneer Spirit" Prosperity Summit Seeder Harvest Demeter Isis Ceres Exodus Foundation Scion Progeny Obligation Purpose Provider "Shining City" Acquirer Cultivator "Dawn of Civilization" Purity Community Brotherhood Heket
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			Godspeed Prophecy "Manifest Destiny" Virtue Potential Expansion "Pioneer Spirit" Prosperity Summit Seeder Harvest Demeter Isis Ceres Exodus Foundation Scion Progeny Obligation Purpose Provider "Shining City" Acquirer Cultivator "Dawn of Civilization" Purity Community Brotherhood Heket
+		}
 		
 		constructor = {
 			Industry Assiduity Effort Laborer Builder Craftsman "Hard Hat" Progress Engineer Promise Service Shelter Beast Creator Developer Forger Foundry Factory Anvil Pillar Architect Accommodator Ptah Ilmarinen Creidhne Gobannus Luchtaine Goibniu Vishvakarman Tvastar Ikenga Qaynan Ucuetis Ogoun Longshoreman Stevedore

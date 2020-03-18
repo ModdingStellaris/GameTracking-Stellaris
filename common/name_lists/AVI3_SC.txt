@@ -79,6 +79,9 @@ AVI3 = {
 		
 		colonizer = {
 		}
+
+		sponsored_colonizer = {
+		}
 		
 		constructor = {
 		}

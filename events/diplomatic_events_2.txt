@@ -363,6 +363,12 @@ ship_event = {
 					country_event = { id = diplomatic.1011 }
 				}
 				25 = {
+					modifier = {
+						factor = 0
+						event_target:exercise_fleet = {
+							num_ships < 2 #Do not run event if we don't have 2+ ships
+						}
+					}
 					country_event = { id = diplomatic.1012 }
 				}
 				25 = {
@@ -480,23 +486,23 @@ country_event = {
 	show_sound = event_sensor_ping
 	
 	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:exercise_fleet
+		event_target:exercise_fleet = {
+			num_ships > 1
+		}
+	}
 	
 	immediate = {
-		random_owned_ship = {
-			limit = { 
-				fleet = { is_same_value = event_target:exercise_fleet } 
+		while = {
+			count = 2
+			random_owned_ship = {
+				limit = {
+					fleet = { is_same_value = event_target:exercise_fleet } 
+				}
+				destroy_ship = this
 			}
-			set_ship_flag = destroyed_ship_1
-			save_event_target_as = destroyed_ship_1
-			destroy_ship = this
-		}
-		random_owned_ship = {
-			limit = {
-				fleet = { is_same_value = event_target:exercise_fleet } 
-				NOT = { has_ship_flag = destroyed_ship_1 }
-			}
-			destroy_ship = this
-			save_event_target_as = destroyed_ship_2
 		}
 	}
 

@@ -33,6 +33,37 @@ head_researcher = {
 			NOT = { has_trait = trait_mechanical }
 		}
 		modifier = {
+			factor = 0.2
+			has_trait = trait_presapient_proles
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_latent_psionic
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_psionic
+		}
+		modifier = {
+			factor = 0.2
+			has_trait = trait_enigmatic_intelligence_failed
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_enigmatic_intelligence_poor
+				has_trait = trait_enigmatic_intelligence
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_presapient_natural_intellectuals
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_brainslug
+		}
+		modifier = {
 			factor = 2
 			has_living_standard = { type = living_standard_academic_privilege }
 		}
@@ -154,6 +185,14 @@ high_priest = {
 			NOT = { has_job = high_priest }
 		}
 		modifier = {
+			factor = 1.2
+			has_trait = trait_presapient_natural_intellectuals
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_brainslug
+		}
+		modifier = {
 			factor = 5
 			has_job = high_priest
 		}
@@ -239,6 +278,14 @@ administrator = {
 		modifier = {
 			factor = 0.75
 			has_trait = trait_quarrelsome
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_brainslug
+		}
+		modifier = {
+			factor = 1.2
+			has_trait = trait_presapient_natural_intellectuals
 		}
 		modifier = {
 			factor = 5
@@ -529,6 +576,14 @@ executive = {
 				has_trait = trait_robot_domestic_protocols
 				has_trait = trait_charismatic
 			}
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_brainslug
+		}
+		modifier = {
+			factor = 1.2
+			has_trait = trait_presapient_natural_intellectuals
 		}
 		modifier = {
 			factor = 0.5

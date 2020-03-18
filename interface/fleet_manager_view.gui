@@ -228,7 +228,7 @@ guiTypes = {
 							name = "portrait"
 							quadTextureSprite = "GFX_portrait_character"
 							scale = 0.30
-							#alwaysTransparent = yes
+							alwaysTransparent = yes
 							position = { x = -50 y = -15 }
 						}
 					}
@@ -1252,8 +1252,8 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "cost"
 			font = "cg_16b"
-			position = { x = -70 y = 6 }
-			maxWidth = 60
+			position = { x = -210 y = 6 }
+			maxWidth = 200
 			maxHeight = 20
 			fixedSize = yes
 			format = right

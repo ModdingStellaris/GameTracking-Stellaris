@@ -605,10 +605,12 @@ guiTypes = {
 			position = { x = -36 y = -22 }
 		}
 
-		iconType = {
+		buttonType = {
 			name = "claim_management_status"
 			quadTextureSprite = "GFX_claim_management_status"
 			position = { x = 0 y = 0 }
+
+			clicksound = click
 		}
 		
 		iconType = {

@@ -40,6 +40,10 @@ MACHINE2 = {
 		colonizer = {  
 			"Colonization Carrier"
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			"Colonization Carrier"
+		}
 		
 		constructor = { 
 			"Constructor"

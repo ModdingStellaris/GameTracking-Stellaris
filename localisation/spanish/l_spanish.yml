@@ -10516,7 +10516,7 @@
  CANNOT_ADD_CLAIM_ASSIMILATOR:0 "§RNo necesitamos reivindicar los sistemas de los objetivos de asimilación.§!"
  building_hab_stronghold:0 "Zona de seguridad"
  building_hab_stronghold_desc:0 "Esta sección del hábitat está destinada a la seguridad y proporciona una fuerza de seguridad armada para protegerlo de los peligros internos y externos."
- civic_tooltip_citizen_service_effects:2 "\nLos £job_soldier£ §Y$job_soldier_plural$§! también producen §Y1§! £unity£ unidad\n§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! aumenta en un §G15%§!"
+ civic_tooltip_citizen_service_effects:3 "\nLos £job_soldier£ §Y$job_soldier_plural$§! también producen §Y2§! £unity£ unidad\n§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! aumenta en un §G15%§!"
  TECH_UNLOCK_DARK_MATTER_PROPULSION_TITLE:0 "§HDesbloquea el componente:§! $SHIP_THRUSTER_5$"
  TECH_UNLOCK_DARK_MATTER_PROPULSION_DESC:0 "§H$SHIP_THRUSTER_5$§!\n$SHIP_THRUSTER_5_DESC$"
  SHIP_THRUSTER_5:0 "Propulsores de materia oscura"

@@ -11,13 +11,11 @@ weapon_component_template = {
 	icon = "GFX_ship_part_plasma_2"
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
-	
-	component_set = "PLASMA_2"
+
 	projectile_gfx = "plasma_accelerator_s"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
 	ai_tag_weight = 3
-	upgrades_to = "SMALL_PLASMA_3"
 	resources = {
 		category = ship_components
 		cost = {
@@ -53,21 +51,19 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	
-	component_set = "PLASMA_2"
 	projectile_gfx = "plasma_accelerator_s"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
 	ai_tag_weight = 3
-	upgrades_to = "SMALL_PLASMA_3"
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @s_t4_cost
-			exotic_gases = @s_t4_rare
+			alloys = @m_t4_cost
+			exotic_gases = @m_t4_rare
 		}		
 		upkeep = {
-			energy = @s_t4_upkeep_energy
-			alloys = @s_t4_upkeep_alloys
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
 		}
 	}
 
@@ -94,21 +90,19 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 	
-	component_set = "PLASMA_2"
 	projectile_gfx = "plasma_accelerator_s"
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
 	ai_tag_weight = 3
-	upgrades_to = "SMALL_PLASMA_3"
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @s_t4_cost
-			exotic_gases = @s_t4_rare
+			alloys = @l_t4_cost
+			exotic_gases = @l_t4_rare
 		}		
 		upkeep = {
-			energy = @s_t4_upkeep_energy
-			alloys = @s_t4_upkeep_alloys
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
 		}
 	}
 

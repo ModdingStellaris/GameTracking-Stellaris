@@ -573,18 +573,21 @@ d_bountiful_plains = {
 		d_boggy_fens
 		d_nutritious_mudland
 		d_natural_farmland # gaia
-	}	
+	}
 	
-	planet_modifier = { 
+	planet_modifier = {
 		district_farming_max = 1
 	}
 	
 	potential = {
-		is_planet_class = pc_arid	
+		OR = {
+			is_planet_class = pc_arid
+			is_planet_class = pc_savannah
+		}
 	}
 	
 	drop_weight = {
-		weight = @high	
+		weight = @high
 		modifier = {
 			factor = @planet_type_bonus
 			is_wet = yes
@@ -1458,7 +1461,8 @@ d_buzzing_plains = {
 	}
 	
 	drop_weight = {
-		weight = 0 #does not occur naturally
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1484,7 +1488,8 @@ d_mineral_striations = {
 	}
 	
 	drop_weight = {
-		weight = 0 #does not occur naturally
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1515,6 +1520,7 @@ d_natural_farmland = {
 	}
 	
 	drop_weight = {
-		weight = 0 #does not occur naturally
+		weight = 0.01
+		#does not occur naturally, but needs a non-zero weight
 	}
 }

@@ -1324,57 +1324,49 @@ ship_design = {
 			template = "SMALL_PLASMA_3"
 		}		
 		component = {
-			slot = "LARGE_UTILITY_9"
+			slot = "LARGE_UTILITY_1"
 			template = "LARGE_ARMOR_5"
 		}
 		component = {
-			slot = "LARGE_UTILITY_10"
+			slot = "LARGE_UTILITY_2"
 			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_SHIELD_5"
+		}		
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_SHIELD_5"
+		}		
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_SHIELD_5"
+		}		
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_SHIELD_5"
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_ARMOR_5"
-		}
-		component = {
-			slot = "LARGE_UTILITY_12"
-			template = "LARGE_ARMOR_5"
-		}
-		component = {
-			slot = "LARGE_UTILITY_13"
-			template = "LARGE_ARMOR_5"
-		}
-		component = {
-			slot = "LARGE_UTILITY_14"
-			template = "LARGE_ARMOR_5"
-		}
-		component = {
-			slot = "LARGE_UTILITY_15"
 			template = "LARGE_SHIELD_5"
-		}
-		component = {
-			slot = "LARGE_UTILITY_15"
-			template = "LARGE_SHIELD_5"
-		}		
-		component = {
-			slot = "LARGE_UTILITY_16"
-			template = "LARGE_SHIELD_5"
-		}		
-		component = {
-			slot = "LARGE_UTILITY_17"
-			template = "LARGE_SHIELD_5"
-		}		
-		component = {
-			slot = "LARGE_UTILITY_18"
-			template = "LARGE_SHIELD_5"
-		}		
-		component = {
-			slot = "LARGE_UTILITY_19"
-			template = "LARGE_SHIELD_5"
-		}		
-		component = {
-			slot = "LARGE_UTILITY_20"
-			template = "LARGE_SHIELD_5"
-		}				
+		}			
 		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"

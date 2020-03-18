@@ -664,7 +664,7 @@ country_event = {
 		NOT = { is_tutorial_level = 0 }
 		NOT = { has_country_flag = advisor_first_contact }
 		FROM = {
-			NOT = {
+			NOR = {
 				is_country_type = fallen_empire
 				#is_country_type = tiyanki
 				is_country_type = amoeba

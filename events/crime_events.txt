@@ -1437,7 +1437,7 @@ planet_event = {
 		has_owner = yes
 		has_modifier = center_of_drug_trade
 		owner = {
-			has_resource = { type = exotic_gases amount > 10 }
+			has_country_resource = { type = exotic_gases amount > 10 }
 		}
 	}
 

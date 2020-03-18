@@ -94,7 +94,7 @@ planet_event = {
 		FROM = {
 			OR = {
 				has_valid_civic = civic_fanatic_purifiers
-				has_swapped_tradition = tr_purity_natural_order
+				#has_swapped_tradition = tr_purity_natural_order
 			}
 		}
 		FROMFROM = {

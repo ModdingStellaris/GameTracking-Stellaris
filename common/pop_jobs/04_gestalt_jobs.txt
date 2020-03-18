@@ -82,6 +82,9 @@ replicator = {
 
 	resources = {
 		category = planet_pop_assemblers
+		produces = {
+			engineering_research = 1
+		}
 		upkeep = {
 			minerals = 3
 		}
@@ -127,12 +130,18 @@ coordinator = {
 	possible = {
 		drone_job_check_trigger = yes
 	}	
-
+	
+	planet_modifier = {
+		planet_jobs_simple_drone_produces_mult = 0.01
+	}
+	
 	resources = {
 		category = planet_jobs
 		produces = {
 			unity = 3
-			society_research = 3
+			society_research = 1
+			physics_research = 1
+			engineering_research = 1 
 		}
 		upkeep = {
 			energy = 3
@@ -320,10 +329,10 @@ fabricator = {
 	resources = {
 		category = planet_metallurgists
 		produces = {
-			alloys = 3
+			alloys = 4
 		}
 		upkeep = {
-			minerals = 6
+			minerals = 8
 		}
 	}
 	
@@ -373,7 +382,7 @@ chemist_drone = {
 	}
 	
 	resources = {
-		category = planet_jobs
+		category = planet_chemists
 		produces = {
 			volatile_motes = 2
 		}		
@@ -404,7 +413,7 @@ translucer_drone = {
 	}
 
 	resources = {
-		category = planet_jobs
+		category = planet_translucers
 		produces = {
 			rare_crystals = 2
 		}		
@@ -435,7 +444,7 @@ gas_refiner_drone = {
 	}
 
 	resources = {
-		category = planet_jobs
+		category = planet_refiners
 		produces = {
 			exotic_gases = 2
 		}		
@@ -475,7 +484,7 @@ patrol_drone = {
 	planet_modifier = {
 		planet_crime_no_happiness_add = -20
 	}	
-		
+
 	pop_modifier = {
 		pop_defense_armies_add = 2
 	}
@@ -612,6 +621,19 @@ mining_drone = {
 		}
 		modifier = {
 			factor = 1.1
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			factor = 1.2
+			has_job = mining_drone
+		}
+		modifier = {
+			factor = 1.1
 			exists = owner
 			years_passed < 1
 			owner = { has_valid_civic = civic_machine_assimilator }
@@ -633,7 +655,15 @@ agri_drone = {
 		category = planet_farmers
 		produces = {
 			food = 6
-		}	
+		}
+		produces = {
+			trigger = { 
+				owner = {
+					is_robot_empire = yes
+				}
+			}
+			food = -1
+		}
 	}
 	
 	weight = {
@@ -644,6 +674,25 @@ agri_drone = {
 				has_trait = trait_agrarian
 				has_trait = trait_robot_harvesters
 			}		
+		}
+		modifier = {
+			factor = 1.1
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			factor = 1.2
+			has_job = agri_drone
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				is_robot_empire = yes
+			}
 		}	
 		modifier = {
 			factor = 1.1
@@ -669,6 +718,14 @@ technician_drone = {
 		produces = {
 			energy = 4
 		}
+		produces = {
+			trigger = { 
+				owner = {
+					is_robot_empire = yes
+				}
+			}
+			energy = 2
+		}
 	}
 	
 	weight = {
@@ -679,6 +736,19 @@ technician_drone = {
 				has_trait = trait_robot_superconductive
 				has_trait = trait_ingenious
 			}		
+		}
+		modifier = {
+			factor = 1.1
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			factor = 1.2
+			has_job = technician_drone
 		}
 		modifier = {
 			factor = 1.1
@@ -729,10 +799,41 @@ maintenance_drone = {
 		weight = @simple_drone_job_weight
 		modifier = {
 			factor = 2
-			has_trait = trait_charismatic
+			OR = {
+				has_trait = trait_charismatic
+				has_trait = trait_robot_emotion_emulators
+			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 1.2
+			has_job = maintenance_drone
+		}
+		modifier = {
+			factor = 0.9
+			planet = {
+				free_amenities > 10
+			}
+		}
+		modifier = {
+			factor = 1.1
+			planet = {
+				free_amenities < 0
+			}
+		}
+		modifier = {
+			factor = 1.25
+			planet = {
+				free_amenities < 5
+			}
+		}
+		modifier = {
+			factor = 2
+			planet = {
+				free_amenities < 10
+			}
+		}
+		modifier = {
+			factor = 0.8
 			OR = {
 				has_trait = trait_robot_uncanny
 				has_trait = trait_repugnant

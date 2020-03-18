@@ -21,6 +21,7 @@
 @simple_drone_job_weight = 1
 
 @living_standard_energy_normal = 1.0
+@living_standard_energy_unemployed = 0.25
 
 @subsidies_high = 2
 @subsidies_mid = 1.5

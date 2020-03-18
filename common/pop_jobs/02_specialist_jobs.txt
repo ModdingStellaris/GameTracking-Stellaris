@@ -65,7 +65,7 @@ colonist = {
 			has_trait = trait_charismatic
 		}
 		modifier = {
-			factor = 0.65
+			factor = 0.8
 			has_trait = trait_repugnant
 		}
 	}
@@ -132,6 +132,30 @@ researcher = {
 				has_trait = trait_natural_physicists
 				has_trait = trait_natural_sociologists
 			}
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_latent_psionic
+		} 
+		modifier = {
+			factor = 1.5
+			has_trait = trait_psionic
+		} 
+		modifier = {
+			factor = 0.2
+			has_trait = trait_enigmatic_intelligence_failed
+		} 
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_enigmatic_intelligence_poor
+				has_trait = trait_enigmatic_intelligence
+				
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_presapient_natural_intellectuals
 		}
 		modifier = {
 			factor = 0.1
@@ -220,7 +244,7 @@ priest = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.8
 			has_trait = trait_repugnant
 		}
 		modifier = {
@@ -416,7 +440,37 @@ enforcer = {
 		modifier = {
 			factor = 1.5
 			has_trait = trait_strong
-		}	
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_limited_regeneration
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_presapient_proles
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_brainslug
+			owner = { has_valid_civic = civic_police_state }
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				has_trait = trait_traditional
+				has_trait = trait_robot_propaganda_machines
+			}
+			owner = { has_valid_civic = civic_police_state }
+		}
+		modifier = {
+			factor = 0.9
+			has_trait = trait_quarrelsome
+			owner = { has_valid_civic = civic_police_state }
+		}
 		modifier = {
 			factor = 10
 			is_enslaved = yes
@@ -433,6 +487,10 @@ enforcer = {
 		modifier = {
 			factor = 1.5
 			has_job = enforcer
+		}
+		modifier = {
+			factor = 0
+			can_be_soldier = no
 		}		
 	}
 }
@@ -488,9 +546,9 @@ telepath = {
 		}
 		modifier = {
 			planet_crime_add = -10
-		}		
+		}
 	}
-	
+
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -507,7 +565,7 @@ telepath = {
 		modifier = {
 			factor = 2
 			has_trait = trait_resilient
-		}			
+		}
 		modifier = {
 			factor = 10
 			OR = {
@@ -516,13 +574,32 @@ telepath = {
 			}
 		}
 		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_traditional
+				has_trait = trait_robot_propaganda_machines
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_brainslug
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_presapient_natural_intellectuals
+		}
+		modifier = {
+			factor = 0.65
+			has_trait = trait_quarrelsome
+		}
+		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}		
+		}
 		modifier = {
 			factor = 1.5
 			has_job = telepath
-		}		
+		}
 	}
 }
 
@@ -589,12 +666,12 @@ entertainer = {
 		upkeep = {
 			consumer_goods = 1
 		}
-	}	
-	
+	}
+
 	planet_modifier = {
 		planet_amenities_add = 10
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -613,8 +690,8 @@ entertainer = {
 		modifier = {
 			planet_amenities_add = -2
 		}
-	}	
-		
+	}
+
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -638,7 +715,7 @@ entertainer = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.8
 			has_trait = trait_repugnant
 		}
 		modifier = {
@@ -651,7 +728,15 @@ entertainer = {
 		modifier = {
 			factor = 0.75
 			has_trait = trait_quarrelsome
-		}	
+		}
+		modifier = {
+			factor = 1.25
+				has_trait = trait_brainslug
+			}
+		modifier = {
+			factor = 1.05
+			has_trait = trait_presapient_natural_intellectuals
+		} 
 		modifier = {
 			factor = 1.5
 			has_job = entertainer
@@ -700,7 +785,7 @@ culture_worker = {
 			OR = {
 				has_trait = trait_robot_propaganda_machines
 				has_trait = trait_traditional
-			}		
+			}
 		}
 		modifier = {
 			factor = 0.5
@@ -711,40 +796,40 @@ culture_worker = {
 			can_take_servant_job = yes
 		}
 		modifier = {
-           factor = 1.5
-           has_trait = trait_brainslug
-        } 
-        modifier = {
-            factor = 1.05
-            has_trait = trait_presapient_natural_intellectuals
-        } 
-        modifier = {
-            factor = 1.05
-            OR = {
-                has_trait = trait_robot_logic_engines
-                has_trait = trait_intelligent
-            }
-        }
-        modifier = {
-            factor = 0.5
-            has_trait = trait_presapient_proles 
-        }
-        modifier = {
-            factor = 1.1
-            has_trait = trait_latent_psionic
-        } 
-        modifier = {
-            factor = 1.2
-            has_trait = trait_psionic
-        } 
-        modifier = {
-            factor = 0.7
-            has_trait = trait_enigmatic_intelligence_failed
-        } 
-        modifier = {
-            factor = 1.05
-            has_trait = trait_enigmatic_intelligence_poor
-        }
+		factor = 1.5
+			has_trait = trait_brainslug
+		}
+		modifier = {
+			factor = 1.05
+			has_trait = trait_presapient_natural_intellectuals
+		} 
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_trait = trait_robot_logic_engines
+				has_trait = trait_intelligent
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_presapient_proles 
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_latent_psionic
+		} 
+		modifier = {
+			factor = 1.2
+			has_trait = trait_psionic
+		} 
+		modifier = {
+			factor = 0.7
+			has_trait = trait_enigmatic_intelligence_failed
+		} 
+		modifier = {
+			factor = 1.05
+			has_trait = trait_enigmatic_intelligence_poor
+		}
 		modifier = {
 			factor = 1.5
 			has_trait = trait_natural_sociologists
@@ -1012,7 +1097,7 @@ healthcare = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.8
 			has_trait = trait_repugnant
 		}		
 		modifier = {

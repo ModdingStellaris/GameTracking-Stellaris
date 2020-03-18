@@ -4413,16 +4413,25 @@ country_event = {
 	trigger = {
 		FROM = { is_country_type = primitive }
 		is_country_type = default
-		is_gestalt = no
 	}
 	
 	immediate = {
-		FROMFROM = {
-			add_modifier = {
-				modifier = planet_culture_shock
-				years = 10
+		if = {
+				limit = {
+					is_regular_empire = yes
+				}
+			FROMFROM = {
+				add_modifier = {
+					modifier = planet_culture_shock
+					years = 10
+				}
+				set_owner = ROOT
 			}
-			set_owner = ROOT
+		}
+		else = {
+			FROMFROM = {
+				set_owner = ROOT
+			}
 		}
 
 		every_country = {
@@ -4712,33 +4721,36 @@ country_event = {
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_materialist
 				has_authority = auth_machine_intelligence
+				has_authority = auth_hive_mind
 			}
 		}
 	}
 	option = {
+		name = action.14.a 
+		trigger = {
+			has_authority = auth_hive_mind
+		}
+	}
+	option = {
 		name = action.14.a.serv 
-		custom_tooltip = action.14.a.tooltip
 		trigger = {
 			has_civic = civic_machine_servitor
 		}
 	}
 	option = {
 		name = action.14.a.assim 
-		custom_tooltip = action.14.a.tooltip
 		trigger = {
 			has_civic = civic_machine_assimilator
 		}
 	}
 	option = {
 		name = action.14.a.term 
-		custom_tooltip = action.14.a.tooltip
 		trigger = {
 			has_civic = civic_machine_terminator
 		}
 	}
 	option = {
 		name = action.14.a.mach 
-		custom_tooltip = action.14.a.tooltip
 		trigger = {
 			has_authority = auth_machine_intelligence
 			NOR = {
@@ -7380,6 +7392,7 @@ event = {
 	trigger = {
 		any_playable_country = {
 			any_owned_planet = {
+				is_controlled_by = PREV
 				solar_system = {
 					NOT = {
 						exists = starbase

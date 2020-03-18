@@ -40,4 +40,4 @@
  CRYOPOD_OPENING_PROJECT:0 "把它打开"
  CRYOPOD_OPENING_PROJECT_DESC:0 "我们发现的地下宝库里只有一些容器。想一探究竟的话，先要想办法把它打开。"
  ANCIENT_OCEAN_SHIP:0 "沉没的巡洋舰"
- ANCIENT_OCEAN_SHIP_DESC:0 "一艘外星巡洋舰沉没在[Root.GetName]。或许能从其中回收一些有价值的科技或者资源。"
+ ANCIENT_OCEAN_SHIP_DESC:0 "一艘外星巡洋舰沉没在 [Root.GetName] 。或许能从其中回收一些有价值的科技或者资源。"

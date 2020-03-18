@@ -113,6 +113,14 @@ technician = {
 		produces = {
 			energy = 4
 		}
+		produces = {
+			trigger = { 
+				owner = {
+					is_robot_empire = yes
+				}
+			}
+			energy = 2
+		}
 	}	
 
 	weight = {
@@ -481,6 +489,14 @@ farmer = {
 		produces = {
 			food = 6
 		}
+		produces = {
+			trigger = { 
+				owner = {
+					is_robot_empire = yes
+				}
+			}
+			food = -1
+		}
 	}	
 	
 	triggered_planet_modifier = {
@@ -604,7 +620,7 @@ soldier = {
 			trigger = { 
 				owner = { has_valid_civic = civic_citizen_service }
 			}
-			unity = 1
+			unity = 2
 		}
 	}
 	
@@ -660,7 +676,11 @@ soldier = {
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}		
+		}
+		modifier = {
+			factor = 0
+			can_be_soldier = no
+		}
 	}
 }
 
@@ -744,7 +764,7 @@ preacher = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.8
 			has_trait = trait_repugnant
 		}
 		modifier = {

@@ -245,10 +245,24 @@ time_loop_world_system = {
 		orbit_distance = 0
 		class = pc_desert
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 10 max = 15 }
+		size = { min = 17 max = 20 }
 		deposit_blockers = none
 		anomaly = time_loop_world
 		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_searing_desert
+			add_deposit = d_searing_desert
+			add_deposit = d_searing_desert
+			add_deposit = d_rushing_waterfalls
+			add_deposit = d_arid_highlands
+			add_deposit = d_tempestous_mountain
+			add_deposit = d_ore_rich_caverns
+			add_deposit = d_ore_rich_caverns
+			add_deposit = d_submerged_ore_veins
+			add_deposit = d_great_river
+			add_deposit = d_great_river
+			add_deposit = d_black_soil
+			add_deposit = d_dust_desert
 			set_planet_flag = time_loop_world
 			save_global_event_target_as = time_loop_world
 			change_pc = {

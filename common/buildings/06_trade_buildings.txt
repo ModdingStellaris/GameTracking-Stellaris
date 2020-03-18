@@ -14,6 +14,10 @@ building_commercial_zone = {
 		NOT = { has_modifier = slave_colony }
 	}
 	
+	destroy_trigger = {
+		owner = { is_regular_empire = no }
+	}
+	
 	planet_modifier = {
 		job_clerk_add = 5
 	}
@@ -55,6 +59,26 @@ building_commercial_zone = {
 					value < 10
 				}
 			}
+			free_amenities < 2
+		}
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				num_buildings = { type = building_commercial_zone value >= 2 }
+				num_buildings = { type = building_commercial_megaplex value >= 0 }
+			}
 		}
 	}
 
@@ -76,6 +100,10 @@ building_commercial_megaplex = {
 		exists = owner
 		owner = { is_regular_empire = yes }
 		NOT = { has_modifier = slave_colony }
+	}
+	
+	destroy_trigger = {
+		owner = { is_regular_empire = no }
 	}
 	
 	planet_modifier = {
@@ -112,6 +140,18 @@ building_commercial_megaplex = {
 	
 	ai_weight = {
 		weight = 10
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 5
+			}
+		}
 	}
 
 	ai_resource_production = {
@@ -131,6 +171,10 @@ building_galactic_stock_exchange = {
 	potential = {
 		NOT = { has_modifier = resort_colony }	
 		NOT = { has_modifier = slave_colony }
+	}
+	
+	destroy_trigger = {
+		owner = { is_regular_empire = no }
 	}
 	
 	allow = {
@@ -162,6 +206,18 @@ building_galactic_stock_exchange = {
 	
 	ai_weight = {
 		weight = 10
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 
 	ai_resource_production = {

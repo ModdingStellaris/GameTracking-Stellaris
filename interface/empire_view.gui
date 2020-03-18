@@ -291,7 +291,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = "STATUS"
 			position = { x = 13 y = 92 }
-			maxWidth = 180
+			maxWidth = 140
 			maxHeight = 40
 			fixedSize = yes
 			format = left

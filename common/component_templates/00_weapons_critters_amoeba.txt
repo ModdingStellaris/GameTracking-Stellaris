@@ -68,7 +68,7 @@ strike_craft_component_template = {
 	regeneration_per_day = @regen
 	launch_time = 1.5
 	
-	damage = { min = 16 max = 26 }
+	damage = { min = 20 max = 30 }
 	cooldown = 5
 	range = 10
 	accuracy = 0.70
@@ -79,8 +79,8 @@ strike_craft_component_template = {
 	shield = 0
 	evasion = 0.50
 	
-	speed = 300
-	rotation_speed = 0.1
+	speed = 350
+	rotation_speed = 0.3
 	acceleration = 0.5
 	
 	shield_damage = 1.0

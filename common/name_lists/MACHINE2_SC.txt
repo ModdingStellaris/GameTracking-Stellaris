@@ -40,6 +40,10 @@ MACHINE2 = {
 		colonizer = { 
 			"移民航母"
 		}
+
+		sponsored_colonizer = { 
+			"移民航母"
+		}
 		
 		constructor = { 
 			#"Voidborne Constructor"

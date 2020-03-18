@@ -35,6 +35,10 @@ AVI4 = {
 		colonizer = {
 			"Breezeblown Enakk" "Gusty Laiu" "Diamond Qaquik" "Gliding Rrao" "Blue Noru" "Darkling Mimru" "Wandering Blackbird" "Cackling Occu" "Swiftwing Darter" "Stormy Nerit" "Blushing Songbird" "Cloudsong Darter" "Leafy Warbler" "Fairy Worui" "Flitting Kral" "Laughing Lapu" "Fluttering Petrel" "Perching Lyrak" "Broadwing Rostru" "Singing Gau" "Black Sirix"
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			"Breezeblown Enakk" "Gusty Laiu" "Diamond Qaquik" "Gliding Rrao" "Blue Noru" "Darkling Mimru" "Wandering Blackbird" "Cackling Occu" "Swiftwing Darter" "Stormy Nerit" "Blushing Songbird" "Cloudsong Darter" "Leafy Warbler" "Fairy Worui" "Flitting Kral" "Laughing Lapu" "Fluttering Petrel" "Perching Lyrak" "Broadwing Rostru" "Singing Gau" "Black Sirix"
+		}
 		
 		science = {
 			"Breezeblown Enakk" "Gusty Laiu" "Diamond Qaquik" "Gliding Rrao" "Blue Noru" "Darkling Mimru" "Wandering Blackbird" "Cackling Occu" "Swiftwing Darter" "Stormy Nerit" "Blushing Songbird" "Cloudsong Darter" "Leafy Warbler" "Fairy Worui" "Flitting Kral" "Laughing Lapu" "Fluttering Petrel" "Perching Lyrak" "Broadwing Rostru" "Singing Gau" "Black Sirix"

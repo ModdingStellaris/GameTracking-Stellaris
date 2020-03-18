@@ -18,6 +18,13 @@ building_autochthon_monument = {
 			is_megacorp = no
 		}					
 	}
+	
+	convert_to = {
+		building_temple
+		building_hive_node
+		building_uplink_node
+		building_corporate_monument
+	}
 
 	resources = {
 		category = planet_buildings
@@ -53,6 +60,19 @@ building_autochthon_monument = {
 
 	ai_weight = {
 		factor = 2
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -74,6 +94,13 @@ building_heritage_site = {
 	
 	allow = {
 		has_upgraded_capital = yes
+	}
+	
+	convert_to = {
+		building_holotemple
+		building_network_junction
+		building_hive_cluster
+		building_corporate_site
 	}
 	
 	resources = {
@@ -110,6 +137,19 @@ building_heritage_site = {
 
 	ai_weight = {
 		factor = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}	
 }
 
@@ -131,6 +171,13 @@ building_hypercomms_forum = {
 	
 	allow = {
 		has_major_upgraded_capital = yes
+	}
+	
+	convert_to = {
+		building_sacred_nexus
+		building_hive_confluence
+		building_system_conflux
+		building_corporate_forum
 	}
 
 	resources = {
@@ -169,6 +216,19 @@ building_hypercomms_forum = {
 
 	ai_weight = {
 		factor = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
 	}	
 }
 
@@ -190,6 +250,16 @@ building_autocurating_vault = {
 
 	allow = {
 		has_fully_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		owner = { 
+			OR = {
+				is_gestalt = yes
+				is_spiritualist = yes
+				is_megacorp = yes
+			}
+		}
 	}
 
 	resources = {
@@ -225,6 +295,19 @@ building_autocurating_vault = {
 
 	ai_weight = {
 		factor = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
 	}	
 }
 
@@ -238,6 +321,13 @@ building_temple = {
 	potential = {
 		owner = { is_spiritualist = yes }
 		NOT = { has_modifier = slave_colony }
+	}
+	
+	convert_to = {
+		building_hive_node
+		building_uplink_node
+		building_autochthon_monument
+		building_corporate_monument
 	}
 	
 	planet_modifier = {
@@ -273,6 +363,19 @@ building_temple = {
 
 	ai_weight = {
 		weight = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -289,6 +392,14 @@ building_holotemple = {
 	
 	allow = {
 		has_upgraded_capital = yes
+	}
+	
+	convert_to = {
+		
+		building_network_junction
+		building_hive_cluster
+		building_heritage_site
+		building_corporate_site
 	}
 	
 	planet_modifier = {
@@ -320,6 +431,19 @@ building_holotemple = {
 
 	ai_weight = {
 		weight = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -340,7 +464,10 @@ building_sacred_nexus = {
 	}
 	
 	convert_to = {
+		building_hive_confluence
+		building_system_conflux
 		building_hypercomms_forum
+		building_corporate_forum
 	}
 	
 	planet_modifier = {
@@ -374,6 +501,19 @@ building_sacred_nexus = {
 
 	ai_weight = {
 		weight = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
 	}
 }
 
@@ -390,6 +530,10 @@ building_citadel_of_faith = {
 
 	allow = {
 		has_fully_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		owner = { is_spiritualist = no }
 	}
 	
 	planet_modifier = {
@@ -419,6 +563,19 @@ building_citadel_of_faith = {
 
 	ai_weight = {
 		weight = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
 	}
 }
 
@@ -434,6 +591,13 @@ building_hive_node = {
 		owner = { 
 			is_hive_empire = yes
 		}					
+	}
+	
+	convert_to = {
+		building_temple
+		building_uplink_node
+		building_autochthon_monument
+		building_corporate_monument
 	}
 
 	resources = {
@@ -476,6 +640,19 @@ building_hive_node = {
 
 	ai_weight = {
 		factor = 2
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -494,6 +671,13 @@ building_hive_cluster = {
 	
 	allow = {
 		has_upgraded_capital = yes
+	}
+	
+	convert_to = {
+		building_holotemple
+		building_network_junction
+		building_heritage_site
+		building_corporate_site
 	}
 
 	resources = {
@@ -536,6 +720,19 @@ building_hive_cluster = {
 
 	ai_weight = {
 		factor = 2
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -554,6 +751,13 @@ building_hive_confluence = {
 	
 	allow = {
 		has_major_upgraded_capital = yes
+	}
+	
+	convert_to = {
+		building_sacred_nexus
+		building_system_conflux
+		building_hypercomms_forum
+		building_corporate_forum
 	}
 
 	resources = {
@@ -594,6 +798,19 @@ building_hive_confluence = {
 
 	ai_weight = {
 		factor = 2
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
 	}
 }
 
@@ -611,6 +828,13 @@ building_uplink_node = {
 			is_machine_empire = yes
 			NOT = { has_valid_civic = civic_machine_servitor }
 		}					
+	}
+	
+	convert_to = {
+		building_temple
+		building_hive_node
+		building_autochthon_monument
+		building_corporate_monument
 	}
 
 	resources = {
@@ -646,6 +870,19 @@ building_uplink_node = {
 
 	ai_weight = {
 		factor = 2
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -666,6 +903,13 @@ building_network_junction = {
 	
 	allow = {
 		has_upgraded_capital = yes
+	}
+	
+	convert_to = {
+		building_holotemple
+		building_hive_cluster
+		building_heritage_site
+		building_corporate_site
 	}
 
 	resources = {
@@ -700,6 +944,19 @@ building_network_junction = {
 
 	ai_weight = {
 		factor = 2
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -720,6 +977,13 @@ building_system_conflux = {
 	
 	allow = {
 		has_major_upgraded_capital = yes
+	}
+	
+	convert_to = {
+		building_sacred_nexus
+		building_hive_confluence
+		building_hypercomms_forum
+		building_corporate_forum
 	}
 
 	resources = {
@@ -756,6 +1020,19 @@ building_system_conflux = {
 
 	ai_weight = {
 		factor = 2
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
 	}
 }
 
@@ -780,6 +1057,15 @@ building_alpha_hub = {
 	
 	allow = {
 		has_fully_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		owner = { 
+			OR = {
+				is_machine_empire = no
+				has_valid_civic = civic_machine_servitor
+			}
+		}
 	}
 	
 	resources = {
@@ -812,6 +1098,19 @@ building_alpha_hub = {
 
 	ai_weight = {
 		factor = 2
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
 	}
 }
 
@@ -855,6 +1154,14 @@ building_organic_sanctuary = {
 		modifier = {
 			factor = 3
 			free_housing < 0
+		}
+		
+		modifier = {
+			factor = 10
+			any_pop = {
+				has_living_standard = { type = living_standard_organic_trophy }
+				is_unemployed = yes 
+			}
 		}
 
 		modifier = 
@@ -909,7 +1216,13 @@ building_organic_paradise = {
 			factor = 3
 			free_housing < 0
 		}
-
+		modifier = {
+			factor = 10
+			any_pop = {
+				has_living_standard = { type = living_standard_organic_trophy }
+				is_unemployed = yes 
+			}
+		}
 		modifier = 
 		{
 			factor = 3
@@ -934,6 +1247,13 @@ building_corporate_monument = {
 			is_megacorp = yes
 			is_spiritualist = no
 		}
+	}
+	
+	convert_to = {
+		building_temple
+		building_hive_node
+		building_uplink_node
+		building_autochthon_monument
 	}
 
 	resources = {
@@ -968,6 +1288,19 @@ building_corporate_monument = {
 
 	ai_weight = {
 		factor = 2
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -988,6 +1321,13 @@ building_corporate_site = {
 	
 	allow = {
 		has_upgraded_capital = yes
+	}
+	
+	convert_to = {
+		building_holotemple
+		building_hive_cluster
+		building_heritage_site
+		building_network_junction
 	}
 	
 	resources = {
@@ -1022,6 +1362,19 @@ building_corporate_site = {
 
 	ai_weight = {
 		factor = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}	
 }
 
@@ -1042,6 +1395,13 @@ building_corporate_forum = {
 	
 	allow = {
 		has_major_upgraded_capital = yes
+	}
+	
+	convert_to = {
+		building_sacred_nexus
+		building_hive_confluence
+		building_hypercomms_forum
+		building_system_conflux
 	}
 
 	resources = {
@@ -1078,6 +1438,19 @@ building_corporate_forum = {
 
 	ai_weight = {
 		factor = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
 	}	
 }
 
@@ -1099,6 +1472,12 @@ building_corporate_vault = {
 	allow = {
 		has_fully_upgraded_capital = yes
 	}
+	
+	destroy_trigger = {
+		owner = { 
+			is_megacorp = no
+		}
+	} 
 
 	resources = {
 		category = planet_buildings 
@@ -1131,5 +1510,18 @@ building_corporate_vault = {
 
 	ai_weight = {
 		factor = 1
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
+			}
+		}
 	}	
 }

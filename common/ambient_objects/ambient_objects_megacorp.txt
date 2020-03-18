@@ -1,6 +1,6 @@
 # Galactic Market Station
 ambient_object = {
-	name = galactic_market_station
+	name = "galactic_market_station"
 	entity = "sensor_station_01_entity"
 	selectable = yes
 	show_name = yes

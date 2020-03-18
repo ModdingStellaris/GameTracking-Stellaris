@@ -88,9 +88,36 @@ building_hydroponics_farm = {
 				}
 				has_monthly_income = {
 					resource = energy
-					value < 2
+					value < 5
 				}
 			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				is_mechanical_empire = yes
+				NOR = {
+					has_civic = civic_machine_servitor
+					has_civic = civic_machine_assimilator
+				}
+			}
+		}
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_hydroponics_farm value >= 2 }
 		}
 	}
 
@@ -183,6 +210,48 @@ building_food_processing_facility = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					is_mechanical_empire = no
+					AND = {
+						is_mechanical_empire = yes
+						OR = {
+							has_civic = civic_machine_servitor
+							has_civic = civic_machine_assimilator
+						}
+					}
+				}
+				has_monthly_income = {
+					resource = energy
+					value < 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				is_mechanical_empire = yes
+				NOR = {
+					has_civic = civic_machine_servitor
+					has_civic = civic_machine_assimilator
+				}
+			}
+		}
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 
 	ai_resource_production = {
@@ -270,6 +339,48 @@ building_food_processing_center = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					is_mechanical_empire = no
+					AND = {
+						is_mechanical_empire = yes
+						OR = {
+							has_civic = civic_machine_servitor
+							has_civic = civic_machine_assimilator
+						}
+					}
+				}
+				has_monthly_income = {
+					resource = energy
+					value < 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				is_mechanical_empire = yes
+				NOR = {
+					has_civic = civic_machine_servitor
+					has_civic = civic_machine_assimilator
+				}
+			}
+		}
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 
 	ai_resource_production = {
@@ -316,10 +427,32 @@ building_mineral_purification_plant = {
 		}
 	}
 	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_robot_empire = yes
+			}
+		}
+		modifier = {
+			district_mining_max = 2
+			planet_miners_minerals_produces_mult = 0.05
+		}
+	}
+	
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 200
+		}
+		cost = {
+			trigger = {
+				owner = { 
+					is_robot_empire = yes
+				}
+			}
+			minerals = 100
+			alloys = 100
 		}
 		upkeep = {
 			energy = 1
@@ -351,14 +484,35 @@ building_mineral_purification_plant = {
 	
 	ai_weight = {
 		weight = 2
-		modifier = 
-		{
+		modifier = {
 			factor = 5
 			owner = { 
 				has_monthly_income = {
 					resource = minerals
 					value < 5
 				}
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 5
+				}
+			}
+		}
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
 			}
 		}
 	}
@@ -405,11 +559,33 @@ building_mineral_purification_hub = {
 		}
 	}
 	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_robot_empire = yes
+			}
+		}
+		modifier = {
+			district_mining_max = 4
+			planet_miners_minerals_produces_mult = 0.05
+		}
+	}
+	
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
 			volatile_motes = 50
+		}
+		cost = {
+			trigger = {
+				owner = { 
+					is_robot_empire = yes
+				}
+			}
+			minerals = 300
+			alloys = 150
 		}
 		upkeep = {
 			energy = 1
@@ -446,6 +622,28 @@ building_mineral_purification_hub = {
 					resource = minerals
 					value < 5
 				}
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 5
+				}
+			}
+		}
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 3
 			}
 		}
 	}
@@ -501,10 +699,32 @@ building_energy_grid = {
 		}
 	}
 	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_robot_empire = yes
+			}
+		}
+		modifier = {
+			district_generator_max = 2
+			planet_technician_energy_produces_mult = 0.05
+		}
+	}
+	
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 200
+		}
+		cost = {
+			trigger = {
+				owner = { 
+					is_robot_empire = yes
+				}
+			}
+			minerals = 100
+			alloys = 100
 		}
 		upkeep = {
 			energy = 1
@@ -544,6 +764,19 @@ building_energy_grid = {
 					resource = energy
 					value < 10
 				}
+			}
+		}
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
 			}
 		}
 	}
@@ -590,11 +823,33 @@ building_energy_nexus = {
 		}
 	}
 	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_robot_empire = yes
+			}
+		}
+		modifier = {
+			district_generator_max = 4
+			planet_technician_energy_produces_mult = 0.05
+		}
+	}
+	
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = 500
 			exotic_gases = 50
+		}
+		cost = {
+			trigger = {
+				owner = { 
+					is_robot_empire = yes
+				}
+			}
+			minerals = 300
+			alloys = 150
 		}
 		upkeep = {
 			energy = 1
@@ -631,6 +886,19 @@ building_energy_nexus = {
 					resource = energy
 					value < 10
 				}
+			}
+		}
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
 			}
 		}
 	}
@@ -707,6 +975,32 @@ building_resource_silo = {
 	
 	ai_weight = {
 		weight = 2
+		modifier = {
+			factor = 0
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 5
+				}
+			}
+		}
+		# No one to work it
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1 #not really about the jobs here
+			}
+		}
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_resource_silo value >= 2 }
+		}
 	}
 }
 

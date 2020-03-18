@@ -1786,13 +1786,11 @@ ship_event = {
 				}
 				set_country_flag = tech1
 			}
-			else = {
-				if = {
-					limit = {
-						NOT = { has_technology = tech_doctrine_fleet_size_2 }
-					}
-					set_country_flag = tech2
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_doctrine_fleet_size_2 }
 				}
+				set_country_flag = tech2
 			}
 		}
 	}

@@ -2803,7 +2803,7 @@ guiTypes = {
 			origo = center
 			orientation = center
 			show_position = { x = 497 y = -17 }
-			hide_position = { x = -497 y = -86 }
+			hide_position = { x = 497 y = -17 }
 			animation_time = 0
 			animation_type = decelerated
 

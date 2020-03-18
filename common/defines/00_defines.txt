@@ -1216,14 +1216,15 @@
 		OVERCROWDING_NO_GROWTH_THRESHOLD	= 1.5	# At this amount of overcrowding, growth stops entirely
 		OVERCROWDING_DECLINE_THRESHOLD		= 2.0	# At this amount of overcrowding, pops start declining
 		
-		NEW_POP_SPECIES_RANDOMNESS			= 1.0	# The higher this is, the more random species selection of new pops will be
+		NEW_POP_SPECIES_RANDOMNESS			= 0.5	# The higher this is, the more random species selection of new pops will be
 		NEW_POP_SAME_SPECIES_WEIGHT			= 1.0	# The higher this is, the more new pops will be weighted by number of same or subspecies pops
 		NEW_POP_EXACT_SPECIES_WEIGHT		= 0.5	# The higher this is, the more new pops will be weighted by number of exact same species pops
 		NEW_POP_SLAVERY_WEIGHT				= 0.5	# The higher this is, the more new pops will tend to be balanced between enslaved and non-enslaved species
-		NEW_POP_SPECIES_DIV					= 0.5	# The higher this is, the more planets will tend to grow species that are underrepresented on the planet
-		NEW_POP_HABITABILITY_THRESHOLD		= 0.6	# If habitability is under this, apply exponentinally increasing penalties to new pop weight
+		NEW_POP_SPECIES_DIV					= 0.25	# The higher this is, the more planets will tend to grow species that are underrepresented on the planet
+		NEW_POP_HABITABILITY_THRESHOLD		= 0.5	# If habitability is under this, apply exponentially increasing penalties to new pop weight
+		NEW_POP_LOW_HABITABILITY_PENALTY	= 2		# If habitability is under current threshold, apply increasing penalties to new pop weight
 		NEW_POP_HOMEWORLD_MULT				= 2		# Pops have increased weight for growing on their homeworld
-		NEW_POP_ASSEMBLY_TRAIT_MULT			= 1		# Extra weight per trait point for assembled pops
+		NEW_POP_ASSEMBLY_TRAIT_MULT			= 2		# Extra weight per trait point for assembled pops
 		NEW_POP_GROWTH_MOD_MULT				= 0.66	# How much does species growth mod trait matter for new pop weight
 		NEW_POP_IMMIGRATION_MOD_MULT		= 1		# How much does species immigration growth mod trait matter for new pop weight (when there is immigration)
 		
@@ -1240,7 +1241,7 @@
 		MAX_GROWTH_FROM_IMMIGRATION			= 5	
 		MAX_GROWTH_PENALTY_FROM_EMIGRATION	= 0.95	# Fraction of base monthly growth
 		
-		DEFAULT_CHANGE_JOB_THRESHOLD		= 1.5		# A job must have this much higher weight in order for a pop to switch to it from their current job
+		DEFAULT_CHANGE_JOB_THRESHOLD		= 1.1		# A job must have this much higher weight in order for a pop to switch to it from their current job
 		
 		LOW_HAPPINESS 						= 0.40		# Below this happiness, show bar as red
 		HIGH_HAPPINESS 						= 0.60		# Above this happiness, show bar as green
@@ -1650,7 +1651,8 @@
 		AI_BUDGETING_MID_YEARS = 30
 		AI_BUDGETING_LATE_YEARS = 50
 	
-		BUILDING_DEMOLISH_THRESHOLD = 0		# At AI weight less than this, demolish building or district
+		BUILDING_DEMOLISH_THRESHOLD = -1	# At AI weight less than or equal to this, demolish building or district
+		BUILDING_BUILD_THRESHOLD = 1		# Ait AI weight greater than or equal to this, the AI will consider building it.
 	
 		MIN_ASSAULT_ARMIES = 10
 		MAX_ASSAULT_ARMIES = 50

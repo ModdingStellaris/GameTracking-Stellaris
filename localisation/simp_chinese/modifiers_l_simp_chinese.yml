@@ -873,7 +873,7 @@
  opinion_of_pacifist_pos:0 "开明的和平主义者"
  opinion_of_egalitarian:0 "平等主义者散民"
  opinion_of_authoritarian:0 "威权主义暴君"
- opinion_from_personality:0 "[Root.GetPersonalityName]个性"
+ opinion_from_personality:0 " [Root.GetPersonalityName] 个性"
  opinion_desecrated_holy_world:0 "被玷污的神圣星球"
  opinion_desecrated_tomb_world:0 "受渎的死寂世界"
  opinion_researching_ai:0 "研发人工智能机器人"

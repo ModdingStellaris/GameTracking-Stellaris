@@ -323,6 +323,8 @@ guiTypes = {
 				position = { x = 0 y = 7 }
 				font = "malgun_goth_24"
 				maxWidth = 280
+				maxHeight = 20
+				fixedSize = yes
 				format = center
 				text = ""
 			}
@@ -337,6 +339,8 @@ guiTypes = {
 				position = { x = 0 y = 80 }
 				font = "malgun_goth_24"
 				maxWidth = 280
+				maxHeight = 20
+				fixedSize = yes
 				format = center
 				text = ""
 			}

@@ -223,6 +223,7 @@ war_doctrine = {
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist
 				has_ethic = ethic_gestalt_consciousness
+				has_civic = civic_fanatic_purifiers
 			}	
 		}
 		

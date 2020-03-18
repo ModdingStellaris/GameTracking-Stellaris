@@ -90,6 +90,22 @@ building_research_lab_1 = {
 	
 	ai_weight = {
 		weight = 2
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_research_lab_1 value >= 2 }
+		}
 	}
 }
 
@@ -179,6 +195,18 @@ building_research_lab_2 = {
 	
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }
 
@@ -264,6 +292,18 @@ building_research_lab_3 = {
 	
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 4
+			}
+		}
 	}
 }
 
@@ -313,6 +353,18 @@ building_institute = {
 	
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 4
+			}
+		}
 	}
 }
 
@@ -394,5 +446,17 @@ building_supercomputer = {
 	
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 1
+			}
+		}
 	}
 }

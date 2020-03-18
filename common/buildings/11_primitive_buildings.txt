@@ -16,6 +16,12 @@ building_crude_huts = {
 		}
 	}
 	
+	destroy_trigger = {
+		owner = { 
+			is_primitive = no
+		}
+	}
+	
 	planet_modifier = {
 		planet_amenities_add = 5
 		planet_housing_add = 4
@@ -135,6 +141,12 @@ building_primitive_factory = {
 		}
 	}
 	
+	destroy_trigger = {
+		owner = { 
+			is_primitive = no
+		}
+	}
+	
 	planet_modifier = {
 		job_primitive_laborer_add = 2
 	}
@@ -159,6 +171,12 @@ building_primitive_mine = {
 				has_country_flag = atomic_age
 				has_country_flag = early_space_age
 			}
+		}
+	}
+	
+	destroy_trigger = {
+		owner = { 
+			is_primitive = no
 		}
 	}
 	
@@ -189,6 +207,12 @@ building_primitive_power_plant = {
 		}
 	}
 	
+	destroy_trigger = {
+		owner = { 
+			is_primitive = no
+		}
+	}
+	
 	planet_modifier = {
 		job_primitive_technician_add = 2
 	}
@@ -212,6 +236,12 @@ building_primitive_farm = {
 				has_country_flag = atomic_age
 				has_country_flag = early_space_age
 			}
+		}
+	}
+	
+	destroy_trigger = {
+		owner = { 
+			is_primitive = no
 		}
 	}
 	
@@ -240,6 +270,12 @@ building_primitive_capital = {
 				has_country_flag = early_space_age
 			}
 		}
+	}
+	
+	convert_to = {
+		building_machine_capital
+		building_capital
+		building_hive_capital
 	}
 	
 	planet_modifier = {
@@ -272,6 +308,12 @@ building_urban_dwellings = {
 				has_country_flag = atomic_age
 				has_country_flag = early_space_age
 			}
+		}
+	}
+	
+	destroy_trigger = {
+		owner = { 
+			is_primitive = no
 		}
 	}
 	

@@ -4,17 +4,18 @@
 
 entity = {
 	name = "pirate_01_turret_energy_torpedo_entity"
-	pdxmesh = "pirate_01_turret_missile_large_mesh"
+	pdxmesh = "pirate_02_turret_missile_large_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
 	}
 	scale = 1.5	# Fixed
+	
 }
 
 entity = {
 	name = "pirate_01_turret_torpedo_entity"
-	pdxmesh = "pirate_01_turret_missile_medium_mesh"
+	pdxmesh = "pirate_02_turret_missile_medium_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
@@ -27,32 +28,59 @@ entity = {
 
 entity = {
 	name = "pirate_01_turret_missile_large_entity"
-	pdxmesh = "pirate_01_turret_missile_large_mesh"
+	pdxmesh = "pirate_02_turret_missile_large_mesh"
+	
+		meshsettings = {
+			name = "pirate_02_turret_missile_largeShape"
+			index = 0
+			texture_diffuse = "pirate_turret_set02_diffuse.dds"
+			texture_normal = "pirate_turret_set02_normal.dds"
+			texture_specular = "pirate_turret_set02_specular.dds"
+			shader = "PdxMeshShip"
+		}
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
 	}
-	scale = 0.55 # Fixed
+	scale = 1 # Fixed
 }
 
 entity = {
 	name = "pirate_01_turret_missile_medium_entity"
-	pdxmesh = "pirate_01_turret_missile_medium_mesh"
+	pdxmesh = "pirate_02_turret_missile_medium_mesh"
+	
+			meshsettings = {
+			name = "pirate_02_turret_missile_mediumShape"
+			index = 0
+			texture_diffuse = "pirate_turret_set02_diffuse.dds"
+			texture_normal = "pirate_turret_set02_normal.dds"
+			texture_specular = "pirate_turret_set02_specular.dds"
+			shader = "PdxMeshShip"
+		}
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
 	}
-	scale = 1.5	# Fixed
+	scale = 1	# Fixed
 }
 
 entity = {
 	name = "pirate_01_turret_missile_small_entity"
-	pdxmesh = "pirate_01_turret_missile_small_mesh"
+	pdxmesh = "pirate_02_turret_missile_small_mesh"
+	
+		meshsettings = {
+			name = "pirate_02_turret_missile_smallShape"
+			index = 0
+			texture_diffuse = "pirate_turret_set02_diffuse.dds"
+			texture_normal = "pirate_turret_set02_normal.dds"
+			texture_specular = "pirate_turret_set02_specular.dds"
+			shader = "PdxMeshShip"
+		}
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
 	}
-	scale = 1.9 # Fixed
+	scale = 1 # Fixed
 }
 
 
@@ -60,32 +88,32 @@ entity = {
 
 entity = {
 	name = "pirate_01_large_kinetic_gun_entity"
-	pdxmesh = "pirate_01_turret_projectile_large_mesh"
+	pdxmesh = "pirate_02_turret_projectile_large_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
 	}
-	scale = 0.55	# Fixed
+	scale = 1	# Fixed
 }
 
 entity = {
 	name = "pirate_01_medium_kinetic_gun_entity"
-	pdxmesh = "pirate_01_turret_projectile_medium_mesh"
+	pdxmesh = "pirate_02_turret_projectile_medium_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
 	}
-	scale = 1.5		# Fixed
+	scale = 1		# Fixed
 }
 
 entity = {
 	name = "pirate_01_small_kinetic_gun_entity"
-	pdxmesh = "pirate_01_turret_projectile_small_mesh"
+	pdxmesh = "pirate_02_turret_projectile_small_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
 	}
-	scale = 1.9 	# Fixed
+	scale = 1 	# Fixed
 }
 
 
@@ -93,7 +121,7 @@ entity = {
 
 entity = {
 	name = "pirate_01_turret_point_defence_entity"
-	pdxmesh = "pirate_01_turret_point_defence_mesh"
+	pdxmesh = "pirate_02_turret_projectile_small_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
@@ -106,7 +134,7 @@ entity = {
 
 entity = {
 	name = "pirate_01_large_laser_gun_entity"
-	pdxmesh = "pirate_01_turret_projectile_large_mesh"
+	pdxmesh = "pirate_02_turret_projectile_large_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
@@ -115,7 +143,7 @@ entity = {
 }
 entity = {
 	name = "pirate_01_medium_laser_gun_entity"
-	pdxmesh = "pirate_01_turret_projectile_medium_mesh"
+	pdxmesh = "pirate_02_turret_projectile_medium_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"
@@ -124,7 +152,7 @@ entity = {
 }
 entity = {
 	name = "pirate_01_small_laser_gun_entity"
-	pdxmesh = "pirate_01_turret_projectile_small_mesh"
+	pdxmesh = "pirate_02_turret_projectile_small_mesh"
 	
 	state = { name = "idle"	}
 	state = { name = "attack" looping = no next_state = "idle"

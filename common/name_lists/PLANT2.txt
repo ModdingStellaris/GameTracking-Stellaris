@@ -38,6 +38,10 @@ PLANT2 = {
 		colonizer = { 
 			Twig Undulator Whorler Petiole 
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			Twig Undulator Whorler Petiole 
+		}
 		
 		constructor = { 
 			"Green Crenator" "Rust Crenator" "Golden Crenator"

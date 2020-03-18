@@ -15,6 +15,12 @@ building_junkheap = {
 		NOT = { has_modifier = slave_colony }
 	}
 	
+	convert_to = {
+		building_machine_capital
+		building_capital
+		building_hive_capital
+	}
+	
 	planet_modifier = {
 		planet_housing_add = 15
 		planet_amenities_add = 20
@@ -117,7 +123,15 @@ building_artist_patron = {
 
 	triggered_planet_modifier = {
 		potential = {
-			owner = { has_ethic = ethic_gestalt_consciousness }
+			owner = { is_hive_empire = yes }
+		}
+		planet_jobs_unity_produces_mult = 0.15
+		job_synapse_drone_add = 3
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_machine_empire = yes }
 		}
 		planet_jobs_unity_produces_mult = 0.15
 		job_coordinator_add = 3
@@ -158,6 +172,22 @@ building_artist_patron = {
 	on_destroy = {
 		owner = { remove_country_flag = built_one_ministry }
 	}
+	
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
+	}
 }
 
 building_waste_reprocessing_center = {
@@ -170,6 +200,12 @@ building_waste_reprocessing_center = {
 	potential = {
 		owner = { has_country_flag = bought_waste_reprocessing_center }
 		NOT = { has_modifier = slave_colony }
+	}
+	
+	destroy_trigger = {
+		owner = {
+			is_gestalt = no
+		}
 	}
 
 	planet_modifier = {
@@ -191,6 +227,22 @@ building_waste_reprocessing_center = {
 	triggered_desc = {
 		text = job_technician_drone_effect_desc
 	}
+	
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
+	}
 }
 
 building_nuumismatic_shrine = {
@@ -201,6 +253,12 @@ building_nuumismatic_shrine = {
 	potential = {
 		owner = { has_country_flag = nuumismatic_shrine }
 		NOT = { has_modifier = slave_colony }
+	}
+	
+	destroy_trigger = {
+		owner = {
+			is_regular_empire = no
+		}
 	}
 	
 	planet_modifier = {
@@ -217,5 +275,21 @@ building_nuumismatic_shrine = {
 	}
 	triggered_desc = {
 		text = job_merchant_effect_desc
+	}
+	
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			count_owned_pops = { 
+				limit = { 
+					OR = { 
+						is_unemployed = yes 
+						has_job = servant 
+					}
+				}
+				count < 2
+			}
+		}
 	}
 }

@@ -590,7 +590,7 @@ country_event = {
 		text = story.8.desc.followup7
 	}
 	desc = {
-		trigger = { has_authority = auth_machine_intelligence }
+		exclusive_trigger = { has_authority = auth_machine_intelligence }
 		text = story.8.desc.mach
 	}
 	# Spiritualist

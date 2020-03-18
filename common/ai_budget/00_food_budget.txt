@@ -38,6 +38,7 @@ food_expenditure_colonies_expand = {
 	category = colonies
 	
 	potential = {
+		is_machine_empire = no
 		ai_colonize_plans > 0
 		has_resource = { type = food amount > 400 }
 		has_monthly_income = {

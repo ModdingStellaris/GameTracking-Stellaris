@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "pirate_02_turret_projectile_medium_mesh"
+		file = "gfx/models/ships/pirate_01/pirate_02_turret_projectile_medium.mesh"
+
+		meshsettings = {
+			name = "pirate_02_turret_projectile_mediumShape"
+			index = 0
+			texture_diffuse = "pirate_turret_set02_diffuse.dds"
+			texture_normal = "pirate_turret_set02_normal.dds"
+			texture_specular = "pirate_turret_set02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -630,7 +630,7 @@ planet_event = {
 		has_modifier = "asteroid_impacts"
 		num_pops > 1
 		is_capital = no
-		NOT = { 
+		NOR = { 
 			has_modifier = "recent_impact"
 			has_deposit = d_impact_crater
 		}

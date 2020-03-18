@@ -1503,7 +1503,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		fromfromfrom.space_owner = {
+		from.from.from.space_owner = {
 			country_event = { id = story.7 }
 		}
 	}
@@ -4955,6 +4955,45 @@ planet_event = {
 					progress = 0.75
 				}
 			}
+		}
+	}
+}
+
+# comms on entering caravansary home system
+fleet_event = {
+	id = cara.4170
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_megacorp = yes
+		exists = event_target:caravaneer_home_country
+		owner = {
+			NOT = {
+				has_communications = event_target:caravaneer_home_country
+			}
+		}
+		exists = event_target:caravaneer_home_system
+		from = { is_same_value = event_target:caravaneer_home_system }
+	}
+
+	immediate = {
+		owner = {
+			establish_communications_no_message = event_target:caravaneer_home_country
+			if = {
+				limit = { exists = event_target:caravaneer_fleet1_country }
+				establish_communications_no_message = event_target:caravaneer_fleet1_country
+			}
+			if = {
+				limit = { exists = event_target:caravaneer_fleet2_country }
+				establish_communications_no_message = event_target:caravaneer_fleet2_country
+			}
+			if = {
+				limit = { exists = event_target:caravaneer_fleet3_country }
+				establish_communications_no_message = event_target:caravaneer_fleet3_country
+			}
+			country_event = { id = story.7 days = 5 }
 		}
 	}
 }

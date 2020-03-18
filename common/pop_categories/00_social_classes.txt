@@ -192,7 +192,7 @@ specialist = {
 	keep_from_former_job = yes
 	demotion_time = 1800
 	
-	change_job_threshold = 1.5
+	change_job_threshold = 1.25
 	
 	should_apply_unemployment_penalties = {
 		NOR = {
@@ -416,7 +416,7 @@ worker = {
 	rank = 1
 	clothes_texture_index = 2
 	
-	change_job_threshold = 1.5
+	change_job_threshold = 1.1
 	
 	triggered_planet_modifier = {
 		potential = {

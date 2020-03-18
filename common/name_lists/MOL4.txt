@@ -38,6 +38,10 @@ MOL4 = {
 		colonizer = {
 			"Swift Seahorse" "Cephalos" "Drifting Crab" "Splashing Sailfish" "Salty Squid" "Sneaking Shrimp" "Hydrozoan" "Ctenophore" "Mesoglea" "Mischievous Mussel" "Aeolid" "Cerata" "Crafty Cuttlefish" "Silver Starfish" "Cetacean" "Cunning Krill" "Nimble Nautilus" "Sea Hare" "Ornery Oyster" "Sailing Seabird" "Cautious Crayfish" "Playful Prawn" "Goldfin" "Blue Fin" "Drifting Coracle" "Bow Chaser" "Bow Rider" "Nimble Carrack" "Waternymph" "Clever Clam" "Waveskimmer" "Longshore Drifter" "Starsurfer" "Voidsailor"
 		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			"Swift Seahorse" "Cephalos" "Drifting Crab" "Splashing Sailfish" "Salty Squid" "Sneaking Shrimp" "Hydrozoan" "Ctenophore" "Mesoglea" "Mischievous Mussel" "Aeolid" "Cerata" "Crafty Cuttlefish" "Silver Starfish" "Cetacean" "Cunning Krill" "Nimble Nautilus" "Sea Hare" "Ornery Oyster" "Sailing Seabird" "Cautious Crayfish" "Playful Prawn" "Goldfin" "Blue Fin" "Drifting Coracle" "Bow Chaser" "Bow Rider" "Nimble Carrack" "Waternymph" "Clever Clam" "Waveskimmer" "Longshore Drifter" "Starsurfer" "Voidsailor"
+		}
 		
 		constructor = {
 			"Swift Seahorse" "Cephalos" "Drifting Crab" "Splashing Sailfish" "Salty Squid" "Sneaking Shrimp" "Hydrozoan" "Ctenophore" "Mesoglea" "Mischievous Mussel" "Aeolid" "Cerata" "Crafty Cuttlefish" "Silver Starfish" "Cetacean" "Cunning Krill" "Nimble Nautilus" "Sea Hare" "Ornery Oyster" "Sailing Seabird" "Cautious Crayfish" "Playful Prawn" "Goldfin" "Blue Fin" "Drifting Coracle" "Bow Chaser" "Bow Rider" "Nimble Carrack" "Waternymph" "Clever Clam" "Waveskimmer" "Longshore Drifter" "Starsurfer"
