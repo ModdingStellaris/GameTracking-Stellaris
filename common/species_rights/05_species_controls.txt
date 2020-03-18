@@ -144,8 +144,8 @@ colonization_control_yes = {
 				OR = {
 					has_citizenship_type = { country = from type = citizenship_purge }
 					has_citizenship_type = { country = from type = citizenship_purge_machine }
-					has_citizenship_type = { type = citizenship_slavery }
-					has_citizenship_type = { type = citizenship_robot_servitude }
+					has_citizenship_type = { country = from type = citizenship_slavery }
+					has_citizenship_type = { country = from type = citizenship_robot_servitude }
 				}
 			}
 			always = yes

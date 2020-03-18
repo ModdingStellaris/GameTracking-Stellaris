@@ -1096,8 +1096,8 @@ can_force_decline_on_planet = {
 # Root = country
 can_force_decline_species = {
 	OR = {
-		has_citizenship_type = { type = citizenship_slavery }
-		has_citizenship_type = { type = citizenship_robot_servitude }
+		has_citizenship_type = { country = root type = citizenship_slavery }
+		has_citizenship_type = { country = root type = citizenship_robot_servitude }
 	}
 }
 

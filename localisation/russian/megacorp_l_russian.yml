@@ -3662,3 +3662,6 @@
  nanites_deficit:0 "Дефицит нанитов"
  nanites_deficit_tooltip:0 "Недостаток нанитов препятствует нанитовому преобразованию."
   mod_pop_factions_produces_mult:0 "Прирост влияния от фракций"
+ job_crisis_purge:0 "$job_purge$"
+ job_crisis_purge_plural:0 "$job_purge_plural$"
+ job_crisis_purge_desc:0 "$job_purge_desc$"

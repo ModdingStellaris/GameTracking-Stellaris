@@ -3645,3 +3645,6 @@
  AVAILABLE_JOBS:0 "£job£ Dostępne miejsca pracy: $COUNT|Y$"
  nanites_deficit:0 "Deficyt nanitów"
  nanites_deficit_tooltip:0 "Brak nanitów zatrzymał transmutację nanitową."
+ job_crisis_purge:0 "$job_purge$"
+ job_crisis_purge_plural:0 "$job_purge_plural$"
+ job_crisis_purge_desc:0 "$job_purge_desc$"
