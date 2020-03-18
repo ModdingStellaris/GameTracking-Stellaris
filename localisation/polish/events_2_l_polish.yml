@@ -305,7 +305,7 @@
  anomaly.270.name:0 "To się wyklepie"
  anomaly.270.desc:0 "O ile zbadany krater jest zapewne śladem po zwykłym uderzeniu meteorytu, o tyle złożone wzory w powstałym wgłębieniu pochodzą z późniejszego czasu.\n\nOficer naukowy [Root.GetLeaderName] twierdzi, że są one wynikiem nie uderzenia w planetę, a zderzenia - kolizji między asteroidą [From.GetName] a jakąś nieokreśloną instalacją orbitalną lub statkiem kosmitów."
  anomaly.270.a:0 "Dziwne."
- anomaly.270.a.tooltip:0 "[From.GetName] dostaje modyfikator §Yscalaki w pyle§!:\n£engineering£ §G+9§!"
+ anomaly.270.a.tooltip:2 "[From.GetName] otrzymuje modyfikator §Yscalaki w pyle§!:\n£engineering£ §G+3§!"
  anomaly.275.name:0 "Porzucone silniki"
  anomaly.275.desc:0 "W środku szczególnie wielkiego krateru na asteroidzie [From.GetName] znajduje się skupisko metalowych elementów, niewątpliwie stworzone przez kosmitów.\n\nOficer naukowy [Root.GetLeaderName] żywi przekonanie, że są to wielkie urządzenia napędowe, które miały zepchnąć asteroidę [From.GetName] z jej orbity i skierować ją do nieznanego celu. [Root.GetName] pozostaje w gotowości - załoga może rozpocząć demontaż i badania domniemanego systemu napędowego w nadziei rozwinięcia naszej technologii napędów kosmicznych."
  anomaly.275.a:0 "Zróbcie to."
@@ -1697,3 +1697,4 @@
  fallen_empires_awakening.2.b:0 "Niedołężni głupcy."
  war_in_heaven.4.c.2:0 "Nasza potęga zmiecie ich wszystkich!"
  war_in_heaven.13.c:0 "Sami sobie poradzimy."
+ fallen_empires.8.a.tooltip:0 "Zakończenie rywalizacji z imperium [fallen_empire_humiliator.GetName]\n[Root.GetName] traci wszelkie roszczenia do układów [fallen_empire_humiliator.GetAdj]."

@@ -104,9 +104,12 @@ example_initializer = {
 	neighbor_system = {
 		#The game will test all systems within the distance limit
 		#untill it finds a system that fulfills the trigger ( see below ).
-		#it will do this in a nearest-first order
-		distance = { min = 10 max = 100 }
+		#it will do this in a nearest-first order by euclidean distance
 		
+		distance = { min = 10 max = 100 } # euclidean distance
+		hyperlane_distance = { min = 1 max = 20 } # total hyperlane distance, distance inside systems are not included.
+		hyperlane_jumps = { min = 1 max = 20 } # number of jumps
+
 		#if the trigger is left empty it will always succeed. The first closest system that is within the distance limits will be picked
 		trigger = {
 			#scope = galactic_object ( parent ). root = root gal obj. prev = closest parent. prev prev = grand parent...

@@ -130,7 +130,7 @@ minerals_expenditure_armies = {
 	}
 	
 	fraction = {
-		weight = 0.05
+		weight = 0.01
 	}	
 }
 
@@ -144,7 +144,7 @@ minerals_expenditure_armies_high = {
 	}
 	
 	fraction = {
-		weight = 0.15
+		weight = 0.10
 	}	
 }
 

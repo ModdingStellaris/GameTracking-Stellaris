@@ -4448,7 +4448,11 @@ country_event = {
 			25 = { country_event = { id = utopia.3305 } }	# The Composer of Strands
 			25 = { country_event = { id = utopia.3306 } }	# The Eater of Worlds
 			25 = { country_event = { id = utopia.3307 } }	# The Instrument of Desire
-			2 = { 
+			2 = {
+				modifier = {
+					factor = 13
+					has_global_flag = impending_doom
+				}
 				if = {
 					limit = {
 						NOT = { has_global_flag = end_of_the_cycle }

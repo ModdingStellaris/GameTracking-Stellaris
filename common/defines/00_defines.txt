@@ -452,6 +452,10 @@
 		POP_ENTRY_GROUPING_THRESHOLD = 8 # the minimum amount of pops in the planet view jobs ui required before we start grouping them together
 		EXPANSION_VIEW_NUM_DISTRICTS = 3
 		DEFICIT_MONTH_LEFT_ALERT = 12 #Show alert when less months left
+
+		NUM_DISTRICT_BOXES_TO_SHOW = 15 # How many district boxes will be shown before we show " 12/20" instead
+		NUM_RARE_DEPOSITS_TO_SHOW = 4 # How many rare deposits will be shown before we switch the gridbox to a summary icon and "x5" instead
+		NUM_DEVASTATION_SEGMENTS = 4 # How many "levels" of devastation there is
 	}
 
 	NGameplay = {
@@ -1022,6 +1026,8 @@
 		SECTOR_RESOURCE_TRANSFER_AMOUNT = 100
 		
 		HIGH_PIRACY_RISK					= 0.8	#ratio of dangerous actual piracy to trade protection
+
+		MACHINE_EMPIRE_EXCLUSION_TRAIT		= "trait_mechanical"		# pops with this trait will not be built by machine empires
 	}
 
 	NSpecies = {
@@ -1205,9 +1211,9 @@
 	
 		BASE_POLITICAL_POWER								= 1		# Base political power 
 		MIN_POLITICAL_POWER_POSITIVE_STABILITY_IMPACT		= 0.0
-		MAX_POLITICAL_POWER_POSITIVE_STABILITY_IMPACT		= 2.0
-		MIN_POLITICAL_POWER_NEGATIVE_STABILITY_IMPACT		= 0.5
-		MAX_POLITICAL_POWER_NEGATIVE_STABILITY_IMPACT		= 10
+		MAX_POLITICAL_POWER_POSITIVE_STABILITY_IMPACT		= 20
+		MIN_POLITICAL_POWER_NEGATIVE_STABILITY_IMPACT		= 0.05
+		MAX_POLITICAL_POWER_NEGATIVE_STABILITY_IMPACT		= 20
 	
 		BASE_POP_GROWTH						= 3		# Base growth rate of pops
 		NEW_COLONY_GROWTH					= 0.5	# New colonies have a penalty to their growth
@@ -1219,13 +1225,13 @@
 		NEW_POP_SPECIES_RANDOMNESS			= 0.5	# The higher this is, the more random species selection of new pops will be
 		NEW_POP_SAME_SPECIES_WEIGHT			= 1.0	# The higher this is, the more new pops will be weighted by number of same or subspecies pops
 		NEW_POP_EXACT_SPECIES_WEIGHT		= 0.5	# The higher this is, the more new pops will be weighted by number of exact same species pops
-		NEW_POP_SLAVERY_WEIGHT				= 0.5	# The higher this is, the more new pops will tend to be balanced between enslaved and non-enslaved species
-		NEW_POP_SPECIES_DIV					= 0.25	# The higher this is, the more planets will tend to grow species that are underrepresented on the planet
-		NEW_POP_HABITABILITY_THRESHOLD		= 0.5	# If habitability is under this, apply exponentially increasing penalties to new pop weight
+		NEW_POP_SLAVERY_WEIGHT				= 0.25	# The higher this is, the more new pops will tend to be balanced between enslaved and non-enslaved species
+		NEW_POP_SPECIES_DIV					= 0.05	# The higher this is, the more planets will tend to grow species that are underrepresented on the planet
+		NEW_POP_HABITABILITY_THRESHOLD		= 0.75	# If habitability is under this, apply exponentially increasing penalties to new pop weight
 		NEW_POP_LOW_HABITABILITY_PENALTY	= 2		# If habitability is under current threshold, apply increasing penalties to new pop weight
 		NEW_POP_HOMEWORLD_MULT				= 2		# Pops have increased weight for growing on their homeworld
 		NEW_POP_ASSEMBLY_TRAIT_MULT			= 2		# Extra weight per trait point for assembled pops
-		NEW_POP_GROWTH_MOD_MULT				= 0.66	# How much does species growth mod trait matter for new pop weight
+		NEW_POP_GROWTH_MOD_MULT				= 0.33	# How much does species growth mod trait matter for new pop weight
 		NEW_POP_IMMIGRATION_MOD_MULT		= 1		# How much does species immigration growth mod trait matter for new pop weight (when there is immigration)
 		
 		POP_ENSLAVE_MAX_RANK				= 1		# Pops above this stratum rank will not be enslaved from civics, etc
@@ -1256,6 +1262,7 @@
 		RECENTLY_CONQUERED_DAYS				= 3600 # How long the recently conquered modifier stays on pops.
 
 		SAME_STRATA_EMPLOYMENT_BONUS		= 1.0 # How much score will be added to an unemployed pop when considering it for a job in the same strata
+		FAVORITE_JOB_EMPLOYMENT_BONUS		= 1.0 # How much will be added to a jobs weight if it's favorited
 	}
 
 	NArmy = {
@@ -1311,7 +1318,7 @@
 				
 		FLEET_UPGRADE_TIME_COST_MULT		= 0.50		# Upgrade fleet time cost
 		FLEET_UPGRADE_SECTION_COST_REFUND_MULT = 0.75	# Refund factor for ship section when upgrading
-		FLEET_UPGRADE_COMPONENT_COST_REFUND_MULT = 0.50 # Refund factor for ship components when upgrading
+		FLEET_UPGRADE_COMPONENT_COST_REFUND_MULT = 0.90 # Refund factor for ship components when upgrading
 		 
 		EXPANSION_COST_MAX					= 1000.0	# Maximum cost of single outpost
 		EXPANSION_COST_BASE					= 75.0		# The influence base cost of outpost
@@ -1371,6 +1378,7 @@
 		SECTOR_AUTOMATION_CONTRUCTION_RAND_FACTOR = 0.1	# Random factor applied to the score of constructions in the sector automation
 
 		MONTHLY_SUBJECT_TAX_ECONOMIC_CATEGORY = "subject_tax"
+		MONTHLY_SUBJECT_INTEGRATION_ECONOMIC_CATEGORY = "subject_integration"
 	}
 
 	NEngine = {
@@ -1378,7 +1386,7 @@
 	}
 
 	NAI = {
-		AI_MAX_DISTANCE = 1000						# AI considers all systems more distant than this to be equally uninteresting
+		AI_MAX_DISTANCE = 200						# AI considers all systems more distant than this to initially be too far away, but this will be multiplied to increase search range when that happens
 		
 		AI_POP_MODIFICATION_DISCOUNT = 0.25			# AI pays this much (of base) for gene/robomodding projects
 		
@@ -1393,19 +1401,24 @@
 		STARBASE_CHOKEPOINT_SCORE = 2
 		STARBASE_HAZARD_CHOKEPOINT_SCORE_MULT = 1.5
 		
-		WAR_DISTANCE_FACTOR = 100					# The lower this is, the more AI fleets will tend to go after nearby targets
 		WAR_OCCUPIED_BORDER_PRIO = 20				# Priority on targeting systems that are bordering our occupied space
 		WAR_OWN_BORDER_PRIO	= 10					# Priority on targeting systems that are bordering us
 		WAR_ALLY_BORDER_PRIO = 5					# Priority on targeting systems that are bordering allies
 		WAR_NO_BORDER_PRIO = 0.01					# Priority on targeting systems that are in the middle of hostile space
 		WAR_DEFENSE_OWN_PRIO = 5					# Priority on defending own borders
+		WAR_DEFENSE_CONTROLLED_PRIO = 4				# Priority on defending conquered systems
 		WAR_DEFENSE_ALLY_PRIO = 3					# Priority on defending allies
 		WAR_NEUTRAL_SPACE_PRIO = 0.5				# Priority on targeting enemies in neutral space
 		WAR_ATTACK_CLAIM_PRIO = 1.5					# Priority on targeting enemy systems we have claimed
+		WAR_DEFENSE_CLAIM_PRIO = 1.5				# Priority on defending claimed system we have conquered
+		WAR_DEFENSE_OWN_PLANET_PRIO = 1.5			# Priority on defending own planets in a controlled system
+		WAR_DEFENSE_OWN_PLANET_ENEMY_CONTROL_PRIO = 3.0 # Priority on defending own planets in an enemy controlled system
+
 		WAR_ATTACK_PLANET_PRIO = 2.0				# Priority on targeting enemy systems with planets
 		WAR_ATTACK_PLANET_CONTROLLED_SYSTEM_PRIO = 10.0				# Priority on targeting enemy planets in controlled systems
 		WAR_ATTACK_STARBASE_PRIO = 1.5				# Priority on targeting enemy systems with upgraded starbases
-		WAR_ATTACK_MILITARY_FLEET_PRIO = 1.5		# Priority on targeting enemy military fleets
+		WAR_DEFEND_STARBASE_PRIO = 1.5				# Priority on defending systems with an upgraded starbase
+		WAR_ATTACK_MILITARY_FLEET_PRIO = 3.0		# Priority on targeting enemy military fleets
 		WAR_ATTACK_JUMP_DRIVE_FLEET_PRIO = 2.0		# Priority on targeting vulnerable jump-drive fleets that are in cooldown
 		
 		SPACE_MONSTER_MOVE_CHANCE = 2				# % chance that space monsters pick a new wander target each week
@@ -1434,11 +1447,25 @@
 	
 		WAS_HUMAN_MONTHS = 60							# Amount of months that the AI will refrain from making large changes to the empire if it's taking over from a player
 		
-		MIN_FLEET_FOR_OFFENSIVE = 500
+		MIN_FLEET_FOR_OPERATIONS = 500
 		MIN_FLEET_TO_RESTRICT_SYSTEM = 3000
 		MIN_FLEET_THREAT_TO_CRISIS = 8000
 
-		MIN_FLEET_TO_SPLIT = 2000					# AI will not split up a fleet below this fleet power
+		FLEET_GROUP_ABORT_MISSION_MULT = 1.2 # The wanted amount of fleet power needs to have increased by at least this much for the AI to reconsider a mission once commited
+
+		FLEET_COMBAT_INTERVENTION_MULT = 0.5 #  The AI wont try to intervene in a fleet combat unless that intervention puts us at this percentage of the enemy fleet ( i.e. we wont intervene if the enemy outnumbers us by 2 or more )
+
+		DEFENSE_STRATEGY_ALLOTMENT_RATIO = 0.25	# How much of the defensive allotment of a country should ( as base ) put into each defensive target
+
+		FLEET_DAMAGED_THRESHOLD_WAR = 0.75			# threshold when a fleet will be considered damaged and should return for repairs and avoid certain actions
+		FLEET_DAMAGED_THRESHOLD_PEACE = 0.95		# same but for peace
+		FLEET_ARMOR_DAMAGED_THRESHOLD_WAR = 0.5		# same as above but for armor
+		FLEET_ARMOR_DAMAGED_THRESHOLD_PEACE = 0.75	# same but for armor in peace 
+
+		TARGET_BASE_SCORE = 100.0			# base score to use when scoring AI military targets
+		HOSTILE_FLEETS_TARGET_SCORE = 20 # extra score for engaging hostile fleets
+		CAPITAL_TARGET_SCORE = 5 # extra score for defending/invading a capital
+		CHOKEPOINT_TARGET_MULT = 2 # extra multiplier for defensive scoring of chokepoints
 		
 		MIN_GIFT_SIZE = 25								# in opinion impact
 		MAX_GIFT_SIZE = 50	
@@ -1656,7 +1683,7 @@
 	
 		MIN_ASSAULT_ARMIES = 10
 		MAX_ASSAULT_ARMIES = 50
-		ASSAULT_ARMIES_PER_POP = 0.02
+		ASSAULT_ARMIES_PER_POP = 0.01
 		
 		BUILDING_EXISTS_DIV_SCORE = 1		# The higher this is, the more the AI will avoid building the same building on planets
 		DISTRICT_EXISTS_DIV_SCORE = 1		# The higher this is, the more the AI will avoid building the same district on planets
@@ -1715,7 +1742,7 @@
 		AI_COMMUNICATIONS_RANDOM_VALUE = 60		# AI communications days will vary with +- these many days
 		
 		TRANSPORT_FLEET_SIZE = 20					# AI will have transport fleets of this size
-		ARSENAL_FLEET_SIZE = 200					# AI will have arsenal fleets of this size
+		TRANSPORT_RETREAT_HEALTH_THRESHOLD = 0.75	# If a transport goes below this amount of HP it will try to emergency FTL
 		
 		AUTO_EXPLORE_ATTRACTION_SCORE = 200		# Attraction score to auto explore a system will descrease by this much if system is owned by you or has a planet owned by you
 		
@@ -1764,4 +1791,9 @@
 		SLAVE_SELL_EC_THRESHOLD = 5000 # if we have more ec than this then don't sell any slaves
 		SLAVE_SELL_TOTAL_UNEMPLOYMENT_THRESHOLD = 6 # if we have at least this many unemployed pops across all planets, sell one of them
 		SLAVE_SELL_PLANET_UNEMPLOYMENT_THRESHOLD = 3 # if any one planet has at least this many unemployed pops, sell a slave
+
+		SCIENTIST_HIRING_REPLACEMENT_THRESHOLD = 1.25	# When hiring for a job category, how much the score has to be higher than the previous tenants's score to replace him
+		SCIENTIST_HIRING_PREV_JOB_THRESHOLD = 1.1		# When hiring a scientist, how much the better score for the new category has to be compared to your current employment score
+		SCIENTIST_HIRING_UNEMPLOYMENT_MULT = 1.1		# how much of a bonus unemployed scientist get to their job score
+		SCIENTIST_HIRING_SURVEY_MULTIPLIER = 0.5		# when hiring for research, the multiplier applied to a scientist who's on a science ship, to ensure surveying has priority over research
 	}

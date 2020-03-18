@@ -157,7 +157,7 @@
  MEGASTRUCTURE_BUILD_OUTSIDE_GRAVITY_WELL:0 "Impossible de construire un portail à l'intérieur du puits de gravité d'un système"
  MEGASTRUCTURE_BUILD_INSIDE_SYSTEM_RADIUS:0 ""
  NUM_GATEWAYS:0 "Portails abandonnés"
- NUM_GATEWAYS_TOOLTIP:1 "§HPortails abandonnés§!\nMultiplie le nombre habituel de portails abandonnés générés dans la galaxie."
+ NUM_GATEWAYS_TOOLTIP:2 "§HPortails abandonnés§!\nMultiplie le nombre habituel de portails abandonnés générés dans la galaxie."
  NUM_WORMHOLES:0 "Couples de trous de ver"
  NUM_WORMHOLES_TOOLTIP:1 "§HCouples de trous de ver§!\nMultiplie le nombre habituel de couples de trous de ver générés dans la galaxie."
  NAME_gateway_final:0 "Portail"

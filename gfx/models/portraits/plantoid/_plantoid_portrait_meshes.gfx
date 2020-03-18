@@ -127,6 +127,7 @@ objectTypes = {
 		animation = { id = "idle2"	type = "plantoid_13_happy_2_animation" }
 		animation = { id = "idle3"	type = "plantoid_13_happy_3_animation" }
 		animation = { id = "idle4"	type = "plantoid_13_happy_4_animation" }
+		animation = { id = "idle5"	type = "plantoid_13_happy_5_animation" }
 		scale = 1.0
 	}
 	

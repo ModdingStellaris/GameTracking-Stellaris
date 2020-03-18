@@ -1334,9 +1334,9 @@
  distar.5069.name:0 "Aufwertung unterbrochen"
  distar.5069.desc:0 "Wir haben den Aufstiegsprozess beendet und unser Volk kehrt langsam zu seinem guten alten Selbst zurück. Das röhrenförmige außerirdische Wesen, auch als Baldor XXXXIII bekannt, verschwand in einem tief verwirrten Zustand."
  distar.5069.a:0 "Es war sicher zum Besten."
- distar.5070.name:0 "Rätselhafter Cache zerstört"
- distar.5070.desc:0 "Das röhrenförmige außerirdische Wesen, auch als Baldor XXXXIII bekannt, wurde zerstört und der Aufstieg unseres Volkes beendet. Sie kehren langsam zu ihrem alten Selbst zurück."
- distar.5070.a:0 "Nicht gut."
+ distar.5070.name:1 "Aufstieg abgebrochen"
+ distar.5070.desc:1 "Nach einem unprovozierten Angriff der [cache_killers.GetSpeciesNamePlural] hat sich BALDOR XXXXIII dematerialisiert und damit den Aufstieg unseres Volkes beendet. Wir glauben, dass das röhrenförmige außerirdische Wesen, das sich bereits in einem schlechten Zustand befand, während des Aufstiegs besonders anfällig war und der Angriff seine Kernfunktionen erheblichen Schaden zugefügt hat. Als es ging übertrug noch die Nachricht "Ich bin BALDOR XXX ...""
+ distar.5070.a:1 "Die [cache_killers.GetSpeciesNamePlural] werden dafür bezahlen."
  distar.5071.name:0 "Warnung"
  distar.5071.desc:0 "Nach einer langen Periode ungestörter und ereignisloser Hypnose scheint Baldor XXXIII in einen tobenden Zustand übergegangen zu sein, bei dem sich seine Räder mit rasender Geschwindigkeit drehen und der schlafenden Bevölkerung absurde Albträume projiziert.\n\nObwohl viele zögern, überhaupt einzuschlafen, scheinen einige wenige unglückliche in einem vegetativen Zustand gefangen zu sein, aus dem sie nicht aufwachen können. Unsere Ingenieure weisen darauf hin, dass sich das von Beginn an schon in einem schlechten Zustand befindende Wesen noch weiter verschlechtern könnte. Wenn es unbeaufsichtigt bleibt, könnte unser Aufstieg möglicherweise nicht wie geplant verlaufen."
  distar.5071.a:0 "Kontaktiert Baldor XXXXIII."
@@ -1361,6 +1361,9 @@
  distar.5074.name:0 "Etwas aufgestiegen"
  distar.5074.desc:0 "Der Aufstiegsprozess ist abgeschlossen, aber wir sind aufgrund des sich rasch verschlechternden Zustandes von BALDOR XXXXIII nicht aufgestiegen. Obwohl die Mehrheit unserer Bevölkerung noch immer unter starken nächtlichen Albträumen leidet, scheint die Hypnose auch einige gute Ergebnisse erbracht zu haben, bei einigen ist zunehmend eine beispiellose Kompetenz für wissenschaftliche Forschung und Lernen aufzuweisen. Für die unglücklichen Bürger, die in einem vegetativen Zustand gefangen waren ist die Situation allerdings düsterer... Obwohl die meisten das Bewusstsein wiedererlangt haben, scheint ihr Bewusstsein unter dem Druck eingebrochen zu sein.\n\nEs mag zwar kein vollständiger Aufstieg sein, aber zumindest ist es... etwas."
  distar.5074.a:0 "Es hätte schlimmer kommen können."
+ distar.5078.name:0 "Mysteriöser Aufstieg abgebrochen"
+ distar.5078.desc:0 "Als Nachwirkung des Verlustes von [FromFromFrom.GetName] gegen die einfallende Streitmacht von [From.GetSpeciesName] hat sich BALDOR XXXXIII dematerialisiert und damit den Aufstieg unseres Volkes beendet. Wir glauben, dass das röhrenförmige außerirdische Wesen, das sich bereits in einem schlechten Zustand befand, während des Aufstiegs besonders anfällig war und der Angriff seine Kernfunktionen erheblichen Schaden zugefügt hat. Als es ging übertrug noch die Nachricht "Ich bin BALDOR XXX ...""
+ distar.5078.a:0 "Die [From.GetSpeciesNamePlural] werden dafür bezahlen."
  trait_enigmatic_intelligence_poor:0 "Etwas aufgestiegen"
  trait_enigmatic_intelligence_poor_desc:0 "Diese Spezies wurde teilweise von einem wohlwollenden extragalaktischen Intellekt aufgewertet und hat einige ihrer primitiven Ursprünge hinter sich gelassen."
  trait_enigmatic_intelligence_failed:0 "Nicht aufgestiegen"
@@ -1428,7 +1431,7 @@
  SEALED_SYSTEM_PROJECT_DESC:0 "Eine aufgegebene Station dreht sich an der Mündung des Wurmlochs im §Y[From.GetName]§!-System. Genauere Untersuchungen könnten erklären wer es gebaut hat und warum das Wurmloch scheinbar vollständig undurchschreitbart ist."
  
  PHASESHIFT_PROJECT:0 "Eingefrorene Phasenverschiebung"
- PHASESHIFT_PROJECT_DESC:0 "§Y[phaseshift_planet.GetName]§!, ein Planet im §Y[phaseshift_planet.GetStarName]§!-System wurde dabei beobachtet wie er in einem Drei-Monats-Zyklus zwischen einer §Y$pc_shrouded$§! und einer §Y$pc_gaia$§! wechselt.\n\nUnsere Physiker sollten einen Weg finden können, um den Planeten in einem seiner Zustände einzusperren und ihn so permanent zu einer §Y$pc_shrouded$§! oder §Y$pc_gaia$§! zu machen."
+ PHASESHIFT_PROJECT_DESC:1 "§Y[phaseshift_planet.GetName]§!, ein Planet im §Y[phaseshift_planet.GetStarName]§!-System wurde dabei beobachtet wie er in einem Drei-Monats-Zyklus zwischen einer §Y$pc_shrouded$§! und einer §Y$pc_gaia$§! wechselt.\n\nUnsere Physiker sollten einen Weg finden können, um den Planeten in einem seiner Zustände einzusperren und ihn so permanent zu einer §Y$pc_gaia$§! zu machen."
 
  ####################################
  # Modifiers
@@ -1592,7 +1595,7 @@
  distar.3041.b.tooltip:1 "Fügt [asteroid_target.GetName] den Modifikator §YAlien-Maschine§! hinzu:\n£physics£ §G+7§!"
  
  distar.3042.name:0 "Energiespitze"
- distar.3042.desc:1 "In einem nahegelegenen Sonnensystem wurde ein enormer Anstieg der Energiewerte gemessen.\n\nUnsere Wissenschaftler machen sich Sorgen darüber, was solch einen Energieimpuls ausgelöst hat. Die üblichen Hypothesen scheinen die einer Supernova zu sein oder, obwohl auch unwahrscheinlich, eine Anomalie im Zeit-Raum-Geflecht des Weltraums wie dem eines Wurmlochs.\n\nWissenschaftsoffizier [unknown_machine_science_ship.GetLeaderName] hat darauf hingewiesen, dass dies kurz nach der Aktivierung der seltsamen Maschine auf [asteroid_target.GetName] geschah.\n\nWir sollten uns damit beeilen die Systeme in der Nähe zu erkunden, wie z. B. §Y[system_one.GetName]§!."
+ distar.3042.desc:2 "Als unsere Wissenschaftler den Hebel betätigten, stieß die Maschine einen gewaltigen Energiestoß aus, der sich in pulsierenden Schockwellen durch die Leere drehte und und ein Wurmloch in §Y[system_one.GetName]§! aufriss.\n\nNachdem die Restenergie verflogen war, beruhigte sich das Wurmloch und die unmittelbare Umgebung um es herum und scheint jetzt stabil genug für einen sicheren Durchgang zu sein. Über das, was uns auf der anderen Seite erwartet, sind unsere Wissenschaftler sich allerdings nicht so sicher.\n\nDie Maschine selbst ist seitdem in ihren inaktiven Zustand zurückgekehrt und gibt keine ungewöhnlichen Messwerte mehr ab."
 
  ### Orbital Speed Demon ###
  distar.3050.name:0 "Orbitaler Geschwindigkeitsdämon"
@@ -1986,7 +1989,7 @@
  graygoo.115.c:0 "Wurden die L-Tore nicht von Naniten gebaut?"
  graygoo.115.c.response:0 "Naniten? Das ist keine uns bekannte Technologie. Selbsreplizierende mikroskopische Maschinen, sagt ihr? Ehrlich gesagt klingt das absurd.\n\nDie Sternentore und die L-Tore sowie unsere gesamte Zivilisation wurden durch die Arbeit und den Einfallsreichtum der Dessanurianer realisiert, sonst nichts.\n\nBitte lasst uns dieses Thema nicht weiter diskutieren."
  graygoo.115.d:0 "Auf Wiedersehen."
- graygoo.115.d.response:0 "Nicht so schnell! Durch Eure Taten habt Ihr uns endlich die Freiheit gegeben, von der Generationen von Dessanurianern geträumt haben. Wir stehen in Eurer Schuld.\n\nEs ist nur ein armseliges Angebot im Vergleich zu Eurem Geschenk, aber wir möchten Euch dauerhaften Zugang zu mehreren einzigartigen strategischen Ressourcen geben, die nur innerhalb unserer Clusters gefunden werden können. Wir erwarten keine Gegenleistung und werden Euch diese Ressourcen so lange zur Verfügung stellen, wie es uns möglich ist."
+ graygoo.115.d.response:1 "Nicht so schnell! Durch Eure Taten habt Ihr uns endlich die Freiheit gegeben, von der Generationen von Dessanurianern geträumt haben. Wir stehen in Eurer Schuld.\n\nEs ist nur ein armseliges Angebot im Vergleich zu Eurem Geschenk, aber wir möchten Euch dauerhaften Zugang zu mehreren strategischen Ressourcen aus unserem Cluster geben. Wir erwarten keine Gegenleistung und werden Euch diese Ressourcen so lange zur Verfügung stellen, wie es uns möglich ist."
  graygoo.116.desc:0 "Bewohner der Galaxis, Grüße von der Dessanu-Konsonanz!\n\nVor Äonen überwachten wir die Konstruktion der Sternentore und L-Tore, die Ihr vielleicht als zurückgelassen gesehen habt. Unsere Absicht war es, ein galaktisches Netzwerk solcher Apparaturen zu bauen, doch leider machte ein schrecklicher Fehler die L-Tore unbrauchbar und schloss uns in unserem Heimat-Cluster ein.\n\nDie Zeit der Isolation ist dank der cleveren Wissenschaftler von [From.From.GetName] nun endlich zu Ende! Jetzt, da die L-Tore wieder aktiv sind, laden wir alle dazu ein sie zu nutzen und so die galaktische Reisezeit zu verkürzen. Unser Sternencluster ist für alle offen.\n\nNur das §H[lcluster_factory_system.GetName]§!-System ist davon ausgenommen. Unternehmt keine Versuche dorthin zu kommen."
  graygoo.116.d:0 "Bildschirm abschalten."
  dessanu_gift:0 "Dessanurisches Geschenk"

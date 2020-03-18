@@ -298,10 +298,10 @@ artisan_drone = {
 	resources = {
 		category = planet_artisans
 		produces = {
-			consumer_goods = 6
+			consumer_goods = 8
 		}		
 		upkeep = {
-			minerals = 6
+			minerals = 8
 		}
 	}	
 	
@@ -798,11 +798,18 @@ maintenance_drone = {
 	weight = {
 		weight = @simple_drone_job_weight
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_trait = trait_charismatic
 				has_trait = trait_robot_emotion_emulators
 			}
+			planet = {
+				free_amenities < 5
+			}
+		}
+		modifier = {
+			factor = 1.2
+			has_job = maintenance_drone
 		}
 		modifier = {
 			factor = 1.2
@@ -823,13 +830,13 @@ maintenance_drone = {
 		modifier = {
 			factor = 1.25
 			planet = {
-				free_amenities < 5
+				free_amenities < -5
 			}
 		}
 		modifier = {
 			factor = 2
 			planet = {
-				free_amenities < 10
+				free_amenities < -10
 			}
 		}
 		modifier = {

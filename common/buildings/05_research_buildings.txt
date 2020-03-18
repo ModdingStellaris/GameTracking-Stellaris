@@ -92,19 +92,14 @@ building_research_lab_1 = {
 		weight = 2
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 2
-			}
+			num_buildings = { type = building_research_lab_1 value >= 2 }
 		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			num_buildings = { type = building_research_lab_1 value >= 2 }
+			free_jobs > 0 
 		}
 	}
 }
@@ -195,17 +190,12 @@ building_research_lab_2 = {
 	
 	ai_weight = {
 		weight = 1
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 2
-			}
+			free_jobs > 0 
 		}
 	}
 }
@@ -292,17 +282,12 @@ building_research_lab_3 = {
 	
 	ai_weight = {
 		weight = 1
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 4
-			}
+			free_jobs > 0 
 		}
 	}
 }
@@ -353,17 +338,12 @@ building_institute = {
 	
 	ai_weight = {
 		weight = 1
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 4
-			}
+			free_jobs > 0 
 		}
 	}
 }
@@ -376,10 +356,12 @@ building_supercomputer = {
 	category = research
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }	
-		NOT = { has_modifier = slave_colony }
 		exists = owner
 		owner = { is_gestalt = yes }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 
 	allow = {

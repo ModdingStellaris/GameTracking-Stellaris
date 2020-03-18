@@ -305,6 +305,11 @@
 		file = "plantoid_13_portrait_happy_4.anim"
 	}
 	
+	animation = {
+		name = "plantoid_13_happy_5_animation"
+		file = "plantoid_13_portrait_happy_5_butterfly.anim"
+	}
+	
 	
 	
 	

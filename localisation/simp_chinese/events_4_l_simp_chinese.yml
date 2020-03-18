@@ -1,8 +1,4 @@
 ﻿l_simp_chinese:
- 
- ####################################
- # Anomaly Categories
- ####################################
  rogue_moon_category:0 "流浪卫星"
  rogue_moon_category_desc:0 " [Root.GetName] 的初步扫描结果显示这个行星与其母行星有意想不到的差别。"
  hollow_planet_category:0 "中空行星"
@@ -11,12 +7,7 @@
  strong_magnetic_category_desc:0 "对 [Root.GetName] 的初步扫描并没有太多发现，但有一点与众不同的是一个异常强烈的磁场环绕着它。"
  undiscovered_planetary_modifier_category:0 "反常情况"
  undiscovered_planetary_modifier_category_desc:0 "调查 [From.GetName] 的异常环境。"
- 
- ####################################
- # Anomaly Events
- ####################################
  anomaly.6000.name:0 "流浪卫星"
- # ""parent planet"" and ""its primary"", pending PARENTPLANET loc key implementation
  anomaly.6000.desc:0 " [From.GetName] 与母行星的物质构成并不一样，这说明它原本是一颗流浪小行星，被现在母行星的巨大重力场吸引。进一步的研究将会揭示它从何而来。"
  anomaly.6001.desc:0 " [From.GetName] 内部有一座基地！"
  anomaly.6002.name:0 "中空行星"
@@ -78,16 +69,8 @@
  anomaly.6660.desc.terrible_mach:0 "$anomaly.6660.desc.start$环境严酷而荒凉，不适合有机体生存。\n\n$anomaly.6660.desc.end$"
  anomaly.6660.desc.end:0 "在探索新行星的时候，我们当然会遭遇一些诸如此类的不测，而我们不应低估它对我们的扩张带来的影响。"
  anomaly.6660.a.tooltip:0 " [From.GetName] 上出现了行星修正。"
- 
- ####################################
- # Anomaly Failure Events
- ####################################
  anomaly_failure.6000.desc:0 "没有值得报道的消息。"
  anomaly_failure.6000.a:0 "好吧。"
- 
- ####################################
- # Colony Events
- ####################################
  colony_mod.1.name:0 "这里发生什么了？"
  colony_mod.1.desc:0 "很显然 [Root.GetName] 曾经遭遇了一场灾难并留下了超量的辐射。但是原因尚不明确。随着在 [Root.GetName] 定居的殖民者不断增加，这个谜团开始越发让人烦恼。毕竟，如果连原因都不知道，我们又该怎么防止悲剧再次重演？"
  colony_mod.1.desc_mach:0 "尽管 [Root.GetName] 上的大量辐射显然是过去的某起大灾难释放的，但我们仍未判明其具体原因，或者是否会再次发生这种现象。"

@@ -42,6 +42,14 @@ spriteTypes = {
 	}
 
 	corneredTileSpriteType = {
+		name = "GFX_button_dark"
+		textureFile = "gfx/interface/tiles/button_dark_tile.dds"
+		borderSize = { x=12 y=12 }
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 3
+	}
+
+	corneredTileSpriteType = {
 		name = "gfx_message_bg"
 		size= {x=32 y=32 }
 		texturefile = "gfx/interface/tiles/tech_view_tile.dds"

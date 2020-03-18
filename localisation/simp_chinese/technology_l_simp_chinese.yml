@@ -1,9 +1,4 @@
 ﻿l_simp_chinese:
- 
- # ###################################
- # Categories
- # ###################################
- 
  materials:0 "材料科学"
  materials_desc:0 "创造和处理材料，以提高其实用性和耐久度。"
  propulsion:0 "推进技术"
@@ -32,12 +27,6 @@
  new_worlds_desc:0 "殖民协议和拓荒训练。"
  psionics:0 "心灵异能"
  psionics_desc:0 "心灵控制物质。"
- 
- # ###################################
- # Engineering
- # ###################################
- 
- # Ship sizes
  tech_space_exploration:0 "宇宙探索"
  tech_space_exploration_desc:0 "超光速旅行的实现掀开了宇宙探索的新篇章。前往其他恒星系统的载人任务不仅成为了可能，且已经成为了必要。"
  tech_corvettes:0 "护卫舰"
@@ -52,43 +41,34 @@
  tech_titans_desc:0 "大型阴影在失落帝国核心系统中游荡的事件之后设计成型的泰坦级战舰，可以装备X级武器。"
  tech_colossus:0 "巨像"
  tech_colossus_desc:0 "随着巨构工程模糊了现实与幻想之间的界限，搭载可一击摧毁整颗恒星的武器的巨像级战斗舰成为了可能。"
- 
- # Ships upgrades
  tech_corvette_hull_1:0 "改良护卫舰舰体"
  tech_corvette_hull_1_desc:0 "建造工艺的突破，使得更为坚固耐用的护卫舰成为了可能。"
  tech_corvette_hull_2:0 "高级护卫舰舰体"
  tech_corvette_hull_2_desc:0 "最新一代护卫舰的舰体结构强度分布进行了优化，舰艏也进行了增强。"
  tech_corvette_build_speed:0 "标准护卫舰模板"
  tech_corvette_build_speed_desc:0 "为护卫舰的建模与建造划定标准，有助于生产效率的提高。"
- 
  tech_destroyer_hull_1:0 "改良驱逐舰舰体"
  tech_destroyer_hull_1_desc:0 "建造工艺的突破，使得更为坚固耐用的驱逐舰成为了可能。"
  tech_destroyer_hull_2:0 "高级驱逐舰舰体"
  tech_destroyer_hull_2_desc:0 "最新一代驱逐舰的舰体结构强度分布进行了优化，舰艏也进行了增强。"
  tech_destroyer_build_speed:0 "标准驱逐舰模板"
  tech_destroyer_build_speed_desc:0 "为驱逐舰的建模与建造划定标准，有助于生产效率的提高。"
- 
  tech_cruiser_hull_1:0 "改良巡洋舰舰体"
  tech_cruiser_hull_1_desc:0 "建造工艺的突破，使得更为坚固耐用的巡洋舰成为了可能。"
  tech_cruiser_hull_2:0 "高级巡洋舰舰体"
  tech_cruiser_hull_2_desc:0 "最新一代巡洋舰的舰体结构强度分布进行了优化，舰艏也进行了增强。"
  tech_cruiser_build_speed:0 "标准巡洋舰模板"
  tech_cruiser_build_speed_desc:0 "为巡洋舰的建模与建造划定标准，有助于生产效率的提高。"
- 
  tech_battleship_hull_1:0 "改良战列舰舰体"
  tech_battleship_hull_1_desc:0 "建造工艺的突破，使得更为坚固耐用的战列舰成为了可能。"
  tech_battleship_hull_2:0 "高级战列舰舰体"
  tech_battleship_hull_2_desc:0 "最新一代战列舰的舰体结构强度分布进行了优化，舰艏也进行了增强。"
  tech_battleship_build_speed:0 "标准战列舰模板"
  tech_battleship_build_speed_desc:0 "为战列舰的建模与建造划定标准，有助于生产效率的提高。"
- 
  tech_titan_hull_1:0 "改良泰坦舰体"
  tech_titan_hull_1_desc:0 "建造工艺的突破，使得更为坚固耐用的泰坦成为了可能。"
  tech_titan_hull_2:0 "高级泰坦舰体"
  tech_titan_hull_2_desc:0 "最新一代泰坦的舰体结构强度分布进行了优化，舰艏也进行了增强。"
- # no titan is the same... they dont have a build speed tech!
- 
- # Starbases
  tech_starbase_1:0 "太空基地建造"
  tech_starbase_1_desc:0 "在恒星系统重要星球的轨道上建造集成化太空站，才能充分使用恒星系统中的资源。"
  tech_starbase_2:0 "星港"
@@ -99,43 +79,28 @@
  tech_starbase_4_desc:0 "这些强大的星际堡垒可为整个恒星系统中的战斗行动提供据点，光是其存在就足以吓退大多数入侵者。"
  tech_starbase_5:0 "卫城"
  tech_starbase_5_desc:0 "目前正在指定建造可以防御数支战斗舰队进攻的战斗空间站的计划。如果计划得以实现，这些卫城将会成为恒星系统中心的伟大丰碑。"
- 
  tech_modular_engineering:0 "模块化工程"
  tech_modular_engineering_desc:0 "优化太空基地建造流程，使用模块化设计，可以减少建造花费和时间。"
- 
  tech_defense_platform_hull_1:0 "改进结构强度"
  tech_defense_platform_hull_1_desc:0 "即使在巨大的压力下，强化构架与增强冲击吸收能力的防爆屏障也可以确保平台的结构强度。"
- 
- #Spaceport Modules
- #tech_corvette_assembly:0 "Advanced Corvette Designs"
- #tech_corvette_assembly_desc:0 "Unused"
- #tech_destroyer_assembly:0 "Advanced Destroyer Designs"
- #tech_destroyer_assembly_desc:0 "Unused"
- 
  tech_solar_panel_network:0 "轨道能源转换"
  tech_solar_panel_network_desc:0 "先进的太阳能板科技可以抵消太空基地的运行成本。不过，这些太阳能板需要占用一个太空基地的模块才能生产足够的能源。"
  tech_mining_terminal:0 "矿业工会"
  tech_mining_terminal_desc:0 "有组织的矿业工会可以监督资源的系统分配。它可以使独立的“暴戾”矿工就范，从而带来效率的提高。"
  tech_zero_gravity_assembly_sequence:0 "零重力构造"
  tech_zero_gravity_assembly_sequence_desc:0 "这些框架配备了许多有用的工具，使工人们能够安全快速地在轨道建造工地间穿梭作业。E.V.A.（舱外活动）任务从此也变得简单易上手。"
- 
- # Strike Craft
  tech_strike_craft_1:0 "航母作战"
  tech_strike_craft_1_desc:0 "短程载人攻击机从母船发射，凭借它们的速度和较小的体型，能够在突破敌军防御时得以幸存。"
  tech_strike_craft_2:0 "中级攻击机"
  tech_strike_craft_2_desc:0 "第二代攻击机，以更加完善的航空电子功能、更快速的处理性能以及更加强大的军备设施为特色。"
  tech_strike_craft_3:0 "高级攻击机"
  tech_strike_craft_3_desc:0 "这些飞机和轰炸机经过不断的设计改良，已经成为了飞行员梦寐以求的理想机型。它们的表现远远超过以前的型号。"
- 
- # Armies and Attachments - Engineering
  tech_planetary_defenses:0 "行星防御"
  tech_planetary_defenses_desc:0 "总有一天，广博、冷静、无情的智慧生命会以嫉妒的态度看待我们的世界，并制定计划来对抗我们。我们必须提前做好准备。"
  tech_assault_armies:0 "星际远征军团"
  tech_assault_armies_desc:0 "袭击另一个世界是一项大胆的计划。在能够召集星际部队之前，我们必须克服巨大的后勤方面的问题。"
  tech_drop_pod:0 "轨道空降舱"
  tech_drop_pod_desc:0 "一次性轨道空投舱将会减小对脆弱的登陆艇的依赖，并且能够让我们的军团轻便迅速地登陆任何行星的表面。"
- 
- # Ship Armor Components
  tech_ship_armor_1:0 "纳米复合材料"
  tech_ship_armor_1_desc:0 "加强舰体的纳米镀层能够提供额外的保护层，可以造成战斗形势的生死逆转。"
  tech_ship_armor_2:0 "烤瓷合金材料"
@@ -146,16 +111,12 @@
  tech_ship_armor_4_desc:0 "这种具有良好弹性的材料在承受高压方面表现不俗。可以很好地充当舰体材料。"
  tech_ship_armor_5:0 "中子材料"
  tech_ship_armor_5_desc:0 "不可思议的密度和坚硬的材质能够抵抗足以让任何其他合金制成的舰体粉碎成渣的强大火力。"
- 
  tech_crystal_armor_1:0 "水晶复合镀层"
  tech_crystal_armor_1_desc:0 "通过用水晶灌输镀层，我们可以很大程度上增加舰体保护层的耐用性。"
  tech_crystal_armor_2:0 "水晶锻造镀层"
  tech_crystal_armor_2_desc:0 "将水晶材料加入锻造加工过程中，可以极大提高水晶合金材料的硬度。"
- 
  tech_dragon_armor:0 "人工龙鳞"
  tech_dragon_armor_desc:0 "以太龙麟由多层独特的矿物质纳米结构组成。异域的生产工艺让我们能够高仿出这些能自我修复的结构。"
- 
- # Thruster Components
  tech_thrusters_1:0 "化学推进器"
  tech_thrusters_1_desc:0 "制造简易有效的化学推进器，要依赖于易燃推进剂的特性。"
  tech_thrusters_2:0 "离子推进器"
@@ -164,13 +125,10 @@
  tech_thrusters_3_desc:0 "等离子推进是器一种高级的推进形式，可以使舰体拥有更快的亚光速和更好的机动性。"
  tech_thrusters_4:0 "脉冲推进器"
  tech_thrusters_4_desc:0 "这种高度熔合状态的推进器为舰体提供了无与伦比的机动性和亚光速的条件。"
- 
  tech_afterburners_1:0 "加力燃烧室"
  tech_afterburners_1_desc:0 "这种强力推进器能够额外提升战斗速度，然而需要消耗巨大能源。"
  tech_afterburners_2:0 "高级加力燃烧室"
  tech_afterburners_2_desc:0 "这种改进版的标准加力燃烧室能够极大提升飞船的战斗速度。"
- 
- # Military Stations
  tech_space_defense_station_1:0 "深空防御"
  tech_space_defense_station_1_desc:0 "激活远离行星压力井的外太空平台自卫防御能力"
  tech_space_defense_station_2:0 "外太空空间站"
@@ -181,15 +139,12 @@
  tech_space_defense_station_improvement_desc:0 "创建一个专门的舰队工兵部队，有利于外太空防御平台建设，降低建筑成本，提高耐久度。"
  tech_space_defense_station_improvement_machine_intelligence:0 "空间站建造优化"
  tech_space_defense_station_improvement_desc_machine_intelligence:0 "通过对现有防御站的建筑方法进行延伸性预估，可以发掘许多潜在的改良之处。"
- 
- # Industry and Robotics
  tech_housing_1:0 "气候控制系统"
  tech_housing_1_desc:0 "改变星球气候规律并压制灾难性气候现象的能力，可使住房建筑更容易维护，并开放新的可居住区域。"
  tech_housing_2:0 "反重力工程"
  tech_housing_2_desc:0 "在指向性重力科技的帮助下，星球地表的建筑可以达到前所未有的高度，而不必担心结构崩塌。通天塔指日可待！"
  tech_housing_agrarian_idyll:0 "农业乌托邦"
  tech_housing_agrarian_idyll_desc:0 "通过建立气候控制公社，我们能够在不破坏农耕生活方式的情况下供养大量人口。"
- 
  tech_mechanized_mining:0 "机械化开采"
  tech_mechanized_mining_desc:0 "应用机械工程进行采矿，是任何工业社会的基本需求。"
  tech_basic_industry:0 "工业基地"
@@ -204,8 +159,6 @@
  tech_mining_2_desc:0 "借助这些大型钻机，我们可以开采接近地心的深层富矿。"
  tech_mining_3:0 "矿物分离"
  tech_mining_3_desc:0 "用先进光谱测定法配合水力压裂技术与化学冲刷，可以快速开采浅层与中层的矿脉。"
- #tech_mining_network_5:0 "Pure Matter Extraction"
- #tech_mining_network_5_desc
  tech_synchronized_work_patterns:0 "同步工作模式"
  tech_synchronized_work_patterns_desc:0 "采矿网络同步工作模式，可以进一步增加产出效率。"
  tech_engineering_1:0 "纳米力学"
@@ -220,8 +173,6 @@
  tech_droid_workers_desc:0 "升级版机器人人员，这些单位拥有和大多有机生物相同的行为能力。它们的神经处理器也有很大的提升。"
  tech_synthetic_workers:0 "合成人"
  tech_synthetic_workers_desc:0 "高级机器人，比绝大多数有机生物更强，更快，更耐用。神经处理器有很大提高，拥有独立运作的能力。"
- #tech_enhanced_combat_software:0 "Combat Software 2.0"
- #tech_enhanced_combat_software_desc
  tech_synthetic_leaders:0 "合成人格矩阵"
  tech_synthetic_leaders_desc:0 "合成人被赋予人格之后，终能与其他的人们平等地进行社会交流。有一些合成人甚至能够担任领袖角色。"
  tech_mineral_purification_1:0 "矿物提纯"
@@ -238,22 +189,12 @@
  tech_robomodding_m_desc:0 "组装模板的标准化让子人口的分工更加明确。"
  tech_robomodding_points_1:0 "跨模型标准化"
  tech_robomodding_points_1_desc:0 "生成过程经过改良，可以在不影响核心功能的情况下大幅度地改造合成人工人。"
- #tech_robomodding_points_1_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$"
- # TEMP
  tech_robomodding_points_2:0 "可替换电路"
  tech_robomodding_points_2_desc:0 "生产过程经过改良，可以在不影响核心功能的情况下对合成人工人进行底层改造。"
- #tech_robomodding_points_2_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$"
- # TEMP
  tech_matter_generator:0 "物质转换器"
  tech_matter_generator_desc:0 "我们能够通过消耗大量能源，可以将光转换为物质，这就是无中生有。"
- 
- # Space Mining
  tech_space_construction:0 "外太空建设"
  tech_space_construction_desc:0 "现在我们的空间建设工程师面临着新的挑战，在我们能于其他世界之上建立轨道站之前，要解决这个难题。"
- #tech_mine_rare_resources_t1:0 "Zero-Gravity Refining"
- #tech_mine_rare_resources_t1_desc:0 "New refining techniques are necessary in order to process the many exotic materials we are finding as we explore the galaxy.\n\n"
- #tech_mine_rare_resources_t3:0 "Nanoparticle Extraction"
- #tech_mine_rare_resources_t3_desc:0 "An efficient way of extracting nanoparticles will allow us to exploit new strategic resources that were previously beyond our reach.\n\n"
  tech_mining_station_improvement_1:0 "现场处理"
  tech_mining_station_improvement_1_desc:0 "直接在世界上方，矿物采集的地方进行萃取，能够显著提高采矿效率。"
  tech_mining_station_improvement_2:0 "自动采矿作业"
@@ -270,22 +211,10 @@
  tech_mine_betharian_desc:0 "贝塞里安矿最早似乎出自单一矿源，但千年前，开始出现与星系各处。此类矿物成鹅卵石大小，群状分布，并且高度易燃。"
  tech_mine_rare_crystals:0 "稀有水晶开采"
  tech_mine_rare_crystals_desc:0 "在不损坏甚至是摧毁它们的前提下开采这些水晶，是一件对精密性要求很高的工作，需要极度精密的先进设备。"
- 
- # Aura Components
  tech_aura_nanobot:0 "纳米机器人装配"
- #tech_aura_nanobot_desc
  tech_aura_minefield:0 "感应地雷"
- #tech_aura_minefield_desc
- 
- # Megastructures
  tech_mega_engineering:0 "巨构建筑工程"
  tech_mega_engineering_desc:0 "为了完成这一建构计划，我们必须首先了解与其相关的最基本的工程学和物资储备技术。"
- 
- # ###################################
- # Engineering - Weapons
- # ###################################
- 
- # Mass Driver Branch
  tech_mass_drivers_1:0 "物质加速炮"
  tech_mass_drivers_1_desc:0 "此类电磁抛射，发射时需要使用磁性加速，使瞄准目标的穿甲弹高速运转。"
  tech_mass_drivers_2:0 "线圈炮"
@@ -304,23 +233,18 @@
  tech_mass_accelerator_1_desc:0 "仅能够放置于脊峰的巨型加农炮，射程广阔，火力惊人。"
  tech_mass_accelerator_2:0 "千兆级火炮"
  tech_mass_accelerator_2_desc:0 "极为强大的重型加农炮，铜墙铁壁无坚不摧。"
- 
- # Auto-Cannon Branch
  tech_autocannons_1:0 "机关炮"
  tech_autocannons_1_desc:0 "大口径的弹道武器，发抛射壳炮弹。主要优势在于高射速。"
  tech_autocannons_2:0 "撕裂者机关炮"
  tech_autocannons_2_desc:0 "这些升级版机关炮具备更完善的追踪能力和开火控制系统，因此射速也提升了。"
  tech_autocannons_3:0 "烈焰风暴机关炮"
  tech_autocannons_3_desc:0 "高级的旋转式机关炮，对目标发射成片穿甲弹和高爆弹。"
- 
  tech_flak_batteries_1:0 "高射炮台"
  tech_flak_batteries_1_desc:0 "发射近距离范围伤害弹片的炮台。对敌方攻击机十分致命，也可以对大型飞船造成一些伤害。"
  tech_flak_batteries_2:0 "高射火炮"
  tech_flak_batteries_2_desc:0 "高射炮台的升级版，使用威力更强大的新型弹片。是防御攻击机和飞弹的绝佳武器。"
  tech_flak_batteries_3:0 "高射火炮"
  tech_flak_batteries_3_desc:0 "预测追踪算法配上更加强大的弹药，使这些炮台对敌方攻击机极为致命。"
- 
- # Missile Branch
  tech_missiles_1:0 "核飞弹"
  tech_missiles_1_desc:0 "配备有高当量核心炸弹头的空空飞弹。尽管是前太空时代的技术，但这种发射后会自寻目标的武器有着极高的杀伤效率。"
  tech_missiles_2:0 "聚变飞弹"
@@ -335,28 +259,18 @@
  tech_swarmer_missiles_1_desc:0 "这些小飞弹可以集群发射，是专门针对敌人的点防空系统设计的。"
  tech_swarmer_missiles_2:0 "旋风飞弹"
  tech_swarmer_missiles_2_desc:0 "新的微型化技术将使得我们可以在蜂群飞弹上安装更加强力的弹头，并提高飞行能力。"
- 
- # Torpedo Branch
  tech_torpedoes_1:0 "太空鱼雷"
  tech_torpedoes_1_desc:0 "这些鱼雷其实都是速度缓慢的巨大飞弹。它们装备了更加强大的弹头和护盾调制器，这使得它们可以安然穿过能源屏障。"
  tech_torpedoes_2:0 "装甲鱼雷"
  tech_torpedoes_2_desc:0 "升级过后的空间鱼雷装备有装甲，可以更好地抵挡敌人点防御系统的火力。在鱼雷爆炸的时候，上面碎裂的装甲会造成额外的伤害。"
  tech_torpedoes_3:0 "毁灭者鱼雷"
  tech_torpedoes_3_desc:0 "装备有超强弹头的先进鱼雷。拥有更加光滑的设计风格，更快的引擎以及升级版的护盾调制器，可以穿过能源屏障。"
- 
- # ###################################
- # Physics
- # ###################################
- 
- # Science Ship Actions
  tech_deep_scan:0 "深度扫描仪"
  tech_deep_scan_desc:0 "未使用"
  tech_databank_uplinks:0 "数据库上行链路"
  tech_databank_uplinks_desc:0 "数据库传输专用的高容量量子链路使得长距离完全同步传输所有的研究信息成为可能。"
  tech_improved_databank_uplinks:0 "上行链路小型化"
  tech_improved_databank_uplinks_desc:0 "小型化的终端传输器可以成簇安装，进一步提升了带宽。"
- 
- # Physics Lab & related
  tech_basic_science_lab_1:0 "科学方法"
  tech_basic_science_lab_1_desc:0 "显著现象的可试验预测。"
  tech_basic_science_lab_2:0 "外星材料实验室"
@@ -377,17 +291,14 @@
  tech_self_aware_logic_desc:0 "自省优先。"
  tech_sapient_ai:0 "正子脑人工智能"
  tech_sapient_ai_desc:0 "演进的人工智能打开了通往真正合成智能的大门。"
- 
  tech_administrative_ai_hive_mind:0 "突触增强器"
  tech_administrative_ai_desc_hive_mind:0 "三思而后行。我们的集体意识进化到了新高度。"
  tech_self_aware_logic_hive_mind:0 "自主神经元"
  tech_self_aware_logic_desc_hive_mind:0 "将不可分割的整体区分开。"
- 
  tech_positronic_implants:0 "正子脑植入"
  tech_positronic_implants_desc:0 "通过使用有限的植入物扩展可能性。"
  tech_positronic_implants_machine_intelligence:0 "正子处理器"
  tech_positronic_implants_desc_machine_intelligence:0 "开创了人造思维的新道路。"
- 
  tech_combat_computers_1:0 "特种作战计算机"
  tech_combat_computers_1_desc:0 "特定战斗任务优化主动式矩阵能够极大提升战斗效率。"
  tech_combat_computers_2:0 "扩展的战斗算法"
@@ -418,21 +329,16 @@
  tech_automated_exploration_desc_machine_intelligence:0 "更新换代的高级算法不仅能加速勘察，还允许探索单位在没有中央机械智能的指示时也能自主探索深空。"
  tech_auxiliary_fire_control:0 "辅助火控"
  tech_auxiliary_fire_control_desc:0 "$FIRE_CONTROL_1_DESC$"
- 
- # Resources
  tech_exotic_gases:0 "外星气体精炼"
  tech_exotic_gases_desc:0 "外星气体可以人工生产，但是较为困难，需要先进的精炼设备。"
  tech_volatile_motes:0 "不稳定材料生产厂"
  tech_volatile_motes_desc:0 "除了明显的安全问题之外，人造易爆微尘也是极端精密且复杂的工作，需要高度专业化的设备。"
  tech_rare_crystals:0 "稀有水晶生产"
  tech_rare_crystals_desc:0 "结晶化的过程复杂且困难，但只要有专门的生产工厂，我们就可以生产人造水晶。"
- 
  tech_mine_neutronium:0 "中子提取"
  tech_mine_neutronium_desc:0 "中子矿石是由中子构成的超高密度物质，可用来锻造强度和耐久极高的装甲。"
  tech_mine_dark_matter:0 "收集暗物质"
  tech_mine_dark_matter_desc:0 "这种独特的物质具有许多打破物理原理的特性。仅在黑洞周围或部分星云附近能获得。"
- 
- # Ship Reactor Components
  tech_fission_power:0 "裂变能源"
  tech_fission_power_desc:0 "这种能源通过感生裂变为舰船提供能源，但同时也会生成有害的核废料。"
  tech_fusion_power:0 "聚变能源"
@@ -447,15 +353,12 @@
  tech_dark_matter_power_core_desc:0 "这些发电机似乎用某种方法直接从暗物质中汲取能源，为舰船提供违背了物理法则的巨大能源。"
  tech_dark_matter_propulsion:0 "暗物质推进"
  tech_dark_matter_propulsion_desc:0 "$SHIP_THRUSTER_5_DESC$"
- 
  tech_reactor_boosters_1:0 "反应堆增压器"
  tech_reactor_boosters_1_desc:0 "$REACTOR_BOOSTER_1_DESC$"
  tech_reactor_boosters_2:0 "改良型反应堆增压器"
  tech_reactor_boosters_2_desc:0 "$REACTOR_BOOSTER_2_DESC$"
  tech_reactor_boosters_3:0 "先进反应堆增压器"
  tech_reactor_boosters_3_desc:0 "$REACTOR_BOOSTER_3_DESC$"
- 
- # Shield Components
  tech_shields_1:0 "偏导护盾"
  tech_shields_1_desc:0 "能源屏蔽罩可以在最大负荷内抵挡所有的敌方火力。它们的主要缺点是会耗费大量能源。"
  tech_shields_2:0 "中级偏导护盾"
@@ -476,8 +379,6 @@
  tech_psionic_shield_desc:0 "这种强大无比的护盾是由一群精英灵能专家使用纯粹灵能之力生成的。且护盾再经由灵能发射器进一步强化后，力量再度提升。"
  tech_psionic_barrier:0 "灵能屏障"
  tech_psionic_barrier_desc:0 "这种屏障是由一群灵能专家用纯粹的灵能生成的。它可以阻挡一些敌方火力，就像我们的偏导护盾系统一样，不过无需耗费大量的能量。"
- 
- # Sensor Components
  tech_sensors_2:0 "重力探测器"
  tech_sensors_2_desc:0 "这些传感器一直在监测空间中的引力波动，比如星际飞船等物体的存在造成的引力变化。"
  tech_sensors_3:0 "亚空间探测器"
@@ -486,8 +387,6 @@
  tech_sensors_4_desc:0 "可以靠超光速粒子束的旋转来监测极远处飞船行动的先进传感器。"
  tech_orbital_sensor_array:0 "轨道传感器阵列"
  tech_orbital_sensor_array_desc:0 "可以安装在轨道太空港的强大的传感器阵列。它们可以对周边的空间保证优秀的传感器覆盖率。"
- 
- # Power Plants
  tech_power_plant_1:0 "高能电容器"
  tech_power_plant_1_desc:0 "可以储存巨量能源的电容器是现代文明的基础。"
  tech_power_plant_2:0 "力场调制"
@@ -496,16 +395,11 @@
  tech_power_plant_3_desc:0 "可以大幅度提高能源输出的能源生成的基本法则。"
  tech_power_plant_4:0 "量子场调制"
  tech_power_plant_4_desc:0 "能源线圈的量子级重叠，充能的同时耗能。"
- #tech_power_plant_5:0 "Matter to Energy Conversion"
- #tech_power_plant_5_desc
  tech_stellar_absorption:0 "恒星吸收"
- #tech_stellar_absorption_desc:0 "Unused"
  tech_power_hub_1:0 "全局能源管理"
  tech_power_hub_1_desc:0 "负载平衡设施可以巨大提升本地网络的稳定性，并将多余的能源充入集中的电容。"
  tech_power_hub_2:0 "行星电力网"
  tech_power_hub_2_desc:0 "重组后统一的电网将会进一步减少远距离传输的电能损耗。"
- 
- # Warp Drives
  tech_wormhole_generation_1:0 "亚空间虫洞"
  tech_wormhole_generation_1_desc:0 "在亚空间中打通一条隧道，正常空间中的两个地方之间可以形成一条稳定的通道。在这两点之间穿梭几乎不耗时间。"
  tech_wormhole_generation_2:0 "虫洞校准矩阵"
@@ -536,34 +430,21 @@
  tech_gateway_activation_desc:0 "激活在银河系中四散的废弃星门空间站的能力，可以极大地缩短星际旅行的时间。"
  tech_gateway_construction:0 "星门建造"
  tech_gateway_construction_desc:0 "建造新的星门空间站使我们可以建立一个快速旅行网络，给星际旅行带来革命。"
- 
- # Aura Components
  tech_shield_recharge_aura_1:0 "电容区域"
  tech_shield_recharge_aura_1_desc:0 "局部的带电粒子场可以立刻给耗尽的护盾电容充能。"
  tech_aura_shield_dampener:0 "护盾避震器"
- #tech_aura_shield_dampener_desc
  tech_aura_quantum_destabilizer:0 "量子去稳定剂"
  tech_aura_quantum_destabilizer_desc:0 "量子失稳装置会针对当地的量子场，干扰敌方飞船上的敏感设备。"
  tech_enigmatic_disruption_field:0 "神秘干扰力场"
  tech_enigmatic_disruption_field_desc:0 "向一个局部区域发射随机调制的弱电磁脉冲，敌人的护盾和武器系统会受到部分干扰。"
- 
- # Aux
  tech_enigmatic_encoder:0 "神秘编码器"
  tech_enigmatic_encoder_desc:0 "神秘编码器在将战斗路径数据返回舰队指挥中心前，会根据某种未知的法则打乱数据。"
  tech_enigmatic_decoder:0 "神秘解码器"
  tech_enigmatic_decoder_desc:0 "虽然神秘编码器在标准测试中表现平平，但目标的战斗路径越不规则，该编码器预测算法的准确度似乎就越高。"
- 
- # Ascension perk
  tech_ascension_theory:0 "升腾理论"
  tech_ascension_theory_desc:0 "我们的历史就是一个不断循环的过程。每次循环中，我们的科技、政治和文化水平都会出现飞跃式的发展。这些飞跃通常都出现在动乱之后，随后又带来相对平稳的时代。通过甄别这样的核心前提，我们也许能够大大缩短循环的时间，这样有利于缩短我们的发展周期。"
  tech_ascension_theory_apoc:0 "$tech_ascension_theory$"
  tech_ascension_theory_apoc_desc:0 "$tech_ascension_theory_desc$"
- 
- # ###################################
- # Physics - Weapons
- # ###################################
- 
- # Laser Branch
  tech_lasers_1:0 "红激光发射器"
  tech_lasers_1_desc:0 "可以向目标发射强光束的激光武器，通过高热量给敌方造成伤害。"
  tech_lasers_2:0 "蓝激光发射器"
@@ -580,8 +461,6 @@
  tech_energy_lance_2_desc:0 "粒子枪的威力加强版，这种武器发射威力巨大的超光速粒子束。和它的前身一样，这种武器只适合安装于大型炮塔。"
  tech_perdition_beam:0 "破灭光束"
  tech_perdition_beam_desc:0 "一个巨大的串联能源增幅导管阵列，发射一道威力前所未有的光束。它的尺寸意味着只有泰坦级星舰才能装得下。"
- 
- # Plasma Weapons
  tech_plasma_1:0 "等离子发射器"
  tech_plasma_1_desc:0 "可以向目标发射毁灭性的高能等离子束的武器。这种等离子发射器在对付大型飞船的装甲时特别有效。"
  tech_plasma_2:0 "等离子加速炮"
@@ -592,8 +471,6 @@
  tech_arc_emitter_1_desc:0 "可以向目标发射拥有混乱能源的电弧的强大武器。可以在某种程度上无视装甲和护盾。"
  tech_arc_emitter_2:0 "聚焦电弧发射器"
  tech_arc_emitter_2_desc:0 "这些升级后的发射器装备了更优秀的聚焦透镜，这使得它们可以发射出更加强大的能源。"
- 
- # Disruptor Weapons
  tech_disruptors_1:0 "分解炮"
  tech_disruptors_1_desc:0 "分解炮能够发射高能子弹，弱化并毁掉目标的分子键。对付装甲的时候尤其有效。"
  tech_disruptors_2:0 "钢铁分解炮"
@@ -606,8 +483,6 @@
  tech_energy_torpedoes_2_desc:0 "由中子代替质子组成的升级版的能源鱼雷，还是拥有着强大的毁灭力。和它们的前身一样，这种武器是能源护罩无法阻挡的。"
  null_void_beam:0 "无效虚空光束"
  null_void_beam_desc:0 "利用太虚的熵特性，这种光束可以真正地摧毁能量。"
- 
- # Critter Weapons
  tech_extradimensional_weapon_1:0 "高维武器"
  tech_extradimensional_weapon_1_desc:0 "在低次元中使用五维的能源操纵规则，可以造就强大的能量武器。"
  tech_mining_drone_weapon_1:0 "采矿无人机激光"
@@ -622,12 +497,6 @@
  tech_yellow_crystal_weapon_1_desc:0 "晶态实体内部的菱形可以储存一些射线，并放出激光一样的粒子束。利用这种黄色的棱柱特性，我们可以造出能产生更短波长的激光的电容器。"
  tech_red_crystal_weapon_1:0 "红水晶电容"
  tech_red_crystal_weapon_1_desc:0 "晶态实体内部的菱形可以储存一些射线，并放出激光一样的粒子束。利用这种红色的棱柱特性，我们可以造出能产生更短波长的激光的电容器。"
- 
- # ###################################
- # Society
- # ###################################
- 
- # Farming
  tech_hydroponics:0 "生态模拟"
  tech_hydroponics_desc:0 "水培技术可以通过创建具有独特环境的农场进一步开发，模拟不同的生态系统。这使得产出的食品含有较高的营养。"
  tech_industrial_farming:0 "农业工业化"
@@ -638,20 +507,14 @@
  tech_gene_crops_desc:0 "成熟的作物基因工程有助于进一步提高产量以及改善味道和营养价值。"
  tech_nano_vitality_crops:0 "纳米活性作物"
  tech_nano_vitality_crops_desc:0 "在作物中注入少量的纳米机器人，在它们的帮助下创造出一种由很强恢复力的作物，定制的化学成分可改变其整个生命周期。"
- #tech_pure_seed_farming:0 "Pure-seed Farming"
- #tech_pure_seed_farming_desc
  tech_nutrient_replication:0 "营养复制"
  tech_nutrient_replication_desc:0 "虽然合成作物的过程需要大量的收集废料，且产量较小，但对农业产生了重要的推动作用。"
- 
- # Resources
  tech_engos_vapor:0 "精炼萦戈气体"
  tech_engos_vapor_desc:0 "一种天然的兴奋剂，帮助所有生命适应并进化。它也可以作为一个非常强力的能量武器导体。"
  tech_pitharan_dust:0 "精炼铍烯兰星尘"
  tech_pitharan_dust_desc:0 "这种粉尘在某些星球是一种天然的兴奋剂。它对大多数人有镇静作用，可以作为一个非武力的方式安抚敌对的人。"
  tech_mine_zro:0 "蒸馏卓气"
  tech_mine_zro_desc:0 "一种极其罕见的气溶胶粒子。它通过流星的传播在很多星球出现过，但它的起源是一个谜。如果被有灵能的人摄取，卓气作为非常有效的(会上瘾)药物，会增强灵能。"
- 
- # Biolab and Colonization
  tech_society_1:0 "生物多样性研究"
  tech_society_1_desc:0 "研究我们星球上的各种生命形态，可以使我们更好地了解自己，以及我们周围的生命。"
  tech_society_2:0 "外星生物学"
@@ -675,7 +538,6 @@
  tech_tomb_world_adaption:0 "死寂世界适应"
  tech_tomb_world_adaption_desc:0 "对经过辐射的环境进行研究后，可以在被使用核武的战争摧毁的星球上进行殖民。"
  tech_free_enterprises:0 "自由企业"
- #tech_free_enterprises_desc
  tech_frontier_initiatives:0 "边境倡议"
  tech_frontier_initiatives_desc:0 "维护私营企业和政府之间的联系，给合适的投资者补贴，允许私人行动殖民。"
  tech_frontier_traditions:0 "边境传统"
@@ -685,15 +547,10 @@
  tech_frontier_commissars:0 "边境委员会"
  tech_frontier_commissars_desc:0 "研究表明，严格的社会控制也许能保证新殖民地的恢复力。"
  tech_cryostasis:0 "冷冻休眠"
- #tech_cryostasis_desc
  tech_xeno_ecology_1:0 "异星生态征服"
- #tech_xeno_ecology_1_desc
  tech_xeno_ecology_2:0 "环境控制"
- #tech_xeno_ecology_2_desc
  tech_reveal_luxuries_1:0 "星际经济学"
- #tech_reveal_luxuries_1_desc
  tech_reveal_luxuries_2:0 "银河市场"
- #tech_reveal_luxuries_2_desc
  tech_orbital_hydroponics:0 "轨道水耕法"
  tech_orbital_hydroponics_desc:0 "零重力环境下培育作物的确很有挑战性，但并非不可逾越。"
  tech_arctic_colonization:0 "极地殖民"
@@ -740,12 +597,8 @@
  tech_toxic_kelp_desc:0 "只要有足够的处理能力、传感器网络以及分站，即使洋流也能实现精确控制。"
  tech_deep_sinkhole:0 "地下殖民"
  tech_deep_sinkhole_desc:0 "许多星球都有着巨大的地下空洞。地下探索、开发以及建造技术可以极大地增加某些星球的可居住空间。"
- 
- # Trade
  tech_space_trading:0 "外星贸易公司"
  tech_space_trading_desc:0 "跨星际贸易有了一些新的挑战需要我们来克服。如何快速、低成本地将货物从一个星系转移到另一个星系是一个十分重要的问题。"
- 
- # Terraforming
  tech_terrestrial_sculpting:0 "陆地改造"
  tech_terrestrial_sculpting_desc:0 "没有简单的可以改变星球表面宏观尺度上的构造的办法-只能用更大的铲子-或者完全安排好的钻头。"
  tech_atmospheric_manipulation:0 "大气操纵"
@@ -756,8 +609,6 @@
  tech_climate_restoration_desc:0 "通过增强对大气层操控的理解，哪怕是环境遭到最严重毁灭的星球我们都一样能够改善。"
  tech_gaia_creation:0 "创造盖亚"
  tech_gaia_creation_desc:0 "创造盖亚星球这种适合几乎所有生命体居住的星星，是一个种群对改造技术掌握度的至高证明。"
- 
- # Genetics
  tech_genome_mapping:0 "基因组定位"
  tech_genome_mapping_desc:0 "分析个人的基因顺序开启了定制医学治疗和疗法的新纪元。"
  tech_epigenetic_triggers:0 "表观遗传学机制"
@@ -788,8 +639,6 @@
  tech_regenerative_hull_tissue_desc:0 "转基因的硅基细菌可能造出无机材料。"
  tech_vitality_boosters:0 "活性增强剂"
  tech_vitality_boosters_desc:0 "身体的不足之处，由科学补足。"
- 
- # Fleet Organization
  tech_doctrine_fleet_size_1:0 "学说：太空战斗"
  tech_doctrine_fleet_size_1_desc:0 "逐步适应深空作战的现实使我们能够有效地协调大训练。"
  tech_doctrine_fleet_size_2:0 "学说：灵活编队"
@@ -814,8 +663,6 @@
  tech_doctrine_navy_size_4_desc:0 "通过维持一支专业的舰队联络队伍，我们可以改善指挥系统中的命令传达与通讯。"
  tech_refit_standards:0 "学说：改装标准"
  tech_refit_standards_desc:0 "升级和改造船组件的标准化工作流程会导致大规模的效率提升。"
- 
- # Army Organization
  tech_centralized_command_hive_mind:0 "子人口指挥中心"
  tech_centralized_command_desc_hive_mind:0 "通过建立训练设施，自主子人口可以学习如何指挥低等同胞，这样可以获得更高的战场灵活性和效率。"
  tech_centralized_command:0 "集中指挥"
@@ -830,20 +677,15 @@
  tech_ground_defense_planning_desc:0 "有很多外星帝国希望将我们的世界据为己有。我们必须要做好万全的准备。"
  tech_global_defense_grid:0 "全球防御网络"
  tech_global_defense_grid_desc:0 "良好的防御在今天的重要程度丝毫不逊于许久之前我们的祖先所正在的时代。技术的进步不会将堡垒消除，只是改变它们的存在形式和强度。"
- 
- # Psionics
  tech_psionic_theory:0 "灵能理论"
  tech_psionic_theory_desc:0 "人脑就是一个微观世界，里面就是这个宇宙的反射方式。不是每个种群都能意识到，但是他们的意识和其他种群相比，更像是工具。"
  tech_telepathy:0 "心灵感应"
  tech_telepathy_desc:0 "一旦完全适应灵能的基本知识，能够连接到其他人，能力就会变得更大。"
  tech_transcendent_thought:0 "卓越思维"
- #tech_transcendent_thought_desc
  tech_precognition_interface:0 "预知接口"
  tech_precognition_interface_desc:0 "在灵能能力领域的不断进步使得这样一种可能性逐渐呈现：创造一种能够读取和分析心灵感应动作发出的脉冲的作战用计算机，即可在认知处理前进行预处理。"
  tech_psi_jump_drives:0 "灵能跃迁引擎"
  tech_psi_jump_drives_desc:0 "灵能跳跃引擎利用灵能引擎迫使舰体发出能源通过现实的阻碍，立即"跳跃"过超长的距离。"
- 
- # Trade and Diplomacy
  tech_xeno_outreach:0 "异星扩张"
  tech_xeno_outreach_desc:0 "对于大多数文明来说，错综复杂的星际贸易以及相似的其他事务，执行效率都很低。"
  tech_xeno_relations:0 "异星关系"
@@ -860,8 +702,6 @@
  tech_interstellar_campaigns_desc:0 "有充足后援的战争机器是确保银河系支配的关键手段。我们强大的兵力可以让我们在银河系中随心所欲。"
  tech_galactic_campaigns:0 "银河战役"
  tech_galactic_campaigns_desc:0 "对政体的改进可以延伸我们对遥远星系的掌控，并加强我们的军团影响力。"
- 
- # Empire Management
  tech_planetary_government:0 "行星政府"
  tech_planetary_government_desc:0 "一旦殖民地建立完毕，开拓者变成了公民，就需要一个强大的地方政府提供生活稳定性而不是殖民地更注重的灵活性。"
  tech_planetary_unification:0 "行星统一"
@@ -892,7 +732,6 @@
  tech_ethical_equations_desc:0 "禁锢他人的同时释放自我是一项困难异常的思维杂技——现在我们得益于更为先进的装备终于可以达成这项壮举了。"
  tech_neural_implants:0 "神经植入"
  tech_neural_implants_desc:0 "感知就是对感官的输入进行微乎其微的处理过程，是可以改变的。"
- # Free will is nothing more than a sensory illusion.
  tech_global_production_strategy:0 "全球生产策略"
  tech_global_production_strategy_desc:0 "星球很大，而生产设施之间通常也相隔着很远的距离。我们需要一个协调策略，来确保每个人都在朝着相同的方向努力。"
  tech_hyper_entertainment_forum:0 "极乐广场"
@@ -911,31 +750,20 @@
  tech_subdermal_stimulation_desc:0 "深层组织植入物是传感工程和娱乐体验两方面结合所产生的最新发明。“身之所至，无需触感！”"
  tech_paradise_dome:0 "田园建筑"
  tech_paradise_dome_desc:0 "有了最先进的建筑，全息影像以及美化技术，我们将建造一个真正的未来家园。"
- 
- # Social Engineering
  tech_artificial_moral_codes:0 "人工道德规范"
  tech_artificial_moral_codes_desc:0 "对于道德的定义不能脱离具体情况而定，有些情况下道德就像皴裂的粘土一样易碎。"
- # The opinion of the group shape the actions/decisions of the individual.
  tech_synthetic_thought_patterns:0 "综合思维模式"
  tech_synthetic_thought_patterns_desc:0 "跳出框框进行思考有时只是让你进入了一个更大的框框。"
- # There is really no such thing as thinking outside the box OR Thinking outside the box is merely thinking inside another, bigger, box.
  edict_will_to_power:0 "野心：权力欲"
  edict_will_to_power_desc:0 "权力只是将自己的意志强加给他人的能力，获得权力的欲望则是一种自我实现的预言。"
- # Seeking control over ones environment is inherent in all beings. We have simply mastered it/we are simply the most effective.
  tech_unity_of_purpose:0 "齐心协力"
  tech_unity_of_purpose_desc:0 "一个人的目标就是所有人的目标。唯有齐心协力，方可众志成城。"
- 
  tech_collective_production_methods:0 "共有生产方法"
  tech_collective_production_methods_desc:0 "我们一起构建未来。"
  tech_resource_processing_algorithms:0 "资源处理算法"
  tech_resource_processing_algorithms_desc:0 "所有事物都有效率。"
- 
- #Other
  tech_xeno_integration:0 "异星整合"
  tech_xeno_integration_desc:0 "各部件连接在一起发挥的作用比各部件堆砌在一起发挥的作用大得多。"
- # A whole that is/can be greater than the sum of its parts.
- 
- # Unity
  tech_cultural_heritage:0 "社会文化历史"
  tech_cultural_heritage_desc:0 "前事不忘后事之师，这是我们大步迈向未来的必要条件。"
  tech_heritage_site:0 "传承遗迹"
@@ -962,12 +790,6 @@
  tech_transcendent_faith_desc:0 "离开抚育我们的行星后，我们也对信仰、及其在更广阔的环境中的位置有了全新的理解。"
  tech_alien_sanctuary:0 "异族归化"
  tech_alien_sanctuary_desc:0 "先进归化中心的引进会给每个来到我们帝国的异人民提供特殊装备，以确保他们能适应新的社会，同时还可以保留他们天生的优势。"
- 
- 
- # ###################################
- # Society - Weapons
- # ###################################
- 
  tech_amoeba_strike_craft_1:0 "变形虫育种计划"
  tech_amoeba_strike_craft_1_desc:0 "通过饲养太空变形虫，我们可以修改基因让它们的鞭毛成为我们军团的攻击机。"
  tech_swarm_strike_craft_1:0 "蜂群孵化池"
@@ -976,12 +798,6 @@
  tech_scourge_missile_1_desc:0 "通过分析蜂群使用的生物武器，我们可以造出同样可怕的自航炮弹传播式杀伤性武器。"
  tech_space_whale_weapon_1:0 "频率调谐"
  tech_space_whale_weapon_1_desc:0 "适应缇扬奇提取气态物质的能源的方法，就有可能造出可以从敌方飞船中汲取能源的武器。"
- 
- # ###################################
- # Repeatable techs
- # ###################################
- 
- # Engineering
  tech_repeatable_improved_tile_mineral_output:0 "提取模式"
  tech_repeatable_improved_tile_mineral_output_desc:0 "了解矿物沉积的变动形式可以更有效的钻矿洞。"
  tech_repeatable_improved_military_station_damage:0 "同步开火模式"
@@ -1000,8 +816,6 @@
  tech_repeatable_weapon_type_kinetic_damage_desc:0 "超高密度的子弹可以击穿最强大的护盾。"
  tech_repeatable_weapon_type_kinetic_fire_rate:0 "装载效率"
  tech_repeatable_weapon_type_kinetic_fire_rate_desc:0 "小小的技术进步加上改良的飞船管理规程，可以让发射效率显著提高。"
- 
- #Physics
  tech_repeatable_improved_tile_energy_output:0 "超导应用"
  tech_repeatable_improved_tile_energy_output_desc:0 "轻微改善传输效率可以相当大的减少总能源损失。"
  tech_repeatable_improved_shield_output:0 "护盾数律分析"
@@ -1020,8 +834,6 @@
  tech_repeatable_reduced_building_cost_desc:0 "计算模型的日益强大使得单体建筑项目能够更好地适应星球的极度重力条件。"
  tech_repeatable_reduced_building_time:0 "组装算法"
  tech_repeatable_reduced_building_time_desc:0 "博弈论和模糊理论的应用具有大幅优化模块组装和建造的潜力。"
- 
- #Society:
  tech_repeatable_improved_tile_food_output:0 "转基因作物"
  tech_repeatable_improved_tile_food_output_desc:0 "仅仅一盒转基因作物就能提供多种普通食物的营养元素。"
  tech_repeatable_improved_sector_cap:0 "通讯协议"
@@ -1050,19 +862,8 @@
  tech_repeatable_naval_cap_desc:0 "改善舰队管理规程将腾出资源，用以维持更大的舰队。"
  tech_repeatable_command_limit:0 "司令幕僚"
  tech_repeatable_command_limit_desc:0 "强化司令的幕僚人员，将增加其可在一支舰队中指挥的舰船数量。"
- 
- # ###################################
- # TEMP
- # ###################################
- 
- # Pirate techs
  tech_pirate_starting:0 "仅限海盗的科技"
  tech_pirate_starting_desc:0 ""
- 
- #####################################
- # Event Techs
- #####################################
- 
  tech_event_crystal_sonar:0 "隐藏"
  tech_event_crystal_sonar_desc:0 "启用晶体声纳法令。"
  tech_event_droning_optimizations:0 "隐藏"
@@ -1073,24 +874,6 @@
  tech_event_crystal_bounty_desc:0 "启用晶体赏金法令。"
  tech_event_drone_bounty:0 "隐藏"
  tech_event_drone_bounty_desc:0 "启用无人机赏金法令。"
- #tech_event_masters_writings_politics
- #tech_event_masters_writings_politics_desc
- #tech_event_masters_writings_diplomacy
- #tech_event_masters_writings_diplomacy_desc
- #tech_event_masters_writings_philosophy
- #tech_event_masters_writings_philosophy_desc
- #tech_event_masters_writings_war
- #tech_event_masters_writings_war_desc
- #tech_event_improved_work_environment
- #tech_event_improved_work_environment_desc
- #tech_event_renewable_energy
- #tech_event_renewable_energy_desc
- #tech_event_super_sensors
- #tech_event_super_sensors_desc
- 
- #####################################
- # Gateways
- #####################################
  gateway_capital:0 "§H统治之道§!\n§E此科技可允许进一步升级首都建筑以及获得£influence §H影响力§!。升级星球首都是建造§H高级建筑§!的先决条件。§!"
  gateway_biological:0 "§H生物之道§!\n§E此科技可允许进一步升级生物强化和进化。§!"
  gateway_ship:0 "§H飞船之道§!\n§E此科技可允许建造更大型的太空港以及更强大的飞船。§!"
@@ -1099,18 +882,10 @@
  gateway_kinetic_weapons:0 "§H动能武器之道§!\n§E这项科技将进一步推进动能武器领域的科技发展。§!"
  gateway_energy_weapons:0 "§H能量武器之道§!\n§E这项科技将进一步推进能量武器领域的科技发展。§!"
  gateway_power_generation:0 "§H能源供给§!\n§E这项科技将进一步推进数个不同领域的科技发展。§!"
- 
- #####################################
- # Enclave Techs
- #####################################
  tech_curator_lab:0 "策展人探索实验室"
  tech_curator_lab_desc:0 "这些舰载实验中心使用了来自古老的策展人组织的先进科技来加快勘测速度。"
  tech_archeology_lab:0 "策展人考古实验室"
  tech_archeology_lab_desc:0 "这些舰载实验中心在识别考古发现时会使用来自策展人组织的庞大数据库以及先进的考古装备。"
- 
- #####################################
- # Machine Empire Techs
- #####################################
  tech_probability_theory:0 "有机生命概率论"
  tech_probability_theory_desc:0 "通过足够先进的数学仿真，也许有可能在一定程度上预测有机种群的经济浮动。我们可以借机操控他们的股市。"
  tech_binary_motivators:0 "二进制内驱程序"
@@ -1127,10 +902,6 @@
  tech_micro_replicators_desc:0 "配有显微设备的复制机能够让我们复制出带有更多复杂细节的子人口。"
  tech_self_assembling_components:0 "自动组装构件"
  tech_self_assembling_components_desc:0 "仿照有机物DNA而来，这些微型机械智能可以自动组成大多数新无人机需要的零件。"
- 
- #####################################
- # Required technologies
- #####################################
  requires_tech_synchronized_defences:0 "§R需要£physics §Y$tech_synchronized_defences$§!科技。§!"
  requires_tech_strike_craft_1:0 "§R需要£engineering §Y$tech_strike_craft_1$§!科技。§!"
  requires_tech_titans:0 "§R需要£engineering §Y$tech_titans$§!科技。§!"
@@ -1140,4 +911,3 @@
  requires_tech_interstellar_fleet_traditions:0 "§R需要£society §Y$tech_interstellar_fleet_traditions$§!科技。§!"
  requires_tech_orbital_sensor_array:0 "§R需要£physics §Y$tech_orbital_sensor_array$§!科技。§!"
  requires_tech_command_matrix:0 "§R需要£society §Y$tech_command_matrix$§!科技。§!"
- 

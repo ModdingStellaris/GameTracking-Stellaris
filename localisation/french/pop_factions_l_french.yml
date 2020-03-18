@@ -657,7 +657,7 @@
  TRADITIONALIST_FRUGALITY_DESC:0 "Le [Root.GetName] sera satisfait si nous dépensons peu de biens de consommation."
  TRADITIONALIST_BIG_SPENDING:0 "Excès déplorables"
  TRADITIONALIST_NO_TOMB_WORLDS:0 "Sol damné"
- TRADITIONALIST_NO_TOMB_WORLDS_DESC:0 "Le [Root.GetName] sera mécontent si nous posons le pied sur le moindre §Ymonde mort§!."
+ TRADITIONALIST_NO_TOMB_WORLDS_DESC:1 "Le [Root.GetName] sera mécontent si nous posons le pied sur quelque §Ymonde mort§! que ce soit, même pour le terraformer."
  TRADITIONALIST_TOMB_WORLDS:0 "$TRADITIONALIST_NO_TOMB_WORLDS$"
  TRADITIONALIST_GAIA_WORLDS:1 "Monde consacré"
  TRADITIONALIST_GAIA_WORLDS_DESC:2 "Le [Root.GetName] sera satisfait si nous §Yconsacrons§! un §Ymonde Gaïa§! au sein de notre espace."

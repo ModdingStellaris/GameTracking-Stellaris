@@ -400,11 +400,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_mod_planet_jobs_complex_drone_produces_mult"
-		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
+		textureFile = "gfx/interface/icons/text_icons/tooltip_upgrade.dds"
 	}
 	spriteType = {
 		name = "GFX_mod_planet_jobs_simple_drone_produces_mult"
-		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
+		textureFile = "gfx/interface/icons/text_icons/tooltip_upgrade.dds"
 	}
 	spriteType = {
 		name = "GFX_mod_planet_jobs_worker_produces_mult"

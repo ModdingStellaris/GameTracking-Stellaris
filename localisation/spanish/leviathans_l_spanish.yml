@@ -382,7 +382,7 @@
  TECH_UNLOCK_CURATOR_LAB_2_DESC:0 "$tech_archeology_lab_desc$"
  opinion1:0 "$OPINION$: £opinion£ §G+5§!"
  opinion7:0 "$OPINION$: £opinion£ §G+7§!"
- leviathans.5.name:0 "Guardián derrotado"
+ leviathans.5.name:1 "Leviatán derrotado"
  leviathans.5.desc:1 "§Y[leviathan_destroyer_country.GetName]§! ha eliminado una antigua amenaza en el remoto sistema [leviathan_destroyed_system.GetName]."
  opinion-3:0 "Opinión: £opinion£ §R-3§!"
  opinion-5:0 "Opinión: £opinion£ §R-5§!"

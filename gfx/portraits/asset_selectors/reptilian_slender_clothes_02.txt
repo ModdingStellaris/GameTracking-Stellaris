@@ -16,9 +16,9 @@ reptilian_slender_clothes_02 = {
 	pop = { #for a specific pop
 		default = "gfx/models/portraits/reptilian/reptilian_slender_outfit_governor_02.dds"
 		
-	#	"gfx/models/portraits/reptilian/reptilian_slender_outfit_general_01.dds" 	= { tile = { has_building = building_power_plant_1 } }
-	#	"gfx/models/portraits/reptilian/reptilian_slender_outfit_scientist.dds" 	= { tile = { has_building = building_engineering_facility_1 } }
-	#	"gfx/models/portraits/reptilian/reptilian_slender_outfit_Admiral.dds" 	= { tile = { has_building = building_hydroponics_farm_1 } }
+		"gfx/models/portraits/reptilian/reptilian_slender_outfit_general_01.dds" 	= { OR = { is_pop_category = worker is_pop_category = slave is_pop_category = simple_drone }  }
+		"gfx/models/portraits/reptilian/reptilian_slender_outfit_scientist.dds" 	= { OR = { is_pop_category = specialist is_pop_category = complex_drone } }
+		"gfx/models/portraits/reptilian/reptilian_slender_outfit_Admiral.dds" 	= { is_pop_category = ruler }
 	}
 	#leader scope
 	leader = { #scientists, generals, admirals, governor

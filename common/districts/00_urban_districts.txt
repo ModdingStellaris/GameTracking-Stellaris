@@ -136,7 +136,7 @@ district_city = {
 		}
 		modifier = {
 			factor = 5
-			free_housing < 0
+			free_housing < 2
 		}
 
 		# Let's not go full spam on this.
@@ -229,8 +229,8 @@ district_hive = {
 	ai_weight = {
 		weight = 1
 		modifier = {
-			factor = 4
-			free_housing < 0
+			factor = 5
+			free_housing < 2
 		}
 
 		# Let's not go full spam on this.
@@ -319,7 +319,7 @@ district_nexus = {
 		weight = 1
 		modifier = {
 			factor = 5
-			free_housing < 0
+			free_housing < 2
 		}
 
 		# Let's not go full spam on this.

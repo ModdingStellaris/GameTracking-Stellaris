@@ -175,17 +175,12 @@ building_artist_patron = {
 	
 	ai_weight = {
 		weight = 2
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 2
-			}
+			free_jobs > 0 
 		}
 	}
 }
@@ -267,6 +262,9 @@ building_nuumismatic_shrine = {
 	}
 
 	resources = {
+		cost = {
+			minerals = 1000
+		}
 		category = planet_buildings
 	}
 	
@@ -279,17 +277,12 @@ building_nuumismatic_shrine = {
 	
 	ai_weight = {
 		weight = 2
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 2
-			}
+			free_jobs > 0 
 		}
 	}
 }

@@ -157,7 +157,7 @@
  MEGASTRUCTURE_BUILD_OUTSIDE_GRAVITY_WELL:0 "Nie można zbudować bramy kosmicznej wewnątrz studni grawitacyjnej układu."
  MEGASTRUCTURE_BUILD_INSIDE_SYSTEM_RADIUS:0 ""
  NUM_GATEWAYS:0 "Porzucone bramy kosmiczne"
- NUM_GATEWAYS_TOOLTIP:1 "§HPary bram czasoprzestrzennych§!\nPomnaża standardową liczbę porzuconych bram kosmicznych, które zostaną wygenerowane w galaktyce."
+ NUM_GATEWAYS_TOOLTIP:2 "§HPorzucone bramy kosmiczne§!\nPomnaża standardową liczbę hiperlinii, które zostaną wygenerowane w galaktyce."
  NUM_WORMHOLES:0 "Pary tuneli czasoprzestrzennych"
  NUM_WORMHOLES_TOOLTIP:1 "§HPary tuneli czasoprzestrzennych§!\nPomnaża standardową liczbę par tuneli czasoprzestrzennych, które zostaną wygenerowane w galaktyce."
  NAME_gateway_final:0 "Brama kosmiczna"

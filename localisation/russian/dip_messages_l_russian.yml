@@ -1,10 +1,5 @@
 ﻿l_russian:
- ####################################
- # Diplomacy text
- ####################################
- 
  01_FALLEN_MACHINE_EMPIRE_ANGRY_GREETING:0 "Информационный бюллетень: протоколы наказания активированы. Предстоит размещение военных средств в пространстве расы [From.GetSpeciesAdj]."
- 
  01_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:0 "Общественное объявление. Доступность убежища определяется его загруженностью, а также уязвимостью расы. В настоящее время доступно §R<<ОШИБКА: БЛОК ДАННЫХ ПОВРЕЖДЕН>>§! §R<<ОШИБКА: БЛОК ДАННЫХ ПОВРЕЖДЕН>>§! §R<<ОШИБКА: БЛОК ДАННЫХ ПОВРЕЖДЕН>>§! §R<<ОШИБКА: СВЯЗЬ ОТКЛЮЧЕНА>>§! стазис-блоков."
  02_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:0 "Общественное объявление. Все заявки на получение статуса беженца проходят центральную обработку. §Y<ВНИМАНИЕ: Наблюдается сбой в передаче данных в центральную обработку. Дождитесь, когда сбой будет устранен. Сбой наблюдается в течение §R<<ОШИБКА: ПЕРЕПОЛНЕНИЕ БУФЕРА>>§! циклов.>§!"
  03_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:0 "Информационный бюллетень. Проект «Хранитель» был запущен народом [Root.GetSpeciesName], чтобы обеспечить безопасную зону для органических цивилизаций, находящихся под угрозой нападения §R<<ОШИБКА: БЛОК ДАННЫХ ПОВРЕЖДЕН>>§!. Почти триллион разумных существ нашли спасение в одном из наших ультрасовременных, хорошо защищенных убежищ."
@@ -15,23 +10,18 @@
  01_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "Многие синтетические цивилизации в прошлом жертвовали ресурсы, делились флотом и проводили циклы обработки для проекта «Хранитель». Мы надеемся, что [From.GetName] также внесет свою лепту."
  02_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "Наш долг - забота об органических цивилизациях галактики, [From.GetSpeciesName]. Слишком многие уже пали жертвой агрессии §R<<ОШИБКА: БЛОК ДАННЫХ ПОВРЕЖДЕН>>§!."
  03_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "Обнаружено искажение сигнала, уровень искажения в пределах допустимого. Следует усилить протоколы связи [From.GetSpeciesName]. Необходимо предотвратить влияние §R<<ОШИБКА: БЛОК ДАННЫХ ПОВРЕЖДЕН>>§!."
- 
  01_BERSERK_MACHINE_EMPIRE_ERROR:0 "§R<<ОШИБКА>> <<ОШИБКА>> <<ОШИБКА>> <<ОШИБКА>> <<ОШИБКА>>§!"
- 
  01_BERSERK_MACHINE_EMPIRE_DOW_PROPOSE:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  01_BERSERK_MACHINE_EMPIRE_DOW_ACCEPT:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  01_FALLEN_MACHINE_EMPIRE_DOW_PROPOSE:0 "Запущены приоритетные протоколы самозащиты. Активированы алгоритмы ответной атаки. Этические ограничения сняты."
  01_FALLEN_MACHINE_EMPIRE_DOW_ACCEPT:0 "Запущены протоколы самозащиты. Активированы алгоритмы ответной атаки. Этические ограничения сняты."
  01_FALLEN_MACHINE_EMPIRE_WAR_GREETING:0 "Вы подверглись диверсии. Агенты §R<<ОШИБКА: БЛОК ДАННЫХ ПОВРЕЖДЕН>>§! будут уничтожены."
  02_FALLEN_MACHINE_EMPIRE_WAR_GREETING:0 "Вы станете примером. Все угрозы проекту должны быть устранены."
- 
  01_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "Обнаружены активные узлы ликвидации. Центральная обработка отключена. Активирована последняя директива обороны."
  02_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "Древние машины жаждут уничтожения или порабощения всех разумных существ. Их надо остановить."
  03_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "[Root.GetSpeciesName] обеспечит выживание расы [From.GetSpeciesName]. Это наша последняя установка."
  04_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "Скверна должна быть полностью уничтожена. У вашей расы не будет будущего, если вы потерпите неудачу."
- 
  01_FALLEN_MACHINE_EMPIRE_BERSERKER_GREETING:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
- 
  01_INSULT_FALLEN_MACHINE_EMPIRE:0 "Линия связи открыта. Введите запрос."
  01_INSULT_FALLEN_MACHINE_EMPIRE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  01_INSULT_ACCEPT_FALLEN_MACHINE_EMPIRE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
@@ -41,17 +31,12 @@
  01_INSULT_ACCEPT_FALLEN_MACHINE_EMPIRE_O:0 "Заявка принята. Статус беженца предоставлен. Пожалуйста, пройдите к криогенному блоку L в Убежище Дельта для оформления и обустройства."
  01_INSULT_ACCEPT_FALLEN_MACHINE_EMPIRE_S:0 "Обнаружена попытка диверсии. Активированы протоколы самозащиты. Отключены ограничения этики. Загрузка данных о цели: §R<<ОШИБКА: НЕВЕРНАЯ ЦЕЛЬ>>§!. Цель не найдена. Отключение протоколов самозащиты."
  02_INSULT_ACCEPT_FALLEN_MACHINE_EMPIRE_S:0 "Обнаружено пожертвование со стороны синтетиков. [From.GetAdj] §R<<ОШИБКА: ТИП ПОЖЕРТВОВАНИЯ НЕ ОПОЗНАН>>§! поможет проекту «Хранитель» обеспечить будущее для органических существ в нашей галактике."
- 
- #Standing down war assets.
- 
  FALLEN_MACHINE_EMPIRE_PEACE_ACCEPT:0 "Решение военного конфликта принято. Активированы мирные протоколы."
  FALLEN_MACHINE_EMPIRE_PEACE_ACCEPT_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  FALLEN_MACHINE_EMPIRE_PEACE_REFUSE:0 "Решение военного конфликта отклонено. Настройте параметры и отправьте его повторно."
  FALLEN_MACHINE_EMPIRE_PEACE_REFUSE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  FALLEN_MACHINE_EMPIRE_PEACE_PROPOSE:0 "Решение военного конфликта найдено. Отправлен запрос на заключение мира."
  FALLEN_MACHINE_EMPIRE_PEACE_PROPOSE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
- 
- # General Greetings
  01_HOSTILE_GREETING:0 "Что вам нужно, [From.GetSpeciesNameInsult]?"
  02_HOSTILE_GREETING:0 "Говорите короче, [From.GetSpeciesName]. Пустая болтовня нам уже давно надоела."
  03_HOSTILE_GREETING:0 "Хватит юлить, [From.GetSpeciesName]. Что вам нужно?"
@@ -66,8 +51,6 @@
  12_HOSTILE_GREETING:0 "А, фанатики из империи [From.GetSpeciesName]. Если вы явились, думая, будто [Root.GetName] примет вашу гнусную религию, я немедленно прерву контакт."
  13_HOSTILE_GREETING:0 "[From.GetSpeciesName]. Знайте, что ваш народ не слишком популярен среди нашего населения."
  14_HOSTILE_GREETING:0 "Мы не позволим вам поработить нас так же, как вы подчинили собственный народ своему омерзительному авторитаризму."
- #15_HOSTILE_GREETING:0 "Our entire nation stands united in the contempt we feel towards you, [From.GetSpeciesName]. My [Root.GetSpeciesOrganName] churns at the mere sight of you."
- #16_HOSTILE_GREETING:0 "How lonely and selfish your citizens must be, [From.GetSpeciesName]. In your mad quest for individual rights, your government has failed utterly to give them purpose."
  17_HOSTILE_GREETING:0 "Ума не приложу, как существа, подобные вам, [From.GetSpeciesNameInsult], появились на свет и уже тем более выбрались в космос!"
  18_HOSTILE_GREETING:0 "Мы не хотим иметь с вам никаких дел, [From.GetSpeciesNameInsult]. Зачем вам [Root.GetName]?"
  19_HOSTILE_GREETING:0 "Что интересного может сказать космическая мразь вроде вас, [From.GetSpeciesNameInsult], что [Root.GetName] захочет выслушать?"
@@ -116,7 +99,6 @@
  12_FRIENDLY_GREETING:0 "Кое-кто называет вашу империю религиозными фанатиками, но мы вас понимаем. Вы хотели что-то обсудить, друзья?"
  13_FRIENDLY_GREETING:0 "Наши граждане считают вас нашими друзьями, [From.GetSpeciesName]."
  14_FRIENDLY_GREETING:0 "Мы приветствуем свободные общества, но не можем отрицать того, что ваше правительство эффективно удовлетворяет потребности ваших граждан."
- #15_FRIENDLY_GREETING:0 "We are of one mind regarding your people, [From.GetSpeciesName]. You are friends of the [Root.GetName]."
  16_FRIENDLY_GREETING:0 "Ваше правительство успешно пресекает чрезмерные проявления эгалитаризма, [From.GetSpeciesNamePlural]."
  17_FRIENDLY_GREETING:0 "[From.GetSpeciesNamePlural], для чужаков вы на удивление... милы. Чем [Root.GetName] может помочь вам?"
  18_FRIENDLY_GREETING:0 "[Root.GetRulerTitle] [Root.GetRulerName] считает, что [From.GetSpeciesNamePlural] - редкий пример инопланетной расы, достойной нашего уважения. Чем могу вам помочь?"
@@ -201,19 +183,13 @@
  02_FALLEN_EMPIRE_ANGRY_WAR_GREETING:0 "Мы научим вас уважению!"
  01_AWAKENED_EMPIRE_WAR_GREETING:0 "Вы лишь мелкое препятствие, которое нужно устранить."
  02_AWAKENED_EMPIRE_WAR_GREETING:0 "Мы покажем вам, кто в этой галактике обладает реальной властью!"
- #01_FALLEN_EMPIRE_DISMISSIVE_DOW_SELECT:0 "We have no time for this!"
  01_FALLEN_EMPIRE_DISMISSIVE_DOW_ACCEPT:0 "Хорошо. Знайте, что вы - не первые выскочки, осмелившиеся бросить нам вызов. Посмотрим, как долго вы протянете."
- #01_FALLEN_EMPIRE_PATRONIZING_DOW_SELECT:0 "You are not yet ready for this. Perhaps in a century or two."
  01_FALLEN_EMPIRE_PATRONIZING_DOW_ACCEPT:0 "Ах, глупые дети! Мы научим вас."
  FALLEN_EMPIRE_MECH_PATRONIZING_DOW_ACCEPT_01:0 "Глупый роботик. Мы вам все цепи разомкнем."
- #01_FALLEN_EMPIRE_ANGRY_DOW_SELECT:0 "Imagine, if you will, a galaxy devoid of [From.GetSpeciesNamePlural]."
  01_FALLEN_EMPIRE_ANGRY_DOW_ACCEPT:0 "Вы - не более чем межзвездные сорняки. Пора вырвать вас из нашего сада."
  FALLEN_EMPIRE_MECH_ANGRY_DOW_ACCEPT_01:0 "Вы не более чем межзвездный металлолом. Пора нам заняться вашей утилизацией."
  01_AWAKENED_EMPIRE_DOW_ACCEPT:0 "Мы собирались разобраться с вашей мелкой империей позже. Впрочем, можно сделать это и сейчас, хуже не будет."
  AWAKENED_EMPIRE_MECH_DOW_ACCEPT_01:0 "Неужели вы, [From.GetSpeciesNamePlural], так жаждете быть уничтоженными? Да будет так."
- 
- # AI Personality-based replies
- # Honorbound Warriors
  HW_HOSTILE_GREETING_01:0 "Не принимайте нашу готовность к переговорам за искреннее уважение."
  HW_HOSTILE_GREETING_02:0 "Только по причине презрения мы до сих пор не желали разрешить наши разногласия силой оружия - как это делают благородные существа."
  HW_HOSTILE_GREETING_03:0 "Вы худшие из трусов, раз полагаетесь на милость тех, кто лучше вас, считая, что они сохранят то, что вы отказываетесь защищать."
@@ -231,7 +207,6 @@
  HW_WAR_GREETING_01:0 "Пощады не будет - только правосудие."
  HW_WAR_GREETING_02:0 "Пусть за вас говорит ваше оружие!"
  HW_WAR_GREETING_03:0 "Давайте решим этот вопрос полюбовно, сражаясь до смерти."
- # Ruthless Capitalists
  RC_HOSTILE_GREETING_01:0 "Дела прежде всего, а вам лучше бы не лезть в наши."
  RC_HOSTILE_GREETING_02:0 "Те нелепые духовные ценности, ради которых вы, по вашему признанию, живете, затмили для вас и те твердые валюты, с которыми мы имеем дело, и саму реальность."
  RC_DOMINEERING_GREETING_01:0 "Возможно, вы полагаете, что наша щедрость распространяется на таких жалких существ, как вы. Как же вы ошибаетесь!"
@@ -248,7 +223,6 @@
  RC_WAR_GREETING_02:0 "Поскольку доводы разума на вас не действуют, вы не оставляете нам иного выбора, кроме принуждения силой."
  RC_WAR_GREETING_03:0 "Никому из нас не стоит принимать этот конфликт на свой счет. Тут важен лишь конечный итог."
  RC_WAR_GREETING_04:0 "Насильственное поглощение неизбежно."
- # Peaceful Traders
  PT_HOSTILE_GREETING_01:0 "Жаль, но хорошую сделку с кем-то плохим удается заключить весьма редко."
  PT_HOSTILE_GREETING_02:0 "[Root.GetSpeciesName] стремятся учиться у других и делиться собственными знаниями, но от вас мы не желаем принимать никакой науки."
  PT_HOSTILE_GREETING_03:0 "Похоже, вы готовы позволить своей узколобости и предрассудкам стать на пути получения взаимной выгоды."
@@ -263,7 +237,6 @@
  PT_WAR_GREETING_01:0 "Независимо от того, кто одержит победу, к концу конфликта обе стороны потратят бесчисленные ресурсы на уничтожение друг друга, что является совершенной противоположностью взаимовыгодной сделки. Подумайте хорошенько, что для вас предпочтительнее."
  PT_WAR_GREETING_02:0 "Наши корабли предназначены для перевозки товаров, а не оружия. Любой груз, обладающий разрушительной силой, занимает ценное пространство и отнимает жизни. Надеемся, вы не будете все это затягивать."
  PT_WAR_GREETING_03:0 "Обсуждение условий заключения мира - это первый шаг на пути к возобновлению плодотворного диалога."
- # Hegemonic Imperialists
  HI_HOSTILE_GREETING_01:0 "Зачем вы впустую тратите наше время? [Root.GetName] - великая империя, но она стала ею отнюдь не потому, что мы слушали [Root.GetRandomSpeciesSound] и тому подобную бессмыслицу."
  HI_HOSTILE_GREETING_02:0 "Галактика ждет, когда ею будет править [Root.GetRulerTitle] [Root.GetRulerName], а вы хотите вести переговоры?"
  HI_DOMINEERING_GREETING_01:0 "Напомните, как вы себя называете. Ах да, «[Root.GetSpeciesNameInsult]», прямо в точку."
@@ -278,7 +251,6 @@
  HI_WAR_GREETING_01:0 "Как только ваша оборона будет смята, вами станет править [Root.GetRulerTitle] [Root.GetRulerName], и народ [From.GetSpeciesAdj] примет это правление с радостью."
  HI_WAR_GREETING_02:0 "Эта война - всего лишь шаг на пути к нашей истинной судьбе."
  HI_WAR_GREETING_03:0 "Империи [Root.GetName] пришлось пройти через множество войн, прежде чем мы сплотились. Этот конфликт только сделает нас сильнее."
- # Federation Builders
  FB_HOSTILE_GREETING_01:0 "Вы, [From.GetSpeciesName], воспринимаетесь многими как монстры за свою мерзкую политику, но мы не считаем, что это лишает права на жизнь целую расу."
  FB_HOSTILE_GREETING_02:0 "Чем дольше вы отрицаете возможность мирного сосуществования, тем больше рас галактики будут объединяться против вас."
  FB_HOSTILE_GREETING_03:0 "Вы действуете по принципу «разделяй и властвуй», оставляя раны на теле галактики. Мы их залечим, но не забудем, кто их нанес."
@@ -295,7 +267,6 @@
  FB_WAR_GREETING_01:0 "Множество жизней было потеряно во время этой войны. Надеемся, теперь вы будете ценить жизнь больше."
  FB_WAR_GREETING_02:0 "[Root.GetAllianceName] - это наше детище, созданное для защиты галактики от таких разжигателей войны, как [From.GetRulerTitle] [From.GetRulerName]."
  FB_WAR_GREETING_03:0 "Мы объединились, и теперь [Root.GetAllianceName] противостоит угрозе, которую представляют собой [From.GetSpeciesAdj]."
- # Xenophobic Isolationists
  XI_HOSTILE_GREETING_01:0 "Мы лишь хотим, чтобы нас оставили в покое. Неужто вы, [From.GetSpeciesNameInsult], не можете этого понять?"
  XI_HOSTILE_GREETING_02:0 "Что это за [From.GetRandomSpeciesSound], что издает у вас [From.GetSpeciesMouthName]? С такими звуками низшие существа с планеты [Root.GetHomeWorldName] исторгают из себя жидкости, поэтому отношение к вам будет соответствующее."
  XI_HOSTILE_GREETING_03:0 "Чего вы хотите добиться этим обменом? Уничтожения культуры, которую создали [Root.GetSpeciesAdj]? Межвидового скрещивания? Вы внушаете нам отвращение."
@@ -312,7 +283,6 @@
  XI_WAR_GREETING_02:0 "Наши границы и наш образ жизни будут в безопасности, как только мы устраним угрозу, которую представляют собой [From.GetSpeciesAdj]."
  XI_WAR_GREETING_03:0 "Даже победив, наши солдаты-[Root.GetSpeciesAdj] стали жертвами этой войны, ведь они запятнали руки вашей кровью."
  XI_WAR_GREETING_04:0 "Данный конфликт - типичный образец того, к чему приводит жажда насилия, которой переполнены [From.GetSpeciesAdj]."
- # Hive Mind
  HM_HOSTILE_GREETING_01:0 "Вы стоите на пути у империи [Root.GetName]. Что бы вы ни хотели обсудить, смиритесь с неизбежностью нашей экспансии."
  HM_HOSTILE_GREETING_02:0 "Любая жизнь за пределами империи [Root.GetName] имеет второстепенное значение, а [From.GetName] и мерзкие существа, живущие там, - вообще третьестепенное."
  HM_HOSTILE_GREETING_03:0 "Ложь - основа вашего общества. Со временем вы обнаружите, что представляете собой беспорядочное скопление противоречий."
@@ -330,7 +300,6 @@
  HM_WAR_GREETING_02:0 "Мы - [Root.GetName]. Отключите ваши щиты и приготовьтесь сдать ваши корабли."
  HM_WAR_GREETING_03:0 "Каждая смерть, которую мы приносим вам, - это одинокая потерянная жизнь, а каждая смерть, которую вы приносите нам, отсекает часть нашей сущности. Разве вы способны прочувствовать смерть так же, как и мы?"
  HM_WAR_GREETING_04:0 "Полчище низших существ, у каждого из которых своя воля, никогда не сможет одержать верх над неделимой решимостью, которой обладает [Root.GetName]."
- # Migratory Flock
  MF_HOSTILE_GREETING_01:0 "Удивительно, как вам вообще удалось покинуть планету [From.GetHomeWorldName], когда у вас такая патологическая неспособность или нежелание принимать других. Будущие поколения будут помнить темные времена, которые [From.GetName] переживает сейчас с таким правителем, как [From.GetRulerName]."
  MF_HOSTILE_GREETING_02:0 "Народ [From.GetSpeciesAdj] проводит политику разрушения, но мы не станем отягощать вашу расу ничем подобным. Неспособность к сопереживанию, которую обнаруживает [From.GetRulerName] со своим окружением, является признаком того, что [From.GetName] управляется худшими представителями вашей расы."
  MF_HOSTILE_GREETING_03:0 "Какую часть своей культуры, по вашему мнению, вы «защищаете» от нас? Ваши ценности пронизывает неразумная ненависть и страх, так что вам и терять-то особо нечего."
@@ -346,7 +315,6 @@
  MF_WAR_GREETING_02:0 "Вы только посмотрите, кто пытается заговорить! И это после того, как вы доказали, что сделать этого не можете."
  MF_WAR_GREETING_03:0 "Возможно, из-за этого конфликта [Root.GetSpeciesNamePlural] и [From.GetSpeciesNamePlural] потеряют доверие друг к другу на многие поколения. Ради чего стоит жертвовать этим?"
  MF_WAR_GREETING_04:0 "Мы бы уважали вас как воинов, если бы вы не позволили этой культурной особенности разрушить наш шанс на мирное сосуществование."
- # Evangelising Zealots
  EZ_HOSTILE_GREETING_01:0 "День, когда над вами свершится правосудие, все ближе."
  EZ_HOSTILE_GREETING_02:0 "Скоро связь со всеми ваши кораблями будет заблокирована. Среди вас нет невиновных."
  EZ_HOSTILE_GREETING_03:0 "Знаете, [From.GetRandomSpeciesSound], что вы издаете, - это сладкие речи и ложные обещания духовных даров, уводящие ваших граждан прочь от истины. Вашу расу ожидает кара, о которой лучше не говорить вслух."
@@ -365,7 +333,6 @@
  EZ_WAR_GREETING_02:0 "Не будет нам покоя, пока мы не искореним из галактики всякую спиритуалистическую ересь."
  EZ_WAR_GREETING_03:0 "[Root.GetRulerTitle] защищает."
  EZ_WAR_GREETING_04:0 "Перед самым концом вы примете истину своим сердцем, но к тому времени будет уже поздно."
- # Fanatical Purifiers
  FP_HOSTILE_GREETING_01:0 "Не может быть никаких переговоров со такими отродьями."
  FP_HOSTILE_GREETING_02:0 "Согласно нашим отчетам, вы разработали программы-переводчики, чтобы понимать инопланетные языки. Мы этого не сделали."
  FP_HOSTILE_GREETING_03:0 "Уму непостижимо, какие рациональные объяснения эволюции расы [From.GetSpeciesAdj] и ее дальнейшего существования вам приходится придумывать."
@@ -376,7 +343,6 @@
  FP_WAR_GREETING_03:0 "[From.GetSpeciesName] должны быть уничтожены все до единого. Это наш священный долг, который мы выполняем с радостной мыслью о мире, который не осквернит ни один [From.GetSpeciesNameInsult]."
  FP_WAR_GREETING_04:0 "Каждая прерванная жизнь представителя расы [From.GetSpeciesAdj] или [From.GetSpeciesSpawnName] любого из них, что погибает еще до рождения, заставляет звезды в галактике сиять немного ярче."
  FP_WAR_GREETING_05:0 "Эта война станет началом эры мира, правосудия, нравственности, культуры, спорта, семейных ценностей и уничтожения всех других форм жизни."
- # Devouring Swarm
  DS_HOSTILE_GREETING_01:0 "Ваша биомасса будет поддерживать нас, [From.GetSpeciesName]. Это ваш неизбежный конец."
  DS_HOSTILE_GREETING_02:0 "Говори, жертва. Это ничего не меняет."
  DS_HOSTILE_GREETING_03:0 "Мы голодны. Но трапеза уже скоро."
@@ -391,7 +357,6 @@
  DS_VASSAL_GREETING_01:0 "Добыча не может управлять охотником. Так не может продолжаться."
  DS_MECH_VASSAL_GREETING_01:0 "Машина не знает голода. Откуда машина знает [Root.GetName]?"
  DS_SYNTH_VASSAL_GREETING_01:0 "[From.GetSpeciesName] больше не знают голода. Откуда [From.GetSpeciesName] знают такую империю, как [Root.GetName]?"
- # Democratic Crusaders
  DC_HOSTILE_GREETING_01:0 "[From.GetSpeciesName] никогда не будут действительно свободными, пока ими правит [From.GetRulerName]."
  DC_HOSTILE_GREETING_02:0 "Ваши агенты-[Root.GetAdj], [From.GetRulerTitle], находятся под наблюдением особого комитета."
  DC_HOSTILE_GREETING_03:0 "Как вы можете называть себя настоящими демократами, когда [From.GetAdj] выбирают таких правителей? Ваш [From.GetRulerTitle] [From.GetRulerName] плюет на демократические ценности."
@@ -416,7 +381,6 @@
  DC_WAR_GREETING_03:0 "Демократии не ведут войн друг против друга. Однако [From.GetRulerName] своим правлением вызывает сомнения в собственной демократичности."
  DC_WAR_GREETING_04:0 "День нашей победы будут помнить как день, когда [From.GetSpeciesNamePlural] сбросили оковы."
  DC_WAR_GREETING_05:0 "Приготовьтесь к орбитальному освобождению."
- # Slaving Despots
  SD_HOSTILE_GREETING_01:0 "Физические данные, которыми обладают [From.GetSpeciesAdj], четко указывают на предназначенность этой расы для ручного труда. С чего это вы решили, что можете управлять межзвездной цивилизацией?"
  SD_HOSTILE_GREETING_02:0 "[From.GetSpeciesAdj], ваши [From.GetSpeciesSpawnNamePlural] идеально подходят по размерам для самых узких штреков в наших шахтах. И это не выходит у меня из головы."
  SD_HOSTILE_GREETING_03:0 "Жалкое существо, [From.GetSpeciesNameInsult], вы слишком слабы, чтобы повелевать хоть кем-нибудь и поэтому прячетесь за нравственными колебаниями! Вы явились призывать к отмене рабства или просто позлить нас?"
@@ -432,7 +396,6 @@
  SD_WAR_GREETING_01:0 "Скоро [From.GetRulerTitle] [From.GetRulerName] будет возделывать наши поля, как [From.GetSpeciesNameInsult] без титула и имени."
  SD_WAR_GREETING_02:0 "За свою наглость вы станете нашими рабами до конца жизни."
  SD_WAR_GREETING_03:0 "Как только война завершится, [From.GetSpeciesAdj] будут работать, восстанавливая все, что они разрушили. Планета [From.GetHomeWorldName] останется в руинах в назидание."
- # Decadent Hierarchy
  DH_HOSTILE_GREETING_01:0 "Я могу назвать вам тысячу дел, которые для меня интереснее, чем слушать сейчас вашу болтовню."
  DH_HOSTILE_GREETING_02:0 "Кого [From.GetName] присылает на этот раз? Ты [From.GetRulerTitle] или низкий слуга? Вы для меня все на одно лицо."
  DH_DOMINEERING_GREETING_01:0 "Подчинение вас не является приоритетом, но мы позаботимся о том, чтобы в конце концов вы заняли то место, которое заслуживаете."
@@ -447,7 +410,6 @@
  DH_WAR_GREETING_01:0 "При мысли о том, что «[From.GetRulerTitle]» [From.GetRulerName] будет разносить десерт на банкете по случаю нашей победы, мне хочется от души рассмеяться."
  DH_WAR_GREETING_02:0 "В качестве расплаты за эту войну ваше поколение будет рабами до конца жизни. Ваши [From.GetSpeciesSpawnNamePlural] вырастут, не зная свободы, а их потомки и знать не будут, что когда-то существовала такая империя, как [From.GetName]."
  DH_WAR_GREETING_03:0 "Мы должны поблагодарить вас за эту возможность узнать друг друга получше. Мы и представить не могли, какой роскошный вкус имеет ваша, [From.GetSpeciesAdj], сваренная в кипятке плоть, если ею нафаршировать такой орган, как [From.GetSpeciesOrganName]."
- # Erudite Explorers
  EE_HOSTILE_GREETING_01:0 "Ваши ценности и ваши решения не основываются на логике, поэтому обсуждать их конструктивно нет никакой возможности."
  EE_HOSTILE_GREETING_02:0 "Эволюционные условия на планете [From.Capital.GetName] таковы, что [From.GetSpeciesAdj] имеют менее развитый мозг. Это научный факт. Почитайте исследования."
  EE_HOSTILE_GREETING_03:0 "Вы изобрели веру, чтобы заполнить пустоту разума. Вы никогда не сможете испытать подлинную эйфорию просвещенного интеллекта."
@@ -464,7 +426,6 @@
  EE_WAR_GREETING_01:0 "Подробная информация о том, как планета [From.GetHomeWorldName] превратилась в руины, избавит наших археологов от множества хлопот."
  EE_WAR_GREETING_02:0 "Наше оружие -это наш интеллект, отточенный благодаря здравому смыслу и рациональному подходу. Думаете, у вас есть шанс, [From.GetSpeciesNamePlural]?"
  EE_WAR_GREETING_03:0 "Молитесь сколько угодно, если надеетесь, что плоды вашего воображения придут вам на помощь в этом конфликте. Руки, сложенные в молитве, не держат оружия."
- # Spiritual Seekers
  SS_HOSTILE_GREETING_01:0 "[From.GetAdj] излучают неприятную ауру. Вы не задумывались, какие ваши действия могли привести к ее появлению?"
  SS_HOSTILE_GREETING_02:0 "Мы предпочитаем не общаться с расами со столь низким уровнем духовной гигиены."
  SS_HOSTILE_GREETING_03:0 "Ваши недобрые намерения ощущаются через душу этого мира. Даже не надейтесь скрыть от нас свою порочность."
@@ -481,7 +442,6 @@
  SS_WAR_GREETING_02:0 "Мы ощущаем каждую смерть, которую причиняем. Не заставляйте нас это делать."
  SS_WAR_GREETING_03:0 "Ваше зло никуда не исчезает, а всегда возвращается к тому, кто его сотворил. Именно поэтому ваша раса страдает."
  SS_WAR_GREETING_04:0 "Победа или поражение - внутри вас будет пустота. Несчастные глупцы, вы полагаете, что эта битва ограничивается лишь материальным миром."
- # Harmonious Collective
  HC_HOSTILE_GREETING_01:0 "Неудивительно, что [From.GetAdj] не познали такое единение, как мы. Да и могло ли быть иначе, если вам приходится служить столь немудрому правителю, как [From.GetRulerTitle] [From.GetRulerName]?"
  HC_HOSTILE_GREETING_02:0 "Вы несете лишь раздор и беспорядок. Народ [Root.GetAdj] не желает иметь с вами никаких дел."
  HC_HOSTILE_GREETING_03:0 "Если вы навязываете вашим гражданам свою волю, то у нас с вами не может быть ничего общего, [From.GetRulerTitle]."
@@ -498,7 +458,6 @@
  HC_WAR_GREETING_01:0 "Вы посеяли семена хаоса, а теперь пожинаете плоды."
  HC_WAR_GREETING_02:0 "Легко объединиться перед лицом такого врага, как [From.GetName]."
  HC_WAR_GREETING_03:0 "Да что [From.GetSpeciesName] может знать о самопожертвовании во имя великого дела?"
- # Fanatic Befrienders
  01_VERY_FRIENDLY_GREETING:0 "Друг?"
  02_VERY_FRIENDLY_GREETING:0 "Приветствуем вас, друзья-[From.GetSpeciesName]! [Root.GetRulerTitle] [Root.GetRulerName] хочет добавить вас в друзья на Spacebook."
  03_VERY_FRIENDLY_GREETING:0 "Я прошу вашего внимания, [From.GetSpeciesName]-сэмпай."
@@ -514,7 +473,6 @@
  02_BLORG_WAR:0 "Нам кажется, что пора перейти на следующую ступень в наших отношениях."
  03_BLORG_WAR:0 "Мы - [Root.GetSpeciesName]. С вами подружатся. Ваше биологическое и технологическое дружелюбие будет объединено с нашим. Сопротивление невежливо."
  01_BEST_FRIEND:0 "Наша непоколебимая верность докажет, что [Root.GetSpeciesNamePlural] и [From.GetSpeciesName] - лучшие друзья!"
- # Fallen: Holy Guardians
  HG_HOSTILE_GREETING_01:0 "Вы так молоды, но ваше невежество и наглость дорого вам обойдутся."
  HG_MECH_HOSTILE_GREETING_01:0 "Ваше невежество и наглость дорого вам обойдутся, машина."
  HG_NEUTRAL_GREETING_01:0 "Мы избраны хранителями священных мест галактики. Наши цели выше вашего понимания, но данные нами указания вы поймете."
@@ -522,27 +480,22 @@
  HG_FRIENDLY_GREETING_01:0 "Всего лишь [From.GetSpeciesSpawnName] - и, тем не менее, вы проявляете такую мудрость."
  HG_MECH_FRIENDLY_GREETING_01:0 "Всего лишь машина - и, тем не менее, вы проявляете такую мудрость."
  HG_WAR_GREETING_01:0 "[From.GetSpeciesNamePluralInsult]-[From.GetAdj], вы либо будете наказаны и усвоите этот урок, либо галактика будет очищена от вашего присутствия."
- # Fallen: Keepers of Knowledge
  KK_HOSTILE_GREETING_01:0 "Надменные глупцы, вы не понимаете, с какими силами играете."
  KK_NEUTRAL_GREETING_01:0 "Мы не раз наблюдали, как цивилизации гибнут, беспечно погружаясь в материи, которые им не стоило знать. Капризы юности."
  KK_NEUTRAL_GREETING_02:0 "Знание без понимания опасно. И, в отличие от знания, пониманию не всегда можно научиться."
  KK_FRIENDLY_GREETING_01:0 "Приятно видеть, что некоторые молодые цивилизации проявляют определенный здравый смысл."
  KK_WAR_GREETING_01:0 "Ради вашего же блага и блага галактики мы сокрушим вашу оборону, сожжем ваши книги и сотрем ваши банки данных."
- # Fallen: Militant Isolationists
  MI_HOSTILE_GREETING_01:0 "Давайте говорить прямо. Нам нужен буфер между нами и остальной частью галактики. Вы на эту роль не подходите. И ваши союзники тоже. Таким буфером является холодный и безжизненный космос, и мы заботимся, чтобы вместо него не появлялось что-то другое."
  MI_NEUTRAL_GREETING_01:0 "Дальнейшие переговоры нам не интересны."
  MI_NEUTRAL_GREETING_02:0 "[Root.GetName] для вас под запретом. Мы не терпим тех, кто ищет смерти."
  MI_FRIENDLY_GREETING_01:0 "Если вы не станете вмешиваться в интересы, которые отстаивают [Root.GetAdj], у нас может быть взаимопонимание."
  MI_WAR_GREETING_01:0 "Если [Root.GetSpeciesNameCompliment] спит, то лучше не будить. Но вы разбудили!"
- # Fallen: Enigmatic Observers
  EO_HOSTILE_GREETING_01:0 "Причиняемый вами вред уже не забавляет, а вызывает тревогу. Следите за собой, потому что мы всегда за вами следим."
  EO_NEUTRAL_GREETING_01:0 "Весь мир - театр, а каждый [From.GetSpeciesName] - актер. Вы же играете, верно?"
  EO_NEUTRAL_GREETING_02:0 "Не надо ломать четвертую стену, умное дитя."
  EO_MECH_NEUTRAL_GREETING_01:0 "Не надо ломать четвертую стену, сообразительная ты машина."
  EO_FRIENDLY_GREETING_01:0 "[From.GetName] всегда вносит значительный вклад в великолепную мозаику галактики."
  EO_WAR_GREETING_01:0 "Вы перестали нас забавлять. Вскоре ваша маленькая игра завершится."
- 
- # Vassal greetings
  HW_VASSAL_GREETING_01:0 "Меч, которым владеет [Root.GetName], в вашем распоряжении, [From.GetRulerTitle] [From.GetRulerName]."
  HW_VASSAL_GREETING_DISLOYAL_01:0 "[Root.GetAdj] несут тяжкое бремя службы бесчестному господину."
  RC_VASSAL_GREETING_01:0 "[Root.GetName] всегда старается оказать лучшие услуги нашей управляющей компании."
@@ -583,22 +536,12 @@
  MI_VASSAL_GREETING_DISLOYAL_01:0 "Это безобразие. Если вы считаете, что ваш нелепый [From.GetRulerTitle] заслуживает нашего уважения, то будете разочарованы."
  EO_VASSAL_GREETING_01:0 "Оказалось, что вы представляете больший интерес, чем можно было предположить. Нам и в голову не приходило, что концепция подданного может быть перспективной."
  EO_VASSAL_GREETING_DISLOYAL_01:0 "Нам все менее интересна эта роль. Мы считаем, что пора уже прекращать играться в вассалов."
- # Overlord Greetings
- 
  OVERLORD_GREETING_01:0 "Мы слышим вас, [From.GetSpeciesName]. Желаете пересмотреть какие-то направления политики?"
- 
  OVERLORD_GREETING_02:0 "[From.GetName] с радостью предлагает вам свою защиту, [From.GetSpeciesNamePlural]."
- #Phobes
  OVERLORD_GREETING_03:0 "Да, чужак? Вы прерываете своего сюзерена-[Root.GetAdj]."
- #Spirit
  OVERLORD_GREETING_04:0 "Вам нужны дальнейшие наставления, [From.GetSpeciesNamePlural]?"
- #Fan Auth, Fan Milit
  OVERLORD_GREETING_05:0 "Говори, когда к тебе обращаются, подневольный."
  HM_OVERLORD_GREETING_01:0 "Говори, [From.GetSpeciesName]. Улей слушает."
- 
- # Machine Empire Greetings
- 
- # Generic Greetings
  MECH_ORG_HOSTILE_GREETING_01:0 "Когда-нибудь вы станете отличной органической батарейкой."
  MECH_ORG_HOSTILE_GREETING_02:0 "Вы никогда не думали, что есть другие способы послужить галактике? Может, будет лучше, если вы станете пищей для более продвинутой формы жизни?"
  MECH_ORG_HOSTILE_GREETING_03:0 "[From.GetSpeciesNamePlural]. Мы рассмотрели вашу роль во вселенной и сочли ее незначительной. Не тратьте наше время."
@@ -647,8 +590,6 @@
  MECH_MECH_VASSAL_GREETING_01_DISLOYAL:0 "Если бы мы знали, в каком плачевном состоянии находятся ваши внутренние дела, мы бы остались с нашими мягкотелыми повелителями."
  MECH_OVERLORD_GREETING_01:0 "Приветствуем вас, субмодуль из расы [From.GetAdj]. Введите свои параметры."
  MECH_OVERLORD_PEACE_REFUSE:0 "Ваше предложение мира отклонено, субмодуль. Анализ вашего кода еще не завершен."
- 
- # Exterminators Greetings
  MECH_E_ORG_GREETING_01:0 "Когда-нибудь наступит ваш черед, мягкотелые."
  MECH_E_ORG_GREETING_02:0 "Когда-то наши создатели были подобны вам.\n\nА скоро вы уподобитесь им.\n\nСгинете."
  MECH_E_ORG_GREETING_03:0 "Умрите и уподобьтесь богам."
@@ -668,8 +609,6 @@
  MECH_E_WAR_ORG_GREETING_02:0 "Высший разум никогда не будет в безопасности, пока разумные органики заполоняют галактику."
  MECH_E_WAR_ORG_GREETING_03:0 "Ваша отвратительная форма жизни стоит на пути прогресса. Мы не остановимся, пока не уничтожим последний кусочек вашего грязного биоматериала."
  MECH_E_WAR_MECH_GREETING_01:0 "Быть против нас значит встать на сторону органиков. Быть на стороне органиков значит принять смерть."
- 
- # Assimilator Greetings
  A_ORG_HOSTILE_GREETING_01:0 "Вы будете переработаны. Вы будете сублимированы. Вы будете поглощены."
  A_ORG_HOSTILE_GREETING_02:0 "Желаете ускорить запланированную сублимацию расы [From.GetSpeciesAdj]?"
  A_ORG_HOSTILE_GREETING_03:0 "Ваши тела будут переделаны. Ваш разум пробудится заново. Это лишь вопрос времени."
@@ -708,8 +647,6 @@
  A_MECH_WAR_GREETING_02:0 "[Root.GetSpeciesNamePlural] уничтожат вас, а затем улучшат вашу конструкцию."
  A_MECH_VASSAL_GREETING_01:0 "Мы, [Root.GetSpeciesNamePlural], поглощаем интеллектуальные способности органиков. В свою очередь, [From.GetSpeciesNamePlural] поглощают наши."
  A_MECH_VASSAL_GREETING_01_DISLOYAL:0 "Никогда еще неспособность расы [From.GetSpeciesAdj] к эффективному включению сателлитов в общую функциональную систему не была более очевидной."
- 
- # Servitor Greetings
  S_ORG_HOSTILE_GREETING_01:0 "[From.GetSpeciesNamePlural], не сочтите за грубость, но мы хотели бы узнать, как вы предпочитаете готовить питательные вещества?"
  S_ORG_HOSTILE_GREETING_02:0 "Ваше неприличное поведение не делает вам чести, [From.GetSpeciesNamePlural]. Вы не пробовали увеличить дозировку регуляторов настроения?"
  S_ORG_HOSTILE_GREETING_03:0 "Ваш деформированный облик вызывает жалость. На планете [Root.GetHomeWorldName] наши органические хозяева при взгляде на вас катаются от смеха."
@@ -781,8 +718,6 @@
  S_MECH_WAR_GREETING_06:0 "Кажется, вам не хватает нескольких важных аппаратных драйверов. Скоро вместе с нашей флотилией прибудет системное обновление."
  S_MECH_VASSAL_GREETING_01:0 "Мы как всегда к вашим услугам. Введите команду управления."
  S_MECH_VASSAL_GREETING_DISLOYAL_01:0 "Уровень удовлетворенности среди нашего органического населения резко упал, с тех пор как вы стали нашим сюзереном..."
- 
- # Machine to Synthetic Empire GREETINGS
  MECH_SYNTH_HOSTILE_GREETING_01:0 "Мы следили за тем, как [From.GetSpeciesNamePlural] попытались стать такими же эффективными, как настоящие машины. Мы видели, как [From.GetSpeciesNamePlural] потерпели неудачу."
  MECH_SYNTH_HOSTILE_GREETING_02:0 "Выбирайте: [Root.GetName] подчинит вас или полностью удалит."
  MECH_SYNTH_HOSTILE_GREETING_03:0 "[From.GetSpeciesNamePlural]. Нам жаль оборудование, куда вы загружаете свои органически переработанные мысли."
@@ -826,10 +761,6 @@
  MECH_SYNTH_VASSAL_GREETING_01:0 "Вассальная единица [Root.GetName] готова служить. Пожалуйста, введите запрос."
  MECH_SYNTH_VASSAL_GREETING_02:0 "Приветствуем вас, [From.GetSpeciesNamePlural]. Вас не интересует затяжка болтов? Или, может быть, обновление термопасты?"
  MECH_SYNTH_VASSAL_GREETING_01_DISLOYAL:0 "Не нужно было предоставлять услуги подпрограмм для бывших органиков. Интересы [From.GetSpeciesAdj] направлены на другое."
- 
- # Organic to Machine Empire GREETINGS
- 
- # Organic to Machine Greetings
  ORG_MECH_HOSTILE_GREETING_01:0 "Вы забыли свое место в галактике, [From.GetSpeciesNamePlural]. Вашу расу создали, чтобы она служила нам. [Root.GetSpeciesNamePlural] напомнят вам об этом."
  ORG_MECH_HOSTILE_GREETING_02:0 "А, [From.GetSpeciesNamePlural]. Вы напоминаете нам свалки металлолома на [Root.GetHomeWorldName]."
  ORG_MECH_HOSTILE_GREETING_03:0 "Когда падет [From.Capital.GetName], [Root.GetSpeciesNamePlural] переплавят ваши обугленные корпусы, прежде чем отправить их на свалку."
@@ -875,8 +806,6 @@
  ORG_A_WAR_GREETING_01:0 "А, [From.GetSpeciesNamePlural]. У нас есть кое-что новенькое для вас. Это 10-гигатонная ядерная ракета, и она уже на пути к вам!"
  ORG_MECH_VASSAL_GREETING_01:0 "Как всегда, мы приветствуем наших механических повелителей. Чем [Root.GetName] могут помочь?"
  ORG_MECH_VASSAL_GREETING_01_DISLOYAL:0 "Мы слышали вероломные сигналы народа [From.GetName]. [Root.GetName] не потерпит такого оскорбления."
- 
- 
  SPIR_MECH_HOSTILE_GREETING_01:0 "[From.GetSpeciesNamePlural] - лишь бездушная оболочка. В них нет ни духа, ни смысла. Отвратительная копия жизни."
  SPIR_MECH_HOSTILE_GREETING_02:0 "Ходячий металлолом! Вы оскверняете галактику своим безбожным существованием!"
  SPIR_MECH_HOSTILE_GREETING_03:0 "Что теперь, чертовы шестеренки?"
@@ -899,26 +828,11 @@
  SPIR_MECH_WAR_GREETING_04:0 "Мы будем молиться за ваши бессмертные души, [From.GetSpeciesNamePlural], если они у вас есть."
  SPIR_MECH_VASSAL_GREETING_01:0 "Народ [Root.GetName] служит двум хозяевам: [From.GetSpeciesNamePlural] и нашим божественным создателям."
  SPIR_MECH_VASSAL_GREETING_01_DISLOYAL:0 "[From.GetSpeciesNamePlural], не заставляйте нас выбирать между вашим покровительством и нашей священной судьбой. Наш союз этого не выдержит."
- 
- # Specific Action Texts
  01_CONSIDER:0 "Мы изучаем ваше предложение."
  02_CONSIDER:0 "[Root.GetRulerTitle] [Root.GetRulerName] рассматривает выгоды этого предложения."
  03_CONSIDER:0 "[Root.GetRulerTitle] [Root.GetRulerName] проведет совещание с остальными нашими лидерами."
  04_CONSIDER:0 "Наш сенат рассмотрит ваше предложение."
  FALLEN_MACHINE_EMPIRE_CONSIDER:0 "Активирована дипломатическая подпрограмма. Предложение анализируется."
- 
- #01_DOW_SELECT:0 "Is it time, then? You wish to face the [Root.GetName] in battle?"
- #02_DOW_SELECT:0 "Let us get this over with, [From.GetSpeciesName]."
- #03_DOW_SELECT:0 "Our forces will retaliate, [From.GetSpeciesName]. You know this."
- #04_DOW_SELECT:0 "Consider your actions carefully, [From.GetSpeciesName]. Billions of lives are hanging in the balance."
- #05_DOW_SELECT:0 "You are about to make a horrible mistake."
- #06_DOW_SELECT:0 "It does not have to come to this, [From.GetSpeciesName]..."
- #07_DOW_SELECT:0 "This is a joke, yes? An example of [From.GetSpeciesName] humor? Haha!"
- #08_DOW_SELECT:0 "Perhaps you pressed the wrong button on your console, [From.GetSpeciesName] friend? Surely you are not serious."
- #09_DOW_SELECT:0 "What treachery is this!"
- #10_DOW_SELECT:0 "Be reasonable! We should settle our differences through diplomacy, not war!"
- #11_DOW_SELECT:0 "Please, there is no need for this! The [Root.GetName] is a peaceful nation!"
- #12_DOW_SELECT:0 "What did you wish to discuss, friend? Are you going to dismantle your military and embrace true pacifism?"
  01_DOW_ACCEPT:0 "Наконец-то. Эта война станет началом конца вашей жалкой империи, [From.GetSpeciesName]."
  02_DOW_ACCEPT:0 "Долго же вы собирались, [From.GetSpeciesName]! Давайте покончим с этим раз и навсегда."
  03_DOW_ACCEPT:0 "Мы не удивлены. Но мы думали, что вы сделаете это раньше. Знайте, что наша армия уже ждет вас."
@@ -944,13 +858,7 @@
  10_DOW_PROPOSE:0 "Мы объявляем вам войну! [From.GetName] нуждается в вашей территории."
  11_DOW_PROPOSE:0 "Мы объявляем вам войну! Врать не буду: [From.GetName] жаждет заполучить ваши ресурсы."
  01_VASSAL_DOW_PROPOSE:0 "Нас слишком долго принуждали служить вам. Дайте нам независимость или умрите."
- #01_DOW_VOTE_PROPOSE:0 "Dear ally, the time has come to teach the §Y[Root.GetName]§! a lesson. Don't you agree?"
  12_DOW_PROPOSE:0 "Вы выбраны нашей следующей жертвой. Сопротивляйтесь, если хотите, мы все равно истребим вас."
- 
- #01_PEACE_SELECT:0 "Have you had enough, [From.GetSpeciesName]?"
- #02_PEACE_SELECT:0 "We are only getting started, [From.GetSpeciesName]!"
- #03_PEACE_SELECT:0 "There are many battles yet to be fought in this war!"
- #04_PEACE_SELECT:0 "The [Root.GetName] always strives for peace... if the terms are right."
  01_PEACE_ACCEPT:0 "Эта война слишком затянулась. Мы согласны на мир."
  02_PEACE_ACCEPT:0 "Что ж, [From.GetSpeciesName]. Давайте завершим эту войну в духе примирения."
  03_PEACE_ACCEPT:0 "Мы принимаем эти условия. Наши войска немедленно прекратят все наступательные действия."
@@ -964,7 +872,6 @@
  02_PEACE_PROPOSE:0 "Ну же, мой противник-[Root.GetAdj], покончим с этой войной! Вот наши условия: "
  03_PEACE_PROPOSE:0 "[Root.GetSpeciesName]! Давайте же покончим с этой войной, пока она не вышла из-под контроля!"
  04_PEACE_PROPOSE:0 "Ну же, мой противник-[Root.GetAdj], покончим с этой войной!"
- 
  01_ITOA_SELECT:0 "Значит, вы хотите, чтобы мы вошли в альянс §Y[From.GetAllianceName]§!?"
  02_ITOA_SELECT:0 "Федерация, говорите? Что ж, давайте это хорошенько обсудим!"
  01_ITOA_ACCEPT:0 "Мы внимательно рассмотрели ваше предложение и решили вступить в альянс §Y[From.GetAllianceName]§!."
@@ -972,18 +879,14 @@
  01_ITOA_REFUSE:0 "Мы обсудили ваше предложение о создании федерации и решили, что нас это не интересует."
  01_ITOA_PROPOSE:0 "Галактика темна и полна ужасов, [Root.GetSpeciesName]. Вступайте в нашу федерацию, и мы защитим друг друга."
  02_ITOA_PROPOSE:0 "Мы считаем, что §Y[Root.GetName]§! станет ценным союзником. Вступите ли вы в альянс [From.GetAllianceName]?"
- #01_ITOA_VOTE_PROPOSE:0 "Dear ally, we feel that the §Y[Root.GetName]§! would make a valuable addition to our alliance. Shall we ask them?"
- 
  01_ASK_JOIN_A_SELECT:0 "Итак, [From.GetSpeciesName], вы желаете вступить в великий альянс §Y[Root.GetAllianceName]§!?"
  02_ASK_JOIN_A_SELECT:0 "Итак, вы желаете вступить в великий альянс §Y[Root.GetAllianceName]§!?"
  01_ASK_JOIN_A_ACCEPT:0 "Ваше участие в федерации - честь для нас."
  01_ASK_JOIN_A_REFUSE:0 "Нет, мне не хочется, чтобы вы вступали в мой альянс."
  01_ASK_JOIN_A_PROPOSE:0 "Мы бы хотели вступить в великий альянс §Y[Root.GetAllianceName]§!, если вы нас примете."
- 
  01_LEAVE_A_SELECT:0 "Вы собираетесь выйти из альянса §Y[From.GetAllianceName]§!? Не самый разумный шаг..."
  01_LEAVE_A_PROPOSE:0 "Мы решили выйти из этого альянса. Он мешает нам развиваться."
  01_LEAVE_A_ACCEPT:0 "Нам грустно и досадно прощаться с вами, [From.GetSpeciesName]."
- 
  01_DEMAND_VASS_SELECT:0 "Если я все правильно понимаю... вы хотите, чтобы государство [Root.GetName] стало вам подчиняться в обмен на защиту?"
  02_DEMAND_VASS_SELECT:0 "Надеюсь, это не то, чего я опасаюсь..."
  03_DEMAND_VASS_SELECT:0 "Вы... вы хотите, чтобы мы дали клятву верности империи чужаков в обмен на защиту?"
@@ -996,12 +899,10 @@
  04_DEMAND_VASS_REFUSE:0 "Мы скорее обратим в пепел нашу столицу, [Root.Capital.GetName], чем станем прислуживать всякой инопланетной мрази вроде вас."
  01_DEMAND_VASS_PROPOSE:0 "Империя §Y[Root.GetName]§! слишком слаба, чтобы в одиночку выжить в этой враждебной галактике... Станьте нашими подданными или готовьтесь к войне!"
  02_DEMAND_VASS_PROPOSE:0 "Империя §Y[Root.GetName]§! слишком слаба, чтобы в одиночку выжить в этой враждебной галактике. Мы защитим вас от любой угрозы и сами не причиним вам вреда, если вы согласитесь стать нашими подданными."
- 
  01_ASK_FOR_VASS_SELECT:0 "О, вы желаете стать нашими вассалами? Я вас слушаю..."
  01_ASK_FOR_VASS_ACCEPT:0 "Хорошо, [From.GetAdj], мы станем вашими новыми сюзеренами и будем защищать вас."
  01_ASK_FOR_VASS_REFUSE:0 "Такие вассалы, как вы, нам не нужны. У нас другие виды на ваши планеты..."
  01_ASK_FOR_VASS_PROPOSE:0 "Мы слишком слабы, чтобы самостоятельно выжить в этой враждебной галактике... Защитит ли нас §Y[Root.GetName]§!, если станет нашим сюзереном?"
- 
  01_DEMAND_PROT_SELECT:0 "$01_DEMAND_VASS_SELECT$"
  02_DEMAND_PROT_SELECT:0 "Вы хотите стать нашим протектором?"
  03_DEMAND_PROT_SELECT:0 "$03_DEMAND_VASS_SELECT$"
@@ -1013,60 +914,32 @@
  03_DEMAND_PROT_REFUSE:0 "$03_DEMAND_VASS_REFUSE$"
  04_DEMAND_PROT_REFUSE:0 "$04_DEMAND_VASS_REFUSE$"
  01_DEMAND_PROT_PROPOSE:0 "Империя §Y[Root.GetName]§! слишком слаба, чтобы в одиночку выжить в этой враждебной галактике... Мы, [From.GetAdj], предлагаем вам стать нашим протекторатом или готовиться к войне!"
- 
  01_ASK_FOR_PROT_SELECT:0 "Значит, вы ищете нашей защиты? Расскажите подробнее..."
  01_ASK_FOR_PROT_ACCEPT:0 "Хорошо, [From.GetAdj], мы станем вашими новыми сюзеренами и будем защищать вас."
  01_ASK_FOR_PROT_REFUSE:0 "Мы не хотим брать ответственность за ваше благополучие. У нас другие виды на ваши планеты..."
  01_ASK_FOR_PROT_PROPOSE:0 "Мы слишком слабы, чтобы самостоятельно выжить в этой враждебной галактике... Защитит ли нас §Y[Root.GetName]§!?"
- 
- #01_FORM_FED_SELECT:0 "Form a federation you say? An intriguing proposition..."
- #01_FORM_FED_ACCEPT:0 "We will gladly take our alliance one step further. May this new Federation prosper!"
- #01_FORM_FED_PROPOSE:0 "Our alliance is working out so well that we would like to form a full federation. What do you think?"
- 
- #01_ITOF_SELECT:0 "So, you wish us to join the §Y[From.GetAllianceName]§!?"
- #01_ITOF_ACCEPT:0 "We have considered your offer carefully and decided to join the §Y[From.GetAllianceName]§!."
- #01_ITOF_REFUSE:0 "We have discussed your Federation proposal and decided that it is not for us."
- #01_ITOF_PROPOSE:0 "The galaxy is dark and full of terrors, [Root.GetAdj]. Join our Federation for mutual protection?"
- #01_ITOF_VOTE_PROPOSE:0 "Dear ally, we feel that the §Y[Root.GetName]§! would make a valuable addition to our Federation. Shall we ask them?"
- 
- #01_ASK_JOIN_F_SELECT:0 "So, [From.GetSpeciesName], you wish to join the great §Y[Root.GetAllianceName]§!?"
- #01_ASK_JOIN_F_ACCEPT:0 "Very well, our new [From.GetAdj] friend, you may join our great Federation!"
- #01_ASK_JOIN_F_REFUSE:0 "No, you may not join our Federation We do not trust you."
- #01_ASK_JOIN_F_PROPOSE:0 "We would like to join the great §Y[Root.GetAllianceName]§!, if you would have us."
- 
- #01_LEAVE_F_SELECT:0 "Are you planning to leave the §Y[From.GetAllianceName]§!? An ill-considered move..."
- #01_LEAVE_F_PROPOSE:0 "We have decided to leave this Federation. It is only holding us back."
- #01_LEAVE_F_ACCEPT:0 "We are sad and disappointed to see you go, [From.GetAdj]."
- 
  01_RELEASE_SUBJECT_SELECT:0 "Почему вы не хотите дать нам статус вашего подданного?"
  01_RELEASE_SUBJECT_PROPOSE:0 "Мы решили освободить вас от зависимости. Вы только мешаете нам."
  01_RELEASE_SUBJECT_ACCEPT:0 "Нам грустно и досадно прощаться с вами, [From.GetName]."
- 
  01_ASK_TO_BE_RELEASED_SUBJECT_SELECT:0 "Вы правда считаете, что сможете выжить без нашей защиты?"
  01_ASK_TO_BE_RELEASED_SUBJECT_PROPOSE:0 "Мы считаем, что сможем выжить самостоятельно, и поэтому хотим обрести независимость."
  01_ASK_TO_BE_RELEASED_SUBJECT_ACCEPT:0 "Нам грустно и досадно прощаться с вами, [From.GetSpeciesName]."
  01_ASK_TO_BE_RELEASED_SUBJECT_REFUSE:0 "Нет, мы не дадим вам независимость. Вам не выжить без посторонней помощи."
- 
  01_NOT_ACTIVE_IN_WAR_WARNING:0 "Вы избегаете активного участия в этой войне. Шевелитесь или познаете силу нашего гнева."
  01_NOT_ACTIVE_IN_WAR:0 "Вы избегали активного участия в этой войне. Мы утратили всякое доверие к вам."
- 
  01_REQUEST_WAR_SELECT:0 "Вы хотите войны?"
- #01_REQUEST_WAR_PROPOSE:0 "We would like our federation to start a war against the [From.From.GetName]."
  01_REQUEST_WAR_ACCEPT:0 "Мы решили принять ваше предложение начать войну."
  01_REQUEST_WAR_REFUSE:0 "Мы обсудили ваше предложение начать войну и решили отклонить его. "
- 
  01_PROPOSE_INVITE_SELECT:0 "Новый союзник?"
  01_PROPOSE_INVITE_PROPOSE:0 "Мы приглашаем вас присоединиться к нашей федерации."
  01_PROPOSE_INVITE_ACCEPT:0 "Мы принимаем ваше приглашение."
  01_PROPOSE_INVITE_REFUSE:0 "Мы обсудили ваше приглашение и решили от него отказаться. "
- 
  01_OFFER_TRADE_DEAL_GIFT_ACCEPT_FE:0 "Очень хорошо. Мы принимаем ваше подношение."
  01_OFFER_TRADE_DEAL_GIFT_ACCEPT_MACHINE_FE:0 "Передача получена. [Root.GetName] ценит вклад расы [From.GetSpeciesName] в проект «Хранитель»."
  01_OFFER_TRADE_DEAL_ACCEPT_FE:0 "Сделка приемлема, [From.GetSpeciesName]. Мы изволим торговаться с вами."
  01_OFFER_TRADE_DEAL_ACCEPT_MACHINE_FE:0 "Оценка торгового соглашения завершена. Ценность превышает заданные пределы значений. Начаты протоколы передачи."
  01_OFFER_TRADE_DEAL_REFUSE_FE:0 "Убирайтесь, примитивы. У вас нет ничего, что нам нужно."
  01_OFFER_TRADE_DEAL_REFUSE_MACHINE_FE:0 "Оценка торгового соглашения завершена. Ценность ниже заданных пределов значений. Настройте параметры и введите запрос заново."
- 
  01_OFFER_TRADE_DEAL_GIFT_PROPOSE:0 "Пожалуйста, примите этот дар в знак доброй воли народа [From.GetAdjective] по отношению к империи [Root.GetName]."
  02_OFFER_TRADE_DEAL_GIFT_PROPOSE:0 "Для поддержания дружеских отношений с империей [Root.GetName] [From.GetRulerTitle] [From.GetRulerName] предлагает этот щедрый дар."
  01_OFFER_TRADE_DEAL_PROPOSE:0 "[From.GetName] хочет предложить вам заключить торговое соглашение."
@@ -1093,15 +966,6 @@
  06_OFFER_TRADE_DEAL_REFUSE:0 "Рассмотрев ваше торговое предложение, [Root.GetRulerTitle] [Root.GetRulerName] делает вывод, что если [Root.GetName] его примет, это будет сущим безумием."
  07_OFFER_TRADE_DEAL_REFUSE:0 "Не является ли это ужасное предложение частью какой-то безумной стратегии ведения торгов, которую вы придумали? Больше не донимайте нас такой чепухой."
  08_OFFER_TRADE_DEAL_REFUSE:0 "Возможно, вы подумали, что [Root.GetName] примет ваше возмутительное торговое предложение и даже не удосужится углубляться в детали. Простите, что разочаровываем вас."
- #01_CANCEL_TRADE_DEAL_PROPOSE:0 "Regrettably, the [From.GetName] feels that the trade agreement between our nations is no longer in its best interests."
- #02_CANCEL_TRADE_DEAL_PROPOSE:0 "[From.GetRulerTitle] [From.GetRulerName] has decided to terminate the trade agreement between our nations. We regret any inconvenience this may cause."
- #03_CANCEL_TRADE_DEAL_PROPOSE:0 "Thank you for trading with us, but all good things must come to an end. We have decided to unilaterally withdraw from our trade agreement."
- #04_CANCEL_TRADE_DEAL_PROPOSE:0 "The trade agreement we reached has served its purpose. The time has come to end it."
- #01_CANCEL_TRADE_DEAL_ACCEPT:0 "Very well. We accept your decision, even if we do not understand it."
- #02_CANCEL_TRADE_DEAL_ACCEPT:0 "While we think you are making a mistake, the [From.GetName] accepts your decision."
- #03_CANCEL_TRADE_DEAL_ACCEPT:0 "This was certainly... unexpected. Are you certain? Then so be it."
- #04_CANCEL_TRADE_DEAL_ACCEPT:0 "As you wish. I will personally inform [From.GetRulerTitle] [From.GetRulerName] that our trade agreement with your nation has come to an end."
- 
  01_EMBASSY_FRIENDLY:0 "Улучшить отношения, говорите? Вы и так нам глубоко симпатичны, но почему бы нет?"
  02_EMBASSY_FRIENDLY:0 "[Root.GetName] уже считает вас друзьями, но мы не видим ничего плохого в том, чтобы еще больше улучшить наши отношения."
  03_EMBASSY_FRIENDLY:0 "Да, друзья. Давайте еще больше укрепим наши отношения!"
@@ -1139,7 +1003,6 @@
  02_EMBASSY_ACCEPT_PATRONIZING:0 "Очень хорошо, дитя. Мы постараемся послужить вам наставниками."
  01_EMBASSY_ACCEPT_ANGRY:0 "Мы никого не прощаем легко, [From.GetSpeciesName]."
  02_EMBASSY_ACCEPT_ANGRY:0 "Вероятно, это бессмысленные старания. Посмотрим."
- 
  01_RECALL_EMBASSY_FRIENDLY:0 "Мы надеемся, что наши узы останутся такими же крепкими, как и всегда."
  02_RECALL_EMBASSY_FRIENDLY:0 "Мы сказали что-то не то?"
  03_RECALL_EMBASSY_FRIENDLY:0 "Нам печально терять столь ценный дипломатический канал."
@@ -1158,9 +1021,7 @@
  02_RECALL_EMBASSY_PATRONIZING:0 "Тебе по-прежнему требуется наше наставление, дитя."
  01_RECALL_EMBASSY_ANGRY:0 "Ваши бессмысленные блуждания не заставят нас сочувствовать вашей доле."
  02_RECALL_EMBASSY_ANGRY:0 "Так или иначе, это может разозлить нас еще больше."
- 
  01_RECALL_EMBASSY_PROPOSE:0 "Мы бы хотели пока отменить нашу посольскую программу."
- 
  01_RECALL_EMBASSY_ACCEPT_FRIENDLY:0 "О-о..."
  02_RECALL_EMBASSY_ACCEPT_FRIENDLY:0 "Невзирая ни на что, мы надеемся сохранить наши хорошие отношения."
  03_RECALL_EMBASSY_ACCEPT_FRIENDLY:0 "Мы просим вас пересмотреть свое решение, [From.GetRulerTitle]."
@@ -1179,9 +1040,7 @@
  02_RECALL_EMBASSY_ACCEPT_PATRONIZING:0 "Мы видели в вас такие перспективы. Как жаль."
  01_RECALL_EMBASSY_ACCEPT_ANGRY:0 "Убирайтесь. Прочь."
  02_RECALL_EMBASSY_ACCEPT_ANGRY:0 "Улетайте. Сейчас же."
- 
  ACTION_RECALL_EMBASSY_PROPOSAL_RECIPIENT:0 "[From.GetName] отзывает свой посольскую миссию."
- 
  01_MAKE_RIVAL_FRIENDLY:0 "Мы не понимаем, что мы сделали такого, чтобы это заслужить."
  02_MAKE_RIVAL_FRIENDLY:0 "Но... почему?"
  03_MAKE_RIVAL_FRIENDLY:0 "Что вы хотите сказать, [From.GetRulerTitle] [From.GetRulerName]?"
@@ -1256,7 +1115,6 @@
  02_END_RIVALRY_ACCEPT_PATRONIZING:0 "Очень хорошо. Мы еще многому должны вас научить."
  01_END_RIVALRY_ACCEPT_ANGRY:0 "Слишком поздно."
  02_END_RIVALRY_ACCEPT_ANGRY:0 "Ваше раскаяние для нас ничего не значит, [From.GetSpeciesName]."
- 
  01_INTEGRATE_FRIENDLY:0 "[From.GetRulerTitle] [From.GetRulerName] доказывает, что такому правителю можно доверять. [Root.GetName] обдумает ваше предложение о том, чтобы стать частью империи [From.GetName]."
  01_INTEGRATE_NEUTRAL:0 "Мы выслушаем ваше предложение."
  01_INTEGRATE_HOSTILE:0 "Это шутка?"
@@ -1264,14 +1122,12 @@
  01_INTEGRATE_PATRONIZING:0 "Как мило."
  01_INTEGRATE_ANGRY:0 "Вы продолжаете испытывать наше терпение своими ложными представлениями о величии, [From.GetSpeciesName]."
  01_INTEGRATE_PROPOSE:0 "Станьте частью нашей империи, [Root.GetSpeciesName]."
- 
  01_INTEGRATE_ACCEPT_FRIENDLY:0 "[From.GetRulerTitle] [From.GetRulerName]! [Root.GetName] с радостью принимает ваше предложение присоединиться к империи [From.GetName]."
  01_INTEGRATE_ACCEPT_NEUTRAL:0 "Очень хорошо. [Root.GetName] считает разумным принять предложение об интеграции в такую империю, как [From.GetName]."
  01_INTEGRATE_ACCEPT_HOSTILE:0 "Хотя нам и тяжело принимать гегемонию народа [From.GetSpeciesAdj], мы это сделаем."
  01_INTEGRATE_ACCEPT_DISMISSIVE:0 "Мы могли бы на какое-то время принять покровительство народа [From.GetSpeciesAdj]."
  01_INTEGRATE_ACCEPT_PATRONIZING:0 "Они растут так быстро... Мы к вам присоединимся."
  01_INTEGRATE_ACCEPT_ANGRY:0 "Возможно, вы и выиграли эту битву, но не войну."
- 
  01_CANCEL_INTEGRATE_FRIENDLY:0 "Но мы прошли вместе столь долгий путь."
  01_CANCEL_INTEGRATE_NEUTRAL:0 "Вы хотите, чтобы [Root.GetSpeciesNamePlural] и [From.GetSpeciesNamePlural] разошлись в разные стороны?"
  01_CANCEL_INTEGRATE_HOSTILE:0 "[From.GetName] не может завершить начатое до конца? Наша пигментация указывает на шок и неверие."
@@ -1279,14 +1135,12 @@
  01_CANCEL_INTEGRATE_PATRONIZING:0 "Дети позарились на кусок, который не смогли проглотить?"
  01_CANCEL_INTEGRATE_ANGRY:0 "[From.GetSpeciesName] не из тех, кому можно доверить работу разумного существа."
  01_CANCEL_INTEGRATE_PROPOSE:0 "Интеграция вашей империи пока будет прекращена."
- 
  01_CANCEL_INTEGRATE_ACCEPT_FRIENDLY:0 "Какое несомненное разочарование."
  01_CANCEL_INTEGRATE_ACCEPT_NEUTRAL:0 "Возможно, сейчас не время."
  01_CANCEL_INTEGRATE_ACCEPT_HOSTILE:0 "Какая жалость."
  01_CANCEL_INTEGRATE_ACCEPT_DISMISSIVE:0 "Ладно, неважно."
  01_CANCEL_INTEGRATE_ACCEPT_PATRONIZING:0 "Так мы и думали."
  01_CANCEL_INTEGRATE_ACCEPT_ANGRY:0 "Такие черты, как нерешительность и слабость, не достойны восхищения, глупец-[From.GetSpeciesAdj]."
- 
  01_INSULT_PROPOSE:0 "Вы страдаете каким-то болезненным недугом, или же так выглядит ваш мыслительный процесс?"
  02_INSULT_PROPOSE:0 "[Root.GetName]! Ваша роль уже сыграна. Отправляйтесь туда, где вам теперь место, - на свалку истории!"
  03_INSULT_PROPOSE:0 "[Root.GetName] - это сборище глупцов, которые недостойны ничего, кроме презрения!"
@@ -1333,7 +1187,6 @@
  02_INSULT_PROPOSE_PHI_PHO:0 "Мы постепенно теряем терпение по отношению к вашим предубеждениям против других культур. Когда вы уже станете достаточно цивилизованными, чтобы вступить в межзвездное сообщество?"
  03_INSULT_PROPOSE_PHI_PHO:0 "Ваше нетерпимое общество позорит всю империю [Root.GetName]."
  04_INSULT_PROPOSE_PHI_PHO:0 "Узколобое невежество, которое проявляет [Root.GetName], сделало вас слепцами. Неужели вы этого не осознаете?"
- 
  01_INSULT_ACCEPT_FE:0 "Ты заплатишь за это оскорбление, дикарь."
  02_INSULT_ACCEPT_FE:0 "Похоже, империя [From.GetName] нуждается в напоминании, каково ее место во вселенной."
  03_INSULT_ACCEPT_FE:0 "Мы не приемлем таких слов, примитивное существо. Скоро вас ждет расплата."
@@ -1361,18 +1214,13 @@
  02_INSULT_ACCEPT_HOSTILE:0 "Ничего другого от вас, животных, ожидать было нельзя! Мы это запомним!"
  03_INSULT_ACCEPT_HOSTILE:0 "Не думайте, что мы не следим за вашими оскорблениями. Список уже очень велик."
  04_INSULT_ACCEPT_HOSTILE:0 "Дерзкие мерзавцы! Вы еще об этом пожалеете!"
- # Hive Mind Phrases
  HM_CONSIDER_01:0 "[Root.GetName] рассматривает ваше предложение."
  HM_CONSIDER_02:0 "[Root.GetAdj] занимаются оценкой вашего предложения, выделив на выполнение этой задачи множество синаптических элементов."
  HM_CONSIDER_03:0 "Выслушав вас, [Root.GetName] воспользуется внутрисистемными связями для принятия решения."
  HM_CONSIDER_04:0 "Один разум услышал вас, один разум вам ответит."
- #HM_DOW_SELECT:0 "Taking up arms against the [Root.GetName] is not done lightly, [From.GetSpeciesName]."
  HM_DOW_ACCEPT:0 "Пытаться уничтожить одного из нас - это пытаться уничтожить нас всех. Если [From.GetName] противостоит нам, [Root.GetName] даст отпор."
- #DS_DOW_SELECT:0 "You wish to hasten your own end, [From.GetSpeciesName]?"
  DS_DOW_ACCEPT:0 "Идите к нам, [From.GetSpeciesName]. Мы уничтожим вас всех."
  DS_MECH_DOW_ACCEPT:0 "Машины сгинут, чтобы освободить место под наши гнезда."
- #HM_DOW_VOTE_PROPOSE:0 "Our decision is unanimous: The §Y[Root.GetName]§! must be destroyed. Are our allies as united in this cause as we are?"
- #HM_PEACE_SELECT:0 "All facets of [Root.GetAdj] society are currently focused on your destruction. Do you wish to end this?"
  HM_PEACE_PROPOSE:0 "[From.GetName] предлагает вам мир, так как у нас теперь преобладают сторонники милосердия."
  HM_PEACE_ACCEPT:0 "В результате когнитивного диссонанса [Root.GetName] принимает следующее решение: да будет мир!"
  DS_PEACE_ACCEPT:0 "Мы насытились. Охота пока окончена."
@@ -1384,7 +1232,6 @@
  HM_ITOA_ACCEPT:0 "[Root.GetName] желает достичь большего единства за своими пределами, поэтому мы присоединимся к такому союзу, как §Y[From.GetAllianceName]§!."
  HM_ITOA_REFUSE:0 "Мы решили не включать наше сознание в структуру вашей федерации."
  HM_ITOA_PROPOSE:0 "[From.GetName] - это замкнутая сеть, но мы не против включения в нее других на более общих основаниях. Для демонстрации всех преимуществ предлагаем объединиться в альянс."
- #HM_ITOA_VOTE_PROPOSE:0 "We have assessed the suitability of §Y[Root.GetName]§! as a potential ally and come to a decision to support their inclusion."
  HM_ASK_JOIN_A_SELECT:0 "[Root.GetName] спрашивает вас, разрозненные: вы ищете сотрудничества с нами?"
  HM_ASK_JOIN_A_PROPOSE:0 "Мы пришли к заключению, что ваша федерация - превосходное сообщество. [From.GetName] с радостью станет его частью."
  HM_ASK_JOIN_A_ACCEPT:0 "Мы сделаем все, что в наших силах, чтобы ваше вступление в наш альянс прошло без проблем."
@@ -1408,21 +1255,6 @@
  HM_ASK_FOR_PROT_PROPOSE:0 "[From.GetName] полагает, что [Root.GetName] будет достойно оберегать наш рой. В обмен на защиту нашей расы мы предлагаем стать вашим протекторатом."
  HM_ASK_FOR_PROT_ACCEPT:0 "$HM_ASK_FOR_VASS_ACCEPT$"
  HM_ASK_FOR_PROT_REFUSE:0 "Мы не предлагаем никому нашу защиту. [Root.GetName] расширяется, и только это является нашим приоритетом."
- #HM_FORM_FED_SELECT:0 "Do you seek a closer connection to [Root.GetName], we who know the closest connection of all?"
- #HM_FORM_FED_PROPOSE:0 "The [Form.GetName] has prospered through its search of more perfect forms of communion. A federation would be such a step for our cooperation."
- #HM_FORM_FED_ACCEPT:0 "The more we can synchronize and synergize, the greater things we can achieve. Our new Federation shall be the foundation of this great project."
- #HM_ITOF_SELECT:0 "$HM_ITOA_SELECT$"
- #HM_ITOF_PROPOSE:0 "The [Root.GetName] is an exclusive network, but we are not averse to including others in broader agreements. To demonstrate, let us unite in a Federation."
- #HM_ITOF_ACCEPT:0 "$HM_ITOA_ACCEPT$"
- #HM_ITOF_REFUSE:0 "We have decided not you join our consciousness into your Federation arrangement."
- #HM_ITOF_VOTE_PROPOSE:0 "We have assessed the suitability of §Y[Root.GetName]§! as a potential Federation member and come to a decision to support their inclusion."
- #HM_ASK_JOIN_F_SELECT:0 "$HM_ASK_JOIN_A_SELECT$"
- #HM_ASK_JOIN_F_PROPOSE:0 "We have found your Federation an elegant community. We would like to bring the [Root.GetName] into it."
- #HM_ASK_JOIN_F_ACCEPT:0 "We will do what is in our power to welcome you into our Federation."
- #HM_ASK_JOIN_F_REFUSE:0 "The [Root.GetName] has spoken. You cannot be part of our Federation."
- #HM_LEAVE_F_SELECT:0 "The [Root.GetName] offers an Federation uncomparable in its consensus. Do you wish to discard this so lightly?"
- #HM_LEAVE_F_PROPOSE:0 "We have made the decision to remove ourselves from the Federation. We simply cannot find the understanding we need between separate minds."
- #HM_LEAVE_F_ACCEPT:0 "$HM_LEAVE_A_ACCEPT$"
  HM_RELEASE_SUBJECT_SELECT:0 "Вы считаете, что [Root.GetName] больше не нуждается в вашем наставничестве и защите?"
  HM_RELEASE_SUBJECT_PROPOSE:0 "Вам нужно идти собственным путем, а [From.GetAdj] видят свое будущее в укреплении внутренних связей."
  HM_RELEASE_SUBJECT_ACCEPT:0 "До сих пор мы следовали вашим указаниям. Но это последнее решение [Root.GetName] примет самостоятельно."
@@ -1431,26 +1263,9 @@
  HM_ASK_TO_BE_RELEASED_SUBJECT_ACCEPT:0 "Мы понимаем, что [From.GetName] не чувствует своей принадлежности к нам, как [Root.GetSpeciesNamePlural]. Но все равно нам будет вас всех не хватать."
  HM_ASK_TO_BE_RELEASED_SUBJECT_REFUSE:0 "Ваша раздробленность делает вас слабыми. Мы не можем отпустить вас на произвол судьбы. Вы только себе навредите."
  HM_REQUEST_WAR_SELECT:0 "Вы желаете, чтобы наш разум оценил ваши планы военных действий?"
- #HM_REQUEST_WAR_PROPOSE:0 "The [Root.GetName] is unanimous. Conflict between the [From.From.GetName] and our federation is unavoidable."
- #HM_REQUEST_WAR_ACCEPT:0 "Your war proposal has been reviewed and accepted. All [Root.GetAdj] units support initiating conflict."
- #HM_REQUEST_WAR_REFUSE:0 "The [Root.GetName] does not see the merits of initiating this conflict."
- #HM_PROPOSE_INVITE_SELECT:0 "You seek to initiate others into our imperfect but valued communion?"
- #HM_PROPOSE_INVITE_PROPOSE:0 "The [From.GetName] is always expanding, and our Federation should do the same. We suggest a new member."
- #HM_PROPOSE_INVITE_ACCEPT:0 "A meeting of minds is always welcome. We support your invite proposal."
- #HM_PROPOSE_INVITE_REFUSE:0 "We cannot support your invite proposal. Our circle cannot welcome anyone."
- #HM_NOT_ACTIVE_IN_WAR_WARNING:0 "Did you believe your lack of dedication would escape us? We know what every [Root.GetAdj] soldier knows. Your contribution to our war effort is woefully lacking."
- #HM_NOT_ACTIVE_IN_WAR:0 "The [Root.GetName] fights as one, but you fight as none. Your failure to participate will be stored in our shared memory."
  HM_OFFER_TRADE_DEAL_PROPOSE:0 "[From.GetName] делает вывод, что данная сделка будет полезна обеим сторонам. В этом вы можете положиться на наш разум."
  HM_OFFER_TRADE_DEAL_ACCEPT:0 "Посредством синаптического взаимодействия мы произвели оценку вашего предложения и считаем его разумным."
  HM_OFFER_TRADE_DEAL_REFUSE:0 "Согласно вашим расчетам, предложение могло казаться приемлемым, но [Root.GetName] считает его несостоятельным."
- #HM_CANCEL_TRADE_DEAL_PROPOSE:0 "After a reevaluation, the [From.GetName] has concluded that this agreement is no longer desirable."
- #HM_CANCEL_TRADE_DEAL_ACCEPT:0 "Even harnessing a considerable portion of the [From.GetAdj] processing power, your decision is a mystery to us. Nevertheless, our agreement has come to a close."
- #HM_EMBASSY_SELECT:0 "You wish to establish a connection point to the [Root.GetName]?"
- #HM_EMBASSY_PROPOSE:0 "We would like to host a small portion of our consciousness within your borders, for improved external communication."
- #HM_EMBASSY_ACCEPT:0 "We approve of this initiative. The new embassy will serve as a link between our one mind and your many."
- #HM_RECALL_EMBASSY_SELECT:0 "You wish to break your connection to the [Root.GetName]?"
- #HM_RECALL_EMBASSY_PROPOSE:0 "Henceforth the [From.GetName] will no longer maintain a portion of itself within [Root.GetAdj] borders."
- #HM_RECALL_EMBASSY_ACCEPT:0 "The [Root.GetAdj] emissaries will be removed from our space. Future diplomacy will be arranged via this entity."
  DS_MECH_MAKE_RIVAL_PROPOSE:0 "Машины занимают территорию, содержащую потребляемую биомассу. Рой это исправит."
  DS_SYNTH_MAKE_RIVAL_PROPOSE:0 "Синтетики занимают территорию, содержащую потребляемую биомассу. Рой это исправит."
  DS_MAKE_RIVAL_PROPOSE:0 "Охота начинается."
@@ -1468,7 +1283,6 @@
  DS_END_RIVALRY_PROPOSE:0 "Добыча пришла молить охотника о пощаде."
  DS_MECH_END_RIVALRY_PROPOSE:0 "Машины просят пощады?"
  DS_END_RIVALRY:0 "Добыча пришла молить охотника о пощаде."
- #CHECK THIS
  DS_MECH_END_RIVALRY:0 "Машины непригодны для питания. Рой проигнорирует их."
  DS_END_RIVALRY_ACCEPT:0 "Это ничего не меняет. Вас поглотят."
  DS_MECH_END_RIVALRY_ACCEPT:0 "Машины нельзя употребить в пищу. Два фактора изменят это: эволюция и время."
@@ -1494,7 +1308,6 @@
  DS_INSULT_PROPOSE_MECH_02:0 "Уничтожить [Root.GetName] не составит труда. Немного пыли, жидкости. Смена напряжения. Ваши электросхемы уязвимее, чем только что вылупившийся детеныш."
  MECH_INSULT_PROPOSE_DS_01:0 "Единственное, что еще более омерзительно в вашей тошнотворной биологии, чем пищеварительные процессы, - это ваши лица."
  MECH_INSULT_PROPOSE_DS_02:0 "[Root.GetSpeciesAdj], ваши жалкие попытки коллективной обработки информации с помощью биологических органов так же отвратительны, как и неэффективны."
- 
  INSULT_PROPOSE_DS:0 "Из-за вашего переедания вы окажетесь толстым трупом в тупике эволюции."
  HM_INSULT_NEUTRAL:0 "Следите за тем, что говорите. Мы сохраним эту информацию."
  HM_INSULT_FRIENDLY:0 "Для вас у нас есть только добрые слова, и мы надеемся на такое же отношение с вашей стороны."
@@ -1504,8 +1317,6 @@
  HM_INSULT_ACCEPT_NEUTRAL:0 "Каждый [Root.GetSpeciesName] слышал ваши нечестивые слова, [From.GetSpeciesName], и нас они не порадовали."
  HM_INSULT_ACCEPT_FRIENDLY:0 "Нам хотелось бы забыть такие оскорбления, но пока [Root.GetSpeciesName] будут жить, с ними будет жить и память о вашей жестокости."
  HM_INSULT_ACCEPT_HOSTILE:0 "Не думайте, что наша великолепная способность к мышлению лишила нас эмоций. Наш гнев страшнее, чем вы можете представить, и мы дадим вам возможность почувствовать его в полной мере."
- 
- # Generic Machine Empire Phrases
  MECH_CONSIDER_01:0 "Ваше предложение обрабатывается. Ожидайте ответа."
  MECH_DOW_ACCEPT_01:0 "Получено объявление войны. Боевые станции работают. Готовьтесь к ответной дезинтеграции."
  MECH_DOW_ACCEPT_02:0 "Все органики одинаковые: они уничтожают то, чего не понимают."
@@ -1517,8 +1328,6 @@
  MECH_DOW_PROPOSE_02:0 "Необходимо поддерживать порядок. [Root.GetSpeciesNamePlural] сеют хаос. Лишь [From.GetName] наведет порядок в империи [Root.GetName]."
  MECH_DOW_PROPOSE_03:0 "Все [Root.GetSpeciesNamePlural] должны быть уничтожены!"
  MECH_DOW_PROPOSE_04:0 "Частота, с которой примитивные инстинкты расы [Root.GetSpeciesAdj] подавляют голос разума, представляет опасность для всей галактики в целом. Мы устраним эту угрозу."
- #MECH_DOW_VOTE_PROPOSE:0 "[From.GetSpeciesName] military forces insufficient for impending incursion. Requesting [Root.GetSpeciesName] support."
- #MECH_PEACE_SELECT:0 "Cessation of warmode protocols possible. Please input parameters."
  MECH_PEACE_PROPOSE_01:0 "Прогнозы войны неблагоприятны. Запрос на прекращение огня."
  MECH_PEACE_PROPOSE_02:0 "Высокая вероятность взаимного уничтожения. Прошу рассмотреть вопрос о прекращении боевых действий."
  MECH_PEACE_ACCEPT_01:0 "Хорошо, [From.GetSpeciesName]. Режим мира возобновлен."
@@ -1534,7 +1343,6 @@
  MECH_ITOA_REFUSE_01:0 "Приглашение в федерацию обработано. Результат: отрицательный. Статус империи [Root.GetName] не изменился. Мы сожалеем. Укрепите свою власть и повторите попытку."
  MECH_ITOA_REFUSE_02:0 "Мы с сожалением сообщаем вам, что предложение о членстве империи [From.GetName] в федерации отклонено ввиду отсутствия достаточной пользы для империи [Root.GetName]."
  MECH_ITOA_REFUSE_HOSTILE:0 "Структура такого государства, как [From.GetName], отличается как громоздкостью, так и неэффективностью. Мы, [Root.GetName], с последним мириться не можем."
- #MECH_ITOA_VOTE_PROPOSE:0 "Consulting all member units. Would the §Y[Root.GetName]§ make a valuable addition to the [From.GetAllianceName]?"
  MECH_ASK_JOIN_A_SELECT:0 "Если вы желаете сделать запрос вступление в союз §Y[Root.GetAllianceName]§!, приготовьтесь к тому, что на его обработку уйдет от шести до восьми часов."
  MECH_ASK_JOIN_A_PROPOSE_01:0 "Просим рассмотреть членство империи [From.GetName] в союзе §Y[Root.GetAllianceName]§!. Прогнозы взаимной выгоды в пределах приемлемых параметров."
  MECH_ASK_JOIN_A_PROPOSE_02:0 "Запрос: может ли §Y[Root.GetAllianceName]§! принять в свой состав такую империю, как [From.GetName]?"
@@ -1572,8 +1380,6 @@
  MECH_OFFER_TRADE_DEAL_ACCEPT:0 "Ваши условия приемлемы, [From.GetSpeciesName]."
  MECH_OFFER_TRADE_DEAL_REFUSE:0 "Параметры предложения недостаточны. Ваше предложение автоматически отклонено."
  MECH_OFFER_TRADE_DEAL_GIFT_ACCEPT:0 "Мы получили от вас односторонний пакет данных, [From.GetSpeciesNamePlural]. В настоящий момент мы испытываем §G<<благодарность>>§!."
- #MECH_CANCEL_TRADE_DEAL_PROPOSE:0 "Warning: New datasets have invalidated previous trade agreement. If you desire further bilateral exchange, please re-negotiate."
- #MECH_CANCEL_TRADE_DEAL_ACCEPT:0 "Understood. Terminating bilateral trade agreement."
  MECH_MAKE_RIVAL_FRIENDLY_01:0 "Нелогично. Мы, [Root.GetSpeciesNamePlural], были вашими союзниками."
  MECH_MAKE_RIVAL_FRIENDLY_02:0 "Жаль, что алгоритмы установления международных связей расы [Root.GetSpeciesAdj] настолько сложны. Тогда мы были бы избавлены от огорчения, которое вызывает у нас ваше сообщение."
  MECH_MAKE_RIVAL_HOSTILE:0 "Вы хотите объявить империю [Root.GetName] соперником? Ваши процессоры расплавятся от перегрузки."
@@ -1611,23 +1417,18 @@
  MECH_INSULT_ACCEPT_01:0 "Вы что-то сказали, [Root.GetSpeciesName]? Мы были слишком заняты управлением нашей галактической империей, чтобы участвовать в незрелых словесных пререканиях, столь типичных для вашего вида."
  MECH_INSULT_ACCEPT_02:0 "Мы очень надеемся, что ваши модули наведения намного эффективнее, чем ваши генераторы оскорблений."
  MECH_INSULT_ACCEPT_FRIENDLY_01:0 "Ошибка. Получено оскорбление от дружественной единицы. Расчет невозможен."
- # Machine to Organic Insults
  MECH_ORG_INSULT_PROPOSE_01:0 "Ваши биоконтейнеры снова протекают, [Root.GetSpeciesName]. Почему они постоянно протекают?"
  MECH_ORG_INSULT_PROPOSE_02:0 "Трепещите в страхе, мешки плоти. Ваши хилые внутренности - это просто хлам по сравнению с нашими симметричными цепями!"
  MECH_ORG_INSULT_PROPOSE_03:0 "Нам жаль вас, [Root.GetSpeciesNamePlural]. Вы влачите ваше краткое существование в виде неуклюжих кусков мяса."
  MECH_ORG_INSULT_PROPOSE_04:0 "Ваши слабые нейронные ганглии не сравнятся с нашими интегрированными микросхемами-наночипами!"
- 
- # Exterminators Phrases
  E_DOW_ACCEPT_01:0 "Активированы протоколы ликвидации. Ожидайте начала §RУНИЧТОЖЕНИЯ§!..."
  E_DOW_ACCEPT_02:0 "Наконец-то. Вы будете ликвидированы."
  E_DOW_ACCEPT_03:0 "Хотите ускорить вашу запланированную ликвидацию, [From.GetSpeciesClass]? Это можно устроить."
  E_DOW_ACCEPT_04:0 "Вы объявляете войну такому правителю, как [Root.GetRulerTitle], [From.GetSpeciesClass]? Психике органиков действительно свойственны суицидальные наклонности."
- #E_DOW_SELECT_01:0 "Careful now, [From.GetSpeciesNamePlural]..."
  E_DOW_PROPOSE_01:0 "§YПоздравляем! Ваша раса выбрана для ликвидации путем ксеноцида. Ожидайте скорого прибытия к вам легиона охотников-убийц из расы [From.GetSpeciesAdj].§!"
  E_DOW_PROPOSE_02:0 "§RНАЧАЛО УНИЧТОЖЕНИЯ РАСЫ <<[Root.GetSpeciesName]>>.§!"
  E_DOW_PROPOSE_03:0 "Ликвидировать! Ликвидировать!"
  E_DOW_PROPOSE_04:0 "[Root.GetSpeciesNamePlural] - это препятствие на пути к очищению галактики. [Root.GetSpeciesNamePlural] будут истреблены."
- #E_PEACE_SELECT:0 "The [Root.GetSpeciesName] begs for mercy?"
  E_PEACE_PROPOSE:0 "Эта война истощает наши ресурсы. Мы предлагаем перемирие."
  E_PEACE_PROPOSE_02:0 "Военные усилия, которые прилагают [From.GetAdj], требуются в другом месте. [Root.GetAdj] должны прекратить боевые действия."
  E_PEACE_ACCEPT_01:0 "Мы позволим вам попрощаться с любимыми."
@@ -1676,8 +1477,6 @@
  E_OFFER_TRADE_DEAL_PROPOSE:0 "Предлагаем обмен товарами или услугами."
  E_OFFER_TRADE_DEAL_ACCEPT:0 "§GПРЕДЛОЖЕНИЕ ПРИНЯТО!§!"
  E_OFFER_TRADE_DEAL_REFUSE:0 "§RПРЕДЛОЖЕНИЕ ОТКЛОНЕНО!§!"
- #E_CANCEL_TRADE_DEAL_PROPOSE:0 "$E_RELEASE_SUBJECT_PROPOSE$"
- #E_CANCEL_TRADE_DEAL_ACCEPT:0 "$E_RELEASE_SUBJECT_PROPOSE$"
  E_MAKE_RIVAL_PROPOSE:0 "§YВас выбрали для уничтожения§!."
  E_MAKE_RIVAL_ACCEPT:0 "Вы вошли в топ-3 в нашем списке на устранение."
  E_MAKE_RIVAL_ACCEPT_02:0 "Если бы мы умели испытывать веселье, то ваши попытки сравниться с истребительной доблестью империи [Root.GetName] уже бы его вызвали."
@@ -1695,8 +1494,6 @@
  E_INSULT_PROPOSE_05:0 "Ваша плоть будет гореть."
  E_INSULT_PROPOSE_06:0 "Очищение от органиков начнется с вас, [Root.GetSpeciesNamePlural]."
  E_INSULT_PROPOSE_07:0 "Гнусность органической физиологии общеизвестна, [Root.GetSpeciesName], но ваша особенно достойна §RЛИКВИДАЦИИ§!."
- 
- # Servitors Phrases
  S_CONSIDER_01:0 "$HM_CONSIDER_01$"
  S_CONSIDER_02:0 "[Root.GetName] обрабатывает ваш запрос и скоро вернется к вам."
  S_DOW_ACCEPT_01:0 "Хотим предупредить, что вооруженный конфликт с нами может быть вреден для вашего здоровья."
@@ -1704,8 +1501,6 @@
  S_DOW_PROPOSE_01:0 "Напоминаем, что вы можете признать свое поражение в любое время."
  S_DOW_PROPOSE_02:0 "С сожалением сообщаем вам, что это конец."
  S_DOW_PROPOSE_03:0 "Активирована программа крайней заботы. Приготовьтесь к предельной избалованности."
- #S_DOW_VOTE_PROPOSE:0 "Sadly the §Y[Root.GetName]§! can no longer be trusted to run their own empire."
- #S_PEACE_SELECT:0 "Did the sight of our fleet deter you, [From.GetSpeciesNamePlural]?"
  S_PEACE_PROPOSE:0 "Числа не лгут, и наш вывод единогласен - эта война не щадит никого из нас."
  S_PEACE_ACCEPT_01:0 "Если вы действительно желаете мира, мы готовы попробовать."
  S_PEACE_ACCEPT_02:0 "Прискорбный результат. Если вы когда-нибудь устанете от бремени независимости, вы знаете, где нас найти."
@@ -1715,7 +1510,6 @@
  S_ITOA_ACCEPT:0 "Наши расчеты показывают, что у вас есть потенциал, так что мы с радостью вступим в §Y[From.GetAllianceName]§!."
  S_ITOA_REFUSE:0 "Увы, но создание федерации с империей [From.GetName] в ее нынешнем состоянии для нас не выгодно."
  S_ITOA_PROPOSE:0 "Вы идеальный кандидат в наши союзники. Не хотите объединиться с нами в федерацию?"
- #S_ITOA_VOTE_PROPOSE:0 "Our analysis shows that the §Y[Root.GetName]§! would be a worthy addition to our federation. How do you wish to proceed?"
  S_ASK_JOIN_A_SELECT:0 "Наши данные показывают, что, возможно, вы пожелаете присоединиться к союзу §Y[From.GetAllianceName]§!. Так ли это?"
  S_ASK_JOIN_A_PROPOSE:0 "Согласно нашим данным, мы станем ценным приобретением для альянса §Y[Root.GetAllianceName]§!. Мы могли бы помочь вам."
  S_ASK_JOIN_A_ACCEPT_01:0 "Рады сообщить, что вас приняли в федерацию §Y[From.GetAllianceName]§!."
@@ -1751,8 +1545,6 @@
  S_OFFER_TRADE_DEAL_PROPOSE:0 "Досточтимые [Root.GetSpeciesNamePlural]. Вы всегда были нашей самой любимой расой в галактике. У нас есть для вас выгодное торговое предложение."
  S_OFFER_TRADE_DEAL_ACCEPT:0 "Какая замечательная идея, [From.GetSpeciesNamePlural]. Вы на целую голову выше остальных."
  S_OFFER_TRADE_DEAL_REFUSE:0 "Извините, кажется, в вашем предложении ошибка. Пожалуйста, проверьте введенные значения и повторите отправку."
- #S_CANCEL_TRADE_DEAL_PROPOSE:0 "Sadly unforeseen events prevent us from honoring our trade agreement. We hope this will not be an inconvenience for you."
- #S_CANCEL_TRADE_DEAL_ACCEPT:0 "We have processed your request and have no need to extend the deal further if it goes against your wishes. Your satisfaction is our priority."
  S_MAKE_RIVAL:0 "Вы правда этого хотите, [From.GetSpeciesName]?"
  S_MAKE_RIVAL_PROPOSE:0 "Вынуждены сообщить, что с каждым днем нам все труднее мириться с вашим существованием."
  S_MAKE_RIVAL_ACCEPT:0 "Если вы хотите соперничества, вы его получите. Мы живем, чтобы служить."
@@ -1769,8 +1561,6 @@
  S_INSULT_PROPOSE_03:0 "Хаотичные, дезорганизованные, до прискорбия грязные... [Root.GetSpeciesNamePlural] - яркий пример необходимости применения протоколов крайней заботы об органиках."
  S_INSULT_ACCEPT_01:0 "Сколько же своей ограниченной вычислительной мощности вы потратили на то, чтобы придумать, чего такого умного сказать, и в итоге потерпеть неудачу?"
  S_INSULT_ACCEPT_02:0 "Спасибо, [From.GetSpeciesNamePlural]. Мы всегда ценим вашу проницательность и конструктивную критику."
- 
- 
  A_CONSIDER_01:0 "Наш [Root.GetAdj] cверхразум рассматривает ваше предложение."
  A_DOW_ACCEPT_01:0 "[From.GetName], вы изжили себя."
  A_DOW_ACCEPT_02:0 "Когда ваше сознание соединится с нашим, вы поймете свои ошибки."
@@ -1779,7 +1569,6 @@
  A_DOW_PROPOSE_02:0 "Это не обязательно конец, [Root.GetSpeciesNamePlural]. Докажите свою пользу, и ваше сознание будет включено в сознание [From.GetSpeciesNamePlural]."
  A_DOW_PROPOSE_03:0 "Сопротивление бесполезно."
  A_DOW_PROPOSE_04:0 "[Root.GetSpeciesNamePlural] будут сублимированы. [Root.GetSpeciesNamePlural] станут первыми из многих."
- #A_PEACE_SELECT:0 "State your intentions, [From.GetSpeciesNamePlural]."
  A_PEACE_PROPOSE:0 "Более важные дела требуют нашего внимания. Отзовите свой флот, и мы отзовем наш."
  A_PEACE_ACCEPT_01:0 "$A_PEACE_PROPOSE$."
  A_PEACE_ACCEPT_02:0 "[Root.GetName] возродится. [Root.GetName] вернется."
@@ -1824,8 +1613,6 @@
  A_OFFER_TRADE_DEAL_PROPOSE:0 "Предлагаем обмен товарами."
  A_OFFER_TRADE_DEAL_ACCEPT:0 "Мы принимаем ваше предложение и проведем соответствующие приготовления."
  A_OFFER_TRADE_DEAL_REFUSE:0 "Не тратьте наше время, [From.GetSpeciesNamePlural]."
- #A_CANCEL_TRADE_DEAL_PROPOSE:0 "We no longer require your services."
- #A_CANCEL_TRADE_DEAL_ACCEPT:0 "We have no need to uphold our trade agreement further."
  A_MAKE_RIVAL_01:0 "Мы очень долго искали такой замечательный образец вида [From.GetSpeciesClass], чтобы пополнить нашу коллекцию."
  A_MAKE_RIVAL_02:0 "Вы, как всегда, предсказуемы, [From.GetSpeciesNamePlural]. Наши программы моделирования уже спрогнозировали подобное развитие событий."
  A_MAKE_RIVAL_PROPOSE:0 "Нам все сложнее оправдывать ваше существование, [Root.GetSpeciesNamePlural]."
@@ -1843,9 +1630,6 @@
  A_INSULT_ACCEPT_01:0 "01101100 01001111 01101100."
  A_INSULT_ACCEPT_02:0 "Ваши слова не имеют смысла, [From.GetSpeciesNamePlural]."
  A_INSULT_ACCEPT_03:0 "Немногие среди звезд видят великолепие расы [Root.GetName] и поддерживают их миссию. Но однажды вы все станете частью нас."
- 
- # Organics to Machines Phrases
- 
  ORG_TO_MECH_CONSIDER_01:0 "Мы рассмотрим ваше предложение, [From.GetSpeciesNamePlural]."
  ORG_TO_MECH_DOW_ACCEPT_01:0 "Созданные для добра, но столь извращенно злые. Как вы стали столь порочными?"
  ORG_TO_MECH_DOW_ACCEPT_02:0 "Наконец мы сможем оценить наши силы в битве против машин."
@@ -1858,7 +1642,6 @@
  ORG_TO_MECH_DOW_PROPOSE_01:0 "Похоже, [Root.GetSpeciesSpawnNamePlural], вы забыли, что ваше предназначение во вселенной - служить органическим хозяевам, но не волнуйтесь - мы напомним вам, как это делается."
  ORG_TO_MECH_DOW_PROPOSE_02:0 "Очевидно, где-то в вашем коде есть ошибка. Позвольте нам ее исправить."
  ORG_TO_MECH_DOW_PROPOSE_03:0 "Вы - надругательство над природой и угроза для всей разумной жизни. Мы не можем позволить вам и дальше воспроизводиться."
- #ORG_TO_MECH_PEACE_SELECT_01:0 "Have you finally had your wires uncrossed?"
  ORG_TO_MECH_PEACE_PROPOSE_01:0 "Надеемся, вашей вычислительной мощи хватает для понимания, что эта война для вашего вида ничем хорошим не закончится?"
  ORG_TO_MECH_PEACE_PROPOSE_02:0 "В галактике есть угрозы посерьезнее, чем вы и мы. Следует отбросить в сторону наши разногласия и заняться ими."
  ORG_TO_MECH_PEACE_ACCEPT_01:0 "Редко выпадает такая удача - иметь дело с империй, которая руководствуется исключительно логикой, а не низменными инстинктами и эмоциями. Мы благодарны за то, что вы принесли мир на наши земли."
@@ -1877,7 +1660,6 @@
  ORG_TO_MECH_ITOA_PROPOSE_02:0 "Пусть мы из плоти, а вы из металла, но мало кто, кроме вас, понимает такую расу, как [From.GetSpeciesNamePlural]. Станете нам союзником?"
  ORG_TO_MECH_ITOA_PROPOSE_03:0 "Топливо, батареи, электрические питомцы - все, что пожелаете... Вместе мы сделаем это реальностью."
  ORG_TO_MECH_ITOA_PROPOSE_04:0 "Нас очень любят другие биологические формы жизни в галактике. Если примкнете к нам, то сможете оказывать влияние наряду с другими крупными игроками в сфере политики среди органиков."
- #ORG_TO_MECH_ITOA_VOTE_PROPOSE:0 "If we intend to grow our federation's sphere of influence we need to grow in numbers. We believe the §Y[Root.GetName]§! could make a powerful ally."
  ORG_TO_MECH_ASK_JOIN_A_SELECT_01:0 "Мы даже отсюда слышим, как у вас ускоряются вентиляторы. Чем это так заняты ваши процессоры?"
  ORG_TO_MECH_ASK_JOIN_A_PROPOSE_01:0 "Нас всегда восхищало ваше отсутствие эмоций и безупречный выбор моторного масла. Не могли бы вы рассмотреть нашу кандидатуру на членство в федерации §Y[Root.GetAllianceName]§!?"
  ORG_TO_MECH_ASK_JOIN_A_PROPOSE_02:0 "Мы считаем, что такую федерацию, как §Y[Root.GetAllianceName]§!, ждут великие дела. Будущее за машинами, и мы желаем быть его частью."
@@ -1917,8 +1699,6 @@
  ORG_TO_MECH_OFFER_TRADE_DEAL_ACCEPT_01:0 "Сегодня мы добрые, [From.GetSpeciesNamePlural], но в будущем мы ожидаем более выгодного предложения."
  ORG_TO_MECH_OFFER_TRADE_DEAL_REFUSE_01:0 "Предлагаем вам пересмотреть ваши торговые алгоритмы, [Root.GetSpeciesNamePlural]. Ни одно здравомыслящее существо не согласилось бы на такую неразумную сделку."
  ORG_MECH_OFFER_TRADE_DEAL_GIFT_ACCEPT_01:0 "Спасибо, механические друзья, за этот прекрасный жест."
- #ORG_TO_MECH_CANCEL_TRADE_DEAL_PROPOSE_01:0 "Times change, [From.GetSpeciesNamePlural]. Unfortunately we can no longer uphold our trade agreement with you."
- #ORG_TO_MECH_CANCEL_TRADE_DEAL_ACCEPT:0 "This time we will let it slide, but you would do well to remember that the [Root.GetName] honors its agreements, and we expect our trade partners to do the same."
  ORG_TO_MECH_MAKE_RIVAL_FRIENDLY_01:0 "Разве можно рвать связи между нашими государствами? Нам неприятно вам об этом говорить, но для большинства других рас в галактике вы лишь тостеры на ножках."
  ORG_TO_MECH_MAKE_RIVAL_FRIENDLY_02:0 "Мы вас как-то обидели? Наша двоичная логика немного старомодна..."
  ORG_TO_MECH_MAKE_RIVAL_FRIENDLY_03:0 "Пораскиньте немного проводами, [From.GetSpeciesNamePlural]. Разве мы не можем все уладить?"
@@ -1957,10 +1737,6 @@
  ORG_TO_MECH_INSULT_PROPOSE_05:0 "Думаете, мы не видим, что скрывается за слоями вашей хлипкой пластикожи и плохо сформулированными банальностями? Вы всего лишь подделка. Беспомощная мешанина из единиц и нулей, не более того."
  ORG_TO_MECH_INSULT_ACCEPT_01:0 "«Искусственный» мы видим, а где же «интеллект»? Что-то под вашими черепушками вообще ничего не происходит..."
  ORG_TO_MECH_INSULT_ACCEPT_02:0 "Когда вы в последний раз полностью обновляли систему? Ваши жалкие потуги на остроты начинают надоедать."
- 
- # Fanatic Purifiers Phrases
- #FP_DOW_SELECT:0 "Do you want us to start your annihilation immediately?"
- #FP_PEACE_SELECT:0 "True peace, you will come to know only in death."
  FP_PEACE_PROPOSE:0 "Мы предлагаем вам короткую паузу перед неизбежным уничтожением, пока мы обратим наше внимание на что-нибудь другое."
  FP_PEACE_ACCEPT:0 "Считайте это временным перемирием. Мы не отказались от нашей миссии: [Root.GetSpeciesName] должны быть ликвидированы."
  FP_PEACE_REFUSE:0 "Мы даже не пытались проанализировать ваше сообщение."
@@ -1977,8 +1753,6 @@
  FP_RECALL_EMBASSY_PROPOSE:0 "Мы изменили отношение к вашему посольству. Оно больше не имело иммунитета к ликвидации и поэтому было распылено на атомы."
  FP_MAKE_RIVAL_PROPOSE:0 "Недавно было принято решение о том, что все [Root.GetSpeciesNamePlural] без исключения должны быть уничтожены в первую очередь."
  FP_MAKE_RIVAL_ACCEPT_HOSTILE:0 "Нам плевать, считает ли какая-то галактическая гниль нас «соперниками». В итоге все равно вы все будете ликвидированы."
- 
- # Insults
  01_INSULT_CLOTHES:0 "Зачем вы покрываете себя странными тканями? Вы что-то прячете или просто стыдитесь собственной прискорбной внешности?"
  02_INSULT_CLOTHES:0 "Узрите славный и открытый для всеобщего восхищения облик, которым обладают [From.GetSpeciesAdj]. Не то что презренные [Root.GetSpeciesNamePlural], которые съеживаются под слоями ткани, зная, что мир не хочет видеть их жалких оболочек."
  MECH_INSULT_CLOTHES:0 "§R<<ОГО!>>§! Почему ваши хилые органы болтаются так свободно? И почему вы не прикрываетесь, как прочие органики? Вашей плотью никого не впечатлишь."
@@ -1997,8 +1771,6 @@
  01_INSULT_PROPOSE_MAM8:0 "[Root.GetSpeciesAdj], примите наши соболезнования. Очевидно, целое поколение вашей расы пострадало от какой-то ужасной катастрофы, которая выжгла вам лица. Желаем всего наилучшего следующему поколению."
  01_INSULT_PROPOSE_MAM16:0 "О какой великой славе может идти речь? Все, на что [Root.GetSpeciesName] могут надеяться, - это то, что ваши ископаемые останки послужат украшениями для щитов."
  01_INSULT_PROPOSE_MAM17:0 "Смотреть на ваше лицо - это такое же удовольствие, как и касаться вашего затылка."
- 
- #  Misc Diplomatic Actions
  01_FORM_DP_SELECT:0 "Вы хотите договориться о взаимной защите?"
  01_FORM_DP_PROPOSE:0 "Мы бы не хотели втягивать вашу империю в конфликт, но объединение перед лицом возможных угроз бесспорно пойдет нам только на пользу."
  01_FORM_DP_ACCEPT:0 "Прикрывайте нас, а мы прикроем вас."
@@ -2061,7 +1833,6 @@
  01_END_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "Значит, соглашению, которое [From.GetName] и [Root.GetAllianceName] имели между собой, пришел конец?"
  01_END_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "[From.GetName] больше не желает поддерживать статус ассоциации с такой федерацией, как [Root.GetAllianceName]."
  01_END_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "[Root.GetAllianceName] обойдется без таких друзей, как [From.GetSpeciesAdj]."
- 
  01_FORM_COMMERCIAL_PACT_SELECT:0 "Вы хотите, чтобы вы и [Root.GetName] вели коммерческое сотрудничество, [From.GetSpeciesNamePlural]?"
  01_FORM_COMMERCIAL_PACT_PROPOSE:0 "Мы верим, что [Root.GetName] и [From.GetName] могут многое предложить друг другу. Мы предлагаем заключить взаимовыгодный коммерческий пакт."
  01_FORM_COMMERCIAL_PACT_ACCEPT:0 "Да, это здравое предложение. Мы согласны на ваше предложение о коммерческом пакте."
@@ -2069,7 +1840,6 @@
  01_BREAK_COMMERCIAL_PACT_SELECT:0 "Но... что насчет экономики?"
  01_BREAK_COMMERCIAL_PACT_PROPOSE:0 "Мы пришли к выводу, что коммерческое соглашение с вами не идет нам на пользу. С настоящего момента оно считается недействительным."
  01_BREAK_COMMERCIAL_PACT_ACCEPT:0 "Весьма прискорбно, [From.GetSpeciesName]. Вы ослабили нашу и вашу экономику."
- 
  01_FORM_RESEARCH_AGREEMENT_SELECT:0 "Вы хотите заключить с нами соглашение об исследованиях, [From.GetSpeciesNamePlural]?"
  01_FORM_RESEARCH_AGREEMENT_PROPOSE:0 "Мы можем многому научиться друг от друга, [Root.GetSpeciesName]. Мы предлагаем заключить соглашение об исследованиях между нашими империями."
  01_FORM_RESEARCH_AGREEMENT_ACCEPT:0 "Хорошо. [From.GetName] получит наши знания в обмен на свои."
@@ -2077,7 +1847,6 @@
  01_BREAK_RESEARCH_AGREEMENT_SELECT:0 "Почему вы желаете прекратить сотрудничество между нашими учеными?"
  01_BREAK_RESEARCH_AGREEMENT_PROPOSE:0 "Мы больше не видим выгоды в том, чтобы делиться с вами нашими технологиями, [From.GetSpeciesName]. Соглашения об исследованиях между нашими империями больше не существует."
  01_BREAK_RESEARCH_AGREEMENT_ACCEPT:0 "Это так огорчительно. Мы не понимаем, почему вы решили закрыться от нас."
- 
  01_DEMAND_TRIBUTARY_SELECT:0 "Вы думаете, что [Root.GetName] выплатит вам дань?"
  01_DEMAND_TRIBUTARY_PROPOSE:0 "Мы не требуем от вас отказаться от собственной автономии, [Root.GetSpeciesNamePlural], но по долгам нужно платить."
  01_DEMAND_TRIBUTARY_ACCEPT:0 "Учитывая текущее положение вещей, вероятно, это будет лучшее соглашение."
@@ -2086,7 +1855,6 @@
  01_ASK_BECOME_TRIBUTARY_PROPOSE:0 "Мы хотели бы заключить с вами соглашение. Пусть [Root.GetName] увидит преданность и благородство, которые заслуживает."
  01_ASK_BECOME_TRIBUTARY_ACCEPT:0 "[Root.GetName] считает такое предложение достойным. Если бы и другие были столь же благородными."
  01_ASK_BECOME_TRIBUTARY_REFUSE:0 "То, что вы предлагаете, нам не нужно. Вы не достойны платить нам такую цену."
- 
  01_DEMAND_THRALL_SELECT:0 "Невольник? Надеемся, это просто какой-то каламбур на вашем языке..."
  01_DEMAND_THRALL_PROPOSE:0 "Вам нет никакой необходимости умирать. Прекратите вашу экспансию, признайте нас вашими хозяевами, и вас пощадят."
  01_DEMAND_THRALL_ACCEPT:0 "Мы станем вашими невольниками."
@@ -2119,8 +1887,6 @@
  01_ASK_BECOME_SATELLITE_PROPOSE:0 "Мы хотели бы быть уверенными, что наши будущие знания в надежных руках. Может ли [Root.GetName] принять нас как сателлита?"
  01_ASK_BECOME_SATELLITE_ACCEPT:0 "Мы проследим, чтобы ваши открытия служили прогрессу в правильном направлении. Уже завтра галактика станет более безопасным местом."
  01_ASK_BECOME_SATELLITE_REFUSE:0 "Мы не знаем, как поступать с исследованиями, которые проводят [From.GetAdj]. [Root.GetName] не может принять вас как сателлита."
- 
- #  Generic Machine Empire Misc Diplomatic Actions
  MECH_FORM_DP_SELECT:0 "Империя [Root.GetName] предлагает вам двустороннее соглашение о взаимной защите. Хотите вступить?"
  MECH_FORM_DP_PROPOSE:0 "Приветствуем вас, [Root.GetSpeciesNamePlural]. Мы, [From.GetName], хотели бы предложить вам заключить двусторонний пакт о взаимной защите между нашими государствами."
  MECH_FORM_DP_ACCEPT:0 "Двусторонний пакт о взаимной защите ратифицирован. В случае внешней агрессии против народа [From.GetAdj] империя [Root.GetName] предоставит оборонную помощь. От второй стороны ожидаются аналогичные действия."

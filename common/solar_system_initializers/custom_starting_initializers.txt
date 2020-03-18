@@ -5,6 +5,7 @@
 #############################
 
 @distance = 50
+@jumps = 3
 @planet_min_size = 10
 @planet_max_size = 25
 @base_moon_distance = 10
@@ -145,12 +146,12 @@ custom_starting_init_01 = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -270,12 +271,12 @@ custom_starting_init_02 = {
 	
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -392,12 +393,12 @@ custom_starting_init_03 = {
 
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -507,12 +508,12 @@ custom_starting_init_04 = {
 	
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -644,12 +645,12 @@ custom_starting_init_05 = {
 	
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		distance = { min = 10 max = @distance }	
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		distance = { min = 10 max = @distance }	
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -795,12 +796,12 @@ custom_starting_init_06 = {
 	
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		distance = { min = 10 max = @distance }		
+		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "neighbor_t1_first_colony"
 	}
 }

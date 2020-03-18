@@ -101,7 +101,7 @@ cara_allow_deal2 = {
 	# Price checks
 	if = { # Numistic Shrine
 		limit = { has_country_flag = fleet2deal1 }
-		resource_stockpile_compare = { resource = energy value >= 2000 }
+		resource_stockpile_compare = { resource = energy value >= 4000 }
 		custom_tooltip = {
 			fail_text = already_bought
 			NOT = { has_country_flag = nuumismatic_shrine }

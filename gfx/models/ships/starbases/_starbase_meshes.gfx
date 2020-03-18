@@ -277,7 +277,7 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "mammalian_01_outpost_frame_mesh"
-		file = "gfx/models/ships/starbases/mammalian_01_outpost.mesh"
+		file = "gfx/models/ships/starbases/mammalian_01_outpost_frame.mesh"
 		scale = 1.0
 
 	}

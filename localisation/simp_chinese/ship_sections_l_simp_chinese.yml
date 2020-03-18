@@ -1,25 +1,7 @@
 ﻿l_simp_chinese:
- ####################################
- # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
- #:0 "COMMON STRINGS"
- # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word ""Core"
- # Front sections have a flavor-name followed by the key-word ""Breaker"
- # Rear sections have a flavor-name followed by the key-word ""Bulwark"
- #:0 "COMMON STRINGS"
- ####################################
- 
- 
- ####################################
- # Titan
- ####################################
- 
  TITAN_BOW:0 "泰坦舰艏"
  TITAN_MID:0 "泰坦核心"
  TITAN_STERN:0 "泰坦舰艉"
- 
- ####################################
- # Battleship
- ####################################
  BATTLESHIP_BOW_L1M1S2:0 "齐射舰艏"
  BATTLESHIP_BOW_L1S4:0 "泰坦毁灭炮"
  BATTLESHIP_BOW_L2:0 "火炮舰艏"
@@ -36,32 +18,16 @@
  BATTLESHIP_STERN_L1:0 "火炮舰艉"
  BATTLESHIP_STERN_M2:0 "齐射舰艉"
  BATTLESHIP_STERN_S4:0 "顶峰壁垒"
- 
- ####################################
- # Colonizer
- ####################################
  COLONIZER_MID_M1S1:0 "殖民船"
  COLONIZER_MID_S3:0 "萌芽核心"
  COLONIZER_MID_MU1:0 "盖亚核心"
- 
- ####################################
- # Constructor
- #################################### 
  CONSTRUCTOR_MID_M1S1:0 "工程船"
  CONSTRUCTOR_MID_S3:0 "开发核心"
  CONSTRUCTOR_MID_MU1:0 "熔凝核心"
- 
- ####################################
- # Corvette
- #################################### 
  CORVETTE_MID_M1S1:0 "鱼雷艇"
  CORVETTE_MID_S3:0 "拦截艇"
  CORVETTE_MID_S1:0 "位移核心"
  CORVETTE_MID_S2PD1:0 "巡逻艇"
- 
- ####################################
- # Cruiser
- #################################### 
  CRUISER_BOW_L1:0 "火炮舰艏"
  CRUISER_BOW_M1S2:0 "鱼雷舰艏"
  CRUISER_BOW_M2:0 "齐射舰艏"
@@ -71,27 +37,15 @@
  CRUISER_MID_M2S2:0 "飞弹核心"
  CRUISER_STERN_M1:0 "齐射舰艉"
  CRUISER_STERN_S2:0 "炮艇舰艉"
- 
- ####################################
- # Destroyer
- #################################### 
  DESTROYER_BOW_M1S2:0 "炮艇舰艏"
  DESTROYER_BOW_S3:0 "哨卫舰艏"
  DESTROYER_BOW_L1:0 "火炮舰艏"
  DESTROYER_STERN_PD2:0 "哨卫舰艉"
  DESTROYER_STERN_S2:0 "哨卫舰艉"
  DESTROYER_STERN_M1:0 "炮艇舰艉"
- 
- ####################################
- # Science
- #################################### 
  SCIENCE_MID_M1S1:0 "科研船"
  SCIENCE_MID_S3:0 "开拓核心"
  SCIENCE_MID_MU1:0 "洞察核心"
- 
- ####################################
- # Science
- #################################### 
  LIGHT_MILITARY_STATION_SECTION:0 "轻型分区"
  PD_MILITARY_STATION_SECTION:0 "点防御分区"
  MEDIUM_MILITARY_STATION_SECTION:0 "中型分区"
@@ -103,10 +57,6 @@
  HEAVY_LARGE_MILITARY_STATION_SECTION:0 "重型分区"
  HANGAR_LARGE_MILITARY_STATION_SECTION:0 "机库分区"
  OUTPOST_STATION_SECTION:0 "边境前哨核心"
- 
- ####################################
- # Other
- #################################### 
  MISSILE_DEFAULT:0 "飞弹分区"
  DEFAULT_CONSTRUCTION_SECTION:0 "工程船"
  DEFAULT_COLONIZATION_SECTION:0 "殖民船"

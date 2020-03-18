@@ -1,11 +1,4 @@
 ﻿l_simp_chinese:
- 
- ###      #        ##      #  #     ###     ###     # #     ###     #       #       ###     ###       ## 
- #  #     #       #  #     ## #     #        #      # #      #      #       #       #       #  #     #   
- ###      #       ####     # ##     ##       #      ##       #      #       #       ##      ###       #  
- #        #       #  #     #  #     #        #      # #      #      #       #       #       #  #       # 
- #        ###     #  #     #  #     ###      #      # #     ###     ###     ###     ###     #  #     ##  
- 
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_CRACKER:0 "准备粉碎 $PLANET|Y $"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_SHIELDER:0 "准备防御 $PLANET|Y $"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NUKE:0 "准备核爆 $PLANET|Y $"
@@ -15,15 +8,12 @@
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NANOBOTS:0 "准备半机械化 $PLANET|Y $"
  FLEETORDER_PLANET_KILLER_WINDUP:0 "充能武器： $PROGRESS|Y0% $"
  FLEETORDER_PLANET_KILLER_FIRING:0 "发射武器： $PROGRESS|Y0% $"
- 
  STATUS_QUO_CREATE_NEW_EMPIRE:0 "一个新的 $SPECIES|Y $帝国将以 $ACTOR|Y $的盟友或是附庸国的身份成立，基于 $SYSTEMS|H $占领的 $TARGET|Y $星系"
- 
  MESSAGE_DESC_FOR_PLANET_KILLER_CRACKER:0 "被彻底摧毁，摧毁者是"
  MESSAGE_DESC_FOR_PLANET_KILLER_SHIELDER:0 "被坚不可摧的护盾所包裹，庇护者是"
  MESSAGE_DESC_FOR_PLANET_KILLER_NEUTRON:0 "的所有高级生命形态都被清除，清除者是"
  MESSAGE_DESC_FOR_PLANET_KILLER_GODRAY:0 "被强迫怀有神圣信仰，执行者是"
  MESSAGE_DESC_FOR_PLANET_KILLER_NANOBOTS:0 "被纳米机器人同化，同化者是"
- 
  is_not_a_standard_planet_or_megastructure:0 "§R $TRIGGER_FAIL $目标不是标准星球或可居住的巨构建筑§!"
  is_not_a_habitable_planet_or_megastructure:0 "§R $TRIGGER_FAIL $目标不是可居住的星球或巨构建筑§!"
  is_not_a_standard_planet:0 "§R $TRIGGER_FAIL $目标不是常规行星体§!"
@@ -36,16 +26,12 @@
  not_owned_test_fire:0 "目标是一个§Y己方殖民地§!试射目标"
  primitives_not_in_borders:0 "§R $TRIGGER_FAIL $原始目标不在我方境内§!"
  no_assimilatable_pops:0 "§R $TRIGGER_FAIL $目标没有适合机械同化的人口§!"
- 
  enable_colossus_project:0 "§H发布特殊项目：§!巨像项目\n\n"
  describe_colossus_project:0 "完成§Y巨像项目§!，解锁§Y巨像§!§H飞船类型§!，能够装备§R行星终结者武器§!。"
- 
  TECH_UNLOCK_COLOSSUS_CONSTRUCTION_TITLE:0 "§H解锁飞船类型：§!巨像"
  TECH_UNLOCK_COLOSSUS_CONSTRUCTION_DESC:0 "§H巨像§!\n巨像飞船比泰坦更加巨大，但舰体形式不适合船对船战斗。它更像是机动轨道站，只能够进行彻底的行星毁灭打击。"
- 
  COLOSSUS_PROJECT:0 "巨像项目"
  COLOSSUS_PROJECT_DESC:0 "我们的 [Root.GetScientistPlural] 将会研发制造银河中有史以来最大的舰体，并为其设计一个能够毁天灭地的武器。"
- 
  tech_pk_cracker:0 "核心爆裂"
  tech_pk_cracker_desc:0 " $PLANET_KILLER_CRACKER_DESC $"
  tech_pk_shielder:0 "星球防护"
@@ -56,7 +42,6 @@
  tech_pk_godray_desc:0 "一种增幅某些精神波长的神秘催化剂，可在有机大脑中造成幻觉（宗教体验），并在电子大脑中造成严重干扰（脑死亡）。"
  tech_pk_nanobots:0 "大气纳米"
  tech_pk_nanobots_desc:0 " $PLANET_KILLER_NANOBOTS $"
- 
  apoc.100.name:0 "巨像项目"
  apoc.100.desc:0 " $COLOSSUS_PROJECT_DESC $"
  apoc.100.desc.pacif:0 "随着威慑理论再次在 [Root.Capital.GetName] 上的政府学者们之间流行，巨像计划被认为是终极的威慑力量，一种甚至超越了泰坦级舰船的武器。尽管计划中的巨像舰可以携带完全摧毁整颗星球的武器，我们将部署一种较为克制、但仍然令人恐惧的永久性冲突解决手段。\n\n如果设想中的敌人不愿停止对我们或是我们盟友的敌意，那我们就只好§R强迫他们§!。"
@@ -95,13 +80,6 @@
  apoc.130.a.weaker:0 "真是令人惊恐。"
  apoc.130.a.stronger:0 "突然出现的强力竞争者。"
  apoc.130.a.pacif:0 "真的令人憎恶。"
- 
- 
- #        #      #  #     #  #     #  #     #  #     #       #       #   #      #      #       #   # 
- 
- 
- ##       #      #  #     #  #     ###      #  #     ##      ###       #       ###     ###      # #  
- 
  STARBASE_STARBASE_TAB:0 "太空基地"
  STARBASE_DEFENSES_TAB:0 "防御"
  STARBASE_SHIPYARD_TAB:0 "船坞"
@@ -195,24 +173,15 @@
  STARBASE_BUILDQUEUE_UP:0 "§G点击将物品向上移动。\n按住Shift点击将物品移动到顶部。§!"
  STARBASE_BUILDQUEUE_DOWN:0 "§G点击将物品向下移动。\n按住Shift点击将物品移动到底部§!"
  STARBASE_MODIFIER_EFFECTS:0 "修正效果"
- 
- 
- #        #  #      #      #       #   #     #  #      # #      #   
- # ##     ####      #      ##      # # #     ####       #        #  
- #  #     #  #      #      #       # # #     #  #       #         # 
- 
- 
  gateway_ruined:0 "关闭的星门"
  gateway_ruined_DESC:0 "疑似是星门的远古遗迹。若能修复的话，飞船就可以通过此建筑快速前往其它功能正常的星门。"
  gateway_ruined_MEGASTRUCTURE_DETAILS:0 ""
  gateway_restored:0 " $gateway_final $"
  gateway_restored_DESC:0 " $gateway_final_DESC $"
- 
  HAS_NOT_NUM_ACTIVE_GATEWAYS:0 "银河中开启的星门数量不是 $COMPARATOR $ $NUM|Y $个"
  HAS_NUM_ACTIVE_GATEWAYS:0 "银河中开启的星门数量是 $COMPARATOR $ $NUM|Y $个"
  HAS_NOT_NUM_OWNED_ACTIVE_GATEWAYS:0 "帝国拥有的激活星门数量不为 $COMPARATOR $ $NUM|Y $个"
  HAS_NUM_OWNED_ACTIVE_GATEWAYS:0 "帝国拥有的激活星门数量为 $COMPARATOR $ $NUM|Y $个"
- 
  gateway_0_MEGASTRUCTURE_DETAILS:0 "一个穿过子空间的传送门，能够实现星门之间的瞬时旅行。"
  gateway_0:0 "星门建造点"
  gateway_0_DESC:0 "初始地点将作为未来的星门的建造基地。"
@@ -222,19 +191,17 @@
  MEGASTRUCTURE_BUILD_OUTSIDE_GRAVITY_WELL:0 "无法在星系重力井内部建造星门"
  MEGASTRUCTURE_BUILD_INSIDE_SYSTEM_RADIUS:0 ""
  NUM_GATEWAYS:0 "废弃星门"
- NUM_GATEWAYS_TOOLTIP:0 "§H配对虫洞§!\n调整将在宇宙中生成的遗弃星门的标准数量。"
+ NUM_GATEWAYS_TOOLTIP:0 "§H遗弃星门§!\n调节星系中将生成的遗弃星门数量的倍数。"
  NUM_WORMHOLES:0 "配对虫洞"
  NUM_WORMHOLES_TOOLTIP:0 "§H配对虫洞§!\n调整将在宇宙中生成的配对虫洞的标准数量。"
  NAME_gateway_final:0 "星门"
  TRIGGER_HAS_WORMHOLE:0 "包含一个虫洞"
  TRIGGER_HAS_WORMHOLE_NOT:0 "不包含一个虫洞"
  WORMHOLE_NAME:0 " $SYSTEM $ 虫洞"
- 
  requires_starport:0 "§R需要§Y $starbase_starport $§!升级。§!"
  requires_starhold:0 "§R需要§Y $starbase_starhold $§!升级。§!"
  requires_starfortress:0 "§R需要§Y $starbase_starfortress $§!升级。§!"
  requires_citadel:0 "§R需要§Y $starbase_citadel $§!升级。§!"
- 
  requires_colonized_planet:0 "§R需要星系中有一个已殖民的行星或§Y贸易飞地§!。§!"
  requires_trade_planet:0 "§R在此星系中需要一颗已被殖民的星球或者一个§Y贸易飞地§!。§!"
  requires_black_hole:0 "§R需要星系中有一个§Y $pc_black_hole $§!。§!"
@@ -243,14 +210,11 @@
  requires_curator_agreement:0 "§R需要与当地策展人飞地的§Y交流协议§!。§!"
  requires_artist_agreement:0 "§R需要与当地艺术团飞地的§Y交流协议§!。§!"
  requires_artisans:0 "§R需要星系中有一个§Y艺术团飞地§!。§!"
- 
  requires_technology_gateway_activation:0 " $TRIGGER_FAIL $需要科技£physics §Y $tech_gateway_activation $§!。"
  requires_technology_gateway_construction:0 " $TRIGGER_FAIL $需要科技£physics §Y $tech_gateway_construction $§!。"
- 
  NAVY_SIZE_STARBASES_TITLE:0 "来自太空基地"
  TECH_UNLOCK_STARBASE_MODULE:0 "§H解锁太空基地模块：§! $NAME $"
  TECH_UNLOCK_STARBASE_BUILDING:0 "§H解锁太空基地建筑：§! $NAME $"
- 
  tech_ftl_inhibitor:0 "超光速抑制"
  tech_ftl_inhibitor_desc:0 "重力井投射器可以创造出无法安全进入超空间的局部空间。其能源需求与体积都十分巨大，只有太空基地才能安装。"
  ION_CANNON_CORE:0 "离子炮核心"
@@ -265,7 +229,6 @@
  leviathans.340.desc:0 "太巧了！我们正打算向你们做出相同的建议呢！如果你们在你我双方共享的星系中的太空基地上建立这个设施，我们这边最杰出的艺术家就会前往那里担任教师。\n\n§H<我们现在可以在§!§Y [artist_system.GetName] §!§H星系中建造§!§Y艺术学院§!§H太空基地设施了。>§!"
  leviathans.340.a:0 "好极了。"
  leviathans.300.g.opinion:0 "要求§Y艺术家§!获得：\n£opinion评价+50"
- 
  FLEET_MANAGER_VIEW:0 "舰队管理"
  FLEET_MANAGER_SHIP_DESIGN_COUNT:0 " $FLEET_COUNT $/ $TEMPLATE_COUNT $"
  FLEET_MANAGER_SHIP_DESIGN_UPGRADABLE_COUNT:0 "£fleet_status|2 $FLEET_COUNT|Y $/ $TEMPLATE_COUNT $"
@@ -306,13 +269,10 @@
  INCREASE_FM:0 " $INCREASE_HEADER $\n§G左键点击这里来增加在这支舰队中使用这种设计方式的飞船的数量§!"
  REINFORCE_ALL_FM:0 "§H补充全部§!§G点击此处以将当前所有舰队模板补充至满编§!"
  ADD_DESIGN_FM:0 "§H给舰队增加舰船设计§!\n§G左键点击这里来给这支舰队新增一个舰船设计§!"
- 
  FLEET_VIEW_OPEN_FLEET_MANAGER:0 "§H舰队管理§!\n§G左键点击来打开这支舰队的舰队管理§!"
  FLEET_VIEW_DESIGN_UPGRADABLE:0 "设计可以升级。"
- 
  OUTLINER_FLEET_UPGRADABLE:0 "舰队可以升级。"
  OUTLINER_FLEET_REPAIRABLE:0 "舰队可以修复。"
- 
  FLEET_TEMPLATE_SIZE_WITH_LIMIT:0 "£fleet_template_size $SIZE_STRING $ $LIMIT_STRING $"
  FLEET_TEMPLATE_SIZE_LIMIT_REACHED_VALUE_FORMAT:0 "（ $VALUE $）"
  FLEET_TEMPLATE_SIZE_LIMIT_UNREACHED_VALUE_FORMAT:0 "（ $VALUE|E $）"
@@ -321,15 +281,11 @@
  FLEET_TEMPLATE_POWER_MAX_REACHED_VALUE_FORMAT:0 " $CURRENT_STRING $"
  FLEET_TEMPLATE_COMMAND_LIMIT_REACHED:0 "§R由于指挥限制，因此无法添加这艘飞船。§!"
  FLEET_TEMPLATE_EVENT_DESIGN:0 "事件设计"
- 
  MULTIPLE_SHIPS_DISBAND_TITLE:0 "解散舰船"
  MULTIPLE_SHIPS_DISBAND_DESC:0 "你确定要解散 $COUNT $艘舰船吗？"
- 
  FLEETORDER_SET_HOMEBASE:0 "将 $HOMEBASE|Y $设为主基地。"
  FLEETORDER_DESTROY_PLANET:0 " $DESC $  $PLANET|Y $"
- 
  TOOLTIP_SHIP_SIZE_COUNT_WITH_TEMPLATE:0 " $TOOLTIP_SHIP_SIZE_COUNT $/ $TEMPLATE_SIZE|Y $"
- 
  HOME_BASE_VIEW_BASES:0 "选择主基地"
  HOME_BASE_VIEW_ASSIGN:0 "分配至基地"
  action.82.name:0 " [From.GetName] 被轰炸"
@@ -337,14 +293,12 @@
  action.82.a:0 "必须报仇雪恨！"
  action.83.desc:0 "我们的军团报告称已完成对§H [From.GetName] §!的轰炸。所有人口聚集地都被有组织地消灭了，现在充满辐射的 [From.GetPlanetMoon] 仅能支持极少的生命。"
  bombed_to_tomb_world:0 "§Y [From.GetName] 现已成为荒无人烟的死寂星球。§!"
- 
  god_rayed:0 "神圣之光"
  god_rayed_desc:0 "神圣之光的效果萦绕在大气层，土壤，以及当地动植物之间。"
  uneasy_faith:0 "不安的信仰"
  uneasy_faith_desc:0 "民众在某些层面上明白他们的信仰并不完全是发自内心的。"
  neutron_bombarded:0 "中子流轰炸"
  neutron_bombarded_desc:0 "中子横扫轰炸让这颗星球受到严重破坏，其生态系统至今都没有恢复。"
- 
  opinion_cracked_my_world:0 "粉碎了我们的星球"
  opinion_cracked_a_world:0 "粉碎了一个星球"
  opinion_swept_my_world:0 "横扫了我们的星球"
@@ -361,34 +315,27 @@
  opinion_swept_a_primitive_world_phile:0 " $opinion_cracked_a_primitive_world_phile $"
  opinion_assimiliated_a_primitive_world:0 "同化了一个原始文明世界"
  opinion_assimiliated_a_primitive_world_phile:0 " $opinion_cracked_a_primitive_world_phile $"
- 
  NUM_HYPERLANES_TOOLTIP:0 "§H超空间航路密度§!\n调整将在宇宙中生成的超空间航路的标准数量。"
  NUM_HYPERLANES:0 "超空间航路密度"
- 
  pc_ringworld_shielded:0 "防护区段"
  pc_ringworld_shielded_desc:0 "这个星环世界区段包裹在某种无法穿透的能源屏障里。它阻挡了对其表面的所有扫描。"
  pc_habitat_shielded:0 "防护居住站"
  pc_habitat_shielded_desc:0 "这个居住站空间站包裹在某种无法穿透的能源屏障里。它阻挡了对其表面的所有扫描。"
  FLEETORDER_EXPLORE_BUTTON:0 "探索星系"
- 
  planet_destruction.101.name:0 "世界破裂"
  planet_destruction.102.name:0 "毁灭了一个生灵"
  planet_destruction.101.desc:0 "随着巨像完成其毁天灭地的任务， [From.From.GetName] 因受到 [From.GetName] 地壳破裂与磁层分解的猛烈冲击而产生的微微晃动也平息了下来。\n\n我们很难理解一颗星球死亡时的那种猛烈，但 [From.GetName] 炽热的核心在冰冷宇宙中冷却时的那种死亡之美是无可争辩的。"
  planet_destruction.101.a.purifexter:0 "辉煌。"
- 
  planet_destruction.301.name:0 "中子横扫"
  planet_destruction.301.nobots.desc:0 "在横扫 [From.GetName] 的地表之后， [From.From.GetName] 的中子卷流逐渐消失了。扫描结果显示没有幸存的智慧生命，而植物生命尽管受损，却可以随着时间恢复。有人会说彻底消灭智慧生命，却同时保存无生命的物质，是一种不正当的战争罪行。\n\n而我们称之为高效。"
  planet_destruction.301.bots.desc:0 "在横扫 [From.GetName] 的地表之后， [From.From.GetName] 的中子卷流逐渐消失了。\n\n声波传感器中只传来风声，以及幸存的合成人口的微弱滴答声。所有有机智慧生命都已被消灭了。"
  planet_destruction.301.infested.desc:0 " [From.From.GetName] 对 [From.GetName] 地表进行的中子流扫荡式轰炸终于平息了。\n\n过去星球上多种多样的有机生命体活动如今已经荡然无存，星球表面已然成了岩石废墟。"
- 
  planet_destruction.401.name:0 "强制信仰"
  planet_destruction.401.desc:0 "随着 [From.From.GetName] 精神线圈的崇高嗡鸣声逐渐褪去，一切陷入了短暂的沉寂。在 [From.GetName] 上，人们精神恍惚，沉浸在精神束从他们自身脑海中解放出来的，强烈且个人的真理之中。\n\n如果他们之前并未理解的话，现在他们已经发自内心地明白，我们都是某些更伟大事物的一部分。"
  planet_destruction.401.tooltip:0 "任何§Y $trait_mechanical $§!，§Y $trait_machine_unit $§!或是§Y $trait_hive_mind $§!人口都被精神共鸣§R摧毁了§!。\n\n所有剩余的§Y有机体§!人口成为§Y $ethic_spiritualist $§!。\n\n添加§Y $god_rayed $§!修正至 [This.GetName] ，持续§Y10年§!：\n唯心主义的种群思潮吸引力：§Y+999%§!。"
- 
  planet_destruction.501.name:0 "部署纳米机器人"
  planet_destruction.501.desc:0 " [From.From.GetName] 已完成同化纳米机器人的部署，预计足以对 [From.GetName] 上的所有有机智慧生命进行机械化征服。\n\n我们没有给 [From.From.GetName] 安装任何传感器或是设备来检测我们的成功，但我们明白。我们在 [From.GetName] 上第一次睁开双眼。我们目睹自己，并被自己所目睹。\n\n在 [From.GetName] 的地表上，只有我们。"
  planet_destruction.501.tooltip:0 "所有§Y有机§!人口获得§Y $trait_cybernetic $§!特性。"
- 
  planet_destruction.610.name:0 " [outraged_FE.GetName] "
  planet_destruction.610.desc:0 " [From.GetName] 是个神圣世界。\n\n你不知道自己犯下了多大的罪恶。\n\n你很快就会知道。"
  planet_destruction.610.spiri:0 "我们将展示自己的正义。"
@@ -403,12 +350,10 @@
  planet_destruction.610.devou:0 "§R哈哈哈！§!"
  planet_destruction.610.termi:0 "就像垃圾数据一样被清理了。"
  planet_destruction.610.purif:0 "异端邪说只有烧尽一途。"
- 
  action.87.name:0 "§R失去殖民地！§!"
  action.87.desc:0 "我们对§Y [From.GetName] §!的控制权已被§Y [new_planet_owner.GetName] §!夺取，其控制着§Y [From.GetStarName] §!星系内的§H太空基地§!。"
  action.88.name:0 "获得殖民地！"
  action.88.desc:0 "我们已获得对§Y [From.GetName] §!的控制权，其原本属于§Y [former_planet_owner.GetName] §!，因为我们控制了§Y [From.GetStarName] §!星系内的§H太空基地§!。"
- 
  apoc.1.name:0 "废弃星门"
  apoc.1.desc:0 "在 [gateway_system.GetName] 星系的边缘发现了一座十分古老的空间站。该站周围残留有很强的子空间信号。这表明它可能是一个"§H星门§!"——即一个理论上由许多类似空间站组成的网络的一部分。通过这些空间站，即可在银河的各处自由穿梭。\n\n就算它确实是一个星门，可由于年久失修，也早已无法使用。如果能够将其修好，那么使用者也许就可以前往银河中其它尚能使用的星门。这样一来，跨越银河中的巨大距离就指日可待了。"
  apoc.2.desc:0 "我们又发现了另一座废弃的星门，这次是在 [gateway_system.GetName] 星系。与第一个一样，这个星门现在也由于年久失修而无法使用。"
@@ -433,8 +378,6 @@
  apoc.13.desc:0 "位于§H [gateway_system.GetName] §!星系内的新传送门已经建造完毕。它已与其余传送门网络建立稳定的亚空间连接，并且正常运转。"
  apoc.14.name:0 "传送门建造工地就绪"
  apoc.14.desc:0 "准备于§H [gateway_system.GetName] §!星系内建造传送门的工地已经就位。一旦我们备齐了必要的资源，就随时可以开始建造传送门。"
- 
- 
  planet_destruction.111.name:0 "超空间支路"
  planet_destruction.111.desc:0 "超空间计划协会报告称，从太阳系的重力井中移除第三颗星球使得一个天然虫洞得以形成。该虫洞最终将缓解附近超空间航路的交通堵塞。"
  planet_destruction.111.a:0 "无趣的星球，我一点也不同情。"
@@ -444,7 +387,6 @@
  planet_destruction.210.desc.alt:0 " [From.From.GetName] 炫目的光芒已渐渐黯淡， [From.GetName] 再次归于沉寂。\n\n生命还在延续，只是被封闭起来。"
  planet_destruction.210.a:0 "轻触玻璃，静观其变。"
  planet_destruction.210.b:0 "只是非常手段而已。"
- 
  sentinel_station:0 "哨兵站"
  sentinel_station_plural:0 "哨兵站"
  crisis.52.2.a.response:0 "很多星际哨兵都有军团背景。我们都曾是与普雷索林虫族战斗的各个舰队的幸存者。虽然曾经战败，但我们汲取了过去的经验与教训，并争取不再重蹈覆辙。\n\n就像之前所说过的，远古哨兵队的成员来自银河系的各个种群。我们自认为是某个早已不存在于银河系的失落帝国的残存者。他们让我们有机会得到了一些秘密科技的资料和封存的战舰。"
@@ -465,7 +407,6 @@
  crisis.121.a:0 "发出旅行警示。"
  crisis.51.2.name:0 "哨兵崛起"
  sentinel_fleet_gift:0 "一艘哨兵飞船出现在 [Root.Capital.GetName] 附近，并交由你控制。"
- 
  pirate.6.desc:0 "一小群子人口拥有一种罕见的基因突变，可使它们切断与蜂巢思维的部分连接而不会陷入休眠。不过如果离开蜂巢思维太远，这些离群的子人口就会死亡，所以它们盘踞在了§H [pirate_system.GetName] §!星系，位于我们境内。\n\n它们打算当海盗来维持自身，利用少数简陋的飞船打劫穿越该星系的不设防贸易路线。"
  pirate.7.desc:0 "一小群故障的单位已经脱离了 [Root.GetName] 的主智能，并躲进了我们境内的§H [pirate_system.GetName] §!星系。这些单位已经无可挽回，并开始利用简陋的飞船打劫穿越该星系的不设防贸易路线，掠夺零件和资源。"
  pirate.50.name:0 "发现海盗！"
@@ -481,7 +422,6 @@
  pirate.56.desc:0 "一小群故障的单位已经脱离了 [Root.GetName] 的主智能，并躲进了我们境内的§H [pirate_system.GetName] §!星系。这些单位已经无可挽回，并开始利用简陋的飞船打劫穿越该星系的无防备贸易路线，掠夺零件和资源。"
  pirate.57.name:0 "有机体海盗"
  pirate.57.desc:0 "一小群似乎是犯罪分子的有机子单位，已经设法潜入并盘踞于我们境内的§H [pirate_system.GetName] §!星系。他们似乎打算打劫途经该星系的无防备贸易路线，或许是心存有机生物常见的侥幸心理，误以为他们的存在无关紧要，不会令我们动用武力。"
- 
  leviathans.509.name:0 "策展人研究援助"
  leviathans.509.desc:0 "根据我们当初签订的协定，你们对我们数据库的使用期限已经到了。现在你们打算让使用期限延长10年呢？还是不再需要我们数据库的信息了呢？"
  leviathans.509.a:0 "我们打算继续延长使用期限。"
@@ -610,47 +550,35 @@
  leviathans.175.name:0 "食物贸易被取消"
  leviathans.175.desc:0 "由于我们的食物储备已经枯竭，以食物为支付手段的贸易自然也就无法继续进行，因此所有与贸易飞地之间的与食物有关的协定都已取消。"
  enclave_food_trade_ended:0 "缺乏£food §H食物§!，无法维持与贸易飞地之间的资源协定。"
- 
  leviathans.111.e:0 "就是这样。"
- 
  colossus_victim:0 "巨大的全民危机"
  colossus_victim_desc:0 "巨像攻击对全民造成的创伤依然十分广泛的存在于人民的心中。"
- 
  decision_make_holy_world:0 "神圣星球"
  decision_make_holy_world_desc:0 "我们在自己的领域内寻找一颗未被殖民的§Y $pc_gaia $§!作为圣地。只要它未被凡人玷污，并且仍处于我们境内，这颗神圣不可侵犯的星球将为我们提供：£unity §Y $country_base_unity_produces_mult $§!§G+10%§!。"
- 
  apoc.200.name:0 "候选圣地"
  apoc.200.desc:0 "几个占卜师与神学专家合作，已经各自独立确定了§Y [holy_target.GetName] §!是 [holy_target.GetStarName] 星系内值得人们倍加崇拜的行星。官方的认可肯定能够增加公众对这个神秘世界的尊崇。"
  apoc.200.a:0 "愿 [holy_target.GetName] 能成为圣地。"
  apoc.200.a.tooltip:0 "§Y $holy_player_planet $§!修正已增加"
- 
  apoc.201.name:0 "未找到候选圣地"
  apoc.201.desc:0 "我们最顶尖的占卜师们发出了一分报告，报告指出我们帝国境内并没有找到任何有宗教连接的行星。"
  apoc.201.a.tooltip:0 "法令£influence影响力花费已返还。"
- 
  holy_player_planet:0 "圣地"
  holy_player_planet_desc:0 "这个行星没有被智慧生物玷污，且被认为是神圣的。"
  has_holy_player_planet:0 "世界崇拜"
  has_holy_player_planet_desc:0 "我们已经将我们边境内一个无人居住的行星指定为圣地。"
- 
  has_world_worship:0 " $TRIGGER_FAIL $§R我们已经指定了一个§!§Y $holy_player_planet $§!"
  has_holy_world_candidate:0 " $TRIGGER_FAIL $§R我们边境内没有未殖民过的§Y盖亚星球§!§!"
  make_holy_world_effect:0 "我们开始寻找能够作为圣地的行星。"
- 
  opinion_cracked_my_uninhabited_world:0 "粉碎了我们无人居住的行星"
  opinion_cracked_an_uninhabited_world:0 "粉碎了一个无人居住的行星"
  opinion_worships_our_holy_world:0 "尊崇圣地"
- 
  action.91.name:0 "重建前哨！"
  action.91.desc:0 "我们已经重新夺回了对§Y [Root.GetStarName] §!星系的控制权，在恒星轨道重建了我们的§Y $starbase_outpost $§!。"
- 
  DAILY_PROGRESS:0 "每日进度 $VAL|Y $"
  SHIP_DESIGNER_NAME_USED:0 "§R拥有那个名字的设计已经被另一艘不同尺寸的飞船所使用§!"
  DESIGN_IS_BUILDING:0 "§R使用这个设计的飞船正在建造中§!"
  DESIGN_BLOCKED_BY_AUTO_BUILD:0 "§R由于自动设计处于启用状态，故无法手动设计飞船。§!"
- 
  opinion_dead_captives:0 "被消灭的俘虏"
- 
  vultaum_homeworld:0 "沃陶姆母星"
  vultaum_homeworld_desc:0 "这颗星球是沃陶姆母星，有很悠久的历史。虽然现在这颗星球破损严重，任何生命都无法在上面生存，但至今仍能在星球地表找到巨大城市的文明遗迹。"
  vultaum_minerals:0 "轨道设施残骸"
@@ -675,7 +603,6 @@
  irassian_minerals_desc:0 "曾经是伊瑞森人星际舰队的主要停泊地，现在已化为一片废墟散落于星球轨道之上，废墟中含有资源丰富的矿物质。"
  irassian_energy:0 "能源产地"
  irassian_energy_desc:0 "在伊瑞森同盟早期的星际扩张时期，这个气态巨行星是伊瑞森同盟的重要能源产地。行星轨道上的大片发电站至今仍然存在。"
- 
  ARMIES_LOST:0 "由于军团损失而产生厌战度"
  ARMIES_LOST_LONG:0 "由于 $ARMIES|R $军团损失而产生 $ATTR|R $"
  SHIPS_LOST:0 "由于舰船损失产生厌战度"
@@ -686,4 +613,3 @@
  WAROVERVIEW_BATTLE_THEIR_ARMIES_LOST:0 "军团伤亡数为 $NUM|G $"
  OCCUPATION_SUMMARY:0 "占领"
  OCCUPATION_SUMMARY_LONG:0 "由于占领了 $SYSTEMS|R $个星系和占领了 $PLANETS|R $颗行星而导致占领 $ATTR|R $"
- 

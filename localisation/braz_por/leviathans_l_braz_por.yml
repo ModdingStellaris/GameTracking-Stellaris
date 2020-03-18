@@ -500,7 +500,7 @@
  leviathans.334.desc.unknown:0 "Após destruir aquela estação aleatória flutuando no sistema [station_system.GetName], encontramos muitos recursos valiosos entre os restos."
  leviathans.334.desc:0 "Após destruir a estação da Trupe Artesã, encontramos muitos recursos nos destroços que podem ser utilizados. Doações, presentes e criações acumuladas nos corredores, agora flutuam no espaço, prontos para serem coletados."
  leviathans.5.desc:1 "§Y[leviathan_destroyer_country.GetName]§! derrotou uma antiga ameaça no distante sistema [leviathan_destroyed_system.GetName]."
- leviathans.5.name:0 "Guardião Derrotado"
+ leviathans.5.name:1 "Leviatã Derrotado"
  leviathans.500.a:0 "Estamos interessados em adquirir novas cartas estelares."
  leviathans.500.b.alreadyaided:0 "Os Curadores já estão melhorando nossas capacidades de pesquisa."
  leviathans.500.b:0 "Pode ajudar em nossa pesquisa?"

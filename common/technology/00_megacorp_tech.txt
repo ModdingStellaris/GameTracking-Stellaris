@@ -7,7 +7,6 @@ tech_orbital_trash_dispersal = {
 	ai_update_type = military
 	weight = 0
 
-
 	weight_modifier = {
 		factor = 0 #Only granted as a deal from Caravan Fleet 3
 	}

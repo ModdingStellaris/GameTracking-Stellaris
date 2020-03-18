@@ -487,7 +487,7 @@
  TRADITIONALIST_FRUGALITY_DESC:0 "Utrzymywanie niskiego poziomu wydatków na towary konsumpcyjne sprawi, że [Root.GetName] się ucieszą."
  TRADITIONALIST_BIG_SPENDING:0 "Bezmyślna rozrzutność"
  TRADITIONALIST_NO_TOMB_WORLDS:0 "Niepoświęcona ziemia"
- TRADITIONALIST_NO_TOMB_WORLDS_DESC:0 "Odwiedzanie §Yświatów cmentarzy§! sprawi, że [Root.GetName] będą niezadowoleni."
+ TRADITIONALIST_NO_TOMB_WORLDS_DESC:1 "Odwiedzanie §Yświatów cmentarzy§!, nawet w celu ich terraformowania, sprawi, że [Root.GetName] będą niezadowoleni."
  TRADITIONALIST_TOMB_WORLDS:0 "$TRADITIONALIST_NO_TOMB_WORLDS$"
  TRADITIONALIST_GAIA_WORLDS:1 "Święty świat"
  TRADITIONALIST_GAIA_WORLDS_DESC:2 "§YUświęcenie§! czystego §Yświata gajańskiego§! na naszym terytorium sprawi, że [Root.GetName] się ucieszą."

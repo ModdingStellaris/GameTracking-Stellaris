@@ -133,7 +133,7 @@ civic_machine_servitor = {
 
 civic_machine_terminator = {
 	potential = { authority = { value = auth_machine_intelligence } }
-	homeworld = pc_nuked # Changes homeworld class regardless of what is picked for empire
+	starting_colony = pc_nuked # Changes homeworld class regardless of what is picked for empire
 	possible = {
 		civics = {
 			NOR = {
@@ -170,6 +170,9 @@ civic_machine_assimilator = {
 		}
 	}
 	modification = no
+	modifier = {
+		pop_growth_speed = -0.4
+	}
 	random_weight = {
 		base = 5
 		modifier = {

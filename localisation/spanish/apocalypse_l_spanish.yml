@@ -157,7 +157,7 @@
  MEGASTRUCTURE_BUILD_OUTSIDE_GRAVITY_WELL:0 "No puedes construir un portal dentro del pozo gravitatorio de un sistema."
  MEGASTRUCTURE_BUILD_INSIDE_SYSTEM_RADIUS:0 ""
  NUM_GATEWAYS:0 "Portales abandonados"
- NUM_GATEWAYS_TOOLTIP:1 "§HPortales§!\nMultiplica el número estándar de portales abandonados que se generarán en la galaxia."
+ NUM_GATEWAYS_TOOLTIP:2 "§HPortales abandonados§!\nMultiplica el número estándar de portales abandonados que se generarán en la galaxia."
  NUM_WORMHOLES:0 "Pares aguj. de gusano"
  NUM_WORMHOLES_TOOLTIP:1 "§HPares agujeros de gusano§!\nMultiplica los pares de agujeros de gusano que se generarán en la galaxia."
  NAME_gateway_final:0 "Portal"

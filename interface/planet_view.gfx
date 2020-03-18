@@ -11,11 +11,11 @@ spriteTypes = {
 		name = "GFX_planetview_health"
 		color = { 1.0 1.0 1.0 }
 		colortwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/progressbars/planetview_health_full.dds"
-		textureFile2 = "gfx/interface/progressbars/planetview_health_empty.dds"
-		size = { x = 38 y = 189 }
+		textureFile1 = "gfx/interface/planetview/planetview_devastation_progress_bar.dds"
+		textureFile2 = "gfx/interface/planetview/planetview_devastation_progress_bg.dds"
+		size = { x = 160 y = 20 }
 		effectFile = "gfx/FX/progress.lua"
-		horizontal = no
+		horizontal = yes
 	}
 	
 	spriteType = {
@@ -86,9 +86,52 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 	}
 
+	corneredTileSpriteType = {
+		name = "GFX_needs_code"
+		textureFile = "gfx/interface/pink_box.dds"
+		borderSize = { x=1 y=1 }
+	}
+
+	spriteType = {
+		name = "GFX_devastation_arrow"
+		textureFile = "gfx/interface/planetview/planetview_devastation_arrow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_strata_header_arrow"
+		textureFile = "gfx/interface/planetview/expand_collapse_arrow.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_devastation_bar"
+		textureFile = "gfx/interface/planetview/planetview_devastation_bar.dds"
+		noOfFrames = 4
+	}
+
 	spriteType = {
 		name = "GFX_job_default"
 		textureFile = "gfx/interface/icons/jobs/default.dds"
+	}
+
+	spriteType = {
+		name = "GFX_strata_circle_num"
+		textureFile = "gfx/interface/planetview/circle_bg.dds"
+	}
+
+	spriteType ={
+		name = "GFX_strata_backing_large"
+		textureFile = "gfx/interface/planetview/strata_backing_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_job_favorite"
+		textureFile = "gfx/interface/planetview/job_favorite.dds"
+	}
+
+	spriteType = {
+		name = "GFX_job_depreciate"
+		textureFile = "gfx/interface/planetview/job_depreciate.dds"
 	}
 
 	spriteType = {
@@ -270,6 +313,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_planetview_progressbar_frame"
 		textureFile = "gfx/interface/progressbars/planetview_progressbar_frame.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_terraform_progressbar"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/growth_progressbar.dds"
+		textureFile2 = "gfx/interface/progressbars/growth_progressbar_empty.dds"
+		size = { x = 70 y = 14 }
+		effectFile = "gfx/FX/progress_startend.lua"
 	}
 
 	progressbartype = {
@@ -769,6 +822,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/planetview/blocker_frame.dds"
 		noOfFrames = 2
 	}
+
+	spriteType = {
+		name = "GFX_planetary_features_blocker_num_icon"
+		textureFile = "gfx/interface/planetview/blocker_num_icon.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_planet_background_frame_rare"
@@ -991,6 +1049,20 @@ spriteTypes = {
 		textureFile = "gfx/interface/tiles/dark_area_cut.dds"
 		borderSize = { x=5 y=5 }
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_dark_area_button"
+		textureFile = "gfx/interface/tiles/dark_area_cut.dds"
+		borderSize = { x=5 y=5 }
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_strata_header_button"
+		textureFile = "gfx/interface/planetview/strata_header.dds"
+		borderSize = { x=5 y=5 }
+		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
 	corneredTileSpriteType = {
@@ -1489,6 +1561,11 @@ spriteTypes = {
 	}	
 
 	spriteType = {
+		name = "GFX_building_module_locked_slot"
+		textureFile = "gfx/interface/planetview/building_module_locked_slot.dds"
+	}
+
+	spriteType = {
 		name = "GFX_spaceport_module_locked_slot"
 		textureFile = "gfx/interface/planetview/spaceport_module_locked_slot.dds"
 	}
@@ -1555,6 +1632,17 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_district_box_icon_big"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_any_big.dds"
+	}
+
+	spriteType = {
+		name = "GFX_district_box_icon_small"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_any_small.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
 		name = "GFX_leads_to_arrows"
 		texturefile = "gfx/interface/planetview/leads_to_arrows.dds"
 	}
@@ -1611,5 +1699,67 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pop_assembly_icon"
 		texturefile = "gfx/interface/planetview/pop_assembly.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_planetview_topright_frame"
+		texturefile = "gfx/interface/planetview/planetview_topright_frame.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_planetview_topright_bg_small"
+		texturefile = "gfx/interface/planetview/planetview_topright_bg_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terraform_bg"
+		texturefile = "gfx/interface/planetview/terraform_bg.dds"
+		noOfFrames = 2
+	}	
+	
+	spriteType = {
+		name = "GFX_blocker_icon"
+		texturefile = "gfx/interface/planetview/blocker_icon.dds"
+		noOfFrames = 2
+	}	
+	
+	spriteType = {
+		name = "GFX_district_any_big"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_any_big.dds"
+	}
+
+	spriteType = {
+		name = "GFX_district_city_big"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_city_big.dds"
+	}
+
+	spriteType = {
+		name = "GFX_district_farming_big"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_farming_big.dds"
+	}
+
+	spriteType = {
+		name = "GFX_district_generator_big"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_generator_big.dds"
+	}
+
+	spriteType = {
+		name = "GFX_district_mining_big"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_mining_big.dds"
+	}
+
+	spriteType = {
+		name = "GFX_assembling_bg"
+		texturefile = "gfx/interface/icons/planet_backgrounds/pc_assembly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_declining_bg"
+		texturefile = "gfx/interface/icons/planet_backgrounds/pc_declining_migrate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_purging_bg"
+		texturefile = "gfx/interface/icons/planet_backgrounds/pc_declining_purge.dds"
 	}
 }

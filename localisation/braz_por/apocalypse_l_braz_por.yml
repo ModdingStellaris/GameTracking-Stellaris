@@ -156,7 +156,7 @@
  MEGASTRUCTURE_BUILD_OUTSIDE_GRAVITY_WELL:0 "Não é possível construir um Portal dentro do poço gravitacional de um sistema"
  MEGASTRUCTURE_BUILD_INSIDE_SYSTEM_RADIUS:0 ""
  NUM_GATEWAYS:0 "Portais Abandonados"
- NUM_GATEWAYS_TOOLTIP:1 "§HPares de Buraco de Minhoca§!\nMultiplica o número padrão de portais abandonados que serão gerados na galáxia."
+ NUM_GATEWAYS_TOOLTIP:2 "§HPortais Abandonados§!\nMultiplica o número padrão de portais abandonados que serão gerados na galáxia."
  NUM_WORMHOLES:0 "Pares de Buracos de Minhoca"
  NUM_WORMHOLES_TOOLTIP:1 "§HPares de Buraco de Minhoca§!\nMultiplica o número padrão de pares de buracos de minhoca que serão gerados na galáxia."
  NAME_gateway_final:0 "Portal"

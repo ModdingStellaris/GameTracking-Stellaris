@@ -73,23 +73,7 @@ clerk = {
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}	
-		modifier = {
-			factor = 1.5
-			has_trait = trait_syncretic_proles
-		}
-		modifier = {
-			factor = 1.2
-			has_trait = trait_very_strong
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_strong
-		}	
-		modifier = {
-			factor = 0.9
-			has_trait = trait_weak
-		}		
+		}			
 	}
 }
 
@@ -250,7 +234,11 @@ miner = {
 		modifier = {
 			factor = 0.9
 			has_trait = trait_weak
-		}			
+		}	
+		modifier = {
+			factor = 2
+			has_trait = trait_syncretic_proles
+		}
 	}
 }
 
@@ -790,18 +778,6 @@ preacher = {
 			factor = 0.1
 			has_ethic = ethic_materialist
 			NOT = { has_job = preacher }
-		}	
-		modifier = {
-			factor = 1.2
-			has_trait = trait_very_strong
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_strong
-		}	
-		modifier = {
-			factor = 0.9
-			has_trait = trait_weak
-		}			
+		}				
 	}
 }

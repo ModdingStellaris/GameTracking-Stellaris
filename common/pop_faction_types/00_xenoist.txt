@@ -315,6 +315,14 @@ xenoist = {
 					has_policy_flag = pre_sapients_allow
 					has_policy_flag = pre_sapients_purge
 				}
+				OR = {
+					has_country_flag = found_presapients
+					any_planet_within_border = {
+						any_pop = {
+							is_sapient = no
+						}
+					}
+				}
 			}
 		}
 

@@ -20,8 +20,6 @@
  MUSICPLAYER_DECREASE_VOL:0 "降低音量"
  MUSICPLAYER_ADJUST_VOL:0 "调整音量"
  MUSICPLAYER_SAVE:0 "保存"
- 
- # Base Music Tracks
  maintheme:0 "创造与超越"
  thebirthofastar:0 "恒星诞生"
  sigmatauri:0 "金牛座"
@@ -40,15 +38,11 @@
  pillarsofcreation:0 "创生之柱"
  deepspacetravels:0 "深空之旅"
  ridingthesolarwind:0 "乘太阳风而去"
- 
- # Leviathans Music Tracks
  maintheme1:0 "龙之息"
  assemblingthefleet:0 "集结舰队"
  theawakened:0 "觉醒"
  thetitan:0 "泰坦"
  thelaststand:0 "最后一战"
- 
- # Utopia Music Tracks
  maintheme2:0 "乌托邦主题曲"
  cradleofthegalaxy:0 "银河摇篮"
  theimperialfleet:0 "帝国舰队"

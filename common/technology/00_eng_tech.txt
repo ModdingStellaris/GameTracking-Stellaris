@@ -438,6 +438,10 @@ tech_corvette_hull_2 = {
 			}
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
@@ -570,6 +574,10 @@ tech_destroyer_hull_2 = {
 			has_tradition = tr_supremacy_adopt
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
@@ -696,6 +704,10 @@ tech_cruiser_hull_2 = {
 					has_trait = "leader_trait_expertise_voidcraft"
 				}
 			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
 			factor = 1.25
@@ -830,6 +842,10 @@ tech_battleship_hull_2 = {
 			}
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 1.25
 			has_tradition = tr_supremacy_adopt
 		}
@@ -890,6 +906,10 @@ tech_titan_hull_1 = {
 			}
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 1.25
 			has_tradition = tr_supremacy_adopt
 		}
@@ -944,6 +964,10 @@ tech_titan_hull_2 = {
 					has_trait = "leader_trait_expertise_voidcraft"
 				}
 			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
 			factor = 1.25
@@ -1259,6 +1283,10 @@ tech_modular_engineering = {
 			}
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
@@ -1308,6 +1336,10 @@ tech_space_defense_station_improvement = {
 					has_trait = "leader_trait_curator"
 				}
 			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
 			factor = 1.25
@@ -1815,6 +1847,21 @@ tech_defense_platform_hull_1 = {
 	prerequisites = { "tech_starbase_3" }
 	is_rare = yes
 	weight = @tier2weight2
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}	
+	}
 		
 	modifier = {
 		shipsize_military_station_small_hull_add = 500
@@ -2738,6 +2785,10 @@ tech_synthetic_workers = {
 			}
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 2
 			has_valid_civic = civic_mechanists
 		}
@@ -3052,6 +3103,10 @@ tech_construction_templates = {
 			}
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 1.25
 			OR = {
 				has_ethic = ethic_militarist
@@ -3126,7 +3181,7 @@ tech_housing_2 = {
 		modifier = {
 			factor = 0
 			has_valid_civic = civic_agrarian_idyll
-		}		
+		}	
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -3196,6 +3251,10 @@ tech_mega_engineering = {
 		modifier = {
 			factor = 2
 			has_ascension_perk = ap_master_builders
+		}	
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
 			factor = 20

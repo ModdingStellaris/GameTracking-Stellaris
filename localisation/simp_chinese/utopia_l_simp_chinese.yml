@@ -1,13 +1,8 @@
 ﻿l_simp_chinese:
- 
- ### Utopia
- 
  MEGASTRUCTURE_MODIFIERS:0 "巨构建筑修正"
- 
  BUILD_MEGASTRUCTURE_WITHIN_INNER_CIRCLE:0 "§R不能在星系的引力井内建造此巨构建筑§!"
  BUILD_MEGASTRUCTURE_CANT_BUILD_ON_PLANET:0 "§R不能在行星上建造此巨构建筑§!"
  BUILD_MEGASTRUCTURE_BUILD_ON_PLANET:0 "§R只能在行星上建造此巨构建筑§!"
- 
  MEGASTRUCTURE_DESC:0 "此巨构建筑为§Y$OWNER$§!所拥有"
  MEGASTRUCTURE_CLICK:0 "§G点击打开升级菜单§!"
  MEGASTRUCTURE_UPGRADE_TOOLTIP_HEADER:0 "$NAME|H$\n$DESC|L$"
@@ -19,7 +14,6 @@
  MEGASTRUCTURE_TOOLTIP_MAINTENANCE_HEADER:0 "每月维护："
  MEGASTRUCTURE_UPGRADE_REMAINING:0 "剩余£time$DAYS|Y0$天"
  MEGASTRUCTURE_UPGRADES_TO:0 "升级到:"
- 
  ring_world_1_MEGASTRUCTURE_DETAILS:0 "§Y$pc_ringworld_habitable$§!拥有多个类行星天体的区块，其材料都是取自恒星系中的其他行星天体。"
  ring_world_1_CONSTRUCTION_INFO_DELAYED:0 "一个完整的环形世界包含了４个修建完成的环形世界区段，每一段都相当于一个行星规模为50的盖亚星球。"
  ring_world_1:0 "星环世界工地"
@@ -30,12 +24,10 @@
  ring_world_2_DESC:0 "该骨架区块大体上是尚未完成的星环世界的总表面区域的四分之一。其他较小型的宜居区块的建造工作尚未完成。"
  ring_world_3_intermediate:0 "已完工的星环世界区块"
  ring_world_3_intermediate_DESC:0 "这是一个已能完整运作的星环世界区块，其内部的活跃生物圈可以随时供人居住。"
- 
  habitat_0_MEGASTRUCTURE_DETAILS:0 "§Y$pc_habitat$§!是个理论上自给自足的太空站，适合永久定居。"
  habitat_0_CONSTRUCTION_INFO_DELAYED:0 "居住站只可以建造居住站特有的£building£ §Y建筑§!。"
  habitat_0:0 "居住站"
  habitat_0_DESC:0 "这是一个围绕着不宜居行星的轨道旋转的居住站轨道站，其内部承载着一定数量的§H人口§!和§H建筑§!。"
- 
  cant_build_on_habitat:0 "§R不能在居住站上建造§!"
  think_tank_0_MEGASTRUCTURE_DETAILS:0 "研究实验室和§Y$think_tank_3$§!的数据库可以产出源源不绝的科学。"
  think_tank_0:0 "科学联合学院工地"
@@ -48,7 +40,6 @@
  think_tank_3_DESC:0 "设备精良随时可以投入使用的科学联合学院。"
  think_tank_4:0 "古罗瑞克联合学院"
  think_tank_4_DESC:0 "这所科学联合学院以它的创造者命名，它的神经网络库融合了我们最优秀的研究人员的大脑，因此其运算能力比一般的超级电脑更加快。"
- #allow_dysons_sphere:0 "§HUnlocks Megastructure:§! Dyson Sphere"
  allow_ring_world:0 "§H解锁巨构建筑：§!星环世界"
  allow_spy_orb:0 "§H解锁巨构建筑：§!哨卫阵列"
  allow_think_tank:0 "§H解锁巨构建筑：§!科学联合学院"
@@ -57,8 +48,8 @@
  allow_edict_consectrated_worlds:0 "§H解锁决策：§!封为圣地"
  describe_edict_consectrated_worlds:0 "§E将无人居住的星球封为圣地（最多§Y3§!个）可增加§Y唯心主义种族心理吸引力§!、§Y帝国舒适度§!以及£unity£ §Y凝聚力产出§!，具体效果视乎于该行星的宗教影响力。§!"
  allow_machine_worlds:0 "§H解锁环境改造选项：§!机械星球"
- describe_machine_worlds:0 "§Y机械星球§!是一种特殊的星球类型，大多数有机生物都无法居住，但£district£ §Y发电§!和§Y采矿§!区划的数量不受星球特征的限制。居住在§Y机械星球§!上的£pop£ §Y人口§!的 §Y资源产出§! 增加§G+10%§!并且 §Y住房使用§! 减少§G10%§!。星球上任何现存的£district£ §Y农业区划§!都将被摧毁。"
- allow_hive_worlds:0 "§H解锁环境改造选项：§!蜂巢星球"
+ describe_machine_worlds:0 "§Y机械星球§!是一种特殊的星球，对绝大多数有机体来说它并不适宜居住。但其可承载的£district£ §Y发电§!和§Y采矿区划§!数量不受限于星球特征。居住在§Y机械星球§!上的£pop£ §Y人口§!的§Y资源产出§!将提升§G+10%§!，§Y住房使用§!将降低§G10%§!。行星上所有现存的£district£ §Y农业区划§!将被摧毁。"
+allow_hive_worlds:0 "§H解锁环境改造选项：§!蜂巢星球"
  describe_hive_worlds:0 "§Y蜂巢星球§!是一种特别的星球划分，对非蜂巢思维人口来说不宜居，但是不会受限于星球特性带来的£district£ §Y发电机§!，§Y采矿§!以及§Y农业区划§!限制。£pop£ §Y人口§!居住在§Y蜂巢星球§!能够将他们的§Y资源产出§!提升§G+10%§!。"
  
  ALLOW_PSI_CORPS:0 "§H$building_psi_corps$§!建筑现在已可建造。"

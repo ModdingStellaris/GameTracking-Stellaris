@@ -303,11 +303,11 @@
  tr_supremacy_great_game_delayed:0 "Während wir unsere Expansion fortsetzen, werden andere Reiche unsere Ansprüche unweigerlich anfechten. Wir würden ebenso handeln. Wir stecken in einem großen Kampf um Ressourcen und Territorien. Diesen zu gewinnen, ist unsere Pflicht."
 
  #tr_supremacy_great_game_machine:0 "Diplomatische Zielpriorisierung"
- #tr_supremacy_great_game_hive:0 "Auge des Jägers"
+ tr_supremacy_great_game_hive:0 "Auge des Jägers"
  #tr_supremacy_great_game_machine_desc:0 "$tr_supremacy_great_game_desc$"
- #tr_supremacy_great_game_hive_desc:0 "$tr_supremacy_great_game_desc$"
+ tr_supremacy_great_game_hive_desc:0 "$tr_supremacy_great_game_desc$"
  #tr_supremacy_great_game_machine_delayed:0 "Das Vernetzten eines Raketenzielcomputers mit unserer diplomatischen KI war die größte Innovation bei interstellaren Beziehungen."
- #tr_supremacy_great_game_hive_delayed:0 "Letztlich ist alles außerhalb unseres Schwarm eine potenzielle Quelle Nahrung. Es beruhigt uns zu wissen, welche wir zuerst verschlingen werden."
+ tr_supremacy_great_game_hive_delayed:0 "Letztlich ist alles außerhalb unseres Schwarms eine potenzielle Nahrungsquelle. Es beruhigt uns zu wissen, welche wir zuerst verschlingen werden."
 
  tr_supremacy_fleet_logistical_corps:0 "Flottenlogistikkorps"
  tr_supremacy_fleet_logistical_corps_desc:1 "§Y$mod_ships_upkeep_mult$§! um §G10%§! reduziert und §Y$MOD_COUNTRY_NAVAL_CAP_MULT$§! um §G20%§! erhöht."
@@ -521,10 +521,10 @@
  #tr_discovery_faith_in_science_desc:6 "For every §Y20§! £pop£ Pops, our planets will have §Y1§! £job_researcher£ §Y$job_researcher$ Job§!."
  tr_discovery_faith_in_science_delayed:0 "Die Öffentlichkeit sieht die Wissenschaft mittlerweile als etwas Religionsähnliches an - und ihr Glaube an sie ist unerschütterlich. Es gibt keine noch so große Frage, als dass sie nicht von der Wissenschaft beantwortet werden könnte."
  tr_discovery_faith_in_science_machine:0 "Uplink-Latenzreduktion"
- tr_discovery_faith_in_science_machine_desc:0 "$tr_discovery_faith_in_science_desc$"
+ tr_discovery_faith_in_science_machine_desc:1 "Unsere Planeten erhalten für je §Y20§! £pop£ Bewohner §Y1§! £job_calculator£ §Y$job_calculator$§!"
  tr_discovery_faith_in_science_machine_delayed:0 "Die Verringerung der Verzögerung vom Orbit zur Oberfläche um 3,8% führte zu einer erhöhten Forschungsgeschwindigkeit von 5,2%. Wir werden die überschüssige Rechenleistung einsetzten, um zu versuchen, die erhaltene überschüssige Rechenleistung zu erklären."
  tr_discovery_faith_in_science_hive:0 "Synaptische Übertragung"
- tr_discovery_faith_in_science_hive_desc:0 "$tr_discovery_faith_in_science_desc$"
+ tr_discovery_faith_in_science_hive_desc:1 "Unsere Planeten erhalten für je §Y20§! £pop£ Bewohner §Y1§! £job_brain_drone£ §Y$job_brain_drone$ Job§!"
  tr_discovery_faith_in_science_hive_delayed:0 "Durch die strategische Anwendung von synaptischen Sendern können wir den Willen des Schwarms aus der Umlaufbahn auf den ganzen Planeten übertragen."
 
  tr_discovery_finish:0 "Entdeckungstraditionen abgeschlossen"
@@ -686,7 +686,7 @@
  ap_defender_of_the_galaxy_modifier_desc:0 "Schaden an Fraktionen der Endgame-Krisen: §G+50%§!"
 
  ap_engineered_evolution:0 "Organisierte Evolution"
- ap_engineered_evolution_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
+ ap_engineered_evolution_modifier_desc:1 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n§HNeues Gebäude:§! $building_clone_vats$"
  ap_evolutionary_mastery:0 "Evolutionskontrolle"
  ap_evolutionary_mastery_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
  ap_the_flesh_is_weak:0 "Das Fleisch ist schwach"
@@ -763,3 +763,5 @@
  ap_galactic_wonders_megacorp_desc:0 "$ap_galactic_wonders_desc$"
  ap_galactic_wonders_utopia_and_megacorp:2 "$ap_galactic_wonders$"
  ap_galactic_wonders_utopia_and_megacorp_desc:1 "$ap_galactic_wonders_desc$"
+
+ ap_technological_ascendancy_rare:0 "§MSeletene Technologien§! tauchen nun §G50%§! öfter auf."

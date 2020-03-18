@@ -1,10 +1,4 @@
 ﻿l_russian:
- 
- ####################################
- # Modifiers
- ####################################
- 
- #Country
  MOD_BLANK_MODIFIER:0 "Пустой модификатор"
  MOD_COUNTRY_OCCUPATION_ARMIES_ADD:0 "Максимальное количество оккупационных гарнизонов"
  MOD_COUNTRY_WAR_EXHAUSTION_MULT:0 "Рост усталости от войны"
@@ -88,8 +82,6 @@
  MOD_COUNTRY_STARBASE_INFLUENCE_COST_MULT:0 "Расход влияния на космическую базу"
  MOD_COUNTRY_TRADE_FEE:0 "Рыночная пошлина"
  MOD_COUNTRY_SLAVE_MARKET_COST_MULT:0 "Стоимость рынка рабов"
- 
- #Pop
  MOD_POP_FERTILITY:0 "Репродуктивность"
  MOD_POP_HAPPINESS:0 "Счастье"
  MOD_POP_HAPPINESS_DESC:0 "Этот параметр влияет на счастье всех поселений империи."
@@ -112,7 +104,6 @@
  MOD_POP_ROBOT_BUILD_SPEED_MULT:0 "Скорость строительства роботов"
  MOD_POP_ROBOT_BUILD_SPEED_MULT_DESC:0 "Изменяет скорость, с которой ведется строительство поселений роботов."
  MOD_POP_ROBOT_BUILD_COST_MULT:0 "Стоимость строительства роботов"
- 
  MOD_COUNTRY_COLONY_INFLUENCE_COST_MULT:0 "Расход влияния в колонии:"
  MOD_COUNTRY_CLAIM_INFLUENCE_COST_MULT:0 "Расход влияния на притязания"
  MOD_COUNTRY_FACTION_SURPRESSION_COST_MULT:0 "Стоимость притеснения фракции:"
@@ -169,8 +160,6 @@
  MOD_POP_ENERGY_MULT:0 "$MOD_POP_ENERGY_ADD$"
  MOD_POP_MINERALS_ADD:0 "Производительность переработки минералов"
  MOD_POP_MINERALS_MULT:0 "$MOD_POP_MINERALS_ADD$"
- 
- #Ship
  MOD_SHIP_ARMOR_ADD:0 "Очки брони"
  MOD_SHIP_ARMOR_MULT:0 "Очки брони"
  MOD_SHIP_SHIELD_DAMAGE_MULT:0 "Урон щитам"
@@ -229,13 +218,12 @@
  MOD_SHIP_ANOMALY_FAIL_RISK:0 "Риск неудачи при изучении аномалии"
  MOD_SHIP_ANOMALY_RESEARCH_SPEED:0 "Темп изучения аномалии"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE:0 "Вероятность обнаружения аномалии"
+ MOD_SHIP_ANOMALY_GENERATION_CHANCE_MULT:0 "$MOD_SHIP_ANOMALY_GENERATION_CHANCE$"
  MOD_SHIP_SCIENCE_SURVEY_SPEED:0 "Темп изучения"
  MOD_SHIP_TRACKING_ADD:0 "Обнаружение"
  MOD_SHIP_TRACKING_MULT:0 "Обнаружение"
  MOD_SHIP_STARTING_EXPERIENCE_ADD:0 "Начальный опыт кораблей"
  MOD_SHIP_EXPERIENCE_GAIN_MULT:0 "Прирост опыта кораблей"
- 
- #Army
  MOD_ARMY_DISENGAGE_CHANCE_MULT:0 "Шанс выхода армии из боя"
  MOD_ARMY_UPKEEP_MULT:0 "Содержание армии"
  MOD_ARMY_UPKEEP_MULT_DESC:0 "Этот параметр влияет на стоимость содержания всех армий империи, увеличивая или уменьшая ежемесячные затраты на поддержание их в оптимальном состоянии."
@@ -253,7 +241,6 @@
  MOD_ARMY_ATTACK_MORALE_MULT:0 "Мораль наступательной армии"
  MOD_ARMY_ATTACK_DAMAGE_MULT:0 "Урон наступательной армии"
  MOD_ARMY_EXPERIENCE_GAIN_MULT:0 "Прирост опыта армии"
- #Planet
  MOD_PLANET_HOUSING_ADD:0 "Жилье"
  MOD_PLANET_HOUSING_MULT:0 "$MOD_PLANET_HOUSING_ADD$"
  MOD_PLANET_INFRASTRUCTURE_ADD:0 "Инфраструктура"
@@ -315,8 +302,6 @@
  mod_planet_districts_cost_mult:0 "Стоимость района"
  mod_planet_districts_upkeep_mult:0 "Содержание района"
  MOD_PLANET_BUILD_UPKEEP_MULT:0 "Содержание планеты"
- 
- #Fleet
  MOD_COUNTRY_NAVAL_CAP_ADD:0 "$NAVY_SIZE_TITLE$"
  MOD_COUNTRY_NAVAL_CAP_MULT:0 "$MOD_COUNTRY_NAVAL_CAP_ADD$"
  MOD_COUNTRY_NAVAL_CAP_ADD_DESC:0 "$MOD_COUNTRY_NAVAL_CAP_ADD$§E§H§! определяет количество кораблей, которое империя может эффективно содержать. Для кораблей побольше требуется §H$MOD_COUNTRY_NAVAL_CAP_ADD$§! повыше.§!"
@@ -324,11 +309,8 @@
  MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_ADD:0 "Замедление после экстренного сверхсветового маневра"
  MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_MULT:0 "$MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_ADD$"
  MOD_COUNTRY_FEDERATION_NAVAL_CAP_CONTRIBUTION_MULT:0 "Вклад во вместимость флотилии федерации"
- 
  MOD_COUNTRY_COMMAND_LIMIT_ADD:0 "Предел управляемости флотилии"
  MOD_COUNTRY_COMMAND_LIMIT_MULT:0 "$MOD_FLEET_COMMAND_LIMIT_ADD$"
- 
- #Leader
  MOD_LEADER_RULER_SKILL_LEVELS:0 "Максимальный уровень правителя"
  MOD_LEADER_SKILL_LEVELS:0 "Максимальный уровень лидера"
  MOD_LEADER_AGE:0 "Продолжительность жизни лидера"
@@ -342,17 +324,11 @@
  MOD_LEADER_SCIENTIST_COST:0 "Стоимость найма ученого"
  MOD_LEADER_GOVERNOR_COST:0 "Стоимость найма губернатора"
  MOD_LEADER_SPECIES_EXP_GAIN:0 "Прирост опыта лидера"
- 
- #Component
  MOD_COMPONENT_RANGE_MULT:0 "Радиус действия компонента"
- 
- #Pop factions
  MOD_POP_FACTION_SUPPORT_INCREASE_CHANCE_ADD:0 "Шанс, что фракция усилит поддержку"
  MOD_POP_FACTION_SUPPORT_INCREASE_CHANCE_MULT:0 "Шанс, что фракция усилит поддержку"
  MOD_POP_FACTION_SUPPORT_INCREASE_ADD:0 "Усиление поддержки фракции"
  MOD_POP_FACTION_SUPPORT_INCREASE_MULT:0 "Усиление поддержки фракции"
- 
- #Spaceport
  MOD_STARBASE_SHIP_BUILD_COST_MULT:0 "Стоимость корабля"
  MOD_STARBASE_SHIP_BUILD_COST_MULT_DESC:0 "Изменяет расход ресурсов на строительство кораблей империи, увеличивая или уменьшая стоимость их строительства."
  MOD_STARBASE_SHIP_BUILD_TIME_MULT:0 "Время строительства кораблей"
@@ -361,8 +337,6 @@
  MOD_SPACEPORT_MODULE_COST_MULT_DESC:0 "Изменяет стоимость пристройки модуля к космопорту, увеличивая или уменьшая расход ресурсов."
  MOD_STARBASE_SHIP_BUILD_SPEED_MULT:0 "Скорость строительства кораблей"
  MOD_STARBASE_DEFENSIVE_WAR_SHIP_BUILD_SPEED_MULT:0 "Скорость строительства кораблей (оборонительная война)"
- 
- #Starbase
  STARBASE_MODIFIER:0 "Модификатор космической базы"
  MOD_STARBASE_SHIPYARD_CAPACITY_ADD:0 "Вместимость верфей"
  MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT:0 "Скорость строительства кораблей"
@@ -388,13 +362,7 @@
  MOD_COUNTRY_LOCAL_TRADE_PROTECTION_ADD:0 "$MOD_STARBASE_TRADE_PROTECTION_ADD$"
  mod_starbase_buildings_cost_mult:0 "Стоимость строительства космической базы"
  mod_starbase_modules_cost_mult:0 "Стоимость модулей космической базы"
- 
- #Star System
  SYSTEM_MODIFIER:0 "Модификатор системы"
- 
- ####################################
- # Economy Modifiers
- ####################################
  energy_deficit:0 "Недостаток: $energy$"
  minerals_deficit:0 "$minerals$: недостаток"
  consumer_goods_deficit:0 "$consumer_goods$: недостаток"
@@ -404,10 +372,6 @@
  volatile_motes_deficit:0 "$volatile_motes$: недостаток"
  rare_crystals_deficit:0 "$rare_crystals$: недостаток"
  exotic_gases_deficit:0 "$exotic_gases$: недостаток"
- 
- ####################################
- # Resource Modifiers
- ####################################
  mod_country_base_energy_produces_mult_DESC:0 "Этот параметр влияет на производство энергии во всей империи."
  mod_country_base_minerals_produces_mult_DESC:0 "Этот параметр влияет на добычу минералов во всей империи."
  mod_planet_resource_food_add:0 "Запасы пищи на планете"
@@ -436,14 +400,12 @@
  static_planet_resource_minerals_add:0 "$country_base_minerals_produces_add$"
  static_planet_resource_food_add:0 "$country_base_food_produces_add$"
  static_planet_resource_influence_add:0 "$country_base_influence_produces_add$"
- 
  mod_country_base_influence_produces_add:0 "Ежемесячное влияние"
  mod_planet_resource_influence_add:0 "Планетарное производство влияния"
  mod_country_base_influence_produces_mult:0 "Прирост влияния империй"
  mod_country_resource_physics_research_mult:0 "Физические исследования"
  mod_country_resource_society_research_mult:0 "Социологические исследования"
  mod_country_resource_engineering_research_mult:0 "Инженерные исследования"
- 
  mod_country_subjects_resource_unity_mult:0 "$tr_domination_vassal_acculturation$"
  mod_country_subjects_resource_unity_max_mult:0 "$tr_domination_vassal_acculturation$: макс. эффект"
  mod_country_federation_member_resource_unity_mult:0 "$tr_diplomacy_federal_unity$"
@@ -452,19 +414,12 @@
  mod_country_strategic_resources_resource_unity_max_mult:0 "$tr_versatility_material_analysis$: макс. эффект"
  mod_country_planet_classes_resource_unity_mult:0 "$tr_adaptability_environmental_diversification$"
  mod_country_planet_classes_resource_unity_max_mult:0 "$tr_adaptability_environmental_diversification$: макс. эффект"
- 
  mod_country_base_rare_crystals_produces_add:0 "Ежемесячный прирост £rare_crystals£ редких кристаллов"
  mod_country_base_volatile_motes_produces_add:0 "Ежемесячный прирост £volatile_motes£ летучих пылинок"
  mod_country_base_exotic_gases_produces_add:0 "Ежемесячный прирост £exotic_gases£ экзотических газов"
- 
  mod_country_base_sr_living_metal_produces_add:0 "£sr_living_metal£ Живой металл ежемесячно"
  mod_country_base_sr_dark_matter_produces_add:0 "£sr_dark_matter£ Темная материя ежемесячно"
  mod_country_base_sr_zro_produces_add:0 "£sr_zro£ Зро ежемесячно"
- 
- ####################################
- # Dynamic Modifiers
- ####################################
- 
  mod_pop_ethic_pacifist_attraction_mult:0 "Привлекательность принципа Пацифизм"
  mod_pop_ethic_militarist_attraction_mult:0 "Привлекательность принципа Милитаризм"
  mod_pop_ethic_materialist_attraction_mult:0 "Привлекательность принципа Материализм"
@@ -473,31 +428,26 @@
  mod_pop_ethic_xenophobe_attraction_mult:0 "Привлекательность принципа Ксенофобия"
  mod_pop_ethic_egalitarian_attraction_mult:0 "Привлекательность принципа Эгалитаризм"
  mod_pop_ethic_authoritarian_attraction_mult:0 "Привлекательность принципа Авторитаризм"
- 
  mod_shipsize_starbase_outpost_build_speed_mult:0 "Скорость строительства форпоста"
  mod_shipsize_starbase_starport_build_speed_mult:0 "Скорость строительства звездного порта"
  mod_shipsize_starbase_starhold_build_speed_mult:0 "Скорость строительства звездного бастиона"
  mod_shipsize_starbase_starfortress_build_speed_mult:0 "Скорость строительства звездной крепости"
  mod_shipsize_starbase_citadel_build_speed_mult:0 "Скорость строительства цитадели"
- 
  mod_ship_starbase_outpost_cost_mult:0 "Стоимость строительства форпоста"
  mod_ship_starbase_starport_cost_mult:0 "Стоимость строительства звездного порта"
  mod_ship_starbase_starhold_cost_mult:0 "Стоимость строительства звездного бастиона"
  mod_ship_starbase_starfortress_cost_mult:0 "Стоимость строительства звездной крепости"
  mod_ship_starbase_citadel_cost_mult:0 "Стоимость строительства цитадели"
- 
  mod_shipsize_starbase_outpost_upkeep_mult:0 "Стоимость содержания форпоста"
  mod_shipsize_starbase_starport_upkeep_mult:0 "Стоимость содержания звездного порта"
  mod_shipsize_starbase_starhold_upkeep_mult:0 "Стоимость содержания звездного бастиона"
  mod_shipsize_starbase_starfortress_upkeep_mult:0 "Стоимость содержания звездной крепости"
  mod_shipsize_starbase_citadel_upkeep_mult:0 "Стоимость содержания цитадели"
- 
  mod_shipsize_corvette_build_speed_mult:0 "Скорость строительства корвета"
  mod_shipsize_destroyer_build_speed_mult:0 "Скорость строительства эсминца"
  mod_shipsize_cruiser_build_speed_mult:0 "Скорость строительства крейсера"
  mod_shipsize_battleship_build_speed_mult:0 "Скорость строительства линкора"
  mod_shipsize_colonizer_build_speed_mult:0 "Скорость строительства колониального корабля"
- 
  mod_ship_corvette_cost_mult:0 "Стоимость строительства корвета"
  mod_ship_destroyer_cost_mult:0 "Стоимость строительства эсминца"
  mod_ship_cruiser_cost_mult:0 "Стоимость строительства крейсера"
@@ -513,27 +463,21 @@
  mod_ship_terraform_station_cost_mult:0 "Стоимость строительства станции терраформирования"
  mod_ship_wormhole_station_cost_mult:0 "Стоимость строительства станции червоточин"
  mod_ship_observation_station_cost_mult:0 "Стоимость строительства станции наблюдения"
- 
  mod_shipsize_corvette_upkeep_mult:0 "Стоимость обслуживания корвета"
  mod_shipsize_corvette_hull_mult:0 "Здоровье корвета"
  mod_shipsize_corvette_hull_add:0 "$mod_shipsize_corvette_hull_mult$"
- 
  mod_shipsize_destroyer_upkeep_mult:0 "Стоимость содержания эсминца"
  mod_shipsize_destroyer_hull_mult:0 "Здоровье эсминца"
  mod_shipsize_destroyer_hull_add:0 "$mod_shipsize_destroyer_hull_mult$"
- 
  mod_shipsize_cruiser_upkeep_mult:0 "Стоимость обслуживания крейсера"
  mod_shipsize_cruiser_hull_mult:0 "Здоровье крейсера"
  mod_shipsize_cruiser_hull_add:0 "$mod_shipsize_cruiser_hull_mult$"
- 
  mod_shipsize_battleship_upkeep_mult:0 "Стоимость обслуживания линкора"
  mod_shipsize_battleship_hull_mult:0 "Здоровье линкора"
  mod_shipsize_battleship_hull_add:0 "$mod_shipsize_battleship_hull_mult$"
- 
  mod_shipsize_titan_upkeep_mult:0 "Стоимость содержания «Титана»"
  mod_shipsize_titan_hull_mult:0 "Здоровье «Титана»"
  mod_shipsize_titan_hull_add:0 "$mod_shipsize_titan_hull_mult$"
- 
  mod_shipsize_spaceport_upkeep_mult:0 "Стоимость обслуживания космопорта"
  mod_shipsize_mining_station_upkeep_mult:0 "Стоимость обслуживания добывающей станции"
  mod_shipsize_research_station_upkeep_mult:0 "Стоимость обслуживания научной станции"
@@ -547,21 +491,17 @@
  mod_shipsize_terraform_station_upkeep_mult:0 "Стоимость содержания станции терраформирования"
  mod_shipsize_wormhole_station_upkeep_mult:0 "Стоимость содержания станции червоточин"
  mod_shipsize_observation_station_upkeep_mult:0 "Стоимость содержания станции наблюдения"
- 
  mod_ship_military_station_small_cost_mult:0 "Стоимость строительства оборонительной платформы"
  mod_shipsize_military_station_small_upkeep_mult:0 "Стоимость обслуживания оборонительной платформы"
  mod_shipsize_military_station_small_hull_mult:0 "Здоровье оборонительной платформы"
  mod_shipsize_military_station_small_hull_add:0 "$mod_shipsize_military_station_small_hull_mult$"
  mod_shipsize_military_station_small_build_speed_mult:0 "Скорость строительства оборонительной платформы"
- 
  mod_shipclass_military_station_damage_mult:0 "Урон оборонительной платформы"
  mod_shipclass_military_station_hull_mult:0 "Здоровье оборонительной платформы"
  mod_shipclass_military_station_build_cost_mult:0 "Стоимость строительства оборонительной платформы"
- 
  mod_shipclass_starbase_hull_mult:0 "Здоровье космической базы"
  mod_shipclass_starbase_damage_mult:0 "Урон космической базы"
  mod_shipclass_starbase_build_cost_mult:0 "Стоимость строительства космической базы"
- 
  mod_weapon_type_explosive_weapon_damage_mult:0 "Урон взрывчатого оружия"
  mod_weapon_type_explosive_weapon_fire_rate_mult:0 "Скорость атаки взрывчатого оружия"
  mod_weapon_type_kinetic_weapon_damage_mult:0 "Урон кинетического оружия"
@@ -571,9 +511,6 @@
  mod_weapon_type_strike_craft_weapon_damage_mult:0 "Урон штурмовика"
  mod_weapon_type_strike_craft_weapon_fire_rate_mult:0 "Скорость атаки штурмовика"
  mod_weapon_type_strike_craft_speed_mult:0 "Скорость штурмовика"
- 
- #vultaum_asteroid_category_research_speed_mult:0 "Темп изучения аномалии (предтечи)"
- #vultaum_asteroid_category_research_fail_risk_mult:0 "Риск неудачи при изучении аномалии (предтечи)"
  vultaum_asteroid_category_research_speed_mult:0 "Темп изучения аномалии (предтечи)"
  vultaum_asteroid_category_research_fail_risk_mult:0 "Риск неудачи при изучении аномалии (предтечи)"
  vultaum_gasgiant_category_research_speed_mult:0 "Темп изучения аномалии (предтечи)"
@@ -614,7 +551,6 @@
  cybrex_uninhabitable_category_research_fail_risk_mult:0 "Риск неудачи при изучении аномалии (предтечи)"
  cybrex_habitable_category_research_speed_mult:0 "Темп изучения аномалии (предтечи)"
  cybrex_habitable_category_research_fail_risk_mult:0 "Риск неудачи при изучении аномалии (предтечи)"
- 
  vultaum_asteroid_category_research_speed_add:0 "$vultaum_asteroid_category_research_speed_mult$"
  vultaum_gasgiant_category_research_speed_add:0 "$vultaum_gasgiant_category_research_speed_mult$"
  vultaum_uninhabitable_category_research_speed_add:0 "$vultaum_uninhabitable_category_research_speed_mult$"
@@ -635,7 +571,6 @@
  cybrex_gasgiant_category_research_speed_add:0 "$cybrex_gasgiant_category_research_speed_mult$"
  cybrex_uninhabitable_category_research_speed_add:0 "$cybrex_uninhabitable_category_research_speed_mult$"
  cybrex_habitable_category_research_speed_add:0 "$cybrex_habitable_category_research_speed_mult$"
- 
  mod_category_materials_research_speed_mult:0 "Темп исследований (материалы)"
  mod_category_propulsion_research_speed_mult:0 "Темп исследований (по реактивной тяге)"
  mod_category_voidcraft_research_speed_mult:0 "Темп исследований (приручение войда)"
@@ -651,15 +586,10 @@
  mod_category_biology_research_speed_mult:0 "Темп исследований (биология)"
  mod_category_new_worlds_research_speed_mult:0 "Темп исследований (новые миры)"
  mod_category_psionics_research_speed_mult:0 "Темп исследований (псионика)"
- 
  hydroponics_farm_build_cost_mult:0 "Стоимость строительства гидропонной фермы"
  hydroponics_farm_construction_speed_mult:0 "Скорость строительства гидропонной фермы"
  mining_network_build_cost_mult:0 "Стоимость строительства добывающего предприятия"
  mining_network_construction_speed_mult:0 "Скорость строительства добывающего предприятия"
- 
- ####################################
- # Static Modifiers
- ####################################
  very_easy_player:0 "Очень низкая сложность"
  easy_player:0 "Низкая сложность"
  hard_player:0 "Высокая сложность"
@@ -672,13 +602,10 @@
  inefficient_sector_management:0 "Неэффективное управление сектором"
  ruler_ship:0 "Улучшенный корабль, созданный для правителя"
  ruler_station:0 "Улучшенная станция, построенная для правителя"
- 
  assist_research:0 "Помощь в исследовании"
  assist_research_desc:0 "Исследовательским лабораториям на планете помогает научный корабль на ее орбите."
- 
  previous_deal_broken:0 "Нарушенные торговые соглашения"
  previous_deal_ended:0 "Выполненные торговые соглашения"
- 
  extradimensionals_defeated:0 "Экстрамерные существа побеждены"
  nationalist_corruption:0 "Коррупция националистов"
  nationalist_corruption_desc:0 "Радикально настроенные члены националистической фракции на этой планете снижают эффективность производства."
@@ -688,44 +615,32 @@
  planet_separatist_supporter_desc:0 "Сторонник сепаратистов планеты"
  sector_separatist_supporter:0 "Сторонник сепаратистов сектора"
  sector_separatist_supporter_desc:0 "Сторонник сепаратистов сектора"
- 
  sponsored_rebels:0 "Финансируемые мятежники"
  recently_liberated:0 "Недавно освобожденные"
- 
  swarm_strength:0 "Сила роя"
  swarm_strength_hard:0 "$prethoryn_strength$"
  swarm_strength_insane:0 "$prethoryn_strength$"
- 
  exd_strength:0 "Экстрамерная мощь"
  exd_strength_hard:0 "$exd_strength$"
  exd_strength_insane:0 "$exd_strength$"
- 
  ai_strength:0 "Резервное время"
  ai_strength_hard:0 "$ai_strength$"
  ai_strength_insane:0 "$ai_strength$"
- 
  nomad_strength:0 "Галактические кочевники"
- 
  pirate_power:0 "Пиратская сила"
  cloud_power:0 "Облачная сила"
  enigmatic_power:0 "Загадочная сила"
  technosphere_power:0 "Техносила"
  dreadnought_power:0 "Сила дредноута"
  sanctuary_power:0 "Мощь святилища"
- 
  curator_insight:0 "Проницательность Кураторов"
  curator_insight_desc:0 "Кураторы поделились с вами своими знаниями. И хотя они допускают различные толкования, отныне вы будете понимать гораздо больше."
  fallen_empire_gift_databanks:0 "Банк данных предтеч"
  fallen_empire_gift_databanks_desc:0 "Мы получили банк научных данных в дар от угасшей империи. Это ускорит темпы наших исследований."
- 
  ship_orbit_repair:0 "Орбитальный ремонт"
  ship_max_damaged_effect:0 "Штраф за урон"
  station_self_repair:0 "Авторемонт"
  jump_drive_cooldown:0 "Перезарядка прыжкового двигателя"
- 
- ####################################
- # Pop Modifiers
- ####################################
  pop_base:0 "База"
  pop_base_with_happiness:0 "$pop_base$"
  hostile_environment:0 "Враждебная среда"
@@ -807,10 +722,6 @@
  mod_pc_savannah_habitability:0 "Приспособленность - мир саванны"
  mod_pc_alpine_habitability:0 "Приспособленность - высокогорный мир"
  mod_pc_habitat_habitability:0 "Пригодность среды обитания"
- 
- ####################################
- # Triggered Modifiers
- ####################################
  tm_semi_static_we_defensive:0 "Проигрыш в оборонительных войнах"
  tm_semi_static_we_defensive_desc:0 "В соответствии с нашей §Eполустатической§! военно-экономической политикой, наши отважные граждане стали совершать пожертвования, чтобы поддержать нашу отчаянную оборону от инопланетных агрессоров."
  tm_semi_static_we_offensive:0 "Победа в наступательных войнах"
@@ -823,19 +734,11 @@
  tm_dynamic_we_defensive_desc:0 "В соответствии с нашей §Eдинамичной§! военно-экономической политикой, наши отважные граждане стали совершать пожертвования, чтобы поддержать нашу отчаянную оборону от инопланетных агрессоров."
  tm_dynamic_we_offensive:0 "Победа в наступательных войнах"
  tm_dynamic_we_offensive_desc:0 "Благодаря нашей §Eдинамичной§! военно-экономической политике наши рабочие и военные позволили себе расслабиться в предвкушении наших победоносных наступательных войн."
- 
- ####################################
- # Opinion Modifiers
- ####################################
- 
- ## SPECIES
  opinion_repugnant_species:0 "Отвратительный правитель"
  opinion_charismatic_species:0 "Обаятельный правитель"
  triggered_opinion_robot_emotion_emulators:0 "Эмуляторы эмоций"
  triggered_opinion_robot_uncanny:0 "Жуткие"
  triggered_opinion_robot_a_little_uncanny:0 "$triggered_opinion_robot_uncanny$"
- 
- ## Machine Empires
  triggered_organic_opinion_of_machine_empires:0 "Машинный разум"
  triggered_terminators_opinion_of_servitors:0 "Биофилы"
  triggered_opinion_both_servitors:0 "Собратья-служители"
@@ -858,7 +761,6 @@
  triggered_opinion_both_machine_intelligence:0 "Подобный машинный разум"
  triggered_dc_opinion_of_servitors:0 "Угнетатели"
  triggered_dc_opinion_of_assimilators:0 "$triggered_dc_opinion_of_servitors$"
- ## ETHOS
  opinion_xenophobia:0 "Ксенофобия"
  opinion_xenophobes:0 "Изуверы-ксенофобы"
  opinion_xenophilia:0 "Ксенофилия"
@@ -886,16 +788,12 @@
  opinion_dc_vs_democratic:0 "Это демократия"
  opinion_dc_vs_oligarchic:0 "Это олигархия"
  opinion_dc_vs_autocracy:0 "Это автократия"
- 
- ## POLICIES
  opinion_policy_interference:0 "Политика невмешательства"
  opinion_policy_slavery:0 "Политика рабства"
  opinion_policy_purge:0 "Политика геноцида"
  opinion_policy_orbital_bombardment:0 "Политика бомбардировок"
  opinion_policy_voting_rights:0 "Политика права голоса"
  opinion_policy_leadership:0 "Политика права на руководящую должность"
- 
- ## WAR
  opinion_declared_war:0 "Были в состоянии войны"
  opinion_in_war:0 "В состоянии войны"
  opinion_decline_war:0 "Отклонили предложение войны"
@@ -908,15 +806,11 @@
  opinion_white_peace_not_accepted:0 "Мир на условиях статус-кво неприемлем"
  opinion_first_contact_hostility:0 "Столкновение при Первом контакте"
  opinion_first_contact_war:0 "Война при Первом контакте"
- 
- ## ACTIONS
  opinion_warmonger:0 "Милитарист"
  opinion_genocidal:0 "Поборник геноцида"
  opinion_genocidal_our_species:0 "Геноцид по отношению к нашей расе"
  opinion_slaver:0 "Рабовладелец"
  opinion_nuker:0 "Бомбовый террор"
- 
- ## DIPLOMACY
  opinion_alliance:0 "Альянс"
  opinion_defensive_pact:0 "Пакт о взаимной защите"
  opinion_broke_alliance:0 "Вышли из альянса"
@@ -961,38 +855,28 @@
  opinion_construction_access:0 "Дает право на строительство"
  opinion_migration_treaty:0 "Договор о миграции"
  opinion_research_treaty:0 "Договор об исследованиях"
- 
- ## SUBJECT
  opinion_subject_relation:0 "Отношения как к подданному"
  opinion_subject:0 "Общий сюзерен"
  opinion_is_subject:0 "Подданный"
  opinion_subject_protection:0 "Принята просьба о защите"
  opinion_forced_subjectized:0 "Принудительно сделали подданным"
  opinion_subject_broke_free:0 "Освободились от сюзерена"
- 
- # TRADE
  opinion_trade_gift:0 "Выгодное торговое предложение"
  opinion_trade_tribute:0 "Требует дани"
  opinion_in_trade:0 "Торговое соглашение"
  opinion_was_in_trade:0 "Нарушили торговое соглашение"
- 
  opinion_enlightened_us:0 "Просветили нас"
  opinion_destroyed_portal:0 "Уничтожили пространственный портал"
- 
  opinion_devouring_swarm:0 "$civic_hive_devouring_swarm$"
  opinion_swarm:0 "Внегалактические захватчики"
  opinion_prey:0 "Добыча"
- 
  opinion_merciful:0 "Милосердие"
- 
  opinion_took_station:0 "Захвачена станция ресурсов"
  opinion_liberated_us:0 "Освободитель"
  opinion_we_liberated:0 "Освободили"
  opinion_broke_away:0 "Состояние отделения"
  opinion_broke_away_from:0 "Бывшие угнетатели"
- 
  opinion_primitive_violation:0 "Аннексированное примитивное общество"
- 
  opinion_fallen_empire_gift:0 "Получили подарок"
  opinion_put_in_their_place:0 "Указать на их место"
  opinion_accepted_fallen_empire_demand:0 "Принятые требования"
@@ -1004,15 +888,12 @@
  opinion_majorly_failed_fallen_empire_task:0 "Сильно подвели нас"
  opinion_spurned_fallen_empire_gift:0 "Отвергли подарок"
  opinion_completed_fallen_empire_task:0 "Выполнили задание"
- 
  opinion_heretical_research:0 "Еретические исследования"
  encroaching_colony:0 "Посягающая колония"
  encroaching_scientists:0 "Посягающие ученые"
- 
  opinion_shade_giver:0 "Даритель тени"
  opinion_ceded_starbase:0 "Границы уважаются"
  opinion_not_ceded_starbase:0 "Границы не уважаются"
- 
  triggered_opinion_tr_versatility_universal_compatibility:0 "$tr_versatility_universal_compatibility$"
  triggered_opinion_tr_domination_star_lords:0 "$tr_domination_star_lords$"
  triggered_opinion_ap_defender_of_the_galaxy:0 "$ap_defender_of_the_galaxy$"
@@ -1025,10 +906,6 @@
  triggered_authoritarian_opinion_barbaric_despoilers:0 "$civic_barbaric_despoilers$"
  triggered_pacifist_opinion_barbaric_despoilers:0 "$civic_barbaric_despoilers$"
  triggered_fe_opinion_barbaric_despoilers:0 "$civic_barbaric_despoilers$"
- 
- ####################################
- # Planet Modifiers
- ####################################
  capital:0 "Планета-столица"
  capital_desc:0 "Планета, являющаяся столицей межзвездного государства - колоссальное скопление правительственных зданий, организаций и штаб-квартир разных агентств."
  distance_from_capital:0 "Удаленность от столицы"
@@ -1102,7 +979,7 @@
  migrating_forests:0 "Мигрирующие леса"
  migrating_forests_desc:0 "Бродячие леса этой планеты часто перемещаются всей массой в соседние регионы, мешая строительству дорог, линий электропередачи и других объектов инфраструктуры."
  migrating_forests_2:0 "Покорные мигрирующие леса"
- migrating_forests_2_desc:0 "§WДобавлен £blocker£ §YЗаповедник бродячих лесов§!, улучшающий £society£ §Yисследования§! соседних квадратов.§!\n\nБродячие леса этой планеты теперь стараются избегать населенных районов и больше не наносят урон поселениям. Впрочем, из-за их присутствия у поселенцев по-прежнему ограничен запас свободной земли."
+ migrating_forests_2_desc:0 "§WДобавлен §YЗаповедник с мигрирующим лесом§!, улучшающий £society£ §Yсоциологические исследования§! на планете.§!\n\nБродячие леса этой планеты теперь стараются избегать населенных районов и больше не наносят урон поселениям. Впрочем, из-за их присутствия у поселенцев по-прежнему ограничен запас свободной земли."
  damaged_ecology:0 "Поврежденная экология"
  damaged_ecology_desc:0 "Уничтожение бродячих лесов нанесло серьезный ущерб экологии этой планеты."
  friendly_trees:0 "Адаптация лесов"
@@ -1129,8 +1006,6 @@
  wasteland_infrastructure_desc:0 "В этом мире все еще осталось значительное количество инфраструктуры, созданной прежними обитателями до того, как они уничтожили себя в ходе ядерной войны. Это поможет при строительстве новых сооружений."
  forest_fire:0 "Лесной пожар"
  forest_fire_desc:0 "Лесной пожар стал причиной столпотворения среди бродячих деревьев в этом мире, в результате чего был нанесен временный ущерб нескольким фермерским регионам."
- 
- 
  upliftable_species:0 "Существа для преображения"
  upliftable_species_desc:0 "На этой планете обитают существа, которых можно преобразить. Если мы создадим здесь колонию, то уже не сможем этого сделать."
  production_targets:0 "Производственные планы"
@@ -1233,7 +1108,6 @@
  spaceport_level_4:0 ""
  spaceport_level_5:0 ""
  spaceport_level_6:0 ""
- 
  stone_age_civilization:0 "Цивилизация каменного века"
  stone_age_civilization_desc:0 "В этом мире есть примитивная протоцивилизация, вошедшая в эпоху каменного века."
  dead_creatures:0 "Мертвые космические существа"
@@ -1251,22 +1125,17 @@
  primitive_reservation:0 "Резервация для чужаков"
  primitive_reservation_desc:0 "Часть этой планеты была превращена в закрытую резервацию, где обитает местная протоцивилизация каменного века. В связи с этим у колонистов ограничен доступ к земле и ресурсам."
  starvation:0 "Голод"
- 
  subterranean_tech_transaction:0 "Технологии для подземной цивилизации"
  subterranean_tech_transation_desc:0 "Часть наших исследовательских материалов и средств предназначена для использования подземной цивилизацией, живущей на одной из колонизированных нами планет."
  stellarite_high_temp:0 "Повышение температуры"
  stellarite_high_temp_desc:0 "Из-за присутствия лучистого чудовища в данной системе на поверхности этой планеты поднимается температура."
  stellarite_low_temp:0 "Понижение температуры"
  stellarite_low_temp_desc:0 "Лучистое чудовище поглотило часть звезды данной системы, из-за чего на планетах, вращающихся вокруг нее, понизилась температура."
- 
  ed_anchor_buildspeed:0 "Строительство якоря"
  shipsize_anchor_station_construction_speed_mult:0 "Строительство якоря"
- 
  EVENT_LOCKED_FLEET:0 "§RАтака невозможна§!"
- 
  precursor_research_speed:0 "Темп изучения аномалии (предтечи)"
  precursor_fail_risk:0 "Риск неудачи при изучении аномалии (предтечи)"
- 
  mod_vultaum_1_cat_research_speed_mult:0 "$precursor_research_speed$"
  mod_vultaum_2_cat_research_speed_mult:0 "$precursor_research_speed$"
  mod_vultaum_3_cat_research_speed_mult:0 "$precursor_research_speed$"
@@ -1344,11 +1213,10 @@
  mod_pc_machine_habitability:0 "Приспособленность - мир машин"
  mod_pc_hive_habitability:0 "Приспособленность - мир улья"
  MOD_POSTFIX_PERCENT:0 "§G%§!"
- 
  MOD_COUNTRY_SENSOR_RANGE_ADD:0 "Дальность действия сенсоров империи"
  MOD_SHIP_SENSOR_RANGE_ADD:0 "Дальность действия сенсоров"
- 
  MOD_COUNTRY_IMMIGRATION_PULL_ADD:0 "Приток иммиграции в империи"
  MOD_COUNTRY_IMMIGRATION_PULL_MULT:0 "$MOD_COUNTRY_IMMIGRATION_PULL_ADD$"
  MOD_COUNTRY_EMIGRATION_PUSH_ADD:0 "Отток эмиграции в империи"
  MOD_COUNTRY_EMIGRATION_PUSH_MULT:0 "$MOD_COUNTRY_EMIGRATION_PUSH_ADD$"
+ fe_ship_cost_modifier:0 "Господство судостроителей"

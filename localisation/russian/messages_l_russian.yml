@@ -1,7 +1,4 @@
 ﻿l_russian:
- ####################################
- # Constructions
- ####################################
  MESSAGE_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "Строительство завершено"
  MESSAGE_BUILDING_CONSTRUCTION:0 "На планете $PLANET|Y$ завершена очередь строительства."
  MESSAGE_BUILDING_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "Постройка сооружения"
@@ -15,10 +12,6 @@
  MESSAGE_ARMY_RECRUITMENT:0 "Призыв в армию завершен на планете $PLANET|Y$."
  MESSAGE_POP_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "$MESSAGE_CONSTRUCTION_MESSAGE_TYPE_TITLE$"
  MESSAGE_POP_CONSTRUCTION_FINISH:0 "Поселение построено на планете $PLANET|Y$."
- 
- ####################################
- # Fleet Orders
- ####################################
  MESSAGE_FLEET_ORDER_FINISH_BUILD_ORBITAL_STATION:0 "Флотилия §H$FLEET$§! завершила строительство ($SHIPCLASS|Y$) на орбите планеты $PLANET|Y$."
  MESSAGE_FLEET_ORDER_ANOMALY:0 "Флотилия §H$FLEET$§! обнаружила §Hаномалию§! на планете $PLANET|Y$."
  MESSAGE_FLEET_ORDER_FINISH_BUILD_SPACE_STATION:0 "Флотилии §H$FLEET$§! завершила строительство ($SHIPCLASS|Y$) в системе $STAR|Y$."
@@ -37,20 +30,12 @@
  MESSAGE_ESN_ARRIVED:0 "Флотилия $FLEET_NAME|Y$ прибыла в систему $SYSTEM|Y$"
  MESSAGE_ESN_ABORTED_TITLE:0 "Экспериментальная подпространственная навигация прекращена"
  MESSAGE_ESN_ABORTED:0 "Приказ для флотилии $FLEET_NAME|Y$ отменен. Система $SYSTEM|Y$ стала недоступной."
- 
- ####################################
- # Misc Fleet
- ####################################
  MESSAGE_FLEET_REPARATIONS_DONE_MESSAGE_TYPE_TITLE:0 "Завершение ремонта"
  MESSAGE_REPARATIONS_DONE:0 "Корабли флотилии $FLEET|Y$ полностью восстановлены."
  MESSAGE_FLEET_UPGRADE_DONE_MESSAGE_TYPE_TITLE:0 "Улучшение флотилии"
  MESSAGE_UPGRADE_DONE:0 "Все корабли флотилии $FLEET|Y$ модернизированы."
  MESSAGE_EMERGENCY_FTL_CASUALTIES_TITLE:0 "Потери в ходе экстренного сверхсветового маневра"
  EMERGENCY_FTL_CASUALTIES_DESC:0 "Флотилия понесла потери.\n\nКораблей потеряно: $LOST$\nКораблей повреждено: $NEAR_LOST$"
- 
- ####################################
- # Diplomacy
- ####################################
  RIVALRY_INVALID_TITLE:0 "Соперничество стало недопустимым"
  RIVALRY_INVALID_DESC:0 "$COUNTRY|Y$ больше не является допустимым соперником для нашей империи"
  MESSAGE_MADE_FIRST_CONTACT_WE:0 "Мы столкнулись с цивилизацией §H$WHO$§! в системе §H$STAR$§!!"
@@ -70,7 +55,6 @@
  ACTION_FORM_FEDERATION_VOTE_PASSED:0 "Альянс §H[Actor.GetAllianceName]§! проголосовал за преобразование в федерацию."
  ACTION_FORM_FEDERATION_VOTE_FAILED:0 "Альянс проголосовал против преобразования в федерацию."
  ACTION_RELEASE_SUBJECT_PASSED:0 "Империя §H[Actor.GetName]§! освободила нас от статуса подданного."
- 
  MESSAGE_TRADE_DEAL_END_MISSING_RESOURCE_TITLE:0 "Конец торгового соглашения: у нас нет ресурсов"
  MESSAGE_TRADE_DEAL_END_MISSING_RESOURCE_THEM_TITLE:0 "Конец торгового соглашения: у них нет ресурсов"
  MESSAGE_TRADE_DEAL_END_CLOSED_BORDERS_TITLE:0 "Конец торгового соглашения: мы закрыли границы"
@@ -159,7 +143,6 @@
  ACTION_ASK_TO_BECOME_RELEASED_VASSAL_PROPOSAL_FAILED_RECIPIENT:0 "Просьба об освобождении от империи §H[Actor.GetName]§! была просрочена и автоматически отклонена."
  ACTION_OFFER_TRADE_DEAL_PROPOSAL_FAILED_ACTOR:0 "Наше торговое предложение к империи §H[Recipient.GetName]§! отклонено."
  ACTION_OFFER_TRADE_DEAL_PROPOSAL_FAILED_RECIPIENT:0 "Торговое предложение от империи §H[Actor.GetName]§! было просрочено и автоматически отклонено."
- 
  MESSAGE_MAKE_RIVAL_TITLE:0 "$RIVALRY$"
  MESSAGE_RECALL_EMBASSY_TITLE:0 "Закрытие посольства"
  MESSAGE_END_RIVALRY_TITLE:0 "$RIVALRY$: прекращение"
@@ -220,7 +203,6 @@
  MESSAGE_BREAK_SUPPORT_TITLE:0 "Отзыв поддержки"
  MESSAGE_OPEN_BORDERS_TITLE:0 "Открытие границ"
  MESSAGE_CLOSE_BORDERS_TITLE:0 "Закрытие границ"
- 
  ACTION_MAKE_RIVAL_NOTIFICATION:0 "§H[From.GetName]§! объявляет империю §H[Root.GetName]§! своим §H$RIVAL$ом§!!\n\nЭто значительно ухудшит их дипломатические отношения."
  ACTION_END_RIVALRY_NOTIFICATION:0 "§H[From.GetName]§! прекращает $RIVALRY$ с империей §H[Root.GetName]§!.\n\nВозможно, они на пути к примирению."
  ACTION_EMBASSY_NOTIFICATION:0 "§H[From.GetName]§! отправляет посольство в империю §H[Root.GetName]§!.\n\nЭто со временем улучшит их отношения."
@@ -269,7 +251,6 @@
  ACTION_BREAK_SUPPORT_NOTIFICATION:0 "§H[From.GetName]§! прекращает поддерживать суверенитет империи §H[Root.GetName]§!.\n\nПохоже, [Root.GetName] так и останется подданным."
  ACTION_OPEN_BORDERS_NOTIFICATION:0 "§H[From.GetName]§! открывает границы для флотилий империи §H[Root.GetName]§!.\n\nЭто улучшит их дипломатические отношения."
  ACTION_CLOSE_BORDERS_NOTIFICATION:0 "§H[From.GetName]§! закрывает границы для флотилий империи §H[Root.GetName]§!.\n\nЭто ухудшит их дипломатические отношения."
- 
  MESSAGE_OFFER_FEDERATION_ASSOCIATION_TITLE:0 "Предложение статуса ассоциации с федерацией"
  ACTION_OFFER_FEDERATION_ASSOCIATION_NOTIFICATION:0 "§H[Root.GetName]§! получает статус ассоциации с федерацией §H[From.GetAllianceName]§!.\n\nПохоже, им нужны более близкие отношения."
  MESSAGE_ASK_FOR_FEDERATION_ASSOCIATION_TITLE:0 "Запрос о статусе ассоциации с федерацией"
@@ -279,13 +260,7 @@
  MESSAGE_END_FEDERATION_ASSOCIATION_TITLE:0 "Прекращение статуса ассоциации с федерацией"
  ACTION_END_FEDERATION_ASSOCIATION_NOTIFICATION:0 "§H[From.GetName]§! решает прекратить свой статус ассоциации с федерацией §H[Root.GetAllianceName]§!.\n\nЭто знак враждебных намерений?"
  DIPLO_ACTION_END_FEDERATION_ASSOCIATION_DESC:0 "§H$COUNTRY$§! решает прекратить свой статус ассоциации с федерацией §H$ALLIANCE$§!.\n\nЭто знак враждебных намерений?"
- 
- 
  MESSAGE_DIPLOMACY_TITLE:0 "Дипломатия"
- 
- ####################################
- # War
- ####################################
  SURRENDER_OUR_SIDE:0 "Наш военачальник безоговорочно капитулировал, подписано соглашение о прекращении огня. У противника есть до 6 месяцев, чтобы выдвинуть свои требования."
  SURRENDER_THEIR_SIDE:0 "Их военачальник безоговорочно капитулировал, подписано соглашение о прекращении огня. У нас есть 6 месяцев, чтобы выдвинуть свои требования."
  WAR_END_VICTORY:0 "Мы победили в этой войне"
@@ -323,25 +298,13 @@
  MESSAGE_ENEMY_VASSAL_ENTER_WAR_DESC:0 "$ENEMY|Y$, подданный одного из наших противников, вступает в войну с нами."
  MESSAGE_ENEMY_LEAVES_WAR:0 "Противник выходит из войны"
  MESSAGE_ENEMY_LEAVES_WAR_DESC:0 "$ENEMY|Y$ выходит из войны, так как $OVERLORD|Y$ делает их вассалом или аннексирует."
- 
- ####################################
- # Fleet Detected
- ####################################
  MESSAGE_FLEET_DETECTED_WE:0 "Обнаружена флотилия §H$FLEET$§! империи $WHO|Y$, движущаяся прямым курсом к §Yсистеме $TARGET$§!!"
  MESSAGE_FLEET_DETECTED_MESSAGE_TYPE_TITLE:0 "Обнаружение флотилии"
  MESSAGE_OBJECT_DETECTED_WE:0 "Обнаружен неустановленный объект, движущийся прямым курсом к §Yсистеме $TARGET$§!!"
  MESSAGE_OBJECT_DETECTED_MESSAGE_TYPE_TITLE:0 "Обнаружение объекта"
- 
- ####################################
- # Fleet Evade
- ####################################
  MESSAGE_FLEET_EVADE_HOSTILE:0 "$FLEET$ сталкивается с враждебной флотилией ($HOSTILE|R$) в системе $SYSTEM|H$ и пытается уйти от нее!"
  MESSAGE_FLEET_EVADE_HOSTILE_FLEET_TYPE:0 "$TYPE$ $NAME|H$"
  MESSAGE_FLEET_EVADE_HOSTILE_MESSAGE_TYPE_TITLE:0 "Уклонение от вражеской флотилии"
- 
- ####################################
- # Leaders
- ####################################
  FLEET_LEADER_DEATH:0 "$CLASS|Y$ $LEADER|Y$ погибает при уничтожении корабля $SHIP|Y$."
  ARMY_LEADER_DEATH:0 "Наш $CLASS|Y$ $LEADER|Y$ погибает, командуя армией $ARMY|Y$."
  PLANET_LEADER_DEATH:0 "Наш $CLASS|Y$ $LEADER|Y$ умирает на планете $PLANET|Y$."
@@ -365,66 +328,32 @@
  MESSAGE_LEADER_LEVEL_UP_TITLE:0 "Новый уровень лидера"
  LEADER_LEVEL_UP_DESC:0 "$CLASS|Y$ $LEADER|Y$ получает новый уровень.\n\nТекущий навык: $LEVEL|Y$\n "
  LEADER_LEVEL_UP_NEXT_LEVEL_DESC:0 "$CLASS|Y$ $LEADER|Y$ получает новый уровень.\n\nТекущий навык: $LEVEL|Y$\nОпыта для следующего уровня: $EXP|Y0$"
- 
  LEADER_ADMIRAL_BASE_EXPERIENCE:0 "§TКосмические сражения: $VAL|0H$ опыта§!"
  LEADER_ADMIRAL_HOSTILE_KILLED_EXPERIENCE:0 "§TУничтожение сил противника: $VAL|0H$ опыта§!"
  LEADER_ADMIRAL_FRIENDLY_LOST_EXPERIENCE:0 "§TПотеря союзнических войск: $VAL|0H$ опыта§!"
- 
  LEADER_GENERAL_BASE_EXPERIENCE:0 "§TНаземные сражения: $VAL|0H$ опыта§!"
  LEADER_GENERAL_HOSTILE_KILLED_EXPERIENCE:0 "§TУничтожение сил противника: $VAL|0H$ опыта§!"
  LEADER_GENERAL_FRIENDLY_LOST_EXPERIENCE:0 "§TПотеря союзнических войск: $VAL|0H$ опыта§!"
  MESSAGE_NEW_HEIR_TITLE:0 "§HПреемник§!"
  NEW_HEIR_TEXT:0 "§Y$HEIR$§! является наследником престола нашей империи и займет его после смерти нынешнего правителя."
- 
- ####################################
- # Technology
- ####################################
  MESSAGE_TECHNOLOGY_RESEARCH_FINISH:0 "Мы завершили изучение технологии $TECHNOLOGY|H$."
  MESSAGE_TECHNOLOGY_ORDER_FINISH_MESSAGE_TYPE_TITLE:0 "Изучение технологии"
- 
- ####################################
- # Debris
- ####################################
  MESSAGE_DEBRIS_ANALYZED_FINISH:0 "Мы завершили анализ обломков в системе $SYSTEM|Y$."
  MESSAGE_DEBRIS_ANALYZED_FINISH_BONUS:0 "£$AREA_KEY$£ §YИсследования: $AREA$§! §G+$VAL|0$§! очков"
  MESSAGE_DEBRIS_ANALYZED_FINISH_TECH_PROGRESS:0 "$TECH|Y$: §G+$VAL|%0$§! прогресса"
  MESSAGE_DEBRIS_ANALYZED_FINISH_MESSAGE_TYPE_TITLE:0 "Изучение обломков"
- 
- ####################################
- # Anomaly
- ####################################
  MESSAGE_ANOMALY_DETECTED_TYPE_TITLE:0 "Аномалия"
- 
- ####################################
- # No Access
- ####################################
  MESSAGE_WORMHOLE_CLOSED_NO_ACCESS:0 "Червоточина в системе $FROM|Y$ была закрыта при открытии в сторону системы $TARGET|Y$, потому что она находится на территории империи $WHO|Y$."
  MESSAGE_FLEET_LEAVE_SYSTEM_NO_ACCESS:0 "Флотилии $FLEET|Y$ пришлось вернуться в систему $RETURN|Y$ из системы $FROM|Y$, поскольку она находится на территории империи $WHO|Y$."
  MESSAGE_WORMHOLE_CLOSED_NO_ACCESS_TITLE:0 "Закрытие червоточины"
  MESSAGE_FLEET_LEAVE_SYSTEM_NO_ACCESS_TITLE:0 "Нет доступа"
- 
- ####################################
- # Revolt
- ####################################
  MESSAGE_REVOLT:0 "Жители планеты $PLANET|Y$! подняли бунт!"
  MESSAGE_PLANET_REVOLT_TITLE:0 "Бунт!"
- 
- ####################################
- # Planet Destruction
- ####################################
  MESSAGE_PLANET_DESTROYED:0 "Планета опустошена"
  MESSAGE_PLANET_DESTROYED_DESC:0 "Планета $PLANET|Y$ $WEAPON_DESC$: «Колосс» ($ADJ$) и $WEAPON_NAME|R$ не оставили ей шанса."
- 
- ####################################
- # Terraforming
- ####################################
  MESSAGE_TERRAFORMATION_FINISH:0 "Планета $PLANET|Y$ терраформирована в класс $PLANET_CLASS|Y$."
  MESSAGE_TERRAFORMATION_CANCELED:0 "Терраформирование планеты $PLANET|Y$ прервано!"
  MESSAGE_TERRAFORM_MESSAGE_TYPE_TITLE:0 "Терраформирование"
- 
- ####################################
- # Trade
- ####################################
  MESSAGE_TRADE_DEAL_END_NO_ENERGY:0 "Наше торговое соглашение с империей $WITH|Y$ утратило силу, поскольку у нас нет энергокредитов для его поддержания."
  MESSAGE_TRADE_DEAL_END_NO_ENERGY_THEM:0 "Империя $WITH|Y$ прекратила действие торгового соглашения с нами, поскольку у нее нет энергокредитов для его поддержания."
  MESSAGE_TRADE_DEAL_END_MISSING_RESOURCE:0 "Наше торговое соглашение с империей $WITH|Y$ утратило силу, поскольку у нас нет ресурса $RESOURCE|Y$ для его поддержания."
@@ -441,26 +370,13 @@
  MESSAGE_TRADE_DEAL_END_SUPPORT_INDEPENDENCE_VASSALAGE_THEM:0 "Империя $WITH|Y$ прекратила действие торгового соглашения с нами, поскольку утратила независимость и не может поддерживать наш суверенитет."
  MESSAGE_TRADE_DEAL_END_SUPPORT_INDEPENDENCE_ALLIANCE:0 "Наше торговое соглашение с империей $WITH|Y$ более не действует, поскольку мы вступили в альянс и не можем гарантировать ее суверенитет."
  MESSAGE_TRADE_DEAL_END_SUPPORT_INDEPENDENCE_ALLIANCE_THEM:0 "Империя $WITH|Y$ прекратила действие торгового соглашения с нами, поскольку вступила в альянс и не может гарантировать наш суверенитет."
- 
- ####################################
- # Special Project
- ####################################
  MESSAGE_UPLIFTING_FAILED_TITLE:0 "Провал особого проекта по преображению"
  MESSAGE_UPLIFTING_FAILED:0 "Наш проект по преображению расы $SPECIES|Y$ на планете $PLANET|Y$ потерпел неудачу."
  MESSAGE_SPECIES_MODIFICATION_FAILED_TITLE:0 "Провал особого проекта по модифицированию расы"
  MESSAGE_SPECIES_MODIFICATION_FAILED:0 "Проект по изменению $POPS|Y$ поселений на $PLANETS|Y$ планетах согласно шаблону «$TEMPLATE|Y$» провален."
  MESSAGE_SPECIAL_PROJECT_AVAILABLE_TITLE:0 "Новый особый проект"
  SPECIAL_PROJECT_AVAILABLE:0 "Есть особый проект для изучения."
- 
- 
- ####################################
- # Event
- ####################################
  MESSAGE_EVENT_MESSAGE_TYPE_TITLE:0 "Событие"
- 
- ####################################
- # Invasion
- ####################################
  MESSAGE_INVASION_TITLE:0 "Завершение вторжения"
  MESSAGE_INVASION_ATTACKER_WIN:0 "Наше вторжение на планету $PLANET|H$ прошло успешно!"
  MESSAGE_INVASION_ATTACKER_LOSE:0 "Нам не удалось вторгнуться на планету $PLANET|H$."
@@ -469,63 +385,31 @@
  MESSAGE_RETREAT_CASUALTIES_TITLE:0 "Потеря армий при отступлении"
  RETREAT_CASUALTIES_DESC:0 "Мы потеряли $NUM|Y$ из нашего общего количества армий ($TOTAL|Y$) при попытке отступить с планеты $PLANET|H$\n$LOST$"
  MESSAGE_LOST_ARMY:0 "$NUMBER$. $NAME|R$"
- 
- 
- ####################################
- # Subject changes
- ####################################
  MESSAGE_SUBJECT_TYPE_CHANGED_TITLE:0 "Изменение статуса подданного"
  MESSAGE_SUBJECT_CHANGED_DESC:0 "$REASON$$SUBJECT|Y$ теперь $NEW_TYPE|Y$ для империи $OVERLORD|Y$"
  MESSAGE_SUBJECT_CHANGE_REASON_protectorate_me:0 "В связи с нашими технологическими достижениями "
  MESSAGE_SUBJECT_CHANGE_REASON_protectorate:0 "В связи с их технологическими достижениями "
- 
- ####################################
- # Triggered Modifiers
- ####################################
  MESSAGE_TRIGG_MOD_LOST_TITLE:0 "Потеря условного эффекта"
  TRIGG_MOD_LOST:0 "Условный эффект «$NAME|H$» больше не действует."
  MESSAGE_TRIGG_MOD_GAINED_TITLE:0 "Получение условного эффекта"
  TRIGG_MOD_GAINED:0 "$NAME|H$\n\n$DESC$"
- 
- ####################################
- # Combat Stats
- ####################################
  MESSAGE_COMBAT_STATS_TITLE:0 "Боевая статистика флотилии"
- 
- ####################################
- # Edicts
- ####################################
  MESSAGE_INVALIDATED_EDICT_TITLE:0 "Отмена указа"
  COUNTRY_EDICT_BECAME_INVALID:0 "Указ $EDICT|Y$ потерял силу, поскольку больше не удовлетворяет требуемым условиям."
  MESSAGE_EXPIRED_EDICT_TITLE:0 "Конец срока действия указа"
  COUNTRY_EDICT_EXPIRED:0 "Истек срок действия указа $EDICT|Y$, влияющего на нашу империю."
  PLANET_EDICT_EXPIRED:0 "Истек срок действия указа $EDICT|Y$, влияющего на планету $PLANET$."
- 
- #####################################
- # Megastructures
- #####################################
- 
  MESSAGE_MEGASTRUCTURE_BUILT_TITLE:0 "Построено мегасооружение"
  MESSAGE_MEGASTRUCTURE_BUILT:0 "Завершено строительство мегасооружения $MEGASTRUCTURE|H$ в системе $SYSTEM|H$."
  MESSAGE_MEGASTRUCTURE_UPGRADED_TITLE:0 "Улучшено мегасооружение"
  MESSAGE_MEGASTRUCTURE_UPGRADED:0 "Завершено улучшение мегасооружения $MEGASTRUCTURE|H$ в системе $SYSTEM|H$."
  MESSAGE_ALIEN_MEGASTRUCTURE_BUILT_TITLE:0 "Построено инопланетное мегасооружение"
  MESSAGE_ALIEN_MEGASTRUCTURE_BUILT:0 "Империя $COUNTRY|H$ завершила строительство мегасооружения $MEGASTRUCTURE|H$ в системе $SYSTEM|H$."
- 
- #####################################
- # Casus Belli
- #####################################
  MESSAGE_NEW_CASUS_BELLI_HOLDER_TITLE:0 "Новый повод к войне"
  MESSAGE_NEW_CASUS_BELLI_HOLDER:0 "$CASUS_BELLI|H$ теперь может послужить поводом к войне с империей $COUNTRY|H$"
- 
  MESSAGE_NEW_CASUS_BELLI_TARGET_TITLE:0 "Цель повода к войне"
  MESSAGE_NEW_CASUS_BELLI_TARGET:0 "Империя $COUNTRY|H$ теперь имеет повод к войне с нами: $CASUS_BELLI|H$!"
- 
  MESSAGE_LOST_CASUS_BELLI_TITLE:0 "Повод к войне утрачен"
  MESSAGE_LOST_CASUS_BELLI:0 "$CASUS_BELLI|H$ больше не может служить для нас поводом к войне с империей $COUNTRY|H$"
- 
- #####################################
- # Claims
- #####################################
  MESSAGE_NEW_CLAIM_ON_SYSTEM_TITLE:0 "Другая империя объявила притязания на нашу систему"
  MESSAGE_NEW_CLAIM_ON_SYSTEM:0 "Империя $COUNTRY|H$ дерзнула объявить притязания на систему $SYSTEM|H$, которая по праву принадлежит нам!"

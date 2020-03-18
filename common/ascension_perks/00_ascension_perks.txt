@@ -213,8 +213,8 @@ ap_evolutionary_mastery = {
 			NOT = { has_trait = trait_mechanical }
 		}
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
 		}
 		custom_tooltip = {
 			fail_text = "requires_technology_glandular_acclimation"
@@ -337,8 +337,8 @@ ap_synthetic_evolution = {
 			NOT = { has_authority = auth_hive_mind }
 		}
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
 		}
 		custom_tooltip = {
 			fail_text = "requires_technology_synthetic_workers"
@@ -450,8 +450,8 @@ ap_transcendence = {
 			NOT = { has_authority = auth_hive_mind }
 		}
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
 		}
 		custom_tooltip = {
 			fail_text = "requires_ap_mind_over_matter"
@@ -485,8 +485,8 @@ ap_world_shaper = {
 			has_technology = tech_climate_restoration
 		}	
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_2"
-			num_ascension_perks > 1
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
 		}
 	}
 
@@ -654,13 +654,14 @@ ap_grasp_the_void = {
 ap_eternal_vigilance = {
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_2"
-			num_ascension_perks > 1
+			fail_text = "requires_technology_starbase_4"
+			has_technology = tech_starbase_4
 		}
-	}
+	}	
 
 	modifier = {
 		shipclass_starbase_damage_mult = 0.25
+		shipclass_starbase_hull_mult = 0.25
 		shipclass_military_station_damage_mult = 0.25
 		starbase_defense_platform_capacity_add = 5
 	}
@@ -743,6 +744,10 @@ ap_technological_ascendancy = {
 		}
 	}
 	
+	on_enabled = {
+		custom_tooltip = "ap_technological_ascendancy_rare"
+	}
+	
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -759,6 +764,7 @@ ap_technological_ascendancy = {
 ap_one_vision = {
 	modifier = {
 		country_unity_produces_mult = 0.10
+		pop_amenities_usage_mult = -0.10
 		pop_government_ethic_attraction = 0.50
 	}
 	
@@ -818,6 +824,13 @@ ap_mastery_of_nature = {
 	}
 	modifier = {
 		deposit_blockers_cost_mult = -0.33
+	}	
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
 	}
 	
 	potential = {
@@ -842,13 +855,6 @@ ap_mastery_of_nature = {
 ap_imperial_prerogative = {
 	modifier = {
 		country_admin_cap_add = 30
-	}
-	
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
-		}
 	}
 	
 	potential = {
@@ -886,7 +892,7 @@ ap_executive_vigor = {
 ap_transcendent_learning = {
 	modifier = {
 		leader_skill_levels = 2
-		country_leader_pool_size = 1
+		species_leader_exp_gain = 0.50
 	}
 	
 	potential = {

@@ -3736,6 +3736,7 @@ country_event = {
 	location = root
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
 		has_country_flag = worm_events_available

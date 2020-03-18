@@ -695,8 +695,8 @@ cara_execute_deal2 = {
 
 		else_if = { limit = { has_country_flag = fleet2deal1 }
 			custom_tooltip = "fleet2product1_tooltip" # Shrine
-			tooltip = { add_resource = { energy = -2000 } }
-			add_resource = { energy = -2000 }
+			tooltip = { add_resource = { energy = -4000 } }
+			add_resource = { energy = -4000 }
 			set_country_flag = nuumismatic_shrine
 		}
 

@@ -85,8 +85,7 @@ building_foundry_1 = {
 	
 	ai_weight = {
 		weight = 1
-		modifier = 
-		{
+		modifier = {
 			factor = 6
 			owner = { 
 				has_monthly_income = {
@@ -116,17 +115,12 @@ building_foundry_1 = {
 				}
 			}
 		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
+			free_jobs > 0 
 		}
 	}
 
@@ -224,8 +218,7 @@ building_foundry_2 = {
 	
 	ai_weight = {
 		weight = 1
-		modifier = 
-		{
+		modifier = {
 			factor = 4
 			owner = { 
 				has_monthly_income = {
@@ -234,17 +227,12 @@ building_foundry_2 = {
 				}
 			}
 		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
+			free_jobs > 0 
 		}
 	}
 
@@ -338,8 +326,7 @@ building_foundry_3 = {
 	
 	ai_weight = {
 		weight = 1
-		modifier = 
-		{
+		modifier = {
 			factor = 5
 			owner = { 
 				has_monthly_income = {
@@ -348,17 +335,12 @@ building_foundry_3 = {
 				}
 			}
 		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
+			free_jobs > 0 
 		}
 	}
 
@@ -389,15 +371,13 @@ building_factory_1 = {
 	
 	destroy_trigger = { # destroys if true
 		OR = {
-				owner = {
-					AND = {
-						is_gestalt = yes
-						NOT = { has_valid_civic = civic_machine_servitor }
-					}
-				}
-				has_modifier = resort_colony
-				has_modifier = slave_colony 
+			owner = {
+				is_gestalt = yes
+				NOT = { has_valid_civic = civic_machine_servitor }
 			}
+			has_modifier = resort_colony
+			has_modifier = slave_colony 
+		}
 	}
 	
 	triggered_planet_modifier = {
@@ -472,18 +452,6 @@ building_factory_1 = {
 		}
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
-		}
-		modifier = {
-			factor = 0
 			OR = {
 				AND = {
 					is_capital  = no
@@ -502,6 +470,13 @@ building_factory_1 = {
 					}
 				}
 			}
+		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
 		}
 	}
 
@@ -619,17 +594,12 @@ building_factory_2 = {
 				}
 			}
 		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
+			free_jobs > 0 
 		}
 	}
 
@@ -743,17 +713,12 @@ building_factory_3 = {
 				}
 			}
 		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
+			free_jobs > 0 
 		}
 	}
 
@@ -856,6 +821,13 @@ building_refinery = {
 			factor = 0
 			num_buildings = { type = building_refinery value >= 2 }
 		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
+		}
 	}
 
 	ai_resource_production = {
@@ -933,18 +905,6 @@ building_chemical_plant = {
 	ai_weight = {
 		weight = 2
 		modifier = {
-			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
-		}
-		modifier = {
 			factor = 5
 			owner = { 
 				has_monthly_income = {
@@ -956,6 +916,13 @@ building_chemical_plant = {
 		modifier = {
 			factor = 0
 			num_buildings = { type = building_chemical_plant value >= 2 }
+		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
 		}
 	}
 	
@@ -1034,18 +1001,6 @@ building_crystal_plant = {
 	ai_weight = {
 		weight = 2
 		modifier = {
-			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
-		}
-		modifier = {
 			factor = 5
 			owner = { 
 				has_monthly_income = {
@@ -1057,6 +1012,13 @@ building_crystal_plant = {
 		modifier = {
 			factor = 0
 			num_buildings = { type = building_crystal_plant value >= 2 }
+		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
 		}
 	}
 
@@ -1074,8 +1036,10 @@ building_nanite_transmuter = {
 	category = manufacturing
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }	
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 	
 	allow = {
@@ -1088,6 +1052,13 @@ building_nanite_transmuter = {
 			minerals = 1000
 		}
 		produces = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_deficit = nanites
+					}
+				}
+			}
 			rare_crystals = 2
 			volatile_motes = 2
 			exotic_gases = 2
@@ -1104,18 +1075,6 @@ building_nanite_transmuter = {
 	
 	ai_weight = {
 		weight = 2
-		modifier = {
-			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 1
-			}
-		}
 		modifier = {
 			factor = 10
 			owner = { 
@@ -1134,6 +1093,26 @@ building_nanite_transmuter = {
 					}
 				}
 			}
+		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				has_monthly_income = {
+					resource = nanites
+					value < 1
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_nanite_transmuter value >= 2 }
 		}
 	}
 
@@ -1155,10 +1134,12 @@ building_ministry_production = {
 	category = manufacturing
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }	
-		NOT = { has_modifier = slave_colony }
 		exists = owner
 		owner = { is_regular_empire = yes }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 	
 	allow = {
@@ -1195,6 +1176,14 @@ building_ministry_production = {
 	
 	ai_weight = {
 		weight = 10
+
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
+		}
 	}
 }
 
@@ -1278,6 +1267,14 @@ building_production_center = {
 	
 	ai_weight = {
 		weight = 10
+
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
+		}
 	}
 }
 

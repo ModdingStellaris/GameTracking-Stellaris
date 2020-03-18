@@ -38,7 +38,7 @@
  ap_defender_of_the_galaxy_modifier_desc:0 "Dommages infligés aux factions des crises de fin de partie : §G+50%§!"
  ap_engineered_evolution:0 "Manipulation de l'évolution"
  ap_engineered_evolution_desc:0 "Abandonner à la nature notre destin génétique est un processus aussi inefficace qu'atrocement lent. Pourquoi ne pas accélérer l'avenir de notre espèce ?"
- ap_engineered_evolution_modifier_desc:0 "$species_trait_points_add$ : $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$ : $COST_MULT|%0=-$"
+ ap_engineered_evolution_modifier_desc:1 "$species_trait_points_add$ : $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$ : $COST_MULT|%0=-$\n§HPermet le bâtiment§! £building£$building_clone_vats$."
  ap_evolutionary_mastery:0 "Maîtrise de l'évolution"
  ap_evolutionary_mastery_desc:1 "L'évolution naturelle n'a toujours été façonnée que par une seule chose, aussi unique que primitive : l'échec. Ce n'est qu'à partir de maintenant que nous pouvons définir ce qu'est une victoire en termes d'évolution."
  ap_evolutionary_mastery_modifier_desc:0 "$species_trait_points_add$ : $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$ : $COST_MULT|%0=-$"
@@ -733,3 +733,4 @@
  ap_hive_worlds_desc:0 "Nous devrions créer des mondes vivants qui seraient tout autant membres de la conscience que les drones qui y résident."
  tr_synchronicity_kinship_gestalt_delayed:0 "Les agents aux objectifs similaires devraient se voir transmis des ordres de groupe, ce qui réduirait les efforts de l'Esprit supérieur."
  tr_diplomacy_secure_shipping_desc:0 "§YProtection du commerce brute§! sur les routes commerciales : §G+5§!"
+ ap_technological_ascendancy_rare:0 "Les §Mtechnologies rares§! sont désormais §G50%§! plus communes."

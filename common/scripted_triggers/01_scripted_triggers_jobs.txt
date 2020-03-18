@@ -69,6 +69,25 @@ entertainer_job_check_trigger = {
 	}
 }
 
+battle_thrall_job_check_trigger = {
+	custom_tooltip = SPECIALIST_JOB_TRIGGER
+	hidden_trigger = {
+		exists = owner
+		OR = {
+			is_enslaved = no
+			has_slavery_type = { type = slavery_military }
+		}		
+		is_being_purged = no
+		is_being_assimilated = no
+		NOT = { has_trait = trait_nerve_stapled }
+		OR = {
+			NOT = { has_trait = trait_mechanical }
+			owner = { has_technology = tech_droid_workers }
+		}
+		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }	
+	}
+}
+
 complex_worker_job_check_trigger = {
 	worker_job_check_trigger = yes
 	hidden_trigger = {	
@@ -93,7 +112,7 @@ worker_job_check_trigger = {
 				has_slavery_type = { type = slavery_livestock }
 				has_slavery_type = { type = slavery_matrix }
 			}
-		}	
+		}
 	}
 }
 

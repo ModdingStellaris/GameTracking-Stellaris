@@ -26,9 +26,9 @@ mammalian_human_male_clothes_01 = {
 	pop = { #for a specific pop
 		default = "gfx/models/portraits/human/human_male_clothes_governor.dds"
 		
-	#	"gfx/models/portraits/human/human_male_clothes_admiral.dds" 	= { tile = { has_building = building_power_plant_1 } }
-	#	"gfx/models/portraits/human/human_male_clothes_scientist.dds" 	= { tile = { has_building = building_engineering_facility_1 } }
-	#	"gfx/models/portraits/human/human_male_clothes_admiral.dds" 	= { tile = { has_building = building_hydroponics_farm_1 } }
+		"gfx/models/portraits/human/human_male_clothes_admiral.dds" 	= { OR = { is_pop_category = worker is_pop_category = slave is_pop_category = simple_drone }  }
+		"gfx/models/portraits/human/human_male_clothes_scientist.dds" 	= { OR = { is_pop_category = specialist is_pop_category = complex_drone } }
+		"gfx/models/portraits/human/human_male_clothes_admiral.dds" 	= { is_pop_category = ruler }
 	}
 	#leader scope
 	leader = { #scientists, generals, admirals, governor

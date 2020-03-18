@@ -1,9 +1,4 @@
 ﻿l_simp_chinese:
- 
- ####################################
- # Special Research Projects
- ####################################
- 
  MIGRATING_FORESTS_1_PROJECT:0 "研究迁移丛林"
  MIGRATING_FORESTS_1_PROJECT_DESC:0 "部分科学家希望能够通过对这些外来植被的研究进而找到一种不对森林造成破坏的办法。"
  MIGRATING_FORESTS_2_PROJECT:0 "消灭迁移丛林"
@@ -182,8 +177,6 @@
  CYBREX_ARCHEOLOGY_10_DESC:0 " [From.GetName] 上空的轨道上发现了上千外星生物的尸体。他们几乎同时死在赛博控制这片区域的时候。"
  CYBREX_ARCHEOLOGY_11:0 "赛博研究站"
  CYBREX_ARCHEOLOGY_11_DESC:0 " [From.GetName] 的轨道上发现了赛博研究工作站组件，其中包含了赛博型生物的遗迹。"
- 
- 
  TARBLAC_PROCUREMENT:0 "幻影般的塔布拉克"
  TARBLAC_PROCUREMENT_DESC:0 "在 [This.GetName] 的深海世界中发现了塔布拉克。"
  TASSARGOID_PROCUREMENT:0 "强大的塔萨古德"
@@ -226,7 +219,6 @@
  SYNTH_INFILTRATION_PROJECT_DESC:0 "人造潜入者伪装成 [Root.GetSpeciesNamePlural] 在 [Root.GetName] 上进行活动。我们需要找到可靠有效的方法辨认他们。"
  CAPTURE_QUEEN:0 "捕获虫后"
  CAPTURE_QUEEN_DESC:0 " [queen_system.GetName] 星系最近发生了一场太空战，一个普雷索林虫后重伤濒死。此生物仍存一口气，捕获它将是情报界的一场重大胜利。"
- 
  ESTABLISH_COMMUNICATIONS:0 "调查 [Prev.From.GetName] "
  ESTABLISH_COMMUNICATIONS_DESC:0 "我们需要进一步了解我们将其编码命名为§Y [Prev.From.GetName] §!的神秘外星种群。如果他们也拥有语言，那我们必须对其进行破译并且建立交流。\n\n奖励：£influence §G影响力§!或§S特殊项目§!"
  INVESTIGATE_SPACE_AMOEBA:0 "$ESTABLISH_COMMUNICATIONS$"

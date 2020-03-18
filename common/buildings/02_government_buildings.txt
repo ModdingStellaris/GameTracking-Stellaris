@@ -111,7 +111,6 @@ building_slave_processing = {
 		OR = {
 			owner = { is_regular_empire = no }
 			NOT = { owner = { has_policy_flag = slavery_allowed } }
-			NOT = { has_modifier = slave_colony }	
 		}
 	}
 	
@@ -196,7 +195,7 @@ building_precinct_house = {
 		modifier = {
 			factor = 10
 			planet_crime > 10
-			planet_crime < 25
+			planet_crime <= 25
 		}
 
 		modifier = {
@@ -207,19 +206,28 @@ building_precinct_house = {
 
 		modifier = {
 			factor = 20
-			planet_crime > 50
+			planet_crime >= 50
 		}
 
 		modifier = {
 			factor = 0
 			OR = {
-				num_buildings = { type = building_precinct_house value > 2 }
+				planet_crime < 5
+				num_buildings = { type = building_precinct_house value >= 2 }
 				AND = {
 					num_buildings = { type = building_hall_judgment value > 0 }
 					num_buildings = { type = building_precinct_house value >= 1 }
 				}
 				num_buildings = { type = building_hall_judgment value > 1 }	
 			}
+		}
+
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
 		}
 	}
 }
@@ -292,6 +300,14 @@ building_hall_judgment = {
 		modifier = {
 			factor = 0
 			planet_crime < 10
+		}
+
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
 		}
 	}
 }

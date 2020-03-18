@@ -222,7 +222,7 @@
  MEGASTRUCTURE_BUILD_OUTSIDE_GRAVITY_WELL:0 "Ein Sternentor kann nicht innerhalb des Gravitationsfeldes eines Systems gebaut werden"
  MEGASTRUCTURE_BUILD_INSIDE_SYSTEM_RADIUS:0 ""
  NUM_GATEWAYS:0 "Verlassene Sternentore"
- NUM_GATEWAYS_TOOLTIP:1 "§HVerlassene Sternentore§!\nMultiplikator für die Standardanzahl verlassener Sternentore, die in der Galaxie generiert werden."
+ NUM_GATEWAYS_TOOLTIP:2 "§HVerlassene Sternentore§!\nMultiplikator für die Standardanzahl verlassener Sternentore, die in der Galaxie generiert werden."
  NUM_WORMHOLES:0 "Wurmlochpaare"
  NUM_WORMHOLES_TOOLTIP:1 "§HWurmlochpaare§!\nMultiplikator für die Standardanzahl an Wurmlochpaaren, die in der Galaxie generiert werden."
  NAME_gateway_final:0 "Sternentor"

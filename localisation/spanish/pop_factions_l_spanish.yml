@@ -489,7 +489,7 @@
  TRADITIONALIST_FRUGALITY_DESC:0 "Limitar los gastos de bienes de consumo complacerá a los [Root.GetName]."
  TRADITIONALIST_BIG_SPENDING:0 "Excesos desmedidos"
  TRADITIONALIST_NO_TOMB_WORLDS:0 "Suelo profanado"
- TRADITIONALIST_NO_TOMB_WORLDS_DESC:0 "Hollar cualquier §Ymundo tumba§! molestará a los [Root.GetName]."
+ TRADITIONALIST_NO_TOMB_WORLDS_DESC:1 "Hollar cualquier §Ymundo tumba§!, aunque sea para terraformar, molestará a los [Root.GetName]."
  TRADITIONALIST_TOMB_WORLDS:0 "$TRADITIONALIST_NO_TOMB_WORLDS$"
  TRADITIONALIST_GAIA_WORLDS:1 "Mundo sagrado"
  TRADITIONALIST_GAIA_WORLDS_DESC:2 "§YConsagrar§! un §Ymundo Gaia§! virgen dentro de nuestras fronteras complacerá a los [Root.GetName]."

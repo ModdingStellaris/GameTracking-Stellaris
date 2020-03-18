@@ -4,7 +4,7 @@
 
 building_mote_harvesters = {
 	base_buildtime = 360
-	icon = building_crystal_mines
+	icon = building_mote_harvesting_traps
 
 	is_capped_by_modifier = yes
 
@@ -67,7 +67,7 @@ building_mote_harvesters = {
 
 building_gas_extractors = {
 	base_buildtime = 360
-	icon = building_crystal_mines
+	icon = building_gas_extractors
 
 	is_capped_by_modifier = yes
 
@@ -252,17 +252,12 @@ building_betharian_power_plant = {
 	
 	ai_weight = {
 		weight = 10	
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 2
-			}
+			free_jobs > 0 
 		}
 	}
 }
@@ -286,6 +281,19 @@ building_xeno_zoo = {
 		job_culture_worker_add = 2
 	}
 	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_warrior_culture
+			}					
+		}
+		modifier = {
+			job_duelist_add = 1
+			job_entertainer_add = -1
+		}
+	}
+	
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -301,6 +309,18 @@ building_xeno_zoo = {
 	}
 	
 	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { has_valid_civic = civic_warrior_culture }
+		}
+		text = job_duelist_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { NOT = { has_valid_civic = civic_warrior_culture } }
+		}
 		text = job_entertainer_effect_desc
 	}
 	
@@ -310,17 +330,12 @@ building_xeno_zoo = {
 
 	ai_weight = {
 		factor = 10
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 2
-			}
+			free_jobs > 0 
 		}
 	}
 }

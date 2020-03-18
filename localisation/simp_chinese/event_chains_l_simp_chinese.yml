@@ -1,9 +1,4 @@
 ﻿l_simp_chinese:
- 
- ####################################
- # Event Chains
- ####################################
- 
  test_chain_title:0 " [Root.GetName] 的奥秘"
  test_chain_desc:0 " [Root.GetName] 上发生了一些奇怪的事件。"
  test_chain_2_title:0 " [Root.GetName] 的奥秘"
@@ -71,11 +66,6 @@
  hunting_hyacinth_desc:0 "方舟将我们祖先带到这个 [Root.Capital.GetName] 星系，而风信子号则是她的姐妹船。一个世纪以前，从地球出发的风信子号本来是应该跟随我们来到这里的。现在我们必须要搞清楚她到底怎么样了。"
  nomads_observation_chain_title:0 "不寻常的宇航员"
  nomads_observation_chain_desc:0 "侦测到有奇怪的外星人出现在我边境，我们无法与其建立通讯通道。另外因为我们无法翻译他们的语言，目前只能静观其变看他们会采取什么行动。"
- 
- ####################################
- # Points of Interest
- ####################################
- 
  hijacked_cult_fleet_poi:0 "异教徒舰队"
  hijacked_cult_fleet_poi_desc:0 "异教徒在 [Root.Capital.GetName] 的一个秘密工厂组建了一支小型舰队。在我们发现后，他们就携船逃到了 [hijacked_fleet_planet.GetName] 。必须在他们造成更大破坏之前消灭他们。"
  cultist_search_1_poi:0 "搜寻 [cultists_1.GetName] "
@@ -126,13 +116,10 @@
  extradimensional_invasion_chain_2_desc:0 "出现了第二波入侵的高维生物，攻击意愿不逊于之前一波。幸运的是，两支高维生物部队似乎也打起来了。"
  extradimensional_invasion_chain_3_title:0 "狂热者"
  extradimensional_invasion_chain_3_desc:0 "来自另一个虫洞的第三支高维部队出现了。他们也有意吞噬这个星系中的所有生物，但目前已与前两波入侵者陷入了苦战。"
- 
  precursor_activity:0 "先驱者的活动迹象"
- 
  new_precursor.1_poi:0 "先驱者的活动报告"
  new_precursor.1_poi_desc:0 "我们得知，在这些坐标点处可能有先驱文明留下的文物或重要信息。"
  new_precursor_anomaly:0 "在§L [precursor_planet.GetName] §!发现了有关先驱的新异常现象。"
- 
  prethoryn_defeated:0 "已击败普雷索林灾祸"
  anchor_station:0 "次元锚"
  anchor_station_plural:0 "次元锚"
@@ -151,13 +138,11 @@
  extradimensional_kills_others_3:0 "§G狂热者被其他势力消灭§!"
  extradimensional_victims_3:0 "§R被收割飞船§!"
  extradimensional_planets_3:0 "§R被收割星球§!"
- 
  infested_worlds:0 "§Y被感染星球§!"
  infested_worlds_cleansed:0 "§Y被感染星球已净化§!"
  prethoryn_kills_us:0 "§G普雷索林被我方消灭§!"
  prethoryn_kills_others:0 "§G普雷索林被其他势力消灭§!"
  prethoryn_victims:0 "§R飞船被普雷索林吞食§!"
- 
  refugees.1.name:0 " [Root.GetSpeciesName] 难民抵达"
  refugees.1.desc.1:0 "一小队来自 [RefugeeEscapedFrom.GetName] 的民用飞船到达了我们的领域，其中载满了 [Root.GetSpeciesName] 难民。他们被准许在§H [Root.Planet.GetName] §!安家。\n\n这些不幸的流放者被 [RefugeeEscapedFrom.GetSpeciesName] 帝国强迫赶走出了自己的家园。自那之后，他们便四处流浪，孤注一掷地想要在物资耗尽前找到新的家园。"
  refugees.1.desc.2:0 "一小队来自 [RefugeeEscapedFrom.GetName] 的破败民用飞船到达了我们的领域，其中载满了 [Root.GetSpeciesName] 难民。在我们提供了食物和医疗后，这些难民被准许在§H [Root.Planet.GetName] §!安家。\n\n这些狼狈恐慌的难民是逃离 [RefugeeEscapedFrom.GetSpeciesName] 帝国肃清的幸存者。多亏了一些紧急召集起来的地面下的一伙和同情他们的商船舰长才逃了出来。"

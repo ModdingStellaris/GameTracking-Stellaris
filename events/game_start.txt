@@ -386,7 +386,10 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_valid_civic = civic_machine_servitor
+					OR = {
+						has_valid_civic = civic_machine_servitor
+						has_valid_civic = civic_machine_assimilator
+					}
 				}
 				add_resource = { food = 100	}
 				add_resource = { energy = 100 }

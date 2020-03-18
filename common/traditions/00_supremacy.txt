@@ -78,6 +78,20 @@ tr_supremacy_fleet_logistical_corps = {
 			factor = 1
 		}
 	}
+
+	tradition_swap = {
+		name = tr_supremacy_fleet_logistical_corps_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
 	
 	ai_weight = {
 		factor = 1000
@@ -189,6 +203,20 @@ tr_supremacy_great_game = {
 	}
 	
 	#implementation in the "should_apply_neighbor_rival_modifier" game rule
+
+	tradition_swap = {
+		name = tr_supremacy_great_game_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			has_valid_civic = civic_hive_devouring_swarm
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
 	
 	ai_weight = {
 		factor = 1000

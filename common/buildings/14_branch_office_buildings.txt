@@ -152,8 +152,7 @@ building_private_shipyards = {
 	ai_weight = {
 		weight = 1
 
-		modifier = 
-		{
+		modifier = {
 			factor = 5
 			branch_office_owner = { 
 				has_monthly_income = {
@@ -199,8 +198,7 @@ building_military_contractors = {
 	
 	ai_weight = {
 		weight = 1
-		modifier =
-		{
+		modifier = {
 			factor = 3
 			branch_office_owner = { 
 				used_naval_capacity_percent > 0.8
@@ -307,8 +305,7 @@ building_amusement_megaplex = {
 	ai_weight = {
 		weight = 1
 
-		modifier = 
-		{
+		modifier = {
 			factor = 3
 			branch_office_owner = { 
 				has_monthly_income = {
@@ -349,8 +346,7 @@ building_commercial_forum = {
 	ai_weight = {
 		weight = 1
 
-		modifier = 
-		{
+		modifier = {
 			factor = 3
 			branch_office_value = {
 				who = branch_office_owner
@@ -477,8 +473,7 @@ building_underground_chemists = {
 	ai_weight = {
 		weight = 1
 
-		modifier = 
-		{
+		modifier = {
 			factor = 5
 			branch_office_owner = { 
 				has_monthly_income = {
@@ -521,8 +516,7 @@ building_wrecking_yards = {
 	ai_weight = {
 		weight = 1
 
-		modifier = 
-		{
+		modifier = {
 			factor = 5
 			branch_office_owner = { 
 				has_monthly_income = {
@@ -570,8 +564,7 @@ building_pirate_haven = {
 	ai_weight = {
 		weight = 1
 
-		modifier =
-		{
+		modifier = {
 			factor = 3
 			branch_office_owner = { 
 				used_naval_capacity_percent > 0.8
@@ -611,8 +604,7 @@ building_underground_clubs = {
 	ai_weight = {
 		weight = 1
 
-		modifier = 
-		{
+		modifier = {
 			factor = 6
 			branch_office_owner = { 
 				has_monthly_income = {
@@ -724,26 +716,22 @@ building_smuggling_rings = {
 	ai_weight = {
 		weight = 2
 
-		modifier = 
-		{
+		modifier = {
 			factor = 2
 			planet_crime < 25
 		}
 
-		modifier = 
-		{
+		modifier = {
 			factor = 2
 			planet_crime < 50
 		}
 
-		modifier = 
-		{
+		modifier = {
 			factor = 2
 			planet_crime < 75
 		}
 
-		modifier = 
-		{
+		modifier = {
 			factor = 0
 			planet_crime >= 100
 		}
@@ -781,16 +769,14 @@ building_temple_of_prosperity = {
 	ai_weight = {
 		weight = 1
 
-		modifier =
-		{
+		modifier = {
 			factor = 2
 			branch_office_owner = { 
 				has_ethic = ethic_spiritualist
 			}
 		}
 
-		modifier =
-		{
+		modifier = {
 			factor = 6
 			branch_office_owner = { 
 				has_ethic = ethic_fanatic_militarist

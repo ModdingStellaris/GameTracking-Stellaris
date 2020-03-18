@@ -1,8 +1,4 @@
 ﻿l_simp_chinese:
- 
- ####################################
- # Anomaly Categories
- ####################################
  TUTORIAL_CAT:0 "离开家园"
  TUTORIAL_DESC:0 "在调查我们自己家园的星系时，我们在 [From.GetName] 上面找到了一点东西。这和我们从母星上面的观测结果有一定的偏差。"
  TROP_BIOLOGY_CAT:0 "热带奇谭"
@@ -49,10 +45,6 @@
  NUKE_PLANET_DESC:0 "这片核废土显然说明了这里曾经也出现过一个文明。我们的探测器在某些地方侦测到了一些活跃的数据，我们应该对其进行进一步的调查。"
  ARID_PLANET_CAT:0 "干燥的废料"
  ARID_PLANET_DESC:0 " [From.GetPlanetMoon] 并不是气候最宜人的地方，但是如果我们最初的侦测数据没有错的话，它上面可能有一些有价值的资源。"
- 
- ####################################
- # Anomaly Events
- ####################################
  anomaly.4000.name:0 "生命之道"
  anomaly.4000.desc:0 " [From.GetName] 上面的一些植物在自然选择中已经进化出了一套有效的自我防御措施。许多的树木和真菌都会释放出孢子，这些孢子对非植物的生命体来说具有非常强的酸性。还好，科研专员 [Root.GetLeaderName] 发现了中和其中一些孢子的方法，让这颗星球上的森林不那么致命了！"
  anomaly.4000.a.tooltip:0 "把§Y酸性丛林§!修正添加到 [From.GetName] 上：\n£blocker剧毒沼泽§R+3§!\n£society §G+2§!"
@@ -148,7 +140,7 @@
  anomaly.4055.a:0 "把该学徒升职为科研专员。"
  anomaly.4055.a.tooltip:0 "获得一位新的§G科学领袖§!。\n\n$anomaly.4055.base.tooltip$"
  anomaly.4055.b:0 "让他们继续研究 [Root.GetName] "
- anomaly.4055.b.tooltip:0 " [Root.GetName] 获得了§Y$protege_onboard$§!修正：\n$MOD_SHIP_ANOMALY_RESEARCH_SPEED$§G+20%§!\n\n$anomaly.4055.base.tooltip$"
+ anomaly.4055.b.tooltip:0 "\n$anomaly.4055.base.tooltip$"
  anomaly.4055.base.tooltip:0 "添加资源到 [From.From.GetName] ：\n£minerals §G+6§!"
  anomaly.4060.name:0 "概率难题"
  anomaly.4060.desc:0 "我们收到科研专员 [Root.GetLeaderName] 的报告。据说有一个……陶瓷容器在围绕着 [From.GetName] 恒星旋转。真奇怪。\n\n这种东西不应该出现在那么靠近轨道的地方的啊。\n\n可以发布§S特殊项目§!来研究该容器并找出它出现在那里的原因。"
@@ -361,10 +353,6 @@
  anomaly.4170.b.tooltip:0 " [From.GetName] 获得§Y合理气体开采§!的修正：\n£energy §G+5§!"
  anomaly.4172.conqueror.desc:0 "我们占据的殖民地曾拥有丰富的地下气体资源。但现在已经耗尽，工厂的能源输出降低。"
  anomaly.4172.owner.desc:0 "富含能源的气体已经耗尽。这个殖民地已失去额外的资源输出，大大增加了我们对新矿藏的需求。"
- 
- ####################################
- # Anomaly Failure Events
- ####################################
  anomaly_failure.4000.desc:0 " [Root.GetLeaderName] 有了惊人发现。 [From.From.GetName] 的植被对非植物有机体极其危险。我们还不清楚其中原理；只知道 [From.From.GetPlanetMoon] 十分危险，这将限制其殖民地的发展。"
  anomaly_failure.4000.a:0 "真是个可怕的地方。"
  anomaly_failure.4000.a.tooltip:0 "科研专员 [Root.GetLeaderName] 获得§R偏执狂§!特性。\n\n [From.From.GetName] 获得§Y酸性丛林§!的修正：\n£blocker 剧毒沼泽 §R+3§!\n£society §G+6§!"
@@ -416,10 +404,6 @@
  anomaly_failure.4170.b.tooltip:0 "$anomaly_failure.4170.base.tooltip$并失去§R1§!成员。"
  anomaly_failure.4170.c.tooltip:0 "$anomaly_failure.4170.base.tooltip$并失去§R2§!成员。"
  anomaly_failure.4170.d.tooltip:0 "$anomaly_failure.4170.base.tooltip$并失去§R3§!成员。"
- 
- ####################################
- # Colony Events
- ####################################
  colony.2001.name:0 "天堂的烦恼"
  colony.2001.desc:0 " [Root.GetName] 本地的政府失误导致一小群叛军收获了更多支持者，他们反对我们传统的种群思潮。支持他们的人越来越多，这让他们在该区域获得了更大的权利。这样的支持同时也让他们在获得民众支持上取得了一定成功，他们可以利用这些支持来发展自己的事业。"
  colony.2001.a:0 "和他们划清界限。"
@@ -469,7 +453,7 @@
  colony.2015.a.tooltip:0 " [Root.GetName] 的地表出现一座§S£building古怪工厂§!。"
  colony.2016.desc:0 "在 [Root.GetName] 上古怪工厂工作的员工突然消失了！我们可以派遣工人替补，或者以防万一，直接将工厂夷为平地。"
  colony.2016.a:0 "这仍对我们有用。"
- colony.2016.a.tooltip:0 " [Root.GetName] 失踪了一个成员。"
+ colony.2016.a.tooltip:0 "[Root.GetName]上的一个£pop£ §Y人口§!失踪了。"
  colony.2016.b:0 "拆毁它。"
  colony.2016.b.tooltip:0 "§S£building古怪工厂§!已被摧毁。"
  colony.2017.desc:0 "到那个古怪工厂工作后，第二队工人也失踪了！所幸，其中一个工人留下了记录。记录显示那里有不少的陷阱，这些陷阱专门用来抓捕毫无防备的工人。\n\n陷阱已经移除，现在应该可以正常使用工厂了。但不论如何解释，民众仍对潜在的致命陷阱忧心忡忡。"

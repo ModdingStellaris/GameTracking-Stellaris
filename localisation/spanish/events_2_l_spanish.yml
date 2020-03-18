@@ -306,7 +306,7 @@
  anomaly.270.name:0 "Colisión de tráfico"
  anomaly.270.desc:0 "Si bien el cráter en cuestión era probablemente el resultado del impacto de un meteorito convencional, los complejos patrones de la depresión resultante se originaron en un momento posterior.\n\nEl oficial científico [Root.GetLeaderName] argumenta que estos patrones a nivel de superficie no son el resultado del impacto de un meteorito, sino de una colisión entre el asteroide [From.GetName] y alguna instalación orbital o nave alienígena."
  anomaly.270.a:0 "Qué extraño."
- anomaly.270.a.tooltip:0 "Añade el modificador §YDibujos en el polvo§! a [From.GetName]:\n£engineering£ §G+9§!"
+ anomaly.270.a.tooltip:2 "Añade el modificador §YDibujos en el polvo§! a [From.GetName]:\n£engineering£ §G+3§!"
  anomaly.275.name:0 "Propulsión abandonada"
  anomaly.275.desc:0 "En el centro de un cráter particularmente grande en [From.GetName] hay un conjunto de formas de metal, sin duda de origen alienígena.\n\nEl oficial científico [Root.GetLeaderName] está convencido de que se trata de dispositivos enormes de propulsión planetoide, diseñados para empujar [From.GetName] fuera de su órbita con fines y destinos desconocidos. El [Root.GetName] se encuentra a la espera, su tripulación lista para comenzar el desmontaje y el análisis de estos sistemas, lo que podría mejorar nuestra propia tecnología de propulsión."
  anomaly.275.a:0 "Adelante."
@@ -1698,3 +1698,4 @@
  fallen_empires_awakening.2.b:0 "Necios decrépitos."
  war_in_heaven.4.c.2:0 "¡Ambos caerán ante nuestro poder!"
  war_in_heaven.13.c:0 "Solos estamos perfectamente."
+ fallen_empires.8.a.tooltip:0 "Termina la rivalidad con [fallen_empire_humiliator.GetName]\n[Root.GetName] pierde todas sus reivindicaciones de los sistemas de [fallen_empire_humiliator.GetName]"

@@ -89,7 +89,7 @@ special_project = {
 # Breaching the Shroud
 special_project = {
 	key = "BREACHING_SHROUD_PROJECT"
-	cost = 50000
+	cost = 20000
 	tech_department = society_technology
 	picture = GFX_evt_psionics
 	location = no

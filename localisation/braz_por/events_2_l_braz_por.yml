@@ -325,7 +325,7 @@
  anomaly.265.a:0 "Vrum."
  anomaly.265.desc:0 "A cratera em [From.GetName] exibe marcas longas e irregulares impressas nas camadas superiores relativamente macias do asteróide. O Oficial Científico [Root.GetLeaderName] recuperou uns destroços inesperados interessantes dos cantos da depressão; veículos com rodas, aparentemente transportes pessoais em vez de pesquisa.\n\nA tripulação do [Root.GetName] especula que a cratera pode já ter sido usada para esporte, com algumas espécies alienígenas colocando seus dispositivos de locomoção um contra o outro em testes de velocidade ou força mecânica em ambientes próximos a gravidade zero."
  anomaly.265.name:0 "Racha Alienígena"
- anomaly.270.a.tooltip:0 "Adiciona o modificador §YCircuitos na Poeira§! ao [From.GetName]:\n£engineering£ §G+9§!"
+ anomaly.270.a.tooltip:2 "Adiciona o modificador §YCircuitos na Poeira§! ao [From.GetName]:\n£engineering£  §G+3§!"
  anomaly.270.a:0 "Que estranho."
  anomaly.270.desc:0 "Enquanto a cratera em questão provavelmente foi o resultado de um impacto de meteorito comum, os padrões complexos na depressão resultante têm sua origem em uma data posterior.\n\nO Oficial Científico [Root.GetLeaderName] argumenta que estes padrões não são o resultado de um impacto, mas de uma colisão, entre o asteróide [From.GetName] e algum tipo de instalação orbital ou uma nave alienígena."
  anomaly.270.name:0 "Para-Choques"
@@ -1712,3 +1712,4 @@
  fallen_empires_awakening.2.b:0 "Tolos decrépitos."
  war_in_heaven.4.c.2:0 "Eles cairão perante a nossa força!"
  war_in_heaven.13.c:0 "Estamos bem sozinhos."
+ fallen_empires.8.a.tooltip:0 "Encerra a rivalidade com [fallen_empire_humiliator.GetName]\n[Root.GetName] perde quaisquer reivindicações aos sistemas do [fallen_empire_humiliator.GetName]"

@@ -77,7 +77,7 @@
  BRANCH_OFFICE_TRADE_VALUE:0 "От объема торговли на планете: $VALUE$"
  BRANCH_OFFICE_TRADE_VALUE_CRIMINAL_SYNDICATE:0 "Умножается на $MULT$ в связи с уровнем такого параметра, как £crime£ §Y$PLANET_CRIME_TITLE$§!, на планете."
  EMPIRE_SIZE:0 "Размер империи"
- EMPIRE_SIZE_DESC:0 "§E§H$EMPIRE_SIZE$§! - это показатель площади вашей империи с учетом контролируемых вами §Hсистем§!, §Hколоний§! и §Hрайонов§!. Большой §H$EMPIRE_SIZE$§! увеличивает административную нагрузку на вашу империю и повышает стоимость §Hтехнологий§!, §Hтрадиций§!, §Hлидеров§! и §Hкампаний§!.§!"
+ EMPIRE_SIZE_DESC:0 "§E§H$EMPIRE_SIZE$§! - это показатель площади вашей империи с учетом контролируемых вами §Hсистем§!, §Hколоний§! и §Hрайонов§!. Большой §H$EMPIRE_SIZE$§! увеличивает административную нагрузку на вашу империю и повышает стоимость §Hтехнологий§!, §Hтрадиций§!, §Hлидеров§!, §Hуказов§! и §Hкампаний§!.§!"
  EMPIRE_SIZE_TOTAL:0 "Общий размер империи: $VALUE|0Y$"
  EMPIRE_SIZE_COHESION_MULT:0 "Изменяется на §R$VALUE|0%$§! по причине: $COHESION|0Y%$ $EMPIRE_COHESION$"
  EMPIRE_SIZE_FROM_DISTRICTS:0 "$DISTRICT_DISTRICTS$ ($NUM|Y$): $VALUE$"
@@ -110,22 +110,17 @@
  ADMIN_CAP_VALUE:0 "$MOD_COUNTRY_ADMIN_CAP_ADD$: $VALUE|Y$"
  district_housing_tech_effect:0 "Жилье, $district_city$: §G+1§!"
  district_housing_agrarian_idyll_tech_effect:0 "Жилье, $district_farming$: §G+1§!"
- 
  ADD_NAVAL_CAPACITY_FROM_SOLDIERS:0 "Вместимость флотилии от солдатской деятельности: §G+2§!"
- 
  mod_planet_branch_offices_cost_mult:0 "Стоимость филиала"
  ap_universal_transactions:0 "Вселенские сделки"
  ap_universal_transactions_desc:0 "Мы распространим наш бренд и нашу коммерческую деятельность на каждую систему в галактике. Алчность вечна!"
  free_commercial_pacts:0 "§YКоммерческие пакты§! больше не требуют £influence£ §Yвлияния§! на поддержку"
- 
  federation_tax:0 "Налоги федерации"
  in_federation:0 "В федерации"
- 
  DEVASTATION_DISABLE_FTL_INHIBITOR:0 "Поскольку значение опустошения выше $THRESHOLD|%Y$, планетарные §Yподавители сверхсветовых технологий§! больше работать не будут."
  DEVASTATION_PROTECT_ARMIES:0 "Поскольку значение опустошения ниже $THRESHOLD|%Y$, планетарные армии получают §Yвдвое меньше урона§! при бомбардировке."
  DEVASTATION_PROTECT_POPS:0 "Поскольку уровень опустошения ниже $THRESHOLD|%Y$, планетарные поселения нельзя уничтожить путем бомбардировки."
  DEVASTATION_INCREASED_DAMAGE_ARMIES:0 "Поскольку значение опустошения выше $THRESHOLD|%G$, планетарные армии получают §Yвдвое больше урона§! при бомбардировке."
- 
  BRANCH_OFFICE:0 "Филиал"
  BRANCH_OFFICES:0 "Филиалы"
  ESTABLISH_BRANCH_OFFICE:0 "Учредить $BRANCH_OFFICE$"
@@ -137,7 +132,6 @@
  BRANCH_OFFICE_NOT_COMMERCIAL_PACT:0 "£trigger_no£ §RМы должны иметь коммерческий пакт или состоять в федерации с владельцем этой планеты, чтобы учредить здесь $BRANCH_OFFICE$.§!"
  BRANCH_OFFICE_CRIMINAL_HERITAGE_HAS_TRUCE:0 "£trigger_no£ §RМы должны быть в состоянии мира и не иметь действующего перемирия с владельцем этой планеты, чтобы учредить здесь $BRANCH_OFFICE$.§!"
  BRANCH_OFFICE_CRIMINAL_COOLDOWN:0 "£trigger_no£ §RМестные власти недавно закрыли наш $BRANCH_OFFICE$ на этой планете и по-прежнему наблюдают за нашими агентами.§!"
- 
  ENABLE_BUILDING:0 "Активировать сооружение"
  ENABLE_BUILDING_DESC:0 "Мы можем активировать сооружение, чтобы получить преимущества для планеты. Если мы это сделаем, нам снова придется оплачивать расходы на его содержание."
  DISABLE_BUILDING:0 "Деактивировать сооружение"
@@ -149,17 +143,13 @@
  CANNOT_CHANGE_BUILDING_PRIO_COUNTRY:0 "§RСооружение принадлежит другой империи§!"
  CANNOT_CHANGE_BUILDING_PRIO_TOP:0 "§RСооружение уже имеет самый высокий приоритет§!"
  CANNOT_CHANGE_BUILDING_PRIO_BOTTOM:0 "§RСооружение уже имеет самый низкий приоритет§!"
- 
  CLICK_TO_SET_FORCED_GROWTH:0 "§GЩелкните, чтобы выбрать приоритетную расу на планете§!"
  NO_SPECIES_FOR_GROWTH:0 "§RНа этой планете нет рас, рост которых возможен.§!"
- 
  CLICK_TO_SET_FORCED_ASSEMBLY:0 "§GЩелкните, чтобы выбрать приоритетную расу на планете§!"
  NO_SPECIES_FOR_ASSEMBLY:0 "§RНа этой планете нет рас, сбор которых возможен.§!"
- 
  CLICK_TO_SET_FORCED_DECLINE:0 "§GЩелкните, чтобы выбрать нежелательную расу на планете§!"
  NO_SPECIES_FOR_DECLINE:0 "§RНа этой планете нет рас, для которых возможен принудительный упадок.§!"
  FORCED_DECLINE_ALREADY_PURGING:0 "§RНевозможно задать нежелательную расу, пока на планете идет геноцид§!"
- 
  FORCED_GROWTH:0 "Приоритетная раса"
  FORCED_GROWTH_TITLE:0 "Задать приоритетную расу"
  FORCED_GROWTH_UNSET_TITLE:0 "Удалить приоритетную расу"
@@ -168,7 +158,6 @@
  FORCED_GROWTH_SET_DESC:0 "Сделать приоритетным рост для расы $SPECIES_ADJ|Y$, обеспечив ее постоянный выбор для роста поселений на планете $PLANET|Y$. Мы потеряем $VALUE|0%R$ от нашего текущего прогресса роста."
  FORCED_GROWTH_ALREADY_SET_DESC:0 "Раса $SPECIES|Y$ задана как приоритетная, что обеспечит ее постоянный выбор для роста поселений на планете $PLANET|Y$."
  FORCED_GROWTH_MODIFIER_DESC:0 "Наличие приоритетной расы на планете дает следующие эффекты:"
- 
  FORCED_ASSEMBLY:0 "Приоритетная раса"
  FORCED_ASSEMBLY_TITLE:0 "Задать приоритетную расу"
  FORCED_ASSEMBLY_UNSET_TITLE:0 "Удалить приоритетную расу"
@@ -177,7 +166,6 @@
  FORCED_ASSEMBLY_SET_DESC:0 "Сделать приоритетным сбор расы $SPECIES_ADJ|Y$, обеспечив ее постоянный выбор для сбора поселений на планете $PLANET|Y$. Мы потеряем $VALUE|0%R$ от нашего текущего прогресса сбора."
  FORCED_ASSEMBLY_ALREADY_SET_DESC:0 "Раса $SPECIES|Y$ задана как приоритетная, что обеспечит ее постоянный выбор для сбора поселений на планете $PLANET|Y$."
  FORCED_ASSEMBLY_MODIFIER_DESC:0 "Наличие приоритетной расы на планете дает следующие эффекты:"
- 
  FORCED_DECLINE:0 "Нежелательная раса"
  FORCED_DECLINE_TITLE:0 "Задать нежелательную расу"
  FORCED_DECLINE_UNSET_TITLE:0 "Удалить нежелательную расу"
@@ -186,10 +174,6 @@
  FORCED_DECLINE_SET_DESC:0 "Сделать приоритетным упадок для расы $SPECIES_ADJ|Y$, обеспечив ее постоянный выбор для упадка поселений на планете $PLANET|Y$. Мы потеряем $VALUE|0%R$ от нашего текущего прогресса упадка."
  FORCED_DECLINE_ALREADY_SET_DESC:0 "Раса $SPECIES|Y$ задана как нежелательная, что обеспечит ее постоянный выбор для упадка поселений на планете $PLANET|Y$."
  FORCED_DECLINE_MODIFIER_DESC:0 "Наличие нежелательной расы на планете дает следующие эффекты:"
- 
- 
- # Trade Routes
- ####################################
  TRADE_ROUTES:0 "Торговые пути"
  TRADE_ROUTES_INFO:0 "§H$TRADE_ROUTES$§!"
  OPEN_TRADE_HUB:0 "§GЩелкните, чтобы настроить $TRADE_ROUTES$§!"
@@ -198,7 +182,6 @@
  CREATE_TRADE_ROUTE:0 "Создать торговый путь"
  REMOVE_TRADE_ROUTE:0 "Убрать торговый путь"
  TRADE_ROUTE_CLICK_CREATE:0 "Щелкните правой кнопкой по еще одной улучшенной космической базе, чтобы задать торговый путь до этого места. Торговые пути должны быть так или иначе связаны с вашей торговой столицей."
- 
  TRADE_HUB_HEADER:0 "Торговый узел $NAME$"
  TRADE_CAPITAL_HEADER:0 "Торговая столица"
  INCOMING:0 "Входящие торговые пути"
@@ -206,19 +189,16 @@
  INCOMING_TRADE_ROUTE_DESC:0 "$INCOMING$ торговый путь из системы $SYSTEM|Y$"
  OUTGOING:0 "Исходящие торговые пути"
  OUTGOING_TRADE_ROUTE_DESC:0 "$OUTGOING$ торговый путь в систему $SYSTEM|Y$"
- 
  TRADE_ROUTE_FROM:0 "Откуда: $SYSTEM|Y$"
  TRADE_ROUTE_TO:0 "Куда: $SYSTEM|Y$"
  TRADE_HUB_INVALID_DESTINATION_ALREADY_EXISTING:0 "Система $SYSTEM|Y$ уже имеет место назначения для того, чтобы проложить путь"
  TRADE_HUB_INVALID_DESTINATION_MISSING:0 "Система $SYSTEM|Y$ нуждается в месте назначения для того, чтобы проложить путь"
  TRADE_HUB_INVALID_SOURCE_CAPITAL:0 "Система $SYSTEM|Y$ не может быть исходной точкой для того, чтобы проложить путь"
- 
  LEFT_CLICK_TO_SELECT:0 "§GЩелкните левой кнопкой мыши, чтобы выбрать этот торговый узел§!"
  RIGHT_CLICK_TO_ADD:0 "§GЩелкните правой кнопкой мыши, чтобы добавить этот торговый узел к торговой сети§!"
  CURRENTLY_SELECTED:0 "§GВыбранный сейчас торговый узел§!"
  RIGHT_CLICK_TO_REMOVE:0 "§GЩелкните правой кнопкой мыши, чтобы удалить этот торговый узел из торговой сети§!"
  LEFT_CLICK_TO_EXPAND:0 "§GЩелкните левой кнопкой мыши, чтобы расширить этот торговый путь§!"
- 
  COLLECTION_RANGE:0 "Дальность сбора"
  COLLECTION_RANGE_VALUE:0 "$COLLECTION_RANGE$: $VALUE|0+$"
  COLLECTION_RANGE_DESC:0 "Эта космическая база имеет значение §Hдальности сбора§!, равное $VALUE|Y$. Это означает, что она может собирать £trade_value£ §Yобъем торговли§! в собственной системе и других системах на расстоянии до $VALUE|Y$ прыжка(-ов).\n\nОбъем торговли в системе может собирать только одна космическая база."
@@ -229,14 +209,12 @@
  PROTECTION_POWER_VALUE:0 "$PROTECTION_POWER$: $VALUE|0+$"
  PROTECTION_POWER_DESC:0 "Эта космическая база имеет значение такого параметра, как £trade_protection£ §Y$MOD_STARBASE_TRADE_PROTECTION_ADD$§!, равное $VALUE|0Y$, что гарантирует защиту до £trade_value£ $VALUE|0Y$ §H$trade_value$§! §Hторговых путей§! в пределах §Hдальности защиты§! от §Hпиратства§!."
  TRADE_VALUE_COLLECTED:0 "$VALUE|0+$"
- 
  TRADE_CAPITAL:0 "Торговая столица"
  TRADE_CAPITAL_DESC:0 "Эта космическая база является торговой столицей империи $NAME|Y$. Весь объем торговли, который достигнет этой базы, будет преобразован в другие более полезные ресурсы."
  TRADE_CAPITAL_CONNECT:0 "§EЧтобы создать торговый путь в вашу торговую столицу, выберите щелчком мыши торговый узел, к которому вы хотите присоединиться, а затем щелкните правой кнопкой мыши по вашей торговой столице§!"
  TRADE_HUB:0 "Торговый узел"
  TRADE_HUB_DESC:0 "£trade_value£ §HОбъем торговли§!, собранный этой §Hкосмической базой§!, должен быть перевезен по §Hторговым путям§! до §Hкосмической базы§! нашей §Yторговой столицы§! для преобразования в настоящие ресурсы."
  TRADE_HUB_CONNECT:0 "§EЧтобы создать §Hторговый путь§! от этой §Hкосмической базы§!, щелкните правой кнопкой мыши по месту назначения, которым может быть §Hкосмическая база§! нашей §Yторговой столицы§! или §Hкосмическая база§! любого допустимого §Yторгового узла§!§!."
- 
  TRADE_SYSTEM_COLLECTED:0 "§HТорговый сбор§!\n£trade_value£ $VALUE|Y0$ вырабатывается торговым узлом в системе $SYSTEM|Y$."
  TRADE_SYSTEM_PROTECTED:0 "§H$MOD_STARBASE_TRADE_PROTECTION_ADD$§!\nЭта система имеет значение такого параметра, как £trade_protection£ §H$MOD_STARBASE_TRADE_PROTECTION_ADD$§!, равное $VALUE|Y0$, что гарантирует защиту до £trade_value£ $VALUE|Y0$ от §Hпиратства§!.\n\nВсего: $VALUE|Y2$ \n"
  TRADE_ROUTES_DISABLED:0 "§RНельзя иметь торговые пути§!"
@@ -264,7 +242,6 @@
  TRADE_VALUE_TOOLTIP_DESC_PROTECTION:0 "§EПо этому торговом пути перевозится £trade_value£ $TRADE_VALUE|1Y$ через несколько ($SYSTEMS|0Y$) систем. §HПатрулирующая§! этот путь флотилия со значением §Hподавления пиратства§!, равным не менее $SUPPRESSION|Y0$, обеспечивает низкий уровень §Hпиратства§!.§!"
  TRADE_VALUE_PIRATED_DESC:0 "§RМы теряем объем торговли из-за пиратства.§!"
  TRADE_VALUE_BLOCKED_DESC:0 "§RЧерез систему не проходит никакой объем торговли из-за того, что ее блокирует противник§!"
- 
  planet_forced_growth:0 "Принудительный рост"
  planet_forced_decline:0 "Принудительный упадок"
  planet_forced_assembly:0 "Принудительный сбор"
@@ -361,10 +338,8 @@
  POLITICAL_POWER_DESC:0 "§EПолитическая власть§! отражает уровень влияния поселения в планетарных делах. В поселениях с высоким уровнем политической власти £happiness£ §Yсчастье§! имеет большее значение при определении общего §Yрейтинга одобрения поселений§! на планете."
  POLITICAL_POWER_NO_HAPPINESS_DESC:0 "На это поселение не влияет §Y$POLITICAL_POWER$§!."
  POP_CATEGORY_POWER_MULT:0 "Умножается на §Yx$VALUE$§! благодаря социальному слою $CATEGORY$."
- 
  BRANCH_OFFICE_BUILDING:0 "Офис корпорации"
  BRANCH_OFFICE_BUILDINGS:0 "Офисы корпорации"
- 
  POP_JOB:0 "Деятельность: $JOB|Y$"
  POP_CATEGORY_HEADER:0 "Социальный слой $CATEGORY$"
  POP_CATEGORY:0 "Социальный слой: $CATEGORY|Y$"
@@ -407,6 +382,8 @@
  DEPOSITS_TOOLTIP:0 "Показать планетарные особенности"
  TERRAFORM_TOOLTIP:0 "Терраформировать планету"
  PLANETARY_OUTPUT:0 "Производство ресурсов"
+ PLANETARY_PRODUCTION:0 "Планетарное производство"
+ PLANETARY_DEFICIT:0 "Планетарный дефицит"
  PLANETARY_INPUT:0 "Стоимость содержания ресурсов"
  DECISIONS_TITLE:0 "Решения"
  GOVERNOR_TITLE:0 "Губернатор"
@@ -460,22 +437,18 @@
  MOD_PLANET_MAX_DISTRICTS_MULT:0 "$MOD_PLANET_MAX_DISTRICTS_ADD$"
  MOD_PLANET_BUILDING_REFUND_MULT:0 "Возмещение за строительство"
  BRANCH_OFFICE_BUILDINGS_TITLE:0 "$BRANCH_OFFICE_BUILDINGS$"
- 
  DISTRICTS_BUILT:0 "На этой планете сейчас есть $TYPE$ - $NUM|Y$"
  DISTRICTS_OUT_OF_MAX:0 "На этой планете сейчас есть $TYPE$: §Y$NUM$/$MAX$§!."
  DISTRICTS_LOCKED:0 "Если расчистить непригодные квадраты, можно построить еще: $TYPE$ в количестве $NUM|Y$."
  DISTRICTS_MAX:0 "На этой планете сейчас построено §Y$NUM$/$MAX$§! районов."
- 
- RULER_JOB_TRIGGER:0 "Эту деятельность могут осуществлять только свободные поселения с §Yполноправным гражданством§!"
+ RULER_JOB_TRIGGER:0 "$SPECIALIST_JOB_TRIGGER$"
  SPECIALIST_JOB_TRIGGER:0 "Эту деятельность могут осуществлять только свободные поселения, не подвергаемые геноциду."
  WORKER_JOB_TRIGGER:0 "Эту деятельность могут осуществлять только поселения, не подвергаемые геноциду."
  DRONE_JOB_TRIGGER:0 "Эту деятельность могут осуществлять только дроны, не подвергаемые геноциду."
- 
  planet_immigration:0 "Иммиграция на планету"
  planet_emigration:0 "Эмиграция с планеты"
  new_colony:0 "Недавно основанная колония"
  old_colony:0 "Недавно основанные колонии"
- 
  buffer:0 "Буфер"
  planet_livestock:0 "Скот"
  colonies:0 "Колонии"
@@ -484,7 +457,6 @@
  campaigns:0 "Кампании"
  monthly_trades:0 "Ежемесячная торговля"
  claims:0 "Притязания"
- 
  district_city:0 "Городской район"
  district_city_plural:0 "Городские районы"
  district_city_desc:0 "Эти густонаселенные городские центры предоставляют много жилой и офисной площади для канцелярских работников."
@@ -527,7 +499,6 @@
  district_nexus:0 "Район комплекса"
  district_nexus_plural:0 "Районы комплекса"
  district_nexus_desc:0 "Централизованные районы, где дроны проходят обслуживание и ремонт, после чего назначаются на работу."
- 
  building_virtual_entertainment_studios:0 "Студии виртуальных развлечений"
  building_virtual_entertainment_studios_desc:0 "При помощи систем обработки нанотранзакций и алгоритмов нейрохимического усвоения информации эти студии разработки создают самое современное программное обеспечение в области виртуальных развлечений для миллиардов разумных потребителей и их домохозяйств."
  building_private_shipyards:0 "Частные военные предприятия"
@@ -536,7 +507,6 @@
  building_military_contractors_desc:0 "Этот отдел проводит набор в корпоративные солдаты удачи. Приличное жалование, ограниченное медицинское страхование, а также рассказы о жизни, полной восхитительных приключений, обеспечивают постоянный поток новобранцев."
  building_commercial_forum:0 "Бизнес-форум"
  building_commercial_forum_desc:0 "Сильные мира сего, местные экономические лидеры и прочие важные фигуры могут встретиться здесь с представителями корпораций в спокойной, умиротворяющей обстановке, которая идеально подходит для заключения новых коммерческих сделок."
- 
  building_amusement_megaplex:0 "Развлекательный мегаплекс"
  building_amusement_megaplex_desc:0 "Будучи волшебным местом, где мечты могут воплотиться в реальность, этот мегаплекс предлагает одобренные корпорацией развлечения на любой вкус для всей семьи."
  building_private_mining_consortium:0 "Частный добывающий консорциум"
@@ -547,19 +517,16 @@
  building_public_relations_office_desc:0 "Заблуждения и подозрения всегда окружают любую крупную корпорацию. В интересах общественности выслушать все стороны любого спора, и эта фирма по связям с общественностью профессионально преподносит точку зрения своего работодателя."
  building_private_research_initiative:0 "Частные научные предприятия"
  building_private_research_initiative_desc:0 "В этих ультрасовременных зданиях частные технологичные предприятия занимаются важными научными исследованиями и разработками для своей родительской компании."
- 
  tech_executive_retreat:0 "Программа досуга управляющих"
  tech_executive_retreat_desc:0 "$building_executive_retreat_desc$"
  tech_xeno_tourism_agency:0 "Агентства ксенопросвещения"
  tech_xeno_tourism_agency_desc:0 "$building_xeno_tourism_agency_desc$"
- 
  building_temple_of_prosperity:0 "Храм Процветания"
  building_temple_of_prosperity_desc:0 "Храм с высоким уровнем безопасности, который несет благую весть построившей его Мегацеркви."
  building_executive_retreat:0 "Корпоративный курорт"
  building_executive_retreat_desc:0 "Роскошный курортный комплекс для высокопоставленных сотрудников корпораций. Здесь они могут познакомиться с культурой данной планеты в условиях высокой безопасности."
  building_xeno_tourism_agency:0 "Агентство ксенопросвещения"
  building_xeno_tourism_agency_desc:0 "Это корпоративное агентство рекламирует множество межзвездных туристических достопримечательностей, а также предлагает трудоустройство и бонусы при подписании контракта для потенциальных эмигрантов, заинтересованных в переселении в пространство корпорации."
- 
  building_underground_chemists:0 "Скрытые нарколаборатории"
  building_underground_chemists_desc:0 "Подземные нарколаборатории в отдаленной местности, которые практически невозможно заметить с поверхности. Здесь круглосуточно идет производство разных незаконных веществ, вызывающих сильное привыкание и приносящих большую прибыль."
  building_wrecking_yards:0 "Свалки"
@@ -578,7 +545,6 @@
  building_syndicate_outreach_office_desc:0 "Эти честные коммерческие организации позволяют местному преступному синдикату функционировать якобы на законных основаниях."
  building_illicit_research_labs:0 "Нелегальные научные лаборатории"
  building_illicit_research_labs_desc:0 "В этих секретных лабораториях занимаются абсолютно нелегальными научными исследованиями и разработками самого различного вида."
- 
  building_corporate_monument:0 "Площадка корпоративной культуры"
  building_corporate_monument_desc:0 "Место, посвященное прославлению уникальной корпоративной культуры, которая является неотъемлемой частью всех коммерческих сделок, заключаемых на этой планете."
  building_corporate_site:0 "Центр делового управления"
@@ -588,8 +554,7 @@
  building_corporate_vault:0 "Хранилище приобретений"
  building_corporate_vault_desc:0 "Огромное подземное хранилище двойного назначения. Используется как место координации коммерческой деятельности и общественный музей долгой и прибыльной истории Мегакорпорации, которая его построила."
  building_nanite_transmuter:0 "Нанитовый преобразователь"
- building_nanite_transmuter_desc:0 "Этот завод массово производит много редких ресурсов, используя новейших нанитов."
- 
+ building_nanite_transmuter_desc:0 "Этот завод массово производит много редких ресурсов, используя новейших нанитов. Дефицит нанитов остановит производство."
  building_hab_major_capital:0 "Центр управления средой обитания"
  building_hab_major_capital_desc:0 "Обширный комплекс бюрократических ведомств, который занимается управлением густонаселенной средой обитания."
  district_hab_housing:0 "Жилой район"
@@ -607,13 +572,10 @@
  district_hab_science:0 "Научный район"
  district_hab_science_plural:0 "Научные районы"
  district_hab_science_desc:0 "Эти жилые районы, являющиеся центрами научных исследований, объединяют ученых самых разных областей наук."
- 
  NO_POP_CATEGORY_TITLE:0 "Без категории"
  NO_POP_CATEGORY_TITLE_PLURAL:0 "Без категории"
  NO_POP_CATEGORY_TITLE_DESC:0 "Эти поселения не принадлежат к какому-то конкретному социальному слою."
- 
  MOD_POP_POLITICAL_POWER:0 "Политическая власть поселения"
- 
  pop_cat_robot_servant:0 "Робот-слуга"
  pop_cat_robot_servant_plural:0 "Роботы-слуги"
  pop_cat_robot_servant_desc:0 "Механические слуги, покорные воле хозяев."
@@ -687,8 +649,6 @@
  pop_cat_simple_drone_desc:0 "Эти дроны занимаются базовым промышленным производством и предоставлением услуг общего характера."
  mod_pop_cat_simple_drone_political_power:0 "$pop_cat_simple_drone_plural$: политическая власть"
  mod_pop_cat_simple_drone_happiness:0 "$pop_cat_simple_drone_plural$: счастье"
- 
- 
  job_mining_drone:0 "Добывающий дрон"
  job_mining_drone_plural:0 "Добывающие дроны"
  job_mining_drone_desc:0 "Эти дроны, снабженные современными перфораторами и продвинутыми инструментами, добывают и подготавливают ценные минералы для промышленного, военного и потребительского использования."
@@ -696,7 +656,6 @@
  mod_job_mining_drone_add:0 "Деятельность: $job_mining_drone$"
  mod_job_mining_drone_per_pop:0 "§G+1§! $job_mining_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_mining_drone_per_pop_short:0 "\n§G+1§! £mod_job_mining_drone_add£ для $VALUE$ £pop£"
- 
  job_warrior_drone:0 "Дрон-воин"
  job_warrior_drone_plural:0 "Дроны-воины"
  job_warrior_drone_desc:0 "Эти военные эксперты специализируются на обучении новых армейских дронов и экипажей кораблей."
@@ -704,7 +663,6 @@
  mod_job_warrior_drone_add:0 "Деятельность: $job_warrior_drone$"
  mod_job_warrior_drone_per_pop:0 "§G+1§! $job_warrior_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_warrior_drone_per_pop_short:0 "\n§G+1§! £mod_job_warrior_drone_add£ для $VALUE$ £pop£"
- 
  job_crystal_mining_drone:0 "Дрон - добытчик кристаллов"
  job_crystal_mining_drone_plural:0 "Дроны - добытчики кристаллов"
  job_crystal_mining_drone_desc:0 "Эти шахтеры специализируются на аккуратной добыче и переработке редких кристаллов из геологических образований."
@@ -712,7 +670,6 @@
  mod_job_crystal_mining_drone_add:0 "Деятельность: $job_crystal_mining_drone$"
  mod_job_crystal_mining_drone_per_pop:0 "§G+1§! $job_crystal_mining_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_crystal_mining_drone_per_pop_short:0 "\n§G+1§! £mod_job_crystal_mining_drone_add£ для $VALUE$ £pop£"
- 
  job_mote_harvesting_drone:0 "Дрон - сборщик пылинок"
  job_mote_harvesting_drone_plural:0 "Дроны - сборщики пылинок"
  job_mote_harvesting_drone_desc:0 "Внутренне нестабильная природа сверхъестественных пылинок приводит к тому, что дронов, которые специализируются на их захвате и сборе, часто приходится менять."
@@ -720,7 +677,6 @@
  mod_job_mote_harvesting_drone_add:0 "Деятельность: $job_mote_harvesting_drone$"
  mod_job_mote_harvesting_drone_per_pop:0 "§G+1§! $job_mote_harvesting_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_mote_harvesting_drone_per_pop_short:0 "\n§G+1§! £mod_job_mote_harvesting_drone_add£ для $VALUE$ £pop£"
- 
  job_gas_extraction_drone:0 "Дрон - добытчик газа"
  job_gas_extraction_drone_plural:0 "Дроны - добытчики газа"
  job_gas_extraction_drone_desc:0 "Эти специализированные дроны используют передовые методы гидроразрыва для высвобождения редких экзотических газов из перспективных пластов."
@@ -728,7 +684,6 @@
  mod_job_gas_extraction_drone_add:0 "Деятельность: $job_gas_extraction_drone$"
  mod_job_gas_extraction_drone_per_pop:0 "§G+1§! $job_gas_extraction_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_gas_extraction_drone_per_pop_short:0 "\n§G+1§! £mod_job_gas_extraction_drone_add£ для $VALUE$ £pop£"
- 
  job_agri_drone:0 "Сельскохозяйственный дрон"
  job_agri_drone_plural:0 "Сельскохозяйственные дроны"
  job_agri_drone_desc:0 "Для производства пищи требуются самые различные рабочие - от операторов оборудования для посадки и уборки до управляющих системами полива, удобрений и пестицидов, а также специалистов по работе с домашним скотом."
@@ -736,7 +691,6 @@
  mod_job_agri_drone_add:0 "Деятельность: $job_agri_drone$"
  mod_job_agri_drone_per_pop:0 "§G+1§! $job_agri_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_agri_drone_per_pop_short:0 "\n§G+1§! £mod_job_agri_drone_add£ для $VALUE$ £pop£"
- 
  job_technician_drone:0 "Дрон-техник"
  job_technician_drone_plural:0 "Дроны-техники"
  job_technician_drone_desc:0 "Машинисты, операторы и техники, управляющие работой электростанций и осуществляющие контроль за ней."
@@ -744,7 +698,6 @@
  mod_job_technician_drone_add:0 "Деятельность: $job_technician_drone$"
  mod_job_technician_drone_per_pop:0 "§G+1§! $job_technician_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_technician_drone_per_pop_short:0 "\n§G+1§! £mod_job_technician_drone_add£ для $VALUE$ £pop£"
- 
  job_spawning_drone:0 "Дрон-няня"
  job_spawning_drone_plural:0 "Дроны-няни"
  job_spawning_drone_desc:0 "Эти дроны обслуживают резервуары для выведения молодняка, тщательно следя за температурой, обеспечивая питание и предотвращая инфекции."
@@ -752,7 +705,6 @@
  mod_job_spawning_drone_add:0 "Деятельность: $job_spawning_drone$"
  mod_job_spawning_drone_per_pop:0 "§G+1§! $job_spawning_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_spawning_drone_per_pop_short:0 "\n§G+1§! £mod_job_spawning_drone_add£ для $VALUE$ £pop£"
- 
  job_replicator:0 "Репликатор"
  job_replicator_plural:0 "Репликаторы"
  job_replicator_desc:0 "Машина, которая создает машину, которая создает машину, которая..."
@@ -760,7 +712,6 @@
  mod_job_replicator_add:0 "Деятельность: $job_replicator$"
  mod_job_replicator_per_pop:0 "§G+1§! $job_replicator$ как вид деятельности для $VALUE$ поселений"
  mod_job_replicator_per_pop_short:0 "\n§G+1§! £mod_job_replicator_add£ для $VALUE$ £pop£"
- 
  job_synapse_drone:0 "Синапсический дрон"
  job_synapse_drone_plural:0 "Синапсические дроны"
  job_synapse_drone_desc:0 "Являясь макроскопическим воплощением синапса, эти дроны сосредоточены на усилении бесконечных посланий сверхразума и очищении их от искажений."
@@ -768,15 +719,13 @@
  mod_job_synapse_drone_add:0 "Деятельность: $job_synapse_drone$"
  mod_job_synapse_drone_per_pop:0 "§G+1§! $job_synapse_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_synapse_drone_per_pop_short:0 "\n§G+1§! £mod_job_synapse_drone_add£ для $VALUE$ £pop£"
- 
  job_coordinator:0 "Координатор"
  job_coordinator_plural:0 "Координаторы"
  job_coordinator_desc:0 "Сигналы, поступающие в центр и исходящие от него, должны быть усилены, ускорены и очищены от помех и поврежденных данных."
- job_coordinator_effect_desc:0 "£job_coordinator£ $job_coordinator_plural$ производят £unity£ §Y$unity$§! и £society£ §Y$society_research$§!"
+ job_coordinator_effect_desc:0 "£job_coordinator£ $job_coordinator_plural$ производят £unity£ §Y$unity$§! и §Yочки исследований§! (£physics£, £society£, £engineering£)"
  mod_job_coordinator_add:0 "Деятельность: $job_coordinator$"
  mod_job_coordinator_per_pop:0 "§G+1§! $job_coordinator$ как вид деятельности для $VALUE$ поселений"
  mod_job_coordinator_per_pop_short:0 "\n§G+1§! £mod_job_coordinator_add£ для $VALUE$ £pop£"
- 
  job_maintenance_drone:0 "Обслуживающий дрон"
  job_maintenance_drone_plural:0 "Обслуживающие дроны"
  job_maintenance_drone_desc:0 "Работоспособность механизмов и сооружений, обслуживающих нужды машинного разума, нужно постоянно поддерживать. То же касается и других дронов."
@@ -784,7 +733,6 @@
  mod_job_maintenance_drone_add:0 "Деятельность: $job_maintenance_drone$"
  mod_job_maintenance_drone_per_pop:0 "§G+1§! $job_maintenance_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_maintenance_drone_per_pop_short:0 "\n§G+1§! £mod_job_maintenance_drone_add£ для $VALUE$ £pop£"
- 
  job_brain_drone:0 "Научный дрон"
  job_brain_drone_plural:0 "Научные дроны"
  job_brain_drone_desc:0 "Ученые, исследователи и изобретатели: научные дроны отвечают за техническое развитие государства."
@@ -792,7 +740,6 @@
  mod_job_brain_drone_add:0 "Деятельность: $job_brain_drone$"
  mod_job_brain_drone_per_pop:0 "§G+1§! $job_brain_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_brain_drone_per_pop_short:0 "\n§G+1§! £mod_job_brain_Drone_add£ для $VALUE$ £pop£"
- 
  job_calculator:0 "Вычислитель"
  job_calculator_plural:0 "Вычислители"
  job_calculator_desc:0 "Занимаясь бесконечной обработкой уравнений и вероятностей и тестированием новых функций, вычислители стоят во главе технического развития машинного разума."
@@ -800,7 +747,6 @@
  mod_job_calculator_add:0 "Деятельность: $job_calculator$"
  mod_job_calculator_per_pop:0 "§G+1§! $job_calculator$ как вид деятельности для $VALUE$ поселений"
  mod_job_calculator_per_pop_short:0 "\n§G+1§! £mod_job_calculator_add£ для $VALUE$ £pop£"
- 
  job_fabricator:0 "Изготовитель"
  job_fabricator_plural:0 "Изготовители"
  job_fabricator_desc:0 "Узкоспециализированные изготовители перерабатывают ценные минералы в прочные сплавы, используемые для разработок в области флота и передового строительства."
@@ -808,7 +754,6 @@
  mod_job_fabricator_add:0 "Деятельность: $job_fabricator$"
  mod_job_fabricator_per_pop:0 "§G+1§! $job_fabricator$ как вид деятельности для $VALUE$ поселений"
  mod_job_fabricator_per_pop_short:0 "\n§G+1§! £mod_job_fabricator_add£ для $VALUE$ £pop£"
- 
  job_artisan_drone:0 "Дрон-ремесленник"
  job_artisan_drone_plural:0 "Дроны-ремесленники"
  job_artisan_drone_desc:0 "Эти дроны-ремесленники производят самые разнообразные потребительские товары и предметы первой необходимости. Кроме того, случайные творения эстетического характера тоже не лишены достоинств."
@@ -816,7 +761,6 @@
  mod_job_artisan_drone_add:0 "Деятельность: $job_artisan_drone$"
  mod_job_artisan_drone_per_pop:0 "§G+1§! $job_artisan_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_artisan_drone_per_pop_short:0 "\n§G+1§! £mod_job_artisan_drone_add£ для $VALUE$ £pop£"
- 
  job_alloy_drone:0 "Дрон-литейщик"
  job_alloy_drone_plural:0 "Дроны-литейщики"
  job_alloy_drone_desc:0 "Узкоспециализированные дроны-литейщики перерабатывают ценные минералы в прочные сплавы, используемые для разработок в области флота и передового строительства."
@@ -824,7 +768,6 @@
  mod_job_alloy_drone_add:0 "Деятельность: $job_alloy_drone$"
  mod_job_alloy_drone_per_pop:0 "§G+1§! $job_alloy_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_alloy_drone_per_pop_short:0 "\n§G+1§! £mod_job_alloy_drone_add£ для $VALUE$ £pop£"
- 
  job_patrol_drone:0 "Дрон-следопыт"
  job_patrol_drone_plural:0 "Дроны-следопыты"
  job_patrol_drone_desc:0 "Отклонение от нормы и нарушение функций, которые угрожают стабильности коллектива, должны быть устранены."
@@ -832,7 +775,6 @@
  mod_job_patrol_drone_add:0 "Деятельность: $job_patrol_drone$"
  mod_job_patrol_drone_per_pop:0 "§G+1§! $job_patrol_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_patrol_drone_per_pop_short:0 "\n§G+1§! £mod_job_patrol_drone_add£ для $VALUE$ £pop£"
- 
  job_chemist_drone:0 "Дрон-химик"
  job_chemist_drone_plural:0 "Дроны-химики"
  job_chemist_drone_desc:0 "Вместо того, чтобы обслуживать системы улавливания пылинок, дроны-химики выделяют летучие пылинки непосредственно из минералов с помощью ряда сложных химических процессов."
@@ -840,7 +782,6 @@
  mod_job_chemist_drone_add:0 "Деятельность: $job_chemist_drone$"
  mod_job_chemist_drone_per_pop:0 "§G+1§! $job_chemist_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_chemist_drone_per_pop_short:0 "\n§G+1§! £mod_job_chemist_drone_add£ для $VALUE$ £pop£"
- 
  job_translucer_drone:0 "Дрон-кристальщик"
  job_translucer_drone_plural:0 "Дроны-кристальщики"
  job_translucer_drone_desc:0 "Те редкие кристаллы, которые нельзя добыть из недр, можно произвести с помощью просвечивания. Этим занимаются дроны-кристальщики."
@@ -848,7 +789,6 @@
  mod_job_translucer_drone_add:0 "Деятельность: $job_translucer_drone$"
  mod_job_translucer_drone_per_pop:0 "§G+1§! $job_translucer_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_translucer_drone_per_pop_short:0 "\n§G+1§! £mod_job_translucer_drone_add£ для $VALUE$ £pop£"
- 
  job_gas_refiner_drone:0 "Дрон-переработчик"
  job_gas_refiner_drone_plural:0 "Дроны-переработчики"
  job_gas_refiner_drone_desc:0 "Эти дроны занимаются управлением и эксплуатацией фабрик переработки экзотических газов."
@@ -856,8 +796,6 @@
  mod_job_gas_refiner_drone_add:0 "Деятельность: $job_gas_refiner_drone$"
  mod_job_gas_refiner_drone_per_pop:0 "§G+1§! $job_gas_refiner_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_gas_refiner_drone_per_pop_short:0 "\n§G+1§! £mod_job_gas_refiner_drone_add£ для $VALUE$ £pop£"
- 
- # Working Class Jobs
  job_colonist:0 "Колонист"
  job_colonist_plural:0 "Колонисты"
  job_colonist_desc:0 "Создание поселения в новом мире - дело нелегкое."
@@ -865,7 +803,6 @@
  mod_job_colonist_add:0 "Деятельность: $job_colonist$"
  mod_job_colonist_per_pop:0 "£job_colonist£ §G+1§! $job_colonist$ как вид деятельности для $VALUE$ поселений"
  mod_job_colonist_per_pop_short:0 "\n§G+1§! £mod_job_colonist_add£ для $VALUE$ £pop£"
- 
  job_miner:0 "Шахтер"
  job_miner_plural:0 "Шахтеры"
  job_miner_desc:0 "Благодаря современным перфораторам и другим продвинутым инструментам горные работы, возможно, перестали быть такой изнурительной профессией, какой они были раньше, но занятие это по-прежнему далеко не из легких."
@@ -873,7 +810,6 @@
  mod_job_miner_add:0 "Деятельность: $job_miner$"
  mod_job_miner_per_pop:0 "§G+1§! $job_miner$ как вид деятельности для $VALUE$ поселений"
  mod_job_miner_per_pop_short:0 "\n§G+1§! £mod_job_miner_add£ для $VALUE$ £pop£"
- 
  job_crystal_miner:0 "Добытчик кристаллов"
  job_crystal_miner_plural:0 "Добытчики кристаллов"
  job_crystal_miner_desc:0 "Шахтеры-специалисты используются для аккуратной добычи и переработки редких кристаллов."
@@ -881,7 +817,6 @@
  mod_job_crystal_miner_add:0 "Деятельность: $job_crystal_miner$"
  mod_job_crystal_miner_per_pop:0 "§G+1§! $job_crystal_miner$ как вид деятельности для $VALUE$ поселений"
  mod_job_crystal_miner_per_pop_short:0 "\n§G+1§! £mod_job_crystal_miner_add£ для $VALUE$ £pop£"
- 
  job_mote_harvester:0 "Сборщик пылинок"
  job_mote_harvester_plural:0 "Сборщики пылинок"
  job_mote_harvester_desc:0 "Сбор пылинок считается одной из самых опасных профессий и включает в себя захват и изоляцию летучих пылинок, которые используются как топливо или взрывчатые вещества."
@@ -889,7 +824,6 @@
  mod_job_mote_harvester_add:0 "Деятельность: $job_mote_harvester$"
  mod_job_mote_harvester_per_pop:0 "§G+1§! $job_mote_harvester$ как вид деятельности для $VALUE$ поселений"
  mod_job_mote_harvester_per_pop_short:0 "\n§G+1§! £mod_job_mote_harvester_add£ для $VALUE$ £pop£"
- 
  job_gas_extractor:0 "Добытчик газа"
  job_gas_extractor_plural:0 "Добытчики газа"
  job_gas_extractor_desc:0 "Передовые методы гидроразрыва используются добытчиками газа для высвобождения редких экзотических газов из перспективных пластов."
@@ -897,7 +831,6 @@
  mod_job_gas_extractor_add:0 "Деятельность: $job_gas_extractor$"
  mod_job_gas_extractor_per_pop:0 "§G+1§! $job_gas_extractor$ как вид деятельности для $VALUE$ поселений"
  mod_job_gas_extractor_per_pop_short:0 "\n§G+1§! £mod_job_gas_extractor_add£ для $VALUE$ £pop£"
- 
  job_farmer:0 "Фермер"
  job_farmer_plural:0 "Фермеры"
  job_farmer_desc:0 "Фермерская деятельность кажется очень легкой, если вместо плуга у тебя в руке карандаш, а сам ты в тысяче миль от кукурузного поля."
@@ -905,7 +838,6 @@
  mod_job_farmer_add:0 "Деятельность: $job_farmer$"
  mod_job_farmer_per_pop:0 "§G+1§! $job_farmer$ как вид деятельности для $VALUE$ поселений"
  mod_job_farmer_per_pop_short:0 "\n§G+1§! £mod_job_farmer_add£ для $VALUE$ £pop£"
- 
  job_technician:0 "Техник"
  job_technician_plural:0 "Техники"
  job_technician_desc:0 "Электростанции требуют много живых работников для эксплуатации оборудования и наблюдения за работой."
@@ -913,7 +845,6 @@
  mod_job_technician_add:0 "Деятельность: $job_technician$"
  mod_job_technician_per_pop:0 "§G+1§! $job_technician$ как вид деятельности для $VALUE$ поселений"
  mod_job_technician_per_pop_short:0 "\n§G+1§! £mod_job_technician_add£ для $VALUE$ £pop£"
- 
  job_clerk:0 "Клерк"
  job_clerk_plural:0 "Клерки"
  job_clerk_desc:0 "Офисные служащие выполняют различные административные задачи, имеющие важное значение для любой достаточно сложной рабочей среды."
@@ -921,7 +852,6 @@
  mod_job_clerk_add:0 "Деятельность: $job_clerk$"
  mod_job_clerk_per_pop:0 "§G+1§! $job_clerk$ как вид деятельности для $VALUE$ поселений"
  mod_job_clerk_per_pop_short:0 "\n§G+1§! £mod_job_clerk_add£ для $VALUE$ £pop£"
- 
  job_preacher:0 "Проповедник Процветания"
  job_preacher_plural:0 "Проповедники Процветания"
  job_preacher_desc:0 "Проповедники Процветания несут массам благую весть о том, что они тоже могут процветать, если только пожертвуют небольшую сумму на правое дело."
@@ -929,8 +859,6 @@
  mod_job_preacher_add:0 "Деятельность: $job_preacher$"
  mod_job_preacher_per_pop:0 "§G+1§! $job_preacher$ как вид деятельности для $VALUE$ поселений"
  mod_job_preacher_per_pop_short:0 "\n§G+1§! £mod_job_preacher_add£ для $VALUE$ £pop£"
- 
- # Specialist Jobs
  job_foundry:0 "Металлург"
  job_foundry_plural:0 "Металлурги"
  job_foundry_desc:0 "Высококвалифицированные рабочие необходимы для превращения сырья в прочные сплавы, используемые в большом числе передовых строительных проектов."
@@ -938,7 +866,6 @@
  mod_job_foundry_add:0 "Деятельность: $job_foundry$"
  mod_job_foundry_per_pop:0 "§G+1§! $job_foundry$ как вид деятельности для $VALUE$ поселений"
  mod_job_foundry_per_pop_short:0 "\n§G+1§! £mod_job_foundry_add£ для $VALUE$ £pop£"
- 
  job_enforcer:0 "Силовик"
  job_enforcer_plural:0 "Силовики"
  job_enforcer_desc:0 "Сотрудники правоохранительных органов несут ответственность за соблюдение закона и сохранение мира."
@@ -946,7 +873,6 @@
  mod_job_enforcer_add:0 "Деятельность: $job_enforcer$"
  mod_job_enforcer_per_pop:0 "§G+1§! $job_enforcer$ как вид деятельности для $VALUE$ поселений"
  mod_job_enforcer_per_pop_short:0 "\n§G+1§! £mod_job_enforcer_add£ для $VALUE$ £pop£"
- 
  job_slave_overseer:0 "Надсмотрщик"
  job_slave_overseer_plural:0 "Надсмотрщики"
  job_slave_overseer_desc:0 "Эти относительно привилегированные рабы держат в узде своих менее удачливых собратьев."
@@ -954,7 +880,6 @@
  mod_job_slave_overseer_add:0 "Деятельность: $job_slave_overseer$"
  mod_job_slave_overseer_per_pop:0 "§G+1§! $job_slave_overseer$ как вид деятельности для $VALUE$ поселений"
  mod_job_slave_overseer_per_pop_short:0 "\n§G+1§! £mod_job_slave_overseer_add£ для $VALUE$ £pop£"
- 
  job_telepath:0 "Телепат"
  job_telepath_plural:0 "Телепаты"
  job_telepath_desc:0 "Члены Пси-корпуса - организации борцов с преступностью, обладающих псионическими способностями."
@@ -962,7 +887,6 @@
  mod_job_telepath_add:0 "Деятельность: $job_telepath$"
  mod_job_telepath_per_pop:0 "§G+1§! $job_telepath$ как вид деятельности для $VALUE$ поселений"
  mod_job_telepath_per_pop_short:0 "\n§G+1§! £mod_job_telepath_add£ для $VALUE$ £pop"
- 
  job_soldier:0 "Солдат"
  job_soldier_plural:0 "Солдаты"
  job_soldier_desc:0 "Военные специалисты необходимы для обучения постоянного потока новобранцев в армию и флот."
@@ -970,7 +894,6 @@
  mod_job_soldier_add:0 "Деятельность: $job_soldier$"
  mod_job_soldier_per_pop:0 "§G+1§! $job_soldier$ как вид деятельности для $VALUE$ поселений"
  mod_job_soldier_per_pop_short:0 "\n§G+1§! £mod_job_soldier_add£ для $VALUE$ £pop£"
- 
  job_artisan:0 "Ремесленник"
  job_artisan_plural:0 "Ремесленники"
  job_artisan_desc:0 "Опытные мастера производят различные предметы домашнего обихода и роскоши."
@@ -978,7 +901,6 @@
  mod_job_artisan_add:0 "Деятельность: $job_artisan$"
  mod_job_artisan_per_pop:0 "§G+1§! $job_artisan$ как вид деятельности для $VALUE$ поселений"
  mod_job_artisan_per_pop_short:0 "\n§G+1§! £mod_job_artisan_add£ для $VALUE$ £pop£"
- 
  job_entertainer:0 "Артист"
  job_entertainer_plural:0 "Артисты"
  job_entertainer_desc:0 "Говорят, что в галактике есть всего два типа форм жизни: те, кто развлекает, и те, кого развлекают."
@@ -986,7 +908,13 @@
  mod_job_entertainer_add:0 "Деятельность: $job_entertainer$"
  mod_job_entertainer_per_pop:0 "§G+1§! $job_entertainer$ как вид деятельности для $VALUE$ поселений"
  mod_job_entertainer_per_pop_short:0 "\n§G+1§! £mod_job_entertainer_add£ для $VALUE$ £pop£"
- 
+ job_duelist:0 "Дуэлянт"
+ job_duelist_plural:0 "Дуэлянты"
+ job_duelist_desc:0 "Эксперты боевых искусств, демонстрирующие свои смертоносные таланты ради развлечения масс."
+ job_duelist_effect_desc:0 "£job_duelist£ $job_duelist_plural$ превращают £alloys£ §Y$alloys$§! в £unity£ §Y$unity$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! и £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+ mod_job_duelist_add:0 "Деятельность: $job_duelist$"
+ mod_job_duelist_per_pop:0 "§G+1§! $job_duelist$ как вид деятельности для $VALUE$ поселений"
+ mod_job_duelist_per_pop_short:0 "\n§G+1§! £mod_job_duelist_add£ для $VALUE$ £pop£"
  job_healthcare:0 "Медик"
  job_healthcare_plural:0 "Медики"
  job_healthcare_desc:0 "Легче болезнь предупредить, чем потом ее лечить. Иногда, правда, профилактика и лечение необходимы в равной степени."
@@ -994,7 +922,6 @@
  mod_job_healthcare_add:0 "Деятельность: $job_healthcare$"
  mod_job_healthcare_per_pop:0 "§G+1§! $job_healthcare$ как вид деятельности для $VALUE$ поселений"
  mod_job_healthcare_per_pop_short:0 "\n§G+1§! £mod_job_healthcare_add£ для $VALUE$ £pop£"
- 
  job_culture_worker:0 "Работник культуры"
  job_culture_worker_plural:0 "Работники культуры"
  job_culture_worker_desc:0 "Сферой деятельности этих работников является поддержание искусств, крайне необходимое для внутреннего развития и социального выражения граждан."
@@ -1002,7 +929,6 @@
  mod_job_culture_worker_add:0 "Деятельность: $job_culture_worker$"
  mod_job_culture_worker_per_pop:0 "§G+1§! $job_culture_worker$ как вид деятельности для $VALUE$ поселений"
  mod_job_culture_worker_per_pop_short:0 "\n§G+1§! £mod_job_culture_worker_add£ для $VALUE$ £pop£"
- 
  job_head_researcher:0 "Передовой ученый"
  job_head_researcher_plural:0 "Передовые ученые"
  job_head_researcher_desc:0 "Эти специалисты занимаются координацией и управлением в сфере исследований и развития новых технологий."
@@ -1010,7 +936,6 @@
  mod_job_head_researcher_add:0 "Деятельность: $job_head_researcher$"
  mod_job_head_researcher_per_pop:0 "§G+1§! $job_head_researcher$ как вид деятельности для $VALUE$ поселений"
  mod_job_head_researcher_per_pop_short:0 "\n§G+1§! £mod_job_head_researcher_add£ для $VALUE$ £pop£"
- 
  job_researcher:0 "Исследователь"
  job_researcher_plural:0 "Исследователи"
  job_researcher_desc:0 "Вечной тайной мира является возможность его постичь."
@@ -1018,7 +943,6 @@
  mod_job_researcher_add:0 "Деятельность: $job_researcher$"
  mod_job_researcher_per_pop:0 "§G+1§! $job_researcher$ как вид деятельности для $VALUE$ поселений"
  mod_job_researcher_per_pop_short:0 "\n§G+1§! £mod_job_researcher_add£ для $VALUE$ £pop£"
- 
  job_high_priest:0 "Верховный жрец"
  job_high_priest_plural:0 "Верховные жрецы"
  job_high_priest_desc:0 "К кому обращаются пастыри, когда сами не знают, куда двигаться? К другим, более опытным пастырям."
@@ -1026,7 +950,6 @@
  mod_job_high_priest_add:0 "Деятельность: $job_high_priest$"
  mod_job_high_priest_per_pop:0 "§G+1§! $job_high_priest$ как вид деятельности для $VALUE$ поселений"
  mod_job_high_priest_per_pop_short:0 "\n§G+1§! £mod_job_high_priest_add£ для $VALUE$ £pop£"
- 
  job_priest:0 "Жрец"
  job_priest_plural:0 "Жрецы"
  job_priest_desc:0 "Духовное руководство массами доверено самым благочестивым и набожным."
@@ -1034,7 +957,6 @@
  mod_job_priest_add:0 "Деятельность: $job_priest$"
  mod_job_priest_per_pop:0 "§G+1§! $job_priest$ как вид деятельности для $VALUE$ поселений"
  mod_job_priest_per_pop_short:0 "\n§G+1§! £mod_job_priest_add£ для $VALUE$ £pop£"
- 
  job_chemist:0 "Химик"
  job_chemist_plural:0 "Химики"
  job_chemist_desc:0 "Эти специалисты занимаются синтетическим производством летучих пылинок при помощи химических процессов."
@@ -1042,7 +964,6 @@
  mod_job_chemist_add:0 "Деятельность: $job_chemist$"
  mod_job_chemist_per_pop:0 "§G+1§! $job_chemist$ как вид деятельности для $VALUE$ поселений"
  mod_job_chemist_per_pop_short:0 "\n§G+1§! £mod_job_chemist_add£ для $VALUE$ £pop£"
- 
  job_translucer:0 "Специалист по кристаллам"
  job_translucer_plural:0 "Специалисты по кристаллам"
  job_translucer_desc:0 "Эти специалисты преобразуют минералы в редкие кристаллы в лабораторных условиях."
@@ -1050,7 +971,6 @@
  mod_job_translucer_add:0 "Деятельность: $job_translucer$"
  mod_job_translucer_per_pop:0 "§G+1§! $job_translucer$ как вид деятельности для $VALUE$ поселений"
  mod_job_translucer_per_pop_short:0 "\n§G+1§! £mod_job_translucer_add£ для $VALUE$ £pop£"
- 
  job_gas_refiner:0 "Переработчик газов"
  job_gas_refiner_plural:0 "Переработчики газов"
  job_gas_refiner_desc:0 "Для эффективного управления сложной цепью реакций, необходимых для выделения газа из минералов, требуются передовое оборудование и высококвалифицированные специалисты."
@@ -1058,7 +978,6 @@
  mod_job_gas_refiner_add:0 "Деятельность: $job_gas_refiner$"
  mod_job_gas_refiner_per_pop:0 "§G+1§! $job_gas_refiner$ как вид деятельности для $VALUE$ поселений"
  mod_job_gas_refiner_per_pop_short:0 "\n§G+1§! £mod_job_gas_refiner_add£ для $VALUE$ £pop£"
- 
  job_roboticist:0 "Роботостроитель"
  job_roboticist_plural:0 "Роботостроители"
  job_roboticist_desc:0 "Эти техники создают роботов, которые будут строить для нужд государства."
@@ -1066,7 +985,6 @@
  mod_job_roboticist_add:0 "Деятельность: $job_roboticist$"
  mod_job_roboticist_per_pop:0 "§G+1§! $job_roboticist$ как вид деятельности для $VALUE$ поселений"
  mod_job_roboticist_per_pop_short:0 "\n§G+1§! £mod_job_roboticist_add£ для $VALUE$ £pop£"
- 
  job_manager:0 "Руководитель"
  job_manager_plural:0 "Руководители"
  job_manager_desc:0 "Мало кто позавидует бесконечной борьбе за нахождение баланса между противоречивыми требованиями, борьбе, которую ведут те, кто находится в середине управленческой иерархии."
@@ -1074,8 +992,6 @@
  mod_job_manager_add:0 "Деятельность: $job_manager$"
  mod_job_manager_per_pop:0 "§G+1§! $job_manager$ как вид деятельности для $VALUE$ поселений"
  mod_job_manager_per_pop_short:0 "\n§G+1§! £mod_job_manager_add£ для $VALUE$ £pop£"
- 
- # Ruling Class Jobs
  job_administrator:0 "Администратор"
  job_administrator_plural:0 "Администраторы"
  job_administrator_desc:0 "Управление целой планетой - это труднейшая задача, требующая преданных своему делу и высококвалифицированных работников."
@@ -1083,7 +999,6 @@
  mod_job_administrator_add:0 "Деятельность: $job_administrator$"
  mod_job_administrator_per_pop:0 "§G+1§! $job_administrator$ как вид деятельности для $VALUE$ поселений"
  mod_job_administrator_per_pop_short:0 "\n§G+1§! £mod_job_administrator_add£ для $VALUE$ £pop£"
- 
  job_noble:0 "Аристократ"
  job_noble_plural:0 "Аристократы"
  job_noble_desc:0 "Тяжко бремя знати, которая по праву рождения вынуждена править грязными низшими сословиями. К счастью, у данного положения есть некоторые финансовые преимущества."
@@ -1091,7 +1006,6 @@
  mod_job_noble_add:0 "Деятельность: $job_noble$"
  mod_job_noble_per_pop:0 "§G+1§! $job_noble$ как вид деятельности для $VALUE$ поселений"
  mod_job_noble_per_pop_short:0 "\n§G+1§! £mod_job_noble_add£ для $VALUE$ £pop£"
- 
  job_merchant:0 "Торговец"
  job_merchant_plural:0 "Торговцы"
  job_merchant_desc:0 "Они покупают. Они продают. Они копят. Они перепродают. Агенты, коммерсанты, опт и розница - везде, где торговля, есть торговцы."
@@ -1099,7 +1013,6 @@
  mod_job_merchant_add:0 "Деятельность: $job_merchant$"
  mod_job_merchant_per_pop:0 "§G+1§! $job_merchant$ как вид деятельности для $VALUE$ поселений"
  mod_job_merchant_per_pop_short:0 "\n§G+1§! £mod_job_merchant_add£ для $VALUE$ £pop£"
- 
  job_executive:0 "Управляющий"
  job_executive_plural:0 "Управляющие"
  job_executive_desc:0 "Только управляющий имеет полномочия продвигать передовые инициативы и проводить синергетическое сравнение динамически смоделированных результатов."
@@ -1107,15 +1020,12 @@
  mod_job_executive_add:0 "Деятельность: $job_executive$"
  mod_job_executive_per_pop:0 "§G+1§! $job_executive$ как вид деятельности для $VALUE$ поселений"
  mod_job_executive_per_pop_short:0 "\n§G+1§! £mod_job_executive_add£ для $VALUE$ £pop£"
- 
- # Special Jobs
  job_unemployed:0 "Не работает"
  job_unemployed_plural:0 "Не работает"
  job_unemployed_desc:0 "Будучи неудачным результатом слабого планирования, безработные с нетерпением ожидают назначения."
  job_livestock:0 "Скот"
  job_livestock_plural:0 "Скот"
  job_livestock_desc:0 "У них лишь одно предназначение: стать кормом для тех, кто лучше их."
- 
  job_purge:0 "Геноцид"
  job_purge_plural:0 "Геноцид"
  job_purge_desc:0 "В соответствии с нашей политикой проводится геноцид этого поселения."
@@ -1125,238 +1035,192 @@
  job_organic_battery:0 "Слияние с сетью"
  job_organic_battery_plural:0 "Слияние с сетью"
  job_organic_battery_desc:0 "Их органическая энергия будет поглощаться, пока они не погибнут."
- 
  job_bio_trophy:0 "Биотрофей"
  job_bio_trophy_plural:0 "Биотрофеи"
  job_bio_trophy_desc:0 "Их единственная работа - быть самими собой."
  mod_job_bio_trophy_add:0 "Деятельность: $job_bio_trophy$"
  mod_job_bio_trophy_per_pop:0 "§G+1§! $job_bio_trophy$ как вид деятельности для $VALUE$ поселений"
  mod_job_bio_trophy_per_pop_short:0 "\n§G+1§! £mod_job_bio_trophy_add£ для $VALUE$ £pop£"
- 
- 
  job_scavenger_drone:0 "Дрон-мусорщик"
  job_scavenger_drone_plural:0 "Дроны-мусорщики"
  job_scavenger_drone_desc:0 "Не имея определенной цели, эти дроны бесцельно копают и собирают, производя в небольших количествах полезные £minerals£ ."
- 
  job_slave_toiler:0 "Работяга"
  job_slave_toiler_plural:0 "Работяги"
  job_slave_toiler_desc:0 "Работяги выполняют изнурительную черную работу, требуемую для поддержания незамысловатой инфраструктуры невольничьего мира."
  mod_job_toiler_add:0 "Деятельность: $job_toiler$"
- 
  job_servant:0 "Слуга"
  job_servant_plural:0 "Слуги"
  job_servant_desc:0 "Слуги выполняют различную черную работу по дому и занимаются домашним хозяйством для своих хозяев."
  mod_job_servant_add:0 "Деятельность: $job_servant$"
- 
  job_criminal:0 "Преступник"
  job_criminal_plural:0 "Преступники"
  job_criminal_desc:0 "Эти преступники живут за рамками правового общества, одни - осознанно, другие - в силу обстоятельств."
  mod_job_criminal_add:0 "Деятельность: $job_criminal$"
  mod_job_criminal_per_crime:0 "§G+1§! $job_criminal$ как вид деятельности на $VALUE$ ед. преступности на планете"
  mod_job_criminal_per_crime_short:0 "\n§G+1§! £mod_job_criminal_add£ для $VALUE$ £crime"
- 
  job_deviant_drone:0 "Трутень-отступник"
  job_deviant_drone_plural:0 "Трутни-отступники"
  job_deviant_drone_desc:0 "Эти отступники больше не подчиняются коллективному разуму."
  mod_job_deviant_drone_add:0 "Деятельность: $job_deviant_drone$"
  mod_job_deviant_drone_per_crime:0 "§G+1§! $job_deviant_drone$ как вид деятельности на $VALUE$ ед. преступности на планете"
  mod_job_deviant_drone_per_crime_short:0 "\n§G+1§! £mod_job_deviant_drone_add£ для $VALUE$ £crime£"
- 
  job_corrupt_drone:0 "Испорченный дрон"
  job_corrupt_drone_plural:0 "Испорченные дроны"
  job_corrupt_drone_desc:0 "Эти дроны испорчены и больше не подчиняются указаниям центра."
  mod_job_corrupt_drone_add:0 "Деятельность: $job_corrupt_drone$"
  mod_job_corrupt_drone_per_crime:0 "§G+1§! $job_corrupt_drone$ как вид деятельности на $VALUE$ ед. преступности на планете"
  mod_job_corrupt_drone_per_crime_short:0 "\n§G+1§! £mod_job_corrupt_drone_add£ для $VALUE$ £crime£"
- 
- # Primitive Jobs
  job_hunter_gatherer:0 "Охотник-собиратель"
  job_hunter_gatherer_plural:0 "Охотники-собиратели"
  job_hunter_gatherer_desc:0 "Эти полукочевые примитивные существа живут за счет собирательства и охоты. Есть свидетельства раннего использования инструментов."
  mod_job_hunter_gatherer_add:0 "Деятельность: $job_hunter_gatherer$"
- 
  job_peasant:0 "Крестьянин"
  job_peasant_plural:0 "Крестьяне"
  job_peasant_desc:0 "Эти крестьяне постоянно работают на полях, чтобы те, кто считается лучше их, могли процветать."
  mod_job_peasant_add:0 "Деятельность: $job_peasant$"
- 
  job_primitive_warrior:0 "Воин"
  job_primitive_warrior_plural:0 "Воины"
  job_primitive_warrior_desc:0 "Представители примитивного класса воинов. В сражениях эти бойцы полагаются в основном на клинковое оружие, копья и различные тупые предметы."
  mod_job_primitive_warrior_add:0 "Деятельность: $job_primitive_warrior$"
- 
  job_primitive_noble:0 "Феодал"
  job_primitive_noble_plural:0 "Феодалы"
  job_primitive_noble_desc:0 "Поместная знать управляет из своих каменных замков и крепостей."
  mod_job_primitive_noble_add:0 "Деятельность: $job_primitive_noble$"
- 
  job_primitive_researcher:0 "Ученый"
  job_primitive_researcher_plural:0 "Ученые"
  job_primitive_researcher_desc:0 "Ученые в этом обществе часто передают знания из поколения в поколение устным путем."
  mod_job_primitive_researcher_add:0 "Деятельность: $job_primitive_researcher$"
- 
  job_primitive_priest:0 "Клирик"
  job_primitive_priest_plural:0 "Клирики"
  job_primitive_priest_desc:0 "Духовные лидеры и проповедники проводят религиозные церемонии и следят за решением вопросов, касающихся веры."
  mod_job_primitive_priest_add:0 "Деятельность: $job_primitive_priest$"
- 
  job_primitive_laborer:0 "Чернорабочий"
  job_primitive_laborer_plural:0 "Чернорабочие"
  job_primitive_laborer_desc:0 "Эти работники ранних этапов промышленного развития вкалывают на заводах, которые теперь могут работать днем и ночью благодаря последним достижениям в области электричества."
  mod_job_primitive_laborer_add:0 "Деятельность: $job_primitive_laborer$"
- 
  job_primitive_miner:0 "$job_miner$"
  job_primitive_miner_plural:0 "$job_miner_plural$"
  job_primitive_miner_desc:0 "Опасная, причем иногда даже смертельно, работа в темных недрах планеты."
  mod_job_primitive_miner_add:0 "Деятельность: $job_primitive_miner$"
- 
  job_primitive_technician:0 "$job_technician$"
  job_primitive_technician_plural:0 "$job_technician_plural$"
  job_primitive_technician_desc:0 "Эти техники перевозят уголь или обслуживают примитивные ядерные генераторы."
  mod_job_primitive_technician_add:0 "Деятельность: $job_primitive_technician$"
- 
  job_primitive_farmer:0 "Фермер"
  job_primitive_farmer_plural:0 "Фермеры"
  job_primitive_farmer_desc:0 "Эти фермеры обрабатывают землю, обычно при помощи примитивного, но эффективного сельскохозяйственного оборудования."
  mod_job_primitive_farmer_add:0 "Деятельность: $job_primitive_farmer$"
- 
  job_primitive_researcher_2:0 "Исследователь"
  job_primitive_researcher_2_plural:0 "Исследователи"
  job_primitive_researcher_2_desc:0 "Исследователи, пользующиеся научной методологией для пополнения быстро расширяющейся базы знаний своей цивилизации."
  mod_job_primitive_researcher_2_add:0 "Деятельность: $job_primitive_researcher_2$"
- 
  job_primitive_priest_2:0 "Жрец"
  job_primitive_priest_2_plural:0 "Жрецы"
  job_primitive_priest_2_desc:0 "Религиозные лидеры, занимающие различные духовные должности."
  mod_job_primitive_priest_2_add:0 "Деятельность: $job_primitive_priest_2$"
- 
  job_primitive_warrior_2:0 "Солдат"
  job_primitive_warrior_2_plural:0 "Солдаты"
  job_primitive_warrior_2_desc:0 "Профессиональные солдаты, обычно вооруженные ранними видами метательного оружия, в котором используется энергия экзотермического горения."
  mod_job_primitive_warrior_2_add:0 "Деятельность: $job_primitive_warrior_2$"
- 
  job_primitive_bureaucrat:0 "Бюрократ"
  job_primitive_bureaucrat_plural:0 "Бюрократы"
  job_primitive_bureaucrat_desc:0 "Многие ранние индустриальные и постиндустриальные общества управляются постоянно растущим классом государственных служащих."
  mod_job_primitive_bureaucrat_add:0 "Деятельность: $job_primitive_bureaucrat$"
- 
  job_pre_sapient:0 "Предразумный"
  job_pre_sapient_plural:0 "Предразумные"
  job_pre_sapient_desc:0 "В какой-то степени это простые животные, но их поведение выдает некую степень интеллекта..."
  mod_job_pre_sapient_add:0 "Деятельность: $job_pre_sapient$"
- 
  job_ratling_scavenger:0 "Мусорщик"
  job_ratling_scavenger_plural:0 "Мусорщики"
  job_ratling_scavenger_desc:0 "Они шарят по свалкам, собирая списанные в утиль машины и древнюю электронику для повторного использования."
  mod_job_ratling_scavenger_add:0 "Деятельность: $job_ratling_scavenger$"
- 
  job_odd_factory_worker:0 "Рабочий странной фабрики"
  job_odd_factory_worker_plural:0 "Рабочие странной фабрики"
  job_odd_factory_worker_desc:0 "Эти работники трудятся на древней таинственной фабрике неизвестного происхождения. Что может пойти не так?"
  mod_job_odd_factory_worker_add:0 "Деятельность: $job_odd_factory_worker$"
- 
  job_underground_trade_worker:0 "Сотрудник по подземным связям"
  job_underground_trade_worker_plural:0 "Сотрудники по подземным связям"
  job_underground_trade_worker_desc:0 "Эти сотрудники живут под землей и работают над установлением более близких отношений и улучшением торговли с подземной цивилизацией."
  mod_job_underground_trade_worker_add:0 "Деятельность: $job_underground_trade_worker$"
  mod_job_underground_trade_worker_per_pop:0 "§G+1§! $job_underground_trade_worker$ как вид деятельности для $VALUE$ поселений"
  mod_job_underground_trade_worker_per_pop_short:0 "\n§G+1§! £mod_job_underground_trade_worker_add£ для $VALUE$ £pop£"
- 
  job_underground_contact_drone:0 "Подземный контактный дрон"
  job_underground_contact_drone_plural:0 "Подземные контактные дроны"
  job_underground_contact_drone_desc:0 "Эти дроны живут под землей, передавая ресурсы для подземной цивилизации и от нее."
  mod_job_underground_contact_drone_add:0 "Деятельность: $job_underground_contact_drone$"
  mod_job_underground_contact_drone_per_pop:0 "§G+1§! $job_underground_contact_drone$ как вид деятельности для $VALUE$ поселений"
  mod_job_underground_contact_drone_per_pop_short:0 "\n§G+1§! £mod_job_underground_contact_drone_add£ для $VALUE$ £pop£"
- 
  job_dimensional_portal_researcher:0 "Исследователь пространственного портала"
  job_dimensional_portal_researcher_plural:0 "Исследователи пространственного портала"
  job_dimensional_portal_researcher_desc:0 "Эти исследователи рискуют своей жизнью и здравым умом, чтобы раскрыть тайны пространственного портала."
  mod_job_dimensional_portal_researcher_add:0 "Деятельность: $job_dimensional_portal_researcher$"
  mod_job_dimensional_portal_researcher_per_pop:0 "§G+1§! $job_dimensional_portal_researcher$ как вид деятельности для $VALUE$ поселений"
  mod_job_dimensional_portal_researcher_per_pop_short:0 "\n§G+1§! £job_researcher£ для $VALUE$ £pop£"
- 
  job_dimensional_portal_researcher_gestalt:0 "Дрон межпространственного портала"
  job_dimensional_portal_researcher_gestalt_plural:0 "Дроны межпространственного портала"
  job_dimensional_portal_researcher_gestalt_desc:0 "Рискуя быть уничтоженными или поврежденными, эти дроны изучают тайны межпространственного портала."
  mod_job_dimensional_portal_researcher_gestalt_add:0 "Деятельность: $job_dimensional_portal_researcher_gestalt$"
  mod_job_dimensional_portal_researcher_gestalt_per_pop:0 "§G+1§! $job_dimensional_portal_researcher_gestalt$ как вид деятельности для $VALUE$ поселений"
  mod_job_dimensional_portal_researcher_gestalt_per_pop_short:0 "\n§G+1§! £job_researcher£ для $VALUE$ £pop£"
- 
  job_fe_overseer:0 "Блюститель"
  job_fe_overseer_plural:0 "Блюстители"
  job_fe_overseer_desc:0 "Те немногие храбрецы, кто отказался от роскошной жизни ради служения обществу. Именно они присматривают за остатками древней цивилизации и направляют их."
  mod_job_fe_overseer_add:0 "Деятельность: $job_fe_overseer$"
- 
  job_fe_maintenance_bot:0 "Смотритель"
  job_fe_maintenance_bot_plural:0 "Смотрители"
  job_fe_maintenance_bot_desc:0 "Эти древние машины неустанно занимаются обслуживанием и ремонтом разрушающихся механизмов мира-кольца, в котором они обитают."
- 
  job_fe_guardian_bot:0 "Страж"
  job_fe_guardian_bot_plural:0 "Стражи"
  job_fe_guardian_bot_desc:0 "Эти древние машины непрерывно сторожат давно погибшие останки миллиардов разумных существ, подвергшихся когда-то криогенной заморозке."
  mod_job_fe_guardian_bot_add:0 "Деятельность: $job_fe_guardian_bot$"
- 
  job_fe_hedonist:0 "Гедонист"
  job_fe_hedonist_plural:0 "Гедонисты"
  job_fe_hedonist_desc:0 "Полная изобилия жизнь, в которой могут быть удовлетворены любые возможные материальные желания или потребности."
  mod_job_fe_hedonist_add:0 "Деятельность: $job_fe_hedonist$"
- 
  job_fe_archivist:0 "Архивариус"
  job_fe_archivist_plural:0 "Архивариусы"
  job_fe_archivist_desc:0 "Каждый фрагмент данных должен быть зарегистрирован, каталогизирован и проиндексирован в точном соответствии с древними обрядами, определенными Первым Библиотекарем тысячелетия назад."
  mod_job_fe_archivist_add:0 "Деятельность: $job_fe_archivist$"
- 
  job_fe_acolyte_farm:0 "Служитель плуга"
  job_fe_acolyte_farm_plural:0 "Служители плуга"
  job_fe_acolyte_farm_desc:0 "Не плугом ли, самым благородным из орудий труда, воспользовался Казаргил, чтобы отсечь ядовитый хвост трижды проклятого демона и предотвратить голод?"
  job_fe_acolyte_farm_effect_desc:0 "£job_fe_acolyte_farm£ $job_fe_acolyte_farm_plural$ производят такой ресурс, как £food£ §Y$food$§!"
  mod_job_fe_acolyte_farm_add:0 "Деятельность: $job_fe_acolyte_farm$"
- 
  job_fe_acolyte_mine:0 "Служитель молота"
  job_fe_acolyte_mine_plural:0 "Служители молота"
  job_fe_acolyte_mine_desc:0 "И одним могучим ударом святая Мазакудал расколола своим пылающим молотом череп Первого Фантома, открыв проход к кристаллам."
  job_fe_acolyte_mine_effect_desc:0 "£job_fe_acolyte_mine£ $job_fe_acolyte_mine_plural$ производят £minerals£ §Y$minerals$§!"
  mod_job_fe_acolyte_mine_add:0 "Деятельность: $job_fe_acolyte_mine$"
- 
  job_fe_acolyte_generator:0 "Служитель гиперключа"
  job_fe_acolyte_generator_plural:0 "Служители гиперключа"
  job_fe_acolyte_generator_desc:0 "Не забывайте также о гиперключе и о том, как Базагг Сияющий использовал его, чтобы укротить солнце, когда уже казалось, что тьма поглотит мир."
  job_fe_acolyte_generator_effect_desc:0 "£job_fe_acolyte_generator£ $job_fe_acolyte_generator_plural$ производят такой ресурс, как £energy£ §Y$energy$§!"
  mod_job_fe_acolyte_generator_add:0 "Деятельность: $job_fe_acolyte_generator$"
- 
  job_fe_acolyte_artisan:0 "Служитель мастерской"
  job_fe_acolyte_artisan_plural:0 "Служители мастерской"
  job_fe_acolyte_artisan_desc:0 "И сказал Азнаха служителям: «Идите в мастерские и своими изделиями создавайте будущее, к которому вы стремитесь»."
  job_fe_acolyte_artisan_effect_desc:0 "£job_fe_acolyte_artisan£ $job_fe_acolyte_artisan_plural$ производят £consumer_goods£ §Y$consumer_goods$§!"
  mod_job_fe_acolyte_artisan_add:0 "Деятельность: $job_fe_acolyte_artisan$"
- 
  job_fe_protector:0 "Протектор"
  job_fe_protector_plural:0 "Протекторы"
  job_fe_protector_desc:0 "Чтобы большинство могло спать спокойно и наслаждаться роскошной жизнью, эти крепкие ребята готовы применить ночью насилие к тем, кто намерен причинить им вред."
  mod_job_fe_protector_add:0 "Деятельность: $job_fe_protector$"
- 
  job_fe_augur:0 "Прорицатель Покрова"
  job_fe_augur_plural:0 "Прорицатели Покрова"
  job_fe_augur_desc:0 "Говорит, но не словами. Чтобы постичь какой-либо смысл, нужно парить на грани безумия."
  mod_job_fe_augur_add:0 "Деятельность: $job_fe_augur$"
- 
  job_fe_sky_cardinal:0 "Небесный кардинал"
  job_fe_sky_cardinal_plural:0 "Небесные кардиналы"
  job_fe_sky_cardinal_desc:0 "И именно там, в небесах, зарождалось будущее. Свет ослеплял, но некоторые смогли увидеть то, что он скрывал. Они взяли на себя бремя вести других вперед."
  mod_job_fe_sky_cardinal_add:0 "Деятельность: $job_fe_sky_cardinal$"
- 
  job_fe_xeno_ward:0 "Ксеностраж"
  job_fe_xeno_ward_plural:0 "Ксеностражи"
  job_fe_xeno_ward_desc:0 "Эти экземпляры были собраны здесь, в условиях приближенных к их естественным средам обитания, чтобы обеспечить сохранение их видов в галактике, где часто имеют место хаос и разрушения."
  mod_job_fe_xeno_ward_add:0 "Деятельность: $job_fe_xeno_ward$"
- 
  job_fe_xeno_keeper:0 "Смотритель за чужаками"
  job_fe_xeno_keeper_plural:0 "Смотрители за чужаками"
  job_fe_xeno_keeper_desc:0 "Эти предтечи, работающие в зоопарках, следят за исполнением потребностей своих подопечных чужаков."
  mod_job_fe_xeno_keeper_add:0 "Деятельность: $job_fe_xeno_keeper$"
- 
- ## MODIFIERS ##
  MOD_POP_DEMOTION_TIME_MULT:0 "Время понижения поселения"
  mod_pop_category_slave_upkeep_mult:0 "Содержание рабов"
  mod_ships_upkeep_mult:0 "Содержание кораблей"
@@ -1369,7 +1233,6 @@
  mod_armies_cost_mult:0 "Стоимость армии"
  mod_planet_pops_upkeep_mult:0 "Содержание поселений"
  mod_deposit_blockers_cost_mult:0 "Стоимость расчистки непригодных квадратов"
- 
  mod_planet_livestock_food_produces_add:0 "£food£ $food$ от категории £job_livestock£ §Y$job_livestock_plural$§!"
  mod_planet_metallurgists_produces_mult:0 "£job_foundry£ $job_foundry_plural$: производство"
  mod_planet_artisans_produces_mult:0 "£job_artisan£ $job_artisan_plural$: производство"
@@ -1385,7 +1248,7 @@
  mod_planet_pops_robotics_upkeep_mult:0 "Содержание роботов"
  mod_planet_pop_assemblers_upkeep_mult:0 "Стоимость сбора поселений"
  mod_planet_jobs_slave_produces_mult:0 "$pop_cat_slave$: производство"
- mod_planet_jobs_worker_produces_mult:0 "$pop_cat_worker$: производство"
+ mod_planet_jobs_worker_produces_mult:0 "$pop_cat_worker$ Производство ресурсов рабочими"
  mod_planet_jobs_specialist_produces_mult:0 "$pop_cat_specialist$: производство"
  mod_planet_jobs_ruler_produces_mult:0 "$pop_cat_ruler$: производство"
  mod_planet_jobs_simple_drone_produces_mult:0 "$pop_cat_simple_drone$: производство"
@@ -1422,6 +1285,7 @@
  mod_planet_pops_consumer_goods_upkeep_mult:0 "Содержание поселений ($consumer_goods$)"
  mod_planet_branch_office_buildings_produces_mult:0 "Ресурсы от сооружений типа $BRANCH_OFFICE_BUILDINGS$"
  mod_planet_jobs_produces_mult:0 "Ресурсы от видов £job£ деятельности"
+ mod_stations_produces_mult:0 "Ресурсы от орбитальных станций"
  mod_planet_jobs_upkeep_mult:0 "Содержание при видах £job£ деятельности"
  mod_planet_jobs_food_produces_mult:0 "£food£ $food$ от видов £job£ деятельности"
  mod_planet_jobs_food_produces_add:0 "$mod_planet_jobs_food_produces_mult$"
@@ -1468,8 +1332,8 @@
  mod_station_researchers_produces_mult:0 "Научные станции: производство"
  MOD_COUNTRY_ADMIN_CAP_ADD:0 "Административный лимит"
  mod_diplomacy_upkeep_mult:0 "Расход дипломатического влияния"
- mod_pop_factions_produces_mult:0 "Прирост влияния от фракций"
- mod_pop_factions_produces_add:0 "$mod_pop_factions_produces_mult$"
+ mod_pop_factions_influence_produces_mult:0 "Прирост влияния от фракций"
+ mod_pop_factions_influence_produces_add:0 "$mod_pop_factions_influence_produces_mult$"
  criminal_gambling:0 "Проблема азартных игр"
  criminal_gambling_desc:0 "Поскольку все сбережения были потрачены на азартные игры, требуются новые источники финансирования."
  festival_aftermath:0 "Последствия празднования"
@@ -1485,8 +1349,6 @@
  minerals_relic_desc:0 "Эта странная машина может каким-то образом извлекать минералы из земли, не затрагивая окружающий материал."
  energy_relic:0 "Энергетический ускоритель"
  energy_relic_desc:0 "При добавлении в генератор достаточных размеров это устройство, функционируя на неизвестных и кажущихся невозможными принципах, создает дополнительную энергию, превышающую обычные нормы производства."
- 
- #requires_building_capital:0 "§RRequires §Y$building_capital$§! on planet.§!"
  requires_building_machine_capital:0 "§RНа планете требуется §Y$building_machine_capital$§!.§!"
  requires_building_hive_capital:0 "§RНа планете требуется §Y$building_hive_capital$§!.§!"
  requires_building_major_capital:0 "§RНа планете требуется §Y$building_major_capital$§!.§!"
@@ -1500,7 +1362,6 @@
  requires_building_resort_major_capital:0 "§RНа планете требуется §Y$building_resort_major_capital$§!.§!"
  requires_building_slave_capital:0 "§RНа планете требуется §Y$building_slave_capital$§!.§!"
  requires_building_slave_major_capital:0 "§RНа планете требуется §Y$building_slave_major_capital$§!.§!"
- 
  enclave_trade_1_xur:0 "Сделка с «Ксурой» (£exotic_gases£ x1)"
  enclave_trade_2_xur:0 "Сделка с «Ксурой» (£exotic_gases£ x2)"
  enclave_trade_3_xur:0 "Сделка с «Ксурой» (£exotic_gases£ x3)"
@@ -1516,9 +1377,6 @@
  enclave_trade_3_mut:0 "Сделка с муутаганцами (£rare_crystals£ x3)"
  enclave_trade_4_mut:0 "Сделка с муутаганцами (£rare_crystals£ x4)"
  enclave_trade_5_mut:0 "Сделка с муутаганцами (£rare_crystals£ x5)"
- 
- ## Edicts ##
- 
  edict_nuumismatic_visualization:0 "Нумская визуализация"
  edict_nuumismatic_visualization_desc:0 "Активное использование методов Нумской визуализации позволит переключить внимание наших граждан с личной выгоды на производство космической энергии. Чтобы достичь чего-нибудь, нужно сначала это визуализировать."
  edict_terraforming_gas:0 "Терраформирующие газы"
@@ -1543,14 +1401,11 @@
  edict_crystal_focus_desc:0 "Улучшая доступ наших кораблей к редким кристаллам, мы можем повысить урон от их энергетического оружия."
  edict_nanite_actuators:0 "Нанитовые актюаторы"
  edict_nanite_actuators_desc:0 "$sr_distar_nanoactuator_desc$"
- 
  rare_edicts:0 "Редкие указы"
  ship_edicts:0 "Указы по кораблям"
  gas_edicts:0 "Указы по экзотическим газам"
  motes_edicts:0 "Указы по летучим пылинкам"
  crystals_edicts:0 "Указы по редким кристаллам"
- 
- ## BUILDINGS ##
  building_maintenance_depot:0 "Депо обслуживания"
  building_maintenance_depot_desc:0 "Цеха, в которых происходит планирование, управление и выполнение работ по техническому обслуживанию машин и сооружений."
  building_hive_node:0 "Синаптические узлы"
@@ -1623,7 +1478,6 @@
  building_mote_harvesters_desc:0 "Эти замысловатые устройства заключают летучие пылинки в энергетические поля, направляя их в специальные зоны удержания под землей, где возможны их стабилизация и сбор."
  building_gas_extractors:0 "Колодцы для добычи газа"
  building_gas_extractors_desc:0 "Эти громоздкие колодцы устремляются вглубь мантии планеты, давая доступ к полостям с экзотическим газом."
- 
  building_communal_housing:0 "Общинное жилье"
  building_communal_housing_desc:0 "Квартал единообразного жилья, где все одинаково."
  building_communal_housing_large:0 "Утопическое общинное жилье"
@@ -1636,7 +1490,6 @@
  building_hive_warren_desc:0 "Огромный вольер обеспечивает многих трутней убежищем для отдыха."
  building_expanded_warren:0 "Расширенный вольер"
  building_expanded_warren_desc:0 "Расширяя вольеры, мы даем убежище большему количеству трутней."
- 
  building_ancient_control_center:0 "Древний центр управления"
  building_ancient_control_center_desc:0 "Древний центр управления в этой секции мира-кольца едва поддерживается в рабочем состоянии благодаря неустанным усилиям целого легиона механических дронов."
  building_ancient_palace:0 "Древний дворец"
@@ -1663,14 +1516,11 @@
  building_fe_dome_desc:0 "Летающая утопия, функционирующая благодаря исключительно продвинутой технологии антигравитации."
  building_fe_stronghold:0 "Комплекс «Эгида»"
  building_fe_stronghold_desc:0 "Огромный планетарный оборонный комплекс, состоящий из множества арсеналов, заполненных до отказа высокотехнологичным оружием предтеч."
- 
  mod_building_xeno_zoo_max:0 "$building_xeno_zoo$: максимум"
  mod_building_crystal_mines_max:0 "$building_crystal_mines$: максимум"
  mod_building_mote_harvesters_max:0 "$building_mote_harvesters$: максимум"
  mod_building_gas_extractors_max:0 "$building_gas_extractors$: максимум"
  mod_building_betharian_power_plant_max:0 "$building_betharian_power_plant$: максимум"
- 
- ## TECHNOLOGIES ## 
  tech_hive_node:0 "Синаптические сооружения"
  tech_hive_node_desc:0 "Волю улья можно усилить посредством развития макроскопических синаптических узлов."
  tech_hive_cluster:0 "Скопления синапсов"
@@ -1725,10 +1575,6 @@
  tech_orbital_trash_dispersal_desc:0 "Эта система управления орбитальной бомбардировкой засыпает планету миллионами высокоскоростных мелких снарядов, переполняя оборонные сети планеты мусорными данными. Корабли, оснащенные этим компонентом, будут наносить больший урон при орбитальной бомбардировке."
  tech_nanite_transmutation:0 "Нанитовое преобразование"
  tech_nanite_transmutation_desc:0 "Массовое производство этих особенно эффективных нанитов требует очень продвинутого оборудования."
- 
- ## DEPOSITS ##
- 
- # Energy
  d_arid_highlands:0 "Засушливые нагорья"
  d_arid_highlands_desc:0 "Расположенный на высоко над уровнем моря сухой экорегион с редкой растительностью в виде пустынных трав и кустарников."
  d_hot_springs:0 "Горячие источники"
@@ -1757,8 +1603,6 @@
  d_numas_breath_desc:0 "Этот стабильный канал, проникающий в кору планеты, создал $NAME_Caravaneer_Fleet2$."
  d_nanosands:0 "Нанопески"
  d_nanosands_desc:0 "Песчаные дюны на этой планете почти полностью состоят из бесчисленных разбитых нанитов. Их структура разрушена настолько, что реактивация уже невозможна, но они покрывают планету гранулятом из редких металлов."
- 
- # Minerals
  d_crystal_forest:0 "Кристальный лес"
  d_crystal_forest_desc:0 "В этих экзотических лесах сверкающие кристаллы растут подобно инею."
  d_veiny_cliffs:0 "Рудножильные утесы"
@@ -1777,8 +1621,6 @@
  d_crystalline_caverns_desc:0 "Эти пещеры, напоминающие огромные жеоды, со всех сторон заполнены редкими кристаллами."
  d_submerged_ore_veins:0 "Подводные рудные жилы"
  d_submerged_ore_veins_desc:0 "Океанское дно усеяно множеством полезных рудных залежей, предоставляющих возможности для глубоководной добычи."
- 
- # Food
  d_bountiful_plains:0 "Изобильные равнины"
  d_bountiful_plains_desc:0 "Эти широкие равнины отличаются плодородностью почв и высокими травами, обеспечивая богатый потенциал сельскохозяйственных угодий."
  d_nutritious_mudland:0 "Питательные грязи"
@@ -1815,10 +1657,6 @@
  d_metal_boneyard_desc:0 "Кажется, будто пустые металлические скелеты разрушенной инфраструктуры стонут, когда среди них гуляет ветер."
  d_organic_landfill:0 "Органическая свалка"
  d_organic_landfill_desc:0 "Огромные кучи токсичных биологических отходов гниют и выделяют испарения под солнцем."
- 
- # Energy
- 
- # Special 
  d_betharian_deposit:0 "Бетарианские поля"
  d_betharian_deposit_desc:0 "В этих полях, как звезды, сияют тысячи тысяч драгоценных бетарианских камней."
  d_alien_pets_deposit:0 "Затерянная долина"
@@ -1833,8 +1671,6 @@
  d_mineral_striations_desc:0 "Неглубокие разломы вывели на поверхность богатые залежи минералов."
  d_natural_farmland:0 "Природное угодье"
  d_natural_farmland_desc:0 "Эти равнины, разбитые самой природой на удивительно правильные геометрические фигуры, готовы к сельскохозяйственному освоению."
- 
- # Earth
  d_scandinavian_reclamation_sector:0 "Скандинавский сектор восстановления"
  d_scandinavian_reclamation_sector_desc:0 "Усилия по восстановлению земель в конце XXII века устранили все, кроме самых упорных очагов радиации, а уровни мутаций сейчас находятся на рекордно низком уровне с момента утечки."
  d_saharan_irrigation_project:0 "Проект ирригации Сахары"
@@ -1857,9 +1693,6 @@
  d_great_pacific_garbage_patch_desc:0 "Кружащиеся миазмы от пластиковых отходов покрывают значительную часть самого крупного океана на Земле."
  d_failing_infrastructure_earth:0 "$d_failing_infrastructure$"
  d_failing_infrastructure_earth_desc:0 "$d_failing_infrastructure_desc$"
- 
- 
- # Event
  d_migrating_forests:0 "Мигрирующие леса"
  d_migrating_forests_desc:0 "Бродячие леса этой планеты часто перемещаются всей массой в соседние регионы, мешая строительству дорог, линий электропередачи и других объектов инфраструктуры."
  d_migrating_forest_reserve:0 "Заповедник с мигрирующим лесом"
@@ -1896,10 +1729,6 @@
  d_impact_crater_desc:0 "Кратер после падения крупного метеорита. Минералы из него до сих пор можно найти на месте падения."
  d_odd_factory:0 "Странная фабрика"
  d_odd_factory_desc:0 "Хорошо построенный комплекс, производящий очень ценные ресурсы. Оставлен на планете какой-то иной цивилизацией."
- #d_odd_factory_wreckage_1:0 "Odd Factory Wreckage"
- #d_odd_factory_wreckage_1_desc
- #d_odd_factory_wreckage_2:0 "$d_odd_factory_wreckage_1$"
- #d_odd_factory_wreckage_2_desc:0 "$d_odd_factory_wreckage_1_desc$"
  d_ancient_particle_accelerator:0 "Древний ускоритель частиц"
  d_ancient_particle_accelerator_desc:0 "В основе этого старого ускорителя частиц лежала инновационная конструкция, а сохранившиеся в этом сооружении терминалы содержат огромный объем исследовательских данных, оставленных, судя по всему, каким-то блестящим физиком-теоретиком."
  d_underground_vault:0 "Подземное убежище"
@@ -1958,11 +1787,7 @@
  d_ruined_arcology_desc:0 "Аркологии на поверхности этой планеты-города лежат в руинах. Хотя фундаменты по-прежнему прочны, большую часть разрушающихся сооружений необходимо будет убрать, прежде чем заниматься восстановлением."
  d_egg_cracking:0 "$egg_cracking$"
  d_egg_cracking_desc:0 "$egg_cracking_desc$"
- 
- #Blockers
  SET_DEPOSIT_EFFECT:0 "Добавить $DEPOSIT$ к планете $PLANET|Y$\n"
- 
- # Space
  d_minerals_1:0 "£minerals£ +1"
  d_minerals_2:0 "£minerals£ +2"
  d_minerals_3:0 "£minerals£ +3"
@@ -1991,6 +1816,7 @@
  d_engineering_6:0 "£engineering£ +6"
  d_engineering_7:0 "£engineering£ +7"
  d_engineering_8:0 "£engineering£ +8"
+ d_engineering_8_desc:0 "Обширная равнина, покрытая обломками. Удивительно, но что-то, похоже, до сих пор может функционровать."
  d_engineering_9:0 "£engineering£ +9"
  d_engineering_10:0 "£engineering£ +10"
  d_physics_1:0 "£physics£ +1"
@@ -2034,18 +1860,16 @@
  d_alloys_4:0 "£alloys£ §Y+4§!"
  d_alloys_5:0 "£alloys£ §Y+5§!"
  d_dark_matter_deposit_1:0 "£sr_dark_matter£ §Y+1§!"
- 
  d_terraforming_gas_deposit:0 "Обнаружены терраформирующие газы\n"
  d_terraforming_fluid_deposit:0 "Обнаружены терраформирующие жидкости\n"
- d_neutronium_deposit:0 "Обнаружена нейтрониевая руда\n  £minerals£ +5\n"
- d_teldar_deposit:0 "Обнаружены кристаллы тельдара\n  £engineering£ +1  £society£ +1"
- d_engos_deposit:0 "Обнаружены энгосские испарения\n  £society£ +2\n"
+ d_neutronium_deposit:0 "Обнаружена нейтрониевая руда\n   £minerals£ +5\n"
+ d_teldar_deposit:0 "Обнаружены кристаллы тельдара\n   £engineering£ +1   £society£ +1"
+ d_engos_deposit:0 "Обнаружены энгосские испарения\n   £society£ +2\n"
  d_living_metal_deposit:0 "Обнаружен живой металл\n"
- d_lythuric_gas_deposit:0 "Обнаружен литурический газ\n  £physics£ +3\n"
- d_zro_deposit:0 "Обнаружен зро\n  £society£ +2\n  £physics£ +5\n"
- d_satramene_deposit:0 "Обнаружен сатраменовый газ\n  £energy£ +4\n"
- d_garanthium_deposit:0 "Обнаружена гарантиевая руда\n  £minerals£ +3\n"
- 
+ d_lythuric_gas_deposit:0 "Обнаружен литурический газ\n   £physics£ +3\n"
+ d_zro_deposit:0 "Обнаружен зро\n   £society£ +2\n   £physics£ +5\n"
+ d_satramene_deposit:0 "Обнаружен сатраменовый газ\n   £energy£ +4\n"
+ d_garanthium_deposit:0 "Обнаружена гарантиевая руда\n   £minerals£ +3\n"
  ap_arcology_project:0 "Аркологический проект"
  ap_arcology_project_desc:0 "Таким образом мы превратим этот город в целый мир, а мир в один город."
  allow_arcology_project:0 "§HРешение:§! $ap_arcology_project$"
@@ -2054,7 +1878,6 @@
  decision_arcology_project_effects_short:0 "Повышает значение таких параметров, как £housing£ §Y$PLANET_HOUSING_TITLE$§!, §Yпроизводство ресурсов§! и §Yрост поселений§!.\nПозволяет строить £district£ §Yаркологические районы§!.\nНе позволяет строить £district£ §Yэнергетические§!, §Yгорнодобывающие§! и §Yсельскохозяйственные районы§!."
  decision_arcology_project_requirements:0 "£trigger_no£ §RВо всех ячейках районов на планете должны быть§! §Y$district_city_plural$§!."
  decision_arcology_project_desc:0 "Непрерывная цепь аркологий объединит планету от полюса до полюса, создав глобальный город-гигант - единый экуменополис."
- 
  decision_caravaneer_tupperware:0 "Использование пищевых контейнеров «Триум»"
  decision_caravaneer_tupperware_desc:0 "$tupperware_deployed_desc$"
  decision_caravaneer_bunkbeds:0 "Использование двухъярусных кроватей «Триум»"
@@ -2067,33 +1890,27 @@
  decision_demolish_art_monument_desc:0 "Убрать памятник искусства, созданный для нашей державы труппой мастеров."
  artist_monument_erected:0 "Памятник искусства выставлен"
  artist_monument_erected_desc:0 "На этой планете выставлен потрясающий памятник искусства, созданный труппой мастеров."
- 
  tech_resort_colonies:0 "Курортные миры"
  tech_resort_colonies_desc:0 "Если должным образом подойти к созданию ландшафтов, управлению климатом и развлечениям, то становится возможным строительство целых миров, посвященных досугу."
  tech_penal_colonies:0 "Тюремные поселения"
  tech_penal_colonies_desc:0 "Благодаря разработке специальных тюремных миров преступники могут быть реабилитированы благодаря честному упорному труду. Некоторым может потребоваться постоянная реабилитация."
  tech_slave_colonies:0 "Невольничьи миры"
  tech_slave_colonies_desc:0 "Посредством создания особых миров для разведения рабов мы можем гарантировать, что всегда будем иметь стабильное снабжение расходуемой рабочей силой."
- 
  resort_colony:0 "Курортный мир"
  resort_colony_desc:0 "Посредством ландшафтов, доведенных до совершенства, и полностью настраиваемой системы глобального контроля погоды каждый аспект устройства этого мира направлен на предоставление широкого спектра возможностей для отдыха граждан, которым нужно расслабиться."
  penal_colony:0 "Тюремное поселение"
  penal_colony_desc:0 "Этот мир заполнен преступниками, находящимися под строгим контролем. Они отрабатывают свой долг перед обществом в трудовых лагерях. Многие будут делать это до конца жизни."
  slave_colony:0 "Невольничий мир"
  slave_colony_desc:0 "Этот мир целенаправленно создан для максимального увеличения прироста его порабощенного населения."
- 
  resort_colony_other_planets:0 "$resort_colony$"
  penal_colony_other_planets:0 "$penal_colony$"
- 
  building_slave_huts:0 "Хижины рабов"
  building_slave_huts_desc:0 "Грубые жилища для порабощенного населения планеты."
  building_overseer_homes:0 "Жилища надсмотрщиков"
  building_overseer_homes_desc:0 "Эти дома предназначены для относительно привилегированных рабов-надсмотрщиков."
- 
  decision_prospect:0 "Планетарная разведка"
  decision_prospect_effects_short:0 "Планета получает случайную §Yпланетарную особенность§!."
  decision_prospect_desc:0 "Продолжительное изучение и разведка планеты позволит нам выявить наличие природных ресурсов, которые иначе, возможно, от нас бы ускользнули."
- 
  decision_resort_colony:0 "Создать курортный мир"
  decision_resort_colony_desc:0 "Эта планета представляет собой мирный курорт, привлекающий туристов и гостей издалека. С целью сохранения природной красоты планеты введены строгие ограничения в отношении строительства на поверхности."
  decision_resort_colony_effects_short:0 "Не позволяет строить £district£ §Yрайоны§! и большинство £building£ §Yсооружений§! на планете.\n\nПовышает £amenities£ §Y$MOD_PLANET_AMENITIES_MULT$§! на всех других принадлежащих планетах."
@@ -2101,7 +1918,6 @@
  decision_abolish_resort_colony:0 "Упразднить планетарный курорт"
  decision_abolish_resort_colony_desc:0 "Этот мир больше не будет считаться особым курортом, а все ограничения по строительству на поверхности будут сняты."
  resort_colony_empire_effects:0 "Другие колонии империи:\n   $MOD_PLANET_AMENITIES_MULT$: §G+15%§!\n   $MOD_PLANET_IMMIGRATION_PULL_MULT$: §G+15%§!"
- 
  decision_slave_colony:0 "Создать невольничий мир"
  decision_slave_colony_desc:0 "Весь этот мир целенаправленно создан для максимального увеличения прироста его порабощенного населения при помощи разнообразных стимулов к воспроизводству."
  decision_slave_colony_effects:0 "Не позволяет строить £housing£ §Yгородские районы§! и большинство £building£ §Yсооружений§! на планете.\nПозволяет строить £building£ §Yхижины рабов§!.\n£pop£ §YСвободные поселения§! больше не могут расти на планете."
@@ -2109,27 +1925,22 @@
  decision_slave_colony_effects_short:0 "Значительно повышает §Yскорость прироста поселений§!\n\nПланета становится большей частью непригодной для £pop£ §Yсвободных поселений§!"
  decision_abolish_slave_colony:0 "Упразднить невольничий мир"
  decision_abolish_slave_colony_desc:0 "Этот мир больше не будет считаться невольничьим, и программы стимулирования роста его порабощенного населения прекращены."
- 
  decision_penal_colony:0 "Создать тюремное поселение"
  decision_penal_colony_desc:0 "Вся планета представляет собой огромное тюремное поселение. Крупные тюремные общины в основном самоуправляются заключенными, а наказанием обычно служит изгнание в беспощадную дикую природу."
  decision_penal_colony_effects_short:0 "Повышает £crime£ §Yпреступность§! и §Yотток иммиграции§! на планете.\n\nСнижает £crime£ §Yпреступность§! на всех других принадлежащих планетах."
  decision_abolish_penal_colony:0 "Упразднить тюремное поселение"
  decision_abolish_penal_colony_desc:0 "Этот мир лишается статуса тюремного поселения, а ее обитателям предоставляются те же права и обязанности, что и на любой другой планете."
  penal_colony_empire_effects:0 "Другие колонии империи:\n   $MOD_PLANET_CRIME_MULT$: §G-25%§!"
- 
  building_resort_capital:0 "Администрация курорта"
  building_resort_capital_desc:0 "Центральный комплекс, откуда осуществляется управление этим всепланетным курортом."
  building_resort_major_capital:0 "Курортный столичный комплекс"
  building_resort_major_capital_desc:0 "Огромный комплекс, способный управлять еще большим количеством курортов и туристических достопримечательностей."
- 
  building_slave_capital:0 "Дворец губернатора"
  building_slave_capital_desc:0 "Роскошный дворец, откуда ведется управление этим невольничьим миром."
  building_slave_major_capital:0 "Имения губернатора"
  building_slave_major_capital_desc:0 "Обширные и роскошные дворцы, в которых живет правящая элита невольничьего мира."
- 
  ap_xeno_compatibility:0 "Совместимость с чужаками"
  ap_xeno_compatibility_desc:0 "Изобретение универсальной сексуальной биологии произвело революцию в обществе. Даже несмотря на то, что иногда приходится осуществлять неловкие вращения, чтобы установить связь."
- 
  decision_planet_food_boost:0 "Стимулировать планетарный рост"
  decision_planet_food_boost_desc:0 "Щедрое распределение правильных питательных веществ обеспечит здоровый и быстрый рост."
  planet_food_boost:0 "Рост стимулирован"
@@ -2180,7 +1991,6 @@
  decision_end_discourage_growth:0 "Прекратить затруднение роста"
  decision_end_discourage_growth_desc:0 "Это устранит необходимость политических мер, принятых в этом мире для затруднения роста населения."
  decision_end_discourage_growth_effects_short:0 "£pop£ Поселения на планете могут развиваться нормально\n\nСнижает §Gсодержание поселений§!"
- 
  decision_consecrated_worlds:0 "Сакральный мир"
  decision_consecrated_worlds_desc:0 "Данное место объявляется священным в соответствии с традициями нашей веры. Паломники будут прилетать издалека, чтобы окунуться в его светлую ауру."
  decision_consecrated_worlds_effects_short:0 "Добавляет этот мир к нашим сакральным мирам, повышая §Yпривлекательность принципа Спиритуализм§! и §Yобщеимперские блага§!, а также производство £unity£ §Yединства§!."
@@ -2194,7 +2004,6 @@
  consecrated_worlds_unsuitable:0 "\n§YВозможно, этот объект не совсем подходит для освящения§!"
  consecrated_worlds_suitable:0 "\n§YВозможно, этот объект вполне подходит для освящения§!"
  consecrated_worlds_perfect:0 "\n§YЭтот объект обладает внутренней святостью и должен быть освящен§!"
- 
  decision_martial_law:0 "Объявить военное положение"
  decision_martial_law_desc:0 "Выполнение правительством большей части функций на местах приостановлено, а планета переведена на прямой контроль со стороны военных с целью восстановления гражданского порядка."
  decision_martial_law_effects_short:0 "Повышает £stability£ §Gстабильность§! и добавляет больше видов деятельности в категории §Y$job_soldier$§!.\n\nСнижает §Rпроизводство ресурсов§! при различной £job£ деятельности и £mod_pop_growth_speed£ §Rрост поселений§!."
@@ -2202,7 +2011,6 @@
  decision_end_martial_law:0 "Прекратить военное положение"
  decision_end_martial_law_desc:0 "Прекратить текущий военный контроль над планетой и восстановить гражданские функции правительства."
  decision_end_martial_law_effects_short:0 "Военное положение на планете прекращено."
- 
  decision_martial_law_hive:0 "Выслать дронов-охотников"
  decision_martial_law_hive_desc:0 "С помощью специализированных боевых форм коллективный разум способен сделать так, чтобы неуправляемые элементы на планете были найдены и ликвидированы."
  decision_martial_law_hive_effects_short:0 "Повышает £stability£ §Gстабильность§! и добавляет больше видов деятельности в категории §Y$job_warrior_drone$§!.\n\nСнижает §Rпроизводство ресурсов§! при различной £job£ деятельности и £mod_pop_growth_speed£ §Rрост поселений§!."
@@ -2210,7 +2018,6 @@
  decision_end_martial_law_hive:0 "Отозвать дронов-охотников"
  decision_end_martial_law_hive_desc:0 "Прекратить состояние повышенной бдительности на планете и восстановить нормальные функции улья."
  decision_end_martial_law_hive_effects_short:0 "Дроны-охотники отозваны с планеты."
- 
  decision_martial_law_machine:0 "Активировать протоколы соблюдения"
  decision_martial_law_machine_desc:0 "Благодаря массовому надзору при помощи дронов машинный разум может обеспечить сотрудничество и соблюдение указаний на всей планете."
  decision_martial_law_machine_effects_short:0 "Повышает £stability£ §Gстабильность§! и добавляет больше видов деятельности в категории §Y$job_warrior_drone$§!.\n\nСнижает §Rпроизводство ресурсов§! при различной £job£ деятельности и £mod_pop_growth_speed£ §Rрост поселений§!."
@@ -2218,21 +2025,18 @@
  decision_end_martial_law_machine:0 "Завершить протоколы соблюдения"
  decision_end_martial_law_machine_desc:0 "Прекратить состояние повышенного надзора на планете и восстановить нормальные машинные функции."
  decision_end_martial_law_machine_effects_short:0 "Протоколы соблюдения на планете прекращены."
- 
  martial_law:0 "Военное положение"
  martial_law_desc:0 "На этой планете объявлено военное положение."
  hunter_killer_drones:0 "Дроны-охотники"
  hunter_killer_drones_desc:0 "Трутни-охотники активно занимаются ликвидацией неуправляемых элементов на планете."
  compliance_protocols:0 "Протоколы соблюдения"
  compliance_protocols_desc:0 "Нарушающие инструкции элементы активно подвергаются ликвидации на планете."
- 
  mod_campaigns_cost_mult:0 "Стоимость кампании"
  mod_edicts_cost_mult:0 "Стоимость указа"
  mod_leaders_cost_mult:0 "Стоимость лидера"
  MOD_LEADER_COST_EMPIRE_SIZE_MULT:0 "Стоимость лидера"
  mod_leaders_upkeep_mult:0 "Содержание лидера"
  MOD_LEADER_UPKEEP_EMPIRE_SIZE_MULT:0 "Содержание лидера"
- 
  CONSUMED:0 "Потрачено: $VALUE|+=$"
  SHIP_COST:0 "Стоимость"
  SHIP_UPKEEP:0 "Содержание"
@@ -2308,6 +2112,7 @@
  leader_generals:0 "Генералы"
  leader_scientists:0 "Ученые"
  leader_governors:0 "Губернаторы"
+ subject_integration:0 "Интеграция подданного"
  pc_city:0 "Экуменополис"
  pc_city_desc:0 "Мир полностью охвачен стремительным городским и промышленным развитием. Его естественная литосфера уже не видна с орбиты."
  trait_pc_city_preference:0 "Предпочтительный ИИ-мир"
@@ -2318,7 +2123,6 @@
  trait_nuumismatic_administration_desc:0 "Эта раса обучена священному искусству Нумского управления."
  leader_trait_enclave_trader:0 "Торговец анклава"
  leader_trait_enclave_trader_desc:0 "Приглашенный из одного независимого торгового анклава, этот лидер особенно преуспел в максимальном повышении объема торговли."
- 
  contingency_sabotage:0 "Диверсия Контингенции"
  contingency_sabotage_desc:0 "Контингенция саботировала энергетические районы на этой планете."
  machine_power_failure_2:0 "Контингенция саботировала несколько энергетических районов."
@@ -2335,18 +2139,15 @@
  RT_ORACLE:0 "Оракул"
  anomaly.4046.c.tooltip_new:0 "§YВаша империя§! получает модификатор §RНегативное освещение в СМИ§!.\n\n[From.From.GetName] получает модификатор §RВраждебная среда§!."
  anomaly.4047.a.tooltip_new:0 "§YВаша империя§! получает модификатор §RНегативное освещение в СМИ§!."
- 
  action.92.rare_crystals:0 "Во время изучения планеты [From.GetName] корабль [Root.GetName] обнаружил залежи §Hредких кристаллов§!. Эти кристаллы обладают свойствами, которые делают их чрезвычайно эффективными при фокусировке лазерных лучей; также они являются важнейшим компонентом в самой современной электронике. Кроме того, многие культуры используют их как декор и украшения."
  action.92.exotic_gases:0 "Во время изучения планеты [From.GetName] корабль [Root.GetName] обнаружил несколько §Hэкзотических газов§!, ранее нам неизвестных. Редкие и экзотические газы используются для самых разных целей, они особенно необходимы при управлении продвинутым энергетическим оружием и силовыми полями. Некоторые из газов также могут использоваться в качестве топлива для звездолетов или даже как легкие наркотики."
  action.92.volatile_motes:0 "Во время изучения планеты [FromFrom.GetName] корабль [Root.GetName] обнаружил ранее неизвестный редкий ресурс, названный §Hлетучими пылинками§!. Эти сверхъестественные частицы содержат огромное количество энергии, которое можно было бы использовать в производстве энергии, в качестве топлива или даже как взрывчатку."
  action.92.volatile_motes.tooltip:0 "£volatile_motes£§Y$volatile_motes$§!\n§E$volatile_motes_desc$§!"
  action.92.exotic_gases.tooltip:0 "£exotic_gases£§Y$exotic_gases$§!\n§E$exotic_gases_desc$§!"
  action.92.rare_crystals.tooltip:0 "£rare_crystals£§Y$rare_crystals$§!\n§E$rare_crystals_desc$§!"
- 
  mega.200.name:0 "§HЭкуменополис§!: [Root.GetName] в оболочке"
  mega.200.desc:0 "Разрастающиеся города закрывают кору планеты слой за слоем.\n\nСпустя всего несколько лет после начала этого грандиозного проекта уже трудно вспомнить, какой была поверхность планеты [Root.GetName]. Зеленой от растительности? Труднопроходимой? Теперь здесь повсюду сталь - на многие мили в любом направлении.\n\nМесто, когда-то сформированное под действием случая и бездумных законов природы, теперь представляет собой конструкцию, возникшую из неукротимой цели."
  mega.200.a:0 "Впечатляет."
- 
  criminal_underworld:0 "Преступный мир"
  criminal_underworld_desc:0 "На этой планете существует крупный преступный мир."
  unemployment_benefits:0 "Повышение пособий"
@@ -2432,6 +2233,7 @@
  crime.1.a2:0 "Приступить к реализации программы."
  crime.1.b2:0 "Несколько трутней-отступников не повод для волнения."
  crime.1.a3:0 "Задействовать режим ожидания."
+ crime.1.a3.tooltip:0 "Добавлен модификатор §YРежим ожидания§! на срок §Y120§! месяцев. Он обладает следующими эффектами: Содержание безработных дронов в энергокредитах: §R+2§!"
  crime.1.b3:0 "Несколько испорченных дронов не имеют значения."
  crime.2.name:0 "[Root.GetName]: подкупленные чиновники"
  crime.2.desc:0 "Недавно было получены доказательства, что многие правительственные чиновники на планете §H[Root.GetName]§! брали взятки. Местные преступные организации подкупали их, чтобы те не обращали внимания на гнусную деятельность этих организаций. В некоторых случаях чиновники оказались членами тех самых организаций, с которыми они должны были бороться!\n\nПрошла серия арестов, но многие из чиновников подали в отставку, когда поняли, что шутки закончились. Коррупция на планете [Root.GetName], похоже, пустила глубокие корни."
@@ -2526,10 +2328,14 @@
  crime.1002.name:0 "Закрытие филиала на планете [From.GetName]"
  crime.1002.desc:0 "Наш филиал на планете §H[From.GetName]§!, являющейся частью империи §H[From.Owner.GetName]§!, был недавно принудительно закрыт после проведения местными властями массовых арестов. Похоже, недавнее снижение преступности на планете позволило их правоохранительным органам сосредоточить усилия на подрыве нашей деятельности."
  crime.1002.tooltip:0 "Наш филиал на планете [From.GetName] закрыт."
- 
+ atomic_clock_cat:0 "$AST_DEBRIS_FIELD_1_CAT$"
+ distar.330.name:0 "Обратный отсчет атомных часов"
+ distar.330.desc:0 "Последние 42 года и 3 дня исследователи на планете [Root.Capital.GetName] с нетерпением ожидали, чем же закончится обратный отсчет таинственных атомных часов невероятной точности, обнаруженных на планете [From.From.From.GetName].\n\nВсе гипотезы и догадки, накопившиеся за десятилетия оживленных дебатов, исчезли в мгновение ока, вместе с большей частью планеты [nuked_primitive_planet.GetName].\n\nКак только часы отмерили отведенный им срок, они передали сигнал на приемник на планете [nuked_primitive_planet.GetName], вызвав термоядерный взрыв такой разрушительной силы, что он опустошил целую планету, стерев с ее лица примитивную цивилизацию, которая там обитала.\n\nПока наши ученые обсуждают причину столь тщательно рассчитанной аннигиляции, атомные часы продолжают тикать, будто и не было никакого опустошения."
+ distar.330.a.phile:0 "ЧТО МЫ НАДЕЛАЛИ?.."
+ distar.335.name:0 "Обратный отсчет атомных часов"
+ distar.335.desc:0 "Последние 42 года и 3 дня исследователи на планете [Root.Capital.GetName] с нетерпением ожидали, чем же закончится обратный отсчет таинственных атомных часов невероятной точности, обнаруженных на планете [From.From.From.GetName].\n\nВсе гипотезы и догадки, накопившиеся за десятилетия оживленных дебатов, исчезли в мгновение ока, вместе с большей частью планеты [nuked_planet.GetName].\n\nКак только часы отмерили отведенный им срок, они передали сигнал на приемник на планете [nuked_planet.GetName], вызвав термоядерный взрыв такой разрушительной силы, что он опустошил целую планету.\n\nПока наши ученые строят предположения о причине столь тщательно рассчитанной аннигиляции, атомные часы продолжают тикать, будто и не было никакого опустошения."
  planet_culture_shock:0 "$culture_shock_bronze_age$"
  planet_culture_shock_desc:0 "Этот прежде примитивный мир переживает период хаотичных потрясений, адаптируясь к резкому внедрению продвинутых технологий. Во многих отдельных регионах по-прежнему имеется значительное сопротивление подрывного характера."
- 
  col_mining:0 "Добывающий мир"
  col_mining_desc:0 "Поверхность этой планеты в основном покрыта рудниками, карьерами, скважинами и тяжелой техникой."
  col_farming:0 "Сельскохозяйственный мир"
@@ -2582,12 +2388,13 @@
  col_infested_desc:0 "Эта планета заражена преторианской Карой."
  col_contingency:0 "Мир Контингенции"
  col_contingency_desc:0 "Эта планета захвачена Контингенцией."
- 
  RESOURCE_GROUP_DEFAULT:0 "§W$STORED|*0$ +$BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_NEG:0 "§R$STORED|*0$ $BALANCE|*0$§!"
+ RESOURCE_GROUP_DEFAULT_NEG_TOTAL_POS:0 "§R$STORED|*0$ +$BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_MAX:0 "§Y$STORED|*0$ +$BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_DEC:0 "§W$STORED|*1$ +$BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_NEG_DEC:0 "§R$STORED|*1$ $BALANCE|*0$§!"
+ RESOURCE_GROUP_DEFAULT_NEG_DEC_TOTAL_POS:0 "§R$STORED|*1$ +$BALANCE|*0$§!"
  RESOURCE_GROUP_BALANCE_ONLY:0 "§W+$BALANCE|*0$§!"
  RESOURCE_GROUP_BALANCE_ONLY_NEG:0 "§R$BALANCE|*0$§!"
  RESOURCE_GROUP_MULTI_TOOLTIP:0 "£$RESOURCE_KEY$£ $RESOURCE_NAME$: $AMOUNT$"
@@ -2599,11 +2406,9 @@
  SYSTEMS_GROUP:0 "$NON_LIMITED_GROUP$"
  STARBASE_GROUP:0 "$LIMITED_GROUP$"
  NAVY_GROUP:0 "$LIMITED_GROUP$"
- 
- # Megastructures
  matter_decompressor_0:0 "Площадка для уплотнителя материи"
  matter_decompressor_0_DESC:0 "Эта строительная станция служит базой для будущего строительства такого объекта, как $matter_decompressor_1$."
- matter_decompressor_0_MEGASTRUCTURE_DETAILS:0 "§Y$matter_decompressor_4$§! линзирует гравитацию черной дыры, перенаправляя ее в огромный бур гравитационных сил, который извлекает материю из сингулярности для ее преобразования в £minerals£ минералы."
+ matter_decompressor_0_MEGASTRUCTURE_DETAILS:0 "§Y$matter_decompressor_4$§! линзирует гравитацию черной дыры, образуя бур из гравитационных сил для извлечения £minerals£ минералов из сингулярности."
  matter_decompressor_1:0 "Уплотнитель материи: Якорь"
  matter_decompressor_1_DESC:0 "Продвинутый двигатель перенаправления гравитации удерживает основание объекта на краю горизонта событий черной дыры."
  matter_decompressor_1_MEGASTRUCTURE_DETAILS:0 "$matter_decompressor_0_MEGASTRUCTURE_DETAILS$"
@@ -2621,12 +2426,10 @@
  matter_decompressor_ruined_MEGASTRUCTURE_DETAILS:0 "Останки сложной установки, взаимодействующей с черной дырой."
  matter_decompressor_restored:0 "$matter_decompressor_4$"
  matter_decompressor_restored_DESC:0 "$matter_decompressor_4_DESC$"
- 
  allow_matter_decompressor:0 "§HМегасооружение:§! $matter_decompressor_4$"
  allow_strategic_coordination_center:0 "§HМегасооружение:§! $strategic_coordination_center_3$"
  allow_mega_art_installation:0 "§HМегасооружение:§! $mega_art_installation_3$"
  allow_interstellar_assembly:0 "§HМегасооружение:§! $interstellar_assembly_4$"
- 
  strategic_coordination_center_0:0 "Площадка для центра стратегической координации"
  strategic_coordination_center_0_DESC:0 "Эта строительная станция служит базой для будущего строительства такого объекта, как $strategic_coordination_center_3$."
  strategic_coordination_center_0_MEGASTRUCTURE_DETAILS:0 "Объект, синхронизирующий национальную сеть космических баз, усиливая ее оборонительные и наступательные возможности."
@@ -2644,9 +2447,7 @@
  strategic_coordination_center_ruined_MEGASTRUCTURE_DETAILS:0 ""
  strategic_coordination_center_restored:0 "$strategic_coordination_center_3$"
  strategic_coordination_center_restored_DESC:0 "$strategic_coordination_center_3_DESC$"
- 
  strategic_coordination_center_modifier:0 "$strategic_coordination_center_1$"
- 
  mega_art_installation_0:0 "Площадка для художественной мегакомпозиции"
  mega_art_installation_0_DESC:0 "Эта строительная станция служит базой для будущего строительства такого объекта, как $mega_art_installation_3$."
  mega_art_installation_0_MEGASTRUCTURE_DETAILS:0 "Этот объект представляет собой художественный светоч среди звезд, который вдохновляет зрителей и служит олицетворением духа его создателей."
@@ -2661,7 +2462,6 @@
  mega_art_installation_ruined_MEGASTRUCTURE_DETAILS:0 ""
  mega_art_installation_restored:0 "$mega_art_installation_3$"
  mega_art_installation_restored_DESC:0 "$mega_art_installation_3_DESC$"
- 
  interstellar_assembly_0:0 "Площадка для Межзвездной ассамблеи"
  interstellar_assembly_0_DESC:0 "Эта строительная станция служит базой для будущего строительства такого объекта, как $interstellar_assembly_4$."
  interstellar_assembly_0_MEGASTRUCTURE_DETAILS:0 "Место встречи галактических цивилизаций, которое повышает привлекательность иммиграции и улучшает всеобщее мнение о нас."
@@ -2678,34 +2478,23 @@
  interstellar_assembly_ruined_MEGASTRUCTURE_DETAILS:0 ""
  interstellar_assembly_restored:0 "$interstellar_assembly_4$"
  interstellar_assembly_restored_DESC:0 "$interstellar_assembly_4_DESC$"
- 
  mega.1000.name:0 "$matter_decompressor_1$"
  mega.1000.desc:0 "Тонкие и изящные подпорные балки такого объекта, как $matter_decompressor_1$, пробуждаются к жизни.\n\nСпазмы и конвульсии этой ненадежной станции сменяются ровным гудением текущей энергии и твердых частиц, сметаемых из области тени за пределами горизонта событий звезды [From.GetName]."
  mega.1000.a.mater:0 "Ради науки."
- 
  mega.1100.name:0 "$strategic_coordination_center_1$"
  mega.1100.desc:0 "$strategic_coordination_center_1$, попадающий в поле зрения камер наблюдения, представляет собой впечатляющее зрелище.\n\nНаши военные инженеры осознали, что не стоит даже и пытаться скрыть истинное предназначение станции такого размера. Она выглядит именно тем, чем и является: коробкой с самым современным оборудованием связи, матрицами датчиков и высококвалифицированной командой тактической логистики."
  mega.1100.a.tooltip:0 "§H$strategic_coordination_center_1$§! улучшает такие параметры, как §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!, §Y$mod_shipclass_starbase_damage_mult$§!, §Y$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_ADD$§!, §Y$mod_shipsize_corvette_build_speed_mult$§!, §Y$mod_shipsize_destroyer_build_speed_mult$§!, §Y$mod_shipsize_cruiser_build_speed_mult$§! и §Y$mod_shipsize_battleship_build_speed_mult$§!."
- 
  underground_expansion_tooltip:0 "Подземные площади дадут нам больше места для расширения!"
- 
  leviathans.105.z:0 "Нам нужен ваш опыт."
- 
  requires_capital_system:0 "$TRIGGER_FAIL$ Нужно строить в главной системе"
- 
- # Ship Components
  ORBITAL_TRASH_1:0 "Орбитальный распространитель мусора"
  ORBITAL_TRASH_1_DESC:0 "Этот компонент переполняет оборонные сети планеты мусорными данными, засыпая их миллионами высокоскоростных мелких снарядов. Корабли, оснащенные этим компонентом, наносят больший урон при орбитальной бомбардировке."
- 
- # Events
- 
  starbase_caravaneer:0 "Терминал"
  starbase_caravaneer_plural:0 "Терминалы"
  OUTRAGEOUS:0 "Возмутительно!"
  OUTRAGE:0 "Это возмутительно!"
  caravaneers:0 "Караванщики"
  NAME_Chors_Compass:0 "Компас Хора"
- 
  caravaneer_cargoship_01:0 "Караванный грузовой корабль"
  caravaneer_cargoship_01_plural:0 "Караванные грузовые корабли"
  caravaneer_destroyer_01:0 "Караванный эсминец"
@@ -2717,7 +2506,6 @@
  CARAVANEER_WEAPON_3:0 "Большая караванная пушка"
  caravaneer_station_01:0 "Караванная станция"
  caravaneer_station_01_plural:0 "Караванные станции"
- 
  cara_home_main.title:0 "$NAME_Caravaneer_Home$"
  cara_home_direct1:0 "$NAME_Caravaneer_Home$ приглашает вас в «$NAME_Chors_Compass$» - извечное пристанище разношерстных галактических караванов и притон азартных игр. Нет, вы не ослышались."
  cara_home_direct2:0 "Вас приветствует $NAME_Tradestation_Tungle$, главный дворец отдыха в галактике и домашняя база флотилий Караванщиков!"
@@ -2736,33 +2524,25 @@
  cara_home_about_fleet2.reply:0 "$cara_home_about_fleet1.reply$"
  cara_home_about_fleet3:0 "Мы пытались связаться с расой §H$NAME_Caravaneer_Fleet3_species_plural$§!..."
  cara_home_about_fleet3.reply:0 "Прелестные, правда? И бесстрашные! Кхе-кхе.\n\n$cara_home_about_fleet1.reply$"
- 
  cara_caravancoinz.title:0 "CaravanCoinz"
  ccoinz1desc:0 "$ccoinz$ - это премиальная валюта, созданная Комитетом монетизации караванщиков."
  ccoinswhat:0 "Что такое $ccoinz$?"
  ccoinzwhat.reply:0 "Комитет по монетизации караванщиков обеспечивает полную совместимость с экосистемой услуг на борту станции $NAME_Tradestation_Tungle$, включая, но не ограничиваясь такими объектами, как $slots$ и $lootboxes$.\n\nНо чаще всего это только $slots$ и $lootboxes$.\n\n$ccoinz$ принимаются только для таких объектов, как $slots$ и $lootboxes$."
- # 1 CC = 0.2 E + 0.225 M
  buyccoinz.a:0 "Купить §G8000§! $ccoinz$"
- # 1600 E + 1800 M
  buyccoinz.b:0 "Купить §G12 000§! $ccoinz$"
- # 2400 E + 2700 M
  buyccoinz.c:0 "Купить §G26 000§! $ccoinz$"
- # 5200 E + 5850 M
  bought8kcc:0 "Иногда восемь тысяч - это все, что покупатель может себе позволить."
  bought12kcc:0 "Так вы купите §H$lootbox$§! и кое-что еще!\n\nНемного, но кое-что."
  bought26kcc:0 "Желание - и возможность! - тратить по-крупному напрямую связано со степенью доверия.\n\nМы вам доверяем."
  how_many_ccoinz:0 "Проверить счет $ccoinz$"
  how_many_ccoinz_reply:0 "У вас есть §Y[$owned_cc$]§! $ccoinz$."
  how_many_ccoinz_reply_zero:0 "§RМы еще не покупали $ccoinz$!§!"
- 
  8kcc:0 "$ccoinz$: §G8000§!"
  12kcc:0 "$ccoinz$: §G12 000§!"
  26kcc:0 "$ccoinz$: §G26 000§!"
- 
  slots:0 "Места"
  lootbox:0 "Реликварий"
  lootboxes:0 "Реликварии"
- 
  cara_home_slots.title:0 "$slots$"
  cara_home_slots:0 "Сыграть в §H$slots$§!"
  cara_home_lootbox:0 "Открыть §H$lootbox$§!"
@@ -2776,53 +2556,41 @@
  cara_home_ccoinz:0 "Купить $ccoinz$"
  cara_home_exit:0 "Прекратить связь."
  cara_homicide_exit:0 "Умри..."
- 
  slots1:0 "Цель состоит в том, чтобы собрать определенные символы в ряд на барабанах, когда они наконец прекратят вращаться.\n\nНет, от вас это не зависит. Ну разве это не увлекательно?"
  slots2:0 "Согласно статистике, у вас есть прекрасный шанс выиграть по-крупному!"
  slots3:0 "Своей перламутровой отделкой барабаны обязаны костному мозгу последних Гатунемов, когда-либо посещавших эту станцию. Ужасные мелкие вредители."
- 
  cara_home_spin:0 "Потяните за рычаг."
  cara_home_spin.tooltip:0 "Вращайте барабаны за §R$slotscost$§! $ccoinz$."
  cara_home_hello:0 "Приве-е-ет!"
  cara_home_main:0 "У нас было на уме кое-что другое..."
- 
  slotscost:0 "2783,92"
  slots_spin_allow_fail:0 "§RУ вас недостаточно $ccoinz$§!"
- 
  slotsdesc1:0 "§EОдин за одним барабаны останавливаются, и...§!"
  no_win:0 "§RНичего.§!"
- 
  slotsjackpot1:0 "slotsjackpot1"
- 
  SCORE:0 "Есть!"
  KACHING:0 "Дзынь!"
  DINGDINGDING:0 "Динь-динь-динь!"
  SCOREQ:0 "Есть?.."
  KACHINGQ:0 "Дзынь?.."
  DINGDINGDINGQ:0 "Динь-динь-динь?.."
- 
  won_500ccoinz:0 "$ccoinz$: §G500§!"
  won_3000ccoinz:0 "$ccoinz$: §G3000§!"
- 
- # Lootboxes
  cara_home_lootbox.title:0 "$lootboxes$"
  lootboxdesc1:0 "§EНа богато украшенном постаменте лежит древний $lootbox$. Внутри наверняка полно несметных богатств.§!"
  cara_home_lootbox_explain:0 "Что такое $lootboxes$?"
  cara_home_lootbox_explain.reply:0 "Это давняя история, но не длинная.\n\nКогда караваны впервые объединились, и возникла империя [caravaneer_home_country.GetName], было решено, что небольшая случайная часть товаров, проходящих через эту станцию каждый год, будет изыматься, помещаться в герметично закрытые контейнеры и храниться в грузовом отсеке на самом низком уровне станции. Этой традиции придерживались с незапамятных времен, и недавно торговый отсек заполнился.\n\nОтныне наш долг - продавать эти герметичные $lootboxes$."
  cara_home_lootbox_contents:0 "Что содержит $lootbox$?"
  cara_home_lootbox_contents.reply:0 "Нам запрещено знать об этом. Это знание - для покупателя.\n\nОднако мы точно знаем, что на каком-то этапе истории Караванщиков содержимое посчитали ценным. Хотя есть некоторые свидетельства, что $lootboxes$ использовались для уборки мусора во время краткого третьего правления Безумного Брокера..."
- 
  openedlootboxdesc1:0 "§E$lootbox$... §Rпуст§!.\n\nДушу раздирает горькое разочарование, но вы изо всех сил пытаетесь сохранить самообладание перед лицом этого случайного унижения. Неужели внезапно повысился уровень влажности, или ваши органы зрения увлажнились самопроизвольно? Ваш взор затуманивается, $lootbox$ от этого не стал полнее.\n\nНо в тот момент когда экзистенциальная тьма грозит поглотить вас, она резко исчезает. Что это за чувство? Пока вы вспоминаете, сколько усилий было потрачено на эти $ccoinz$, какие острые эмоции испытываешь, когда $lootbox$ открывается... вас наполняет необъяснимое §Gчувство гордости и удовлетворения§!.§!"
  openedlootboxdesc2:0 ""
  openedlootboxdesc3:0 "openedlootboxdesc3"
  openedlootboxdesc4:0 "openedlootboxdesc4"
  openedlootboxdesc5:0 "openedlootboxdesc5"
- 
  cara_home_lootbox_buy:0 "Мы купим $lootbox$."
  cara_home_lootbox_buy.tooltip:0 "Купите $lootbox$ за §R$boxcost$§! $ccoinz$."
  boxcost:0 "6194,21"
  lootbox_buy_allow_fail:0 "§RУ вас недостаточно $ccoinz$§!"
- 
  lootbox.intro:0 "Открыв $lootbox$, мы находим..."
  lootbox.and:0 "\nПорывшись внутри, мы также получаем..."
  lootbox_contents_empty:0 "§Rничего§!."
@@ -2844,7 +2612,6 @@
  lootbox_contents_m:0 "§E$lootbox$ открыть непросто, так как изнутри крышку плотно удерживает гравитационная аномалия.§!"
  lootbox_contents_n:0 "§E$lootbox$ ничего не содержит. Там, где можно было ожидать пустое место для хранилища, находится гладкий блок металлического сплава, причем одна внутренняя стенка сплавилась с другой, не оставив даже следов.§!"
  lootbox_contents_galatron:0 "§E§!Галатрон§E!..§!"
- 
  cara_home_galatron.title:0 "Галатрон"
  cara_home_galatron.desc:0 "§EГалатрон§! ваш!"
  cara.320.a:0 "Что это?"
@@ -2854,7 +2621,6 @@
  cara.320.c:0 "Какова его стоимость? Можно ли его продать?"
  cara.320.c.reply:0 "Его стоимость нельзя измерить деньгами. Никто не купит у вас §EГалатрон§!, хотя вся галактика будет ликовать в лучах его света.\n\nНо не забывайте, что традиция позволяет отобрать его у недостойных как военный трофей."
  cara.320.d:0 "Спасибо? Пока?.."
- 
  cara.910.name:0 "$cara.920.name$"
  cara.910.desc:0 "Мы сокрушили наживающихся за чужой счет паразитов, домом которым служила торговая станция «Тангл». $NAME_Caravaneer_Home$ больше не существует!"
  cara.920.name:0 "§H$caravaneers$§!: Станция «Тангл» уничтожена"
@@ -2868,16 +2634,12 @@
  cara.940.name:0 "§H$caravaneers$§!: Успешное восстановление"
  cara.940.desc:0 "Империя [caravaneer_home_country.GetName] успешно восстановила свою торговую станцию в системе [cara_home_new_location.GetName], на бывшей территории империи [From.GetAdj]."
  cara.940.b.reply:0 "Жаль, но все победителями быть не могут! Вы, в частности, сделали выбор не быть победителем.\n\nПрощайте."
- 
- # Galatron
  cara.950.name:0 "Захват §EГалатрона§!"
  cara.950.desc:0 "[From.From.GetName] признает свое поражение, и мы отнимаем славный Галатрон у этих недостойных!"
  cara.950.a:0 "Да сияет вечно его спокойный свет!"
  cara.951.name:0 "Потеря §EГалатрона§!"
  cara.951.desc:0 "Если не считать многочисленных функционеров, которые бились в истерике, передача Галатрона силам расы [From.GetAdj] прошла без эксцессов."
  cara.951.a:0 "Бессловесный страдальческий вой."
- 
- # Fleet 1
  cara_fleet1_contact.title:0 "Венгралийский Триум"
  fleet1contact_opening:0 "Вас приветствует Венгралийский Триум, сертифицированные торговцы-караванщики Коалиции караванов караван-сарая!"
  fleet1contact1:0 "$fleet1contact_opening$ Мы предлагаем вам эксклюзивные товары из самых дальних уголков галактики (воссозданные нашими корабельными фабриками) по доступным ценам.\n\n$fleet1contact_explanation$"
@@ -2886,7 +2648,6 @@
  fleet1contact_explanation:0 "При каждом проходе через вашу территорию мы будем предлагать вам эксклюзивные сделки. Как бы это ни было заманчиво, вам не обязательно сразу же соглашаться! Вы можете попросить нас связаться с вами перед тем, как мы покинем ваше пространство, и мы сделаем это, но знайте, что все входящие звонки перенаправляются на планету $NAME_Caravaneer_Home$."
  cara_fleet1_contacted:0 "Приветствуем вас, караванщики."
  cara_fleet1_exit:0 "Нас это не интересует. Следуйте своей дорогой."
- 
  cara_fleet1_main.title:0 "$cara_fleet1_contact.title$"
  fleet1hewwo01:0 "Весьма ограниченное предложение по продаже экстракта эндокринной системы блоргов для частных организаций. Отлично подходит для полупроницаемых мембран всех видов!"
  fleet1hewwo02:0 "Иногда кажется, что ничто не имеет смысла. Но затем я вспоминаю, что богатство и счастье совсем рядом, только руку протяни!\n\nРасскажи об этом своим друзьям!"
@@ -2904,21 +2665,18 @@
  fleet1hewwo14:0 "Венгралийский Триум был создан для торговли. Это аналог венгралийской крови. Не заниматься торговлей - это...\n\nНеправильно.\n\nПоэтому..."
  fleet1hewwo15:0 "Даже в самых старых приходных книгах в венгралийской истории упоминаются торговцы звезды Орлан. Они позволили нам эволюционировать от животного состояния до продажи кухонных принадлежностей."
  fleet1hewwo16:0 "Наследие Венгралийского Триума - это также наследие торговцев звезды Орлан. Их больше нет с нами, но предписанные квоты все равно нужно соблюдать!"
- 
  cara_fleet1_deals.title:0 "$cara_fleet1_contact.title$"
  fleet1dealdesc1:0 "Мы предлагаем вам такой продукт, как [Root.GetFleet1DealProduct].\n\nИ за все это мы просим очень низкую цену: [Root.GetFleet1DealCost]\n\n[Root.GetFleet1DealProductAddendum]"
  cara_fleet1_deal:0 "Покажите нам ваши товары."
  cara_fleet1_take_deal:0 "Договорились."
  cara_fleet1_take_deal.tooltip:0 "cara_fleet1_deal.tooltip"
  cara_fleet1_dealtaken:0 "Приятно иметь с вами дело. И помните: нужно не просто мечтать, а воплощать мечту в жизнь!"
- 
  cost_500energy:0 "Энергокредиты: £energy£ §R-500§!"
  cost_1cruiser:0 "Крейсеры ([Root.GetAdj]): £military_ship£ §R-1§!"
  cost_5000food:0 "Пища: £food£ §R-5000§!"
  cost_3pops:0 "Поселения ([Root.GetAdj]) на планете [Root.Capital.GetName]: £pop£ §R-3§!"
  cost_2000energy:0 "Энергокредиты: £energy£ §R-2000§!"
  product_randomtech:0 "Получите §Yслучайную технологию§!"
- 
  fleet1product1:0 "§GДвухъярусные кровати марки «Триум»§!! Эти инновационные, экономящие пространство, штабелируемые «сосуды сна» увеличивают потенциал обитания планетарного жилья, позволяя вам «впихнуть» больше населения на квадратный метр!"
  fleet1product1_addendum:0 "§HОдноразовая доставка в §Yодну колонию§!. Двухъярусные кровати гарантированно прослужат §Y80 лет§! и не больше. §Y$MOD_PLANET_HOUSING_ADD$ повышается§! на §G+10%§! на указанный срок.§!\n\n(Услуга тщательно продуманного размещения двухъярусных кроватей не прилагается. Использование таких кроватей коррелирует со значительным повышением количества легких травм, вызванных падением с кровати. Могут возникнуть проблемы с соблюдением неприкосновенности частной жизни. Могут повышать социальную уязвимость к сезонным заражениям и/или пандемиям.)"
  fleet1product1_tooltip:0 "§G+1§! решение по §Yиспользованию двухъярусных кроватей§!"
@@ -2934,9 +2692,8 @@
  fleet1product5_addendum:0 "§HЭтот контингент будет жить и работать на ваших космических базах, поддерживая свое существование только питательной смесью марки «Триум», и не будет влиять на вашу демографическую и экономическую ситуацию, а только на $TRADE_VALUE$. Командировка продлится §Y80 лет§! и не больше. §Y$TRADE_VALUE$§! повышается на §G+15%§! на указанный срок.§!"
  fleet1product6:0 "§GСтимуляторы выведения марки «Триум»§!! Устали ждать, пока ваши личинки или особи, эквивалентные им, станут имаго или особями, эквивалентными им? Повысьте скорость их развития с помощью этих сверхбезопасных стимуляторов!"
  fleet1product6_addendum:0 "Обратите внимание, что через §Hдесять лет§! антитела, существующие в организме вашей расы, нейтрализуют действие этих стимуляторов. Но до тех пор вы увидите шикарный рост населения, ведь §Y$MOD_POP_GROWTH_SPEED$§! повысится на целых §G10%§!."
- fleet1product7:0 "Несколько чемоданов, а в них немеченые £energy£ §Yэнергокредиты§!! Всего £energy£ §G2000§!. Вы в таком же восторге, как и мы? Мы на это надеемся."
+ fleet1product7:0 "несколько чемоданов, а в них немеченые £energy£ §Y$energy$§!! Всего £energy£ §G2000§! §Yэнергокредитов§!. Вы в таком же восторге, как и мы? Мы на это надеемся."
  fleet1product7_addendum:0 "Венгралийский Триум: помогаем разместить нужных чужаков куда требуется."
- 
  fleet1cost1:0 "§R4§! £pop£ поселения категории §H$pop_cat_specialist$§!! Нам нужна помощь с бухгалтерией."
  fleet1cost1_tooltip:0 "§R-4§! £pop£ поселения категории §H$pop_cat_specialist$§!"
  fleet1cost2:0 "£alloys£ $alloys$: §R+1200§!!"
@@ -2946,25 +2703,19 @@
  fleet1dealcost5_tooltip:0 "£science_ship£ §R-1§! $science_ship$\n(Ведущий ученый будет переназначен.)"
  fleet1cost6:0 "§R-4§! £pop£ поселения категории §H$pop$§!! На самом деле любое поселение подойдет. Нас ждут захватывающие возможности в сфере развития медицины! Видите ли, мы недавно стали оказывать еще и услуги по вербовке."
  fleet1cost6_tooltip:0 "§R-4§! £pop£ поселения категории §H$pop$§!"
- 
  cara_deal_expired.tooltip:0 "$TRIGGER_FAIL$§RЭта сделка утратила силу. Извините!§!"
- 
  fleet1getback:0 "Не сейчас. Не могли бы вы связаться с нами попозже?"
  fleet1getbackreply:0 "Ну конечно же! Мы свяжемся с вами снова, прежде чем покинуть вашу территорию. Но имейте в виду, что за это время условия сделки могут измениться..."
- 
  cara_fleet1_redeals.title:0 "$cara_fleet1_contact.title$: §YПоследняя возможность§!"
  fleet1redealdesc1:0 "Такая возможность выпадает только раз в жизни. Вы готовы воспользоваться ей, пока она не ускользнула?"
  fleet1redealdesc2:0 "Вскоре мы должны будем расстаться, но вы можете хранить наши замечательные товары у себя вечно."
  fleet1redealdesc3:0 "Вы осознали, что было бы глупостью упустить такую сделку. Теперь данную мудрость вы можете воплотить в жизнь."
  fleet1redealdesc4:0 "Дорогие клиенты или, если нам будет позволено сказать, друзья! Мы покидаем вашу территорию. Возможно, вы хотите в последний раз ознакомиться с нашими товарами? Пока мы не встретимся снова, конечно."
  fleet1redealdesc5:0 "Последний шанс заключить эту сделку в соответствии с вашими пожеланиями! Вы не захотите это пропустить!"
- 
  cara.1002.title:0 "Уничтожена $NAME_Caravaneer_Fleet1_country$"
  cara.1002.desc:0 "Мы уничтожили пресмыкающихся паразитов из империи $NAME_Caravaneer_Fleet1_country$! Больше их низкокачественные товары и заискивающие манеры не будут осквернять галактику."
  cara.1003.title:0 "$NAME_Caravaneer_Fleet1_country$ уничтожена"
  cara.1003.desc:0 "Нам сообщили, что $NAME_Caravaneer_Fleet1_country$ незамедлительно закрывает свой мобильный магазин из-за полного уничтожения каравана."
- 
- # Fleet 2
  cara_fleet2_contact.title:0 "Орден Нумы"
  fleet2contact1:0 "Простите нас за то, что мы омрачили вселенную своим присутствием, [Root.GetSpeciesNamePlural]. Мы Орден Нумы, скромные торговцы на службе богине удачи Нумы. После того как нас сбросили с небес за алчность, мы отринули все материальные блага.\n\n$fleet2contact_explanation$"
  fleet2contact2:0 "Будьте благословенны, [Root.GetSpeciesNamePlural]. Мы Орден Нумы, состоящий в услужении богине удачи Нумы, и мы привезли вам самый благой товар из далеких уголков галактики.\n\n$fleet2contact_explanation$"
@@ -2973,7 +2724,6 @@
  fleet2contact5:0 "[Root.GetSpeciesNamePlural]! Божественное вмешательство привело нас на ваши земли. У нас с собой много чудесных вещей. Мы Орден Нумы, и наши сделки скреплены самой богиней удачи.\n\n$fleet2contact_explanation$"
  fleet2contact6:0 "Но это правда! Вы действительно процветаете, как и предсказывала Нума. Как говорится, удача улыбается храбрым.\n\nМы Орден Нумы, простые торговцы, преданно поклоняющиеся коммерции.\n\n$fleet2contact_explanation$"
  fleet2contact_explanation:0 "Наши флотилии плывут по божественным потокам космической энергии, куда нас несут ветра фортуны, и предоставляют вам новые сделки каждый раз, как мы появляемся на ваших землях.\n\nЗа скромное пожертвование чудесам вселенной могут стать вашими.\n\nВсе сделки осуществляются в кредитах..."
- 
  cara_fleet2_main.title:0 "$cara_fleet2_contact.title$"
  fleet2hewwo1:0 "Вперед, [Root.GetSpeciesNamePlural]! Испейте из колодца богатства Нумы и навсегда забудьте о жажде."
  fleet2hewwo2:0 "Следуйте за потоком космических энергокредитов, [Root.GetSpeciesNamePlural], и он приведет вас к истине. Нет лучше товаров, чем те, что несут на себе священную печать Нумы..."
@@ -2986,31 +2736,19 @@
  fleet2hewwo9:0 "Не нужно стесняться! Ознакомьтесь с нашими товарами и присоединяйтесь к поклонению Нуме."
  fleet2hewwo10:0 "Хорошие сделки предлагаются тем, кто их принимает, [Root.GetSpeciesNamePlural]. Примете участие в нашем священном бартере?"
  fleet2hewwo11:0 "Любите деньги, и деньги полюбят вас в ответ. Позвольте деньгам течь рекой, и они вернутся к вам безо всяких усилий, в изобилии."
- 
  cara_fleet2_deals.title:0 "$cara_fleet2_contact.title$"
  fleetdeal_explanation:0 "\n\nКак обычно, если вам нужно время подумать, мы можем уведомить вас, прежде чем покинуть вашу территорию, что даст вам еще один шанс принять щедрое предложение богини."
- # shrine
  fleet2dealdesc1:0 "Вы это слышали? Это звук приближающейся выгоды. Да, [Root.GetSpeciesNamePlural], мы предвидим, что вас ждет большая удача.\n\nНума явила нам видение святилища в ее честь в одном из ваших миров. Это святилище принесет вам такое процветание, о котором вы и мечтать не могли. $fleetdeal_explanation$"
- # thralls
  fleet2dealdesc2:0 "Вот и [fleet2_recent_pop_species.GetName]. Во время нашего паломничества мы спасли немало заблудших душ...\n\nОбратите внимание на этот прекрасный образец, изучивший искусство Нумского управления. Видите, как выглядит его [fleet2_recent_pop_species.GetMouthName] внутри? Этот цвет показывает, что данный объект здоров. А еще из них получаются хорошие работники. А репродуктивная функция поражает воображение. Что скажете? $fleetdeal_explanation$"
- 
  fleet2dealdesc3:0 "Закройте ваши визуальные рецепторы. А теперь представьте, что ласкающий поток энергокредитов несет вас по направлению к горе из еще большего количества энергокредитов.\n\nНаши методы Нумской визуализации помогут вам понять, что нет большей силы, чем сила разума. Вы тоже избавитесь от мирских желаний, и кредиты будут притягиваться к вам как членистоногие к навозу. $fleetdeal_explanation$"
- 
  fleet2dealdesc4:0 "Рисунки в потоке энергии... Они повсюду, но никто их не видит. Только Нума может предсказать божественные приливы и отливы рынка ценных бумаг. А за небольшое пожертвование мы поделимся частью ее мудрости с вами. $fleetdeal_explanation$"
- # Governor
  fleet2dealdesc5:0 "Представляем вам одного из наших лучших духовных лидеров, шакву девятого уровня с повышенными способностями к концентрации и внутренним взором. Под присмотром богини дела в ваших мирах будут процветать.\n\nВзамен мы просим лишь небольшое пожертвование в кредитах... $fleetdeal_explanation$"
- 
  fleet2dealdesc6:0 "Достопочтенные [Root.GetSpeciesNamePlural], у нас для вас уникальное предложение... Нума видит, что у вашей расы есть большой потенциал, и поэтому хочет предложить некоторым представителям вашего вида вступить в ряды ее последователей. Взамен вы сможете получить эти бесценные кристаллы... $fleetdeal_explanation$"
- # Cruiser
  fleet2dealdesc7:0 "Узрите «Благоволение фортуны», наш самый надежный охранный корабль... Сама богиня выбрала его, чтобы сопровождать наш благословенный груз по галактике, и в свое время он помешал многим богохульникам - пиратам, безбожникам, монстрам из пустоты, - которые вставали на божественном пути Нумы! Но он по-прежнему выглядит как новенький...\n\nДа, он служил удаче, а теперь, за скромное пожертвование, он может послужить и вам...$fleetdeal_explanation$"
- # Districts for Machines
  fleet2dealdesc8:0 "Простите нашу навязчивость, но мы заметили, что ваша планета §Y[fleet2deal8planet.GetName]§! имеет уникальный потенциал, который на данный момент не реализован. До священной сути этого потенциала можно провести канал, откуда рекой польется богатство!\n\nПозвольте поведать вам скрытые тайны вашей земли. Конечно, за это мы требуем символическое вознаграждение.$fleetdeal_explanation$"
  fleet2deal8.tooltip:0 "   Дает следующее: $mod_district_generator_max$: §G+3§!\n   $MOD_PLANET_MAX_DISTRICTS_ADD$: §G+2§!"
- # MI Upkeep mod
  fleet2dealdesc9:0 "Богиня Нума улыбается вам сегодня, [Root.GetSpeciesName]. Она показала нам, как лучше настроить ваши единицы на магнитосферу планеты §Y[fleet2deal9planet.GetName]§!. Благодаря нашим божественным запатентованным §Gмагнитным пластинам Нумы§! ваши дроны на планете §Y[fleet2deal9planet.GetName]§! будут тратить вашу священную £energy£ §Yэнергию§! с меньшим рвением.\n\nВ обмен мы требуем проведения на вашей территории церемонии в честь богини. Что скажете?$fleetdeal_explanation$"
- # Decision
  fleet2dealdesc10:0 "Находясь в глубоком медитативном трансе, одна из наших проповедниц отдалась Нуме и поведала священную истину богини в быстром потоке бессвязных слов. Хотя сама проповедница не пережила это испытание, нам удалось извлечь из ее речей алгоритм, который может превратить единицы и нули в миллионы.\n\nПусть ее жертва не будет напрасной, [Root.GetSpeciesNamePlural]. Пригласите удачу в свое планетарное ядро, и она вас не покинет.$fleetdeal_explanation$"
- # Repeatable options
  fleet2dealdesc11:0 "Позвольте Нуме заглянуть в ваше ядро, [Root.GetSpeciesNamePlural], и она скажет, что вам нужно. Постойте... Ответ к решению вашей проблемы материализуется прямо на моих глазах. Да, я уже его вижу!"
  fleet2dealdesc11.a:0 "$fleet2dealdesc11$\n\nЭто... еще один охранный корабль, да?"
  fleet2dealdesc11.b:0 "$fleet2dealdesc11$\n\nЭто... экзотические газы, да? М-м... какой у них приятный запах! Это запах успеха! Глубоко вдохните их и увидите Нуму во плоти. Но имейте в виду, что чрезмерное вдыхание этих газов может привести к иссушению ваших мембран."
@@ -3019,10 +2757,8 @@
  cara_fleet2_take_deal:0 "Договорились!"
  cara_fleet2_dealtaken:0 "Будьте благословенны, [Root.GetSpeciesNamePlural], ибо благодаря вашему бизнесу вы становитесь ближе к богине."
  cara_fleet2_exit:0 "$cara_fleet1_exit$"
- 
  fleet2getback:0 "Не сейчас. Пожалуйста, свяжитесь с нами попозже."
  fleet2getbackreply:0 "Как пожелаете, [root.GetSpeciesNamePlural]! Мы свяжемся с вами снова, прежде чем покинем вас. Но помните о том, что Нума капризная госпожа. Она может передумать и изменить условия сделки..."
- 
  cara_fleet2_redeals.title:0 "$cara_fleet2_contact.title$: §YПоследняя возможность§!"
  fleet2redealdesc1:0 "Упущенная возможность инвестировать, мой друг, - это самая дорогая ошибка в вашей жизни. Вы уверены, что можете себе позволить пройти мимо нашего предложения? Это ваш последний шанс, прежде чем мы покинем вашу территорию."
  fleet2redealdesc2:0 "Нума - щедрая госпожа. Мы уже собирались улетать, но она напомнила нам: «[Root.GetSpeciesNamePlural]! Нужно дать им последний шанс на сделку века, прежде чем мы отправимся в путь!»"
@@ -3037,15 +2773,12 @@
  fleet2product6_tooltip:0 "Вы получаете £rare_crystals£ §Y$rare_crystals$§! в количестве §G200§! штук в обмен на §R2§! £pop£ поселения"
  fleet2product7_tooltip:0 "§G+1§! §Y$caravaneer_cruiser_01$§!"
  fleetproduct10_tooltip:0 "§G+1§! решение §Yприменить божественный алгоритм§!"
- 
  cara.2002.title:0 "Уничтожена $NAME_Caravaneer_Fleet2$"
  cara.2002.desc:0 "После вооруженного столкновения в системе [From.From.solar_system.GetName] флотилия империи [From.From.GetName] с гордостью докладывает, что флотилия $NAME_Caravaneer_Fleet2_fleet$ уничтожена.\n\nТеперь караван расы $NAME_Caravaneer_Fleet3_species$, где прежде кипела жизнь, превратился в обычный межзвездный мусор. Больше эти лицемеры нас не потревожат."
  cara.2003.title:0 "$NAME_Caravaneer_Fleet2$ уничтожена"
  cara.2003.desc:0 "В столице [Root.Capital.GetName] стало известно, что флотилия $NAME_Caravaneer_Fleet2_fleet$ уничтожена.\n\nПосле вооруженного противостояния с представителями империи [From.GetName] караван расы $NAME_Caravaneer_Fleet2_species$, где прежде кипела жизнь, превратился в обычный межзвездный мусор.\n\nБогиня удачи не слишком помогла тем, кто поклонялся ей."
  cara.2003.a:0 "Жаль."
  cara_fleet2_contacted:0 "$cara_fleet1_contacted$"
- 
- # Fleet 3
  cara_fleet3_contact.title:0 "$NAME_Caravaneer_Fleet3$"
  fleet3contact1:0 "[Root.GetSpeciesName]! Мы приветствуем вас. Мы операторы флотилии $NAME_Caravaneer_Fleet3$, которая является частью империи $NAME_Caravaneer_Home$.\n\nМы путешествуем среди звезд. Все, что блестит, привлекает наше внимание. Мы собираем. И мы торгуем!\n\n$fleet3contact_explanation$"
  fleet3contact2:0 "$NAME_Caravaneer_Fleet3$ приветствует вас, [Root.GetSpeciesNamePlural]! Мы посредники, специалисты по заключению сделок, прилетевшие сюда со станции $NAME_Tradestation_Tungle$.\n\n$fleet3contact_explanation$"
@@ -3053,7 +2786,6 @@
  fleet3contact_explanation:0 "Мы пересекаем ваше пространство с миром. Только чтобы покупать и продавать, §Hкс-ск!§! Мы многое можем предложить, выгодные сделки. Мы заговорим снова, прежде чем уйти.\n\nЕсли же вы позвоните нам, вам ответит $NAME_Caravaneer_Home$."
  cara_fleet3_contacted:0 "$cara_fleet1_contacted$"
  cara_fleet3_exit:0 "$cara_fleet1_exit$"
- 
  cara_fleet3_main.title:0 "$NAME_Caravaneer_Fleet3$"
  fleet3hewwo1:0 "Сколько можно объяснять? Перенаправьте энергию преобразователя энергии на вспомогательный коллектор. Нет, не этот преобразователь энергии! §HКс-ск!§! Мне что, делать все само...\n\nО! Клиенты! Добро пожаловать. В нашем ассортименте самые разные товары. Благополучно доставленные сюда для вашего удобства с далеких звезд!"
  fleet3hewwo2:0 "Вам нужны сплавы, §Hкс-ск?§! Вы любите металлы и газы? Усердных работников? Ценные минералы? Да. Мы так и думали."
@@ -3063,7 +2795,6 @@
  fleet3hewwo6:0 "Ржавчина? Какая ржавчина?\n\nАх, эта ржавчина. Просто сотрите ее. Трите, трите, трите. Теперь вещица как новенькая!"
  fleet3hewwo7:0 "$NAME_Ketlings$? Да. Мы знаем о них. В прошлом наши братья. Поколения назад, давным-давно. Им не нравилось, они не одобряли того, что мы умнее их! Лучше умели собирать, находить, брать. Лучше во всем. Они изгнали нас прочь. Плыть в пустоте!\n\nНеважно. Теперь, без них, мы сильнее."
  fleet3hewwo8:0 "Только посмотрите на ваши бункеры для кредитов, [Root.GetSpeciesName]. Доверху забиты! Позвольте нам облегчить их. Позвольте нам помочь."
- 
  cara_fleet3_deals.title:0 "$cara_fleet3_contact.title$"
  fleet3dealdesc1:0 "У нас есть руда. Богатая, светящаяся руда. Вырванная прямо из камня! Сверкающие минералы получит [Root.GetName].\n\nНо мы голодаем. Мы испытываем жажду! Даруйте нам не что иное, как [Root.GetFleet3ScaledCostDeal1], и у ваших строителей, ваших творцов, будет [Root.GetFleet3ScaledProductDeal1]."
  fleet3dealdesc2:0 "У нас есть лидер, идеальный кандидат для империи [Root.GetName]! [Root.GetFleet3ProductDeal2]\n\nДайте нам не что иное, как [Root.GetFleet3CostDeal2], и забирайте лидера!"
@@ -3078,9 +2809,7 @@
  fleet3dealdesc9:0 "У нас есть корабль! §G$destroyer$§!, очень хороший, быстрый, мощный! Хорошо оснащенный! Без причины мы его, конечно, не отдадим, о нет! У нас нет времени давать вашим механикам его изучать, §Hкс-ск!§! Вы хотите этот корабль, да?\n\nДайте нам £minerals£ $minerals$ в количестве §R200§! ед., и корабль ваш."
  cara_fleet3_deal:0 "Что вы можете нам предложить?"
  cara_fleet3_take_deal:0 "Безусловно. Мы принимаем ваше предложение."
- #cara_fleet3_take_deal.tooltip:0 "cara_fleet3_deal.tooltip"
  cara_fleet3_dealtaken:0 "Приятно и радостно иметь с вами дело, [Root.GetName]. До встречи!"
- 
  fleet3deal1cost1:0 "£food£ $food$: §R200§!"
  fleet3deal1cost2:0 "£food£ $food$: §R1000§!"
  fleet3deal1cost3:0 "£food£ $food$: §R4000§!"
@@ -3114,49 +2843,34 @@
  fleet3deal8cost1:0 "§Y$consumer_goods$§!: §R300§!"
  fleet3deal8cost2:0 "У нас... есть некоторые противоречия с законом. Мелочи. Банальности. Но нам потребуются свидетели, поддержка. Ваше сильное и мудрое государство поручится за нас, бедных доверчивых торговцев, саму невинность, чьей единственной ошибкой была некоторая невнимательность, отвлеченность сознания, что привела к нарушению какой-то досадной, §Hкс-ск§!, законодательной нормы?"
  fleet3deal9.tooltip:0 "§G+1§! §Y$caravaneer_destroyer_01$§!"
- 
  fleet3getback:0 "$fleet1getback$"
  fleet3getbackreply:0 "Тогда мы еще с вами свяжемся, прежде чем покинуть ваше пространство. Но условия сделки могут измениться!"
- 
  cara_fleet3_redeals.title:0 "$cara_fleet3_contact.title$: §YПоследняя возможность§!"
  fleet3redealdesc1:0 "Вы хорошо подумали? Все взвесили? Передумали? §HКс-ск!§!"
  fleet3redealdesc2:0 "Какое-то время мы будем отсутствовать в пространстве расы [Root.GetSpeciesAdj]. Вы ведь не хотите остаться ни с чем?"
  fleet3redealdesc3:0 "Примите сделку! Примите! Примите!"
  fleet3redealdesc4:0 "Мы чувствуем ваше настроение. Эта сделка искушает вас. Взывает к вам. Так ведь?"
  fleet3redealdesc5:0 "[Root.GetSpeciesNamePlural]! Мы собираемся покинуть ваше пространство! Предложение все еще в силе, товары все еще новые! Куйте шлак, пока горяч! §HКс-ск!§!"
- 
- #cara_fleet3_return.title:0 "cara_fleet3_return"
- #fleet3return1:0 "fleet3return1"
- #fleet3return2:0 "fleet3return2"
- #fleet3return3:0 "fleet3return3"
- #fleet3return4:0 "fleet3return4"
- #fleet3return5:0 "fleet3return5"
- 
  cara.3002.title:0 "Уничтожена $NAME_Caravaneer_Fleet3$"
  cara.3002.desc:0 "После вооруженного столкновения в системе [From.From.solar_system.GetName] флотилия империи [From.From.GetName] с гордостью докладывает, что флотилия $NAME_Caravaneer_Fleet3$ уничтожена.\n\nТеперь караван расы $NAME_Caravaneer_Fleet3_species$, где прежде кипела жизнь, превратился в обычный межзвездный мусор. Больше эти болтуны нас не потревожат."
  cara.3003.title:0 "$NAME_Caravaneer_Fleet3$ уничтожена"
  cara.3003.desc:0 "В столице [Root.Capital.GetName] стало известно, что флотилия $NAME_Caravaneer_Fleet3$ уничтожена.\n\nПосле вооруженного противостояния с представителями империи [From.GetName] караван расы $NAME_Caravaneer_Fleet3_species$, где прежде кипела жизнь, превратился в обычный межзвездный мусор.\n\nВозможно, таким концом они оказались бы довольны."
- 
  cara.4000.name:0 "§HКараванщики§!: Трава была зеленее"
  cara.4000.desc:0 "Мы получаем отчеты с планеты [pops_join_caravan_planet.GetName], что многие жители колонии покинули ее, чтобы присоединиться к пролетающей через нашу территорию флотилии [pop_join_caravan_fleet.GetName]. Предположительно их привлекли мечты о приключениях или пьянящий аромат возможности обогащения."
  cara.4000.a.tooltip:0 "§R3§! £pop£ §Hпоселения§! покидают планету §Y[pops_join_caravan_planet.GetName]§!"
- 
  cara.4010.name:0 "§HКараванщики§!: Местные привилегии"
  cara.4010.desc:0 "В срочном послании с планеты [caravan_pops_join_planet.GetName] объясняется, что некоторые теперь уже бывшие представители империи [caravan_pops_join_country.GetName] просят у них политического убежища. Местная администрация сочла нужным передать решение этого вопроса вышестоящим органам."
  cara.4010.a:0 "Все могут приносить вклад империи [Root.GetName]."
  cara.4010.a.tooltip:0 "К колонии на планете [caravan_pops_join_planet.GetName] присоединяются §G5§! §Y[caravan_pops_join_country.GetAdj]§!"
  cara.4010.b:0 "Отказать им."
- 
  cara.4020.name:0 "§H$caravaneers$§!: Старый и дефективный"
  cara.4020.desc:0 "Наша космическая база в системе [caravan_hulk_system.GetName] докладывает, что флотилия [caravan_hulk_country.GetName] приняла решение эвакуировать и покинуть разваливающийся корабль, который теперь находится на нестабильной орбите вокруг центральной звезды системы."
  cara.4020.a:0 "Что для одного мусор..."
  cara.4020.b:0 "Пусть сгорит, упав на солнце."
  cara.4020.c:0 "Отбуксировать его на космическую базу для утилизации."
  cara.4020.c.tooltip:0 "Выставьте империи [caravan_hulk_country.GetName] счет на оплату наших услуг."
- 
  cara.4025.name:0 "$cara.4020.name$"
  cara.4025.desc:0 "Вероятно, из-за того, что корабль является гражданским транспортом, его базы данных не были полностью подчищены во время процесса вывода из эксплуатации. Поэтому, хотя на борту не было обнаружено ничего ценного, нашим специалистам по данным удалось восстановить частичные отсылки на неизвестные технологии чужаков."
- 
  cara.4030.name:0 "§HКараванщики§!: Убирайтесь!"
  cara.4030.desc:0 "Сегодня на планете [disgruntled_planet.GetName] начались массовые протесты, вызванные негодованием в связи с тем, что в системе находится флотилия [xeno_fleet.GetName]. Все здравомыслящие [disgruntled_planet.owner.Species.GetNamePlural] оскорблены их присутствием."
  cara.4030.a:0 "Прикажите им избегать планеты [disgruntled_planet.GetName]."
@@ -3171,7 +2885,6 @@
  cara.4041.phile:0 "Какая прелесть!"
  cara.4041.phobe:0 "Какая мерзость!"
  cara.4041.a:0 "Такова, э-э, жизнь."
- 
  mega.9000.name:0 "$mega_art_installation_1$"
  mega.9000.desc:0 "На первом этапе возведения такого объекта, как $mega_art_installation_3$, возникли трудности, связанные со строительством огромной станции, вкупе со сложностями организации музея и галереи беспрецедентного масштаба. После размещения основной конструкции первостепенной задачей станет создание хранилища, которое должно стать чудом стабильности и безопасности, ведь в нем будут содержаться и находиться под защитой произведения искусства со всей галактики."
  mega.9001.name:0 "$mega_art_installation_2$"
@@ -3277,9 +2990,6 @@
  colony.3033.desc.robot:0 "Обновление статуса: [Root.Owner.Capital.GetName] не в сети. Боевая способность империи [Root.Owner.GetName]: 23% от оптимальной. Оставшаяся сеть колоний: [Root.GetName]. Ожидаемый результат: полная победа над варп-тварями за 2 солнечных цикла. Ошибка! Активность варп-тварей обнаружена на орбите [Root.GetName]! Ошибка!\n\n**§YСигнал внезапно обрывается§!**"
  colony.3033.a.robot:0 "Докладывайте."
  colony.3033.d.robot:0 "[Root.Owner.Species.GetName] зеркальной вселенной не в сети."
- 
- 
- # Other
  action.96.name:0 "§HРождение галактического рынка§!"
  action.96.desc:0 "Фактически галактическая торговля, не зависящая от качества международной дипломатии, существует с тех пор, когда мы впервые обнаружили, что не одиноки во вселенной. По мере того как в галактике открываются новые границы и перекраиваются старые, галактические лидеры приходят к соглашению, что пора §Yузаконить эту коммерческую площадку§!, чтобы все могли извлечь выгоду.\n\nВ ближайшие годы независимые торговцы и правительственные учреждения будут стремиться создать квазицентрализованный узел для галактической торговли. Мы безусловно выиграем, если этот узел окажется в пространстве расы [Root.GetAdj], поэтому мы можем §Yпредложить один из наших миров§! для этой цели."
  action.96.desc.corp:0 "Заказчики, клиенты и деревенщины галактики, похоже, наконец-то готовы принять квазицентрализованную платформу для нерегулируемой международной торговли в средних масштабах.\n\nМы можем §Yпредложить один из наших миров§! в качестве места размещения этого коммерческого центра с целью повышения потенциального дохода до максимума."
@@ -3296,7 +3006,7 @@
  action.99.desc:0 "Наша маркетинговая кампания на планете [market_founder_planet.GetName] принесла свои плоды, и будущие торговые гиганты сочли нужным сосредоточить большую часть своей деятельности в системе [market_founder_planet.GetStarName]!"
  action.99.desc.phobe:0 "$action.99.desc$"
  action.101.name:0 "§HГалактический рынок§!: Основан"
- action.101.desc:0 "В системе §Y[galactic_market_station.GetName]§!, на территории империи [From.GetName], объявился центр галактической торговли. Администрация империи [From.GetAdj] официально узаконила это место торговли, где можно покупать и продавать ресурсы через независимых третьих лиц."
+ action.101.desc:0 "В системе §Y[galactic_market_station.solar_system.GetName]§!, на территории империи [From.GetName], объявился центр галактической торговли. Администрация империи [From.GetAdj] официально узаконила это место торговли, где можно покупать и продавать ресурсы через независимых третьих лиц."
  action.101.desc.phobe:0 "Подозрительные чужаки из империи §Y[From.GetName]§! организовали рынок для торговли инопланетными товарами. Хотя мы, понятное дело, не горим желанием принимать участие в подобном товарообмене, данная возможность для нас доступна."
  action.101.desc.homicidal:0 "$action.96.desc.homicidal$"
  action.103.name:0 "§HГалактический рынок§!: Станция перемещена"
@@ -3306,11 +3016,9 @@
  action.106.desc.phobe:0 "Мы узнали, что презренные чужаки основали галактический рынок, где торгуют инопланетными товарами. Хотя мы испытываем внутреннее нежелание принимать участие в подобном товарообмене, теперь данная возможность для нас доступна."
  action.106.desc.homicidal:0 "$action.96.desc.homicidal$"
  established_galactic_market_station:0 "В системе §Y[galactic_market_station.solar_system.star.GetName]§! основан §H$galactic_market_station$§!\n\n"
- 
  distar.305.rare_crystals:0 "Корабль [Root.GetName] обнаружил ранее неизвестный редкий ресурс на планете [FromFrom.GetName], который был назван §H«$rare_crystals$»§!. Благодаря своим впечатляющим преломляющим свойствам эти кристаллы хорошо зарекомендовали себя как в высокотехнологичной электронике, так и в системах лазерного оружия."
  distar.305.exotic_gases:0 "Корабль [Root.GetName] обнаружил ранее неизвестный редкий ресурс на планете [FromFrom.GetName], который был назван §H«$exotic_gases$»§!. Эти газы могут применяться в тактических и даже рекреационных целях."
  distar.305.volatile_motes:0 "Корабль [Root.GetName] обнаружил ранее неизвестный редкий ресурс на планете [FromFrom.GetName], который был назван §H«$volatile_motes$»§!. При химической активации эти частицы вырабатывают взрывную кинетическую силу и предположительно обладают очень острым вкусом при использовании в кулинарии."
- 
  leviathans.130.a:0 "§G1§! ед. £volatile_motes£ §Hлетучих пылинок§! в месяц за §R10§! ед. £energy£ §Hэнергии§! в месяц."
  leviathans.130.b:0 "§G2§! ед. £volatile_motes£ §Hлетучих пылинок§! в месяц за §R20§! ед. £energy£ §Hэнергии§! в месяц."
  leviathans.130.c:0 "§G3§! ед. £volatile_motes£ §Hлетучих пылинок§! в месяц за §R30§! ед. £energy£ §Hэнергии§! в месяц."
@@ -3326,20 +3034,16 @@
  leviathans.132.c:0 "§G3§! ед. £rare_crystals£ §Hредких кристаллов§! в месяц за §R30§! ед. £energy£ §Hэнергии§! в месяц."
  leviathans.132.d:0 "§G4§! ед. £rare_crystals£ §Hредких кристаллов§! в месяц за §R40§! ед. £energy£ §Hэнергии§! в месяц."
  leviathans.132.e:0 "§G5§! ед. £rare_crystals£ §Hредких кристаллов§! в месяц за §R50§! ед. £energy£ §Hэнергии§! в месяц."
- 
  leviathans.125.name.z1:0 "[traders.GetName]"
  leviathans.125.desc.z1:0 "У нас есть талантливый управляющий, который готов переехать в империю [Root.GetName] и навести порядок в любых ваших секторах, чтобы они не приносили убыток."
  leviathans.125.z1:0 "Договорились."
  leviathans.126.name:0 "[traders.GetName]"
  leviathans.126.desc:0 "Превосходно! Мы рады поделиться своими навыками с империей [Root.GetName]."
- 
  already_hired_trader_governor:0 "§RМы уже наняли лидера. Это [traders.GetName].§!"
  recruit_trader_leader:0 "Добавляет §Yгубернатора§! расы [traders.GetSpeciesName] в список §Hлидеров§!."
- 
  sm_trader_proxy_office:0 "Офис торговых посредников"
  sm_trader_proxy_office_desc:0 "§YАнклавы торговцев§! пользуются особыми привилегиями на галактическом рынке, что может быть выгодно и для нас."
  requires_trade_enclave:0 "§RТребуется §Yанклав торговцев§! в системе.§!"
- 
  decision_market_nomination:0 "Выдвижение кандидатом на основание галактического рынка"
  decision_market_nomination_effects:0 "Применяет модификатор §YПоказатель конкурентоспособности базового рынка§! к данной планете, в зависимости от местных условий. Чем выше рейтинг, тем больше вероятность того, что в будущем §Hгалактический рынок§! развернется именно на этой планете."
  decision_market_nomination_effects_short:0 "Выдвинуть эту планету кандидатом на торговый узел, который станет объединенным §Hгалактическим рынком§!."
@@ -3356,17 +3060,12 @@
  decision_study_the_sea:0 "Изучить живое море"
  decision_study_the_sea_desc:0 "Предварительные отчеты наводят на мысль, что океан, покрывающий эту планету, в какой-то степени является живым и представляет собой создание, подобного которому мы еще не встречали. Исследователи предлагают организовать детальное орбитальное изучение, чтобы узнать больше об этом таинственном существе."
  decision_study_the_sea.tooltip:0 "Для изучения живого моря будет основан исследовательский форпост на низкой орбите.\n\nОжидайте новостей."
- 
  mega.100.name:0 "Сакральные миры: §RОсквернены§!"
  mega.100.desc:0 "Мы потеряли доступ к объектам поклонения в системе [From.GetName]!\n\nКолонии расы [Root.GetAdj] испытывают чувство скорби и большой утраты. В отличие от мира, освящение которого отменено, это насильственное отторжение духовной принадлежности оставило верующих планеты [Root.GetName] в шокированном и дезориентированном состоянии. Духовенство объявило траур на пять дней."
- 
- # Special Projects
  CARAVAN_HULK_PROJECT:0 "Обыскать покинутый корабль Караванщиков"
  CARAVAN_HULK_PROJECT_DESC:0 "Внутри этой списанной оболочки, которую бросил дрейфовать на орбите одной из наших звезд какой-то проходящий караван, может оказаться что-то ценное."
  NULLVOID_PROJECT:0 "Зондировать пустоту"
  NULLVOID_PROJECT_DESC:0 "Что бы из себя ни представляла странная сила, приносящая темную материю к нашему порталу, привлечение такой силы более высокого уровня должно привести к повышению производительности."
- 
- # Modifiers
  extended_payout_goodest:0 "Большие расширенные выплаты"
  extended_payout_good:0 "Умеренные расширенные выплаты"
  slots_disappointment:0 "Разочарование RNG"
@@ -3406,7 +3105,6 @@
  consecrated_modifier_0:0 "Поклонение сакральному миру"
  unconsecrated_world_tooltip:0 "§RОтменяет освящение§! мира"
  recalculates_consecrated_modifier:0 "Выполняет перерасчет модификатора §Y$consecrated_modifier_0$§!"
- 
  consecrated_quality_1:0 "Сакральный (нечестивый мир)"
  consecrated_quality_1_desc:0 "Считается плохим объектом для поклонения."
  consecrated_quality_2:0 "Сакральный (уважаемый мир)"
@@ -3415,9 +3113,7 @@
  consecrated_quality_3_desc:0 "Считается благословенной планетой."
  consecrated_quality_4:0 "Сакральный (священный мир)"
  consecrated_quality_4_desc:0 "Эта планета считается непорочным и неприкосновенным местом."
- 
  consecrated_worlds_mourning:0 "Поклонение космическому объекту: Траур"
- 
  market_nominee_desc_intro:0 "Этот мир должен мог бы стать планетарной основой для будущей централизованной станции галактического рынка."
  market_nominee_level_1:0 "Показатель конкурентоспособности базового рынка: §Rслабый§!"
  market_nominee_level_1_desc:0 "$market_nominee_desc_intro$\n\nОтносительный статус - §Rслабый§!."
@@ -3443,45 +3139,32 @@
  spawn_pool_stimulants_desc:0 "Легкая смесь кортикостероидов и гормонов надпочечников поможет молодняку перейти во взрослое состояние."
  numistic_magnetostrips:0 "Магнитные пластины Нумы распределены"
  numistic_magnetostrips_desc:0 "Эти полосы, создателем которых стала $NAME_Caravaneer_Fleet2$, прикрепляются к нашим планетарным единицам, настраивая их на магнитосферу планеты. Этот процесс помогает выравниванию их ионов, тем самым снижая расход энергии на их содержание."
- 
  mod_pc_city_habitability:0 "Приспособленность - экуменополис"
- 
  branch_office_value:0 "Ценность филиала"
  has_branch_office:0 "Филиал корпорации"
  has_criminal_branch_office:0 "Филиал преступного синдиката"
- 
  ancient_trade_route:0 "Древний торговый путь"
  ancient_trade_route_desc:0 "Расшифровка древних карт торговых маршрутов показала, что это место имело большее торговое значение, чем предполагалось сначала."
- 
  triggered_opinion_crime_corp:0 "Преступный синдикат"
  opinion_crime_corp_branch_offices:0 "Преступные филиалы"
- 
  triggered_opinion_galatron_holder:0 "Хранители Галатрона"
  triggered_opinion_galatron_denier:0 "Мерзкие похитители света Галатрона"
- 
  galatron_naval_cap1:0 "Расширение с Галатроном"
- 
  triggered_opinion_of_interstellar_assembly_1:0 "$triggered_opinion_of_interstellar_assembly_4$"
  triggered_opinion_of_interstellar_assembly_2:0 "$triggered_opinion_of_interstellar_assembly_4$"
  triggered_opinion_of_interstellar_assembly_3:0 "$triggered_opinion_of_interstellar_assembly_4$"
  triggered_opinion_of_interstellar_assembly_4:0 "Межзвездная ассамблея"
- 
- # Casus Belli
  casus_belli_cb_galatron:0 "Отказ в доступе к Галатрону"
  war_goal_wg_take_galatron:0 "Захватить Галатрон"
  war_goal_wg_take_galatron_desc:0 "Купаться в славе Галатрона - это право всех разумных существ. Цивилизация, закрывающая свои границы для других, недостойна быть хранителем Галатрона."
- 
  casus_belli_cb_expel_corp:0 "Экспроприация"
  war_goal_wg_expel_corp:0 "Изгнать корпорацию"
  war_goal_wg_expel_corp_desc:0 "Целью войны является закрытие филиалов данной корпорации и экспроприация их собственности на наших планетах."
  wg_expel_corp_status_quo_effects:0 "§Y[From.GetName]§! получает £energy£ §Y1000§! за каждое закрытие филиала."
  wg_expel_corp_effects:0 "§Y[Root.GetName]§! получает £energy£ §Y1000§! за каждое закрытие филиала."
  wg_seize_branch_office_effects:0 "§Y[Root.GetName]§! берет контроль над планетарным филиалом."
- 
  market_founding_chain_title:0 "Основание галактического рынка"
  market_founding_chain_desc:0 "Учреждение международного бизнес-форума совсем близко, и тот, кто контролирует централизованную станцию обмена, получит выгоду.\n\nЕсли мы желаем побороться за звание хозяина рынка, у нас есть несколько лет для принятия §Hрешений§!, связанных с выбором одного из наших миров для привязки к такому объекту, как $galactic_market_station$."
- 
- # Mandates
  MANDATE_mandate_monthly_energy:0 "Экономика энергии"
  MANDATE_mandate_monthly_energy_DESC:0 "[Root.GetRulerTitle] [Root.GetRulerName] выигрывает выборы благодаря обещанию в своей политической программе повысить ежемесячный излишек £energy£ §Yэнергокредитов§! как минимум до £energy£ §Y+20§! в месяц.\n\n§EНаграда в конце срока:§!\n$mandate_unity_reward$"
  MANDATE_mandate_monthly_minerals:0 "Переработка ресурсов"
@@ -3502,7 +3185,6 @@
  MANDATE_mandate_district_farming:0 "Интенсивное сельское хозяйство"
  MANDATE_mandate_district_farming_DESC:0 "[Root.GetRulerTitle] [Root.GetRulerName] выигрывает выборы благодаря обещанию в своей политической программе построить дополнительно еще §Y$district_farming_plural$§! в количестве не менее §Y2§!.\n\nНаграда в конце срока:\n$mandate_unity_reward$"
  built_district:0 "Построено районов"
- 
  mandate_monthly_energy_chain_title:0 "$MANDATE_mandate_monthly_energy$"
  mandate_monthly_energy_chain_desc:0 "$MANDATE_mandate_monthly_energy_DESC$"
  mandate_monthly_minerals_chain_title:0 "$MANDATE_mandate_monthly_minerals$"
@@ -3521,14 +3203,10 @@
  mandate_district_mining_chain_desc:0 "$MANDATE_mandate_district_mining_DESC$"
  mandate_district_farming_chain_title:0 "$MANDATE_mandate_district_farming$"
  mandate_district_farming_chain_desc:0 "$MANDATE_mandate_district_farming_DESC$"
- 
  mandate.170.title:0 "Мандат об экономике исполнен"
  mandate.170.desc:0 "Согласно мандату, который издал наш правитель, [Root.GetRulerTitle], у нас улучшилось производство ресурсов."
  mandate.186.title:0 "Мандат о районах исполнен"
  mandate.186.desc:0 "Согласно мандату, который издал наш правитель, [Root.GetRulerTitle], у нас произошло расширение планетарных районов."
- 
- 
- # Civics
  civic_caravaneer_caravansary:0 ""
  civic_caravaneer_caravansary_desc:0 ""
  civic_caravaneer_fleet1:0 "Огромная пирамида Орлана"
@@ -3537,18 +3215,13 @@
  civic_caravaneer_fleet2_desc:0 ""
  civic_caravaneer_fleet3:0 "Абсолютные товароведы"
  civic_caravaneer_fleet3_desc:0 "С общественной точки зрения все является объектом. Все можно купить и продать. Включая мусор. Особенно мусор."
- 
- # Traits
  leader_trait_caravan_counter:0 "Противовес караванов"
  leader_trait_caravan_counter_desc:0 "Этот лидер может мгновенно остановить сумасбродные флотилии Караванщиков."
  leader_trait_waste_management_specialist:0 "Специалист по утилизации отходов"
  leader_trait_waste_management_specialist_desc:0 "Этот лидер обладает почти сверхъестественной способностью сокращать и перерабатывать промышленные отходы. Как это получается? Лучше не спрашивать."
- 
- # Scripted loc etc
  ccoinz:0 "§HCaravanCoinz§!"
  owned_cc:0 "owned_cc_var"
  cctest:0 "у вас есть [$owned_cc$] coinz, по умолчанию 1"
- 
  NAME_Caravaneer_Home:0 "Коалиция караванов караван-сарая"
  NAME_Caravaneer_Coalition_Base:0 "База Коалиции"
  NAME_Tradestation_Tungle:0 "Торговая станция «Тангл»"
@@ -3571,22 +3244,15 @@
  NAME_Schooner:0 "Караванная шхуна"
  NAME_Yojimbo:0 "Вооруженный корабль сопровождения «Ёдзимбо»"
  NAME_Gunslinger:0 "Вооруженный корабль сопровождения «Стрелок»"
- 
  galactic_market_station:0 "Станция галактического рынка"
  galactic_market_station_desc:0 "Будучи номинально аморфными и независимыми от галактической геополитики, многие административные функции галактического рынка физически осуществляются на этой станции."
- 
  planet_pops_organics_food_upkeep_mult:0 "Потребление £food£ пищи £pop£ поселениями"
- 
- # Messages
- 
  MESSAGE_NEW_BRANCH_OFFICE_TITLE:0 "Новый филиал"
  MESSAGE_NEW_BRANCH_OFFICE:0 "Мегакорпорация $COUNTRY|Y$ учредила новый офис на планете $PLANET|Y$."
  MESSAGE_CLOSED_BRANCH_OFFICE_TITLE:0 "Филиал закрыт"
  MESSAGE_CLOSED_BRANCH_OFFICE:0 "Мегакорпорация $COUNTRY|Y$ закрыла свой офис на планете $PLANET|Y$."
- 
  MESSAGE_LOST_MARKET_STATION_TITLE:0 "Рыночная станция потеряна"
  MESSAGE_LOST_MARKET_STATION:0 "§HСтанция галактического рынка§! в системе §Y$SYSTEM$§! вышла из-под нашего контроля!"
- 
  MESSAGE_GALPULSE:0 "§EГалатрон§! пульсирует"
  MESSAGE_GALPULSE_ENERGY:0 "§EГалатрон§! испускает мягкий свет, и к нашим запасам добавляется £energy£ §G1000§!."
  MESSAGE_GALPULSE_MINERALS:0 "§EГалатрон§! испускает мягкий свет, и к нашим запасам добавляется £minerals£ §G1000§!."
@@ -3598,20 +3264,12 @@
  MESSAGE_GALPULSE_PHYSICS:0 "§EГалатрон§! испускает мягкий свет, и к нашим запасам добавляется £physics£ §G1000§!."
  MESSAGE_GALPULSE_ENGINEERING:0 "§EГалатрон§! испускает мягкий свет, и к нашим запасам добавляется £engineering£ §G1000§!."
  MESSAGE_GALPULSE_NAVAL_CAP1:0 "§EГалатрон§! испускает мягкий свет, и $NAVY_SIZE_TITLE$ навсегда возрастает на §G10§!."
- 
  MESSAGE_FOUNDER_SPECIES_PUT_ON_MARKET_TITLE:0 "Раса основателей на рынке рабов"
  MESSAGE_FOUNDER_SPECIES_PUT_ON_MARKET:0 "Одно поселение с расой наших основателей ($SPECIES|H$) выставлено на продажу на §Hрынке рабов§!."
- 
  MESSAGE_SLAVE_SOLD_ON_MARKET_TITLE:0 "Раб продан"
  MESSAGE_SLAVE_SOLD_ON_MARKET:0 "Один из наших §Hрабов расы $SPECIES$§! продан на рынке рабов.\n\nОкончательная цена: $PRICE$"
- 
- # Buildings
  building_waste_reprocessing_center:0 "Центр переработки отходов"
  building_waste_reprocessing_center_desc:0 "Универсальный планетный центр по преобразованию промышленных и биологических отходов в преимущественно чистые энергию и минералы с возможностью повторного использования. Разработчик - $NAME_Caravaneer_Fleet3$, конструкция не совсем понятная и почти совершенно не доступная инженерному анализу."
- 
- # Megacorp 
- 
- # To Corporation Diplomacy
  DEMAND_SUBS_SELECT_01:0 "Ваше предложение заключается в том, чтобы империя [Root.GetName] стала вашим филиалом?"
  DEMAND_SUBS_ACCEPT_01:0 "[Root.GetName] является вашим филиалом и поэтому будет отдавать часть своего объема торговли вам. Взамен мы ожидаем, что вы будете защищать жизнь, свободу и независимость представителей расы [Root.GetSpeciesNamePlural]."
  DEMAND_SUBS_REFUSE_01:0 "[Root.GetName] ни при каких обстоятельствах не примирится с эксплуатацией со стороны расы [From.GetSpeciesAdj]."
@@ -3652,8 +3310,6 @@
  TO_CORP_INSULT_ACCEPT_03:0 "Ваша наглость дорого вам обойдется, [From.GetName]. Надеемся, оно того стоило."
  TO_CORP_INSULT_ACCEPT_04:0 "Скоро вы узнаете, что такая вещь, как плохой пиар, действительно существует."
  TO_CORP_MAKE_RIVAL_01:0 "Вы действительно можете позволить себе потерять наш бизнес, [From.GetSpeciesNamePlural]?"
- 
- # Corporate Diplomacy
  CORP_HOSTILE_GREETING_01:0 "Ведите свои дела в другом месте, [From.GetName]. [Root.GetSpeciesNamePlural] не нуждаются в вашем дешевом мусоре."
  CORP_HOSTILE_GREETING_02:0 "На рынке такие, как вы, не нужны, [From.GetName]."
  CORP_CORP_HOSTILE_GREETING_01:0 "Дам дружеский совет, как один предприниматель другому... Нужен задел на будущее. Иначе вскоре станете прошлым, [From.GetSpeciesNamePlural]."
@@ -3863,11 +3519,8 @@
  CORP_INSULT_ACCEPT_05:0 "Ах, как мило слышать это от вас! Мы только что зарегистрировали торговую марку «§Y[From.GetSpeciesNamePlural] должны умереть§!» для нашей новой баллистической ракеты дальнего действия."
  action.37.desc.corporate:0 "$CORP_PEACE_PROPOSE_02$"
  action.38.desc.corporate:0 "$CORP_PEACE_ACCEPT_01$"
- 
- # Sectors
  core_sector:0 "Основной сектор"
  frontier_sector:0 "Пограничный сектор"
- 
  NO_DISTRICTS_ALLOWED:0 "§RНевозможно стоить районы на этой планете§!"
  EMPIRE_VIEW_DISTRICT_AMOUNT:0 "$CURRENT$/$MAX$"
  EMPIRE_VIEW_DISTRICT_AMOUNT_NO_CAP:0 "$CURRENT$"
@@ -3892,14 +3545,11 @@
  OL_TOGGLE_VISIBILITY_SECTORS_WITH_FOCUS_DESC:0 "§HПоказать/скрыть§!\nНажмите, чтобы отображались секторы с активной специализацией."
  OL_TOGGLE_VISIBILITY_SECTORS_NO_FOCUS:0 "Показать секторы без активной специализации."
  OL_TOGGLE_VISIBILITY_SECTORS_NO_FOCUS_DESC:0 "§HПоказать/скрыть§!\nНажмите, чтобы отображались секторы без активной специализации."
- 
  OUTLINER_BRANCH_OFFICE_VALUE_CRIMINAL_SYNDICATE:0 "£energy£ $VALUE|1Y$ £crime£ $CRIME|Y0%$"
  OUTLINER_BRANCH_OFFICE_VALUE:0 "£energy£ $VALUE|1Y$"
- 
  COUNTRY_STOCKPILE_AMOUNT:0 "£$RESOURCE_KEY$£ $AMOUNT|*0$"
  COUNTRY_STOCKPILE_DESC:0 "Количество ресурсов, накопленных в вашей империи."
  SORT_BY_DISTRICTS:0 "§HСортировать по районам§!"
- 
  pop_factions:0 "Фракции"
  subjects:0 "Подданные"
  rivalries:0 "Соперники"
@@ -3912,23 +3562,17 @@
  vo_evil_corp:0 "Безжалостный конгломерат"
  vo_slick_corp:0 "Ловкая корпорация"
  vo_the_worker:0 "Рабочий"
- 
  HAS_NOT_OVERLORD:0 "$OVERLORD$ НЕ является сюзереном"
  HAS_OVERLORD:0 "$OVERLORD$ является сюзереном"
- 
  HAS_NOT_RIVAL:0 "НЕ соперничает с империей $RIVAL$"
  HAS_RIVAL:0 "Соперничает с империей $RIVAL$"
  diplomacy:0 "Дипломатия"
- 
  getbrainname_machine:0 "Центр"
  getbrainname_hive:0 "Сверхразум"
  getbrainname_error:0 "**Error - for GCs**"
- 
  MEGACORPSE_ORIGINS:0 "Происхождение группы «Мегатруп»"
  MEGACORPSE_ORIGINS_TITLE:0 "Происхождение группы «Мегатруп»"
  MEGACORPSE_ORIGINS_DESC:0 "После невероятных разрушений на планете [Root.GetName] у нас остался вопрос: кто такие или что такое «Мегатруп»?"
- 
- #Tutorial
  TUTORIAL_GOVERNMENTVIEW_MARKET_TITLE:0 "Рынок"
  TUTORIAL_GOVERNMENTVIEW_MARKET_DESC:0 "На закладке §SРынок§! мы можем покупать и продавать ресурсы. Сначала это только внутренний рынок, но после установления контакта с достаточным количеством империй может образоваться некий §Sгалактический рынок§!.\n\nЗдесь при помощи соответствующих кнопок можно покупать и продавать ресурсы, но помните, что покупка или продажа ресурса повышает или понижает на него цену, соответственно. В разделе справа также можно автоматически заключать §Sежемесячные§! торговые сделки."
  TUTORIAL_GOVERNMENTVIEW_SLAVE_MARKET_TITLE:0 "Рынок рабов"
@@ -3950,33 +3594,25 @@
  RESETTLE_LIST_UNEMPL_LONG:0 "£unemployment£ Безработица: $JOBS$"
  RESETTLE_HOUSING_LONG:0 "£housing£ Доступное жилье: $HOUSING$"
  RESETTLE_CRIME:0 "£crime£ Преступность: $CRIME$"
- 
  CREATE_VASSAL_NOT_SECTOR_OWNER:0 "Мы не контролируем этот сектор."
  CREATE_VASSAL_CORE_SECTOR_INVALID:0 "Нельзя выделить вассала из основного сектора."
- 
  TOGGLE_NAVBAR_LOCK:0 "Нажмите, чтобы заблокировать или разблокировать панель навигации"
  NAVBAR_LOCKED:0 "Панель навигации §Yзаблокирована§!"
  NAVBAR_UNLOCKED:0 "Панель навигации §Yразблокирована§!"
- 
  CONSTRUCTION_UNAVAILBALE_SLOT_LOCKED:0 "Нельзя построить сооружение в этой ячейке, пока на этой планете не появится минимум $NUM|Y$ £pop£ поселений."
  PLANET_VIEW_CORPORATE_TAB_DISABLED:0 "§YНа планете нельзя выполнять корпоративные действия§!"
- 
  GROUND_COMBAT_RESERVES:0 "Резервы"
  GROUND_COMBAT_FRONTLINE:0 "Передовая"
- 
  ARMY_STRENGTH:0 "£army_power£ $VALUE|0Y$"
  ORBITING_ARMIES:0 "Войска на орбите"
- 
  buildable_colony_ship:0 "Построить колониальный корабль"
- 
  mod_station_gatherers_minerals_produces_mult:0 "Производство минералов на добывающих станциях"
  activity_program_tooltip:0 "Свободным дронам потребуется еще 1 ед. £food£."
- 
+ standby_mode_tooltip:0 "Содержание безработных дронов в энергокредитах: §R+2§!"
  FEATURES:0 "Особенности"
  EXPANSION_PLANNER_RARE_DEPOSITS:0 "Редкие залежи"
  EXPANSION_PLANNER_SORT_FEATURES:0 "§H$SORT_BY$ $EXPANSION_PLANNER_RARE_DEPOSITS$§!"
  EXPANSION_PLANNER_FEATURE_TOOLTIP:0 "$NAME$: $DESC$"
- 
  all:0 "$ALL$"
  pop_assembly:0 "$planet_pop_assemblers$"
  government:0 "$GOVERNMENT$"
@@ -3985,30 +3621,44 @@
  research:0 "$RESEARCH$"
  amenity:0 "$PLANET_AMENITIES_TITLE$"
  army:0 "$buildable_army$"
- 
  CANNOT_BUILD_CATEGORY:0 "§RНашей империи не известно, как строить сооружения этой категории.§!"
- 
  MONTHLY_RESOURCE:0 "$OPINION_DECAY_MONTHLY$ $RESOURCE$"
  subject_tax:0 "Налоги с подданных"
- 
  MONTHLY_TRADE_PER_UNIT:0 "за единицу"
  alert_cannot_afford_monthly_trade_title:0 "Слишком высокая/низкая цена для ежемесячной торговли"
  alert_cannot_afford_monthly_trade_instant:0 "Как минимум у одного типа товаров для ежемесячной торговли цена не соответствует мин./макс. цене, которую мы можем позволить. Обновите цену."
  alert_cannot_afford_monthly_trade_delayed:0 "§GЩелкните, чтобы войти в режим просмотра рынка.§!"
- 
  riggan_deal_in_place:0 "Мы уже заключили §Yсделку с ригганцами§!."
  xuracorp_deal_in_place:0 "Мы уже заключили §Yсделку с «Ксурой»§!."
  muutagan_deal_in_place:0 "Мы уже заключили §Yсделку с муутаганцами§!."
  SPECIES_RIGHTS_PRESAPIENT:0 "§YПрава расы§! отключены для предразумных рас"
  living_standard_chemical_bliss_happiness_tooltip:0 "Повышает £happiness£ счастье поселений на §G40%§!, если нет дефицита на £consumer_goods£ §Yтовары массового спроса§!.\n$mod_planet_jobs_produces_mult$: §R-60%§!"
  NUM_RESEARCH_AGREEMENTS:0 "Другие соглашения об исследованиях"
- 
  pre_sapients_count:0 "$pop_cat_pre_sapients_plural$: £pop£ $POP_POPS$ - $COUNT|Y$"
  NOT_COUNTED:0 "Не подсчитано"
- 
  LOW_HABITABILITY_NAME:0 "Низкая приспособленность"
  LOW_HABITABILITY_DESC:0 "Эта планета плохо приспособлена для выбранной расы. В случае колонизации планеты для всех поселений повысится стоимость содержания и использования ресурсов.\n\n Все равно колонизировать ее?"
  requires_no_existing_matter_decompressor:0 "$TRIGGER_FAIL$Можно построить только один $matter_decompressor_4$."
  requires_no_existing_strategic_coordination_center:0 "$TRIGGER_FAIL$Можно построить только один $strategic_coordination_center_3$."
- requires_no_existing_mega_art_installation:0 "$TRIGGER_FAIL$Можно построить только одну $mega_art_installation_3$."
+ requires_no_existing_mega_art_installation:0 "$TRIGGER_FAIL$Не может быть построена более чем одна $mega_art_installation_3$."
  requires_no_existing_interstellar_assembly:0 "$TRIGGER_FAIL$Можно построить только одну $interstellar_assembly_4$."
+ observation.1011.b:0 "Это не наша проблема."
+ already_bought:0 "Мы еще должны купить этот продукт"
+ GetPurgeProcessingResource_food:0 "пищевой концентрат, богатый на питательные вещества, повышая доступность £food£ §Hпищи§!"
+ GetPurgeProcessingResource_minerals:0 "металлолом, повышая доступность £minerals£ §Hминералов§!"
+ trait_pc_hive_preference:0 "Предпочтительный мир улья"
+ trait_pc_hive_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+ trait_pc_machine_preference:0 "Предпочтительный мир машин"
+ trait_pc_machine_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+ civic_tooltip_warrior_culture_effects:0 "$MOD_ARMY_DAMAGE_MULT$: §G+20%§!\n£building£ §YРазвлекательные сооружения§! предоставляют такие виды деятельности, как £job_duelist£ §Y$job_duelist$§!, а не £job_entertainer£ §Y$job_entertainer$§!."
+ RESTORE_JOBS:0 "Восстановить виды деятельности £job£"
+ RESTORE_JOBS_COUNT:0 "$RESTORE_JOBS$ ($COUNT|Y$)"
+ TOOLTIP_RESTORE_JOBS_TITLE:0 "Восстановить виды деятельности"
+ TOOLTIP_RESTORE_JOBS:0 "Восстановить виды деятельности ($COUNT|Y$), лишенные приоритета."
+ TOOLTIP_RESTORE_JOBS_NONE_TO_RESTORE:0 "£trigger_no£ Никакие виды деятельности не были лишены приоритета."
+ CLICK_TO_FAVORITE:0 "§GЩелкните, чтобы добавить этот вид деятельности в избранные, повышая его приоритет.§!"
+ DEVASTATION:0 "Опустошение"
+ AVAILABLE_JOBS:0 "£job£ Доступно видов деятельности: $COUNT|Y$"
+ nanites_deficit:0 "Дефицит нанитов"
+ nanites_deficit_tooltip:0 "Недостаток нанитов препятствует нанитовому преобразованию."
+  mod_pop_factions_produces_mult:0 "Прирост влияния от фракций"

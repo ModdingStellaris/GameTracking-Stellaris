@@ -4899,11 +4899,13 @@ ship_event = {
 	}
 
 	option = {
-		trigger = {
+		trigger = { # at least one sluggable pop in xenophobe empire
 			hidden_trigger = {
 				owner = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
+					OR = {
+						has_ethic = ethic_xenophobe
+						has_ethic = ethic_fanatic_xenophobe
+					}
 					any_owned_pop = {
 						NOR = {
 							has_ethic = ethic_xenophobe
@@ -4915,7 +4917,7 @@ ship_event = {
 		}
 		name = "distar.172.a"
 		owner = {
-			while = {
+			while = { # slug *up to* three non-phobe pops
 				count = 3
 				random_owned_pop = {
 					LIMIT = {
@@ -5706,10 +5708,16 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_event_chain = "living_planet_chain"
-		NOT = { has_country_flag = completed_living_sea }
+		OR = {
+			has_event_chain = "living_planet_chain"
+			has_country_flag = completed_living_sea
+		}
 		any_planet_within_border = {
 			has_planet_flag = living_planet
+			OR = {
+				has_modifier = "living_sea"
+				has_modifier = "pm_study_the_sea"
+			}
 		}
 	}
 
@@ -5729,10 +5737,15 @@ planet_event = { #If you terraform the planet to a non-seabearing class before c
 
 	trigger = {
 		has_planet_flag = living_planet
-		from = {
-			has_event_chain = "living_planet_chain"
-			NOT = { has_country_flag = completed_living_sea }
+		#from = {
+		#	has_event_chain = "living_planet_chain"
+		#	NOT = { has_country_flag = completed_living_sea }
+		#}
+		OR = {
+			has_modifier = "living_sea"
+			has_modifier = "pm_study_the_sea"
 		}
+		# should now remove modifiers even if terraformed after chain completion
 		OR = {
 			is_planet_class = pc_desert
 			is_planet_class = pc_arid
@@ -5747,11 +5760,23 @@ planet_event = { #If you terraform the planet to a non-seabearing class before c
 	}
 
 	immediate = {
-		remove_modifier = "living_sea"
-		remove_modifier = "pm_study_the_sea"
+		if = {
+			limit = { has_modifier = "living_sea" }
+			remove_modifier = "living_sea"
+		}
+		if = {
+			limit = { has_modifier = "pm_study_the_sea" }
+			remove_modifier = "pm_study_the_sea"
+		}
 		from = {
-			end_event_chain = "living_planet_chain"
-			remove_country_flag = strange_calling_fired
+			if = {
+				limit = { has_event_chain = "living_planet_chain" }
+				end_event_chain = "living_planet_chain"
+			}
+			if = {
+				limit = { has_country_flag = strange_calling_fired }
+				remove_country_flag = strange_calling_fired
+			}
 			country_event = { id = distar.198 }
 		}
 	}
@@ -9648,7 +9673,10 @@ ship_event = { #Duplicated action.94 for SRs that are created by events, not on 
 	is_triggered_only = yes
 
 	trigger = {
-		fromfrom = { has_strategic_resource = yes } # basically a pre-trigger
+		fromfrom = { # basically a pre-trigger
+			has_strategic_resource = yes
+			has_anomaly = no
+		}
 		owner = {
 			OR = {
 				AND = {
@@ -13543,7 +13571,6 @@ country_event = {
 			add_district = district_city
 			add_district = district_city
 			add_district = district_city
-			add_district = district_city
 			add_district = district_farming
 			add_district = district_farming
 			add_district = district_farming
@@ -13551,8 +13578,6 @@ country_event = {
 			add_district = district_mining
 			add_district = district_mining
 			add_district = district_mining
-			add_district = district_generator
-			add_district = district_generator
 			add_district = district_generator
 			add_district = district_generator
 			add_district = district_generator
@@ -13675,6 +13700,7 @@ country_event = {
 					}
 				}
 				type = default
+				day_zero_contact = no
 				effect = {
 					establish_communications_no_message = root
 					save_global_event_target_as = time_loop_country
@@ -17713,13 +17739,13 @@ country_event = { # Alien Box opened
 				set_country_flag = weak_removed_strong_added
 			}
 			else_if = {
-				limit = {
-					NOR = {
-						has_trait = trait_weak
-						has_trait = trait_strong
-						has_trait = trait_very_strong
-					}
-				}
+				#limit = {
+				#	NOR = {
+				#		has_trait = trait_weak
+				#		has_trait = trait_strong
+				#		has_trait = trait_very_strong
+				#	}
+				#}
 				modify_species = {
 					species = this
 					add_trait = trait_social_pheromones
@@ -17758,13 +17784,13 @@ country_event = { # Alien Box opened
 				set_country_flag = nonadaptive_removed_adaptive_added
 			}
 			if = {
-				limit = {
-					NOR = {
-						has_trait = trait_nonadaptive
-						has_trait = trait_adaptive
-						has_trait = trait_extremely_adaptive
-					}
-				}
+				#limit = {
+				#	NOR = {
+				#		has_trait = trait_nonadaptive
+				#		has_trait = trait_adaptive
+				#		has_trait = trait_extremely_adaptive
+				#	}
+				#}
 				modify_species = {
 					species = this
 					add_trait = trait_bioadaptability

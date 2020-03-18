@@ -258,7 +258,7 @@
 
  akx.9221.name:0 "Der Bote: Einbruch der Nacht"
  akx.9221.desc:0 "[researchingscientist9220.GetName] hat nun das genetische Erbe der Boten-Spezies nachgebildet. Ohne eine Meinung von irgendjemandem einzuholen, haben sie darüber hinaus einen höchst ansteckenden retroviralen Wirkstoff entwickelt, der sich auf unseren Welten verbreitet. Unter seinem Einfluss fällt unsere Primärspezies in ein Verpuppungskoma und wacht einen Tag später als die Boten-Spezies wieder auf. Man kann durchaus sagen, dass dies zu einiger Begeisterung führt."
- akx.9221.a:0 "Das gehtr zu weit. Wir beenden das. Bringt den Ausbruch unter Kontrolle."
+ akx.9221.a:0 "Das geht zu weit. Wir beenden das. Bringt den Ausbruch unter Kontrolle."
  akx.9221.a.tooltip:0 "Alle Bewohner der Hauptwelt werden konvertiert, aber damit ist dann auch Schluss."
  akx.9221.b:0 "Den Ausbruch unter Kontrolle bringen und sämtliche beeinträchtigten Bürger säubern."
  akx.9221.b.tooltip:0 "Dies führt zur Säuberung aller beeinträchtigten Bürger: fast der gesamten Bevölkerung von [Root.Capital.GetName]."

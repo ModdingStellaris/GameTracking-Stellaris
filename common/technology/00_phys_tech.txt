@@ -107,6 +107,10 @@ tech_curator_lab = {
 			}
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 0
 			NOR = {
 				research_leader = {
@@ -144,6 +148,10 @@ tech_archeology_lab = {
 		modifier = {
 			factor = 0.50
 			has_modifier = "curator_insight"
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
 			factor = 3
@@ -965,6 +973,10 @@ tech_combat_computers_3 = {
 			has_policy_flag = ai_outlawed
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
@@ -1028,6 +1040,10 @@ tech_combat_computers_autonomous = {
 					has_trait = "leader_trait_maniacal"
 				}
 			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
 			factor = 1.25
@@ -1140,6 +1156,10 @@ tech_synchronized_defences = {
 		modifier = {
 			factor = 1.20
 			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
 		}
 	}
 	
@@ -1634,6 +1654,17 @@ tech_planetary_shield_generator = {
 				}
 			}
 		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
 	}
 	
 	# unlocks building: planetary shield generator
@@ -2125,6 +2156,10 @@ tech_wormhole_stabilization = {
 			has_tradition = tr_discovery_adopt
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
@@ -2198,6 +2233,10 @@ tech_gateway_activation = {
 		modifier = {
 			factor = 1.25
 			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
 			factor = 1.25
@@ -2277,6 +2316,10 @@ tech_gateway_construction = {
 			}		
 		}
 		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
 			factor = 1.25
 			has_tradition = tr_discovery_adopt
 		}
@@ -2343,6 +2386,10 @@ tech_jump_drive_1 = {
 					has_trait = "leader_trait_maniacal"
 				}
 			}		
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
 			factor = 1.25

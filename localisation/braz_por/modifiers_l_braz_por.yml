@@ -387,7 +387,7 @@
  migrating_forests:0 "Florestas Migratórias"
  migrating_forests_desc:0 "As florestas móveis deste mundo, frequentemente migram em massa para novas regiões, perturbando os esforços de construção de estradas, linhas de energia e outras infraestruturas."
  migrating_forests_2:0 "Florestas Migratórias Dóceis"
- migrating_forests_2_desc:0 "As florestas perambulantes deste mundo agora evitam áreas populosas e não causam mais dano aos assentamentos. Sua presença ainda limita a quantidade de terra disponível aos colonizadores.\n\n"
+ migrating_forests_2_desc:2 "§W§YReserva Florestal Migratória§! adicionado, melhorando a £society£ §YPesquisa de Sociedade§! no planeta.§!\n\nAs florestas perambulantes deste mundo agora evitam áreas populadas e não causam mais dano aos assentamentos. Sua presença ainda limita a quantidade de terra disponível aos colonizadores."
  damaged_ecology:0 "Ecologia Danificada"
  damaged_ecology_desc:0 "A destruição das florestas perambulantes neste mundo teve um impacto significativo na ecologia."
  friendly_trees:0 "Adaptação das Florestas"
@@ -1561,3 +1561,4 @@
  mod_country_base_sr_dark_matter_produces_add:0 "£sr_dark_matter£ Matéria Escura Mensal"
  mod_country_base_sr_zro_produces_add:0 "£sr_zro£ Zro Mensal"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE_MULT:0 "$MOD_SHIP_ANOMALY_GENERATION_CHANCE$"
+ fe_ship_cost_modifier:0 "Ascendência de Construtores Navais"

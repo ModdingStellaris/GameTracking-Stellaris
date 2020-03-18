@@ -174,10 +174,11 @@ entity = {
 	pdxmesh = "portrait_plantoid_13_mesh"
 
 	default_state = "idle"
-	state = { name = "idle"       animation = "idle"    chance = 5.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle2"   chance = 1.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle3"   chance = 1.0 looping = no next_state = idle	}
-	state = { name = "idle"       animation = "idle4"   chance = 0.5 looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle"    chance = 5.0  looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle2"   chance = 1.0  looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle3"   chance = 1.0  looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle4"   chance = 0.5  looping = no next_state = idle	}
+	state = { name = "idle"       animation = "idle5"   chance = 0.25 looping = no next_state = idle	}
 	
 	scale = 1.1
 }

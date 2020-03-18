@@ -25,14 +25,10 @@ ship_design = {
 			slot = "MEDIUM_GUN_04"
 			template = "PSIONIC_BLAST_1"
 		}
-		component = {
-			slot = "AUX_UTILITY_1"
-			template = "SHIELD_BOOSTER"
-		}
 	}
 	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
-	required_component="SHIP_THRUSTER_4"
-	required_component="SENSOR_4"
+	required_component="SHIP_THRUSTER_1"
+	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
 }
 
@@ -66,6 +62,7 @@ ship_design = {
 	}
 	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
 	required_component="SHIP_THRUSTER_1"
+	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
 }
 
@@ -99,6 +96,7 @@ ship_design = {
 	}
 	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
 	required_component="SHIP_THRUSTER_1"
+	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
 }
 
@@ -132,5 +130,6 @@ ship_design = {
 	}
 	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
 	required_component="SHIP_THRUSTER_1"
+	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
 }

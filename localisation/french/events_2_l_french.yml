@@ -325,7 +325,7 @@
  anomaly.270.name:0 "Petit accrochage"
  anomaly.270.desc:0 "Le cratère a probablement été formé par un impact de météorite, mais les traces complexes qui le traversent sont plus récentes.\n\nL'officier scientifique [Root.GetLeaderName] pense que ces traces ne sont pas dues à un impact de météorite mais à une collision entre l'astéroïde [From.GetName] et une installation orbitale ou un vaisseau alien."
  anomaly.270.a:0 "Étrange."
- anomaly.270.a.tooltip:1 "Confère le modificateur §YCircuits dans la poussière§! à [From.GetName] :\n£engineering£ §G+9§!"
+ anomaly.270.a.tooltip:2 "Confère à [From.GetName] le modificateur §Y$dust_circuits$§! :\n§G+3§!£engineering£"
  anomaly.275.name:0 "Systèmes de propulsion abandonnés"
  anomaly.275.desc:0 "Le centre d'un grand cratère de [From.GetName] abrite un amas de formes métalliques, assurément d'origine alien.\n\nL'officier scientifique [Root.GetLeaderName] pense qu'il s'agit de puissants systèmes de propulsion destinés à dévier [From.GetName] de son orbite dans un but et vers une destination inconnus. L'équipage du [Root.GetName] se tient prêt à entamer le démantèlement et l'étude de ces systèmes dans l'espoir d'améliorer notre propre technologie de propulsion."
  anomaly.275.a:0 "Allez-y."
@@ -1882,3 +1882,4 @@
  fallen_empires_awakening.2.b:0 "La sénilité faite empire..."
  war_in_heaven.4.c.2:0 "Nous écraserons les deux !"
  war_in_heaven.13.c:0 "Nous n'avons vraiment pas besoin d'eux"
+ fallen_empires.8.a.tooltip:0 "Met un terme à la rivalité avec la [fallen_empire_humiliator.GetName].\nLa [Root.GetName] perd toute revendication sur les systèmes de la [fallen_empire_humiliator.GetName]."

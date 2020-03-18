@@ -378,7 +378,7 @@
  tr_prosperity_hive_neural_signal_boosters_delayed:1 "Las redes de energía que alimentan nuestras colmenas también pueden utilizarse para ampliar las señales neurales transmitidas a nuestros drones, lo que permite más modificaciones y mejoras de eficacia."
  gestalt_consciousness_biological_ascension_only1:1 "$TRIGGER_FAIL$Una mente colmena no puede seguir el camino de ascensión psiónica."
  gestalt_consciousness_biological_ascension_only2:1 "$TRIGGER_FAIL$Una mente colmena no puede seguir el camino de ascensión sintética."
- ap_engineered_evolution_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
+ ap_engineered_evolution_modifier_desc:1 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n§HDesbloquea el edificio:§! $building_clone_vats$"
  ap_evolutionary_mastery_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
  tr_discovery_adopt_machine_effect:5 "$tr_discovery_adopt_effect$"
  tradition_expansion_machine:1 "Expansión"
@@ -732,3 +732,4 @@
  ap_hive_worlds_desc:0 "Crearemos mundos vivientes que formen parte de la colmena en la misma medida que los drones que los habiten."
  tr_synchronicity_kinship_gestalt_delayed:0 "Agentes con propósitos similares recibirán órdenes en grupo, reduciendo la tensión sobre el cerebro."
  tr_diplomacy_secure_shipping_desc:0 "La protección comercial de base para las rutas comerciales se incrementó en §G5§!."
+ ap_technological_ascendancy_rare:0 "§MLas tecnologías raras§! ahora son un §G50%§! más comunes."

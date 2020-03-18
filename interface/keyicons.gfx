@@ -318,6 +318,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_text_del"
+		texturefile = "gfx/keyicons/del.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_text_ctrl"
 		texturefile = "gfx/keyicons/ctrl.dds"
 		legacy_lazy_load = no

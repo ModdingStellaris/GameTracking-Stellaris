@@ -1,7 +1,4 @@
 ﻿l_russian:
- ####################################
- # Triggers
- ####################################
  TRIGGER_IS_IN_COMBAT:0 "Находится в бою"
  TRIGGER_IS_NOT_IN_COMBAT:0 "НЕ находится в бою"
  HAS_OWNER:0 "Колонизирована"
@@ -590,7 +587,6 @@
  COUNT_SPECIES_TRIGGER:0 "Количество рас (исключая подрасы) согласно критериям $COMPARATOR$ $NUM|Y$"
  COUNT_EXACT_SPECIES_NOT_TRIGGER:0 "Количество рас (включая подрасы) согласно критериям НЕ $COMPARATOR$ $NUM|Y$"
  COUNT_EXACT_SPECIES_TRIGGER:0 "Количество рас (включая подрасы) согласно критериям $COMPARATOR$ $NUM|Y$"
- 
  HAS_NOT_NUM_COUNTRIES:0 "Количество империй НЕ $COMPARATOR$ $NUM|Y$"
  HAS_NUM_COUNTRIES:0 "Количество империй $COMPARATOR$ $NUM|Y$"
  HAS_NOT_POP_PERCENTAGE:0 "Количество поселений НЕ $COMPARATOR$ $NUM|Y%$"
@@ -599,14 +595,12 @@
  HAS_MIGRATION_TREATY:0 "Имеет договор о миграции с империей $COUNTRY|Y$"
  HAS_PRESENCE:0 "Имеет флотилии, станции, мегасооружения или колонизированные планеты"
  HAS_NO_PRESENCE:0 "НЕ имеет флотилий, станций, мегасооружений или колонизированных планет"
- 
  HAS_MEGASTRUCTURE:0 "Имеет мегасооружение $TYPE|Y$"
  HAS_NOT_MEGASTRUCTURE:0 "Не имеет мегасооружения $TYPE|Y$"
  NUM_ASCENSION_PERKS_NOT_TRIGGER:0 "Количество бонусов за стремление НЕ $COMPARATOR$ $NUM|Y$"
  NUM_ASCENSION_PERKS_TRIGGER:0 "Количество бонусов за стремление $COMPARATOR$ $NUM|Y$"
  NUM_ASCENSION_PERK_SLOTS_NOT_TRIGGER:0 "Количество ячеек бонусов за стремление НЕ $COMPARATOR$ $NUM|Y$"
  NUM_ASCENSION_PERK_SLOTS_TRIGGER:0 "Количество ячеек бонусов за стремление $COMPARATOR$ $NUM|Y$"
- 
  NUM_SECTORS_TRIGGER:0 "Количество секторов $COMPARATOR$ $NUM|Y$"
  NUM_SECTORS_NOT_TRIGGER:0 "Количество секторов НЕ $COMPARATOR$ $NUM|Y$"
  NUM_RARE_TECHS_TRIGGER:0 "Количество исследованных редких технологий $COMPARATOR$ $NUM|Y$"
@@ -622,7 +616,6 @@
  IS_RESEARCHING_TRIGGER:0 "Изучает $AREA|Y$"
  IS_PREFERRED_WEAPONS_TRIGGER:0 "Предпочитает оружие типа $TYPE$."
  IS_NOT_PREFERRED_WEAPONS_TRIGGER:0 "НЕ предпочитает оружие типа $TYPE$."
- 
  NUM_KILLED_SHIPS_NOT_TRIGGER:0 "НЕ уничтожено $OPERATOR$$VALUE|Y$ кораблей, которыми владеет $TARGET|Y$"
  NUM_KILLED_SHIPS_TRIGGER:0 "Уничтожено $OPERATOR$$VALUE|Y$ кораблей, которыми владеет $TARGET|Y$"
  NUM_TAKEN_PLANETS_NOT_TRIGGER:0 "НЕ отнято $OPERATOR$$VALUE|Y$ планет у империи $TARGET|Y$"
@@ -753,17 +746,16 @@
  IS_NOT_MEGASTRUCTURE_TYPE_TOOLTIP:0 "НЕ принадлежит к типу $TYPE|H$"
  IS_NOT_UPGRADING_TOOLTIP:0 "НЕ подвергается улучшению"
  IS_UPGRADING_TOOLTIP:0 "Подвергается улучшению"
- TRIGGER_RELATIVE_FLEET_POWER:0 "Сравнительная мощь флотилии $COMPARE$ $VALUE$"
- TRIGGER_RELATIVE_ECONOMY:0 "Сравнительная экономическая мощь $COMPARE$ $VALUE$"
- TRIGGER_RELATIVE_TECHNOLOGY:0 "Сравнительный уровень технологий $COMPARE$ $VALUE$"
- TRIGGER_RELATIVE_POWER:0 "Сравнительная мощь $COMPARE$ $VALUE$"
- TRIGGER_RELATIVE_FLEET_POWER_NOT:0 "Сравнительная мощь флотилии НЕ $COMPARE$ $VALUE$"
- TRIGGER_RELATIVE_FLEET_CAPACITY_NOT:0 "Сравнительная вместимость флотилии НЕ $COMPARE$ $VALUE$"
- TRIGGER_RELATIVE_TECHNOLOGY_NOT:0 "Сравнительный уровень технологий НЕ $COMPARE$ $VALUE$"
- TRIGGER_RELATIVE_POWER_NOT:0 "Сравнительная мощь НЕ $COMPARE$ $VALUE$"
+ TRIGGER_RELATIVE_FLEET_POWER:0 "Сравнительная мощь флотилии империи §Y$COUNTRY$§! $COMPARE$ $VALUE$ по сравнению с империей §Y$WHO$§!"
+ TRIGGER_RELATIVE_ECONOMY:0 "Сравнительная экономическая мощь империи §Y$COUNTRY$§! $COMPARE$ $VALUE$ по сравнению с империей §Y$WHO$§!"
+ TRIGGER_RELATIVE_TECHNOLOGY:0 "Сравнительный уровень технологий империи §Y$COUNTRY$§! $COMPARE$ $VALUE$ по сравнению с империей §Y$WHO$§!"
+ TRIGGER_RELATIVE_POWER:0 "Сравнительная мощь империи §Y$COUNTRY$§! $COMPARE$ $VALUE$ по сравнению с империей §Y$WHO$§!"
+ TRIGGER_RELATIVE_FLEET_POWER_NOT:0 "Сравнительная мощь флотилии империи §Y$COUNTRY$§! НЕ $COMPARE$ $VALUE$ по сравнению с империей §Y$WHO$§!"
+ TRIGGER_RELATIVE_FLEET_CAPACITY_NOT:0 "Сравнительная вместимость флотилии империи §Y$COUNTRY$§! НЕ $COMPARE$ $VALUE$ по сравнению с империей §Y$WHO$§!"
+ TRIGGER_RELATIVE_TECHNOLOGY_NOT:0 "Сравнительный уровень технологий империи §Y$COUNTRY$§! НЕ $COMPARE$ $VALUE$ по сравнению с империей §Y$WHO$§!"
+ TRIGGER_RELATIVE_POWER_NOT:0 "Сравнительная мощь империи §Y$COUNTRY$§! НЕ $COMPARE$ $VALUE$ по сравнению с империей §Y$WHO$§!"
  NOR_TRIGGER_STARTS:0 "Все условия должны быть ложью"
  NAND_TRIGGER_STARTS:0 "Одно или несколько условий должны быть ложью"
- 
  HAS_FORMER_CITIZENSHIP_TYPE:0 "Прежний тип гражданства: $SPECIES_RIGHT|Y$"
  HAS_NOT_FORMER_CITIZENSHIP_TYPE:0 "Прежний тип гражданства: НЕ $SPECIES_RIGHT|Y$"
  HAS_FORMER_LIVING_STANDARD_TYPE:0 "Прежний тип уровня жизни: $SPECIES_RIGHT|Y$"
@@ -778,27 +770,18 @@
  HAS_NOT_FORMER_SLAVERY_TYPE:0 "Прежний тип рабства: НЕ $SPECIES_RIGHT|Y$"
  HAS_FORMER_PURGE_TYPE:0 "Прежний тип геноцида: $SPECIES_RIGHT|Y$"
  HAS_NOT_FORMER_PURGE_TYPE:0 "Прежний тип геноцида: НЕ $SPECIES_RIGHT|Y$"
- 
  TRIGGER_HAS_INVALID_CIVIC:0 "Есть неактивная гражданская модель: $CIVIC|Y$"
  TRIGGER_HAS_NOT_INVALID_CIVIC:0 "НЕТ неактивной гражданской модели: $CIVIC|Y$"
  TRIGGER_HAS_VALID_CIVIC:0 "Есть гражданская модель: $CIVIC|Y$"
  TRIGGER_HAS_NOT_VALID_CIVIC:0 "НЕТ гражданской модели: $CIVIC|Y$"
- 
  TRIGGER_HAS_CLAIM:0 "Имеет притязания на такую цель, как $TARGET|Y$"
  TRIGGER_NOT_HAS_CLAIM:0 "НЕ имеет притязания на такую цель, как $TARGET|Y$"
- 
  TRIGGER_HAS_CASUS_BELLI:0 "Имеет повод к войне с империей $TARGET|Y$"
  TRIGGER_NOT_HAS_CASUS_BELLI:0 "НЕ имеет повода к войне с империей $TARGET|Y$"
  TRIGGER_HAS_SPECIFIC_CASUS_BELLI:0 "Имеет повод к войне с империей $TARGET|Y$ по причине $CASUS_BELLI|Y$"
  TRIGGER_NOT_HAS_SPECIFIC_CASUS_BELLI:0 "НЕ имеет повода к войне с империей $TARGET|Y$ по причине $CASUS_BELLI|Y$"
- 
  HAS_NUM_STARBASE_SIZES:0 "Количество космических баз ($SIZE$) - $COMPARE$ $NUM|Y$"
  HAS_NOT_NUM_STARBASE_SIZES:0 "Количество космических баз ($SIZE$) НЕ $COMPARE$ $NUM|Y$"
- 
- ####################################
- # Effects
- ####################################
- 
  SET_ASTEROID_BELT_EFFECT:0 "Пояс астероидов размещен в системе $SYSTEM$ на расстоянии $DISTANCE|0$"
  REMOVED_ASTEROID_BELT_EFFECT:0 "Удален пояс астероидов в системе $SYSTEM$"
  REMOVE_PLANET:0 "Удалена планета $PLANET$"
@@ -905,7 +888,7 @@
  SET_EVENT_LOCKED_NO:0 "Флотилия $FLEET|Y$ НЕ зафиксирована."
  CLEAR_FLEET_ORDERS:0 "Удаляет приказы флотилии $FLEET|Y$."
  ORDER_FORCED_RETURN:0 "Заставляет флотилию $FLEET|Y$ вернуться в безопасный район."
- DECLARE_WAR_EFFECT:0 "$FIRST|Y$ объявляет войну империи $SECOND|Y$."
+ DECLARE_WAR_EFFECT:0 "$FIRST|Y$ объявляет войну империи $SECOND|Y$.\n"
  ADD_CLAIMS_EFFECT:0 "$COUNTRY|Y$ объявляет притязание на систему $SYSTEM|Y$."
  REMOVE_CLAIMS_EFFECT:0 "$COUNTRY|Y$ теряет притязание на систему $SYSTEM|Y$."
  JOIN_WAR_EFFECT:0 "$FIRST|Y$ становится союзником империи $SECOND|Y$ в ее войнах."
@@ -1063,7 +1046,6 @@
  CHANGE_SPEIES_PORTRAIT_EFFECT:0 "Изменить портрет расы на: $PORTRAIT|Y$"
  HAS_MODIFIER:0 "Есть модификатор $MODNAME|Y$"
  effect_every_owned_pop_species:0 "Все принадлежащие расы:\n"
- 
  any_megastructure_trigger:0 "Любое мегасооружение"
  effect_random_megastructure:0 "Случайное мегасооружение"
  effect_every_megastructure:0 "Каждое мегасооружение"
@@ -1083,7 +1065,6 @@
  TRIGGER_NOT_HAS_ASCENSION_PERK:0 "НЕТ бонуса за стремление $TRADITION|Y$"
  TRIGGER_EXCESS_FOOD:0 "Избыток пищи $COMPARE$ $VAL0|0Y%$"
  TRIGGER_NOT_EXCESS_FOOD:0 "Избыток пищи НЕ $COMPARE$$VAL0|0Y%$"
- 
  any_owned_pop_trigger:0 "Любое принадлежащее поселение"
  any_owned_pop_species_trigger:0 "Любая раса империи"
  any_country_trigger:0 "Любая империя"
@@ -1138,14 +1119,11 @@
  count_tile_trigger:0 "Количество квадратов $IS_NOT$ $COMPARATOR$ $NUM|Y$"
  TRIGGER_NOT_POPS_HAVE_HAPPINESS:0 "НЕТ счастья"
  TRIGGER_POPS_HAVE_HAPPINESS:0 "Есть счастье"
- 
  TRIGGER_NOT_USING_WAR_GOAL:0 "$COUNTRY$ НЕ использует военную цель $KEY|Y$"
  TRIGGER_USING_WAR_GOAL:0 "$COUNTRY$ использует военную цель $KEY|Y$"
- 
  EFFECT_ADD_CASUS_BELLI:0 "Добавить повод к войне с империей $COUNTRY|Y$ по причине $TYPE|Y$"
  EFFECT_COPY_ETHOS_AND_AUTHORITY:0 "Скопировать принципы и форму правления империи $COUNTRY|Y$"
  EFFECT_ADD_STATIC_WAR_EXHAUSTION:0 " Добавить усталость от войны для владельца планеты в масштабе $VALUE|%Y$"
- 
  OWNS_BYPASS_NOT:0 "Империя $COUNTRY|Y$ НЕ контролирует систему с таким объектом, как $BYPASS_TYPE|Y$."
  OWNS_BYPASS:0 "Империя $COUNTRY|Y$ контролирует систему с таким объектом, как $BYPASS_TYPE|Y$."
  ADD_REMEMBERED_BYPASS_TYPE:0 "Империя $COUNTRY|Y$ архивирует информацию о таком объекте, как $BYPASS_TYPE|Y$."
@@ -1154,9 +1132,7 @@
  HAS_SEEN_ANY_BYPASS_NOT:0 "Империя $COUNTRY|Y$ обнаружила такой объект, как $BYPASS_TYPE|Y$."
  HAS_SEEN_ANY_BYPASS:0 "Империя $COUNTRY|Y$ НЕ обнаружила такой объект, как $BYPASS_TYPE|Y$."
  ADD_SEEN_BYPASS_INSTANCE:0 "Империя $COUNTRY|Y$ фиксирует местоположение такого объекта, как $BYPASS|Y$."
- 
  ADD_RESOURCE:0 "$RESOURCES|Y$"
- 
  STARBASE_TRIGGER_SIZE_EQ:0 "Уровень космической базы - $SIZE|Y$"
  STARBASE_TRIGGER_SIZE_GT:0 "Уровень космической базы выше, чем $SIZE|Y$"
  STARBASE_TRIGGER_SIZE_LT:0 "Уровень космической базы ниже, чем $SIZE|Y$"
@@ -1167,89 +1143,61 @@
  STARBASE_TRIGGER_SIZE_NOT_LT:0 "Уровень космической базы НЕ ниже, чем $SIZE|Y$"
  STARBASE_TRIGGER_SIZE_NOT_GT_EQ:0 "Уровень космической базы - НЕ как минимум $SIZE|Y$"
  STARBASE_TRIGGER_SIZE_NOT_LT_EQ:0 "Уровень космической базы - НЕ как максимум $SIZE|Y$"
- 
  any_owned_starbase_trigger:0 "Любая принадлежащая космическая база"
  effect_random_owned_starbase:0 "Случайная принадлежащая космическая база"
  effect_every_owned_starbase:0 "Каждая принадлежащая космическая база"
  count_owned_starbase_trigger:0 "Количество принадлежащих космических баз $IS_NOT$ $COMPARATOR$ $NUM|Y$"
- 
  TRIGGER_IS_VALID_PLANET_KILLER_TARGET:0 "$TARGET|Y$ может стать целью оружия класса «Убийца планет»"
  TRIGGER_NOT_IS_VALID_PLANET_KILLER_TARGET:0 "$TARGET|Y$ НЕ может стать целью оружия класса «Убийца планет»"
- 
  EFFECT_SET_HOME_BASE:0 "$BASE|Y$ назначается постоянной базой флотилии $FLEET|Y$."
- 
  any_war_participant_trigger:0 "Любой участник войны"
- 
  effect_create_starbase:0 "В системе $SYSTEM$ для империи $COUNTRY$ создан класс $CLASS$"
  effect_set_starbase_size:0 "$CLASS$ в системе $SYSTEM$ теперь $NEWCLASS$."
  effect_set_starbase_component:0 "Добавить компонент $COMPONENT$ к классу $CLASS$ в системе $SYSTEM$."
- 
  IS_DISTANCE_HYPERLANE:0 "Общая дистанция гиперкоридоров в пределах от $MIN|Y2$ до $MAX|Y2$"
  IS_DISTANCE_EUCLIDEAN:0 "Евклидова дистанция в пределах от $MIN|Y2$ до $MAX|Y2$"
  IS_NOT_DISTANCE_HYPERLANE:0 "Общая дистанция гиперкоридоров НЕ в пределах от $MIN|Y2$ до $MAX|Y2$"
  IS_NOT_DISTANCE_EUCLIDEAN:0 "Евклидова дистанция НЕ в пределах от $MIN|Y2$ до $MAX|Y2$"
- 
  IS_NOT_BRIDGE_SYSTEM:0 "Система не является мостом"
  IS_BRIDGE_SYSTEM:0 "Система является мостом"
- 
  IS_RESEARCHING_PROJECT_TRIGGER:0 "Сейчас изучает: $PROJECT|Y$\n"
  IS_NOT_RESEARCHING_PROJECT_TRIGGER:0 "Сейчас НЕ изучает: $PROJECT|Y$\n"
- 
  CONTROLLED_SYSTEMS_TRIGGER:0 "Количество контролируемых систем $COMPARATOR$ $NUM|Y$"
  CONTROLLED_SYSTEMS_NOT_TRIGGER:0 "Количество контролируемых систем НЕ $COMPARATOR$ $NUM|Y$"
- 
  EXPLOITABLE_PLANETS_TRIGGER:0 "Количество эксплуатируемых планет $COMPARATOR$ $NUM|Y$"
  EXPLOITABLE_PLANETS_NOT_TRIGGER:0 "Количество эксплуатируемых планет НЕ $COMPARATOR$ $NUM|Y$"
- 
  COLONIZABLE_CONTROLLED_TRIGGER:0 "Количество контролируемых планет, доступных для колонизации, $COMPARATOR$ $NUM|Y$"
  COLONIZABLE_CONTROLLED_NOT_TRIGGER:0 "Количество контролируемых планет, доступных для колонизации, НЕ $COMPARATOR$ $NUM|Y$"
- 
  SCIENTIST_COUNT_TRIGGER:0 "Количество нанятых ученых $COMPARATOR$ $NUM|Y$"
  SCIENTIST_COUNT_NOT_TRIGGER:0 "Количество нанятых ученых НЕ $COMPARATOR$ $NUM|Y$"
- 
  HAS_EXPANSION_PLAN:0 "У ИИ есть системы, в которые он хочет расшириться"
  HAS_NO_EXPANSION_PLAN:0 "У ИИ НЕТ систем, в которые он хочет расшириться"
- 
  HIGHEST_THREAT_TRIGGER:0 "Высочайшая угроза для империи $COMPARATOR$ $NUM|Y$"
  HIGHEST_THREAT_NOT_TRIGGER:0 "Высочайшая угроза для империи НЕ $COMPARATOR$ $NUM|Y$"
- 
  HAS_NOT_TRADE_ROUTES:0 "В системе нет торговых путей"
  HAS_TRADE_ROUTES:0 "В системе есть торговые пути"
- 
  TRADE_ROUTE_VALUE_LESS_THAN:0 "Проходит £trade_value£ $VAL0|2Y$ - меньше, чем $COMPARE$ £trade_value£ $VAL1|2Y$"
  TRADE_ROUTE_VALUE_AT_LEAST:0 "Проходит £trade_value£ $VAL0|2Y$ - как минимум $COMPARE$ £trade_value£ $VAL1|2Y$"
- 
  TRADE_INTERCEPTED_VALUE_LESS_THAN:0 "Перехвачено £trade_value£ $VAL0|2Y$ - меньше, чем $COMPARE$ £trade_value£ $VAL1|2Y$"
  TRADE_INTERCEPTED_VALUE_AT_LEAST:0 "Перехвачено £trade_value£ $VAL0|2Y$ - как минимум $COMPARE$ £trade_value£ $VAL1|2Y$"
- 
  TRADE_INTERCEPTED_RATIO_LESS_THAN:0 "Перехвачено £trade_value£ $VAL0|%Y$ - меньше, чем $COMPARE$ £trade_value£ $VAL1|%Y$"
  TRADE_INTERCEPTED_RATIO_AT_LEAST:0 "Перехвачено £trade_value£ $VAL0|%Y$ - как минимум $COMPARE$ £trade_value£ $VAL1|%Y$"
- 
  TRADE_PROTECTED_VALUE_LESS_THAN:0 "Защищено £trade_value£ $VAL0|2Y$ - меньше, чем $COMPARE$ £trade_value£ $VAL1|2Y$"
  TRADE_PROTECTED_VALUE_AT_LEAST:0 "Защищено £trade_value£ $VAL0|2Y$ - как минимум $COMPARE$ £trade_value£ $VAL1|2Y$"
- 
  TRADE_PROTECTED_RATIO_LESS_THAN:0 "Защищено £trade_value£ $VAL0|%0Y$ - меньше, чем $COMPARE$ £trade_value£ $VAL1|%0Y$"
  TRADE_PROTECTED_RATIO_AT_LEAST:0 "Защищено £trade_value£ $VAL0|%0Y$ - как минимум $COMPARE$ £trade_value£ $VAL1|%0Y$"
- 
  NUM_TRADE_ROTES_LESS_THAN:0 "Число торговых путей менее, чем $COMPARE$£trade_value£$VAL1|0Y$"
  NUM_TRADE_ROTES_AT_LEAST:0 "Число торговых путей как минимум $COMPARE$£trade_value£$VAL1|0Y$"
- 
  HAS_SECTOR_TYPE:0 "Сектор относится к типу $TYPE$"
  HAS_NOT_SECTOR_TYPE:0 "Сектор НЕ относится к типу $TYPE$"
- 
  IS_ARCHETYPE:0 "Относится к типу $ARCHETYPE|Y$."
  IS_NOT_ARCHETYPE:0 "Не относится к типу $ARCHETYPE|Y$."
- 
  HAS_NOT_NUM_SECTORS:0 "Количество секторов НЕ $COMPARATOR$ $NUM|Y$"
  HAS_NUM_SECTORS:0 "Количество секторов $COMPARATOR$ $NUM|Y$"
- 
  HAS_NOT_NUM_UNCLEARED_BLOCKERS:0 "Количество неочищенных квадратов НЕ $COMPARATOR$ $NUM|Y$"
  HAS_NUM_UNCLEARED_BLOCKERS:0 "Количество неочищенных квадратов $COMPARATOR$ $NUM|Y$"
- 
  any_owned_sector_trigger:0 "Любой принадлежащий сектор:"
  any_sector_trigger:0 "Любой сектор:"
- 
  effect_every_neighbor_country:0 "Каждая соседняя империя: "
- 
  RANDOM_OWNED_PLANET_EFFECT:0 "Случайная планета $ADJ$ ($PLANET|H$):\n\t"
  EVERY_OWNED_PLANET_EFFECT:0 "Каждая планета $ADJ$:\n\t"

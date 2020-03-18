@@ -803,8 +803,8 @@ generate_start_buildings_and_districts = {
 			limit = { owner = { has_civic = civic_machine_servitor } }
 			add_district = district_farming	
 			add_district = district_generator
-			remove_district = district_nexus
-			remove_district = district_nexus
+			#remove_district = district_nexus
+			#remove_district = district_nexus #blocked removals for + 2 jobs and housing
 			add_building = building_organic_sanctuary
 		}
 	}

@@ -1462,7 +1462,11 @@ ship_design = {
 		component = {
 			slot = "TORPEDO_01"
 			template = "TORPEDO_3"
-		}	
+		}
+		component = {
+			slot = "TORPEDO_02"
+			template = "TORPEDO_3"
+		}
 		component = {
 			slot = "SMALL_GUN_01"
 			template = "SMALL_PLASMA_3"
@@ -3453,6 +3457,10 @@ ship_design = {
 		
 		component = {
 			slot = "TORPEDO_01"
+			template = "TORPEDO_3"
+		}
+		component = {
+			slot = "TORPEDO_02"
 			template = "TORPEDO_3"
 		}	
 		component = {

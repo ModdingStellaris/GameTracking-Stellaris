@@ -357,7 +357,7 @@
  tr_prosperity_hive_neural_signal_boosters_delayed:1 "As redes de energia que alimentam nossas colmeias também podem ser usadas para impulsionar os sinais neurais transmitidos para alguns de nossos drones, permitindo maiores modificações e melhorias na eficiência."
  gestalt_consciousness_biological_ascension_only1:0 "$TRIGGER_FAIL$Uma Mente Colmeia é incapaz de iniciar o caminho para a Ascensão Psiônica."
  gestalt_consciousness_biological_ascension_only2:0 "$TRIGGER_FAIL$Uma Mente Colmeia é incapaz de iniciar o caminho para a Ascensão Sintética."
- ap_engineered_evolution_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
+ ap_engineered_evolution_modifier_desc:1 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$\n§HLibera a Construção:§! $building_clone_vats$"
  ap_evolutionary_mastery_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
  tradition_expansion_machine:1 "Expansão"
  tradition_expansion_machine_desc:0 "Projeções de crescimento indicam que logo excederemos a capacidade máxima de armazenamento para nossos sistemas natais. Precisamos expandir, ou estagnar."
@@ -739,3 +739,4 @@
  ap_hive_worlds_desc:0 "Criaremos mundos vivos que fazem tão parte da Colmeia como os drones que nele habitam."
  tr_synchronicity_kinship_gestalt_delayed:0 "Agentes com propósitos similares receberão ordens como um grupo, reduzindo a pressão sobre a overmind."
  tr_diplomacy_secure_shipping_desc:0 "Proteção comercial básica para rotas comerciais aumentada por §G5§!."
+ ap_technological_ascendancy_rare:0 "§MTecnologias raras§! agora são §G50%§! mais comuns."

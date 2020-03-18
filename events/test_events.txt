@@ -729,11 +729,9 @@ planet_event = {
 	}
 
 	immediate = {
-		while = {
-			count = 5
-			create_pop = {
-				species = event_target:custodian_bot
-			}
+		every_owned_pop = {
+			unemploy_pop = yes
+			clear_pop_category = yes
 		}
 	}
 }

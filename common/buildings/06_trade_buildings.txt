@@ -63,22 +63,17 @@ building_commercial_zone = {
 		}
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 3
-			}
-		}
-		modifier = {
-			factor = 0
 			OR = {
 				num_buildings = { type = building_commercial_zone value >= 2 }
 				num_buildings = { type = building_commercial_megaplex value >= 0 }
 			}
+		}
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
+		modifier = {
+			factor = 0
+			free_jobs > 0 
 		}
 	}
 
@@ -140,17 +135,12 @@ building_commercial_megaplex = {
 	
 	ai_weight = {
 		weight = 10
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 5
-			}
+			free_jobs > 0
 		}
 	}
 
@@ -206,17 +196,12 @@ building_galactic_stock_exchange = {
 	
 	ai_weight = {
 		weight = 10
+		# There are already unworked jobs
+		# Blocks buildings unworkable by remaining pops (slaves/robots etc)
+		# Will be improved... at some point
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
-					}
-				}
-				count < 2
-			}
+			free_jobs > 0 
 		}
 	}
 

@@ -228,7 +228,7 @@
  TRADITIONALIST_FRUGALITY_DESC:0 "Fortwährend sparsamer Verbrauch von Konsumgütern sorgt für Zustimmung bei [Root.GetName]."
  TRADITIONALIST_BIG_SPENDING:0 "Frevelhafter Überfluss"
  TRADITIONALIST_NO_TOMB_WORLDS:0 "Unheiliger Boden"
- TRADITIONALIST_NO_TOMB_WORLDS_DESC:0 "Das Betreten jeglicher §YTotenwelten§! sorgt für Missfallen bei [Root.GetName]."
+ TRADITIONALIST_NO_TOMB_WORLDS_DESC:1 "Das Betreten jeglicher §YTotenwelten§!, selbst zum Zwecke des Terraforming, sorgt für Missfallen bei [Root.GetName]."
  TRADITIONALIST_TOMB_WORLDS:0 "$TRADITIONALIST_NO_TOMB_WORLDS$"
  TRADITIONALIST_GAIA_WORLDS:1 "Geheiligte Welt"
  TRADITIONALIST_GAIA_WORLDS_DESC:2 "Eine unbesiedelte §YGaia-Welt§! innerhalb unserer Grenzen zu §Yweihen§!, sorgt für Zustimmung bei [Root.GetName]."

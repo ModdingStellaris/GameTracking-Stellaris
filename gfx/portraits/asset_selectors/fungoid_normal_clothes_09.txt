@@ -16,9 +16,9 @@ fungoid_normal_clothes_09 = {
 	pop = { #for a specific pop
 		default = "gfx/models/portraits/fungoid/fungoid_normal_outfit_governor_09.dds"
 		
-	#	"gfx/models/portraits/fungoid/fungoid_normal_outfit_general.dds" 	= { tile = { has_building = building_power_plant_1 } }
-	#	"gfx/models/portraits/fungoid/fungoid_normal_outfit_scientist_09.dds" 	= { tile = { has_building = building_engineering_facility_1 } }
-	#	"gfx/models/portraits/fungoid/fungoid_normal_outfit_admiral_09.dds" 	= { tile = { has_building = building_hydroponics_farm_1 } }
+		"gfx/models/portraits/fungoid/fungoid_normal_outfit_general.dds" 	= { OR = { is_pop_category = worker is_pop_category = slave is_pop_category = simple_drone }  }
+		"gfx/models/portraits/fungoid/fungoid_normal_outfit_scientist_09.dds" 	= { OR = { is_pop_category = specialist is_pop_category = complex_drone } }
+		"gfx/models/portraits/fungoid/fungoid_normal_outfit_admiral_09.dds" 	= { is_pop_category = ruler }
 	}
 	#leader scope
 	leader = { #scientists, generals, admirals, governor

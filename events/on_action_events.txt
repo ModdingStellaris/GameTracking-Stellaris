@@ -6388,13 +6388,27 @@ event = {
 	hide_window = yes
 	is_triggered_only = yes
 
-	immediate = {
-		every_playable_country = {
-			every_owned_planet = {
-				planet_event = { id = action.65 }
-			}
-		}
-	}
+immediate = {
+        every_playable_country = {
+            if = {
+                limit = {
+                    num_species > 1
+                }
+                if = {
+                    limit = {
+                        any_owned_pop_species = {
+                            has_citizenship_type = {
+                                type = citizenship_assimilation
+                            }
+                        }
+                    }
+                    every_owned_planet = {
+                        planet_event = { id = action.65 }
+                    }
+                }
+            }
+        }
+    }
 }
 
 # Assimilate Pops
@@ -7658,7 +7672,10 @@ ship_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		from = { has_strategic_resource = yes } # basically a pre-trigger
+		from = { # basically a pre-trigger
+			has_strategic_resource = yes
+			has_anomaly = no
+		}
 		owner = {
 			OR = {
 				AND = {
@@ -8611,5 +8628,15 @@ pop_event = {
 				}			
 			}
 		}		
+	}
+}
+
+# Recalculate strategic data for attack/defense ( chokepoints etc. )
+country_event = {
+	id = action.200
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		run_ai_strategic_war_data = yes
 	}
 }

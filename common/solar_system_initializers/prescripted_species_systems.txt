@@ -891,7 +891,7 @@ deneb_system = {
 		}
 		moon = {
 			name = "NAME_Unity"
-			class = ideal_design_class
+			class = ideal_planet_class
 			orbit_distance = 5
 			orbit_angle = 340
 			size = 18

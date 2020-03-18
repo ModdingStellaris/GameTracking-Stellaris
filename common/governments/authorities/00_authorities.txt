@@ -148,6 +148,7 @@ auth_hive_mind = {
 }
 
 auth_machine_intelligence = {
+	machine_empire = yes
 	has_heir = no
 	election_type = none
 	has_factions = no
@@ -177,7 +178,7 @@ auth_machine_intelligence = {
 	
 	country_modifier = {
 		colony_start_num_pops_add = 1
-		station_gatherers_produces_mult = 0.5
+		station_gatherers_produces_mult = 0.1
 	}
 
 	tags = {

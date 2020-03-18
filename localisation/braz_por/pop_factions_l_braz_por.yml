@@ -501,7 +501,7 @@
  TRADITIONALIST_FRUGALITY_DESC:0 "Manter um gasto reduzido em Bens de Consumo agradará ao [Root.GetName]."
  TRADITIONALIST_BIG_SPENDING:0 "Excesso Desregrado"
  TRADITIONALIST_NO_TOMB_WORLDS:0 "Solo Profano"
- TRADITIONALIST_NO_TOMB_WORLDS_DESC:0 "Pisar em qualquer §YMundo Tumba§! não agradará ao [Root.GetName]."
+ TRADITIONALIST_NO_TOMB_WORLDS_DESC:1 "Pisar em quaisquer §YMundos Tumba§!, mesmo com o objetivo de terraformar, desagradará ao [Root.GetName]."
  TRADITIONALIST_TOMB_WORLDS:0 "$TRADITIONALIST_NO_TOMB_WORLDS$"
  TRADITIONALIST_GAIA_WORLDS:1 "Mundo Sagrado"
  TRADITIONALIST_GAIA_WORLDS_DESC:2 "§YConsagrar§! um §YMundo Gaia§! intocado dentro de nossas fronteiras agradará ao [Root.GetName]."
