@@ -42,7 +42,7 @@ energy_expenditure_leaders = {
 	}
 	
 	fraction = {
-		weight = 0.10
+		weight = 0.5
 	}	
 }
 
@@ -74,7 +74,7 @@ energy_expenditure_missing_scientist = {
 	}
 	
 	fraction = {
-		weight = 0.5
+		weight = 0.3
 	}
 
 	static_max = {

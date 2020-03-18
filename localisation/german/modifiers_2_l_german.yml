@@ -168,6 +168,7 @@
  mod_damage_vs_country_type_extradimensional_3_mult:0 "Schaden an den Vehementen"
  mod_damage_vs_country_type_ai_empire_mult:1 "Schaden an der Kontingenz"
  mod_damage_vs_country_type_sentinels_mult:0 "Schaden an Wächtern"
+ mod_damage_vs_country_type_gate_builders_mult:0 "Schaden an Torbauern"
 
  ####################################
  # Opinion Modifiers

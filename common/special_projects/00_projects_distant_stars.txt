@@ -1343,27 +1343,6 @@ special_project = {
 		#skill = 1
 	}
 
-	abort_trigger = {
-		OR = {
-			has_country_flag = aborted_enigmatic_uplift
-			capital_scope = { 
-				NOT = {
-					solar_system = {
-						any_ship_in_system = {
-							fleet = {
-								has_fleet_flag = enigmatic_cache_fleet
-								exists = orbit
-								orbit = { is_same_value = root.capital_scope }
-								exists = owner
-								owner = { is_same_value = event_target:enigmatic_cache_country }
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
 	on_start = {
 		from.owner = { 
 			country_event = { id = distar.5066 } # triggers uplifting dreams

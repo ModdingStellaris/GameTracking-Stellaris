@@ -53,11 +53,27 @@ alloys_expenditure_starbases = {
 	category = starbases
 	
 	potential = {
-		always = yes
+		NOT = {
+			is_country_type = fallen_empire
+		}
 	}
 	
 	fraction = {
 		weight = 0.35
+	}	
+}
+
+alloys_expenditure_starbases_fallen_empires = {
+	resource = alloys 
+	type = expenditure
+	category = starbases
+	
+	potential = {
+		is_country_type = fallen_empire
+	}
+	
+	fraction = {
+		weight = 0.2
 	}	
 }
 
@@ -69,10 +85,14 @@ alloys_expenditure_starbases_expand = {
 	potential = {
 		has_ai_expansion_plan = yes
 		highest_threat < 50
+		NOT = {
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+		}
 	}
 	
 	fraction = {
-		weight = 1.0
+		weight = 0.8
 	}	
 }
 

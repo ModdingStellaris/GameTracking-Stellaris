@@ -763,6 +763,14 @@ country_event = {
 		any_neighbor_country = {
 			is_country_type = default
 			has_communications = root
+			opinion = {
+				who = ROOT
+				value > -100
+			}
+			their_opinion = {
+				who = ROOT
+				value > -100
+			}
 			NOR = {
 				has_country_flag = dysonsphere_diplomatic_event
 				is_at_war_with = root
@@ -784,6 +792,14 @@ country_event = {
 			limit = {
 				is_country_type = default
 				has_communications = root
+				opinion = {
+					who = ROOT
+					value > -100
+				}
+				their_opinion = {
+					who = ROOT
+					value > -100
+				}
 				NOR = {
 					has_country_flag = dysonsphere_diplomatic_event
 					is_at_war_with = root

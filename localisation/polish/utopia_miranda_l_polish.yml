@@ -127,7 +127,7 @@
  utopia.59.name:0 "Bank neuronowy"
  utopia.59.desc:0 "$utopia.59.intro$\n\nJak można było oczekiwać, ochotnicy jakoś się nie tłoczą. Jak dotąd zgłosił się tylko jeden - przywódca naukowy [volunteer_leader.GetName]."
  utopia.59.a:0 "Niech [volunteer_leader.GetName] wgra swój mózg do węzła."
- utopia.59.a.tooltip:0 "Węzeł naukowy będzie wytwarzać dodatkowe punkty badań: §Y5§! £physics£ §Y5§! £society£ §Y5§! £engineering£ ."
+ utopia.59.a.tooltip:0 "Węzeł naukowy będzie teraz wytwarzał dodatkowo:\n£physics£ §G50§! £society£ §G50§! £engineering£ §G50§!."
  utopia.59.b:0 "To byłoby nieetyczne."
  utopia.59.c:0 "Nie, [volunteer_leader.GetName] ma coś do zrobienia w innym miejscu."
  utopia.60.name:0 "Bank neuronowy"

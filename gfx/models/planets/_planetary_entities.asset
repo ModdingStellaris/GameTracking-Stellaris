@@ -4042,7 +4042,7 @@ animation = {
 			####### City Planets #######
 
 entity = {
-	name = "city_planet_arthropoid_01_entity"
+	name = "arthropoid_01_city_planet_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override	
@@ -4085,7 +4085,7 @@ entity = {
 }
 
 entity = {
-	name = "city_planet_avian_01_entity"
+	name = "avian_01_city_planet_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override	
@@ -4128,7 +4128,7 @@ entity = {
 }
 
 entity = {
-	name = "city_planet_fungoid_01_entity"
+	name = "fungoid_01_city_planet_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override	
@@ -4171,7 +4171,7 @@ entity = {
 }
 
 entity = {
-	name = "city_planet_humanoid_01_entity"
+	name = "humanoid_01_city_planet_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override	
@@ -4214,7 +4214,7 @@ entity = {
 }
 
 entity = {
-	name = "city_planet_mammalian_01_entity"
+	name = "mammalian_01_city_planet_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override	
@@ -4258,7 +4258,7 @@ entity = {
 
 
 entity = {
-	name = "city_planet_molluscoid_01_entity"
+	name = "molluscoid_01_city_planet_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override	
@@ -4302,7 +4302,7 @@ entity = {
 
 
 entity = {
-	name = "city_planet_plantoid_01_entity"
+	name = "plantoid_01_city_planet_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override	
@@ -4346,7 +4346,7 @@ entity = {
 
 
 entity = {
-	name = "city_planet_reptilian_01_entity"
+	name = "reptilian_01_city_planet_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override	

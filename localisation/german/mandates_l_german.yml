@@ -121,7 +121,7 @@
  mandate.161.title:0 "Friedensstifter-Mandat erfüllt"
  mandate.161.desc:1 "Gemäß dem Mandat unseres [Root.GetRulerTitle]s gibt es keine laufenden Konflikte mit §H[Root.GetName]§!-Beteiligung mehr."
  mandate.162.title:0 "Mandat unerfüllt"
- mandate.162.desc:1 "Unser [Root.GetRulerTitle] ist damit gescheitert, die vorgegebenen Mandatsziele innerhalb eines zeitlich angemessenen Rahmens zu erfüllen."
+ mandate.162.desc:1 "$mandate.142.desc$"
 
  # Slaver
  mandate.171.title:0 "Sklavenhändler-Mandat erfüllt"

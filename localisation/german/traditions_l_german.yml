@@ -28,7 +28,7 @@
  TRADITION_GROUP_CLICK_DESC:0 "§GZum Annehmen dieser Traditionsgruppe klicken§!"
  TRADITION_COST_NEXT:0 "Nächste Tradition"
  TRADITION_COST_MULT_NUM_TR:0 "$COUNT|Y$ Traditionen: $VALUE|Y$"
- TRADITION_COST_MULT_EMPIRE_SIZE:0 "$COUNT|Y$ Reichsgröße: $VALUE|%$"
+ TRADITION_COST_MULT_EMPIRE_SIZE:1 "$COUNT|Y$ $EMPIRE_SIZE$: $VALUE|%$"
  TRADITION_COST_MULT_NUM_GROUPS:0 "$COUNT|Y$ Angenommene Traditionskategorien: $VALUE$"
  pop_xenos:0 "Alien-Bewohner"
  pop_xeno_slaves:0 "Alien-Sklaven-Bewohner"
@@ -66,7 +66,7 @@
  tr_expansion_colonization_fever_hive_delayed:0 "Das Überbewusstsein ist ein Chor des Denkens, dass auch die kalte Leere des Weltraums nicht zum Schweigen bringen kann."
   
  tr_expansion_a_new_life:0 "Ein neues Leben"
- tr_expansion_a_new_life_desc:3 "Neue Kolonien beginnen mit §Y1§! zusätzlichen £pop£s£ Bewohner."
+ tr_expansion_a_new_life_desc:3 "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! um §G+10%§! erhöht."
  tr_expansion_a_new_life_delayed:0 "Auf den Kolonieplaneten erwartet unsere Bürger ein neues Leben. Die Chance auf einen Neubeginn in einem gelobten Land der Möglichkeiten und des Abenteuers! Mit etwas Hilfe durch eine aggressive Marketingkampagne werden die weniger begünstigten Elemente unserer Gesellschaft zu unseren Kolonieschiffen strömen."
  tr_expansion_a_new_life_machine:1 "Schnellmontageprotokolle"
  tr_expansion_a_new_life_machine_desc:0 "£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! um §G+10%§! erhöht."
@@ -208,7 +208,7 @@
  #tr_purity_appropriation_desc:1 "§Y$MOD_POP_RESETTLEMENT_COST_MULT$§! um §G50%§! reduziert."
  #tr_purity_appropriation_delayed:1 "Land, das nicht bearbeitet wird, trägt nichts zu unserem Reich bei. Arbeiter müssen auf eine effiziente Weise auf die Planeten umgesiedelt werden, wo sie am meisten benötigt werden."
  #tr_purity_finish:0 "Reinheitstratiodionen abgeschlossen"
- #tr_purity_finish_effect:1 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_purity_adopt$ erhöht die  £unity£ §Y$country_base_unity_produces_mult$§! um §G+10%§!."
+ #tr_purity_finish_effect:1 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_purity_adopt$ erhöht die £unity£ §Y$country_base_unity_produces_mult$§! um §G+10%§!."
 
  ################################################################
  # HARMONY
@@ -267,7 +267,7 @@
  tr_synchronicity_self_preservation_desc:0 "Maschinenanführer erleiden mit §Y50%§! weniger Wahrscheinlichkeit Ausfälle und Unfälle."
  tr_synchronicity_self_preservation_delayed:0 "Ein Roboter muss seine eigene Existenz schützen, solange dieser Schutz nicht im Konfl...§R‘Ç° éü¿T éw+Á éÒÎ( éÍ8" <DATEN BESCHÄDIGT>§!"
  tr_synchronicity_finish:0 "Synchronizitätstraditionen abgeschlossen"
- tr_synchronicity_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_synchronicity_hive_adopt$ erhöhtdie  £stability£ §Y$MOD_PLANET_STABILITY_ADD$§! auf all unseren Planeten um §G5%§!."
+ tr_synchronicity_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_synchronicity_hive_adopt$ erhöhtdie £stability£ §Y$MOD_PLANET_STABILITY_ADD$§! auf all unseren Planeten um §G5%§!."
 
 ################################################################
 # SUPREMACY
@@ -417,7 +417,7 @@
  tr_adaptability_dietary_enrichment_delayed:1 "Der Nährwert von Nahrung, den wir für unsere Bevölkerung ernten, kann durch verschiedene Anreicherungstechniken erhöht werden, so dass wir mehr Münder mit weniger Nahrung ernähren können."
 
  tr_adaptability_survival_fittest:0 "Überleben der Stärksten"
- tr_adaptability_survival_fittest_desc:2 "§Y$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$§! um §G25§! reduziert und §Y$MOD_ARMY_DEFENSE_DAMAGE_MULT$§! um §G+25§! erhöht."
+ tr_adaptability_survival_fittest_desc:3 "§Y$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$§! um §G25%§! reduziert und §Y$MOD_ARMY_DEFENSE_DAMAGE_MULT$§! um §G25%§! erhöht."
  tr_adaptability_survival_fittest_delayed:1 "Durch den Kontakt mit anderen Spezies haben wir gelernt, wie wichtig es ist, unsere Schwächen im großen Überlebenskampf zu überwinden."
 
  tr_adaptability_environmental_diversification:0 "Umweltdiversifizierung"
@@ -518,7 +518,7 @@
 
  tr_discovery_faith_in_science:0 "Glaube an die Wissenschaft"
  tr_discovery_faith_in_science_desc:6 "£pop£ Bewohner, die mit §YForschung§! arbeiten, haben ihren §YUnterhalt§! um §G20%§! reduziert."
- #tr_discovery_faith_in_science_desc:6 "For every §Y20§!  £pop£ Pops, our planets will have §Y1§! £job_researcher£ §Y$job_researcher$ Job§!."
+ #tr_discovery_faith_in_science_desc:6 "For every §Y20§! £pop£ Pops, our planets will have §Y1§! £job_researcher£ §Y$job_researcher$ Job§!."
  tr_discovery_faith_in_science_delayed:0 "Die Öffentlichkeit sieht die Wissenschaft mittlerweile als etwas Religionsähnliches an - und ihr Glaube an sie ist unerschütterlich. Es gibt keine noch so große Frage, als dass sie nicht von der Wissenschaft beantwortet werden könnte."
  tr_discovery_faith_in_science_machine:0 "Uplink-Latenzreduktion"
  tr_discovery_faith_in_science_machine_desc:0 "$tr_discovery_faith_in_science_desc$"
@@ -584,7 +584,7 @@
  tr_prosperity_administrative_operations_hive_delayed:0 "Konstruktionsharz, das aus eingefangener Biomasse in Ozeanriesen gewonnen wird, ist verformbarer und haltbarer als die meisten anorganischen Materialien. Es kann sogar dem kalten Vakuum des Weltraums standhalten."
  
  tr_prosperity_interstellar_franchising:0 "Interstellares Franchising"
- tr_prosperity_interstellar_franchising_desc:0 "§YStadtdistrikte§! stellen zusätzlich §Y1§!  £job_clerk£ §Y$job_clerk$ Job§! zur Verfügung."
+ tr_prosperity_interstellar_franchising_desc:0 "§YStadtdistrikte§! stellen zusätzlich §Y1§! £job_clerk£ §Y$job_clerk$ Job§! zur Verfügung."
  tr_prosperity_interstellar_franchising_delayed:1 "Ein Fokus auf Franchising ermöglicht es selbst dem banalsten Planeten, blühende, dynamische Geschäftsmöglichkeiten zu eröffnen, lokale Arbeitsplätze zu schaffen und den Handelswert zu steigern!"
  tr_prosperity_efficiency_algorithms:0 "Effizienz-Algorithmen"
  tr_prosperity_efficiency_algorithms_desc:0 "£energy£ §Y$mod_country_energy_produces_mult$§! um §G5%§! erhöht."
@@ -610,13 +610,13 @@
  tr_prosperity_hive_neural_signal_boosters_delayed:1 "Die Energienetze, die unseren Schwarm antreiben, können auch dazu verwendet werden, um die neuronalen Signale zu verstärken, die an  einige unserer Drohnen übertragen werden. Dies ermöglicht weitere Modifikationen und schafft eine Verbesserung der Effizienz."
 
  tr_prosperity_finish:0 "Wohlstandstraditionen abgeschlossen"
- tr_prosperity_finish_effect:6 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_prosperity_adopt$ gibt unseren Planeten §Y1§! £job_merchant£ §Y$job_merchant$§! pro §Y50§!  £pop£ Bewohner."
+ tr_prosperity_finish_effect:6 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_prosperity_adopt$ gibt unseren Planeten §Y1§! £job_merchant£ §Y$job_merchant$§! pro §Y50§! £pop£ Bewohner."
 
  tr_prosperity_finish_machine:0 "Effizienztraditionen abgeschlossen"
- tr_prosperity_finish_machine_effect:2 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_prosperity_adopt_machine$ gibt unseren Planeten §Y1§! £job_coordinator£ §Y$job_coordinator$§! pro §Y20§!  £pop£ Bewohner."
+ tr_prosperity_finish_machine_effect:2 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_prosperity_adopt_machine$ gibt unseren Planeten §Y1§! £job_coordinator£ §Y$job_coordinator$§! pro §Y20§! £pop£ Bewohner."
 
  tr_prosperity_finish_hive:0 "$tr_prosperity_finish$"
- tr_prosperity_finish_hive_effect:0 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_prosperity_adopt_hive$ gibt unseren Planeten §Y1§! £job_synapse_drone£ §Y$job_synapse_drone$§! pro §Y20§!  £pop£ Bewohner."
+ tr_prosperity_finish_hive_effect:0 "§E$TRADITIONS_FINISH$:§!\nDie Annahme aller $tr_prosperity_adopt_hive$ gibt unseren Planeten §Y1§! £job_synapse_drone£ §Y$job_synapse_drone$§! pro §Y20§! £pop£ Bewohner."
 
  #tr_prosperity_hive_mind_adopt_desc:0 "$tr_prosperity_adopt_desc$"
  #tr_prosperity_hive_mind_finish:0 "$tr_prosperity_finish$"

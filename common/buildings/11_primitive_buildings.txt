@@ -88,6 +88,19 @@ building_stone_palace = {
 			}
 		}
 	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_primitive = no
+		}
+	}
+
+	convert_to = {
+		building_hive_capital
+		building_machine_capital
+		building_colony_shelter
+	}
 	
 	planet_modifier = {
 		job_primitive_noble_add = 1

@@ -41,7 +41,7 @@
  dyson_sphere_ruined_DESC:0 "Une sphère de Dyson en ruine. En dépit de son ancienneté, l'ossature de la mégastructure est en grande partie intacte. Avec la technologie adéquate et une grande quantité de ressources, elle pourrait peut-être être réparée."
  dyson_sphere_ruined_MEGASTRUCTURE_DETAILS:0 ""
  habitat_0:0 "Chantier d'habitat"
- habitat_0_CONSTRUCTION_INFO_DELAYED:2 "Un habitat ne peut abriter que des £building£ §Ybâtiments§! spécifiques."
+ habitat_0_CONSTRUCTION_INFO_DELAYED:3 "Un habitat ne peut abriter que des £building£§Ybâtiments§! spécifiques."
  habitat_0_DESC:0 "Station d'habitation en orbite d'une planète inhabitable, capable d'abriter un certain nombre de §Hpops§! et de §Hbâtiments§! à bonne distance de la surface."
  habitat_0_MEGASTRUCTURE_DETAILS:1 "Un §Y$pc_habitat$§! est une station spatiale en théorie autarcique, conçue pour abriter une population permanente."
  leader_trait_ruler_hive_mind_desc:1 "Cette personnalité est un noeud immortel au sein du gigantesque appareil cognitif que constitue la conscience collective."

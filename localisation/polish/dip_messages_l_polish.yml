@@ -2081,7 +2081,7 @@
  01_BREAK_COMMERCIAL_PACT_PROPOSE:0 "Nie uważamy już, aby nasza umowa handlowa przynosiła nam korzyść. Z dniem dzisiejszym przestaje ona obowiązywać."
  01_BREAK_COMMERCIAL_PACT_ACCEPT:0 "To bardzo niefortunne, [From.GetSpeciesName]. Osłabiacie gospodarkę obu naszych imperiów."
  01_FORM_RESEARCH_AGREEMENT_SELECT:0 "Czy chcecie zawrzeć z nami porozumienie badawcze, [From.GetSpeciesNamePlural]?"
- 01_FORM_RESEARCH_AGREEMENT_PROPOSE:0 "Możemy się wzajemnie wiele nauczyć, [From.GetSpeciesName]. Proponujemy zawarcie porozumienia badawczego między naszymi imperiami."
+ 01_FORM_RESEARCH_AGREEMENT_PROPOSE:1 "Możemy się wzajemnie wiele nauczyć, [Root.GetSpeciesName]. Proponujemy zawarcie porozumienia badawczego między naszymi imperiami."
  01_FORM_RESEARCH_AGREEMENT_ACCEPT:0 "Znakomicie. Chętnie poznamy wiedzę [From.GetAdj] w zamian za nasze odkrycia."
  01_FORM_RESEARCH_AGREEMENT_REFUSE:0 "Nie, [From.GetName]. Wasza prymitywna technologia nas nie interesuje."
  01_BREAK_RESEARCH_AGREEMENT_SELECT:0 "Dlaczego chcecie przerwać współpracę między naszymi naukowcami?"

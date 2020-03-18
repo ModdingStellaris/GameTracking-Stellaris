@@ -68,9 +68,9 @@ tech_mine_betharian = {
 tech_mine_volatile_motes = {
 	icon = tech_volatile_motes
 	cost = @tier2cost1
-	area = engineering
+	area = physics
 	tier = 2
-	category = { materials }	
+	category = { particles }	
 	prerequisites = { "tech_space_construction" }
 	weight = @tier2weight1
 	
@@ -79,8 +79,8 @@ tech_mine_volatile_motes = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
 			}
 		}
 		modifier = {
@@ -111,7 +111,7 @@ tech_mine_volatile_motes = {
 			factor = 1.25
 			research_leader = {
 				area = physics
-				has_trait = "leader_trait_expertise_materials"
+				has_trait = "leader_trait_expertise_particles"
 			}
 		}
 	}
@@ -122,7 +122,7 @@ tech_volatile_motes = {
 	cost = @tier2cost1
 	area = physics
 	tier = 2
-	category = { materials }	
+	category = { particles }	
 	prerequisites = { "tech_basic_industry" }
 	weight = @tier2weight1
 	
@@ -152,7 +152,7 @@ tech_volatile_motes = {
 			factor = 1.25
 			research_leader = {
 				area = physics
-				has_trait = "leader_trait_expertise_materials"
+				has_trait = "leader_trait_expertise_particles"
 			}
 		}
 	}
@@ -163,7 +163,7 @@ tech_volatile_motes = {
 			factor = 1.25
 			research_leader = {
 				area = physics
-				has_trait = "leader_trait_expertise_materials"
+				has_trait = "leader_trait_expertise_particles"
 			}
 		}
 	}
@@ -215,7 +215,7 @@ tech_mine_exotic_gases = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = engineering
 				has_trait = "leader_trait_expertise_materials"
 			}
 		}
@@ -267,7 +267,7 @@ tech_exotic_gases = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = engineering
 				has_trait = "leader_trait_expertise_materials"
 			}
 		}
@@ -373,7 +373,7 @@ tech_rare_crystals = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = engineering
 				has_trait = "leader_trait_expertise_materials"
 			}
 		}
@@ -398,15 +398,11 @@ tech_mine_zro = {
 			factor = 0.10
 			NOR = {
 				research_leader = {
-					area = physics
+					area = society
 					has_trait = "leader_trait_expertise_psionics"
 				}
 				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_materials"
-				}
-				research_leader = {
-					area = physics
+					area = society
 					has_trait = "leader_trait_curator"
 				}
 			}
@@ -414,7 +410,7 @@ tech_mine_zro = {
 		modifier = {
 			factor = 10
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_psionics"
 			}
 		}
@@ -425,7 +421,7 @@ tech_mine_zro = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_psionics"
 			}
 		}
@@ -448,7 +444,7 @@ tech_mine_dark_matter = {
 			factor = 1.5
 			research_leader = {
 				area = physics
-				has_trait = "leader_trait_expertise_materials"
+				has_trait = "leader_trait_expertise_field_manipulation"
 			}
 		}
 
@@ -474,7 +470,7 @@ tech_mine_dark_matter = {
 			factor = 1.25
 			research_leader = {
 				area = physics
-				has_trait = "leader_trait_expertise_materials"
+				has_trait = "leader_trait_expertise_field_manipulation"
 			}
 		}
 	}
@@ -501,7 +497,7 @@ tech_nanite_transmutation = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = engineering
 				has_trait = "leader_trait_expertise_materials"
 			}
 		}
@@ -512,7 +508,7 @@ tech_nanite_transmutation = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = engineering
 				has_trait = "leader_trait_expertise_materials"
 			}
 		}

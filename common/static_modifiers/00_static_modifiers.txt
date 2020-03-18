@@ -367,7 +367,7 @@ unstable_tectonics = {
 }
 
 tidal_locked = {
-	planet_max_districts_mult = -0.5
+	planet_max_districts_mult = -0.30
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_tidal_locked.dds"
 	icon_frame = 3
@@ -1012,6 +1012,9 @@ yuht_energy = {
 
 first_league_homeworld = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_factory.dds"
+	country_society_research_produces_add = 10
+	country_physics_research_produces_add = 10
+	country_engineering_research_produces_add = 10
 }
 
 first_league_minerals = {
@@ -1496,4 +1499,9 @@ dportal_trade_crisis = {
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_expel_population.dds"
 	icon_frame = 2
+}
+
+fe_ship_cost_modifier = {
+	ships_upkeep_mult = -0.5
+	starbase_shipyard_build_cost_mult = -0.5
 }

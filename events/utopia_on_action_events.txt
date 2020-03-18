@@ -760,7 +760,7 @@ country_event = {
 				}
 
 				rename_species = {
-					prompt_country = prev #If targeted country is a player they will get a popup asking for a name/plural/adjective combo. Otherwise the species will get a random name from the specified name_list
+					prompt_country = root #If targeted country is a player they will get a popup asking for a name/plural/adjective combo. Otherwise the species will get a random name from the specified name_list
 					name_list = ascension_list
 				}
 				

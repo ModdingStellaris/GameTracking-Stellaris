@@ -56,6 +56,18 @@ colonist = {
 			factor = 1.5
 			has_job = colonist
 		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_robot_domestic_protocols
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_charismatic
+		}
+		modifier = {
+			factor = 0.65
+			has_trait = trait_repugnant
+		}
 	}
 }
 
@@ -101,14 +113,17 @@ researcher = {
 		modifier = {
 			factor = 3
 			has_trait = trait_erudite
-		}		
+		}
 		modifier = {
 			factor = 2
 			OR = {
 				has_trait = trait_robot_logic_engines
 				has_trait = trait_intelligent
-				has_trait = trait_brainslug
 			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_brainslug
 		}
 		modifier = {
 			factor = 1.5
@@ -125,7 +140,6 @@ researcher = {
 		modifier = {
 			factor = 0.65
 			OR = {
-				has_trait = trait_syncretic_proles
 				has_trait = trait_presapient_proles	
 			}
 		}
@@ -233,6 +247,40 @@ priest = {
 			has_trait = trait_natural_sociologists
 		}
 		modifier = {
+           factor = 1.1
+           has_trait = trait_brainslug
+       } 
+       modifier = {
+           factor = 1.05
+           has_trait = trait_presapient_natural_intellectuals
+       } 
+       modifier = {
+           factor = 1.1
+           OR = {
+               has_trait = trait_robot_logic_engines
+               has_trait = trait_intelligent
+           }
+       }
+       modifier = {
+           factor = 0.9
+           has_trait = trait_presapient_proles 
+       }
+       modifier = {
+           factor = 1.05
+           has_trait = trait_psionic
+       } 
+       modifier = {
+           factor = 0.7
+           has_trait = trait_enigmatic_intelligence_failed
+       } 
+       modifier = {
+           factor = 1.05
+           OR = {
+               has_trait = trait_enigmatic_intelligence
+               has_trait = trait_enigmatic_intelligence_poor
+           }
+       }
+		modifier = {
 			factor = 0.1
 			has_ethic = ethic_materialist
 			NOT = { has_job = priest }
@@ -281,6 +329,13 @@ foundry = {
 				has_species_flag = racket_species_flag
 			}
 		}
+		modifier = {
+           factor = 2
+           OR = {
+               has_trait = trait_robust
+               has_trait = trait_robot_efficient_processors
+           }
+        }
 		modifier = {
 			factor = 1.5
 			has_job = foundry
@@ -499,6 +554,13 @@ artisan = {
 			NOT = { has_trait = trait_mechanical }
 		}
 		modifier = {
+           factor = 2
+           OR = {
+               has_trait = trait_robust
+               has_trait = trait_robot_efficient_processors
+           }
+        }
+		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
@@ -541,7 +603,7 @@ entertainer = {
 			}
 		}
 		modifier = {
-			planet_amenities_add = 3
+			planet_amenities_add = 2
 		}
 	}
 	triggered_planet_modifier = {
@@ -549,7 +611,7 @@ entertainer = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			planet_amenities_add = -3
+			planet_amenities_add = -2
 		}
 	}	
 		
@@ -649,6 +711,41 @@ culture_worker = {
 			can_take_servant_job = yes
 		}
 		modifier = {
+           factor = 1.5
+           has_trait = trait_brainslug
+        } 
+        modifier = {
+            factor = 1.05
+            has_trait = trait_presapient_natural_intellectuals
+        } 
+        modifier = {
+            factor = 1.05
+            OR = {
+                has_trait = trait_robot_logic_engines
+                has_trait = trait_intelligent
+            }
+        }
+        modifier = {
+            factor = 0.5
+            has_trait = trait_presapient_proles 
+        }
+        modifier = {
+            factor = 1.1
+            has_trait = trait_latent_psionic
+        } 
+        modifier = {
+            factor = 1.2
+            has_trait = trait_psionic
+        } 
+        modifier = {
+            factor = 0.7
+            has_trait = trait_enigmatic_intelligence_failed
+        } 
+        modifier = {
+            factor = 1.05
+            has_trait = trait_enigmatic_intelligence_poor
+        }
+		modifier = {
 			factor = 1.5
 			has_trait = trait_natural_sociologists
 		}
@@ -689,7 +786,14 @@ chemist = {
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}	
+		}
+		modifier = {
+           factor = 3
+           OR = {
+               has_trait = trait_robust
+               has_trait = trait_robot_efficient_processors
+           }
+        }
 		modifier = {
 			factor = 1.5
 			has_job = chemist
@@ -735,6 +839,13 @@ translucer = {
 			}
 		}
 		modifier = {
+           factor = 3
+           OR = {
+               has_trait = trait_robust
+               has_trait = trait_robot_efficient_processors
+           }
+        }
+		modifier = {
 			factor = 1.5
 			has_job = translucer
 		}		
@@ -778,6 +889,13 @@ gas_refiner = {
 				has_species_flag = racket_species_flag
 			}
 		}
+		modifier = {
+           factor = 3
+           OR = {
+               has_trait = trait_robust
+               has_trait = trait_robot_efficient_processors
+           }
+        }
 		modifier = {
 			factor = 1.5
 			has_job = gas_refiner
@@ -924,10 +1042,16 @@ manager = {
 	
 	triggered_planet_modifier = {
 		potential = {
-			OR = {
-				has_trait = trait_thrifty
-				has_trait = trait_nuumismatic_administration
-			}
+			has_trait = trait_thrifty
+		}
+		modifier = {
+			trade_value_add = 0.5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_nuumismatic_administration
 		}
 		modifier = {
 			trade_value_add = 0.5
@@ -981,11 +1105,54 @@ manager = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_trait = trait_thrifty
-				has_trait = trait_nuumismatic_administration
-			}
+			has_trait = trait_thrifty
 		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_nuumismatic_administration
+		}
+		modifier = {
+           factor = 1.75
+           has_trait = trait_brainslug
+       } 
+       modifier = {
+           factor = 1.75
+           has_trait = trait_presapient_natural_intellectuals
+       } 
+       modifier = {
+           factor = 2 
+           has_trait = trait_erudite
+       }     
+       modifier = {
+           factor = 1.5
+           OR = {
+               has_trait = trait_robot_logic_engines
+               has_trait = trait_intelligent
+           }
+       }
+       modifier = {
+           factor = 0.5 
+           has_trait = trait_presapient_proles 
+       }
+       modifier = {
+           factor = 1.25
+           has_trait = trait_latent_psionic
+       } 
+       modifier = {
+           factor = 1.25
+           has_trait = trait_psionic
+       } 
+       modifier = {
+           factor = 0.5
+           has_trait = trait_enigmatic_intelligence_failed
+       } 
+       modifier = {
+           factor = 1.5
+           OR = {
+               has_trait = trait_enigmatic_intelligence
+               has_trait = trait_enigmatic_intelligence_poor
+           }
+       }
 		modifier = {
 			factor = 1.5
 			has_job = manager

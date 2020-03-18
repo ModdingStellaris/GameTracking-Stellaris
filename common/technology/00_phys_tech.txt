@@ -1827,7 +1827,7 @@ tech_power_plant_3 = {
 	area = physics
 	tier = 2
 	category = { field_manipulation }
-	prerequisites = { "tech_power_plant_2" "tech_colonial_centralization"}
+	prerequisites = { "tech_power_plant_2" }
 	weight = @tier2weight3
 		
 	modifier = {
@@ -1866,7 +1866,7 @@ tech_power_plant_4 = {
 	area = physics
 	tier = 4
 	category = { field_manipulation }
-	prerequisites = { "tech_power_plant_3" "tech_galactic_administration"}
+	prerequisites = { "tech_power_plant_3" }
 	weight = @tier4weight2
 		
 	modifier = {

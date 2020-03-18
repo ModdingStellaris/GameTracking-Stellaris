@@ -2077,7 +2077,7 @@
  01_BREAK_COMMERCIAL_PACT_PROPOSE:0 "Não achamos mais que o acordo comercial é vantajoso. A partir de hoje, ele é nulo."
  01_BREAK_COMMERCIAL_PACT_ACCEPT:0 "Isso é muito lamentável, [From.GetSpeciesName]. Você enfraqueceu nossas duas economias."
  01_FORM_RESEARCH_AGREEMENT_SELECT:0 "Vocês querem formar um acordo de pesquisa conosco, [From.GetSpeciesNamePlural]?"
- 01_FORM_RESEARCH_AGREEMENT_PROPOSE:0 "Temos muito a aprender um com o outro, [From.GetSpeciesName]. Propomos a criação de um Acordo de Pesquisa entre nossos impérios."
+ 01_FORM_RESEARCH_AGREEMENT_PROPOSE:1 "Temos muito a aprender um com o outro, [Root.GetSpeciesName]. Propomos a criação de um Acordo de Pesquisa entre nossos impérios."
  01_FORM_RESEARCH_AGREEMENT_ACCEPT:0 "Muito bem. Compartilharemos nosso conhecimento com o [From.GetName] em troca do seu."
  01_FORM_RESEARCH_AGREEMENT_REFUSE:0 "Não, [From.GetName]. Sua tecnologia primitiva não nos interessa."
  01_BREAK_RESEARCH_AGREEMENT_SELECT:0 "Por que vocês desejam encerrar a cooperação entre nossos cientistas?"

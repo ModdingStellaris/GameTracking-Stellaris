@@ -27,6 +27,7 @@
  ANY_POP:0 "Любое поселение"
  ALL_POPS:0 "\nВсе поселения:"
  ANY_PLANET:0 "Любая планета"
+ ANY_PLANET_IN_SYSTEM:0 "Любая планета в системе"
  ANY_MEMBER:0 "Любой участник"
  NEVER:0 "Никогда"
  ALWAYS:0 "Всегда"
@@ -932,7 +933,7 @@
  ADD_EVENT_CHAIN_COUNTER_EFFECT:0 " + $AMOUNT|Y$$COUNTER$\n"
  ADD_ANOMALY_EFFECT:0 "Добавить аномалию\n"
  SET_DISABLE_AT_HEALTH_EFFECT:0 "Будет отключено при уровне здоровья $VALUE|%Y$"
- ADD_DEPOSIT_EFFECT:0 "Добавить $DEPOSIT|Y$ на планету $PLANET|Y$"
+ ADD_DEPOSIT_EFFECT:0 "Добавить $DEPOSIT|Y$ на планету $PLANET|Y$\n"
  ADD_RANDOM_DEPOSIT_EFFECT:0 "Добавить случайную залежь на планету $PLANET|Y$"
  REMOVE_DEPOSIT_EFFECT:0 "Удалить $DEPOSIT|Y$ с планеты $PLANET|Y$"
  CLEAR_DEPOSITS_EFFECT:0 "Все характеристики планеты сброшены"
@@ -1123,8 +1124,8 @@
  TRIGGER_NOT_HAS_COMPONENT:0 "НЕТ компонента $KEY|Y$"
  PLANET_NOT_SIZE_TRIGGER:0 "Размер планеты НЕ $COMPARE$ $VAL|Y$"
  PLANET_SIZE_TRIGGER:0 "Размер планеты $COMPARE$ $VAL|Y$"
- EMPIRE_NOT_SIZE_TRIGGER:0 "Размер империи НЕ $COMPARE$ $VAL|Y$"
- EMPIRE_SIZE_TRIGGER:0 "Размер империи $COMPARE$ $VAL|Y$"
+ EMPIRE_NOT_SIZE_TRIGGER:0 "$EMPIRE_SIZE$ НЕ $COMPARE$ $VAL|Y$"
+ EMPIRE_SIZE_TRIGGER:0 "$EMPIRE_SIZE$ $COMPARE$ $VAL|Y$"
  FOOD_TRIGGER:0 "Пища $COMPARE$ $VAL|Y$"
  FOOD_TRIGGER_NOT:0 "Пища НЕ $COMPARE$ $VAL|Y$"
  CLOSE_BRANCH_OFFICE_EFFECT:0 "Закрыть филиал, принадлежащий расе $ADJ|Y$"
@@ -1236,10 +1237,19 @@
  HAS_SECTOR_TYPE:0 "Сектор относится к типу $TYPE$"
  HAS_NOT_SECTOR_TYPE:0 "Сектор НЕ относится к типу $TYPE$"
  
+ IS_ARCHETYPE:0 "Относится к типу $ARCHETYPE|Y$."
+ IS_NOT_ARCHETYPE:0 "Не относится к типу $ARCHETYPE|Y$."
+ 
  HAS_NOT_NUM_SECTORS:0 "Количество секторов НЕ $COMPARATOR$ $NUM|Y$"
  HAS_NUM_SECTORS:0 "Количество секторов $COMPARATOR$ $NUM|Y$"
+ 
+ HAS_NOT_NUM_UNCLEARED_BLOCKERS:0 "Количество неочищенных квадратов НЕ $COMPARATOR$ $NUM|Y$"
+ HAS_NUM_UNCLEARED_BLOCKERS:0 "Количество неочищенных квадратов $COMPARATOR$ $NUM|Y$"
  
  any_owned_sector_trigger:0 "Любой принадлежащий сектор:"
  any_sector_trigger:0 "Любой сектор:"
  
  effect_every_neighbor_country:0 "Каждая соседняя империя: "
+ 
+ RANDOM_OWNED_PLANET_EFFECT:0 "Случайная планета $ADJ$ ($PLANET|H$):\n\t"
+ EVERY_OWNED_PLANET_EFFECT:0 "Каждая планета $ADJ$:\n\t"

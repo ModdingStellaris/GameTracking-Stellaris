@@ -480,6 +480,10 @@ country_event = {
 	}
 
 	immediate = {
+		add_modifier = {
+			modifier = fe_ship_cost_modifier
+			days = -1
+		}
 		if = {
 			limit = { is_materialist = yes }
 			modify_species = {

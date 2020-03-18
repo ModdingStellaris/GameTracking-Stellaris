@@ -232,3 +232,110 @@ planet_event = {
 #		custom_tooltip = mega.1100.a.tooltip
 #	}
 #}
+
+# Remove Martial Law and invalid ongoing political Decisions based on Empire type
+planet_event = {
+	id = mega.205
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			AND = { #Either we're a Gestalt w ongoing non-Gestalt political Decisions
+				from = { is_gestalt = yes }
+				OR = {
+					has_modifier = martial_law
+					has_modifier = planet_population_control
+					has_modifier = planet_robot_assembly_control
+					has_modifier = planet_population_expelled
+				}
+			}
+			AND = { #Or vice versa
+				from = { is_regular_empire = yes }
+				OR = {
+					has_modifier = compliance_protocols
+					has_modifier = hunter_killer_drones
+					has_modifier = planet_population_control_gestalt
+				}
+			}
+			AND = { #Or a MI with ongoing Hive political Decision
+				from = { is_machine_empire = yes }
+				has_modifier = hunter_killer_drones
+			}
+			AND = { #Or vice versa
+				from = { is_hive_empire = yes }
+				has_modifier = compliance_protocols
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				from = { is_gestalt = yes }
+				OR = {
+					has_modifier = martial_law
+					has_modifier = planet_population_control
+					has_modifier = planet_robot_assembly_control
+					has_modifier = planet_population_expelled
+				}
+			}
+			if = {
+				limit = { has_modifier = martial_law }
+				remove_modifier = martial_law
+			}
+			if = {
+				limit = { has_modifier = planet_population_control }
+				remove_modifier = planet_population_control
+			}
+			if = {
+				limit = { has_modifier = planet_robot_assembly_control }
+				remove_modifier = planet_robot_assembly_control
+			}
+			if = {
+				limit = { has_modifier = planet_population_expelled }
+				remove_modifier = planet_population_expelled
+			}
+		}
+		else_if = {
+			limit = {
+				from = { is_regular_empire = yes }
+				OR = {
+					has_modifier = compliance_protocols
+					has_modifier = hunter_killer_drones
+					has_modifier = planet_population_control_gestalt
+				}
+			}
+			if = {
+				limit = { has_modifier = compliance_protocols }
+				remove_modifier = compliance_protocols
+			}
+			if = {
+				limit = { has_modifier = hunter_killer_drones }
+				remove_modifier = hunter_killer_drones
+			}
+			if = {
+				limit = { has_modifier = planet_population_control_gestalt }
+				remove_modifier = planet_population_control_gestalt
+			}
+		}
+		else_if = {
+			limit = {
+				from = { is_machine_empire = yes }
+				has_modifier = hunter_killer_drones
+			}
+			remove_modifier = hunter_killer_drones
+		}
+		else_if = {
+			limit = {
+				from = { is_hive_empire = yes }
+				has_modifier = compliance_protocols
+			}
+			remove_modifier = compliance_protocols
+		}
+		else = {
+			#nada
+		}
+	}
+}

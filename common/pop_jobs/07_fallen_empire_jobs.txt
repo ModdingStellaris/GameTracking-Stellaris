@@ -22,6 +22,17 @@ fe_overseer = {
 	
 	weight = {
 		weight = 30000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -45,6 +56,17 @@ fe_sky_cardinal = {
 	
 	weight = {
 		weight = 30000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -76,6 +98,17 @@ fe_guardian_bot = {
 	
 	weight = {
 		weight = 30000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -104,6 +137,17 @@ fe_protector = {
 	
 	weight = {
 		weight = 30000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -133,6 +177,17 @@ fe_archivist = {
 	
 	weight = {
 		weight = 30000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -157,6 +212,17 @@ fe_acolyte_farm = {
 	
 	weight = {
 		weight = 15000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -181,6 +247,17 @@ fe_acolyte_mine = {
 	
 	weight = {
 		weight = 15000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -205,6 +282,17 @@ fe_acolyte_generator = {
 
 	weight = {
 		weight = 15000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -230,6 +318,17 @@ fe_augur = {
 	
 	weight = {
 		weight = 30000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -259,6 +358,17 @@ fe_xeno_keeper = {
 	
 	weight = {
 		weight = 20000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -289,6 +399,17 @@ fe_xeno_ward = {
 	
 	weight = {
 		weight = 10000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -322,6 +443,17 @@ fe_hedonist = {
 	
 	weight = {
 		weight = 1000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -351,6 +483,17 @@ fe_acolyte_artisan = {
 	
 	weight = {
 		weight = 1000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }
 
@@ -380,5 +523,16 @@ fe_maintenance_bot = {
 	
 	weight = {
 		weight = 1000
+
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
 	}
 }

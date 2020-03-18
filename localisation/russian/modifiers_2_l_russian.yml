@@ -168,6 +168,7 @@
  mod_damage_vs_country_type_extradimensional_3_mult:0 "Урон неотступным"
  mod_damage_vs_country_type_ai_empire_mult:0 "Урон Контингенции"
  mod_damage_vs_country_type_sentinels_mult:0 "Урон стражам"
+ mod_damage_vs_country_type_gate_builders_mult:0 "Урон строителям врат"
  
  ####################################
  # Opinion Modifiers

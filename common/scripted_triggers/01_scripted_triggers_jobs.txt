@@ -145,22 +145,20 @@ has_low_living_standard_type = {
 }
 
 is_organic_species = {
-	OR = {
-		is_species_class = HUM
-		is_species_class = MAM
-		is_species_class = REP
-		is_species_class = AVI
-		is_species_class = ART
-		is_species_class = MOL
-		is_species_class = FUN
-		is_species_class = PLANT
+	species = {
+		OR = {
+			is_archetype = BIOLOGICAL
+			# original trigger did not include pre-sapient classes
+		}
 	}
 }
 
 is_robotic_species = {
-	OR = {
-		is_species_class = ROBOT
-		is_species_class = MACHINE
+	species = {
+		OR = {
+			is_archetype = ROBOT
+			is_archetype = MACHINE
+		}
 	}
 }
 

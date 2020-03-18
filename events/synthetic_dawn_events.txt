@@ -1663,6 +1663,7 @@ country_event = {
 		num_owned_planets > 2
 		NOR = {
 			has_country_flag = no_machine_uprising
+			has_country_flag = had_uprising
 			has_ethic = ethic_gestalt_consciousness
 			has_ascension_perk = ap_the_flesh_is_weak
 			has_policy_flag = ai_full_rights
@@ -1853,7 +1854,10 @@ planet_event = { #uprising
 	}
 	
 	immediate = {
-		owner = { save_event_target_as = organic_empire }
+		owner = {
+			save_event_target_as = organic_empire
+			set_country_flag = had_uprising
+		}
 	}
 
 	option = {

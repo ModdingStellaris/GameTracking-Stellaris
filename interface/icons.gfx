@@ -547,6 +547,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/message/leader_experience_gain.dds"
 	}
 	spriteType = {
+		name = "GFX_message_colonization"
+		texturefile = "gfx/interface/icons/message/message_colonization.dds"
+	}
+	spriteType = {
 		name = "GFX_message_terraforming"
 		texturefile = "gfx/interface/icons/message/message_terraforming.dds"
 	}

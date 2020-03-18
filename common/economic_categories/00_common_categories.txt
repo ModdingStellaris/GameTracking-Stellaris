@@ -9,6 +9,7 @@ country = {
 
 # Base income of country
 country_base = {
+	parent = country
 }
 
 trade = {

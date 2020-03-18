@@ -43,14 +43,6 @@ tech_space_trading = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 0
-			NOR = {
-				has_technology = tech_mine_rare_crystals
-				has_technology = tech_rare_crystals
-				has_country_flag = has_market_access
-			}
-		}
-		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -90,6 +82,14 @@ tech_interstellar_economics = {
 	
 	weight_modifier = {
 		factor = 2
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -271,7 +271,7 @@ tech_gene_crops = {
 	area = society
 	tier = 2
 	category = { biology }
-	prerequisites = { "tech_eco_simulation" "tech_colonial_centralization"}
+	prerequisites = { "tech_eco_simulation" }
 	weight = @tier2weight3
 	
 	modifier = {
@@ -333,7 +333,7 @@ tech_nano_vitality_crops = {
 	area = society
 	tier = 4
 	category = { biology }	
-	prerequisites = { "tech_gene_crops" "tech_galactic_administration"}
+	prerequisites = { "tech_gene_crops" }
 	weight = @tier4weight2
 	
 	modifier = {
@@ -517,14 +517,6 @@ tech_food_processing_1 = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 0
-			NOR = {
-				has_technology = tech_mine_volatile_motes
-				has_technology = tech_volatile_motes
-				has_country_flag = has_market_access
-			}
-		}
-		modifier = {
 			factor = 0.01
 			is_machine_empire = yes
 			NOR = { 
@@ -561,7 +553,7 @@ tech_food_processing_2 = {
 	area = society
 	tier = 3
 	category = { biology }	
-	prerequisites = { "tech_food_processing_1" "tech_colonial_centralization" }
+	prerequisites = { "tech_food_processing_1" }
 	weight = @tier3weight1
 	
 	weight_modifier = {
@@ -582,6 +574,14 @@ tech_food_processing_2 = {
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
 			}
 		}
 	}
@@ -5313,18 +5313,18 @@ tech_heritage_site = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 0
-			NOR = {
-				has_technology = tech_mine_volatile_motes
-				has_technology = tech_volatile_motes
-				has_country_flag = has_market_access
-			}
-		}
-		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
 			}
 		}
 	}

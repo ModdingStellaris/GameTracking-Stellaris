@@ -262,12 +262,31 @@ purge = {
 	category = purge
 	is_capped_by_modifier = no
 	clothes_texture_index = 2
+	purge = purge_normal
 		
 	possible = {
 		OR = {
 			has_citizenship_type = { type = citizenship_purge_machine }
 			has_citizenship_type = { type = citizenship_purge }
-		}	
+			has_pop_flag = event_purge
+			AND = { # controlled by crisis
+				exists = planet
+				planet = { exists = controller }
+				planet.controller = {
+					OR = {
+						is_country_type = swarm
+						is_country_type = ai_empire
+					}
+				}
+				OR = { # contingency won't purge itself
+					NOT = { exists = event_target:custodian_bot }
+					AND = {
+						exists = event_target:custodian_bot
+						NOT = { species = { is_same_value = event_target:custodian_bot } }
+					}
+				}
+			}
+		}
 	}	
 
 	resources = {
@@ -284,11 +303,19 @@ purge = {
 			}
 			society_research = 2
 		}
-		produces = {
+		produces = { # regular processing
 			trigger = {
 				has_purge_type = { type = purge_processing }
+				is_robotic_species = no
 			}
 			food = 6
+		}
+		produces = { # processing robots (devouring swarm)
+			trigger = {
+				has_purge_type = { type = purge_processing }
+				is_robotic_species = yes
+			}
+			alloys = 3
 		}
 		produces = {
 			trigger = {
@@ -306,7 +333,36 @@ purge = {
 	}	
 		
 	weight = {
-		weight = @special_job_weight	
+		weight = @special_job_weight
+
+		modifier = {
+			factor = 200 # brings @special_job_weight up to 2
+			OR = {
+				has_pop_flag = event_purge
+				planet.controller = {
+					OR = {
+						is_country_type = swarm
+						is_country_type = ai_empire
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 9999 # u die when flagged
+			has_pop_flag = event_purge
+		}
+
+		modifier = {
+			factor = 9999 # u die when crisis'd
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+					# extradimensionals just bombard you
+				}
+			}
+		}
 	}
 }
 
@@ -325,6 +381,9 @@ criminal = {
 				country = owner 
 				type = citizenship_robot_servitude
 			}
+		}
+		owner = {
+			is_gestalt = no
 		}
 	}
 

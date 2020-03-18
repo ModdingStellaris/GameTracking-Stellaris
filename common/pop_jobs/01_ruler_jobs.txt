@@ -77,6 +77,7 @@ high_priest = {
 		category = planet_priests
 		produces = {
 			unity = 5
+			society_research = 2
 		}
 		produces = {
 			trigger = {
@@ -116,7 +117,7 @@ high_priest = {
 			factor = 0.1
 			has_citizenship_rights = no	
 			NOT = { has_trait = trait_mechanical }	
-		}		
+		}
 		modifier = {
 			factor = 1.25
 			OR = {
@@ -155,6 +156,16 @@ high_priest = {
 		modifier = {
 			factor = 5
 			has_job = high_priest
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
 		}
 	}
 }
@@ -228,11 +239,21 @@ administrator = {
 		modifier = {
 			factor = 0.75
 			has_trait = trait_quarrelsome
-		}	
+		}
 		modifier = {
 			factor = 5
 			has_job = administrator
-		}		
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}	
 	}
 }
 
@@ -301,6 +322,23 @@ noble = {
 			factor = 5
 			has_job = noble
 		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = { # contingency won't purge itself
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
+		}
 	}
 }
 
@@ -331,10 +369,16 @@ merchant = {
 
 	triggered_planet_modifier = {
 		potential = {
-			OR = {
-				has_trait = trait_thrifty
-				has_trait = trait_nuumismatic_administration
-			}
+			has_trait = trait_thrifty
+		}
+		modifier = {
+			trade_value_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_nuumismatic_administration
 		}
 		modifier = {
 			trade_value_add = 2
@@ -365,10 +409,11 @@ merchant = {
 		weight = @ruler_job_weight
 		modifier = {
 			factor = 2.0
-			OR = {
-				has_trait = trait_thrifty
-				has_trait = trait_nuumismatic_administration
-			}
+			has_trait = trait_thrifty
+		}
+		modifier = {
+			factor = 2.0
+			has_trait = trait_nuumismatic_administration
 		}
 		modifier = {
 			factor = 1.5
@@ -382,9 +427,49 @@ merchant = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
+           factor = 1.25 
+           owner = { has_civic = civic_merchant_guilds   }
+           has_trait = trait_brainslug
+       }
+       modifier = {
+           factor = 1.1
+           owner = { has_civic = civic_merchant_guilds   }
+           has_trait = trait_presapient_natural_intellectuals
+       }
+      modifier = {
+           factor = 1.25
+           owner = { has_civic = civic_merchant_guilds   }
+           OR = {
+               has_trait = trait_robot_propaganda_machines
+               has_trait = trait_traditional
+           }     
+       }
+       modifier = {
+           factor = 0.75
+           owner = { has_civic = civic_merchant_guilds   }
+           has_trait = trait_quarrelsome
+       }
+		modifier = {
 			factor = 5
 			has_job = merchant
-		}		
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = { # contingency won't purge itself
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
+		}
 	}
 }
 
@@ -412,24 +497,31 @@ executive = {
 	
 	triggered_planet_modifier = {
 		potential = {
-			OR = {
-				has_trait = trait_thrifty
-				has_trait = trait_nuumismatic_administration
-			}
+			has_trait = trait_thrifty
 		}
 		modifier = {
 			trade_value_add = 1
 		}
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_nuumismatic_administration
+		}
+		modifier = {
+			trade_value_add = 1
+		}
+	}	
 	
 	weight = {
 		weight = @ruler_job_weight
 		modifier = {
 			factor = 2.0
-			OR = {
-				has_trait = trait_thrifty
-				has_trait = trait_nuumismatic_administration
-			}
+			has_trait = trait_thrifty
+		}
+		modifier = {
+			factor = 2.0
+			has_trait = trait_nuumismatic_administration
 		}
 		modifier = {
 			factor = 1.5
@@ -445,6 +537,23 @@ executive = {
 		modifier = {
 			factor = 5
 			has_job = executive
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = { # contingency won't purge itself
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
 		}
 	}
 }

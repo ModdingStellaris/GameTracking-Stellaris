@@ -37,6 +37,11 @@ spriteTypes = {
 	### MODIFIERS
 	
 	spriteType = {
+		name = "GFX_mod_planet_jobs_robotic_produces_mult"
+		texturefile = "gfx/interface/icons/modifiers/mod_planet_jobs_robotic_produces_mult.dds"
+	}
+
+	spriteType = {
 		name = "GFX_mod_country_all_tech_research_speed"
 		texturefile = "gfx/interface/icons/modifiers/mod_country_all_tech_research_speed.dds"
 	}	
@@ -411,10 +416,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_mod_ships_mult"
-		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
-	}
-	spriteType = {
-		name = "GFX_mod_planet_jobs_robotic_produces_mult"
 		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
 	}
 	spriteType = {

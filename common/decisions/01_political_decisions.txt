@@ -188,7 +188,7 @@ decision_enact_population_control = {
 	ai_weight = {
 		weight = 5
 
-		modifier = {
+		modifier = { # don't enable if you have free housing
 			factor = 0
 			free_housing > 0
 		}
@@ -214,9 +214,10 @@ decision_end_population_control = {
 
 	ai_weight = {
 		weight = 5
-		modifier = {
-			factor = 5
-			free_housing < -1
+
+		modifier = { # don't end if less than 1 housing
+			factor = 0
+			free_housing < 1
 		}
 	}
 }
@@ -248,7 +249,7 @@ decision_enact_population_control_gestalt = {
 	ai_weight = {
 		weight = 5
 
-		modifier = {
+		modifier = { # don't enable if you have free housing
 			factor = 0
 			free_housing > 0
 		}
@@ -274,9 +275,10 @@ decision_end_population_control_gestalt = {
 
 	ai_weight = {
 		weight = 5
-		modifier = {
-			factor = 5
-			free_housing < -1
+
+		modifier = { # don't end if less than 1 housing
+			factor = 0
+			free_housing < 1
 		}
 	}
 }
@@ -318,7 +320,7 @@ decision_enact_robot_assembly_control = {
 	ai_weight = {
 		weight = 5
 
-		modifier = {
+		modifier = { # don't enable if you have free housing
 			factor = 0
 			free_housing > 0
 		}
@@ -344,9 +346,10 @@ decision_end_robot_assembly_control = {
 
 	ai_weight = {
 		weight = 5
-		modifier = {
-			factor = 5
-			free_housing < -1
+		
+		modifier = { # don't end if less than 1 housing
+			factor = 0
+			free_housing < 1
 		}
 	}
 }

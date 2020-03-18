@@ -2700,8 +2700,7 @@ country_event = {
 		FROMFROM = {
 			add_threat = { who = root amount = 2 }
 			set_controller = root
-			#TODO [CD] replace with assigning to purge job
-			#purge = yes	
+			# ^ maxes out purge job weight
 		}
 	}
 }
@@ -2730,17 +2729,17 @@ planet_event = {
 			set_owner = controller
 			planet_event = { id = crisis.215 }
 		}
-		else = {
-			if = { # Habitable Ring Worlds can't be infested... they are destroyed instead
-				limit = { is_planet_class = pc_ringworld_habitable }
-				destroy_colony = yes
-				change_pc = pc_ringworld_habitable_damaged
-				reset_planet = yes
-			}
-			if = {
-				limit = { is_planet_class = pc_habitat }
-				remove_planet = yes
-			}
+		else_if = {
+			# Habitable Ring Worlds can't be infested...
+			# they are destroyed instead
+			limit = { is_planet_class = pc_ringworld_habitable }
+			destroy_colony = yes
+			change_pc = pc_ringworld_habitable_damaged
+			reset_planet = yes
+		}
+		else_if = {
+			limit = { is_planet_class = pc_habitat }
+			remove_planet = yes
 		}
 	}
 }
@@ -2769,16 +2768,16 @@ planet_event = {
 			reset_planet = yes
 			planet_event = { id = crisis.215 }
 		}
-		else = {
-			if = { # Habitable Ring Worlds can't be infested... they are destroyed instead
-				limit = { is_planet_class = pc_ringworld_habitable }
-				change_pc = pc_ringworld_habitable_damaged
-				reset_planet = yes
-			}
-			if = {
-				limit = { is_planet_class = pc_habitat }
-				remove_planet = yes
-			}
+		else_if = {
+			# Habitable Ring Worlds can't be infested...
+			# they are destroyed instead
+			limit = { is_planet_class = pc_ringworld_habitable }
+			change_pc = pc_ringworld_habitable_damaged
+			reset_planet = yes
+		}
+		else_if = {
+			limit = { is_planet_class = pc_habitat }
+			remove_planet = yes
 		}
 	}
 }
@@ -3403,8 +3402,8 @@ country_event = {
 	
 	immediate = {
 		FROMFROM = {
-			#TODO [CD] replace with assigning to purge job
-			#purge = no
+			set_controller = root
+			# should revert purge weights
 		}
 	}
 }

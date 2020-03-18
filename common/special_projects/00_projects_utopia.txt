@@ -62,7 +62,20 @@ special_project = {
 				set_policy = {
 					policy = robot_pop_policy
 					option = robot_pops_allowed
-					cooldown = no
+					cooldown = yes
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_policy_flag = ai_servitude
+						has_policy_flag = ai_outlawed
+					}
+				}
+				set_policy = {
+					policy = artificial_intelligence_policy
+					option = ai_full_rights
+					cooldown = yes
 				}
 			}
 			country_event = { id = utopia.2551 }

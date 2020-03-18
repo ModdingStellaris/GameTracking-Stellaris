@@ -113,7 +113,12 @@ clone_army = {
 
 	prerequisites = { "tech_gene_banks" }
 	
-	show_tech_unlock_if = { NOT = { has_authority = auth_machine_intelligence } }
+	show_tech_unlock_if = {
+		OR = {
+			NOT = { has_authority = auth_machine_intelligence }
+			has_civic = civic_machine_assimilator
+		}
+	}
 	
 	potential = {
 		from = {
@@ -124,7 +129,10 @@ clone_army = {
 			}
 		}
 		owner = {
-			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				NOT = { has_authority = auth_machine_intelligence }
+				has_civic = civic_machine_assimilator
+			}
 		}
 	}
 }

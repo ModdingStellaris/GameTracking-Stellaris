@@ -168,10 +168,10 @@ decision_slave_colony = {
 			fail_text = decision_resort_colony_no_districts
 			num_districts = { type = any value < 1 }
 			num_buildings = { type = any value < 2 }
-		}		
+		}
 	}
 	
-	effect = {			
+	effect = {
 		custom_tooltip = decision_slave_colony_effects
 		add_modifier = {
 			modifier = slave_colony
@@ -796,19 +796,11 @@ decision_arcology_project = {
 		hidden_effect = {		
 			clear_deposits = yes
 			change_pc = pc_city
+			set_planet_entity = {
+				entity = "city_planet_entity"
+				graphical_culture = owner
+			}
 			owner = {
-				switch = {
-					trigger = graphical_culture
-					humanoid_01		= { prev = { set_planet_entity = { entity = city_planet_humanoid_01_entity 		} } }
-					plantoid_01		= { prev = { set_planet_entity = { entity = city_planet_plantoid_01_entity 		} } }
-					mammalian_01	= { prev = { set_planet_entity = { entity = city_planet_mammalian_01_entity 	} } }
-					reptilian_01	= { prev = { set_planet_entity = { entity = city_planet_reptilian_01_entity 	} } }
-					avian_01		= { prev = { set_planet_entity = { entity = city_planet_avian_01_entity 		} } }
-					molluscoid_01	= { prev = { set_planet_entity = { entity = city_planet_molluscoid_01_entity 	} } }
-					fungoid_01		= { prev = { set_planet_entity = { entity = city_planet_fungoid_01_entity 		} } }
-					arthropoid_01	= { prev = { set_planet_entity = { entity = city_planet_arthropoid_01_entity 	} } }
-					default 		= {}
-				}
 				country_event = { id = distar.201 } # port for living planet distar.197, triggers in event
 			}
 			planet_event = { id = mega.200 }

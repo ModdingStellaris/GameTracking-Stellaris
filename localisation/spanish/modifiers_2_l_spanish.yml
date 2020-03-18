@@ -172,3 +172,4 @@
  servitor_morale_5:0 "Moral de los sirvientes: pésima +"
  raided:0 "Saqueado"
  raided_desc:0 "§LNo hemos logrado defendernos de los expoliadores.§!"
+ mod_damage_vs_country_type_gate_builders_mult:0 "Daño a los constructores del portal"

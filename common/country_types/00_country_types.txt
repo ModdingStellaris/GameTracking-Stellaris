@@ -289,7 +289,10 @@ default = {
 					modifier = {
 						factor = 0
 						OR = {
-							has_authority = auth_machine_intelligence
+							OR = {
+								NOT = { has_authority = auth_machine_intelligence }
+								has_civic = civic_machine_assimilator
+							}
 							has_technology = tech_telepathy
 							has_technology = tech_gene_seed_purification
 							NAND = {

@@ -734,7 +734,10 @@ country_event = {
 		text = openedlootboxdesc1
 	}
 	desc = {
-		trigger = { has_country_flag = recent_galatron }
+		trigger = {
+			has_country_flag = recent_galatron
+			NOT = { has_modifier = galatron_modifier }
+		}
 		text = lootbox_contents_galatron
 	}
 	desc = {
@@ -900,7 +903,11 @@ country_event = {
 				lootbox_contents_p = { remove_country_flag = recent_empty_lootbox }
 			}
 			if = {
-				limit = { has_country_flag = recent_galatron }
+				limit = {
+					has_country_flag = recent_galatron
+					NOT = { has_modifier = galatron_modifier }
+				}
+				remove_country_flag = recent_galatron
 				country_event = { id = cara.320 }
 			}
 			else = {
@@ -919,7 +926,10 @@ country_event = {
 				days = 500
 			}
 			if = {
-				limit = { has_country_flag = recent_galatron }
+				limit = {
+					has_country_flag = recent_galatron
+					NOT = { has_modifier = galatron_modifier }
+				}
 				custom_tooltip = lootbox_contents_galatron
 			}
 			else_if = {
@@ -1646,6 +1656,7 @@ fleet_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		exists = event_target:caravaneer_fleet1_fleet
 		owner = { is_country_type = caravaneer_fleet }
 		is_same_value = event_target:caravaneer_fleet1_fleet
 		from = {
@@ -3065,6 +3076,7 @@ fleet_event = {
 	hide_window = yes
 
 	trigger = {
+		exists = event_target:caravaneer_fleet3_fleet
 		owner = { is_country_type = caravaneer_fleet }
 		is_same_value = event_target:caravaneer_fleet3_fleet
 		from = {

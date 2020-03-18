@@ -474,7 +474,7 @@ ship_event = {
 	}		
 	
 	option = {
-		name = "mega.9100.a" 
+		name = "mega.9120.a"
 		trigger = {
 			owner = {
 				any_owned_megastructure = {
@@ -561,7 +561,7 @@ ship_event = {
 	}		
 	
 	option = {
-		name = "mega.9100.a" 
+		name = "mega.9130.a" 
 		trigger = {
 			owner = {
 				any_owned_megastructure = {

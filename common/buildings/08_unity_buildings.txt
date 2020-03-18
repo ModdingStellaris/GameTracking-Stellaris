@@ -899,6 +899,10 @@ building_organic_paradise = {
 	
 	prerequisites = { "tech_paradise_dome" }
 	
+	show_tech_unlock_if = {
+		owner = { has_valid_civic = civic_machine_servitor }
+	}
+	
 	ai_weight = {
 		weight = 1
 		modifier = {
@@ -928,7 +932,8 @@ building_corporate_monument = {
 		NOT = { has_modifier = slave_colony }
 		owner = { 
 			is_megacorp = yes
-		}					
+			is_spiritualist = no
+		}
 	}
 
 	resources = {

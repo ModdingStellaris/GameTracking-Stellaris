@@ -730,97 +730,31 @@ planet_event = {
 					NOT = { has_country_flag = tech_request_approved }
 				}
 			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "industrial_army"
-				leader = last_created_leader
+			while = {
+				count = 6
+				create_army = {
+					name = "NAME_Invading_Horde"
+					owner = event_target:subterranean_nation
+					species = event_target:subterranean_species
+					type = "subterranean_industrial_army"
+					leader = last_created_leader
+				}
 			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "industrial_army"
-				leader = last_created_leader
-			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "industrial_army"
-				leader = last_created_leader
-			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "industrial_army"
-				leader = last_created_leader
-			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "industrial_army"
-				leader = last_created_leader
-			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "industrial_army"
-				leader = last_created_leader
-			}
-			break = yes
 		}
 		if = {
 			limit = {
 				event_target:subterranean_nation = { has_country_flag = tech_request_approved }
 			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "postatomic_army"
-				leader = last_created_leader
+			while = {
+				count = 6
+				create_army = {
+					name = "NAME_Invading_Horde"
+					owner = event_target:subterranean_nation
+					species = event_target:subterranean_species
+					type = "subterranean_postatomic_army"
+					leader = last_created_leader
+				}
 			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "postatomic_army"
-				leader = last_created_leader
-			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "postatomic_army"
-				leader = last_created_leader
-			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "postatomic_army"
-				leader = last_created_leader
-			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "postatomic_army"
-				leader = last_created_leader
-			}
-			create_army = {
-				name = "NAME_Invading_Horde"
-				owner = event_target:subterranean_nation
-				species = event_target:subterranean_species
-				type = "postatomic_army"
-				leader = last_created_leader
-			}
-			break = yes
 		}
 	}		
 	

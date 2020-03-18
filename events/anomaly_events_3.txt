@@ -161,8 +161,7 @@ ship_event = {
 					modifier = "cunning_flora"
 					days = -1
 				}
-				add_deposit = d_society_3
-				add_deposit = d_society_3
+				add_deposit = d_savage_wildlands
 			}
 		}
 	}
@@ -2013,9 +2012,7 @@ ship_event = {
 			}
 		}
 		from = {
-			hidden_effect = {
-				add_deposit = d_engineering_3
-			}
+			add_deposit = d_engineering_3
 		}
 	}
 }
@@ -2479,8 +2476,6 @@ ship_event = {
 
 	immediate = {
 		from = {
-			add_deposit = d_dangerous_wildlife_blocker
-			add_deposit = d_dangerous_wildlife_blocker
 			add_deposit = d_dangerous_wildlife_blocker
 		}
 	}

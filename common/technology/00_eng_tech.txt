@@ -2164,14 +2164,6 @@ tech_mineral_purification_1 = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 0
-			NOR = {
-				has_technology = tech_mine_volatile_motes
-				has_technology = tech_volatile_motes
-				has_country_flag = has_market_access
-			}
-		}
-		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
@@ -2208,6 +2200,14 @@ tech_mineral_purification_2 = {
 				area = engineering
 				has_trait = "leader_trait_expertise_industry"
 			}			
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
+			}
 		}
 	}
 	

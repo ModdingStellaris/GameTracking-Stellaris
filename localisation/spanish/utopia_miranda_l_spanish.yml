@@ -126,7 +126,7 @@
  utopia.59.name:0 "Banco neural"
  utopia.59.desc:0 "$utopia.59.intro$\n\nComo era de esperar, los voluntarios no proliferan. Hasta ahora solo ha habido uno/a: el/la líder científico [volunteer_leader.GetName]."
  utopia.59.a:0 "Transferid el cerebro de [volunteer_leader.GetName] al Nexo."
- utopia.59.a.tooltip:0 "El Nexo de Ciencia ahora producirá §Y5§! £physics£ §Y5§! £society£ §Y5§! £engineering£ adicionales."
+ utopia.59.a.tooltip:0 "El Nexo de Ciencia ahora producirá:\n£physics£ §G50§! £society£ §G50§! £engineering£ §G50§! adicionales."
  utopia.59.b:0 "Eso sería inmoral."
  utopia.59.c:0 "No, necesitamos a [volunteer_leader.GetName] en otra parte."
  utopia.60.name:0 "Banco neural"

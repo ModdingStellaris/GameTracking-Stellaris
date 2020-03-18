@@ -431,3 +431,35 @@ defined_text = {
 		localization_key = tech_akx_worm_full_custom
 	}
 }
+
+defined_text = { # only needed for devouring swarm conquering robots
+	name = GetPurgeProcessingResource
+	text = {
+		trigger = {
+			OR = {
+				has_trait = trait_mechanical
+				has_trait = trait_machine_unit
+			}
+			owner = {
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+		}
+		localization_key = GetPurgeProcessingResource_minerals
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+				}
+				NOT = {
+					owner = {
+						has_valid_civic = civic_hive_devouring_swarm
+					}
+				}
+			}
+		}
+		localization_key = GetPurgeProcessingResource_food
+	}
+}

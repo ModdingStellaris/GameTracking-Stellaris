@@ -1035,7 +1035,16 @@ pop_generates_crime = {
 can_pops_grow_on_planet = {
 	NOR = { 
 		has_modifier = planet_population_control
-		has_modifier = planet_population_control_gestalt  
+		has_modifier = planet_population_control_gestalt
+		AND = { # conquered by crisis
+			exists = controller
+			controller = {
+				OR = {
+					is_country_type = ai_empire
+					is_country_type = swarm
+				}
+			}
+		}
 	}
 }
  
@@ -1044,6 +1053,15 @@ can_pops_assemble_on_planet = {
 	NOR = { 
 		has_modifier = planet_robot_assembly_control
 		has_modifier = planet_population_control_gestalt
+		AND = { # conquered by crisis
+			exists = controller
+			controller = {
+				OR = {
+					is_country_type = ai_empire
+					is_country_type = swarm
+				}
+			}
+		}
 	}
 }
 
@@ -1055,6 +1073,7 @@ can_pops_decline_on_planet = {
 # This = planet
 # Root = country
 can_force_grow_on_planet = {
+	exists = owner
 	owner = { NOT = { has_policy_flag = population_controls_not_allowed } }
 }
 

@@ -828,6 +828,11 @@ building_machine_capital = {
 		exists = owner
 		owner = { is_machine_empire = yes }
 	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_machine_empire = no }
+	}
 	
 	convert_to = {
 		building_hive_capital
@@ -1047,6 +1052,11 @@ building_hive_capital = {
 	potential = {
 		exists = owner
 		owner = { is_hive_empire = yes }
+	}
+
+	destroy_trigger = { # destroys and/or triggers conversion if true
+		exists = owner
+		owner = { is_hive_empire = no }
 	}
 	
 	convert_to = {

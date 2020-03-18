@@ -1,6 +1,6 @@
 ﻿l_russian:
  ####################################
- #Pop factions
+ #:0 "Фракции поселений"
  ####################################
  # Demand TITLES are run straight from a pop faction with no
  # assembled event scope, [Owner.GetName] to get country name.
@@ -287,7 +287,7 @@
  PROGRESSIVE_DEMOCRATIC_GOVERNMENT_DESC:0 "[Root.GetName] будут довольны номинально избранным правительством."
  PROGRESSIVE_FREE_MOVEMENT:0 "Свободное перемещение"
  PROGRESSIVE_NO_FREE_MOVEMENT:0 "$PROGRESSIVE_FREE_MOVEMENT$"
- PROGRESSIVE_FREE_MOVEMENT_DESC:0 "[Root.GetName] будут довольны в случае обеспечения свободного перемещения поселений, когда основные миры будут доступны всем расам, принудительное переселение запрещено и средства контроля миграции отменены."
+ PROGRESSIVE_FREE_MOVEMENT_DESC:0 "[Root.GetName] выиграет от свободного перемещения поселений, запрета на принудительное переселение и отмены средств контроля миграции."
  PROGRESSIVE_REPRODUCTIVE_FREEDOM:0 "Репродуктивная свобода"
  PROGRESSIVE_REPRODUCTIVE_FREEDOM_DESC:0 "[Root.GetName] будут довольны, если выборочное регулирование численности будет запрещено."
  PROGRESSIVE_NO_REPRODUCTIVE_FREEDOM:0 "$PROGRESSIVE_REPRODUCTIVE_FREEDOM$"
@@ -342,7 +342,7 @@
  PROSPERITY_NO_PHILOSOPHY:0 "$PROSPERITY_PHILOSOPHY$"
  PROSPERITY_LIQUIDITY:0 "Устойчивая ликвидность"
  PROSPERITY_NO_LIQUIDITY:0 "$PROSPERITY_LIQUIDITY$"
- PROSPERITY_LIQUIDITY_DESC:0 "[Root.GetName] будут довольны при постоянном сохранении запасов энергии хотя бы на уровне £energy£ §Y3000§!."
+ PROSPERITY_LIQUIDITY_DESC:0 "[Root.GetName] будут довольны при постоянном сохранении запасов энергии хотя бы на уровне £energy£ §Y5000§!."
  PROSPERITY_WANTS_STRATEGIC_RESOURCE1:0 "Получение редких ресурсов"
  PROSPERITY_WANTS_STRATEGIC_RESOURCE2:0 "Контроль редких ресурсов"
  PROSPERITY_WANTS_STRATEGIC_RESOURCE3:0 "Власть над редкими ресурсами"

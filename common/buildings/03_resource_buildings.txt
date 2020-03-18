@@ -73,6 +73,25 @@ building_hydroponics_farm = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					is_mechanical_empire = no
+					AND = {
+						is_mechanical_empire = yes
+						OR = {
+							has_civic = civic_machine_servitor
+							has_civic = civic_machine_assimilator
+						}
+					}
+				}
+				has_monthly_income = {
+					resource = energy
+					value < 2
+				}
+			}
+		}
 	}
 
 	ai_resource_production = {

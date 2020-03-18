@@ -105,7 +105,7 @@
  MOD_POP_WAR_HAPPINESS:0 "Счастье от войны"
  MOD_POP_PEACE_HAPPINESS:0 "Счастье от перемирия"
  MOD_POP_XENOPHOBIA:0 "Ксенофобия"
- MOD_POP_GOVERNMENT_ETHIC_ATTRACTION:0 "Привлекательность руководящих повышена"
+ MOD_POP_GOVERNMENT_ETHIC_ATTRACTION:0 "Привлекательность руководящих принципов"
  MOD_POP_GOVERNMENT_ETHIC_ATTRACTION_DESC:0 "Этот параметр влияет на базовую привлекательность принципов правительства для поселений."
  MOD_POP_ROBOT_UPKEEP_MULT:0 "Содержание роботов"
  MOD_POP_ROBOT_UPKEEP_MULT_DESC:0 "Изменяет расход энергии на содержание поселений роботов."
@@ -457,6 +457,10 @@
  mod_country_base_volatile_motes_produces_add:0 "Ежемесячный прирост £volatile_motes£ летучих пылинок"
  mod_country_base_exotic_gases_produces_add:0 "Ежемесячный прирост £exotic_gases£ экзотических газов"
  
+ mod_country_base_sr_living_metal_produces_add:0 "£sr_living_metal£ Живой металл ежемесячно"
+ mod_country_base_sr_dark_matter_produces_add:0 "£sr_dark_matter£ Темная материя ежемесячно"
+ mod_country_base_sr_zro_produces_add:0 "£sr_zro£ Зро ежемесячно"
+ 
  ####################################
  # Dynamic Modifiers
  ####################################
@@ -570,7 +574,6 @@
  
  #vultaum_asteroid_category_research_speed_mult:0 "Темп изучения аномалии (предтечи)"
  #vultaum_asteroid_category_research_fail_risk_mult:0 "Риск неудачи при изучении аномалии (предтечи)"
- # TEMP should these be detailed?
  vultaum_asteroid_category_research_speed_mult:0 "Темп изучения аномалии (предтечи)"
  vultaum_asteroid_category_research_fail_risk_mult:0 "Риск неудачи при изучении аномалии (предтечи)"
  vultaum_gasgiant_category_research_speed_mult:0 "Темп изучения аномалии (предтечи)"
@@ -936,8 +939,8 @@
  opinion_threat:0 "Угроза"
  opinion_trust:0 "Доверие"
  opinion_relative_power:0 "Сравнительная мощь подданных"
- opinion_claims_on_us:0 "Наши притязания к ним"
- opinion_their_claims:0 "Их притязания к нам"
+ opinion_claims_on_us:0 "Их притязания к нам"
+ opinion_their_claims:0 "Наши притязания к ним"
  opinion_friction:0 "Трения на границе"
  opinion_rivalry:0 "Наш соперник"
  opinion_declared_rival:0 "Соперничает с нами"

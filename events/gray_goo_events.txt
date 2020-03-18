@@ -1287,6 +1287,13 @@ country_event = {
 			modifier = "dessanu_gift"
 			days = -1
 		}
+		IF = {
+			limit = { NOT = { has_technology = tech_mine_living_metal } }
+			 give_technology = { tech = tech_mine_living_metal }
+		}
+		ELSE = {
+			#nothing
+		}
 	}
 }
 

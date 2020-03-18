@@ -251,18 +251,18 @@
  akx.9211.c.tooltip:0 "Das wird unsere gesamte Spezies transformieren."
 
  akx.9220.name:0 "Der Bote: An der Leine"
- akx.9220.desc:0 "[researchingscientist9220.GetName] hat den Boten rekonstruiert. Die Spezies ist, äh, ziemlich beeindruckend - und zwar auf besorgniserregende Weise. Sie scheint deutlich robuster und aggressiver zu sein als unsere derzeitige Form. Die Wissenschaftler sind nicht sicher, ob wir die Ausgangsspezies waren und der Bote eine modifizierte Version unseres Genoms darstellt ... oder ob der Bote gar unser Vorfahre ist. [researchingscientist9220.GetName] vertritt felsenfest die erste Meinung - dass wir einst eine Kriegerspezies waren, und dass uns irgendeine wichtigtuerische Vorläufer-Rasse genetisch mundtot gemacht hat. Den Verlust unserer kriegerischen Fähigkeiten bezeichnen sie tatsächlich als "Tragödie".\n\nAls Tragödie eines derartigen Ausmaßes, dass sie sich einer retroviralen Behandlung unterzogen haben, um ihre eigene Physiologie an die der Boten anzupassen. Sie behaupten, dies würde ihnen die Fortsetzung des Projekts stark erleichtern."
+ akx.9220.desc:1 "[researchingscientist9220.GetName] hat den Boten rekonstruiert. Die Spezies ist, äh, ziemlich beeindruckend - und zwar auf besorgniserregende Weise. Sie scheint deutlich robuster und aggressiver zu sein als unsere derzeitige Form. Die Wissenschaftler sind nicht sicher, ob wir die Ausgangsspezies waren und der Bote eine modifizierte Version unseres Genoms darstellt ... oder ob der Bote gar unser Vorfahre ist. [researchingscientist9220.GetName] vertritt felsenfest die letztere Meinung - dass wir einst eine Kriegerspezies waren, und dass uns irgendeine wichtigtuerische Vorläufer-Rasse genetisch mundtot gemacht hat. Den Verlust unserer kriegerischen Fähigkeiten bezeichnen sie tatsächlich als "Tragödie".\n\nAls Tragödie eines derartigen Ausmaßes, dass sie sich einer retroviralen Behandlung unterzogen haben, um ihre eigene Physiologie an die der Boten anzupassen. Sie behaupten, dies würde ihnen die Fortsetzung des Projekts stark erleichtern."
  akx.9220.a:0 "Eine kreative Form des Verrats! Bitte exekutiert sie."
  akx.9220.b:0 "Eine kreative Form des Verrats! Bitte exekutiert sie. Vernichtet ihre Aufzeichnungen."
  akx.9220.c:0 "Hervorragende Idee! Weitermachen!"
 
  akx.9221.name:0 "Der Bote: Einbruch der Nacht"
  akx.9221.desc:0 "[researchingscientist9220.GetName] hat nun das genetische Erbe der Boten-Spezies nachgebildet. Ohne eine Meinung von irgendjemandem einzuholen, haben sie darüber hinaus einen höchst ansteckenden retroviralen Wirkstoff entwickelt, der sich auf unseren Welten verbreitet. Unter seinem Einfluss fällt unsere Primärspezies in ein Verpuppungskoma und wacht einen Tag später als die Boten-Spezies wieder auf. Man kann durchaus sagen, dass dies zu einiger Begeisterung führt."
- akx.9221.a:0 "Dies ist zu weit gegangen. Wir werden es jetzt beenden. Den Ausbruch unter Kontrolle bringen."
+ akx.9221.a:0 "Das gehtr zu weit. Wir beenden das. Bringt den Ausbruch unter Kontrolle."
  akx.9221.a.tooltip:0 "Alle Bewohner der Hauptwelt werden konvertiert, aber damit ist dann auch Schluss."
  akx.9221.b:0 "Den Ausbruch unter Kontrolle bringen und sämtliche beeinträchtigten Bürger säubern."
  akx.9221.b.tooltip:0 "Dies führt zur Säuberung aller beeinträchtigten Bürger: fast der gesamten Bevölkerung von [Root.Capital.GetName]."
- akx.9221.c:0 "Was war, wird sein. Wir werden uns ändern. Bringt mir eine Probe des Wirkstoffs."
+ akx.9221.c:0 "Was war, wird sein. Wir werden uns ändern. Besorgt eine Probe des Wirkstoffs."
  akx.9221.c.tooltip:0 "Das wird unsere gesamte Spezies transformieren."
 
  ##################################

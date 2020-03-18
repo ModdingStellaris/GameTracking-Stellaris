@@ -603,7 +603,6 @@ ship_event = {
 			fromfrom = {
 				remove_modifier = "unbalanced_ecosystem"
 				add_deposit = d_dangerous_wildlife_blocker
-				add_deposit = d_dangerous_wildlife_blocker
 			}
 		}
 	}

@@ -32,11 +32,14 @@
  fertility_virus:0 "抑制繁衍的生物武器"
  forth_dimension_knowledge:0 "高维洞察力"
  army_inspiration:0 "受鼓舞的军团新兵"
+ army_inspiration_mach:0 "集中军团单位组装器"
  science_inspiration:0 "受鼓舞的科学家新成员"
  streamlined_ship_design:0 "简化算法"
  immigrants_protection:0 "保护少数派"
  fear_as_control_militarist_p2:0 "担忧的行政机构"
  alien_genome_research:0 "外星基因组研究"
+ syndaw_research_bonus:0 "计算超频"
+ syndaw_production_surplus:0 "生产定额盈余"
  
  ####################################
  # Edicts 
@@ -64,6 +67,7 @@
  ex_planet:0 "曾为行星"
  ex_planet_desc:0 "这条小行星带曾为有过生命的行星。"
  ship_graveyard:0 "星舰塚"
+ ship_graveyard_desc:0 "许多星舰曾在此毁灭，将此处变成了一个星舰塚；这里很多材料唾手可得。"
  ai_fleet:0 "损毁的人工智能舰队"
  ai_fleet_desc:0 "在这颗星球上有一支损毁的舰队，它是由人工智能控制；这给我们提供了珍贵的工程数据以供研究。"
  irradiated_wasteland:0 "被辐射的荒漠"
@@ -112,7 +116,13 @@
  infectious_disease_desc:0 "一种传染性很强的疾病散播开来，新的困境出现，人们受到威胁。"
  pyramid_wars:0 "天子之战"
  pyramid_wars_desc:0 "人们对“天神”本质产生了不同的理解，信念不和导致人们兵戎相见。"
-
+ syndaw_automated_work:0 "工作自动化进程"
+ syndaw_automated_work_desc:0 "合不合理暂且不提，但自动化导致的失业恐慌正在影响这颗行星。"
+ syndaw_unfriendly_robots:0 "机器人兼并矛盾"
+ syndaw_unfriendly_robots_desc:0 "这颗行星上的机器人和有机人口之间关系紧张，降低了我们的£unity凝聚力产出。"
+ syndaw_research_malus:0 "人工智能故障"
+ syndaw_research_malus_desc:0 "一个实验室的通用人工智能在社会研究中遭受了终端硬件损坏，它正在被替换。"
+ 
  ####################################
  # Ship/Fleet Modifiers 
  ####################################
@@ -132,18 +142,8 @@
  pop_pleased:0 "愉悦"
  alien_infection:0 "外星感染"
  alien_music:0 "外星音乐"
-
+ 
  ####################################
  # DEBUG STUFF
  ####################################
  
- syndaw_research_bonus:0 "计算超频"
- syndaw_production_surplus:0 "生产定额盈余"
- syndaw_automated_work:0 "工作自动化进程"
- syndaw_automated_work_desc:0 "合不合理暂且不提，但自动化导致的失业恐慌正在影响这颗行星。"
- syndaw_unfriendly_robots:0 "机器人兼并矛盾"
- syndaw_unfriendly_robots_desc:0 "这颗行星上的机器人和有机人口之间关系紧张，降低了我们的£unity凝聚力产出。"
- syndaw_research_malus:0 "人工智能故障"
- syndaw_research_malus_desc:0 "一个实验室的通用人工智能在社会研究中遭受了终端硬件损坏，它正在被替换。"
- army_inspiration_mach:0 "集中军团单位组装器"
- ship_graveyard_desc:0 "许多星舰曾在此毁灭，将此处变成了一个星舰塚；这里很多材料唾手可得。"

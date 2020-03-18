@@ -156,7 +156,7 @@ totalitarian = {
 						OR = {
 							has_citizenship_type = { type = citizenship_slavery }
 							has_citizenship_type = { type = citizenship_purge }
-							has_citizenship_type = { type = citizenship_ai_servitude }
+							has_citizenship_type = { type = citizenship_robot_servitude }
 						}
 					}
 				}

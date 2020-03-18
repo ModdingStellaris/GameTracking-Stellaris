@@ -252,6 +252,7 @@ DISTAR_DEAD_GOD_CAT = {
 					has_moon = yes
 					any_moon = {
 						is_same_value = root
+						habitable_planet = no
 					}
 				}
 			}
@@ -265,7 +266,10 @@ DISTAR_DEAD_GOD_CAT = {
 					exists = owner
 					owner = { is_primitive = yes }
 					has_moon = yes
-					any_moon = { is_same_value = root }
+					any_moon = {
+						is_same_value = root
+						habitable_planet = no
+					}
 				}
 				add_modifier = { modifier = dead_god_planet_hidden days = -1 } 
 			}
@@ -748,12 +752,19 @@ DISTAR_RAT_CAT = {
 		}
 	}
 
+	max_once = yes
 	max_once_global = no
 
 	on_spawn = {
 	}
 	
-	on_success = distar.231
+	on_success = {
+		1 = {
+			max_once = yes
+			max_once_global = no
+			anomaly_event =	distar.231
+		}
+	}
 }
 
 DISTAR_MED_CAT = {
@@ -1337,6 +1348,7 @@ alien_life_cat = {
 			add = 3
 			has_distar = yes
 			habitable_planet = yes
+			NOT = { has_modifier = dangerous_wildlife }
 		}
 	}
 	on_success = distar.2020

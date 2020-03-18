@@ -1764,11 +1764,12 @@ ship_event = {
 	option = {
 		name = OK
 		custom_tooltip = "anomaly.4052.a.tooltip"
-		hidden_effect = {
-			FROM = {
-				fromfrom = {
-					add_deposit = d_society_3
-				}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
 			}
 		}
 	}
@@ -1817,19 +1818,17 @@ ship_event = {
 	}
 	option = {
 		name = anomaly.4055.b
-		custom_tooltip = "anomaly.4055.b.tooltip"
 		hidden_effect = {
-			root = {
-				add_modifier = {
-					modifier = protege_onboard
-					days = 7200
-				}
-			}
 			FROM = {
 				add_deposit = d_minerals_4
 				add_deposit = d_minerals_2
 			}
 		}
+		add_modifier = {
+			modifier = protege_onboard
+			days = 7200
+		}
+		custom_tooltip = "anomaly.4055.b.tooltip"
 	}	
 }
 

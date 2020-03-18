@@ -20,8 +20,8 @@
  MEGASTRUCTURE_UPGRADE_REMAINING:0 "£time£ $DAYS|Y0$ Tage übrig"
  MEGASTRUCTURE_UPGRADES_TO:0 "Verbesserung zu:"
 
- ring_world_1_MEGASTRUCTURE_DETAILS:1 "§Y$pc_ringworld_habitable$§!: Ermöglicht mehrere planetenartige Zonen. Für das dafür erforderliche Material werden alle anderen Planeten des Systems ausgeschlachtet."
- ring_world_1_CONSTRUCTION_INFO_DELAYED:3 "Eine vollständige Ringwelt besteht aus 4 vollständigen Ringweltsektionen, die jeweils einer Gaia-Welt der Größe 25 entsprechen."
+ ring_world_1_MEGASTRUCTURE_DETAILS:1 "Eine §Y$pc_ringworld_habitable$§! schafft mehrere planetenartige Zonen. Für das dafür erforderliche Material werden alle anderen Planeten des Systems ausgeschlachtet."
+ ring_world_1_CONSTRUCTION_INFO_DELAYED:3 "Eine vollständige Ringwelt besteht aus 4 vollständigen Ringweltsektionen, die jeweils einer Gaia-Welt der Größe 50 entsprechen."
  ring_world_1:0 "Ringwelt-Baustätte"
  ring_world_1_DESC:0 "Dieser Komplex dient als Versammlungsort, Materiallager und Unterkunft für die hunderttausenden von Arbeitern, die am Bau der Ringwelt beteiligt sind."
  ring_world_2_intermediate:0 "Ringweltgerüst"
@@ -31,8 +31,8 @@
  ring_world_3_intermediate:0 "Fertige Ringwelt-Gerüstsektion"
  ring_world_3_intermediate_DESC:0 "Eine voll funktionale, bewohnbare Ringweltsektion mit aktiver Biosphäre."
 
- habitat_0_MEGASTRUCTURE_DETAILS:1 "§Y$pc_habitat$§!: Eine theoretisch autarke Raumstation für permanente Besiedlung."
- habitat_0_CONSTRUCTION_INFO_DELAYED:2 "In Habitaten, die generell auf §Y12§! Felder beschränkt sind, können nur habitatsspezifische £building£ §YGebäude§! gebaut werden."
+ habitat_0_MEGASTRUCTURE_DETAILS:1 "Ein §Y$pc_habitat$§! ist eine theoretisch autarke Raumstation für permanente Besiedlung."
+ habitat_0_CONSTRUCTION_INFO_DELAYED:3 "Ein Habitat kann nur habitatsspezifische £building£ §YGebäude§! haben."
  habitat_0:0 "Habitat"
  habitat_0_DESC:0 "Eine Habitatsstation, die einen unbewohnbaren Planeten umkreist und fern der Oberfläche eine Reihe von §HBewohnern§! und §HGebäuden§! aufnehmen kann."
 
@@ -55,9 +55,9 @@
  allow_habitats:0 "§HFreischaltung der Station:§! Habitat"
  ap_master_builders_habitat_size:1 "§HHabitate§!, die unser Reich besitzt, haben Platz für §Y2§! zusätzliche Distrikte."
  allow_edict_consectrated_worlds:5 "§HNeue Entscheidung:§! Gesegnete Welt\n"
- describe_edict_consectrated_worlds:5 "§EUnbewohnte Planeten zu weihen (bis zu §Y3§!) erhöht die §Yspirituelle Anziehung§! und §YReichsweite Dienstleistungen§! sowie die £unity£ §YEinigkeitsproduktion§!, die mit der spirituellen Bedeutung der geweihten Welten skaliert.§!"
+ describe_edict_consectrated_worlds:5 "§EUnbewohnte Planeten zu weihen (bis zu §Y3§!) erhöht die §Yspirituelle Anziehung§! und §Yreichsweiten Annehmlichkeiten§! sowie die £unity£ §YEinigkeitsproduktion§!, die mit der spirituellen Bedeutung der geweihten Welten skaliert.§!"
  allow_machine_worlds:2 "§HFreischaltung der Terraformoption:§! Maschinenwelt"
- describe_machine_worlds:6 "§YMaschinenwelten§! sind eine spezielle Planetenklasse, die für die meisten organischen Wesen unbewohnbar sind, aber durch planetare Merkmale nicht darin limitiert sind, wie viele £district£ §YGenerator-§! und §YBergbaudistrikte§! sie unterstützen können. £pop£ §YBewohner§!, die auf §YMaschinenwelten§! leben, haben eine um §G+10%§! erhöhte §YRessourcenproduktion§! und eine um §G10%§! reduzierte §YWohnraumnutzung§!. Jeder existierende  £district£ §YLandwirtschaftsdistrikt§! auf dem Planeten wird zerstört."
+ describe_machine_worlds:6 "§YMaschinenwelten§! sind eine spezielle Planetenklasse, die für die meisten organischen Wesen unbewohnbar sind, aber durch planetare Merkmale nicht darin limitiert sind, wie viele £district£ §YGenerator-§! und §YBergbaudistrikte§! sie unterstützen können. £pop£ §YBewohner§!, die auf §YMaschinenwelten§! leben, haben eine um §G+10%§! erhöhte §YRessourcenproduktion§! und eine um §G10%§! reduzierte §YWohnraumnutzung§!. Jeder existierende £district£ §YLandwirtschaftsdistrikt§! auf dem Planeten wird zerstört."
  allow_hive_worlds:0 "§HNeue Terraformingmöglichkeit:§! Schwarmwelt"
  describe_hive_worlds:0 "§YSchwarmwelten§! sind eine spezielle Planetenklasse, die für alle Wesen, die nicht dem Schwarm angehören, unbewohnbar sind, aber durch planetare Merkmale nicht darin limitiert sind, wie viele £district£ §YGenerator-§!, §YBergbau-§! und §YLandwirtschaftsdistrikte§! sie unterstützen können. £pop£ §YBewohner§!, die auf §YSchwarmwelten§! leben, haben eine um §G+10%§! erhöhte §YRessourcenproduktion§!."
 

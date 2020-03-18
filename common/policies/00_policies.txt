@@ -858,8 +858,8 @@ economic_policy = {
 		name = "economic_policy_civilian"
 		
 		modifier = {
-			country_consumer_goods_produces_mult = 0.15
-			country_alloys_produces_mult = -0.25
+			planet_jobs_consumer_goods_produces_mult = 0.15
+			planet_jobs_alloys_produces_mult = -0.25
 		}
 		
 		AI_weight = {
@@ -881,8 +881,8 @@ economic_policy = {
 		name = "economic_policy_military"
 		
 		modifier = {
-			country_consumer_goods_produces_mult = -0.25
-			country_alloys_produces_mult = 0.15
+			planet_jobs_consumer_goods_produces_mult = -0.25
+			planet_jobs_alloys_produces_mult = 0.15
 		}
 		
 		AI_weight = {
@@ -995,7 +995,8 @@ artificial_intelligence_policy = {
 			NOR = {
 				has_ethic = "ethic_materialist"
 				has_ethic = "ethic_fanatic_materialist"
-			}			
+				has_country_flag = synthetic_empire
+			}
 		}
 		
 		policy_flags = {
@@ -1024,7 +1025,7 @@ artificial_intelligence_policy = {
 		name = "ai_servitude"
 
 		valid = {
-			always = yes
+			NOT = { has_country_flag = synthetic_empire }
 		}
 		
 		policy_flags = {

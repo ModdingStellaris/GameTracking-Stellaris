@@ -813,8 +813,6 @@ event = {
 				has_modifier = titanic_life
 			}
 			add_deposit = d_titanic_life_blocker
-			add_deposit = d_titanic_life_blocker
-			add_deposit = d_titanic_life_blocker
 		}
 	}
 }

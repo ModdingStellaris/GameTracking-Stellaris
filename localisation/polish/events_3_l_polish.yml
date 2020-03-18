@@ -131,7 +131,7 @@
  anomaly.4051.a:0 "Dobre samopoczucie załogi to wystarczająca nagroda."
  anomaly.4051.b:0 "To tylko jeden ze sposobów zwiększania wydajności."
  anomaly.4052.desc:0 "Pracując dniem i nocą nad znalezieniem źródła tajemniczego echa, załoga [Root.GetName] znalazła interesujący organizm żywy żyjący pod powierzchnią globu [From.From.GetName]. Nie wykryliśmy go wcześniej ze względu na jego zdumiewającą zdolność przetrwania blisko jądra tego ciała niebieskiego, co zmyliło nasze systemy.\n\nSkanowanie wykazało, że jest to rodzaj wodnego stawonoga w początkowym stadium ewolucji, ale najbardziej zaskakuje jego zdolność rozmnażania się poprzez zamianę we własne potomstwo martwej materii innych organizmów.\n\nDzięki tej informacji nasi naukowcy z pewnością stworzą nowe lekarstwa! Ale jest jedno ale - wiadomość o tym, jak traktowaliśmy nasz personel, z pewnością wywoła niezadowolenie społeczne."
- anomaly.4052.a.tooltip:0 "§YTwoje imperium§! otrzymuje modyfikatory za §Ginnowację farmaceutyczną§! i §Rnegatywne doniesienia medialne§!.\n\n[From.From.GetName] otrzymuje zasoby:\n£society£ §G+2§!"
+ anomaly.4052.a.tooltip:3 "§YTwoje imperium§! otrzymuje modyfikatory za §Ginnowację farmaceutyczną§! i §Rnegatywne doniesienia medialne§!."
  anomaly.4055.name:0 "Nieoszlifowany diament"
  anomaly.4055.desc:0 "[From.GetName]: Po badaniach przeprowadzonych na powierzchni oficer naukowy [Root.GetLeaderName] poinformował o znalezieniu globu z bogatymi złożami minerałów. To odkrycie było możliwe dzięki pewnemu członkowi załogi jednostki [Root.GetName]. [Root.GetLeaderName] bardzo chwali swego protegowanego."
  anomaly.4055.a:0 "Zaproponuj protegowanemu stanowisko oficera naukowego."

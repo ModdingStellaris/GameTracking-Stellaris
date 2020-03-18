@@ -19,5 +19,5 @@ frontier_sector = {
 		minerals = 1
 	}
 
-	max_jumps = 2
+	max_jumps = 3
 }

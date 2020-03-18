@@ -784,7 +784,7 @@
 		FEDERATION_MIN_MEMBERS_TO_KICK		= 3	# Can't kick alliance members unless you have at least this many members
 		
 		DEBRIS_BASE_COST					= 0	# Base cost of special project for analyzing debris
-		DEBRIS_ANALYZED_AREA_POINTS			= 5	# Points * Level given for each component analyzed
+		DEBRIS_ANALYZED_AREA_POINTS			= 20	# Points * Level given for each component analyzed
 		DEBRIS_ANALYZED_TECH_PROGRESS		= 0.10	# Tech progress added when analyzing component that require tech you don't have
 		DEBRIS_DAYS							= 1800	# How many days the debris is visible for
 		DEBRIS_RESEARCH_TIME				= 90	# How many days it takes to analyze 1 debris.
@@ -1253,6 +1253,8 @@
 		BASE_HAPPINESS						= 0.50  # Base value of pop happiness
 	
 		RECENTLY_CONQUERED_DAYS				= 3600 # How long the recently conquered modifier stays on pops.
+
+		SAME_STRATA_EMPLOYMENT_BONUS		= 1.0 # How much score will be added to an unemployed pop when considering it for a job in the same strata
 	}
 
 	NArmy = {
@@ -1431,9 +1433,11 @@
 	
 		WAS_HUMAN_MONTHS = 60							# Amount of months that the AI will refrain from making large changes to the empire if it's taking over from a player
 		
-		MIN_FLEET_FOR_OFFENSIVE = 1000
-		MIN_FLEET_TO_RESTRICT_SYSTEM = 5000
-		MIN_FLEET_THREAT_TO_CRISIS = 10000
+		MIN_FLEET_FOR_OFFENSIVE = 500
+		MIN_FLEET_TO_RESTRICT_SYSTEM = 3000
+		MIN_FLEET_THREAT_TO_CRISIS = 8000
+
+		MIN_FLEET_TO_SPLIT = 2000					# AI will not split up a fleet below this fleet power
 		
 		MIN_GIFT_SIZE = 25								# in opinion impact
 		MAX_GIFT_SIZE = 50	
@@ -1682,7 +1686,7 @@
 		PEACE_DEFENDING_CLAIM_PLANET_FACTOR = -100	# For systems with colonies
 		PEACE_RELATIVE_NAVY_STRENGTH_FACTOR = 50	
 
-		MIN_WANTED_SCIENTISTS = 3						# Below this AI prioritizes influence spending to get more scientists
+		MIN_WANTED_SCIENTISTS = 1						# Below this AI prioritizes energy spending to get more scientists
 				
 		INFLUENCE_FRACTION_EDICTS = 0.20		# Fraction of AI Influence that goes to edicts
 		INFLUENCE_FRACTION_STARBASES = 0.60		# Fraction of AI influence that is used for starbases

@@ -2071,7 +2071,7 @@
  01_BREAK_COMMERCIAL_PACT_ACCEPT:0 "Das ist sehr bedauerlich, [From.GetSpeciesName]. Ihr habt unserer beiden Wirtschaften geschwächt."
 
  01_FORM_RESEARCH_AGREEMENT_SELECT:0 "Ihr möchtet eine Forschungsvereinbarung mit uns abschließen, [From.GetSpeciesNamePlural]?"
- 01_FORM_RESEARCH_AGREEMENT_PROPOSE:0 "Wir haben viel voneinander zu lernen, [From.GetSpeciesName]. Wir schlagen die Schaffung eines Forschungsabkommens zwischen unseren Imperien vor."
+ 01_FORM_RESEARCH_AGREEMENT_PROPOSE:1 "Wir haben viel voneinander zu lernen, [Root.GetSpeciesName]. Wir schlagen die Schaffung eines Forschungsabkommens zwischen unseren Imperien vor."
  01_FORM_RESEARCH_AGREEMENT_ACCEPT:0 "In Ordnung. Wir teilen unser Wissen mit [From.GetName] und erhalten im Gegenzug das Eure."
  01_FORM_RESEARCH_AGREEMENT_REFUSE:0 "Nein, [From.GetName]. Eure primitive Technologie ist nicht von Interesse für uns."
  01_BREAK_RESEARCH_AGREEMENT_SELECT:0 "Warum möchtet ihr die Zusammenarbeit zwischen unseren Wissenschaftlern beenden?"

@@ -2482,7 +2482,7 @@ guiTypes = {
 			# Trade value
 			containerWindowType = {
 				name = "branch_office_trade_value_window"
-				size = { width = 78 height = 48 }
+				size = { width = 84 height = 48 }
 				position = { x = 205 y = 185 }
 				
 				background = {
@@ -2493,20 +2493,19 @@ guiTypes = {
 				iconType = {
 					name = "trade_value_icon" 
 					spriteType = "GFX_resource_energy_large"
-					position = { x=5 y= 8 }
+					position = { x = 2 y = 8 }
 				}	
 
 				instantTextBoxType = {
 					name = "branch_office_trade_value_amount"
 					font = "malgun_goth_24"
-					position = { x = 36 y = 10 }
+					position = { x = 24 y = 10 }
 					text = "5"
-					maxWidth = 40
+					maxWidth = 60
 					maxHeight = 20
 					fixedSize = yes
 					format = center
 					orientation = upper_left
-					alwaysTransparent = yes
 				}						
 			}			
 			

@@ -51,15 +51,6 @@ ruler = {
 			}
 			consumer_goods = 2
 		}
-		# Standby Mode Crime event
-		upkeep = {
-			trigger = {
-				planet = {
-					has_modifier = standby_mode
-				}
-			}
-			energy = 2
-		}
 	}		
 	
 	weight = {
@@ -246,15 +237,6 @@ specialist = {
 				}
 			}
 			consumer_goods = 2
-		}
-		# Standby Mode Crime event
-		upkeep = {
-			trigger = {
-				planet = {
-					has_modifier = standby_mode
-				}
-			}
-			energy = 2
 		}
 	}
 
@@ -532,15 +514,6 @@ worker = {
 				}
 			}
 			consumer_goods = 2
-		}
-		# Standby Mode Crime event
-		upkeep = {
-			trigger = {
-				planet = {
-					has_modifier = standby_mode
-				}
-			}
-			energy = 2
 		}
 	}
 	

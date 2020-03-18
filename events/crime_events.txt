@@ -71,25 +71,29 @@ planet_event = {
 		NOT = { has_planet_flag = criminal_underworld_disappeared } # Cooldown
 		num_pops > 0
 		OR = {
-			count_pops = {
-				limit = { 
-					has_job = unemployed
-					NOR = {
-						has_living_standard = { type = living_standard_utopian }
-						has_living_standard = { type = living_standard_good }
-						has_living_standard = { type = living_standard_shared_burden }
+			AND = {
+				count_pops = {
+					limit = { 
+						has_job = unemployed
+						NOR = {
+							has_living_standard = { type = living_standard_utopian }
+							has_living_standard = { type = living_standard_good }
+							has_living_standard = { type = living_standard_shared_burden }
+						}
 					}
+					count > 3
 				}
-				count > 3
+				owner = { is_gestalt = no }
 			}
 			AND = {
-			count_pops = {
-				limit = { 
-					has_job = unemployed
+				count_pops = {
+					limit = { 
+						has_job = unemployed
+						NOT = { has_living_standard = { type = living_standard_organic_trophy } }
+					}
+					count > 10
 				}
-				count > 10
-			}
-			owner = { is_gestalt = yes }
+				owner = { is_gestalt = yes }
 			}
 		}
 	}
@@ -99,7 +103,7 @@ planet_event = {
 	}
 
 	after = {
-		remove_planet_flag = criminal_underworld_event_up
+		hidden_effect = { remove_planet_flag = criminal_underworld_event_up }
 	}
 
 	mean_time_to_happen = {
@@ -153,10 +157,11 @@ planet_event = {
 	}
 	option = {
 		name = crime.1.a3
+		custom_tooltip = crime.1.a3.tooltip
 		trigger = { 
 			owner = { has_authority = auth_machine_intelligence }
 		}
-		add_modifier = { modifier = "standby_mode" days = 3600 }
+		hidden_effect = { add_modifier = { modifier = "standby_mode" days = 3600 } }
 	}
 	option = {
 		name = crime.1.b

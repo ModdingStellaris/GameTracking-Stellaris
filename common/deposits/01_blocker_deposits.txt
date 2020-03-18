@@ -38,7 +38,14 @@ d_mountain_range = {
 		modifier = {
 			factor = 0.5
 			planet_size < 15
-		}	
+		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -79,6 +86,13 @@ d_active_volcano = {
 			factor = 0.5
 			planet_size < 15
 		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 	
 	prerequisites = { "tech_volcano" }
@@ -106,30 +120,31 @@ d_dangerous_wildlife_blocker = {
 	}
 	
 	on_cleared = {
-		if = {
-			limit = {
-				exists = owner
-				owner = {
-					has_civic = civic_hive_devouring_swarm
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = owner
+					owner = {
+						has_civic = civic_hive_devouring_swarm
+					}
 				}
+				owner = { add_resource = { food = 200 } }
 			}
-			owner = { add_resource = { food = 200 } }
 		}
 	}
 
 	drop_weight = {
 		weight = @blocker_low
 		modifier = {
-			factor = 2
-			has_modifier = "dangerous_wildlife"
-		}
-		modifier = {
-			factor = 10
-			has_modifier = "titanic_life"
-		}
-		modifier = {
 			factor = 0.5
 			planet_size < 15
+		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
 		}
 	}
 	
@@ -168,6 +183,13 @@ d_dense_jungle = {
 				is_planet_class = pc_tropical
 			}
 		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 	
 	prerequisites = { "tech_dense_jungle" }
@@ -201,6 +223,13 @@ d_toxic_kelp = {
 		modifier = {
 			factor = 2
 			is_planet_class = pc_ocean
+		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
 		}
 	}
 	
@@ -238,7 +267,14 @@ d_deep_sinkhole = {
 				is_planet_class = pc_arid
 				is_planet_class = pc_savannah
 			}
-		}	
+		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 	
 	prerequisites = { "tech_deep_sinkhole" }
@@ -273,7 +309,14 @@ d_quicksand_basin = {
 		modifier = {
 			factor = 2
 			is_planet_class = pc_desert
-		}		
+		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 	
 	prerequisites = { "tech_quicksand_basin" }
@@ -307,6 +350,13 @@ d_noxious_swamp = {
 		modifier = {
 			factor = 2
 			is_planet_class = pc_tundra
+		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
 		}
 	}
 	
@@ -344,7 +394,14 @@ d_massive_glacier = {
 				is_planet_class = pc_alpine
 				is_planet_class = pc_arctic
 			}
-		}			
+		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 	
 	prerequisites = { "tech_massive_glacier" }
@@ -377,6 +434,13 @@ d_radioactive_wasteland = {
 
 	drop_weight = {
 		weight = @blocker_high
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 }
 
@@ -403,6 +467,13 @@ d_city_ruins = {
 
 	drop_weight = {
 		weight = @blocker_high
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 }
 
@@ -432,6 +503,13 @@ d_bomb_crater = {
 
 	drop_weight = {
 		weight = @blocker_low
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 }
 
@@ -570,7 +648,7 @@ d_titanic_life_blocker = {	#Added via event
 	
 	resources = {
 		produces = {
-			society_research = 4
+			society_research = 8
 		}
 	}
 	

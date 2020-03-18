@@ -174,7 +174,7 @@
  utopia.59.name:0 "Нейробанк"
  utopia.59.desc:0 "$utopia.59.intro$\n\nКак и ожидалось, добровольцы в очередь не выстраиваются. Пока что появился только один - ведущий ученый [volunteer_leader.GetName]."
  utopia.59.a:0 "Загрузить мозг, который предлагает [volunteer_leader.GetName], в нейробанк."
- utopia.59.a.tooltip:0 "Научный комплекс теперь будет производить дополнительно: £physics£ §Y+5§!, £society£ §Y+5§!, £engineering£ §Y+5§!."
+ utopia.59.a.tooltip:0 "Научный комплекс теперь будет производить дополнительно\n£physics£ §G50§! £society£ §G50§! £engineering£ §G50§!"
  utopia.59.b:0 "Это было бы неэтично."
  utopia.59.c:0 "Нет, [volunteer_leader.GetName] требуется в другом месте."
  utopia.60.name:0 "Нейробанк"

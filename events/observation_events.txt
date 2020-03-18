@@ -1535,6 +1535,13 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		trigger = {
+			is_xenophile = no
+		}
+		name = "observation.1011.b"
+		add_resource = { influence = 50 }
+	}
 }
 
 # Implants Removed

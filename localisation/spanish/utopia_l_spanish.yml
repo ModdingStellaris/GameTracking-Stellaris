@@ -3,7 +3,7 @@
  leader_trait_admiral_cyborg:0 "Cíborg"
 
  habitat_0_MEGASTRUCTURE_DETAILS:1 "Un §Y$pc_habitat$§! es una estación espacial teóricamente autosuficiente diseñada para su residencia permanente."
- habitat_0_CONSTRUCTION_INFO_DELAYED:2 "Un hábitat solo puede tener £building£ §Yedificios§! específicos de hábitat."
+ habitat_0_CONSTRUCTION_INFO_DELAYED:3 "Un hábitat solo puede tener £building£ §Yedificios§! específicos de hábitat."
 
  think_tank_0_MEGASTRUCTURE_DETAILS:1 "Los laboratorios de investigación y los bancos de datos de un §Y$think_tank_3$§! generan una gran cantidad de ciencia pura."
  think_tank_0_CONSTRUCTION_INFO_DELAYED:0 "§E$think_tank_1$\n£physics£ §G15§! £society£ §G15§! £engineering£ §G15§!\n£minerals£ §Y20000§! £time£ §H2400§!\n\n$think_tank_2$\n£physics£ §G30§! £society£ §G30§! £engineering£ §G30§!\n£minerals£ §Y20000§! £time£ §H2400§!\n\n$think_tank_3$\n£physics£ §G50§! £society£ §G50§! £engineering£ §G50§!\n£minerals£ §Y20000§! £time£ §H2400§!§!"
@@ -140,7 +140,7 @@
  utopia.61.desc.a:0 "Hemos completado la construcción de nuestro primer hábitat y ha llegado el momento de fletar una nave colonia para poblar el mundo que nosotros mismos hemos creado.\n\nDesde su núcleo mecánico hasta sus más altas montañas, cada una de sus tuercas, tornillos, resquicios y grietas han sido diseñados para adecuarse perfectamente a nuestras necesidades en un nuevo hogar entre las estrellas."
  utopia.61.desc.b:0 "El hábitat de [From.From.From.From.Planet.GetName] ya está terminado y listo para su colonización."
  allow_machine_worlds:0 "§HDesbloquea la opción de terraformación:§! mundo máquina"
- describe_machine_worlds:6 "Los §Ymundos máquina§! son una clase especial de planetas inhabitables para los orgánicos, pero no se ven limitados por las características planetarias en relación a cuántos £district£ §Ydistritos generadores§! y §Ymineros§! pueden albergar. Las £pop£ §Ypoblaciones§! que viven en ellos aumentan su §Yproducción de recursos§! en un §G+10%§! y reducen su §Yuso de alojamiento§! en un §G10%§!. Cualquier  £district£ §Ydistrito agrícola§! existente en el planeta será destruido."
+ describe_machine_worlds:6 "Los §Ymundos máquina§! son una clase especial de planetas inhabitables para los orgánicos, pero no se ven limitados por las características planetarias en relación a cuántos £district£ §Ydistritos generadores§! y §Ymineros§! pueden albergar. Las £pop£ §Ypoblaciones§! que viven en ellos aumentan su §Yproducción de recursos§! en un §G+10%§! y reducen su §Yuso de alojamiento§! en un §G10%§!. Cualquier £district£ §Ydistrito agrícola§! existente en el planeta será destruido."
  requires_no_existing_think_tank:0 "$TRIGGER_FAIL$No se puede construir más de un Nexo de Ciencia."
  requires_no_existing_dyson_sphere:0 "$TRIGGER_FAIL$No se puede construir más de una esfera Dyson."
  trait_self_modified:0 "Automodificados"

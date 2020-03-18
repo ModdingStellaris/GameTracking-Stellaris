@@ -59,14 +59,14 @@ guiTypes = {
 			shortcut = "q"
 		}
 			
-		buttonType = {
-			name = "close"
-			quadTextureSprite = "GFX_main_close_button_caravaneer"
-			position = { x= -45 y = 16 }
-			Orientation = "UPPER_RIGHT"
-			shortcut = "ESCAPE"
-			clicksound = "back_click"
-		}
+		#buttonType = {
+		#	name = "close"
+		#	quadTextureSprite = "GFX_main_close_button_caravaneer"
+		#	position = { x= -45 y = 16 }
+		#	Orientation = "UPPER_RIGHT"
+		#	shortcut = "ESCAPE"
+		#	clicksound = "back_click"
+		#}
 
 		instantTextBoxType = {
 			name = "heading"

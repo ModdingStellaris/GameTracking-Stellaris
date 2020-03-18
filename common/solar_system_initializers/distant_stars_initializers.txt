@@ -576,6 +576,7 @@ hostile_init_mining_drones = {
 	change_orbit = 30
 	
 	planet = {
+		class = random_non_colonizable
 		orbit_distance = 20
 		orbit_angle = { min = 90 max = 270 }
 		init_effect = {
@@ -1703,10 +1704,10 @@ primitive_robot_system = {
 				}
 			}
 			while = {
-				count = 2
+				count = 4
 				create_pop = {
-					species = last_created
-				}					
+					species = event_target:primitive_robot_species
+				}
 			}
 			#clear_blockers = yes
 			add_deposit = d_city_ruins
@@ -4141,9 +4142,6 @@ distar_phaseshift_system = {
 		orbit_angle = { min = 90 max = 270 }
 		init_effect = {
 			clear_deposits = yes
-			set_deposit = d_physics_4
-			set_deposit = d_physics_4
-			set_deposit = d_physics_4
 			save_global_event_target_as = phaseshift_planet
 			set_planet_flag = phaseshifting_active
 		}

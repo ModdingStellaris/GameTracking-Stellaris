@@ -2071,7 +2071,7 @@
  01_BREAK_COMMERCIAL_PACT_ACCEPT:0 "Весьма прискорбно, [From.GetSpeciesName]. Вы ослабили нашу и вашу экономику."
  
  01_FORM_RESEARCH_AGREEMENT_SELECT:0 "Вы хотите заключить с нами соглашение об исследованиях, [From.GetSpeciesNamePlural]?"
- 01_FORM_RESEARCH_AGREEMENT_PROPOSE:0 "Мы можем многому научиться друг от друга, [From.GetSpeciesName]. Мы предлагаем заключить соглашение об исследованиях между нашими империями."
+ 01_FORM_RESEARCH_AGREEMENT_PROPOSE:0 "Мы можем многому научиться друг от друга, [Root.GetSpeciesName]. Мы предлагаем заключить соглашение об исследованиях между нашими империями."
  01_FORM_RESEARCH_AGREEMENT_ACCEPT:0 "Хорошо. [From.GetName] получит наши знания в обмен на свои."
  01_FORM_RESEARCH_AGREEMENT_REFUSE:0 "Нет, [From.GetName]. Ваши примитивные технологии нас не интересуют."
  01_BREAK_RESEARCH_AGREEMENT_SELECT:0 "Почему вы желаете прекратить сотрудничество между нашими учеными?"

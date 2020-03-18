@@ -183,7 +183,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = { has_technology = tech_synthetic_workers }
+		has_technology = tech_synthetic_workers
 		any_owned_pop = { 
 			has_trait = "trait_mechanical" 
 		} 
@@ -249,7 +249,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = { has_technology = tech_synthetic_workers }
+		has_technology = tech_synthetic_workers
 		any_owned_pop = { 
 			has_trait = "trait_mechanical" 
 		} 
@@ -718,10 +718,15 @@ planet_event = {
 			class = "ROBOT"
 			portrait = "ai_crisis_1"
 			immortal = yes
+			traits = {
+				trait = "trait_mechanical"
+			}
+			effect = { save_global_event_target_as = contingency_bot }
 		}
 		create_country = {
 			name = NAME_Contingency
-			species = event_target:custodian_bot
+			species = event_target:custodian_bot # for pops
+			#species = ROBOT_POP_SPECIES_3
 			authority = auth_ancient_machine_intelligence
 			ethos = {
 				ethic = ethic_gestalt_consciousness
@@ -731,7 +736,6 @@ planet_event = {
 				civic = civic_machine_warbots
 			}
 			type = "ai_empire"
-			species = ROBOT_POP_SPECIES_3
 			name_list = "AI"
 			flag = {
 				icon= {
@@ -750,6 +754,15 @@ planet_event = {
 				}
 			}
 			effect = {
+				create_leader = {
+					class = ruler
+					species = event_target:contingency_bot
+					name = random
+					effect = {
+						save_event_target_as = contingency_ruler
+					}
+				}
+				set_leader = event_target:contingency_ruler
 				create_ship_design = { design = "NAME_AI_Transport" }
 				add_ship_design = last_created_design
 				create_ship_design = { design = "NAME_AI_Constructor" }
@@ -1236,8 +1249,8 @@ country_event = {
 	desc = {
 		text = crisis.2037.desc
 		trigger = { 
-			NOT = { has_global_flag = first_machine_world_destroyed } 
-			NOT = {
+			NOR = {
+				has_global_flag = first_machine_world_destroyed
 				from = { has_planet_flag = destroyed_by_colossus } 
 			}
 		}
@@ -1362,9 +1375,12 @@ planet_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		planet_devastation >= 100
 		is_planet_class = pc_ai
 		NOT = { has_planet_flag = machine_lair }
+		OR = { # cracked or bombarded to death
+			from = { is_same_value = root }
+			planet_devastation >= 50
+		}
 	}
 	
 	immediate = {
@@ -1607,8 +1623,6 @@ country_event = {
 		FROMFROM = {
 			add_threat = { who = root amount = 2 }
 			set_controller = root
-			#TODO [CD] replace with assigning to purge job
-			#purge = yes
 		}
 	}
 }
@@ -1709,11 +1723,14 @@ planet_event = {
 	hide_window = yes
 	
 	is_triggered_only = yes
-	
+
 	trigger = {
-		planet_devastation >= 100
 		is_planet_class = pc_ai
 		has_planet_flag = machine_lair
+		OR = { # cracked or bombarded to death
+			from = { is_same_value = root }
+			planet_devastation >= 50
+		}
 	}
 	
 	immediate = {
@@ -1792,13 +1809,10 @@ planet_event = {
 		}
 		random_country = {
 			limit = { is_country_type = ai_empire }
-			every_controlled_planet = { 
-				#TODO [CD] replace with assigning to purge job
-				#purge = no
-			} # Stop purging any occupied worlds
 			destroy_country = yes # Destroy the Contingency
+			# should end their purges too
 		}
-
+		
 		event_target:final_machine_world_destroyer = { set_country_flag = final_machine_world_destroyed }
 
 		# Cybrex
@@ -1843,8 +1857,8 @@ country_event = {
 	
 	immediate = {
 		FROMFROM = {
-			#TODO [CD] replace with assigning to purge job
-			#purge = no
+			#remove_planet_flag = event_purge
+			# superfluous now
 		}
 	}
 }
@@ -1869,34 +1883,29 @@ planet_event = {
 				owner = { num_ships > 2000 }
 			}
 			planet_event = { id = crisis.2050 days = 300 }
-			break = yes
 		}
 		# If being bombarded, check again later
-		if = {
+		else_if = {
 			limit = { has_orbital_bombardment = yes }
 			planet_event = { id = crisis.2050 days = 300 }
-			break = yes
 		}
 		# Ghost Signal 2
-		if = {
+		else_if = {
 			limit = { has_global_flag = ghost_signal_2_flag }
 			planet_event = { id = crisis.2051 days = 1300 random = 200 }
-			break = yes
 		}
 		# Ghost Signal 3
-		if = {
+		else_if = {
 			limit = { has_global_flag = ghost_signal_3_flag }
 			planet_event = { id = crisis.2051 days = 1400 random = 200 }
-			break = yes
 		}
 		# Ghost Signal 4
-		if = {
+		else_if = {
 			limit = { has_global_flag = ghost_signal_4_flag }
 			planet_event = { id = crisis.2051 days = 1500 random = 200 }
-			break = yes
 		}
 		# Ghost Signal 5
-		if = {
+		else_if = {
 			limit = { has_global_flag = ghost_signal_5_flag }
 			planet_event = { id = crisis.2051 days = 1600 random = 200 }
 			break = yes
@@ -1950,37 +1959,31 @@ planet_event = {
 				}
 			}
 			planet_event = { id = crisis.2052 days = 300 }
-			break = yes
 		}
 		# If being bombarded, check again later
-		if = {
+		else_if = {
 			limit = { has_orbital_bombardment = yes }
 			planet_event = { id = crisis.2052 days = 300 }
-			break = yes
 		}
 		# Ghost Signal 2
-		if = {
+		else_if = {
 			limit = { has_global_flag = ghost_signal_2_flag }
 			planet_event = { id = crisis.2053 days = 1600 random = 200 }
-			break = yes
 		}
 		# Ghost Signal 3
-		if = {
+		else_if = {
 			limit = { has_global_flag = ghost_signal_3_flag }
 			planet_event = { id = crisis.2053 days = 1300 random = 200 }
-			break = yes
 		}
 		# Ghost Signal 4
-		if = {
+		else_if = {
 			limit = { has_global_flag = ghost_signal_4_flag }
 			planet_event = { id = crisis.2053 days = 1000 random = 200 }
-			break = yes
 		}
 		# Ghost Signal 5
-		if = {
+		else_if = {
 			limit = { has_global_flag = ghost_signal_5_flag }
 			planet_event = { id = crisis.2053 days = 700 random = 200 }
-			break = yes
 		}
 	}
 }
@@ -2033,27 +2036,22 @@ planet_event = {
 			if = {
 				limit = { owner = { has_notification_modifier = ghost_signal_5 } }
 				add_modifier = { modifier = "pop_ghost_signal_5" days = -1 }
-				break = yes
 			}
-			if = {
+			else_if = {
 				limit = { owner = { has_notification_modifier = ghost_signal_4 } }
 				add_modifier = { modifier = "pop_ghost_signal_4" days = -1 }
-				break = yes
 			}
-			if = {
+			else_if = {
 				limit = { owner = { has_notification_modifier = ghost_signal_3 } }
 				add_modifier = { modifier = "pop_ghost_signal_3" days = -1 }
-				break = yes
 			}
-			if = {
+			else_if = {
 				limit = { owner = { has_notification_modifier = ghost_signal_2 } }
 				add_modifier = { modifier = "pop_ghost_signal_2" days = -1 }
-				break = yes
 			}
-			if = {
+			else_if = {
 				limit = { owner = { has_notification_modifier = ghost_signal_1 } }
 				add_modifier = { modifier = "pop_ghost_signal_1" days = -1 }
-				break = yes
 			}
 		}
 	}
@@ -2086,27 +2084,22 @@ ship_event = {
 		if = {
 			limit = { owner = { has_notification_modifier = ghost_signal_5 } }
 			add_modifier = { modifier = "ship_ghost_signal_5" days = -1 }
-			break = yes
 		}
-		if = {
+		else_if = {
 			limit = { owner = { has_notification_modifier = ghost_signal_4 } }
 			add_modifier = { modifier = "ship_ghost_signal_4" days = -1 }
-			break = yes
 		}
-		if = {
+		else_if = {
 			limit = { owner = { has_notification_modifier = ghost_signal_3 } }
 			add_modifier = { modifier = "ship_ghost_signal_3" days = -1 }
-			break = yes
 		}
-		if = {
+		else_if = {
 			limit = { owner = { has_notification_modifier = ghost_signal_2 } }
 			add_modifier = { modifier = "ship_ghost_signal_2" days = -1 }
-			break = yes
 		}
-		if = {
+		else_if = {
 			limit = { owner = { has_notification_modifier = ghost_signal_1 } }
 			add_modifier = { modifier = "ship_ghost_signal_1" days = -1 }
-			break = yes
 		}
 	}
 }
@@ -2151,9 +2144,8 @@ ship_event = {
 			remove_modifier = ship_ghost_signal_3
 			remove_modifier = ship_ghost_signal_2
 			remove_modifier = ship_ghost_signal_1
-			break = yes
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_sapient_combat_computer = yes
 				owner = { has_notification_modifier = ghost_signal_5 }
@@ -2164,9 +2156,8 @@ ship_event = {
 			remove_modifier = ship_ghost_signal_3
 			remove_modifier = ship_ghost_signal_2
 			remove_modifier = ship_ghost_signal_1
-			break = yes
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_sapient_combat_computer = yes
 				owner = { has_notification_modifier = ghost_signal_4 }
@@ -2177,9 +2168,8 @@ ship_event = {
 			remove_modifier = ship_ghost_signal_3
 			remove_modifier = ship_ghost_signal_2
 			remove_modifier = ship_ghost_signal_1
-			break = yes
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_sapient_combat_computer = yes
 				owner = { has_notification_modifier = ghost_signal_3 }
@@ -2190,9 +2180,8 @@ ship_event = {
 			remove_modifier = ship_ghost_signal_4
 			remove_modifier = ship_ghost_signal_2
 			remove_modifier = ship_ghost_signal_1
-			break = yes
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_sapient_combat_computer = yes
 				owner = { has_notification_modifier = ghost_signal_2 }
@@ -2203,9 +2192,8 @@ ship_event = {
 			remove_modifier = ship_ghost_signal_4
 			remove_modifier = ship_ghost_signal_3
 			remove_modifier = ship_ghost_signal_1
-			break = yes
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_sapient_combat_computer = yes
 				owner = { has_notification_modifier = ghost_signal_1 }
@@ -2216,7 +2204,6 @@ ship_event = {
 			remove_modifier = ship_ghost_signal_4
 			remove_modifier = ship_ghost_signal_3
 			remove_modifier = ship_ghost_signal_2
-			break = yes
 		}
 	}
 }
@@ -2245,12 +2232,10 @@ planet_event = {
 			if = {
 				limit = { owner = { has_notification_modifier = "ghost_signal_5_machine" } }
 				add_modifier = { modifier = "pop_ghost_signal_5_machine" days = -1 }
-				break = yes
 			}
-			if = {
+			else_if = {
 				limit = { owner = { has_notification_modifier = "ghost_signal_4_machine" } }
 				add_modifier = { modifier = "pop_ghost_signal_4_machine" days = -1 }
-				break = yes
 			}
 		}
 	}
@@ -2944,6 +2929,15 @@ country_event = {
 	show_sound = event_robo
 	
 	is_triggered_only = yes
+
+	trigger = {
+		any_owned_planet = {
+			exists = controller
+			controller = {
+				is_same_value = root
+			}
+		}
+	}
 
 	immediate = {
 		random_owned_planet = {

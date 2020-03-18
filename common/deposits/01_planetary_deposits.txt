@@ -196,7 +196,7 @@ d_geothermal_vent = {
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
 	terraforming_swap_types = {
-		d_geothermal_vent
+		d_tempestous_mountain
 		d_underwater_vent
 	}
 	
@@ -600,6 +600,12 @@ d_rugged_woods = {
 
 	terraforming_swap_types = {
 		d_natural_farmland # gaia
+		d_lichen_fields
+		d_bountiful_plains
+		d_green_hills
+		d_forgiving_tundra
+		d_boggy_fens
+		d_nutritious_mudland
 	}
 	
 	planet_modifier = { 

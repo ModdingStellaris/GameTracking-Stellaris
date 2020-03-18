@@ -6,6 +6,8 @@
 event_purge = {
 	is_capped_by_modifier = no
 	category = purge
+
+	purge = purge_normal
 		
 	possible = {
 		has_pop_flag = event_purge

@@ -2083,7 +2083,7 @@
  01_BREAK_COMMERCIAL_PACT_PROPOSE:0 "L'accord commercial n'est plus aucunement à notre avantage. À compter de ce jour, il est donc nul et non avenu."
  01_BREAK_COMMERCIAL_PACT_ACCEPT:0 "C'est tout à fait malheureux, [From.GetSpeciesNamePlural]. Cela n'aura pour conséquences que de fragiliser les économies de nos deux empires."
  01_FORM_RESEARCH_AGREEMENT_SELECT:0 "Souhaiteriez-vous conclure un accord de recherche avec nous, [From.GetSpeciesNamePlural] ?"
- 01_FORM_RESEARCH_AGREEMENT_PROPOSE:0 "Nous pourrions nous apprendre beaucoup de choses les uns les autres, [From.GetSpeciesNamePlural]. Nous vous proposons de conclure un accord de recherche entre nos empires."
+ 01_FORM_RESEARCH_AGREEMENT_PROPOSE:1 "Nous pourrions nous apprendre beaucoup de choses les uns les autres, [Root.GetSpeciesNamePlural]. Nous vous proposons de conclure une convention de recherche entre nos empires."
  01_FORM_RESEARCH_AGREEMENT_ACCEPT:0 "Très bien. Nous partagerons nos connaissances avec la [From.GetName] en échange des vôtres."
  01_FORM_RESEARCH_AGREEMENT_REFUSE:0 "Non, [From.GetSpeciesNamePlural]. Votre technologie primitive n'a aucun intérêt pour nous."
  01_BREAK_RESEARCH_AGREEMENT_SELECT:0 "Pourquoi donc souhaitez-vous mettre un terme à la coopération entre nos scientifiques ?"

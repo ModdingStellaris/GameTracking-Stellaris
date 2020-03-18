@@ -847,7 +847,6 @@ district_mining_uncapped = {
 	}
 	
 	prerequisites = {
-		tech_mechanized_mining
 	}
 	
 	ai_weight = {

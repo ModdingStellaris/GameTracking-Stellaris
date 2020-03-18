@@ -1,5 +1,5 @@
 ﻿l_simp_chinese:
-
+ 
  ####################################
  # Special Research Projects
  ####################################
@@ -213,7 +213,7 @@
  AVERT_PRIMITIVE_WAR_PROJECT:0 "避免[From.GetName]发生战争"
  AVERT_PRIMITIVE_WAR_PROJECT_DESC:0 "为了隐藏我们在[From.GetName]的渗透项目，[From.Owner.GetSpeciesNamePlural]将面临一场核战争。派驻[From.GetPlanetMoon]的渗透单位要求派遣科研船来平息这场战乱。"
  FALLEN_SHIELD_PROJECT:0 "削弱[From.GetName]的防护"
- FALLEN_SHIELD_PROJECT_DESC:1 "不知为何，某人或某国给[From.GetName]添加了一个防护罩。我们必须解除这个防护罩并探索其中的奥秘！"
+ FALLEN_SHIELD_PROJECT_DESC:0 "不知为何，某人或某国给[From.GetName]添加了一个防护罩。我们必须解除这个防护罩并探索其中的奥秘！"
  BOARD_HYACINTH:0 "登上风信子号"
  BOARD_HYACINTH_DESC:0 "风信子号一直停留在[hyacinth_planet.GetName]上空，结构上毫无损伤。需集结登船单位，探索这艘避难船到底放生了什么事。"
  ABDUCT_SCIENTIST_PROJECT:0 "绑架科学家"
@@ -228,9 +228,9 @@
  CAPTURE_QUEEN_DESC:0 "[queen_system.GetName]星系最近发生了一场太空战，一个普雷索林虫后重伤濒死。此生物仍存一口气，捕获它将是情报界的一场重大胜利。"
  
  ESTABLISH_COMMUNICATIONS:0 "调查[Prev.From.GetName]"
- ESTABLISH_COMMUNICATIONS_DESC:1 "我们需要进一步了解我们将其编码命名为§Y[Prev.From.GetName]§!的神秘外星种群。如果他们也拥有语言，那我们必须对其进行破译并且建立交流。\n\n奖励：£influence §G影响力§!或§S特殊项目§!"
+ ESTABLISH_COMMUNICATIONS_DESC:0 "我们需要进一步了解我们将其编码命名为§Y[Prev.From.GetName]§!的神秘外星种群。如果他们也拥有语言，那我们必须对其进行破译并且建立交流。\n\n奖励：£influence §G影响力§!或§S特殊项目§!"
  INVESTIGATE_SPACE_AMOEBA:0 "$ESTABLISH_COMMUNICATIONS$"
- INVESTIGATE_SPACE_AMOEBA_DESC:1 "$ESTABLISH_COMMUNICATIONS_DESC$"
+ INVESTIGATE_SPACE_AMOEBA_DESC:0 "$ESTABLISH_COMMUNICATIONS_DESC$"
  INVESTIGATE_CRYSTALS:0 "$ESTABLISH_COMMUNICATIONS$"
  INVESTIGATE_CRYSTALS_DESC:0 "$ESTABLISH_COMMUNICATIONS_DESC$"
  INVESTIGATE_DRONES:0 "$ESTABLISH_COMMUNICATIONS$"

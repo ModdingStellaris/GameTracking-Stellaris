@@ -297,6 +297,7 @@ on_planet_attackers_win = {
 		distar.235
 		graygoo.150
 		unrest.171
+		distar.5077
 	}
 }
 
@@ -483,6 +484,8 @@ on_survey = {
 		#story.307
 		anomaly.6660
 		anomaly.6661
+		anomaly.6662
+		anomaly.6663
 		action.12
 		tutorial.50
 		tutorial.55
@@ -1546,6 +1549,7 @@ on_planet_ownerless = {
 on_planet_transfer = {
 	events = {
 		utopia.2657 # make habitats larger
+		mega.205 # nuke invalid ongoing planetary political decisions
 	}
 }
 
@@ -1976,5 +1980,4 @@ on_system_gained = {
 # From = Country (buyer)
 # Fromfrom = Country (seller)
 on_slave_sold_on_market = {
-	# TODO [CD]
 }

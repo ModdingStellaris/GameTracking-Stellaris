@@ -142,7 +142,7 @@ building_private_shipyards = {
 			minerals = 500
 		}	
 		produces = {
-			alloys = 2
+			alloys = 3
 		}		
 		upkeep = {
 			energy = 2
@@ -511,7 +511,7 @@ building_wrecking_yards = {
 			minerals = 500
 		}	
 		produces = {
-			alloys = 2
+			alloys = 3
 		}		
 		upkeep = {
 			energy = 2

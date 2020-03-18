@@ -1538,4 +1538,12 @@ message_type = {
 	ping = "ping_notification_green"
 }
 
+message_type = {
+	key = "TYPE_FINISH_COLONIZE_PLANET"
+	icon = "GFX_message_colonization"
+	icon_frame = 1
 
+	name = "new_colony"
+	sound = "notification"
+	ping = "ping_notification_green"
+}

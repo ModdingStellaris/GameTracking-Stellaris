@@ -174,7 +174,7 @@
  utopia.59.name:0 "Neuralbank"
  utopia.59.desc:0 "$utopia.59.intro$\n\nWie erwartet rennen uns die Freiwilligen nicht gerade die Tür ein. Bisher hat sich nur einer gemeldet - der leitende Wissenschaftler [volunteer_leader.GetName]."
  utopia.59.a:0 "Das Gehirn von [volunteer_leader.GetName] in den Nexus laden."
- utopia.59.a.tooltip:0 "Der Forschungsnexus produziert jetzt zusätzlich §Y5§! £physics£ §Y5§! £society£ §Y5§! £engineering£ ."
+ utopia.59.a.tooltip:1 "Der Forschungsnexus produziert jetzt zusätzlich:\n£physics£ §G50§! £society£ §G50§! £engineering£ §G50§!"
  utopia.59.b:0 "Das wäre unethisch."
  utopia.59.c:0 "Nein, [volunteer_leader.GetName] wird andernorts benötigt."
  utopia.60.name:0 "Neuralbank"

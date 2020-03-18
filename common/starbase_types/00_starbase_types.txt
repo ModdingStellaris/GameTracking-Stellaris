@@ -53,6 +53,7 @@ sshipyard = {
 	ai_design = {
 		min = {
 			base = 1
+			factor = 1
 		}
 		
 		ratio = {
@@ -163,7 +164,8 @@ sanchorage = {
 
 	ai_design = {
 		min = {
-			base = 1
+			base = 0
+			factor = 0
 		}
 		
 		ratio = {
@@ -272,7 +274,8 @@ strading_hub = {
 
 	ai_design = {
 		min = {
-			base = 1
+			base = 0
+			factor = 0
 		}
 		
 		ratio = {
@@ -471,7 +474,8 @@ sfortress = {
 
 	ai_design = {
 		min = {
-			base = 1
+			base = 0
+			factor = 0
 		}
 		
 		ratio = {

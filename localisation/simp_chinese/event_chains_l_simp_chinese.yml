@@ -1,5 +1,5 @@
 ﻿l_simp_chinese:
-
+ 
  ####################################
  # Event Chains
  ####################################
@@ -63,14 +63,14 @@
  coming_storm_chain_desc:0 "据探测，一个神秘的亚空间种群正在靠近我们的星系。看来马上有访客要来了……"
  prethoryn_scourge_chain_title:0 "虚空灾难"
  prethoryn_scourge_chain_desc:0 "我们的星系被一群贪婪的外星生物入侵了，他们意图吞食所有遇到的生命体。必须赶在他们用人海战术碾压我们之前阻止这些普雷索林入侵者。"
- extradimensional_invasion_chain_title:1 "破界者"
+ extradimensional_invasion_chain_title:0 "破界者"
  extradimensional_invasion_chain_desc:0 "我们的银河系之中出现了巨大的空间裂痕，那可能是连接其它次元的通道。奇怪的虚体飞船从中涌出，他们会从路上碰到的一切物体身上吸取能源，直到那不幸的物体失去一切能源为止。"
  star_power_chain_title:0 "不寻常的星球"
  star_power_chain_desc:0 "寻找异常辐射读数。"
  hunting_hyacinth_title:0 "追捕风信子号"
  hunting_hyacinth_desc:0 "方舟将我们祖先带到这个[Root.Capital.GetName]星系，而风信子号则是她的姐妹船。一个世纪以前，从地球出发的风信子号本来是应该跟随我们来到这里的。现在我们必须要搞清楚她到底怎么样了。"
  nomads_observation_chain_title:0 "不寻常的宇航员"
- nomads_observation_chain_desc:1 "侦测到有奇怪的外星人出现在我边境，我们无法与其建立通讯通道。另外因为我们无法翻译他们的语言，目前只能静观其变看他们会采取什么行动。"
+ nomads_observation_chain_desc:0 "侦测到有奇怪的外星人出现在我边境，我们无法与其建立通讯通道。另外因为我们无法翻译他们的语言，目前只能静观其变看他们会采取什么行动。"
  
  ####################################
  # Points of Interest
@@ -78,23 +78,23 @@
  
  hijacked_cult_fleet_poi:0 "异教徒舰队"
  hijacked_cult_fleet_poi_desc:0 "异教徒在[Root.Capital.GetName]的一个秘密工厂组建了一支小型舰队。在我们发现后，他们就携船逃到了[hijacked_fleet_planet.GetName]。必须在他们造成更大破坏之前消灭他们。"
- cultist_search_1_poi:1 "搜寻[cultists_1.GetName]"
+ cultist_search_1_poi:0 "搜寻[cultists_1.GetName]"
  cultist_search_1_poi_desc:0 "我们在这个星系附近探测到了逃窜的异教徒飞船的离子轨迹。最好进行大规模搜查。"
- cultist_search_2_poi:1 "搜寻[cultists_2.GetName]"
- cultist_search_3_poi:1 "搜寻[cultists_3.GetName]"
+ cultist_search_2_poi:0 "搜寻[cultists_2.GetName]"
+ cultist_search_3_poi:0 "搜寻[cultists_3.GetName]"
  cultist_shipyard_poi:0 "摧毁异教徒船坞"
  cultist_shipyard_poi_desc:0 "我们终于找到了异教徒飞船的来源——他们霸占了在[cult_planet.GetStarName]上的远古外星船坞！在这些异教徒发现那里潜藏的真正技术之前，尽快摧毁该太空设施。"
  cultist_flagship_poi:0 "寻找异教徒旗舰"
  cultist_flagship_poi_desc:0 "据说神出鬼没的异教徒旗舰就在这片星系附近游荡。我们必须派遣重火力武装舰队前去对峙。"
- probe_search_1_poi:1 "搜寻[probe_system_1.GetName]"
+ probe_search_1_poi:0 "搜寻[probe_system_1.GetName]"
  probe_search_1_poi_desc:0 "根据脱离的轨道痕迹和离开母星系的时间推测，其中一个遗失的亚光速探测器能够在这片星系内找到。"
- probe_search_2_poi:1 "搜寻[probe_system_2.GetName]"
- probe_search_3_poi:1 "搜寻[probe_system_3.GetName]"
- probe_search_4_poi:1 "搜寻[probe_system_4.GetName]"
+ probe_search_2_poi:0 "搜寻[probe_system_2.GetName]"
+ probe_search_3_poi:0 "搜寻[probe_system_3.GetName]"
+ probe_search_4_poi:0 "搜寻[probe_system_4.GetName]"
  probe_ion_trail_poi:0 "追寻离子轨迹"
  probe_ion_trail_poi_desc:0 "其中一个遗失的亚光速探测器的离子轨迹指向这个星系。"
- probe_subspace_anomaly_poi:2 "被敌人阻止"
- probe_subspace_anomaly_poi_desc:1 "敌对国阻止我们靠近这个星系的亚空间探测器。"
+ probe_subspace_anomaly_poi:0 "被敌人阻止"
+ probe_subspace_anomaly_poi_desc:0 "敌对国阻止我们靠近这个星系的亚空间探测器。"
  coming_storm_poi_1_poi:0 "突破口"
  coming_storm_poi_1_poi_desc:0 "根据现有航线推测，那个亚空间种群会在这些星系附近进入我们的银河系。"
  systems_visited_poi:0 "已访问星系"
@@ -119,20 +119,20 @@
  cybrex_1_poi:0 "赛博·阿尔法"
  cybrex_1_poi_desc:0 "赛博最后似乎撤离到了这个星系。"
  nomad_poi_1:0 "追踪地点"
- nomad_poi_1_desc:1 "可疑的飞行器停留在这个地点了。我们对他们发起的通讯都没有得到回应，所以我们唯有静观其变看看接下来会发生什么事。"
+ nomad_poi_1_desc:0 "可疑的飞行器停留在这个地点了。我们对他们发起的通讯都没有得到回应，所以我们唯有静观其变看看接下来会发生什么事。"
  extradimensional_invasion_4_poi:0 "次元锚"
  extradimensional_invasion_4_poi_desc:0 "入侵者正在建造某种大型空间站，以作“次元锚”之用——有了这些“通道”，便可以增进他们飞船从虫洞中通过的能力。次元锚越多，他们从原次元获得支援的次数就会越多。\n\n这些次元锚似乎还可以有效地增强次元传送门的亚空间强度。只要有次元锚存在，我们的武器就无法对次元传送门造成伤害！"
  extradimensional_invasion_chain_2_title:0 "背道者"
  extradimensional_invasion_chain_2_desc:0 "出现了第二波入侵的高维生物，攻击意愿不逊于之前一波。幸运的是，两支高维生物部队似乎也打起来了。"
  extradimensional_invasion_chain_3_title:0 "狂热者"
  extradimensional_invasion_chain_3_desc:0 "来自另一个虫洞的第三支高维部队出现了。他们也有意吞噬这个星系中的所有生物，但目前已与前两波入侵者陷入了苦战。"
-
+ 
  precursor_activity:0 "先驱者的活动迹象"
  
  new_precursor.1_poi:0 "先驱者的活动报告"
  new_precursor.1_poi_desc:0 "我们得知，在这些坐标点处可能有先驱文明留下的文物或重要信息。"
  new_precursor_anomaly:0 "在§L[precursor_planet.GetName]§!发现了有关先驱的新异常现象。"
-
+ 
  prethoryn_defeated:0 "已击败普雷索林灾祸"
  anchor_station:0 "次元锚"
  anchor_station_plural:0 "次元锚"
@@ -157,9 +157,10 @@
  prethoryn_kills_us:0 "§G普雷索林被我方消灭§!"
  prethoryn_kills_others:0 "§G普雷索林被其他势力消灭§!"
  prethoryn_victims:0 "§R飞船被普雷索林吞食§!"
+ 
  refugees.1.name:0 "[Root.GetSpeciesName]难民抵达"
  refugees.1.desc.1:0 "一小队来自[RefugeeEscapedFrom.GetName]的民用飞船到达了我们的领域，其中载满了[Root.GetSpeciesName]难民。他们被准许在§H[Root.Planet.GetName]§!安家。\n\n这些不幸的流放者被[RefugeeEscapedFrom.GetSpeciesName]帝国强迫赶走出了自己的家园。自那之后，他们便四处流浪，孤注一掷地想要在物资耗尽前找到新的家园。"
  refugees.1.desc.2:0 "一小队来自[RefugeeEscapedFrom.GetName]的破败民用飞船到达了我们的领域，其中载满了[Root.GetSpeciesName]难民。在我们提供了食物和医疗后，这些难民被准许在§H[Root.Planet.GetName]§!安家。\n\n这些狼狈恐慌的难民是逃离[RefugeeEscapedFrom.GetSpeciesName]帝国肃清的幸存者。多亏了一些紧急召集起来的地面下的一伙和同情他们的商船舰长才逃了出来。"
- refugees.1.a:0 "我们欢迎他们。"
- refugees.1.desc.3:0 "一支伤痕累累的民用小舰队搭载着躲避§Y[RefugeeEscapedFrom.GetName]§!的§Y[Root.GetSpeciesNamePlural]§!，刚刚抵达了我们的星系。在我们提供食物与医疗救援之后，避难者们获准在§H[Root.Planet.GetName]§!上安家。\n\n这些衣衫褴褛而且惊慌不已的避难者们正在躲避[RefugeeEscapedFrom.GetSpeciesName]星系内的§H[RefugeeEscapedCrisis.GetName]§!的蹂躏。他们勉强在[RefugeeEscapedCrisis.GetSpeciesAdj]的攻势抵达其母星§H[RefugeeEscapedPlanet.GetName]§!之前仓皇逃了出来，将大部分个人财物都留在了那颗注定要覆灭的星球上。"
  refugees.1.desc.2.b:0 "一支的破败民船舰队，满载着逃离§Y[RefugeeEscapedFrom.GetName]§!的§Y[Root.GetSpeciesNamePlural]§!，已经抵达了我们的境内。在我们提供了食物和医疗后，这些难民被准许在§H[Root.Planet.GetName]§!安家。\n\n这些狼狈恐慌的难民是[RefugeeEscapedFrom.GetSpeciesAdj]无情攻势下的幸存者。多亏他们冒险从星球上一处旧军港里偷了几艘废弃太空船才逃了出来。"
+ refugees.1.desc.3:0 "一支伤痕累累的民用小舰队搭载着躲避§Y[RefugeeEscapedFrom.GetName]§!的§Y[Root.GetSpeciesNamePlural]§!，刚刚抵达了我们的星系。在我们提供食物与医疗救援之后，避难者们获准在§H[Root.Planet.GetName]§!上安家。\n\n这些衣衫褴褛而且惊慌不已的避难者们正在躲避[RefugeeEscapedFrom.GetSpeciesName]星系内的§H[RefugeeEscapedCrisis.GetName]§!的蹂躏。他们勉强在[RefugeeEscapedCrisis.GetSpeciesAdj]的攻势抵达其母星§H[RefugeeEscapedPlanet.GetName]§!之前仓皇逃了出来，将大部分个人财物都留在了那颗注定要覆灭的星球上。"
+ refugees.1.a:0 "我们欢迎他们。"

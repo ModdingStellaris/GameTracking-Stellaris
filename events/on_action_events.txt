@@ -4413,6 +4413,7 @@ country_event = {
 	trigger = {
 		FROM = { is_country_type = primitive }
 		is_country_type = default
+		is_gestalt = no
 	}
 	
 	immediate = {
@@ -7787,6 +7788,7 @@ event = {
 	is_triggered_only = yes
 
 	trigger = {
+		years_passed >= 50
 		NOR = {
 			has_global_flag = galactic_market_founded
 			has_global_flag = ongoing_market_nomination

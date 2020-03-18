@@ -172,3 +172,4 @@
  servitor_morale_5:0 "Moral do Servidor: Abismal +"
  raided:0 "Invadido"
  raided_desc:0 "§LFalhamos em nos proteger contra os Arruinadores.§!"
+ mod_damage_vs_country_type_gate_builders_mult:0 "Danos aos construtores de Portal"

@@ -127,7 +127,7 @@
  utopia.59.name:0 "Banque neuronale"
  utopia.59.desc:0 "$utopia.59.intro$\n\nAussi, comme prévu, les volontaires ne sont guère nombreux. Jusqu'à présent, en fait, un seul s'est présenté : le scientifique [volunteer_leader.GetName]."
  utopia.59.a:0 "Téléchargeons son cerveau dans le centre scientifique"
- utopia.59.a.tooltip:0 "Le centre scientifique va désormais produire §Y5§!£physics£ , §Y5§!£society£ et §Y5§!£engineering£ supplémentaires."
+ utopia.59.a.tooltip:0 "Le centre scientifique va désormais produire §G50§!£physics£, §G50§!£society£ et §G50§!£engineering£ supplémentaires."
  utopia.59.b:0 "Cela serait contraire à l'éthique"
  utopia.59.c:0 "Non, nous avons besoin de [volunteer_leader.GetName] ailleurs"
  utopia.60.name:0 "Banque neuronale"

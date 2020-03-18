@@ -1436,14 +1436,20 @@ country_event = {
 		name = war_in_heaven.16.a	
 		
 		every_country = {
-			limit = { is_country_type = awakened_fallen_empire }
+			limit = {
+				is_country_type = awakened_fallen_empire
+				OR = {
+					is_same_value = event_target:FirstAwakened
+					is_same_value = event_target:SecondAwakened
+				}
+			}
 			root = {
 				declare_war = {
 					target = prev
 					name = "NAME_The_War_in_Heaven"
 					attacker_war_goal = "wg_war_in_heaven"
 				}
-			}	
+			}
 			hidden_effect = {
 				every_subject = {
 					join_war = prev

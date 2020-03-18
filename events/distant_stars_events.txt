@@ -373,6 +373,15 @@ ship_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		from = {
+			if = {
+				limit = { has_deposit_for = shipclass_research_station }
+				clear_deposits = yes
+			}
+		}
+	}
+
 	option = {
 		name = FASCINATING
 		from = {
@@ -394,6 +403,12 @@ ship_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		from = {
+			if = {
+				limit = { has_deposit_for = shipclass_mining_station }
+				clear_deposits = yes
+			}
+		}
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
 
@@ -421,17 +436,17 @@ ship_event = {
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
 
+	#option = {
+	#	trigger = {
+	#		from = { planet_size < 18 }
+	#	}
+	#	name = INTERESTING
+	#	custom_tooltip = distar.25.a.tooltip
+	#}
 	option = {
-		trigger = {
-			from = { planet_size < 18 }
-		}
-		name = INTERESTING
-		custom_tooltip = distar.25.a.tooltip
-	}
-	option = {
-		trigger = {
-			from = { planet_size > 17 }
-		}
+		#trigger = {
+		#	from = { planet_size > 17 }
+		#}
 		name = INTERESTING
 		custom_tooltip = distar.25.b.tooltip
 	}
@@ -3086,10 +3101,24 @@ ship_event = {
 				save_event_target_as = primitive_planet
 			}
 		}
+		from = {
+			if = {
+				limit = { has_deposit_for = shipclass_mining_station }
+				clear_deposits = yes
+			}
+		}
 	}
 
 	option = {
 		name = FASCINATING
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
+		}
 		from = {
 			add_deposit = d_society_3
 			hidden_effect = {
@@ -3183,6 +3212,12 @@ ship_event = {
 
 	immediate = {
 		owner = { country_event = { id = story.1 days = 30 } }
+		from = {
+			if = {
+				limit = { has_deposit_for = shipclass_mining_station }
+				clear_deposits = yes
+			}
+		}
 	}
 
 	option = {
@@ -3435,6 +3470,15 @@ ship_event = { #White Hell
 	
 	is_triggered_only = yes
 
+	immediate = {
+		from = {
+			if = {
+				limit = { has_deposit_for = shipclass_mining_station }
+				clear_deposits = yes
+			}
+		}
+	}
+
 	option = {
 		name = CURIOUS
 		from = {
@@ -3452,6 +3496,15 @@ ship_event = { #Heavy Metal Frost
 	location = from
 	
 	is_triggered_only = yes
+
+	immediate = {
+		from = {
+			if = {
+				limit = { has_deposit_for = shipclass_research_station }
+				clear_deposits = yes
+			}
+		}
+	}
 
 	option = {
 		name = INTERESTING
@@ -5222,6 +5275,15 @@ ship_event = { #Thirsty Rocks
 	
 	is_triggered_only = yes
 
+	immediate = {
+		from = {
+			if = {
+				limit = { has_deposit_for = shipclass_research_station }
+				clear_deposits = yes
+			}
+		}
+	}
+
 	option = {
 		name = INTERESTING
 		from = {
@@ -6281,7 +6343,7 @@ fleet_event = { #Junkheap Ratlings
 			is_country_type = default
 			NOT = { has_country_flag = discovered_ratlings }
 		}
-		NOT = {
+		NOR = {
 			exists = event_target:ratling_pre_space_country
 			exists = event_target:ratling_country
 		}
@@ -6303,10 +6365,7 @@ fleet_event = { #Junkheap Ratlings
 			}
 		}
 		event_target:ratling_capital = {
-			if = {
-				limit = { has_anomaly = no }
-				add_anomaly = DISTAR_RAT_CAT
-			}
+			add_anomaly = DISTAR_RAT_CAT
 		}
 	}
 
@@ -8296,12 +8355,24 @@ ship_event = {
 			IF = {
 				limit = { is_planet_class = pc_shrouded }
 				change_pc = pc_gaia
-				reroll_planet = yes
+				clear_deposits = yes
+				add_deposit = d_active_volcano
+				add_deposit = d_mountain_range
+				add_deposit = d_tempestous_mountain
+				add_deposit = d_underwater_vent
+				add_deposit = d_buzzing_plains
+				add_deposit = d_submerged_ore_veins
+				add_deposit = d_submerged_ore_veins
+				add_deposit = d_lush_jungle
+				add_deposit = d_natural_farmland
+				add_deposit = d_natural_farmland
+				add_deposit = d_alien_pets_deposit
+				add_deposit = d_teeming_reef
 			}
 			ELSE_IF = {
 				limit = { is_planet_class = pc_gaia }
 				change_pc = pc_shrouded
-				reroll_planet = yes
+				clear_deposits = yes
 			}
 		}
 	}
@@ -8455,7 +8526,19 @@ ship_event = { #A country completes the Special Project to Phase-Lock
 				IF = {
 					limit = { NOT = { is_planet_class = pc_gaia } }
 					change_pc = pc_gaia
-					reroll_planet = yes
+					clear_deposits = yes
+					add_deposit = d_active_volcano
+					add_deposit = d_mountain_range
+					add_deposit = d_tempestous_mountain
+					add_deposit = d_underwater_vent
+					add_deposit = d_buzzing_plains
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_lush_jungle
+					add_deposit = d_natural_farmland
+					add_deposit = d_natural_farmland
+					add_deposit = d_alien_pets_deposit
+					add_deposit = d_teeming_reef
 				}
 				remove_planet_flag = phaseshifting_active
 				remove_modifier = phaseshifted
@@ -8666,8 +8749,7 @@ planet_event = { #Recursive Phaseshift
 		IF = {
 			limit = { is_planet_class = pc_gaia }
 			change_pc = pc_shrouded
-			remove_modifier = lush_planet
-			remove_modifier = food_rich_planet
+			clear_deposits = yes
 			IF = {
 				limit = {
 					NOT = { has_modifier = phaseshifted }
@@ -8678,7 +8760,20 @@ planet_event = { #Recursive Phaseshift
 		ELSE_IF = {
 			limit = { is_planet_class = pc_shrouded }
 			change_pc = pc_gaia
-			reroll_planet = yes
+			clear_deposits = yes
+			add_deposit = d_active_volcano
+			add_deposit = d_mountain_range
+			add_deposit = d_tempestous_mountain
+			add_deposit = d_underwater_vent
+			add_deposit = d_buzzing_plains
+			add_deposit = d_submerged_ore_veins
+			add_deposit = d_submerged_ore_veins
+			add_deposit = d_lush_jungle
+			add_deposit = d_natural_farmland
+			add_deposit = d_natural_farmland
+			add_deposit = d_alien_pets_deposit
+			add_deposit = d_teeming_reef
+
 			IF = {
 				limit = {
 					NOT = { has_modifier = phaseshifted }
@@ -8692,7 +8787,7 @@ planet_event = { #Recursive Phaseshift
 		}
 		ELSE = {
 			change_pc = pc_shrouded
-			reroll_planet = yes
+			clear_deposits = yes
 			IF = {
 				limit = {
 					NOT = { has_modifier = phaseshifted }
@@ -9162,7 +9257,13 @@ ship_event = {
 	option = {
 		name = ASTOUNDING
 		from = {
-			add_deposit = d_minerals_4
+			IF = {
+				limit = { habitable_planet = yes }
+				add_deposit = d_nanosands
+			}
+			ELSE = {
+				add_deposit = d_minerals_4
+			}
 		}
 		owner = {
 			add_monthly_resource_mult = {
@@ -9182,11 +9283,17 @@ ship_event = {
 					has_ethic = ethic_fanatic_xenophobe
 					has_ethic = ethic_xenophobe
 				}
-			}
+			} 
 		}
 		name = DISCONCERTING
 		from = {
-			add_deposit = d_minerals_4
+			IF = {
+				limit = { habitable_planet = yes }
+				add_deposit = d_nanosands
+			}
+			ELSE = {
+				add_deposit = d_minerals_4
+			}
 		}
 		owner = {
 			add_monthly_resource_mult = {
@@ -10228,8 +10335,8 @@ country_event = {
 				name = random
 				authority = random
 				civics = {
-					civic = civic_landed_nobility
-					civic = civic_flat_world_theory
+					civic = civic_secret_of_fire
+					civic = civic_the_wheel
 				}
 				species = last_created
 				ethos = random
@@ -10252,9 +10359,10 @@ country_event = {
 				}
 				type = primitive
 				effect = {
-					set_country_flag = iron_age 
-					set_primitive_age = iron_age
+					set_country_flag = stone_age
+					set_primitive_age = stone_age
 					save_event_target_as = mardak_vol_country
+					set_graphical_culture = preindustrial_01
 					species = {
 						save_global_event_target_as = mardak_vol_species
 					}
@@ -10263,14 +10371,18 @@ country_event = {
 
 			set_owner = last_created_country
 			set_capital = yes
+			every_deposit = {
+				limit = { is_deposit_type = d_dangerous_wildlife_blocker }
+				clear_blocker = yes
+			}
 			while = {
-				count = 8
+				count = 4
 				create_pop = {
 					species = last_created
 				}					
 			}
-			add_building = building_primitive_dwellings
-			add_building = building_stone_palace
+			add_building = building_crude_huts
+			add_building = building_crude_huts
 		}
 		establish_communications_no_message = event_target:mardak_vol_country
 		if = {
@@ -12771,7 +12883,6 @@ ship_event = {
 		name = FASCINATING
 		from = {
 			add_deposit = d_dangerous_wildlife_blocker
-			add_deposit = d_dangerous_wildlife_blocker
  			add_deposit = d_savage_wildlands
 			add_modifier = {
 				modifier = dangerous_wildlife
@@ -13519,7 +13630,7 @@ planet_event = {
 
 # when clear_auto_move_on_arrival is set to no the fleet will return to planet even if its orbit is interrupted until it is given another auto_move order.
 
-# ON arrival to its new target Enigmatic Cache "scans the planet"
+# ON arrival to its new target the Enigmatic Cache "scans the planet"
 country_event = {
 	id = distar.5054
 	hide_window = yes
@@ -13553,8 +13664,8 @@ country_event = {
 			}
 		}
 		# Sets new location for cache
-		country_event = { id = distar.5052 days = 30 }
-		#country_event = { id = distar.5052 days = 3600 }
+		country_event = { id = distar.5052 days = 3600 }
+		#country_event = { id = distar.5052 days = 30 }
 	}
 }
 
@@ -13657,7 +13768,16 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_global_flag = cache_returned }
+		NOT = { 
+			has_global_flag = cache_returned
+			any_owned_ship = {
+				has_ship_flag = enigmatic_cache_ship
+				exists = orbit
+				orbit = {
+					owner = { is_researching_special_project = ENIGMATIC_CACHE_PROJECT }
+				}
+			}
+		}
 	}
 
 	immediate = {
@@ -13954,6 +14074,7 @@ ship_event = {
 	}
 
 	immediate = {
+		From.owner = { save_event_target_as = cache_killers }
 		solar_system = {
 			save_event_target_as = cache_current_location
 		}
@@ -13979,6 +14100,7 @@ ship_event = {
 					}
 					remove_modifier = enigmatic_cache_in_orbit_phobe
 				}
+				# Aborts enigmatic research project
 				if = {
 					limit = {
 						owner = {
@@ -13989,12 +14111,12 @@ ship_event = {
 				}
 			}
 		}
-		# If in the process of uplifting an empire
+		# Alerts Players with active Uplifting Project
 		if = {
 			limit = {
 				any_playable_country = {
 					is_researching_special_project = ENIGMATIC_UPLIFTING
-					#NOT = { is_same_value = FROM } # Aggressor is not country that is being uplifted
+					NOT = { is_same_value = FROM } # Aggressor is not country that is being uplifted
 				}
 			}
 			random_playable_country = {
@@ -14003,6 +14125,20 @@ ship_event = {
 				}
 				country_event = { id = distar.5070 days = 20 }
 			}
+		}
+		# Removes Inactive Enigmatic Uplift Project
+		if = {
+			limit = {
+				any_playable_country = {
+					has_special_project = ENIGMATIC_UPLIFTING
+				}
+			}
+			random_playable_country = {
+				limit = { has_special_project = ENIGMATIC_UPLIFTING }
+				abort_special_project = { type = ENIGMATIC_UPLIFTING }
+			}
+			delete_ship = this
+			break = yes # If the cache is interrupted while uplifting it will never come back.
 		}
 			
 		# Finds another country to scan
@@ -14145,7 +14281,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-	# Shouldn't trigger if the enigmatic cache country already has an anigmatic cache in rotation
+	# Shouldn't trigger if the enigmatic cache country already has an enigmatic cache in rotation
 		NOT = {
 			any_owned_ship = {
 				has_ship_flag = enigmatic_cache_ship
@@ -14318,7 +14454,7 @@ event = {
 		}
 	}
 	immediate = {
-	# Attempts to find a player empire with no other inferior empires
+	# Attempts to find a player empire with no other technologically inferior empires
 		if = {
 			limit = {
 				any_playable_country = {
@@ -14483,9 +14619,6 @@ country_event = {
 			country_event = { id = distar.5062 }
 			set_country_flag = caches_choice_notified
 		}
-		#from = {
-		#	remove_fleet_flag = cache_returning
-		#}
 	}
 }
 
@@ -14664,7 +14797,7 @@ country_event = {
 		}
 	}
 }
-# Cache Breaks
+# Cache breaks
 country_event = {
 	id = distar.5071
 	title = "distar.5071.name"
@@ -15122,7 +15255,7 @@ country_event = {
 	}
 }
 
-# Cache Destroyed
+# Cache attacked during uplift
 country_event = {
 	id = distar.5070
 	title = "distar.5070.name"
@@ -15229,6 +15362,72 @@ country_event = {
 			}
 		}
 		}
+	}
+}
+
+# Aborts enigmatic uplift if capital is lost
+country_event = {
+	id = distar.5077
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		fromfrom = {
+			solar_system = {
+				any_ship_in_system = {
+					fleet = {
+						exists = owner
+						owner = { is_same_value = event_target:enigmatic_cache_country }
+						exists = orbit
+						orbit = { 
+							is_same_value = fromfrom
+							owner = {
+								has_special_project = ENIGMATIC_UPLIFTING
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			abort_special_project = { type = ENIGMATIC_UPLIFTING }
+			country_event = { id = distar.5078 days = 10 }
+		}
+		if = {
+			limit = {
+				exists = event_target:enigmatic_cache_ship
+			}
+			event_target:enigmatic_cache_ship = {
+				create_ambient_object = {
+					location = this
+					type = horror_spawn_object
+				}
+				set_disabled = yes
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = distar.5078
+	title = "distar.5078.name"
+	desc = "distar.5078.desc"
+	picture = GFX_evt_enigmatic_cache
+	show_sound = event_ship_bridge
+	location = root.capital_scope
+	trackable = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = distar.5078.a
 	}
 }
 
@@ -16747,9 +16946,49 @@ ship_event = {
 		name = distar.3040.a
 		custom_tooltip = distar.3040.a.tooltip
 		hidden_effect = {
-			ship_event = { id = distar.3041 days = 1 }
+			owner.capital_scope = {
+				if = {
+					limit = {
+						closest_system = {
+							limit = {
+								has_natural_wormhole = no
+								is_surveyed = { who = root.owner status = yes }
+							}
+							min_steps = 2
+							max_steps = 8
+							#exists = this
+						}
+						closest_system = {
+							limit = {
+								has_natural_wormhole = no
+							}
+							min_steps = 15
+							max_steps = 50
+							#exists = this
+						}
+					}
+					closest_system = {
+						limit = {
+							has_natural_wormhole = no
+							is_surveyed = { who = root.owner status = yes }
+						}
+						min_steps = 2
+						max_steps = 8
+						save_event_target_as = system_one
+					}
+					closest_system = {
+						limit = {
+							has_natural_wormhole = no
+						}
+						min_steps = 15
+						max_steps = 50
+						save_event_target_as = system_two
+					}
+					root.owner = { country_event = { id = distar.3042 days = 1 } }
+				}
+				else = { root = { ship_event = { id = distar.3041 days = 1 } } }
+			}
 		}
-		
 	}
 
 	option = { # Take it apart.
@@ -16781,74 +17020,6 @@ ship_event = {
 	location = fromfrom
 	
 	is_triggered_only = yes
-
-	immediate = {
-		fromfrom = {
-			if = {
-				limit = {
-					closest_system = {
-						limit = {
-							has_natural_wormhole = no
-							is_surveyed = { who = root.owner status = no }
-							has_owner = no
-						}
-						min_steps = 2
-						max_steps = 8
-						#exists = this
-					}
-					closest_system = {
-						limit = {
-							has_natural_wormhole = no
-							is_surveyed = { who = root.owner status = no }
-							has_owner = no
-						}
-						min_steps = 15
-						max_steps = 50
-						#exists = this
-					}
-				}
-				closest_system = {
-					limit = {
-						has_natural_wormhole = no
-						is_surveyed = { who = root.owner status = no }
-						has_owner = no
-					}
-					min_steps = 2
-					max_steps = 8
-					save_event_target_as = system_one
-				}
-				closest_system = {
-					limit = {
-						has_natural_wormhole = no
-						is_surveyed = { who = root.owner status = no }
-						has_owner = no
-					}
-					min_steps = 15
-					max_steps = 50
-					save_event_target_as = system_two
-				}
-				event_target:system_one = {
-					event_target:system_two = {
-						prev = {
-							spawn_natural_wormhole = {
-								bypass_type = wormhole
-								random_pos = yes
-								orbit_angle = 360
-							}
-						}
-						spawn_natural_wormhole = {
-							bypass_type = wormhole
-							random_pos = yes
-							orbit_angle = 360
-						}
-						link_wormholes = prev
-					}
-				}
-				root.owner = { country_event = { id = distar.3042 days = 10 } }
-			}
-			#else nothin
-		}
-	}
 
 	option = { # How strange. Take it apart.
 		name = distar.3041.a
@@ -16892,8 +17063,59 @@ country_event = { # Spike in energy readings from a nearby solar system observed
 	
 	is_triggered_only = yes
 
-	option = {
-		name = INTRIGUING
+	trigger = {
+		exists = event_target:system_one
+	}
+
+	immediate = {
+		event_target:system_one = {
+			event_target:system_two = {
+				prev = {
+					spawn_natural_wormhole = {
+						bypass_type = wormhole
+						random_pos = yes
+						orbit_angle = 360
+					}
+				}
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = yes
+					orbit_angle = 360
+				}
+				link_wormholes = prev
+			}
+		}
+	}
+
+	option = { # How strange. Take it apart.
+		name = distar.3041.a
+		custom_tooltip = distar.3040.b.tooltip
+		leader = { add_experience = 800 }
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier4researchreward
+				min = @tier4researchmin
+				max = @tier4researchmax
+			}
+			add_monthly_resource_mult = {
+				resource = minerals
+				value = @tier1materialreward
+				min = @tier1materialmin
+				max = @tier1materialmax
+			}
+		}
+	}
+
+	option = { # Intriguing. Research it further.
+		name = distar.3041.b
+		custom_tooltip = distar.3041.b.tooltip
+		leader = { add_experience = 800 }
+		hidden_effect = {
+			event_target:asteroid_target = {
+				add_deposit = d_physics_7
+			}
+		}
 	}
 }
 

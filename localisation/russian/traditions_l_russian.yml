@@ -28,7 +28,7 @@
  TRADITION_GROUP_CLICK_DESC:0 "§GЩелкните, чтобы принять эту группу традиций.§!"
  TRADITION_COST_NEXT:0 "Следующая традиция"
  TRADITION_COST_MULT_NUM_TR:0 "Традиции ($COUNT|Y$): $VALUE|Y$"
- TRADITION_COST_MULT_EMPIRE_SIZE:0 "Размер империи ($COUNT|Y$): $VALUE|%$"
+ TRADITION_COST_MULT_EMPIRE_SIZE:0 "$EMPIRE_SIZE$ ($COUNT|Y$): $VALUE|%$"
  TRADITION_COST_MULT_NUM_GROUPS:0 "Категории принятых традиций ($COUNT|Y$): $VALUE$"
  pop_xenos:0 "Инопланетные поселения"
  pop_xeno_slaves:0 "Поселения инопланетных рабов"
@@ -67,7 +67,7 @@
  
  tr_expansion_a_new_life:0 "Новая жизнь"
  tr_expansion_a_new_life_desc:0 "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! увеличена на §G10%§!."
- tr_expansion_a_new_life_delayed:0 "Новая жизнь ожидает наших граждан в космических колониях. Это шанс начать все заново в золотой земле возможностей и приключений! Благодаря активной рекламной кампании менее благополучные элементы нашего общества будут толпами спешить на колониальные корабли."
+ tr_expansion_a_new_life_delayed:0 "Новая жизнь ждет наших граждан в космических колониях. Это шанс начать все заново в золотой земле возможностей и приключений! Благодаря активной рекламной кампании менее благополучные элементы нашего общества ринутся на колониальные корабли."
  tr_expansion_a_new_life_machine:0 "Протоколы быстрого подключения"
  tr_expansion_a_new_life_machine_desc:0 "£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! увеличена на §G+10%§!."
  tr_expansion_a_new_life_machine_delayed:0 "Процесс сбора новых поселений можно ускорить, загрузив инструкции по эксплуатации, пока их шасси все еще собирается."
@@ -208,7 +208,7 @@
  #tr_purity_appropriation_desc:0 "§Y$MOD_POP_RESETTLEMENT_COST_MULT$§! reduced by §G50%§!."
  #tr_purity_appropriation_delayed:0 "Land that is not being worked contributes nothing to our empire. Workers must be relocated in an efficient manner to those planets where they are needed most."
  #tr_purity_finish:0 "Purity Traditions Finished"
- #tr_purity_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_purity_adopt$ will increase  £unity£ §Y$country_base_unity_produces_mult$§! by §G+10%§!."
+ #tr_purity_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_purity_adopt$ will increase £unity£ §Y$country_base_unity_produces_mult$§! by §G+10%§!."
  
  ################################################################
  # HARMONY
@@ -417,7 +417,7 @@
  tr_adaptability_dietary_enrichment_delayed:0 "Питательную ценность веществ, собираемых нами для наших поселений, можно повысить с помощью различных добавок, что позволит нам накормить больше ртов меньшим количеством пищи."
  
  tr_adaptability_survival_fittest:0 "Выживание сильнейших"
- tr_adaptability_survival_fittest_desc:0 "§Y$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$§! снижен на §G25§!, а §Y$MOD_ARMY_DEFENSE_DAMAGE_MULT$§! увеличен на §G25§!."
+ tr_adaptability_survival_fittest_desc:0 "§Y$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$§! снижен на §G25%§!, а §Y$MOD_ARMY_DEFENSE_DAMAGE_MULT$§! увеличен на §G25%§!."
  tr_adaptability_survival_fittest_delayed:0 "Вступив в контакт с другими расами, мы усвоили, насколько в действительности важно преодолевать свои слабости в великой борьбе за выживание."
  
  tr_adaptability_environmental_diversification:0 "Экологическая дифференциация"
@@ -518,7 +518,7 @@
  
  tr_discovery_faith_in_science:0 "Вера в науку"
  tr_discovery_faith_in_science_desc:0 "£pop£ Поселения, трудящиеся на ниве §Yисследований§!, получают снижение §Yстоимости содержания§! на §G20%§!."
- #tr_discovery_faith_in_science_desc:0 "For every §Y20§!  £pop£ Pops, our planets will have §Y1§! £job_researcher£ §Y$job_researcher$ Job§!."
+ #tr_discovery_faith_in_science_desc:0 "For every §Y20§! £pop£ Pops, our planets will have §Y1§! £job_researcher£ §Y$job_researcher$ Job§!."
  tr_discovery_faith_in_science_delayed:0 "Народ стал воспринимать науку как нечто очень близкое к религии, и его вера в нее абсолютна. В этой вселенной нет таких серьезных вопросов, на которые нельзя ответить при помощи науки."
  tr_discovery_faith_in_science_machine:0 "Снижение времени ожидания связи"
  tr_discovery_faith_in_science_machine_desc:0 "Наши планеты получат §Y1§! деятельность категории £job_calculator£ §Y$job_calculator$§! на §Y20§! £pop£ поселений."

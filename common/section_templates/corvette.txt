@@ -83,14 +83,7 @@ ship_section_template = {
 	aux_utility_slots = 1
 	
 	ai_weight = {
-		modifier = {
-			factor = 10.0
-			NOT = { is_preferred_weapons = weapon_type_explosive }
-		}
-		modifier = {
-			factor = 0.1
-			is_preferred_weapons = weapon_type_explosive
-		}		
+		factor = 2		
 	}
 	
 	resources = {
@@ -119,14 +112,6 @@ ship_section_template = {
 				has_ai_personality = evangelising_zealots
 				has_ai_personality = hive_mind
 			}
-		}
-		modifier = {
-			factor = 10.0
-			NOT = { is_preferred_weapons = weapon_type_explosive }
-		}
-		modifier = {
-			factor = 0.1
-			is_preferred_weapons = weapon_type_explosive
 		}	
 	}
 	
