@@ -38,8 +38,8 @@ edicts = {
 }
 
 rare_edicts = {
-	parent = edicts
 	use_for_ai_budget = yes
+	parent = edicts
 	generate_mult_modifiers = {
 		cost
 	}
@@ -51,6 +51,7 @@ ship_edicts = {
 }
 
 campaigns = {
+	use_for_ai_budget = yes
 	parent = edicts
 	generate_mult_modifiers = {
 		cost

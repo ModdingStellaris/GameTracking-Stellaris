@@ -220,7 +220,7 @@ districts_work_minerals = {
 				is_at_war = no
 			}
 		}
-		else_if = {
+		ELSE_IF = {
 			limit = { 
 				years_passed < 80 
 				owner = { ai_colonize_plans = 0 }
@@ -363,7 +363,7 @@ jobs_work_minerals = {
 				is_at_war = no
 			}
 		}
-		else_if = {
+		ELSE_IF = {
 			limit = { 
 				years_passed < 80 
 				owner = { ai_colonize_plans = 0 }

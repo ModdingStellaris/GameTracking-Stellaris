@@ -16,6 +16,7 @@ fleet_event = {
 	title = "ancrel.9000.name"
 	desc = "ancrel.9000.desc"
 	picture = GFX_evt_ancient_alien_temple
+	show_sound = event_collapsing_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -67,6 +68,7 @@ fleet_event = {
 	title = "ancrel.9010.name"
 	desc = "ancrel.9010.desc"
 	picture = GFX_evt_asteroid_approaching_planet
+	show_sound = event_screams
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -98,6 +100,7 @@ fleet_event = {
 	title = "ancrel.9015.name"
 	desc = "ancrel.9015.desc"
 	picture = GFX_evt_nuclear_explosion
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -129,6 +132,7 @@ fleet_event = {
 	title = "ancrel.9020.name"
 	desc = "ancrel.9020.desc"
 	picture = GFX_evt_atmospheric_entry
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -157,6 +161,7 @@ fleet_event = {
 	title = "ancrel.9025.name"
 	desc = "ancrel.9025.desc"
 	picture = GFX_evt_ship_in_orbit
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -181,6 +186,7 @@ fleet_event = {
 	title = "ancrel.9030.name"
 	desc = "ancrel.9030.desc"
 	picture = GFX_evt_tomb_world
+	show_sound = event_drilling
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -205,6 +211,7 @@ fleet_event = {
 	title = "ancrel.9035.name"
 	desc = "ancrel.9035.desc"
 	picture = GFX_evt_warm_barren
+	show_sound = event_collapsing_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -229,6 +236,7 @@ fleet_event = {
 	title = "ancrel.9040.name"
 	desc = "ancrel.9040.desc"
 	picture = GFX_evt_mining_operations
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -262,6 +270,7 @@ fleet_event = {
 	title = "ancrel.9045.name"
 	desc = "ancrel.9045.desc"
 	picture = GFX_evt_landing_ship
+	show_sound = event_dig_site
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -286,6 +295,7 @@ fleet_event = {
 	title = "ancrel.9050.name"
 	desc = "ancrel.9050.desc"
 	picture = GFX_evt_clocks
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -337,6 +347,7 @@ fleet_event = {
 	title = "ancrel.9055.name"
 	desc = "ancrel.9055.desc"
 	picture = GFX_evt_sapient_AI
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -368,6 +379,7 @@ fleet_event = {
 	title = "ancrel.9060.name"
 	desc = "ancrel.9060.desc"
 	picture = GFX_evt_asteroid_field
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -394,6 +406,7 @@ fleet_event = {
 	title = "ancrel.9065.name"
 	desc = "ancrel.9065.desc"
 	picture = GFX_evt_unity_symbol
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -427,6 +440,7 @@ fleet_event = {
 	title = "ancrel.9070.name"
 	desc = "ancrel.9070.desc"
 	picture = GFX_evt_big_landing_ship
+	show_sound = event_drilling
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -451,6 +465,7 @@ fleet_event = {
 	title = "ancrel.9075.name"
 	desc = "ancrel.9075.desc"
 	picture = GFX_evt_gray_goo
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -502,6 +517,7 @@ fleet_event = {
 	title = "ancrel.9080.name"
 	desc = "ancrel.9080.desc"
 	picture = GFX_evt_nuclear_explosion
+	show_sound = event_metal_fatigue
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -533,6 +549,7 @@ fleet_event = {
 	title = "ancrel.9085.name"
 	desc = "ancrel.9085.desc"
 	picture = GFX_evt_in_the_dark
+	show_sound = event_metal_fatigue
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -559,6 +576,7 @@ fleet_event = {
 	title = "ancrel.9090.name"
 	desc = "ancrel.9090.desc"
 	picture = GFX_evt_space_monster
+	show_sound = event_dangerous_animals
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -592,6 +610,7 @@ fleet_event = {
 	title = "ancrel.9095.name"
 	desc = "ancrel.9095.desc"
 	picture = GFX_evt_cold_barren
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -616,6 +635,7 @@ fleet_event = {
 	title = "ancrel.9100.name"
 	desc = "ancrel.9100.desc"
 	picture = GFX_evt_ruined_system
+	show_sound = event_metal_fatigue
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -667,6 +687,7 @@ fleet_event = {
 	title = "ancrel.9105.name"
 	desc = "ancrel.9105.desc"
 	picture = GFX_evt_strategic_resources
+	show_sound = event_metal_fatigue
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -698,6 +719,7 @@ fleet_event = {
 	title = "ancrel.9110.name"
 	desc = "ancrel.9110.desc"
 	picture = GFX_evt_surreal_visions
+	show_sound = event_machinery
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -724,6 +746,7 @@ fleet_event = {
 	title = "ancrel.9115.name"
 	desc = "ancrel.9115.desc"
 	picture = GFX_evt_gray_goo
+	show_sound = event_drilling
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -757,6 +780,7 @@ fleet_event = {
 	title = "ancrel.9120.name"
 	desc = "ancrel.9120.desc"
 	picture = GFX_evt_underground_civilization
+	show_sound = event_collapsing_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -781,6 +805,7 @@ fleet_event = {
 	title = "ancrel.9125.name"
 	desc = "ancrel.9125.desc"
 	picture = GFX_evt_in_the_dark
+	show_sound = event_dig_site
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -832,6 +857,7 @@ fleet_event = {
 	title = "ancrel.9130.name"
 	desc = "ancrel.9130.desc"
 	picture = GFX_evt_unity_symbol
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -863,6 +889,7 @@ fleet_event = {
 	title = "ancrel.9135.name"
 	desc = "ancrel.9135.desc"
 	picture = GFX_evt_exploding_ship
+	show_sound = event_metal_fatigue
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -894,6 +921,7 @@ fleet_event = {
 	title = "ancrel.9140.name"
 	desc = "ancrel.9140.desc"
 	picture = GFX_evt_warm_barren
+	show_sound = event_collapsing_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -927,6 +955,7 @@ fleet_event = {
 	title = "ancrel.9145.name"
 	desc = "ancrel.9145.desc"
 	picture = GFX_evt_arid
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -978,6 +1007,7 @@ fleet_event = {
 	title = "ancrel.9150.name"
 	desc = "ancrel.9150.desc"
 	picture = GFX_evt_unspeakable_horror
+	show_sound = event_dangerous_animals
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1009,6 +1039,7 @@ fleet_event = {
 	title = "ancrel.9155.name"
 	desc = "ancrel.9155.desc"
 	picture = GFX_evt_desert
+	show_sound = event_drilling
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1035,6 +1066,7 @@ fleet_event = {
 	title = "ancrel.9160.name"
 	desc = "ancrel.9160.desc"
 	picture = GFX_evt_frozen
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1068,6 +1100,7 @@ fleet_event = {
 	title = "ancrel.9165.name"
 	desc = "ancrel.9165.desc"
 	picture = GFX_evt_alien_city
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1092,6 +1125,7 @@ fleet_event = {
 	title = "ancrel.9170.name"
 	desc = "ancrel.9170.desc"
 	picture = GFX_evt_derelict_interior
+	show_sound = event_big_door_opening
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1116,6 +1150,7 @@ fleet_event = {
 	title = "ancrel.9175.name"
 	desc = "ancrel.9175.desc"
 	picture = GFX_evt_molten
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1167,7 +1202,8 @@ fleet_event = {
 	title = "ancrel.9177.name"
 	desc = "ancrel.9177.desc"
 	picture = GFX_evt_star_chart
-	
+	show_sound = event_finding_loot
+
 	archaeology = yes
 	is_triggered_only = yes
 	
@@ -1198,6 +1234,7 @@ fleet_event = {
 	title = "ancrel.9180.name"
 	desc = "ancrel.9180.desc"
 	picture = GFX_evt_ship_offloading_cargo
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1224,6 +1261,7 @@ fleet_event = {
 	title = "ancrel.9185.name"
 	desc = "ancrel.9185.desc"
 	picture = GFX_evt_psionics
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1257,6 +1295,7 @@ fleet_event = {
 	title = "ancrel.9190.name"
 	desc = "ancrel.9190.desc"
 	picture = GFX_evt_alien_city
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1281,6 +1320,7 @@ fleet_event = {
 	title = "ancrel.9195.name"
 	desc = "ancrel.9195.desc"
 	picture = GFX_evt_cold_barren
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1332,6 +1372,7 @@ fleet_event = {
 	title = "ancrel.9200.name"
 	desc = "ancrel.9200.desc"
 	picture = GFX_evt_dead_city
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1363,6 +1404,7 @@ fleet_event = {
 	title = "ancrel.9205.name"
 	desc = "ancrel.9205.desc"
 	picture = GFX_evt_shrouded
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1394,6 +1436,7 @@ fleet_event = {
 	title = "ancrel.9210.name"
 	desc = "ancrel.9210.desc"
 	picture = GFX_evt_animal_wildlife
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1427,6 +1470,7 @@ fleet_event = {
 	title = "ancrel.9215.name"
 	desc = "ancrel.9215.desc"
 	picture = GFX_evt_dead_city
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1451,6 +1495,7 @@ fleet_event = {
 	title = "ancrel.9220.name"
 	desc = "ancrel.9220.desc"
 	picture = GFX_evt_derelict_interior
+	show_sound = event_big_door_opening
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1502,6 +1547,7 @@ fleet_event = {
 	title = "ancrel.9225.name"
 	desc = "ancrel.9225.desc"
 	picture = GFX_evt_clones
+	show_sound = event_screams
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1533,6 +1579,7 @@ fleet_event = {
 	title = "ancrel.9230.name"
 	desc = "ancrel.9230.desc"
 	picture = GFX_evt_molten
+	show_sound = event_screams
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1564,6 +1611,7 @@ fleet_event = {
 	title = "ancrel.9235.name"
 	desc = "ancrel.9235.desc"
 	picture = GFX_evt_cold_barren
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1597,6 +1645,7 @@ fleet_event = {
 	title = "ancrel.9240.name"
 	desc = "ancrel.9240.desc"
 	picture = GFX_evt_dead_city
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1621,6 +1670,7 @@ fleet_event = {
 	title = "ancrel.9245.name"
 	desc = "ancrel.9245.desc"
 	picture = GFX_evt_alien_ruins
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1645,6 +1695,7 @@ fleet_event = {
 	title = "ancrel.9250.name"
 	desc = "ancrel.9250.desc"
 	picture = GFX_evt_unity_symbol
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1696,6 +1747,7 @@ fleet_event = {
 	title = "ancrel.9255.name"
 	desc = "ancrel.9255.desc"
 	picture = GFX_evt_atmospheric_entry
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1727,6 +1779,7 @@ fleet_event = {
 	title = "ancrel.9260.name"
 	desc = "ancrel.9260.desc"
 	picture = GFX_evt_burning_settlement
+	show_sound = event_screams
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1758,6 +1811,7 @@ fleet_event = {
 	title = "ancrel.9265.name"
 	desc = "ancrel.9265.desc"
 	picture = GFX_evt_animal_wildlife
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1791,6 +1845,7 @@ fleet_event = {
 	title = "ancrel.9270.name"
 	desc = "ancrel.9270.desc"
 	picture = GFX_evt_dead_city
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1815,6 +1870,7 @@ fleet_event = {
 	title = "ancrel.9275.name"
 	desc = "ancrel.9275.desc"
 	picture = GFX_evt_unspeakable_horror
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1839,6 +1895,7 @@ fleet_event = {
 	title = "ancrel.9280.name"
 	desc = "ancrel.9280.desc"
 	picture = GFX_evt_alien_ruins
+	show_sound = event_machinery
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1863,6 +1920,7 @@ fleet_event = {
 	title = "ancrel.9285.name"
 	desc = "ancrel.9285.desc"
 	picture = GFX_evt_alien_propaganda
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1887,6 +1945,7 @@ fleet_event = {
 	title = "ancrel.9290.name"
 	desc = "ancrel.9290.desc"
 	picture = GFX_evt_alien_cavemen
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1938,6 +1997,7 @@ fleet_event = {
 	title = "ancrel.9295.name"
 	desc = "ancrel.9295.desc"
 	picture = GFX_evt_relic_shipyard
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1963,6 +2023,7 @@ fleet_event = {
 	title = "ancrel.9300.name"
 	desc = "ancrel.9300.desc"
 	picture = GFX_evt_relic_shipyard
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -1988,6 +2049,7 @@ fleet_event = {
 	title = "ancrel.9305.name"
 	desc = "ancrel.9305.desc"
 	picture = GFX_evt_relic_shipyard
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2015,6 +2077,7 @@ fleet_event = {
 	title = "ancrel.9310.name"
 	desc = "ancrel.9310.desc"
 	picture = GFX_evt_ocean
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2039,6 +2102,7 @@ fleet_event = {
 	title = "ancrel.9315.name"
 	desc = "ancrel.9315.desc"
 	picture = GFX_evt_continental
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2090,6 +2154,7 @@ fleet_event = {
 	title = "ancrel.9320.name"
 	desc = "ancrel.9320.desc"
 	picture = GFX_evt_ocean
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2121,6 +2186,7 @@ fleet_event = {
 	title = "ancrel.9325.name" 
 	desc = "ancrel.9325.desc"
 	picture = GFX_evt_ocean
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2152,6 +2218,7 @@ fleet_event = {
 	title = "ancrel.9330.name"
 	desc = "ancrel.9330.desc"
 	picture = GFX_evt_ocean
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2185,6 +2252,7 @@ fleet_event = {
 	title = "ancrel.9335.name"
 	desc = "ancrel.9335.desc"
 	picture = GFX_evt_ocean
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2209,6 +2277,7 @@ fleet_event = {
 	title = "ancrel.9340.name"
 	desc = "ancrel.9340.desc"
 	picture = GFX_evt_continental
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2260,6 +2329,7 @@ fleet_event = {
 	title = "ancrel.9345.name"
 	desc = "ancrel.9345.desc"
 	picture = GFX_evt_ocean
+	show_sound = event_metal_fatigue
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2291,6 +2361,7 @@ fleet_event = {
 	title = "ancrel.9350.name" 
 	desc = "ancrel.9350.desc"
 	picture = GFX_evt_ocean
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2322,6 +2393,7 @@ fleet_event = {
 	title = "ancrel.9355.name"
 	desc = "ancrel.9355.desc"
 	picture = GFX_evt_glitchy_matrix
+	show_sound = event_power_down
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2354,7 +2426,8 @@ fleet_event = {
 	id = ancrel.9360
 	title = "ancrel.9360.name"
 	desc = "ancrel.9360.desc"
-	picture = GFX_evt_ocean
+	picture = GFX_evt_landing_ship
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2379,6 +2452,7 @@ fleet_event = {
 	title = "ancrel.9365.name"
 	desc = "ancrel.9365.desc"
 	picture = GFX_evt_continental
+	show_sound = event_wind_ruins
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2430,6 +2504,7 @@ fleet_event = {
 	title = "ancrel.9370.name"
 	desc = "ancrel.9370.desc"
 	picture = GFX_evt_arctic
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2456,6 +2531,7 @@ fleet_event = {
 	title = "ancrel.9375.name" 
 	desc = "ancrel.9375.desc"
 	picture = GFX_evt_microscopic_life
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2487,6 +2563,7 @@ fleet_event = {
 	title = "ancrel.9380.name"
 	desc = "ancrel.9380.desc"
 	picture = GFX_evt_ocean
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2520,6 +2597,7 @@ fleet_event = {
 	title = "ancrel.9385.name"
 	desc = "ancrel.9385.desc"
 	picture = GFX_evt_asteroid_field
+	show_sound = event_big_door_opening
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2571,6 +2649,7 @@ fleet_event = {
 	title = "ancrel.9390.name"
 	desc = "ancrel.9390.desc"
 	picture = GFX_evt_ancient_records
+	show_sound = event_whispering
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2602,6 +2681,7 @@ fleet_event = {
 	title = "ancrel.9395.name"
 	desc = "ancrel.9395.desc"
 	picture = GFX_evt_resource_cache
+	show_sound = event_finding_loot
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2628,6 +2708,7 @@ fleet_event = {
 	title = "ancrel.9400.name"
 	desc = "ancrel.9400.desc"
 	picture = GFX_evt_asteroid_approaching_planet
+	show_sound = event_power_down
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2661,6 +2742,7 @@ fleet_event = {
 	title = "ancrel.9405.name"
 	desc = "ancrel.9405.desc"
 	picture = GFX_evt_molten
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2685,6 +2767,7 @@ fleet_event = {
 	title = "ancrel.9410.name"
 	desc = "ancrel.9410.desc"
 	picture = GFX_evt_star_yellow
+	show_sound = event_bad_omen
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2736,6 +2819,7 @@ fleet_event = {
 	title = "ancrel.9415.name"
 	desc = "ancrel.9415.desc"
 	picture = GFX_evt_star_neutron
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2767,6 +2851,7 @@ fleet_event = {
 	title = "ancrel.9420.name" 
 	desc = "ancrel.9420.desc"
 	picture = GFX_evt_planet_beam
+	show_sound = event_energy_field
 	
 	archaeology = yes
 	is_triggered_only = yes
@@ -2798,6 +2883,7 @@ fleet_event = {
 	title = "ancrel.9425.name"
 	desc = "ancrel.9425.desc"
 	picture = GFX_evt_gray_gooed_planet
+	show_sound = event_power_down
 	
 	archaeology = yes
 	is_triggered_only = yes

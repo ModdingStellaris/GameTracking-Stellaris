@@ -11321,9 +11321,6 @@ ship_event = {
 			save_event_target_as = star_lifting_leader
 		}
 		save_event_target_as = star_lifting_ship
-		from = {
-			clear_deposits = yes
-		}
 	}
 
 	option = {
@@ -11719,7 +11716,6 @@ ship_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		from = { clear_deposits = yes }
 		owner = {
 			country_event = { id = story.5 days = 30 }
 			set_country_flag = atomic_clock
@@ -12189,9 +12185,17 @@ ship_event = {
 						min_distance >= 10
 						max_distance <= 100
 					}
+					star = {
+						NOR = {
+							has_deposit_for = shipclass_research_station
+							has_deposit_for = shipclass_mining_station
+						}
+					}
 				}
 				save_event_target_as = anomalous_star_system
-				star = { save_global_event_target_as = anomalous_star }
+				star = {
+					save_global_event_target_as = anomalous_star 
+				}
 			}
 		}
 		enable_special_project = {
@@ -12219,7 +12223,6 @@ country_event = {
 
 	immediate = {
 		event_target:anomalous_star = {
-			clear_deposits = yes
 			surveyed = {
  				set_surveyed = yes
    				surveyor = root
@@ -12723,9 +12726,6 @@ ship_event = {
 
 	immediate = {
 		owner = { country_event = { id = story.5 days = 30 } } 
-		From = {
-			clear_deposits = yes
-		}
 	}
 
 	option = {
@@ -13012,12 +13012,6 @@ ship_event = {
 	location = from
 	
 	is_triggered_only = yes
-
-	immediate = {
-		from = {
-			clear_deposits = yes
-		}
-	}
 
 	option = {
 		name = FASCINATING

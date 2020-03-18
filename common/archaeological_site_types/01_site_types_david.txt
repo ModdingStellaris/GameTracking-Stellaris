@@ -17,6 +17,7 @@
 #zroni discovery
 zroni_digsite_1 = {
 	desc = zroni_digsite_1_desc
+	picture = GFX_evt_overgrown_city
 	stages = 3
 	max_instances = 1
 	allow = {
@@ -24,6 +25,7 @@ zroni_digsite_1 = {
 		exists = leader
 	}
 	visible = {
+		has_country_flag = zroni_intro
 		default_site_visible_trigger = yes
 	}
 	
@@ -53,6 +55,7 @@ zroni_digsite_1 = {
 #zroni minor colony 1
 zroni_digsite_2 = {
 	desc = zroni_digsite_2_desc
+	picture = GFX_evt_overgrown_city
 	stages = 2
 	max_instances = 1
 	allow = {
@@ -60,6 +63,7 @@ zroni_digsite_2 = {
 		exists = leader
 	}
 	visible = {
+		has_country_flag = zroni_intro
 		default_site_visible_trigger = yes
 	}
 	
@@ -84,6 +88,7 @@ zroni_digsite_2 = {
 #zroni minor colony 2
 zroni_digsite_3 = {
 	desc = zroni_digsite_3_desc
+	picture = GFX_evt_overgrown_city
 	stages = 2
 	max_instances = 1
 	allow = {
@@ -91,6 +96,7 @@ zroni_digsite_3 = {
 		exists = leader
 	}
 	visible = {
+		has_country_flag = zroni_intro
 		default_site_visible_trigger = yes
 	}
 	
@@ -115,6 +121,7 @@ zroni_digsite_3 = {
 #zroni minor colony 3
 zroni_digsite_4 = {
 	desc = zroni_digsite_4_desc
+	picture = GFX_evt_baol_2
 	stages = 2
 	max_instances = 1
 	allow = {
@@ -122,6 +129,7 @@ zroni_digsite_4 = {
 		exists = leader
 	}
 	visible = {
+		has_country_flag = zroni_intro
 		default_site_visible_trigger = yes
 	}
 	
@@ -146,6 +154,7 @@ zroni_digsite_4 = {
 #zroni major colony
 zroni_digsite_5 = {
 	desc = zroni_digsite_5_desc
+	picture = GFX_evt_baol_2
 	stages = 3
 	max_instances = 1
 	allow = {
@@ -153,6 +162,7 @@ zroni_digsite_5 = {
 		exists = leader
 	}
 	visible = {
+		has_country_flag = zroni_intro
 		default_site_visible_trigger = yes
 	}
 	
@@ -182,6 +192,7 @@ zroni_digsite_5 = {
 #zroni homeworld
 zroni_digsite_6 = {
 	desc = zroni_digsite_6_desc
+	picture = GFX_evt_shrouded_planet
 	stages = 5
 	max_instances = 1
 	allow = {
@@ -189,6 +200,7 @@ zroni_digsite_6 = {
 		exists = leader
 	}
 	visible = {
+		has_country_flag = zroni_intro
 		default_site_visible_trigger = yes
 	}
 	
@@ -229,6 +241,7 @@ zroni_digsite_6 = {
 #Omnirelic
 omnirelic_site = {
 	desc = cool_relic_world_site_desc
+	picture = GFX_evt_relic_world
 	stages = 4
 	max_instances = 1
 	allow = {
@@ -275,6 +288,7 @@ omnirelic_site = {
 #Asteroid Vault
 asteroid_vault_1 = {
 	desc = asteroid_vault_1_desc
+	picture = GFX_evt_asteroid_field
 	stages = 2
 	max_instances = 1
 	allow = {
@@ -318,6 +332,7 @@ asteroid_vault_1 = {
 #It was aliens!
 it_was_aliens_site = {
 	desc = it_was_aliens_site_desc
+	picture = GFX_evt_dead_city
 	stages = 3
 	max_instances = 1
 	allow = {
@@ -364,6 +379,7 @@ it_was_aliens_site = {
 #Ancient battle site
 ancient_battle_site = {
 	desc = ancient_battle_site_desc
+	picture = GFX_evt_landing_ship
 	stages = 2
 	max_instances = 1
 	allow = {

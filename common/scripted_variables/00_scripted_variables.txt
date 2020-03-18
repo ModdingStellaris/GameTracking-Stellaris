@@ -4,6 +4,11 @@
 
 @discovery_weight = 3
 
+# Edict and Campaign weights
+@EdictHighPrio = 100
+@EdictMedPrio = 10
+@EdictLowPrio = 3
+
 ### EVENT REWARDS
 
 @tier1materialreward = 6

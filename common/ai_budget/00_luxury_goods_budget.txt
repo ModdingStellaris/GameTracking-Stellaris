@@ -18,20 +18,6 @@ consumer_goods_expenditure_buffer = { # Buffer, will not be spent
 	}	
 }
 
-#consumer_goods_expenditure_colonies = {
-#	resource = consumer_goods
-#	type = expenditure
-#	category = colonies
-	
-#	potential = {
-#		always = yes
-#	}
-	
-#	fraction = {
-#		weight = 0.3
-#	}	
-#}
-
 consumer_goods_expenditure_colonies_expand = {
 	resource = consumer_goods 
 	type = expenditure
@@ -48,7 +34,11 @@ consumer_goods_expenditure_colonies_expand = {
 	}
 	
 	fraction = {
-		weight = 1.2
+		weight = 0.5
+	}
+
+	static_min = {
+		base = 200
 	}
 
 	static_max = {

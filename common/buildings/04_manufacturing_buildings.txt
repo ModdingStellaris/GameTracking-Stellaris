@@ -11,7 +11,21 @@ building_foundry_1 = {
 		NOT = { has_modifier = slave_colony }
 	}
 	allow = {
-		buildings_simple_allow = yes
+		OR = {
+			buildings_simple_allow = yes
+			is_capital = yes
+			NOR = {
+				has_building = building_foundry_1
+				has_building = building_foundry_2
+				has_building = building_foundry_3
+			}
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 30
+				}
+			}
+		}
 	}
 	
 	destroy_trigger = {

@@ -2017,6 +2017,28 @@ country_event = {
 #}
 #
 ## Start
+planet_event = {
+	id = tutorial.9000
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			is_tutorial_level = 2
+			num_sectors < 2
+			NOT = { 
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		is_in_frontier_space = yes		
+	}
+	
+	immediate = {
+		owner = { country_event = { id = tutorial.44 } }
+	}
+	
+	
+}
 country_event = {
 	id = tutorial.44
 	title = tutorial.44.name
@@ -2034,15 +2056,12 @@ country_event = {
  			has_ethic = ethic_gestalt_consciousness
  		}
 		any_owned_planet = {
-			is_infrontier_space = yes		
+			is_in_frontier_space = yes		
 		}
 	}
 	
 	immediate = {
-		#begin_event_chain = {
-		#	event_chain = "tutorial_17_chain"
-		#	target = ROOT
-		#}
+		set_country_flag = tut44_triggered
 	}
 	
 	option = {

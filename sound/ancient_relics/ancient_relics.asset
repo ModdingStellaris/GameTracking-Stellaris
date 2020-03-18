@@ -167,7 +167,7 @@ sound =
     name = "sfx_world_relic_amb_loop"
     file = "sfx_world_relic_amb_loop.wav"
     always_load = no    
-    volume = 0.5
+    volume = 0.15
 }
 
 
@@ -180,14 +180,14 @@ sound =
 {
 	name = "sfx_archeology_event_bad_omen_01"
 	file = "sfx_archeology_event_bad_omen_01.wav"
-	volume = 1
+	volume = 0.4
 }
 
 sound =
 {
 	name = "sfx_archeology_event_bad_omen_02"
 	file = "sfx_archeology_event_bad_omen_02.wav"
-	volume = 1
+	volume = 0.4
 }
 
 sound =
@@ -215,287 +215,287 @@ sound =
 {
     name = "sfx_archeology_event_collapsing_ruins_01"
     file = "sfx_archeology_event_collapsing_ruins_01.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_collapsing_ruins_02"
     file = "sfx_archeology_event_collapsing_ruins_02.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_dig_site"
     file = "sfx_archeology_event_dig_site.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_trap_laser_01"
     file = "sfx_archeology_event_trap_laser_01.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_trap_laser_02"
     file = "sfx_archeology_event_trap_laser_02.wav"
-    volume = 1
+    volume = 0.6
 }
 	
 sound = 
 	{
 	    name = "sfx_archeology_event_trap_laser_03"
 	    file = "sfx_archeology_event_trap_laser_03.wav"
-	    volume = 1
+	    volume = 0.6
 	}
 
 sound = 
 {
     name = "sfx_archeology_event_trap_spikes_01"
     file = "sfx_archeology_event_trap_spikes_01.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_archeology_event_trap_spikes_02"
     file = "sfx_archeology_event_trap_spikes_02.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_archeology_event_trap_spikes_03"
     file = "sfx_archeology_event_trap_spikes_03.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_archeology_event_dangerous_animals_01"
     file = "sfx_archeology_event_dangerous_animals_01.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_archeology_event_dangerous_animals_02"
     file = "sfx_archeology_event_dangerous_animals_02.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_archeology_event_dangerous_animals_03"
     file = "sfx_archeology_event_dangerous_animals_03.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_archeology_event_door_opening_01"
     file = "sfx_archeology_event_door_opening_01.wav"
-    volume = 1
+    volume = 0.8
 }
 
 sound = 
 {
     name = "sfx_archeology_event_door_opening_02"
     file = "sfx_archeology_event_door_opening_02.wav"
-    volume = 1
+    volume = 0.8
 }
 
 sound = 
 {
     name = "sfx_archeology_event_door_opening_03"
     file = "sfx_archeology_event_door_opening_03.wav"
-    volume = 1
+    volume = 0.8
 }
 
 sound = 
 {
     name = "sfx_archeology_event_drilling_01"
     file = "sfx_archeology_event_drilling_01.wav"
-    volume = 1
+    volume = 0.8
 }
 
 sound = 
 {
     name = "sfx_archeology_event_energy_field_01"
     file = "sfx_archeology_event_energy_field_01.wav"
-    volume = 1
+    volume = 0.3
 }
 
 sound = 
 {
     name = "sfx_archeology_event_energy_field_02"
     file = "sfx_archeology_event_energy_field_02.wav"
-    volume = 1
+    volume = 0.3
 }
 
 sound = 
 {
     name = "sfx_archeology_event_energy_field_03"
     file = "sfx_archeology_event_energy_field_03.wav"
-    volume = 1
+    volume = 0.3
 }
 
 sound = 
 {
     name = "sfx_archeology_event_finding_loot_01"
     file = "sfx_archeology_event_finding_loot_01.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_finding_loot_02"
     file = "sfx_archeology_event_finding_loot_02.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_finding_loot_03"
     file = "sfx_archeology_event_finding_loot_03.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_machinery_01"
     file = "sfx_archeology_event_machinery_01.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_machinery_02"
     file = "sfx_archeology_event_machinery_02.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_metal_fatigue_01"
     file = "sfx_archeology_event_metal_fatigue_01.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_metal_fatigue_02"
     file = "sfx_archeology_event_metal_fatigue_02.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_metal_fatigue_03"
     file = "sfx_archeology_event_metal_fatigue_03.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_power_down_01"
     file = "sfx_archeology_event_power_down_01.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_archeology_event_power_down_02"
     file = "sfx_archeology_event_power_down_02.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_archeology_event_power_down_03"
     file = "sfx_archeology_event_power_down_03.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_archeology_event_screams_01"
     file = "sfx_archeology_event_screams_01.wav"
-    volume = 1
+    volume = 0.45
 }
 
 sound = 
 {
     name = "sfx_archeology_event_screams_02"
     file = "sfx_archeology_event_screams_02.wav"
-    volume = 1
+    volume = 0.45
 }
 
 sound = 
 {
     name = "sfx_archeology_event_trap_arrows_01"
     file = "sfx_archeology_event_trap_arrows_01.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_archeology_event_trap_arrows_02"
     file = "sfx_archeology_event_trap_arrows_02.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_archeology_event_whispering_01"
     file = "sfx_archeology_event_whispering_01.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_whispering_02"
     file = "sfx_archeology_event_whispering_02.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_whispering_03"
     file = "sfx_archeology_event_whispering_03.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_archeology_event_wind_ruins_01"
     file = "sfx_archeology_event_wind_ruins_01.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_archeology_event_wind_ruins_02"
     file = "sfx_archeology_event_wind_ruins_02.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_archeology_event_wind_ruins_03"
     file = "sfx_archeology_event_wind_ruins_03.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_precursor_event_baol_organism_animation"
     file = "sfx_precursor_event_baol_organism_animation.wav"
-    volume = 1
+    volume = 0.5
 }
 
 ########## DIG SITE LOG 
@@ -560,7 +560,7 @@ sound =
 {
     name = "sfx_relic_activation_cybrex_war_forge"
     file = "sfx_relic_activation_cybrex_war_forge.wav"  
-    volume = 1
+    volume = 0.7
 }
 
 
@@ -568,14 +568,14 @@ sound =
 {
     name = "sfx_relic_activation_ether_drake_trophy"
     file = "sfx_relic_activation_ether_drake_trophy.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_relic_activation_extradimensional_warlock"
     file = "sfx_relic_activation_extradimensional_warlock.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
@@ -589,105 +589,105 @@ sound =
 {
     name = "sfx_relic_activation_head_of_zarqlan"
     file = "sfx_relic_activation_head_of_zarqlan.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_relic_activation_intact_zro_soulstone"
     file = "sfx_relic_activation_intact_zro_soulstone.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_relic_activation_isolated_contingency_core"
     file = "sfx_relic_activation_isolated_contingency_core.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_relic_activation_javorian_pox_sample"
     file = "sfx_relic_activation_javorian_pox_sample.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_relic_activation_khans_throne"
     file = "sfx_relic_activation_khans_throne.wav"
-    volume = 1
+    volume = 0.7
 }
 
 sound = 
 {
     name = "sfx_relic_activation_miniature_galaxy"
     file = "sfx_relic_activation_miniature_galaxy.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_relic_activation_prethoryn_blood_queen"
     file = "sfx_relic_activation_prethoryn_blood_queen.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_relic_activation_scales_of_the_worm"
     file = "sfx_relic_activation_scales_of_the_worm.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_relic_activation_the_galatron"
     file = "sfx_relic_activation_the_galatron.wav"
-    volume = 1
+    volume = 0.8
 }
 
 sound = 
 {
     name = "sfx_relic_activation_the_last_baol"
     file = "sfx_relic_activation_the_last_baol.wav"
-    volume = 1
+    volume = 0.65
 }
 
 sound = 
 {
     name = "sfx_relic_activation_the_omnicodex"
     file = "sfx_relic_activation_the_omnicodex.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_relic_activation_the_rubricator"
     file = "sfx_relic_activation_the_rubricator.wav"
-    volume = 1
+    volume = 0.6
 }
 
 sound = 
 {
     name = "sfx_relic_activation_the_surveyor"
     file = "sfx_relic_activation_the_surveyor.wav"
-    volume = 1
+    volume = 0.55
 }
 
 sound = 
 {
     name = "sfx_relic_activation_vultaum_real_perforator"
     file = "sfx_relic_activation_vultaum_real_perforator.wav"
-    volume = 1
+    volume = 0.5
 }
 
 sound = 
 {
     name = "sfx_relic_activation_yuht_cryo_core"
     file = "sfx_relic_activation_yuht_cryo_core.wav"
-    volume = 1
+    volume = 0.7
 }
 
 

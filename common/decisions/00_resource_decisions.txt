@@ -30,7 +30,13 @@ decision_planet_food_boost = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 5
+
+		# don't encourage growth if there is no free housing
+		modifier = {
+			factor = 0
+			free_housing < 1
+		}
 	}
 }
 

@@ -6,7 +6,7 @@ ship_event = {
 	desc = "ancrel.1.desc"
 	picture = GFX_evt_overgrown_city
 	location = from
-	show_sound = event_default
+	show_sound = event_wind_ruins
 
 	fire_only_once = yes
 	
@@ -59,7 +59,7 @@ fleet_event = {
 	title = "ancrel.1.name"
 	desc = ancrel.2.desc
 	picture = GFX_evt_overgrown_city
-	show_sound = event_default
+	show_sound = event_wind_ruins
 	location = from
 
 	archaeology = yes
@@ -75,7 +75,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.3.desc
 	picture = GFX_evt_baol_2
-	show_sound = event_default
+	show_sound = event_whispering
 	location = from
 
 	archaeology = yes
@@ -91,7 +91,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.4.desc
 	picture = GFX_evt_zro_1
-	show_sound = event_default
+	show_sound = event_energy_field
 	location = from
 
 	archaeology = yes
@@ -128,6 +128,7 @@ fleet_event = {
 					NOT = { exists = archaeological_site }
 				}
 				create_archaeological_site = zroni_digsite_2
+				add_deposit = d_zro_deposit_3
 			}
 		}
 	}
@@ -142,7 +143,7 @@ fleet_event = {
 	title = "ancrel.1.name"
 	desc = ancrel.5.desc
 	picture = GFX_evt_overgrown_city
-	show_sound = event_default
+	show_sound = event_wind_ruins
 	location = from
 
 	archaeology = yes
@@ -158,7 +159,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.6.desc
 	picture = GFX_evt_zro_2
-	show_sound = event_default
+	show_sound = event_finding_loot
 	location = from
 
 	archaeology = yes
@@ -195,6 +196,7 @@ fleet_event = {
 					NOT = { exists = archaeological_site }
 				}
 				create_archaeological_site = zroni_digsite_3
+				add_deposit = d_zro_deposit_3
 			}
 		}
 	}
@@ -209,7 +211,7 @@ fleet_event = {
 	title = zroni_digsite_2
 	desc = ancrel.7.desc
 	picture = GFX_evt_zro_3
-	show_sound = event_default
+	show_sound = event_whispering
 	location = from
 
 	archaeology = yes
@@ -225,7 +227,7 @@ fleet_event = {
 	title = zroni_digsite_2
 	desc = ancrel.8.desc
 	picture = GFX_evt_zro_3
-	show_sound = event_default
+	show_sound = event_finding_loot
 	location = from
 
 	archaeology = yes
@@ -262,6 +264,7 @@ fleet_event = {
 					NOT = { exists = archaeological_site }
 				}
 				create_archaeological_site = zroni_digsite_4
+				add_deposit = d_zro_deposit_3
 			}
 		}
 	}
@@ -276,7 +279,7 @@ fleet_event = {
 	title = zroni_digsite_2
 	desc = ancrel.9.desc
 	picture = GFX_evt_baol_2
-	show_sound = event_default
+	show_sound = event_whispering
 	location = from
 
 	archaeology = yes
@@ -292,7 +295,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.10.desc
 	picture = GFX_evt_synth_sabotage
-	show_sound = event_default
+	show_sound = event_energy_field
 	location = from
 
 	archaeology = yes
@@ -329,6 +332,7 @@ fleet_event = {
 					NOT = { exists = archaeological_site }
 				}
 				create_archaeological_site = zroni_digsite_5
+				add_deposit = d_zro_deposit_4
 			}
 		}
 	}
@@ -343,7 +347,7 @@ fleet_event = {
 	title = zroni_digsite_5
 	desc = ancrel.11.desc
 	picture = GFX_evt_dead_city
-	show_sound = event_default
+	show_sound = event_whispering
 	location = from
 
 	archaeology = yes
@@ -359,7 +363,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.12.desc
 	picture = GFX_evt_zro_3
-	show_sound = event_default
+	show_sound = event_bad_omen
 	location = from
 
 	archaeology = yes
@@ -375,7 +379,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.13.desc
 	picture = GFX_evt_zro_4
-	show_sound = event_default
+	show_sound = event_finding_loot
 	location = from
 
 	archaeology = yes
@@ -419,7 +423,7 @@ fleet_event = {
 	title = zroni_digsite_6
 	desc = ancrel.15.desc
 	picture = GFX_evt_archaeological_dig
-	show_sound = event_default
+	show_sound = event_whispering
 	location = from
 
 	archaeology = yes
@@ -435,7 +439,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.16.desc
 	picture = GFX_evt_zro_3
-	show_sound = event_default
+	show_sound = event_bad_omen
 	location = from
 
 	archaeology = yes
@@ -451,7 +455,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.17.desc
 	picture = GFX_evt_zro_3
-	show_sound = event_default
+	show_sound = event_whispering
 	location = from
 
 	archaeology = yes
@@ -467,7 +471,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.18.desc
 	picture = GFX_evt_zro_5
-	show_sound = event_default
+	show_sound = event_screams
 	location = from
 
 	archaeology = yes
@@ -483,7 +487,7 @@ fleet_event = {
 	title = "ancrel.3.name"
 	desc = ancrel.19.desc
 	picture = GFX_evt_baol_2
-	show_sound = event_default
+	show_sound = event_finding_loot
 	location = from
 
 	archaeology = yes
@@ -505,7 +509,7 @@ fleet_event = {
 	title = "ancrel.21.name"
 	desc = ancrel.21.desc
 	picture = GFX_evt_relic_world
-	show_sound = event_default
+	show_sound = event_wind_ruins
 	location = from
 
 	archaeology = yes
@@ -522,7 +526,7 @@ fleet_event = {
 	title = "ancrel.21.name"
 	desc = ancrel.22.desc
 	picture = GFX_evt_relic_world
-	show_sound = event_default
+	show_sound = event_wind_ruins
 	location = from
 
 	archaeology = yes
@@ -539,7 +543,7 @@ fleet_event = {
 	title = "ancrel.21.name"
 	desc = ancrel.23.desc
 	picture = GFX_evt_laser_grid
-	show_sound = event_default
+	show_sound = event_bad_omen
 	location = from
 
 	archaeology = yes
@@ -556,7 +560,7 @@ fleet_event = {
 	title = "ancrel.21.name"
 	desc = ancrel.24.desc
 	picture = GFX_evt_archaeological_dig
-	show_sound = event_default
+	show_sound = event_finding_loot
 	location = from
 
 	archaeology = yes
@@ -579,7 +583,7 @@ fleet_event = { #Open the Vault
 	title = "ancrel.102.name"
 	desc = ancrel.102.desc
 	picture = GFX_evt_asteroid_field
-	show_sound = event_default
+	show_sound = event_metal_fatigue
 	location = from
 
 	archaeology = yes
@@ -595,7 +599,7 @@ fleet_event = { #Contents revealed
 	title = "ancrel.103.name"
 	desc = ancrel.103.desc
 	picture = GFX_evt_treasure_pile
-	show_sound = event_default
+	show_sound = event_door_opening
 	location = from
 
 	archaeology = yes
@@ -679,7 +683,7 @@ fleet_event = {
 	title = "ancrel.104.name"
 	desc = ancrel.104.desc
 	picture = GFX_evt_relic_world_street
-	show_sound = event_default
+	show_sound = event_wind_ruins
 	location = from
 
 	archaeology = yes
@@ -695,7 +699,7 @@ fleet_event = {
 	title = "ancrel.105.name"
 	desc = ancrel.105.desc
 	picture = GFX_evt_derelict_interior
-	show_sound = event_default
+	show_sound = event_whispering
 	location = from
 
 	archaeology = yes
@@ -711,7 +715,7 @@ fleet_event = {
 	title = "ancrel.106.name"
 	desc = ancrel.106.desc
 	picture = GFX_evt_nuclear_explosion
-	show_sound = event_default
+	show_sound = event_screams
 	location = from
 
 	archaeology = yes
@@ -777,7 +781,7 @@ ship_event = { #
 		}
 	}
 	picture = GFX_evt_ship_in_orbit
-	show_sound = event_default
+	show_sound = event_finding_loot
 	location = from
 
 	immediate = {
@@ -860,8 +864,8 @@ fleet_event = { #Ancient battle
 	id = ancrel.108
 	title = "ancrel.108.name"
 	desc = ancrel.108.desc
+	show_sound = event_dig_site
 	picture = GFX_evt_habitable_dig_site
-	show_sound = event_default
 	location = from
 
 	archaeology = yes
@@ -877,7 +881,7 @@ fleet_event = { #Contents revealed
 	title = "ancrel.109.name"
 	desc = ancrel.109.desc
 	picture = GFX_evt_ground_combat
-	show_sound = event_default
+	show_sound = event_drilling
 	location = from
 
 	archaeology = yes
@@ -887,7 +891,7 @@ fleet_event = { #Contents revealed
 	option = {
 		name = EXCELLENT
 		owner = {
-			random_list = {
+			locked_random_list = {
 				10 = {
 					add_random_research_option = {
 						add_progress = 0.99

@@ -166,6 +166,17 @@ district_generator = {
 	
 	ai_weight = {
 		weight = 250000
+		modifier = {
+			factor = 1.5
+
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < -1
+				}
+			}
+		}
 	}
 
 	ai_resource_production = {
@@ -528,11 +539,24 @@ district_farming = {
 	ai_weight = {
 		weight = 250000
 		modifier = {
+			factor = 1.5
+
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < -1
+				}
+			}
+		}
+		modifier = {
 			factor = 0.5
+
+			exists = owner
 			owner = { 
 				has_monthly_income = {
 					resource = food
-					value > 100
+					value > 50
 				}
 			}
 		}

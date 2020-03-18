@@ -239,6 +239,7 @@ Zrocursor_system = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			create_archaeological_site = zroni_digsite_6
+			add_deposit = d_zro_deposit_5
 		}
 	}
 	

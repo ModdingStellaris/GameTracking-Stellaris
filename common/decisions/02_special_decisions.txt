@@ -322,7 +322,7 @@ decision_mastery_of_nature = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 5
 		modifier = {
 			factor = 0
 			free_district_slots > 0

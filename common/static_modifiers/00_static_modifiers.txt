@@ -447,9 +447,6 @@ titanic_life = {
 }
 
 eat_the_titans = {
-	#TODO [CD]
-	#add a special titan hunter job here
-	#planet_resource_food_add = 20
 	district_farming_max = 8
 	planet_jobs_food_produces_mult = 0.3
 	

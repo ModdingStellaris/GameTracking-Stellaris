@@ -1171,7 +1171,18 @@ ast_debris_field_1_cat_2 = {
 			}
 			anomaly_event = distar.1050
 		}
-		1 = distar.2000
+		1 = {
+			modifier = {
+				factor = 0
+				from = {
+					OR = {
+						has_deposit_for = shipclass_research_station
+						has_deposit_for = shipclass_mining_station
+					}
+				}
+			}
+			anomaly_event = distar.2000
+		}
 	}
 }
 
@@ -1184,6 +1195,10 @@ atomic_clock_cat = {
 	spawn_chance = {
 		modifier = {
 			add = 3
+			NOR = {
+				has_deposit_for = shipclass_research_station
+				has_deposit_for = shipclass_mining_station
+			}
 			solar_system = {
 				any_system_planet = {
 					OR = {
@@ -1379,6 +1394,15 @@ tomb_world_cat = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				from = {
+					OR = {
+						has_deposit_for = shipclass_research_station
+						has_deposit_for = shipclass_mining_station
+					}
+				}
+			}
 			anomaly_event = distar.2015
 		}
 	}
@@ -1411,6 +1435,10 @@ moon_cat = {
 			has_distar = yes
 			is_moon = yes
 			habitable_planet = no
+			NOR = {
+				has_deposit_for = shipclass_research_station
+				has_deposit_for = shipclass_mining_station
+			}
 			solar_system = {
 				any_system_planet = {
 					habitable_planet = yes

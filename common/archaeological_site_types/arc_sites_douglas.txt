@@ -9,6 +9,7 @@
 # Moon Bump
 site_moon_bump = {
 	desc = "site_moon_bump_intro"
+	picture = GFX_evt_relic_world_street
 	stages = 2
 	weight = {
 		base = 0
@@ -52,6 +53,7 @@ site_moon_bump = {
 # The Appeal of Giant Space Worms
 site_echoes_inside = {
 	desc = "site_echoes_inside_intro"
+	picture = GFX_evt_arid
 	stages = 4
 	weight = {
 		base = 0
@@ -107,6 +109,7 @@ site_echoes_inside = {
 # The Puzzle Box - A.k.a. Target From Orbit
 site_target_from_orbit = {
 	desc = "site_target_from_orbit_intro"
+	picture = GFX_evt_ship_in_orbit
 	stages = 3
 	weight = {
 		base = 0
@@ -158,6 +161,7 @@ site_target_from_orbit = {
 # Shot into the Ground
 site_shot_into_the_ground = {
 	desc = "site_shot_into_the_ground_intro"
+	picture = GFX_evt_big_landing_ship
 	stages = 3
 	weight = {
 		base = 0
@@ -209,6 +213,7 @@ site_shot_into_the_ground = {
 # Cut to Fit
 site_cut_to_fit = {
 	desc = "site_cut_to_fit_intro"
+	picture = GFX_evt_ship_in_orbit
 	stages = 3
 	weight = {
 		base = 0
@@ -260,6 +265,7 @@ site_cut_to_fit = {
 # Déjà Vu Dig
 site_deja_vu_dig = {
 	desc = "site_deja_vu_dig_intro"
+	picture = GFX_evt_archaeology_camp
 	stages = 3
 	weight = {
 		base = 0
@@ -311,6 +317,7 @@ site_deja_vu_dig = {
 # Trench World
 site_trench_world = {
 	desc = "site_trench_world_intro"
+	picture = GFX_evt_tundra
 	stages = 2
 	weight = {
 		base = 0
@@ -356,6 +363,7 @@ site_trench_world = {
 # Ebb & Flow
 site_ebb_and_flow = {
 	desc = "site_ebb_and_flow_intro"
+	picture = GFX_evt_warm_barren
 	stages = 4
 	weight = {
 		base = 0
@@ -413,6 +421,7 @@ site_ebb_and_flow = {
 # Sky Glow Hymn
 site_sky_glow_hymn = {
 	desc = "site_sky_glow_hymn_intro"
+	picture = GFX_evt_big_landing_ship
 	stages = 3
 	weight = {
 		base = 0
@@ -464,6 +473,7 @@ site_sky_glow_hymn = {
 # Warmer Climates
 site_warmer_climates = {
 	desc = "site_warmer_climates_intro"
+	picture = GFX_evt_alien_ruins
 	stages = 3
 	weight = {
 		base = 0
@@ -515,6 +525,7 @@ site_warmer_climates = {
 # The Phoenix Collective
 site_phoenix_collective = {
 	desc = "site_phoenix_collective_intro"
+	picture = GFX_evt_overgrown_city
 	stages = 4
 	weight = {
 		base = 0
@@ -572,6 +583,7 @@ site_phoenix_collective = {
 # The Grand Herald
 site_grand_herald = {
 	desc = "site_grand_herald_intro"
+	picture = GFX_evt_ancient_alien_temple
 	stages = 6
 	weight = {
 		base = 0
@@ -641,6 +653,7 @@ site_grand_herald = {
 # Hive Coral
 site_hive_coral = {
 	desc = "site_hive_coral_intro"
+	picture = GFX_evt_ship_in_orbit_2
 	stages = 3
 	weight = {
 		base = 0
@@ -692,6 +705,7 @@ site_hive_coral = {
 # Orbital Rain
 site_orbital_rain = {
 	desc = "site_orbital_rain_intro"
+	picture = GFX_evt_ship_in_orbit
 	stages = 3
 	weight = {
 		base = 0
@@ -743,6 +757,7 @@ site_orbital_rain = {
 # Fossilized Jellyfish
 site_fossilized_jellyfish = {
 	desc = "site_fossilized_jellyfish_intro"
+	picture = GFX_evt_ocean
 	stages = 3
 	weight = {
 		base = 0
@@ -794,6 +809,7 @@ site_fossilized_jellyfish = {
 # Popular Rock
 site_popular_rock = {
 	desc = "site_popular_rock_intro"
+	picture = GFX_evt_ice_asteroids
 	stages = 2
 	weight = {
 		base = 0
@@ -839,6 +855,7 @@ site_popular_rock = {
 # Strange Flows
 site_strange_flows = {
 	desc = "site_strange_flows_intro"
+	picture = GFX_evt_glitchy_matrix
 	stages = 3
 	weight = {
 		base = 0

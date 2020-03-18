@@ -219,6 +219,15 @@ technician = {
 				}
 			}
 		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < -1
+				}
+			}
+		}
 	}
 }
 
@@ -324,17 +333,13 @@ miner = {
 			has_trait = trait_nerve_stapled
 		}
 		modifier = {
-			factor = 2
+			factor = 1.2
 			owner = {
 				has_monthly_income = {
 					resource = minerals
-					value < 55
+					value < 20
 				}
 			}
-		}
-		modifier = {
-			factor = 1000
-			jobs_work_minerals = yes
 		}
 	}
 }
@@ -759,8 +764,7 @@ farmer = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
-			weight = 2000
-			is_pop_category = worker
+			factor = 1.2
 			owner = {
 				has_monthly_income = {
 					resource = food

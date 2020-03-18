@@ -143,6 +143,10 @@ alerts = {
 		category = LOW
 		sound  = "archeology_notifications_chapter_complete"
 	}
+	alert_automation_resources = {
+		category = MEDIUM
+		sound  = "alert_negative"
+	}
 
 	alert_deprecated = { category = disabled }
 }

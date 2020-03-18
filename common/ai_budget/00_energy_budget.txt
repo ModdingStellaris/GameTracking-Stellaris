@@ -21,15 +21,24 @@ energy_expenditure_buffer = { # Buffer, will not be spent
 energy_expenditure_colonies = {
 	resource = energy 
 	type = expenditure
-	category = trade
+	category = colonies
 	
 	potential = {
-		always = yes
+		ai_colonize_plans > 0
+		OR = {
+			has_civic = civic_corporate_dominion
+			has_civic = civic_private_prospectors
+		}
 	}
 	
+	# if we can colonize with energy, we should
 	fraction = {
-		weight = 0.5
+		weight = 1.5
 	}	
+
+	static_max = {
+		base = 500
+	}
 }
 
 energy_expenditure_leaders = {
@@ -57,6 +66,11 @@ energy_expenditure_deposit_blockers = {
 	
 	fraction = {
 		weight = 0.10
+	}
+
+	# base remove blocker cost
+	static_min = {
+		base = 300
 	}
 
 	static_max = {
@@ -102,6 +116,53 @@ energy_expenditure_megastructures = {
 	}
 }
 
+energy_expenditure_decisions = {
+	resource = energy 
+	type = expenditure
+	category = decisions
+	
+	potential = {
+		# only consider these kinds of decisions when "wealthy"
+		has_resource = { 
+			type = energy 
+			amount > 5000
+		}
+	}
+	
+	fraction = {
+		weight = 0.20
+	}
+
+	# based on mastery of nature decision
+	static_max = {
+		base = 2000
+	}
+}
+
+energy_expenditure_campaigns = {
+	resource = energy 
+	type = expenditure
+	category = campaigns
+	
+	potential = {
+		# only consider campaigns when we can actually afford them
+		has_resource = { 
+			type = energy 
+			amount > 3000
+		}
+	}
+	
+	fraction = {
+		weight = 0.30 
+	}
+
+	static_min = {
+		base = 1000
+	}
+	static_max = {
+		base = 3000
+	}
+}
 
 ############
 ## Upkeep ##

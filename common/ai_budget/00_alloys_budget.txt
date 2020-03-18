@@ -28,7 +28,19 @@ alloys_expenditure_ships = {
 	}
 	
 	fraction = {
-		weight = 0.20
+		weight = 0.6
+
+		# spend more alloys building ships while at war
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+
+		# spend less alloys on ships if over capacity
+		modifier = {
+			factor = 0.5
+			used_naval_capacity_percent >= 1.0
+		}
 	}	
 }
 
@@ -38,11 +50,17 @@ alloys_expenditure_ship_upgrades = {
 	category = ship_upgrades
 	
 	potential = {
-		always = yes
+		is_at_war = no
 	}
 	
 	fraction = {
-		weight = 0.12
+		weight = 0.2
+
+		# spend more on ship upgrades if at capacity
+		modifier = {
+			factor = 4
+			used_naval_capacity_percent >= 1.0
+		}
 	}	
 }
 
@@ -76,7 +94,7 @@ alloys_expenditure_starbases = {
 	}
 	
 	fraction = {
-		weight = 0.35
+		weight = 0.3
 	}	
 }
 
@@ -106,40 +124,17 @@ alloys_expenditure_starbases_expand = {
 			is_country_type = fallen_empire
 			is_country_type = awakened_fallen_empire
 		}
+		has_resource = { type = influence amount > 75 }
 	}
 	
 	fraction = {
-		weight = 0.8
+		weight = 0.2
 	}	
+
+	static_min = {
+		base = 100
+	}
 }
-
-#alloys_expenditure_stations_base = {
-#	resource = alloys 
-#	type = expenditure
-#	category = stations
-	
-#	potential = {
-#		always = yes
-#	}
-	
-#	fraction = {
-#		weight = 0.15
-#	}	
-#}
-
-#alloys_expenditure_stations_no_expand = {
-#	resource = alloys 
-#	type = expenditure
-#	category = stations
-#	
-#	potential = {
-#		has_ai_expansion_plan = no
-#	}
-#	
-#	fraction = {
-#		weight = 0.25
-#	}	
-#}
 
 alloys_expenditure_colonies_expand = {
 	resource = alloys 
@@ -148,6 +143,7 @@ alloys_expenditure_colonies_expand = {
 	
 	potential = {
 		is_machine_empire = no
+		is_at_war = no
 		ai_colonize_plans > 0
 		has_resource = { type = food amount > 400 }
 		has_monthly_income = {
@@ -157,11 +153,15 @@ alloys_expenditure_colonies_expand = {
 	}
 	
 	fraction = {
-		weight = 1.2
+		weight = 0.5
+	}
+
+	static_min = {
+		base = 200
 	}
 
 	static_max = {
-		base = 300
+		base = 250
 	}
 }
 
@@ -172,15 +172,20 @@ alloys_expenditure_colonies_expand_machine = {
 	
 	potential = {
 		is_machine_empire = yes
+		is_at_war = no
 		ai_colonize_plans > 0
 	}
 	
 	fraction = {
-		weight = 1.5
+		weight = 0.5
+	}
+
+	static_min = {
+		base = 400
 	}
 
 	static_max = {
-		base = 400
+		base = 450
 	}
 }
 
@@ -192,7 +197,7 @@ alloys_expenditure_megastructures = {
 	potential = {
 		is_country_type = default
 		is_at_war = no
-		has_galactic_wonders = yes
+		can_build_megastructures = yes
 	}
 	
 	fraction = {
@@ -243,7 +248,7 @@ alloys_upkeep_buffer = {	# Buffer, will not be spent
 	}
 	
 	fraction = {
-		weight = 0.5
+		weight = 0.3
 	}	
 }
 
@@ -271,6 +276,6 @@ alloys_upkeep_planets = {
 	}
 	
 	fraction = {
-		weight = 0.10
+		weight = 0.2
 	}	
 }

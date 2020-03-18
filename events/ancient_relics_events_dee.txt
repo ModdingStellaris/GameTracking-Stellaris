@@ -405,6 +405,7 @@ fleet_event = {
 					NOT = { is_planet_class = pc_city }
 					has_anomaly = no
 					NOT = { exists = archaeological_site }
+					is_colony = no
 				}
 			}
 			min_steps = 1
@@ -415,6 +416,7 @@ fleet_event = {
 					NOT = { is_planet_class = pc_city }
 					has_anomaly = no
 					NOT = { exists = archaeological_site }
+					is_colony = no
 				} 
 				save_event_target_as = baol_colony_3
 			}
@@ -1757,5 +1759,117 @@ country_event = {
 	option = {
 		name = EXCELLENT
 		add_relic = r_the_defragmentor
+	}
+}
+
+# The Host Stage 1
+fleet_event = {
+	id = ancrel.2070
+	title = "ancrel.2070.name"
+	desc = "ancrel.2070.desc"
+	picture = GFX_evt_archaeology_camp
+	show_sound = event_drilling
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = INTRIGUING
+		owner = {
+			add_resource = { minor_artifacts = 2 }
+		}
+	}
+}
+
+# The Host Stage 2
+fleet_event = {
+	id = ancrel.2071
+	title = "ancrel.2071.name"
+	desc = "ancrel.2071.desc"
+	picture = GFX_evt_underground_city
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ASTOUNDING
+		owner = {
+			add_resource = { minor_artifacts = 2 }
+		}
+	}
+}
+
+# The Host Stage 3
+fleet_event = {
+	id = ancrel.2072
+	title = "ancrel.2072.name"
+	desc = "ancrel.2072.desc"
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = event_dangerous_animals
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ancrel.2072.a.swarm"
+		exclusive_trigger = {
+			owner = { has_civic = civic_hive_devouring_swarm }
+		}
+		owner = {
+			IF = {
+				limit = {
+					NOT = { has_technology = tech_colonization_3 }
+					OR = {
+						is_machine_empire = no
+						OR = {
+							has_civic = civic_machine_servitor
+							has_civic = civic_machine_assimilator
+						}
+					}
+				}
+				give_technology = { tech = tech_colonization_3 }
+			}
+			ELSE = {
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier4researchreward
+					min = @tier4researchmin
+					max = @tier4researchmax
+				}
+			}
+		}
+	}
+	option = {
+		name = "ancrel.2072.a"
+		owner = {
+			IF = {
+				limit = {
+					NOT = { has_technology = tech_colonization_3 }
+					OR = {
+						is_machine_empire = no
+						OR = {
+							has_civic = civic_machine_servitor
+							has_civic = civic_machine_assimilator
+						}
+					}
+				}
+				give_technology = { tech = tech_colonization_3 }
+			}
+			ELSE = {
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier4researchreward
+					min = @tier4researchmin
+					max = @tier4researchmax
+				}
+			}
+		}
 	}
 }

@@ -32,6 +32,7 @@ star_lifting_system = {
 		anomaly = star_lifting_category
 		init_effect = {
 			set_planet_flag = star_lifting_star
+			clear_deposits = yes
 		}
 	}
 	

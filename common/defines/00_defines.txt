@@ -424,6 +424,9 @@
 		NUM_DISTRICT_BOXES_TO_SHOW = 15 # How many district boxes will be shown before we show " 12/20" instead
 		NUM_RARE_DEPOSITS_TO_SHOW = 4 # How many rare deposits will be shown before we switch the gridbox to a summary icon and "x5" instead
 		NUM_DEVASTATION_SEGMENTS = 4 # How many "levels" of devastation there is
+
+		AUTOMATION_RESOURCE_ALERT_MIN_POOL = 300 # Alert the player if pool is lower than this AND monthly transfer lower than the next entry
+		AUTOMATION_RESOURCE_ALERT_MIN_MONTHLY = 10 # Alert the player if pool is previous entry AND monthly transfer lower than this
 	}
 
 	NGameplay = {
@@ -1303,14 +1306,14 @@
 		WAR_OWN_BORDER_PRIO	= 10					# Priority on targeting systems that are bordering us
 		WAR_ALLY_BORDER_PRIO = 5					# Priority on targeting systems that are bordering allies
 		WAR_NO_BORDER_PRIO = 0.01					# Priority on targeting systems that are in the middle of hostile space
-		WAR_DEFENSE_OWN_PRIO = 5					# Priority on defending own borders
-		WAR_DEFENSE_CONTROLLED_PRIO = 4				# Priority on defending conquered systems
+		WAR_DEFENSE_OWN_PRIO = 3					# Priority on defending own borders
+		WAR_DEFENSE_CONTROLLED_PRIO = 5				# Priority on defending conquered systems
 		WAR_DEFENSE_ALLY_PRIO = 3					# Priority on defending allies
 		WAR_NEUTRAL_SPACE_PRIO = 0.5				# Priority on targeting enemies in neutral space
 		WAR_ATTACK_CLAIM_PRIO = 1.5					# Priority on targeting enemy systems we have claimed
 		WAR_DEFENSE_CLAIM_PRIO = 1.5				# Priority on defending claimed system we have conquered
 		WAR_DEFENSE_OWN_PLANET_PRIO = 1.5			# Priority on defending own planets in a controlled system
-		WAR_DEFENSE_OWN_PLANET_ENEMY_CONTROL_PRIO = 3.0 # Priority on defending own planets in an enemy controlled system
+		WAR_DEFENSE_OWN_PLANET_ENEMY_CONTROL_PRIO = 5 # Priority on defending own planets in an enemy controlled system
 
 		WAR_ATTACK_PLANET_PRIO = 2.0				# Priority on targeting enemy systems with planets
 		WAR_ATTACK_PLANET_CONTROLLED_SYSTEM_PRIO = 10.0				# Priority on targeting enemy planets in controlled systems
@@ -1322,7 +1325,7 @@
 		SPACE_MONSTER_MOVE_CHANCE = 2				# % chance that space monsters pick a new wander target each week
 		SPACE_MONSTER_WANDER_FACTOR	= 0.75			# The higher this is, the further space monsters will tend to wander from their spawn point (range: 0.0 - 1.0)
 		
-		TERRAFORM_SAVE_CREDITS = 2000				# AI wants to have at least this much energy over after starting a terraforming
+		TERRAFORM_SAVE_CREDITS = 1000				# AI wants to have at least this much energy over after starting a terraforming
 	
 		EXTRADIMENSIONAL_MIN_FLEETS = 3				# At less fleets than this, extradimensionals pull back to the portal
 		
@@ -1349,12 +1352,12 @@
 
 		FLEET_COMBAT_INTERVENTION_MULT = 0.5 #  The AI wont try to intervene in a fleet combat unless that intervention puts us at this percentage of the enemy fleet ( i.e. we wont intervene if the enemy outnumbers us by 2 or more )
 
-		DEFENSE_STRATEGY_ALLOTMENT_RATIO = 0.25	# How much of the defensive allotment of a country should ( as base ) put into each defensive target
+		DEFENSE_STRATEGY_ALLOTMENT_RATIO = 0.5	# How much of the defensive allotment of a country should ( as base ) put into each defensive target
 
 		FLEET_DAMAGED_THRESHOLD_WAR = 0.75			# threshold when a fleet will be considered damaged and should return for repairs and avoid certain actions
 		FLEET_DAMAGED_THRESHOLD_PEACE = 0.95		# same but for peace
-		FLEET_ARMOR_DAMAGED_THRESHOLD_WAR = 0.5		# same as above but for armor
-		FLEET_ARMOR_DAMAGED_THRESHOLD_PEACE = 0.75	# same but for armor in peace 
+		FLEET_ARMOR_DAMAGED_THRESHOLD_WAR = 0.75	# same as above but for armor
+		FLEET_ARMOR_DAMAGED_THRESHOLD_PEACE = 0.95	# same but for armor in peace 
 
 		TARGET_BASE_SCORE = 100.0			# base score to use when scoring AI military targets
 		HOSTILE_FLEETS_TARGET_SCORE = 20 # extra score for engaging hostile fleets
@@ -1548,9 +1551,9 @@
 		BUILDING_DEMOLISH_THRESHOLD = -1	# At AI weight less than or equal to this, demolish building or district
 		BUILDING_BUILD_THRESHOLD = 1		# Ait AI weight greater than or equal to this, the AI will consider building it.
 	
-		MIN_ASSAULT_ARMIES = 10
-		MAX_ASSAULT_ARMIES = 50
-		ASSAULT_ARMIES_PER_POP = 0.01
+		MIN_ASSAULT_ARMIES = 20
+		MAX_ASSAULT_ARMIES = 60
+		ASSAULT_ARMIES_PER_POP = 0.1
 		
 		BUILDING_EXISTS_DIV_SCORE = 1		# The higher this is, the more the AI will avoid building the same building on planets
 		
@@ -1602,11 +1605,11 @@
 		
 		AUTO_EXPLORE_ATTRACTION_SCORE = 200		# Attraction score to auto explore a system will descrease by this much if system is owned by you or has a planet owned by you
 		
-		MAX_EXPANSION_DISTANCE = 1				# Max number of jumps away AI will build starbases
-		MAX_EXPANSION_DISTANCE_SUBJECT = 1		# Max number of jumps away AI subjects will build starbases
+		MAX_EXPANSION_DISTANCE = 5				# Max number of jumps away AI will build starbases
+		MAX_EXPANSION_DISTANCE_SUBJECT = 5		# Max number of jumps away AI subjects will build starbases
 		EXPANSION_OWN_PRIORITY = 1000			# Priority on rebuilding destroyed starbases in colonized systems
 		EXPANSION_CUT_OFF_SYSTEM_PRIORITY = 10	# Priority on systems cut-off inside own territory
-		EXPANSION_BORDERING_PRIORITY = 100		# How much will AI prioritize bordering systems when building starbases
+		EXPANSION_BORDERING_PRIORITY = 500		# How much will AI prioritize bordering systems when building starbases
 		EXPANSION_RESOURCE_PRIORITY = 2			# How much will AI prioritize resource-rich systems when building starbases
 		EXPANSION_COLONY_PRIORITY = 10			# How much will AI prioritize systems with colonizeable worlds when building starbases
 		EXPANSION_BYPASS_PRIORITY = 10			# How much will AI prioritize systems with bypasses when building starbases

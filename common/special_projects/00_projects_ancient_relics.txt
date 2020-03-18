@@ -53,7 +53,7 @@ special_project = {
 	cost = 0
 	days_to_research = 30
 	tech_department = society_technology
-	picture = GFX_evt_star_chart #TODO:DEE
+	picture = GFX_evt_baol_datacrystals
 
 	event_scope = ship_event
 
@@ -77,7 +77,7 @@ special_project = {
 	cost = 0
 	days_to_research = 30
 	tech_department = society_technology
-	picture = GFX_evt_archaeological_dig #TODO:DEE
+	picture = GFX_evt_baol_datacrystals
 
 	event_scope = ship_event
 
@@ -104,7 +104,7 @@ special_project = {
 	cost = 0
 	days_to_research = 30
 	tech_department = society_technology
-	picture = GFX_evt_archaeological_dig #TODO:DEE
+	picture = GFX_evt_baol_datacrystals
 
 	event_scope = ship_event
 
@@ -131,7 +131,7 @@ special_project = {
 	cost = 0
 	days_to_research = 30
 	tech_department = society_technology
-	picture = GFX_evt_archaeological_dig #TODO:DEE
+	picture = GFX_evt_star_chart
 
 	event_scope = ship_event
 
