@@ -1264,3 +1264,4 @@
  MOD_COUNTRY_EMIGRATION_PUSH_ADD:0 "帝国迁出影响力"
  MOD_COUNTRY_EMIGRATION_PUSH_MULT:0 "$MOD_COUNTRY_EMIGRATION_PUSH_ADD$"
  fe_ship_cost_modifier:0 "优越造船"
+ mod_LITHOID_species_trait_points_add:0 "石质类基因修饰点"

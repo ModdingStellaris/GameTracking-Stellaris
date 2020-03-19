@@ -1,0 +1,1148 @@
+category = {
+ name = "Effects"
+ soundeffects = {
+
+	########## PHENOTYPES GREETINGS
+
+	lithoid_portrait_1_golem
+	lithoid_portrait_2_lava
+	lithoid_portrait_3_geode
+	lithoid_portrait_4_angelic
+	lithoid_portrait_5_mantis
+	lithoid_portrait_6_symbiotic
+	lithoid_portrait_7_pyrite
+	lithoid_portrait_8_sedimentary
+	lithoid_portrait_9_spider
+#	lithoid_portrait_10_spined
+	lithoid_portrait_11_levitating
+	lithoid_portrait_12_crystal
+	lithoid_portrait_13_exo
+#	lithoid_portrait_14_snake
+#	lithoid_portrait_15_unicorn
+#	lithoid_portrait_machine
+	
+ }
+}
+
+########## SOUND ASSETS
+
+##### LITHOID PORTRAIT 1
+
+sound = {
+	name = "lithoid_portrait_1_golem_01"
+	file = "lithoid_portrait_1_golem_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_1_golem_02"
+	file = "lithoid_portrait_1_golem_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_1_golem_03"
+	file = "lithoid_portrait_1_golem_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_1_golem_04"
+	file = "lithoid_portrait_1_golem_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_1_golem_05"
+	file = "lithoid_portrait_1_golem_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_1_golem_06"
+	file = "lithoid_portrait_1_golem_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_1_golem_07"
+	file = "lithoid_portrait_1_golem_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_1_golem_08"
+	file = "lithoid_portrait_1_golem_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 2
+
+sound = {
+	name = "lithoid_portrait_2_lava_01"
+	file = "lithoid_portrait_2_lava_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_2_lava_02"
+	file = "lithoid_portrait_2_lava_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_2_lava_03"
+	file = "lithoid_portrait_2_lava_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_2_lava_04"
+	file = "lithoid_portrait_2_lava_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_2_lava_05"
+	file = "lithoid_portrait_2_lava_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_2_lava_06"
+	file = "lithoid_portrait_2_lava_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_2_lava_07"
+	file = "lithoid_portrait_2_lava_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_2_lava_08"
+	file = "lithoid_portrait_2_lava_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 3
+
+sound = {
+	name = "lithoid_portrait_3_geode_01"
+	file = "lithoid_portrait_3_geode_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_3_geode_02"
+	file = "lithoid_portrait_3_geode_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_3_geode_03"
+	file = "lithoid_portrait_3_geode_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_3_geode_04"
+	file = "lithoid_portrait_3_geode_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_3_geode_05"
+	file = "lithoid_portrait_3_geode_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_3_geode_06"
+	file = "lithoid_portrait_3_geode_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_3_geode_07"
+	file = "lithoid_portrait_3_geode_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_3_geode_08"
+	file = "lithoid_portrait_3_geode_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 4
+
+sound = {
+	name = "lithoid_portrait_4_angelic_01"
+	file = "lithoid_portrait_4_angelic_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_4_angelic_02"
+	file = "lithoid_portrait_4_angelic_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_4_angelic_03"
+	file = "lithoid_portrait_4_angelic_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_4_angelic_04"
+	file = "lithoid_portrait_4_angelic_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_4_angelic_05"
+	file = "lithoid_portrait_4_angelic_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_4_angelic_06"
+	file = "lithoid_portrait_4_angelic_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_4_angelic_07"
+	file = "lithoid_portrait_4_angelic_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_4_angelic_08"
+	file = "lithoid_portrait_4_angelic_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 5
+
+sound = {
+	name = "lithoid_portrait_5_mantis_01"
+	file = "lithoid_portrait_5_mantis_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_5_mantis_02"
+	file = "lithoid_portrait_5_mantis_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_5_mantis_03"
+	file = "lithoid_portrait_5_mantis_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_5_mantis_04"
+	file = "lithoid_portrait_5_mantis_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_5_mantis_05"
+	file = "lithoid_portrait_5_mantis_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_5_mantis_06"
+	file = "lithoid_portrait_5_mantis_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_5_mantis_07"
+	file = "lithoid_portrait_5_mantis_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_5_mantis_08"
+	file = "lithoid_portrait_5_mantis_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 6
+
+sound = {
+	name = "lithoid_portrait_6_symbiotic_01"
+	file = "lithoid_portrait_6_symbiotic_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_6_symbiotic_02"
+	file = "lithoid_portrait_6_symbiotic_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_6_symbiotic_03"
+	file = "lithoid_portrait_6_symbiotic_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_6_symbiotic_04"
+	file = "lithoid_portrait_6_symbiotic_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_6_symbiotic_05"
+	file = "lithoid_portrait_6_symbiotic_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_6_symbiotic_06"
+	file = "lithoid_portrait_6_symbiotic_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_6_symbiotic_07"
+	file = "lithoid_portrait_6_symbiotic_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_6_symbiotic_08"
+	file = "lithoid_portrait_6_symbiotic_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 7
+
+sound = {
+	name = "lithoid_portrait_7_pyrite_01"
+	file = "lithoid_portrait_7_pyrite_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_7_pyrite_02"
+	file = "lithoid_portrait_7_pyrite_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_7_pyrite_03"
+	file = "lithoid_portrait_7_pyrite_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_7_pyrite_04"
+	file = "lithoid_portrait_7_pyrite_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_7_pyrite_05"
+	file = "lithoid_portrait_7_pyrite_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_7_pyrite_06"
+	file = "lithoid_portrait_7_pyrite_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_7_pyrite_07"
+	file = "lithoid_portrait_7_pyrite_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_7_pyrite_08"
+	file = "lithoid_portrait_7_pyrite_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 8
+
+sound = {
+	name = "lithoid_portrait_8_sedimentary_01"
+	file = "lithoid_portrait_8_sedimentary_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_8_sedimentary_02"
+	file = "lithoid_portrait_8_sedimentary_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_8_sedimentary_03"
+	file = "lithoid_portrait_8_sedimentary_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_8_sedimentary_04"
+	file = "lithoid_portrait_8_sedimentary_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_8_sedimentary_05"
+	file = "lithoid_portrait_8_sedimentary_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_8_sedimentary_06"
+	file = "lithoid_portrait_8_sedimentary_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_8_sedimentary_07"
+	file = "lithoid_portrait_8_sedimentary_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_8_sedimentary_08"
+	file = "lithoid_portrait_8_sedimentary_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 9
+
+sound = {
+	name = "lithoid_portrait_9_spider_01"
+	file = "lithoid_portrait_9_spider_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_9_spider_02"
+	file = "lithoid_portrait_9_spider_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_9_spider_03"
+	file = "lithoid_portrait_9_spider_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_9_spider_04"
+	file = "lithoid_portrait_9_spider_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_9_spider_05"
+	file = "lithoid_portrait_9_spider_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_9_spider_06"
+	file = "lithoid_portrait_9_spider_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_9_spider_07"
+	file = "lithoid_portrait_9_spider_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_9_spider_08"
+	file = "lithoid_portrait_9_spider_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 10
+
+#	sound = {
+#		name = "lithoid_portrait_10_spined_01"
+#		file = "lithoid_portrait_10_spined_01.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_10_spined_02"
+#		file = "lithoid_portrait_10_spined_02.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_10_spined_03"
+#		file = "lithoid_portrait_10_spined_03.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_10_spined_04"
+#		file = "lithoid_portrait_10_spined_04.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_10_spined_05"
+#		file = "lithoid_portrait_10_spined_05.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_10_spined_06"
+#		file = "lithoid_portrait_10_spined_06.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_10_spined_07"
+#		file = "lithoid_portrait_10_spined_07.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_10_spined_08"
+#		file = "lithoid_portrait_10_spined_08.wav"
+#		volume = 1
+#	}
+
+##### LITHOID PORTRAIT 11
+
+sound = {
+	name = "lithoid_portrait_11_levitating_01"
+	file = "lithoid_portrait_11_levitating_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_11_levitating_02"
+	file = "lithoid_portrait_11_levitating_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_11_levitating_03"
+	file = "lithoid_portrait_11_levitating_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_11_levitating_04"
+	file = "lithoid_portrait_11_levitating_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_11_levitating_05"
+	file = "lithoid_portrait_11_levitating_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_11_levitating_06"
+	file = "lithoid_portrait_11_levitating_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_11_levitating_07"
+	file = "lithoid_portrait_11_levitating_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_11_levitating_08"
+	file = "lithoid_portrait_11_levitating_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 12
+
+sound = {
+	name = "lithoid_portrait_12_crystal_01"
+	file = "lithoid_portrait_12_crystal_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_12_crystal_02"
+	file = "lithoid_portrait_12_crystal_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_12_crystal_03"
+	file = "lithoid_portrait_12_crystal_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_12_crystal_04"
+	file = "lithoid_portrait_12_crystal_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_12_crystal_05"
+	file = "lithoid_portrait_12_crystal_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_12_crystal_06"
+	file = "lithoid_portrait_12_crystal_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_12_crystal_07"
+	file = "lithoid_portrait_12_crystal_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_12_crystal_08"
+	file = "lithoid_portrait_12_crystal_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 13
+
+sound = {
+	name = "lithoid_portrait_13_exo_01"
+	file = "lithoid_portrait_13_exo_01.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_13_exo_02"
+	file = "lithoid_portrait_13_exo_02.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_13_exo_03"
+	file = "lithoid_portrait_13_exo_03.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_13_exo_04"
+	file = "lithoid_portrait_13_exo_04.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_13_exo_05"
+	file = "lithoid_portrait_13_exo_05.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_13_exo_06"
+	file = "lithoid_portrait_13_exo_06.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_13_exo_07"
+	file = "lithoid_portrait_13_exo_07.wav"
+	volume = 1
+}
+
+sound = {
+	name = "lithoid_portrait_13_exo_08"
+	file = "lithoid_portrait_13_exo_08.wav"
+	volume = 1
+}
+
+##### LITHOID PORTRAIT 14
+
+#	sound = {
+#		name = "lithoid_portrait_14_snake_01"
+#		file = "lithoid_portrait_14_snake_01.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_14_snake_02"
+#		file = "lithoid_portrait_14_snake_02.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_14_snake_03"
+#		file = "lithoid_portrait_14_snake_03.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_14_snake_04"
+#		file = "lithoid_portrait_14_snake_04.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_14_snake_05"
+#		file = "lithoid_portrait_14_snake_05.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_14_snake_06"
+#		file = "lithoid_portrait_14_snake_06.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_14_snake_07"
+#		file = "lithoid_portrait_14_snake_07.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_14_snake_08"
+#		file = "lithoid_portrait_14_snake_08.wav"
+#		volume = 1
+#	}
+
+##### LITHOID PORTRAIT 15
+
+#	sound = {
+#		name = "lithoid_portrait_15_unicorn_01"
+#		file = "lithoid_portrait_15_unicorn_01.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_15_unicorn_02"
+#		file = "lithoid_portrait_15_unicorn_02.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_15_unicorn_03"
+#		file = "lithoid_portrait_15_unicorn_03.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_15_unicorn_04"
+#		file = "lithoid_portrait_15_unicorn_04.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_15_unicorn_05"
+#		file = "lithoid_portrait_15_unicorn_05.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_15_unicorn_06"
+#		file = "lithoid_portrait_15_unicorn_06.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_15_unicorn_07"
+#		file = "lithoid_portrait_15_unicorn_07.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_15_unicorn_08"
+#		file = "lithoid_portrait_15_unicorn_08.wav"
+#		volume = 1
+#	}
+
+##### LITHOID PORTRAIT MACHINE
+
+#	sound = {
+#		name = "lithoid_portrait_machine_01"
+#		file = "lithoid_portrait_machine_01.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_machine_02"
+#		file = "lithoid_portrait_machine_02.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_machine_03"
+#		file = "lithoid_portrait_machine_03.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_machine_04"
+#		file = "lithoid_portrait_machine_04.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_machine_05"
+#		file = "lithoid_portrait_machine_05.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_machine_06"
+#		file = "lithoid_portrait_machine_06.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_machine_07"
+#		file = "lithoid_portrait_machine_07.wav"
+#		volume = 1
+#	}
+#	
+#	sound = {
+#		name = "lithoid_portrait_machine_08"
+#		file = "lithoid_portrait_machine_08.wav"
+#		volume = 1
+#	}
+
+########### SOUND EFFECTS
+
+##### PORTRAIT 1
+
+soundeffect = {
+	name = lithoid_portrait_1_golem
+	sounds = {
+		sound = lithoid_portrait_1_golem_01
+		sound = lithoid_portrait_1_golem_02
+		sound = lithoid_portrait_1_golem_03
+		sound = lithoid_portrait_1_golem_04
+		sound = lithoid_portrait_1_golem_05
+		sound = lithoid_portrait_1_golem_06
+		sound = lithoid_portrait_1_golem_07
+		sound = lithoid_portrait_1_golem_08
+
+	}
+	volume = 0.5  
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 2
+
+soundeffect = {
+	name = lithoid_portrait_2_lava
+	sounds = {
+		sound = lithoid_portrait_2_lava_01
+		sound = lithoid_portrait_2_lava_02
+		sound = lithoid_portrait_2_lava_03
+		sound = lithoid_portrait_2_lava_04
+		sound = lithoid_portrait_2_lava_05
+		sound = lithoid_portrait_2_lava_06
+		sound = lithoid_portrait_2_lava_07
+		sound = lithoid_portrait_2_lava_08
+
+	}
+	volume = 0.5  
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 3
+
+soundeffect = {
+	name = lithoid_portrait_3_geode
+	sounds = {
+		sound = lithoid_portrait_3_geode_01
+		sound = lithoid_portrait_3_geode_02
+		sound = lithoid_portrait_3_geode_03
+		sound = lithoid_portrait_3_geode_04
+		sound = lithoid_portrait_3_geode_05
+		sound = lithoid_portrait_3_geode_06
+		sound = lithoid_portrait_3_geode_07
+		sound = lithoid_portrait_3_geode_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 4
+
+soundeffect = {
+	name = lithoid_portrait_4_angelic
+	sounds = {
+		sound = lithoid_portrait_4_angelic_01
+		sound = lithoid_portrait_4_angelic_02
+		sound = lithoid_portrait_4_angelic_03
+		sound = lithoid_portrait_4_angelic_04
+		sound = lithoid_portrait_4_angelic_05
+		sound = lithoid_portrait_4_angelic_06
+		sound = lithoid_portrait_4_angelic_07
+		sound = lithoid_portrait_4_angelic_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 5
+
+soundeffect = {
+	name = lithoid_portrait_5_mantis
+	sounds = {
+		sound = lithoid_portrait_5_mantis_01
+		sound = lithoid_portrait_5_mantis_02
+		sound = lithoid_portrait_5_mantis_03
+		sound = lithoid_portrait_5_mantis_04
+		sound = lithoid_portrait_5_mantis_05
+		sound = lithoid_portrait_5_mantis_06
+		sound = lithoid_portrait_5_mantis_07
+		sound = lithoid_portrait_5_mantis_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 6
+
+soundeffect = {
+	name = lithoid_portrait_6_symbiotic
+	sounds = {
+		sound = lithoid_portrait_6_symbiotic_01
+		sound = lithoid_portrait_6_symbiotic_02
+		sound = lithoid_portrait_6_symbiotic_03
+		sound = lithoid_portrait_6_symbiotic_04
+		sound = lithoid_portrait_6_symbiotic_05
+		sound = lithoid_portrait_6_symbiotic_06
+		sound = lithoid_portrait_6_symbiotic_07
+		sound = lithoid_portrait_6_symbiotic_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 7
+
+soundeffect = {
+	name = lithoid_portrait_7_pyrite
+	sounds = {
+		sound = lithoid_portrait_7_pyrite_01
+		sound = lithoid_portrait_7_pyrite_02
+		sound = lithoid_portrait_7_pyrite_03
+		sound = lithoid_portrait_7_pyrite_04
+		sound = lithoid_portrait_7_pyrite_05
+		sound = lithoid_portrait_7_pyrite_06
+		sound = lithoid_portrait_7_pyrite_07
+		sound = lithoid_portrait_7_pyrite_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 8
+
+soundeffect = {
+	name = lithoid_portrait_8_sedimentary
+	sounds = {
+		sound = lithoid_portrait_8_sedimentary_01
+		sound = lithoid_portrait_8_sedimentary_02
+		sound = lithoid_portrait_8_sedimentary_03
+		sound = lithoid_portrait_8_sedimentary_04
+		sound = lithoid_portrait_8_sedimentary_05
+		sound = lithoid_portrait_8_sedimentary_06
+		sound = lithoid_portrait_8_sedimentary_07
+		sound = lithoid_portrait_8_sedimentary_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 9
+
+soundeffect = {
+	name = lithoid_portrait_9_spider
+	sounds = {
+		sound = lithoid_portrait_9_spider_01
+		sound = lithoid_portrait_9_spider_02
+		sound = lithoid_portrait_9_spider_03
+		sound = lithoid_portrait_9_spider_04
+		sound = lithoid_portrait_9_spider_05
+		sound = lithoid_portrait_9_spider_06
+		sound = lithoid_portrait_9_spider_07
+		sound = lithoid_portrait_9_spider_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 10
+
+#	soundeffect = {
+#		name = lithoid_portrait_10_spined
+#		sounds = {
+#			sound = lithoid_portrait_10_spined_01
+#			sound = lithoid_portrait_10_spined_02
+#			sound = lithoid_portrait_10_spined_03
+#			sound = lithoid_portrait_10_spined_04
+#			sound = lithoid_portrait_10_spined_05
+#			sound = lithoid_portrait_10_spined_06
+#			sound = lithoid_portrait_10_spined_07
+#			sound = lithoid_portrait_10_spined_08
+#	
+#		}  
+#		volume = 0.5
+#		max_audible = 1
+#		max_audible_behaviour = fail
+#	}
+
+##### PORTRAIT 11
+
+soundeffect = {
+	name = lithoid_portrait_11_levitating
+	sounds = {
+		sound = lithoid_portrait_11_levitating_01
+		sound = lithoid_portrait_11_levitating_02
+		sound = lithoid_portrait_11_levitating_03
+		sound = lithoid_portrait_11_levitating_04
+		sound = lithoid_portrait_11_levitating_05
+		sound = lithoid_portrait_11_levitating_06
+		sound = lithoid_portrait_11_levitating_07
+		sound = lithoid_portrait_11_levitating_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+##### PORTRAIT 12
+
+soundeffect = {
+	name = lithoid_portrait_12_crystal
+	sounds = {
+		sound = lithoid_portrait_12_crystal_01
+		sound = lithoid_portrait_12_crystal_02
+		sound = lithoid_portrait_12_crystal_03
+		sound = lithoid_portrait_12_crystal_04
+		sound = lithoid_portrait_12_crystal_05
+		sound = lithoid_portrait_12_crystal_06
+		sound = lithoid_portrait_12_crystal_07
+		sound = lithoid_portrait_12_crystal_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 13
+
+soundeffect = {
+	name = lithoid_portrait_13_exo
+	sounds = {
+		sound = lithoid_portrait_13_exo_01
+		sound = lithoid_portrait_13_exo_02
+		sound = lithoid_portrait_13_exo_03
+		sound = lithoid_portrait_13_exo_04
+		sound = lithoid_portrait_13_exo_05
+		sound = lithoid_portrait_13_exo_06
+		sound = lithoid_portrait_13_exo_07
+		sound = lithoid_portrait_13_exo_08
+
+	}  
+	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+##### PORTRAIT 14
+
+#	soundeffect = {
+#		name = lithoid_portrait_14_snake
+#		sounds = {
+#			sound = lithoid_portrait_14_snake_01
+#			sound = lithoid_portrait_14_snake_02
+#			sound = lithoid_portrait_14_snake_03
+#			sound = lithoid_portrait_14_snake_04
+#			sound = lithoid_portrait_14_snake_05
+#			sound = lithoid_portrait_14_snake_06
+#			sound = lithoid_portrait_14_snake_07
+#			sound = lithoid_portrait_14_snake_08
+#	
+#		}  
+#		volume = 0.5
+#		max_audible = 1
+#		max_audible_behaviour = fail
+#	}
+
+##### PORTRAIT 15
+
+#	soundeffect = {
+#		name = lithoid_portrait_15_unicorn
+#		sounds = {
+#			sound = lithoid_portrait_15_unicorn_01
+#			sound = lithoid_portrait_15_unicorn_02
+#			sound = lithoid_portrait_15_unicorn_03
+#			sound = lithoid_portrait_15_unicorn_04
+#			sound = lithoid_portrait_15_unicorn_05
+#			sound = lithoid_portrait_15_unicorn_06
+#			sound = lithoid_portrait_15_unicorn_07
+#			sound = lithoid_portrait_15_unicorn_08
+#	
+#		}  
+#		volume = 0.5
+#		max_audible = 1
+#		max_audible_behaviour = fail
+#	}
+
+##### MACHINE
+
+#	soundeffect = {
+#		name = lithoid_portrait_machine
+#		sounds = {
+#			sound = lithoid_portrait_machine_01
+#			sound = lithoid_portrait_machine_02
+#			sound = lithoid_portrait_machine_03
+#			sound = lithoid_portrait_machine_04
+#			sound = lithoid_portrait_machine_05
+#			sound = lithoid_portrait_machine_06
+#			sound = lithoid_portrait_machine_07
+#			sound = lithoid_portrait_machine_08
+#	
+#		}  
+#		volume = 0.5
+#		max_audible = 1
+#		max_audible_behaviour = fail
+#	}

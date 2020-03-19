@@ -1,5 +1,5 @@
 #	Example:
-# 
+#
 #	example_trigger = {
 #		is_country_type = default
 #		num_communications > 0
@@ -50,9 +50,9 @@ is_free_robot_species_rights = {
 
 species_rights_robot_full_rights_check = {
 	exists = from
-	from = { 
+	from = {
 		OR = {
-			has_policy_flag = ai_full_rights 
+			has_policy_flag = ai_full_rights
 			is_mechanical_empire = yes
 		}
 	}
@@ -61,10 +61,10 @@ species_rights_robot_full_rights_check = {
 is_free_robot = { # The pop is a free robot with citizen rights
 	has_trait = "trait_mechanical"
 	exists = owner
-	owner = { 
+	owner = {
 		has_technology = "tech_synthetic_workers"
 		OR = {
-			has_policy_flag = ai_full_rights 
+			has_policy_flag = ai_full_rights
 			is_mechanical_empire = yes
 		}
 	}
@@ -77,7 +77,7 @@ is_shackled_robot = { # The pop is a non-free robot
 		owner = {
 			OR = {
 				AND = {
-					has_policy_flag = ai_full_rights 
+					has_policy_flag = ai_full_rights
 					OR = {
 						has_technology = "tech_synthetic_workers" #Robits don't get rights until they are Synths
 						has_country_flag = robots_have_souls #syndaw.545
@@ -93,9 +93,9 @@ is_non_sapient_robot = { # The pop is a non-sapient robot
 	has_trait = "trait_mechanical"
 	NAND = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_technology = "tech_synthetic_workers"
-			NOT = { has_policy_flag = ai_outlawed } 
+			NOT = { has_policy_flag = ai_outlawed }
 		}
 	}
 }
@@ -272,6 +272,10 @@ has_humanoids = {
 	host_has_dlc = "Humanoids Species Pack"
 }
 
+has_lithoids = {
+	host_has_dlc = "Lithoids Species Pack"
+}
+
 uninhabitable_regular_planet = {
 	OR = {
 		is_planet_class = pc_molten
@@ -361,11 +365,11 @@ has_encountered_other_species = {
 			NOT = { has_trait = "trait_mechanical" }
 			NOT = { is_same_species = prev }
 		}
-	}	
+	}
 }
 
 has_citizenship_rights = {
-	OR = {	
+	OR = {
 		has_citizenship_type = { type = citizenship_full }
 		has_citizenship_type = { type = citizenship_full_machine }
 	}
@@ -413,7 +417,7 @@ allows_slavery = {
 	OR = {
 		has_policy_flag = slavery_allowed
 		has_ethic = ethic_gestalt_consciousness
-	}	
+	}
 }
 
 allows_purge = {
@@ -422,7 +426,7 @@ allows_purge = {
 		has_valid_civic = civic_fanatic_purifiers
 		has_policy_flag = purge_allowed
 		has_policy_flag = purge_displacement_only
-	}	
+	}
 }
 
 can_build_megastructure_on_planet = {
@@ -506,7 +510,7 @@ has_primitive_government = {
 is_lonely_hive_mind_pop = {
 	has_trait = trait_hive_mind
 	NOT = { from = { has_authority = auth_hive_mind } }
-	from = { 
+	from = {
 		NOR = {
 			is_country_type = fallen_empire
 			is_country_type = awakened_fallen_empire
@@ -529,15 +533,15 @@ is_disconnected_machine_pop = {
 has_culture_shock = {
 	OR = {
 		has_modifier = culture_shock_stone_age
-		has_modifier = culture_shock_bronze_age 
-		has_modifier = culture_shock_iron_age 
-		has_modifier = culture_shock_late_medieval_age 
-		has_modifier = culture_shock_renaissance_age 
-		has_modifier = culture_shock_steam_age 
-		has_modifier = culture_shock_industrial_age 
-		has_modifier = culture_shock_machine_age 
-		has_modifier = culture_shock_atomic_age 
-		has_modifier = culture_shock_early_space_age 
+		has_modifier = culture_shock_bronze_age
+		has_modifier = culture_shock_iron_age
+		has_modifier = culture_shock_late_medieval_age
+		has_modifier = culture_shock_renaissance_age
+		has_modifier = culture_shock_steam_age
+		has_modifier = culture_shock_industrial_age
+		has_modifier = culture_shock_machine_age
+		has_modifier = culture_shock_atomic_age
+		has_modifier = culture_shock_early_space_age
 	}
 }
 
@@ -633,13 +637,13 @@ is_binary_star = {
 }
 
 is_under_crisis_bombardment = {
-	has_orbital_bombardment = yes	
+	has_orbital_bombardment = yes
 	any_fleet_in_orbit = {
 		exists = owner
 		owner = {
 			is_crisis_faction = yes
 		}
-	}	
+	}
 }
 
 is_crisis_faction = {
@@ -724,17 +728,45 @@ is_cyborg_empire = {
 }
 
 is_mechanical_empire = {
-	OR = {	
-		owner_species = { has_trait = trait_mechanical }	
+	OR = {
+		owner_species = { has_trait = trait_mechanical }
 		has_country_flag = synthetic_empire
 	}
 }
 
 is_robot_empire = {
-	OR = {	
-		owner_species = { has_trait = trait_mechanical }	
+	OR = {
+		owner_species = { has_trait = trait_mechanical }
 		has_country_flag = synthetic_empire
 		has_authority = auth_machine_intelligence
+	}
+}
+
+is_lithoid_empire = {
+	owner_species = { is_lithoid = yes }
+}
+
+is_lithoid_devouring_swarm = {
+	is_lithoid_empire = yes
+	has_valid_civic = civic_hive_devouring_swarm
+}
+
+is_lithoid_devouring_swarm_consumption_world = { # planet scope
+	exists = owner
+	NOR = {
+		is_ideal_planet_class = {
+			who = owner
+			status = yes
+		}
+		AND = {
+			planet_size > 13
+			owner = {
+				any_owned_pop = {
+					is_being_purged = no
+					prevprev = { habitability = { who = prev value >= 0.9 } }
+				}
+			}
+		}
 	}
 }
 
@@ -774,9 +806,9 @@ is_valid_target_fe_cleanse_holy_worlds = {
 		any_subject = {
 			any_owned_planet = {
 				has_modifier = "holy_planet"
-			}					
+			}
 		}
-	}	
+	}
 }
 
 has_sapient_combat_computer = {
@@ -905,7 +937,7 @@ has_met_primitives = {
 }
 
 has_comms_with_alien_empire = {
-	any_relation = {	
+	any_relation = {
 		has_communications = root
 		OR = {
 			is_country_type = default
@@ -916,7 +948,7 @@ has_comms_with_alien_empire = {
 }
 
 has_comms_with_alien_civilization = {
-	any_relation = {	
+	any_relation = {
 		has_communications = root
 		OR = {
 			is_country_type = default
@@ -942,7 +974,7 @@ has_total_war_cb = {
 			OR = {
 				is_country_type = awakened_fallen_empire
 				has_valid_civic = civic_hive_devouring_swarm
-				has_valid_civic = civic_machine_assimilator	
+				has_valid_civic = civic_machine_assimilator
 				AND = {
 					has_valid_civic = civic_machine_terminator
 					from = {
@@ -950,13 +982,13 @@ has_total_war_cb = {
 							has_country_flag = synthetic_empire
 							has_authority = auth_machine_intelligence
 						}
-					}				
+					}
 				}
 				AND = {
 					has_valid_civic = civic_fanatic_purifiers
 					NOT = { is_same_species = from }
 				}
-			}			
+			}
 		}
 		#end threat checks
 		AND = {
@@ -966,7 +998,7 @@ has_total_war_cb = {
 				has_valid_civic = civic_fanatic_purifiers
 				has_valid_civic = civic_hive_devouring_swarm
 				has_valid_civic = civic_machine_assimilator
-				has_valid_civic = civic_machine_terminator				
+				has_valid_civic = civic_machine_terminator
 			}
 			from = {
 				OR = {
@@ -974,9 +1006,9 @@ has_total_war_cb = {
 					has_valid_civic = civic_fanatic_purifiers
 					has_valid_civic = civic_hive_devouring_swarm
 					has_valid_civic = civic_machine_assimilator
-					has_valid_civic = civic_machine_terminator							
-				}	
-			}		
+					has_valid_civic = civic_machine_terminator
+				}
+			}
 		}
 	}
 }
@@ -984,11 +1016,11 @@ has_total_war_cb = {
 has_isolated_system = {
 	any_system_within_border = {
 		any_neighbor_system = {
-			root = { 
-				intel_level = { 
+			root = {
+				intel_level = {
 					level > none
-					system = prev 
-				} 
+					system = prev
+				}
 			}
 			NOR = {
 				has_star_flag = pirates_spawned
@@ -1008,9 +1040,9 @@ has_isolated_system = {
 			}
 			NOT = { exists = space_owner }
 			any_neighbor_system = {
-				exists = space_owner 
+				exists = space_owner
 				NOT = {
-					space_owner = { NOT = { is_same_value = root } } 
+					space_owner = { NOT = { is_same_value = root } }
 				}
 			}
 			NOT = {
@@ -1025,11 +1057,11 @@ has_isolated_system = {
 has_bordering_system = {
 	any_system_within_border = {
 		any_neighbor_system = {
-			root = { 
-				intel_level = { 
+			root = {
+				intel_level = {
 					level > none
-					system = prev 
-				} 
+					system = prev
+				}
 			}
 			NOR = {
 				has_star_flag = pirates_spawned
@@ -1241,14 +1273,14 @@ has_galactic_wonders = {
 can_build_megastructures = {
 	OR = {
 		has_technology = tech_science_nexus
-		has_technology = tech_sentry_array 
-		has_technology = tech_strategic_coordination 
-		has_technology = tech_interstellar_assembly 
-		has_technology = tech_mega_art 
-		has_technology = tech_gateway_construction 
-		has_technology = tech_dyson_sphere 
-		has_technology = tech_matter_decompressor 
-		has_technology = tech_ring_world 
+		has_technology = tech_sentry_array
+		has_technology = tech_strategic_coordination
+		has_technology = tech_interstellar_assembly
+		has_technology = tech_mega_art
+		has_technology = tech_gateway_construction
+		has_technology = tech_dyson_sphere
+		has_technology = tech_matter_decompressor
+		has_technology = tech_ring_world
 	}
 }
 
@@ -1766,5 +1798,25 @@ is_special_colony_type = {
 		has_modifier = penal_colony
 		has_modifier = resort_colony
 		has_modifier = slave_colony
+	}
+}
+
+lithoids_portrait = {
+	OR = {
+		species_portrait = lith1
+		species_portrait = lith2
+		species_portrait = lith3
+		species_portrait = lith4
+		species_portrait = lith5
+		species_portrait = lith6
+		species_portrait = lith7
+		species_portrait = lith8
+		species_portrait = lith9
+		species_portrait = lith10
+		species_portrait = lith11
+		species_portrait = lith12
+		species_portrait = lith13
+		species_portrait = lith14
+		species_portrait = lith15
 	}
 }

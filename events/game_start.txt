@@ -5,7 +5,7 @@ event = {
 	id = game_start.1
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_global_flag = game_started
 
@@ -13,7 +13,7 @@ event = {
 			limit = { is_ai = no }
 			country_event = { id = country.900 days = 460 random = 60 }
 		}
-		
+
 		### SPAWN UNIQUE SYSTEMS
 		# If any Empire is Commonwealth and UN is unplayed
 		if = {
@@ -81,7 +81,7 @@ event = {
 				}
 			}
 		}
-		
+
 		### HANDLE EMPIRE RELATIONS
 		every_country = {
 			limit = {
@@ -96,10 +96,10 @@ event = {
 					set_hostile = no
 					set_neutral = no
 					set_friendly = yes
-				}					
+				}
 			}
 		}
-		
+
 		every_country = {
 			limit = {
 				is_country_type = tiyanki
@@ -110,16 +110,16 @@ event = {
 						is_country_type = amoeba
 						is_country_type = crystal
 						is_country_type = cloud
-					}				
+					}
 				}
 				set_faction_hostility = {
 					target = prev
 					set_hostile = no
 					set_neutral = yes
 					set_friendly = no
-				}					
+				}
 			}
-		}	
+		}
 
 		### MARAUDER FLAGS
 		every_country = {
@@ -139,7 +139,7 @@ event = {
 					set_friendly = yes
 				}
 			}
-		}		
+		}
 	}
 }
 
@@ -147,7 +147,7 @@ event = {
 	id = game_start.2
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		every_country = {
 			limit = { exists = capital_scope }
@@ -270,7 +270,7 @@ event = {
 	id = game_start.3
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		every_country = {
 			limit = { is_ai = no }
@@ -310,22 +310,22 @@ country_event = {
 		give_technology = { tech = "tech_engineering_1" message = no }
 		give_technology = { tech = "tech_physics_1" message = no }
 		give_technology = { tech = "tech_planetary_unification" message = no }
-		
+
 		add_resource = { energy = 1000	}
 		add_resource = { minerals = 1000 }
 		add_resource = { alloys = 500	}
-		add_resource = { influence = 200 }		
+		add_resource = { influence = 200 }
 		if = {
 			limit = { is_machine_empire = no }
-			add_resource = { food = 1000 }		
+			add_resource = { food = 1000 }
 		}
 		if = {
 			limit = { is_gestalt = no }
-			add_resource = { consumer_goods = 500 }		
+			add_resource = { consumer_goods = 500 }
 		}
-		
+
 		every_planet_within_border = {
-			limit = { 
+			limit = {
 				has_deposit_for = shipclass_mining_station
 				has_mining_station = no
 			}
@@ -334,18 +334,18 @@ country_event = {
 			}
 		}
 		every_planet_within_border = {
-			limit = { 
-				has_deposit_for = shipclass_research_station 
+			limit = {
+				has_deposit_for = shipclass_research_station
 				has_research_station = no
 			}
 			create_research_station = {
 				owner = ROOT
 			}
-		}		
+		}
 	}
 }
 
-### Empire init - add technologies and resources
+### Empire init - add technologies and some resources
 country_event = {
 	id = game_start.8
 	hide_window = yes
@@ -356,7 +356,7 @@ country_event = {
 		add_resource = { minerals = 100	}
 		add_resource = { alloys = 100	}
 		add_resource = { influence = 100 }
-		
+
 		if = {
 			limit = {
 				OR = {
@@ -366,42 +366,23 @@ country_event = {
 			}
 			add_resource = { consumer_goods = 100 }
 		}
-	
-		if = { 
-			limit = { 
-				has_civic = civic_mechanists 
-			} 
+
+		if = {
+			limit = {
+				has_civic = civic_mechanists
+			}
 			give_technology = { message = no tech = tech_powered_exoskeletons }
 			give_technology = { message = no tech = tech_robotic_workers }
 		}
-		if = { 
-			limit = { 
-				has_civic = civic_corporate_dominion 
+		if = {
+			limit = {
+				has_civic = civic_corporate_dominion
 			}
 			give_technology = { message = no tech = tech_space_trading }
 		}
-		if = {
-			limit = { 
-				has_authority = auth_machine_intelligence 
-			}
-			if = {
-				limit = {
-					OR = {
-						has_valid_civic = civic_machine_servitor
-						has_valid_civic = civic_machine_assimilator
-					}
-				}
-				add_resource = { food = 100	}
-				add_resource = { energy = 100 }
-			}			
-			else = {
-				add_resource = { energy = 200 }
-			}
-		}
-		else = {
-				add_resource = { food = 200	}
-		}
 	}
+
+	# Additional resources that may be changed by subspecies are granted in generate_start_buildings_and_districts
 }
 
 ### Empire init - add ships
@@ -410,7 +391,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
-	immediate = {	
+	immediate = {
 		#science
 		create_fleet = {
 			effect = {
@@ -421,10 +402,10 @@ country_event = {
 					random_existing_design = science
 				}
 
-				set_fleet_stance = evasive				
+				set_fleet_stance = evasive
 				#set_location = prev.capital_star
 				set_location = prev.capital_scope.star
-				
+
 				owner = {
 					create_leader = {
 						class = scientist
@@ -434,19 +415,19 @@ country_event = {
 					}
 				}
 				set_leader = last_created_leader
-			}			
+			}
 		}
-			
+
 		#constructor
 		create_fleet = {
 			effect = {
 				set_owner = prev
-				
+
 				create_ship = {
 					name = random
 					random_existing_design = constructor
 				}
-				
+
 				set_fleet_stance = evasive
 				set_location = prev.capital_star
 			}
@@ -457,7 +438,7 @@ country_event = {
 			set_take_point = yes
 			effect = {
 				set_owner = prev
-				
+
 				while = {
 					count = 3
 					create_ship = {
@@ -465,7 +446,7 @@ country_event = {
 						random_existing_design = corvette
 					}
 				}
-				
+
 				set_location = prev.capital_star
 			}
 		}
@@ -477,7 +458,7 @@ country_event = {
 	id = game_start.10
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	trigger = {
 		is_country_type = fallen_empire
 	}
@@ -492,15 +473,15 @@ country_event = {
 			modify_species = {
 				species = this
 				add_trait = trait_cybernetic
-			}	
+			}
 		}
 		if = {
 			limit = { is_spiritualist = yes }
 			modify_species = {
 				species = this
 				add_trait = trait_psionic
-			}	
-		}		
+			}
+		}
 		if = {
 			limit = {
 				has_authority = auth_machine_intelligence
@@ -508,7 +489,7 @@ country_event = {
 			random_list = {
 				66 = { set_country_flag = fallen_machine_empire_awaken_1 }	# Custodian
 				33 = { set_country_flag = fallen_machine_empire_awaken_2 }	# Berserker
-			}				
+			}
 		}
 		if = {
 			limit = {
@@ -520,21 +501,21 @@ country_event = {
 		}
 		# contact other fallen empires & marauders
 		every_country = {
-			limit = { 
+			limit = {
 				OR = {
 					is_country_type = dormant_marauders
-					is_country_type = fallen_empire 
+					is_country_type = fallen_empire
 					is_country_type = enclave
-				}			
+				}
 				NOT = { has_communications = root }
 			}
 			establish_communications_no_message = root
-		}		
-		
-		# setup mining & research stations			
+		}
+
+		# setup mining & research stations
 		every_planet_within_border = {
-			limit = { 
-				has_deposit_for = shipclass_mining_station 
+			limit = {
+				has_deposit_for = shipclass_mining_station
 				has_mining_station = no
 			}
 			create_mining_station = {
@@ -542,8 +523,8 @@ country_event = {
 			}
 		}
 		every_planet_within_border = {
-			limit = { 
-				has_deposit_for = shipclass_research_station 
+			limit = {
+				has_deposit_for = shipclass_research_station
 				has_research_station = no
 			}
 			create_research_station = {
@@ -562,7 +543,7 @@ planet_event = {
 
 	immediate = {
 		if = {
-			limit = { 
+			limit = {
 				NOT = { has_planet_flag = planet_earth }
 			}
 			generate_start_deposits_and_blockers = yes
@@ -587,7 +568,7 @@ planet_event = {
 	}
 
 	immediate = {
-		clear_blockers = yes		
+		clear_blockers = yes
 	}
 }
 
@@ -629,7 +610,7 @@ planet_event = {
 			add_district = district_mining
 			add_district = district_generator
 			add_district = district_generator
-			
+
 			if = {
 				limit = { owner = { has_authority = auth_machine_intelligence } }
 				add_district = district_nexus
@@ -643,24 +624,24 @@ planet_event = {
 			else = {
 				add_district = district_city
 				add_district = district_city
-			}				
-			
+			}
+
 			if = {
-				limit = { 
+				limit = {
 					owner = { NOT = { has_authority = auth_machine_intelligence } }
 				}
 				add_district = district_farming
 				add_district = district_farming
 			}
 			if = {
-				limit = { 
+				limit = {
 					owner = { has_authority = auth_machine_intelligence }
 				}
 				add_district = district_generator
 				add_district = district_generator
 			}
-			
-			
+
+
 			if = {
 				limit = { owner = { is_gestalt = yes } }
 				add_building = building_maintenance_depot
@@ -673,12 +654,12 @@ planet_event = {
 		else = {
 			add_district = district_generator
 			add_district = district_mining
-			
+
 			if = {
 				limit = { owner = { has_authority = auth_machine_intelligence } }
 				add_district = district_nexus
 				add_district = district_generator
-				add_district = district_generator				
+				add_district = district_generator
 			}
 			else_if = {
 				limit = { owner = { has_authority = auth_hive_mind } }
@@ -688,8 +669,8 @@ planet_event = {
 			else = {
 				add_district = district_city
 				add_district = district_farming
-			}			
-			
+			}
+
 			if = {
 				limit = { owner = { is_gestalt = yes } }
 				add_building = building_maintenance_depot
@@ -709,46 +690,46 @@ planet_event = {
 			limit = { is_capital = yes }
 
 			if = {
-				limit = { owner = { has_authority = auth_machine_intelligence } }			
+				limit = { owner = { has_authority = auth_machine_intelligence } }
 				while = {
 					count = 13
 					create_pop = { species = owner_main_species }
-				}				
-			}	
+				}
+			}
 			else_if = {
-				limit = { owner = { has_authority = auth_hive_mind } }				
+				limit = { owner = { has_authority = auth_hive_mind } }
 				while = {
 					count = 16
 					create_pop = { species = owner_main_species }
-				}				
-			}	
+				}
+			}
 			else = {
 				while = {
 					count = 18
 					create_pop = { species = owner_main_species }
-				}			
+				}
 			}
 		}
-		else = {		
+		else = {
 			if = {
-				limit = { owner = { has_authority = auth_machine_intelligence } }			
+				limit = { owner = { has_authority = auth_machine_intelligence } }
 				while = {
 					count = 15
 					create_pop = { species = owner_main_species }
-				}				
-			}	
+				}
+			}
 			else_if = {
-				limit = { owner = { has_authority = auth_hive_mind } }				
+				limit = { owner = { has_authority = auth_hive_mind } }
 				while = {
 					count = 18
 					create_pop = { species = owner_main_species }
-				}				
-			}	
+				}
+			}
 			else = {
 				while = {
 					count = 10
 					create_pop = { species = owner_main_species }
-				}			
+				}
 			}
 		}
 	}
@@ -761,7 +742,7 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
-		get_galaxy_setup_value = { 
+		get_galaxy_setup_value = {
 			setting = num_wormhole_pairs
 			which = local_wormholes_num
 			scale_by = 5
@@ -812,14 +793,14 @@ country_event = {
 	id = game_start.33
 	hide_window = yes
 	is_triggered_only = yes
-	
+
 	trigger = {
 		is_country_type = default
 	}
 
 	immediate = {
 		every_planet_within_border = {
-			limit = { 
+			limit = {
 				has_deposit_for = shipclass_mining_station
 				has_planet_flag = starting_mining_target
 				has_mining_station = no
@@ -829,8 +810,8 @@ country_event = {
 			}
 		}
 		every_planet_within_border = {
-			limit = { 
-				has_deposit_for = shipclass_research_station 
+			limit = {
+				has_deposit_for = shipclass_research_station
 				has_planet_flag = starting_research_target
 				has_research_station = no
 			}

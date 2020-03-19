@@ -1,0 +1,153 @@
+entity = {
+	name = "thruster_curve_2_xl_entity"
+	scale = 1.25
+	pdxmesh = "thruster_curve_2_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"	animation = "idle"   animation_speed = 3 looping = yes
+	
+	}
+	
+		game_data = {
+		bloom_factor			= .9
+		uv_animation_speed 		= 0.5
+		uv_animation_direction 	= { -0.7 1 }
+		}
+}
+
+	animation = {
+	name = "thruster_curve_2_idle_animation"
+	file = "thruster_curve_2_idle.anim"
+	}
+	
+
+entity = {
+	name = "lithoid_thruster_lightning_xl_entity"
+	pdxmesh = "lithoid_thruster_lightning_mesh"
+	scale = 1.25
+	
+	
+		game_data = {
+		bloom_factor			= 1
+		uv_animation_speed 		= .8
+		uv_animation_direction 	= { 0.5 0.50 }
+		}
+}
+
+entity = {
+	name = "lithoid_thruster_lightning_entity"
+	pdxmesh = "lithoid_thruster_lightning_mesh"
+	scale = 1
+	
+	
+		game_data = {
+		bloom_factor			= 1
+		uv_animation_speed 		= .8
+		uv_animation_direction 	= { 0.5 0.50 }
+		}
+}
+
+entity = {
+	name = "lithoid_thruster_lightning_m_entity"
+	pdxmesh = "lithoid_thruster_lightning_mesh"
+	scale = .75
+	
+	
+		game_data = {
+		bloom_factor			= 1
+		uv_animation_speed 		= .8
+		uv_animation_direction 	= { 0.5 0.50 }
+		}
+}
+
+entity = {
+	name = "lithoid_thruster_lightning_s_entity"
+	pdxmesh = "lithoid_thruster_lightning_mesh"
+	scale = .4
+	
+	
+		game_data = {
+		bloom_factor			= 1
+		uv_animation_speed 		= .8
+		uv_animation_direction 	= { 0.5 0.50 }
+		}
+}
+
+
+entity = {
+	name = "lithoid_thruster_sphere_entity"
+	pdxmesh = "lithoid_thruster_sphere_mesh"
+	scale = 1
+	
+	
+		game_data = {
+		bloom_factor			= .6
+		uv_animation_speed 		= 1.15
+		uv_animation_direction 	= { 1 1.0 }
+		}
+}
+
+entity = {
+	name = "lithoid_thruster_sphere_2_entity"
+	pdxmesh = "lithoid_thruster_sphere_mesh"
+	scale = 1
+	
+	
+		game_data = {
+		bloom_factor			= .6
+		uv_animation_speed 		= 1.0
+		uv_animation_direction 	= { -1 1.0 }
+		}
+}
+
+entity = {
+	name = "lithoid_thruster_sphere_m_entity"
+	pdxmesh = "lithoid_thruster_sphere_mesh"
+	scale = .75
+	
+	
+		game_data = {
+		bloom_factor			= .6
+		uv_animation_speed 		= 1.15
+		uv_animation_direction 	= { 1 1.0 }
+		}
+}
+
+entity = {
+	name = "lithoid_thruster_sphere_2_m_entity"
+	pdxmesh = "lithoid_thruster_sphere_mesh"
+	scale = .75
+	
+	
+		game_data = {
+		bloom_factor			= .6
+		uv_animation_speed 		= 1.0
+		uv_animation_direction 	= { -1 1.0 }
+		}
+}
+
+entity = {
+	name = "lithoid_thruster_sphere_s_entity"
+	pdxmesh = "lithoid_thruster_sphere_mesh"
+	scale = .4
+	
+	
+		game_data = {
+		bloom_factor			= .6
+		uv_animation_speed 		= 1.15
+		uv_animation_direction 	= { 1 1.0 }
+		}
+}
+
+entity = {
+	name = "lithoid_thruster_sphere_2_s_entity"
+	pdxmesh = "lithoid_thruster_sphere_mesh"
+	scale = .4
+	
+	
+		game_data = {
+		bloom_factor			= .6
+		uv_animation_speed 		= 1.0
+		uv_animation_direction 	= { -1 1.0 }
+		}
+}

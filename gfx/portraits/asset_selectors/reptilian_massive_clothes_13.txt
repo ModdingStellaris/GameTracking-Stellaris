@@ -18,7 +18,7 @@ reptilian_massive_clothes_13 = {
 		
 		"gfx/models/portraits/reptilian/reptilian_massive_outfit_general.dds" 	= { OR = { is_pop_category = worker is_pop_category = slave is_pop_category = simple_drone }  }
 		"gfx/models/portraits/reptilian/reptilian_massive_outfit_scientist.dds" 	= { OR = { is_pop_category = specialist is_pop_category = complex_drone } }
-		"gfx/models/portraits/reptilian/reptilian_massive_outfit_Admiral.dds" 	= { is_pop_category = ruler }
+		"gfx/models/portraits/reptilian/reptilian_massive_outfit_admiral.dds" 	= { is_pop_category = ruler }
 	}
 	#leader scope
 	leader = { #scientists, generals, admirals, governor

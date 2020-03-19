@@ -33,21 +33,6 @@ opinion_devouring_swarm = {
 	}
 }
 
-opinion_devouring_swarm = {	
-	trigger = {
-		is_country_type = default
-		OR = {
-			has_valid_civic = "civic_hive_devouring_swarm"
-			from = { has_valid_civic = "civic_hive_devouring_swarm" }
-		}
-	}
-	opinion = {
-		modifier = {
-			add = -1000	
-		}		
-	}
-}
-
 opinion_fanatic_purifiers_vs_xeno = {
 	opinion = {
 		modifier = {

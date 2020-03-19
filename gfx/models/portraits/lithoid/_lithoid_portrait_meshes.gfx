@@ -1,0 +1,180 @@
+objectTypes = {
+	
+	# Lithoid 01
+	pdxmesh = {
+		name = "portrait_lithoid_01_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_01_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_01_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_01_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_01_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_01_portrait_idle4_animation" }
+		scale = 1.0
+	}
+	
+	# Lithoid 02
+	pdxmesh = {
+		name = "portrait_lithoid_02_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_02_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_02_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_02_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_02_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_02_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 03
+	pdxmesh = {
+		name = "portrait_lithoid_03_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_03_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_03_portrait_idle_animation" }
+		animation = { id = "idle2"	type = "lithoid_03_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_03_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_03_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 04
+	pdxmesh = {
+		name = "portrait_lithoid_04_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_04_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_04_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_04_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_04_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_04_portrait_idle4_animation" }
+		scale = 1.0
+	}
+	
+	# Lithoid 05
+	pdxmesh = {
+		name = "portrait_lithoid_05_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_05_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_05_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_05_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_05_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_05_portrait_idle4_animation" }
+		scale = 1.0
+	}
+	
+	# Lithoid 05
+	pdxmesh = {
+		name = "portrait_lithoid_06_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_06_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_06_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_06_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_06_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_06_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 07
+	pdxmesh = {
+		name = "portrait_lithoid_07_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_07_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_07_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_07_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_07_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_07_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 08
+	pdxmesh = {
+		name = "portrait_lithoid_08_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_08_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_08_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_08_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_08_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_08_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 09
+	pdxmesh = {
+		name = "portrait_lithoid_09_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_09_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_09_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_09_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_09_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_09_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 10
+	pdxmesh = {
+		name = "portrait_lithoid_10_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_10_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_10_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_10_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_10_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_10_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 11
+	pdxmesh = {
+		name = "portrait_lithoid_11_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_11_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_11_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_11_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_11_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_11_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 12
+	pdxmesh = {
+		name = "portrait_lithoid_12_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_12_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_12_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_12_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_12_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_12_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 13
+	pdxmesh = {
+		name = "portrait_lithoid_13_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_13_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_13_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_13_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_13_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_13_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 14
+	pdxmesh = {
+		name = "portrait_lithoid_14_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_14_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_14_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_14_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_14_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_14_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid 15
+	pdxmesh = {
+		name = "portrait_lithoid_15_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_15_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_15_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_15_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_15_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_15_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+	# Lithoid machine
+	pdxmesh = {
+		name = "portrait_lithoid_machine_mesh"
+		file = "gfx/models/portraits/lithoid/lithoid_machine_portrait.mesh"
+		animation = { id = "idle1"	type = "lithoid_machine_portrait_idle1_animation" }
+		animation = { id = "idle2"	type = "lithoid_machine_portrait_idle2_animation" }
+		animation = { id = "idle3"	type = "lithoid_machine_portrait_idle3_animation" }
+		animation = { id = "idle4"	type = "lithoid_machine_portrait_idle4_animation" }
+		scale = 1.0
+	}
+
+
+}

@@ -1384,6 +1384,7 @@
  mod_MOL_species_trait_points_add:0 "Genmodifikationspunkte (Molluskoid)"
  mod_FUN_species_trait_points_add:0 "Genmodifikationspunkte (Fungoid)"
  mod_PLANT_species_trait_points_add:0 "Genmodifikationspunkte (Plantoid)"
+ mod_LITHOID_species_trait_points_add:0 "Genmodifikationspunkte (Lithoid)"
  mod_ROBOT_species_trait_points_add:0 "Modifikationspunkte (Roboter)"
  mod_MACHINE_species_trait_points_add:0 "Modifikationspunkte (Maschinen)"
  mod_BIOLOGICAL_species_trait_points_add:0 "$species_trait_points_add$"

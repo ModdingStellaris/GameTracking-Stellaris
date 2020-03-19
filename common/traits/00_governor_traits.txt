@@ -84,6 +84,7 @@ leader_trait_agrarian_upbringing = {
 	}
 	leader_potential_add = {
 		NOT = { from = { has_authority = "auth_machine_intelligence" } }
+		is_lithoid = no
 	}
 	leader_trait = { governor }
 	leader_class = { governor }

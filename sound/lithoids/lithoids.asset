@@ -1,0 +1,794 @@
+category = {
+ name = "Ambient"
+ soundeffects = {
+
+    lithoid_colossus_idle
+    lithoid_amb_science_ship
+    lithoid_amb_science_pulsar
+    lithoid_amb_corvette_hum
+    lithoid_amb_destroyer_hum
+    lithoid_amb_cruiser_hum
+    lithoid_amb_battleship_hum
+    lithoid_amb_battleship_bass
+    lithoid_amb_construction_ship_hum
+    lithoid_amb_colony_ship_hum
+    lithoid_amb_transport_ship_hum
+    lithoid_amb_mining_station_signals
+    lithoid_amb_research_station_signals
+    lithoid_amb_wormhole_station_idle
+    lithoid_amb_defense_station_idle_hum
+    lithoid_amb_outpost_station_idle
+
+ }
+}
+
+category = {
+ name = "Effects"
+ soundeffects = {
+
+	lithoid_colossus_opening
+	lithoid_colossus_closing
+    lithoid_moving_out_corvette
+    lithoid_moving_out_destroyer
+    lithoid_moving_out_cruiser
+    lithoid_moving_out_battleship
+    lithoid_moving_out_science
+    lithoid_moving_out_construction
+    lithoid_moving_out_colony_ship
+    lithoid_moving_out_transport
+    lithoid_moving_out_colossus
+
+ }
+}
+
+#########################################################
+#														#
+#					     ASSETS			    			#
+#														#
+#########################################################
+
+
+
+############### GENERIC SHIPS
+
+######## AMBIENCES	
+
+sound =
+{
+    name = "lithoid_amb_research_station_signals_01"
+    file = "lithoid_amb_research_station_signals.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_mining_station_signals_01"
+    file = "lithoid_amb_mining_station_signals.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_wormhole_station_idle_01"
+    file = "lithoid_amb_wormhole_station_idle_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_outpost_station_01"
+    file = "lithoid_amb_outpost_station_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_construction_ship_hum_01"
+    file = "lithoid_amb_construction_ship_hum_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_construction_ship_hum_02"
+    file = "lithoid_amb_construction_ship_hum_02.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_colony_ship_hum_01"
+    file = "lithoid_amb_colony_ship_hum_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_colony_ship_hum_02"
+    file = "lithoid_amb_colony_ship_hum_02.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_transport_ship_hum_01"
+    file = "lithoid_amb_transport_ship_hum_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_transport_ship_hum_02"
+    file = "lithoid_amb_transport_ship_hum_02.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_corvette_hum_01"
+    file = "lithoid_amb_corvette_hum.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_corvette_hum_02"
+    file = "lithoid_amb_corvette_hum_02.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_destroyer_hum_01"
+    file = "lithoid_amb_destroyer_hum_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_destroyer_hum_02"
+    file = "lithoid_amb_destroyer_hum_02.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_cruiser_hum_01"
+    file = "lithoid_amb_cruiser_hum_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_cruiser_hum_02"
+    file = "lithoid_amb_cruiser_hum_02.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_battleship_hum_01"
+    file = "lithoid_amb_battleship_hum.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_battleship_hum_02"
+    file = "lithoid_amb_battleship_hum_02.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_defense_station_idle_hum_01"
+    file = "lithoid_amb_defense_station_idle_hum_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_amb_starbase_citadel_01"
+    file = "lithoid_amb_starbase_citadel_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_science_ship_01"
+    file = "lithoid_amb_science_ship_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_amb_science_pulsar_01"
+    file = "lithoid_amb_science_pulsar_01.wav"
+    volume = 1
+}
+
+
+##########UNIT MOVEMENT######################
+
+sound =
+{
+    name = "lithoid_moving_out_corvette_01"
+    file = "lithoid_ship_engine_01.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_corvette_02"
+    file = "lithoid_ship_engine_02.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_corvette_03"
+    file = "lithoid_ship_engine_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_destroyer_01"
+    file = "lithoid_moving_out_destroyer_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_destroyer_02"
+    file = "lithoid_moving_out_destroyer_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_destroyer_03"
+    file = "lithoid_moving_out_destroyer_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_cruiser_01"
+    file = "lithoid_moving_out_cruiser_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_cruiser_02"
+    file = "lithoid_moving_out_cruiser_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_cruiser_03"
+    file = "lithoid_moving_out_cruiser_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_battleship_01"
+    file = "lithoid_moving_out_battleship_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_battleship_02"
+    file = "lithoid_moving_out_battleship_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_battleship_03"
+    file = "lithoid_moving_out_battleship_03.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_science_01"
+    file = "lithoid_moving_out_science_01.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_science_02"
+    file = "lithoid_moving_out_science_02.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_science_03"
+    file = "lithoid_moving_out_science_03.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_construction_01"
+    file = "lithoid_moving_out_construction_01.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_construction_02"
+    file = "lithoid_moving_out_construction_02.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_construction_03"
+    file = "lithoid_moving_out_construction_03.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_colony_ship_01"
+    file = "lithoid_moving_out_colony_ship_01.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_colony_ship_02"
+    file = "lithoid_moving_out_colony_ship_02.wav"
+    always_load = no
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_colony_ship_03"
+    file = "lithoid_moving_out_colony_ship_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_transport_01"
+    file = "lithoid_moving_out_transport_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_transport_02"
+    file = "lithoid_moving_out_transport_02.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "lithoid_moving_out_transport_03"
+    file = "lithoid_moving_out_transport_03.wav"
+    volume = 1
+}
+
+
+
+
+############### COLLOSUS
+
+sound =
+{
+    name = "lithoid_colossus_idle_01"
+    file = "lithoid_colossus_idle_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_colossus_opening_01"
+    file = "lithoid_colossus_opening_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_colossus_closing_01"
+    file = "lithoid_colossus_closing_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_colossus_01"
+    file = "lithoid_moving_out_colossus_01.wav"
+    volume = 1
+}
+sound =
+{
+    name = "lithoid_moving_out_colossus_02"
+    file = "lithoid_moving_out_colossus_02.wav"
+    volume = 1
+}
+
+
+#########################################################
+#														#
+#					  SOUNDEFFECTS		    			#
+#														#
+#########################################################
+
+
+################# GENERAL LITHOID SHIPS
+
+###### AMBIENCES
+
+
+soundeffect = {
+    name = lithoid_amb_science_pulsar
+    sounds = {
+        sound = lithoid_amb_science_pulsar_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_fleet
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = lithoid_amb_research_station_signals
+    loop = yes
+    falloff = falloff_stations
+    sounds = {
+        sound = lithoid_amb_research_station_signals_01
+    } 
+    volume = 0.2
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_amb_mining_station_signals
+    loop = yes
+    falloff = falloff_stations
+    sounds = {
+        sound = lithoid_amb_mining_station_signals_01
+    } 
+    volume = 0.5
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_amb_wormhole_station_idle
+    loop = yes
+    falloff = falloff_stations
+    sounds = {
+        sound = lithoid_amb_wormhole_station_idle_01
+    } 
+    volume = 0.3
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_amb_defense_station_idle_hum
+    loop = yes
+    falloff = falloff_fleet
+    sounds = {
+        sound = lithoid_amb_defense_station_idle_hum_01
+    }
+    volume = 0.3
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    delay_random_offset = { 0.0 0.4 }
+}
+soundeffect = {
+    name = lithoid_amb_outpost_station_idle
+    loop = yes
+    falloff = falloff_stations
+    sounds = {
+        sound = lithoid_amb_outpost_station_01
+    } 
+    volume = 0.5
+    is3d = yes
+    max_audible = 1 
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_amb_construction_ship_hum
+    loop = yes
+    falloff = falloff_fleet
+    random_sound_when_looping = no
+    sounds = {
+        sound = lithoid_amb_construction_ship_hum_01
+        sound = lithoid_amb_construction_ship_hum_02
+    } 
+    volume = 0.2
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    volume_random_offset = { -0.05 0.05 }
+    playbackrate_random_offset = { 0.0 -0.3 }
+}
+soundeffect = {
+    name = lithoid_amb_colony_ship_hum
+    loop = yes
+    falloff = falloff_fleet
+    random_sound_when_looping = no
+    sounds = {
+        sound = lithoid_amb_colony_ship_hum_01
+        sound = lithoid_amb_colony_ship_hum_02
+    } 
+    volume = 0.25
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    volume_random_offset = { -0.05 0.05}
+    playbackrate_random_offset = { 0.0 -0.3 }
+}
+soundeffect = {
+    name = lithoid_amb_transport_ship_hum
+    loop = yes
+    falloff = falloff_fleet
+    random_sound_when_looping = no
+    sounds = {
+        sound = lithoid_amb_transport_ship_hum_01
+        sound = lithoid_amb_transport_ship_hum_02
+    } 
+    volume = 0.15
+    is3d = yes
+    max_audible = 2
+    volume_random_offset = { -0.15 0.15 }
+    delay_random_offset = { 0.4 0.8 }
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_amb_corvette_hum
+    loop = yes
+    falloff = falloff_fleet
+    random_sound_when_looping = no
+    sounds = {
+        sound = lithoid_amb_corvette_hum_01
+        sound = lithoid_amb_corvette_hum_02
+    } 
+    playbackrate_random_offset = { -10.0 10.0 }
+    volume = 0.15
+    is3d = yes
+    max_audible = 4
+    volume_random_offset = { -0.15 0.08 }
+    delay_random_offset = { 0.4 0.8 }
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_amb_destroyer_hum
+    loop = yes
+    falloff = falloff_fleet
+    random_sound_when_looping = no
+    sounds = {
+        sound = lithoid_amb_destroyer_hum_01
+        sound = lithoid_amb_destroyer_hum_02
+    } 
+    playbackrate_random_offset = { -10.0 10.0 }
+    volume = 0.1
+    is3d = yes
+    max_audible = 4
+    volume_random_offset = { -0.07 0.05 }
+    delay_random_offset = { 0.4 0.8 }
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_amb_cruiser_hum
+    loop = yes
+    falloff = falloff_fleet
+    random_sound_when_looping = no
+    sounds = {
+        sound = lithoid_amb_cruiser_hum_01
+        sound = lithoid_amb_cruiser_hum_02
+    } 
+    playbackrate_random_offset = { -2.0 2.0 }
+    volume = 0.05
+    is3d = yes
+    max_audible = 4
+    volume_random_offset = { -0.05 0.05 }
+    delay_random_offset = { 0.4 0.8 }
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_amb_battleship_hum
+    loop = yes
+    falloff = falloff_fleet
+    random_sound_when_looping = no
+    sounds = {
+        sound = lithoid_amb_battleship_hum_01
+        sound = lithoid_amb_battleship_hum_02
+    } 
+    playbackrate_random_offset = { -10.0 10.0 }
+    volume = 0.10
+    is3d = yes
+    max_audible = 2
+    volume_random_offset = { -0.05 0.05 }
+    delay_random_offset = { 0.4 0.8 }
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_amb_battleship_bass
+    loop = yes
+    falloff = falloff_fleet
+    sounds = {
+        sound = lithoid_amb_cruiser_hum_01
+    }
+    volume = 0.05
+    is3d = yes
+    max_audible = 2
+    volume_random_offset = { -0.05 0.05 }
+    max_audible_behaviour = fail
+}
+
+soundeffect = {
+    name = lithoid_amb_science_ship
+    sounds = {
+        sound = lithoid_amb_science_ship_01
+    }
+    volume = 0.55
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    falloff = falloff_fleet
+    fade_in = 4
+    fade_out = 2
+}
+
+
+########MOVING_OUT
+
+
+soundeffect = {
+    name = lithoid_moving_out_corvette
+    falloff = "falloff_400"
+    volume = 0.3
+    sounds = {
+        sound = lithoid_moving_out_corvette_01
+        sound = lithoid_moving_out_corvette_02
+        sound = lithoid_moving_out_corvette_03
+    } 
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_moving_out_destroyer
+    falloff = "falloff_400"
+    volume = 0.3
+    sounds = {
+        sound = lithoid_moving_out_destroyer_01
+        sound = lithoid_moving_out_destroyer_02
+        sound = lithoid_moving_out_destroyer_03
+    } 
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_moving_out_cruiser
+    falloff = "falloff_400"
+    volume = 0.2
+    sounds = {
+        sound = lithoid_moving_out_cruiser_01
+        sound = lithoid_moving_out_cruiser_02
+        sound = lithoid_moving_out_cruiser_03
+    } 
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_moving_out_battleship
+    falloff = "falloff_400"
+    volume = 0.3
+    sounds = {
+        sound = lithoid_moving_out_battleship_01
+        sound = lithoid_moving_out_battleship_02
+        sound = lithoid_moving_out_battleship_03
+    } 
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail    
+}
+soundeffect = {
+    name = lithoid_moving_out_science
+    falloff = "falloff_400"
+    volume = 0.25
+    sounds = {
+        sound = lithoid_moving_out_science_01
+        sound = lithoid_moving_out_science_02
+        sound = lithoid_moving_out_science_03
+    } 
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = lithoid_moving_out_construction
+    falloff = "falloff_400"
+    volume = 0.20
+    sounds = {
+        sound = lithoid_moving_out_construction_01
+        sound = lithoid_moving_out_construction_02
+        sound = lithoid_moving_out_construction_03
+    } 
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail    
+}
+soundeffect = {
+    name = lithoid_moving_out_colony_ship
+    falloff = "falloff_400"
+    volume = 0.3
+    sounds = {
+        sound = lithoid_moving_out_colony_ship_01
+        sound = lithoid_moving_out_colony_ship_02
+        sound = lithoid_moving_out_colony_ship_03
+    } 
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail    
+}
+soundeffect = {
+    name = lithoid_moving_out_transport
+    falloff = "falloff_400"
+    volume = 0.35
+    sounds = {
+        sound = lithoid_moving_out_transport_01
+        sound = lithoid_moving_out_transport_02
+        sound = lithoid_moving_out_transport_03
+    } 
+    is3d = yes
+    max_audible = 2 
+    max_audible_behaviour = fail        
+}
+
+
+
+
+
+######### COLLOSUS
+
+soundeffect = {
+    name = lithoid_colossus_idle
+    sounds = {
+        sound = lithoid_colossus_idle_01
+    }
+    volume = 0.55
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    falloff = falloff_fleet
+    fade_in = 4
+    fade_out = 2
+}
+soundeffect = {
+    name = lithoid_colossus_opening
+    falloff = falloff_colossus
+    volume = 0.8
+    sounds = {
+        sound = lithoid_colossus_opening_01
+    } 
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    fade_out = 0.2
+}
+soundeffect = {
+    name = lithoid_colossus_closing
+    falloff = falloff_colossus
+    volume = 0.8
+    sounds = {
+        sound = lithoid_colossus_closing_01
+    } 
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    fade_out = 0.2
+}
+soundeffect = {
+    name = lithoid_moving_out_colossus
+    falloff = falloff_400
+    volume = 0.85
+    sounds = {
+        sound = lithoid_moving_out_colossus_01
+        sound = lithoid_moving_out_colossus_02
+    } 
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    fade_out = 4
+}

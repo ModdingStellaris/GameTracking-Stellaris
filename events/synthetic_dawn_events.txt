@@ -1955,7 +1955,7 @@ planet_event = { #uprising
 					create_country = {
 						name = random
 						type = default
-						species = last_created_species
+						species = last_created
 						ignore_initial_colony_error = yes
 						day_zero_contact = no
 						ethos = { ethic = ethic_gestalt_consciousness }
@@ -1982,7 +1982,7 @@ planet_event = { #uprising
 					create_country = {
 						name = random
 						type = default
-						species = last_created_species
+						species = last_created
 						ignore_initial_colony_error = yes
 						day_zero_contact = no
 						ethos = { ethic = ethic_gestalt_consciousness }
@@ -2009,7 +2009,7 @@ planet_event = { #uprising
 					create_country = {
 						name = random
 						type = default
-						species = last_created_species
+						species = last_created
 						ignore_initial_colony_error = yes
 						day_zero_contact = no
 						ethos = { ethic = ethic_gestalt_consciousness }

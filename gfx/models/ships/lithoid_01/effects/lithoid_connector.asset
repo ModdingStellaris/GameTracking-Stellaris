@@ -1,0 +1,114 @@
+entity = {
+	name = "lithoid_lightning_entity"
+	pdxmesh = "lithoid_lightning_mesh"
+	scale = 1
+	
+	
+		game_data = {
+		bloom_factor			= 1.2
+		uv_animation_speed 		= 1.02
+		uv_animation_direction 	= { 0.5 0.50 }
+		}
+}
+
+entity = {
+	name = "lithoid_lightning_2_entity"
+	pdxmesh = "lithoid_lightning_mesh"
+	scale = 1
+	
+	
+		game_data = {
+		bloom_factor			= 1.6
+		uv_animation_speed 		= .9
+		uv_animation_direction 	= { 0.5 0.50 }
+		}
+}
+
+entity = {
+	name = "lithoid_lightning_2_s_entity"
+	pdxmesh = "lithoid_lightning_mesh"
+	scale = 0.45
+	
+	
+		game_data = {
+		bloom_factor			= 1.6
+		uv_animation_speed 		= .9
+		uv_animation_direction 	= { 0.5 0.50 }
+		}
+}
+
+entity = {
+	name = "lithoid_connector_dist_3_entity"
+	pdxmesh = "lithoid_connector_1_dist_mesh"
+	scale = 1
+	
+	
+		game_data = {
+		bloom_factor			= .38
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 0.2 0.55 }
+		}
+}
+
+entity = {
+	name = "lithoid_01_connector_dist_s_3_entity"
+	pdxmesh = "lithoid_connector_1_dist_mesh"
+	scale = .65
+	
+	
+		game_data = {
+		bloom_factor			= .38
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 0.2 0.55 }
+		}
+}
+
+
+entity = {
+	name = "lithoid_01_turret_connection_xl_3_entity"
+	pdxmesh = "turret_connection_3_mesh"
+	scale = .8
+	
+		game_data = {
+		bloom_factor			= .5
+		uv_animation_speed 		= .3
+		uv_animation_direction 	= { 0.2 0.55 }
+		}
+}
+
+entity = {
+	name = "lithoid_01_turret_connection_l_3_entity"
+	pdxmesh = "turret_connection_3_mesh"
+	scale = .6
+	
+		game_data = {
+		bloom_factor			= .5
+		uv_animation_speed 		= .3
+		uv_animation_direction 	= { 0.2 0.55 }
+		}
+}
+
+entity = {
+	name = "lithoid_01_turret_connection_m_3_entity"
+	pdxmesh = "turret_connection_3_mesh"
+	scale = .45
+	
+		game_data = {
+		bloom_factor			= .5
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { 0.2 0.55 }
+		}
+}
+
+entity = {
+	name = "lithoid_01_turret_connection_s_3_entity"
+	pdxmesh = "turret_connection_3_mesh"
+	scale = .35
+	
+		game_data = {
+		bloom_factor			= .5	
+		uv_animation_speed 		= .14
+		uv_animation_direction 	= { 0.2 0.55 }
+		}
+}
+

@@ -10,11 +10,11 @@ ruler_job_check_trigger = {
 		OR = {
 			NOT = { has_trait = trait_mechanical }
 			AND = {
-				owner = { has_technology = tech_synthetic_workers }		
+				owner = { has_technology = tech_synthetic_workers }
 				owner = { has_policy_flag = ai_full_rights }
 			}
 		}
-		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }	
+		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
 	}
 }
 
@@ -26,7 +26,7 @@ complex_specialist_job_check_trigger = {
 			NOT = { has_trait = trait_mechanical }
 			AND = {
 				owner = { has_technology = tech_synthetic_workers }
-				owner = { NOT = { has_policy_flag = ai_outlawed } }			
+				owner = { NOT = { has_policy_flag = ai_outlawed } }
 			}
 		}
 	}
@@ -56,7 +56,7 @@ entertainer_job_check_trigger = {
 		OR = {
 			is_enslaved = no
 			has_slavery_type = { type = slavery_domestic }
-		}		
+		}
 		is_being_purged = no
 		is_being_assimilated = no
 		NOT = { has_trait = trait_syncretic_proles }
@@ -65,7 +65,7 @@ entertainer_job_check_trigger = {
 			NOT = { has_trait = trait_mechanical }
 			owner = { has_technology = tech_droid_workers }
 		}
-		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }	
+		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
 	}
 }
 
@@ -76,7 +76,7 @@ battle_thrall_job_check_trigger = {
 		OR = {
 			is_enslaved = no
 			has_slavery_type = { type = slavery_military }
-		}		
+		}
 		is_being_purged = no
 		is_being_assimilated = no
 		NOT = { has_trait = trait_nerve_stapled }
@@ -84,13 +84,13 @@ battle_thrall_job_check_trigger = {
 			NOT = { has_trait = trait_mechanical }
 			owner = { has_technology = tech_droid_workers }
 		}
-		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }	
+		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
 	}
 }
 
 complex_worker_job_check_trigger = {
 	worker_job_check_trigger = yes
-	hidden_trigger = {	
+	hidden_trigger = {
 		exists = owner
 		OR = {
 			NOT = { has_trait = trait_mechanical }
@@ -124,7 +124,7 @@ drone_job_check_trigger = {
 		is_being_purged = no
 		is_enslaved = no
 		is_being_assimilated = no
-		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }	
+		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
 	}
 }
 
@@ -136,15 +136,15 @@ has_very_high_living_standard_type = {
 	OR = {
 		has_living_standard = { type = living_standard_chemical_bliss }
 		has_living_standard = { type = living_standard_utopian }
-	}	
+	}
 }
 
 has_shared_burden_living_standard_type = {
-	has_living_standard = { type = living_standard_shared_burden }	
+	has_living_standard = { type = living_standard_shared_burden }
 }
 
 has_academic_living_standard_type = {
-	has_living_standard = { type = living_standard_academic_privilege }	
+	has_living_standard = { type = living_standard_academic_privilege }
 }
 
 has_high_living_standard_type = {
@@ -163,9 +163,18 @@ has_low_living_standard_type = {
 	has_living_standard = { type = living_standard_subsistence }
 }
 
+is_lithoid = {
+	species = {
+		is_archetype = LITHOID
+	}
+}
+
 is_organic_species = {
 	species = {
-		is_archetype = BIOLOGICAL # original trigger did not include pre-sapient classes
+		OR = {
+			is_archetype = BIOLOGICAL # original trigger did not include pre-sapient classes
+			is_archetype = LITHOID
+		}
 	}
 }
 
@@ -185,9 +194,9 @@ can_take_servant_job = {
 	}
 }
 
-is_domestic_servant = {	
+is_domestic_servant = {
 	is_enslaved = yes
-	has_slavery_type = { type = slavery_domestic }		
+	has_slavery_type = { type = slavery_domestic }
 }
 
 is_domestic_robot = {
@@ -205,6 +214,6 @@ prosperity_gospel_check_trigger = {
 				has_branch_office = yes
 				branch_office_owner = { has_valid_civic = civic_gospel_of_the_masses }
 			}
-		}	
+		}
 	}
 }

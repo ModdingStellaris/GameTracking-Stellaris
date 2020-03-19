@@ -7,7 +7,7 @@ entity = {
 			index = 0
 			texture_diffuse = "matter_decompressor_01_diffuse.dds"
 			texture_normal = "matter_decompressor_01_normal.dds"
-			texture_specular = "matter_decompressor_01_normal.dds"
+			texture_specular = "matter_decompressor_01_specular.dds"
 			shader = "PdxMeshShip"
 		}
 }
@@ -29,7 +29,7 @@ entity = {
 			index = 0
 			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
-			texture_specular = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -61,7 +61,7 @@ entity = {
 			index = 0
 			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
-			texture_specular = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -94,7 +94,7 @@ entity = {
 			index = 0
 			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
-			texture_specular = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -130,7 +130,7 @@ entity = {
 			index = 0
 			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
-			texture_specular = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -178,7 +178,7 @@ entity = {
 			index = 0
 			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
-			texture_specular = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -195,7 +195,7 @@ entity = {
 			index = 0
 			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
-			texture_specular = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -212,7 +212,7 @@ entity = {
 			index = 0
 			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
-			texture_specular = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -229,7 +229,7 @@ entity = {
 			index = 0
 			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
-			texture_specular = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -252,7 +252,7 @@ entity = {
 			index = 0
 			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "avian_01_matter_decompressor_normal.dds"
-			texture_specular = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -284,7 +284,7 @@ entity = {
 			index = 0
 			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "avian_01_matter_decompressor_normal.dds"
-			texture_specular = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -317,7 +317,7 @@ entity = {
 			index = 0
 			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "avian_01_matter_decompressor_normal.dds"
-			texture_specular = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -353,7 +353,7 @@ entity = {
 			index = 0
 			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "avian_01_matter_decompressor_normal.dds"
-			texture_specular = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -401,7 +401,7 @@ entity = {
 			index = 0
 			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "avian_01_matter_decompressor_normal.dds"
-			texture_specular = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -418,7 +418,7 @@ entity = {
 			index = 0
 			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "avian_01_matter_decompressor_normal.dds"
-			texture_specular = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -435,7 +435,7 @@ entity = {
 			index = 0
 			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "avian_01_matter_decompressor_normal.dds"
-			texture_specular = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -452,7 +452,7 @@ entity = {
 			index = 0
 			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "avian_01_matter_decompressor_normal.dds"
-			texture_specular = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -475,7 +475,7 @@ entity = {
 			index = 0
 			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
-			texture_specular = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -507,7 +507,7 @@ entity = {
 			index = 0
 			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
-			texture_specular = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -540,7 +540,7 @@ entity = {
 			index = 0
 			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
-			texture_specular = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -576,7 +576,7 @@ entity = {
 			index = 0
 			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
-			texture_specular = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -624,7 +624,7 @@ entity = {
 			index = 0
 			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
-			texture_specular = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -641,7 +641,7 @@ entity = {
 			index = 0
 			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
-			texture_specular = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -658,7 +658,7 @@ entity = {
 			index = 0
 			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
-			texture_specular = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -675,7 +675,7 @@ entity = {
 			index = 0
 			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
-			texture_specular = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -699,7 +699,7 @@ entity = {
 			index = 0
 			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
-			texture_specular = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -731,7 +731,7 @@ entity = {
 			index = 0
 			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
-			texture_specular = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -764,7 +764,7 @@ entity = {
 			index = 0
 			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
-			texture_specular = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -800,7 +800,7 @@ entity = {
 			index = 0
 			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
-			texture_specular = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -848,7 +848,7 @@ entity = {
 			index = 0
 			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
-			texture_specular = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -865,7 +865,7 @@ entity = {
 			index = 0
 			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
-			texture_specular = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -882,7 +882,7 @@ entity = {
 			index = 0
 			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
-			texture_specular = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -899,7 +899,7 @@ entity = {
 			index = 0
 			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
-			texture_specular = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -923,7 +923,7 @@ entity = {
 			index = 0
 			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
-			texture_specular = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -955,7 +955,7 @@ entity = {
 			index = 0
 			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
-			texture_specular = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -988,7 +988,7 @@ entity = {
 			index = 0
 			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
-			texture_specular = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1024,7 +1024,7 @@ entity = {
 			index = 0
 			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
-			texture_specular = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1072,7 +1072,7 @@ entity = {
 			index = 0
 			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
-			texture_specular = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1089,7 +1089,7 @@ entity = {
 			index = 0
 			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
-			texture_specular = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1106,7 +1106,7 @@ entity = {
 			index = 0
 			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
-			texture_specular = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1123,7 +1123,7 @@ entity = {
 			index = 0
 			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
-			texture_specular = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1147,7 +1147,7 @@ entity = {
 			index = 0
 			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
-			texture_specular = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1179,7 +1179,7 @@ entity = {
 			index = 0
 			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
-			texture_specular = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1212,7 +1212,7 @@ entity = {
 			index = 0
 			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
-			texture_specular = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1248,7 +1248,7 @@ entity = {
 			index = 0
 			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
-			texture_specular = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1298,7 +1298,7 @@ entity = {
 			index = 0
 			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
-			texture_specular = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1315,7 +1315,7 @@ entity = {
 			index = 0
 			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
-			texture_specular = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1332,7 +1332,7 @@ entity = {
 			index = 0
 			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
-			texture_specular = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1349,7 +1349,7 @@ entity = {
 			index = 0
 			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
-			texture_specular = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1373,7 +1373,7 @@ entity = {
 			index = 0
 			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
-			texture_specular = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1405,7 +1405,7 @@ entity = {
 			index = 0
 			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
-			texture_specular = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1438,7 +1438,7 @@ entity = {
 			index = 0
 			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
-			texture_specular = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1474,7 +1474,7 @@ entity = {
 			index = 0
 			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
-			texture_specular = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1522,7 +1522,7 @@ entity = {
 			index = 0
 			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
-			texture_specular = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1539,7 +1539,7 @@ entity = {
 			index = 0
 			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
-			texture_specular = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1556,7 +1556,7 @@ entity = {
 			index = 0
 			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
-			texture_specular = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1573,7 +1573,7 @@ entity = {
 			index = 0
 			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
 			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
-			texture_specular = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1596,7 +1596,7 @@ entity = {
 			index = 0
 			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
-			texture_specular = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1628,7 +1628,7 @@ entity = {
 			index = 0
 			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
-			texture_specular = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1661,7 +1661,7 @@ entity = {
 			index = 0
 			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
-			texture_specular = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1697,7 +1697,7 @@ entity = {
 			index = 0
 			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
-			texture_specular = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1747,7 +1747,7 @@ entity = {
 			index = 0
 			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
-			texture_specular = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1764,7 +1764,7 @@ entity = {
 			index = 0
 			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
-			texture_specular = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1781,7 +1781,7 @@ entity = {
 			index = 0
 			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
-			texture_specular = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
@@ -1798,13 +1798,257 @@ entity = {
 			index = 0
 			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
 			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
-			texture_specular = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
 			shader = "PdxMeshShip"
 		}
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" }
 }
+
+
+
+#####################################################
+#####											#####
+#####					Lithoid					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "lithoid_01_matter_decompressor_stage_1_entity"
+	pdxmesh = "matter_decompressor_01_stage_1_mesh"
+	
+		meshsettings = {
+			name = "g_body1Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+	}
+	
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}	
+}
+
+entity = {
+	name = "lithoid_01_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+	
+		meshsettings = {
+			name = "g_body2Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+	
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}	
+}
+
+entity = {
+	name = "lithoid_01_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+	
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}	
+}
+
+entity = {
+	name = "lithoid_01_matter_decompressor_stage_4_entity"
+	pdxmesh = "matter_decompressor_01_stage_4_mesh"
+	
+		meshsettings = {
+			name = "body4Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "platform_1" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "platform_2" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "platform_3" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "platform_beam_1" particle = "matde_platform_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "platform_beam_2" particle = "matde_platform_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "platform_beam_3" particle = "matde_platform_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_pulse" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_conveyor" } }
+	}
+	
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}	
+}
+
+# CONSTRUCTION ENTITIES
+
+entity = {
+	name = "lithoid_01_matter_decompressor_stage_1_construction_entity"
+	pdxmesh = "matter_decompressor_01_stage_1_mesh"
+	
+			meshsettings = {
+			name = "g_body1Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+}
+
+entity = {
+	name = "lithoid_01_matter_decompressor_stage_2_construction_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+	
+			meshsettings = {
+			name = "g_body2Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+}
+
+entity = {
+	name = "lithoid_01_matter_decompressor_stage_3_construction_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+	
+			meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+}
+
+entity = {
+	name = "lithoid_01_matter_decompressor_stage_4_construction_entity"
+	pdxmesh = "matter_decompressor_01_stage_4_mesh"
+	
+			meshsettings = {
+			name = "body4Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+}
+
+
+
 
 #########################
 

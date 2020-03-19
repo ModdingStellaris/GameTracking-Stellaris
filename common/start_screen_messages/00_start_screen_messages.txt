@@ -10,95 +10,95 @@
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_CONTINENTAL"
-	
+
 	trigger = {
 		ideal_planet_class = pc_continental
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
-	}		
+	}
 }
 # Ocean
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_OCEAN"
-	
+
 	trigger = {
 		ideal_planet_class = pc_ocean
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
-	}		
+	}
 }
 # Tropical
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_TROPICAL"
-	
+
 	trigger = {
 		ideal_planet_class = pc_tropical
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
-	}		
+	}
 }
 # Desert
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_DESERT"
-	
+
 	trigger = {
 		ideal_planet_class = pc_desert
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
-	}		
+	}
 }
 # Arid
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_ARID"
-	
+
 	trigger = {
 		ideal_planet_class = pc_arid
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
-	}		
+	}
 }
 # Tundra
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_TUNDRA"
-	
+
 	trigger = {
 		ideal_planet_class = pc_tundra
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
-	}		
+	}
 }
 # Arctic
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_ARCTIC"
-	
+
 	trigger = {
 		ideal_planet_class = pc_arctic
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
@@ -109,11 +109,11 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_SAVANNAH"
-	
+
 	trigger = {
 		ideal_planet_class = pc_savannah
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
@@ -124,11 +124,11 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_ALPINE"
-	
+
 	trigger = {
 		ideal_planet_class = pc_alpine
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
@@ -139,11 +139,11 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_PART_ONE_GAIA"
-	
+
 	trigger = {
 		ideal_planet_class = pc_gaia
-		NOR = { 
-			has_country_flag = custom_start_screen 
+		NOR = {
+			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
@@ -158,7 +158,7 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_DESPOTIC_EMPIRE"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_despotic_empire
@@ -167,9 +167,9 @@ part = {
 			has_government = gov_enlightened_monarchy
 			has_government = gov_elective_monarchy
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -179,12 +179,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_OLIGARCHY"
-	
+
 	trigger = {
 		has_government = gov_plutocratic_oligarchy
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -194,12 +194,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_REPRESENTATIVE_DEMOCRACY"
-	
+
 	trigger = {
 		has_government = gov_representative_democracy
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -209,16 +209,16 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_THEOCRATIC_MONARCHY"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_theocratic_monarchy
 			has_government = gov_theocratic_dictatorship
 			has_government = gov_divine_empire
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -228,15 +228,15 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_THEOCRATIC_OLIGARCHY"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_theocratic_oligarchy
 			has_government = gov_holy_tribunal
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -246,12 +246,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_THEOCRATIC_REPUBLIC"
-	
+
 	trigger = {
 		has_government = gov_theocratic_republic
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -261,16 +261,16 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_STAR_EMPIRE"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_star_empire
 			has_government = gov_military_dictatorship
 			has_government = gov_military_junta
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -280,12 +280,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MILITARY_REPUBLIC"
-	
+
 	trigger = {
 		has_government = gov_military_commissariat
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -295,16 +295,16 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MARTIAL_EMPIRE"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_martial_empire
 			has_government = gov_martial_dictatorship
 			has_government = gov_war_council
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -314,12 +314,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_ASSEMBLY_OF_CLANS"
-	
+
 	trigger = {
 		has_government = gov_assembly_of_clans
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -329,15 +329,15 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_CITIZEN_STRATOCRACY"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_citizen_stratocracy
 			has_government = gov_citizen_republic
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -347,12 +347,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_IRENIC_MONARCHY"
-	
+
 	trigger = {
 		has_government = gov_irenic_monarchy
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -362,15 +362,15 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_IRENIC_BUREAUCRACY"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_irenic_bureaucracy
 			has_government = gov_irenic_dictatorship
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -380,12 +380,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MORAL_DEMOCRACY"
-	
+
 	trigger = {
 		has_government = gov_moral_democracy
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -395,12 +395,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_CELESTIAL_EMPIRE"
-	
+
 	trigger = {
 		has_government = gov_celestial_empire
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -410,15 +410,15 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_DESPOTIC_HEGEMONY"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_despotic_hegemony
 			has_government = gov_totalitarian_regime
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -428,12 +428,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_EXECUTIVE_COMMITTEE"
-	
+
 	trigger = {
 		has_government = gov_executive_committee
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -443,12 +443,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_DIRECT_DEMOCRACY"
-	
+
 	trigger = {
 		has_government = gov_direct_democracy
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -458,15 +458,15 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_ILLUMINATED_AUTOCRACY"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_illuminated_autocracy
 			has_government = gov_technocratic_dictatorship
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -476,12 +476,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_SCIENCE_DIRECTORATE"
-	
+
 	trigger = {
 		has_government = gov_science_directorate
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -491,12 +491,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_RATIONAL_CONSENSUS"
-	
+
 	trigger = {
 		has_government = gov_rational_consensus
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -506,12 +506,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_TRADE_LEAGUE"
-	
+
 	trigger = {
 		has_government = gov_trade_league
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -521,12 +521,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MEGACORPORATION"
-	
+
 	trigger = {
 		has_government = gov_megacorporation
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -536,12 +536,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MEGACHURCH"
-	
+
 	trigger = {
 		has_government = gov_megachurch
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -551,12 +551,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MONOPOLISTIC_SYNDICATE"
-	
+
 	trigger = {
 		has_government = gov_criminal_syndicate
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -566,12 +566,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_SUBVERSIVE_CULT"
-	
+
 	trigger = {
 		has_government = gov_subversive_cult
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -581,12 +581,12 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_COMMUNAL_PARITY"
-	
+
 	trigger = {
 		has_government = gov_communal_parity
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -596,15 +596,15 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_BANDIT_KINGDOM"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_bandit_kingdom
 			has_government = gov_bandit_commune
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -614,7 +614,7 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_PURIFIER"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_blood_court
@@ -622,9 +622,9 @@ part = {
 			has_government = gov_purification_committee
 			has_government = gov_purity_assembly
 		}
-		NOR = { 
-			has_country_flag = custom_start_screen 
-			has_civic = civic_post_apocalyptic 
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_civic = civic_post_apocalyptic
 			has_civic = civic_life_seeded
 		}
 	}
@@ -634,7 +634,7 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_HIVE_MIND"
-	
+
 	trigger = {
 		has_government = gov_hive_mind
 		NOR = { has_country_flag = custom_start_screen }
@@ -645,9 +645,21 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_DEVOURING_SWARM"
-	
+
 	trigger = {
 		has_government = gov_devouring_swarm
+		is_lithoid_empire = no
+		NOR = { has_country_flag = custom_start_screen }
+	}
+}
+
+part = {
+	location = 1
+	localization = "START_SCREEN_PART_TWO_DEVOURING_SWARM_LITHOID"
+
+	trigger = {
+		has_government = gov_devouring_swarm
+		is_lithoid_empire = yes
 		NOR = { has_country_flag = custom_start_screen }
 	}
 }
@@ -656,15 +668,15 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MACHINE_INTELLIGENCE_GENERAL"
-	
+
 	trigger = {
 		OR = {
 			has_government = gov_machine_empire
 			has_government = gov_machine_research
 			has_government = gov_machine_industrial
 		}
-		NOT = { 
-			has_country_flag = custom_start_screen 
+		NOT = {
+			has_country_flag = custom_start_screen
 		}
 	}
 }
@@ -673,11 +685,11 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MACHINE_INTELLIGENCE_SERVITOR"
-	
+
 	trigger = {
 		has_government = gov_machine_servitor
-		NOT = { 
-			has_country_flag = custom_start_screen 
+		NOT = {
+			has_country_flag = custom_start_screen
 		}
 	}
 }
@@ -686,11 +698,11 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MACHINE_INTELLIGENCE_TERMINATOR"
-	
+
 	trigger = {
 		has_government = gov_machine_terminator
-		NOT = { 
-			has_country_flag = custom_start_screen 
+		NOT = {
+			has_country_flag = custom_start_screen
 		}
 	}
 }
@@ -699,11 +711,11 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_MACHINE_INTELLIGENCE_ASSIMILATOR"
-	
+
 	trigger = {
 		has_government = gov_machine_assimilator
-		NOT = { 
-			has_country_flag = custom_start_screen 
+		NOT = {
+			has_country_flag = custom_start_screen
 		}
 	}
 }
@@ -712,7 +724,7 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_POST_APOCALYPTIC"
-	
+
 	trigger = {
 		has_civic = civic_post_apocalyptic
 		NOT = { has_country_flag = custom_start_screen }
@@ -723,7 +735,7 @@ part = {
 part = {
 	location = 1
 	localization = "START_SCREEN_POST_LIFE_SEEDED"
-	
+
 	trigger = {
 		has_civic = civic_life_seeded
 		NOT = { has_country_flag = custom_start_screen }
@@ -736,9 +748,9 @@ part = {
 part = {
 	location = 2
 	localization = "START_SCREEN_PART_THREE_HYPERSPACE"
-	
+
 	trigger = {
-		NOR = { 
+		NOR = {
 			has_country_flag = custom_start_screen
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
@@ -752,7 +764,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_UNE"
-	
+
 	trigger = {
 		has_country_flag = human_1
 	}
@@ -762,7 +774,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_CM"
-	
+
 	trigger = {
 		has_country_flag = human_2
 	}

@@ -1714,3 +1714,4 @@
  mod_planet_district_arcology_arms_industry_build_speed_mult:0 "Vitesse de construction des arcologies de fonte"
  mod_planet_district_arcology_civilian_industry_build_speed_mult:0 "Vitesse de construction des arcologies industrielles"
  armistice_power:0 "Puissance de l'Armistice"
+ mod_LITHOID_species_trait_points_add:0 "Points de modification génétique pour les lithoïdes "

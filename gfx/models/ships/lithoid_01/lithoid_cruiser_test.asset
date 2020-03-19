@@ -1,0 +1,561 @@
+entity = {
+	name = "lithoid_cruiser_test_entity"
+	pdxmesh = "lithoid_cruiser_test_mesh"
+	
+}
+
+#entity = {
+#	name = "lithoid_cruiser_test_entity_1"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_entity"
+#		
+#
+#	}
+#}
+#
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_2"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_2" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_4_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_4_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_4_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_cylinder_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_entity"
+#		}
+#		attach = { effect_01 = "lithoid_cable_entity"		
+#		}
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_3"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_3" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_2_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_2_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_2_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_cone_entity"
+#		}
+##		attach = { effect_01 = "lithoid_connector_entity"
+#		attach = { effect_01 = "lithoid_cable_entity"	
+#		}
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_4"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_4" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_2_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_3_entity"
+#		}
+#		attach = { turret_01 = "turret_connection_L_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_entity"
+#		}
+##		attach = { effect_01 = "lithoid_cable_entity"		
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_5"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_5" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_2_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_2_entity"
+#		}
+#
+#		attach = { turret_01 = "turret_connection_L_2_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_2_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_2_entity"
+#		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"		
+#		}
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_6"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_5" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+##		attach = { engine_01 = "thruster_curve_2_entity"
+##		}
+#		attach = { effect_01 = "lithoid_connector_4_entity"
+#		}
+#
+#		attach = { turret_01 = "turret_connection_L_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_entity"
+#		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"		
+#		}
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_7"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_6" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_2_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_2_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_2_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_5_entity"
+#		}
+#
+##		attach = { turret_01 = "turret_connection_L_2_entity"
+##		}
+##		attach = { turret_02 = "turret_connection_M_2_entity"
+##		}
+##		attach = { turret_03 = "turret_connection_S_2_entity"
+##		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_8"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_6" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_4_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_4_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_4_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_6_entity"
+#		}
+#
+##		attach = { turret_01 = "turret_connection_L_2_entity"
+##		}
+##		attach = { turret_02 = "turret_connection_M_2_entity"
+##		}
+##		attach = { turret_03 = "turret_connection_S_2_entity"
+##		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"		
+#		}
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_9"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_5" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_2_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_2_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_2_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_7_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_8_entity"
+#		}
+#
+##		attach = { turret_01 = "turret_connection_L_2_entity"
+##		}
+##		attach = { turret_02 = "turret_connection_M_2_entity"
+##		}
+##		attach = { turret_03 = "turret_connection_S_2_entity"
+##		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_10"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_5" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_2_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_2_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_2_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_lightning_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_5_entity"
+#		}
+##		attach = { turret_01 = "turret_connection_L_2_entity"
+##		}
+##		attach = { turret_02 = "turret_connection_M_2_entity"
+##		}
+##		attach = { turret_03 = "turret_connection_S_2_entity"
+##		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_11"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_5" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_2_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_2_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_2_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_3_entity"
+#		}
+##		attach = { effect_01 = "lithoid_lightning_entity"
+##		}
+#		attach = { effect_01 = "lithoid_connector_9_entity"
+#		}
+##		attach = { turret_01 = "turret_connection_L_2_entity"
+##		}
+##		attach = { turret_02 = "turret_connection_M_2_entity"
+##		}
+##		attach = { turret_03 = "turret_connection_S_2_entity"
+##		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_12"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_7" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_3_entity"
+#		}
+##		attach = { effect_01 = "lithoid_lightning_entity"
+##		}
+#		attach = { effect_01 = "lithoid_connector_dist_1_entity"
+#		}
+#		attach = { turret_01 = "turret_connection_L_3_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_3_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_13"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_5" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_3_entity"
+#		}
+##		attach = { effect_01 = "lithoid_lightning_entity"
+##		}
+#		attach = { effect_01 = "lithoid_connector_crystal_1_entity"
+#		}
+#		attach = { turret_01 = "turret_connection_L_2_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_2_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_2_entity"
+#		}
+##		attach = { effect_01 = "lithoid_cable_2_entity"	
+##		}	
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_14"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_5" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#						
+#		}
+#		attach = { engine_01 = "thruster_curve_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_lightning_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_triangle_1_entity"
+#		}
+#		attach = { turret_01 = "turret_connection_L_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_entity"
+#		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_15"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_6" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+##			event = { time = 0 node = "effect_01" particle = "lithoid_01_ship_connecter_2" keep_particle = yes trigger_once = yes life = 15}			
+#		}
+#		attach = { engine_01 = "thruster_curve_2_entity"
+#		}
+#		attach = { engine_01 = "lithoid_thruster_lightning_entity"
+#		}
+#		attach = { effect_01 = "lithoid_lightning_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_dist_3_entity"
+#		}
+#		attach = { turret_01 = "turret_connection_L_3_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_3_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_16"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_5" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+#		}
+#		attach = { engine_01 = "thruster_curve_3_entity"
+#		}
+#		attach = { engine_01 = "lithoid_thruster_lightning_entity"
+#		}
+#		attach = { effect_01 = "lithoid_lightning_2_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_dist_2_entity"
+#		}
+#		attach = { turret_01 = "turret_connection_L_3_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_3_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_17"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+#			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_8" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+#		}
+#		attach = { engine_01 = "thruster_curve_2_entity"
+#		}
+#		attach = { engine_01 = "lithoid_thruster_lightning_entity"
+#		}
+#		attach = { effect_01 = "lithoid_lightning_2_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_dist_2_entity"
+#		}
+#		attach = { turret_01 = "turret_connection_L_3_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_3_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#entity = {
+#	name = "lithoid_cruiser_test_entity_18"
+#	pdxmesh = "lithoid_cruiser_test_mesh"
+#	
+#	default_state = "idle"
+#	
+#	state = { name = "idle" state_time = 15 looping = yes
+#	
+##			event = { time = 0 node = "engine_01" particle = "lithoid_01_ship_exhaust_9" keep_particle = yes trigger_once = yes life = 15}
+#			
+#			event = { time = 0 node = "turret_01" particle = "lithoid_01_ship_turret_connecter_3_L" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_02" particle = "lithoid_01_ship_turret_connecter_3_M" keep_particle = yes trigger_once = yes life = 15}
+#			event = { time = 0 node = "turret_03" particle = "lithoid_01_ship_turret_connecter_3_S" keep_particle = yes trigger_once = yes life = 15}
+#			
+#		}
+#
+#		attach = { engine_01 = "lithoid_thruster_sphere_entity"
+#		}
+#		attach = { engine_01 = "lithoid_thruster_sphere_2_entity"
+#		}
+#		attach = { effect_01 = "lithoid_lightning_2_entity"
+#		}
+#		attach = { effect_01 = "lithoid_connector_dist_2_entity"
+#		}
+#		attach = { turret_01 = "turret_connection_L_3_entity"
+#		}
+#		attach = { turret_02 = "turret_connection_M_3_entity"
+#		}
+#		attach = { turret_03 = "turret_connection_S_3_entity"
+#		}
+#		attach = { effect_01 = "lithoid_cable_2_entity"	
+#		}	
+#}
+#
+#

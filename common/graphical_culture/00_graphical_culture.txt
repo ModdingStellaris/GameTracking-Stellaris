@@ -13,11 +13,11 @@ humanoid_01 = {
 		cam_light_1_dir = { 0.6 -0.2 0.1 }
 		cam_light_2_dir = { -0.4 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 -0.1 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 5.0
 		near_value = 100
@@ -43,11 +43,11 @@ plantoid_01 = {
 		cam_light_1_dir = { 0.6 -0.2 0.1 }
 		cam_light_2_dir = { -0.4 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 -0.1 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 5.0
 		near_value = 100
@@ -70,7 +70,7 @@ mammalian_01 = {
 		cam_light_1_dir = { 1.0 0.0 0.5 }
 		cam_light_2_dir = { -0.5 0.2 0.0 }
 		cam_light_3_dir = { 0.5 -1.0 0.0 }
-		
+
 		intensity_near = 0.1
 		intensity_far = 1.0
 		near_value = 700
@@ -125,7 +125,7 @@ avian_01 = {
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -143,11 +143,11 @@ molluscoid_01 = {
 	fallback = mammalian_01
 	ship_color = yes
 	ship_lighting = {
-		
+
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -159,7 +159,7 @@ molluscoid_01 = {
 
 		ambient_near = 0.0
 		ambient_far = 30.0
-		
+
 
 	}
 }
@@ -172,11 +172,11 @@ fungoid_01 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 20.0
 		near_value = 100
@@ -199,8 +199,8 @@ arthropoid_01 = {
 		cam_light_1_dir = { 0.6 -0.2 0.1 }
 		cam_light_2_dir = { -0.4 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 -0.1 }
-		
-		
+
+
 		intensity_near = 1.0
 		intensity_far = 2.0
 		near_value = 100
@@ -213,7 +213,7 @@ arthropoid_01 = {
 		#rim_stop_far = 2.0
 		ambient_near = 0.1
 		ambient_far = 100.1
-		
+
 	}
 }
 
@@ -224,11 +224,11 @@ pirate_01 = {
 		cam_light_1_dir = { 0.5 -0.2 0.1 }
 		cam_light_2_dir = { -0.4 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 0.8	0.0 0.2 }
 		#cam_light_2_dir = { -0.8 0.0 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 10.0
 		near_value = 700
@@ -249,7 +249,7 @@ ai_01 = {
 		cam_light_1_dir = { 1.0 0.0 0.5 }
 		cam_light_2_dir = { -0.5 0.2 0.0 }
 		cam_light_3_dir = { 0.5 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -272,7 +272,7 @@ ai_02 = { # Cybrex
 		cam_light_1_dir = { 1.0 0.0 0.5 }
 		cam_light_2_dir = { -0.5 0.2 0.0 }
 		cam_light_3_dir = { 0.5 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -295,11 +295,11 @@ fallen_empire_01 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -322,11 +322,11 @@ fallen_empire_02 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -349,11 +349,11 @@ fallen_empire_03 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -376,11 +376,11 @@ fallen_empire_04 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -403,11 +403,11 @@ fallen_machine_empire_01 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -430,11 +430,11 @@ swarm_01 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -457,11 +457,11 @@ extra_dimensional_01 = { # Blue
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -484,11 +484,11 @@ extra_dimensional_02 = { # Orange
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -511,11 +511,11 @@ extra_dimensional_03 = { # Green
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -538,11 +538,11 @@ industrial_01 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -565,11 +565,11 @@ preindustrial_01 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -592,11 +592,11 @@ ancient_drone_01 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -619,11 +619,11 @@ guardian_01 = {
 		cam_light_1_dir = { 0.4 0.0 0.0 }
 		cam_light_2_dir = { -0.5 0.0 0.0 }
 		cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		#cam_light_1_dir = { 1.0 0.0 0.5 }
 		#cam_light_2_dir = { -0.5 -0.2 0.0 }
 		#cam_light_3_dir = { 0.4 -1.0 0.0 }
-		
+
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -751,5 +751,35 @@ techno = {
 		#rim_stop_far = 2.0
 		ambient_near = 0.1
 		ambient_far = 20.0
+	}
+}
+
+lithoid_01 = {
+	randomized = { has_lithoids = yes }
+	selectable = { has_lithoids = yes }
+
+	ship_color = yes
+	fallback = mammalian_01
+	ship_lighting = {
+		cam_light_1_dir = { 0.6 -0.2 0.1 }
+		cam_light_2_dir = { -0.4 0.0 0.0 }
+		cam_light_3_dir = { 0.4 -1.0 -0.1 }
+
+		#cam_light_1_dir = { 1.0 0.0 0.5 }
+		#cam_light_2_dir = { -0.5 -0.2 0.0 }
+		#cam_light_3_dir = { 0.4 -1.0 0.0 }
+
+		intensity_near = 1.0
+		intensity_far = 5.0
+		near_value = 100
+		far_value = 4000
+		rim_start_near = 0.5
+		rim_stop_near = 0.99
+		rim_start_far = 0.3
+		rim_stop_far = 0.99
+		#rim_start_far = 1.5
+		#rim_stop_far = 2.0
+		ambient_near = 0.1
+		ambient_far = 0.0
 	}
 }

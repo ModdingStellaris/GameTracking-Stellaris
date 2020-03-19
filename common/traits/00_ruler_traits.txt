@@ -332,7 +332,10 @@ trait_ruler_fertility_preacher = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_fertility_preacher.dds"
 	leader_potential_add = {
-		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		NOR = {
+			from = { has_ethic = "ethic_gestalt_consciousness" } 
+			is_lithoid = yes
+		}
 	}
 	modifier = {
 		planet_jobs_food_produces_mult = 0.1

@@ -1,0 +1,180 @@
+entity = {
+	name = "lithoid_01_ion_cannon_01_entity"
+	pdxmesh = "lithoid_01_ion_cannon_mesh"
+	scale = 0.55
+
+	default_state = "idle"
+	
+	state = { name = "idle" state_time = 15 looping = yes
+	
+			event = { time = 0 node = "core_effect" particle = "lithoid_01_ion_core" keep_particle = yes trigger_once = yes life = 15}
+			
+		}
+		attach = { core_effect = "ion_core_effect_entity"		}
+		attach = { core_effect = "ion_core_cylinder_S_comb_entity"	}
+		attach = { core_effect = "ion_core_cylinder_L_entity"	}		
+		
+}
+
+entity = {
+	name = "lithoid_01_ion_cannon_02_entity"
+	pdxmesh = "lithoid_01_ion_cannon_mesh"
+	scale = 0.55
+
+	default_state = "idle"
+	
+	state = { name = "idle" state_time = 15 looping = yes
+	
+			event = { time = 0 node = "core_effect" particle = "lithoid_01_ion_core" keep_particle = yes trigger_once = yes life = 15}
+			
+		}
+		attach = { core_effect = "ion_core_effect_entity"		}
+#		attach = { core_effect = "ion_core_cylinder_S_comb_entity"	}
+#		attach = { core_effect = "ion_core_cylinder_L_entity"	}		
+		
+}
+
+entity = {
+	name = "lithoid_01_ion_cannon_03_entity"
+	pdxmesh = "lithoid_01_ion_cannon_mesh"
+	scale = 0.55
+
+	default_state = "idle"
+	
+	state = { name = "idle" state_time = 15 looping = yes
+	
+			event = { time = 0 node = "core_effect" particle = "lithoid_02_ion_core" keep_particle = yes trigger_once = yes life = 15}
+			
+		}
+		attach = { core_effect = "ion_core_effect_entity"		}
+		attach = { core_effect = "ion_core_cylinder_S_comb_entity"	}
+		attach = { core_effect = "ion_core_cylinder_L_entity"	}		
+		
+}
+
+entity = {
+	name = "lithoid_01_ion_cannon_04_entity"
+	pdxmesh = "lithoid_01_ion_cannon_mesh"
+	scale = 0.55
+
+	default_state = "idle"
+	
+	state = { name = "idle" state_time = 15 looping = yes
+	
+			#event = { time = 0 node = "core_effect" particle = "lithoid_01_ion_core" keep_particle = yes trigger_once = yes life = 15}
+			
+		}
+		attach = { core_effect = "ion_core_effect_entity"		}
+		attach = { core_effect = "ion_core_cylinder_S_comb_entity"	}
+		attach = { core_effect = "ion_core_cylinder_L_entity"	}	
+		attach = { core_effect = "ion_core_lightning_entity"	}		
+		
+}
+
+
+entity = {
+	name = "lithoid_01_ion_cannon_05_entity"
+	pdxmesh = "lithoid_01_ion_cannon_mesh"
+	scale = 0.55
+
+	default_state = "idle"
+	
+	state = { name = "idle" state_time = 15 looping = yes
+	
+			event = { time = 0 node = "core_effect" particle = "lithoid_02_ion_core" keep_particle = yes trigger_once = yes life = 15}
+			
+		}
+		attach = { core_effect = "ion_core_effect_entity"		}
+#		attach = { core_effect = "ion_core_cylinder_S_comb_entity"	}
+#		attach = { core_effect = "ion_core_cylinder_L_entity"	}	
+		attach = { core_effect = "ion_core_lightning_entity"	}		
+		
+}
+
+
+entity = {
+	name = "lithoid_01_ion_cannon_06_entity"
+	pdxmesh = "lithoid_01_ion_cannon_mesh"
+	scale = 0.55
+
+	default_state = "idle"
+	
+	state = { name = "idle" state_time = 15 looping = yes
+	
+			event = { time = 0 node = "core_effect" particle = "lithoid_03_ion_core" keep_particle = yes trigger_once = yes life = 15}
+			
+		}
+		attach = { core_effect = "ion_core_effect_entity"		}
+		attach = { core_effect = "ion_core_cylinder_S_comb_entity"	}
+#		attach = { core_effect = "ion_core_cylinder_L_entity"	}	
+#		attach = { core_effect = "ion_core_lightning_entity"	}		
+		attach = { core_effect = "ion_core_pull_entity"	}			
+}
+
+
+entity = {
+	name = "ion_core_cylinder_L_entity"
+	pdxmesh = "ion_core_cylinder_mesh"
+	scale = 1
+	
+		game_data = {
+		bloom_factor			= .5
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 0.2 0.55 }
+		}
+}
+
+entity = {
+	name = "ion_core_cylinder_S_entity"
+	pdxmesh = "ion_core_cylinder_mesh"
+	scale = 0.6
+	
+		game_data = {
+		bloom_factor			= 1
+		uv_animation_speed 		= 0.15
+		uv_animation_direction 	= { 0.25 0.6 }
+		}
+}
+
+
+
+
+
+
+entity = {
+	name = "ion_core_lightning_entity"
+	pdxmesh = "ion_core_lightning_mesh"
+	scale = 1
+	
+	
+		game_data = {
+		bloom_factor			= 1.2
+		uv_animation_speed 		= .9
+		uv_animation_direction 	= { 0.5 0.50 }
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

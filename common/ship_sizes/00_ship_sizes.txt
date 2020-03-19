@@ -36,12 +36,12 @@ corvette = {
 	icon_frame = 2
 	base_buildtime = @corvette_build_time
 	can_have_federation_design = yes
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start	
-	
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
 	default_behavior = swarm
-	
+
 	prerequisites = { "tech_corvettes" }
-	
+
 	combat_disengage_chance = 1.00
 
 	class = shipclass_military
@@ -51,7 +51,7 @@ corvette = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
+
 	resources = {
 		category = ships
 		upkeep = {
@@ -85,13 +85,13 @@ destroyer = {
 	base_buildtime = @destroyer_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	
+
 	default_behavior = picket
-	
+
 	prerequisites = { "tech_destroyers" }
-	
+
 	combat_disengage_chance = 1.50
-	
+
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -99,9 +99,9 @@ destroyer = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
+
 	resources = {
-		category = ships	
+		category = ships
 		upkeep = {
 			energy = @destroyer_upkeep_energy
 			alloys = @destroyer_upkeep_alloys
@@ -132,13 +132,13 @@ cruiser = {
 	base_buildtime = @cruiser_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	
+
 	default_behavior = line
-	
+
 	prerequisites = { "tech_cruisers" }
-	
+
 	combat_disengage_chance = 1.50
-	
+
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -146,7 +146,7 @@ cruiser = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
+
 	resources = {
 		category = ships
 		upkeep = {
@@ -180,13 +180,13 @@ battleship = {
 	base_buildtime = @battleship_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	
+
 	default_behavior = line
-	
+
 	prerequisites = { "tech_battleships" }
-	
+
 	combat_disengage_chance = 1.25
-	
+
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -194,7 +194,7 @@ battleship = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
+
 	resources = {
 		category = ships
 		upkeep = {
@@ -227,13 +227,13 @@ titan = {
 	base_buildtime = @titan_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	
+
 	default_behavior = artillery
-	
+
 	prerequisites = { "tech_titans" }
-	
+
 	combat_disengage_chance = 1.25
-	
+
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	required_component_set = "power_core"
@@ -242,18 +242,18 @@ titan = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 	required_component_set = "ship_aura_components"
-	
+
 	possible_starbase = {
 		has_starbase_size >= starbase_citadel
 		has_starbase_building = titan_yards
 	}
-	
+
 	empire_limit = {
 		base = 1
 		max = 20
 		naval_cap_div = 200
 	}
-	
+
 	resources = {
 		category = ships
 		upkeep = {
@@ -282,7 +282,7 @@ constructor = {
 	is_space_station = no
 	icon_frame = 9
 	base_buildtime = @construction_build_time
-	
+
 	combat_disengage_chance = 1.0
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
@@ -349,6 +349,7 @@ colonizer = {
 		cost = {
 			trigger = {
 				from = {
+					is_lithoid_empire = no
 					is_robot_empire = no
 					is_hive_empire = no
 				}
@@ -360,20 +361,43 @@ colonizer = {
 		cost = {
 			trigger = {
 				from = {
-					is_robot_empire = yes 
+					is_lithoid_empire = yes
+					is_robot_empire = no
+					is_hive_empire = no
+				}
+			}
+			alloys = 200
+			minerals = 200
+			consumer_goods = 200
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_robot_empire = yes
 				}
 			}
 			alloys = 400
 		}
 		cost = {
 			trigger = {
-				from = { 
-					is_hive_empire = yes 
+				from = {
+					is_hive_empire = yes
+					is_lithoid_empire = no
 				}
 			}
 			alloys = 200
-			food = 500		
-		}		
+			food = 500
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_hive_empire = yes
+					is_lithoid_empire = yes
+				}
+			}
+			alloys = 200
+			minerals = 500
+		}
 
 		upkeep = {
 			energy = @colony_upkeep_energy
@@ -417,7 +441,7 @@ sponsored_colonizer = {
 	resources = {
 		category = ships
 		cost = {
-			energy = 500			
+			energy = 500
 		}
 
 		upkeep = {
@@ -451,10 +475,10 @@ science = {
 	num_target_locators = 0
 	is_space_station = no
 	icon_frame = 8
-	base_buildtime = @science_build_time	
-	
+	base_buildtime = @science_build_time
+
 	combat_disengage_chance = 2.0
-	
+
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	is_designable = no
 	components_add_to_cost = no
@@ -497,7 +521,7 @@ transport = {
 	num_target_locators = 0
 	is_space_station = no
 	icon_frame = 11
-	
+
 	combat_disengage_chance = 1.5
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
@@ -523,14 +547,15 @@ military_station_small = {
 	modifier = {
 		ship_evasion_mult = -1
 		ships_upkeep_mult = -0.25
+		ship_piracy_suppression_add = 2
 	}
 	ship_modifier = {
 		ship_weapon_range_mult = 0.20
-	}	
+	}
 	combat_size_multiplier = 2
 	size_multiplier = 1
 	fleet_slot_size = 2
-	section_slots = { 
+	section_slots = {
 		"west" = { locator = "part1" }
 		"east" = { locator = "part2" }
 	}
@@ -540,16 +565,16 @@ military_station_small = {
 	num_target_locators = 0
 	is_space_station = yes
 	base_buildtime = 120
-	
+
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_space_defense_station_1" }
 	class = shipclass_military_station
 	construction_type = starbase_defenses
-	
+
 	required_component_set = "power_core"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
+
 	build_block_radius = @build_block_radius_military
 
 	resources = {
@@ -568,31 +593,31 @@ military_station_medium = {
 		ships_upkeep_mult = -0.25
 	}
 	ship_modifier = {
-		ship_weapon_range_mult = 0.20	
+		ship_weapon_range_mult = 0.20
 	}
 	max_hitpoints = 10000
 	size_multiplier = 8
 	fleet_slot_size = 4
-	section_slots = { 
+	section_slots = {
 		"north" = { locator = "part1" }
 		"west" = { locator = "part2" }
 		"east" = { locator = "part3" }
 		"south" = { locator = "part4" }
 	}
 	num_target_locators = 0
-	is_space_station = yes	
+	is_space_station = yes
 	base_buildtime = 360
 	is_listed = no
 	is_designable = no
 	uses_name_prefix = no
-	takes_name_from_ship_design = yes	
-	
+	takes_name_from_ship_design = yes
+
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	class = shipclass_military_station
 	required_component_set = "power_core"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
+
 	build_block_radius = @build_block_radius_military
 
 	resources = {
@@ -611,12 +636,12 @@ military_station_large = {
 		ships_upkeep_mult = -0.25
 	}
 	ship_modifier = {
-		ship_weapon_range_mult = 0.20	
+		ship_weapon_range_mult = 0.20
 	}
 	max_hitpoints = 15000
 	size_multiplier = 16
 	fleet_slot_size = 8
-	section_slots = { 
+	section_slots = {
 		"north" = { locator = "part1" locator = "part2" }
 		"west" = { locator = "part3" locator = "part4" }
 		"east" = { locator = "part5" locator = "part6" }
@@ -627,14 +652,14 @@ military_station_large = {
 	is_listed = no
 	is_designable = no
 	uses_name_prefix = no
-	takes_name_from_ship_design = yes	
-	
+	takes_name_from_ship_design = yes
+
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	class = shipclass_military_station
 	required_component_set = "power_core"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
+
 	build_block_radius = @build_block_radius_military
 
 	resources = {
@@ -663,7 +688,7 @@ mining_station = {
 	build_block_radius = @build_block_radius_civilian
 	is_civilian = no
 	components_add_to_cost = no
-	
+
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_space_construction" }
 	class = shipclass_mining_station
@@ -700,7 +725,7 @@ research_station = {
 	build_block_radius = @build_block_radius_civilian
 	is_civilian = no
 	components_add_to_cost = no
-	
+
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_space_construction" }
 	class = shipclass_research_station
@@ -736,7 +761,7 @@ observation_station = {
 	build_block_radius = @build_block_radius_civilian
 	is_civilian = yes
 	components_add_to_cost = no
-	
+
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	class = shipclass_observation_station
 	is_designable = no

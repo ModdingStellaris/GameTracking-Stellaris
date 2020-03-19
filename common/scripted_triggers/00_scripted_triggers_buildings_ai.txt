@@ -31,11 +31,35 @@ buildings_build_building = {
 		has_modifier = planet_growth_discouraged
 		free_district_slots = 0
 	}
+	NOT = {
+		exists = owner
+		owner = { is_lithoid_devouring_swarm = yes }
+		is_lithoid_devouring_swarm_consumption_world = yes
+	}
 }
 
 country_uses_food = {
 	OR = {
-		NOT = { has_authority = auth_machine_intelligence }
+		NOR = {
+			has_authority = auth_machine_intelligence
+			is_lithoid_empire = yes
+		}
+		AND = {
+			is_lithoid_empire = yes
+			NOR = {
+				has_country_flag = non_lithoid_subspecies
+				any_owned_pop = {
+					is_organic_species = yes
+					is_lithoid = no
+				}
+				any_owned_planet = {
+					OR = {
+						num_districts = { type = district_farming value > 0 }
+						num_districts = { type = district_rw_farming value > 0 }
+					}
+				}
+			}
+		}
 		has_valid_civic = civic_machine_servitor
 		has_valid_civic = civic_machine_assimilator
 		AND = {
@@ -142,6 +166,11 @@ districts_build_district ={
 				}
 			}
 		}
+	}
+	NOT = {
+		exists = owner
+		owner = { is_lithoid_devouring_swarm = yes }
+		is_lithoid_devouring_swarm_consumption_world = yes
 	}
 }
 

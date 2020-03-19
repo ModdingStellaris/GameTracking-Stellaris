@@ -1,0 +1,272 @@
+objectTypes = {
+	
+####### Explosions
+##################
+
+	pdxparticle = {
+		name = "lithoid_ship_explosion_dreadnought"
+		type = "lithoid_ship_explosion_dreadnought_file"
+		
+		scale = 50.0
+	}
+	pdxparticle = {
+		name = "lithoid_ship_explosion_dreadnought_s"
+		type = "lithoid_ship_explosion_dreadnought_file"
+		
+		scale = 1.0
+	}
+	
+		pdxparticle = {
+		name = "large_lithoid_ship_explosion_effect"
+		type = "lithoid_ship_explosion_l_file"
+		
+		scale = 2.0
+	}
+	
+	pdxparticle = {
+		name = "large_2_lithoid_ship_explosion_effect"
+		type = "lithoid_ship_explosion_l_file"
+		
+		scale = 1.750
+	}
+		
+	pdxparticle = {
+		name = "medium_lithoid_ship_explosion_effect"
+		type = "lithoid_ship_explosion_l_file"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "small_lithoid_ship_explosion_effect"
+		type = "lithoid_ship_explosion_l_file"
+		
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "large_lithoid_ship_explosion_s_effect"
+		type = "lithoid_ship_explosion_2_file"
+		
+		scale = 1.50
+	}
+
+	pdxparticle = {
+		name = "lithoid_ship_explosion_s_effect"
+		type = "lithoid_ship_explosion_2_file"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "medium_lithoid_ship_explosion_s_effect"
+		type = "lithoid_ship_explosion_2_file"
+		
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "small_lithoid_ship_explosion_s_effect"
+		type = "lithoid_ship_explosion_2_file"
+		
+		scale = 0.50
+	}
+	pdxparticle = {
+		name = "lithoid_ship_explosion_effect"
+		type = "lithoid_ship_explosion_file"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "lithoid_station_explosion_effect"
+		type = "lithoid_station_explosion_file"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "lithoid_station_explosion_2_effect"
+		type = "lithoid_station_explosion_2_file"
+		
+		scale = 0.55
+	}
+	
+	pdxparticle = {
+		name = "small_lithoid_station_explosion_2_effect"
+		type = "lithoid_station_explosion_2_file"
+		
+		scale = 0.2
+	}
+#	pdxparticle = {
+#		name = "medium_station_explosion_particle"
+#		type = "lithoid_station_explosion_file"
+#		
+#		scale = 1.0
+#	}
+	
+	pdxparticle = {
+		name = "large_station_explosion_particle"
+		type = "lithoid_station_explosion_file"
+		
+		scale = 3.0
+	}
+	
+	pdxparticle = {
+		name = "massive_station_explosion_particle"
+		type = "lithoid_station_explosion_file"
+		
+		scale = 5.0
+	}
+##################
+
+	
+	pdxparticle = {
+		name = "lithoid_01_research_core_effect"
+		type = "lithoid_01_research_core_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "lithoid_01_ship_light_effect"
+		type = "lithoid_01_ship_light_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "lithoid_01_titan_weapon_core_effect"
+		type = "lithoid_01_titan_weapon_core_file"
+		
+		scale = 1.0
+	}
+
+#######Science ship core
+###############
+
+	pdxparticle = {
+		name = "lithoid_01_science_core"
+		type = "lithoid_01_science_core_file"
+	
+	scale = 6
+	}
+	
+########Ion Core
+###############
+
+	pdxparticle = {
+		name = "lithoid_01_ion_core"
+		type = "lithoid_01_ion_core_file"
+		
+		scale = 6
+	}
+
+	pdxparticle = {
+		name = "lithoid_02_ion_core"
+		type = "lithoid_02_ion_core_file"
+	
+		scale = 6
+	}
+
+	pdxparticle = {
+		name = "lithoid_03_ion_core"
+		type = "lithoid_03_ion_core_file"
+	
+		scale = 6
+	}
+
+########Colossus
+###############
+	pdxparticle = {
+		name = "lithoid_01_collosus_core"
+		type = "lithoid_01_collosus_core_file"
+	
+		scale = 6
+	}
+########Exhaust
+###############
+### Idle
+	pdxparticle = {
+		name = "lithoid_01_ship_exhaust_idle_s"
+		type = "lithoid_01_ship_exhaust_idle_file"
+	
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "lithoid_01_ship_exhaust_idle_m"
+		type = "lithoid_01_ship_exhaust_idle_file"
+	
+		scale = 3.5
+	}
+	
+	pdxparticle = {
+		name = "lithoid_01_ship_exhaust_idle_l"
+		type = "lithoid_01_ship_exhaust_idle_file"
+	
+		scale = 6
+	}
+
+### Small - Corvette - Destroyer
+	pdxparticle = {
+		name = "lithoid_01_ship_exhaust_s"
+		type = "lithoid_01_ship_exhaust_9_file"
+	
+		scale = 2
+	}
+	
+### Medium - Cruiser
+	pdxparticle = {
+		name = "lithoid_01_ship_exhaust_m"
+		type = "lithoid_01_ship_exhaust_9_file"
+	
+		scale = 4.5
+	}
+	
+		pdxparticle = {
+		name = "lithoid_01_ship_science_exhaust"
+		type = "lithoid_01_ship_science_exhaust_file"
+	
+		scale = 6
+	}
+	
+### Large Ships - Titan - Battleship
+	pdxparticle = {
+		name = "lithoid_01_ship_exhaust_l"
+		type = "lithoid_01_ship_exhaust_6_file"
+	
+		scale = 8
+	}
+
+### X-Large Ships - Colossus
+	pdxparticle = {
+		name = "lithoid_01_ship_exhaust_xl"
+		type = "lithoid_01_ship_exhaust_6_file"
+	
+		scale = 14
+	}	
+
+########Portraits
+###############
+
+	pdxparticle = {
+		name = "lithoid_06_idle3_blast_effect"
+		type = "lithoid_06_idle3_blast_file"
+	
+		scale = 1
+	}
+
+	pdxparticle = {
+		name = "lithoid_06_idle_eye_effect"
+		type = "lithoid_06_idle_eye_file"
+	
+		scale = 1
+	}
+
+	pdxparticle = {
+		name = "lithoid_machine_eye_scan_effect"
+		type = "lithoid_machine_eye_scan_effect"
+	
+		scale = 1
+	}
+	
+}

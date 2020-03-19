@@ -278,7 +278,7 @@
  FLEET_MANAGER_VIEW_REINFORCE_ALL:0 "Alle verstärken"
  FLEET_MANAGER_VIEW_NO_REINFORCE_TEXT:0 "§GEs müssen keine Flotten verstärkt werden§!"
  FLEET_MANAGER_VIEW_REINFORCE_TEXT:1 "Verstärkt $NUMFLEETS|Y$ Flotte(n) mit $NUMSHIPS|R$ Schiff(en) für $COST$."
- FLEET_MANAGER_VIEW_REINFORCE_COST:1 "Wir können es uns derzeit leisten, $NUMSHIPS|Y$ Schiff(e) zu verstärken.\nKosten $COST$."
+ FLEET_MANAGER_VIEW_REINFORCE_COST:1 "Wir können es uns derzeit leisten, $NUMSHIPS|Y$ Schiff(e) für $COST$ zu verstärken."
  FLEET_MANAGER_VIEW_REINFORCE_COST_NONE:1 "£alloys£ 0"
  FLEET_MANAGER_CHOOSE_DESIGN:0 "Vorlage auswählen"
  FLEET_MANAGER_BUILD_QUEUE:0 "Baureihe"
@@ -303,8 +303,8 @@
  HOME_BASE_FM:1 "§HHeimatbasis§!\n§GKlicken, um für diese Flotte eine Heimatbasis auszuwählen§!"
  INCREASE_HEADER:0 "§HErhöhen§!"
  DECREASE_HEADER:0 "§HReduzieren§!"
- DECREASE_FM:2 "$DECREASE_HEADER$\n§GKlicken, um die Anzahl der Schiffe, die von dieser Flotte verwendet werden, zu reduzieren§!"
- INCREASE_FM:2 "$INCREASE_HEADER$\n§GKlicken, um die Anzahl der Schiffe, die von dieser Flotte verwendet werden, zu erhöhen§!"
+ DECREASE_FM:3 "$DECREASE_HEADER$\n§GKlicken, um die Anzahl der Schiffe, die von dieser Flotte verwendet werden, zu reduzieren§!\n§YShift+Klick§!, um es auf das nächste Vielfache von 10 zu erhöhen. §YStrg+Klick§!, um die maximale Anzahl an Schiffen hinzuzufügen"
+ INCREASE_FM:3 "$INCREASE_HEADER$\n§GKlicken, um die Anzahl der Schiffe, die von dieser Flotte verwendet werden, zu erhöhen§!\n§YShift+Klick§!, um es auf das nächste Vielfache von 10 zu reduzieren. §YStrg+Klick§!, um alle Schiffe zu entfernen"
  REINFORCE_ALL_FM:0 "§HAlle verstärken§!\n§GKlicken, um alle derzeitigen Flotten auf volle Kapazität zu verstärken§!"
  ADD_DESIGN_FM:1 "§HSchiffsdesign zu Flotte hinzufügen§!\n§GKlicken, um dieser Flotte eine neue Schiffsvorlage hinzuzufügen§!"
  
@@ -688,3 +688,5 @@
  OCCUPATION_SUMMARY:0 "Besatzung"
  OCCUPATION_SUMMARY_LONG:0 "$ATTR|R$ durch Besatzung aufgrund von $SYSTEMS|R$ besetzten Systemen und $PLANETS|R$ besetzten Planeten"
  
+ FLEET_TEMPLATE_COMMAND_MAX_MULTIPLE:0 "Das Hinzufügen von $NUM|Y$ Schiffen würde dazu führen, dass Ihr über dem Befehlslimit seid."
+ FLEET_TEMPLATE_COMMAND_MIN_MULTIPLE:0 "Es ist nicht möglich $NUM|Y$ Schiffe aus diesem Flottendesign zu entfernen"

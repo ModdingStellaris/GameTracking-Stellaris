@@ -219,6 +219,9 @@
  tr_harmony_adopt:0 "Harmonietraditionen"
  tr_harmony_adopt_desc:0 "$tradition_harmony_desc$\n\n$tr_harmony_adopt_effect$\n\n$tr_harmony_finish_effect$"
  tr_harmony_adopt_effect:6 "§E$TRADITIONS_ADOPT$:§!\n§Y$planet_pops_organics_food_upkeep_mult$§! um §G10%§! reduziert."
+ tr_harmony_lithoid_adopt:0 "$tr_harmony_adopt$"
+ tr_harmony_lithoid_adopt_desc:0 "$tradition_harmony_desc$\n\n$tr_harmony_lithoid_adopt_effect$\n\n$tr_harmony_finish_effect$"
+ tr_harmony_lithoid_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$planet_pops_organics_minerals_upkeep_mult$§! um §G10%§! reduziert."
  tr_harmony_the_greater_good:0 "Das übergeordnete Wohl"
  tr_harmony_the_greater_good_desc:4 "§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! um §G+25%§! erhöht."
  tr_harmony_the_greater_good_delayed:0 "Unsere gesamte Bevölkerung findet Trost in dem Wissen, für ein übergeordnetes Wohl zu arbeiten. Jeder Einzelne leistet einen kleinen, aber wichtigen Teil für ein viel größeres Ganzes."
@@ -246,6 +249,9 @@
  tr_synchronicity_hive_adopt:0 "Synchronizitätstraditionen"
  tr_synchronicity_hive_adopt_desc:0 "$tradition_synchronicity_desc$\n\n$tr_synchronicity_hive_adopt_effect$\n\n$tr_synchronicity_finish_effect$"
  tr_synchronicity_hive_adopt_effect:0 "$tr_harmony_adopt_effect$"
+ tr_synchronicity_lithoid_adopt:0 "$tr_synchronicity_hive_adopt$"
+ tr_synchronicity_lithoid_adopt_desc:0 "$tradition_synchronicity_desc$\n\n$tr_synchronicity_lithoid_adopt_effect$\n\n$tr_synchronicity_finish_effect$"
+ tr_synchronicity_lithoid_adopt_effect:0 "$tr_harmony_lithoid_adopt_effect$"
  tr_synchronicity_cloned_organs:0 "Geklonte Organe"
  tr_synchronicity_cloned_organs_delayed:0 "Die Klonlabore massenproduzieren die häufiger benötigten Organe wie Herz und Lunge und erhöhen so die Lebensdauer von Drohnen."
  tr_synchronicity_kinship_gestalt:0 "Synchronisierte Spione"
@@ -299,7 +305,7 @@
  tr_supremacy_natural_preeminence_delayed:0 "Es ist, durch die natürliche Ordnung der Dinge, eine Tatsache, dass wir einfach besser als andere Spezies sind. Wir sollten dafür sorgen, dass diese Wahrheit allen bekannt ist, damit unser Volk sich seiner Überlegenheit erfreuen kann und andere das Schicksal annehmen, dass wir rechtmäßig für sie gewählt haben."
 
  tr_supremacy_great_game:0 "Der große Kampf"
- tr_supremacy_great_game_desc:1 "§Y$mod_shipclass_starbase_damage_mult$§! um §G20%§! erhöht und §Y$MOD_STARBASE_UPGRADE_COST_MULT$§! um §G33%§! reduziert."
+ tr_supremacy_great_game_desc:2 "§Y$mod_shipclass_starbase_damage_mult$§! um §G20%§! erhöht und §Y$mod_ship_military_station_small_cost_mult$§! und §Y$MOD_STARBASE_UPGRADE_COST_MULT$§! um §G33%§! reduziert."
  tr_supremacy_great_game_delayed:0 "Während wir unsere Expansion fortsetzen, werden andere Reiche unsere Ansprüche unweigerlich anfechten. Wir würden ebenso handeln. Wir stecken in einem großen Kampf um Ressourcen und Territorien. Diesen zu gewinnen, ist unsere Pflicht."
 
  #tr_supremacy_great_game_machine:0 "Diplomatische Zielpriorisierung"
@@ -415,6 +421,10 @@
  tr_adaptability_dietary_enrichment:0 "Bereicherung durch Diät"
  tr_adaptability_dietary_enrichment_desc:1 "£food£ §Y$mod_country_food_produces_mult$§! Produktion um §G+10%§! erhöht."
  tr_adaptability_dietary_enrichment_delayed:1 "Der Nährwert von Nahrung, den wir für unsere Bevölkerung ernten, kann durch verschiedene Anreicherungstechniken erhöht werden, so dass wir mehr Münder mit weniger Nahrung ernähren können."
+
+ tr_adaptability_recycling:0 "Verbessertes Recycling"
+ tr_adaptability_recycling_desc:0 "§G15%§! Kostenrückerstattung, wenn wir ein Gebäude oder Distrikt abreißen"
+ tr_adaptability_recycling_delayed:0 "Das wiederzuverwerten, das veraltet ist, wird uns dabei helfen in Zukunft mehr daraus machen."
 
  tr_adaptability_survival_fittest:0 "Überleben der Stärksten"
  tr_adaptability_survival_fittest_desc:3 "§Y$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$§! um §G25%§! reduziert und §Y$MOD_ARMY_DEFENSE_DAMAGE_MULT$§! um §G25%§! erhöht."

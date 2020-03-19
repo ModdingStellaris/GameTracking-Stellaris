@@ -1,0 +1,87 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "lithoid_connector_1_dist_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/lithoid_connector_2.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "lithoid_connector_7.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "turret_connection_3_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/turret_connection.mesh"
+
+		meshsettings = {
+			name = "pCylinderShape1"
+			index = 0
+			texture_diffuse = "lithoid_connector_7.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"	
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "lithoid_lightning_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/lithoid_lightning.mesh"
+
+		meshsettings = {
+			name = "polySurface20Shape"
+			index = 0
+			texture_diffuse = "lightning_connector.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"	
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "thruster_curve_2_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/thruster_curve_2.mesh"
+		animation = { id = "idle"    type = "thruster_curve_2_idle_animation" }
+
+		meshsettings = {
+			name = "polySurface1Shape"
+			index = 0
+			texture_diffuse = "thruster_trail_3.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "lithoid_thruster_lightning_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/lithoid_thruster_lightning.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "lightning_connector.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "lithoid_thruster_sphere_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/thruster_sphere.mesh"
+
+		meshsettings = {
+			name = "pSphereShape1"
+			index = 0
+			texture_diffuse = "lithoid_connector_10.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+}
+

@@ -6,7 +6,7 @@ building_hydroponics_farm = {
 	base_buildtime = 360
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		planet = {
@@ -20,11 +20,11 @@ building_hydroponics_farm = {
 		NOT = { is_planet_class = pc_machine }
 		NOT = { has_modifier = resort_colony }
 	}
-	
+
 	allow = {
 		buildings_simple_allow = yes
 	}
-	
+
 	destroy_trigger = {
 		exists = owner
 		OR = {
@@ -61,7 +61,7 @@ building_hydroponics_farm = {
 			job_agri_drone_add = 2
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -70,8 +70,8 @@ building_hydroponics_farm = {
 		upkeep = {
 			energy = 2
 		}
-	}	
-	
+	}
+
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -86,11 +86,11 @@ building_hydroponics_farm = {
 		}
 		text = job_farmer_effect_desc
 	}
-	
+
 	prerequisites = {
 		"tech_hydroponics"
 	}
-	
+
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -105,7 +105,7 @@ building_hydroponics_farm = {
 				buildings_unemployed = yes
 			}
 			OR = {
-				num_free_districts = { type = district_farming value = 0 } 
+				num_free_districts = { type = district_farming value = 0 }
 				free_district_slots = 0
 			}#Don't build when you can still get farming districts
 			owner = {
@@ -170,7 +170,7 @@ building_food_processing_facility = {
 	base_buildtime = 360
 	base_cap_amount = 1
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOR = {
@@ -189,7 +189,7 @@ building_food_processing_facility = {
 			num_districts = { type = district_farming_uncapped value < 6 }
 		}
 	}
-		
+
 	planet_modifier = {
 		planet_farmers_food_produces_mult = 0.15
 	}
@@ -213,7 +213,7 @@ building_food_processing_facility = {
 			job_agri_drone_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -222,8 +222,8 @@ building_food_processing_facility = {
 		upkeep = {
 			energy = 1
 		}
-	}	
-	
+	}
+
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -238,15 +238,15 @@ building_food_processing_facility = {
 		}
 		text = job_farmer_effect_desc
 	}
-	
+
 	upgrades = {
 		building_food_processing_center
 	}
-	
+
 	prerequisites = {
 		"tech_food_processing_1"
 	}
-	
+
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -272,16 +272,16 @@ building_food_processing_center = {
 	base_buildtime = 480
 	can_build = no
 	category = resource
-		
+
 	planet_modifier = {
 		planet_farmers_food_produces_mult = 0.25
 	}
-	
+
 	allow = {
 		exists = owner
 		has_upgraded_capital = yes
 	}
-	
+
 	destroy_trigger = {
 		OR = {
 			is_planet_class = pc_machine
@@ -316,7 +316,7 @@ building_food_processing_center = {
 			job_agri_drone_add = 2
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -327,8 +327,8 @@ building_food_processing_center = {
 			energy = 1
 			volatile_motes = 1
 		}
-	}	
-	
+	}
+
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -343,11 +343,11 @@ building_food_processing_center = {
 		}
 		text = job_farmer_effect_desc
 	}
-	
+
 	prerequisites = {
 		"tech_food_processing_2"
-	}	
-	
+	}
+
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -377,7 +377,7 @@ building_food_processing_center = {
 			owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 390 } }
 		}
 		ELSE = {
-			planet = { 
+			planet = {
 				owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 510 } }
 			}
 		}
@@ -388,7 +388,7 @@ building_mineral_purification_plant = {
 	base_buildtime = 360
 	base_cap_amount = 1
 	category = resource
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 
@@ -401,7 +401,7 @@ building_mineral_purification_plant = {
 			has_planet_flag = mining_habitat
 		}
 	}
-		
+
 	planet_modifier = {
 		planet_miners_minerals_produces_mult = 0.15
 	}
@@ -425,22 +425,22 @@ building_mineral_purification_plant = {
 			job_mining_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_robot_empire = yes
 			}
 		}
-		modifier = { 
+		modifier = {
 			planet_miners_minerals_produces_mult = 0.05
 		}
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_robot_empire = yes
 			}
 			NOR  = {
@@ -454,7 +454,7 @@ building_mineral_purification_plant = {
 			district_mining_max = 2
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -462,7 +462,7 @@ building_mineral_purification_plant = {
 		}
 		cost = {
 			trigger = {
-				owner = { 
+				owner = {
 					is_robot_empire = yes
 				}
 			}
@@ -473,15 +473,15 @@ building_mineral_purification_plant = {
 			energy = 1
 		}
 	}
-	
+
 	prerequisites = {
 		tech_mineral_purification_1
 	}
-	
+
 	upgrades = {
 		building_mineral_purification_hub
 	}
-	
+
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -496,7 +496,7 @@ building_mineral_purification_plant = {
 		}
 		text = job_miner_effect_desc
 	}
-	
+
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -530,15 +530,15 @@ building_mineral_purification_hub = {
 	base_buildtime = 480
 	can_build = no
 	category = resource
-	
+
 	allow = {
 		has_upgraded_capital = yes
 	}
-	
+
 	destroy_trigger = {
 		buildings_no_motes = yes
 	}
-		
+
 	planet_modifier = {
 		planet_miners_minerals_produces_mult = 0.25
 	}
@@ -562,11 +562,11 @@ building_mineral_purification_hub = {
 			job_mining_drone_add = 2
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_robot_empire = yes
 			}
 		}
@@ -577,7 +577,7 @@ building_mineral_purification_hub = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_robot_empire = yes
 			}
 			NOR  = {
@@ -591,7 +591,7 @@ building_mineral_purification_hub = {
 			district_mining_max = 4
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -600,7 +600,7 @@ building_mineral_purification_hub = {
 		}
 		cost = {
 			trigger = {
-				owner = { 
+				owner = {
 					is_robot_empire = yes
 				}
 			}
@@ -612,11 +612,11 @@ building_mineral_purification_hub = {
 			volatile_motes = 1
 		}
 	}
-	
+
 	prerequisites = {
 		tech_mineral_purification_2
 	}
-	
+
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -631,7 +631,7 @@ building_mineral_purification_hub = {
 		}
 		text = job_miner_effect_desc
 	}
-	
+
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -661,7 +661,7 @@ building_mineral_purification_hub = {
 			owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 390 } }
 		}
 		ELSE = {
-			planet = { 
+			planet = {
 				owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 510 } }
 			}
 		}
@@ -672,7 +672,7 @@ building_energy_grid = {
 	base_buildtime = 360
 	base_cap_amount = 1
 	category = resource
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		OR = {
@@ -684,7 +684,7 @@ building_energy_grid = {
 			has_planet_flag = energy_habitat
 		}
 	}
-	
+
 	planet_modifier = {
 		planet_technician_energy_produces_mult = 0.15
 	}
@@ -708,11 +708,11 @@ building_energy_grid = {
 			job_technician_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_robot_empire = yes
 			}
 		}
@@ -723,7 +723,7 @@ building_energy_grid = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_robot_empire = yes
 			}
 			NOR  = {
@@ -737,7 +737,7 @@ building_energy_grid = {
 			district_generator_max = 2
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -745,7 +745,7 @@ building_energy_grid = {
 		}
 		cost = {
 			trigger = {
-				owner = { 
+				owner = {
 					is_robot_empire = yes
 				}
 			}
@@ -755,16 +755,16 @@ building_energy_grid = {
 		upkeep = {
 			energy = 1
 		}
-	}	
-	
+	}
+
 	prerequisites = {
 		tech_power_hub_1
 	}
-	
+
 	upgrades = {
 		building_energy_nexus
 	}
-	
+
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -779,7 +779,7 @@ building_energy_grid = {
 		}
 		text = job_technician_effect_desc
 	}
-	
+
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -803,11 +803,11 @@ building_energy_nexus = {
 	base_buildtime = 480
 	can_build = no
 	category = resource
-	
+
 	allow = {
 		has_upgraded_capital = yes
 	}
-	
+
 	destroy_trigger = {
 		buildings_no_exotic_gases = yes
 	}
@@ -835,11 +835,11 @@ building_energy_nexus = {
 			job_technician_drone_add = 2
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_robot_empire = yes
 			}
 		}
@@ -851,7 +851,7 @@ building_energy_nexus = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { 
+			owner = {
 				is_robot_empire = yes
 			}
 			NOR  = {
@@ -865,7 +865,7 @@ building_energy_nexus = {
 			district_generator_max = 4
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -874,7 +874,7 @@ building_energy_nexus = {
 		}
 		cost = {
 			trigger = {
-				owner = { 
+				owner = {
 					is_robot_empire = yes
 				}
 			}
@@ -885,12 +885,12 @@ building_energy_nexus = {
 			energy = 1
 			exotic_gases = 1
 		}
-	}	
-	
+	}
+
 	prerequisites = {
 		tech_power_hub_2
 	}
-	
+
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -905,7 +905,7 @@ building_energy_nexus = {
 		}
 		text = job_technician_effect_desc
 	}
-	
+
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -935,7 +935,7 @@ building_energy_nexus = {
 			owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 390 } }
 		}
 		ELSE = {
-			planet = { 
+			planet = {
 				owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 510 } }
 			}
 		}
@@ -946,16 +946,16 @@ building_resource_silo = {
 	base_buildtime = 180
 
 	category = resource
-	
+
 	potential = {
 		NOR = {
 			has_modifier = resort_colony
-			has_modifier = slave_colony 
+			has_modifier = slave_colony
 		}
 	}
 	destroy_trigger = {
 		exists = owner
-		owner = { 
+		owner = {
 			is_ai = yes
 			OR = {
 				has_technology = tech_mega_engineering
@@ -963,7 +963,7 @@ building_resource_silo = {
 			}
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -982,7 +982,7 @@ building_resource_silo = {
 			job_maintenance_drone_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -990,13 +990,13 @@ building_resource_silo = {
 		}
 		upkeep = {
 			energy = 1
-		}		
+		}
 	}
-	
+
 	country_modifier = {
 		country_resource_max_add = 2000
 	}
-	
+
 	prerequisites = {
 		"tech_basic_industry"
 	}
@@ -1015,13 +1015,13 @@ building_resource_silo = {
 		}
 		text = job_clerk_effect_desc
 	}
-	
+
 	ai_weight = {
 		weight = 0
 		modifier = {
 			weight = 90000
 			owner = {
-				has_ascension_perk = ap_arcology_project 
+				has_ascension_perk = ap_arcology_project
 				NOT = { has_technology = tech_mega_engineering }
 			}
 			NOT = { has_building = building_resource_silo }
@@ -1033,17 +1033,18 @@ building_bio_reactor = {
 	base_buildtime = 240
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		owner = {
 			OR = {
-				is_machine_empire = yes 
+				is_machine_empire = yes
 				is_mechanical_empire = yes
+				is_lithoid_empire = yes
 			}
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -1055,22 +1056,21 @@ building_bio_reactor = {
 				owner = { NOT = { has_deficit = food } }
 			}
 			energy = 20
-		}		
+		}
 		upkeep = {
 			food = 25
 		}
-	}	
-	
+	}
+
 	prerequisites = {
 		"tech_bio_reactor"
 	}
-	
+
 	ai_weight = {
 		weight = 0
 		modifier = {
 			weight = 50
 			owner = {
-				has_ascension_perk = ap_arcology_project
 				has_monthly_income = {
 					resource = energy
 					value < 20
@@ -1079,14 +1079,16 @@ building_bio_reactor = {
 					resource = food
 					value > 25
 				}
-				NOT = {
+				NOR = {
 					has_country_flag = buildings_new_reactor_building
+					has_valid_civic = civic_machine_servitor
+					has_valid_civic = civic_machine_assimilator
 				}
 			}
-		}	
+		}
 	}
 
-	
+
 	on_queued = {
 		IF = {
 			limit = {
@@ -1101,7 +1103,7 @@ building_bio_reactor = {
 			owner = { set_timed_country_flag = { flag = buildings_new_reactor_building days = 390 } }
 		}
 		ELSE = {
-			planet = { 
+			planet = {
 				owner = { set_timed_country_flag = { flag = buildings_new_reactor_building days = 510 } }
 			}
 		}

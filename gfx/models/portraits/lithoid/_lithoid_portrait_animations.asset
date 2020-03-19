@@ -1,0 +1,300 @@
+# Lithoid 01
+animation = {
+	name = "lithoid_01_portrait_idle1_animation"
+	file = "lithoid_01_portrait_idle1.anim"
+}
+animation = {
+	name = "lithoid_01_portrait_idle2_animation"
+	file = "lithoid_01_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_01_portrait_idle3_animation"
+	file = "lithoid_01_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_01_portrait_idle4_animation"
+	file = "lithoid_01_portrait_idle4.anim"
+}
+
+
+# Lithoid 02
+animation = {
+	name = "lithoid_02_portrait_idle1_animation"
+	file = "lithoid_02_portrait_idle1.anim"
+}
+animation = {
+	name = "lithoid_02_portrait_idle2_animation"
+	file = "lithoid_02_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_02_portrait_idle3_animation"
+	file = "lithoid_02_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_02_portrait_idle4_animation"
+	file = "lithoid_02_portrait_idle4.anim"
+}
+
+# Lithoid 03
+animation = {
+	name = "lithoid_03_portrait_idle_animation"
+	file = "lithoid_03_portrait_idle.anim"
+}
+animation = {
+	name = "lithoid_03_portrait_idle2_animation"
+	file = "lithoid_03_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_03_portrait_idle3_animation"
+	file = "lithoid_03_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_03_portrait_idle4_animation"
+	file = "lithoid_03_portrait_idle4.anim"
+}
+
+# Lithoid 04
+animation = {
+	name = "lithoid_04_portrait_idle1_animation"
+	file = "lithoid_04_portrait_idle1.anim"
+}
+animation = {
+	name = "lithoid_04_portrait_idle2_animation"
+	file = "lithoid_04_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_04_portrait_idle3_animation"
+	file = "lithoid_04_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_04_portrait_idle4_animation"
+	file = "lithoid_04_portrait_idle4.anim"
+}
+
+# Lithoid 05
+animation = {
+	name = "lithoid_05_portrait_idle1_animation"
+	file = "lithoid_05_portrait_idle1.anim"
+}
+animation = {
+	name = "lithoid_05_portrait_idle2_animation"
+	file = "lithoid_05_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_05_portrait_idle3_animation"
+	file = "lithoid_05_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_05_portrait_idle4_animation"
+	file = "lithoid_05_portrait_idle4.anim"
+}
+
+# Lithoid 06
+animation = {
+	name = "lithoid_06_portrait_idle1_animation"
+	file = "lithoid_06_portrait_idle1.anim"
+}
+animation = {
+	name = "lithoid_06_portrait_idle2_animation"
+	file = "lithoid_06_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_06_portrait_idle3_animation"
+	file = "lithoid_06_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_06_portrait_idle4_animation"
+	file = "lithoid_06_portrait_idle4.anim"
+}
+
+
+# Lithoid 07
+animation = {
+	name = "lithoid_07_portrait_idle1_animation"
+	file = "lithoid_07_portrait_idle.anim"
+}
+animation = {
+	name = "lithoid_07_portrait_idle2_animation"
+	file = "lithoid_07_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_07_portrait_idle3_animation"
+	file = "lithoid_07_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_07_portrait_idle4_animation"
+	file = "lithoid_07_portrait_idle4.anim"
+}
+
+
+# Lithoid 08
+animation = {
+	name = "lithoid_08_portrait_idle1_animation"
+	file = "lithoid_08_portrait_idle.anim"
+}
+animation = {
+	name = "lithoid_08_portrait_idle2_animation"
+	file = "lithoid_08_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_08_portrait_idle3_animation"
+	file = "lithoid_08_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_08_portrait_idle4_animation"
+	file = "lithoid_08_portrait_idle4.anim"
+}
+
+# Lithoid 09
+animation = {
+	name = "lithoid_09_portrait_idle1_animation"
+	file = "lithoid_09_portrait_idle.anim"
+}
+animation = {
+	name = "lithoid_09_portrait_idle2_animation"
+	file = "lithoid_09_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_09_portrait_idle3_animation"
+	file = "lithoid_09_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_09_portrait_idle4_animation"
+	file = "lithoid_09_portrait_idle4.anim"
+}
+
+# Lithoid 10
+animation = {
+	name = "lithoid_10_portrait_idle1_animation"
+	file = "lithoid_10_portrait_idle.anim"
+}
+animation = {
+	name = "lithoid_10_portrait_idle2_animation"
+	file = "lithoid_10_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_10_portrait_idle3_animation"
+	file = "lithoid_10_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_10_portrait_idle4_animation"
+	file = "lithoid_10_portrait_idle4.anim"
+}
+
+# Lithoid 11
+animation = {
+	name = "lithoid_11_portrait_idle1_animation"
+	file = "lithoid_11_portrait_idle.anim"
+}
+animation = {
+	name = "lithoid_11_portrait_idle2_animation"
+	file = "lithoid_11_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_11_portrait_idle3_animation"
+	file = "lithoid_11_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_11_portrait_idle4_animation"
+	file = "lithoid_11_portrait_idle4.anim"
+}
+animation = {
+	name = "lithoid_11_portrait_idle4_animation"
+	file = "lithoid_11_portrait_idle4.anim"
+}
+
+# Lithoid 12
+animation = {
+	name = "lithoid_12_portrait_idle1_animation"
+	file = "lithoid_12_portrait_idle1.anim"
+}
+animation = {
+	name = "lithoid_12_portrait_idle2_animation"
+	file = "lithoid_12_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_12_portrait_idle3_animation"
+	file = "lithoid_12_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_12_portrait_idle4_animation"
+	file = "lithoid_12_portrait_idle4.anim"
+}
+
+# Lithoid 13
+animation = {
+	name = "lithoid_13_portrait_idle1_animation"
+	file = "lithoid_13_portrait_idle.anim"
+}
+animation = {
+	name = "lithoid_13_portrait_idle2_animation"
+	file = "lithoid_13_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_13_portrait_idle3_animation"
+	file = "lithoid_13_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_13_portrait_idle4_animation"
+	file = "lithoid_13_portrait_idle4.anim"
+}
+animation = {
+	name = "lithoid_13_portrait_idle4_animation"
+	file = "lithoid_13_portrait_idle4.anim"
+}
+
+# Lithoid 14
+animation = {
+	name = "lithoid_14_portrait_idle1_animation"
+	file = "lithoid_14_portrait_idle.anim"
+}
+animation = {
+	name = "lithoid_14_portrait_idle2_animation"
+	file = "lithoid_14_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_14_portrait_idle3_animation"
+	file = "lithoid_14_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_14_portrait_idle4_animation"
+	file = "lithoid_14_portrait_idle4.anim"
+}
+
+# Lithoid 15
+animation = {
+	name = "lithoid_15_portrait_idle1_animation"
+	file = "lithoid_15_portrait_idle1.anim"
+}
+animation = {
+	name = "lithoid_15_portrait_idle2_animation"
+	file = "lithoid_15_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_15_portrait_idle3_animation"
+	file = "lithoid_15_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_15_portrait_idle4_animation"
+	file = "lithoid_15_portrait_idle4.anim"
+}
+
+# Lithoid machine
+animation = {
+	name = "lithoid_machine_portrait_idle1_animation"
+	file = "lithoid_machine_portrait_idle1.anim"
+}
+animation = {
+	name = "lithoid_machine_portrait_idle2_animation"
+	file = "lithoid_machine_portrait_idle2.anim"
+}
+animation = {
+	name = "lithoid_machine_portrait_idle3_animation"
+	file = "lithoid_machine_portrait_idle3.anim"
+}
+animation = {
+	name = "lithoid_machine_portrait_idle4_animation"
+	file = "lithoid_machine_portrait_idle4.anim"
+}
+
+

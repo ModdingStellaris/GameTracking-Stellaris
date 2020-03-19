@@ -1,6 +1,6 @@
 # Generated species derive their names from here
 
-### MAMMALIANS
+### HUMANOIDS
 
 HUM = {
 	alari = {
@@ -124,6 +124,7 @@ HUM = {
 	}
 }
 
+### MAMMALIANS
 
 MAM = {
 	kroll = {

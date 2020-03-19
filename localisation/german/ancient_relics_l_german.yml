@@ -65,7 +65,7 @@
  archaeologists_3:0 "Archäologendrohnen"
 
  bombardment_pox:0 "Javorische Pocken"
- bombardment_pox_desc:0 "$bombardment_pox$ Die Javorische-Pocken-Bombardierung beschießt den Planeten mit tödlichen Krankheitserregern.\n- §YModerater§! Schaden an §YArmeen§!\n- §ELeichter§! Schaden an §YPlaneten§!\n- §EKein§! Schaden an §Ymechanischen Bewohnern§!\n- §RKatastrophaler§! Schaden an §Yorganischen Bewohnern§!\n- Wird unverteidigte Planeten bombardieren\n- Kann Planeten zu leblosen Toten Welten reduzieren"
+ bombardment_pox_desc:0 "Die $bombardment_pox$-Bombardierung beschießt den Planeten mit tödlichen Krankheitserregern.\n- §YModerater§! Schaden an §YArmeen§!\n- §ELeichter§! Schaden an §YPlaneten§!\n- §EKein§! Schaden an §Ymechanischen Bewohnern§!\n- §RKatastrophaler§! Schaden an §Yorganischen Bewohnern§!\n- Wird unverteidigte Planeten bombardieren\n- Kann Planeten zu leblosen Toten Welten reduzieren"
 
  pc_relic:0 "Reliktwelt"
  pc_relic_desc:0 "Einst erstreckte sich eine Stadt über die ganze Welt. Heute sind nur noch alte und verlassene Ruinen erhalten, deren ursprüngliche Bewohner längst verschwunden sind."
@@ -507,6 +507,7 @@
  ##################
  #relic_triumph_cooldown: "\nFügt den Modifikator §Y$relic_activation_cooldown$§! für §Y120§! Monate hinzu."
  relic_triumph_cooldown:0 "\n$relic_activation_cooldown$: £time£ §Y3600§!"
+ relic_triumph_cooldown_short:0 "\n$relic_activation_cooldown$: £time£ §Y1800§!"
  requires_relic_no_cooldown:0 "$TRIGGER_FAIL$§REs ist nicht möglich ein weiteres Relikt zu aktivieren, bis die §Y$relic_activation_cooldown$§! abgelaufen ist.§!"
  relic_queen_spawn:0 "Kleine Prethoryn-Flotte ausbrüten"
  relic_rubricator_active:0 "Erstellt §Y30§! £minor_artifacts£kleinere Artefakte."
@@ -799,4 +800,3 @@
  herald_75:0 "Der Herold ist beschädigt"
  herald_50:0 "$herald_75$"
  herald_25:0 "$herald_75$"
- relic_triumph_cooldown_short:0 "$relic_activation_cooldown$: £time£ §Y1800§!"

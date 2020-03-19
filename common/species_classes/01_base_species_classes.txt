@@ -1,6 +1,6 @@
 # Number of entries controlls amount to choose from in designer  I.E.   "mol1" "mol2" "mol3" "mol4"
 # graphical_culture is connected to the looks used for ships and cities, see "common/graphical_culture/"
-# Portraits here are one you can choose from in the character creater. For prescripted races they are grabbed straight from the .gfx file. 
+# Portraits here are one you can choose from in the character creater. For prescripted races they are grabbed straight from the .gfx file.
 # playable=(yes/no)/trigger, default is yes, if this species class can is playable
 # randomized=(yes/no)/trigger, default is yes, if this species class is randomized
 # custom_portraits
@@ -25,7 +25,7 @@ MAM = {
 		"mam9"
 		"mam11"
 		"mam6"
-		"mam3"	
+		"mam3"
 		"mam12"
 		"mam7"
 		"mam15"
@@ -35,15 +35,15 @@ MAM = {
 		"mam16"
 		"mam_rat"
 	}
-	
+
 	custom_portraits = {#add additional portraits when customizing species
-		randomized = { 
-			OR = { 
+		randomized = {
+			OR = {
 				host_has_dlc = "Creatures of the Void Portrait Pack"
 				host_has_dlc = "Anniversary Portraits"
 			}
 		}
-		playable = { 
+		playable = {
 			OR = {
 				local_has_dlc = "Creatures of the Void Portrait Pack"
 				local_has_dlc = "Anniversary Portraits"
@@ -53,12 +53,12 @@ MAM = {
 			"mam17"
 		}
 	}
-	
+
 	# These should not be used for randomly generated species
 	non_randomized_portraits = {
         "mam_rat"
     }
-	
+
 	graphical_culture = mammalian_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 
@@ -71,26 +71,26 @@ REP = {
 	possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
 
 	portraits = {
-		"rep2"		
-		"rep10"		
-		"rep14"		
-		"rep3"		
-		"rep7"		
+		"rep2"
+		"rep10"
+		"rep14"
+		"rep3"
+		"rep7"
 		"rep12"
 		"rep9"
 		"rep11"
 		"rep6"
 		"rep13"
-		"rep1"		
-		"rep8"		
-		"rep4"		
-		"rep15"		
+		"rep1"
+		"rep8"
+		"rep4"
+		"rep15"
 		"rep5"
 	}
-	
+
 	custom_portraits = {#add additional portraits when customizing species
 		randomized = { host_has_dlc = "Leviathans Story Pack" }
-		playable = { local_has_dlc = "Leviathans Story Pack" }	
+		playable = { local_has_dlc = "Leviathans Story Pack" }
 		portraits = {
 			"rep16"
 		}
@@ -117,18 +117,18 @@ AVI = {
 	portraits = {
 		"avi1"
 		"avi8"
-		"avi13"		
-		"avi10"		
+		"avi13"
+		"avi10"
 		"avi15"
 		"avi4"
 		"avi7"
 		"avi5"
 		"avi9"
 		"avi6"
-		"avi11"		
-		"avi3"		
-		"avi14"		
-		"avi2"		
+		"avi11"
+		"avi3"
+		"avi14"
+		"avi2"
 		"avi12"
 	}
 	custom_portraits = {#add additional portraits when customizing species
@@ -137,15 +137,15 @@ AVI = {
 			"avi16"
 		}
 	}
-	
+
 	custom_portraits = {#add additional portraits when customizing species
-		randomized = { 
-			OR = { 
+		randomized = {
+			OR = {
 				host_has_dlc = "Creatures of the Void Portrait Pack"
 				host_has_dlc = "Anniversary Portraits"
 			}
 		}
-		playable = { 
+		playable = {
 			OR = {
 				local_has_dlc = "Creatures of the Void Portrait Pack"
 				local_has_dlc = "Anniversary Portraits"
@@ -179,11 +179,11 @@ ART = {
 		"art7"
 		"art12"
 		"art6"
-		"art1"		
+		"art1"
 		"art13"
 		"art8"
-		"art3"		
-		"art5"		
+		"art3"
+		"art5"
 		"art9"
 		"art10"
 		"art11"
@@ -193,12 +193,12 @@ ART = {
 
 	custom_portraits = {#add additional portraits when customizing species
 		randomized = { host_has_dlc = "Leviathans Story Pack" }
-		playable = { local_has_dlc = "Leviathans Story Pack" }	
+		playable = { local_has_dlc = "Leviathans Story Pack" }
 		portraits = {
 			"art18"
 		}
-	}	
-	
+	}
+
 	custom_portraits = {#add additional portraits when customizing species
 		randomized = { host_has_dlc = "Arachnoid Portrait Pack" }
 		playable = { local_has_dlc = "Arachnoid Portrait Pack" }
@@ -213,15 +213,15 @@ ART = {
 			"art20"
 		}
 	}
-	
+
 	custom_portraits = {#add additional portraits when customizing species
-		randomized = { 
-			OR = { 
+		randomized = {
+			OR = {
 				host_has_dlc = "Creatures of the Void Portrait Pack"
 				host_has_dlc = "Anniversary Portraits"
 			}
 		}
-		playable = { 
+		playable = {
 			OR = {
 				local_has_dlc = "Creatures of the Void Portrait Pack"
 				local_has_dlc = "Anniversary Portraits"
@@ -231,7 +231,7 @@ ART = {
 			"art17"
 		}
 	}
-	
+
 	graphical_culture = arthropoid_01
 	move_pop_sound_effect = "arthopoid_pops_move"
 
@@ -245,28 +245,28 @@ MOL = {
 
 	portraits = {
 		"mol3"		# Rendered but not saved
-		"mol7"		
+		"mol7"
 		"mol13"
 		"mol2"
-		"mol14"		
+		"mol14"
 		"mol4"
-		"mol8"				
-		"mol1"		
+		"mol8"
+		"mol1"
 		"mol11"
 		"mol12"
 		"mol5"
 		"mol6"
 		"mol15"
 	}
-	
+
 	custom_portraits = {#add additional portraits when customizing species
-		randomized = { 
-			OR = { 
+		randomized = {
+			OR = {
 				host_has_dlc = "Creatures of the Void Portrait Pack"
 				host_has_dlc = "Anniversary Portraits"
 			}
 		}
-		playable = { 
+		playable = {
 			OR = {
 				local_has_dlc = "Creatures of the Void Portrait Pack"
 				local_has_dlc = "Anniversary Portraits"
@@ -276,10 +276,10 @@ MOL = {
 			"mol16"
 		}
 	}
-	
+
 	custom_portraits = {#add additional portraits when customizing species
 		randomized = { host_has_dlc = "Leviathans Story Pack" }
-		playable = { local_has_dlc = "Leviathans Story Pack" }	
+		playable = { local_has_dlc = "Leviathans Story Pack" }
 		portraits = {
 			"mol17"
 			"mol18"
@@ -297,7 +297,7 @@ FUN = {
 
 	gender = no
 
-	portraits = {		
+	portraits = {
 		"fun2"
 		"fun4"
 		"fun3"
@@ -307,21 +307,21 @@ FUN = {
 		"fun15"
 		"fun7"
 		"fun1"
-		"fun9"		
-		"fun11"		
-		"fun8"		
+		"fun9"
+		"fun11"
+		"fun8"
 		"fun14"
 		"fun10"
 	}
 
 	custom_portraits = {#add additional portraits when customizing species
-		randomized = { 
-			OR = { 
+		randomized = {
+			OR = {
 				host_has_dlc = "Creatures of the Void Portrait Pack"
 				host_has_dlc = "Anniversary Portraits"
 			}
 		}
-		playable = { 
+		playable = {
 			OR = {
 				local_has_dlc = "Creatures of the Void Portrait Pack"
 				local_has_dlc = "Anniversary Portraits"
@@ -331,10 +331,10 @@ FUN = {
 			"fun16"
 		}
 	}
-	
+
 	custom_portraits = {#add additional portraits when customizing species
 		randomized = { host_has_dlc = "Leviathans Story Pack" }
-		playable = { local_has_dlc = "Leviathans Story Pack" }	
+		playable = { local_has_dlc = "Leviathans Story Pack" }
 		portraits = {
 			"fun17"
 		}
@@ -386,4 +386,44 @@ PLANT = {
 	graphical_culture = plantoid_01
 
 	resources = {}
+}
+
+LITHOID = {
+	archetype = LITHOID
+
+	playable = { has_lithoids = yes }
+	possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+	randomized = { has_lithoids = yes }
+
+	gender = no
+
+	custom_portraits = {
+		randomized = { has_lithoids = yes }
+		playable = { has_lithoids = yes }
+		portraits = {
+			"lith1"
+			"lith2"
+			"lith3"
+			"lith4"
+			"lith5"
+			"lith6"
+			"lith7"
+			"lith8"
+			"lith9"
+			"lith10"
+			"lith11"
+			"lith12"
+			"lith13"
+			"lith14"
+			"lith15"
+		}
+	}
+
+	graphical_culture = lithoid_01
+	move_pop_sound_effect = "reptilian_pops_move"
+
+	resources = {}
+
+	trait = "trait_lithoid"
 }

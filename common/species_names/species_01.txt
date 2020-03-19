@@ -26,7 +26,7 @@ MAM = {
 		home_system = Yapathinor
 		name_list = "MAM3"
 	}
-		
+
 	rekthalar = {
 		name = Rek'Thalar
 		plural = Rek'Thalari
@@ -42,7 +42,7 @@ MAM = {
 		home_system = Hiff
 		name_list = "MAM1"
 	}
-	
+
 	ugarlak = {
 		name = Ugarlak
 		plural = Ugarlaki
@@ -138,7 +138,7 @@ MAM = {
 		home_system = Juss
 		name_list = "MAM1"
 	}
-	
+
 	klaggian = {
 		name = Klaggian
 		plural = Klaggians
@@ -146,7 +146,7 @@ MAM = {
 		home_system = Lagragga
 		name_list = "MAM2"
 	}
-	
+
 	uqopraknar = {
 		name = Uqo'Praknar
 		plural = Uqo'Praknarians
@@ -154,7 +154,7 @@ MAM = {
 		home_system = "Losstran Peav"
 		name_list = "MAM3"
 	}
-	
+
 	onedqarak = {
 		name = Oned'Qarak
 		plural = Oned'Qaraki
@@ -162,7 +162,7 @@ MAM = {
 		home_system = "Ire'Laom Jumtra"
 		name_list = "MAM4"
 	}
-	
+
 	ruphaari = {
 		name = Ruphaari
 		plural = Ruphaari
@@ -170,7 +170,7 @@ MAM = {
 		home_system = Rupha'iaa
 		name_list = "MAM1"
 	}
-	
+
 	qwepulci = {
 		name = Qwe'Pulci
 		plural = Qwe'Pulcians
@@ -178,7 +178,7 @@ MAM = {
 		home_system = Uklapp'Knor
 		name_list = "MAM2"
 	}
-	
+
 	groknaploran = {
 		name = Groknaploran
 		plural = Groknaplorans
@@ -186,7 +186,7 @@ MAM = {
 		home_system = Adanir
 		name_list = "MAM3"
 	}
-	
+
 	ktaknor = {
 		name = K'Taknor
 		plural = K'Taknorians
@@ -194,7 +194,7 @@ MAM = {
 		home_system = Ufram
 		name_list = "MAM4"
 	}
-	
+
 	gagassi = {
 		name = Gagassi
 		plural = Gagassi
@@ -202,7 +202,7 @@ MAM = {
 		home_system = Pultran'Ogg
 		name_list = "MAM1"
 	}
-	
+
 	hadadeshi = {
 		name = Hadadeshi
 		plural = Hadadeshi
@@ -222,7 +222,7 @@ FUN = {
 		home_system = Oygan
 		name_list = "FUN1"
 	}
-	
+
 	finu = {
 		name = Finu
 		plural = Finuans
@@ -230,7 +230,7 @@ FUN = {
 		home_system = Gratiil
 		name_list = "FUN2"
 	}
-	
+
 	obbha = {
 		name = Obbha
 		plural = Obbhani
@@ -238,7 +238,7 @@ FUN = {
 		home_system = "Huogi Gagg"
 		name_list = "FUN3"
 	}
-	
+
 	ganlarev = {
 		name = Ganlarev
 		plural = Ganlarevans
@@ -246,7 +246,7 @@ FUN = {
 		home_system = Ganlargo
 		name_list = "FUN4"
 	}
-	
+
 	buhavilaa = {
 		name = Buhavilaa
 		plural = Buhavilaans
@@ -254,7 +254,7 @@ FUN = {
 		home_system = Bevir
 		name_list = "FUN1"
 	}
-	
+
 	oginollox = {
 		name = Ogi-Nollox
 		plural = Ogi-Nolloxi
@@ -262,7 +262,7 @@ FUN = {
 		home_system = "Vogen Folbran"
 		name_list = "FUN2"
 	}
-	
+
 	celimy = {
 		name = Celimy
 		plural = Celimians
@@ -270,7 +270,7 @@ FUN = {
 		home_system = "Hovacelim Bu"
 		name_list = "FUN3"
 	}
-	
+
 	pogovon = {
 		name = Pogovon
 		plural = Pogovoni
@@ -278,7 +278,7 @@ FUN = {
 		home_system = Cavobb
 		name_list = "FUN4"
 	}
-	
+
 	qasvalyvia = {
 		name = Qasvalyvia
 		plural = Qasvalyvians
@@ -286,7 +286,7 @@ FUN = {
 		home_system = Qavborvurg
 		name_list = "FUN1"
 	}
-	
+
 	avabbian = {
 		name = Avabbian
 		plural = Avabbians
@@ -294,7 +294,7 @@ FUN = {
 		home_system = Hur-Alobbava
 		name_list = "FUN2"
 	}
-	
+
 	lolehndra = {
 		name = Lolehndra
 		plural = Lolehndrans
@@ -302,7 +302,7 @@ FUN = {
 		home_system = Agifehndra
 		name_list = "FUN3"
 	}
-	
+
 	reyubb = {
 		name = Reyubb
 		plural = Reyubbans
@@ -310,7 +310,7 @@ FUN = {
 		home_system = Ze'Zebb
 		name_list = "FUN4"
 	}
-	
+
 	varelviv = {
 		name = Varelviv
 		plural = Varelvivi
@@ -318,7 +318,7 @@ FUN = {
 		home_system = "Ava-Fobb"
 		name_list = "FUN1"
 	}
-	
+
 	zeppadroggan = {
 		name = Zeppadroggan
 		plural = Zeppadroggans
@@ -326,7 +326,7 @@ FUN = {
 		home_system = Padrog-Vol
 		name_list = "FUN2"
 	}
-	
+
 	buvhondon = {
 		name = Buvhondon
 		plural = Buvhondians
@@ -334,7 +334,7 @@ FUN = {
 		home_system = "Gasci Xubb"
 		name_list = "FUN3"
 	}
-	
+
 	valmennax = {
 		name = Valmennax
 		plural = Valmennaxians
@@ -342,7 +342,7 @@ FUN = {
 		home_system = "X'opv Yva"
 		name_list = "FUN4"
 	}
-	
+
 	huviduzaan = {
 		name = Huvidu-Zaan
 		plural = Huvidu-Zaani
@@ -350,7 +350,7 @@ FUN = {
 		home_system = Zaaeva
 		name_list = "FUN1"
 	}
-	
+
 	provalguvor = {
 		name = Provalguvor
 		plural = Provalguvorians
@@ -358,7 +358,7 @@ FUN = {
 		home_system = Ysvera
 		name_list = "FUN2"
 	}
-	
+
 	qlorvinserian = {
 		name = Qlorvinserian
 		plural = Qlorvinserians
@@ -366,15 +366,15 @@ FUN = {
 		home_system = Qlorciso'Bu
 		name_list = "FUN3"
 	}
-	
+
 	wulhubb = {
 		name = Wulhubb
 		plural = Wulhubbi
-		home_planet = Wulhubba 
+		home_planet = Wulhubba
 		home_system = Gy-Blova
 		name_list = "FUN4"
 	}
-	
+
 	caphevad = {
 		name = Caphevad
 		plural = Caphevadi
@@ -382,7 +382,7 @@ FUN = {
 		home_system = Belo'vi
 		name_list = "FUN1"
 	}
-	
+
 	vool = {
 		name = Vool
 		plural = Voolians
@@ -390,7 +390,7 @@ FUN = {
 		home_system = Vool'u-Umu
 		name_list = "FUN2"
 	}
-	
+
 	frubralav = {
 		name = Frubralav
 		plural = Frubralavians
@@ -398,7 +398,7 @@ FUN = {
 		home_system = Fabrihass
 		name_list = "FUN3"
 	}
-	
+
 	fjasivlin = {
 		name = Fjasivlin
 		plural = Fjasivlians
@@ -406,7 +406,7 @@ FUN = {
 		home_system = "Boass Ceind"
 		name_list = "FUN4"
 	}
-	
+
 	pobelin = {
 		name = Pobelin
 		plural = Pobelinians
@@ -414,7 +414,7 @@ FUN = {
 		home_system = Polbrill
 		name_list = "FUN1"
 	}
-	
+
 	laachax = {
 		name = Laachax
 		plural = Laachaxi
@@ -422,7 +422,7 @@ FUN = {
 		home_system = "Golz Laachax"
 		name_list = "FUN2"
 	}
-	
+
 	udkavongo = {
 		name = Udkavongo
 		plural = Udkavongo
@@ -450,7 +450,7 @@ ART = {
 		home_system = Podpu
 		name_list = "ART2"
 	}
-	
+
 	zaacplot = {
 		name = Zaacplot
 		plural = Zaacplotians
@@ -506,7 +506,7 @@ ART = {
 		home_system = Oxx-Oxx
 		name_list = "ART1"
 	}
-	
+
 	dabbax = {
 		name = Dabbax
 		plural = Dabaxans
@@ -514,7 +514,7 @@ ART = {
 		home_system = Polkran
 		name_list = "ART2"
 	}
-	
+
 	zemmerpuk = {
 		name = Zemmerpuk
 		plural = Zemmerpukans
@@ -530,7 +530,7 @@ ART = {
 		home_system = Poci'Ganklak
 		name_list = "ART4"
 	}
-	
+
 	ytrellan = {
 		name = Ytrellan
 		plural = Ytrellanids
@@ -538,7 +538,7 @@ ART = {
 		home_system = Mak'Onux
 		name_list = "ART1"
 	}
-	
+
 	savixqast = {
 		name = Savix'Qast
 		plural = Savix'Qastians
@@ -546,7 +546,7 @@ ART = {
 		home_system = Qastliani
 		name_list = "ART2"
 	}
-	
+
 	qopinjaxi = {
 		name = Qopinjaxi
 		plural = Qopinjaxians
@@ -554,7 +554,7 @@ ART = {
 		home_system = Jaxii-Omok
 		name_list = "ART3"
 	}
-	
+
 	najklax = {
 		name = Najklax
 		plural = Najklaxians
@@ -562,7 +562,7 @@ ART = {
 		home_system = Ru-Justux
 		name_list = "ART4"
 	}
-	
+
 	sakyt = {
 		name = Sakyt
 		plural = Sakytians
@@ -570,7 +570,7 @@ ART = {
 		home_system = Hullfax
 		name_list = "ART1"
 	}
-	
+
 	backatta = {
 		name = Backatta
 		plural = Backattans
@@ -578,7 +578,7 @@ ART = {
 		home_system = "Ba Grax"
 		name_list = "ART2"
 	}
-	
+
 	xaplo = {
 		name = Xaplo
 		plural = Xaploans
@@ -586,7 +586,7 @@ ART = {
 		home_system = Xaplonius
 		name_list = "ART3"
 	}
-	
+
 	uindar = {
 		name = Uindar
 		plural = Uindari
@@ -594,7 +594,7 @@ ART = {
 		home_system = Yda'Yxa
 		name_list = "ART4"
 	}
-	
+
 	eruxo = {
 		name = Eruxo
 		plural = Eruxoans
@@ -602,7 +602,7 @@ ART = {
 		home_system = Oprimax
 		name_list = "ART1"
 	}
-	
+
 	spuxulac = {
 		name = Spuxulac
 		plural = Spuxulacans
@@ -610,7 +610,7 @@ ART = {
 		home_system = Hayxacca
 		name_list = "ART2"
 	}
-	
+
 	multyx = {
 		name = Multyx
 		plural = Multyxans
@@ -618,7 +618,7 @@ ART = {
 		home_system = Nellpa'xo
 		name_list = "ART3"
 	}
-	
+
 	cilxtac = {
 		name = Cilxtac
 		plural = Cilxtacans
@@ -626,7 +626,7 @@ ART = {
 		home_system = Vidranx
 		name_list = "ART4"
 	}
-	
+
 	ztrakpor = {
 		name = Ztrakpor
 		plural = Ztrakporans
@@ -634,7 +634,7 @@ ART = {
 		home_system = Ztrakpor-Ohdri
 		name_list = "ART1"
 	}
-	
+
 	tchaaskeran = {
 		name = Tchaaskeran
 		plural = Tchaaskerans
@@ -642,7 +642,7 @@ ART = {
 		home_system = Tchaa'Pol-Kolse
 		name_list = "ART2"
 	}
-	
+
 	yaxkalock = {
 		name = Yax'Kalock
 		plural = Yax'Kalocki
@@ -650,7 +650,7 @@ ART = {
 		home_system = Tchaa'Pol-Kolse
 		name_list = "ART3"
 	}
-	
+
 	vunokon = {
 		name = Vun-Okon
 		plural = Vun-Okons
@@ -670,7 +670,7 @@ REP = {
 		home_system = Thalakin
 		name_list = "REP1"
 	}
-	
+
 	thekqlak = {
 		name = Thek'Qlak
 		plural = Thek'Qlaki
@@ -678,7 +678,7 @@ REP = {
 		home_system = Qlakidoq
 		name_list = "REP2"
 	}
-	
+
 	bospachtux = {
 		name = Bos'Pachtux
 		plural = Bos'Pachtuxi
@@ -694,7 +694,7 @@ REP = {
 		home_system = Zuffur
 		name_list = "REP4"
 	}
-	
+
 	othethi = {
 		name = Othethi
 		plural = Othethi
@@ -726,7 +726,7 @@ REP = {
 		home_system = Nharrbo
 		name_list = "REP4"
 	}
-	
+
 	zukakkan = {
 		name = Zukakkan
 		plural = Zukakkans
@@ -734,7 +734,7 @@ REP = {
 		home_system = Zukai'Mondor
 		name_list = "REP1"
 	}
-	
+
 	seklokkar = {
 		name = Sek-Lokkar
 		plural = Sek-Lokkarian
@@ -742,7 +742,7 @@ REP = {
 		home_system = "Lokken Jak"
 		name_list = "REP2"
 	}
-	
+
 	netraxi = {
 		name = Netraxi
 		plural = Netraxi
@@ -750,7 +750,7 @@ REP = {
 		home_system = Netraxia'Asaka
 		name_list = "REP3"
 	}
-	
+
 	dimaxanian = {
 		name = Dima'Xanian
 		plural = Dima'Xanians
@@ -758,7 +758,7 @@ REP = {
 		home_system = "Xani Nadih"
 		name_list = "REP4"
 	}
-	
+
 	vagoross = {
 		name = Vag-Oross
 		plural = Vag-Orossi
@@ -766,7 +766,7 @@ REP = {
 		home_system = Orossi-Huivac
 		name_list = "REP1"
 	}
-	
+
 	Kalaxenan = {
 		name = Kalaxenan
 		plural = Kalaxenans
@@ -774,7 +774,7 @@ REP = {
 		home_system = "Ipa'Go Tryll"
 		name_list = "REP2"
 	}
-	
+
 	fexklanga = {
 		name = Fex'Klanga
 		plural = Fex'Klangan
@@ -782,7 +782,7 @@ REP = {
 		home_system = Fexklansiga
 		name_list = "REP3"
 	}
-	
+
 	tuxkan = {
 		name = Tuxkan
 		plural = Tuxkans
@@ -790,7 +790,7 @@ REP = {
 		home_system = Tuxkalli
 		name_list = "REP4"
 	}
-	
+
 	gox = {
 		name = Gox
 		plural = Goxi
@@ -798,7 +798,7 @@ REP = {
 		home_system = Du-Raxxa-Nax
 		name_list = "REP1"
 	}
-	
+
 	rakthalaknak = {
 		name = Rak'Thalak'Nak
 		plural = Rak'Thalak'Naki
@@ -806,7 +806,7 @@ REP = {
 		home_system = "Rak'Nak'Thax"
 		name_list = "REP2"
 	}
-	
+
 	bokasheran = {
 		name = Bokasheran
 		plural = Bokasherans
@@ -814,7 +814,7 @@ REP = {
 		home_system = Acir'Raka
 		name_list = "REP3"
 	}
-	
+
 	adeex = {
 		name = Adeex
 		plural = Adeexi
@@ -822,7 +822,7 @@ REP = {
 		home_system = Xandraee
 		name_list = "REP4"
 	}
-	
+
 	rothak = {
 		name = Rothak
 		plural = Rothaki
@@ -830,7 +830,7 @@ REP = {
 		home_system = Vsem-Klack
 		name_list = "REP1"
 	}
-	
+
 	steccashi = {
 		name = Steccashi
 		plural = Steccashi
@@ -838,7 +838,7 @@ REP = {
 		home_system = "Uskal Opeshal"
 		name_list = "REP2"
 	}
-	
+
 	xulokako = {
 		name = Xu'Lokako
 		plural = Xu'Kokakoi
@@ -846,7 +846,7 @@ REP = {
 		home_system = Xu'Kokallij
 		name_list = "REP3"
 	}
-	
+
 	gargaxton = {
 		name = Gargaxton
 		plural = Gargaxtons
@@ -854,7 +854,7 @@ REP = {
 		home_system = Qol'Lest
 		name_list = "REP4"
 	}
-	
+
 	loxungrakva = {
 		name = Lox'Ungrak-Va
 		plural = Lox'Ungrak-Vani
@@ -864,7 +864,7 @@ REP = {
 	}
 }
 
-### AVIAN (editme)
+### AVIAN
 
 AVI = {
 	uvaxavani = {
@@ -874,7 +874,7 @@ AVI = {
 		home_system = Shantaxavani
 		name_list = "AVI1"
 	}
-	
+
 	qvefoz = {
 		name = Qvefoz
 		plural = Qvefozi
@@ -906,7 +906,7 @@ AVI = {
 		home_system = Sintomoroi'Utlak
 		name_list = "AVI1"
 	}
-	
+
 	qixlufran = {
 		name = Qix'Lufran
 		plural = Qix'Lufrans
@@ -914,7 +914,7 @@ AVI = {
 		home_system = Qix'Poktrak
 		name_list = "AVI2"
 	}
-	
+
 	mithfell = {
 		name = Mith-Fell
 		plural = Mith-Fellans
@@ -922,7 +922,7 @@ AVI = {
 		home_system = "Kan Jukla Mik"
 		name_list = "AVI3"
 	}
-	
+
 	tilllynesi = {
 		name = Till'Lynesi
 		plural = Till'Lynesi
@@ -930,7 +930,7 @@ AVI = {
 		home_system = "Till Juxesi"
 		name_list = "AVI4"
 	}
-	
+
 	jessinax = {
 		name = Jess'Inax
 		plural = Jess'Inaxi
@@ -938,7 +938,7 @@ AVI = {
 		home_system = "Jess Inaxpa"
 		name_list = "AVI1"
 	}
-	
+
 	boki = {
 		name = Boki
 		plural = Boki
@@ -954,7 +954,7 @@ AVI = {
 		home_system = Jaktagg
 		name_list = "AVI3"
 	}
-	
+
 	juvan = {
 		name = Juvan
 		plural = Juvans
@@ -962,7 +962,7 @@ AVI = {
 		home_system = Juvan-Odor
 		name_list = "AVI4"
 	}
-	
+
 	iztran = {
 		name = Iztran
 		plural = Iztrans
@@ -970,7 +970,7 @@ AVI = {
 		home_system = Loshyx'Oa
 		name_list = "AVI1"
 	}
-	
+
 	helvan = {
 		name = Helvan
 		plural = Helvan
@@ -978,7 +978,7 @@ AVI = {
 		home_system = Helvan-Jull
 		name_list = "AVI2"
 	}
-	
+
 	ozkox = {
 		name = Ozkox
 		plural = Ozkoxi
@@ -986,7 +986,7 @@ AVI = {
 		home_system = Slaoz-Kox
 		name_list = "AVI3"
 	}
-	
+
 	fafossan = {
 		name = Fafossan
 		plural = Fafossans
@@ -994,7 +994,7 @@ AVI = {
 		home_system = Fafossanga
 		name_list = "AVI4"
 	}
-	
+
 	gulkfurki = {
 		name = Gulk-Furki
 		plural = Gulk-Furki
@@ -1002,7 +1002,7 @@ AVI = {
 		home_system = Gulkan'Tukk
 		name_list = "AVI1"
 	}
-	
+
 	Haahn = {
 		name = Haahn
 		plural = Hahhns
@@ -1010,7 +1010,7 @@ AVI = {
 		home_system = "Tjantahtica Lukana"
 		name_list = "AVI2"
 	}
-	
+
 	twaxihdar = {
 		name = Twax'Ihdar
 		plural = Twax'Ihdari
@@ -1018,7 +1018,7 @@ AVI = {
 		home_system = Twaxdar
 		name_list = "AVI3"
 	}
-	
+
 	uvxantt = {
 		name = Uv-Xantt
 		plural = Uv-Xantti
@@ -1026,7 +1026,7 @@ AVI = {
 		home_system = Fraknyr
 		name_list = "AVI4"
 	}
-	
+
 	kraxroz = {
 		name = Kraxroz
 		plural = Kraxrozi
@@ -1034,7 +1034,7 @@ AVI = {
 		home_system = M'Than
 		name_list = "AVI1"
 	}
-	
+
 	yssravannar = {
 		name = Yssravannar
 		plural = Yssravannari
@@ -1042,7 +1042,7 @@ AVI = {
 		home_system = "Opyrra Ju'kal"
 		name_list = "AVI2"
 	}
-	
+
 	haspalv = {
 		name = Haspalv
 		plural = Haspalvi
@@ -1050,7 +1050,7 @@ AVI = {
 		home_system = Haspalv'Mina
 		name_list = "AVI3"
 	}
-	
+
 	pelxcradonian = {
 		name = Pelx-Cradonian
 		plural = Pelx-Cradonians
@@ -1058,7 +1058,7 @@ AVI = {
 		home_system = Cradoniana
 		name_list = "AVI4"
 	}
-	
+
 	jaazijan = {
 		name = Jaazijan
 		plural = Jaazijans
@@ -1066,7 +1066,7 @@ AVI = {
 		home_system = Penkar
 		name_list = "AVI1"
 	}
-	
+
 	qravadox = {
 		name = Qravadox
 		plural = Qravadoxi
@@ -1086,7 +1086,7 @@ MOL = {
 		home_system = Semadjo
 		name_list = "MOL1"
 	}
-	
+
 	mathin = {
 		name = Mathin
 		plural = Mathini
@@ -1094,7 +1094,7 @@ MOL = {
 		home_system = Mathonis
 		name_list = "MOL2"
 	}
-	
+
 	malwegoll = {
 		name = Malwegoll
 		plural = Malwegollans
@@ -1102,7 +1102,7 @@ MOL = {
 		home_system = "Wegolla Upta"
 		name_list = "MOL3"
 	}
-	
+
 	alvothari = {
 		name = Alvothari
 		plural = Alvotharians
@@ -1110,7 +1110,7 @@ MOL = {
 		home_system = Thari
 		name_list = "MOL4"
 	}
-	
+
 	hathgum = {
 		name = Hathgum
 		plural = Hathgumans
@@ -1118,7 +1118,7 @@ MOL = {
 		home_system = Guma
 		name_list = "MOL1"
 	}
-	
+
 	uri = {
 		name = Uri
 		plural = Uritonians
@@ -1126,7 +1126,7 @@ MOL = {
 		home_system = "Ur Itha"
 		name_list = "MOL2"
 	}
-	
+
 	havoll = {
 		name = Havoll
 		plural = Havollans
@@ -1134,7 +1134,7 @@ MOL = {
 		home_system = "Havolla Gath"
 		name_list = "MOL3"
 	}
-	
+
 	ymacera = {
 		name = Ymacera
 		plural = Ymacerans
@@ -1142,7 +1142,7 @@ MOL = {
 		home_system = Ceracan
 		name_list = "MOL4"
 	}
-	
+
 	jogollwa = {
 		name = Jogollwa
 		plural = Jogollwans
@@ -1150,7 +1150,7 @@ MOL = {
 		home_system = Wanjog
 		name_list = "MOL1"
 	}
-	
+
 	usanace = {
 		name = Usanace
 		plural = Usanacans
@@ -1158,7 +1158,7 @@ MOL = {
 		home_system = "U-Sana-Itcar"
 		name_list = "MOL2"
 	}
-	
+
 	havarigga = {
 		name = Havarigga
 		plural = Havariggans
@@ -1166,7 +1166,7 @@ MOL = {
 		home_system = "Ha-Va'Ri"
 		name_list = "MOL3"
 	}
-	
+
 	slerpanor = {
 		name = Slerpanor
 		plural = Slerpanorians
@@ -1174,7 +1174,7 @@ MOL = {
 		home_system = Slerpactin
 		name_list = "MOL4"
 	}
-	
+
 	fellnoll = {
 		name = Fellnoll
 		plural = Fellnollans
@@ -1182,7 +1182,7 @@ MOL = {
 		home_system = "Mot Fellno"
 		name_list = "MOL1"
 	}
-	
+
 	sirgogg = {
 		name = Sirgogg
 		plural = Sirgoggans
@@ -1190,7 +1190,7 @@ MOL = {
 		home_system = Vategigun
 		name_list = "MOL2"
 	}
-	
+
 	obadin = {
 		name = Obadin
 		plural = Obadinans
@@ -1198,7 +1198,7 @@ MOL = {
 		home_system = "Odaka"
 		name_list = "MOL3"
 	}
-	
+
 	yalon = {
 		name = Yalon
 		plural = Yalonians
@@ -1206,7 +1206,7 @@ MOL = {
 		home_system = "Pekona Yal"
 		name_list = "MOL4"
 	}
-	
+
 	dyss = {
 		name = Dyss
 		plural = Dyssani
@@ -1214,7 +1214,7 @@ MOL = {
 		home_system = Dys'Syr
 		name_list = "MOL1"
 	}
-	
+
 	gwesibor = {
 		name = Gwesibor
 		plural = Gwesiborans
@@ -1222,7 +1222,7 @@ MOL = {
 		home_system = Hakibori
 		name_list = "MOL2"
 	}
-	
+
 	andigonj = {
 		name = Andigonj
 		plural = Andigonji
@@ -1230,15 +1230,15 @@ MOL = {
 		home_system = An'Onj
 		name_list = "MOL3"
 	}
-	
+
 	grollferp = {
 		name = Grollferp
 		plural = Grollferpi
-		home_planet = Groll 
+		home_planet = Groll
 		home_system = Garan'Ferpi
 		name_list = "MOL4"
 	}
-	
+
 	sondrithan = {
 		name = Sondrithan
 		plural = Sondrithani
@@ -1246,7 +1246,7 @@ MOL = {
 		home_system = Abacanus'Sondri
 		name_list = "MOL1"
 	}
-	
+
 	hjannarthi = {
 		name = Hjannarthi
 		plural = Hjannarthids
@@ -1254,7 +1254,7 @@ MOL = {
 		home_system = Akma'Buko
 		name_list = "MOL2"
 	}
-	
+
 	domanna = {
 		name = Domanna
 		plural = Domannans
@@ -1262,7 +1262,7 @@ MOL = {
 		home_system = Petoll-Pu
 		name_list = "MOL3"
 	}
-	
+
 	wacegi = {
 		name = Wacegi
 		plural = Wacegins
@@ -1270,7 +1270,7 @@ MOL = {
 		home_system = "Wacego Iftlar"
 		name_list = "MOL4"
 	}
-	
+
 	norillga = {
 		name = Norillga
 		plural = Norillgans
@@ -1278,7 +1278,7 @@ MOL = {
 		home_system = Nevidrall
 		name_list = "MOL1"
 	}
-	
+
 	laginchuuz = {
 		name = Lagin'Chuuz
 		plural = Lagin'Chuuzi
@@ -1286,7 +1286,7 @@ MOL = {
 		home_system = Lohgraxanna
 		name_list = "MOL2"
 	}
-	
+
 	moijhuxgan = {
 		name = Moij-Huxgan
 		plural = Moij-Huxgans
@@ -1410,7 +1410,7 @@ PLANT = {
 		home_system = Lav
 		name_list = "PLANT2"
 	}
-	
+
 	raxycodium = {
 		name = Raxycodium
 		plural = Raxycodia
@@ -1431,7 +1431,7 @@ HUM = {
 		home_system = Khell
 		name_list = "HUM1"
 	}
-	
+
 	sutharian = {
 		name = Sutharian
 		plural = Sutharians
@@ -1439,7 +1439,7 @@ HUM = {
 		home_system = Suth-Kasa
 		name_list = "HUM2"
 	}
-	
+
 	velutarian = {
 		name = Velutarian
 		plural = Velutarians
@@ -1447,7 +1447,7 @@ HUM = {
 		home_system = Velutaria
 		name_list = "HUM3"
 	}
-	
+
 	zelvan = {
 		name = Zelvan
 		plural = Zelvans
@@ -1455,7 +1455,7 @@ HUM = {
 		home_system = Zelvnak
 		name_list = "HUM4"
 	}
-	
+
 	quenti = {
 		name = Quenti
 		plural = Quenti
@@ -1463,7 +1463,7 @@ HUM = {
 		home_system = Hib'nuzha
 		name_list = "HUM1"
 	}
-	
+
 	rihinar = {
 		name = Rihi'Nar
 		plural = Rihi'Nari
@@ -1471,7 +1471,7 @@ HUM = {
 		home_system = Niri
 		name_list = "HUM2"
 	}
-	
+
 	prossnakan = {
 		name = Prossnakan
 		plural = Prossnakans
@@ -1479,7 +1479,7 @@ HUM = {
 		home_system = Prossnak
 		name_list = "HUM3"
 	}
-	
+
 	mitron = {
 		name = Mitron
 		plural = Mitrons
@@ -1487,7 +1487,7 @@ HUM = {
 		home_system = Mituhar
 		name_list = "HUM4"
 	}
-	
+
 	cevelli = {
 		name = Cevelli
 		plural = Cevelli
@@ -1495,7 +1495,7 @@ HUM = {
 		home_system = Imakka
 		name_list = "HUM1"
 	}
-	
+
 	panuri = {
 		name = Panuri
 		plural = Panuri
@@ -1503,7 +1503,7 @@ HUM = {
 		home_system = Panasu
 		name_list = "HUM2"
 	}
-	
+
 	ylkhahan = {
 		name = Yl'Khahan
 		plural = Yl'Khahans
@@ -1511,7 +1511,7 @@ HUM = {
 		home_system = Kesada
 		name_list = "HUM3"
 	}
-	
+
 	giranshu = {
 		name = Giranshu
 		plural = Giranshu
@@ -1519,7 +1519,7 @@ HUM = {
 		home_system = Jagirsha
 		name_list = "HUM4"
 	}
-	
+
 	bebaki = {
 		name = Bebaki
 		plural = Bebaki
@@ -1527,12 +1527,280 @@ HUM = {
 		home_system = Babakka
 		name_list = "HUM1"
 	}
-	
+
 	alvanian = {
 		name = Alvanian
 		plural = Alvanians
 		home_planet = "Old Alvania"
 		home_system = Alvus
 		name_list = "HUM2"
+	}
+}
+
+### LITHOIDS
+
+LITHOID = {
+	tharbarite = {
+		name = Tharbarite
+		plural = Tharbarites
+		home_planet = Tharba
+		home_system = Thar
+		name_list = "LITHOID1"
+	}
+
+	evarite = {
+		name = Evarite
+		plural = Evarites
+		home_planet = "Evari Prime"
+		home_system = Evari
+		name_list = "LITHOID2"
+	}
+
+	praku = {
+		name = Praku
+		plural = Praku
+		home_planet = "Praku Central"
+		home_system = Prak
+		name_list = "LITHOID3"
+	}
+
+	rak-rak = {
+		name = Rak-Rak
+		plural = Rak-Raks
+		home_planet = Ruk-Rak
+		home_system = Ruk
+		name_list = "LITHOID4"
+	}
+
+	yru = {
+		name = Yru
+		plural = yru
+		home_planet = Yra
+		home_system = Yri
+		name_list = "LITHOID1"
+	}
+
+	kodranite = {
+		name = Kodranite
+		plural = Kodranites
+		home_planet = Kodra
+		home_system = "Kodranill"
+		name_list = "LITHOID2"
+	}
+
+	cherk = {
+		name = Cherk
+		plural = Cherk
+		home_planet = Cherk
+		home_system = Chahana
+		name_list = "LITHOID3"
+	}
+
+	tavurite = {
+		name = Tavurite
+		plural = Tavurites
+		home_planet = Tavur
+		home_system = "Tav Su"
+		name_list = "LITHOID4"
+	}
+
+	ti-zru = {
+		name = Ti-Zru
+		plural = Ti-Zru
+		home_planet = Ti-Za
+		home_system = Ti
+		name_list = "LITHOID1"
+	}
+
+	polvanite = {
+		name = Polvanite
+		plural = Polvanites
+		home_planet = Polvan
+		home_system = Polvus
+		name_list = "LITHOID2"
+	}
+
+	ithill = {
+		name = Ithill
+		plural = Ithill
+		home_planet = Ith'i
+		home_system = Ith
+		name_list = "LITHOID3"
+	}
+
+	irzuku = {
+		name = Irzuku
+		plural = Irzuku
+		home_planet = Irzk
+		home_system = Zuku
+		name_list = "LITHOID4"
+	}
+
+	glirr = {
+		name = Glirr
+		plural = Glirr
+		home_planet = Glirria
+		home_system = Glirvatha
+		name_list = "LITHOID1"
+	}
+
+	qvagh = {
+		name = Qvagh
+		plural = Qvaghi
+		home_planet = Qva
+		home_system = Qighan
+		name_list = "LITHOID2"
+	}
+
+	zurite = {
+		name = Zurite
+		plural = Zurites
+		home_planet = Zur
+		home_system = Zurv
+		name_list = "LITHOID3"
+	}
+
+	oviir = {
+		name = Oviir
+		plural = Oviiri
+		home_planet = Ovii
+		home_system = "Greater Ovii"
+		name_list = "LITHOID4"
+	}
+
+	rukkari = {
+		name = Rukkari
+		plural = Rukkari
+		home_planet = Rukk
+		home_system = Rukk-Aht
+		name_list = "LITHOID1"
+	}
+
+	uraki = {
+		name = Uraki
+		plural = Uraki
+		home_planet = Voliot
+		home_system = Uraku
+		name_list = "LITHOID2"
+	}
+
+	bodranite = {
+		name = Bodranite
+		plural = Bodranites
+		home_planet = "Bodrillia"
+		home_system = Bod
+		name_list = "LITHOID3"
+	}
+
+	vran = {
+		name = Vran
+		plural = Vrani
+		home_planet = "Vran Primus"
+		home_system = Vrannal
+		name_list = "LITHOID4"
+	}
+
+	zri = {
+		name = Zri
+		plural = Zri
+		home_planet = Zri'sha
+		home_system = Zri'tha
+		name_list = "LITHOID1"
+	}
+
+	vuur = {
+		name = Vuur
+		plural = Vuuri
+		home_planet = Varl
+		home_system = Varlus
+		name_list = "LITHOID2"
+	}
+
+	croll = {
+		name = Croll
+		plural = Croll
+		home_planet = Crollus
+		home_system = Crollza
+		name_list = "LITHOID3"
+	}
+
+	bruvan = {
+		name = Bruvan
+		plural = Bruvans
+		home_planet = Bruv
+		home_system = Bruvas
+		name_list = "LITHOID4"
+	}
+
+	hrun = {
+		name = H'Runi
+		plural = H'Runi
+		home_planet = Runi
+		home_system = Runi'F
+		name_list = "LITHOID1"
+	}
+
+	rhonzar = {
+		name = Rhonzar
+		plural = Rhonzari
+		home_planet = Rhonz
+		home_system = "Rhonz Galif"
+		name_list = "LITHOID2"
+	}
+
+	bhiir = {
+		name = Bhiir
+		plural = Bhiiri
+		home_planet = Bhiira
+		home_system = Bhaar'Thu
+		name_list = "LITHOID3"
+	}
+
+	bzadi = {
+		name = Bzadi
+		plural = Bzadi
+		home_planet = Ha'Bzad
+		home_system = Bzad
+		name_list = "LITHOID4"
+	}
+
+	mtok = {
+		name = M'tok
+		plural = M'tok
+		home_planet = M'valku
+		home_system = M'farluk
+		name_list = "LITHOID1"
+	}
+
+	makar = {
+		name = Ma'Kar
+		plural = Ma'Kari
+		home_planet = Tial'Kho
+		home_system = Kosh'Kha
+		name_list = "LITHOID2"
+	}
+
+	shapa = {
+		name = Shapa
+		plural = Shapas
+		home_planet = Shapara
+		home_system = Shap
+		name_list = "LITHOID3"
+	}
+
+	ferbanite = {
+		name = Ferbanite
+		plural = Ferbanites
+		home_planet = Ferban
+		home_system = Jirv
+		name_list = "LITHOID4"
+	}
+
+	pliffplaff = {
+		name = Pliff-Plaff
+		plural = Pliff-Plaffs
+		home_planet = Pliffus
+		home_system = Plaff
+		name_list = "LITHOID1"
 	}
 }

@@ -248,20 +248,20 @@ objectTypes = {
 		
 		scale = 1.0
 	}
-	
-	pdxparticle = {
-		name = "large_station_explosion_particle"
-		type = "station_explosion"
-		
-		scale = 3.0
-	}
-	
-	pdxparticle = {
-		name = "massive_station_explosion_particle"
-		type = "station_explosion"
-		
-		scale = 5.0
-	}
+#	
+#	pdxparticle = {
+#		name = "large_station_explosion_particle"
+#		type = "station_explosion"
+#		
+#		scale = 3.0
+#	}
+#	
+#	pdxparticle = {
+#		name = "massive_station_explosion_particle"
+#		type = "station_explosion"
+#		
+#		scale = 5.0
+#	}
 	
 	pdxparticle = {
 		name = "avian_tiny_ship_explosion_particle"

@@ -1,0 +1,42 @@
+objectTypes = {
+	pdxmesh = {
+		name = "lithoid_cruiser_test_mesh"
+		file = "gfx/models/ships/lithoid_01/lithoid_cruiser_test.mesh"
+
+		meshsettings = {
+			name = "pasted__lithoid_01_turret_missile_medium_blockout1Shape"
+			index = 0
+			texture_diffuse = "nodiffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "crystals_kitbash|polySurface76|polySurface76Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_crystals_dark_diffuse.dds"
+			texture_normal = "lithoid_01_crystals_dark_normal.dds"
+			texture_specular = "lithoid_01_crystals_dark_specular.dds"
+			shader = "PdxMeshTerra"
+		}
+
+		meshsettings = {
+			name = "polySurface102Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_cruiser_diffuse.dds"
+			texture_normal = "lithoid_01_cruiser_normal.dds"
+			texture_specular = "lithoid_01_cruiser_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "crystals_kitbash2|polySurface76|polySurface76Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_crystals_bright_diffuse.dds"
+			texture_normal = "lithoid_01_crystals_bright_normal.dds"
+			texture_specular = "lithoid_01_crystals_bright_specular.dds"
+			shader = "PdxMeshTerra"
+		}
+	}
+}

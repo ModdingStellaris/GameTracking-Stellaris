@@ -1,10 +1,10 @@
 
 tr_diplomacy_adopt = {
-	modifier = {		
+	modifier = {
 		diplomacy_upkeep_mult = -0.5
 		pop_growth_from_immigration = 0.10
 	}
-	
+
 	tradition_swap = {
 		name = tr_adaptability_adopt
 		inherit_effects = no
@@ -26,7 +26,7 @@ tr_diplomacy_adopt = {
 			factor = 1
 		}
 	}
-	
+
 	tradition_swap = {
 		name = tr_versatility_adopt
 		inherit_effects = no
@@ -42,7 +42,7 @@ tr_diplomacy_adopt = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -96,7 +96,7 @@ tr_diplomacy_finish = {
 		country_trust_cap_add = 50
 		country_trust_growth = 0.33
 	}
-	
+
 	tradition_swap = {
 		name = tr_adaptability_finish
 		inherit_effects = no
@@ -111,14 +111,14 @@ tr_diplomacy_finish = {
 				is_criminal_syndicate = yes
 			}
 		}
-		modifier = {		
+		modifier = {
 			ascension_perks_add = 1
 		}
 		weight = {
 			factor = 1
 		}
 	}
-	
+
 	tradition_swap = {
 		name = tr_versatility_finish
 		inherit_effects = no
@@ -138,9 +138,9 @@ tr_diplomacy_finish = {
 }
 
 tr_diplomacy_the_federation = {
-	
+
 	#unlocks federation mechanic
-	
+
 	tradition_swap = {
 		name = tr_adaptability_dietary_enrichment
 		inherit_effects = no
@@ -154,6 +154,7 @@ tr_diplomacy_the_federation = {
 				has_valid_civic = civic_barbaric_despoilers
 				is_criminal_syndicate = yes
 			}
+			is_lithoid_empire = no
 		}
 		modifier = {
 			country_food_produces_mult = 0.10
@@ -162,7 +163,30 @@ tr_diplomacy_the_federation = {
 			factor = 1
 		}
 	}
-	
+
+	tradition_swap = {
+		name = tr_adaptability_recycling
+		inherit_effects = no
+		inherit_icon = no
+		inherit_name = no
+		trigger = {
+			OR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_inwards_perfection
+				has_valid_civic = civic_hive_devouring_swarm
+				has_valid_civic = civic_barbaric_despoilers
+				is_criminal_syndicate = yes
+			}
+			is_lithoid_empire = yes
+		}
+		modifier = {
+			planet_building_refund_mult = 0.15
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
 	tradition_swap = {
 		name = tr_versatility_universal_compatibility
 		inherit_effects = no
@@ -178,7 +202,7 @@ tr_diplomacy_the_federation = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 1000
 	}
@@ -192,7 +216,7 @@ tr_diplomacy_entente_coordination = {
 	modifier = {
 		federation_naval_cap_contribution_mult = 1.00
 	}
-	
+
 	tradition_swap = {
 		name = tr_adaptability_survival_fittest
 		inherit_effects = no
@@ -215,7 +239,7 @@ tr_diplomacy_entente_coordination = {
 			factor = 1
 		}
 	}
-	
+
 	tradition_swap = {
 		name = tr_versatility_adaptive_programming
 		inherit_effects = no
@@ -241,8 +265,8 @@ tr_diplomacy_open_markets = {
 
 	modifier = {
 		trade_value_mult = 0.1
-	}	
-	
+	}
+
 	tradition_swap = {
 		name = tr_adaptability_environmental_diversification
 		inherit_effects = no
@@ -263,7 +287,7 @@ tr_diplomacy_open_markets = {
 			factor = 1
 		}
 	}
-	
+
 	tradition_swap = {
 		name = tr_versatility_spatial_optimization
 		inherit_effects = no
@@ -279,7 +303,7 @@ tr_diplomacy_open_markets = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 5000
 	}
@@ -293,7 +317,7 @@ tr_diplomacy_insider_trading = {
 	modifier = {
 		country_trade_fee = -0.10
 	}
-	
+
 	tradition_swap = {
 		name = tr_adaptability_adaptive_ecology
 		inherit_effects = no
@@ -314,25 +338,25 @@ tr_diplomacy_insider_trading = {
 			factor = 1
 		}
 	}
-	
+
 	tradition_swap = {
 		name = tr_versatility_material_analysis
-		
+
 		inherit_effects = no
 		inherit_icon = no
 		inherit_name = no
 		trigger = {
 			is_machine_empire = yes
-		}	
+		}
 		weight = {
 			factor = 1
 		}
-		
+
 		modifier = {
 			planet_jobs_upkeep_mult = -0.05
-		}	
+		}
 	}
-	
+
 	ai_weight = {
 		factor = 5000
 	}
@@ -342,11 +366,11 @@ tr_diplomacy_secure_shipping = {
 	possible = {
 		has_tradition = tr_diplomacy_open_markets
 	}
-	
+
 	modifier = {
 		local_trade_protection_add = 5
 	}
-	
+
 	tradition_swap = {
 		name = tr_adaptability_appropriation
 		inherit_effects = no
@@ -367,7 +391,7 @@ tr_diplomacy_secure_shipping = {
 			factor = 1
 		}
 	}
-	
+
 	tradition_swap = {
 		name = tr_versatility_operational_proxies
 		inherit_effects = no
@@ -378,12 +402,12 @@ tr_diplomacy_secure_shipping = {
 		}
 		modifier = {
 			pop_resettlement_cost_mult = -0.33
-		}		
+		}
 		weight = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 1000
 	}

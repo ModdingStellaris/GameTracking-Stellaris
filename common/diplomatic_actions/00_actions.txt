@@ -509,6 +509,7 @@ action_break_research_agreement = {
 # Usable by regular empires only. Not possible while in a federation. Raises trust over time.
 action_guarantee_independence = {
 	auto_accepted = yes
+	should_show_auto_accept_message_recipient = yes
 	should_notify_all_communications = yes
 	requires_recipient_independence = yes
 	requires_actor_independence = yes

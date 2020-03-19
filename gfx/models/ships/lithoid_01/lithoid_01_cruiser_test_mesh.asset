@@ -1,0 +1,4 @@
+entity = {
+	name = "lithoid_01_cruiser_test_mesh_entity"
+	pdxmesh = "lithoid_01_cruiser_test_mesh_mesh"
+}

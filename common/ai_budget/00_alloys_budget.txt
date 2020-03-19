@@ -5,28 +5,28 @@
 ## Expenditure ##
 #################
 alloys_expenditure_buffer = { # Buffer, will not be spent
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = buffer
-	
+
 	potential = {
 		always = no
 	}
-	
+
 	fraction = {
 		weight = 0.0
-	}	
+	}
 }
 
 alloys_expenditure_ships = {
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = ships
-	
+
 	potential = {
 		always = yes
 	}
-	
+
 	fraction = {
 		weight = 0.6
 
@@ -41,18 +41,18 @@ alloys_expenditure_ships = {
 			factor = 0.5
 			used_naval_capacity_percent >= 1.0
 		}
-	}	
+	}
 }
 
 alloys_expenditure_ship_upgrades = {
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = ship_upgrades
-	
+
 	potential = {
 		is_at_war = no
 	}
-	
+
 	fraction = {
 		weight = 0.2
 
@@ -61,62 +61,62 @@ alloys_expenditure_ship_upgrades = {
 			factor = 4
 			used_naval_capacity_percent >= 1.0
 		}
-	}	
+	}
 }
 
 alloys_expenditure_planets = {
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = planets
-	
+
 	potential = {
 		always = yes
 	}
-	
+
 	fraction = {
 		weight = 0.1
 	}
 
 	static_max = {
 		base = 450
-	}	
+	}
 }
 
 alloys_expenditure_starbases = {
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = starbases
-	
+
 	potential = {
 		NOT = {
 			is_country_type = fallen_empire
 		}
 	}
-	
+
 	fraction = {
 		weight = 0.3
-	}	
+	}
 }
 
 alloys_expenditure_starbases_fallen_empires = {
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = starbases
-	
+
 	potential = {
 		is_country_type = fallen_empire
 	}
-	
+
 	fraction = {
 		weight = 0.2
-	}	
+	}
 }
 
 alloys_expenditure_starbases_expand = {
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = starbases
-	
+
 	potential = {
 		has_ai_expansion_plan = yes
 		highest_threat < 50
@@ -126,10 +126,10 @@ alloys_expenditure_starbases_expand = {
 		}
 		has_resource = { type = influence amount > 75 }
 	}
-	
+
 	fraction = {
 		weight = 0.2
-	}	
+	}
 
 	static_min = {
 		base = 150
@@ -137,21 +137,34 @@ alloys_expenditure_starbases_expand = {
 }
 
 alloys_expenditure_colonies_expand = {
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = colonies
-	
+
 	potential = {
 		is_machine_empire = no
 		is_at_war = no
 		ai_colonize_plans > 0
-		has_resource = { type = food amount > 400 }
-		has_monthly_income = {
-			resource = food
-			value > 0
+		OR = {
+			AND = {
+				is_lithoid_empire = no
+				has_resource = { type = food amount > 400 }
+				has_monthly_income = {
+					resource = food
+					value > 0
+				}
+			}
+			AND = {
+				is_lithoid_empire = yes
+				has_resource = { type = minerals amount > 400 }
+				has_monthly_income = {
+					resource = minerals
+					value > 0
+				}
+			}
 		}
 	}
-	
+
 	fraction = {
 		weight = 0.5
 	}
@@ -166,16 +179,16 @@ alloys_expenditure_colonies_expand = {
 }
 
 alloys_expenditure_colonies_expand_machine = {
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = colonies
-	
+
 	potential = {
 		is_machine_empire = yes
 		is_at_war = no
 		ai_colonize_plans > 0
 	}
-	
+
 	fraction = {
 		weight = 0.5
 	}
@@ -190,16 +203,16 @@ alloys_expenditure_colonies_expand_machine = {
 }
 
 alloys_expenditure_megastructures = {
-	resource = alloys 
+	resource = alloys
 	type = expenditure
 	category = megastructures
-	
+
 	potential = {
 		is_country_type = default
 		is_at_war = no
 		can_build_megastructures = yes
 	}
-	
+
 	fraction = {
 		weight = 0.4
 
@@ -239,43 +252,43 @@ alloys_expenditure_megastructures = {
 ## Upkeep ##
 ############
 alloys_upkeep_buffer = {	# Buffer, will not be spent
-	resource = alloys 
+	resource = alloys
 	type = upkeep
 	category = buffer
-	
+
 	potential = {
 		always = yes
 	}
-	
+
 	fraction = {
 		weight = 0.3
-	}	
+	}
 }
 
 alloys_upkeep_ships = {
-	resource = alloys 
+	resource = alloys
 	type = upkeep
 	category = ships
-	
+
 	potential = {
 		always = yes
 	}
-	
+
 	fraction = {
 		weight = 0.5
 	}
 }
 
 alloys_upkeep_planets = {
-	resource = alloys 
+	resource = alloys
 	type = upkeep
 	category = planets
-	
+
 	potential = {
 		always = yes
 	}
-	
+
 	fraction = {
 		weight = 0.2
-	}	
+	}
 }

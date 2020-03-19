@@ -169,7 +169,7 @@ objectTypes = {
 		animation = { id = "idle4"	type = "arthropoid_19_idle_4_animation" }
 		scale = 1.0
 	}
-
+	
 	pdxmesh = {
 		name = "portrait_arthropoid_20_mesh"
 		file = "gfx/models/portraits/arthropoid/arthropoid_20_portrait.mesh"
@@ -179,4 +179,5 @@ objectTypes = {
 		animation = { id = "idle4"	type = "arthropoid_20_idle_4_animation" }
 		scale = 1.0
 	}	
+		
 }

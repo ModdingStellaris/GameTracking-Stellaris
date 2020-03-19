@@ -352,3 +352,21 @@ l_the_worker = {
 		}
 	}
 }
+
+l_lithoid_vir = {
+	name = "vo_lithoid_voice"
+	icon = "gfx/interface/icons/traits/trait_lithoid.dds"
+
+	playable = {
+		local_has_dlc = "Lithoids Species Pack"
+	}
+
+	weight = {
+		base = 0
+		modifier = {
+			add = 10
+			is_lithoid_empire = yes
+		}
+	}
+}
+

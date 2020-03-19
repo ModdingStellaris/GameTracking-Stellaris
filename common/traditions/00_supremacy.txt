@@ -31,7 +31,7 @@ tr_supremacy_adopt = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -41,7 +41,7 @@ tr_supremacy_adopt = {
 		modifier = {
 			factor = 3
 			has_ethic = ethic_fanatic_militarist
-		}	
+		}
 		modifier = {
 			factor = 2
 			has_ethic = ethic_xenophobe
@@ -93,7 +93,7 @@ tr_supremacy_fleet_logistical_corps = {
 		ships_upkeep_mult = -0.10
 		country_naval_cap_mult = 0.20
 	}
-	
+
 	tradition_swap = {
 		name = tr_supremacy_fleet_logistical_corps_machine
 		inherit_effects = yes
@@ -121,7 +121,7 @@ tr_supremacy_fleet_logistical_corps = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 1000
 	}
@@ -160,7 +160,7 @@ tr_supremacy_master_shipwrights = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 1000
 	}
@@ -203,19 +203,19 @@ tr_supremacy_war_games = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 1000
 	}
 }
 
 tr_supremacy_overwhelming_force = {
-	
+
 	modifier = {
 		ship_orbital_bombardment_mult = 0.20
 		ship_fire_rate_mult = 0.10
 	}
-	
+
 	ai_weight = {
 		factor = 1000
 	}
@@ -229,8 +229,9 @@ tr_supremacy_great_game = {
 	modifier = {
 		shipclass_starbase_damage_mult = 0.20
 		starbase_upgrade_cost_mult = -0.33
+		ship_military_station_small_cost_mult = -0.33
 	}
-	
+
 	#implementation in the "should_apply_neighbor_rival_modifier" game rule
 
 	tradition_swap = {
@@ -246,7 +247,7 @@ tr_supremacy_great_game = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 1000
 	}

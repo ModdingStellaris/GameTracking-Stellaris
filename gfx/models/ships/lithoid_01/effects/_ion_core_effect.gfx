@@ -1,0 +1,72 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ion_core_effect_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/ion_core_effect_mesh.mesh"
+
+		meshsettings = {
+			name = "pCylinderShape8"
+			index = 0
+			texture_diffuse = "lithoid_connector_7.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "ion_core_cylinder_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/ion_core_cylinder_mesh.mesh"
+
+		meshsettings = {
+			name = "pCylinderShape4"
+			index = 0
+			texture_diffuse = "lithoid_connector_7.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "ion_core_lightning_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/ion_core_lightning.mesh"
+
+		meshsettings = {
+			name = "polySurface20Shape"
+			index = 0
+			texture_diffuse = "lightning_connector.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "ion_core_pull_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/ion_core_pull.mesh"
+
+		meshsettings = {
+			name = "pTorusShape1"
+			index = 0
+			texture_diffuse = "lithoid_connector_11.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "science_ship_core_mesh"
+		file = "gfx/models/ships/lithoid_01/effects/science_ship_core.mesh"
+
+		meshsettings = {
+			name = "pTorusShape1"
+			index = 0
+			texture_diffuse = "lithoid_connector_11.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+}
+

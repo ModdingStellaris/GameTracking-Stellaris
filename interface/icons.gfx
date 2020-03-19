@@ -2199,10 +2199,14 @@ spriteTypes = {
 	### DLCs ###
 
 	spriteType = {
+		name = "GFX_lithoidsspeciespack"
+		texturefile = "gfx/interface/icons/dlc/lithoids.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ancientrelicsstorypack"
 		texturefile = "gfx/interface/icons/dlc/ancient_relics.dds"
 	}
-
 
 	spriteType = {
 		name = "GFX_megacorp"
