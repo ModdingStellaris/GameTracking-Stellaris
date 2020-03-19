@@ -1712,6 +1712,11 @@ ship_event = {
 					}
 					set_location = FROMFROM
 				}
+				settings = {
+					can_upgrade = no
+					can_change_composition = no
+					uses_naval_capacity = no
+				}
 			}
 		}
 		leader = { add_experience = 200 }

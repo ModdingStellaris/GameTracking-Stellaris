@@ -47,6 +47,7 @@ rubricator_system = {
 			set_planet_flag = rubricator_planet
 			save_global_event_target_as = rubricator_planet
 			relic_world_deposits = yes
+			create_archaeological_site = rubricator_digsite
 		}
 	}
 	planet = {

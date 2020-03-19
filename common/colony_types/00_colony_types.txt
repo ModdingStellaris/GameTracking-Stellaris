@@ -152,11 +152,7 @@ col_farming = {
 
 	potential = {
 		exists = owner
-		OR = {
-			owner = { is_regular_empire = yes }
-			owner = { is_hive_empire = yes }
-			owner = { has_civic = civic_machine_servitor }
-		}
+		owner = { country_uses_food = yes }			
 		NOR = {
 			is_planet_class = pc_city
 			is_planet_class = pc_machine

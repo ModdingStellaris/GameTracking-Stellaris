@@ -50,7 +50,7 @@ decision_end_martial_law = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 1
 	}
 }
 
@@ -100,7 +100,7 @@ decision_end_martial_law_machine = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 1
 	}
 }
 
@@ -150,7 +150,7 @@ decision_end_martial_law_hive = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 1
 	}
 }
 
@@ -187,13 +187,15 @@ decision_enact_population_control = {
 
 	ai_weight = {
 		weight = 5
-
 		modifier = { # don't enable if you have free housing and no city districts left to build
 			factor = 0
-			free_housing > 0
-			num_free_districts = {
-				type = any
-				value <= 0
+			OR = {
+				free_housing > 0
+				num_free_districts = {
+					type = any
+					value > 0
+				}
+				has_building_construction = yes #Added since they're probably building housing
 			}
 		}
 	}
@@ -252,10 +254,16 @@ decision_enact_population_control_gestalt = {
 
 	ai_weight = {
 		weight = 5
-
-		modifier = { # don't enable if you have free housing
+		modifier = { # don't enable if you have free housing and no city districts left to build
 			factor = 0
-			free_housing > 0
+			OR = {
+				free_housing > 0
+				num_free_districts = {
+					type = any
+					value > 0
+				}
+				has_building_construction = yes #Added since they're probably building housing
+			}
 		}
 	}
 }
@@ -279,7 +287,6 @@ decision_end_population_control_gestalt = {
 
 	ai_weight = {
 		weight = 20
-
 		modifier = { # don't end if less than 1 housing
 			factor = 0
 			free_housing < 1
@@ -323,10 +330,16 @@ decision_enact_robot_assembly_control = {
 
 	ai_weight = {
 		weight = 5
-
-		modifier = { # don't enable if you have free housing
+		modifier = { # don't enable if you have free housing and no city districts left to build
 			factor = 0
-			free_housing > 0
+			OR = {
+				free_housing > 0
+				num_free_districts = {
+					type = any
+					value > 0
+				}
+				has_building_construction = yes #Added since they're probably building housing
+			}
 		}
 	}
 }
@@ -493,10 +506,16 @@ decision_discourage_growth = {
 
 	ai_weight = {
 		weight = 5
-
-		modifier = {
+		modifier = { # don't enable if you have free housing and no city districts left to build
 			factor = 0
-			free_housing > 0
+			OR = {
+				free_housing > 0
+				num_free_districts = {
+					type = any
+					value > 0
+				}
+				has_building_construction = yes #Added since they're probably building housing
+			}
 		}
 	}
 }

@@ -76,7 +76,13 @@ is_shackled_robot = { # The pop is a non-free robot
 		exists = owner
 		owner = {
 			OR = {
-				has_policy_flag = ai_full_rights 
+				AND = {
+					has_policy_flag = ai_full_rights 
+					OR = {
+						has_technology = "tech_synthetic_workers" #Robits don't get rights until they are Synths
+						has_country_flag = robots_have_souls #syndaw.545
+					}
+				}
 				is_mechanical_empire = yes
 			}
 		}

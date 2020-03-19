@@ -734,8 +734,23 @@ fleet_event = {
 	
 	option = {
 		name = CURIOUS
-		owner = { 
-			add_resource = { minerals = 500 }
+		owner = {
+			if = {
+				limit = {
+					has_tech_option = tech_terrestrial_sculpting
+				}
+				add_tech_progress = {
+					tech = tech_terrestrial_sculpting
+					progress = 0.5
+				}
+			}
+			else = {
+				add_research_option = tech_terrestrial_sculpting
+				add_tech_progress = {
+					tech = tech_terrestrial_sculpting
+					progress = 0.25
+				}
+			}
 		}
 	}
 }
@@ -872,6 +887,9 @@ fleet_event = {
 	
 	option = {
 		name = CURSES
+		leader = {
+			add_trait = leader_trait_traumatized
+		}
 		owner = { 
 			add_monthly_resource_mult = {
      			resource = society_research

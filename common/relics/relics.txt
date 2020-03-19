@@ -12,9 +12,6 @@ r_dragon_trophy = {
 		cost = {
 			influence = @activation_cost
 		}
-		produces = {
-			unity = 10
-		}
 	}
 	
 	ai_weight = {
@@ -25,6 +22,7 @@ r_dragon_trophy = {
 		potential = {
 			always = yes
 		}
+		country_unity_produces_mult = 0.10
 	}
 
 	score = 1000
@@ -120,9 +118,6 @@ r_worm_scales = {
 		cost = {
 			influence = @activation_cost
 		}
-		produces = {
-			unity = 10
-		}
 	}
 	
 	ai_weight = {
@@ -133,6 +128,7 @@ r_worm_scales = {
 		potential = {
 			always = yes
 		}
+		country_physics_tech_research_speed = 0.10
 	}
 
 	score = 1000
@@ -173,7 +169,7 @@ r_rubricator = {
 			influence = @activation_cost
 		}
 		produces = {
-			unity = 10
+			society_research = 20
 		}
 	}
 	
@@ -326,7 +322,7 @@ r_surveyor = {
 		category = relics
 		# Activation cost
 		cost = {
-			influence = @activation_cost
+			energy = 500
 		}
 	}
 

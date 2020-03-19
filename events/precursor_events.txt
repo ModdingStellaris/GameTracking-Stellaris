@@ -6592,3 +6592,74 @@ country_event = {
 		collector_surrenders_artifact = yes
 	}
 }
+
+# Precursor Anomaly Spawned via Minor Artifact Action
+country_event = {
+	id = precursor.320
+	title = "precursor.301.name"
+	desc = "precursor.320.desc"
+		
+	picture = GFX_evt_archaeological_dig
+	location = event_target:precursor_planet
+	trackable = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_event_chain = "vultaum_chain"
+				any_system_within_border = { 
+					has_star_flag = precursor_1
+				}
+			}
+			spawn_vultaum_anomaly = yes
+			break = yes
+		}
+		if = {
+			limit = {
+				has_event_chain = "yuht_chain"
+				any_system_within_border = { 
+					has_star_flag = precursor_2
+				}
+			}
+			spawn_yuht_anomaly = yes
+			break = yes
+		}
+		if = {
+			limit = {
+				has_event_chain = "first_league_chain"
+				any_system_within_border = { 
+					has_star_flag = precursor_3
+				}
+			}
+			spawn_league_anomaly = yes
+			break = yes
+		}
+		if = {
+			limit = {
+				has_event_chain = "irassian_chain"
+				any_system_within_border = { 
+					has_star_flag = precursor_4
+				}
+			}
+			spawn_irassian_anomaly = yes
+			break = yes
+		}
+		if = {
+			limit = {
+				has_event_chain = "cybrex_chain"
+				any_system_within_border = { 
+					has_star_flag = precursor_5
+				}
+			}
+			spawn_cybrex_anomaly = yes
+			break = yes
+		}
+	}
+	
+	option = {
+		name = precursor.301.a
+		custom_tooltip = new_precursor_project
+	}
+}

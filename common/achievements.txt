@@ -1291,7 +1291,7 @@ achievement_galatron = {
 	}
 
 	happened = {
-		has_modifier = galatron_modifier
+		has_relic = r_galatron
 	}
 }
 

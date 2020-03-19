@@ -398,14 +398,10 @@ fleet_event = {
 
 	option = {
 		name = ancrel.4012.a
-		event_target:rubricator_planet = { create_archaeological_site = rubricator_digsite }
 	}
 
 	option = {
 		name = ancrel.4012.b
-		owner = {
-			end_event_chain = "rubricator_chain"
-		}
 	}
 }
 
@@ -1071,7 +1067,7 @@ planet_event = {
 	}
 	desc = {
 		trigger = {
-			has_planet_flag = rubricator_d_massive_glacier
+			has_planet_flag = oracle_d_massive_glacier
 		}
 		text = ancrel.4031.desc_glacier
 	}

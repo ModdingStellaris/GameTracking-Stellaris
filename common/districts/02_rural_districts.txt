@@ -25,40 +25,6 @@ district_generator = {
 	
 	allow = {
 		NOT = { has_modifier = resort_colony }
-		OR = {
-			free_jobs < 2
-			controller = { is_ai = no }
-			owner = { is_ai = no }
-			AND = {
-				free_jobs < 3
-				exists = owner
-				owner = {
-					has_monthly_income = {
-						resource = energy
-						value < 20
-					}
-				}
-			}
-			districts_good_energy = yes
-			num_free_districts = { type = district_generator value = 0 }
-			free_district_slots = 0
-			AND = {
-				num_free_districts = { type = district_farming value = 0 }
-				num_free_districts = { type = district_mining value = 0 }
-			}
-			any_owned_pop = {
-				is_unemployed = yes
-				NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
-				NOR = {
-					is_pop_category = specialist
-					is_pop_category = ruler
-					AND = {
-						has_trait = trait_mechanical
-						NOT = { owner = { has_technology = tech_droid_workers } }
-					}
-				}
-			}
-		}
 	}
 	
 	conversion_ratio = 1
@@ -165,18 +131,85 @@ district_generator = {
 	}
 	
 	ai_weight = {
-		weight = 250000
+		weight = 0
 		modifier = {
-			factor = 1.5
-
-			exists = owner
+			weight = 3
+			OR = {
+				free_jobs < 2
+				AND = {
+					districts_good_energy = yes
+					free_jobs < 5
+				}
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
 			owner = {
 				has_monthly_income = {
 					resource = energy
-					value < -1
+					value < 150
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
 				}
 			}
 		}
+		modifier = {
+			weight = 1200
+			years_passed > 4
+			OR = {
+				free_jobs < 3
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+			OR = {
+				owner = {
+					has_monthly_income = {
+						resource = food
+						value > 0
+					}
+				}
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			OR = {
+				owner = {
+					has_monthly_income = {
+						resource = energy
+						value < -10
+					}
+				}
+				owner = {
+					has_monthly_income = {
+						resource = minerals
+						value > 50
+					}
+				}
+				num_free_districts = { type = district_mining value = 0 }
+			}
+		}
+		modifier = {
+			weight = 3
+			free_jobs < 2
+			num_free_districts = { type = district_mining value = 0 }
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 250
+				}
+			}
+		}#Above 300 the AI will scrap energy districts.
 	}
 
 	ai_resource_production = {
@@ -210,36 +243,6 @@ district_mining = {
 	
 	allow = {
 		NOT = { has_modifier = resort_colony }
-		OR = {
-			districts_good_minerals = yes
-			num_free_districts = { type = district_mining value = 0 }
-			free_district_slots = 0
-			free_jobs < 2
-			controller = { is_ai = no }
-			owner = { is_ai = no }
-			AND = {
-				free_jobs < 3
-				exists = owner
-				owner = {
-					has_monthly_income = {
-						resource = minerals
-						value < 40
-					}
-				}
-			}
-			any_owned_pop = {
-				is_unemployed = yes
-				NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
-				NOR = {
-					is_pop_category = specialist
-					is_pop_category = ruler
-				}
-			}
-			AND = {
-				num_free_districts = { type = district_farming value = 0 }
-				num_free_districts = { type = district_generator value = 0 }
-			}
-		}
 	}
 	
 	conversion_ratio = 1
@@ -347,12 +350,70 @@ district_mining = {
 	}
 	
 	ai_weight = {
-		weight = 250000
+		weight = 0
 		modifier = {
-			factor = 2
-				OR = { 
-				districts_work_minerals = yes
-				districts_work_minerals_goods = yes
+			weight = 3
+			OR = {
+				free_jobs < 2
+				AND = {
+					districts_good_minerals = yes
+					free_jobs < 6
+				}
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+		}
+		modifier = {
+			weight = 1100
+			OR = {
+				AND = {
+					years_passed > 4
+					OR = {
+						free_jobs < 3
+						owner = { has_ascension_perk = ap_arcology_project }
+						any_owned_pop = {
+							is_unemployed = yes
+							NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+							NOR = {
+								is_pop_category = specialist
+								is_pop_category = ruler
+							}
+						}
+					}
+					owner = {
+						has_monthly_income = {
+							resource = minerals
+							value < 100
+						}
+					}
+					OR = {
+						owner = {
+							has_monthly_income = {
+								resource = food
+								value > 0
+							}
+						}
+						num_free_districts = { type = district_farming value = 0 }
+					}
+				}
+				AND = {
+					free_jobs < 5
+					districts_good_energy = no
+					districts_good_food = no
+					owner = {
+						used_naval_capacity_percent < 0.9
+						has_monthly_income = {
+							resource = alloys
+							value <= 5
+						}#Alloy production has shut down which means the current mineral income can't be trusted
+					}
+				}
 			}
 		}
 	}
@@ -389,35 +450,6 @@ district_farming = {
 	
 	allow = {
 		NOT = { has_modifier = resort_colony }
-		OR = {
-			free_jobs < 2
-			controller = { is_ai = no }
-			owner = { is_ai = no }
-			districts_good_food = yes
-			free_district_slots = 0
-			num_free_districts = { type = district_farming value = 0 }
-			any_owned_pop = {
-				is_unemployed = yes
-				NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
-				NOR = {
-					is_pop_category = specialist
-					is_pop_category = ruler
-				}
-			}
-			AND = {
-				free_jobs < 3
-				owner = { 
-					has_monthly_income = {
-						resource = food
-						value < 0
-					}
-				}
-			}
-			AND = {
-				num_free_districts = { type = district_mining value = 0 }
-				num_free_districts = { type = district_generator value = 0 }
-			}
-		}
 	}
 	
 	conversion_ratio = 1
@@ -537,29 +569,69 @@ district_farming = {
 	}
 	
 	ai_weight = {
-		weight = 250000
+		weight = 0
 		modifier = {
-			factor = 1.5
-
-			exists = owner
+			weight = 3
+			owner = { country_uses_food = yes }
+			num_free_districts = { type = district_mining value = 0 }
+			num_free_districts = { type = district_generator value = 0 }
+			OR = {
+				free_jobs < 2
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+		}
+		modifier = {
+			weight = 1000
+			years_passed > 4
+			OR = {
+				free_jobs < 3
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+			OR = {
+				owner = {
+					country_uses_food = yes
+					has_monthly_income = {
+						resource = food
+						value < 20
+					}
+				}
+				owner = {
+					country_uses_food = no
+					has_monthly_income = {
+						resource = food
+						value < -1
+					}
+				}
+			}#If an AI has matrix'd pops it will need food.. not much food but some.
+		}
+		modifier = {
+			weight = 1
+			free_jobs < 5
 			owner = {
+				has_resource = {
+					type = food
+					amount < 10
+				}
 				has_monthly_income = {
 					resource = food
-					value < -1
+					value < 0
 				}
 			}
-		}
-		modifier = {
-			factor = 0.5
-
-			exists = owner
-			owner = { 
-				has_monthly_income = {
-					resource = food
-					value > 50
-				}
-			}
-		}
+		}#Recover from food shortage
 	}
 
 	ai_resource_production = {

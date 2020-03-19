@@ -11332,4 +11332,8 @@
  SELECT_COLONY_AUTOMATIC_DEVELOPMENT:1 "§HAutomation: On§!\n§GClick to turn ON automated colony management.§!"
  SELECT_COLONY_MANUAL_DEVELOPMENT:1 "§HAutomation: Off§!\n§GClick to turn OFF automated colony management.§!"
 
-FRONTIER_SECTOR: "Frontier Sector"
+ FRONTIER_SECTOR: "Frontier Sector"
+ SETTINGS_RICH_TEXT: "Rich Text Presence"
+
+ RESETTLEMENT_DESTROY_COLONY_TITLE: "This will destroy the colony on $PLANET|Y$."
+ RESETTLEMENT_DESTROY_COLONY_DESC: "Resettling this pop will cause $COUNTRY|Y$ to abandon their colony on $PLANET|Y$."

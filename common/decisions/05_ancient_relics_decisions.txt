@@ -75,12 +75,6 @@ decision_baol_life_seed = {
 	icon = decision_resort_colony
 
 	#enactment_time = 20
-	resources = {
-		category = decisions
-		cost = {
-			influence = 200
-		}
-	}
 	
 	potential = {
 		NOT = {

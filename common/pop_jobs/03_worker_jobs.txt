@@ -333,7 +333,7 @@ miner = {
 			has_trait = trait_nerve_stapled
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.1
 			owner = {
 				has_monthly_income = {
 					resource = minerals

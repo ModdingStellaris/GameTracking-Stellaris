@@ -181,6 +181,10 @@ tech_science_nexus = {
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
+		
+	potential = {
+		host_has_dlc = "Utopia"
+	}
 	
 	weight_modifier = {
 		factor = 0.25
@@ -236,6 +240,10 @@ tech_sentry_array = {
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
+		
+	potential = {
+		host_has_dlc = "Utopia"
+	}
 	
 	weight_modifier = {
 		factor = 0.25
@@ -295,6 +303,10 @@ tech_strategic_coordination = {
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
+		
+	potential = {
+		host_has_dlc = "Megacorp"
+	}
 	
 	weight_modifier = {
 		factor = 0.25
@@ -362,6 +374,10 @@ tech_interstellar_assembly = {
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
+		
+	potential = {
+		host_has_dlc = "Megacorp"
+	}
 	
 	weight_modifier = {
 		factor = 0.25
@@ -425,9 +441,13 @@ tech_mega_art = {
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
+		
+	potential = {
+		host_has_dlc = "Megacorp"
+	}
 	
 	weight_modifier = {
-		factor = 0.25	
+		factor = 0.25
 		modifier = {
 			factor = 0.5
 			is_militarist = yes
@@ -649,6 +669,10 @@ tech_dyson_sphere = {
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
+		
+	potential = {
+		host_has_dlc = "Utopia"
+	}
 	
 	weight_modifier = {
 		factor = 0
@@ -675,6 +699,10 @@ tech_matter_decompressor = {
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
+		
+	potential = {
+		host_has_dlc = "Megacorp"
+	}
 	
 	weight_modifier = {
 		factor = 0
@@ -701,6 +729,10 @@ tech_ring_world = {
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	is_rare = yes
+		
+	potential = {
+		host_has_dlc = "Utopia"
+	}
 	
 	weight_modifier = {
 		factor = 0

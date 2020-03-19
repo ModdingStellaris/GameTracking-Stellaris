@@ -1589,6 +1589,7 @@ planet_event = { # does this unit have a soul
 			owner = {
 				#country_event = { id = syndaw.402 }
 				fire_warning_sign = yes
+				set_country_flag = robots_have_souls
 			}
 		}
 	}

@@ -191,142 +191,7 @@ districts_good_minerals = {
 
 districts_good_food = {
 	planet = { 
-		OR = {
-			has_modifier = lush_planet 
-			has_planet_flag = gai_good_food
-		}
-	}
-}
-
-districts_work_minerals = {
-	exists = planet
-	planet = {
-		exists = owner
-		IF = {
-			limit = { 
-				years_passed < 80 
-				owner = { ai_colonize_plans > 0 }
-			}
-			owner = {
-				has_resource = { type = minerals amount < 525 }
-				has_resource = { type = alloys amount > 400 }
-				NOT = {
-					has_monthly_income = {
-						resource = minerals
-						value > 100
-					}
-				}
-				is_ai = yes
-				is_at_war = no
-			}
-		}
-		ELSE_IF = {
-			limit = { 
-				years_passed < 80 
-				owner = { ai_colonize_plans = 0 }
-			}
-			owner = {
-				has_resource = { type = minerals amount < 525 }
-				has_resource = { type = alloys amount > 150 }
-				is_ai = yes
-				is_at_war = no
-			}
-		}
-		ELSE_IF = {
-			limit = {
-				years_passed >= 80
-			}
-			owner = {
-				has_resource = { type = minerals amount < 2525 }
-				has_resource = { type = alloys amount > 400 }
-				NOT = {
-					has_monthly_income = {
-						resource = minerals
-						value > 100
-					}
-				}
-				is_ai = yes
-				is_at_war = no
-			}
-		}
-	}
-}
-
-districts_work_minerals_goods = {
-	exists = planet
-	planet = {
-		IF = {
-			limit = {
-				years_passed > 20
-			}
-			exists = owner
-			IF = {
-				limit = { years_passed < 80 }
-				owner = {
-					has_resource = { type = minerals amount < 525 }
-					has_resource = { type = consumer_goods amount > 250 }
-					NOT = {
-						has_monthly_income = {
-							resource = minerals
-							value > 100
-						}
-					}
-					is_ai = yes
-					is_at_war = no
-				}
-			}
-			ELSE_IF = {
-				limit = { years_passed >= 80 }
-				owner = {
-					has_resource = { type = minerals amount < 2500 }
-					has_resource = { type = consumer_goods amount > 250 }
-					NOT = {
-						has_monthly_income = {
-							resource = minerals
-							value > 100
-						}
-					}
-					is_ai = yes
-					is_at_war = no
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {
-				years_passed < 21
-			}
-			exists = owner
-			IF = {
-				limit = { years_passed < 80 }
-				owner = {
-					has_resource = { type = minerals amount < 525 }
-					has_resource = { type = consumer_goods amount > 250 }
-					NOT = {
-						has_monthly_income = {
-							resource = minerals
-							value > 100
-						}
-					}
-					is_ai = yes
-					is_at_war = no
-				}
-			}
-			ELSE_IF = {
-				limit = { years_passed > 79 }
-				owner = {
-					has_resource = { type = minerals amount < 2500 }
-					has_resource = { type = consumer_goods amount > 250 }
-					NOT = {
-						has_monthly_income = {
-							resource = minerals
-							value > 100
-						}
-					}
-					is_ai = yes
-					is_at_war = no
-				}
-			}
-		}
+		has_modifier = lush_planet
 	}
 }
 
@@ -392,6 +257,9 @@ jobs_work_minerals = {
 				is_at_war = no
 			}
 		}
+		else = {
+			always = no
+		}
 	}
 }
 
@@ -433,6 +301,9 @@ jobs_work_minerals_goods = {
 					is_at_war = no
 				}
 			}
+			else = {
+				always = no
+			}
 		}
 		ELSE_IF = {
 			limit = {
@@ -469,6 +340,12 @@ jobs_work_minerals_goods = {
 					is_at_war = no
 				}
 			}
+			else = {
+				always = no
+			}
+		}
+		else = {
+			always = no
 		}
 	}
 }

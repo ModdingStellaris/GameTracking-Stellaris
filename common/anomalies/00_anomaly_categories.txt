@@ -1103,11 +1103,14 @@ living_metal_category = {
 			}
 			has_any_strategic_resource = no
 		}
+		modifier = {
+			factor = 0
+			OR = { 
+				has_deposit_for = shipclass_mining_station
+				has_deposit_for = shipclass_research_station
+			}
+		}
 	}
 	
 	on_success = anomaly.2576
-
-	#on_fail = anomaly_failure.16
-#
-	#on_critical_fail = anomaly_failure.1400
 }

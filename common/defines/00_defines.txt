@@ -1170,7 +1170,7 @@
 	
 		RECENTLY_CONQUERED_DAYS				= 3600 # How long the recently conquered modifier stays on pops.
 
-		SAME_STRATA_EMPLOYMENT_BONUS		= 1.0 # How much score will be added to an unemployed pop when considering it for a job in the same strata
+		SAME_STRATA_EMPLOYMENT_BONUS		= 5.0 # How much score will be added to an unemployed pop when considering it for a job in the same strata
 		FAVORITE_JOB_EMPLOYMENT_BONUS		= 1.0 # How much will be added to a jobs weight if it's favorited
 	}
 
@@ -1605,8 +1605,8 @@
 		
 		AUTO_EXPLORE_ATTRACTION_SCORE = 200		# Attraction score to auto explore a system will descrease by this much if system is owned by you or has a planet owned by you
 		
-		MAX_EXPANSION_DISTANCE = 5				# Max number of jumps away AI will build starbases
-		MAX_EXPANSION_DISTANCE_SUBJECT = 5		# Max number of jumps away AI subjects will build starbases
+		MAX_EXPANSION_DISTANCE = 2				# Max number of jumps away AI will build starbases
+		MAX_EXPANSION_DISTANCE_SUBJECT = 2		# Max number of jumps away AI subjects will build starbases
 		EXPANSION_OWN_PRIORITY = 1000			# Priority on rebuilding destroyed starbases in colonized systems
 		EXPANSION_CUT_OFF_SYSTEM_PRIORITY = 10	# Priority on systems cut-off inside own territory
 		EXPANSION_BORDERING_PRIORITY = 500		# How much will AI prioritize bordering systems when building starbases
@@ -1637,7 +1637,7 @@
 
 		AI_ALLOWED_TO_BUY = { "minerals" "food" "alloys" "consumer_goods" }
 		AI_ALLOWED_TO_SELL = { "minerals" "food" "alloys" "consumer_goods" "exotic_gases" "sr_dark_matter" "sr_zro" "rare_crystals" "volatile_motes" "sr_living_metal" }
-		AI_MIN_CURRENCY_TO_SELL = 400.0			# If the AI has less currency (energy) than this it will consider selling resources
+		AI_MIN_CURRENCY_TO_SELL = 1000.0		# If the AI has less currency (energy) than this it will consider selling resources
 		AI_MIN_CURRENCY_INCOME_TO_SELL = 10.0	# If the AI has less currency (energy) gain last month than this it will consider selling resources
 
 		AI_MIN_HABITABILITY_TO_COLONIZE = 0.35	# AI will avoid colonizing planets with habitability lower than this.

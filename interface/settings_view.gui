@@ -1099,7 +1099,8 @@ guiTypes = {
 						size = { x = @spinnerOverlaySizeX y = @spinnerOverlaySizeY }
 					}
 					
-					navDown = "autosave_cloud_spinner"	
+					navDown = "autosave_cloud_spinner"
+					navUp = "rtp_spinner"
 				}
 				
 				# Autosave Cloud
@@ -1456,9 +1457,78 @@ guiTypes = {
 					}
 					
 					navUp = "auto_pause_spinner"
-					navDown = "input_type_spinner"
+					navDown = "rtp_spinner"
 				}	
 
+				containerWindowType = {
+					name = "settings_rtp_tutorial_bg"
+					size = { width = 795 height = 46 }
+					position = { x = -427 y = 268 }
+					
+						background = {
+							name = "setting_bg_frame"
+							spriteType = "GFX_tiles_dark_area_cut_8"
+						}
+				}
+
+				instantTextBoxType={
+					name = "rtp_label"
+					font = "malgun_goth_24"
+					text = "SETTINGS_RICH_TEXT"
+					position = { x = -410 y = 278 }
+					maxWidth = 400
+					maxHeight = 35
+					fixedSize = yes
+					format = left
+				}
+				
+				instantTextBoxType={
+					name = "rtp_value"
+					font = "malgun_goth_24"
+					text = "On"
+					position = { x = 80 y = 278 }
+					maxWidth = 200
+					maxHeight = 35
+					fixedSize = yes
+					format = center
+				}
+
+				spinnerType = {
+					id = "rtp_spinner"
+					name = "rtp_spinner"	
+					leftbutton = "spinner_upButton"
+					rightbutton = "spinner_downButton"
+					size = {x = 360 y = 24 }
+					position = {x= 0 y = 278}
+					priority = 100			
+					borderSize = {x =16 y = 16}	
+					horizontal = 1
+					maxValue = 100
+					startValue = 0
+						
+					guiButtonType = {
+						name = "spinner_upButton"
+						quadTextureSprite = "scrollbar_leftbutton"
+						position = { x=30 y =0}	
+					}
+					guiButtonType = {
+						name = "spinner_downButton"
+						quadTextureSprite = "scrollbar_rightbutton"
+						position = { x=30 y =120}	
+					}		
+					
+					overlay = {
+						name = "selected_overlay"
+						spriteType = "GFX_glow_tile_orange_no_padding"
+						overSprite = "GFX_glow_tile_line"
+						position = { x = @spinnerOverlayPosX y = @spinnerOverlayPosY }
+						size = { x = @spinnerOverlaySizeX y = @spinnerOverlaySizeY }
+					}
+
+					navUp = "auto_unpause_spinner"
+					navDown = "autosave_spinner"		
+				}
+				
 				## Input type				
 				#
 				#containerWindowType = {

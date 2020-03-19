@@ -1443,7 +1443,6 @@ special_project = {
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 	
 	event_scope = ship_event
-	# TODO requirements
 	requirements = {
 		shipclass_science_ship = 1
 		leader = scientist
@@ -1468,7 +1467,6 @@ special_project = {
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 	
 	event_scope = ship_event
-	# TODO requirements
 	requirements = {
 		shipclass_science_ship = 1
 		leader = scientist
@@ -1495,7 +1493,6 @@ special_project = {
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 	
 	event_scope = ship_event
-	# TODO requirements
 	requirements = {
 		shipclass_science_ship = 1
 		leader = scientist

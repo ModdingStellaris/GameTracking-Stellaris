@@ -10164,9 +10164,13 @@ country_event = { #A primitive planet is nuked
 				}
 				owner = { save_event_target_as = nuked_primitives }
 				save_event_target_as = nuked_primitive_planet
-				destroy_colony = yes
-				change_pc = pc_toxic
-				reset_planet = yes
+				nuke_primitives_toxic_effect = yes
+				if = {
+					limit = { has_observation_outpost = yes }
+					observation_outpost = {
+						dismantle = yes
+					}
+				}
 			}
 		}
 	}

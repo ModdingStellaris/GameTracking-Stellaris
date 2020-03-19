@@ -16,6 +16,7 @@
 # Whispers in the Stone
 lithoids_digsite = {
 	desc = lithoids_digsite_desc
+	picture = GFX_evt_hidden_door
 	stages = 5
 	max_instances = 1
 	weight = 0
@@ -63,6 +64,7 @@ lithoids_digsite = {
 # The Rubricator
 rubricator_digsite = {
 	desc = rubricator_digsite_desc
+	picture = GFX_evt_relic_world
 	stages = 5
 	max_instances = 1
 	weight = 0
@@ -71,6 +73,7 @@ rubricator_digsite = {
 		exists = leader
 	}
 	visible = {
+		has_event_chain = rubricator_chain
 		default_site_visible_trigger = yes
 	}
 	on_visible = {
@@ -110,6 +113,7 @@ rubricator_digsite = {
 # The Oracle
 oracle_digsite = {
 	desc = oracle_digsite_desc
+	picture = GFX_evt_crashed_station
 	stages = 4
 	max_instances = 1
 	weight = 0
@@ -153,6 +157,7 @@ oracle_digsite = {
 # Church of the Endless Expanse 1
 endless_expanse_digsite = {
 	desc = endless_expanse_digsite_desc
+	picture = GFX_evt_frozen_planet
 	stages = 4
 	max_instances = 1
 	weight = {
@@ -203,6 +208,7 @@ endless_expanse_digsite = {
 # Church of the Endless Expanse 2
 endless_expanse_digsite_2 = {
 	desc = endless_expanse_digsite_2_desc
+	picture = GFX_evt_gas_giant_station
 	stages = 4
 	max_instances = 1
 	weight = 0

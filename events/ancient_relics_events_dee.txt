@@ -26,8 +26,13 @@ ship_event = {
 	trigger = {
 		host_has_dlc = "Ancient Relics Story Pack"
 		owner = { is_ai = no }
-		solar_system = { has_star_flag = precursor_baol_1 }
-		solar_system = { NOT = { is_same_value = root.owner.capital_scope.solar_system } }
+		solar_system = {
+			has_star_flag = precursor_baol_1
+			NOR = {
+				is_same_value = root.owner.capital_scope.solar_system
+				has_star_flag = sol_system
+			}
+		}
 		FROM = { 
 			has_anomaly = no 
 			is_star = no
@@ -106,6 +111,7 @@ fleet_event = {
 				NOR = {
 					is_same_value = root.solar_system
 					has_star_flag = first_grunur_site@root.owner
+					has_star_flag = sol_system
 				}
 				OR = {
 					has_owner = no
@@ -248,6 +254,7 @@ fleet_event = {
 				NOR = {
 					is_same_value = root.solar_system
 					has_star_flag = first_grunur_site@root.owner
+					has_star_flag = sol_system
 				}
 				OR = {
 					has_owner = no
@@ -395,6 +402,7 @@ fleet_event = {
 				NOR = {
 					is_same_value = root.solar_system
 					has_star_flag = first_grunur_site@root.owner
+					has_star_flag = sol_system
 				}
 				OR = {
 					has_owner = no

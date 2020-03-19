@@ -225,6 +225,12 @@ think_tank_3 = {
 		think_tank_2
 	}
 	
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+		}
+	}
+
 	prerequisites = { "tech_science_nexus" }
 	show_prereqs = yes
 	

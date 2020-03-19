@@ -75,6 +75,12 @@ slave_army = {
 		any_owned_pop = { is_pop_category = slave }
 	}
 	potential = {
+		owner = {
+			any_owned_pop = {
+				is_pop_category = slave
+				is_same_species = from
+			} 	
+		}
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"

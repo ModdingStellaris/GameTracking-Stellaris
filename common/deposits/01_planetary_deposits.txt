@@ -1541,6 +1541,7 @@ d_hab_gas_1 = {
 
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1549,7 +1550,7 @@ d_hab_gas_1 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight	
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1560,6 +1561,7 @@ d_hab_gas_2 = {
 
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1568,7 +1570,7 @@ d_hab_gas_2 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight		
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1579,6 +1581,7 @@ d_hab_gas_3 = {
 
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1587,7 +1590,7 @@ d_hab_gas_3 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight		
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1598,6 +1601,7 @@ d_hab_gas_4 = {
 
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1606,7 +1610,7 @@ d_hab_gas_4 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1617,6 +1621,7 @@ d_hab_gas_5 = {
 
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1625,7 +1630,7 @@ d_hab_gas_5 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1636,6 +1641,7 @@ d_hab_crystal_1 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1644,7 +1650,7 @@ d_hab_crystal_1 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1655,6 +1661,7 @@ d_hab_crystal_2 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1663,7 +1670,7 @@ d_hab_crystal_2 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1674,6 +1681,7 @@ d_hab_crystal_3 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1682,7 +1690,7 @@ d_hab_crystal_3 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1693,6 +1701,7 @@ d_hab_crystal_4 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1701,7 +1710,7 @@ d_hab_crystal_4 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1712,6 +1721,7 @@ d_hab_crystal_5 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 
 	planet_modifier = { 
@@ -1720,7 +1730,7 @@ d_hab_crystal_5 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1731,6 +1741,7 @@ d_hab_mote_1 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	planet_modifier = { 
@@ -1739,7 +1750,7 @@ d_hab_mote_1 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1750,6 +1761,7 @@ d_hab_mote_2 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	planet_modifier = { 
@@ -1758,7 +1770,7 @@ d_hab_mote_2 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1769,6 +1781,7 @@ d_hab_mote_3 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	planet_modifier = { 
@@ -1777,7 +1790,7 @@ d_hab_mote_3 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1788,6 +1801,7 @@ d_hab_mote_4 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	planet_modifier = { 
@@ -1796,7 +1810,7 @@ d_hab_mote_4 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1807,6 +1821,7 @@ d_hab_mote_5 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	planet_modifier = { 
@@ -1815,7 +1830,7 @@ d_hab_mote_5 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1826,8 +1841,9 @@ d_hab_zro_1 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
-	
+
 	resources = {
 		category = orbital_mining_deposits
 		produces = {
@@ -1841,7 +1857,7 @@ d_hab_zro_1 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1852,6 +1868,7 @@ d_hab_zro_2 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -1867,7 +1884,7 @@ d_hab_zro_2 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1878,6 +1895,7 @@ d_hab_zro_3 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -1893,7 +1911,7 @@ d_hab_zro_3 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1904,6 +1922,7 @@ d_hab_dark_matter_1 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -1919,7 +1938,7 @@ d_hab_dark_matter_1 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1930,6 +1949,7 @@ d_hab_dark_matter_2 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -1945,7 +1965,7 @@ d_hab_dark_matter_2 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1956,6 +1976,7 @@ d_hab_dark_matter_3 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -1971,7 +1992,7 @@ d_hab_dark_matter_3 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -1982,6 +2003,7 @@ d_hab_living_metal_1 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -1997,7 +2019,7 @@ d_hab_living_metal_1 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -2008,6 +2030,7 @@ d_hab_alloy_1 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -2019,7 +2042,7 @@ d_hab_alloy_1 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -2030,6 +2053,7 @@ d_hab_alloy_2 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -2041,7 +2065,7 @@ d_hab_alloy_2 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -2052,6 +2076,7 @@ d_hab_alloy_3 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -2063,7 +2088,7 @@ d_hab_alloy_3 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -2074,6 +2099,7 @@ d_hab_alloy_4 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -2085,7 +2111,7 @@ d_hab_alloy_4 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
 
@@ -2096,6 +2122,7 @@ d_hab_alloy_5 = {
 	
 	potential = {
 		can_have_habitable_deposits = yes
+		is_planet_class = pc_habitat
 	}
 	
 	resources = {
@@ -2107,6 +2134,6 @@ d_hab_alloy_5 = {
 	
 	drop_weight = {
 		weight = 0.01
-		#does not occur naturally, but needs a non-zero weight			
+		#does not occur naturally, but needs a non-zero weight
 	}
 }
