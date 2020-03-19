@@ -151,5 +151,6 @@ automate_fortress_hive_planet = {
 					planetary_shield_generator_upkeep_affordable = yes
 				}
 			}
+		}	
 	}
 }

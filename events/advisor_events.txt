@@ -341,7 +341,9 @@ country_event = {
 						NOT = { is_planet_class = pc_gas_giant }
 					}
 					prevent_anomaly = no
-					add_anomaly = TUTORIAL_CAT
+					add_anomaly = {
+						category = TUTORIAL_CAT
+					}
 					set_planet_flag = tutorial_anomaly_planet
 				}
 			}

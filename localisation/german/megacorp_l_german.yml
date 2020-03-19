@@ -1977,7 +1977,7 @@
  d_ancient_one_desc:0 "$ancient_one_desc$"
  d_fungoid_extermination:0 "Fungoidenvernichtungsrückstände"
  d_fungoid_extermination_desc:0 "Dieser giftige Schlamm ist alles, was von den ausgerotteten Fungoiden übrig bleibt."
- d_ruined_arcology:0 "Zerstörte Arkologie"
+ d_ruined_arcology:1 "£blocker£ Zerstörte Arkologie"
  d_ruined_arcology_desc:0 "Die Arkologien, die diesen Stadtplaneten bedecken, liegen in Trümmern. Die Fundamente sind zwar immer noch solide, aber ein Großteil der zerfallenden Struktur muss vor dem Wiederaufbau geräumt werden."
  d_egg_cracking:0 "$egg_cracking$"
  d_egg_cracking_desc:0 "$egg_cracking_desc$"
@@ -3075,7 +3075,7 @@
  fleet2contact2:1 "Grüße, [Root.GetSpeciesNamePlural]. Wir sind der Numismatische Orden und stehen im Dienst der Glücksgöttin Numa, um mit den heiligsten Waren aus fernen Ecken der Galaxis zu handeln.\n\n$fleet2contact_explanation$"
  fleet2contact3:1 "Ah, [Root.GetSpeciesNamePlural]! Endlich haben uns die Winde des Schicksals zu euren fruchtbaren Ländern gebracht. Wir sind der Numismatische Orden, treue Diener der Glücksgöttin und wir sind gekommen, um ihre gesegneten Waren zu handeln.\n\n$fleet2contact_explanation$"
  fleet2contact4:1 "Grüße, [Root.GetSpeciesNamePlural]. Wir sind der Numistische Orden und unsere Waren tragen das heilige Siegel der Glücksgöttin Numa. Sie hat lange Zeit von einer fernen Zivilisation erzählt, die um [Root.Capital.GetStarName] herum leben und die Wunder, die wir zusammen erreichen könnten\n\n$fleet2contact_explanation$"
- fleet2contact5:1 "[Root.GetSpeciesNamePlural]! Eine göttliche Fügung hat uns und die vielen wundersamen Dinge, die wir mit uns führen, in eure Länderein gebracht. Wir sind der Numismatische Orden und unsere Angebote wurden von der Glücksgöttin selbst gemacht."
+ fleet2contact5:1 "[Root.GetSpeciesNamePlural]! Eine göttliche Fügung hat uns und die vielen wundersamen Dinge, die wir mit uns führen, in eure Länderein gebracht. Wir sind der Numismatische Orden und unsere Angebote wurden von der Glücksgöttin selbst gemacht.\n\n$fleet2contact_explanation$"
  fleet2contact6:1 "Aber es ist wahr! Ihr seid wirklich so wohlhabend, wie Numa es vorausgesagt hat. Das Glück bevorzugt die Mutigen, wie man sagt.\n\nWir sind der Numismatische Orden, einfache Händler, die sich der Anbetung der endlosen Ebbe und Flut kosmischer Energie-Credits verschrieben haben.\n\n$fleet2contact_explanation$"
  fleet2contact_explanation:1 "Unsere Flotten bereisen die göttlichen Ströme der kosmischen Energie, wo auch immer die Winde des Glücks uns hinführen und bringen jedes Mal neue Angebote, wenn wir in eure Länder kommen.\n\nFür eine bescheidene Spende könnten die Wunder des Universums eure sein.\n\nAlle Transaktionen in Kredits bitte...."
 
@@ -4129,7 +4129,7 @@
  already_bought:0 "Wir haben dieses Produkt noch nicht gekauft"
 
  GetPurgeProcessingResource_food:0 "nährstoffreiche Nahrungsquellen, die die £food£ §HNahrung§! erhöhen"
- GetPurgeProcessingResource_minerals:0 "Schrott, der die £minerals£ §HMineralien§! erhöht"
+ GetPurgeProcessingResource_minerals:1 "Schrott, der £alloys£ §HLegierungen§! erhöht"
 
  trait_pc_hive_preference:0 "Anpassung (Schwarmwelt)"
  trait_pc_hive_preference_desc:0 "$trait_pc_arctic_preference_desc$"
@@ -4157,3 +4157,4 @@
  CARAVANEERS_LABEL_TOOLTIP:0 "Die Reisenden sind Weltraumhändler, die Flotten durch die Galaxie schicken, um Euch tolle Angebote zu unterbreiten!"
 
  DIPLO_ACTION_ALREADY_REPLIED:0 "$COUNTRY|Y$ hat $ACTION|Y$ bereits geantwortet"
+ 

@@ -162,6 +162,8 @@
  IS_NOT_PIRATE:0 "Ist KEIN Pirat"
  IS_INSIDE_NEBULA:0 "Befindet sich in einem Nebel"
  IS_NOT_INSIDE_NEBULA:0 "Befindet sich NICHT in einem Nebel"
+ IS_IN_FRONTIER_SPACE:0 "Befindet sich im Grenzraum"
+ IS_NOT_IN_FRONTIER_SPACE:0 "Befindet sich NICHT im Grenzraum"
  IS_INSIDE_BORDER:0 "Liegt innerhalb der Grenze von §Y$OTHER$§!"
  IS_NOT_INSIDE_BORDER:0 "Liegt NICHT innerhalb der Grenze von §Y$OTHER$§!"
  ANY_COUNTRY:0 "Beliebiges Land"
@@ -1261,6 +1263,6 @@
  DURATION_DAYS:0 "$TIME$ Tage"
  DURATION_MONTHS:0 "$TIME$ Monate"
  ADD_TMP_TRAIT:0 "§H$LEADER$§! hat nun für $DURATION|Y$ die Eigenschaft §H$TRAIT$§!\n"
- 
- IS_IN_FRONTIER_SPACE: "Befindet sich im Grenzraum"
- IS_NOT_IN_FRONTIER_SPACE: "Befindet sich NICHT im Grenzraum"
+
+ HAS_UNLOCKED_ALL_TRADITIONS:0 "$COUNTRY|Y$ hat alle verfügbaren Traditionen freigeschaltet"
+ HAS_NOT_UNLOCKED_ALL_TRADITIONS:0 "$COUNTRY|Y$ hat NICHT alle verfügbaren Traditionen freigeschaltet"

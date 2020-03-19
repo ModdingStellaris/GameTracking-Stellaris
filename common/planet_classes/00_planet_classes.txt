@@ -33,6 +33,8 @@
 #	colonization_tech = { "tech_tropical_colonization@1" }
 #
 # 	space_monster_target = yes	# Country types with space monster AI will wander to this planet type if set to yes
+#
+#	is_artificial_planet = yes	# Will make sure that modifiers for non artificial planets are not added, e.g. max districts
 #}
 ###
 
@@ -497,6 +499,7 @@ pc_toxic = {
 	moon_size = { min = 6 max = 10 }
 	
 	colonizable = no
+	show_city = no
 }
 
 pc_frozen = {
@@ -1107,6 +1110,8 @@ pc_ringworld_habitable = {
 	orbit_lines = no
 	has_colonization_influence_cost = no		# applies when within own borders
 
+	is_artificial_planet = yes
+
 	modifier = {
 		planet_housing_add = 20
 	}
@@ -1152,6 +1157,8 @@ pc_ringworld_tech = {
 	moon_size = 1
 	colonizable = no
 	orbit_lines = no
+
+	is_artificial_planet = yes
 }
 
 pc_ringworld_tech_damaged = {
@@ -1173,6 +1180,9 @@ pc_ringworld_tech_damaged = {
 	moon_size = 1
 	colonizable = no
 	orbit_lines = no
+
+	is_artificial_planet = yes
+	
 }
 
 pc_ringworld_seam = {
@@ -1194,6 +1204,9 @@ pc_ringworld_seam = {
 	moon_size = 1
 	colonizable = no
 	orbit_lines = no
+
+	is_artificial_planet = yes
+	
 }
 
 pc_ringworld_seam_damaged = {
@@ -1215,6 +1228,9 @@ pc_ringworld_seam_damaged = {
 	moon_size = 1
 	colonizable = no
 	orbit_lines = no
+
+	is_artificial_planet = yes
+	
 }
 
 pc_habitat = {
@@ -1241,6 +1257,8 @@ pc_habitat = {
 	starting_planet = no
 	orbit_lines = no
 	has_colonization_influence_cost = no			# applies when within own borders
+	
+	is_artificial_planet = yes
 	
 	modifier = {
 		planet_colony_development_speed_mult = 2.0 # Habitats should be fast to colonize

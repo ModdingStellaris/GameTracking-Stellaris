@@ -48,7 +48,21 @@ food_expenditure_decisions = {
 	category = decisions
 	
 	potential = {
-		always = yes
+		is_regular_empire = yes # GC's don't get the food bost decision
+	}
+	
+	fraction = {
+		weight = 0.7
+	}	
+}
+
+food_expenditure_campaigns = {
+	resource = food
+	type = expenditure
+	category = campaigns
+	
+	potential = {
+		is_hive_empire = yes
 	}
 	
 	fraction = {

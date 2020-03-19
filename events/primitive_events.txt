@@ -382,6 +382,23 @@ country_event = {
 			energy = 500
 			minerals = 1000 # enough for a spaceport and then some
 		}
+
+		if = {
+			limit = {
+				capital_scope = { is_planet_class = pc_ringworld_habitable } 
+			}
+			# hope you find some mineral deposits out in the void. Here's an extra subsidy to tide you over until the resource shortages cripple you.
+			add_resource = {
+				energy = 1000
+				food = 1000
+				minerals = 1000
+				alloys = 1000
+				volatile_motes = 500
+				exotic_gases = 500
+				rare_crystals = 500
+			}
+		}
+
 		add_resource = { influence = 300 }
 		capital_scope = {
 			clear_blockers = yes
@@ -395,25 +412,41 @@ country_event = {
 				}
 			}
 			remove_building = building_primitive_farm
+			remove_building = building_primitive_mine
 			remove_building = building_primitive_factory
 			remove_building = building_primitive_capital
 			remove_building = building_urban_dwellings
-			add_district = district_city
-			add_district = district_city
-			add_district = district_city
-			add_district = district_city
-			add_district = district_farming
-			add_district = district_farming
-			add_district = district_farming
-			add_district = district_mining
-			add_district = district_mining
-			add_district = district_generator
-			add_district = district_generator
-			add_building = building_capital
-			add_building = building_research_lab_1
-			add_building = building_foundry_1
-			add_building = building_factory_1
+			remove_building = building_urban_dwellings
 			
+			add_building = building_capital
+			
+			if = {
+				limit = { NOT = { is_planet_class = pc_ringworld_habitable } }
+				add_district = district_city
+				add_district = district_city
+				add_district = district_city
+				add_district = district_city
+				add_district = district_farming
+				add_district = district_farming
+				add_district = district_farming
+				add_district = district_mining
+				add_district = district_mining
+				add_district = district_generator
+				add_district = district_generator
+
+				add_building = building_research_lab_1
+				add_building = building_foundry_1
+				add_building = building_factory_1
+			}
+			if = {
+				limit = { is_planet_class = pc_ringworld_habitable }
+				add_district = district_rw_city
+				add_district = district_rw_farming
+				
+				add_building = building_chemical_plant
+				add_building = building_foundry_1
+			}
+
 			remove_all_armies = yes
 			solar_system = {
 				if = {

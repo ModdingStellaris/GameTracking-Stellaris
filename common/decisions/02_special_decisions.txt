@@ -665,10 +665,17 @@ decision_consecrated_worlds = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 0
 		modifier = {
-			factor = 0
-			num_pops < 10
+			weight = 10
+			habitable_planet = yes
+			NOT = {
+				space_owner = {
+					any_owned_pop_species = {
+						prevprev = { habitability = { who = prev value > 0.35 }	}
+					}
+				}
+			}
 		}
 	}
 }

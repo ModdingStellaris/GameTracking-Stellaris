@@ -255,7 +255,6 @@
  MOD_ARMY_ATTACK_MORALE_MULT:1 "Moral (Angriffsarmee)"
  MOD_ARMY_ATTACK_DAMAGE_MULT:1 "Schaden (Angriffsarmee)"
  MOD_ARMY_EXPERIENCE_GAIN_MULT:0 "Erfahrungsgewinn (Armeen)"
-
  #Planet
  MOD_PLANET_HOUSING_ADD:0 "Wohnungen"
  MOD_PLANET_HOUSING_MULT:0 "$MOD_PLANET_HOUSING_ADD$"
@@ -343,6 +342,9 @@
  mod_planet_district_mining_build_speed_mult:0 "Baugeschwindigkeit (Bergbau-Distrikte)"
  mod_planet_district_farming_build_speed_mult:0 "Baugeschwindigkeit (Landwirtschaft-Distrikte)"
  mod_planet_district_generator_build_speed_mult:0 "Baugeschwindigkeit (Generator-Distrikte)"
+ mod_planet_district_mining_uncapped_build_speed_mult:0 "$mod_planet_district_mining_build_speed_mult$"
+ mod_planet_district_farming_uncapped_build_speed_mult:0 "$mod_planet_district_farming_build_speed_mult$"
+ mod_planet_district_generator_uncapped_build_speed_mult:0 "$mod_planet_district_generator_build_speed_mult$"
  mod_planet_district_arcology_arms_industry_speed_mult:0 "Baugeschwindigkeit (Gießerei-Arcologie)"
  mod_planet_district_arc_civilian_build_speed_mult:0 "Baugeschwindigkeit (Industrie-Arcologie)"
  mod_planet_building_foundry_1_build_speed_mult:0 "Baugeschwindigkeit (Gießereien)"
@@ -1266,7 +1268,7 @@
  skill_admiral:1 "Fähigkeit (Admiral)"
  skill_general:1 "Fähigkeit (General)"
  skill_scientist:1 "Fähigkeit (Wissenschaftler)"
- skill_governor:1 "Fähigkeit (Gouverneur)"
+ skill_governor:2 "Fähigkeit (Gouverneur)"
  skill_ruler:1 "Fähigkeit (Herrscher)"
  leader_skills_spawn:0 ""
  inhibition_relase:0 "Sperrungsaufhebung"
@@ -1397,7 +1399,3 @@
  MOD_COUNTRY_EMIGRATION_PUSH_ADD:0 "Emigration (Reich)"
  MOD_COUNTRY_EMIGRATION_PUSH_MULT:0 "$MOD_COUNTRY_EMIGRATION_PUSH_ADD$"
  fe_ship_cost_modifier:0 "Aufgestiegene Schiffsbauer"
- 
- mod_planet_district_mining_uncapped_build_speed_mult:0 "$mod_planet_district_mining_build_speed_mult$"
- mod_planet_district_farming_uncapped_build_speed_mult:0 "$mod_planet_district_farming_build_speed_mult$"
- mod_planet_district_generator_uncapped_build_speed_mult:0 "$mod_planet_district_generator_build_speed_mult$"

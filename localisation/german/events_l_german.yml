@@ -42,6 +42,7 @@
  TASTY:0 "Beute..."
  EXTERMINATE:0 "<< Organische Lebensform identifiziert. Kommunikation beendet. >>"
  DIG:0 "Grabt weiter!"
+ INTENSIFIES:0 "Existenzkrise verschärft sich..."
 
  ####################################
  # On-Action Events
@@ -1335,6 +1336,7 @@
  precursor.302.a.desc:0 "Eine gründliche Untersuchung von [precursor_planet.GetName] hat Beweise für eine frühere Präsenz der [Root.Owner.GetPrecursorCiv] gefunden. Ein Einsatzteam von [Root.GetName] hat es geschafft, ein relativ gut erhaltenes Artefakt zum Schiff zurückzubringen. Dies wird hoffentlich unser Wissen über diese alte Zivilisation erweitern."
  precursor.302.b.desc:0 "Bergungseinheiten, die von [Root.GetName] aus operieren, haben erfolgreich ein Artefakt auf [precursor_planet.GetName] geborgen, wessen Ursprünge auf die Vorläufer-Zivilisation [Root.Owner.GetPrecursorCiv] zurückzuführen sind. Unsere Datenbanken werden derzeit mit den neuen Informationen aktualisiert, die wir durch die Untersuchung dieses Objektes erlangt haben."
  precursor.302.c.desc:0 "Drohnen von [Root.GetName] haben erfolgreich ein Vorläufer-Artefakt der alten Zivilisation [Root.Owner.GetPrecursorCiv] auf [precursor_planet.GetName] geborgen. Das Bewusstsein hat dadurch sein gesammeltes Wissen der Geschichte erweitern können."
+ precursor.320.desc:0 "Eine Analyse der kleineren Artefakte hat gezeigt, dass es auf oder um §H[precursor_planet.GetName]§! herum Anzeichen der Vorläufer geben muss."
  vultaum_precursor_civ:0 "Vultaum"
  yuht_precursor_civ:0 "Yuht"
  first_league_precursor_civ:0 "Liga der Ersten"

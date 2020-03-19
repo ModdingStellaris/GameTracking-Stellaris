@@ -7,16 +7,6 @@ building_research_lab_1 = {
 	category = research
 	
 	potential = {
-		or = {
-			AND = {
-				NOR = {
-					num_buildings = { type = building_research_lab_2 value = 2 }
-					has_building = building_research_lab_3
-					owner = { has_technology = tech_basic_science_lab_3 }
-				}
-			}
-			owner = { is_ai = no }
-		}
 		NOT = { has_modifier = resort_colony }	
 		NOT = { has_modifier = slave_colony }
 	}
@@ -107,27 +97,96 @@ building_research_lab_1 = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 50
+			weight = 25000
+			num_pops >= 15
 			free_amenities > 2 #Prevents running out of amenities
-			num_buildings = { type = building_research_lab_1 value < 2 } #Prevents AI falling behind on research to all but the most research dedicated players
-			NOR = {
-				has_building = building_research_lab_2
-				has_building = building_research_lab_3
-			}#Check for upgraded buildings
-		}
-		modifier = {
-			weight = 5000
-			num_buildings = { type = building_research_lab_1 value < 4 } #Well okay then.
-			free_building_slots > 1
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 0
+				}
+			} # so that we don't run out of consumer goods
+
+			# allow for at least two non-upgraded labs on each planet
+			num_buildings = { type = building_research_lab_1 value < 2 } 
 			NOR = {
 				has_building = building_research_lab_2
 				has_building = building_research_lab_3
 			}
-			buildings_difficulty = yes
 		}
 		modifier = {
-			factor = 0
-			num_pops <= 43
+			weight = 50
+			free_amenities > 2 #Prevents running out of amenities
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 0
+				}
+			} # so that we don't run out of consumer goods
+
+			# allow additional research buildings if we are behind in tech, but not if we already have several have upgraded ones
+			num_buildings = { type = building_research_lab_1 value < 4 }
+			NOR = {
+				num_buildings = { type = building_research_lab_2 value > 1 }
+				num_buildings = { type = building_research_lab_3 value > 1 }
+			}
+			OR = {
+				num_pops >= 40
+				owner = {
+					any_neighbor_country = { 
+						count >= 1
+						is_country_type = default
+						prev = {
+							relative_power = { 
+								who = prev
+								category = technology 
+								value > equivalent
+							}
+							relative_power = { 
+								who = prev 
+								category = all 
+								value < superior
+							}
+						}
+					}
+				}
+			}
+			OR = {
+				owner = {
+					is_gestalt = yes
+					has_monthly_income = {
+						resource = alloys
+						value > 10
+					}
+					has_monthly_income = {
+						resource = minerals
+						value > 50
+					}
+				}
+				AND = {
+					owner = { 
+						is_regular_empire = yes
+						has_monthly_income = {
+							resource = minerals
+							value > 80
+						}
+					}
+					jobs_work_minerals_goods = yes
+				}
+				owner = {
+					is_regular_empire = yes
+					AND = {
+						has_monthly_income = {
+							resource = consumer_goods
+							value > 25
+						}
+						has_monthly_income = {
+							resource = minerals
+							value > 50
+						}
+					}
+				}
+			}
 		}
 	}
 }

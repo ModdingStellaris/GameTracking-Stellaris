@@ -132,7 +132,7 @@ alloys_expenditure_starbases_expand = {
 	}	
 
 	static_min = {
-		base = 100
+		base = 150
 	}
 }
 

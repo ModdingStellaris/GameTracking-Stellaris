@@ -236,7 +236,7 @@
  tutorial.43.name:1 "Flottengröße erhöht"
  tutorial.43.desc:0 "Gut! Wir haben jetzt eine kleine, aber schlagkräftige Raumflotte, die uns im Falle unerwarteter Feindkontakte gute Dienste leisten sollte."
  tutorial.44.name:0 "Tutorial: Sektor aufbauen"
- tutorial.44.desc:0 "Unser wachsendes Reich ist mittlerweile so groß geworden, dass eine direkte Verwaltung von unserer Heimatwelt aus zunehmend schwer fällt. Wir sollten einen neuen §SSektor§! aufbauen.\n\nSektoren sind teilautonome Entitäten innerhalb unseres Reichs, die die täglichen Angelegenheiten der Planeten unter ihrer Gerichtsbarkeit unabhängig verwalten."
+ tutorial.44.desc:1 "Unser wachsendes Reich ist mittlerweile so groß geworden, dass eine direkte Verwaltung von unserer Heimatwelt aus zunehmend schwer fällt. Wir sollten einen neuen §SSektor§! aufbauen.\n\nSektoren sind Bereiche innerhalb unseres Reichs, die dazu verwendet werden können, um die täglichen Angelegenheiten der Planeten unter ihrer Gerichtsbarkeit unabhängig zu verwalten."
  tutorial.45.name:0 "Sektor aufgebaut"
  tutorial.45.desc:2 "Wenn unser Reich wächst, können wir es durch §SSektoren§! organisiert. Sektoren können im Bildschirm für §SPlaneten und Sektoren§! verwaltet und automatisiert werden, wodurch sie automatisch mit dem zugewiesenen Pool an Ressourcen Distrikte und Gebäude bauen und verbessern."
  tutorial.46.name:0 "Tutorial: Sektorgouverneur"

@@ -39,4 +39,7 @@
 #			}
 #		}
 #	}
+#
+#	construction_blocked_by_others = no # default yes, set to no if other constructions in same system
+#										should block construction of this type
 #}

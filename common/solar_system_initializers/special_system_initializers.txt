@@ -2324,7 +2324,9 @@ crystal_manufactory_system = {
 			last_created_ambient_object = {
 				set_ambient_object_flag = manufactory
 			}
-			add_anomaly = CRYSTAL_MANUFACTORY_CAT
+			add_anomaly = {
+				category = CRYSTAL_MANUFACTORY_CAT
+			}
 		}
 	}
 }

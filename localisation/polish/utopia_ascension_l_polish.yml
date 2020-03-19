@@ -40,5 +40,5 @@
  utopia.3401.a:0 "[chosen_one.GetName] zna dotyk Woalu."
  utopia.3401.b:0 "Bezsensowne zabobony."
  utopia.3401.c:0 "To poważny krok naprzód."
- master_builders_habitats:0 "$ap_master_builders$ - ekspansja"
+ master_builders_habitats:1 "$ap_voidborn$ - ekspansja"
  master_builders_habitats_desc:0 "Ta $pc_habitat$ została rozbudowana o §Y2§! dodatkowe $MOD_PLANET_MAX_DISTRICTS_ADD$."

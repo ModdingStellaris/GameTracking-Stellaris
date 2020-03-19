@@ -1672,7 +1672,7 @@ cara_execute_deal3 = {
 fleet1_continue_journey = {
 	# Untag capital planet
 	log = "triggered fleet1_continue_journey"
-	fromfrom = {
+	from = {
 		remove_planet_flag = fleet1_capital_destination
 		log = "fleet 1 untagged planet"
 	}
@@ -1680,11 +1680,11 @@ fleet1_continue_journey = {
 	if = {
 		limit = {
 			any_system = {
-				NOT = { is_same_value = from.solar_system }
+				NOT = { is_same_value = solar_system }
 				any_system_planet = { has_planet_flag = fleet1_capital_destination }
 			}
 		}
-		from.solar_system = {
+		solar_system = {
 			closest_system = {
 				min_steps = 1
 				limit = {
@@ -1697,35 +1697,29 @@ fleet1_continue_journey = {
 				}
 			}
 		}
-		from = {
-			auto_move_to_planet = {
-				target = event_target:fleet1_next_capital_destination
-				clear_auto_move_on_arrival = no
-				arrival_effect = fleet1_continue_journey
-			}
-			log = "fleet 1 engaged auto_move"
+		auto_move_to_planet = {
+			target = event_target:fleet1_next_capital_destination
+			clear_auto_move_on_arrival = no
+			arrival_effect = fleet1_continue_journey
 		}
+		log = "fleet 1 engaged auto_move"
 	}
 	# Or return home and reset in 10 years
 	else_if = {
 		limit = { exists = event_target:caravaneer_home_star }
-		from = {
-			auto_move_to_planet = {
-				target = event_target:caravaneer_home_star
-				clear_auto_move_on_arrival = no
-				arrival_effect = fleet1_reset_journey
-			}
+		auto_move_to_planet = {
+			target = event_target:caravaneer_home_star
+			clear_auto_move_on_arrival = no
+			arrival_effect = fleet1_reset_journey
 		}
 		log = "fleet 1 returning home"
 	}
 	else = {
 		random_planet = { save_event_target_as = temporary_fleet1_destination }
-		from = {
-			auto_move_to_planet = {
-				target = event_target:caravaneer_home_star
-				clear_auto_move_on_arrival = no
-				arrival_effect = fleet1_continue_journey
-			}
+		auto_move_to_planet = {
+			target = event_target:caravaneer_home_star
+			clear_auto_move_on_arrival = no
+			arrival_effect = fleet1_continue_journey
 		}
 		log = "fleet 1 taking a detour, home is dead/not yet reestablished"
 	}
@@ -1735,7 +1729,7 @@ fleet1_continue_journey = {
 # From = fleet
 # FromFrom = planet (if any)
 fleet1_reset_journey = {
-	from = { fleet_event = { id = cara.1000 days = 3600 } }
+	fleet_event = { id = cara.1000 days = 3600 }
 }
 
 # This = owner of fleet
@@ -1744,7 +1738,7 @@ fleet1_reset_journey = {
 fleet2_continue_journey = {
 	# Untag capital planet
 	log = "triggered fleet2_continue_journey"
-	fromfrom = {
+	from = {
 		remove_planet_flag = fleet2_capital_destination
 		log = "fleet 2 untagged planet"
 	}
@@ -1752,11 +1746,11 @@ fleet2_continue_journey = {
 	if = {
 		limit = {
 			any_system = {
-				NOT = { is_same_value = from.solar_system }
+				NOT = { is_same_value = solar_system }
 				any_system_planet = { has_planet_flag = fleet2_capital_destination }
 			}
 		}
-		from.solar_system = {
+		solar_system = {
 			closest_system = {
 				min_steps = 1
 				limit = {
@@ -1769,35 +1763,29 @@ fleet2_continue_journey = {
 				}
 			}
 		}
-		from = {
-			auto_move_to_planet = {
-				target = event_target:fleet2_next_capital_destination
-				clear_auto_move_on_arrival = no
-				arrival_effect = fleet2_continue_journey
-			}
-			log = "fleet 2 engaged auto_move"
+		auto_move_to_planet = {
+			target = event_target:fleet2_next_capital_destination
+			clear_auto_move_on_arrival = no
+			arrival_effect = fleet2_continue_journey
 		}
+		log = "fleet 2 engaged auto_move"
 	}
 	# Or return home and reset in 10 years
 	else_if = {
 		limit = { exists = event_target:caravaneer_home_star }
-		from = {
-			auto_move_to_planet = {
-				target = event_target:caravaneer_home_star
-				clear_auto_move_on_arrival = no
-				arrival_effect = fleet2_reset_journey
-			}
+		auto_move_to_planet = {
+			target = event_target:caravaneer_home_star
+			clear_auto_move_on_arrival = no
+			arrival_effect = fleet2_reset_journey
 		}
 		log = "fleet 2 returning home"
 	}
 	else = {
 		random_planet = { save_event_target_as = temporary_fleet2_destination }
-		from = {
-			auto_move_to_planet = {
-				target = event_target:caravaneer_home_star
-				clear_auto_move_on_arrival = no
-				arrival_effect = fleet2_continue_journey
-			}
+		auto_move_to_planet = {
+			target = event_target:caravaneer_home_star
+			clear_auto_move_on_arrival = no
+			arrival_effect = fleet2_continue_journey
 		}
 		log = "fleet 2 taking a detour, home is dead/not yet reestablished"
 	}
@@ -1807,7 +1795,7 @@ fleet2_continue_journey = {
 # From = fleet
 # FromFrom = planet (if any)
 fleet2_reset_journey = {
-	from = { fleet_event = { id = cara.2000 days = 3600 } }
+	fleet_event = { id = cara.2000 days = 3600 }
 }
 
 # This = owner of fleet
@@ -1816,7 +1804,7 @@ fleet2_reset_journey = {
 fleet3_continue_journey = {
 	# Untag capital planet
 	log = "triggered fleet3_continue_journey"
-	fromfrom = {
+	from = {
 		remove_planet_flag = fleet3_capital_destination
 		log = "fleet 3 untagged planet"
 	}
@@ -1824,11 +1812,11 @@ fleet3_continue_journey = {
 	if = {
 		limit = {
 			any_system = {
-				NOT = { is_same_value = from.solar_system }
+				NOT = { is_same_value = solar_system }
 				any_system_planet = { has_planet_flag = fleet3_capital_destination }
 			}
 		}
-		from.solar_system = {
+		solar_system = {
 			closest_system = {
 				min_steps = 1
 				limit = {
@@ -1841,35 +1829,29 @@ fleet3_continue_journey = {
 				}
 			}
 		}
-		from = {
-			auto_move_to_planet = {
-				target = event_target:fleet3_next_capital_destination
-				clear_auto_move_on_arrival = no
-				arrival_effect = fleet3_continue_journey
-			}
-			log = "fleet 3 engaged auto_move"
+		auto_move_to_planet = {
+			target = event_target:fleet3_next_capital_destination
+			clear_auto_move_on_arrival = no
+			arrival_effect = fleet3_continue_journey
 		}
+		log = "fleet 3 engaged auto_move"
 	}
 	# Or return home and reset in 10 years
 	else_if = {
 		limit = { exists = event_target:caravaneer_home_star }
-		from = {
-			auto_move_to_planet = {
-				target = event_target:caravaneer_home_star
-				clear_auto_move_on_arrival = no
-				arrival_effect = fleet3_reset_journey
-			}
+		auto_move_to_planet = {
+			target = event_target:caravaneer_home_star
+			clear_auto_move_on_arrival = no
+			arrival_effect = fleet3_reset_journey
 		}
 		log = "fleet 3 returning home"
 	}
 	else = {
 		random_planet = { save_event_target_as = temporary_fleet3_destination }
-		from = {
-			auto_move_to_planet = {
-				target = event_target:caravaneer_home_star
-				clear_auto_move_on_arrival = no
-				arrival_effect = fleet3_continue_journey
-			}
+		auto_move_to_planet = {
+			target = event_target:caravaneer_home_star
+			clear_auto_move_on_arrival = no
+			arrival_effect = fleet3_continue_journey
 		}
 		log = "fleet 3 taking a detour, home is dead/not yet reestablished"
 	}
@@ -1879,7 +1861,7 @@ fleet3_continue_journey = {
 # From = fleet
 # FromFrom = planet (if any)
 fleet3_reset_journey = {
-	from = { fleet_event = { id = cara.3000 days = 3600 } }
+	fleet_event = { id = cara.3000 days = 3600 }
 }
 
 # Recalculate Consecrated World modifier

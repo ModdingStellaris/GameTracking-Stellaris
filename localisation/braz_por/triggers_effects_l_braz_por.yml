@@ -1258,5 +1258,7 @@
  DURATION_MONTHS:0 "$TIME$ meses"
  ADD_TMP_TRAIT:0 "§H$LEADER$§! agora tem a característica §H$TRAIT$§! durante $DURATION|Y$\n"
 
- IS_IN_FRONTIER_SPACE: "Está no espaço de fronteira"
- IS_NOT_IN_FRONTIER_SPACE: "NÃO está no espaço da fronteira"
+ IS_IN_FRONTIER_SPACE:0 "Está no espaço fronteiriço"
+ IS_NOT_IN_FRONTIER_SPACE:0 "NÃO está no espaço fronteiriço"
+ HAS_UNLOCKED_ALL_TRADITIONS:0 "$COUNTRY|Y$ liberou todas as Tradições disponíveis"
+ HAS_NOT_UNLOCKED_ALL_TRADITIONS:0 "$COUNTRY|Y$ NÃO liberou todas as Tradições disponíveis"

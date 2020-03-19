@@ -2504,3 +2504,5 @@
  colony.107.a.tooltip:0 "§HTodo §!§Pop não-Y$trait_mechanical$§! §Hsem§! §Y$trait_pc_nuked_preference$§! §Hem [Root.GetName]:§! Morre."
  DIG:0 "Continue cavando!"
  crisis.2403.desc_06:0 "Por acaso... por acaso essa é nossa fornalha de guerra?\n\nPorque parece bastante com nossa fornalha de guerra."
+ INTENSIFIES:0 "Crise existencial se intensifica..."
+ precursor.320.desc:0 "A análise dos artefatos menores sugere que pode ter existido uma conexão Precursora em ou perto de §H[precursor_planet.GetName]§!."

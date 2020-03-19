@@ -4563,6 +4563,11 @@ country_event = {
 	immediate = {
 		event_target:conquered_primitive_country = {
 			if = {
+				limit = { is_planet_class = pc_ringworld_habitable }
+				add_district = district_rw_city
+				break = yes
+			}
+			if = {
 				limit = { num_pops <= 5 }
 				add_district = district_city
 				add_district = district_farming

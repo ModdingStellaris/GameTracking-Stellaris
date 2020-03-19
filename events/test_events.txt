@@ -779,3 +779,29 @@ ship_event = {
 		}
 	}
 }
+
+namespace = gwenael
+country_event = {
+	id = gwenael.3
+	hide_window = yes
+	trigger = {
+		always = no
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = default
+				num_owned_relics > 0
+				NOT = { is_same_value = root }
+			}
+			root = {
+				steal_relic = {
+					target = prev
+					relic = r_galatron
+				}
+			}
+		}
+	}
+}
+

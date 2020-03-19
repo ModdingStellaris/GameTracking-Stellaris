@@ -2518,3 +2518,5 @@
  colony.107.a.tooltip:0 "§HChaque§! §Y£pop£pop mécanique§! §Hprésente sur [Root.GetName] sans§! §Ypréférence pour les mondes morts§! §Hmeurt.§!"
  DIG:0 "Poursuivons les travaux !"
  crisis.2403.desc_06:0 "Serait-ce... Serait-ce notre forge militaire ?\n\nParce que ça y ressemble beaucoup..."
+ INTENSIFIES:0 "Crise existentielle en vue..."
+ precursor.320.desc:0 "L'analyse des artefacts mineurs suggère que quelque chose en rapport avec les précurseurs se trouverait sur ou non loin de §H[precursor_planet.GetName]§!."

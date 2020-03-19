@@ -328,6 +328,9 @@
  mod_planet_district_mining_build_speed_mult:0 "Скорость строительства горнодобывающего района"
  mod_planet_district_farming_build_speed_mult:0 "Скорость строительства сельскохозяйственного района"
  mod_planet_district_generator_build_speed_mult:0 "Скорость строительства энергетического района"
+ mod_planet_district_mining_uncapped_build_speed_mult:0 "$mod_planet_district_mining_build_speed_mult$"
+ mod_planet_district_farming_uncapped_build_speed_mult:0 "$mod_planet_district_farming_build_speed_mult$"
+ mod_planet_district_generator_uncapped_build_speed_mult:0 "$mod_planet_district_generator_build_speed_mult$"
  mod_planet_district_arcology_arms_industry_speed_mult:0 "Скорость строительства литейной аркологии"
  mod_planet_district_arc_civilian_build_speed_mult:0 "Скорость строительства промышленной аркологии"
  mod_planet_building_foundry_1_build_speed_mult:0 "Скорость строительства литейного завода"
@@ -1261,7 +1264,3 @@
  MOD_COUNTRY_EMIGRATION_PUSH_ADD:0 "Отток эмиграции в империи"
  MOD_COUNTRY_EMIGRATION_PUSH_MULT:0 "$MOD_COUNTRY_EMIGRATION_PUSH_ADD$"
  fe_ship_cost_modifier:0 "Господство судостроителей"
- 
- mod_planet_district_mining_uncapped_build_speed_mult:0 "$mod_planet_district_mining_build_speed_mult$"
- mod_planet_district_farming_uncapped_build_speed_mult:0 "$mod_planet_district_farming_build_speed_mult$"
- mod_planet_district_generator_uncapped_build_speed_mult:0 "$mod_planet_district_generator_build_speed_mult$"

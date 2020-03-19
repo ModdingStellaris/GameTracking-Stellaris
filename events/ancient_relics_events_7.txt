@@ -1,3 +1,11 @@
+################################
+#
+# Ancient Relics Events
+#
+# Written by Stephen Muray
+#
+################################
+
 namespace = ancrel
 
 # Arcane Deciphering Events
@@ -484,17 +492,6 @@ country_event = {
                     NOT = { has_technology = tech_frontier_health }
                 }
 				give_technology = { tech = tech_frontier_health }
-			}
-			else_if = {
-				limit = {
-					OR = {
-						NOT = { has_authority = auth_machine_intelligence }
-						has_civic = civic_machine_assimilator
-						has_civic = civic_machine_servitor	
-					}
-                    NOT = { has_technology = tech_frontier_hospital }
-                }
-				give_technology = { tech = tech_frontier_hospital }
 			}
 			else_if = {
 				limit = {

@@ -2519,3 +2519,5 @@
  colony.107.a.tooltip:0 "§HToda la §!§Ypob. no $trait_mechanical$ §! §Hy sin§! §Y$trait_pc_nuked_preference$§! §Hen [Root.GetName]:§! muere"
  DIG:0 "¡Seguid cavando!"
  crisis.2403.desc_06:0 "¿Esa es nuestra forja de guerra?\n\nPorque se parece."
+ INTENSIFIES:0 "La crisis existencial se intensifica..."
+ precursor.320.desc:0 "Loa análisis de los artefactos menores sugieren que podría haber una conexión con el precursor en §H[precursor_planet.GetName]§! o cerca de allí."

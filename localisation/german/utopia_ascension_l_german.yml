@@ -537,5 +537,5 @@
  utopia.3401.b:0 "Abergläubischer Unsinn."
  utopia.3401.c:0 "Eine bedeutende Entwicklung."
  
- master_builders_habitats:0 "$ap_master_builders$: Erweiterung"
+ master_builders_habitats:1 "$ap_voidborn$: Erweiterung"
  master_builders_habitats_desc:0 "Dieses $pc_habitat$ wurde um zusätzlich §Y2§! $MOD_PLANET_MAX_DISTRICTS_ADD$ erweitert."

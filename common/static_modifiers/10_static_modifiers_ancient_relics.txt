@@ -228,6 +228,11 @@ oracle_administration = {
 	country_admin_cap_add = 20
 }
 
+chosen_of_zarqlan = {
+	pop_ethic_spiritualist_attraction_mult = 0.10
+	icon = "gfx/interface/icons/modifiers/mod_country_border_mult.dds"
+}
+
 pm_yuht_cleansing = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
 	pop_environment_tolerance = 0.10
@@ -279,4 +284,48 @@ the_memorex = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_surreal_visions.dds"
 	planet_jobs_produces_mult = 0.20
 	planet_stability_add = 10
+}
+
+herald_75 = {
+	ship_weapon_damage = -0.25
+	ship_hull_mult = -0.25
+	ship_armor_mult = -0.25
+	ship_shield_mult = -0.25
+}
+herald_50 = {
+	ship_weapon_damage = -0.5
+	ship_hull_mult = -0.5
+	ship_armor_mult = -0.5
+	ship_shield_mult = -0.5
+}
+herald_25 = {
+	ship_weapon_damage = -0.75
+	ship_hull_mult = -0.75
+	ship_armor_mult = -0.75
+	ship_shield_mult = -0.75
+}
+
+### "Trench World" Archaeological Site Reward ###
+modern_trench_war = {
+	army_defense_health_mult = 0.20
+}
+
+### "Ebb & Flow" Archaeological Site Reward ###
+forced_mindfulness = {
+	country_unity_produces_mult = 0.05
+}
+
+# Machine Empires
+debug_subroutine = {
+	country_unity_produces_mult = 0.05
+}
+
+# Hive Mind Empires
+glory_to_the_many = {
+	country_unity_produces_mult = 0.05
+}
+
+### "Sky Glow Hymn" Archaeological Site Reward ###
+anthem_of_aurora = {
+	country_energy_produces_mult = 0.05
 }

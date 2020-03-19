@@ -49,10 +49,10 @@
 
  #Tutorial
  TUTORIAL_RELICS_VIEW_TITLE:0 "Relikte und kleinere Artefakte"
- TUTORIAL_RELICS_VIEW_DESC:1 "Auf dem Bildschirm für Relikte könnt Ihr Eure Relikte ansehen und aktivieren, sowie Entscheidungen treffen, bei denen kleinere Artefakte verbraucht werden. Entscheidungen, die mit "Planetare Entscheidung" markiert sind, werden hier nur als Referenz angezeigt und Ihr könnt sie stattdessen über den Entscheidungsbildschirm des Planeten auswählen."
+ TUTORIAL_RELICS_VIEW_DESC:1 "Auf dem Bildschirm für Relikte könnt Ihr Eure §YRelikte§! ansehen und aktivieren, sowie Entscheidungen treffen, bei denen §Ykleinere Artefakte§! verbraucht werden. Entscheidungen, die mit "Planetare Entscheidung" markiert sind, werden hier nur als Referenz angezeigt und Ihr könnt sie stattdessen über den Entscheidungsbildschirm des Planeten auswählen."
  
  TUTORIAL_ARCHAEOLOGY_VIEW_TITLE:0 "Archäologieansicht"
- TUTORIAL_ARCHAEOLOGY_VIEW_DESC:0 "Das Archäologie-Fenster zeigt Details der aktuell ausgewählten archäologischen Fundstätte an. Nachdem eine Phase abgeschlossen ist, könnt durch Klicken auf die Runensymbole zurückgehen und die Beschreibung der vorherigen Stufen lesen.\n\nUm die Geheimnisse einer Fundstätte zu lüften, muss ein Wissenschaftler einen Durchbruch erzielen und so jede einzelne Phase der Stätte durchlaufen. Wissenschaftler mit relevanten Merkmalen und höherer Fähigkeit beschleunigen den Prozess des Fortschritts zur nächsten Stufe, während ein höherer Schwierigkeitsgrad einer Ausgrabung ihn verlangsamt. Jeder Wissenschaftler, der eine Fundstätte lange genug untersucht, wird Hinweise sammeln, die einen Durchbruch wahrscheinlicher machen."
+ TUTORIAL_ARCHAEOLOGY_VIEW_DESC:0 "Das Archäologie-Fenster zeigt Details der aktuell ausgewählten §Yarchäologischen Fundstätte§! an. Nachdem eine Phase abgeschlossen ist, könnt durch Klicken auf die Runensymbole zurückgehen und die Beschreibung der vorherigen Stufen lesen.\n\nUm die Geheimnisse einer Fundstätte zu lüften, muss ein Wissenschaftler einen §YDurchbruch§! erzielen und so jede einzelne Phase der Stätte durchlaufen. Wissenschaftler mit relevanten §YMerkmalen und höherer Fähigkeit§! beschleunigen den Prozess des Fortschritts zur nächsten Stufe, während ein höherer Schwierigkeitsgrad einer Ausgrabung ihn verlangsamt. Jeder Wissenschaftler, der eine Fundstätte lange genug untersucht, wird §YHinweise§! sammeln, die einen Durchbruch wahrscheinlicher machen."
 
  RELICS_AND_ARTIFACTS:0 "$RELICS$ und $MINOR_ARTIFACTS$"
  TRADITION_VIEW_TITLE:0 "$TRADITIONS$ und $RELICS$"
@@ -65,22 +65,22 @@
  archaeologists_3:0 "Archäologendrohnen"
 
  bombardment_pox:0 "Javorische Pocken"
- bombardment_pox_desc:0 "Die Javorische-Pocken-Bombardierung beschießt den Planeten mit tödlichen Krankheitserregern.\n- §YModerater§! Schaden an §YArmeen§!\n- §ELeichter§! Schaden an §YPlaneten§!\n- §EKein§! Schaden an §Ymechanischen Bewohnern§!\n- §RKatastrophaler§! Schaden an §Yorganischen Bewohnern§!\n- Wird unverteidigte Planeten bombardieren\n- Kann Planeten zu leblosen Toten Welten reduzieren"
+ bombardment_pox_desc:0 "$bombardment_pox$ Die Javorische-Pocken-Bombardierung beschießt den Planeten mit tödlichen Krankheitserregern.\n- §YModerater§! Schaden an §YArmeen§!\n- §ELeichter§! Schaden an §YPlaneten§!\n- §EKein§! Schaden an §Ymechanischen Bewohnern§!\n- §RKatastrophaler§! Schaden an §Yorganischen Bewohnern§!\n- Wird unverteidigte Planeten bombardieren\n- Kann Planeten zu leblosen Toten Welten reduzieren"
 
  pc_relic:0 "Reliktwelt"
  pc_relic_desc:0 "Einst erstreckte sich eine Stadt über die ganze Welt. Heute sind nur noch alte und verlassene Ruinen erhalten, deren ursprüngliche Bewohner längst verschwunden sind."
  trait_pc_relic_preference:0 "Anpassung (Reliktwelt)"
  trait_pc_relic_preference_desc:0 "$trait_pc_arctic_preference_desc$"
  mod_pc_relic_habitability:0 "Bewohnbarkeit (Reliktwelt)"
- d_collapsed_spire:0 "Eingestürzter Turm"
+ d_collapsed_spire:1 "£blocker£ Eingestürzter Turm"
  d_collapsed_spire_desc:0 "In dieser Region ist ein gewaltiger Turm unter seinem eigenen Gewicht zusammengebrochen und hat den Zugang versperrt. Zu der Zeit, als es noch stand, muss diese hoch aufragende Struktur zu den höchsten der Welt gehört haben."
- d_massive_crevice:0 "Massiver Spalt"
+ d_massive_crevice:1 "£blocker£ Massiver Spalt"
  d_massive_crevice_desc:0 "Diese Region ist durch eine riesige Spalte geteilt, die sich durch eine ehemals dichte urbane Zone zieht. Der Boden hier ist äußerst instabil und erlebt häufig Erdbeben und Erdrutsche."
- d_shattered_solar_array:0 "Zerstörte Solarfarm"
+ d_shattered_solar_array:1 "£blocker£ Zerstörte Solarfarm"
  d_shattered_solar_array_desc:0 "Die zerstörten Überreste einer Art kolossaler Solaranlage. Als sie noch funktionsfähig war, muss sie einen bedeutenden Teil dieses Planeten mit Strom versorgt haben."
- d_flooded_reactor_pits:0 "Überflutete Reaktorgruben"
+ d_flooded_reactor_pits:1 "£blocker£ Überflutete Reaktorgruben"
  d_flooded_reactor_pits_desc:0 "In diesen tiefen Gruben befanden sich einst die wichtigsten Energieerzeugungsanlagen des Planeten. Über Äonen hat Regen und Überschwemmung die Gruben mit trübem Wasser gefüllt."
- d_crumbling_mining_tunnels:0 "Eingestürzte Bergbautunnel"
+ d_crumbling_mining_tunnels:1 "£blocker£ Eingestürzte Bergbautunnel"
  d_crumbling_mining_tunnels_desc:0 "Ein Netzwerk von tiefen Tunneln befindet unter der Oberfläche des Planeten und scheint seine primäre Mineralienquelle gewesen zu sein. Jahrtausende von Einstürzen und Steinschlägen haben nur einen Bruchteil der Tunnel passierbar zurückgelassen."
  d_ancient_reactor_pits:0 "Alte Reaktorgruben"
  d_ancient_reactor_pits_desc:0 "Diese tiefen Gruben in der Nähe des Äquators des Planeten beherbergten einst die Primärenergieerzeuger. Ein Großteil der überraschend robusten Infrastruktur ist erhalten geblieben und es wäre daher möglich neue Reaktoren einzubauen."
@@ -96,7 +96,7 @@
  d_relic_dense_ruins_desc:0 "Das Studium der dichten Ruinen, die diese Reliktwelt bedecken, ist ein Segen für die Wissenschaft, begrenzt aber auch die Menge an bewohnbarem Raum."
  d_relic_metal_boneyard:0 "$d_metal_boneyard$"
  d_relic_metal_boneyard_desc:0 "$d_metal_boneyard_desc$"
- decision_arcology_project_relic:0 "$decision_arcology_project$"
+ decision_arcology_project_relic:1 "Ökumenopolis wiederaufbauen"
  decision_arcology_project_relic_effects:0 "$decision_arcology_project_effects$"
  decision_arcology_project_relic_effects_short:0 "$decision_arcology_project_effects_short$"
  decision_arcology_project_relic_desc:0 "Dieser Planet war einst eine pulsierende Ökumenopole. Es wäre eine monumentale Aufgabe, aber der Planet könnte wiederaufgebaut und erneut zu seiner früheren Pracht gebracht werden."
@@ -217,6 +217,7 @@
  ARCHAEOLOGICAL_SITE_MAPICON_TT:0 "$NAME|H$\n$DESC$\n\n§GKlicken, um die archöologische Stätte anzusehen§!"
 
  CANNOT_EXCAVATE_OUTSIDE_EMPIRE_BORDERS:0 "$TRIGGER_FAIL$§RIhr könnt eine archäologische Stätte außerhalb Eures Reiches nicht ausgraben§!"
+ CANNOT_EXCAVATE_WITHOUT_VALID_LEADER:0 "$TRIGGER_FAIL$§RIhr könnt eine archäologische Stätte nicht ohne Anführer ausgraben§!"
 
  ##################
  # UI
@@ -224,6 +225,7 @@
  ARC_DIFFICULTY_TYPE:0 "Schwierigkeit"
  ARC_DIFFICULTY_TYPE_DESC:0 "Jedes Kapitel in einer archäologischen Stätte kann einen anderen Schwierigkeitsgrad haben. Die Schwierigkeit verringert die Wahrscheinlichkeit, mit der am Ende einer Grabungsphase ein erfolgreiches Ergebnis erzielt wird."
  ARC_DIFFICULTY_TYPE_TT:0 "§H$ARC_DIFFICULTY_TYPE$§!\n$VALUE$\n\n$ARC_DIFFICULTY_TYPE_DESC$"
+ ARC_GO_TO:0 "§HZentrieren§!\n§GKlicken, um die Kamera schnell zu dieser Fundstätte zu bewegen§!"
  ARC_LEADER_BONUS:0 "Fähigkeit"
  ARC_LEADER_BONUS_DESC:0 "Der Fähigkeitenbonus erhöht die Wahrscheinlichkeit, mit der am Ende einer Grabungsphase ein erfolgreiches Ergebnis erzielt wird.\n\nDieser Bonus erhöht die §YDurchbruchschance§!."
  ARC_LEADER_BONUS_TT:0 "§H$ARC_LEADER_BONUS$§!\n$ARC_LEADER_BONUS_DESC$"
@@ -305,6 +307,11 @@
  artifact_lgate_clue_effect:0 "$add_lcluster_clue$\n\nAbklingzeit: £time£ §Y3600§!"
  artifact_lgate_insight_cooldown:0 "Abklingzeit ($artifact_lgate_clue$)"
 
+ artifact_precursor_clue:0 "Einsichten über Vorläufer erhalten"
+ artifact_precursor_clue_desc:0 "Mit diesen Artefakten sollten wir in der Lage sein, weitere Mysterien rund um die Vorläufer zu lösen."
+ artifact_precursor_clue_effect:0 "Lernt etwas über die Position einer Ausgrabungsstätte der Vorläufer.\n\nAbklingzeit: £time£ §Y1800§!"
+ artifact_precursor_insight_cooldown:0 "Abklingzeit ($artifact_precursor_clue$)"
+
  artifact_action_locked:0 "§L??????§!"
  artifact_action_locked_desc:0 "Es muss etwas geben, dass wir noch mit unseren £minor_artifacts£kleineren Artefakten machen können."
  artifact_action_locked_failtext:0 "Schaltet eine neue Aktion für kleinere Artefakte frei.\n\n$TRIGGER_FAIL$§RErfordert die Technologie £society£ §!§Y$tech_arcane_deciphering$§!§R.§!"
@@ -361,6 +368,10 @@
  artifact_vultaum_research_completed_suppressed_desc:0 "Das Vultaum-Archiv hat unsere Kenntnisse in Sachen Datenverarbeitung erheblich erweitert. Wir haben das Gelernte genutzt, um künstliche virtuelle Welten zum Vergnügen aller zu erschaffen."
  artifact_vultaum_research_completed_public:0 "Tiefere Geheimnisse der Vultaum"
  artifact_vultaum_research_completed_public_desc:0 "Die Vultaum-Archive legen nahe, dass wir in einer Simulation leben. Nachdem wir unsere Realität verstanden haben, können wir bestimmte Schlupflöcher ausnutzen, um zu verstehen, wie sie zu unserem Vorteil funktionieren."
+ artifact_vultaum_research_completed_machine:0 "$artifact_vultaum_research_completed_suppressed$"
+ artifact_vultaum_research_completed_machine_desc:0 "$ancrel.10100.desc_machine$"
+ artifact_vultaum_research_completed_hive:0 "$artifact_vultaum_research_completed_suppressed$"
+ artifact_vultaum_research_completed_hive_desc:0 "$ancrel.10100.desc_hive$"
  
  ancrel.10100.option.fm_enough:0 "Wir werden das Erlernte bereits sinnvoll einsetzen."
  ancrel.10100.option.fm_delve_deeper:0 "Grabt tiefer. Wir müssen alles wissen, was sie gelernt haben."
@@ -430,6 +441,8 @@
  ancrel.10350.name:0 "$artifact_zroni_research$"
  ancrel.10350.desc:0 "Es ist uns gelungen, die Artefakte der Cybrex in unseren Forschungsprozess zu integrieren. Ihre Einblicke in die Psionik werden uns sehr helfen."
  zroni_artifact_research_unlocked:0 "Neue Aktion für kleine Artefakte: §Y$artifact_zroni_research$§!"
+
+ ancient_battle_site:0 "$ancrel.108.name$"
 
 
  # MINOR ARTIFACT PLANETARY DECISIONS
@@ -514,7 +527,7 @@
  r_worm_scales:0 "Schuppen der Schlange"
  r_worm_scales_desc:0 "Transparent und noch immer warm. Die Schuppen geben ein leises Summen ab, das wissenschaftlich nicht zu erklären ist."
  r_rubricator:0 "Der Rubrizierer"
- r_rubricator_desc:1 "Dieser winzige Würfel passt genau in Eure [Root.GetSpeciesHandName] und dennoch birgt er einen digitalen Schatz von unzähligen gescannten außerirdischen Artefakten, die bis in die jungen Jahre des Universums zurückreichen. Und es kann sie unendlich replizieren. Nie zuvor war das Unbekannte so nah."
+ r_rubricator_desc:2 "Dieser winzige Würfel passt genau in Eure Hand und dennoch birgt er einen digitalen Schatz von unzähligen gescannten außerirdischen Artefakten, die bis in die jungen Jahre des Universums zurückreichen. Und es kann sie unendlich replizieren. Nie zuvor war das Unbekannte so nah."
  r_omnicodex:0 "Der Omnikodex"
  r_omnicodex_desc:0 "Vor langer Zeit machte sich eine wohlwollende Rasse von Cyborgs auf den Weg, um die Bewahrung des biologischen Lebens sicherzustellen. Dafür beschafften sie Proben jeder Rasse in der Galaxie und indexierten diese, um sicherzustellen, dass das Aussterben einer Rasse nicht dauerhaft sein muss. Obwohl ihr Ziel der galaktischen Errettung schließlich von törichten Eiferern und einem widerlichen Schwarmbewusstsein durchkreuzt wurde, bleibt ihr Erbe bestehen."
  r_galatron:0 "Die Galatron"
@@ -531,8 +544,8 @@
  r_unbidden_warlock_desc:0 "Die psionischen Energien dieser gefangenen extradimensionalen Kreatur hielt das Dimensionsportal zwischen ihrem und unserem eigenen Reich auf, bevor es zerstört wurde.\n\nAls unser Gefangener wurde die Kreatur nun dazu gezwungen, ihre Kraft dafür einzusetzen, um die Unterlichtgeschwindigkeit unserer Schiffe sowie die Reichweite unserer Sprungantriebe zu erhöhen."
  r_contingency_core:0 "Isolierter Kontingenzkern"
  r_contingency_core_desc:0 "Ein isolierter Kontingenz-Mainframe-Kern, der aus den Trümmern der letzten Maschinenwelt gerettet wurde. Dieser kann den Bau von Robotern und Megastrukturen erheblich beschleunigen."
- r_zro_crystal:0 "Intakter Zro-Seelenstein"
- r_zro_crystal_desc:0 "Der Seelenstein eines §Y$relic_zro_entity_name$§!, der einzig verbliebende intakte Zro-Seelenstein der Galaxie."
+ r_zro_crystal:1 "Psionisches Archiv"
+ r_zro_crystal_desc:1 "Ein psionisches Kristallarchiv der Zro, das die Essenz von §Y$relic_zro_entity_name$§! beinhaltet. Von Zeit zu Zeit kann es für Führung herangezogen werden."
  r_severed_head:0 "Kopf von Zarqlan"
  r_severed_head_desc:0 "Auszug, Symbole der Anbetung (102. Ausgabe):\n\nZARQLAN (zaar-klann)\nBekannte heilige Figur unbestimmter Spezies, die während des vierten Interregnums (32. Zyklus von Kavabh) von mindestens sieben verschiedenen galaktischen Religionen als göttlicher Prophet verehrt wurde. Sein Verblieb ist unbekannt. Referenzen in historischen Aufzeichnungen wurden nach dem 38. Zyklus eingestellt. Historizität wird seit mindestens dem (frühen) 41. Zyklus intensiv diskutiert. Heute von vielen als Fabel oder Legende abgetan."
  r_ancient_sword:0 "Klinge der Jägerin"
@@ -584,8 +597,11 @@
  oracle_software_integration_desc:0 "Das Orakel sieht alles."
  oracle_administration:0 "Orakel"
  oracle_administration_desc:0 "Das Orakel verwaltet das Reich wie eine gut geölte Maschine ... wenn man sie denn ölt."
+ chosen_of_zarqlan:0 "Die Auserwählten von Zarqlan"
+ chosen_of_zarqlan_desc:0 "Als auserwählte von Zarqlan können wir ohne Gefahr Heilige Welten kolonisieren."
  the_memorex:0 "Die Memorex"
  the_memorex_desc:0 "Das Memorex-Programm zum verbesserten Lernen schult die Bevölkerung während sie schläft, damit diese besser den Bedürfnissen des Reiches entspricht und verbessert ihre Leistung erheblich."
+ opinion_destroyed_caravaneer_home:0 "Zerstörte die Heimat der Reisenden"
  ##################
  # TRAITS
  ##################
@@ -672,7 +688,7 @@
  d_hab_gas_5:0 "$d_hab_gas_1$"
  d_hab_gas_5_desc:0 "$d_hab_gas_1_desc$"
  d_hab_crystal_1:0 "Seltenes Kristallvorkommen"
- d_hab_crystal_1_desc:0 "Dieses Habitat befindet sich in der Nähe einer ausbeutbaren Lagerstätte für seltene Kristalle."
+ d_hab_crystal_1_desc:1 "Dieses Habitat befindet sich in der Nähe einer ausbeutbaren Lagerstätte für seltene Kristalle."
  d_hab_crystal_2:0 "$d_hab_crystal_1$"
  d_hab_crystal_2_desc:0 "$d_hab_crystal_1_desc$"
  d_hab_crystal_3:0 "$d_hab_crystal_1$"
@@ -707,7 +723,7 @@
  d_hab_zro_2_desc:0 "$d_hab_zro_1_desc$"
  d_hab_zro_3:0 "$d_hab_zro_1$"
  d_hab_zro_3_desc:0 "$d_hab_zro_1_desc$"
- d_hab_dark_matter_1:0 "Dunkles Materievorkommen"
+ d_hab_dark_matter_1:1 "Dunkles Materievorkommen"
  d_hab_dark_matter_1_desc:0 "Dieses Habitat befindet sich in der Nähe einer ausbeutbaren Lagerstätte für dunkle Materie."
  d_hab_dark_matter_2:0 "$d_hab_dark_matter_1$"
  d_hab_dark_matter_2_desc:0 "$d_hab_dark_matter_1_desc$"
@@ -755,7 +771,7 @@
  col_ring_generator_desc:0 "Durch das Verbinden von Generatorsegmenten über diesen Abschnitt der Ringwelt hinweg kann die Effizienz weit über die Skala hinaus gesteigert werden"
  
  SHIP_SIZE_CAPACITY:0 "£$SHIP_ICON$£ $SHIP_SIZE$ : §Y$VALUE$/$MAX$§!"
- 
+
  pop_cat_assimilation:0 "Assimilation"
  pop_cat_assimilation_plural:0 "$pop_cat_assimilation$"
  pop_cat_assimilation_desc:0 "Diese Bewohner werden so modifiziert, dass sie besser zu unserer Gesellschaft passen."
@@ -765,13 +781,22 @@
  job_assimilation_plural:0 "$job_assimilation$"
  job_assimilation_desc:0 "Dieser Bewohner wird in unser Kollektiv integriert."
  pop_category_assimilation:0 "Lebensstandard $pop_cat_assimilation$"
- ARC_GO_TO:0 "§HZentrieren§!\n§GKlicken, um die Kamera schnell zu dieser Fundstätte zu bewegen§!"
+ space_dragon_blue:0 "$NAME_Grand_Dragon$"
+ space_dragon_blue_plural:0 "$NAME_Grand_Dragon$"
 
- artifact_vultaum_research_completed_machine:0 "$artifact_vultaum_research_completed_suppressed$"
- artifact_vultaum_research_completed_machine_desc:0 "$ancrel.10100.desc_machine$"
- artifact_vultaum_research_completed_hive:0 "$artifact_vultaum_research_completed_suppressed$"
- artifact_vultaum_research_completed_hive_desc:0 "$ancrel.10100.desc_hive$"
- ancient_battle_site:0 "$ancrel.108.name$"
- CANNOT_EXCAVATE_WITHOUT_VALID_LEADER:0 "$TRIGGER_FAIL$§RKeine Ausgrabung archäologischer Stätten ohne einen gültigen Führer§!"
- space_dragon_blue: "$NAME_Grand_Dragon$"
- space_dragon_blue_plural: "$NAME_Grand_Dragon$"
+ STEAL_ALL_ARTIFACT:0 "$THIEF|Y$ stiehlt §YALLE§! Artefakte von $VICTIM|Y$"
+ STEAL_RANDOM_ARTIFACT:0 "$THIEF|Y$ stiehlt §YEIN ZUFÄLLIGES§! Artefakt von $VICTIM|Y$"
+ STEAL_ONE_ARTIFACT:0 "$THIEF|Y$ stiehlt das Artefakt "$ARTIFACT|Y$" von $VICTIM|Y$"
+ 
+ IS_LAST_LOST_RELIC:0 "$RELIC|Y$ war das letzte Relikt, das $COUNTRY|Y$ verloren hat"
+ IS_NOT_LAST_LOST_RELIC:0 "$RELIC|Y$ war NICHT das letzte Relikt, das $COUNTRY|Y$ verloren hat"
+ IS_LAST_RECEIVED_RELIC:0 "$RELIC|Y$ war das letzte Relikt, das $COUNTRY|Y$ erhalten hat"
+ IS_NOT_LAST_RECEIVED_RELIC:0 "$RELIC|Y$ war NICHT das letzte Relikt, das $COUNTRY|Y$ erhalten hat"
+ 
+ Herald_repair:0 "Generalüberholung"
+ Herald_repair_TITLE:0 "Generalüberholung"
+ Herald_repair_DESC:0 "Obwohl der Großherold zweifellos ein mächtiges Schiff ist, ist sein volles Potenzial nicht ausgeschöpft. Eine Kombination aus mangelnder Wartung, kumulativen geringfügigen Schäden und der Tatsache, dass wir einfach nicht alles vollständig verstehen, verschlechtern seine Fähigkeiten im Kampf. Nur eine vollständige Überholung seiner Systeme und das daraus resultierende vollständige Verständnis dieses Schiffs können und seinen kompletten Nutzen offenbaren."
+ herald_75:0 "Der Herold ist beschädigt"
+ herald_50:0 "$herald_75$"
+ herald_25:0 "$herald_75$"
+ relic_triumph_cooldown_short:0 "$relic_activation_cooldown$: £time£ §Y1800§!"

@@ -614,3 +614,4 @@
  apoc.14.desc:0 "Wyznaczono miejsce budowy bramy kosmicznej w układzie §H[gateway_system.GetName]§!. Kiedy zgromadzimy niezbędne zasoby, będziemy mogli natychmiast rozpocząć prace budowlane."
  STATUS_QUO_CREATE_NEW_EMPIRE:0 "Z $SYSTEMS|H$ okupowanych układów imperium $TARGET|Y$ powstanie nowe państwo istot z gatunku $SPECIES|Y$. $ACTOR|Y$ pozostanie jego sojusznikiem."
  FLEET_TEMPLATE_EVENT_DESIGN:0 "Projektowanie wydarzeń"
+ STARBASE_BUILD_NOT_AN_OWNER:0 "§RNie posiada bazy gwiezdnej!§!"

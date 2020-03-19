@@ -39,5 +39,5 @@
  utopia.3401.a:0 "El Velo ha tocado a [chosen_one.GetName]."
  utopia.3401.b:0 "Disparates supersticiosos."
  utopia.3401.c:0 "Un desarrollo significativo."
- master_builders_habitats:0 "$ap_master_builders$: expansión"
+ master_builders_habitats:1 "$ap_voidborn$: Expansión"
  master_builders_habitats_desc:0 "Este $pc_habitat$ se ha expandido un §Y2§! $MOD_PLANET_MAX_DISTRICTS_ADD$ adicional."

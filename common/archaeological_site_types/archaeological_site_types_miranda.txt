@@ -157,7 +157,7 @@ oracle_digsite = {
 # Church of the Endless Expanse 1
 endless_expanse_digsite = {
 	desc = endless_expanse_digsite_desc
-	picture = GFX_evt_frozen_planet
+	picture = GFX_evt_frozen
 	stages = 4
 	max_instances = 1
 	weight = {
@@ -225,7 +225,7 @@ endless_expanse_digsite_2 = {
 	stage = {
 		difficulty = 3
 		event = ancrel.4043
-		icon = uGFX_archaeology_runes_F1
+		icon = GFX_archaeology_runes_F1
 	}
 	stage = {
 		difficulty = 1

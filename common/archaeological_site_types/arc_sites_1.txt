@@ -121,7 +121,7 @@ zroni_digsite_3 = {
 #zroni minor colony 3
 zroni_digsite_4 = {
 	desc = zroni_digsite_4_desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_datacrystals
 	stages = 2
 	max_instances = 1
 	allow = {
@@ -154,7 +154,7 @@ zroni_digsite_4 = {
 #zroni major colony
 zroni_digsite_5 = {
 	desc = zroni_digsite_5_desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_datacrystals
 	stages = 3
 	max_instances = 1
 	allow = {
@@ -192,7 +192,7 @@ zroni_digsite_5 = {
 #zroni homeworld
 zroni_digsite_6 = {
 	desc = zroni_digsite_6_desc
-	picture = GFX_evt_shrouded_planet
+	picture = GFX_evt_shrouded
 	stages = 5
 	max_instances = 1
 	allow = {

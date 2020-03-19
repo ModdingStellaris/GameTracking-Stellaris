@@ -1271,5 +1271,7 @@
  DURATION_MONTHS:0 "$TIME$ mois"
  ADD_TMP_TRAIT:0 "§H$LEADER$§! conservera le trait §H$TRAIT$§! pendant $DURATION|Y$.\n"
  
- IS_IN_FRONTIER_SPACE: "se trouve dans l'espace frontière"
- IS_NOT_IN_FRONTIER_SPACE: "N'EST PAS dans l'espace frontière"
+ IS_IN_FRONTIER_SPACE:0 "Est dans l'espace frontalier"
+ IS_NOT_IN_FRONTIER_SPACE:0 "N'est PAS dans l'espace frontalier"
+ HAS_UNLOCKED_ALL_TRADITIONS:0 "La $COUNTRY|Y$ a adopté toutes les traditions disponibles."
+ HAS_NOT_UNLOCKED_ALL_TRADITIONS:0 "La $COUNTRY|Y$ n'a PAS adopté toutes les traditions disponibles."

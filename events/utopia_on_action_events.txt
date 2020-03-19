@@ -1840,7 +1840,7 @@ planet_event = {
 
 	trigger = {
 		is_planet_class = pc_habitat
-		owner = { has_ascension_perk = ap_master_builders }
+		owner = { has_ascension_perk = ap_voidborn }
 		NOT = { has_modifier = master_builders_habitats }
 	}	
 	
@@ -1852,20 +1852,20 @@ planet_event = {
 	}
 }
 
-# Master Builders - Habitats
+# Voidborn - Habitats
 event = {
 	id = utopia.2660
 	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
-		any_playable_country = { has_ascension_perk = ap_master_builders }
+		any_playable_country = { has_ascension_perk = ap_voidborn }
 	}
 
 	immediate = {
 		every_playable_country = {
 			limit = {
-				has_ascension_perk = ap_master_builders
+				has_ascension_perk = ap_voidborn
 				any_owned_planet = {
 					is_planet_class = pc_habitat
 					NOT = { has_modifier = master_builders_habitats }

@@ -89,6 +89,7 @@
  STARBASE_DOWNGRADE_LABEL:0 "Понизить статус"
  STARBASE_RETURN_LABEL:0 "Вернуть контроль"
  STARBASE_DISMANTLE_NO_STARBASE_IN_SYSTEM:0 "§RВ системе нет космической базы.§!"
+ STARBASE_BUILD_NOT_AN_OWNER:0 "§RКосмическая база вам не принадлежит!§!"
  STARBASE_DISMANTLE_NOT_SYSTEM_OWNER:0 "§RВы не являетесь владельцем космической базы.§!"
  STARBASE_DISMANTLE_HAS_COLONIZED_WORLDS:0 "§RВы не можете разобрать космическую базу, если вы колонизировали планеты в системе.§!"
  STARBASE_DOWNGRADE_ALREADY_LOWEST_LEVEL:0 "§RНевозможно дальше понижать статус этой космической базы!§!"

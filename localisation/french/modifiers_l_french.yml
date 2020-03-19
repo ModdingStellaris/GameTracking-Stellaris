@@ -863,7 +863,7 @@
  skill_admiral:1 "Compétence d'amiral"
  skill_general:1 "Compétence de général"
  skill_scientist:1 "Compétence de scientifique"
- skill_governor:1 "Compétence de gouverneur"
+ skill_governor:2 "Compétence de gouverneur"
  skill_ruler:1 "Compétence de dirigeant"
  leader_skills_spawn:0 ""
  inhibition_relase:0 "Diffusion d'un inhibiteur"

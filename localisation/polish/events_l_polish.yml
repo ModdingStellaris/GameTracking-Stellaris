@@ -2519,3 +2519,5 @@
  colony.107.a.tooltip:0 "§HWszystkie populacje, które nie są §!§Y$trait_mechanical$§!, §Hnie mają§! §Y$trait_pc_nuked_preference$§! i znajdują się §Hna [Root.GetName],§! giną."
  DIG:0 "Kopcie dalej!"
  crisis.2403.desc_06:0 "Czy... czy to nasza fabryka wojenna?\n\nBo wygląda zupełnie jak nasza fabryka wojenna."
+ INTENSIFIES:0 "Kryzys egzystencjalny nasila się..."
+ precursor.320.desc:0 "Analiza pomniejszych artefaktów pozwala przypuszczać, że prekursorzy są jakoś związani ze światem §H[precursor_planet.GetName]§! lub jego sąsiedztwem."

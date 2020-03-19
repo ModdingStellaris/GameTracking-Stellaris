@@ -2194,6 +2194,12 @@ spriteTypes = {
 	### DLCs ###
 
 	spriteType = {
+		name = "GFX_ancientrelicsstorypack"
+		texturefile = "gfx/interface/icons/dlc/ancient_relics.dds"
+	}
+
+
+	spriteType = {
 		name = "GFX_megacorp"
 		texturefile = "gfx/interface/icons/dlc/megacorp.dds"
 	}

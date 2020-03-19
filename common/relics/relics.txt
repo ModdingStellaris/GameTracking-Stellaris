@@ -1,5 +1,6 @@
 @activation_cost = 150
 @triumph_duration = 3600
+@triumph_duration_short = 1800
 
 r_dragon_trophy = {
 	activation_duration = @triumph_duration
@@ -341,13 +342,24 @@ r_surveyor = {
 
 	active_effect = {
 		custom_tooltip = relic_surveyor_active
-		custom_tooltip = relic_triumph_cooldown
+		custom_tooltip = relic_triumph_cooldown_short
 		hidden_effect = {
 			add_modifier = {
 				modifier = "relic_activation_cooldown" 
-				days = @triumph_duration
+				days = @triumph_duration_short
 			}
 			country_event = { id = story.335 }
+
+			# Chance for additional deposits
+			random_list = {
+				50 = { country_event = { id = story.335 days = 720 random = 360 } }
+				50 = {}
+			}
+
+			random_list = {
+				20 = { country_event = { id = story.335 days = 1440 random = 360 } }
+				80 = {}
+			}
 		}
 	}
 
@@ -480,7 +492,7 @@ r_severed_head = {
 		potential = {
 			always = yes
 		}
-		pop_ethic_spiritualist_attraction_mult = 0.50
+		pop_ethic_spiritualist_attraction_mult = 0.40
 	}
 
 	score = 200

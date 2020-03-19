@@ -336,7 +336,7 @@ d_zro_deposit_1 = {
 	}
 	
 	drop_weight = {
-		weight = 2
+		weight = 5
 		modifier = {
 			factor = 0.5
 			is_inside_nebula = no
@@ -361,7 +361,7 @@ d_zro_deposit_2 = {
 	}
 	
 	drop_weight = {
-		weight = 0.5
+		weight = 1
 		modifier = {
 			factor = 0.5
 			is_inside_nebula = no

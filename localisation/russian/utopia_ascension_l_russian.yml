@@ -485,5 +485,5 @@
  utopia.3401.a:0 "[chosen_one.GetName] имеет благословение Покрова."
  utopia.3401.b:0 "Чушь и предрассудки."
  utopia.3401.c:0 "Это важное событие."
- master_builders_habitats:0 "$ap_master_builders$: расширение"
+ master_builders_habitats:0 "$ap_voidborn$: расширение"
  master_builders_habitats_desc:0 "Эта $pc_habitat$ расширена еще на §Y2§! $MOD_PLANET_MAX_DISTRICTS_ADD$."

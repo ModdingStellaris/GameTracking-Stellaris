@@ -1,6 +1,6 @@
 ################################
 #
-# Ancient Relics - Events
+# Ancient Relics Events
 #
 # Written by Douglas Furen
 #
@@ -84,12 +84,33 @@ fleet_event = {
 	option = {
 		name = FASCINATING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier3researchreward
-     			min = @tier3researchmin
-     			max = @tier3researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_housing_2
+				}
+				add_tech_progress = {
+					tech = tech_housing_2
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_housing_2 }
+				}
+				add_research_option = tech_housing_2
+				add_tech_progress = {
+					tech = tech_housing_2
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier3researchreward
+     				min = @tier3researchmin
+     				max = @tier3researchmax
+     			}
+			}
  		}
 	}
 }
@@ -116,12 +137,33 @@ fleet_event = {
 	option = {
 		name = UNFORTUNATE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier3researchreward
-     			min = @tier3researchmin
-     			max = @tier3researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_colonization_5
+				}
+				add_tech_progress = {
+					tech = tech_colonization_5
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_colonization_5 }
+				}
+				add_research_option = tech_colonization_5
+				add_tech_progress = {
+					tech = tech_colonization_5
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier3researchreward
+     				min = @tier3researchmin
+     				max = @tier3researchmax
+     			}
+			}
  		}
 	}
 }
@@ -148,7 +190,7 @@ fleet_event = {
 	option = {
 		name = OOPS
 		owner = {
-			add_resource = { alloys = 200 }
+			add_resource = { alloys = 500 }
 		}
 	}
 }
@@ -363,12 +405,33 @@ fleet_event = {
 	option = {
 		name = MARVELOUS
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = physics_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_power_plant_3
+				}
+				add_tech_progress = {
+					tech = tech_power_plant_3
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_power_plant_3 }
+				}
+				add_research_option = tech_power_plant_3
+				add_tech_progress = {
+					tech = tech_power_plant_3
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = physics_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -395,7 +458,7 @@ fleet_event = {
 	option = {
 		name = UNFORTUNATE
 		owner = {
-			add_resource = { minerals = 500 }
+			add_resource = { minerals = 1000 }
 		}
 	}
 }
@@ -422,12 +485,33 @@ fleet_event = {
 	option = {
 		name = PECULIAR
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_society_2
+				}
+				add_tech_progress = {
+					tech = tech_society_2
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_society_2 }
+				}
+				add_research_option = tech_society_2
+				add_tech_progress = {
+					tech = tech_society_2
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -533,12 +617,33 @@ fleet_event = {
 	option = {
 		name = FASCINATING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = physics_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_shields_4
+				}
+				add_tech_progress = {
+					tech = tech_shields_4
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_shields_4 }
+				}
+				add_research_option = tech_shields_4
+				add_tech_progress = {
+					tech = tech_shields_4
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = physics_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -565,7 +670,28 @@ fleet_event = {
 	option = {
 		name = CURIOUS
 		owner = { 
-			add_resource = { volatile_motes = 100 }
+			if = {
+				limit = {
+					has_tech_option = tech_mining_2
+				}
+				add_tech_progress = {
+					tech = tech_mining_2
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_mining_2 }
+				}
+				add_research_option = tech_mining_2
+				add_tech_progress = {
+					tech = tech_mining_2
+					progress = 0.1
+				}
+			}
+			else = {
+				add_resource = { volatile_motes = 100 }
+			}
  		}
 	}
 }
@@ -592,12 +718,33 @@ fleet_event = {
 	option = {
 		name = INTRIGUING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_alien_life_studies
+				}
+				add_tech_progress = {
+					tech = tech_alien_life_studies
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_alien_life_studies }
+				}
+				add_research_option = tech_alien_life_studies
+				add_tech_progress = {
+					tech = tech_alien_life_studies
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -664,13 +811,13 @@ fleet_event = {
 	
 	immediate = {
 		random_list = { 
-			33 = {
+			10 = {
 				fleet_event = { id = ancrel.9105 }
 			}
-			33 = {
+			40 = {
 				fleet_event = { id = ancrel.9110}
 			}
-			33 = {
+			40 = {
 				fleet_event = { id = ancrel.9115 }
 			}
 		}
@@ -703,12 +850,33 @@ fleet_event = {
 	option = {
 		name = FASCINATING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_mega_art
+				}
+				add_tech_progress = {
+					tech = tech_mega_art
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_mega_art }
+				}
+				add_research_option = tech_mega_art
+				add_tech_progress = {
+					tech = tech_mega_art
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -734,7 +902,7 @@ fleet_event = {
 	
 	option = {
 		name = CURIOUS
-		owner = {
+		owner = { 
 			if = {
 				limit = {
 					has_tech_option = tech_terrestrial_sculpting
@@ -744,14 +912,20 @@ fleet_event = {
 					progress = 0.5
 				}
 			}
-			else = {
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_terrestrial_sculpting }
+				}
 				add_research_option = tech_terrestrial_sculpting
 				add_tech_progress = {
 					tech = tech_terrestrial_sculpting
-					progress = 0.25
+					progress = 0.1
 				}
 			}
-		}
+			else = {
+				add_resource = { minerals = 2000 }
+			}
+ 		}
 	}
 }
 
@@ -777,12 +951,33 @@ fleet_event = {
 	option = {
 		name = INTRIGUING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_space_mining_3
+				}
+				add_tech_progress = {
+					tech = tech_space_mining_3
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_space_mining_3 }
+				}
+				add_research_option = tech_space_mining_3
+				add_tech_progress = {
+					tech = tech_space_mining_3
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -886,17 +1081,38 @@ fleet_event = {
 	}
 	
 	option = {
-		name = CURSES
+		name = INTENSIFIES
 		leader = {
 			add_trait = leader_trait_traumatized
 		}
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier5researchreward
-     			min = @tier5researchmin
-     			max = @tier5researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_physics_3
+				}
+				add_tech_progress = {
+					tech = tech_physics_3
+					progress = 0.25
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_physics_3 }
+				}
+				add_research_option = tech_physics_3
+				add_tech_progress = {
+					tech = tech_physics_3
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier5researchreward
+     				min = @tier5researchmin
+     				max = @tier5researchmax
+     			}
+			}
  		}
 	}
 }
@@ -923,12 +1139,20 @@ fleet_event = {
 	option = {
 		name = UNFORTUNATE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier5researchreward
-     			min = @tier5researchmin
-     			max = @tier5researchmax
-     		}
+			if = {
+				limit = {
+					NOT = { has_technology = tech_deep_sinkhole }
+				}
+				give_technology = { tech = tech_deep_sinkhole }
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier5researchreward
+     				min = @tier5researchmin
+     				max = @tier5researchmax
+     			}
+			}
  		}
 	}
 }
@@ -955,12 +1179,33 @@ fleet_event = {
 	option = {
 		name = NOTIME
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier5researchreward
-     			min = @tier5researchmin
-     			max = @tier5researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_tomb_world_adaption
+				}
+				add_tech_progress = {
+					tech = tech_tomb_world_adaption
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_tomb_world_adaption }
+				}
+				add_research_option = tech_tomb_world_adaption
+				add_tech_progress = {
+					tech = tech_tomb_world_adaption
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier5researchreward
+     				min = @tier5researchmin
+     				max = @tier5researchmax
+     			}
+			}
  		}
 	}
 }
@@ -1041,12 +1286,41 @@ fleet_event = {
 	option = {
 		name = REMARKABLE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_combat_training
+				}
+				add_tech_progress = {
+					tech = tech_combat_training
+					progress = 0.25
+				}
+				add_modifier = {
+ 					modifier = modern_trench_war
+ 					days = -1
+ 				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_combat_training }
+				}
+				add_research_option = tech_combat_training
+				add_modifier = {
+ 					modifier = modern_trench_war
+ 					days = -1
+ 				}
+			}
+			else = {
+				add_modifier = {
+ 					modifier = modern_trench_war
+ 					days = -1
+ 				}
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -1073,8 +1347,29 @@ fleet_event = {
 	option = {
 		name = SCRAPIT
 		owner = { 
-			add_resource = { alloys = 400 }
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_robotic_workers
+				}
+				add_tech_progress = {
+					tech = tech_robotic_workers
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_robotic_workers }
+				}
+				add_research_option = tech_robotic_workers
+				add_tech_progress = {
+					tech = tech_robotic_workers
+					progress = 0.25
+				}
+			}
+			else = {
+				add_resource = { alloys = 500 }
+			}
+ 		}
 	}
 }
 
@@ -1100,12 +1395,33 @@ fleet_event = {
 	option = {
 		name = AMAZING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = physics_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_massive_glacier
+				}
+				add_tech_progress = {
+					tech = tech_massive_glacier
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_massive_glacier }
+				}
+				add_research_option = tech_massive_glacier
+				add_tech_progress = {
+					tech = tech_massive_glacier
+					progress = 0.25
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = physics_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -1234,14 +1550,32 @@ fleet_event = {
 	}
 	
 	option = {
-		name = CURSES
+		name = INTRIGUING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_authority = auth_machine_intelligence
+				}
+				add_modifier = {
+ 					modifier = debug_subroutine
+ 					days = -1
+ 				}
+			}
+			else_if = {
+				limit = {
+					has_authority = auth_hive_mind
+				}
+				add_modifier = {
+ 					modifier = glory_to_the_many
+ 					days = -1
+ 				}
+			}
+			else = {
+				add_modifier = {
+ 					modifier = forced_mindfulness
+ 					days = -1
+ 				}
+			}
  		}
 	}
 }
@@ -1268,7 +1602,9 @@ fleet_event = {
 	option = {
 		name = EXCELLENT
 		owner = { 
-			add_resource = { rare_crystals = 100 }
+			add_resource = { rare_crystals = 200 }
+			add_resource = { exotic_gases = 200 }
+			add_resource = { volatile_motes = 200 }
  		}
 	}
 }
@@ -1293,14 +1629,32 @@ fleet_event = {
 	}
 	
 	option = {
-		name = OK
+		name = INTRIGUING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_authority = auth_machine_intelligence
+				}
+				add_modifier = {
+ 					modifier = debug_subroutine
+ 					days = -1
+ 				}
+			}
+			else_if = {
+				limit = {
+					has_authority = auth_hive_mind
+				}
+				add_modifier = {
+ 					modifier = glory_to_the_many
+ 					days = -1
+ 				}
+			}
+			else = {
+				add_modifier = {
+ 					modifier = forced_mindfulness
+ 					days = -1
+ 				}
+			}
  		}
 	}
 }
@@ -1470,12 +1824,10 @@ fleet_event = {
 	option = {
 		name = GOODBYE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = physics_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			add_modifier = {
+ 					modifier = anthem_of_aurora
+ 					days = -1
+ 			}
  		}
 	}
 }
@@ -1581,12 +1933,29 @@ fleet_event = {
 	option = {
 		name = UNFORTUNATE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_colonization_3
+				}
+				add_tech_progress = {
+					tech = tech_colonization_3
+					progress = 0.50
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_colonization_3 }
+				}
+				add_research_option = tech_colonization_3
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -1613,12 +1982,41 @@ fleet_event = {
 	option = {
 		name = OOPS
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = physics_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_volcano
+				}
+				add_tech_progress = {
+					tech = tech_volcano
+					progress = 0.50
+				}
+				add_monthly_resource_mult = {
+     				resource = physics_research
+     				value = @tier3researchreward
+     				min = @tier3researchmin
+     				max = @tier3researchmax
+     			}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_volcano }
+				}
+				add_research_option = tech_volcano
+				add_monthly_resource_mult = {
+     				resource = physics_research
+     				value = @tier3researchreward
+     				min = @tier3researchmin
+     				max = @tier3researchmax
+     			}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = physics_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -1645,13 +2043,100 @@ fleet_event = {
 	option = {
 		name = GOODBYE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
- 		}
+			if = {
+				limit = {
+					has_authority = auth_machine_intelligence
+				}
+				if = {
+					limit = {
+						has_tech_option = tech_unity_of_purpose
+					}
+					add_tech_progress = {
+						tech = tech_unity_of_purpose
+						progress = 0.25
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = { has_technology = tech_unity_of_purpose }
+					}
+					add_research_option = tech_unity_of_purpose
+					add_tech_progress = {
+						tech = tech_unity_of_purpose
+						progress = 0.1
+					}
+				}
+				else = {
+					add_monthly_resource_mult = {
+     					resource = society_research
+     					value = @tier4researchreward
+     					min = @tier4researchmin
+     					max = @tier4researchmax
+     				}
+				}
+			}
+			else_if = {
+				limit = {
+					has_authority = auth_hive_mind
+				}
+				if = {
+					limit = {
+						has_tech_option = tech_unity_of_purpose
+					}
+					add_tech_progress = {
+						tech = tech_unity_of_purpose
+						progress = 0.25
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = { has_technology = tech_unity_of_purpose }
+					}
+					add_research_option = tech_unity_of_purpose
+					add_tech_progress = {
+						tech = tech_unity_of_purpose
+						progress = 0.1
+					}
+				}
+				else = {
+					add_monthly_resource_mult = {
+     					resource = society_research
+     					value = @tier4researchreward
+     					min = @tier4researchmin
+     					max = @tier4researchmax
+     				}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_tech_option = tech_artificial_moral_codes
+					}
+					add_tech_progress = {
+						tech = tech_artificial_moral_codes
+						progress = 0.25
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = { has_technology = tech_artificial_moral_codes }
+					}
+					add_research_option = tech_artificial_moral_codes
+					add_tech_progress = {
+						tech = tech_artificial_moral_codes
+						progress = 0.1
+					}
+				}
+				else = {
+					add_monthly_resource_mult = {
+     					resource = society_research
+     					value = @tier4researchreward
+     					min = @tier4researchmin
+     					max = @tier4researchmax
+     				}
+				}
+			}
+		}
 	}
 }
 
@@ -1781,12 +2266,33 @@ fleet_event = {
 	option = {
 		name = UNFORTUNATE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_colonization_3
+				}
+				add_tech_progress = {
+					tech = tech_colonization_3
+					progress = 0.50
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_colonization_3 }
+				}
+				add_research_option = tech_colonization_3
+				add_tech_progress = {
+					tech = tech_colonization_3
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -1819,6 +2325,9 @@ fleet_event = {
      			min = @tier4researchmin
      			max = @tier4researchmax
      		}
+     		add_resource = { rare_crystals = 150 }
+			add_resource = { exotic_gases = 150 }
+			add_resource = { volatile_motes = 150 }
  		}
 	}
 }
@@ -1845,12 +2354,33 @@ fleet_event = {
 	option = {
 		name = INTRIGUING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_society_3
+				}
+				add_tech_progress = {
+					tech = tech_society_3
+					progress = 0.50
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_society_3 }
+				}
+				add_research_option = tech_society_3
+				add_tech_progress = {
+					tech = tech_society_3
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2188,12 +2718,45 @@ fleet_event = {
 	option = {
 		name = INTERESTING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_colonization_2
+				}
+				add_tech_progress = {
+					tech = tech_colonization_2
+					progress = 0.25
+				}
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier3researchreward
+     				min = @tier3researchmin
+     				max = @tier3researchmax
+     			}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_colonization_2 }
+				}
+				add_research_option = tech_colonization_2
+				add_tech_progress = {
+					tech = tech_colonization_2
+					progress = 0.1
+				}
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier3researchreward
+     				min = @tier3researchmin
+     				max = @tier3researchmax
+     			}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2220,12 +2783,45 @@ fleet_event = {
 	option = {
 		name = FASCINATING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_colonization_2
+				}
+				add_tech_progress = {
+					tech = tech_colonization_2
+					progress = 0.25
+				}
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier3researchreward
+     				min = @tier3researchmin
+     				max = @tier3researchmax
+     			}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_colonization_2 }
+				}
+				add_research_option = tech_colonization_2
+				add_tech_progress = {
+					tech = tech_colonization_2
+					progress = 0.1
+				}
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier3researchreward
+     				min = @tier3researchmin
+     				max = @tier3researchmax
+     			}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2252,12 +2848,33 @@ fleet_event = {
 	option = {
 		name = UNFORTUNATE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_ecological_adaptation
+				}
+				add_tech_progress = {
+					tech = tech_ecological_adaptation
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_ecological_adaptation }
+				}
+				add_research_option = tech_ecological_adaptation
+				add_tech_progress = {
+					tech = tech_ecological_adaptation
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2363,12 +2980,45 @@ fleet_event = {
 	option = {
 		name = UNFORTUNATE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_toxic_kelp
+				}
+				add_tech_progress = {
+					tech = tech_toxic_kelp
+					progress = 0.8
+				}
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_toxic_kelp }
+				}
+				add_research_option = tech_toxic_kelp
+				add_tech_progress = {
+					tech = tech_toxic_kelp
+					progress = 0.5
+				}
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2395,12 +3045,33 @@ fleet_event = {
 	option = {
 		name = PECULIAR
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_ecological_adaptation
+				}
+				add_tech_progress = {
+					tech = tech_ecological_adaptation
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_ecological_adaptation }
+				}
+				add_research_option = tech_ecological_adaptation
+				add_tech_progress = {
+					tech = tech_ecological_adaptation
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2427,12 +3098,33 @@ fleet_event = {
 	option = {
 		name = INCREDIBLE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_terrestrial_sculpting
+				}
+				add_tech_progress = {
+					tech = tech_terrestrial_sculpting
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_terrestrial_sculpting }
+				}
+				add_research_option = tech_terrestrial_sculpting
+				add_tech_progress = {
+					tech = tech_terrestrial_sculpting
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2538,7 +3230,7 @@ fleet_event = {
 	option = {
 		name = UNFORTUNATE
 		owner = { 
-			add_resource = { exotic_gases = 200 }
+			add_resource = { exotic_gases = 250 }
  		}
 	}
 }
@@ -2565,12 +3257,33 @@ fleet_event = {
 	option = {
 		name = PECULIAR
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_vitality_boosters
+				}
+				add_tech_progress = {
+					tech = tech_vitality_boosters
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_vitality_boosters }
+				}
+				add_research_option = tech_vitality_boosters
+				add_tech_progress = {
+					tech = tech_vitality_boosters
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2597,12 +3310,33 @@ fleet_event = {
 	option = {
 		name = INTERESTING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = society_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_society_2
+				}
+				add_tech_progress = {
+					tech = tech_society_2
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_society_2 }
+				}
+				add_research_option = tech_society_2
+				add_tech_progress = {
+					tech = tech_society_2
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = society_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2684,7 +3418,19 @@ fleet_event = {
 		name = FASCINATING
 		owner = { 
 			add_monthly_resource_mult = {
+     			resource = physics_research
+     			value = @tier3researchreward
+     			min = @tier3researchmin
+     			max = @tier3researchmax
+     		}
+     		add_monthly_resource_mult = {
      			resource = society_research
+     			value = @tier3researchreward
+     			min = @tier3researchmin
+     			max = @tier3researchmax
+     		}
+     		add_monthly_resource_mult = {
+     			resource = engineering_research
      			value = @tier3researchreward
      			min = @tier3researchmin
      			max = @tier3researchmax
@@ -2716,6 +3462,8 @@ fleet_event = {
 		name = EXCELLENT
 		owner = { 
 			add_resource = { alloys = 500 }
+			add_resource = { exotic_gases = 150 }
+			add_resource = { volatile_motes = 150 }
  		}
 	}
 }
@@ -2742,12 +3490,33 @@ fleet_event = {
 	option = {
 		name = PECULIAR
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier3researchreward
-     			min = @tier3researchmin
-     			max = @tier3researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_cryostasis_2
+				}
+				add_tech_progress = {
+					tech = tech_cryostasis_2
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_cryostasis_2 }
+				}
+				add_research_option = tech_cryostasis_2
+				add_tech_progress = {
+					tech = tech_cryostasis_2
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2853,12 +3622,33 @@ fleet_event = {
 	option = {
 		name = ASTOUNDING
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = physics_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_volcano
+				}
+				add_tech_progress = {
+					tech = tech_volcano
+					progress = 0.8
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_volcano }
+				}
+				add_research_option = tech_volcano
+				add_tech_progress = {
+					tech = tech_volcano
+					progress = 0.25
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = physics_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2885,12 +3675,33 @@ fleet_event = {
 	option = {
 		name = INCREDIBLE
 		owner = { 
-			add_monthly_resource_mult = {
-     			resource = engineering_research
-     			value = @tier4researchreward
-     			min = @tier4researchmin
-     			max = @tier4researchmax
-     		}
+			if = {
+				limit = {
+					has_tech_option = tech_disruptors_2
+				}
+				add_tech_progress = {
+					tech = tech_disruptors_2
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_disruptors_2 }
+				}
+				add_research_option = tech_disruptors_2
+				add_tech_progress = {
+					tech = tech_disruptors_2
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = physics_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }
@@ -2917,7 +3728,33 @@ fleet_event = {
 	option = {
 		name = INTERESTING
 		owner = { 
-			add_resource = { energy = 1000 }
+			if = {
+				limit = {
+					has_tech_option = tech_alloys_2
+				}
+				add_tech_progress = {
+					tech = tech_alloys_2
+					progress = 0.5
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_technology = tech_alloys_2 }
+				}
+				add_research_option = tech_alloys_2
+				add_tech_progress = {
+					tech = tech_alloys_2
+					progress = 0.1
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+     				resource = engineering_research
+     				value = @tier4researchreward
+     				min = @tier4researchmin
+     				max = @tier4researchmax
+     			}
+			}
  		}
 	}
 }

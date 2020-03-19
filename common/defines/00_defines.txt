@@ -645,10 +645,11 @@
 		LEADER_RULER_MONARCH_EXPERIENCE								= 5.0
 		LEADER_RULER_HEIR_EXPERIENCE								= 1.0
 
-		LEADER_ADMIRAL_FLEET_COMBAT_BASE_EXPERIENCE					= 10 # Leader Admiral base experience from fleet combat
+		LEADER_ADMIRAL_FLEET_COMBAT_BASE_EXPERIENCE					= 5 # Leader Admiral base experience from fleet combat
 		LEADER_ADMIRAL_FLEET_COMBAT_EXPERIENCE_SCALE				= 0.5 # Scale factor used when calculating experience gain for Admiral
-		LEADER_ADMIRAL_FLEET_COMBAT_SHIPS_KILLED_CONVERSION			= 0.25 # Scale factor for total number of ships killed after combat when calculating experience gain for Admiral
-		LEADER_ADMIRAL_FLEET_PIRACY_SUPPRESSION_DAILY				= 0.1 # Leader Admiral base experience from piracy suppression
+		LEADER_ADMIRAL_FLEET_COMBAT_SHIPS_KILLED_CONVERSION			= 0.05 # Scale factor for total number of ships killed after combat when calculating experience gain for Admiral
+		LEADER_ADMIRAL_FLEET_COMBAT_SHIPS_DISENGAGED_CONVERSION		= 0.025 # Scale factor for total number of ships that disengaged after combat when calculating experience gain for Admiral
+		LEADER_ADMIRAL_FLEET_PIRACY_SUPPRESSION_DAILY				= 0.05 # Leader Admiral base experience from piracy suppression
 
 		LEADER_GENERAL_GROUND_COMBAT_BASE_EXPERIENCE				= 100 # Leader General base experience from ground combat
 		LEADER_GENERAL_GROUND_COMBAT_EXPERIENCE_SCALE				= 2.5 # Scale factor used when calculating experience gain for General
@@ -1171,7 +1172,7 @@
 		RECENTLY_CONQUERED_DAYS				= 3600 # How long the recently conquered modifier stays on pops.
 
 		SAME_STRATA_EMPLOYMENT_BONUS		= 5.0 # How much score will be added to an unemployed pop when considering it for a job in the same strata
-		FAVORITE_JOB_EMPLOYMENT_BONUS		= 1.0 # How much will be added to a jobs weight if it's favorited
+		FAVORITE_JOB_EMPLOYMENT_BONUS		= 1000.0 # How much will be added to a jobs weight if it's favorited
 	}
 
 	NArmy = {
@@ -1643,16 +1644,22 @@
 		AI_MIN_HABITABILITY_TO_COLONIZE = 0.35	# AI will avoid colonizing planets with habitability lower than this.
 		AI_MIN_BRANCH_OFFICE_WORTH_TO_ESTABLISH = 2.0	# AI megacorporations will not establish branch offices unless value is above this
 
-		SLAVE_BUY_EC_THRESHOLD = 2000 # if we have less ec than this, dont buy slaves
-		SLAVE_BUY_UNEMPLOYMENT_THRESHOLD = 6 # if we have this many unemployed pops, dont buy slaves
+		SLAVE_BUY_EC_THRESHOLD = 1000 # if we have less ec than this, dont buy slaves
+		SLAVE_BUY_UNEMPLOYMENT_THRESHOLD = 2 # if any one planet has this many unemployed pops, don't consider buying slaves for it
 		SLAVE_BUY_HABITABILITY_THRESHOLD = 0.4 # if we cant find a planet with at least this much habitability for a prospective slave, dont buy it
 
-		SLAVE_SELL_EC_THRESHOLD = 5000 # if we have more ec than this then don't sell any slaves
-		SLAVE_SELL_TOTAL_UNEMPLOYMENT_THRESHOLD = 6 # if we have at least this many unemployed pops across all planets, sell one of them
-		SLAVE_SELL_PLANET_UNEMPLOYMENT_THRESHOLD = 3 # if any one planet has at least this many unemployed pops, sell a slave
+		SLAVE_SELL_EC_THRESHOLD = 3000 # if we have more ec than this and a positive net income, then don't sell any slaves
+		SLAVE_SELL_UNEMPLOYMENT_THRESHOLD = 1 # if any one planet has this many unemployed pops on it, consider selling one as a slave
 
 		SCIENTIST_HIRING_REPLACEMENT_THRESHOLD = 1.25	# When hiring for a job category, how much the score has to be higher than the previous tenants's score to replace him
 		SCIENTIST_HIRING_PREV_JOB_THRESHOLD = 1.1		# When hiring a scientist, how much the better score for the new category has to be compared to your current employment score
 		SCIENTIST_HIRING_UNEMPLOYMENT_MULT = 1.1		# how much of a bonus unemployed scientist get to their job score
 		SCIENTIST_HIRING_SURVEY_MULTIPLIER = 0.5		# when hiring for research, the multiplier applied to a scientist who's on a science ship, to ensure surveying has priority over research
+
+		WAR_DECLARATION_MAX_DISTANCE = 50				# How far away (in jumps) another empire has to be before the empire will not consider them for declaration
+		WAR_DECLARATION_MALUS_DISTANCE = 25				# Distance between empires (in jumps) at which the AI will be less likely to declare war
+		WAR_DECLARATION_MALUS = 0.05					# malus per jump above the malus distance (above) for each jump
+		WAR_DECLARATION_MINIMUM_SCORE = 0.5				# minimum score multiplier for war declaration after all distance have been applied
+
+		COLONY_AUTOMATION_COOLDOWN = 3					# Number of days automation will not be done after a build queue item on a planet completes
 	}

@@ -2265,7 +2265,7 @@ soundeffect = {
 }
 
 soundeffect = {
-	name = tut_RELICS_VIEW
+	name = tut_msg_RELICS_VIEW
 	sounds = {
 		sound = tut_relics_view_01
 	}

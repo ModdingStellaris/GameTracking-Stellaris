@@ -152,7 +152,7 @@ col_farming = {
 
 	potential = {
 		exists = owner
-		owner = { country_uses_food = yes }			
+		owner = { country_uses_food = yes }
 		NOR = {
 			is_planet_class = pc_city
 			is_planet_class = pc_machine

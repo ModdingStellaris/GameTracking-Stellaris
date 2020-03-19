@@ -203,7 +203,7 @@
  tutorial.43.name:1 "Taille de la flotte augmentée"
  tutorial.43.desc:0 "Bien ! Nous avons désormais une flotte spatiale, petite mais compétente qui devrait nous servir dans l'éventualité de rencontres hostiles inattendues."
  tutorial.44.name:0 "Établir un secteur"
- tutorial.44.desc:0 "Notre empire bourgeonnant a désormais atteint une extension telle qu'il devient difficile de tout administrer directement depuis notre monde natal. Nous devrions donc établir un nouveau §Ssecteur§!.\n\nLes secteurs sont des entités semi-autonomes au sein de l'empire, qui gèrent indépendamment les affaires quotidiennes des planètes sous leur juridiction."
+ tutorial.44.desc:1 "Notre jeune empire atteint désormais une extension telle qu'il devient difficile de tout administrer directement depuis notre monde natal. Nous devrions donc établir un nouveau §Ssecteur§!.\n\nLes secteurs sont des juridictions internes à l'empire, qui peuvent se voir accorder une certaine autonomie pour gérer indépendamment les affaires quotidiennes des mondes qui relèvent d'eux."
  tutorial.45.name:0 "Secteur établi "
  tutorial.45.desc:2 "À mesure que notre empire s'étendra, de nouvelles colonies pourront être organisées automatiquement au sein de §Ssecteurs§!, qui pourront être automatisées à partir de l'interface §SPlanètes et secteurs§! pour construire et améliorer automatiquement les £district£§Sdistricts§! et £building£§Sbâtiments§! en puisant dans les réserves de ressources qui leur auront été allouées."
  tutorial.46.name:0 "Didacticiel : Gouverneur de secteur"

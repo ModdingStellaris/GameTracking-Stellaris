@@ -26,6 +26,7 @@ building_military_academy = {
 	
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = no }
 		}
 		modifier = {
@@ -34,6 +35,7 @@ building_military_academy = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -97,6 +99,7 @@ building_stronghold = {
 	
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = no }
 		}
 		modifier = {
@@ -105,6 +108,7 @@ building_stronghold = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -182,6 +186,7 @@ building_fortress = {
 	
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = no }
 		}
 		modifier = {
@@ -190,6 +195,7 @@ building_fortress = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {

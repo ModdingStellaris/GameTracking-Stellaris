@@ -168,7 +168,7 @@
  tutorial.43.name:0 "Tamaño de armada aumentado"
  tutorial.43.desc:0 "¡Genial! Ya tenemos una flota pequeña pero capaz, que nos irá bien si tenemos encuentros inesperados con enemigos."
  tutorial.44.name:0 "Tutorial: fundar sector"
- tutorial.44.desc:0 "Nuestro próspero imperio ya ha alcanzado un tamaño en el que resulta difícil de administrar desde nuestro mundo natal. Deberíamos establecer un nuevo §Ssector§!.\n\nLos sectores son entidades semiautónomas del imperio que gestionan con independencia los asuntos cotidianos de los planetas que están en su jurisdicción."
+ tutorial.44.desc:1 "Nuestro próspero imperio ya ha alcanzado un tamaño en el que resulta difícil de administrar desde nuestro mundo natal. Deberíamos establecer un nuevo §Ssector§!.\n\nLos sectores son áreas del imperio que pueden gestionar con independencia los asuntos cotidianos de los planetas que están en su jurisdicción."
  tutorial.45.name:0 "Sector fundado"
  tutorial.45.desc:2 "Mientras crece el imperio, las colonias pueden organizarse en §Ssectores§!. Estos pueden automatizarse en la pantalla de §Splanetas y sectores§! para construir y mejorar automáticamente los distritos y edificios con las reservas de recursos asignadas."
  tutorial.46.name:0 "Tutorial: gobernador del sector"

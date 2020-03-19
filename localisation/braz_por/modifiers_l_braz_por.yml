@@ -489,7 +489,7 @@
  skill_admiral:1 "Habilidade do Almirante"
  skill_general:1 "Habilidade do General"
  skill_scientist:1 "Habilidade do Cientista"
- skill_governor:1 "Habilidade do Governador"
+ skill_governor:2 "Habilidade do Governador"
  skill_ruler:1 "Habilidade do Governante"
  leader_skills_spawn:0 ""
  inhibition_relase:0 "Liberação de Inibição"

@@ -4518,24 +4518,33 @@ country_event = {
 			remove_building = building_primitive_dwellings
 			remove_building = building_stone_palace
 			remove_building = building_primitive_farm
+			remove_building = building_primitive_mine
 			remove_building = building_primitive_factory
 			remove_building = building_primitive_capital
 			remove_building = building_urban_dwellings
-			add_district = district_city
-			add_district = district_city
-			add_district = district_city
-			add_district = district_city
-			add_district = district_farming
-			add_district = district_farming
-			add_district = district_farming
-			add_district = district_mining
-			add_district = district_mining
-			add_district = district_generator
-			add_district = district_generator
+			remove_building = building_urban_dwellings
+
 			add_building = building_capital
-			add_building = building_research_lab_1
-			add_building = building_foundry_1
-			add_building = building_factory_1
+			
+			if = {
+				limit = { NOT = { is_planet_class = pc_ringworld_habitable } }
+				add_district = district_city
+				add_district = district_city
+				add_district = district_city
+				add_district = district_city
+				add_district = district_farming
+				add_district = district_farming
+				add_district = district_farming
+				add_district = district_mining
+				add_district = district_mining
+				add_district = district_generator
+				add_district = district_generator
+
+				add_building = building_research_lab_1
+				add_building = building_foundry_1
+				add_building = building_factory_1
+			}
+						
 			event_target:primitive_civ = { destroy_country = yes }
 		}
 	}

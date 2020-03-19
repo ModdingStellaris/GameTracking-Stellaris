@@ -8,7 +8,7 @@
 
 namespace = ancrel
 
-#### Whispers in the Stone ###
+#### Whispers in the Stone ####
 # An Ancient civilization of Lithoids
 
 # Gate event

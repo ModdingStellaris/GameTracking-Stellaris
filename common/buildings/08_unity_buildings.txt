@@ -1316,21 +1316,22 @@ building_organic_sanctuary = {
 		}
 		modifier = {
 			weight = 100000
-			IF = { 
-				limit = {
-					NOR = { 
-						has_building = building_organic_sanctuary
-						has_building = building_organic_paradise
-					}
-				}
-				planet = {
-					owner = {
-						any_owned_pop = {
-							prevprev = { habitability = { who = prev value > 0.5 } }
-						}
-					}
-				}
+			OR = {
+				has_building = building_factory_1
+				has_building = building_factory_2
+				has_building = building_factory_3
 			}
+			NOR = { 
+				has_building = building_organic_sanctuary
+				has_building = building_organic_paradise
+			}
+			planet = {
+				owner = {
+					any_owned_pop = {
+						prevprev = { habitability = { who = prev value > 0.5 } }
+					}
+				}
+			}			
 		}
 	}
 }

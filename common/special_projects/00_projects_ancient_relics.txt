@@ -411,3 +411,34 @@ special_project = {
 	on_fail = {
 	}
 }
+
+# Grand Herald Repair
+special_project = {
+	key = "Herald_repair"
+	picture = GFX_evt_relic_shipyard
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+	cost = 25000
+	sound = no
+	tech_department = engineering_technology
+	location = no
+	timelimit = -1
+
+	event_scope = ship_event
+
+	requirements = {
+	}
+
+	abort_trigger = {
+	}
+
+	on_success = {
+		from = {
+			owner = { 
+				country_event = { id = ancrel.150 }
+			}
+		}
+	}
+
+	on_fail = {
+	}
+}

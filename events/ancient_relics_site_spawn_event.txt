@@ -22,7 +22,7 @@ ship_event = {
 
 	immediate = {
 		random_list = {
-			280 = {}
+			400 = {}
 			5 = {
 				modifier = {
 					factor = 0.2

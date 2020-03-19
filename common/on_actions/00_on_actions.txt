@@ -50,7 +50,7 @@ on_monthly_pulse = {
 		action.116 # enable resources for galactic market
 		pirate.48
 		pirate.4
-		utopia.2660 # Master Builders - expand habitats
+		utopia.2660 # Voidborn - expand habitats
 		crime.1000
 	}
 }
@@ -301,6 +301,7 @@ on_planet_attackers_win = {
 		unrest.171
 		distar.5077
 		ancrel.2068
+		ancrel.6499
 	}
 }
 
@@ -1051,7 +1052,7 @@ on_planet_zero_health_ground_combat = {
 	}
 }
 
-# Pop is abducted by raiding stsance
+# Pop is abducted by raiding stance
 # This = Pop scope
 # From = planet abducted from
 on_pop_abducted  = {

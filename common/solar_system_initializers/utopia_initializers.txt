@@ -858,7 +858,11 @@ ring_world_init_01 = {
 			IF = {
 				limit = { has_distar = yes }
 				random_list = {
-					50 = { add_anomaly = DISTAR_CLONE_CAT }
+					50 = { 
+						add_anomaly =  {
+							category = DISTAR_CLONE_CAT 
+						}
+					}
 					50 = {
 						#nothing
 					}

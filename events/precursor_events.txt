@@ -789,8 +789,9 @@ country_event = {
 			random_system_within_border = {
 				limit = { has_star_flag = precursor_1 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "vultaumar_system"
 				}
 			}
@@ -799,8 +800,9 @@ country_event = {
 			random_system = {
 				limit = { has_star_flag = precursor_1 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "vultaumar_system"
 				}
 			}
@@ -1696,8 +1698,9 @@ country_event = {
 			random_system_within_border = {
 				limit = { has_star_flag = precursor_2 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "yuhtaan_system"
 				}
 			}
@@ -1706,8 +1709,9 @@ country_event = {
 			random_system = {
 				limit = { has_star_flag = precursor_2 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "yuhtaan_system"
 				}
 			}
@@ -2868,8 +2872,9 @@ country_event = {
 			random_system_within_border = {
 				limit = { has_star_flag = precursor_3 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "fen_habbanis_system"
 				}
 			}
@@ -2878,8 +2883,9 @@ country_event = {
 			random_system = {
 				limit = { has_star_flag = precursor_3 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "fen_habbanis_system"
 				}
 			}
@@ -3866,8 +3872,9 @@ country_event = {
 			random_system_within_border = {
 				limit = { has_star_flag = precursor_4 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "irass_system"
 				}
 			}
@@ -3876,8 +3883,9 @@ country_event = {
 			random_system = {
 				limit = { has_star_flag = precursor_4 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "irass_system"
 				}
 			}
@@ -4860,8 +4868,9 @@ country_event = {
 			random_system_within_border = {
 				limit = { has_star_flag = precursor_5 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "cybrex_system"
 				}
 			}
@@ -4870,8 +4879,9 @@ country_event = {
 			random_system = {
 				limit = { has_star_flag = precursor_5 }
 				spawn_system = {
-					min_distance = 20
-					max_distance = 50
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
 					initializer = "cybrex_system"
 				}
 			}

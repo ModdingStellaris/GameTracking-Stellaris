@@ -969,7 +969,7 @@ maintenance_drone = {
 			}
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = 0.8
+			planet_amenities_no_happiness_add = 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -980,7 +980,7 @@ maintenance_drone = {
 			}
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = -0.8
+			planet_amenities_no_happiness_add = 1
 		}
 	}		
 	
@@ -991,11 +991,14 @@ maintenance_drone = {
 			OR = {
 				planet = { free_amenities < 7 }
 			has_job = maintenance_drone
-		}
+			}
 		}
 		modifier = {
 			factor = 2
-			has_trait = trait_charismatic
+			OR = {
+				has_trait = trait_robot_emotion_emulators
+				has_trait = trait_charismatic
+			}
 		}
 		modifier = {
 			factor = 0.5

@@ -615,3 +615,4 @@
  apoc.14.desc:0 "O local de construção para o Portal planejado no sistema §H[gateway_system.GetName]§! agora está pronto. Assim que tivermos os recursos necessários, a construção do Portal atual pode começar a qualquer momento."
  STATUS_QUO_CREATE_NEW_EMPIRE:0 "Um novo Império $SPECIES|Y$ será criado como aliado ou súdito do $ACTOR|Y$ de $SYSTEMS|H$ sistema(s) $TARGET|Y$ ocupado(s)"
  FLEET_TEMPLATE_EVENT_DESIGN:0 "Projeto de Evento"
+ STARBASE_BUILD_NOT_AN_OWNER:0 "§RNão é dono de uma base estelar!§!"

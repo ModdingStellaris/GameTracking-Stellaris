@@ -50,7 +50,7 @@ site_moon_bump = {
 	}
 }
 
-# The Appeal of Giant Space Worms
+# Echoes Inside
 site_echoes_inside = {
 	desc = "site_echoes_inside_intro"
 	picture = GFX_evt_arid
@@ -588,8 +588,13 @@ site_grand_herald = {
 	weight = {
 		base = 0
 		modifier = {
-			add = 60
-			uninhabitable_regular_planet = yes
+			add = 30
+			OR = {
+				is_planet_class = pc_nuked
+				is_planet_class = pc_desert
+				is_planet_class = pc_arid
+				is_planet_class = pc_savannah
+			}
 			has_ancrel = yes
 		}
 	}
@@ -632,7 +637,7 @@ site_grand_herald = {
 	}
 
 	stage = {
-		difficulty = 4
+		difficulty = 5
 		icon = GFX_archaeology_runes_C5
 		event = ancrel.9290
 	}

@@ -33,6 +33,7 @@ ship_event = {
 				has_star_flag = sol_system
 			}
 		}
+		NOT = { has_global_flag = baol_started }
 		FROM = { 
 			has_anomaly = no 
 			is_star = no
@@ -56,6 +57,7 @@ ship_event = {
 	}
 	
 	immediate = {
+		set_global_flag = baol_started
 		owner = { set_country_flag = baol_intro }
 		solar_system = { set_star_flag = first_grunur_site@root.owner }
 	}
@@ -507,8 +509,8 @@ fleet_event = {
 
 	option = {
 		name = "ancrel.2024.a"
+		medium_artifact_reward = yes
 		owner = {
-			add_resource = { minor_artifacts = 5 }
 			hidden_effect = {
 				country_event = { id = ancrel.2014 } #Spawns Last Baol System
 			}
@@ -537,6 +539,7 @@ country_event = {
 				spawn_system = {
 					min_distance = 10
 					max_distance = 30
+					max_jumps = 0
 					initializer = "last_baol_system"
 				}
 			}
@@ -547,6 +550,7 @@ country_event = {
 				spawn_system = {
 					min_distance = 10
 					max_distance = 30
+					max_jumps = 0
 					initializer = "last_baol_system"
 				}
 			}
@@ -1069,6 +1073,7 @@ fleet_event = { #City of Bones Stage 3
 			}
 		}
 		name = INTERESTING
+		medium_artifact_reward = yes
 		custom_tooltip = "ancrel.2043.b.tooltip"
 		owner = {
 			add_monthly_resource_mult = {
@@ -1206,6 +1211,7 @@ fleet_event = { #Stage 2
 
 	option = {
 		name = INTERESTING
+		small_artifact_reward = yes
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -1251,9 +1257,7 @@ fleet_event = { #Stage 4
 
 	option = {
 		name = INTERESTING
-		owner = {
-			add_resource = { minor_artifacts = 2 }
-		}
+		small_artifact_reward = yes
 	}
 }
 
@@ -1271,9 +1275,7 @@ fleet_event = { #Stage 5
 
 	option = {
 		name = UNFORTUNATE
-		owner = {
-			add_resource = { minor_artifacts = 2 }
-		}
+		small_artifact_reward = yes
 	}
 }
 
@@ -1767,6 +1769,7 @@ country_event = {
 	option = {
 		name = EXCELLENT
 		add_relic = r_the_defragmentor
+		add_resource = { minor_artifacts = 20 }
 	}
 }
 
@@ -1785,9 +1788,7 @@ fleet_event = {
 
 	option = {
 		name = INTRIGUING
-		owner = {
-			add_resource = { minor_artifacts = 2 }
-		}
+		small_artifact_reward = yes
 	}
 }
 
@@ -1806,9 +1807,7 @@ fleet_event = {
 
 	option = {
 		name = ASTOUNDING
-		owner = {
-			add_resource = { minor_artifacts = 2 }
-		}
+		small_artifact_reward = yes
 	}
 }
 

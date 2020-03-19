@@ -211,20 +211,25 @@ technician = {
 			factor = 1.1
 			has_trait = trait_nerve_stapled
 		}
-		modifier = {
-			factor = 500
-			planet = {
-				owner = {
-					is_megacorp = yes
-				}
-			}
-		}
+		
+		#modifier = {
+		#	factor = 500
+		#	planet = {
+		#		owner = {
+		#			is_megacorp = yes
+		#		}
+		#	}
+		#}
+
+		# low income modifier
 		modifier = {
 			factor = 1.2
+
+			is_unemployed = yes
 			owner = {
 				has_monthly_income = {
 					resource = energy
-					value < -1
+					value < 0
 				}
 			}
 		}
@@ -332,12 +337,16 @@ miner = {
 			factor = 1.1
 			has_trait = trait_nerve_stapled
 		}
+
+		# low income modifier
 		modifier = {
 			factor = 1.1
+
+			is_unemployed = yes
 			owner = {
 				has_monthly_income = {
 					resource = minerals
-					value < 20
+					value < 30
 				}
 			}
 		}
@@ -763,12 +772,16 @@ farmer = {
 			owner = { has_valid_civic = civic_agrarian_idyll }
 			has_trait = trait_repugnant
 		}
+
+		# low income modifier
 		modifier = {
 			factor = 1.2
+
+			is_unemployed = yes
 			owner = {
 				has_monthly_income = {
 					resource = food
-					value < -1
+					value < 0
 				}
 			}
 		}			

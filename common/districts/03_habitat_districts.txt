@@ -92,6 +92,11 @@ district_hab_energy = {
 		}
 	}
 
+	conversion_ratio = 0.5
+	convert_to = {
+		district_hab_commercial
+	}	
+
 	planet_modifier = {
 		planet_housing_add = 3
 	}
@@ -312,6 +317,11 @@ district_hab_commercial = {
 		exists = owner
 		owner = { is_gestalt = no }
 	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_hab_energy
+	}	
 	
 	resources = {
 		category = planet_districts_hab_trade
@@ -506,6 +516,11 @@ district_hab_cultural = {
 			}
 		}
 	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_hab_energy
+	}	
 	
 	resources = {
 		category = planet_districts_hab_leisure

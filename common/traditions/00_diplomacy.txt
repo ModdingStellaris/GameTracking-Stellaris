@@ -56,7 +56,37 @@ tr_diplomacy_adopt = {
 		modifier = {
 			factor = 3
 			has_ethic = ethic_fanatic_xenophile
-		}		
+		}
+
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_expansion_adopt
+					NOT = { has_tradition = tr_expansion_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
 	}
 }
 

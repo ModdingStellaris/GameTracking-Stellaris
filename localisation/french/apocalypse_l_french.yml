@@ -615,3 +615,4 @@
  apoc.14.desc:0 "Le site de construction pour le portail qui va être érigé dans le système de §H[gateway_system.GetName]§! est désormais en place. La construction du portail en lui-même pourra être lancée aussitôt toutes les ressources nécessaires rassemblées."
  STATUS_QUO_CREATE_NEW_EMPIRE:0 "Un nouvel empire va être créé pour l'espèce $SPECIES|Y$, allié et dépendant de la $ACTOR|Y$, à partir de $SYSTEMS|H$ systèmes occupés de la $TARGET|Y$."
  FLEET_TEMPLATE_EVENT_DESIGN:0 "Modèle d'événement"
+ STARBASE_BUILD_NOT_AN_OWNER:0 "§RBase stellaire non possédée.§!"

@@ -1,4 +1,13 @@
+################################
+#
+# Ancient Relics Events
+#
+# Written by David Ballantyne
+#
+################################
+
 namespace = ancrel
+
 # Zroni Introduction
 ship_event = {
 	id = ancrel.1
@@ -17,6 +26,7 @@ ship_event = {
 		owner = { is_ai = no }
 		solar_system = { has_star_flag = precursor_zroni_1 }
 		solar_system = { NOT = { is_same_value = root.owner.capital_scope.solar_system } }
+		NOT = { has_global_flag = zroni_started }
 		FROM = {
 			has_anomaly = no
 			NOT = { exists = archaeological_site }
@@ -37,6 +47,7 @@ ship_event = {
 	
 	immediate = {
 		owner = { set_country_flag = zroni_intro }
+		set_global_flag = zroni_started
 		solar_system = { set_star_flag = first_zoroni_site@root.owner }
 		from = { prevent_anomaly = yes }
 	}
@@ -68,13 +79,14 @@ fleet_event = {
 
 	option = {
 		name = ancrel.101.a
+		small_artifact_reward = yes
 	}
 }
 fleet_event = { 
 	id = ancrel.3
 	title = "ancrel.3.name"
 	desc = ancrel.3.desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_datacrystals
 	show_sound = event_whispering
 	location = from
 
@@ -135,6 +147,31 @@ fleet_event = {
 
 	option = {
 		name = OK
+		small_artifact_reward = yes
+		owner = {
+			IF = {
+				limit = {
+					is_regular_empire = yes
+					NOR = { 
+						has_technology = tech_psionic_theory
+						has_tech_option = tech_psionic_theory
+					}
+				}
+				add_research_option = tech_psionic_theory
+				add_tech_progress = {
+					tech = tech_psionic_theory
+					progress = 0.25
+				}
+			}
+			ELSE = {
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier4researchreward
+					min = @tier4researchmin
+					max = @tier4researchmax
+				}
+			}
+		}
 	}
 }
 
@@ -203,6 +240,7 @@ fleet_event = {
 
 	option = {
 		name = OK
+		small_artifact_reward = yes
 	}
 }
 
@@ -271,6 +309,7 @@ fleet_event = {
 
 	option = {
 		name = OK
+		small_artifact_reward = yes
 	}
 }
 
@@ -278,7 +317,7 @@ fleet_event = {
 	id = ancrel.9
 	title = zroni_digsite_2
 	desc = ancrel.9.desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_datacrystals
 	show_sound = event_whispering
 	location = from
 
@@ -338,7 +377,8 @@ fleet_event = {
 	}
 
 	option = {
-		name = INTRIGUING  
+		name = INTRIGUING 
+		small_artifact_reward = yes		
 	}
 }
 
@@ -388,6 +428,7 @@ fleet_event = {
 
 	option = {
 		name = ancrel.13.a
+		medium_artifact_reward = yes
 		owner = {
 			set_global_flag = Zrocursor_system_discovered
 			set_country_flag = last_zroni_system
@@ -400,6 +441,7 @@ fleet_event = {
 					spawn_system = {
 						min_distance = 10
 						max_distance = 30
+						max_jumps = 0
 						initializer = "Zrocursor_system"
 					}
 				}
@@ -410,6 +452,7 @@ fleet_event = {
 					spawn_system = {
 						min_distance = 10
 						max_distance = 30
+						max_jumps = 0
 						initializer = "Zrocursor_system"
 					}
 				}
@@ -486,7 +529,7 @@ fleet_event = {
 	id = ancrel.19
 	title = "ancrel.3.name"
 	desc = ancrel.19.desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_datacrystals
 	show_sound = event_finding_loot
 	location = from
 
@@ -496,6 +539,7 @@ fleet_event = {
 
 	option = {
 		name = ancrel.19.a
+		large_artifact_reward = yes
 		owner = {
 			add_relic = r_zro_crystal
 			set_country_flag = dust_off_achievement
@@ -518,6 +562,7 @@ fleet_event = {
 
 	option = {
 		name = ancrel.4000.a
+		small_artifact_reward = yes
 	}
 }
 
@@ -552,6 +597,7 @@ fleet_event = {
 
 	option = {
 		name = ancrel.9.a
+		small_artifact_reward = yes
 	}
 }
 
@@ -569,6 +615,7 @@ fleet_event = {
 
 	option = {
 		name = EXCELLENT
+		large_artifact_reward = yes
 		owner = {
 			add_relic = r_omnicodex
 		}
@@ -671,9 +718,7 @@ fleet_event = { #Contents revealed
 	}
 	
 	after = {
-		owner = {
-			add_resource = { minor_artifacts = 4 }
-		}
+		medium_artifact_reward = yes
 	}
 }
 
@@ -724,7 +769,7 @@ fleet_event = {
 
 	option = {
 		name = OK
-		
+		medium_artifact_reward = yes
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -740,7 +785,9 @@ fleet_event = {
 					is_colony = no
 				}
 				#set_planet_flag = test_flag
-				add_anomaly = ANCREL_ARC_CAT
+				add_anomaly =  {
+					category = ANCREL_ARC_CAT
+				}
 			}
 		}
 	}
@@ -828,7 +875,7 @@ ship_event = { #
 			FROM = { has_planet_flag = aliens_site_aliens }
 		}
 		owner = {
-			#add_research_option = tech_sensors_4
+			add_research_option = tech_sensors_4
 			add_tech_progress = {
 				tech = tech_sensors_4 #TODO David: What if they have this? give some points
 				progress = 0.5
@@ -841,7 +888,7 @@ ship_event = { #
 			FROM = { has_planet_flag = aliens_site_badaliens }
 		}
 		owner = {
-			#add_research_option = tech_combat_training
+			add_research_option = tech_combat_training
 			add_tech_progress = {
 				tech = tech_combat_training #TODO David: What if they have this? give some points
 				progress = 0.75
@@ -857,6 +904,7 @@ ship_event = { #
 			remove_planet_flag = aliens_site_aliens
 			remove_planet_flag = aliens_site_badaliens
 		}
+		medium_artifact_reward = yes
 	}
 }
 
@@ -953,8 +1001,17 @@ fleet_event = { #Contents revealed
 	}
 	
 	after = {
-		owner = {
-			add_resource = { minor_artifacts = 4 }
-		}
+		medium_artifact_reward = yes
 	}
+}
+
+country_event = {
+    id = ancrel.150
+    hide_window = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+       owner = { remove_herald_damage = yes }
+    }
 }

@@ -210,7 +210,7 @@
  tutorial.43.name:0 "Marynarka wojenna rozbudowana"
  tutorial.43.desc:0 "Dobrze! Teraz mamy niewielką, ale sprawną flotę kosmiczną, która powinna poradzić sobie w razie niespodziewanych spotkań w wrogami."
  tutorial.44.name:0 "Samouczek: zakładanie sektora"
- tutorial.44.desc:0 "Nasze rozkwitające imperium osiągnęło już rozmiary utrudniające zarządzanie nim bezpośrednio z naszego świata macierzystego. Powinniśmy założyć nowy §Ssektor§!.\n\nSektory to częściowo autonomiczne podmioty naszego imperium, które niezależnie zarządzają codziennymi sprawami planet znajdujących się pod ich jurysdykcją."
+ tutorial.44.desc:1 "Nasze rozkwitające imperium osiągnęło już rozmiary utrudniające zarządzanie nim bezpośrednio z naszego świata macierzystego. Powinniśmy założyć nowy §Ssektor§!.\n\nSektory to obszary naszego imperium, którym można pozwolić na niezależne zarządzanie codziennymi sprawami planet znajdujących się pod ich jurysdykcją."
  tutorial.45.name:0 "Sektor założony"
  tutorial.45.desc:2 "W miarę rozwoju naszego imperium nowe kolonie mogą być organizowane w §Ssektory§!. Sektorami można zarządzać automatycznie za pośrednictwem ekranu §Splanet i sektorów§!. Mogą one automatycznie budować i ulepszać dzielnice oraz budynki przy użyciu przydzielonych zasobów."
  tutorial.46.name:0 "Samouczek: zarządca sektora"

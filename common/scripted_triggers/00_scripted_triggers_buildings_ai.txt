@@ -37,6 +37,10 @@ country_uses_food = {
 		NOT = { has_authority = auth_machine_intelligence }
 		has_valid_civic = civic_machine_servitor
 		has_valid_civic = civic_machine_assimilator
+		AND = {
+			has_authority = auth_machine_intelligence
+			NOT = { has_valid_civic = civic_machine_terminator }
+		}
 	}
 }
 

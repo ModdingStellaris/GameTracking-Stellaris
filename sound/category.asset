@@ -601,7 +601,7 @@ category = {
 
 	tut_msg_ARCHAEOLOGY_VIEW
 	tut_msg_NUDGE_VIEW
-	tut_RELICS_VIEW
+	tut_msg_RELICS_VIEW
 	tut_msg_FRONTIER_PLANET
 
 	########## LIMITED TUTORIAL

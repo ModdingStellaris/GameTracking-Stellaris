@@ -852,7 +852,12 @@ building_holo_theatres = {
 		modifier = {
 			factor = 0
 			OR = {
-				free_amenities > 30
+				free_amenities > 20
+
+				# we shouldn't be building more than one of these
+				has_building = building_holo_theatres
+				has_building = building_hyper_entertainment_forum
+
 				AND = {
 					count_pops = { limit = { is_sapient = yes } count < 75 }
 					owner = {

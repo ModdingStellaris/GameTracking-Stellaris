@@ -3911,7 +3911,9 @@ distar_sealed_1_2 = {
 					angle = random
 				}
 			}
-			add_anomaly = DISTAR_MED_CAT
+			add_anomaly =  {
+				category = DISTAR_MED_CAT
+			}
 		}
 	}
 
@@ -4023,7 +4025,9 @@ distar_pod_system = {
 		class = "pc_gas_giant"
 		orbit_angle = { min = 90 max = 270 }
 		init_effect = {
-			add_anomaly = DISTAR_POD_CAT
+			add_anomaly =  {
+				category = DISTAR_POD_CAT
+			}
 			while = {
 				count = 10
 				create_ambient_object = {

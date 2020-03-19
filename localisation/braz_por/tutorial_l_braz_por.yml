@@ -169,7 +169,7 @@
  tutorial.43.name:0 "Tamanho da Marinha aumentado"
  tutorial.43.desc:0 "Bom! Agora temos uma frota espacial pequena, mas capaz, que deve nos servir bem caso haja algum encontro hostil inesperado."
  tutorial.44.name:0 "Tutorial: Estabelecer Setor"
- tutorial.44.desc:0 "Nosso império em crescimento agora atingiu um tamanho no qual está cada vez mais difícil administrá-lo diretamente de nosso planeta natal. Devemos estabelecer um novo §SSetore§!.\n\nSetores são entidades semi-autônomas dentro de nosso império que gerenciam de maneira independente o dia a dia dos planetas sob a sua jurisdição"
+ tutorial.44.desc:1 "Nosso império em crescimento agora atingiu um tamanho no qual está cada vez mais difícil administrá-lo diretamente de nosso planeta natal. Devemos estabelecer um novo §SSetor§!.\n\nSetores são áreas dentro de nosso império que podem ser configuradas para gerenciar de maneira independente o dia a dia dos planetas sob a sua jurisdição."
  tutorial.45.name:0 "Setor estabelecido"
  tutorial.45.desc:2 "Conforme nosso império cresce, novas colônias podem ser organizadas em §SSetores§!. Setores podem ser automatizados na tela §SPlanetas e Setores§! para automaticamente construir e aprimorar Distritos e Construções usando reservas designadas de recursos."
  tutorial.46.name:0 "Tutorial: Governador do Setor"

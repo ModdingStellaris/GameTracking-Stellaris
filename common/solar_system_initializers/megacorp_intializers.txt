@@ -1,6 +1,6 @@
 @base_moon_distance = 10
-@caravaneerfleetlaunch1 = 9000 # 25 years
-@caravaneerfleetlaunch2 = 14400 # 40 years
+@caravaneerfleetlaunch1 = 9 #000 # 25 years
+@caravaneerfleetlaunch2 = 14 #400 # 40 years
 
 # Caravaneers
 megacorp_caravaneer_init = {

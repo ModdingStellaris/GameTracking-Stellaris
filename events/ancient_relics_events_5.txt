@@ -1,3 +1,11 @@
+################################
+#
+# Ancient Relics Events
+#
+# Written by Daniel Moregård
+#
+################################
+
 namespace = ancrel
 
 ### Archaeology: Command Center

@@ -4,7 +4,7 @@
 #
 # Written by Henrik Thyrwall
 #
-###############################
+################################
 
 namespace = ancrel
 
@@ -856,6 +856,9 @@ country_event = {
 	
 	option = {
 		name = ancrel.6130.a
+		add_modifier = {
+			modifier = chosen_of_zarqlan
+		}
 	}
 }
 
@@ -1014,6 +1017,7 @@ ship_event = {
 	
 	option = {
 		name = CURIOUS
+		small_artifact_reward = yes
 		event_target:minigalaxy_moon = {
 			surveyed = {
   				set_surveyed = yes
@@ -1611,4 +1615,93 @@ fleet_event = {
 		name = CURIOUS
 		large_artifact_reward = yes
 	}
+}
+
+### RELIC THEFT
+
+# Relic Acquired (HIDDEN)
+country_event = {
+	id = ancrel.6499
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		From = {
+			is_country_type = default
+			num_owned_relics > 0 
+		}
+		FromFrom = { is_capital = yes }
+		any_war = {
+			any_attacker = { is_same_value = root }
+			any_defender = { is_same_value = prev }
+			NOT = {
+				using_war_goal = {
+					type = wg_take_galatron
+					owner = attacker
+				}
+			}
+		}
+	}
+
+	immediate = {
+		FromFrom = { save_event_target_as = planet }
+		From = { save_event_target_as = victim }
+		random_list = {
+			100 = {}
+			10 = {
+				modifier = {
+					factor = 1.5
+					has_valid_civic = civic_barbaric_despoilers
+				}
+				country_event = { id = ancrel.6500 }
+			}
+		}
+	}
+}
+
+# Relic Acquired
+country_event = {
+	id = ancrel.6500
+	title = "ancrel.6500.name"
+	desc = "ancrel.6500.desc"
+	picture = GFX_evt_victorious_army
+	show_sound = event_ground_battle
+	location = event_target:planet
+
+	is_triggered_only = yes
+
+	immediate = {
+		steal_relic = {
+			target = event_target:victim
+			relic = random
+		}
+	}
+
+	option = {
+		name = ancrel.6500.a
+		custom_tooltip = stole_relic
+		hidden_effect = {
+			event_target:victim = {
+				country_event = { id = ancrel.6505 }
+			}
+		}
+	}	
+}
+
+# Relic Lost
+country_event = {
+	id = ancrel.6505
+	title = "ancrel.6505.name"
+	desc = "ancrel.6505.desc"
+	picture = GFX_evt_ground_combat
+	show_sound = event_ground_battle
+	location = event_target:planet
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.6505.a
+		custom_tooltip = relic_lost
+	}	
 }
