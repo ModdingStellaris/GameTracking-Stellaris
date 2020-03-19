@@ -549,6 +549,11 @@ spriteTypes = {
 		name = "GFX_chat_icon"
 		texturefile = "gfx/interface/icons/chat_icon.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_socialview_icon"
+		texturefile = "gfx/interface/icons/pi_icon.dds"
+	}
 
 	spriteType = {
 		name = "GFX_home_icon"

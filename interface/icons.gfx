@@ -909,6 +909,11 @@ spriteTypes = {
 		name = "GFX_message_auto_explore_canceled"
 		texturefile = "gfx/interface/icons/message/message_auto_explore_canceled.dds"
 	}
+
+	spriteType = {
+		name = "GFX_expand_icon"
+		texturefile = "gfx/interface/icons/expand_icon.dds"
+	}
 	
 #	spriteType = {
 #		name = "GFX_"

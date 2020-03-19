@@ -876,6 +876,42 @@ objectTypes = {
 		scale = 1.0
 	}
 	
+	######
+	# Caravaneer
+	######
+	
+	
+		pdxparticle = {
+		name = "caravaneer_01_0_8_ship_exhaust_moving"
+		type = "caravaneer_01_ship_exhaust_file"
+		scale = 0.80
+	}
+	
+	pdxparticle = {
+		name = "caravaneer_01_1_0_ship_exhaust_moving"
+		type = "caravaneer_01_ship_exhaust_file"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "caravaneer_01_1_2_ship_exhaust_moving"
+		type = "caravaneer_01_ship_exhaust_file"
+		scale = 1.20
+	}
+	
+	pdxparticle = {
+		name = "caravaneer_01_1_6_ship_exhaust_moving"
+		type = "caravaneer_01_ship_exhaust_file"
+		scale = 1.60
+	}
+	
+	pdxparticle = {
+		name = "caravaneer_01_2_2_ship_exhaust_moving"
+		type = "caravaneer_01_ship_exhaust_file"
+		scale = 2.20
+	}
+	
+	
 	
 	
 	

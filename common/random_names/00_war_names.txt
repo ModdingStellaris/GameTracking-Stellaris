@@ -138,14 +138,14 @@ war_name_parts_list = {
 war_name_parts_list = {
 	key = "machine_uprising_war_names"
 	parts = {
-		"Machine_Uprising"
+		"Machine_Uprising" = 1
 	}
 }
 
 war_name_parts_list = {
 	key = "war_in_heaven_war_names"
 	parts = {
-		"The_War_in_Heaven"
+		"The_War_in_Heaven" = 1
 	}
 }
 

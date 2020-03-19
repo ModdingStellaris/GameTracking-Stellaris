@@ -6,7 +6,7 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" 
-	
+		
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_01" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_02" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_03" } }
@@ -37,6 +37,8 @@ entity = {
 entity = {
 	name = "mammalian_01_titan_bow_entity"
 	pdxmesh = "mammalian_01_titan_bow_mesh"
+	locator = { name = "root"				position = { 0	0  0 } }
+
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -45,6 +47,7 @@ entity = {
 		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
+	attach = { "root" = "mammalian_01_titan_glow_effect_mesh_entity" }
 	state = { name = "death" state_time = 5 looping = no }
 }
 
@@ -75,4 +78,18 @@ entity = {
 		start_event = { node = "engine_large_03" particle = "mammalian_01_3_35_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "death" state_time = 5 looping = no }
+}
+
+
+entity = {
+	name = "mammalian_01_titan_glow_effect_mesh_entity"
+	pdxmesh = "mammalian_01_titan_glow_effect_mesh"
+		
+		game_data = {
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { 0.4 -1.0 }
+		bloom_factor = 1.5
+	}
+	
+	scale = 1
 }

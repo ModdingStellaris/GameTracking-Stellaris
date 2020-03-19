@@ -15,7 +15,7 @@ guiTypes = {
 			font = "malgun_goth_24"
 			text = "Achievement unlocked!"
 			position = { x = 10 y = 0 }
-			maxWidth = 550
+			maxWidth = 450
 			maxHeight = 20
 			fixedSize = yes
 			orientation = "UPPER_LEFT"
@@ -53,6 +53,19 @@ guiTypes = {
 			text = "Earn a mineral income each month above 1000"
 			format = left
 		}
+
+		# Invisible button over the main area of the view so that we can click on anything to activate more info
+		containerWindowType = {
+			name = "mainwindow_overlay"
+			position = { x=0 y=0 }    
+			size = { width=460 height=128 }
+
+			background = {
+				name = "mainwindow_overlay_bg"
+				quadTextureSprite = "gfx_transparency_button"
+				#alwaysTransparent = yes
+			}
+       	}
 	}
 		
 	containerWindowType = {

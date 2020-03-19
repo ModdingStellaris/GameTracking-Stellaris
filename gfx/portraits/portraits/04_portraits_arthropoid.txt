@@ -190,6 +190,14 @@ portraits = {
 					"gfx/models/portraits/arthropoid/arthropoid_19_black.dds"
 			}
 	}
+	art19 = {	entity = "portrait_arthropoid_19_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "arthopoid_greetings_mp" 
+			character_textures = {
+					"gfx/models/portraits/arthropoid/arthropoid_19_green.dds"
+					"gfx/models/portraits/arthropoid/arthropoid_19_red.dds"
+					"gfx/models/portraits/arthropoid/arthropoid_19_gold.dds"
+					"gfx/models/portraits/arthropoid/arthropoid_19_black.dds"
+			}
+	}
 	art20 = {	entity = "portrait_arthropoid_20_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "greetings_arthopoid_special" 
 			character_textures = {
 					"gfx/models/portraits/arthropoid/arthropoid_20_green.dds"
@@ -197,7 +205,7 @@ portraits = {
 					"gfx/models/portraits/arthropoid/arthropoid_20_yellow.dds"
 					"gfx/models/portraits/arthropoid/arthropoid_20_purple.dds"
 			}
-	}	
+	}
 }
 
 portrait_groups = {

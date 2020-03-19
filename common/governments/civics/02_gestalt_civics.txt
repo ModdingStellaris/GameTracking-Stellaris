@@ -125,6 +125,9 @@ civic_machine_servitor = {
 			has_global_flag = game_started
 		}
 	}
+	modifier = {
+		pop_growth_speed_reduction = 0.5
+	}
 	description = civic_tooltip_machine_servitor_effects
 	has_secondary_species = {	# see game_start.11
 		title = civic_machine_servitor_secondary_species
@@ -171,7 +174,7 @@ civic_machine_assimilator = {
 	}
 	modification = no
 	modifier = {
-		pop_growth_speed = -0.4
+		pop_growth_speed_reduction = 0.5
 	}
 	random_weight = {
 		base = 5

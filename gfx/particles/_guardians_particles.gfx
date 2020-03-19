@@ -67,6 +67,18 @@ objectTypes = {
 	}
 	
 	pdxparticle = {
+		name = "dragon_wing_projectile_particle_orig"
+		type = "dragon_wing_projectile_orig"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "dragon_wing_hit_effect_orig"
+		type = "dragon_wing_hit_effect_orig"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
 		name = "dragon_weapon_hit_effect"
 		type = "dragon_weapon_hit_effect"
 		scale = 1.0

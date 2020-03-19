@@ -3002,7 +3002,7 @@
  mod_planet_jobs_alloys_produces_mult:0 "£alloys£ $alloys$ por £job£ trabajos"
  mod_diplomacy_upkeep_mult:1 "Coste de influencia diplomática"
  mod_pop_factions_influence_produces_mult:0 "Ganancia de influencia de facción"
- mod_pop_factions_influence_produces_add:0 "Facción de población £influence£ Generación de $influence$"
+ mod_pop_factions_influence_produces_add:0 "$mod_pop_factions_influence_produces_mult$"
  criminal_gambling:0 "Juego problemático"
  criminal_gambling_desc:0 "Como se han gastado sus ahorros jugando, necesitan nuevas fuentes de financiación."
  festival_aftermath:0 "Después del festival"

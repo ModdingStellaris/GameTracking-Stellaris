@@ -12,6 +12,112 @@ guiTypes = {
 			size = { x = 1280 y = 720 }
 		}
 	}
+	
+	containerWindowType = {
+		name = "frontend_background_view"
+		position = { x= 0 y= 0 }
+		size = { width = 100% height = 100%}
+		orientation = center_down
+		
+		containerWindowType = {
+			name = "buttons"
+			position = { x=17 y=0 }	
+			
+			#containerWindowType = {
+			#	name = "social_view_interface_window"
+			#	position = { x=196 y=-67  }
+			#	size = { width=60 height=30 }
+				
+			#	buttonType = {
+			#		name = "toggle_button"
+			#		quadTextureSprite = "GFX_button_60_29"
+			#		position = { x=0 y=0  }
+			#	}
+				
+			#	iconType = {
+			#		name = "button_toggle_socialview_icon"
+			#		spriteType = "GFX_socialview_icon"
+			#		position = { x= 15 y = 10 }
+			#		alwaystransparent = yes
+			#	}
+				
+			#	instantTextBoxType={
+			#		name = "friends_online"
+			#		font = "cg_16b"
+			#		position = { x= 35 y= 18 }
+			#		text = "0"
+			#		maxWidth = 30
+			#		maxHeight = 16
+			#		alwaysTransparent = yes
+			#		format = center
+			#	}
+				
+			#	iconType = {
+			#		name = "new_message"
+			#		position = { x = 57 y = 8 }
+			#		spriteType = "GFX_new_message_icon"
+			#		pdx_tooltip = "SOCIAL_NEW_MESSAGE"
+			#	}
+				
+			#	iconType = {
+			#		name = "new_friend"
+			#		position = { x = 57 y = 20 }
+			#		spriteType = "GFX_new_friend_icon"
+			#		pdx_tooltip = "SOCIAL_NEW_FRIEND"
+			#	}
+			#}				
+
+			@links_y = -55
+			
+			
+			buttonType =	{
+				name = "privacy"
+				quadTextureSprite = "GFX_front_menu_privacy"
+				position = { x= 280 y = @links_y  }
+				pdx_tooltip = "PRIVACY_POLICY"
+			}
+			
+			buttonType =	{
+				name = "pi_achievements"
+				quadTextureSprite = "GFX_front_menu_achievements"
+				position = { x= 320 y = @links_y  }
+				pdx_tooltip = "ACHIEVEMENTS"
+			}
+
+			buttonType =	{
+				name = "homepage"
+				quadTextureSprite = "GFX_front_menu_homepage"
+				position = { x= 360 y = @links_y  }
+				pdx_tooltip = "HOMEPAGE"
+				web_link="http://www.stellarisgame.com/"
+			}
+		
+			buttonType =	{
+				name = "forum"
+				quadTextureSprite = "GFX_front_menu_forum"
+				position = { x= 400 y = @links_y  }
+				pdx_tooltip = "FORUM"
+				web_link="https://forum.paradoxplaza.com/forum/index.php?forums/stellaris.900/"
+			}
+		
+			buttonType =	{
+				name = "facebook"
+				quadTextureSprite = "GFX_front_menu_facebook"
+				position = { x= 440 y = @links_y }
+				pdx_tooltip = "FACEBOOK"
+				web_link="https://www.facebook.com/StellarisGame"
+			}
+		
+			buttonType =	{
+				name = "twitter"
+				quadTextureSprite = "GFX_front_menu_twitter"
+				position = { x= 480 y = @links_y  }
+				pdx_tooltip = "TWITTER"
+				web_link="http://twitter.com/StellarisGame"
+			}
+		}
+	}
+	
 	containerWindowType = {
 		name = "frontendgui"
 		position = { x= 0 y= 0 }
@@ -229,47 +335,6 @@ guiTypes = {
 					fixedSize = yes
 					format = left
 					alwaysTransparent = yes
-				}
-		
-				@links_y = -55
-
-				buttonType =	{
-					name = "privacy"
-					quadTextureSprite = "GFX_front_menu_privacy"
-					position = { x= 320 y = @links_y  }
-					pdx_tooltip = "PRIVACY_POLICY"
-				}
-			
-				buttonType =	{
-					name = "homepage"
-					quadTextureSprite = "GFX_front_menu_homepage"
-					position = { x= 360 y = @links_y  }
-					pdx_tooltip = "HOMEPAGE"
-					web_link="http://www.stellarisgame.com/"
-				}
-			
-				buttonType =	{
-					name = "forum"
-					quadTextureSprite = "GFX_front_menu_forum"
-					position = { x= 400 y = @links_y  }
-					pdx_tooltip = "FORUM"
-					web_link="https://forum.paradoxplaza.com/forum/index.php?forums/stellaris.900/"
-				}
-			
-				buttonType =	{
-					name = "facebook"
-					quadTextureSprite = "GFX_front_menu_facebook"
-					position = { x= 440 y = @links_y }
-					pdx_tooltip = "FACEBOOK"
-					web_link="https://www.facebook.com/StellarisGame"
-				}
-			
-				buttonType =	{
-					name = "twitter"
-					quadTextureSprite = "GFX_front_menu_twitter"
-					position = { x= 480 y = @links_y  }
-					pdx_tooltip = "TWITTER"
-					web_link="http://twitter.com/StellarisGame"
 				}
 			}			
 					

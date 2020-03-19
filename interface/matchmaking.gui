@@ -154,7 +154,24 @@ guiTypes = {
 				maxHeight = 24			
 				font = "cg_16b"
 				text = "MATCHMAKING_FILTER_VERSION"	
+			}
+
+			checkboxType = {
+				name = "filter_crossplay"
+				position = { x= 761 y = @filterbuttonY }
+				quadTextureSprite ="GFX_checkbox_20_20_01"
+			}		
+			
+			instantTextBoxType={
+				name = "filter_crossplay_title"
+				position = { x= 796 y = @fileter_titleY}
+				borderSize = {x = 0 y = 0}				
+				maxWidth = 256
+				maxHeight = 24			
+				font = "cg_16b"
+				text = "MATCHMAKING_FILTER_CROSSPLAY"	
 			}				
+				
 			
 			editBoxType = {
 				position = { x = 1000 y = 108  }

@@ -4,6 +4,7 @@
 #
 # weight_modifier - scope = leader, from = country
 # modifier
+#
 
 
 agenda_defensive_focus = {

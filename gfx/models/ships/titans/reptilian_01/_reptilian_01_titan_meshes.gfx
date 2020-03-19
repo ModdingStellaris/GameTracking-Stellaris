@@ -49,4 +49,18 @@ objectTypes = {
 			shader = "PdxMeshShip"
 		}
 	}
+
+	pdxmesh = {
+		name = "reptilian_01_titan_weapon_effect_mesh"
+		file = "gfx/models/ships/titans/reptilian_01/reptilian_01_titan_weapon_effect.mesh"
+
+		meshsettings = {
+			name = "reptilian_01_titan_weapon_effectShape"
+			index = 0
+			texture_diffuse = "reptilian_01_titan_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
 }

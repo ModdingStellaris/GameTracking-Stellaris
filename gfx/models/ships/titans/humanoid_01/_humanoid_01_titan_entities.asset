@@ -36,12 +36,14 @@ entity = {
 entity = {
 	name = "humanoid_01_titan_bow_entity"
 	pdxmesh = "humanoid_01_titan_bow_mesh"
+	locator = { name = "root"				position = { 0	0  0 } }
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
+	attach = { "root" = "humanoid_01_titan_glow_effect_mesh_entity" }
 	state = { name = "death" state_time = 5 looping = no }
 }
 
@@ -77,4 +79,17 @@ entity = {
 		start_event = { node = "engine_large_01" particle = "mammalian_01_8_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "death" state_time = 5 looping = no }
+}
+
+entity = {
+	name = "humanoid_01_titan_glow_effect_mesh_entity"
+	pdxmesh = "humanoid_01_titan_glow_effect_mesh"
+		
+		game_data = {
+		uv_animation_speed 		= .09
+		uv_animation_direction 	= { 0.4 -1.0 }
+		bloom_factor = 1
+	}
+	
+	scale = 1
 }

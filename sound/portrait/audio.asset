@@ -1,0 +1,39 @@
+category = {
+ name = "Effects"
+ soundeffects = {
+	arthopoid_greetings_mp
+ }
+}
+
+soundeffect = {
+	name = arthopoid_greetings_mp
+	sounds = {
+		sound = arthopoid_greetings_mp_01
+		sound = arthopoid_greetings_mp_02
+		sound = arthopoid_greetings_mp_03
+		sound = arthopoid_greetings_mp_04
+
+	}  
+	#volume = 0.75
+}
+
+sound =
+{
+	name = "arthopoid_greetings_mp_01"
+	file = "arthopoid_greetings_mp_01.wav"
+}
+sound =
+{
+	name = "arthopoid_greetings_mp_02"
+	file = "arthopoid_greetings_mp_02.wav"
+}
+sound =
+{
+	name = "arthopoid_greetings_mp_03"
+	file = "arthopoid_greetings_mp_03.wav"
+}
+sound =
+{
+	name = "arthopoid_greetings_mp_04"
+	file = "arthopoid_greetings_mp_04.wav"
+}

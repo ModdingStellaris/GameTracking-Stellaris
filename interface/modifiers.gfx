@@ -416,6 +416,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
 	}
 	spriteType = {
+		name = "GFX_mod_colonies_mult"
+		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
+	}
+	spriteType = {
 		name = "GFX_mod_ships_mult"
 		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
 	}

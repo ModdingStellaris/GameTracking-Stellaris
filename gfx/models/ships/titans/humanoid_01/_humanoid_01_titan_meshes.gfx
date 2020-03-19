@@ -49,4 +49,19 @@ objectTypes = {
 			shader = "PdxMeshShip"
 		}
 	}
+	
+	pdxmesh = {
+		name = "humanoid_01_titan_glow_effect_mesh"
+		file = "gfx/models/ships/titans/humanoid_01/humanoid_01_titan_effect.mesh"
+
+		meshsettings = {
+			name = "humanoid_01_titan_effectShape"
+			index = 0
+			texture_diffuse = "humanoid_01_titan_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
 }

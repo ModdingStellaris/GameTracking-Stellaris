@@ -95,7 +95,11 @@ building_hydroponics_farm = {
 		weight = 0
 		modifier = {
 			weight = 500
-			NOT = { is_planet_class = pc_habitat }
+			NOR = {
+				is_planet_class = pc_habitat
+				is_planet_class = pc_city
+				is_planet_class = pc_relic
+			}
 			OR = {
 				free_jobs < 3
 				buildings_unemployed = yes
@@ -131,11 +135,7 @@ building_hydroponics_farm = {
 				free_jobs < 3
 				buildings_unemployed = yes
 			}
-			OR = {
-				is_planet_class = pc_habitat
-				is_planet_class = pc_city
-				is_planet_class = pc_relic
-			}
+			is_planet_class = pc_habitat
 			OR = {
 				owner = {
 					OR = {
@@ -154,19 +154,6 @@ building_hydroponics_farm = {
 					}
 				}
 				has_building = building_hydroponics_farm
-			}
-		}
-		modifier = {
-			factor = 0
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value > 1
-				}
-			}
-			OR = {
-				is_planet_class = pc_city
-				is_planet_class = pc_relic
 			}
 		}
 	}
@@ -296,14 +283,17 @@ building_food_processing_center = {
 	}
 	
 	destroy_trigger = {
-		owner = { is_ai = yes }
 		OR = {
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-		}
-		OR = {
-			num_districts = { type = district_farming value < 6 }
-			num_districts = { type = district_farming_uncapped value < 6 }
+			AND = {
+				owner = { is_ai = yes }
+				OR = {
+					num_districts = { type = district_farming value < 6 }
+					num_districts = { type = district_farming_uncapped value < 6 }
+					buildings_no_motes = yes
+				}
+			}
 		}
 	}
 
@@ -359,14 +349,10 @@ building_food_processing_center = {
 	}	
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 0
-			buildings_has_motes = no
-		}
-		modifier = {
-			factor = 0
-			owner = { has_country_flag = buildings_new_mote_building }
+			weight = 1
+			buildings_has_motes = yes
 		}
 	}
 
@@ -376,9 +362,24 @@ building_food_processing_center = {
 			always = yes
 		}
 	}
-	on_built = {
-		planet = { 
-			owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 480 } }
+
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 270 } }
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 390 } }
+		}
+		ELSE = {
+			planet = { 
+				owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 510 } }
+			}
 		}
 	}
 }
@@ -497,23 +498,22 @@ building_mineral_purification_plant = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			NOT = { free_district_slots = 0 }
-			buildings_build_building = no
-		}
-		# No one to work it
-		modifier = {
-			factor = 0
-			count_owned_pops = { 
-				limit = { 
-					OR = { 
-						is_unemployed = yes 
-						has_job = servant 
+			weight = 91000
+			NOR = {
+				is_planet_class = pc_city
+				is_planet_class = pc_relic
+			}
+			OR = {
+				districts_good_minerals = yes
+				num_districts = { type = district_mining value > 4 }
+				owner = {
+					has_monthly_income = {
+						resource = minerals
+						value < 0
 					}
 				}
-				count < 1
 			}
 		}
 	}
@@ -533,6 +533,10 @@ building_mineral_purification_hub = {
 	
 	allow = {
 		has_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		buildings_no_motes = yes
 	}
 		
 	planet_modifier = {
@@ -629,15 +633,10 @@ building_mineral_purification_hub = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 0
-			buildings_has_motes = no
-		}
-		# No one to work it
-		modifier = {
-			factor = 0
-			owner = { has_country_flag = buildings_new_mote_building }
+			weight = 1
+			buildings_has_motes = yes
 		}
 	}
 
@@ -647,9 +646,24 @@ building_mineral_purification_hub = {
 			always = yes
 		}
 	}
-	on_built = {
-		planet = { 
-			owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 480 } }
+
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 270 } }
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 390 } }
+		}
+		ELSE = {
+			planet = { 
+				owner = { set_timed_country_flag = { flag = buildings_new_mote_building days = 510 } }
+			}
 		}
 	}
 }
@@ -767,10 +781,13 @@ building_energy_grid = {
 	}
 	
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
-			factor = 0
-			is_planet_class = pc_city
+			weight = 5
+			NOR = {
+				is_planet_class = pc_city
+				is_planet_class = pc_relic
+			}
 		}
 	}
 
@@ -791,6 +808,10 @@ building_energy_nexus = {
 		has_upgraded_capital = yes
 	}
 	
+	destroy_trigger = {
+		buildings_no_exotic_gases = yes
+	}
+
 	planet_modifier = {
 		planet_technician_energy_produces_mult = 0.25
 	}
@@ -826,6 +847,7 @@ building_energy_nexus = {
 			planet_technician_energy_produces_mult = 0.05
 		}
 	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -885,10 +907,10 @@ building_energy_nexus = {
 	}
 	
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
-			factor = 0
-			owner = { has_country_flag = buildings_new_gas_building }
+			weight = 1
+			buildings_has_exotic_gases = yes
 		}
 	}
 
@@ -898,9 +920,24 @@ building_energy_nexus = {
 			always = yes
 		}
 	}
-	on_built = {
-		planet = { 
-			owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 480 } }
+
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 270 } }
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 390 } }
+		}
+		ELSE = {
+			planet = { 
+				owner = { set_timed_country_flag = { flag = buildings_new_gas_building days = 510 } }
+			}
 		}
 	}
 }
@@ -1048,9 +1085,25 @@ building_bio_reactor = {
 			}
 		}	
 	}
-	on_built = {
-		planet = { 
-			owner = { set_timed_country_flag = { flag = buildings_new_reactor_building days = 480 } }
+
+	
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_reactor_building days = 270 } }
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_reactor_building days = 390 } }
+		}
+		ELSE = {
+			planet = { 
+				owner = { set_timed_country_flag = { flag = buildings_new_reactor_building days = 510 } }
+			}
 		}
 	}
 }

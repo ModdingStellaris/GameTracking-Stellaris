@@ -139,6 +139,70 @@ guiTypes = {
 	}
 	
 	containerWindowType = {
+		name = "three_options_popup_window"
+		position = { x=-200 y=-116 }	
+		size = { width = 600 height = 182 }
+		moveable = yes
+		Orientation = center
+		
+		background = {
+			name = "background"	
+			quadTextureSprite ="GFX_tile_outliner_bg"
+		}
+		
+		buttonType = {
+			name = "OptionA"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			position = { x = 12 y = -60 }
+			Orientation = "LOWER_LEFT"
+			buttonFont = "cg_16b"
+			actionShortcut = "cancel"
+		}
+		
+		buttonType = {
+			name = "OptionB"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			position = { x = 217 y = -60 }
+			Orientation = "LOWER_LEFT"
+			buttonFont = "cg_16b"
+			actionShortcut = "accept"
+		}
+		
+		buttonType = {
+			name = "OptionC"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			position = { x = -178 y = -60 }
+			Orientation = "LOWER_RIGHT"
+			buttonFont = "cg_16b"
+			actionShortcut = "cancel"
+		}
+		
+		instantTextBoxType={
+			position = { x = 0 y = 20 }
+			name = "title"
+			font = "malgun_goth_24"
+			borderSize = {x = 0 y = 0 }	
+			maxWidth = 600
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = center
+		}
+
+		instantTextBoxType={
+			position = { x = 0 y = 50 }
+			name = "description"
+			font = "cg_16b"
+			borderSize = {x = 5 y = 5 }	
+			maxWidth = 600
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = centre
+		}
+	}
+	
+	containerWindowType = {
 		name = "delete_cancel_popup_window"
 		position = { x=-200 y=-116 }	
 		size = { width = 480 height = 212 }

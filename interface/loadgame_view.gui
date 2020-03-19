@@ -83,7 +83,18 @@ guiTypes = {
 			text = "LOAD_GAME_NO_FILES"
 			alwaysTransparent = yes
 			orientation = "CENTER"
-		}		
+		}
+		
+		instantTextBoxType={
+			name = "syncing_label"
+			font = "malgun_goth_24"
+			position = { x=280 y= -45 }
+			maxWidth = 200
+			maxHeight = 16
+			text = "LOAD_GAME_SYNC_FILES"
+			alwaysTransparent = yes
+			orientation = lower_left
+		}
 		
 		smoothListBoxType = {
 			name ="list"

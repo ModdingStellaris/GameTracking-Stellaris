@@ -52,4 +52,68 @@ objectTypes = {
 		file = "gfx/models/ships/caravaneer_01/caravaneer_billboard_asteroid_03.mesh"
 	}
 	
+	pdxmesh = {
+		name = "caravaneer_cargoship_01_forcefield_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_cargoship_01_forcefield.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "caravaneer_cargoship_01_forcefield.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_cargoship_01_forcefield_2_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_cargoship_01_forcefield.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "caravaneer_cargoship_01_forcefield_2.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_cargoship_01_lights_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_cargoship_01_lights.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "caravaneer_cargoship_01_lights.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_destroyer_01_lights_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_destroyer_01_lights.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "caravaneer_cargoship_01_lights.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+	
+	pdxmesh = {
+		name = "caravaneer_cruiser_01_lights_mesh"
+		file = "gfx/models/ships/caravaneer_01/caravaneer_cruiser_01_lights.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "caravaneer_cargoship_01_lights.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
 }

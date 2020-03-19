@@ -21,6 +21,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_front_menu_achievements"
+		texturefile = "gfx/interface/buttons/main_menu_achievements.dds"
+	}
+	
+	spriteType = {
 		name = "gfx_game_logo"
 		texturefile = "gfx/interface/main/game_logo.dds"
 	}

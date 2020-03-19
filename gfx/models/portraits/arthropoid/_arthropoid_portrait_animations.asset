@@ -305,6 +305,7 @@
 		file = "arthropoid_18_portrait_pop_idle.anim"
 	}
 
+	
 	animation = {
 		name = "arthropoid_19_idle_animation"
 		file = "arthropoid_19_portrait_idle.anim"

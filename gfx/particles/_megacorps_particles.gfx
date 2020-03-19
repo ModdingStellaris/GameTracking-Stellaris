@@ -18,6 +18,15 @@ objectTypes = {
 		scale = 1.0
 	}
 	
+
+	pdxparticle = {
+		name = "caravaneer_station_neon_sphere_2_effect"
+		type = "caravaneer_station_neon_sphere_2_effect"
+		
+		scale = 1.0
+	}
+
+	
 	pdxparticle = {
 		name = "caravaneer_station_spotlight_effect"
 		type = "caravaneer_station_spotlight_effect"
@@ -26,8 +35,21 @@ objectTypes = {
 	}
 	
 	pdxparticle = {
+		name = "caravaneer_station_spotlight_2_effect"
+		type = "caravaneer_station_spotlight_2_effect"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
 		name = "caravaneer_station_barter_smoke_effect"
 		type = "caravaneer_station_barter_smoke_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "caravaneer_station_barter_smoke_2_effect"
+		type = "caravaneer_station_barter_smoke_2_effect"
 		
 		scale = 1.0
 	}

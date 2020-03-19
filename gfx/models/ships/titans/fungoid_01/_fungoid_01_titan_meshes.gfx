@@ -49,4 +49,19 @@ objectTypes = {
 			shader = "PdxMeshShip"
 		}
 	}
+	pdxmesh = {
+		name = "fungoid_01_titan_weapon_effect_mesh"
+		file = "gfx/models/ships/titans/fungoid_01/fungoid_01_titan_effect.mesh"
+
+		meshsettings = {
+			name = "fungoid_01_titan_effectShape"
+			index = 0
+			texture_diffuse = "fungoid_01_titan_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+}
+
 }

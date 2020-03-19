@@ -103,4 +103,19 @@ objectTypes = {
 			shader = "PdxMeshShip"
 		}
 	}
+	
+	pdxmesh = {
+		name = "plantoid_01_titan_weapon_effect_mesh"
+		file = "gfx/models/ships/titans/plantoid_01/plantoid_01_titan_weapon_effect.mesh"
+
+		meshsettings = {
+			name = "plantoid_01_titan_weapon_effectShape"
+			index = 0
+			texture_diffuse = "plantoid_01_titan_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+}
 }

@@ -70,11 +70,17 @@ entity = {
 	state = { name = "moving" state_time = 5
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
 
-		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_01" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_medium_01" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_medium_02" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_medium_03" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_medium_04" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_large_01" particle = "caravaneer_01_2_2_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "caravaneer_01_1_2_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "caravaneer_01_1_2_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "caravaneer_01_1_2_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_04" particle = "caravaneer_01_1_2_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
 		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -91,7 +97,11 @@ entity = {
 			"engine_medium_04" = 		{ width = @medium_trail_W 	lenght = @medium_trail_L   	}
 		}
 	}
+	attach = { "root" = "caravaneer_cargoship_01_forcefield_entity" }
+	attach = { "root" = "caravaneer_cargoship_01_forcefield_2_entity" }
+	attach = { "root" = "caravaneer_cargoship_01_lights_entity" }
 }
+
 
 ######################           DESTROYER             ########################
 
@@ -126,6 +136,8 @@ entity = {
 	name = "caravaneer_destroyer_01_section_entity"
 	pdxmesh = "caravaneer_destroyer_01_mesh"
 	
+	locator = { name = "root" }
+	
 	default_state = idle
 	state = { name = "idle" state_time = 5
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_caravaneer_destroyer_idle" } }
@@ -140,8 +152,11 @@ entity = {
 	state = { name = "moving" state_time = 5
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_destroyer" } }
 
-		event = { time = 0 node = "engine_medium_01" particle = "molluscoid_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_medium_01" particle = "molluscoid_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_small_01" particle = "molluscoid_01_1_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_medium_01" particle = "caravaneer_01_1_0_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "caravaneer_01_0_8_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
 		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -155,6 +170,7 @@ entity = {
 			"engine_small_01" = 		{ width = @small_trail_W 	lenght = @small_trail_L   	}
 		}
 	}
+	attach = { "root" = "caravaneer_destroyer_01_lights_entity" }
 }
 
 ######################           CRUISER             ########################
@@ -207,10 +223,14 @@ entity = {
 	state = { name = "moving" state_time = 5
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
 		
-		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_2_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_01" particle = "molluscoid_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "molluscoid_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		
+		event = { time = 0 node = "engine_large_01" particle = "caravaneer_01_1_6_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "caravaneer_01_1_2_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "caravaneer_01_1_2_ship_exhaust_moving" trigger_once = yes keep_particle = yes }
+
+#		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_2_5_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_medium_01" particle = "molluscoid_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_medium_02" particle = "molluscoid_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+#		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -224,6 +244,8 @@ entity = {
 			"engine_medium_02" = 		{ width = @mnedium_trail_W 	lenght = @medium_trail_L   	}
 		}
 	}
+	attach = { "root" = "caravaneer_cruiser_01_lights_entity" }
+
 }
 
 ######################           STATION             ########################
@@ -244,28 +266,30 @@ entity = {
 	name = "caravaneer_station_01_section_entity"
 	pdxmesh = "caravaneer_station_01_mesh"
 	
+
+	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_caravaneer_station_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_caravaneer_station_stinger" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_caravaneer_station_casino_amb" } }
 
-		start_event = { node = "neon_sphere" particle = "caravaneer_station_neon_sphere_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "neon_sphere" particle = "caravaneer_station_neon_sphere_2_effect" keep_particle = yes trigger_once = yes }
 		
-		start_event = { node = "spot_light_1" particle = "caravaneer_station_spotlight_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "spot_light_2" particle = "caravaneer_station_spotlight_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "spot_light_3" particle = "caravaneer_station_spotlight_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "spot_light_4" particle = "caravaneer_station_spotlight_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "spot_light_5" particle = "caravaneer_station_spotlight_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "spot_light_6" particle = "caravaneer_station_spotlight_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "spot_light_1" particle = "caravaneer_station_spotlight_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "spot_light_2" particle = "caravaneer_station_spotlight_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "spot_light_3" particle = "caravaneer_station_spotlight_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "spot_light_4" particle = "caravaneer_station_spotlight_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "spot_light_5" particle = "caravaneer_station_spotlight_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "spot_light_6" particle = "caravaneer_station_spotlight_2_effect" keep_particle = yes trigger_once = yes }
 	
-		start_event = { node = "barter_effect_station" particle = "caravaneer_station_barter_smoke_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "barter_effect_platform_1" particle = "caravaneer_station_barter_smoke_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "barter_effect_platform_2" particle = "caravaneer_station_barter_smoke_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "barter_effect_platform_3" particle = "caravaneer_station_barter_smoke_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "barter_effect_platform_4" particle = "caravaneer_station_barter_smoke_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "barter_effect_platform_5" particle = "caravaneer_station_barter_smoke_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "barter_effect_platform_6" particle = "caravaneer_station_barter_smoke_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "barter_effect_station" particle = "caravaneer_station_barter_smoke_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "barter_effect_platform_1" particle = "caravaneer_station_barter_smoke_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "barter_effect_platform_2" particle = "caravaneer_station_barter_smoke_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "barter_effect_platform_3" particle = "caravaneer_station_barter_smoke_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "barter_effect_platform_4" particle = "caravaneer_station_barter_smoke_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "barter_effect_platform_5" particle = "caravaneer_station_barter_smoke_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "barter_effect_platform_6" particle = "caravaneer_station_barter_smoke_2_effect" keep_particle = yes trigger_once = yes }
 	
 		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -292,6 +316,8 @@ entity = {
 		event = { time = 11.3 node = "platform_explosion_01" particle = "small_player_ship_explosion_particle" keep_particle = yes trigger_once = yes }
 		event = { time = 12.16 node = "platform_explosion_02" particle = "small_player_ship_explosion_particle" keep_particle = yes trigger_once = yes }
 	}
+	
+
 }
 
 animation = {
@@ -342,3 +368,64 @@ entity = {
         start_event = { trigger_once = yes sound = { soundeffect = "amb_asteroid_fields" } }
     }
 }
+
+entity = {
+	name = "caravaneer_cargoship_01_forcefield_entity"
+	pdxmesh = "caravaneer_cargoship_01_forcefield_mesh"
+	scale = 1
+		
+		game_data = {
+		bloom_factor			= 0.9
+		uv_animation_speed 		= .1
+		uv_animation_direction 	= { .2 1.0 }
+		}
+}
+
+entity = {
+	name = "caravaneer_cargoship_01_forcefield_2_entity"
+	pdxmesh = "caravaneer_cargoship_01_forcefield_2_mesh"
+	scale = 1
+		
+		game_data = {
+		bloom_factor			= 0.4
+		uv_animation_speed 		= .1
+		uv_animation_direction 	= { .3 1.0 }
+		}
+}
+
+entity = {
+	name = "caravaneer_cargoship_01_lights_entity"
+	pdxmesh = "caravaneer_cargoship_01_lights_mesh"
+	scale = 1
+		
+		game_data = {
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -.1 1.0 }
+		}
+}
+
+entity = {
+	name = "caravaneer_destroyer_01_lights_entity"
+	pdxmesh = "caravaneer_destroyer_01_lights_mesh"
+	scale = 1
+		
+		game_data = {
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .2
+		uv_animation_direction 	= { -.1 1.0 }
+		}
+}
+
+entity = {
+	name = "caravaneer_cruiser_01_lights_entity"
+	pdxmesh = "caravaneer_cruiser_01_lights_mesh"
+	scale = 1
+		
+		game_data = {
+		bloom_factor			= 0.7
+		uv_animation_speed 		= .1
+		uv_animation_direction 	= { -.1 1.0 }
+		}
+}
+

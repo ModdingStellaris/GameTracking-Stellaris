@@ -36,12 +36,14 @@ entity = {
 entity = {
 	name = "reptilian_01_titan_bow_entity"
 	pdxmesh = "reptilian_01_titan_bow_mesh"
-	
+	locator = { name = "root"				position = { 0	0  0 } }
+		
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
+	attach = { "root" = "reptilian_01_titan_weapon_effect_entity" }	
 	
 	state = { name = "death" state_time = 5 looping = no }
 	
@@ -78,4 +80,17 @@ entity = {
 		start_event = { node = "engine_large_05" particle = "arthropoid_01_3_2_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "death" state_time = 5 looping = no }
+}
+
+entity = {
+	name = "reptilian_01_titan_weapon_effect_entity"
+	pdxmesh = "reptilian_01_titan_weapon_effect_mesh"
+		
+		game_data = {
+		uv_animation_speed 		= 0.15
+		uv_animation_direction 	= { 0.0 -1.0 }
+		bloom_factor = 1
+	}
+	
+	scale = 1
 }

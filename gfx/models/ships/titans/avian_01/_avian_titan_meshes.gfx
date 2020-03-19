@@ -50,4 +50,32 @@ objectTypes = {
 			shader = "PdxMeshShip"
 		}
 	}
+
+	pdxmesh = {
+		name = "avian_01_titan_effect_weapon_mesh"
+		file = "gfx/models/ships/titans/avian_01/avian_01_titan_effect_weapon_mesh.mesh"
+
+		meshsettings = {
+			name = "avian_01_titan_effect_weapon_meshShape"
+			index = 0
+			texture_diffuse = "avian_01_titan_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "avian_01_titan_effect_glow_mesh"
+		file = "gfx/models/ships/titans/avian_01/avian_01_titan_effect_glow_mesh.mesh"
+
+		meshsettings = {
+			name = "avian_01_titan_effect_glow_meshShape"
+			index = 0
+			texture_diffuse = "avian_01_titan_effect_glow.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
 }

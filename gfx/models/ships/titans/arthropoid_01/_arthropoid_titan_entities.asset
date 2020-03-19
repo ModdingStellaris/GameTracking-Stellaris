@@ -36,12 +36,14 @@ entity = {
 entity = {
 	name = "arthropoid_01_titan_bow_entity"
 	pdxmesh = "arthropoid_01_titan_bow_mesh"
+	locator = { name = "root"				position = { 0	0  0 } }
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
+	attach = { "root" = "arthropoid_01_titan_effect_weapon_entity" }
 	state = { name = "death" state_time = 5 looping = no }
 }
 
@@ -98,4 +100,16 @@ animation = {
 animation = {
 	name = "arthropoid_01_titan_frame_death_animation"
 	file = "arthropoid_01_titan_frame_death.anim"
+}
+
+entity = {
+	name = "arthropoid_01_titan_effect_weapon_entity"
+	pdxmesh = "arthropoid_01_titan_effect_weapon_mesh"
+	
+		game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 0.10 -1.0 }
+	}
+	
+	scale = 1
 }

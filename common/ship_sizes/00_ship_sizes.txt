@@ -551,6 +551,10 @@ military_station_small = {
 	required_component_set = "combat_computers"
 	
 	build_block_radius = @build_block_radius_military
+
+	resources = {
+		category = ships
+	}
 }
 
 military_station_medium = {
@@ -590,6 +594,10 @@ military_station_medium = {
 	required_component_set = "combat_computers"
 	
 	build_block_radius = @build_block_radius_military
+
+	resources = {
+		category = ships
+	}
 }
 
 military_station_large = {
@@ -628,6 +636,10 @@ military_station_large = {
 	required_component_set = "combat_computers"
 	
 	build_block_radius = @build_block_radius_military
+
+	resources = {
+		category = ships
+	}
 }
 
 ################

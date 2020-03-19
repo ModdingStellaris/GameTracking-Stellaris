@@ -137,11 +137,23 @@ energy_expenditure_deposit_blockers = {
 	category = deposit_blockers
 	
 	potential = {
-		always = yes
+		any_owned_planet = {
+			num_uncleared_blockers > 0
+		}
 	}
 	
 	fraction = {
-		weight = 0.2
+		weight = 0.3
+
+		modifier = {
+			factor = 5
+
+			# if we have any planet that is currently completely blocked
+			any_owned_planet = {
+				num_uncleared_blockers > 0
+				num_free_districts = { type = any value < 1 }
+			}
+		}
 	}
 
 	# base remove blocker cost
@@ -160,11 +172,29 @@ energy_expenditure_missing_scientist = {
 	category = leaders
 	
 	potential = {
-		scientist_count < 4
+		OR = {
+			scientist_count < 4
+
+			NOT = {
+				research_leader = {
+					area = physics
+				}
+			}
+			NOT = {
+				research_leader = {
+					area = society
+				}
+			}
+			NOT = {
+				research_leader = {
+					area = engineering
+				}
+			}
+		}
 	}
 	
 	fraction = {
-		weight = 0.3
+		weight = 1.6
 	}
 
 	static_max = {

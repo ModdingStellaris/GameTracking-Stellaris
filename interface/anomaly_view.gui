@@ -188,7 +188,7 @@ guiTypes = {
 				font = "cg_16b"
 				text = "5"
 				position = { x = -125 y = 62 }
-				maxWidth = 100
+				maxWidth = 115
 				maxHeight = 20
 				fixedSize = yes
 				Orientation = "UPPER_RIGHT"

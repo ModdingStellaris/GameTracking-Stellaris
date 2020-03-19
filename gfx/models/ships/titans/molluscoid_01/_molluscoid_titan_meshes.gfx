@@ -49,4 +49,20 @@ objectTypes = {
 			shader = "PdxMeshShip"
 		}
 	}
+
+	pdxmesh = {
+		name = "molluscoid_01_titan_weapon_effect_mesh"
+		file = "gfx/models/ships/titans/molluscoid_01/molluscoid_01_titan_weapon_effect.mesh"
+
+		meshsettings = {
+			name = "molluscoid_01_titan_weapon_effectShape"
+			index = 0
+			texture_diffuse = "molluscoid_01_titan_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+}
+
 }

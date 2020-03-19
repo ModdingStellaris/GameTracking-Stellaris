@@ -411,6 +411,9 @@
 		OUTLINER_PLANET_CONSTRUCTION_MAX_ENTRIES			= 3	# not enough space in vanilla stellaris for more. priority: starbase, tile, army, pop
 		OUTLINER_STARBASE_SHIPYARD_CONSTRUCTION_MAX_ENTRIES	= 6 # The max number of starbase shipyard construction progress bars to show in the outliner,
 																# make sure to also update the progress bar sizes
+																
+		SOCIALVIEW_CONTEXT_MENU_MARGIN						= 2 	# Margin for social view context menu
+		SOCIALVIEW_CONTEXT_MENU_BUTTON_OFFSET				= 10 	# Offset for context buttons
 		WAROVERVIEW_BATTLE_RESULT_BASE_EXHAUSTION			= 0.10	# In order to avoid a very small win with no losses on one side looking like it was "overwhelming"
 
 		PERSISTENT_CHAT_LINES_DURATION = 60		# in seconds
@@ -1279,7 +1282,8 @@
 		TRADE_DELIVERY_PERCENTAGE_LOW		= 50	# <= 50 of trade value reaches destination
 
 		SLAVE_MARKET_SLAVE_BASE_COST_RESOURCES	= { "energy" }
-		SLAVE_MARKET_SLAVE_BASE_COST_AMOUNT		= { 500 } 
+		SLAVE_MARKET_SLAVE_BASE_COST_AMOUNT		= { 500 }
+		SLAVE_MARKET_SIZE_CAP					= 100 #Max amount of slaves allowed on the market
 
 		SECTOR_AUTOMATION_CONTRUCTION_RAND_FACTOR = 0.1	# Random factor applied to the score of constructions in the sector automation
 
@@ -1662,4 +1666,6 @@
 		WAR_DECLARATION_MINIMUM_SCORE = 0.5				# minimum score multiplier for war declaration after all distance have been applied
 
 		COLONY_AUTOMATION_COOLDOWN = 3					# Number of days automation will not be done after a build queue item on a planet completes
+
+		DIPLO_ACTION_REPEAT_DELAY = 360					# number of days before the ai will try to repeat a proposal
 	}

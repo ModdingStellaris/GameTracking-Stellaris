@@ -1822,6 +1822,26 @@ guiTypes = {
 			oversound = mouse_over
 			actionShortCut = "cancel"
 		}
+
+		instantTextBoxType = {
+			name = "connection_status"
+			position = { x = -390 y = -55 }
+			font = "cg_16b"
+			text = ""
+			maxWidth = 780
+			maxHeight = 80
+			format = centre
+			orientation = "CENTER_DOWN"
+		}		
+
+		buttonType = {
+			name = "connection_restricted_link"
+			position = { x = -390 y = -55 }
+			spriteType = "GFX_invisible"
+			size = { x = 780 y = 80 }
+			web_link="https://support.paradoxplaza.com/hc/en-us/articles/115007925347-Firewall-Connectivity-Issues"	
+			orientation = "CENTER_DOWN"
+		}		
 		
 		instantTextBoxType = {
 			name = "version"

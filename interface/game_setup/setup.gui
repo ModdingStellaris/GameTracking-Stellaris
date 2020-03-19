@@ -129,7 +129,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "gamesetup_contents"
 			position = { x=-630 y = -260 }
-			size = { width=1270 height = 535 }
+			size = { width = 1260 height = 535 }
 			orientation = center
 			clipping = yes
 

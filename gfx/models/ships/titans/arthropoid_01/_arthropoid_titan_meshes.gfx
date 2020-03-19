@@ -50,4 +50,18 @@ objectTypes = {
 			shader = "PdxMeshShip"
 		}
 	}
+	
+	pdxmesh = {
+		name = "arthropoid_01_titan_effect_weapon_mesh"
+		file = "gfx/models/ships/titans/arthropoid_01/arthropoid_01_titan_effect_weapon.mesh"
+
+		meshsettings = {
+			name = "arthropoid_01_titan_effect_weaponShape"
+			index = 0
+			texture_diffuse = "arthropoid_01_titan_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
 }

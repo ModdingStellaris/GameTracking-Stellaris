@@ -3,6 +3,12 @@ spriteTypes = {
 	### ship size icons ###
 
 	spriteType = {
+		name = "GFX_text_social_friend_icon"
+		texturefile = "gfx/interface/social/online_status.dds"
+		noOfFrames = 5
+	}
+	
+	spriteType = {
 		name = "GFX_text_military_size_1"
 		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_1.dds"
 	}
