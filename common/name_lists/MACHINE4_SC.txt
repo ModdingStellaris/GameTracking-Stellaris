@@ -2,10 +2,13 @@
 ### Created by Maximilian Olbers
 
 MACHINE4 = {
+
+	category = "Machine"
 	
 	language = "l_simp_chinese"
 
 	should_name_home_system_planets = no
+	
 	ship_names = {
 
 		generic = {
@@ -29,6 +32,10 @@ MACHINE4 = {
 
 		colossus = {
 			"末日至尊"
+		}
+		
+		juggernaut = {
+			"末世一号"
 		}
 		
 		science = {

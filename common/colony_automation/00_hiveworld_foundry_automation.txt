@@ -31,10 +31,10 @@ automate_hiveworld_foundry_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_hive_node
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					hive_node_upkeep_affordable = yes
 				}
 			}
 		}
@@ -121,14 +121,14 @@ automate_hiveworld_foundry_planet = {
 		}
 
 		13 = {
-			building = building_maintenance_depot
+			building = building_hive_node
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					hive_node_upkeep_affordable = yes
 				}
 			}
 		}
-
+		
 		14 = {
 			building = building_foundry_1
 			available = {

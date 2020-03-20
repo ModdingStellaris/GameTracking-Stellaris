@@ -28,42 +28,42 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" animation = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "pirate_battleship_idle" } }
-		event = { time = 0 node = "engine_medium_07" particle = "pirate_01_3_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_01" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_05" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_06" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_07" particle = "generic_red_075_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_04" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_05" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_06" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
 		
-		event = { time = 0 node = "engine_medium_08" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_09" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_010" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_011" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_012" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_013" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_014" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_015" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_016" particle = "pirate_01_1_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_08" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_09" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_010" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_011" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_012" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_013" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_014" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_015" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_016" particle = "generic_red_05_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" animation = "idle"
-		event = { time = 0 node = "engine_medium_07" particle = "pirate_01_3_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_01" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_05" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_06" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_07" particle = "generic_red_1_25_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_04" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_05" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_06" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
 		
-		event = { time = 0 node = "engine_medium_08" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_09" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_010" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_011" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_012" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_013" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_014" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_015" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_medium_016" particle = "pirate_01_1_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_08" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_09" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_010" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_011" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_012" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_013" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_014" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_015" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_016" particle = "generic_red_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "death" animation = "death" looping = no
 	#	start_event = { trigger_once = yes sound = { soundeffect = "pirate_battleship_idle" } }

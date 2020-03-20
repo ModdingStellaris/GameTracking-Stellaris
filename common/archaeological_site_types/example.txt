@@ -8,7 +8,7 @@
 #	allow = <trigger>				# Trigger checking if a scope with this=fleet ,from=archaeological site is allowed to excavate (this will toggle enable/disabled mode on buttons etc).
 #	visible = <trigger>				# Trigger that checks if a scope with this=country can see the from=archaeological site
 #	stage = {						# Stage definition, order dependent.
-#		difficulty = <intervall int> 	# min max intervall type. intervall is defined either by '<int>' or '{ min = <int> max=<int> }' where the later will randomize a value between min and max.
+#		difficulty = <interval int> 	# min max interval type. interval is defined either by '<int>' or '{ min = <int> max=<int> }' where the later will randomize a value between min and max.
 #		icon = <string>				# rune icon gfx type.
 #		event = <string>			# event to fire when finished the state.
 #	}

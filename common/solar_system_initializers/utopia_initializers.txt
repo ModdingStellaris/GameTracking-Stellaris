@@ -121,8 +121,6 @@ dyson_sphere_init_01 = {
 					angle = random
 				}
 			}
-
-
 			create_ambient_object = {
 				type = "large_debris_object"
 				location = this
@@ -211,9 +209,6 @@ dyson_sphere_init_01 = {
 					angle = 120
 				}
 			}
-
-
-
 			create_ambient_object = {
 				type = "large_debris_object"
 				location = this

@@ -408,7 +408,7 @@ guiTypes = {
 				name = "leader_type_bg"
 				quadTextureSprite = "GFX_leader_bg_admiral"
 				position = { x = 8 y = 8 }
-				scale = 0.225§
+				scale = 0.225
 				alwaystransparent = yes
 			}
 

@@ -53,7 +53,7 @@ ship_event = {
 	id = anomaly.80
 	title = "anomaly.80.name"
 	desc = "anomaly.80.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_unidentified_ship
 	show_sound = event_structural_collapse
 	location = FROM
 
@@ -293,11 +293,11 @@ ship_event = {
 	}
 }
 
-# Scope = Ship
+# Scope = Fleet
 # From = System
 # FromFrom = Country
 # also owner, obv
-ship_event = {
+fleet_event = {
 	id = anomaly.96
 	title = anomaly.96.name
 	desc = {
@@ -335,7 +335,7 @@ ship_event = {
 		}
 		text = anomaly.96.desc.phile
 	}
-	picture = GFX_evt_continental
+	picture = GFX_evt_ship_in_orbit_3
 	show_sound = event_scanner
 	location = FROM
 
@@ -429,7 +429,7 @@ ship_event = {
 	id = anomaly.100
 	title = "anomaly.100.name"
 	desc = "anomaly.100.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_landing_ship_2
 	show_sound = event_mystic_reveal
 	location = FROM
 
@@ -459,7 +459,7 @@ ship_event = {
 	id = anomaly.105
 	title = "anomaly.105.name"
 	desc = "anomaly.105.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_unidentified_ship
 	show_sound = event_radio_chatter
 	location = FROM
 
@@ -583,7 +583,7 @@ ship_event = {
 }
 
 # found sol, voyager
-ship_event = {
+fleet_event = {
 	id = anomaly.106
 	title = anomaly.106.name
 	desc = {
@@ -611,7 +611,7 @@ ship_event = {
 		}
 		text = anomaly.106.desc.phile
 	}
-	picture = GFX_evt_continental
+	picture = GFX_evt_ship_in_orbit_3
 	show_sound = event_scanner
 	location = FROM
 
@@ -735,15 +735,13 @@ ship_event = {
 	option = {
 		name = FASCINATING
 		hidden_effect = { owner = { country_event = { id = story.5 days = 30 } } }
-		hidden_effect = {
-			FROM = {
-				add_modifier = {
-					modifier = old_genetic_library
-					days = -1
-				}
-				add_deposit = d_engineering_2
-				add_deposit = d_society_2
+		from = {
+			add_modifier = {
+				modifier = old_genetic_library
+				days = -1
 			}
+			add_deposit = d_engineering_2
+			add_deposit = d_society_2
 		}
 	}
 }
@@ -1023,7 +1021,7 @@ ship_event = {
 	id = anomaly.135
 	title = "anomaly.135.name"
 	desc = "anomaly.135.desc"
-	picture = GFX_evt_alien_city
+	picture = GFX_evt_huge_monument
 	show_sound = event_administrative_work
 	location = FROM
 
@@ -1223,11 +1221,11 @@ ship_event = {
 #}
 
 # OLD GODS - THE BENEFACTRESS DISCOVERED, NEEDS SOCIETY
-ship_event = {
+fleet_event = {
 	id = anomaly.142
 	title = "anomaly.142.name"
 	desc = "anomaly.142.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_ship_travel
 	show_sound = event_mystic_reveal
 	location = event_target:shrine
 	trackable = yes
@@ -1265,11 +1263,11 @@ ship_event = {
 }
 
 # OLD GODS - THE UNDAUNTED DISCOVERED, NEEDS ENGINEERING
-ship_event = {
+fleet_event = {
 	id = anomaly.143
 	title = "anomaly.143.name"
 	desc = "anomaly.143.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_ship_travel
 	show_sound = event_mystic_reveal
 	location = event_target:shrine
 	trackable = yes
@@ -1307,11 +1305,11 @@ ship_event = {
 }
 
 # OLD GODS - THE PERCIPIENT DISCOVERED, NEEDS PHYSICS
-ship_event = {
+fleet_event = {
 	id = anomaly.144
 	title = "anomaly.144.name"
 	desc = "anomaly.144.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_ship_travel
 	show_sound = event_mystic_reveal
 	location = event_target:shrine
 	trackable = yes
@@ -1912,7 +1910,7 @@ ship_event = {
 	title = "anomaly.190.name"
 	desc = "anomaly.190.desc"
 	show_sound = event_radio_chatter
-	picture = GFX_evt_satellite_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	location = FROM
 	trackable = yes
 
@@ -1973,7 +1971,7 @@ ship_event = {
 	title = "anomaly.195.name"
 	desc = "anomaly.195.desc"
 	show_sound = event_mystic_reveal
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	location = FROM
 
 	is_triggered_only = yes
@@ -1993,7 +1991,7 @@ ship_event = {
 	title = "anomaly.200.name"
 	desc = "anomaly.200.desc"
 	show_sound = event_structural_collapse
-	picture = GFX_evt_dead_city
+	picture = GFX_evt_mining_operations
 	location = FROM
 
 	is_triggered_only = yes
@@ -2049,7 +2047,7 @@ ship_event = {
 	title = "anomaly.210.name"
 	desc = "anomaly.210.desc"
 	show_sound = event_mystic_reveal
-	picture = GFX_evt_federation_fleet
+	picture = GFX_evt_ship_travel
 	location = FROM
 
 	is_triggered_only = yes
@@ -2073,7 +2071,7 @@ ship_event = {
 	title = "anomaly.211.name"
 	desc = "anomaly.211.desc"
 	show_sound = event_mystic_reveal
-	picture = GFX_evt_federation_fleet
+	picture = GFX_evt_ship_travel
 	location = FROMFROM
 
 	is_triggered_only = yes
@@ -2245,7 +2243,7 @@ ship_event = {
 	id = anomaly.225
 	title = "anomaly.225.name"
 	desc = "anomaly.225.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_atmospheric_flight
 	show_sound = event_mystic_reveal
 	location = FROM
 
@@ -2463,7 +2461,7 @@ ship_event = {
 	id = anomaly.245
 	title = anomaly.245.name
 	desc = anomaly.245.desc
-	picture = GFX_evt_alien_nature
+	picture = GFX_evt_animal_wildlife
 	show_sound = event_alien_nature
 	location = from
 
@@ -2550,7 +2548,7 @@ ship_event = {
 	id = anomaly.255
 	title = anomaly.255.name
 	desc = anomaly.255.desc
-	picture = GFX_evt_alien_city
+	picture = GFX_evt_ancient_records
 	show_sound = event_planetary_riot
 	location = from
 	trackable = yes
@@ -2943,7 +2941,7 @@ ship_event = {
 	id = anomaly.290
 	title = anomaly.290.name
 	desc = anomaly.290.desc
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	show_sound = event_ship_bridge
 	location =  from
 	trackable = yes
@@ -2999,7 +2997,7 @@ ship_event = {
 	id = anomaly.295
 	title = anomaly.295.name
 	desc = anomaly.295.desc
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_unidentified_ship
 	show_sound = event_activating_unknown_technology
 
 	is_triggered_only = yes

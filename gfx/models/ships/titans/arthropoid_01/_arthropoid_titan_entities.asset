@@ -61,33 +61,33 @@ entity = {
 		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		
-		start_event = { node = "engine_large_01" particle = "arthropoid_01_3_2_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_02" particle = "arthropoid_01_3_2_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_03" particle = "arthropoid_01_3_2_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_01" particle = "arthropoid_01_2_5_exhaust_small_idle_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_02" particle = "arthropoid_01_2_5_exhaust_small_idle_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_03" particle = "arthropoid_01_2_5_exhaust_small_idle_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_04" particle = "arthropoid_01_2_5_exhaust_small_idle_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_05" particle = "arthropoid_01_2_5_exhaust_small_idle_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_06" particle = "arthropoid_01_2_5_exhaust_small_idle_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_small_01" particle = "arthropoid_01_2_0_exhaust_idle_small_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_small_02" particle = "arthropoid_01_2_0_exhaust_idle_small_particle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_large_01" particle = "generic_1_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_large_02" particle = "generic_1_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_large_03" particle = "generic_1_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_01" particle = "generic_035_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_02" particle = "generic_035_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_03" particle = "generic_035_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_04" particle = "generic_035_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_05" particle = "generic_035_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_06" particle = "generic_035_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_small_01" particle = "generic_025_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_small_02" particle = "generic_025_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
 		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		
-		start_event = { node = "engine_large_01" particle = "arthropoid_01_3_2_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_02" particle = "arthropoid_01_3_2_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_large_03" particle = "arthropoid_01_3_2_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_01" particle = "arthropoid_01_2_5_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_02" particle = "arthropoid_01_2_5_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_03" particle = "arthropoid_01_2_5_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_04" particle = "arthropoid_01_2_5_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_05" particle = "arthropoid_01_2_5_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_medium_06" particle = "arthropoid_01_2_5_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_small_01" particle = "arthropoid_01_2_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_small_02" particle = "arthropoid_01_2_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_large_01" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_large_02" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_large_03" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_01" particle = "generic_05_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_02" particle = "generic_05_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_03" particle = "generic_05_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_04" particle = "generic_05_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_05" particle = "generic_05_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_medium_06" particle = "generic_05_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_small_01" particle = "generic_04_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_small_02" particle = "generic_04_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "death" state_time = 5 looping = no }
 }

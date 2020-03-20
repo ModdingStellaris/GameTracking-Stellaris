@@ -38,10 +38,10 @@ automate_habitat_fortress_machine_planet = {
 		}
 
 		4 = {
-			building = building_maintenance_depot
+			building = building_stronghold
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					stronghold_upkeep_affordable = yes
 				}
 			}
 		}
@@ -119,10 +119,10 @@ automate_habitat_fortress_machine_planet = {
 		}
 
 		13 = {
-			building = building_maintenance_depot
+			building = building_chemical_plant
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					chemical_plant_upkeep_affordable = yes
 				}
 			}
 		}

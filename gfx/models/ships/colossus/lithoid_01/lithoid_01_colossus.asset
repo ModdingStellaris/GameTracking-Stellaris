@@ -105,7 +105,7 @@ entity = {
 		event = { time = 0 node = "light_locator_03" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_04" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_05" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_xl" keep_particle = yes trigger_once = yes}
+		event = { time = 0 node = "engine_large" particle = "lithoid_8_exhaust_moving" keep_particle = yes trigger_once = yes}
 		
 		event = { trigger_once = yes sound = { soundeffect = "lithoid_moving_out_colossus" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "lithoid_colossus_idle" stop_on_state_change = yes } }
@@ -127,7 +127,7 @@ entity = {
 		event = { time = 0 node = "light_locator_03" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_04" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_05" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_xl" keep_particle = yes trigger_once = yes}
+		event = { time = 0 node = "engine_large" particle = "lithoid_8_exhaust_moving" keep_particle = yes trigger_once = yes}
 		
 		event = { trigger_once = yes sound = { soundeffect = "lithoid_colossus_closing" stop_on_state_change = no } }
 	}

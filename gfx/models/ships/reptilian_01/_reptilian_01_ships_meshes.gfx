@@ -180,6 +180,20 @@ objectTypes = {
 		}
 	}
 	
+	pdxmesh = {
+		name = "reptilian_01_turret_xl_mesh"
+		file = "gfx/models/ships/reptilian_01/reptilian_01_turret_xl.mesh"
+
+		meshsettings = {
+			name = "reptilian_01_juggernaut_XL_turret3Shape"
+			index = 0
+			texture_diffuse = "reptilian_01_xl_turret_diffuse.dds"
+			texture_normal = "reptilian_01_xl_turret_normal.dds"
+			texture_specular = "reptilian_01_xl_turret_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
 	
 	#######  missile  ########
 	
@@ -745,6 +759,12 @@ pdxmesh = {
 			texture_specular = "reptilian_01_orbital_station_habitat_module_specular.dds"
 			shader = "PdxMeshTerraAlphaBlend"
 		}
+	}
+	
+	pdxmesh = {
+		name = "reptilian_01_upgraded_orbital_habitat_mesh"
+		file = "gfx/models/ships/reptilian_01/reptilian_01_habitat_level_3.mesh"
+		scale = 1.0
 	}
 	
 	pdxmesh = {

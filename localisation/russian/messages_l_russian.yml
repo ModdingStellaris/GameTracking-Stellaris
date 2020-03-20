@@ -413,3 +413,5 @@
  MESSAGE_LOST_CASUS_BELLI:0 "$CASUS_BELLI|H$ больше не может служить для нас поводом к войне с империей $COUNTRY|H$"
  MESSAGE_NEW_CLAIM_ON_SYSTEM_TITLE:0 "Другая империя объявила притязания на нашу систему"
  MESSAGE_NEW_CLAIM_ON_SYSTEM:0 "Империя $COUNTRY|H$ дерзнула объявить притязания на систему $SYSTEM|H$, которая по праву принадлежит нам!"
+ ACTION_DEMAND_SUBSIDIARY_NOTIFICATION:0 "§H[From.GetName]§! превращает в свой филиал империю §H[Root.GetName]§!.\n\nОни получили безопасность, став коммерческим предприятием."
+ ACTION_ASK_TO_BECOME_SUBSIDIARY_NOTIFICATION:0 "§H[Root.GetName]§! превращает в свой филиал империю §H[From.GetName]§!.\n\nОни получили безопасность, став коммерческим предприятием."

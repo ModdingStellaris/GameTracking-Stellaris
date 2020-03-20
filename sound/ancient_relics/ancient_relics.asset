@@ -794,7 +794,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_dangerous_animals"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -808,7 +808,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_door_opening"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -822,7 +822,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_drilling"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -835,7 +835,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_energy_field"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -849,7 +849,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_finding_loot"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -863,7 +863,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_machinery"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -876,7 +876,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_metal_fatigue"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -891,7 +891,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_power_down"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -905,7 +905,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_screams"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -918,7 +918,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_trap_arrows"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -945,7 +945,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_wind_ruins"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -971,7 +971,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_bad_omen"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -984,7 +984,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_big_door_opening"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -997,7 +997,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_collapsing_ruins"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -1010,7 +1010,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_dig_site"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -1022,7 +1022,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_trap_laser"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3
@@ -1036,7 +1036,7 @@ soundeffect =
 soundeffect =
 	{
 	    name = "event_trap_spikes"
-	    volume = 0.5
+	    volume = 0.4
 	    max_audible = 1
 		max_audible_behaviour = fail
 		fade_out = 0.3

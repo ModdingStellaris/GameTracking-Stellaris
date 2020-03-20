@@ -5,7 +5,7 @@ planet_event = {
 	id = unrest.101
 	title = unrest.101.name
 	desc = unrest.101.desc
-	picture = GFX_evt_burning_settlement
+	picture = GFX_evt_night_raid
 	show_sound = event_air_raid_siren
 	location = root
 
@@ -82,7 +82,7 @@ planet_event = {
 	id = unrest.105
 	title = unrest.105.name
 	desc = unrest.105.desc
-	picture = GFX_evt_burning_settlement
+	picture = GFX_evt_night_raid
 	show_sound = event_air_raid_siren
 	location = root
 
@@ -146,8 +146,8 @@ planet_event = {
 	id = unrest.110
 	title = unrest.110.name
 	desc = unrest.110.desc
-	picture = GFX_evt_colony_settlement
-	show_sound = event_celebration
+	picture = GFX_evt_announcement
+	show_sound = event_announcement
 	location = root
 
 	pre_triggers = {
@@ -222,7 +222,7 @@ planet_event = {
 	id = unrest.115
 	title = unrest.115.name
 	desc = unrest.115.desc
-	picture = GFX_evt_psionics
+	picture = GFX_evt_conclave
 	show_sound = event_mystic_reveal
 	location = root
 
@@ -456,8 +456,8 @@ planet_event = {
 	id = unrest.130
 	title = unrest.130.name
 	desc = unrest.130.desc
-	picture = GFX_evt_atmospheric_entry
-	show_sound = event_cityscape
+	picture = GFX_evt_announcement
+	show_sound = event_announcement
 	location = root
 
 	pre_triggers = {
@@ -613,8 +613,8 @@ planet_event = {
 	id = unrest.140
 	title = unrest.140.name
 	desc = unrest.140.desc
-	picture = GFX_evt_colony_settlement
-	show_sound = event_celebration
+	picture = GFX_evt_announcement
+	show_sound = event_announcement
 	location = root
 
 	pre_triggers = {
@@ -690,8 +690,8 @@ planet_event = {
 	id = unrest.145
 	title = unrest.145.name
 	desc = unrest.145.desc
-	picture = GFX_evt_arguing_senate
-	show_sound = event_public_unrest
+	picture = GFX_evt_announcement
+	show_sound = event_announcement
 	location = root
 
 	pre_triggers = {
@@ -765,7 +765,7 @@ planet_event = {
 	id = unrest.150
 	title = unrest.150.name
 	desc = unrest.150.desc
-	picture = GFX_evt_interior_battle
+	picture = GFX_evt_victorious_army
 	show_sound = event_alien_signal
 	location = root
 
@@ -1044,7 +1044,7 @@ planet_event = {
 	id = unrest.156
 	title = unrest.156.name
 	desc = unrest.156.desc
-	picture = GFX_evt_burning_settlement
+	picture = GFX_evt_night_raid
 	show_sound = event_ship_explosion
 	location = event_target:revolt_planet
 
@@ -1123,7 +1123,7 @@ planet_event = {
 	id = unrest.157
 	title = unrest.157.name
 	desc = unrest.157.desc
-	picture = GFX_evt_burning_settlement
+	picture = GFX_evt_surrender
 	show_sound = event_planetary_riot
 	location = root
 
@@ -1188,7 +1188,7 @@ planet_event = {
 	id = unrest.160
 	title = unrest.160.name
 	desc = unrest.160.desc
-	picture = GFX_evt_ground_combat
+	picture = GFX_evt_surrender
 	show_sound = event_planetary_riot
 	location = root
 
@@ -1228,6 +1228,7 @@ controller = { is_same_value = root.owner }
 			}
 			authority = auth_democratic
 			civics = random
+			origin = "origin_separatists"
 			species = event_target:leader_pop.species
 			flag = random
 
@@ -1299,8 +1300,8 @@ country_event = {
 	id = unrest.161
 	title = unrest.161.name
 	desc = unrest.161.desc
-	picture = GFX_evt_alien_propaganda
-	show_sound = event_celebration
+	picture = GFX_evt_announcement
+	show_sound = event_announcement
 	location = event_target:revolt_planet
 
 	trigger = {
@@ -1368,7 +1369,7 @@ country_event = {
 	id = unrest.167
 	title = unrest.167.name
 	desc = unrest.167.desc
-	picture = GFX_evt_burning_settlement
+	picture = GFX_evt_surrender
 	show_sound = event_air_raid_siren
 	location = event_target:revolt_planet
 
@@ -1629,8 +1630,8 @@ planet_event = {
 	id = unrest.163
 	title = unrest.163.name
 	desc = unrest.163.desc
-	picture = GFX_evt_colony_settlement
-	show_sound = event_administrative_work
+	picture = GFX_evt_announcement
+	show_sound = event_announcement
 	location = root
 	is_triggered_only = yes
 
@@ -1725,7 +1726,7 @@ planet_event = {
 	id = unrest.165
 	title = unrest.165.name
 	desc = unrest.165.desc
-	picture = GFX_evt_colony_settlement
+	picture = GFX_evt_surrender
 	show_sound = event_administrative_work
 	location = root
 	is_triggered_only = yes
@@ -1878,7 +1879,7 @@ planet_event = {
 		}
 		text = unrest.4200.desc.secession.gesta
 	}
-	picture = GFX_evt_ground_combat
+	picture = GFX_evt_surrender
 	show_sound = event_ground_battle
 	location = root
 
@@ -1960,6 +1961,7 @@ controller = { is_same_value = root.owner }
 				authority = event_target:fatherland
 				#civics = event_target:fatherland
 				civics = random
+				origin = "origin_separatists"
 				species = event_target:fatherland
 				flag = random
 				effect = {
@@ -1996,6 +1998,7 @@ controller = { is_same_value = root.owner }
 				species = this
 				ethos = random
 				authority = random
+				origin = "origin_separatists"
 				name = random
 				flag = random
 				effect = {
@@ -2119,7 +2122,7 @@ country_event = { # rebels have broken free notification
 		text = unrest.4211.desc.gesta
 	}
 	picture = {
-		picture = GFX_evt_arguing_senate
+		picture = GFX_evt_surrender
 		trigger = { NOT = { has_ethic = ethic_gestalt_consciousness } }
 	}
 	picture = {
@@ -2225,14 +2228,14 @@ country_event = {
 		text = unrest.4225.desc.gesta
 	}
 	picture = {
-		picture = GFX_evt_arguing_senate
+		picture = GFX_evt_announcement
 		trigger = { NOT = { has_ethic = ethic_gestalt_consciousness } }
 	}
 	picture = {
 		picture = GFX_evt_satellite_in_orbit
 		trigger = { has_ethic = ethic_gestalt_consciousness }
 	}
-	show_sound = event_factions
+	show_sound = event_announcement
 	location = fromfromfrom
 
 	is_triggered_only = yes
@@ -2258,7 +2261,7 @@ country_event = {
 		text = unrest.4230.desc.gesta
 	}
 	picture = {
-		picture = GFX_evt_arguing_senate
+		picture = GFX_evt_announcement
 		trigger = { NOT = { has_ethic = ethic_gestalt_consciousness } }
 	}
 	picture = {
@@ -2303,7 +2306,7 @@ country_event = {
 		text = unrest.4235.desc.gesta
 	}
 	picture = {
-		picture = GFX_evt_alien_propaganda
+		picture = GFX_evt_surrender
 		trigger = { NOT = { has_ethic = ethic_gestalt_consciousness } }
 	}
 	picture = {

@@ -8,26 +8,22 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "MEDIUM_GUN_01"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_02"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_03"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_04"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "root"
 	}
 	
@@ -47,26 +43,22 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "MEDIUM_GUN_01"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_02"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_03"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_04"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "root"
 	}
 	

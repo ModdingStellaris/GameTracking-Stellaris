@@ -3655,7 +3655,7 @@ country_event = {
 			}
 			any_system_within_border = {
 				has_star_flag = enclave
-				any_ship_in_system = {
+				any_fleet_in_system = {
 					exists = owner
 					owner = {
 						is_same_value = event_target:artist_enclave_country
@@ -5669,7 +5669,7 @@ country_event = {
 		set_country_flag = artist_enclave_diplomacy_engaged
 		random_system_within_border = {
 			limit = {
-				any_ship_in_system = {
+				any_fleet_in_system = {
 					exists = owner
 					owner = {
 						is_same_value = event_target:artist_enclave_country
@@ -5832,7 +5832,7 @@ country_event = {
 			}
 			any_system_within_border = {
 				has_star_flag = enclave
-				any_ship_in_system = {
+				any_fleet_in_system = {
 					exists = owner
 					owner = {
 						is_same_value = event_target:curators
@@ -5853,16 +5853,6 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = { id = leviathans.511 }
-		}
-	}
-
-	option = {
-		name = leviathans.500.e
-		default_hide_option = yes
-		custom_gui = "enclave_curator_option"
-		trigger = { NOR = { has_valid_civic = civic_fanatic_purifiers has_valid_civic = civic_hive_devouring_swarm has_valid_civic = civic_machine_terminator } }
-		hidden_effect = {
-			remove_country_flag = curator_enclave_diplomacy_engaged
 		}
 	}
 # Available after finishing Infinity Sphere chain
@@ -5902,6 +5892,16 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = { id = distar.11501 }
+		}
+	}
+
+	option = {
+		name = leviathans.500.e
+		default_hide_option = yes
+		custom_gui = "enclave_curator_option"
+		trigger = { NOR = { has_valid_civic = civic_fanatic_purifiers has_valid_civic = civic_hive_devouring_swarm has_valid_civic = civic_machine_terminator } }
+		hidden_effect = {
+			remove_country_flag = curator_enclave_diplomacy_engaged
 		}
 	}
 }
@@ -6110,7 +6110,7 @@ country_event = {
 		trigger = {
 			any_system_within_border = {
 				has_star_flag = enclave
-				any_ship_in_system = {
+				any_fleet_in_system = {
 					exists = owner
 					owner = {
 						is_same_value = event_target:curators
@@ -6421,6 +6421,75 @@ country_event = {
 		custom_gui = "enclave_curator_option"
 		custom_tooltip = opinion10
 		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = guardian
+					is_country_type = guardian_dragon
+					is_country_type = guardian_sphere
+					is_country_type = guardian_wraith
+					is_country_type = guardian_horror
+					is_country_type = guardian_fortress
+					is_country_type = guardian_hiver
+					is_country_type = guardian_stellarite
+					is_country_type = guardian_dreadnought
+					is_country_type = guardian_hatchling
+				}
+				NOT = { 
+					has_communications = root
+				}
+				num_fleets > 0
+				capital_scope = {
+					solar_system = {
+						NOR = {
+							is_point_of_interest = {
+								id = curator_poi_dragon
+								owner = root
+								event_chain = curator_poi_chain
+							}
+							is_point_of_interest = {
+								id = curator_poi_technosphere
+								owner = root
+								event_chain = curator_poi_chain
+							}
+							is_point_of_interest = {
+								id = curator_poi_wraith
+								owner = root
+								event_chain = curator_poi_chain
+							}
+							is_point_of_interest = {
+								id = curator_poi_horror
+								owner = root
+								event_chain = curator_poi_chain
+							}
+							is_point_of_interest = {
+								id = curator_poi_fortress
+								owner = root
+								event_chain = curator_poi_chain
+							}
+							is_point_of_interest = {
+								id = curator_poi_hiver
+								owner = root
+								event_chain = curator_poi_chain
+							}
+							is_point_of_interest = {
+								id = curator_poi_stellarite
+								owner = root
+								event_chain = curator_poi_chain
+							}
+							is_point_of_interest = {
+								id = curator_poi_dreadnought
+								owner = root
+								event_chain = curator_poi_chain
+							}
+							is_point_of_interest = {
+								id = curator_poi_hatchling
+								owner = root
+								event_chain = curator_poi_chain
+							}
+						}
+					}
+				}
+			}
 			event_target:curators = { #debug_scope_type = country
 				any_owned_fleet = {
 					closest_system = {
@@ -6428,7 +6497,7 @@ country_event = {
 						max_steps = 999
 						limit = {
 							has_star_flag = guardian
-							any_ship_in_system = {
+							any_fleet_in_system = {
 								exists = owner
 								owner = {
 									NOT = {
@@ -6519,7 +6588,7 @@ country_event = {
 						max_steps = 999
 						limit = {
 							has_star_flag = guardian
-							any_ship_in_system = {
+							any_fleet_in_system = {
 								exists = owner
 								owner = {
 									is_guardian_country = yes
@@ -6578,7 +6647,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								any_ship_in_system = {
+								any_fleet_in_system = {
 									exists = owner
 									owner = {
 										NOT = {
@@ -6612,7 +6681,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								any_ship_in_system = {
+								any_fleet_in_system = {
 									exists = owner
 									owner = {
 										NOT = {
@@ -6646,7 +6715,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								any_ship_in_system = {
+								any_fleet_in_system = {
 									exists = owner
 									owner = {
 										NOT = {
@@ -6680,7 +6749,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								any_ship_in_system = {
+								any_fleet_in_system = {
 									exists = owner
 									owner = {
 										NOT = {
@@ -6714,7 +6783,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								any_ship_in_system = {
+								any_fleet_in_system = {
 									exists = owner
 									owner = {
 										NOT = {
@@ -6748,7 +6817,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								any_ship_in_system = {
+								any_fleet_in_system = {
 									exists = owner
 									owner = {
 										NOT = {
@@ -6782,7 +6851,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								any_ship_in_system = {
+								any_fleet_in_system = {
 									exists = owner
 									owner = {
 										NOT = {
@@ -6816,7 +6885,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								any_ship_in_system = {
+								any_fleet_in_system = {
 									exists = owner
 									owner = {
 										NOT = {
@@ -6849,7 +6918,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								any_ship_in_system = {
+								any_fleet_in_system = {
 									exists = owner
 									owner = {
 										NOT = {
@@ -7390,7 +7459,7 @@ country_event = {
 		set_country_flag = curator_enclave_diplomacy_engaged
 		random_system_within_border = {
 			limit = {
-				any_ship_in_system = {
+				any_fleet_in_system = {
 					exists = owner
 					owner = {
 						is_same_value = event_target:curators
@@ -10255,7 +10324,18 @@ country_event = {
 		}
 		fromfrom = {
 			leader = {
-				add_trait = leader_trait_dragonslayer
+				if = {
+					limit = {
+						leader_class = admiral
+					}
+					add_trait = leader_trait_dragonslayer
+				}
+				ELSE_IF = {
+					limit = {
+						leader_class = general
+					}
+					add_trait = leader_trait_dragonbane
+				}
 			}
 		}
 		add_resource = { influence = 300 }
@@ -10284,7 +10364,7 @@ country_event = {
 
 ### STELLARITE ###
 # Stellarite spawns as an empire enters its system
-ship_event = {
+fleet_event = {
 	id = leviathans.999
 	title = leviathans.999.name
 	desc = leviathans.999.desc
@@ -10415,21 +10495,24 @@ country_event = {
 }
 
 # Players who haven't encountered the stellarite gets a message
-ship_event = {
+fleet_event = {
 	id = leviathans.1001
 	title = leviathans.1000.name
 	desc = {
 		trigger = {
-			hidden:fromfromfrom = {
-				hidden:solar_system = {
-					switch = {
-						trigger = has_star_flag
-						guardians_stellarite_system = { text = leviathans.1000.desc }
-						default = { text = leviathans.1001.desc }
-					}
-				}
+			solar_system = {
+				has_star_flag = guardians_stellarite_system
 			}
 		}
+		text = leviathans.1000.desc
+	}
+	desc = {
+		trigger = {
+			solar_system = {
+				NOT = { has_star_flag = guardians_stellarite_system }
+			}
+		}
+		text = leviathans.1001.desc
 	}
 	picture = GFX_evt_stellarites
 	show_sound = event_radio_chatter
@@ -10438,7 +10521,7 @@ ship_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		fromfrom = {
+		owner = {
 			is_ai = no
 			NOT = { has_country_flag = guardians_stellarite_encountered }
 		}
@@ -10454,7 +10537,7 @@ ship_event = {
 	}
 
 	immediate = {
-		fromfrom = {
+		owner = {
 			country_event = { id = story.8 days = 15 }
 			set_country_flag = guardians_stellarite_encountered
 			establish_communications_no_message = event_target:stellarite_country
@@ -10489,7 +10572,7 @@ fleet_event = {
 				any_system = {
 					has_star_flag = stellarite_present
 					NOT = {
-						any_ship_in_system = {
+						any_fleet_in_system = {
 							owner = {
 								has_country_flag = guardian_stellarite_country
 							}
@@ -11452,7 +11535,7 @@ fleet_event = {
 
 	trigger = {
 		from = {
-			any_ship_in_system = {
+			any_fleet_in_system = {
 				exists = owner
 				owner = {
 					is_country_type = guardian_sphere
@@ -11919,7 +12002,7 @@ country_event = {
 		has_country_flag = guardians_technosphere_encountered
 		any_system = {
 			has_star_flag = guardians_technosphere_system
-			any_ship_in_system = {
+			any_fleet_in_system = {
 				exists = owner
 				owner = {
 					is_country_type = guardian_sphere
@@ -12755,6 +12838,7 @@ event = {
 							}
 						}
 						save_global_event_target_as = wraith_fleet
+						set_fleet_flag = wraith_fleet
 						set_location = event_target:wraith_star
 						set_fleet_stance = aggressive
 						set_aggro_range_measure_from = self
@@ -12766,8 +12850,8 @@ event = {
 										id = wraith.1.trigger.1
 										NOR = {
 											exists = space_owner
-											any_ship_in_system = {
-												fleet = { is_same_value = event_target:wraith_fleet }
+											any_fleet_in_system = {
+												is_same_value = event_target:wraith_fleet
 											}
 											has_star_flag = guardians_wraith_visited
 										}
@@ -12919,12 +13003,12 @@ country_event = {
 }
 
 # Wraith Frequency Modifier Mechanics
-ship_event = {
+fleet_event = {
 	id = leviathans.2061
 	hide_window = yes
 	is_triggered_only = yes
 
-	trigger = { has_ship_flag = wraith_ship }
+	trigger = { has_fleet_flag = wraith_fleet }
 
 	immediate = {
 		solar_system = {
@@ -12939,13 +13023,53 @@ ship_event = {
 				}
 			}
 		}
-		if = {
-			limit = { has_modifier = wraith_frequency_sync }
-			# Removes the modifier when the right star class is not present
+		random_owned_ship = {
 			if = {
-				limit = {
-					has_ship_flag = wraith_freq_blue
-					NOT = {
+				limit = { has_modifier = wraith_frequency_sync }
+				# Removes the modifier when the right star class is not present
+				if = {
+					limit = {
+						has_ship_flag = wraith_freq_blue
+						NOT = {
+							solar_system = {
+								OR = {
+									is_star_class = sc_b
+									is_star_class = sc_a
+								}
+							}
+						}
+					}
+					remove_modifier = "wraith_frequency_sync"
+				}
+				if = {
+					limit = {
+						has_ship_flag = wraith_freq_yellow
+						NOT = {
+							solar_system = {
+								is_star_class = sc_g
+							}
+						}
+					}
+					remove_modifier = "wraith_frequency_sync"
+				}
+				if = {
+					limit = {
+						has_ship_flag = wraith_freq_red
+						NOT = {
+							solar_system = {
+								is_star_class = sc_m
+							}
+						}
+					}
+					remove_modifier = "wraith_frequency_sync"
+				}
+			}
+			if = {
+				limit = { NOT = { has_modifier = wraith_frequency_sync } }
+				# Adds the modifier when the right star class is present
+				if = {
+					limit = {
+						has_ship_flag = wraith_freq_blue
 						solar_system = {
 							OR = {
 								is_star_class = sc_b
@@ -12953,64 +13077,26 @@ ship_event = {
 							}
 						}
 					}
+					add_modifier = { modifier = "wraith_frequency_sync" days = -1 }
 				}
-				remove_modifier = "wraith_frequency_sync"
-			}
-			if = {
-				limit = {
-					has_ship_flag = wraith_freq_yellow
-					NOT = {
+				if = {
+					limit = {
+						has_ship_flag = wraith_freq_yellow
 						solar_system = {
 							is_star_class = sc_g
 						}
 					}
+					add_modifier = { modifier = "wraith_frequency_sync" days = -1 }
 				}
-				remove_modifier = "wraith_frequency_sync"
-			}
-			if = {
-				limit = {
-					has_ship_flag = wraith_freq_red
-					NOT = {
+				if = {
+					limit = {
+						has_ship_flag = wraith_freq_red
 						solar_system = {
 							is_star_class = sc_m
 						}
 					}
+					add_modifier = { modifier = "wraith_frequency_sync" days = -1 }
 				}
-				remove_modifier = "wraith_frequency_sync"
-			}
-		}
-		if = {
-			limit = { NOT = { has_modifier = wraith_frequency_sync } }
-			# Adds the modifier when the right star class is present
-			if = {
-				limit = {
-					has_ship_flag = wraith_freq_blue
-					solar_system = {
-						OR = {
-							is_star_class = sc_b
-							is_star_class = sc_a
-						}
-					}
-				}
-				add_modifier = { modifier = "wraith_frequency_sync" days = -1 }
-			}
-			if = {
-				limit = {
-					has_ship_flag = wraith_freq_yellow
-					solar_system = {
-						is_star_class = sc_g
-					}
-				}
-				add_modifier = { modifier = "wraith_frequency_sync" days = -1 }
-			}
-			if = {
-				limit = {
-					has_ship_flag = wraith_freq_red
-					solar_system = {
-						is_star_class = sc_m
-					}
-				}
-				add_modifier = { modifier = "wraith_frequency_sync" days = -1 }
 			}
 		}
 	}
@@ -13234,7 +13320,7 @@ ship_event = {
 	trigger = {
 		FROM = {
 			has_star_flag = guardians_fortress_system
-			any_ship = { 
+			any_ship_in_system = { 
 				AND = {
 					is_ship_size = station_xl
 					is_disabled = no
@@ -13242,14 +13328,12 @@ ship_event = {
 			}
 		}
 		owner = {
-			NOT = { has_country_flag = encountered_fortress }
 			is_ai = no
 		}
 	}
 	
 	immediate = {
 		FROM = { save_event_target_as = fortress_system }
-		owner = { set_country_flag = encountered_fortress }
 	}		
 	
 	option = {
@@ -14024,14 +14108,11 @@ ship_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_horror }
-		}
 		FROM = {
 			has_star_flag = guardians_horror_system
 			OR = {
 				NOT = { has_star_flag = horror_spawned }
-				any_ship = { is_ship_size = dimensional_horror }
+				any_fleet_in_system = { is_ship_size = dimensional_horror }
 			}
 		}
 	}
@@ -14108,7 +14189,6 @@ ship_event = {
 		solar_system = { save_event_target_as = horror_system }
 		owner = { 
 			country_event = { id = story.8 days = 15 }
-			set_country_flag = encountered_horror
 			establish_communications_no_message = event_target:dimensional_horror_country
 			country_event = { id = leviathans.3001 }
 		}
@@ -14334,11 +14414,9 @@ ship_event = {
 		}
 		FROM = {
 			has_star_flag = guardians_dreadnought_system
-			any_ship = { 
-				AND = {
-					is_ship_size = npc_warship_01
-					owner = { is_country_type = guardian_dreadnought }
-				}
+			any_fleet_in_system = {
+				is_ship_size = npc_warship_01
+				owner = { is_country_type = guardian_dreadnought }
 			}
 		}
 	}
@@ -14801,7 +14879,6 @@ ship_event = {
 	trigger = {
 		NOT = { has_global_flag = hivers_appeared }
 		owner = {
-			NOT = { has_country_flag = encountered_hivers }
 			is_ai = no
 		}
 		FROM = {
@@ -14812,9 +14889,6 @@ ship_event = {
 	
 	immediate = {
 		FROM = { save_event_target_as = hiver_system }
-		owner = {
-			set_country_flag = encountered_hivers
-		}
 	}		
 	
 	option = {

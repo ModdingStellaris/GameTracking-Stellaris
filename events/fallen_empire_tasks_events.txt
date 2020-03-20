@@ -422,11 +422,13 @@ country_event = {
 			limit = { has_country_flag = fe_gift_resources_small }
 			add_resource = { minerals = 1500 }
 			add_resource = { energy = 500 }
+			add_resource = { alloys = 250 }
 		}
 		if = {
 			limit = { has_country_flag = fe_gift_resources_large }
 			add_resource = { minerals = 3000 }
 			add_resource = { energy = 1000 }
+			add_resource = { alloys = 500 }
 		}
 		if = {
 			limit = { has_country_flag = fe_gift_databanks }
@@ -2130,10 +2132,10 @@ country_event = {
 		create_country = {
 			name = "NAME_Dead_Species"
 			species = last_created_species
-			type = faction
+			type = global_event
 			effect = {
 				save_event_target_as = FallenEmpireDeadSpecies
-			}			
+			}		
 		}
 	
 		random_country = {
@@ -2154,6 +2156,7 @@ country_event = {
 			save_event_target_as = FallenEmpireTaskOrigin
 			root = { country_event = { id = fallen_empires_tasks.24 } }
 		}
+		country_event = { id = fallen_empires_tasks.24 }
 	}
 }
 
@@ -2209,5 +2212,13 @@ country_event = {
 		custom_tooltip = fallen_empire_unhappy_tooltip
 		hidden_effect = { event_target:FallenEmpireTaskOrigin = { add_opinion_modifier = { who = root modifier = opinion_refused_fallen_empire_request } } }
 		hidden_effect = { event_target:FallenEmpireDeadSpecies = { destroy_country = yes } }
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:FallenEmpireDeadSpecies = {
+				destroy_country = yes
+			}
+		}
 	}
 }

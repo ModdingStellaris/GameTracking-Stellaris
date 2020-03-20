@@ -30,19 +30,19 @@ automate_habitat_mining_hive_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_mineral_purification_plant
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					mineral_purification_plant_upkeep_affordable = yes
 				}
 			}
 		}
 
 		4 = {
-			building = building_mineral_purification_plant
+			building = building_foundry_1
 			available = {
 				owner = {
-					mineral_purification_plant_upkeep_affordable = yes
+					foundry_1_upkeep_affordable = yes
 				}
 			}
 		}

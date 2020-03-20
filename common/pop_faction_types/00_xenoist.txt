@@ -5,15 +5,15 @@
 xenoist = {
 	election_header = "GFX_faction_header_yellow"
 	guiding_ethic = ethic_xenophile
-	
+
 	unique = yes
 	support_multiplier = 1
-	
+
 	resources = {
 		category = pop_factions
 		produces = {
 			influence = 2
-		}		
+		}
 	}
 
 	is_potential = {
@@ -21,7 +21,7 @@ xenoist = {
 		has_encountered_other_species = yes
 		NOT = { has_ethic = ethic_gestalt_consciousness }
 	}
-	
+
 	parameters = {
 		empire = {
 			type = country
@@ -30,7 +30,7 @@ xenoist = {
 			}
 		}
 	}
-	
+
 	can_join_pre_triggers = {
 		is_enslaved = no
 		is_being_purged = no
@@ -45,10 +45,10 @@ xenoist = {
 			has_ethic = ethic_fanatic_xenophile
 		}
 	}
-	
+
 	attraction = {
 		base = 150
-		
+
 		modifier = {
 			factor = 1.25
 			exists = from
@@ -57,7 +57,7 @@ xenoist = {
 				leader = { leader_class = ruler }
 			}
 		}
-		
+
 		modifier = {
 			factor = 0.75
 			exists = from
@@ -65,30 +65,52 @@ xenoist = {
 				NOT = { exists = leader }
 			}
 		}
-		
+
 		modifier = {
 			factor = 2.0
 			NOT = { is_same_species = owner_species }
 		}
 	}
-	
+
 	leader = {
 		base = 100
-		
+
 		modifier = {
 			factor = 0.5
 			leader_class = scientist
 		}
-		
+
 		modifier = {
 			factor = 2.0
 			NOT = { is_same_species = owner_species }
 		}
-		
+
 		modifier = {
 			factor = 0.0
 			is_event_leader = yes
-		}	
+		}
+	}
+
+	demand = {
+		title = "FACTION_OUTRAGED_GC"
+		unfulfilled_title = "FACTION_OUTRAGED_GC"
+		desc = "FACTION_OUTRAGED_GC_DESC"
+
+		fulfilled_effect = -20
+		unfulfilled_effect = -0.001
+
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = faction_xenophile_outraged_gc
+			}
+		}
+
+		trigger = {
+			owner = {
+				has_country_flag = faction_xenophile_outraged_gc
+			}
+		}
 	}
 
 	demand = {
@@ -98,7 +120,7 @@ xenoist = {
 
 		fulfilled_effect = 10
 		unfulfilled_effect = -5
-		
+
 		potential = {
 			exists = owner
 			owner = {
@@ -107,7 +129,7 @@ xenoist = {
 				}
 			}
 		}
-		
+
 		trigger = {
 			owner = {
 				has_policy_flag = interference_passive
@@ -122,7 +144,7 @@ xenoist = {
 
 		unfulfilled_effect = -25
 		fulfilled_effect = 0.001
-		
+
 		potential = {
 			exists = owner
 			owner = {
@@ -135,7 +157,7 @@ xenoist = {
 				}
 			}
 		}
-		
+
 		trigger = {
 			owner = {
 				NOT = {
@@ -232,7 +254,7 @@ xenoist = {
 
 		fulfilled_effect = 5
 		unfulfilled_effect = -0.001
-		
+
 		potential = {
 			exists = owner
 			owner = {
@@ -242,11 +264,11 @@ xenoist = {
 				}
 			}
 		}
-		
+
 		trigger = {
 			owner = {
 				any_system_within_border = {
-					any_ship_in_system = {
+					any_fleet_in_system = {
 						exists = owner
 						owner = { is_country_type = enclave }
 					}
@@ -450,7 +472,31 @@ xenoist = {
 			}
 		}
 	}
-	
+
+	demand = {
+		title = "COOPERATIVE_DIPLO_STANCE"
+		unfulfilled_title = "COOPERATIVE_DIPLO_STANCE"
+		desc = "COOPERATIVE_DIPLO_STANCE_DESC"
+
+		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
+
+		potential = {
+			exists = owner
+			owner = {
+				is_homicidal = no
+				is_country_type = default
+				has_policy_flag = diplo_stance_cooperative
+			}
+		}
+
+		trigger = {
+			owner = {
+				has_policy_flag = diplo_stance_cooperative
+			}
+		}
+	}
+
 	on_create = {
 		pop_faction_event = { id = factions.1 }
 	}
@@ -469,16 +515,16 @@ xenoist = {
 			remove_modifier = suppressed_xenophile
 		}
 	}
-	
+
 	actions = {
 		embrace_faction = {
 			title = "EMBRACE_FACTION"
 			description = "EMBRACE_FACTION_DESC"
-			
+
 			cost = {
 				influence = 500
 			}
-			
+
 			potential = {
 				exists = owner
 				owner = {
@@ -488,7 +534,7 @@ xenoist = {
 					}
 				}
 			}
-			
+
 			valid = {
 				custom_tooltip = {
 					fail_text = EMBRACE_FACTION_COOLDOWN
@@ -503,7 +549,7 @@ xenoist = {
 			}
 
 			effect = {
-				add_modifier = { modifier = embraced_faction days = 3600 }				
+				add_modifier = { modifier = embraced_faction days = 3600 }
 				parameter:empire = {
 					shift_ethic = ethic_xenophile
 					hidden_effect = {
@@ -520,15 +566,15 @@ xenoist = {
 						every_relation = {
 							limit = {
 								is_ai = no
-								is_country_type = default			
+								is_country_type = default
 								has_communications = prev
 							}
 							country_event = { id = factions.2000 }
 						}
-					}				
-				}				
+					}
+				}
 			}
-			
+
 			ai_weight = {
 				base = 1
 				modifier = {
@@ -541,10 +587,10 @@ xenoist = {
 				modifier = {
 					factor = 0
 					owner = { has_valid_civic = civic_fanatic_purifiers }
-				}				
+				}
 				modifier = {
 					factor = 0
-					NOT = { 
+					NOT = {
 						owner = {
 							exists = ruler
 							ruler = {
@@ -558,21 +604,21 @@ xenoist = {
 					owner = {
 						count_pop_factions = {
 							count < 4
-						}					
+						}
 					}
-				}			
+				}
 			}
 		}
 		promote_faction = {
 			title = "PROMOTE_FACTION"
 			description = "PROMOTE_FACTION_DESC"
-			
+
 			potential = {
 				exists = owner
-				parameter:empire = { 				
-					NOR = { 
+				parameter:empire = {
+					NOR = {
 						has_modifier = suppressed_xenophile
-						has_modifier = promoted_xenophile 
+						has_modifier = promoted_xenophile
 					}
 				}
 			}
@@ -582,7 +628,7 @@ xenoist = {
 					add_modifier = { modifier = promoted_xenophile days = -1 }
 				}
 			}
-			
+
 			ai_weight = {
 				base = 0
 			}
@@ -590,10 +636,10 @@ xenoist = {
 		cancel_promote_faction = {
 			title = "CANCEL_PROMOTE_FACTION"
 			description = "CANCEL_PROMOTE_FACTION_DESC"
-			
+
 			potential = {
 				exists = owner
-				parameter:empire = { 
+				parameter:empire = {
 					has_modifier = promoted_xenophile
 				}
 			}
@@ -603,21 +649,21 @@ xenoist = {
 					remove_modifier = promoted_xenophile
 				}
 			}
-			
+
 			ai_weight = {
 				base = 0
 			}
-		}		
+		}
 		suppress_faction = {
 			title = "SUPPRESS_FACTION"
 			description = "SUPPRESS_FACTION_DESC"
-			
+
 			potential = {
 				exists = owner
-				parameter:empire = { 
-					NOR = { 
+				parameter:empire = {
+					NOR = {
 						has_modifier = suppressed_xenophile
-						has_modifier = promoted_xenophile 
+						has_modifier = promoted_xenophile
 					}
 				}
 			}
@@ -628,7 +674,7 @@ xenoist = {
 					add_modifier = { modifier = suppressed_xenophile days = -1 }
 				}
 			}
-			
+
 			ai_weight = {
 				base = 0
 			}
@@ -636,10 +682,10 @@ xenoist = {
 		cancel_suppress_faction = {
 			title = "CANCEL_SUPPRESS_FACTION"
 			description = "CANCEL_SUPPRESS_FACTION_DESC"
-			
+
 			potential = {
 				exists = owner
-				parameter:empire = { 
+				parameter:empire = {
 					has_modifier = suppressed_xenophile
 				}
 			}
@@ -650,10 +696,10 @@ xenoist = {
 					remove_modifier = suppressed_xenophile
 				}
 			}
-			
+
 			ai_weight = {
 				base = 0
 			}
-		}	
+		}
 	}
 }

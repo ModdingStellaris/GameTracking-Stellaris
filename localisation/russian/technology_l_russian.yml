@@ -915,3 +915,7 @@
  requires_tech_interstellar_fleet_traditions:0 "§RТребуется технология £society£ §Y$tech_interstellar_fleet_traditions$§!.§!"
  requires_tech_orbital_sensor_array:0 "§RТребуется технология £physics£ §Y$tech_orbital_sensor_array$§!.§!"
  requires_tech_command_matrix:0 "§RТребуется технология £society£ §Y$tech_command_matrix$§!.§!"
+ tech_mega_assembly:0 "Системы мегаускоренной сборки"
+ tech_mega_assembly_desc:0 "Усовершенствованные алгоритмы сборки позволяют многократно ускорить производство новых моделей."
+ tech_effective_bureaucracy:0 "Эффективная бюрократия"
+ tech_effective_bureaucracy_desc:0 "Улучшенный алгоритм обработки и сортировки крупных объёмов информации облегчает принятие решений и распространение актуальной информации в границах империи."

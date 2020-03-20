@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "federations_frontend_mesh"
+		file = "gfx/models/ui/federations_frontend.mesh"
+			animation = { id = "idle"		type = "federations_frontend_idle_animation" }
+	}
+}

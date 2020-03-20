@@ -1,0 +1,195 @@
+entity = {
+	name = "fusion_trail_mesh_entity"
+	pdxmesh = "fusion_trail_mesh_mesh"
+		
+
+	
+	game_data = {
+		bloom_factor			= 1.5
+		uv_animation_speed 		= 0.2
+		uv_animation_direction 	= { 0.1 0.50 }
+	}
+}
+
+
+entity = {
+	name = "aurora_mesh_entity"
+	pdxmesh = "aurora_mesh_mesh"
+	game_data = {
+		bloom_factor			= 1.6
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 0.5 0.0 }
+	}
+
+}
+
+entity = {
+	name = "fusion_trail_entity"
+
+	locator = { name = "origo" }
+
+	default_state = "idle"
+	state = { name = "idle"  state_time = 2 looping = yes
+		event = { time = 0 particle = "fusion_drive_trail_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+		attach = { "origo" = "aurora_mesh_entity" }
+		attach = { "origo" = "fusion_trail_mesh_entity" }
+	scale = 1
+}
+
+entity = {
+	name = "fusion_trail_mesh_old_entity"
+	pdxmesh = "fusion_trail_mesh_mesh"
+		
+
+	
+	game_data = {
+		bloom_factor			= 0.5
+		uv_animation_speed 		= 0.2
+		uv_animation_direction 	= { 0.1 0.50 }
+	}
+}
+
+
+entity = {
+	name = "aurora_mesh_old_entity"
+	pdxmesh = "aurora_mesh_mesh"
+	game_data = {
+		bloom_factor			= 0.6
+		uv_animation_speed 		= 0.07
+		uv_animation_direction 	= { 0.5 0.0 }
+	}
+
+}
+
+
+entity = {
+	name = "fusion_trail_old_entity"
+
+	locator = { name = "origo" }
+
+	default_state = "idle"
+	state = { name = "idle"  state_time = 2 looping = yes
+		event = { time = 0 particle = "fusion_parking_lot_small_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+		attach = { "origo" = "aurora_mesh_old_entity" }
+		attach = { "origo" = "fusion_trail_mesh_old_entity" }
+	scale = 1.44
+}
+
+
+
+
+entity = {
+	name = "old_fleet_parking_lot_entity"
+
+	locator = { name = "one" 	position = { 0 		-40 	90 }	}
+	locator = { name = "two" 	position = { -127 	-30 	-10 }	rotation = { -10 0 0 }}
+	locator = { name = "three" 	position = { 125 	-30 	-12 }	rotation = { 10 0 0 }}
+	locator = { name = "four" 	position = { 62 	-10 	-58 }	}
+	locator = { name = "five" 	position = { -60 	-10 	-60 }	}
+	locator = { name = "six" 	position = { 0 		0 		-95 }	}
+	
+#		attach = { "one" = "fusion_trail_2_entity" }
+		attach = { "two" = "fusion_trail_old_1_entity" }
+		attach = { "three" = "fusion_trail_old_entity" }
+		attach = { "four" = "fusion_trail_old_entity" }
+		attach = { "five" = "fusion_trail_old_1_entity" }
+		attach = { "six"  = "fusion_trail_old_2_entity" }
+	default_state = "idle"
+	state = { name = "idle"  state_time = 2 looping = yes
+		event = { time = 0 particle = "fusion_parking_lot_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	cull_radius = 1000
+}
+
+
+#### Mirror
+entity = {
+	name = "fusion_trail_mesh_1_entity"
+	pdxmesh = "fusion_trail_mesh_2"
+		
+
+	
+	game_data = {
+		bloom_factor			= 0.5
+		uv_animation_speed 		= 0.2
+		uv_animation_direction 	= { 0.1 0.50 }
+	}
+}
+
+
+entity = {
+	name = "aurora_mesh_1_entity"
+	pdxmesh = "aurora_mesh_1"
+	game_data = {
+		bloom_factor			= 0.6
+		uv_animation_speed 		= 0.07
+		uv_animation_direction 	= { 0.5 0.0 }
+	}
+
+}
+
+entity = {
+	name = "fusion_trail_old_1_entity"
+
+	locator = { name = "origo" }
+
+	default_state = "idle"
+	state = { name = "idle"  state_time = 2 looping = yes
+		event = { time = 0 particle = "fusion_parking_lot_small_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+		attach = { "origo" = "aurora_mesh_1_entity" }
+		attach = { "origo" = "fusion_trail_mesh_1_entity" }
+	scale = 1.44
+}
+
+
+
+
+
+### Straight
+
+entity = {
+	name = "fusion_trail_mesh_2_entity"
+	pdxmesh = "fusion_trail_mesh_3"
+		
+
+	
+	game_data = {
+		bloom_factor			= 1.1
+		uv_animation_speed 		= 0.2
+		uv_animation_direction 	= { 0.1 0.50 }
+	}
+}
+
+
+entity = {
+	name = "aurora_mesh_2_entity"
+	pdxmesh = "aurora_mesh_2"
+	game_data = {
+		bloom_factor			= 1.2
+		uv_animation_speed 		= 0.08
+		uv_animation_direction 	= { 0.5 0.0 }
+	}
+
+}
+
+entity = {
+	name = "fusion_trail_old_2_entity"
+
+	locator = { name = "origo" }
+
+	default_state = "idle"
+	state = { name = "idle"  state_time = 2 looping = yes
+		event = { time = 0 particle = "fusion_parking_lot_small_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+		attach = { "origo" = "aurora_mesh_2_entity" }
+		attach = { "origo" = "fusion_trail_mesh_2_entity" }
+	scale = 1.84
+}

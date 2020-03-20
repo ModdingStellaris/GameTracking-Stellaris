@@ -1,6 +1,8 @@
 ﻿### Molluscoid 2
 ### Created by Maximilian Olbers
 MOL2 = {
+
+	category = "Molluscoid"
 	
 	language = "l_simp_chinese"
 

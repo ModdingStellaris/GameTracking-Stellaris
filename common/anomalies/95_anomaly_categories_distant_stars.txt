@@ -1060,11 +1060,11 @@ debris_gasgiant_category_temp = {
 
 	max_once_global = yes
 	
-	null_spawn_chance = 0.75  # 25% chance to spawn
+	null_spawn_chance = 0.65  # 35% chance to spawn
 	
 	spawn_chance = {
 		modifier = {
-			add = 0.25
+			add = 0.35
 			has_distar = yes
 			is_planet_class = pc_gas_giant
 		}
@@ -1590,7 +1590,8 @@ disco_impossible_organism_cat = {
 ### Stranded Scientist ###
 disco_stranded_scientist_cat = {
 	desc = "disco_stranded_scientist_cat_desc"
-	picture= "GFX_evt_asteroid_field"
+	picture = "GFX_evt_asteroid_field"
+	max_once_global = yes
 	level = 4
 
 	spawn_chance = {
@@ -1605,6 +1606,7 @@ disco_stranded_scientist_cat = {
 				OR = {
 					has_ethic = ethic_gestalt_consciousness
 					has_ethic = ethic_fanatic_xenophobe
+					species_portrait = human
 				}
 			}
 		}

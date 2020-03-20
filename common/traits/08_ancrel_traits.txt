@@ -21,7 +21,7 @@ leader_trait_traumatized = {
 	modifier = {
 		all_technology_research_speed = -0.10
 		ship_anomaly_research_speed_mult = -0.10
-		ship_archaeological_site_excavation_speed_mult = -10
+		ship_archaeological_site_excavation_speed_mult = -0.30
 	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
@@ -70,7 +70,7 @@ leader_trait_inspired_archaeologist = {
 	}
 
 	modifier = {
-		ship_archaeological_site_excavation_speed_mult = 10
+		ship_archaeological_site_excavation_speed_mult = 0.30
 	}
 
 	leader_trait = { scientist }

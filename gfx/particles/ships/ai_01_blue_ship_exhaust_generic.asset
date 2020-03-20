@@ -2,7 +2,7 @@ particle={
 	name="ai_01_blue_ship_exhaust_moving_generic_file"
 	subsystem={
 		name="fire_inner"
-		max_amount=20
+		max_amount=10
 		slave_particles=0
 		sort="depth"
 		emitter_type="sphere"
@@ -39,7 +39,7 @@ particle={
 		velocity_yaw={ 0.000 5.000 }
 		velocity=0.500
 		life=0.160
-		emission=100.000
+		emission=50.000
 		size={ 2.500,shrink 0.050 }
 		rotation={ 0.000 180.000 }
 		rotation_speed={ 50.000 0.000 }
@@ -103,10 +103,10 @@ particle={
 			shader="ParticleAdditive"
 		}
 		color={
-			x=255.000,R
-			y=255.000,G
+			x=75.000,R
+			y=175.000,G
 			z=255.000,B
-			alpha=15.000,backblast_alpha
+			alpha=50.000,backblast_alpha
 		}
 		position={
 			x=0.000
@@ -119,10 +119,10 @@ particle={
 		emitter_pitch={ 0.000 0.000 }
 		velocity_pitch=0.000
 		velocity_yaw=0.000
-		velocity={ 10.000 5.000 }
+		velocity={ 10.000 0.000 }
 		life={ 0.600 0.020 }
 		emission=100.000
-		size={ 2.000,shrink 0.050 }
+		size={ 2.000 0.050 }
 		rotation={ 0.000 180.000 }
 		rotation_speed={ 50.000 0.000 }
 		force=point
@@ -187,7 +187,7 @@ particle={
 		minValue=0.000
 		maxValue=1.000
 		curve={
-			0.000 1.000 0.129 1.000 0.268 1.000 0.388 0.516 1.000 0.000 
+			0.000 1.000 0.129 1.000 0.268 1.000 0.474 0.680 1.000 0.375 
 		}
 		op="MUL"
 		time="life"

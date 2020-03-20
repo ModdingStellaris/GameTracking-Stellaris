@@ -2,6 +2,7 @@
 refugee_pop_effect = {  #Must save event_target:refugee_pop before this effect is run on intended pop
 	remove_modifier = "pop_recently_conquered"
 	remove_culture_shock = yes
+	remove_pop_flag = event_purge	
 	planet = { 	
 		save_event_target_as = RefugeeEscapedPlanet 
 		if = {

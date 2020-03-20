@@ -2,7 +2,7 @@
 # Army buildings
 #############
 building_military_academy = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	base_cap_amount = 1
 
 	category = army
@@ -26,6 +26,7 @@ building_military_academy = {
 	
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = no }
 		}
 		modifier = {
@@ -34,6 +35,7 @@ building_military_academy = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -44,10 +46,10 @@ building_military_academy = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 400
+			minerals = @b1_minerals
 		}			
 		upkeep = {
-			energy = 2
+			energy = @b1_upkeep
 		}
 	}
 	
@@ -107,6 +109,7 @@ building_stronghold = {
 	
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = no }
 		}
 		modifier = {
@@ -115,6 +118,7 @@ building_stronghold = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -125,7 +129,7 @@ building_stronghold = {
 	resources = {
 		category = planet_buildings_strongholds
 		cost = {
-			minerals = 200
+			minerals = @b1_minerals
 		}			
 		upkeep = {
 			energy = 1
@@ -159,7 +163,7 @@ building_stronghold = {
 		weight = 0
 		modifier = {
 			weight = 1
-			free_jobs = 0
+			free_jobs < 1
 			free_building_slots > 1
 			owner = { used_naval_capacity_percent > 0.9	}
 		}
@@ -180,7 +184,7 @@ building_stronghold = {
 }
 
 building_fortress = {
-	base_buildtime = 360
+	base_buildtime = @b1_time
 	can_build = no
 	planetary_ftl_inhibitor = yes
 	add_to_first_building_slot = yes
@@ -210,6 +214,7 @@ building_fortress = {
 	
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = no }
 		}
 		modifier = {
@@ -218,6 +223,7 @@ building_fortress = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
@@ -228,12 +234,12 @@ building_fortress = {
 	resources = {
 		category = planet_buildings_strongholds
 		cost = {
-			minerals = 400
-			volatile_motes = 50
+			minerals = @b2_minerals
+			volatile_motes = @b2_rare_cost
 		}			
 		upkeep = {
 			energy = 1
-			volatile_motes = 1
+			volatile_motes = @b2_rare_upkeep
 		}
 	}
 	
@@ -286,7 +292,7 @@ building_fortress = {
 }
 
 building_planetary_shield_generator = {
-	base_buildtime = 600	
+	base_buildtime = @b3_time	
 	base_cap_amount = 1
 	add_to_first_building_slot = yes
 
@@ -309,10 +315,10 @@ building_planetary_shield_generator = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
+			minerals = @b2_minerals
 		}			
 		upkeep = {
-			energy = 5
+			energy = @b2_upkeep
 		}
 	}
 	

@@ -3279,9 +3279,6 @@ ship_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_ruined_dyson }
-		}
 		FROM = {
 			has_star_flag = ruined_dyson_system
 			any_system_megastructure = { is_megastructure_type = dyson_sphere_ruined }
@@ -3290,7 +3287,6 @@ ship_event = {
 	
 	immediate = {
 		FROM = { save_event_target_as = dyson_system }
-		owner = { set_country_flag = encountered_ruined_dyson }
 	}		
 	
 	option = {
@@ -3357,9 +3353,6 @@ ship_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_ruined_nexus }
-		}
 		FROM = {
 			has_star_flag = ruined_nexus_system
 			any_system_megastructure = { is_megastructure_type = think_tank_ruined }
@@ -3368,7 +3361,6 @@ ship_event = {
 	
 	immediate = {
 		FROM = { save_event_target_as = nexus_system }
-		owner = { set_country_flag = encountered_ruined_nexus }
 	}		
 	
 	option = {
@@ -3429,9 +3421,6 @@ ship_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_ruined_sentry }
-		}
 		FROM = {
 			has_star_flag = ruined_sentry_system
 			any_system_megastructure = { is_megastructure_type = spy_orb_ruined }
@@ -3440,7 +3429,6 @@ ship_event = {
 	
 	immediate = {
 		FROM = { save_event_target_as = sentry_system }
-		owner = { set_country_flag = encountered_ruined_sentry }
 	}		
 	
 	option = {
@@ -3505,9 +3493,6 @@ ship_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_ruined_ring }
-		}
 		FROM = {
 			has_star_flag = ruined_ring_system
 			any_system_megastructure = { is_megastructure_type = ring_world_ruined }
@@ -3516,7 +3501,6 @@ ship_event = {
 	
 	immediate = {
 		FROM = { save_event_target_as = ring_system }
-		owner = { set_country_flag = encountered_ruined_ring }
 	}		
 	
 	option = {

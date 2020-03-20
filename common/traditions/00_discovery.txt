@@ -6,11 +6,14 @@ tr_discovery_adopt = {
 
 	tradition_swap = {
 		name = tr_discovery_adopt_machine
-		inherit_effects = yes
+		inherit_effects = no
 		#inherit_icon = no
 		inherit_name = no
 		trigger = {
 			is_machine_empire = yes
+		}
+		modifier = {
+			ship_anomaly_research_speed_mult = 0.20
 		}
 
 		weight = {
@@ -20,11 +23,14 @@ tr_discovery_adopt = {
 
 	tradition_swap = {
 		name = tr_discovery_adopt_hive
-		inherit_effects = yes
+		inherit_effects = no
 		#inherit_icon = no
 		inherit_name = no
 		trigger = {
 			is_hive_empire = yes
+		}
+		modifier = {
+			ship_anomaly_research_speed_mult = 0.20
 		}
 
 		weight = {

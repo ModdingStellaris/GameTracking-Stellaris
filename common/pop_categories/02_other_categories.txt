@@ -53,6 +53,8 @@ robot_servant = {
 	rank = 0
 	display_category = worker
 
+	change_job_threshold = 1.15
+
 	pop_modifier = {
 		pop_political_power = -1
 		pop_housing_usage_base = 0.5
@@ -97,6 +99,8 @@ slave = {
 	rank = 0
 	clothes_texture_index = 2
 	display_category = worker
+
+	change_job_threshold = 1.15
 
 	assign_to_pop = {
 		is_enslaved = yes
@@ -275,6 +279,8 @@ bio_trophy = {
 	rank = 0
 	clothes_texture_index = 1
 
+	change_job_threshold = 1.25
+
 	assign_to_pop = {
 		has_citizenship_type = { type = citizenship_organic_trophy }
 	}
@@ -343,6 +349,7 @@ bio_trophy = {
 criminal = {
 	rank = 1
 	clothes_texture_index = 2
+	change_job_threshold = 2
 
 	demotion_time = 0
 	display_unemployment = no
@@ -593,6 +600,7 @@ criminal = {
 
 assimilation = {
 	rank = 0
+
 	assign_to_pop = {
 		is_being_assimilated = yes
 	}
@@ -622,6 +630,7 @@ assimilation = {
 deviant_drone = {
 	rank = 2
 	clothes_texture_index = 2
+	change_job_threshold = 2
 
 	demotion_time = 0
 
@@ -872,6 +881,7 @@ deviant_drone = {
 corrupt_drone = {
 	rank = 2
 	clothes_texture_index = 2
+	change_job_threshold = 2
 
 	demotion_time = 0
 
@@ -1122,10 +1132,16 @@ corrupt_drone = {
 precursor = {
 	rank = 3
 	clothes_texture_index = 1
+	change_job_threshold = 2
 
 	assign_to_pop = {
 		exists = owner
-		is_same_species = owner
+		OR = {
+			is_same_species = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
 		owner = {
 			OR = {
 				is_country_type = fallen_empire
@@ -1233,6 +1249,7 @@ precursor = {
 xeno_ward = {
 	rank = 0
 	clothes_texture_index = 3
+	change_job_threshold = 2
 
 	pop_modifier = {
 		pop_political_power = -1
@@ -1281,12 +1298,14 @@ xeno_ward = {
 pre_sapients = {
 	rank = 0
 	clothes_texture_index = 3
+	change_job_threshold = 1.25
 
 	assign_to_pop = {
-		NOT = { exists = owner }
+		#NOT = { exists = owner }
+		is_sapient = no
 	}
 	weight = {
-		weight = 1
+		weight = 9000
 	}
 
 	pop_modifier = {

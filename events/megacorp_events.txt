@@ -76,7 +76,7 @@ country_event = {
 	desc = mega.100.desc
 	picture = GFX_evt_ruined_system
 	show_sound = event_planetary_riot
-	location = fromfrom
+	location = from
 
 	is_triggered_only = yes
 
@@ -94,7 +94,7 @@ country_event = {
 	immediate = {
 		while = {
 			count = 3
-			fromfrom = {
+			from = {
 				random_system_planet = {
 					limit = { has_planet_flag = consecrated@root }
 					remove_planet_flag = consecrated@root

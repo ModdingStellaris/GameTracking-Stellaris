@@ -2,6 +2,8 @@
 ### Created by Dee Majek
 
 MOL4 = {
+
+	category = "Molluscoid"
 	
 	language = "l_simp_chinese"
 
@@ -32,6 +34,10 @@ MOL4 = {
 
 		colossus = {
 			"世界吞噬者" "深渊创造者"
+		}
+		
+		juggernaut = {
+			"深渊暗礁" "星海暗流" "淬星者" "潮汐之元"
 		}
 		
 		science = {

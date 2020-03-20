@@ -101,8 +101,8 @@ particle={
 			shader="ParticleAdditive"
 		}
 		color={
-			x=255.000,R
-			y=255.000,G
+			x=100.000,R
+			y=220.000,G
 			z=255.000,B
 			alpha=15.000,backblast_alpha
 		}
@@ -185,7 +185,7 @@ particle={
 		minValue=0.000
 		maxValue=1.000
 		curve={
-			0.000 1.000 0.129 1.000 0.268 1.000 0.388 0.516 1.000 0.000 
+			0.000 1.000 0.129 1.000 0.268 1.000 0.447 0.617 1.000 0.180 
 		}
 		op="MUL"
 		time="life"

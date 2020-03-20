@@ -69,6 +69,7 @@ graygoo_interdictor = {
 	modifier = {
 		ship_evasion_add = 20
 		ships_upkeep_mult = -1
+		ship_piracy_suppression_add = 4
 	}
 	max_hitpoints = 2000
 	size_multiplier = 4

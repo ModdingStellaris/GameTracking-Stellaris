@@ -70,9 +70,6 @@ ship_design = {
 	required_component="BIO_DRIVE"
 }
 
-
-
-
 # Large Space Amoeba
 ship_design = {
 	name = "NAME_Large_Space_Organism_Blue"
@@ -171,6 +168,7 @@ ship_design = {
 	
 	required_component="BIO_DRIVE"
 }
+
 # Small Space Amoeba
 ship_design = {
 	name = "NAME_Small_Space_Organism_Teal"

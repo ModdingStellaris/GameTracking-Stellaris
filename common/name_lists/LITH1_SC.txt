@@ -2,8 +2,11 @@
 	### Created by Douglas Furen
 
 LITHOID1 = {
-	
-	language = "l_simp_chinese"
+
+		category = "Lithoid"
+		
+		language = "l_simp_chinese"
+		
 		ship_names = {
 			
 			corvette = {
@@ -28,6 +31,10 @@ LITHOID1 = {
 
 			colossus = {
 			"阿特罗-克拉托克之磅" "阿罗克-科罗特之磅" "布雷克-埃特吕许尔之磅" "巴泰克-克雷特之磅" "德特拉克-科吕克之磅" "克罗蒂-阿托克之磅" "克雷蒂-诺科特之磅" "雷克罗特-内特之磅" "奥克雷蒂-拉克特之磅" "普雷许-托吕克之磅" "普雷特-阿雷克之磅" "特罗克-埃特雷特之磅" "夫雷克特-阿泰雷特之磅" 
+			}
+			
+			juggernaut = {
+				"波洛克内特之破" "波洛克托克之破" "波洛克伏若特之破" "埃特洛克艾克特之破" "埃特洛克内特之破" "埃特洛克托克之破" "克罗克德列克之破" "克罗克塔克之破" "克罗克特克之破"
 			}
 			
 			constructor = {

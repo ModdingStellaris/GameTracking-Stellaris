@@ -32,7 +32,7 @@
  ring_world_3_intermediate_DESC:0 "Eine voll funktionale, bewohnbare Ringweltsektion mit aktiver Biosphäre."
 
  habitat_0_MEGASTRUCTURE_DETAILS:1 "Ein §Y$pc_habitat$§! ist eine theoretisch autarke Raumstation für permanente Besiedlung."
- habitat_0_CONSTRUCTION_INFO_DELAYED:3 "Ein Habitat kann nur habitatsspezifische £building£ §YGebäude§! haben."
+ habitat_0_CONSTRUCTION_INFO_DELAYED:4 "Ein Habitat kann nur habitatsspezifische £building£ §YGebäude§! haben. Wenn es in der Umlaufbahn eines Planeten errichtet wird, der ein £minerals£ §YMineral-§!, £energy£ §YEnergie-§! oder £physics£ £society£ £engineering£ §YForschungsvorkommen§! hat, sind besondere £district£ §YDistrikte§! verfügbar."
  habitat_0:0 "Habitat"
  habitat_0_DESC:0 "Eine Habitatsstation, die einen unbewohnbaren Planeten umkreist und fern der Oberfläche eine Reihe von §HBewohnern§! und §HGebäuden§! aufnehmen kann."
 
@@ -129,6 +129,7 @@
  requires_no_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$Dyson-Sphären können nicht um schwarze Löcher, Neutronensterne oder Pulsare gebaut werden."
  requires_no_anomaly:1 "$TRIGGER_FAIL$Bau nicht möglich auf Planeten, auf denen wir oder ein anderes Reich unerforschte Anomalien entdeckt haben."
  requires_not_ring_world:0 "$TRIGGER_FAIL$Bau auf Ringwelten nicht möglich."
+ requires_barren_planet:1 "$TRIGGER_FAIL$Kann nur auf Kargen Welten bauen."
 
  progress.3.desc_08:0 "Unser Kolonieschiff ist auf der ausgedehnten Savanne gelandet, die den Großteil von §Y[Root.GetName]§! bedeckt. Die schillernde Luft ist trocken und doch angenehm. In der Ferne kann von unserem ersten Landeort aus eine große Herde friedlicher Pflanzenfresser beobachtet werden.\n\nDas Schiff wurde zum permanenten Verwaltungshauptquartier der neuen Siedlung umgebaut. Wir sind gerade dabei, seinen Reaktorkern zu entfernen, der die Kolonie vorübergehend mit Energie versorgen soll.\n\nImmer mehr Kolonisten verlassen das Schiff in großen Zahlen, weshalb nun um den riesigen Rumpf des ehemaligen Raumschiffs herum hunderte kleiner Zelte und Fertighäuser wie Pilze aus dem Boden schießen - die erste [Root.Owner.GetSpeciesName]-Stadt auf einer fremden Welt."
  progress.3.desc_09:0 "Unser Kolonieschiff hat es mit überraschender Anmut geschafft, zwischen den gewaltigen Gipfeln hindurchzufliegen, die auf der zerklüfteten Oberfläche von §Y[Root.GetName]§! so häufig sind. Dieses geschützte Tal stellt einen idealen Startort dar.\n\nDas Schiff wurde zum permanenten Verwaltungshauptquartier der neuen Siedlung umgebaut. Wir sind gerade dabei, seinen Reaktorkern zu entfernen, der die Kolonie vorübergehend mit Energie versorgen soll.\n\nImmer mehr Kolonisten verlassen das Schiff in großen Zahlen, weshalb nun um den riesigen Rumpf des ehemaligen Raumschiffs herum hunderte kleiner Zelte und Fertighäuser wie Pilze aus dem Boden schießen - die erste [Root.Owner.GetSpeciesName]-Stadt auf einer fremden Welt."

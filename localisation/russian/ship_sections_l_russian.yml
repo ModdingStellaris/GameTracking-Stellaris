@@ -68,3 +68,4 @@
  DEFAULT_MILITARY_STATION_SECTION:0 "Базовая боевая платформа"
  DEFAULT_TRANSPORT_SECTION:0 "Транспортный корабль"
  SHIP_COLOSSUS_SECTION:0 "«Колосс»"
+ CORE_JUGGERNAUT_SECTION:0 "Джаггернаут"

@@ -1,10 +1,10 @@
 achievement_colonize = {
 	id = 1
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		num_owned_planets > 1
 	}
@@ -12,13 +12,13 @@ achievement_colonize = {
 
 achievement_minerals_1 = {
 	id = 2
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
-		has_monthly_income = 
+		has_monthly_income =
 		{
 			resource = minerals
 			value > 249
@@ -28,13 +28,13 @@ achievement_minerals_1 = {
 
 achievement_minerals_2 = {
 	id = 3
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
-		has_monthly_income = 
+		has_monthly_income =
 		{
 			resource = minerals
 			value > 999
@@ -44,11 +44,11 @@ achievement_minerals_2 = {
 
 achievement_economy_1 = {
 	id = 4
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		resource_stockpile_compare = { resource = energy value >= 1000 }
 	}
@@ -56,11 +56,11 @@ achievement_economy_1 = {
 
 achievement_economy_2 = {
 	id = 5
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		resource_stockpile_compare = { resource = energy value >= 5000 }
 	}
@@ -74,18 +74,27 @@ achievement_resourceful = {
 	}
 
 	happened = {
-		#TODO [CD]
-		#num_strategic_resources > 9
+		has_monthly_income = { resource = energy value >= 1 }
+		has_monthly_income = { resource = minerals value >= 1 }
+		has_monthly_income = { resource = food value >= 1 }
+		has_monthly_income = { resource = alloys value >= 1 }
+		has_monthly_income = { resource = consumer_goods value >= 1 }
+		has_monthly_income = { resource = volatile_motes value >= 1 }
+		has_monthly_income = { resource = exotic_gases value >= 1 }
+		has_monthly_income = { resource = rare_crystals value >= 1 }
+		has_monthly_income = { resource = sr_living_metal value >= 1 }
+		has_monthly_income = { resource = sr_zro value >= 1 }
+		has_monthly_income = { resource = sr_dark_matter value >= 1 }
 	}
 }
 
 achievement_unification = {
 	id = 7
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		is_federation_leader = yes
 	}
@@ -93,11 +102,11 @@ achievement_unification = {
 
 achievement_capital = {
 	id = 8
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		capital_scope = {
 			has_building = building_system_capital
@@ -107,11 +116,11 @@ achievement_capital = {
 
 achievement_empire = {
 	id = 9
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		vassals > 2
 	}
@@ -119,11 +128,11 @@ achievement_empire = {
 
 achievement_survey = {
 	id = 10
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		has_surveyed_class = pc_desert
 		has_surveyed_class = pc_tropical
@@ -146,11 +155,11 @@ achievement_survey = {
 
 achievement_grandadmiral = {
 	id = 11
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		fleet_power > 99999
 	}
@@ -158,11 +167,11 @@ achievement_grandadmiral = {
 
 achievement_terraform = {
 	id = 12
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		any_system = {
 			any_system_planet = {
@@ -174,11 +183,11 @@ achievement_terraform = {
 
 achievement_robots = {
 	id = 13
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		any_owned_pop = {
 			is_species_class = "ROBOT"
@@ -188,35 +197,35 @@ achievement_robots = {
 
 achievement_uplift = {
 	id = 14
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
-		has_country_flag = has_uplifted_species	
+		has_country_flag = has_uplifted_species
 	}
 }
 
 achievement_genetailor = {
 	id = 15
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
-		has_country_flag = has_modified_species	
+		has_country_flag = has_modified_species
 	}
 }
 
 achievement_grandfleet = {
 	id = 16
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		any_owned_fleet = {
 			is_ship_class = shipclass_military
@@ -227,11 +236,11 @@ achievement_grandfleet = {
 
 achieviement_conquer_homeworld = {
 	id = 17
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		has_country_flag = has_conquer_other_homeworld
 	}
@@ -239,11 +248,11 @@ achieviement_conquer_homeworld = {
 
 achievement_rare = {
 	id = 18
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		num_rare_techs > 0
 	}
@@ -251,11 +260,11 @@ achievement_rare = {
 
 achievement_otherside = {
 	id = 19
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		num_rare_techs > 14
 	}
@@ -263,11 +272,11 @@ achievement_otherside = {
 
 achievement_trade = {
 	id = 20
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		has_country_flag = has_negotiated_trade_deal
 	}
@@ -275,11 +284,11 @@ achievement_trade = {
 
 achievement_winwar = {
 	id = 21
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		has_country_flag = has_won_war
 	}
@@ -292,11 +301,11 @@ achievement_winwar = {
 
 achievement_queening = {
 	id = 22
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		has_country_flag = queen_captured
 	}
@@ -305,11 +314,11 @@ achievement_queening = {
 
 achievement_rift_sealed = {
 	id = 23
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		has_country_flag = extradimensionals_expunged
 	}
@@ -318,11 +327,11 @@ achievement_rift_sealed = {
 
 achievement_synth_detector = {
 	id = 24
-	
+
 	possible = {
 		is_ironman = yes
 	}
-	
+
 	happened = {
 		has_country_flag = synth_detector
 	}
@@ -331,11 +340,11 @@ achievement_synth_detector = {
 
 #achievement_final_machine_world_destroyed = {
 #	id = 66
-#	
+#
 #	possible = {
 #		is_ironman = yes
 #	}
-#	
+#
 #	happened = {
 #		has_country_flag = final_machine_world_destroyed
 #	}
@@ -623,7 +632,7 @@ achievement_peacekeeper = {
 		OR = {
 			has_ethic = ethic_fanatic_pacifist
 			has_ethic = ethic_pacifist
-		}	
+		}
 		years_of_peace = {
 			value > 199
 		}
@@ -743,7 +752,7 @@ achievement_enlightened_times = {
 		OR = {
 			has_country_flag = uplifted_stone
 			has_country_flag = uplifted_bronze
-		}		
+		}
 	}
 }
 
@@ -979,9 +988,9 @@ achievement_xenophage = {
 		count_species = {
 			count > 4
 			limit = {
-				has_slavery_type = { 
-					country = root 
-					type = slavery_livestock 
+				has_slavery_type = {
+					country = root
+					type = slavery_livestock
 				}
 			}
 		}
@@ -1006,7 +1015,7 @@ achievement_rise_of_the_machines = {
 				}
 				NOR = {
 					is_mechanical_empire = yes
-					has_authority = auth_machine_intelligence				
+					has_authority = auth_machine_intelligence
 				}
 			}
 		}
@@ -1526,4 +1535,150 @@ achievement_unlimited_power = {
 	}
 }
 
+achievement_league_of_nations = {
+	id = 105
 
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		has_country_flag = league_of_nations_achievement
+	}
+}
+
+achievement_to_the_next_level = {
+	id = 106
+
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		has_federation = yes
+		federation = {
+			federation_level > 1
+		}
+	}
+}
+
+achievement_we_are_number_one = {
+	id = 107
+
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		has_federation = yes
+		is_federation_leader = yes
+		federation = {
+			federation_level = 5
+		}
+	}
+}
+
+achievement_unstoppable_force = {
+	id = 108
+
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		has_country_flag = juggernaut_constructed
+	}
+}
+
+achievement_forge_among_the_stars = {
+	id = 109
+
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		any_owned_megastructure = {
+			is_megastructure_type = mega_shipyard_3
+		}
+	}
+}
+
+achievement_whatever_it_is_im_against_it = {
+	id = 110
+
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		has_country_flag = whatever_it_is_im_against_it_rejected_community
+		has_country_flag = whatever_it_is_im_against_it_left_federation
+	}
+}
+
+achievement_see_you_in_court = {
+	id = 111
+
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		is_active_resolution = "resolution_sanctions_tech_3"
+		is_active_resolution = "resolution_sanctions_economic_3"
+		is_active_resolution = "resolution_sanctions_military_3"
+		is_active_resolution = "resolution_sanctions_administrative_3"
+		any_country = {
+			is_galactic_community_member = yes
+			is_in_breach_of_any = no
+			has_modifier = resolution_denounced
+		}
+	}
+}
+
+achievement_throw_your_weight_around = {
+	id = 112
+
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		diplomacy_weight > 9000
+	}
+}
+
+achievement_opposites_attract = {
+	id = 113
+
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		has_federation = yes
+		federation = {
+			any_member = { is_authoritarian = yes }
+			any_member = { is_egalitarian = yes }
+			any_member = { is_materialist = yes }
+			any_member = { is_spiritualist = yes }
+			any_member = { is_militarist = yes }
+			any_member = { is_pacifist = yes }
+			any_member = { is_xenophile = yes }
+			any_member = { is_xenophobe = yes }
+		}
+	}
+}
+
+achievement_humble_pie = {
+	id = 114
+
+	possible = {
+		is_ironman = yes
+	}
+
+	happened = {
+		has_country_flag = humble_pie_achievement
+	}
+}

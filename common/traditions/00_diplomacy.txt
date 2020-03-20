@@ -16,7 +16,6 @@ tr_diplomacy_adopt = {
 				has_valid_civic = civic_inwards_perfection
 				is_hive_empire = yes
 				has_valid_civic = civic_barbaric_despoilers
-				is_criminal_syndicate = yes
 			}
 		}
 		modifier = {
@@ -108,7 +107,6 @@ tr_diplomacy_finish = {
 				has_valid_civic = civic_inwards_perfection
 				is_hive_empire = yes
 				has_valid_civic = civic_barbaric_despoilers
-				is_criminal_syndicate = yes
 			}
 		}
 		modifier = {
@@ -140,6 +138,9 @@ tr_diplomacy_finish = {
 tr_diplomacy_the_federation = {
 
 	#unlocks federation mechanic
+	modifier = {
+		envoys_add = 1
+	}
 
 	tradition_swap = {
 		name = tr_adaptability_dietary_enrichment
@@ -151,8 +152,12 @@ tr_diplomacy_the_federation = {
 				has_valid_civic = civic_fanatic_purifiers
 				has_valid_civic = civic_inwards_perfection
 				has_valid_civic = civic_hive_devouring_swarm
-				has_valid_civic = civic_barbaric_despoilers
-				is_criminal_syndicate = yes
+
+				# Barbaric Despoilers can create Martial Alliances and Hegemonies if they have the Federations DLC
+				AND = {
+					has_valid_civic = civic_barbaric_despoilers
+					has_federations_dlc = no
+				}
 			}
 			is_lithoid_empire = no
 		}
@@ -174,8 +179,13 @@ tr_diplomacy_the_federation = {
 				has_valid_civic = civic_fanatic_purifiers
 				has_valid_civic = civic_inwards_perfection
 				has_valid_civic = civic_hive_devouring_swarm
-				has_valid_civic = civic_barbaric_despoilers
-				is_criminal_syndicate = yes
+
+				# Barbaric Despoilers can create Martial Alliances and Hegemonies if they have the Federations DLC
+				AND = {
+					has_valid_civic = civic_barbaric_despoilers
+					has_federations_dlc = no
+				}
+
 			}
 			is_lithoid_empire = yes
 		}
@@ -228,7 +238,6 @@ tr_diplomacy_entente_coordination = {
 				has_valid_civic = civic_inwards_perfection
 				is_hive_empire = yes
 				has_valid_civic = civic_barbaric_despoilers
-				is_criminal_syndicate = yes
 			}
 		}
 		modifier = {

@@ -21,3 +21,14 @@ ship_design = {
 		slot = "mid"
 	}
 }
+
+# Lithoid Colony Ship
+ship_design = {
+	name = "NAME_Colonizer-lithoids"
+	ship_size = lithoid_colonizer
+
+	section = {
+		template = "DEFAULT_COLONIZATION_SECTION2"
+		slot = "mid"
+	}
+}

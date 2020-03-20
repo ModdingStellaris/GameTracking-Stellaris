@@ -48,7 +48,7 @@
  anomaly.4000.name:0 "La vida se abre camino"
  anomaly.4000.desc:0 "Parte de la flora de [From.GetName] ha desarrollado mecanismos de defensa con la selección natural. Numerosos árboles y hongos exudan esporas que actúan como un §Ypoderoso ácido§! sobre los organismos no vegetales. Afortunadamente, el oficial científico [Root.GetLeaderName] ha encontrado un modo de §Ycontrarrestar§! algunas cepas de estas esporas, haciendo los bosques del planeta menos amenazantes para nosotros."
  anomaly.4000.a.tooltip:0 "Añade el modificador §YSelvas ácidas§! a [From.GetName]:\n£blocker£ pantano venenoso §R+3§!\n£society£ §G+2§!"
- anomaly.4005.name:0 "A hombros de gigantes"
+ anomaly.4005.name:1 "Fragmentos de vida"
  anomaly.4005.desc:1 "¡Parece que el asteroide [From.GetName] y los restos que lo rodean proceden de un antiguo planeta!\n\nEn el centro podemos encontrar rastros de aleaciones extremadamente valiosas. También hay indicios de vida bacteriana, que ahora está muerta en el vacío del espacio. Esto demuestra que el cuerpo celeste albergaba vida."
  anomaly.4005.a.tooltip:2 "Añade el modificador §YEx planeta§! a [From.GetName]:\n£alloys£ §G+3§!"
  anomaly.4010.name:0 "Perdido en el espacio"

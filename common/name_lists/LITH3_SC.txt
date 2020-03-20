@@ -2,8 +2,11 @@
 ### Created by Gemma Thomson
 
 LITHOID3 = {
-	
+
 	language = "l_simp_chinese"
+	
+	category = "Lithoid"
+	
 	ship_names = {
 
 		generic = {

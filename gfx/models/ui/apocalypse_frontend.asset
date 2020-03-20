@@ -1,11 +1,11 @@
-entity = {
-	name = "frontend_background_entity"
-	
-	locator = { name = "loc" position = { 0.0 0.0 0.0 } } #position = { 0.0 0.025 0.0 }
-	
-	attach = { loc = "apocalypse_frontend_attached_entity" }
-	
-}
+#entity = {
+#	name = "frontend_background_entity"
+#	
+#	locator = { name = "loc" position = { 0.0 0.0 0.0 } } #position = { 0.0 0.025 0.0 }
+#	
+#	attach = { loc = "apocalypse_frontend_attached_entity" }
+#	
+#}
 
 entity = {
 	name = "apocalypse_frontend_attached_entity"

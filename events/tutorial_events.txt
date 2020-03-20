@@ -1,7 +1,6 @@
 ############################
 #
 # Tutorial Events
-#
 # Written by Henrik Thyrwall & Niclas Karlsson
 #
 ############################
@@ -78,7 +77,7 @@ ship_event = {
 	immediate = {
 		owner = {
 			country_event = { id = tutorial.17 days = 20 }
-			set_country_flag = waiting_tutorial_4 #Moved here due to construction ship tutorial removed}
+			set_country_flag = waiting_tutorial_4 #Moved here due to construction ship tutorial removed
 		}
 	}
 }
@@ -103,6 +102,7 @@ ship_event = {
 	
 	immediate = {
 		owner = {
+			complete_tutorial_step = 010_surveyed_system
 			remove_country_flag = tutorial_1
 			end_event_chain = "tutorial_1_chain"
 			set_country_flag = waiting_tutorial_4 #Moved here due to construction ship tutorial removed
@@ -312,6 +312,7 @@ country_event = {
 
 	
 	immediate = {
+		complete_tutorial_step = 030_researched_tech
 		end_event_chain = "tutorial_2_chain"
 		remove_country_flag = tech_1_researched
 		remove_country_flag = tech_2_researched
@@ -379,6 +380,7 @@ country_event = {
 	}
 		
 	immediate = {
+		complete_tutorial_step = 040_built_construction_ship
 		set_country_flag = waiting_tutorial_4
 	}
 }
@@ -402,7 +404,10 @@ ship_event = {
 	}
 		
 	immediate = {
-		owner = { end_event_chain = "tutorial_3_chain" }
+		owner = {
+			complete_tutorial_step = 040_built_construction_ship
+			end_event_chain = "tutorial_3_chain"
+		}
 	}
 	
 	option = {
@@ -522,6 +527,7 @@ ship_event = {
 		
 	immediate = {
 		owner = {
+			complete_tutorial_step = 050_built_mining_station
 			end_event_chain = "tutorial_4_chain"
 		}
 	}
@@ -642,7 +648,10 @@ ship_event = {
 	}
 
 	immediate = {
-		owner = { end_event_chain = "tutorial_5_chain" }
+		owner = {
+			complete_tutorial_step = 060_built_research_station
+			end_event_chain = "tutorial_5_chain"
+		}
 	}
 	
 	option = {
@@ -730,7 +739,10 @@ planet_event = {
 	}
 	
 	immediate = {
-		owner = { end_event_chain = "tutorial_6_chain" }
+		owner = {
+			complete_tutorial_step = 070_built_planet_building
+			end_event_chain = "tutorial_6_chain"
+		}
 	}
 	
 	option = {
@@ -813,7 +825,10 @@ planet_event = {
 	}
 	
 	immediate = {
-		owner = { end_event_chain = "tutorial_7_chain" }
+		owner = {
+			complete_tutorial_step = 080_cleared_planetary_blocker
+			end_event_chain = "tutorial_7_chain"
+		}
 	}
 	
 	option = {
@@ -1061,6 +1076,7 @@ country_event = {
 			}
 		}
 		end_event_chain = "tutorial_8_chain"
+		complete_tutorial_step = 090_surveyed_more_systems
 	}
 	
 	option = {
@@ -1152,7 +1168,10 @@ ship_event = {
 	}
 		
 	immediate = {
-		owner = { end_event_chain = "tutorial_9_chain" }
+		owner = {
+			complete_tutorial_step = 100_built_science_ship
+			end_event_chain = "tutorial_9_chain"
+		}
 	}
 	
 	option = {
@@ -1229,6 +1248,7 @@ country_event = {
 	}
 		
 	immediate = {
+		complete_tutorial_step = 110_recruited_scientist
 		end_event_chain = "tutorial_10_chain"
 	}
 	
@@ -1335,7 +1355,10 @@ ship_event = {
 	}
 		
 	immediate = {
-		owner = { end_event_chain = "tutorial_11_chain" }
+		owner = {
+			complete_tutorial_step = 120_built_colony_ship
+			end_event_chain = "tutorial_11_chain"
+		}
 	}
 	
 	option = {
@@ -1431,6 +1454,7 @@ planet_event = {
 		
 	immediate = {
 		owner = {
+			complete_tutorial_step = 130_established_colony
 			end_event_chain = "tutorial_12_chain"
 		}
 	}
@@ -1788,6 +1812,7 @@ country_event = {
 	}
 		
 	immediate = {
+		complete_tutorial_step = 140_producing_resources
 		end_event_chain = "tutorial_15_chain"
 	}
 	
@@ -1950,6 +1975,7 @@ country_event = {
 	}
 		
 	immediate = {
+		complete_tutorial_step = 150_increased_navy
 		end_event_chain = "tutorial_16_chain"
 		remove_country_flag = tutorial_16_admiral_assigned
 		remove_country_flag = tutorial_16_corvettes_built
@@ -2091,6 +2117,7 @@ country_event = {
 	}
 		
 	immediate = {
+		complete_tutorial_step = 160_established_sector
 	#	end_event_chain = "tutorial_17_chain"
 		set_country_flag = tut45_triggered
 	}
@@ -2163,6 +2190,7 @@ country_event = {
 	}
 		
 	immediate = {
+		complete_tutorial_step = 170_assigned_governor
 		end_event_chain = "tutorial_18_chain"
 	}
 	
@@ -2240,6 +2268,7 @@ country_event = {
 	}
 		
 	immediate = {
+		complete_tutorial_step = 180_designed_ship
 		end_event_chain = "tutorial_19_chain"
 	}
 	
@@ -2312,6 +2341,7 @@ country_event = {
 	}
 		
 	immediate = {
+		complete_tutorial_step = 190_built_observation_post
 		end_event_chain = "tutorial_20_chain"
 		set_country_flag = finished_tutorial_20
 	}
@@ -2348,6 +2378,10 @@ ship_event = {
 			is_tutorial_level = 2
 			NOT = { has_ethic = ethic_gestalt_consciousness }
 		}
+	}
+
+	immediate = {
+		owner = { complete_tutorial_step = 200_researched_anomaly }
 	}
 
 	option = {
@@ -2400,7 +2434,14 @@ ship_event = {
 		owner = { is_tutorial_level = 2 }
 	}
 
-	immediate = { hidden_effect = { owner = { country_event = { id = story.5 days = 30 } } } }
+	immediate = {
+		owner = {
+			complete_tutorial_step = 200_researched_anomaly
+			country_event = {
+				id = story.5 days = 30
+			}
+		}
+	}
 
 	option = {
 		name = tutorial.53.a
@@ -2449,6 +2490,12 @@ ship_event = {
 
 	trigger = {
 		owner = { is_tutorial_level = 2 }
+	}
+
+	immediate = {
+		owner = {
+			complete_tutorial_step = 200_researched_anomaly
+		}
 	}
 
 	option = {
@@ -2682,6 +2729,7 @@ ship_event = {
 
 	immediate = {
 		owner = {
+			complete_tutorial_step = 210_producing_strategic_resources
 			end_event_chain = "tutorial_21_chain"
 			set_country_flag = finished_tutorial_21
 		}
@@ -2871,6 +2919,7 @@ country_event = {
 	}
 
 	immediate = {
+		complete_tutorial_step = 220_uplifted_primitives
 		end_event_chain = tutorial_22_chain
 		set_country_flag = finished_tutorial_22
 	}
@@ -2943,6 +2992,7 @@ country_event = {
 	}
 
 	immediate = {
+		complete_tutorial_step = 015_researched_contact
 		end_event_chain = tutorial_23_chain
 		set_country_flag = finished_tutorial_23
 	}
@@ -2968,6 +3018,7 @@ country_event = {
 	}
 
 	immediate = {
+		complete_tutorial_step = 015_researched_contact
 		end_event_chain = tutorial_23_chain
 		set_country_flag = finished_tutorial_23
 	}
@@ -3013,6 +3064,7 @@ country_event = {
 	}
 
 	immediate = {
+		complete_tutorial_step = 014_researched_contacted
 		if = {
 			limit = {
 				any_country = {
@@ -3086,6 +3138,7 @@ country_event = {
 	}
 
 	immediate = {
+		complete_tutorial_step = 240_modified_species
 		end_event_chain = tutorial_24_chain
 	}
 
@@ -3127,6 +3180,12 @@ country_event = {
 
 	trigger = {
 		is_tutorial_level > 0
+	}
+
+	immediate = {
+		owner = {
+			complete_tutorial_step = 005_travelled_hyperdrive
+		}
 	}
 
 	option = {
@@ -3275,7 +3334,10 @@ ship_event = {
 	}
 		
 	immediate = {
-		owner = { end_event_chain = "tutorial_25_chain" }
+		owner = {
+			complete_tutorial_step = 020_built_starbase
+			end_event_chain = "tutorial_25_chain"
+		}
 	}
 
 	option = {

@@ -74,7 +74,7 @@ civic_private_prospectors = {
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
 	modifier = {
-		country_admin_cap_add = 10
+		empire_size_systems_mult = -0.33
 	}
 
 	# unlocks sponsored_colonizer ship size
@@ -96,7 +96,7 @@ civic_gospel_of_the_masses = {
 	modifier = {
 		pop_ethic_spiritualist_attraction_mult = 0.5
     }
-	
+
 	description = "civic_tooltip_gospel_of_the_masses_effects"
 }
 
@@ -112,10 +112,10 @@ civic_ruthless_competition = {
 civic_criminal_heritage = {
 	modification = no
 	potential = { authority = { value = auth_corporate } }
-	random_weight = { base = 5 }	
+	random_weight = { base = 5 }
 	modifier = {
 	}
-	
+
 	description = "civic_tooltip_criminal_heritage_effects"
 }
 
@@ -132,6 +132,7 @@ civic_private_military_companies = {
 		}
 	}
 	modifier = {
+		army_starting_experience_add = 100
 		army_damage_mult = 0.2
 		armies_upkeep_mult = -0.2
 	}
@@ -160,5 +161,14 @@ civic_brand_loyalty = {
 	random_weight = { base = 5 }
 	modifier = {
 		country_unity_produces_mult = 0.15
+	}
+}
+
+civic_public_relations_specialists = {
+	potential = { authority = { value = auth_corporate } }
+	random_weight = { base = 5 }
+	modifier = {
+		envoys_add = 2
+		diplo_weight_mult = 0.1
 	}
 }

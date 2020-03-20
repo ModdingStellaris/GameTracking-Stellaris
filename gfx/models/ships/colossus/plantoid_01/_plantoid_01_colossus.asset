@@ -59,7 +59,7 @@ entity = {
 		}
 		start_event = { trigger_once = yes sound = { soundeffect = "plantoid_colossus_idle" } }
 		
-		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_10_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_big_3_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
 		
 		event = { time = 0 	 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0.2 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -79,7 +79,7 @@ entity = {
 		}
 		event = { trigger_once = yes sound = { soundeffect = "plantoid_colossus_closing" stop_on_state_change = yes } }
 		
-		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_6_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_big_3_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
 		
 		event = { time = 0 	 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0.2 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -99,7 +99,7 @@ entity = {
 		}
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_colossus" } }
 		
-		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_6_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_big_3_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
 		
 		event = { time = 0 	 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0.2 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -119,7 +119,7 @@ entity = {
 		}
 		event = { trigger_once = yes sound = { soundeffect = "plantoid_colossus_closing" stop_on_state_change = yes } }
 		
-		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_6_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_big_3_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
 		
 		event = { time = 0 	 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0.2 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -130,7 +130,7 @@ entity = {
 	state = { name = "working_looping" animation = "open"
 		event = { time = 0	id = "beam_start" }
 		
-		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_10_0_exhaust_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_big_3_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
 		
 		event = { time = 0 	 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0.2 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -144,7 +144,7 @@ entity = {
 		
 		event = { time = 1000 id = "beam_start" } #will never fire, but lets the game know that an event with this ID exists
 		
-		event = { time = 0 node = "engine_large_01" particle = "molluscoid_01_6_0_ship_exhaust_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_big_3_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
 		
 		event = { time = 0 	 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0.2 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }

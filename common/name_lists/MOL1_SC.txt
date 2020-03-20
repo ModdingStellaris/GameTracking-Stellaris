@@ -1,6 +1,8 @@
 ﻿### Molluscoid 1
 MOL1 = {
 	### SHIPS
+	
+	category = "Molluscoid"
 
 	language = "l_simp_chinese"
 	

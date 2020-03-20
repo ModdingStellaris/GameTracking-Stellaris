@@ -1879,11 +1879,15 @@ entity = {
 entity = {
 	name = "asteroid_entity"
 	pdxmesh = "asteroid_ship_mesh"
+	
 	default_state = "idle"
-		state = { name = "idle" 
-			event = { sound = { soundeffect = "amb_astroid_fields" } }
+		state = { name = "idle"  
+		
+		event = { sound = { soundeffect = "amb_astroid_fields" } }
 		}
 	#state = { name = "idle" animation = "idle" time_offset = { 0 100 } }
+
+	
 	scale = 0.5
 }
 
@@ -4211,6 +4215,13 @@ entity = {
 	pdxmesh = "ringworld_tech_damaged_01_mesh"
 
 }
+
+entity = {
+	name = "ringworld_01_damaged_full_entity"
+	pdxmesh = "ringworld_01_damaged_full_mesh"
+	scale = 0.01
+}
+
 
 
 entity = {

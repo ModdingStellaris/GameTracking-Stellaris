@@ -46,7 +46,7 @@
 
 special_project = {
 	key = "hallucinogen_removal"
-	cost = 3000
+	cost = 1500
 	tech_department = engineering_technology
 	picture = GFX_evt_ship_in_orbit
 	icon = "gfx/interface/icons/situation_log/situation_log_debris.dds"
@@ -389,7 +389,7 @@ special_project = {
 
 special_project = {
 	key = "NULLVOID_PROJECT"
-	cost = 10000
+	cost = 5000
 	tech_department = engineering_technology
 	picture = GFX_evt_wormhole
 	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"

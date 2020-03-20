@@ -967,7 +967,7 @@ special_project = {
 				has_planet_flag = ldragon_recruited
 				AND = {
 					solar_system = {
-						any_ship_in_system = {
+						any_fleet_in_system = {
 							exists = owner
 							owner = { is_country_type = ldragon_country }
 							is_in_combat = yes
@@ -1408,14 +1408,12 @@ special_project = {
 			capital_scope = { 
 				NOT = {
 					solar_system = {
-						any_ship_in_system = {
-							fleet = {
-								has_fleet_flag = enigmatic_cache_fleet
-								exists = orbit
-								orbit = { is_same_value = root.capital_scope }
-								exists = owner
-								owner = { is_same_value = event_target:enigmatic_cache_country }
-							}
+						any_fleet_in_system = {
+							has_fleet_flag = enigmatic_cache_fleet
+							exists = orbit
+							orbit = { is_same_value = root.capital_scope }
+							exists = owner
+							owner = { is_same_value = event_target:enigmatic_cache_country }
 						}
 					}
 				}

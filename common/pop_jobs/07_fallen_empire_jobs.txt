@@ -218,7 +218,6 @@ fe_acolyte_farm = {
 
 	possible = {
 		owner = { is_fallen_empire_spiritualist = yes }
-		is_same_species = owner
 	}
 
 	resources = {
@@ -256,7 +255,6 @@ fe_acolyte_mine = {
 
 	possible = {
 		owner = { is_fallen_empire_spiritualist = yes }
-		is_same_species = owner
 	}
 
 	resources = {
@@ -294,7 +292,6 @@ fe_acolyte_generator = {
 
 	possible = {
 		owner = { is_fallen_empire_spiritualist = yes }
-		is_same_species = owner
 	}
 
 	resources = {

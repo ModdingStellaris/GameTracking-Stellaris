@@ -4,6 +4,8 @@
 
 HIVE = {
 
+	category = "Hive Mind"
+	
 	language = "l_simp_chinese"
 	
 	randomized = no
@@ -36,6 +38,10 @@ HIVE = {
 
 		colossus = {
 			"作战船只"
+		}
+		
+		juggernaut = {
+			"首要战斗节点"
 		}
 		
 		science = {

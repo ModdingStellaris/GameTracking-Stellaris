@@ -173,3 +173,5 @@
  raided:0 "Najechany"
  raided_desc:0 "§LNie obroniliśmy się przed łupieżcami.§!"
  mod_damage_vs_country_type_gate_builders_mult:0 "Szkody zadawane budowniczym bramy"
+ from_extra_federation_members:0 "Za członków:"
+ empire_size_mods:0 "Wielkość imperium"

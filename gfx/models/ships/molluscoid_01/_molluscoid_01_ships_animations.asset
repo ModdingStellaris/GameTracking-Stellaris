@@ -126,6 +126,16 @@ animation = {
 	file = "molluscoid_01_orbital_station_death.anim"
 }
 
+animation = {
+	name = "molluscoid_01_upgraded_orbital_habitat_rotate_animation"
+	file = "molluscoid_01_habitat_level_3_rotate.anim"
+}
+
+animation = {
+	name = "molluscoid_01_upgraded_orbital_habitat_death_animation"
+	file = "molluscoid_01_habitat_level_3_death.anim"
+}
+
 
 
 

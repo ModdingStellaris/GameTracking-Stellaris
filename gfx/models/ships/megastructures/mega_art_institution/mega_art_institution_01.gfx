@@ -26,6 +26,20 @@ objectTypes = {
 		file = "gfx/models/ships/megastructures/mega_art_institution/mega_art_institution_01_core_effect.mesh"
 	}
 
+	pdxmesh = {
+		name = "art_fountain_splash_mesh"
+		file = "gfx/models/ships/megastructures/mega_art_institution/art_fountain_splash.mesh"
+
+		meshsettings = {
+			name = "pPlane3Shape"
+			index = 0
+			texture_diffuse = "mega_art_inst_fountain.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
 
 ######## Destroyed Mesh ########
 

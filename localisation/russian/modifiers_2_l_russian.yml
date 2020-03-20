@@ -172,3 +172,5 @@
  servitor_morale_10:0 "Мораль служителя: низкая"
  servitor_morale_5:0 "Мораль служителя: очень плохая +"
  servitor_morale_0:0 "Мораль служителя: очень плохая"
+ from_extra_federation_members:0 "От членов"
+ empire_size_mods:0 "Размер империи"

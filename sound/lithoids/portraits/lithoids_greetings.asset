@@ -13,14 +13,14 @@ category = {
 	lithoid_portrait_7_pyrite
 	lithoid_portrait_8_sedimentary
 	lithoid_portrait_9_spider
-#	lithoid_portrait_10_spined
+	lithoid_portrait_10_spined
 	lithoid_portrait_11_levitating
 	lithoid_portrait_12_crystal
 	lithoid_portrait_13_exo
-#	lithoid_portrait_14_snake
-#	lithoid_portrait_15_unicorn
-#	lithoid_portrait_machine
-	
+	lithoid_portrait_14_snake
+	lithoid_portrait_15_unicorn
+	lithoid_portrait_machine
+
  }
 }
 
@@ -478,53 +478,53 @@ sound = {
 
 ##### LITHOID PORTRAIT 10
 
-#	sound = {
-#		name = "lithoid_portrait_10_spined_01"
-#		file = "lithoid_portrait_10_spined_01.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_10_spined_02"
-#		file = "lithoid_portrait_10_spined_02.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_10_spined_03"
-#		file = "lithoid_portrait_10_spined_03.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_10_spined_04"
-#		file = "lithoid_portrait_10_spined_04.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_10_spined_05"
-#		file = "lithoid_portrait_10_spined_05.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_10_spined_06"
-#		file = "lithoid_portrait_10_spined_06.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_10_spined_07"
-#		file = "lithoid_portrait_10_spined_07.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_10_spined_08"
-#		file = "lithoid_portrait_10_spined_08.wav"
-#		volume = 1
-#	}
+	sound = {
+		name = "lithoid_portrait_10_spined_01"
+		file = "lithoid_portrait_10_spined_01.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_10_spined_02"
+		file = "lithoid_portrait_10_spined_02.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_10_spined_03"
+		file = "lithoid_portrait_10_spined_03.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_10_spined_04"
+		file = "lithoid_portrait_10_spined_04.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_10_spined_05"
+		file = "lithoid_portrait_10_spined_05.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_10_spined_06"
+		file = "lithoid_portrait_10_spined_06.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_10_spined_07"
+		file = "lithoid_portrait_10_spined_07.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_10_spined_08"
+		file = "lithoid_portrait_10_spined_08.wav"
+		volume = 1
+	}
 
 ##### LITHOID PORTRAIT 11
 
@@ -678,153 +678,153 @@ sound = {
 
 ##### LITHOID PORTRAIT 14
 
-#	sound = {
-#		name = "lithoid_portrait_14_snake_01"
-#		file = "lithoid_portrait_14_snake_01.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_14_snake_02"
-#		file = "lithoid_portrait_14_snake_02.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_14_snake_03"
-#		file = "lithoid_portrait_14_snake_03.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_14_snake_04"
-#		file = "lithoid_portrait_14_snake_04.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_14_snake_05"
-#		file = "lithoid_portrait_14_snake_05.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_14_snake_06"
-#		file = "lithoid_portrait_14_snake_06.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_14_snake_07"
-#		file = "lithoid_portrait_14_snake_07.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_14_snake_08"
-#		file = "lithoid_portrait_14_snake_08.wav"
-#		volume = 1
-#	}
+	sound = {
+		name = "lithoid_portrait_14_snake_01"
+		file = "lithoid_portrait_14_snake_01.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_14_snake_02"
+		file = "lithoid_portrait_14_snake_02.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_14_snake_03"
+		file = "lithoid_portrait_14_snake_03.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_14_snake_04"
+		file = "lithoid_portrait_14_snake_04.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_14_snake_05"
+		file = "lithoid_portrait_14_snake_05.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_14_snake_06"
+		file = "lithoid_portrait_14_snake_06.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_14_snake_07"
+		file = "lithoid_portrait_14_snake_07.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_14_snake_08"
+		file = "lithoid_portrait_14_snake_08.wav"
+		volume = 1
+	}
 
 ##### LITHOID PORTRAIT 15
 
-#	sound = {
-#		name = "lithoid_portrait_15_unicorn_01"
-#		file = "lithoid_portrait_15_unicorn_01.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_15_unicorn_02"
-#		file = "lithoid_portrait_15_unicorn_02.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_15_unicorn_03"
-#		file = "lithoid_portrait_15_unicorn_03.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_15_unicorn_04"
-#		file = "lithoid_portrait_15_unicorn_04.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_15_unicorn_05"
-#		file = "lithoid_portrait_15_unicorn_05.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_15_unicorn_06"
-#		file = "lithoid_portrait_15_unicorn_06.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_15_unicorn_07"
-#		file = "lithoid_portrait_15_unicorn_07.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_15_unicorn_08"
-#		file = "lithoid_portrait_15_unicorn_08.wav"
-#		volume = 1
-#	}
+	sound = {
+		name = "lithoid_portrait_15_unicorn_01"
+		file = "lithoid_portrait_15_unicorn_01.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_15_unicorn_02"
+		file = "lithoid_portrait_15_unicorn_02.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_15_unicorn_03"
+		file = "lithoid_portrait_15_unicorn_03.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_15_unicorn_04"
+		file = "lithoid_portrait_15_unicorn_04.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_15_unicorn_05"
+		file = "lithoid_portrait_15_unicorn_05.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_15_unicorn_06"
+		file = "lithoid_portrait_15_unicorn_06.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_15_unicorn_07"
+		file = "lithoid_portrait_15_unicorn_07.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_15_unicorn_08"
+		file = "lithoid_portrait_15_unicorn_08.wav"
+		volume = 1
+	}
 
 ##### LITHOID PORTRAIT MACHINE
 
-#	sound = {
-#		name = "lithoid_portrait_machine_01"
-#		file = "lithoid_portrait_machine_01.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_machine_02"
-#		file = "lithoid_portrait_machine_02.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_machine_03"
-#		file = "lithoid_portrait_machine_03.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_machine_04"
-#		file = "lithoid_portrait_machine_04.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_machine_05"
-#		file = "lithoid_portrait_machine_05.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_machine_06"
-#		file = "lithoid_portrait_machine_06.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_machine_07"
-#		file = "lithoid_portrait_machine_07.wav"
-#		volume = 1
-#	}
-#	
-#	sound = {
-#		name = "lithoid_portrait_machine_08"
-#		file = "lithoid_portrait_machine_08.wav"
-#		volume = 1
-#	}
+	sound = {
+		name = "lithoid_portrait_machine_01"
+		file = "lithoid_portrait_machine_01.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_machine_02"
+		file = "lithoid_portrait_machine_02.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_machine_03"
+		file = "lithoid_portrait_machine_03.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_machine_04"
+		file = "lithoid_portrait_machine_04.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_machine_05"
+		file = "lithoid_portrait_machine_05.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_machine_06"
+		file = "lithoid_portrait_machine_06.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_machine_07"
+		file = "lithoid_portrait_machine_07.wav"
+		volume = 1
+	}
+
+	sound = {
+		name = "lithoid_portrait_machine_08"
+		file = "lithoid_portrait_machine_08.wav"
+		volume = 1
+	}
 
 ########### SOUND EFFECTS
 
@@ -843,7 +843,7 @@ soundeffect = {
 		sound = lithoid_portrait_1_golem_08
 
 	}
-	volume = 0.5  
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -863,7 +863,7 @@ soundeffect = {
 		sound = lithoid_portrait_2_lava_08
 
 	}
-	volume = 0.5  
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -882,8 +882,8 @@ soundeffect = {
 		sound = lithoid_portrait_3_geode_07
 		sound = lithoid_portrait_3_geode_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -902,8 +902,8 @@ soundeffect = {
 		sound = lithoid_portrait_4_angelic_07
 		sound = lithoid_portrait_4_angelic_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -922,8 +922,8 @@ soundeffect = {
 		sound = lithoid_portrait_5_mantis_07
 		sound = lithoid_portrait_5_mantis_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -942,8 +942,8 @@ soundeffect = {
 		sound = lithoid_portrait_6_symbiotic_07
 		sound = lithoid_portrait_6_symbiotic_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -962,8 +962,8 @@ soundeffect = {
 		sound = lithoid_portrait_7_pyrite_07
 		sound = lithoid_portrait_7_pyrite_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -982,8 +982,8 @@ soundeffect = {
 		sound = lithoid_portrait_8_sedimentary_07
 		sound = lithoid_portrait_8_sedimentary_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -1002,31 +1002,31 @@ soundeffect = {
 		sound = lithoid_portrait_9_spider_07
 		sound = lithoid_portrait_9_spider_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
 
 ##### PORTRAIT 10
 
-#	soundeffect = {
-#		name = lithoid_portrait_10_spined
-#		sounds = {
-#			sound = lithoid_portrait_10_spined_01
-#			sound = lithoid_portrait_10_spined_02
-#			sound = lithoid_portrait_10_spined_03
-#			sound = lithoid_portrait_10_spined_04
-#			sound = lithoid_portrait_10_spined_05
-#			sound = lithoid_portrait_10_spined_06
-#			sound = lithoid_portrait_10_spined_07
-#			sound = lithoid_portrait_10_spined_08
-#	
-#		}  
-#		volume = 0.5
-#		max_audible = 1
-#		max_audible_behaviour = fail
-#	}
+	soundeffect = {
+		name = lithoid_portrait_10_spined
+		sounds = {
+			sound = lithoid_portrait_10_spined_01
+			sound = lithoid_portrait_10_spined_02
+			sound = lithoid_portrait_10_spined_03
+			sound = lithoid_portrait_10_spined_04
+			sound = lithoid_portrait_10_spined_05
+			sound = lithoid_portrait_10_spined_06
+			sound = lithoid_portrait_10_spined_07
+			sound = lithoid_portrait_10_spined_08
+
+		}
+		volume = 0.25
+		max_audible = 1
+		max_audible_behaviour = fail
+	}
 
 ##### PORTRAIT 11
 
@@ -1042,8 +1042,8 @@ soundeffect = {
 		sound = lithoid_portrait_11_levitating_07
 		sound = lithoid_portrait_11_levitating_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -1061,8 +1061,8 @@ soundeffect = {
 		sound = lithoid_portrait_12_crystal_07
 		sound = lithoid_portrait_12_crystal_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
@@ -1081,68 +1081,68 @@ soundeffect = {
 		sound = lithoid_portrait_13_exo_07
 		sound = lithoid_portrait_13_exo_08
 
-	}  
-	volume = 0.5
+	}
+	volume = 0.25
 	max_audible = 1
 	max_audible_behaviour = fail
 }
 
 ##### PORTRAIT 14
 
-#	soundeffect = {
-#		name = lithoid_portrait_14_snake
-#		sounds = {
-#			sound = lithoid_portrait_14_snake_01
-#			sound = lithoid_portrait_14_snake_02
-#			sound = lithoid_portrait_14_snake_03
-#			sound = lithoid_portrait_14_snake_04
-#			sound = lithoid_portrait_14_snake_05
-#			sound = lithoid_portrait_14_snake_06
-#			sound = lithoid_portrait_14_snake_07
-#			sound = lithoid_portrait_14_snake_08
-#	
-#		}  
-#		volume = 0.5
-#		max_audible = 1
-#		max_audible_behaviour = fail
-#	}
+	soundeffect = {
+		name = lithoid_portrait_14_snake
+		sounds = {
+			sound = lithoid_portrait_14_snake_01
+			sound = lithoid_portrait_14_snake_02
+			sound = lithoid_portrait_14_snake_03
+			sound = lithoid_portrait_14_snake_04
+			sound = lithoid_portrait_14_snake_05
+			sound = lithoid_portrait_14_snake_06
+			sound = lithoid_portrait_14_snake_07
+			sound = lithoid_portrait_14_snake_08
+
+		}
+		volume = 0.25
+		max_audible = 1
+		max_audible_behaviour = fail
+	}
 
 ##### PORTRAIT 15
 
-#	soundeffect = {
-#		name = lithoid_portrait_15_unicorn
-#		sounds = {
-#			sound = lithoid_portrait_15_unicorn_01
-#			sound = lithoid_portrait_15_unicorn_02
-#			sound = lithoid_portrait_15_unicorn_03
-#			sound = lithoid_portrait_15_unicorn_04
-#			sound = lithoid_portrait_15_unicorn_05
-#			sound = lithoid_portrait_15_unicorn_06
-#			sound = lithoid_portrait_15_unicorn_07
-#			sound = lithoid_portrait_15_unicorn_08
-#	
-#		}  
-#		volume = 0.5
-#		max_audible = 1
-#		max_audible_behaviour = fail
-#	}
+	soundeffect = {
+		name = lithoid_portrait_15_unicorn
+		sounds = {
+			sound = lithoid_portrait_15_unicorn_01
+			sound = lithoid_portrait_15_unicorn_02
+			sound = lithoid_portrait_15_unicorn_03
+			sound = lithoid_portrait_15_unicorn_04
+			sound = lithoid_portrait_15_unicorn_05
+			sound = lithoid_portrait_15_unicorn_06
+			sound = lithoid_portrait_15_unicorn_07
+			sound = lithoid_portrait_15_unicorn_08
+
+		}
+		volume = 0.25
+		max_audible = 1
+		max_audible_behaviour = fail
+	}
 
 ##### MACHINE
 
-#	soundeffect = {
-#		name = lithoid_portrait_machine
-#		sounds = {
-#			sound = lithoid_portrait_machine_01
-#			sound = lithoid_portrait_machine_02
-#			sound = lithoid_portrait_machine_03
-#			sound = lithoid_portrait_machine_04
-#			sound = lithoid_portrait_machine_05
-#			sound = lithoid_portrait_machine_06
-#			sound = lithoid_portrait_machine_07
-#			sound = lithoid_portrait_machine_08
-#	
-#		}  
-#		volume = 0.5
-#		max_audible = 1
-#		max_audible_behaviour = fail
-#	}
+	soundeffect = {
+		name = lithoid_portrait_machine
+		sounds = {
+			sound = lithoid_portrait_machine_01
+			sound = lithoid_portrait_machine_02
+			sound = lithoid_portrait_machine_03
+			sound = lithoid_portrait_machine_04
+			sound = lithoid_portrait_machine_05
+			sound = lithoid_portrait_machine_06
+			sound = lithoid_portrait_machine_07
+			sound = lithoid_portrait_machine_08
+
+		}
+		volume = 0.25
+		max_audible = 1
+		max_audible_behaviour = fail
+	}

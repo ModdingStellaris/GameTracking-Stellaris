@@ -10,8 +10,8 @@
  ### NEW FACTIONS
 
  # Descriptors
- pft_supremacist:2 "Rassistische Fraktion"
- pft_supremacist_desc:4 "Rassistische Fraktionen möchten, dass die Gründerspezies ihres Reichs dominiert. Sie wollen Richtlinien, die ihre eigene Spezies begünstigen und andere Spezies benachteiligen.\n\n§LXenophobe Gesinnung§!"
+ pft_supremacist:2 "Vorherrschaftliche Fraktion"
+ pft_supremacist_desc:4 "Vorherrschaftliche Fraktionen möchten, dass die Gründerspezies ihres Reichs dominiert. Sie wollen Richtlinien, die ihre eigene Spezies begünstigen und andere Spezies benachteiligen.\n\n§LXenophobe Gesinnung§!"
  pft_traditionalist:0 "Traditionalistische Fraktion"
  pft_traditionalist_desc:1 "Traditionalistische Fraktionen streben nach einer Rückkehr zu traditionellen Werten, die eventuell existiert haben, bevor das Reich erste Schritte in den Weltraum unternahm. Sie mögen Sparsamkeit und lehnen bestimmte technologische Fortschritte und nicht-spirituelle Werte ab.\n\n§LSpiritualistische Gesinnung§!"
  pft_progressive:0 "Progressive Fraktion"

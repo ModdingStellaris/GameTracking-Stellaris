@@ -5357,6 +5357,87 @@ sound =
 }
 
 
+########## FEDERATIONS TUTORIAL LINES ###########
+
+
+sound = 
+{    
+    name = tut_msg_tutorial_trade_screen_01
+    file = "vo/tutorial/tut_msg_tutorial_trade_screen_01.wav"
+}
+
+sound = 
+{
+    name = tut_msg_tutorial_federation_type_01
+    file = "vo/tutorial/tut_msg_tutorial_federation_type_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_empire_screen_01
+    file = "vo/tutorial/tut_msg_tutorial_empire_screen_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_federation_view_01
+    file = "vo/tutorial/tut_msg_tutorial_federation_view_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_federation_envoys_01
+    file = "vo/tutorial/tut_msg_tutorial_federation_envoys_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_federation_members_01
+    file = "vo/tutorial/tut_msg_tutorial_federation_members_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_federation_navy_01
+    file = "vo/tutorial/tut_msg_tutorial_federation_navy_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_federation_laws_01
+    file = "vo/tutorial/tut_msg_tutorial_federation_laws_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_galactic_com_view_01
+    file = "vo/tutorial/tut_msg_tutorial_galactic_com_view_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_galactic_com_envoys_01
+    file = "vo/tutorial/tut_msg_tutorial_galactic_com_envoys_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_galactic_com_senate_01
+    file = "vo/tutorial/tut_msg_tutorial_galactic_com_senate_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_galactic_com_resolutions_01
+    file = "vo/tutorial/tut_msg_tutorial_galactic_com_resolutions_01.wav"
+}
+
+sound =
+{
+    name = tut_msg_tutorial_galactic_com_council_01
+    file = "vo/tutorial/tut_msg_tutorial_galactic_com_council_01.wav"
+}
+
 
 ########## ADVISOR LIMITED TUTORIAL EVENT ###########
 
@@ -5415,7 +5496,10 @@ sound =
 	always_load = no
 }
 
+
 ########## ADVISOR GENERIC PHRASES ###########
+
+
 sound = 
 {
 	name = "advisor_generic_phrase_04"
@@ -6358,21 +6442,25 @@ sound =
 {
 	name = "ai_empire_ambient_stage_final_01"
 	file = "event/ai_empire_ambient_stage_final_01.wav"
+	volume = 0.25
 }
 sound = 
 {
 	name = "ai_empire_ambient_stage_01"
 	file = "event/ai_empire_ambient_stage_01.wav"
+	volume = 0.25
 }
 sound = 
 {
 	name = "ai_empire_ambient_stage_02"
 	file = "event/ai_empire_ambient_stage_02.wav"
+	volume = 0.25
 }
 sound = 
 {
 	name = "ai_empire_ambient_stage_03"
 	file = "event/ai_empire_ambient_stage_03.wav"
+	volume = 0.25
 }
 
 ### SWARM
@@ -6381,21 +6469,25 @@ sound =
 {
 	name = "swarm_crisis_ambient_stage_final_01"
 	file = "event/swarm_crisis_ambient_stage_final_01.wav"
+	volume = 0.25
 }
 sound = 
 {
 	name = "swarm_crisis_ambient_stage_01"
 	file = "event/swarm_crisis_ambient_stage_01.wav"
+	volume = 0.25
 }
 sound = 
 {
 	name = "swarm_crisis_ambient_stage_02"
 	file = "event/swarm_crisis_ambient_stage_02.wav"
+	volume = 0.25
 }
 sound = 
 {
 	name = "swarm_crisis_ambient_stage_03"
 	file = "event/swarm_crisis_ambient_stage_03.wav"
+	volume = 0.25
 }
 
 ### EXTRA DIMENSIONAL
@@ -6404,21 +6496,25 @@ sound =
 {
 	name = "extradimensional_crisis_ambient_stage_final_01"
 	file = "event/extradimensional_crisis_ambient_stage_final_01.wav"
+	volume = 0.25
 }
 sound = 
 {
 	name = "extradimensional_crisis_ambient_stage_01"
 	file = "event/extradimensional_crisis_ambient_stage_01.wav"
+	volume = 0.25
 }
 sound = 
 {
 	name = "extradimensional_crisis_ambient_stage_02"
 	file = "event/extradimensional_crisis_ambient_stage_02.wav"
+	volume = 0.25
 }
 sound = 
 {
 	name = "extradimensional_crisis_ambient_stage_03"
 	file = "event/extradimensional_crisis_ambient_stage_03.wav"
+	volume = 0.25
 }
 
 sound = 

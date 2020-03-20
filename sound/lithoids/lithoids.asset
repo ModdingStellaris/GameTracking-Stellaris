@@ -63,13 +63,13 @@ sound =
 {
     name = "lithoid_amb_mining_station_signals_01"
     file = "lithoid_amb_mining_station_signals.wav"
-    volume = 1
+    volume = 0.1
 }
 sound =
 {
     name = "lithoid_amb_wormhole_station_idle_01"
     file = "lithoid_amb_wormhole_station_idle_01.wav"
-    volume = 1
+    volume = 0.5
 }
 sound =
 {
@@ -153,13 +153,13 @@ sound =
 {
     name = "lithoid_amb_battleship_hum_01"
     file = "lithoid_amb_battleship_hum.wav"
-    volume = 1
+    volume = 0.5
 }
 sound =
 {
     name = "lithoid_amb_battleship_hum_02"
     file = "lithoid_amb_battleship_hum_02.wav"
-    volume = 1
+    volume = 0.5
 }
 sound =
 {
@@ -439,7 +439,7 @@ soundeffect = {
     sounds = {
         sound = lithoid_amb_mining_station_signals_01
     } 
-    volume = 0.5
+    volume = 0.25
     is3d = yes
     max_audible = 2 
     max_audible_behaviour = fail

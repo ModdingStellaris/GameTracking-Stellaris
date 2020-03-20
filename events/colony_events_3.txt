@@ -352,9 +352,9 @@ planet_event = {
 	option = {
 		name = colony_mod.3.a
 		add_modifier = {
-				modifier = "recent_quake"
-				days = 365
-			}
+			modifier = "recent_quake"
+			days = 365
+		}
 		custom_tooltip = quake_report_tooltip
 		hidden_effect = {
 			random_list = {
@@ -364,7 +364,6 @@ planet_event = {
 			}
 		}
 	}
-
 }
 
 planet_event = {
@@ -1149,13 +1148,13 @@ planet_event = { #hell
 	desc = {
 		text = colony.3006.spir.desc
 		trigger = {
-			is_spiritualist = yes
+			owner = { is_spiritualist = yes }
 		}
 	}
 	desc = {
 		text = colony.3006.desc
 		trigger = {
-			is_spiritualist = no
+			owner = { is_spiritualist = no }
 		}
 	}
 	picture = GFX_evt_space_funeral
@@ -1245,10 +1244,10 @@ planet_event = { #science
 		name = EXCELLENT
 		owner = {
 			add_monthly_resource_mult = {
-					resource = physics_research
-					value = @tier2researchreward
-					min = @tier2researchmin
-					max = @tier2researchmax
+				resource = physics_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
 			}
 			if = {
 				limit = {
@@ -1270,13 +1269,13 @@ planet_event = { #science
 				}
 			}	
 			else_if = {
-					limit = {
-						has_tech_option = tech_power_plant_3
-					}
-					add_tech_progress = {
-						tech = tech_power_plant_3
-						progress = 0.5
-					}
+				limit = {
+					has_tech_option = tech_power_plant_3
+				}
+				add_tech_progress = {
+					tech = tech_power_plant_3
+					progress = 0.5
+				}
 			}
 			else = {
 				add_research_option = tech_power_plant_3
@@ -1287,6 +1286,7 @@ planet_event = { #science
 			}
 		}
 		custom_tooltip = portal_closed_tooltip
+		hidden_effect = { set_planet_flag = dportal_closed }
 	}
 }
 
@@ -1342,6 +1342,7 @@ planet_event = { #prayer
 			}
 		}
 		custom_tooltip = portal_closed_tooltip
+		hidden_effect = { set_planet_flag = dportal_closed }
 	}
 }
 
@@ -1400,6 +1401,7 @@ planet_event = { #rocks
 			}	
 		}
 		custom_tooltip = portal_closed_tooltip
+		hidden_effect = { set_planet_flag = dportal_closed }
 	}
 }
 

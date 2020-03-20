@@ -2,6 +2,8 @@
 ### Created by Miranda van den Brink
 
 REP4 = {
+
+	category = "Reptilian"
 	
 	language = "l_simp_chinese"
 
@@ -32,6 +34,10 @@ REP4 = {
 		
 		colossus = {
 			波姆巴 巴哈巴 毕什波什 卡托 奥莱 奥姆巴 奥姆艾巴 奥什瓦 佐姆巴 祖姆巴巴
+		}
+		
+		juggernaut = {
+			"邦-巴哈-尊" "博拉普-卡拉卡-伏姆" "博拉普-提什-伏姆" "卡拉卡-佛里什" "卡拉什-冯姆" "欧鲁姆-提什" "提什-卡-卡-冯"
 		}
 		
 		science = {

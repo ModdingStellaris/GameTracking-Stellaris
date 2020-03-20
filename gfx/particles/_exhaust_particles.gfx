@@ -310,6 +310,12 @@ objectTypes = {
 		type = "mammalian_01_ship_exhaust_idle_large_file"
 		scale = 5.0
 	}
+	
+	pdxparticle = {
+		name = "mammalian_01_8_0_exhaust_oblong_idle_particle"
+		type = "mammalian_01_ship_exhaust_idle_large_file"
+		scale = 8.0
+	}
 
 	pdxparticle = {
 		name = "mammalian_01_5_exhaust_oblong_idle_particle"
@@ -755,6 +761,12 @@ objectTypes = {
 		type = "mammalian_01_ship_exhaust_oblong_file"
 		scale = 5.0
 	}
+	
+	pdxparticle = {
+		name = "mammalian_01_8_0_ship_exhaust_oblong_moving_particle"
+		type = "mammalian_01_ship_exhaust_oblong_file"
+		scale = 8.0
+	}
 
 	pdxparticle = {
 		name = "mammalian_01_5_ship_exhaust_oblong_moving_particle"
@@ -911,18 +923,533 @@ objectTypes = {
 		scale = 2.20
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
 	pdxparticle = {
 		name = "ship_trail_particle"
 		type = "ship_trail_file"
 		scale = 1.0
 	}
 	
+	#####
+	# Exhaust Moving
+	#####
+	
+	#### Circle
+
+	pdxparticle = {
+		name = "generic_big_3_exhaust_circle_moving"
+		type = "generic_big_exhaust_circle_moving_effect_file"
+		scale = 3
+	}
+	
+	pdxparticle = {
+		name = "generic_2_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 2
+	}
+	
+	pdxparticle = {
+		name = "generic_1_75_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 1.75
+	}
+	
+	pdxparticle = {
+		name = "generic_1_5_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "generic_1_25_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_1_1_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 1.10
+	}
+	
+	pdxparticle = {
+		name = "generic_1_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "generic_075_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 0.750
+	}
+	
+	pdxparticle = {
+		name = "generic_06_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 0.60
+	}
+	
+	pdxparticle = {
+		name = "generic_05_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 0.50
+	}
+	
+	pdxparticle = {
+		name = "generic_025_exhaust_circle_moving"
+		type = "generic_exhaust_circle_moving_effect_file"
+		scale = 0.250
+	}
+	#### Circle Long
+
+	pdxparticle = {
+		name = "generic_1_75_exhaust_circle_long_moving"
+		type = "generic_exhaust_circle_long_moving_effect_file"
+		scale = 1.75
+	}
+
+	pdxparticle = {
+		name = "generic_1_5_exhaust_circle_long_moving"
+		type = "generic_exhaust_circle_long_moving_effect_file"
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "generic_1_25_exhaust_circle_long_moving"
+		type = "generic_exhaust_circle_long_moving_effect_file"
+		scale = 1.25
+	}
+	
+	pdxparticle = {
+		name = "generic_1_exhaust_circle_long_moving"
+		type = "generic_exhaust_circle_long_moving_effect_file"
+		scale = 1
+	}
+	
+	pdxparticle = {
+		name = "generic_075_exhaust_circle_long_moving"
+		type = "generic_exhaust_circle_long_moving_effect_file"
+		scale = 0.75
+	}	
+
+	pdxparticle = {
+		name = "generic_05_exhaust_circle_long_moving"
+		type = "generic_exhaust_circle_long_moving_effect_file"
+		scale = 0.50
+	}
+	
+	pdxparticle = {
+		name = "generic_04_exhaust_circle_long_moving"
+		type = "generic_exhaust_circle_long_moving_effect_file"
+		scale = 0.40
+	}
+	
+	pdxparticle = {
+		name = "generic_025_exhaust_circle_long_moving"
+		type = "generic_small_exhaust_long_moving_effect"
+		scale = 0.25
+	}
+
+		pdxparticle = {
+		name = "generic_015_exhaust_circle_long_moving"
+		type = "generic_small_exhaust_long_moving_effect"
+		scale = 0.15
+	}
+	#### Line
+
+	pdxparticle = {
+		name = "generic_2_5_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 2.5
+	}
+	
+	pdxparticle = {
+		name = "generic_2_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 2
+	}
+	
+	pdxparticle = {
+		name = "generic_1_5_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 1.50
+	}
+
+	pdxparticle = {
+		name = "generic_1_25_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_1_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "generic_075_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 0.750
+	}
+	
+	pdxparticle = {
+		name = "generic_06_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 0.60
+	}	
+
+	pdxparticle = {
+		name = "generic_05_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 0.50
+	}
+	
+	pdxparticle = {
+		name = "generic_04_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 0.40
+	}
+	
+	pdxparticle = {
+		name = "generic_025_exhaust_line_moving"
+		type = "generic_exhaust_line_moving_effect_file"
+		scale = 0.250
+	}
+	
+	##### Line Wide
+	
+	pdxparticle = {
+		name = "generic_2_exhaust_line_wide_moving"
+		type = "generic_exhaust_line_wide_moving_effect_file"
+		scale = 2.0
+	}
+
+	pdxparticle = {
+		name = "generic_1_5_exhaust_line_wide_moving"
+		type = "generic_exhaust_line_wide_moving_effect_file"
+		scale = 1.50
+	}
+
+	pdxparticle = {
+		name = "generic_1_25_exhaust_line_wide_moving"
+		type = "generic_exhaust_line_wide_moving_effect_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_1_exhaust_line_wide_moving"
+		type = "generic_exhaust_line_wide_moving_effect_file"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "generic_075_exhaust_line_wide_moving"
+		type = "generic_exhaust_line_wide_moving_effect_file"
+		scale = 0.750
+	}
+
+	pdxparticle = {
+		name = "generic_06_exhaust_line_wide_moving"
+		type = "generic_exhaust_line_wide_moving_effect_file"
+		scale = 0.60
+	}
+	
+	pdxparticle = {
+		name = "generic_05_exhaust_line_wide_moving"
+		type = "generic_exhaust_line_wide_moving_effect_file"
+		scale = 0.50
+	}		
+	
+	pdxparticle = {
+		name = "generic_035_exhaust_line_wide_moving"
+		type = "generic_exhaust_line_wide_moving_effect_file"
+		scale = 0.350
+	}	
+	
+	#### Curve
+
+	pdxparticle = {
+		name = "generic_1_25_exhaust_curve_moving"
+		type = "generic_exhaust_curve_moving_effect_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_1_exhaust_curve_moving"
+		type = "generic_exhaust_curve_moving_effect_file"
+		scale = 1.0
+	}	
+	
+	pdxparticle = {
+		name = "generic_075_exhaust_curve_moving"
+		type = "generic_exhaust_curve_moving_effect_file"
+		scale = 0.750
+	}	
+	
+	pdxparticle = {
+		name = "generic_05_exhaust_curve_moving"
+		type = "generic_exhaust_curve_moving_effect_file"
+		scale = 0.50
+	}	
+	
+	pdxparticle = {
+		name = "generic_04_exhaust_curve_moving"
+		type = "generic_exhaust_curve_moving_effect_file"
+		scale = 0.40
+	}
+
+	pdxparticle = {
+		name = "generic_035_exhaust_curve_moving"
+		type = "generic_exhaust_curve_moving_effect_file"
+		scale = 0.35
+	}		
+	
+	pdxparticle = {
+		name = "generic_025_exhaust_curve_moving"
+		type = "generic_exhaust_curve_moving_effect_file"
+		scale = 0.250
+	}	
+	
+	#########################################################
+	# Exhaust Idle
+	#########################################################
+	
+	#### Circle	
+	
+	pdxparticle = {
+		name = "generic_big_3_exhaust_circle_idle"
+		type = "generic_big_exhaust_idle_circle_file"
+		scale = 3
+	}
+
+	pdxparticle = {
+		name = "generic_big_2_5_exhaust_circle_idle"
+		type = "generic_big_exhaust_idle_circle_file"
+		scale = 2.5
+	}
+	
+	pdxparticle = {
+		name = "generic_1_75_exhaust_circle_idle"
+		type = "generic_big_exhaust_idle_circle_file"
+		scale = 1.75
+	}
+	
+	pdxparticle = {
+		name = "generic_1_5_exhaust_circle_idle"
+		type = "generic_exhaust_idle_circle_file"
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "generic_1_25_exhaust_circle_idle"
+		type = "generic_exhaust_idle_circle_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_1_exhaust_circle_idle"
+		type = "generic_exhaust_idle_circle_file"
+		scale = 1.0
+	}
+
+	
+	pdxparticle = {
+		name = "generic_075_exhaust_circle_idle"
+		type = "generic_exhaust_idle_circle_file"
+		scale = 0.750
+	}
+	
+	pdxparticle = {
+		name = "generic_05_exhaust_circle_idle"
+		type = "generic_exhaust_idle_circle_file"
+		scale = 0.50
+	}
+	
+	pdxparticle = {
+		name = "generic_035_exhaust_circle_idle"
+		type = "generic_exhaust_idle_circle_file"
+		scale = 0.350
+	}
+	pdxparticle = {
+		name = "generic_025_exhaust_circle_idle"
+		type = "generic_exhaust_idle_circle_file"
+		scale = 0.250
+	}
+
+	pdxparticle = {
+		name = "generic_015_exhaust_circle_idle"
+		type = "generic_exhaust_idle_circle_file"
+		scale = 0.150
+	}	
+	
+	#### Line
+
+	pdxparticle = {
+		name = "generic_2_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 2
+	}
+	
+	pdxparticle = {
+		name = "generic_1_5_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 1.50
+	}
+
+	pdxparticle = {
+		name = "generic_1_25_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_1_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "generic_075_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 0.750
+	}
+
+	pdxparticle = {
+		name = "generic_06_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 0.60
+	}
+
+	pdxparticle = {
+		name = "generic_05_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 0.50
+	}
+	
+	pdxparticle = {
+		name = "generic_035_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 0.350
+	}
+	
+	pdxparticle = {
+		name = "generic_025_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 0.250
+	}
+	
+	pdxparticle = {
+		name = "generic_015_exhaust_line_idle"
+		type = "generic_exhaust_line_idle_effect_file"
+		scale = 0.150
+	}
+	
+############ RED #############
+
+#####Moving
+
+	pdxparticle = {
+		name = "generic_red_1_25_exhaust_circle_moving"
+		type = "generic_red_exhaust_circle_moving_effect_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_red_1_exhaust_circle_moving"
+		type = "generic_red_exhaust_circle_moving_effect_file"
+		scale = 1
+	}
+
+	pdxparticle = {
+		name = "generic_red_075_exhaust_circle_moving"
+		type = "generic_red_exhaust_circle_moving_effect_file"
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "generic_red_05_exhaust_circle_moving"
+		type = "generic_red_exhaust_circle_moving_effect_file"
+		scale = 0.5
+	}
+	
+###### Idle
+
+	pdxparticle = {
+		name = "generic_red_1_25_exhaust_circle_idle"
+		type = "generic_red_exhaust_idle_circle_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_red_1_exhaust_circle_idle"
+		type = "generic_red_exhaust_idle_circle_file"
+		scale = 1
+	}
+	
+	pdxparticle = {
+		name = "generic_red_075_exhaust_circle_idle"
+		type = "generic_red_exhaust_idle_circle_file"
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "generic_red_05_exhaust_circle_idle"
+		type = "generic_red_exhaust_idle_circle_file"
+		scale = 0.5
+	}
+	
+############ green #############
+
+#####Moving
+
+	pdxparticle = {
+		name = "generic_green_1_25_exhaust_line_moving"
+		type = "generic_green_exhaust_line_moving_effect_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_green_1_exhaust_line_moving"
+		type = "generic_green_exhaust_line_moving_effect_file"
+		scale = 1
+	}
+
+	pdxparticle = {
+		name = "generic_green_075_exhaust_line_moving"
+		type = "generic_green_exhaust_line_moving_effect_file"
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "generic_green_05_exhaust_line_moving"
+		type = "generic_green_exhaust_line_moving_effect_file"
+		scale = 0.5
+	}
+	
+###### Idle
+
+	pdxparticle = {
+		name = "generic_green_1_25_exhaust_line_idle"
+		type = "generic_green_exhaust_line_idle_effect_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "generic_green_1_exhaust_line_idle"
+		type = "generic_green_exhaust_line_idle_effect_file"
+		scale = 1
+	}
+	
+	pdxparticle = {
+		name = "generic_green_075_exhaust_line_idle"
+		type = "generic_green_exhaust_line_idle_effect_file"
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "generic_green_05_exhaust_line_idle"
+		type = "generic_green_exhaust_line_idle_effect_file"
+		scale = 0.5
+	}
 }

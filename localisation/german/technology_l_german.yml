@@ -250,6 +250,8 @@
  # TEMP
  tech_matter_generator:0 "Materiegeneration"
  tech_matter_generator_desc:0 "Durch den Einsatz großer Mengen an Energie können wir Licht in Materie umwandeln."
+ tech_mega_assembly:0 "Mega-Werft"
+ tech_mega_assembly_desc:0 "Erweiterte Vorlagen ermöglichen es uns, die Montagegeschwindigkeit neuer Einheiten drastisch zu erhöhen."
  
  # Space Mining
  tech_space_construction:0 "Weltraumbau"
@@ -876,6 +878,8 @@
  tech_adaptive_bureaucracy_desc:1 "Unser Fortschritt ruft nach einer neuen, beweglicheren Verwaltungsform, die uns bei unserem Streben unterstützt, anstatt zu behindern."
  tech_adaptive_bureaucracy_machine_intelligence:0 "Positronische CPUs"
  tech_adaptive_bureaucracy_desc_machine_intelligence:0 "Positronische CPUs sind sowohl billiger als auch schneller zu produzieren als bisherige Modelle, so dass wir zusätzliche Anführereinheiten in Betrieb nehmen können."
+ tech_effective_bureaucracy:0 "Effektive Bürokratie"
+ tech_effective_bureaucracy_desc:0 "Verbesserte Algorithmen für die Verarbeitung und Organisation großer Datenmengen haben die Entscheidungsfindung und den Informationsaustausch im gesamten Reich optimiert."
  tech_colonial_bureaucracy:0 "Koloniale Bürokratie"
  tech_colonial_bureaucracy_desc:0 "Lokale administrative Entwicklungen ermöglichen die genauere Überwachung kolonialer Angelegenheiten, ohne die zentrale Entscheidungsfindung allzu sehr zu belasten."
  tech_galactic_bureaucracy:0 "Galaktische Bürokratie"

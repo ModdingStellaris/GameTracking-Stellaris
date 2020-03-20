@@ -151,6 +151,14 @@ tech_galactic_markets = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_galactic_markets }
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -240,6 +248,13 @@ tech_eco_simulation = {
 			}
 		}
 		modifier = {
+			factor = 0.5
+			OR = {
+				is_machine_empire = yes
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
 			factor = 1.25
 			has_ethic = ethic_pacifist
 		}
@@ -309,6 +324,13 @@ tech_gene_crops = {
 			}
 		}
 		modifier = {
+			factor = 0.5
+			OR = {
+				is_machine_empire = yes
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
 			factor = 1.25
 			has_ethic = ethic_pacifist
 		}
@@ -375,6 +397,13 @@ tech_nano_vitality_crops = {
 						num_districts = { type = district_rw_farming value > 0 }
 					}
 				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				is_machine_empire = yes
+				is_lithoid_empire = yes
 			}
 		}
 		modifier = {
@@ -451,6 +480,13 @@ tech_nutrient_replication = {
 			}
 		}
 		modifier = {
+			factor = 0.5
+			OR = {
+				is_machine_empire = yes
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
 			factor = 0.50
 			NOR = {
 				research_leader = {
@@ -466,6 +502,14 @@ tech_nutrient_replication = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_nutrient_replication }
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -528,6 +572,13 @@ tech_hydroponics = {
 			}
 		}
 		modifier = {
+			factor = 0.5
+			OR = {
+				is_machine_empire = yes
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -578,6 +629,13 @@ tech_food_processing_1 = {
 			}
 		}
 		modifier = {
+			factor = 0.5
+			OR = {
+				is_machine_empire = yes
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -624,6 +682,13 @@ tech_food_processing_2 = {
 						num_districts = { type = district_rw_farming value > 0 }
 					}
 				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				is_machine_empire = yes
+				is_lithoid_empire = yes
 			}
 		}
 		modifier = {
@@ -1189,6 +1254,14 @@ tech_tomb_world_adaption = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_tomb_world_adaption }
+			}
 		}
 		modifier = {
 			factor = 2
@@ -2361,6 +2434,14 @@ tech_gene_banks = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_gene_banks }
+			}
+		}
+		modifier = {
 			factor = 1.5
 			research_leader = {
 				area = society
@@ -2436,6 +2517,14 @@ tech_gene_seed_purification = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_gene_seed_purification }
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -2531,6 +2620,14 @@ tech_morphogenetic_field_mastery = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_morphogenetic_field_mastery }
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -2774,6 +2871,14 @@ tech_gene_expressions = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_gene_expressions }
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -2840,6 +2945,14 @@ tech_selected_lineages = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_selected_lineages }
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -2912,6 +3025,14 @@ tech_capacity_boosters = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_capacity_boosters }
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -3679,7 +3800,7 @@ tech_psionic_theory = {
 	}
 
 	modifier = {
-		country_unity_produces_mult = 0.05
+		empire_size_pops_mult = -0.10
 	}
 
 	weight_modifier = {
@@ -3709,6 +3830,14 @@ tech_psionic_theory = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_psionic_theory }
+			}
 		}
 		modifier = {
 			factor = 2
@@ -3825,6 +3954,14 @@ tech_telepathy = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_telepathy }
+			}
+		}
+		modifier = {
 			factor = 2
 			has_ethic = "ethic_spiritualist"
 		}
@@ -3899,6 +4036,14 @@ tech_precognition_interface = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_precognition_interface }
+			}
 		}
 		modifier = {
 			factor = 2
@@ -3998,6 +4143,14 @@ tech_psi_jump_drive_1 = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_psi_jump_drive_1 }
+			}
 		}
 	}
 }
@@ -4427,6 +4580,14 @@ tech_subdermal_stimulation = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_subdermal_stimulation }
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -4497,8 +4658,56 @@ tech_adaptive_bureaucracy = {
 	weight = @tier1weight2
 
 	modifier = {
-		country_leader_pool_size = 1
-		leaders_cost_mult = -0.20
+		country_admin_cap_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			num_owned_planets < 2
+		}
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 2
+		}
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 3
+		}
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 4
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+tech_effective_bureaucracy = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { "tech_adaptive_bureaucracy" }
+	weight = @tier2weight1
+
+	modifier = {
+		country_admin_cap_mult = 0.05
 	}
 
 	weight_modifier = {
@@ -4542,12 +4751,12 @@ tech_colonial_bureaucracy = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = { new_worlds }
+	category = { statecraft }
 	prerequisites = { "tech_adaptive_bureaucracy" }
 	weight = @tier2weight1
 
 	modifier = {
-		country_admin_cap_add = 20
+		country_admin_cap_add = 10
 	}
 
 	weight_modifier = {
@@ -4571,7 +4780,7 @@ tech_colonial_bureaucracy = {
 			factor = 1.25
 			research_leader = {
 				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
+				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
 	}
@@ -4581,7 +4790,7 @@ tech_colonial_bureaucracy = {
 			factor = 1.25
 			research_leader = {
 				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
+				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
 	}
@@ -4591,12 +4800,12 @@ tech_galactic_bureaucracy = {
 	cost = @tier3cost1
 	area = society
 	tier = 3
-	category = { new_worlds }
+	category = { statecraft }
 	prerequisites = { "tech_colonial_bureaucracy" }
 	weight = @tier3weight1
 
 	modifier = {
-		country_admin_cap_add = 20
+		country_admin_cap_add = 10
 	}
 
 	weight_modifier = {
@@ -4620,7 +4829,7 @@ tech_galactic_bureaucracy = {
 			factor = 1.25
 			research_leader = {
 				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
+				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
 	}
@@ -4630,7 +4839,7 @@ tech_galactic_bureaucracy = {
 			factor = 1.25
 			research_leader = {
 				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
+				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
 	}
@@ -5285,12 +5494,14 @@ tech_cultural_heritage = {
 }
 
 tech_heritage_site = {
-	cost = @tier2cost2
+	cost = @tier1cost3
 	area = society
 	category = { statecraft }
-	tier = 2
+	tier = 1
 	prerequisites = { "tech_cultural_heritage" }
-	weight = @tier2weight2
+	weight = @tier1weight3
+
+	#unlocks upgraded culture building
 
 	potential = {
 		NOR = {
@@ -5330,12 +5541,14 @@ tech_heritage_site = {
 }
 
 tech_hypercomms_forum = {
-	cost = @tier3cost2
+	cost = @tier3cost1
 	area = society
 	category = { statecraft }
 	tier = 3
 	prerequisites = { "tech_heritage_site" "tech_colonial_centralization" }
-	weight = @tier3weight2
+	weight = @tier3weight1
+
+	#unlocks 2nd upgraded culture building
 
 	potential = {
 		NOR = {
@@ -5367,12 +5580,12 @@ tech_hypercomms_forum = {
 }
 
 tech_autocurating_vault = {
-	cost = @tier4cost2
+	cost = @tier3cost1
 	area = society
 	category = { statecraft }
-	tier = 4
-	prerequisites = { "tech_hypercomms_forum" "tech_administrative_ai" "tech_galactic_administration"}
-	weight = @tier4weight2
+	tier = 3
+	prerequisites = { "tech_administrative_ai" "tech_colonial_centralization"}
+	weight = @tier3weight1
 
 	potential = {
 		NOR = {
@@ -5651,6 +5864,14 @@ tech_ascension_theory = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_ascension_theory }
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -5738,6 +5959,14 @@ tech_penal_colonies = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_penal_colonies }
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -5797,6 +6026,14 @@ tech_resort_colonies = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_resort_colonies }
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -5916,6 +6153,144 @@ tech_housing_agrarian_idyll = {
 				area = society
 				has_trait = "leader_trait_expertise_statecraft"
 			}
+		}
+	}
+}
+
+tech_xeno_diplomacy = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { "tech_colonial_centralization" }
+	weight = @tier2weight1
+
+	potential = {
+		is_regular_empire = yes
+	}
+
+	modifier = {
+		diplo_weight_mult = 0.1
+	}
+
+	## unlock embassy building and edict
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 2
+			is_galactic_community_member = yes
+		}
+		modifier = {
+			factor = 0.01
+			has_civic = civic_inwards_perfection
+		}
+	}
+
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 0.01
+			has_civic = civic_inwards_perfection
+		}
+	}
+}
+
+tech_xeno_relations = {
+	cost = @tier3cost2
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_xeno_diplomacy" "tech_galactic_administration" }
+	weight = @tier3weight1
+
+	potential = {
+		is_regular_empire = yes
+	}
+
+	modifier = {
+		diplo_weight_mult = 0.1
+	}
+
+	## unlock embassy building upgrade
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 2
+			is_galactic_community_member = yes
+		}
+		modifier = {
+			factor = 0.01
+			has_civic = civic_inwards_perfection
+		}
+	}
+
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 0.01
+			has_civic = civic_inwards_perfection
 		}
 	}
 }

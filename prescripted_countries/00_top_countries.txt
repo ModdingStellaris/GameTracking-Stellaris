@@ -1,7 +1,7 @@
 humans1 = {
 	name = "humans1"
 	adjective = "PRESCRIPTED_adjective_humans1"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 	
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
@@ -26,6 +26,8 @@ humans1 = {
 	
 	ethic = "ethic_xenophile"
 	ethic = "ethic_fanatic_egalitarian"
+
+	origin = "origin_default"
 
 	flags = { human_1 custom_start_screen }
 	
@@ -68,7 +70,7 @@ humans1 = {
 humans2 = {
 	name = "humans2"
 	adjective = "PRESCRIPTED_adjective_humans2"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans2"
@@ -93,6 +95,8 @@ humans2 = {
 
 	ethic = "ethic_xenophobe"
 	ethic = "ethic_fanatic_militarist"
+
+	origin = "origin_lost_colony"
 
 	flags = { human_2 custom_start_screen }
 	

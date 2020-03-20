@@ -23,8 +23,7 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "TITANIC_01"
-		slot_size = titanic
-		slot_type = weapon
+		template = "invisible_titanic_fixed"
 		locatorname = "xl_gun_01"
 	}
 	
@@ -48,26 +47,22 @@ ship_section_template = {
 
 	component_slot = {
 		name = "LARGE_GUN_01"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "large_gun_02"
 	}	
 	component_slot = {
 		name = "LARGE_GUN_03"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "large_gun_03"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "large_gun_04"
 	}
 	
@@ -93,14 +88,12 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "LARGE_GUN_01"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "large_gun_02"
 	}
 	

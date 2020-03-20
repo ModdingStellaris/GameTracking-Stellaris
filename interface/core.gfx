@@ -262,6 +262,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_rendertarget.lua"
 	}	
 
+	spriteType = {
+		name = "GFX_portrait_character_locked_overlay"
+		texturefile = "gfx/interface/main/PortraitFade_DLC.dds"
+	}					
 
-	
+	spriteType = {
+		name = "GFX_portrait_character_locked_hidden_overlay"
+		texturefile = "gfx/interface/main/PortraitFade_more_DLC.dds"
+	}					
 }

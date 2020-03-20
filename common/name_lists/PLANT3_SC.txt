@@ -2,6 +2,8 @@
 ### Created by Rufus Tronde, Miranda van den Brink
 PLANT3 = {	
 	### SHIPS
+	
+	category = "Plantoid"
 
 	language = "l_simp_chinese"
 	

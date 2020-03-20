@@ -1,7 +1,7 @@
 ##############################################################
 ###	PORTRAITS SETTINGS
 ###
-### Which portraits are used is set in 
+### Which portraits are used is set in
 ### common\species_classes\00_species_classes.txt
 ###
 ###	This file configures how portraits and planet backgrounds are built.
@@ -12,7 +12,7 @@
 portraits = {
 
 	# Lithoid
-	lith1 = {	entity = "portrait_lithoid_01_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_1_golem" 
+	lith1 = {	entity = "portrait_lithoid_01_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_1_golem"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_01_portrait_bluegreen.dds"
 			"gfx/models/portraits/lithoid/lithoid_01_portrait_cyan.dds"
@@ -20,7 +20,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_01_portrait_tealred.dds"
 		}
 	}
-	lith2 = {	entity = "portrait_lithoid_02_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_2_lava" 
+	lith2 = {	entity = "portrait_lithoid_02_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_2_lava"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_02_portrait_green.dds"
 			"gfx/models/portraits/lithoid/lithoid_02_portrait_grey.dds"
@@ -28,7 +28,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_02_portrait_yellow.dds"
 		}
 	}
-	lith3 = {	entity = "portrait_lithoid_03_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_3_geode" 
+	lith3 = {	entity = "portrait_lithoid_03_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_3_geode"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_03_portrait_blue.dds"
 			"gfx/models/portraits/lithoid/lithoid_03_portrait_green.dds"
@@ -36,7 +36,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_03_portrait_teal.dds"
 		}
 	}
-	lith4 = {	entity = "portrait_lithoid_04_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_4_angelic" 
+	lith4 = {	entity = "portrait_lithoid_04_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_4_angelic"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_04_portrait_blue.dds"
 			"gfx/models/portraits/lithoid/lithoid_04_portrait_purple.dds"
@@ -44,7 +44,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_04_portrait_yellow.dds"
 		}
 	}
-	lith5 = {	entity = "portrait_lithoid_05_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_5_mantis" 
+	lith5 = {	entity = "portrait_lithoid_05_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_5_mantis"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_05_portrait_bluepurple.dds"
 			"gfx/models/portraits/lithoid/lithoid_05_portrait_green.dds"
@@ -52,7 +52,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_05_portrait_orange.dds"
 		}
 	}
-	lith6 = {	entity = "portrait_lithoid_06_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_6_symbiotic" 
+	lith6 = {	entity = "portrait_lithoid_06_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_6_symbiotic"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_06_portrait_blue.dds"
 			"gfx/models/portraits/lithoid/lithoid_06_portrait_green.dds"
@@ -60,7 +60,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_06_portrait_red.dds"
 		}
 	}
-	lith7 = {	entity = "portrait_lithoid_07_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_7_pyrite" 
+	lith7 = {	entity = "portrait_lithoid_07_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_7_pyrite"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_07_portrait_blue.dds"
 			"gfx/models/portraits/lithoid/lithoid_07_portrait_green.dds"
@@ -68,15 +68,15 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_07_portrait_purple.dds"
 		}
 	}
-	lith8 = {	entity = "portrait_lithoid_08_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_8_sedimentary" 
+	lith8 = {	entity = "portrait_lithoid_08_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_8_sedimentary"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_08_portrait_brown.dds"
 			"gfx/models/portraits/lithoid/lithoid_08_portrait_orange.dds"
 			"gfx/models/portraits/lithoid/lithoid_08_portrait_pink.dds"
 			"gfx/models/portraits/lithoid/lithoid_08_portrait_red.dds"
 		}
-	}	
-	lith9 = {	entity = "portrait_lithoid_09_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_9_spider" 
+	}
+	lith9 = {	entity = "portrait_lithoid_09_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_9_spider"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_09_portrait_bronze.dds"
 			"gfx/models/portraits/lithoid/lithoid_09_portrait_green.dds"
@@ -84,7 +84,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_09_portrait_red.dds"
 		}
 	}
-	lith10 = {	entity = "portrait_lithoid_10_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_9_spider" 
+	lith10 = {	entity = "portrait_lithoid_10_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_10_spined"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_10_portrait_blue.dds"
 			"gfx/models/portraits/lithoid/lithoid_10_portrait_green.dds"
@@ -92,7 +92,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_10_portrait_red.dds"
 		}
 	}
-	lith11 = {	entity = "portrait_lithoid_11_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_11_levitating" 
+	lith11 = {	entity = "portrait_lithoid_11_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_11_levitating"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_11_portrait_yellow.dds"
 			"gfx/models/portraits/lithoid/lithoid_11_portrait_green.dds"
@@ -100,7 +100,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_11_portrait_purple.dds"
 		}
 	}
-	lith12 = {	entity = "portrait_lithoid_12_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_12_crystal" 
+	lith12 = {	entity = "portrait_lithoid_12_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_12_crystal"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_12_portrait_blue.dds"
 			"gfx/models/portraits/lithoid/lithoid_12_portrait_green.dds"
@@ -108,7 +108,7 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_12_portrait_turquoise.dds"
 		}
 	}
-	lith13 = {	entity = "portrait_lithoid_13_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_13_exo" 
+	lith13 = {	entity = "portrait_lithoid_13_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_13_exo"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_13_portrait_grey.dds"
 			"gfx/models/portraits/lithoid/lithoid_13_portrait_green.dds"
@@ -116,29 +116,29 @@ portraits = {
 			"gfx/models/portraits/lithoid/lithoid_13_portrait_red.dds"
 		}
 	}
-	lith14 = {	entity = "portrait_lithoid_14_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "molluscoid_01_greetings" 
+	lith14 = {	entity = "portrait_lithoid_14_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_14_snake"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_14_portrait_blue.dds"
 			"gfx/models/portraits/lithoid/lithoid_14_portrait_purple.dds"
 			"gfx/models/portraits/lithoid/lithoid_14_portrait_red.dds"
 			"gfx/models/portraits/lithoid/lithoid_14_portrait_yellow.dds"
 		}
-	}	
-	lith15 = {	entity = "portrait_lithoid_15_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "molluscoid_01_greetings" 
+	}
+	lith15 = {	entity = "portrait_lithoid_15_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_15_unicorn"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_15_portrait_blue.dds"
 			"gfx/models/portraits/lithoid/lithoid_15_portrait_purple.dds"
 			"gfx/models/portraits/lithoid/lithoid_15_portrait_red.dds"
 			"gfx/models/portraits/lithoid/lithoid_15_portrait_turquoise.dds"
 		}
-	}	
-	lith_machine = { entity = "portrait_lithoid_machine_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "molluscoid_01_greetings" 
+	}
+	lith_machine = { entity = "portrait_lithoid_machine_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "lithoid_portrait_machine"
 		character_textures = {
 			"gfx/models/portraits/lithoid/lithoid_machine_blue.dds"
 			"gfx/models/portraits/lithoid/lithoid_machine_orange.dds"
 			"gfx/models/portraits/lithoid/lithoid_machine_purple.dds"
 			"gfx/models/portraits/lithoid/lithoid_machine_red.dds"
 		}
-	}				
-}	
+	}
+}
 

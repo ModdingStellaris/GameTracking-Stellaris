@@ -58,6 +58,11 @@ alerts = {
 		sound = "alert_negative"
 	}
 
+	alert_mia_reinforce = {
+		category = LOW
+		sound = "alert_negative"
+	}
+
 	alert_building = {
 		category = LOW
 		sound = "alert_negative"
@@ -146,6 +151,26 @@ alerts = {
 	alert_automation_resources = {
 		category = MEDIUM
 		sound  = "alert_negative"
+	}
+	alert_in_breach = {
+		category = HIGH
+		sound  = "notification_alert_breach"
+	}
+	alert_council_election = {
+		category = LOW
+		sound  = "alert_negative"
+	}
+	alert_federation_losing_xp = {
+		category = HIGH
+		sound  = "notification_player_lose_xp"
+	}
+	alert_federation_losing_level = {
+		category = HIGH
+		sound  = "alert_negative"
+	}
+	alert_federation_low_cohesion = {
+		category = MEDIUM
+		sound  = "notification_low_cohesion"
 	}
 
 	alert_deprecated = { category = disabled }

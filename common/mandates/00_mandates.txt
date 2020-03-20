@@ -5,7 +5,7 @@ mandate_orbital_researcher = {
 		owner = { has_technology = tech_space_construction }
 	}
 	parameters = {}
-	
+
 	on_term_started = {
 		owner = {
 			if = {
@@ -198,6 +198,7 @@ mandate_monthly_food = {
 		exists = owner
 		owner = {
 			has_monthly_income = { resource = food value < 15 }
+			country_uses_food = yes
 		}
 	}
 	parameters = {}
@@ -279,6 +280,7 @@ mandate_district_city = {
 	valid = {
 		exists = owner
 		owner = {
+			NOT = { has_origin = origin_void_dwellers }
 			any_owned_planet = {
 				free_district_slots >= 2
 			}
@@ -308,9 +310,9 @@ mandate_district_generator = {
 	valid = {
 		exists = owner
 		owner = {
+			NOT = { has_origin = origin_void_dwellers }
 			any_owned_planet = {
-				free_district_slots >= 2
-				# hope they're generator slots!
+				num_free_districts = { type = district_generator value >= 2 }
 			}
 		}
 	}
@@ -338,9 +340,9 @@ mandate_district_mining = {
 	valid = {
 		exists = owner
 		owner = {
+			NOT = { has_origin = origin_void_dwellers }
 			any_owned_planet = {
-				free_district_slots >= 2
-				# hope they're mining slots!
+				num_free_districts = { type = district_mining value >= 2 }
 			}
 		}
 	}
@@ -368,9 +370,10 @@ mandate_district_farming = {
 	valid = {
 		exists = owner
 		owner = {
+			NOT = { has_origin = origin_void_dwellers }
+			country_uses_food = yes
 			any_owned_planet = {
-				free_district_slots >= 2
-				# hope they're farming slots!
+				num_free_districts = { type = district_farming value >= 2 }
 			}
 		}
 	}

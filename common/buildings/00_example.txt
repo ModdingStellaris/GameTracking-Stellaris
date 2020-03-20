@@ -91,4 +91,20 @@
 	#ai_weight = {
 	#	weight = 100
 	#}	
+	
+	#on_queued = {
+	#	owner = { remove_country_flag = artist_building_patron } #an action when queued
+	#}
+    #
+	#on_unqueued = {
+	#	owner = { set_country_flag = artist_building_patron } #an action when unqueued
+	#}
+    #
+	#on_built = {
+	#	owner = { set_country_flag = built_one_ministry } #an action when built
+	#}
+    #
+	#on_destroy = {
+	#	owner = { remove_country_flag = built_one_ministry } #an action when destroyed
+	#}
 #}

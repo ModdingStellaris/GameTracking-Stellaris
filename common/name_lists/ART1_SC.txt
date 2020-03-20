@@ -1,6 +1,8 @@
 ﻿### Arthropoid 1
 ART1 = {	
 	### SHIPS
+	
+	category = "Arthropoid"
 
 	language = "l_simp_chinese"
 	

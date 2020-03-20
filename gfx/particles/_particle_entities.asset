@@ -365,3 +365,25 @@ entity = {
 		}
 	}
 }
+
+entity = {
+	name = "fusion_drive_trail_effect_entity"
+
+	locator = {
+		name = "root"
+	}
+	
+	default_state = "idle"
+	state = {
+		name = "idle"
+		state_time = 1
+		event = {
+			time = 0
+			particle = fusion_drive_trail_effect
+			trigger_once = yes
+			keep_particle = yes
+		}
+	}
+	
+	scale = 1
+}

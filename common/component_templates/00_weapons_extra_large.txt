@@ -6,7 +6,6 @@
 weapon_component_template = {
 	key = "ENERGY_LANCE_1"
 	size = extra_large
-	entity = "invisible_turret_entity"
 	type = instant
 	
 	icon = "GFX_ship_part_energy_lance_1"
@@ -14,7 +13,6 @@ weapon_component_template = {
 	
 	firing_arc = 25.0
 	min_range = 10.0
-	static_rotation = yes
 	use_ship_kill_target = no
 	
 	prerequisites = { "tech_energy_lance_1" }
@@ -38,10 +36,6 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 0.0
-			has_monthly_income = { resource = rare_crystals value <= 0 }
-		}
 	}
 }
 
@@ -49,7 +43,6 @@ weapon_component_template = {
 weapon_component_template = {
 	key = "ENERGY_LANCE_2"
 	size = extra_large
-	entity = "invisible_turret_entity"
 	type = instant
 	
 	icon = "GFX_ship_part_energy_lance_2"
@@ -57,7 +50,6 @@ weapon_component_template = {
 	
 	firing_arc = 25.0
 	min_range = 10.0
-	static_rotation = yes
 	use_ship_kill_target = no
 	
 	prerequisites = { "tech_energy_lance_2" }
@@ -80,10 +72,6 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 0.0
-			has_monthly_income = { resource = rare_crystals value <= 0 }
-		}
 	}
 }
 
@@ -95,7 +83,6 @@ weapon_component_template = {
 weapon_component_template = {
 	key = "ARC_EMITTER_1"
 	size = extra_large
-	entity = "invisible_turret_entity"
 	type = instant
 	
 	icon = "GFX_ship_part_arc_emitter_1"
@@ -103,7 +90,6 @@ weapon_component_template = {
 	
 	firing_arc = 35.0
 	min_range = 10.0
-	static_rotation = yes
 	use_ship_kill_target = no
 	
 	prerequisites = { "tech_arc_emitter_1" }
@@ -127,10 +113,6 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 0
-			has_monthly_income = { resource = rare_crystals value <= 0 }
-		}
 	}
 }
 
@@ -138,7 +120,6 @@ weapon_component_template = {
 weapon_component_template = {
 	key = "ARC_EMITTER_2"
 	size = extra_large
-	entity = "invisible_turret_entity"
 	type = instant
 	
 	icon = "GFX_ship_part_arc_emitter_2"
@@ -146,7 +127,6 @@ weapon_component_template = {
 	
 	firing_arc = 35.0
 	min_range = 10.0
-	static_rotation = yes
 	use_ship_kill_target = no
 	
 	prerequisites = { "tech_arc_emitter_2" }
@@ -169,13 +149,8 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 0
-			has_monthly_income = { resource = rare_crystals value <= 0 }
-		}
 	}
 }
-
 
 # ####################
 #  Mass Accelerator
@@ -187,14 +162,12 @@ weapon_component_template = {
 	
 	key = "MASS_ACCELERATOR_1"
 	size = extra_large
-	entity = "invisible_turret_entity"
 	
 	icon = "GFX_ship_part_mass_accelerator_1"
 	icon_frame = 1
 	
 	firing_arc = 25.0
 	min_range = 10.0
-	static_rotation = yes
 	use_ship_kill_target = no
 	
 	prerequisites = { "tech_mass_accelerator_1" }
@@ -218,10 +191,6 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 0.0
-			has_monthly_income = { resource = volatile_motes value <= 0 }
-		}
 	}
 }
 
@@ -231,14 +200,12 @@ weapon_component_template = {
 	
 	key = "MASS_ACCELERATOR_2"
 	size = extra_large
-	entity = "invisible_turret_entity"
 	
 	icon = "GFX_ship_part_mass_accelerator_2"
 	icon_frame = 1
 	
 	firing_arc = 25.0
 	min_range = 10.0
-	static_rotation = yes
 	use_ship_kill_target = no
 	
 	prerequisites = { "tech_mass_accelerator_2" }
@@ -261,10 +228,6 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 0.0
-			has_monthly_income = { resource = volatile_motes value <= 0 }
-		}
 	}
 }
 
@@ -276,7 +239,6 @@ weapon_component_template = {
 weapon_component_template = {
 	key = "PERDITION_BEAM_TITAN"
 	size = titanic
-	entity = "invisible_turret_entity"
 	type = instant
 	prio_projectile = yes
 		
@@ -285,7 +247,6 @@ weapon_component_template = {
 	
 	firing_arc = 10.0
 	min_range = 30.0
-	static_rotation = yes
 	use_ship_kill_target = no
 	
 	prerequisites = { "tech_titans" }
@@ -306,10 +267,6 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 0.0
-			has_monthly_income = { resource = rare_crystals value <= 0 }
-		}
 	}
 }
 
@@ -317,7 +274,6 @@ weapon_component_template = {
 weapon_component_template = {
 	key = "PERDITION_BEAM_ION"
 	size = titanic
-	entity = "invisible_turret_entity"
 	type = instant
 	prio_projectile = yes
 		
@@ -326,7 +282,6 @@ weapon_component_template = {
 	
 	firing_arc = 10.0
 	min_range = 30.0
-	static_rotation = yes
 	use_ship_kill_target = no
 	
 	prerequisites = { "tech_titans" }
@@ -347,10 +302,6 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 0.0
-			has_monthly_income = { resource = rare_crystals value <= 0 }
-		}
 	}
 }
 
@@ -358,7 +309,6 @@ weapon_component_template = {
 weapon_component_template = {
 	key = "TITAN_LASER"
 	size = titanic
-	entity = "invisible_turret_entity"
 	type = instant
 	prio_projectile = yes
 	
@@ -369,7 +319,6 @@ weapon_component_template = {
 	
 	firing_arc = 25.0
 	min_range = 30.0
-	static_rotation = yes
 	use_ship_kill_target = no
 	
 	component_set = "TITAN_LASER"
@@ -388,9 +337,5 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
-		modifier = {
-			factor = 0.0
-			has_monthly_income = { resource = rare_crystals value <= 0 }
-		}
 	}
 }

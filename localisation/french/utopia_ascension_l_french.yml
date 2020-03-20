@@ -41,3 +41,4 @@
  utopia.3401.c:0 "La situation est intéressante"
  master_builders_habitats:1 "$ap_voidborn$ : expansion"
  master_builders_habitats_desc:0 "Le nombre maximal de districts a été relevé de §Y2§! pour cet habitat orbital."
+ anomaly.2575.desc.3:0 "$anomaly.2575.desc.intro$\n\nMalheureusement, la §Ysphère de Dyson§! du système empêche désormais de restaurer la vie sur cette [From.GetPlanetMoon]."

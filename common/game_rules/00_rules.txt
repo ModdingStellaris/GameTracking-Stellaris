@@ -899,9 +899,28 @@ fleet_uses_templates = {
 	is_alliance_fleet = no
 }
 
-# this = starbase
-can_starbase_repair_ships = {
-	has_starbase_size >= starbase_starport
+# this = starbase, megastructure or planet
+can_orbitable_repair_ships = {
+	OR = {
+		AND = {
+			is_scope_type = starbase
+			OR = {
+				has_starbase_size >= starbase_starport
+				has_starbase_size = juggernaut
+			}
+			fleet = {
+				is_disabled = no
+			}
+		}
+		AND = {
+			is_scope_type = megastructure
+			OR = {
+				is_megastructure_type = mega_shipyard_1
+				is_megastructure_type = mega_shipyard_2
+				is_megastructure_type = mega_shipyard_3
+			}
+		}
+	}
 }
 
 # this = ship
@@ -935,7 +954,7 @@ ai_should_restrict_system = {
 					is_country_type = awakened_marauders
 				}
 			}
-			any_ship_in_system = {
+			any_fleet_in_system = {
 				exists = owner
 				owner = {
 					OR = {
@@ -1137,7 +1156,13 @@ can_build_branch_offices = {
 
 # This = country
 can_support_branch_offices = {
-	is_country_type = default
+	custom_tooltip = {
+		fail_text = BRANCH_OFFICE_NOT_FALLEN_EMPIRES
+		NOR = {
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+		}
+	}
 	is_regular_empire = yes
 	NOT = { has_authority = auth_corporate }
 }
@@ -1276,4 +1301,45 @@ can_be_sold_on_slave_market = {
 			}
 		}
 	}
+}
+
+# This = country
+can_be_part_of_galactic_community = {
+	is_country_type = default
+	NOR = {
+		has_civic = civic_fanatic_purifiers
+		has_civic = civic_hive_devouring_swarm
+		has_civic = civic_machine_terminator
+	}	
+}
+
+# This = country
+can_see_galactic_community = {
+	OR = {
+		has_country_flag = galcom_form_aye
+		has_country_flag = galcom_form_nay
+		is_galactic_community_member = yes
+	}
+}
+
+# This = country
+can_be_part_of_galactic_council = {
+	is_country_type = default
+	NOR = {
+		has_civic = civic_fanatic_purifiers
+		has_civic = civic_hive_devouring_swarm
+		has_civic = civic_machine_terminator
+	}	
+}
+
+# If, 'yes', forces an empire to be advanced at game start (overrides game settings)
+# This = country
+must_be_advanced_empire = {
+	has_country_flag = lost_colony_parent
+}
+
+# If 'no', blocks an empire from being advanced at game start (overrides 'must_be_advanced_empire' above)
+# This = country
+is_allowed_to_be_advanced_empire = {
+	always = yes
 }

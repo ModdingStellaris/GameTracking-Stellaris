@@ -1171,7 +1171,7 @@ objectTypes = {
 		animation = { id = "death"			type = "crystal_ship_death_animation" }
 	}
 
-		pdxmesh = {
+	pdxmesh = {
 		name = "crystal_ship_small_blue_elite_mesh"
 		file = "gfx/models/ships/other/crystal_ship_small.mesh"
 		scale = 1.0
@@ -1195,7 +1195,7 @@ objectTypes = {
 		file = "gfx/models/ships/other/crystal_station.mesh"
 		scale = 1.0
 		
-			meshsettings = {
+		meshsettings = {
 		texture_diffuse = "crystal_ship_red_elite_diffuse.dds"
 		}
 		
@@ -1206,7 +1206,7 @@ objectTypes = {
 		file = "gfx/models/ships/other/crystal_station.mesh"
 		scale = 1.0
 		
-			meshsettings = {
+		meshsettings = {
 		texture_diffuse = "crystal_ship_green_elite_diffuse.dds"
 		}
 		
@@ -1229,39 +1229,10 @@ objectTypes = {
 		scale = 1.0
 		
 		meshsettings = {
-		texture_diffuse = "crystal_ship_yellow_elite_diffuse.dds"
+			texture_diffuse = "crystal_ship_yellow_elite_diffuse.dds"
 		}
-		
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
 	
 	pdxmesh = {
 		name = "crystal_ship_small_mesh"
@@ -1270,9 +1241,43 @@ objectTypes = {
 		
 		animation = { id = "idle"			type = "crystal_ship_idle_animation" }
 		animation = { id = "death"			type = "crystal_ship_death_animation" }
+
 	}
 
+	pdxmesh = {
+		name = "lesser_messenger_01_mesh"
+		file = "gfx/models/ships/other/event_ship_04.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"			type = "molluscoid_01_corvette_frame_idle_animation" }
+		animation = { id = "death3"			type = "molluscoid_01_corvette_frame_death3_animation" }
+		
+		meshsettings = {
+        	name = "lp6Shape"
+        	index = 0
+        	texture_diffuse = "eventship_04_gold_diffuse.dds"
+        	texture_normal = "eventship_04_gold_normal.dds"
+        	texture_specular = "eventship_04_gold_specular.dds"
+        	shader = "PdxMeshShip"
+    	}
+	}
 
+	pdxmesh = {
+		name = "tannhauser_gate_01_mesh"
+		file = "gfx/models/ships/other/abandoned_wormhole_station_01.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "abandoned_wormhole_station_01_death_animation" }				
+		animation = { id = "death"			type = "abandoned_wormhole_station_01_death_animation" }				
+		
+		meshsettings = {
+			name = "lpShape"
+			index = 0
+			texture_diffuse = "abandoned_wormhole_station_01_diffuse.dds"
+			texture_normal = "abandoned_wormhole_station_01_normal.dds"
+			texture_specular = "abandoned_wormhole_station_01_specular.dds"
+			shader = "PdxMeshShip"
+			}
+	}
 
-	
 }

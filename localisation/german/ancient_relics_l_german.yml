@@ -105,9 +105,9 @@
  d_former_relic_world:0 "Ehemalige Reliktwelt"
  d_former_relic_world_desc:0 "Diese Ökumenopolis war einst eine verlassene Reliktwelt. Die meisten der alten Ruinen wurden beim Wiederaufbau der planetenumfassende Stadt umgestaltet oder abgetragen, aber es gibt noch immer viele Stätten, die von wissenschaftlichem Wert sind."
 
- CREATE_ARCHAEOLOGIC_SITE_TYPE:0 "Erstellt eine archäologische Stätte vom Typ $TYPE$ auf $WHERE|Y$"
- CREATE_ARCHAEOLOGIC_SITE_RANDOM:0 "Erstellt eine zufällige archäologische Stätte auf $WHERE|Y$"
- DESTROY_ARCHAEOLOGIC_SITE:0 "Zerstört die archäologische Stätte $NAME|Y$"
+ CREATE_ARCHAEOLOGIC_SITE_TYPE:0 "Erstellt eine archäologische Stätte vom Typ $TYPE$ auf $WHERE|Y$\n"
+ CREATE_ARCHAEOLOGIC_SITE_RANDOM:0 "Erstellt eine zufällige archäologische Stätte auf $WHERE|Y$\n"
+ DESTROY_ARCHAEOLOGIC_SITE:0 "Zerstört die archäologische Stätte $NAME|Y$\n"
  FLEETORDER_EXCAVATE_BUTTON:0 "Archäologische Stätte ausgraben"
  FLEETORDER_EXCAVATE_SITE:0 "Gräbt archäologische Stätte aus."
  ADD_STAGE_CLUES_EFFECT:0 "$CLUES$ Hinweise"
@@ -304,7 +304,7 @@
 
  artifact_lgate_clue:0 "Einsicht in L-Tore erhalten"
  artifact_lgate_clue_desc:0 "Mit diesen Artefakten sollten wir in der Lage sein, weitere Mysterien rund um die L-Tore zu lösen."
- artifact_lgate_clue_effect:0 "$add_lcluster_clue$\n\nAbklingzeit: £time£ §Y3600§!"
+ artifact_lgate_clue_effect:0 "Abklingzeit: £time£ §Y3600§!"
  artifact_lgate_insight_cooldown:0 "Abklingzeit ($artifact_lgate_clue$)"
 
  artifact_precursor_clue:0 "Einsichten über Vorläufer erhalten"
@@ -321,6 +321,9 @@
  artifact_find_military_applications_locked_desc:0 "$artifact_action_locked_desc$"
  artifact_arcane_deciphering_locked:0 "$artifact_action_locked$"
  artifact_arcane_deciphering_locked_desc:0 "$artifact_action_locked_desc$"
+
+ ancrel.10040.name:0 "Neues Spezialprojekt"
+ ancrel.10040.desc:0 "Unsere Wisenschaftler haben die Arbeit an einem Spezialprojekt aufgenommen, um die tieferen Geheimnisse der Vorläufer zu ergründen."
  
  artifact_irassian_research:0 "Geheimnisse der Irassianer"
  artifact_irassian_research_desc:0 "Taucht tiefer in die Geheimnisse der Irassianer ein."
@@ -571,7 +574,8 @@
  ##################
  lithoids_arc_site_minerals:0 "Archäologische Stätte"
  lithoids_arc_site_minerals_desc:0 "Die Ausgrabung einer archäologischen Stätte in den Minen dieser Welt stört alle Bergbauarbeiten auf der gesamten Welt."
- 
+ evermore_science:0 "Immer fort Wissenschaft"
+ evermore_joy:0 "Immer fort Zufriedenheit"
  drums_of_war:0 "Trommeln des Krieges"
  ether_drake_triumph:0 "Triumph des Etherdrachen"
  worm_scales:0 "Einfluss der Schlangenschuppe"
@@ -677,7 +681,8 @@
  ##################
  d_archaeological_site:0 "£blocker£ Archäologische Stätte"
  d_archaeological_site_desc:0 "Diese Region enthält antike archäologische Funde, die ausgegraben werden können."
-
+ d_sentinels:0 "£blocker£ Wächter"
+ d_sentinels_desc:0 "Dieses Land wird von den Wächtern beschützt. Sie dürfen nicht gestört werden."
  d_hab_gas_1:0 "Exotisches Gasvorkommen"
  d_hab_gas_1_desc:0 "Dieses Habitat befindet sich in der Nähe einer ausbeutbaren Lagerstätte für exotische Gase."
  d_hab_gas_2:0 "$d_hab_gas_1$"
@@ -732,7 +737,10 @@
  d_hab_dark_matter_3_desc:0 "$d_hab_dark_matter_1_desc$"
  d_hab_living_metal_1:0 "Lebendes Metallvorkommen"
  d_hab_living_metal_1_desc:0 "Dieses Habitat befindet sich in der Nähe einer ausbeutbaren Lagerstätte für lebendes Metall."
-
+ d_sentinels_monument:0 "$sentinels_planet_modifier$"
+ d_sentinels_monument_desc:0 "$sentinels_planet_modifier$"
+ d_sentinels_metal:0 "Wächter"
+ d_sentinels_metal_desc:0 "Die zerstörten Überreste von neun riesigen Maschinen aus einer ungewöhnlichen Metalllegierung bieten uns reichlich Vorräte für §HLebendes Metall§!."
  ancrel.10001.name:0 "$tech_arcane_deciphering$"
  ancrel.10001.desc:0 "Die Untersuchung der Artefakte hat einige unserer Forschungen vorangetrieben."
  ancrel.10002.name:0 "$tech_arcane_deciphering$"
@@ -800,3 +808,5 @@
  herald_75:0 "Der Herold ist beschädigt"
  herald_50:0 "$herald_75$"
  herald_25:0 "$herald_75$"
+ NAME_Sentinels:0 "Wächter"
+ sentinels_army:0 "Wächter"

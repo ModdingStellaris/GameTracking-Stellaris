@@ -82,7 +82,7 @@ particle={
 	}
 	subsystem={
 		name="fire_backblast"
-		max_amount=100
+		max_amount=30
 		slave_particles=0
 		sort="depth"
 		emitter_type="point"
@@ -101,7 +101,7 @@ particle={
 			x=255.000,R
 			y=255.000,G
 			z=255.000,B
-			alpha=9.000,backblast_alpha
+			alpha=255.000,backblast_alpha
 		}
 		position={
 			x=0.600
@@ -116,7 +116,7 @@ particle={
 		velocity_yaw=0.000
 		velocity={ 30.000 1.000 }
 		life={ 1.000 0.020 }
-		emission=100.000
+		emission=25.000
 		size={ 12.000,shrink 0.050 }
 		rotation=0.000
 		rotation_speed={ 50.000 0.000 }
@@ -212,7 +212,7 @@ particle={
 		minValue=0.000
 		maxValue=1.000
 		curve={
-			0.000 0.797 0.115 0.656 0.303 0.383 0.415 0.211 1.000 0.000 
+			0.000 0.414 0.415 0.211 1.000 0.000 
 		}
 		op="MUL"
 		time="life"
@@ -225,7 +225,7 @@ particle={
 		minValue=0.000
 		maxValue=1.000
 		curve={
-			0.000 1.000 0.129 1.000 0.268 1.000 0.388 0.516 1.000 0.000 
+			0.000 0.617 0.388 0.516 1.000 0.570 
 		}
 		op="MUL"
 		time="life"
@@ -238,7 +238,7 @@ particle={
 		minValue=0.000
 		maxValue=1.000
 		curve={
-			0.000 0.984 0.082 0.914 0.226 0.578 0.332 0.711 0.476 0.102 1.000 0.000 
+			0.000 0.984 0.082 0.914 0.226 0.578 0.332 0.711 0.544 0.602 1.000 0.336 
 		}
 		op="MUL"
 		time="life"

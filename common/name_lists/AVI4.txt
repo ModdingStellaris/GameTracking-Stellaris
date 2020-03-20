@@ -2,6 +2,7 @@
 ### Created by Dee Majek
 
 AVI4 = {
+	category = "Avian"
 	ship_names = {
 		
 		corvette = {
@@ -26,6 +27,10 @@ AVI4 = {
 
 		colossus = {
 			"Deathclaw" "Last Breath" "Final Flight"
+		}
+
+		juggernaut = {
+			"Raging Tumult" "Razor Typhoon" "Seething Squall" "Stormbringer" "Unceasing Storm" "Unstoppable Gale"
 		}
 		
 		constructor = {

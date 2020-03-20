@@ -90,15 +90,15 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		start_event = { node = "light_locator_04" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_l" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_4_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	}
 	state = { name = "moving" state_time = 2
 		start_event = { node = "light_locator_04" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_l" keep_particle = yes trigger_once = yes}
+		event = { time = 0 node = "engine_large" particle = "lithoid_5_exhaust_moving" keep_particle = yes trigger_once = yes}
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "thruster_curve_2_xl_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "thruster_curve_2_xl_entity" trigger_once = no life = 2}
 	}
 	state = { name = "death" state_time = 5 looping = no }
 	attach = { large_gun_01 = "lithoid_01_turret_connection_l_3_entity" }

@@ -805,3 +805,136 @@ country_event = {
 	}
 }
 
+# Some federation events
+namespace = ilya
+
+country_event = {
+	id = ilya.1
+	hide_window = yes
+	trigger = { always = no }
+	
+	immediate = {
+		federation = {
+			set_federation_law = fleet_contribution_high
+			set_federation_law = succession_type_rotation
+			set_federation_law = succession_term_years_10
+			set_federation_law = federation_build_fleets_only_leader
+		}
+	}
+}
+
+# Add country to galactic_community
+namespace = zack
+country_event = {
+	id = zack.1
+	hide_window = yes
+
+	trigger = { always = no }
+
+	immediate = {
+		add_to_galactic_community = yes
+	}
+}
+
+country_event = {
+	id = zack.2
+	hide_window = yes
+	
+	trigger = { always = no }
+
+	immediate = {
+		add_modifier = {
+			modifier = empire_size_mods
+			days = -1
+		}
+	}
+}
+
+country_event = {
+	id = zack.3
+	hide_window = yes
+	
+	trigger = { always = no }
+
+	immediate = {
+		every_country = {
+			add_to_galactic_community = yes
+		}
+	}
+}
+
+country_event = {
+	id = zack.4
+	hide_window = yes
+
+	trigger = { always = no }
+	
+	immediate = {
+		every_playable_country = {
+			if = {
+				limit = { root = { has_established_contact = prev } }
+				root = {
+					add_favors = {
+						target = prev
+						value = 8 
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = zack.5
+	hide_window = yes
+
+	trigger = { always = no }
+	
+	immediate = {
+		set_council_size = 3
+	}
+}
+
+country_event = {
+	id = zack.6
+	hide_window = yes
+
+	trigger = { always = no }
+	
+	immediate = {
+		increase_council_size = yes
+	}
+}
+
+country_event = {
+	id = zack.7
+	hide_window = yes
+
+	trigger = { always = no }
+	
+	immediate = {
+		decrease_council_size = yes
+	}
+}
+
+country_event = {
+	id = zack.8
+	hide_window = yes
+
+	trigger = { always = no }
+	
+	immediate = {
+		pass_resolution = "resolution_greatergood_five_year_plans"
+	}
+}
+
+country_event = {
+	id = zack.9
+	hide_window = yes
+
+	trigger = { always = no }
+	
+	immediate = {
+		set_council_size = 0
+	}
+}

@@ -17,7 +17,7 @@ ship_event = {
 	id = anomaly.4000
 	title = "anomaly.4000.name"
 	desc = "anomaly.4000.desc"
-	picture = GFX_evt_alien_nature
+	picture = GFX_evt_aggressive_flora
 	show_sound = event_alien_nature
 	location = FROM
 	
@@ -57,7 +57,7 @@ ship_event = {
 	id = anomaly.4005
 	title = "anomaly.4005.name"
 	desc = "anomaly.4005.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_landing_ship_2
 	show_sound = event_construction
 	location = FROM
 	
@@ -135,7 +135,7 @@ ship_event = {
 	id = anomaly.4011
 	title = PROJECT_COMPLETE
 	desc = "anomaly.4011.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_disease_outbreak
 	show_sound = event_airlock
 	location = FROM
 	
@@ -236,7 +236,7 @@ ship_event = {
 	id = anomaly.4015
 	title = "anomaly.4015.name"
 	desc = "anomaly.4015.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_unidentified_ship
 	show_sound = event_airlock
 	location = FROM
 	
@@ -390,7 +390,7 @@ country_event = {
 	id = anomaly.4017
 	title = "anomaly.4016.name"
 	desc = "anomaly.4016.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_space_funeral
 	show_sound = event_planetary_riot
 	location = FROM
 	
@@ -641,7 +641,7 @@ ship_event = {
 	id = anomaly.4031
 	title = PROJECT_COMPLETE
 	desc = "anomaly.4031.desc"
-	picture = GFX_evt_sapient_AI
+	picture = GFX_evt_glitchy_matrix
 	show_sound = event_sensor_ping
 	location = FROMFROMFROM
 
@@ -764,7 +764,7 @@ ship_event = {
 	}
 }
 #TRIGGERED WHEN ENTERING ONE OF THE POI SYSTEMS
-ship_event = {
+fleet_event = {
 	id = anomaly.4036
 	hide_window = yes
 	
@@ -780,6 +780,9 @@ ship_event = {
 		}
 	}
 	immediate = {
+		random_owned_ship = {
+			save_event_target_as = ship_for_fleet_event
+		}
 		if = {
 			limit = { FROM = { has_star_flag = some_system_1 } }
 			FROM = { remove_star_flag = some_system_1 }
@@ -788,7 +791,7 @@ ship_event = {
 			}
 			random_list = {
 				40 = {
-					ship_event = { id = anomaly.4037 }
+					event_target:ship_for_fleet_event = { ship_event = { id = anomaly.4037 } }
 					random_system = {
 						limit = {
 							has_star_flag = some_system_2
@@ -816,7 +819,7 @@ ship_event = {
 								}
 							}
 						}
-						ship_event = { id = anomaly_failure.4037 }
+						event_target:ship_for_fleet_event = { ship_event = { id = anomaly_failure.4037 } }
 					}
 					if = {
 						limit = {
@@ -833,7 +836,7 @@ ship_event = {
 						owner = {
 							set_country_flag = finished_star_power_chain
 						}
-						ship_event = { id = anomaly.4037 }
+						event_target:ship_for_fleet_event = { ship_event = { id = anomaly.4037 } }
 					}
 				}
 			}
@@ -846,7 +849,7 @@ ship_event = {
 			}
 			random_list = {
 				40 = {
-					ship_event = { id = anomaly.4037 }
+					event_target:ship_for_fleet_event = { ship_event = { id = anomaly.4037 } }
 					random_system = {
 						limit = {
 							has_star_flag = some_system_1
@@ -874,7 +877,7 @@ ship_event = {
 								}
 							}
 						}
-						ship_event = { id = anomaly_failure.4037 }
+						event_target:ship_for_fleet_event = { ship_event = { id = anomaly_failure.4037 } }
 					}
 					if = {
 						limit = {
@@ -891,7 +894,7 @@ ship_event = {
 						owner = {
 							set_country_flag = finished_star_power_chain
 						}
-						ship_event = { id = anomaly.4037 }
+						event_target:ship_for_fleet_event = { ship_event = { id = anomaly.4037 } }
 					}
 				}
 			}
@@ -904,7 +907,7 @@ ship_event = {
 	id = anomaly.4037
 	title = "anomaly.4035.name"
 	desc = "anomaly.4037.desc"
-	picture = GFX_evt_star_yellow
+	picture = GFX_evt_ship_travel
 	show_sound = event_scanner
 	location = event_target:planet_1
 	trackable = yes
@@ -2010,7 +2013,7 @@ ship_event = {
 	id = anomaly.4065
 	title = "anomaly.4065.name"
 	desc = "anomaly.4065.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_mining_operations
 	show_sound = event_scanner
 	location = FROM
 	trackable = yes
@@ -2054,7 +2057,7 @@ ship_event = {
 			}
 		}
 	}
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_mining_operations
 	show_sound = event_scanner
 	location = FROMFROM
 
@@ -2464,7 +2467,7 @@ ship_event = {
 	id = anomaly.4085
 	title = "anomaly.4085.name"
 	desc = "anomaly.4085.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_unidentified_ship
 	show_sound = event_ship_thrusters
 	location = from
 	trackable = yes
@@ -2498,7 +2501,7 @@ ship_event = {
 	id = anomaly.4086
 	title = PROJECT_COMPLETE
 	desc = "anomaly.4086.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_derelict_interior
 	show_sound = event_ship_thrusters
 	location = fromfromfrom
 
@@ -2551,7 +2554,7 @@ ship_event = {
 	id = anomaly.4095
 	title = "anomaly.4095.name"
 	desc = "anomaly.4095.desc"
-	picture = GFX_evt_continental
+	picture = GFX_evt_aggressive_flora
 	show_sound = event_alien_nature
 	location = from
 
@@ -2598,7 +2601,7 @@ ship_event = {
 			}
 		}
 	}
-	picture = GFX_evt_continental
+	picture = GFX_evt_animal_wildlife
 	show_sound = event_alien_nature
 	location = from
 	trackable = yes
@@ -2690,7 +2693,7 @@ ship_event = {
 	id = anomaly.4101
 	title = "anomaly.4100.name"
 	desc = "anomaly.4101.desc"
-	picture = GFX_evt_continental
+	picture = GFX_evt_animal_wildlife
 	show_sound = event_alien_nature
 	location = fromfromfrom
 
@@ -2717,7 +2720,7 @@ ship_event = {
 	id = anomaly.4102
 	title = "anomaly.4100.name"
 	desc = "anomaly.4102.desc"
-	picture = GFX_evt_continental
+	picture = GFX_evt_animal_wildlife
 	show_sound = event_alien_nature
 	location = fromfrom
 
@@ -2960,7 +2963,7 @@ country_event = {
 	id = anomaly.4103
 	title = "anomaly.4100.name"
 	desc = "anomaly.4103.desc"
-	picture = GFX_evt_continental
+	picture = GFX_evt_animal_wildlife
 	show_sound = event_alien_nature
 	location = fromfrom
 
@@ -2982,7 +2985,7 @@ country_event = {
 	id = anomaly.4104
 	title = "anomaly.4100.name"
 	desc = "anomaly.4104.desc"
-	picture = GFX_evt_continental
+	picture = GFX_evt_animal_wildlife
 	show_sound = event_alien_nature
 	location = fromfrom
 
@@ -3089,7 +3092,7 @@ ship_event = {
 		trigger = { owner = { has_authority = auth_machine_intelligence } }
 		text = anomaly.4105.desc.mach
 	}
-	picture = GFX_evt_toxic
+	picture = GFX_evt_relic_world_street
 	show_sound = event_ghost_town
 	location = from
 
@@ -3196,7 +3199,7 @@ ship_event = {
 	id = anomaly.4106
 	title = PROJECT_COMPLETE
 	desc = "anomaly.4106.desc"
-	picture = GFX_evt_toxic
+	picture = GFX_evt_generator_powerup
 	show_sound = event_activating_unknown_technology
 	location = fromfromfrom
 
@@ -3628,7 +3631,7 @@ ship_event = {
 	id = anomaly.4130
 	title = "anomaly.4130.name"
 	desc = "anomaly.4130.desc"
-	picture = GFX_evt_satellite_in_orbit
+	picture = GFX_evt_unidentified_ship
 	show_sound = event_sensor_ping
 	location = event_target:MonsterLocation
 	trackable = yes
@@ -3721,6 +3724,9 @@ ship_event = {
 	}
 	option = {
 		name = anomaly.4131.c
+		owner = {
+			add_resource = { influence = 25 }
+		}
 	}
 }
 
@@ -3730,7 +3736,7 @@ ship_event = {
 	id = anomaly.4135
 	title = "anomaly.4135.name"
 	desc = "anomaly.4135.desc"
-	picture = GFX_evt_archaeological_dig
+	picture = GFX_evt_relic_world_street
 	show_sound = event_scanner
 	location = from
 	trackable = yes
@@ -3861,12 +3867,7 @@ ship_event = {
 				min = @tier2materialmin
 				max = @tier2materialmax
 			}
-			add_monthly_resource_mult = {
-				resource = minerals
-				value = @tier2materialreward
-				min = @tier2materialmin
-				max = @tier2materialmax
-			}
+			add_resource = { consumer_goods = 500 }
 		}
 	}
 }
@@ -3914,7 +3915,7 @@ ship_event = {
 	id = anomaly.4150
 	title = "anomaly.4150.name"
 	desc = "anomaly.4150.desc"
-	picture = GFX_evt_archaeological_dig
+	picture = GFX_evt_relic_world_street
 	show_sound = event_scanner
 	location = from
 	trackable = yes
@@ -3986,7 +3987,7 @@ country_event = {
 			}
 		}
 	}
-	picture = GFX_evt_smugglers_in_bar
+	picture = GFX_evt_ancient_databank
 	show_sound = event_administrative_work
 	location = from
 
@@ -4049,7 +4050,7 @@ ship_event = {
 	id = anomaly.4156
 	title = "anomaly.4155.name"
 	desc = "anomaly.4156.desc"
-	picture = GFX_evt_archaeological_dig
+	picture = GFX_evt_excavation_team
 	show_sound = event_mystic_reveal
 	location = fromfromfrom
 	trackable = yes
@@ -4845,7 +4846,7 @@ ship_event = {
 			}
 		}
 	}
-	picture = GFX_evt_arid
+	picture = GFX_evt_drilling_for_gas
 	show_sound = event_scanner
 	location = from
 	is_triggered_only = yes
@@ -4955,7 +4956,7 @@ planet_event = {
 			}
 		}
 	}
-	picture = GFX_evt_metropolis
+	picture = GFX_evt_drilling_for_gas
 	show_sound = event_default
 	location = from
 	is_triggered_only = yes

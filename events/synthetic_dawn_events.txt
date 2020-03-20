@@ -609,6 +609,7 @@ country_event = { # per-country gatekeeper
 				modifier = {
 					factor = 0
 					OR = {
+						has_built_species = no
 						has_country_flag = triggered_syndaw_505
 						NOT = {
 							any_owned_planet = {
@@ -1874,6 +1875,9 @@ planet_event = { #uprising
 
 	option = {
 		name = syndaw.1020.b
+		trigger = {
+			owner = { is_ai = no }
+		}
 		custom_tooltip = syndaw.1020.b.tooltip
 		hidden_effect = {
 			if = {
@@ -1960,6 +1964,7 @@ planet_event = { #uprising
 						day_zero_contact = no
 						ethos = { ethic = ethic_gestalt_consciousness }
 						authority = auth_machine_intelligence
+						origin = origin_separatists
 						civics = {
 							civic = civic_machine_terminator
 							civic = random
@@ -1987,6 +1992,7 @@ planet_event = { #uprising
 						day_zero_contact = no
 						ethos = { ethic = ethic_gestalt_consciousness }
 						authority = auth_machine_intelligence
+						origin = origin_separatists
 						civics = {
 							civic = civic_machine_assimilator
 							civic = random
@@ -2016,6 +2022,7 @@ planet_event = { #uprising
 						authority = auth_machine_intelligence
 						civics = random
 						flag = random
+						origin = origin_separatists
 						effect = {
 							modify_species = {
 								species = this

@@ -32,10 +32,10 @@ automate_habitat_refinery_machine_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_crystal_plant
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					crystal_plant_upkeep_affordable = yes
 				}
 			}
 		}

@@ -5,9 +5,7 @@
 #weapon_component_template = {
 #	key = "PLANET_DESTRUCTION_COMPONENT"
 #	size = planet_killer
-#	entity = "invisible_turret_entity"
 #	type = planet_killer
-#	static_rotation = yes
 #	use_ship_kill_target = no
 #
 #	icon = GFX_technology_unknown
@@ -21,9 +19,7 @@
 weapon_component_template = { # World Cracker
 	key = "PLANET_KILLER_CRACKER"
 	size = planet_killer
-	entity = "invisible_turret_entity"
 	type = planet_killer
-	static_rotation = yes
 	use_ship_kill_target = no
 
 	prerequisites = { "tech_pk_cracker" }
@@ -39,9 +35,7 @@ weapon_component_template = { # World Cracker
 weapon_component_template = { # Pacifier
 	key = "PLANET_KILLER_SHIELDER"
 	size = planet_killer
-	entity = "invisible_turret_entity"
 	type = planet_killer
-	static_rotation = yes
 	use_ship_kill_target = no
 
 	prerequisites = { "tech_pk_shielder" }
@@ -57,9 +51,7 @@ weapon_component_template = { # Pacifier
 weapon_component_template = { # Neutron Beam
 	key = "PLANET_KILLER_NEUTRON"
 	size = planet_killer
-	entity = "invisible_turret_entity"
 	type = planet_killer
-	static_rotation = yes
 	use_ship_kill_target = no
 
 	prerequisites = { "tech_pk_neutron" }
@@ -75,9 +67,7 @@ weapon_component_template = { # Neutron Beam
 weapon_component_template = { # God Ray
 	key = "PLANET_KILLER_GODRAY"
 	size = planet_killer
-	entity = "invisible_turret_entity"
 	type = planet_killer
-	static_rotation = yes
 	use_ship_kill_target = no
 
 	prerequisites = { "tech_pk_godray" }
@@ -93,9 +83,7 @@ weapon_component_template = { # God Ray
 weapon_component_template = { # Nanobot Assimilation
 	key = "PLANET_KILLER_NANOBOTS"
 	size = planet_killer
-	entity = "invisible_turret_entity"
 	type = planet_killer
-	static_rotation = yes
 	use_ship_kill_target = no
 
 	prerequisites = { "tech_pk_nanobots" }

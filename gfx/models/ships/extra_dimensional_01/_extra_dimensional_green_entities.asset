@@ -550,6 +550,33 @@ entity = {
 }
 
 entity = {
+	name = "extra_dimensional_02_starbase_exd_0_entity"
+	pdxmesh = "extra_dimensional_01_station_large_green_mesh"	
+	locator = { name = "medium_gun_01" position = { 0 0 0 } }
+	locator = { name = "medium_gun_02" position = { 0 0 0 } }
+	locator = { name = "small_gun_01" position = { 0 0 0 } }
+	locator = { name = "small_gun_02" position = { 0 0 0 } }
+	locator = { name = "small_gun_03" position = { 0 0 0 } }
+	locator = { name = "small_gun_04" position = { 0 0 0 } }
+	scale = @exd_large_station
+
+	default_state = "idle"
+	state = { name = "idle"		state_time = 5
+		event = { time = 0 particle = "extra_dimensional_large_green_station_effect"	keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "ex_mining_station_signals" } }
+		}
+	state = { name = "moving"		state_time = 5             
+		event = { time = 0 particle = "extra_dimensional_large_green_station_effect"	keep_particle = yes trigger_once = yes }
+	}
+	
+	game_data = {
+		uv_animation_speed 		= 0.2
+		uv_animation_direction 	= { 0.0 0.09 }
+		bloom_factor = @exd_bloom_factor
+	}
+}
+
+entity = {
 	name = "extra_dimensional_02_starbase_exd_entity"
 	pdxmesh = "extra_dimensional_02_anchor_station_mesh"	
 	#scale = @exd_large_station

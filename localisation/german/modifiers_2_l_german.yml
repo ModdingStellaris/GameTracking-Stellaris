@@ -114,6 +114,8 @@
  drone_processing_desc:0 "Von den uralten Bergbaudrohnen gewonnene Erkenntnisse haben weiterhin positive Effekte auf die Bergbau-Förderleistung und die Mineralverarbeitungseffizienz."
  spiritualist_attraction:0 "Spiritualisten-Attraktivität"
  materialist_attraction:0 "Materialisten-Attraktivität"
+ from_extra_federation_members:0 "Von Mitgliedern"
+ empire_size_mods:0 "Reichsgröße"
  ####################################
  # Pop Modifiers
  ####################################

@@ -893,6 +893,16 @@ entity = {
 ##################         	 CONSTRUCTION ENTITIES           ########################
 
 entity = {
+	name = "swarm_01_starbase_swarm_construction_entity"
+	pdxmesh = "swarm_01_station_large_mesh"
+		default_state = "idle"
+		state = { name = "idle" animation = "idle"
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = 1.0
+}
+
+entity = {
 	name = "swarm_01_military_station_large_swarm_construction_entity"
 	pdxmesh = "swarm_01_station_large_mesh"
 	

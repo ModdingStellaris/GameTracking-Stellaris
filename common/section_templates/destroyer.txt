@@ -25,22 +25,19 @@ ship_section_template = {
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		slot_size = small
-		slot_type = weapon
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}	
 	
 	component_slot = {
 		name = "SMALL_GUN_02"
-		slot_size = small
-		slot_type = weapon
+		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
 
@@ -79,22 +76,19 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		slot_size = point_defence
-		slot_type = weapon
+		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}	
 	
 	component_slot = {
 		name = "SMALL_GUN_02"
-		slot_size = small
-		slot_type = weapon
+		template = "small_turret"
 		locatorname = "small_gun_02"
 	}	
 	
 	component_slot = {
 		name = "SMALL_GUN_03"
-		slot_size = small
-		slot_type = weapon
+		template = "small_turret"
 		locatorname = "small_gun_03"
 	}
 	
@@ -133,8 +127,7 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "LARGE_GUN_01"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
 	
@@ -174,15 +167,13 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		slot_size = point_defence
-		slot_type = weapon
+		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}
 	
 	component_slot = {
 		name = "SMALL_GUN_02"
-		slot_size = point_defence
-		slot_type = weapon
+		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
 	
@@ -210,15 +201,13 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
-		slot_size = small
-		slot_type = weapon
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
 	
 	component_slot = {
 		name = "SMALL_GUN_02"
-		slot_size = small
-		slot_type = weapon
+		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
 	
@@ -242,8 +231,7 @@ ship_section_template = {
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
 	

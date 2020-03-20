@@ -1,0 +1,47 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "avian_01_juggernaut_frame_mesh"
+		file = "gfx/models/ships/juggernauts/avian_01/avian_01_juggernaut_frame.mesh"
+		animation = { id = "idle" 			type = "avian_01_juggernaut_frame_idle_animation" }
+		animation = { id = "death" 			type = "avian_01_juggernaut_frame_death_animation" }
+	}
+	
+	pdxmesh = {
+		name = "avian_01_juggernaut_mesh"
+		file = "gfx/models/ships/juggernauts/avian_01/avian_01_juggernaut.mesh"
+
+		meshsettings = {
+			name = "g_bodyShape"
+			index = 0
+			texture_diffuse = "avian_01_juggernaut_diffuse.dds"
+			texture_normal = "avian_01_juggernaut_normal.dds"
+			texture_specular = "avian_01_juggernaut_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "g_bodyShape"
+			index = 1
+			texture_diffuse = "avian_01_xl_turret_diffuse.dds"
+			texture_normal = "avian_01_xl_turret_normal.dds"
+			texture_specular = "avian_01_xl_turret_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "avian_01_juggernaut_engine_effect"
+		file = "gfx/models/ships/juggernauts/avian_01/avian_01_juggernaut_engine_effect.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "avian_01_juggernaut_engine_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+	
+
+}

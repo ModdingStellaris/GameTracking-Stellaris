@@ -368,7 +368,7 @@ caravaneer_fleet_events_valid = {
 }
 
 caravaneer_fleet_in_system = {
-	any_ship_in_system = {
+	any_fleet_in_system = {
 		exists = owner
 		owner = { is_country_type = caravaneer_fleet }
 	}

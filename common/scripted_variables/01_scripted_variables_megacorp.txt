@@ -14,7 +14,7 @@
 @worker_job_weight = 1
 @clerk_job_weight = 0.8 # Bit lower than other worker jobs
 
-@spawner_drone_job_weight = 10000
+@spawner_drone_job_weight = 1100
 @synapse_drone_job_weight = 1000
 @warrior_drone_job_weight = 100
 @complex_drone_job_weight = 10

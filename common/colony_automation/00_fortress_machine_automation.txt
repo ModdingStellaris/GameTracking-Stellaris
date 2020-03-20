@@ -28,19 +28,19 @@ automate_fortress_machine_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_stronghold
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					stronghold_upkeep_affordable = yes
 				}
 			}
 		}
 
 		4 = {
-			building = building_stronghold
+			building = building_simulation_1
 			available = {
 				owner = {
-					stronghold_upkeep_affordable = yes
+					simulation_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -82,10 +82,10 @@ automate_fortress_machine_planet = {
 		}
 
 		9 = {
-			building = building_maintenance_depot
+			building = building_drone_storage
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					drone_storage_upkeep_affordable = yes
 				}
 			}
 		}
@@ -136,10 +136,10 @@ automate_fortress_machine_planet = {
 		}
 
 		15 = {
-			building = building_maintenance_depot
+			building = building_stronghold
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					stronghold_upkeep_affordable = yes
 				}
 			}
 		}

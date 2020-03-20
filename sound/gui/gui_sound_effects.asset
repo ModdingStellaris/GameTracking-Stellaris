@@ -2288,6 +2288,167 @@ soundeffect = {
 	max_audible_behaviour = fail
 }
 
+
+############# FEDERATION TUTORIAL LINES #######################
+
+soundeffect = {    
+    name = tut_msg_DIPLOMACY_VIEW_TRADE
+    sounds = {
+        sound = tut_msg_tutorial_trade_screen_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail    
+}
+
+soundeffect = {
+    name = tut_msg_DIPLOMACY_VIEW_FEDERATION
+    sounds = {
+        sound = tut_msg_tutorial_federation_type_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail    
+}
+
+soundeffect = {
+    name = tut_msg_EMPIRE_SPRAWL
+    sounds = {
+        sound = tut_msg_tutorial_empire_screen_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail    
+}
+
+soundeffect = {
+    name = tut_msg_FEDERATION_VIEW
+    sounds = {
+        sound = tut_msg_tutorial_federation_view_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail    
+}
+
+soundeffect = {
+    name = tut_msg_FEDERATION_VIEW_ENVOYS
+    sounds = {
+        sound = tut_msg_tutorial_federation_envoys_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail
+    
+}
+
+soundeffect = {
+    name = tut_msg_FEDERATION_VIEW_MEMBERS
+    sounds = {
+        sound = tut_msg_tutorial_federation_members_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail    
+}
+
+soundeffect = {
+    name = tut_msg_FEDERATION_VIEW_NAVY
+    sounds = {
+        sound = tut_msg_tutorial_federation_navy_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail
+    
+}
+
+soundeffect = {
+    name = tut_msg_FEDERATION_VIEW_LAWS
+    sounds = {
+        sound = tut_msg_tutorial_federation_laws_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail    
+}
+
+soundeffect = {
+    name = tut_msg_GALACTIC_COMMUNITY
+    sounds = {
+        sound = tut_msg_tutorial_galactic_com_view_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail    
+}
+
+soundeffect = {
+    name = tut_msg_GALACTIC_COMMUNITY_ENVOYS
+    sounds = {
+        sound = tut_msg_tutorial_galactic_com_envoys_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+
+soundeffect = {
+    name = tut_msg_GALACTIC_COMMUNITY_SENATE
+    sounds = {
+        sound = tut_msg_tutorial_galactic_com_senate_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+
+soundeffect = {
+    name = tut_msg_GALACTIC_COMMUNITY_RESOLUTIONS
+    sounds = {
+        sound = tut_msg_tutorial_galactic_com_resolutions_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+
+soundeffect = {
+    name = tut_msg_GALACTIC_COMMUNITY_COUNCIL
+    sounds = {
+        sound = tut_msg_tutorial_galactic_com_council_01
+    }
+    volume = 0.45
+    fade_out = 0.4
+    fade_in = 0.05
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+
 ############# ADVISOR LIMITED TUTORIAL EVENTS #######################
 # First Discovery
 soundeffect = {

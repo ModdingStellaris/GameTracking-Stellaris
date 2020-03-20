@@ -29,6 +29,7 @@ voor = {
 	authority = "auth_dictatorial"
 	government = gov_technocratic_dictatorship
 	civics = { "civic_technocracy" "civic_environmentalist" }
+	origin = "origin_default"
 	
 	planet_name = PRESCRIPTED_planet_name_voor
 	planet_class = "pc_arctic"

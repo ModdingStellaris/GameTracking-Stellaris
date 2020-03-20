@@ -46,6 +46,73 @@ entity = {
 
 #entity = { name = "extra_dimensional_01_empty_section_entity" clone = "empty_section_entity" }
 
+#### All juggernauts
+
+entity = {
+	name = "juggernauts_all_species"
+
+	locator = { name = "one" 	position = {0 0 0	}}
+	locator = { name = "two" 	position = {150 0 0	}}
+	locator = { name = "three" 	position = {300 0 0	}}
+	locator = { name = "four" 	position = {150 0 100	}}
+	locator = { name = "five" 	position = {300 0 100	}}
+	locator = { name = "six" 	position = {-150 0 0}}
+	locator = { name = "seven" 	position = {-150 0 100}}
+	locator = { name = "eight" 	position = { 0 0 100}}
+	locator = { name = "nine" 	position = {-300 0 100}}
+
+	default_state = "moving"
+	state = { name = "idle" state_time = 5 next_state = "idle"
+		propagate_state = { "move" = "idle" }
+	}	
+
+	state = { name = "moving" state_time = 5 next_state = "moving"
+		propagate_state = { "move" = "moving" }
+	}		
+
+		attach = { name = "move" one = "fungoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" two = "reptilian_01_juggernaut_core_section_entity" }
+		attach = { name = "move" three = "molluscoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" four = "humanoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" five = "plantoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" six = "arthropoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" seven = "avian_01_juggernaut_core_section_entity" }
+		attach = { name = "move" eight = "lithoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" nine = "mammalian_01_juggernaut_core_section_entity" }
+	cull_radius = 10000
+
+}
+
+entity = {
+	name = "juggernauts_all_species_idle"
+
+	locator = { name = "one" 	position = {0 0 0	}}
+	locator = { name = "two" 	position = {150 0 0	}}
+	locator = { name = "three" 	position = {300 0 0	}}
+	locator = { name = "four" 	position = {150 0 100	}}
+	locator = { name = "five" 	position = {300 0 100	}}
+	locator = { name = "six" 	position = {-150 0 0}}
+	locator = { name = "seven" 	position = {-150 0 100}}
+	locator = { name = "eight" 	position = { 0 0 100}}
+	locator = { name = "nine" 	position = {-300 0 100}}
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		propagate_state = { "move" = "idle" }
+	}		
+
+		attach = { name = "move" one = "fungoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" two = "reptilian_01_juggernaut_core_section_entity" }
+		attach = { name = "move" three = "molluscoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" four = "humanoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" five = "plantoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" six = "arthropoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" seven = "avian_01_juggernaut_core_section_entity" }
+		attach = { name = "move" eight = "lithoid_01_juggernaut_core_section_entity" }
+		attach = { name = "move" nine = "mammalian_01_juggernaut_core_section_entity" }
+	cull_radius = 10000
+
+}
 
 
 entity = {

@@ -1,0 +1,43 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "reptilian_01_juggernaut_frame_mesh"
+		file = "gfx/models/ships/juggernauts/reptilian_01/reptilian_01_juggernaut_frame.mesh"
+		animation = { id = "idle" 			type = "reptilian_01_juggernaut_frame_idle_animation" }
+		animation = { id = "death" 			type = "reptilian_01_juggernaut_frame_death_animation" }
+	}
+	
+	pdxmesh = {
+		name = "reptilian_01_juggernaut_mesh"
+		file = "gfx/models/ships/juggernauts/reptilian_01/reptilian_01_juggernaut.mesh"
+		animation = { id = "idle" 			type = "reptilian_01_juggernaut_idle_animation" }
+		animation = { id = "death" 			type = "reptilian_01_juggernaut_death_animation" }
+
+		meshsettings = {
+			name = "g_bodyShape"
+			index = 0
+			texture_diffuse = "reptilian_01_xl_turret_diffuse.dds"
+			texture_normal = "reptilian_01_xl_turret_normal.dds"
+			texture_specular = "reptilian_01_xl_turret_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "g_bodyShape"
+			index = 1
+			texture_diffuse = "reptilian_01_juggernaut_diffuse.dds"
+			texture_normal = "reptilian_01_juggernaut_normal.dds"
+			texture_specular = "reptilian_01_juggernaut_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "g_bodyShape"
+			index = 2
+			texture_diffuse = "reptilian_01_battleship_diffuse.dds"
+			texture_normal = "reptilian_01_battleship_normal.dds"
+			texture_specular = "reptilian_01_turret_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

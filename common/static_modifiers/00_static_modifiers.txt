@@ -30,8 +30,8 @@ non_playable_ai_empire = {
 # Per empire size over admin cap
 empire_size_over_cap = {
 	campaigns_cost_mult = 0.01
-	leader_upkeep_empire_size_mult = 0.01
-	leader_cost_empire_size_mult = 0.01
+	# leader_upkeep_empire_size_mult = 0.01
+	# leader_cost_empire_size_mult = 0.01
 }
 
 # Per empire size (ignores admin cap)
@@ -49,6 +49,7 @@ fallen_empire_base = {
 	ships_upkeep_mult = -0.5
 	country_naval_cap_add = 100
 	country_resource_max_add = 100000
+	country_occupation_armies_add = 3 #this brings the number up to 8
 }
 
 ##########################################################################
@@ -274,15 +275,15 @@ pop_planet_terraforming = {
 
 pop_saved_from_slavery = {
 	pop_happiness = 0.1
-} 
+}
 
 pop_saved_from_purge = {
 	pop_happiness = 0.3
-} 
+}
 
 pop_recently_conquered = {
 	pop_happiness = -0.2
-} 
+}
 
 pop_angry_subterranean = {
 	pop_happiness = -0.2
@@ -294,7 +295,7 @@ pop_happiness_cheat = {
 
 pop_troubled_succession = {
 	pop_happiness = -0.3
-} 
+}
 
 pop_drought = {
 	pop_happiness = -0.2
@@ -329,7 +330,7 @@ hazardous_weather = {
 	pop_happiness = -0.05
 	planet_jobs_energy_produces_mult = 0.20
 	district_generator_max = 4
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_hazardous_weather.dds"
 	icon_frame = 2
 }
@@ -346,7 +347,7 @@ dangerous_wildlife = {
 weak_magnetic_field = {
 	pop_environment_tolerance = -0.05
 	pop_growth_speed = -0.05
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_weak_magnetic_field.dds"
 	icon_frame = 3
 }
@@ -355,7 +356,7 @@ strong_magnetic_field = {
 	planet_jobs_energy_produces_mult = 0.05
 	planet_jobs_physics_research_produces_mult = 0.05
 	district_generator_max = 2
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds"
 	icon_frame = 1
 }
@@ -364,20 +365,20 @@ unstable_tectonics = {
 	pop_environment_tolerance = -0.10
 	pop_happiness = -0.05
 	planet_jobs_engineering_research_produces_mult = 0.20
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_unstable_tectonics.dds"
 	icon_frame = 3
 }
 
 tidal_locked = {
 	planet_max_districts_mult = -0.30
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_tidal_locked.dds"
 	icon_frame = 3
 }
 
 chthonian_planet = {
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_chthonian_planet.dds"
 	icon_frame = 1
 }
@@ -386,7 +387,7 @@ asteroid_impacts = {
 	pop_environment_tolerance = -0.05
 	planet_jobs_minerals_produces_mult = 0.05
 	district_mining_max = 2
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_impacts.dds"
 	icon_frame = 2
 }
@@ -394,14 +395,14 @@ asteroid_impacts = {
 extensive_moon_system = {
 	planet_jobs_minerals_produces_mult = 0.10
 	district_mining_max = 2
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_extensive_moon_system.dds"
 	icon_frame = 1
 }
 
 carbon_world = {
 	planet_jobs_minerals_produces_mult = 0.15
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_carbon_world.dds"
 	icon_frame = 1
 }
@@ -418,7 +419,7 @@ wild_storms = {
 mineral_rich = {
 	planet_jobs_minerals_produces_mult = 0.15
 	district_mining_max = 4
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_rich.dds"
 	icon_frame = 1
 }
@@ -426,7 +427,7 @@ mineral_rich = {
 ultra_rich = {
 	planet_jobs_minerals_produces_mult = 0.25
 	district_mining_max = 8
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_ultra_rich.dds"
 	icon_frame = 1
 }
@@ -434,22 +435,24 @@ ultra_rich = {
 mineral_poor = {
 	planet_jobs_minerals_produces_mult = -0.25
 	district_mining_max = -3
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_poor.dds"
 	icon_frame = 3
 }
 
 titanic_life = {
 	planet_jobs_society_research_produces_mult = 0.25
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_titanic_life.dds"
 	icon_frame = 1
 }
 
 eat_the_titans = {
-	district_farming_max = 8
+	district_farming_max = 6
 	planet_jobs_food_produces_mult = 0.3
-	
+	job_titan_hunter_add = 1
+	job_titan_hunter_per_pop = 0.033 # 1 per 30
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_titanic_life.dds"
 	icon_frame = 1
 }
@@ -457,7 +460,7 @@ eat_the_titans = {
 asteroid_belt = {
 	planet_jobs_minerals_produces_mult = 0.10
 	district_mining_max = 3
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_belt.dds"
 	icon_frame = 1
 }
@@ -465,7 +468,7 @@ asteroid_belt = {
 natural_beauty = {
 	pop_happiness = 0.05
 	planet_immigration_pull_mult = 0.25
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
 	icon_frame = 1
 }
@@ -474,7 +477,7 @@ atmospheric_aphrodisiac = {
 	pop_environment_tolerance = 0.05
 	pop_growth_speed = 0.10
 	pop_government_ethic_attraction = -0.20
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_aphrodisiac.dds"
 	icon_frame = 1
 }
@@ -484,7 +487,7 @@ atmospheric_hallucinogen = {
 	lithoid_pop_happiness = 0.05
 	planet_jobs_physics_research_produces_mult = 0.10
 	pop_government_ethic_attraction = -0.30
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_hallucinogen.dds"
 	icon_frame = 2
 }
@@ -492,7 +495,7 @@ atmospheric_hallucinogen = {
 atmospheric_hallucinogen_good = {
 	pop_happiness = 0.10
 	planet_jobs_physics_research_produces_mult = 0.10
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_hallucinogen.dds"
 	icon_frame = 1
 }
@@ -501,7 +504,7 @@ lush_planet = {
 	pop_environment_tolerance = 0.10
 	planet_jobs_food_produces_mult = 0.20
 	district_farming_max = 4
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_lush.dds"
 	icon_frame = 1
 }
@@ -510,7 +513,7 @@ bleak_planet = {
 	pop_environment_tolerance = -0.05
 	planet_jobs_food_produces_mult = -0.10
 	district_farming_max = -2
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_bleak.dds"
 	icon_frame = 3
 }
@@ -522,7 +525,7 @@ irradiated_planet = {
 	planet_jobs_food_produces_mult = -0.50
 	district_farming_max = -6
 	district_mining_max = 2
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_irradiated.dds"
 	icon_frame = 3
 }
@@ -530,7 +533,7 @@ irradiated_planet = {
 low_gravity = {
 	planet_buildings_cost_mult = -0.1
 	pop_environment_tolerance = -0.05
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_low_gravity.dds"
 	icon_frame = 2
 }
@@ -540,7 +543,7 @@ high_gravity = {
 	planet_districts_cost_mult = 0.1
 	pop_environment_tolerance = -0.05
 	planet_max_districts_add = 2
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_high_gravity.dds"
 	icon_frame = 2
 }
@@ -664,7 +667,7 @@ nuclear_devastation = {
 gamma_ray = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds"
 }
-	
+
 greenhouse_effect = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_atmospheric_hallucinogen.dds"
 }
@@ -703,7 +706,7 @@ subterranean_civilization = {
 
 subterranean_expansion = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
-	planet_max_districts_add = 3 
+	planet_max_districts_add = 3
 }
 
 gas_giant_civ = {
@@ -757,7 +760,7 @@ assist_research = {
 	planet_jobs_physics_research_produces_mult = 0.10
 	planet_jobs_society_research_produces_mult = 0.10
 	planet_jobs_engineering_research_produces_mult = 0.10
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_assist_research.dds"
 	icon_frame = 1
 }
@@ -810,21 +813,21 @@ planet_uncertain_past = {
 
 recent_quake = {
 	pop_happiness = -0.05
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_unstable_tectonics.dds"
 	icon_frame = 3
 }
 
 recent_comet = {
 	pop_happiness = 0.1
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_belt.dds"
 	icon_frame = 1
 }
 
 recent_impact = {
 	pop_happiness = -0.05
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_impacts.dds"
 	icon_frame = 3
 }
@@ -833,7 +836,7 @@ magnetic_research_boost = {
 	planet_jobs_physics_research_produces_mult = 0.2
 	planet_jobs_society_research_produces_mult = 0.2
 	planet_jobs_engineering_research_produces_mult = 0.2
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds"
 	icon_frame = 1
 }
@@ -843,7 +846,7 @@ magnetic_disruption = {
 	planet_jobs_physics_research_produces_mult = -0.1
 	planet_jobs_society_research_produces_mult = -0.1
 	planet_jobs_engineering_research_produces_mult = -0.1
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds"
 	icon_frame = 3
 }
@@ -972,7 +975,7 @@ planet_employment_no_happiness_low = {
 	planet_emigration_push_add = 5
 }
 
-planet_employment_no_happiness_high = {	
+planet_employment_no_happiness_high = {
 	planet_immigration_pull_add = 5
 }
 
@@ -1060,6 +1063,7 @@ skill_scientist = {
 
 skill_governor = {
 	planet_jobs_produces_mult = 0.02
+	species_empire_size_mult = -0.02
 	planet_crime_add = -3
 }
 
@@ -1221,92 +1225,92 @@ sentinel_data = {
 
 enclave_trade_1_xur = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_exotic_gases_produces_add = 1
-	country_base_energy_produces_add = -10
+	monthly_trades_exotic_gases_produces_add = 1
+	monthly_trades_energy_produces_add = -10
 }
 
 enclave_trade_2_xur = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_exotic_gases_produces_add = 2
-	country_base_energy_produces_add = -20
+	monthly_trades_exotic_gases_produces_add = 2
+	monthly_trades_energy_produces_add = -20
 }
 
 enclave_trade_3_xur = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_exotic_gases_produces_add = 3
-	country_base_energy_produces_add = -30
+	monthly_trades_exotic_gases_produces_add = 3
+	monthly_trades_energy_produces_add = -30
 }
 
 enclave_trade_4_xur = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_exotic_gases_produces_add = 4
-	country_base_energy_produces_add = -40
+	monthly_trades_exotic_gases_produces_add = 4
+	monthly_trades_energy_produces_add = -40
 }
 
 enclave_trade_5_xur = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_exotic_gases_produces_add = 5
-	country_base_energy_produces_add = -50
+	monthly_trades_exotic_gases_produces_add = 5
+	monthly_trades_energy_produces_add = -50
 }
 
 enclave_trade_1_rig = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_volatile_motes_produces_add = 1
-	country_base_energy_produces_add = -10
+	monthly_trades_volatile_motes_produces_add = 1
+	monthly_trades_energy_produces_add = -10
 }
 
 enclave_trade_2_rig = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_volatile_motes_produces_add = 2
-	country_base_energy_produces_add = -20
+	monthly_trades_volatile_motes_produces_add = 2
+	monthly_trades_energy_produces_add = -20
 }
 
 enclave_trade_3_rig = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_volatile_motes_produces_add = 3
-	country_base_energy_produces_add = -30
+	monthly_trades_volatile_motes_produces_add = 3
+	monthly_trades_energy_produces_add = -30
 }
 
 enclave_trade_4_rig = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_volatile_motes_produces_add = 4
-	country_base_energy_produces_add = -40
+	monthly_trades_volatile_motes_produces_add = 4
+	monthly_trades_energy_produces_add = -40
 }
 
 enclave_trade_5_rig = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_volatile_motes_produces_add = 5
-	country_base_energy_produces_add = -50
+	monthly_trades_volatile_motes_produces_add = 5
+	monthly_trades_energy_produces_add = -50
 }
 
 enclave_trade_1_mut = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_rare_crystals_produces_add = 1
-	country_base_energy_produces_add = -10
+	monthly_trades_rare_crystals_produces_add = 1
+	monthly_trades_energy_produces_add = -10
 }
 
 enclave_trade_2_mut = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_rare_crystals_produces_add = 2
-	country_base_energy_produces_add = -20
+	monthly_trades_rare_crystals_produces_add = 2
+	monthly_trades_energy_produces_add = -20
 }
 
 enclave_trade_3_mut = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_rare_crystals_produces_add = 3
-	country_base_energy_produces_add = -30
+	monthly_trades_rare_crystals_produces_add = 3
+	monthly_trades_energy_produces_add = -30
 }
 
 enclave_trade_4_mut = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_rare_crystals_produces_add = 4
-	country_base_energy_produces_add = -40
+	monthly_trades_rare_crystals_produces_add = 4
+	monthly_trades_energy_produces_add = -40
 }
 
 enclave_trade_5_mut = {
 	icon = "gfx/interface/icons/modifiers/mod_country_previous_deals.dds"
-	country_base_rare_crystals_produces_add = 5
-	country_base_energy_produces_add = -50
+	monthly_trades_rare_crystals_produces_add = 5
+	monthly_trades_energy_produces_add = -50
 }
 
 #applied based on the "should_apply_neighbor_rival_modifier" game rule
@@ -1480,28 +1484,28 @@ machine_empire_code_bugs = {
 
 dportal_trade_normal = {
 	#planet_jobs_trade_value_produces_mult = 0.5 #Trade is actually added to the portal researcher job
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
 	icon_frame = 1
 }
 
 dportal_trade_low = {
 	#planet_jobs_trade_value_produces_mult = 0.25
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
 	icon_frame = 2
 }
 
 dportal_trade_high = {
 	#planet_jobs_trade_value_produces_mult = 0.75
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
 	icon_frame = 1
 }
 
 dportal_trade_crisis = {
 	pop_growth_speed = 0.25
-	
+
 	icon = "gfx/interface/icons/planet_modifiers/pm_expel_population.dds"
 	icon_frame = 2
 }

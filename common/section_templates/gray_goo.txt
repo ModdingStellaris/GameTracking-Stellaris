@@ -8,93 +8,78 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "TITAN_01"
-		slot_size = titanic
-		slot_type = weapon
+		template = "invisible_titanic_fixed"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_01"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_02"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_03"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_04"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_03"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_04"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_05"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_06"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_07"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_08"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_09"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_10"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "xl_gun_01"
 	}
 
@@ -111,92 +96,77 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "TITAN_01"
-		slot_size = titanic
-		slot_type = weapon
+		template = "invisible_titanic_fixed"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_01"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_02"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_03"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_04"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_01"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_02"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_03"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_04"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_05"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_06"
-		slot_size = medium
-		slot_type = weapon
+		template = "medium_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_01"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
-		slot_size = large
-		slot_type = weapon
+		template = "large_turret"
 		locatorname = "xl_gun_01"
 	}
 
@@ -213,45 +183,38 @@ ship_section_template = {
 
 	component_slot = {
 		name = "TORPEDO_01"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "turret_01"
 	}
 	component_slot = {
 		name = "TORPEDO_02"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "turret_01"
 	}
 	component_slot = {
 		name = "TORPEDO_03"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "turret_01"
 	}
 	component_slot = {
 		name = "TORPEDO_04"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "turret_01"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "turret_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "turret_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_03"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "turret_01"
 	}
 
@@ -268,170 +231,142 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "TITAN_01"
-		slot_size = titanic
-		slot_type = weapon
+		template = "invisible_titanic_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_01"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_02"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_03"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_04"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_05"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_06"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_07"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_08"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_09"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_10"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_11"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "TORPEDO_12"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_02"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_03"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_03"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_04"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_04"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_05"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_06"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_02"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_07"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_03"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_08"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_04"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_09"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_10"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_02"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_11"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_03"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_12"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_04"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_13"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_01"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_14"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_02"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_15"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "strike_craft_locator_03"
 	}
 	
@@ -449,68 +384,57 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "TORPEDO_01"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "TORPEDO_02"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "TORPEDO_03"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "TORPEDO_04"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "TORPEDO_05"
-		slot_size = torpedo
-		slot_type = weapon
+		template = "invisible_missile_turret"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_03"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_04"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_05"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "root"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_06"
-		slot_size = torpedo
-		slot_type = strike_craft
+		template = "large_strike_craft"
 		locatorname = "root"
 	}
 	

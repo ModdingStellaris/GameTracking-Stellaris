@@ -28,10 +28,10 @@ automate_habitat_factory_machine_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_crystal_plant
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					crystal_plant_upkeep_affordable = yes
 				}
 			}
 		}
@@ -73,10 +73,10 @@ automate_habitat_factory_machine_planet = {
 		}
 
 		8 = {
-			building = building_maintenance_depot
+			building = building_drone_storage
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					drone_storage_upkeep_affordable = yes
 				}
 			}
 		}
@@ -100,10 +100,10 @@ automate_habitat_factory_machine_planet = {
 		}
 
 		11 = {
-			building = building_maintenance_depot
+			building = building_foundry_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					foundry_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -145,10 +145,10 @@ automate_habitat_factory_machine_planet = {
 		}
 
 		16 = {
-			building = building_maintenance_depot
+			building = building_foundry_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					foundry_1_upkeep_affordable = yes
 				}
 			}
 		}

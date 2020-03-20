@@ -228,7 +228,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_colony_type"
 		textureFile = "gfx/interface/planetview/colony_type.dds"
-		noOfFrames = 28
+		noOfFrames = 29
 	}	
 	
 	spriteType = {
@@ -1719,9 +1719,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/planetview/planetview_topright_frame.dds"
 	}
 	
-	spriteType = {
+	corneredTileSpriteType = {
 		name = "GFX_planetview_topright_bg_small"
 		texturefile = "gfx/interface/planetview/planetview_topright_bg_small.dds"
+		borderSize = { x=5 y=5 }
 	}
 	
 	spriteType = {

@@ -55,6 +55,7 @@ planet_event = {
 
 	trigger = {
 		has_owner = yes
+		is_under_colonization = no
 		owner = { is_country_type = default }
 		NOR = {
 			has_planet_flag = criminal_underworld_event_up

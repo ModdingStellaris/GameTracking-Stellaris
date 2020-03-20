@@ -47,6 +47,19 @@ entity = {
 }
 
 entity = {
+	name = "arc_emitter_turret_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_small_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
 	name = "humanoid_01_arc_emitter_windup_entity"
 	
 	default_state = "attack"
@@ -68,7 +81,7 @@ entity = {
 		name = "attack" looping = yes state_time = 0.8
 		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_small_windup" } }
 	
-		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
 	}
 }
 
@@ -113,6 +126,20 @@ entity = {
 }
 
 entity = {
+	name = "focused_arc_emitter_turret_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "focused_arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
 	name = "humanoid_01_focused_arc_emitter_windup_entity"
 	
 	default_state = "attack"
@@ -134,7 +161,7 @@ entity = {
 		name = "attack" looping = yes state_time = 0.8
 		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
 	
-		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "focused_arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "focused_arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
 	}
 }
 
@@ -254,6 +281,18 @@ entity = {
 }
 
 entity = {
+	name = "particle_lance_turret_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "particle_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
 	name = "humanoid_01_particle_lance_windup_entity"
 	
 	default_state = "attack"
@@ -273,7 +312,7 @@ entity = {
 	state = {
 		name = "attack" looping = yes state_time = 0.8
 	
-		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "particle_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "particle_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
 	}
 }
 
@@ -316,6 +355,19 @@ entity = {
 }
 
 entity = {
+	name = "tachyon_lance_turret_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "tachyon_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
 	name = "humanoid_01_tachyon_lance_windup_entity"
 	
 	default_state = "attack"
@@ -337,7 +389,7 @@ entity = {
 		name = "attack" looping = yes state_time = 0.8
 		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_windup" } }
 	
-		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tachyon_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "tachyon_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
 	}
 }
 
@@ -510,7 +562,7 @@ entity = {
 	state = {
 		name = "attack" looping = yes state_time = 0.8
 		
-		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
 	}
 }
 
@@ -594,7 +646,7 @@ entity = {
 	state = {
 		name = "attack" looping = yes state_time = 0.8
 		
-		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "adv_kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "adv_kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
 	}
 }
 

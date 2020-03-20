@@ -34,7 +34,7 @@ tr_prosperity_adopt = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 10
 		modifier = {
@@ -83,7 +83,7 @@ tr_prosperity_adopt = {
 
 tr_prosperity_finish = {
 	modifier = {
-		ascension_perks_add = 1		
+		ascension_perks_add = 1
 		job_merchant_per_pop = 0.02
 	}
 
@@ -97,7 +97,7 @@ tr_prosperity_finish = {
 		}
 
 		modifier = {
-			job_coordinator_per_pop = 0.05
+			job_maintenance_drone_per_pop = 0.05
 			ascension_perks_add = 1
 		}
 
@@ -138,13 +138,16 @@ tr_prosperity_sct = {
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
-			is_machine_empire = yes
+			OR = {
+				is_machine_empire = yes
+				is_hive_empire = yes
+			}
 		}
 		weight = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 1000
 	}
@@ -181,7 +184,7 @@ tr_prosperity_administrative_operations = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 5000
 	}
@@ -217,7 +220,7 @@ tr_prosperity_public_works = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 5000
 	}
@@ -228,8 +231,8 @@ tr_prosperity_interstellar_franchising = {
 		has_tradition = tr_prosperity_administrative_operations
 	}
 
-	# implementation done in districts file	
-	
+	# implementation done in districts file
+
 	tradition_swap = {
 		name = tr_prosperity_efficiency_algorithms
 		inherit_effects = no
@@ -245,7 +248,7 @@ tr_prosperity_interstellar_franchising = {
 			factor = 1
 		}
 	}
-	
+
 	tradition_swap = {
 		name = tr_prosperity_efficiency_instincts
 		inherit_effects = no
@@ -271,11 +274,11 @@ tr_prosperity_pursuit_of_profit = {
 	possible = {
 		has_tradition = tr_prosperity_administrative_operations
 	}
-	
+
 	modifier = {
 		planet_jobs_specialist_produces_mult = 0.05
 	}
-	
+
 	tradition_swap = {
 		name = tr_prosperity_creative_collectives
 		inherit_effects = yes
@@ -283,12 +286,12 @@ tr_prosperity_pursuit_of_profit = {
 		inherit_name = no
 		trigger = {
 			is_egalitarian = yes
-		}	
+		}
 		weight = {
 			factor = 1
 		}
-	}	
-	
+	}
+
 	tradition_swap = {
 		name = tr_prosperity_hive_neural_signal_boosters
 		inherit_effects = no
@@ -296,7 +299,7 @@ tr_prosperity_pursuit_of_profit = {
 		inherit_name = no
 		trigger = {
 			is_hive_empire = yes
-		}	
+		}
 		modifier = {
 			planet_jobs_complex_drone_produces_mult = 0.05
 		}
@@ -312,7 +315,7 @@ tr_prosperity_pursuit_of_profit = {
 		inherit_name = no
 		trigger = {
 			is_machine_empire = yes
-		}	
+		}
 		modifier = {
 			planet_jobs_complex_drone_produces_mult = 0.05
 		}
@@ -320,7 +323,7 @@ tr_prosperity_pursuit_of_profit = {
 			factor = 1
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 5000
 	}

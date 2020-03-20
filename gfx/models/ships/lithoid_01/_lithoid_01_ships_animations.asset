@@ -90,3 +90,15 @@ animation = {
 	name = "lithoid_01_research_station_death_animation"
 	file = "lithoid_01_research_station_death.anim"
 }
+
+
+# Habitat
+animation = {
+	name = "lithoid_01_upgraded_orbital_habitat_idle_animation"
+	file = "lithoid_01_habitat_level_3_idle.anim"
+}
+
+animation = {
+	name = "lithoid_01_upgraded_orbital_habitat_death_animation"
+	file = "lithoid_01_habitat_level_3_death.anim"
+}

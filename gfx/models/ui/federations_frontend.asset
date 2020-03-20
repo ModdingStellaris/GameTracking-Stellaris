@@ -1,0 +1,30 @@
+entity = {
+	name = "frontend_background_entity"
+	
+	locator = { name = "loc" position = { 0.0 0.025 0.0 } }
+	
+	attach = { loc = "federations_frontend_entity" }
+	
+}
+
+entity = {
+	name = "federations_frontend_entity"
+	pdxmesh = "federations_frontend_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		animation = "idle"
+	 	start_event = { node = "stars_locator_01" particle = "federations_frontend_stars_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "stars_locator_02" particle = "federations_frontend_stars_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_01" particle = "federations_frontend_station_light_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "ring_smoke" particle = "federations_frontend_ring_smoke_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "planet_smoke" particle = "federations_frontend_planet_smoke_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "lensflare" particle = "federations_frontend_lensflare_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 0.055
+}
+
+animation = {
+	name = "federations_frontend_idle_animation"
+	file = "federations_frontend_idle.anim"
+}

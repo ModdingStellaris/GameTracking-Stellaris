@@ -369,4 +369,3 @@ l_lithoid_vir = {
 		}
 	}
 }
-

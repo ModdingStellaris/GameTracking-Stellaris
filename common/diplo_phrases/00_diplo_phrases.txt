@@ -14557,6 +14557,1538 @@ greetings = {
 			NOT = { is_at_war_with = FROM }
 		}
 	}
+
+	### Scion Origin Greetings
+
+	# FE to Scion
+	FE_TO_SCION_GREETING_01 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			is_overlord_to = FROM
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+		}
+	}
+	FE_TO_SCION_GREETING_02 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			is_overlord_to = FROM
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+		}
+	}
+	FE_TO_SCION_GREETING_03 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			is_overlord_to = FROM
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+		}
+	}
+	FE_TO_SCION_GREETING_04 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			is_overlord_to = FROM
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+		}
+	}
+	FE_TO_SCION_GREETING_05 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			is_overlord_to = FROM
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+		}
+	}
+	FE_TO_SCION_GREETING_06 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			is_overlord_to = FROM
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+		}
+	}
+
+	# Scion to Scion
+	SCION_TO_SCION_GREETING_01 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				is_overlord_to = FROM
+				is_overlord_to = ROOT
+			}
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+		}
+	}
+	SCION_TO_SCION_GREETING_02 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				is_overlord_to = FROM
+				is_overlord_to = ROOT
+			}
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+		}
+	}
+	SCION_TO_SCION_GREETING_03 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				is_overlord_to = FROM
+				is_overlord_to = ROOT
+			}
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+		}
+	}
+	SCION_TO_SCION_GREETING_04 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				is_overlord_to = FROM
+				is_overlord_to = ROOT
+			}
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+		}
+	}
+	SCION_TO_SCION_GREETING_05 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				is_overlord_to = FROM
+				is_overlord_to = ROOT
+			}
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+		}
+	}
+	SCION_TO_SCION_GREETING_06 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				is_overlord_to = FROM
+				is_overlord_to = ROOT
+			}
+			FROM = { 
+				has_origin = origin_scion
+				is_subject_type = scion
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+		}
+	}
+
+	# Scion to Other Empire
+	SCION_TO_EMPIRE_GREETING_01 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOT = { is_overlord_to = FROM }
+				is_overlord_to = ROOT
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	SCION_TO_EMPIRE_GREETING_02 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOT = { is_overlord_to = FROM }
+				is_overlord_to = ROOT
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	SCION_TO_EMPIRE_GREETING_03 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOT = { is_overlord_to = FROM }
+				is_overlord_to = ROOT
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	SCION_TO_EMPIRE_GREETING_04 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOT = { is_overlord_to = FROM }
+				is_overlord_to = ROOT
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	SCION_TO_EMPIRE_GREETING_05 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOT = { is_overlord_to = FROM }
+				is_overlord_to = ROOT
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	SCION_TO_EMPIRE_GREETING_06 = {
+		weight = {
+			weight = 100000
+		}
+		trigger = {
+			any_country = {
+				OR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOT = { is_overlord_to = FROM }
+				is_overlord_to = ROOT
+			}
+			has_origin = origin_scion
+			is_subject_type = scion
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+
+	### Diplomatic Stances ###
+
+	# Belligerent
+	POSITIVE_BELLIGERENT_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_BELLIGERENT_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_BELLIGERENT_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_BELLIGERENT_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_BELLIGERENT_GREETING_05 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_BELLIGERENT_GREETING_06 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	NEGATIVE_BELLIGERENT_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_BELLIGERENT_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_BELLIGERENT_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_BELLIGERENT_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_BELLIGERENT_GREETING_05 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_BELLIGERENT_GREETING_06 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	HIVE_BELLIGERENT_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_BELLIGERENT_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_BELLIGERENT_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_BELLIGERENT_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_BELLIGERENT_GREETING_01 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_BELLIGERENT_GREETING_02 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_BELLIGERENT_GREETING_03 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_BELLIGERENT_GREETING_04 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_belligerent
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+
+	# Cooperative
+	POSITIVE_COOPERATIVE_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_COOPERATIVE_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_COOPERATIVE_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_COOPERATIVE_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_COOPERATIVE_GREETING_05 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_COOPERATIVE_GREETING_06 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	NEGATIVE_COOPERATIVE_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_COOPERATIVE_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_COOPERATIVE_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_COOPERATIVE_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_COOPERATIVE_GREETING_05 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_COOPERATIVE_GREETING_06 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	HIVE_COOPERATIVE_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_COOPERATIVE_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_COOPERATIVE_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_COOPERATIVE_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_COOPERATIVE_GREETING_01 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_COOPERATIVE_GREETING_02 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_COOPERATIVE_GREETING_03 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_COOPERATIVE_GREETING_04 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_cooperative
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+
+	# Isolationist
+	POSITIVE_ISOLATIONIST_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_ISOLATIONIST_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_ISOLATIONIST_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_ISOLATIONIST_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_ISOLATIONIST_GREETING_05 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_ISOLATIONIST_GREETING_06 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	NEGATIVE_ISOLATIONIST_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_ISOLATIONIST_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_ISOLATIONIST_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_ISOLATIONIST_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_ISOLATIONIST_GREETING_05 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_ISOLATIONIST_GREETING_06 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	HIVE_ISOLATIONIST_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_ISOLATIONIST_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_ISOLATIONIST_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_ISOLATIONIST_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_ISOLATIONIST_GREETING_01 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_ISOLATIONIST_GREETING_02 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_ISOLATIONIST_GREETING_03 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_ISOLATIONIST_GREETING_04 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_isolationist
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+
+	# Expansionist
+	POSITIVE_EXPANSIONIST_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_EXPANSIONIST_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_EXPANSIONIST_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_EXPANSIONIST_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_EXPANSIONIST_GREETING_05 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	POSITIVE_EXPANSIONIST_GREETING_06 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_neutral_to = FROM
+				is_threatened_to = FROM
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	NEGATIVE_EXPANSIONIST_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_EXPANSIONIST_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_EXPANSIONIST_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_EXPANSIONIST_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_EXPANSIONIST_GREETING_05 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	NEGATIVE_EXPANSIONIST_GREETING_06 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				is_at_war_with = FROM
+			}
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	HIVE_EXPANSIONIST_GREETING_01 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_EXPANSIONIST_GREETING_02 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_EXPANSIONIST_GREETING_03 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	HIVE_EXPANSIONIST_GREETING_04 = {
+		weight = {
+			weight = 0.5
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			has_authority = auth_hive_mind
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_EXPANSIONIST_GREETING_01 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_EXPANSIONIST_GREETING_02 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_EXPANSIONIST_GREETING_03 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
+	MACHINE_EXPANSIONIST_GREETING_04 = {
+		weight = {
+			weight = 500
+		}
+		trigger = {
+			has_policy_flag = diplo_stance_expansionist
+			has_authority = auth_machine_intelligence
+			NOT = { is_at_war_with = FROM }
+		}
+	}
 }
 
 action_declare_war = {
@@ -31775,6 +33307,224 @@ action_break_research_agreement = {
 		01_BREAK_RESEARCH_AGREEMENT_ACCEPT = {
 			trigger = {
 				always = yes
+			}
+		}
+	}
+}
+
+action_ask_to_leave_federation = {
+	select = {
+		01_ASK_TO_LEAVE_SELECT = {
+			trigger = {
+				NOR = {
+					has_ethic = ethic_gestalt_consciousness
+					has_authority = auth_corporate
+				}
+			}
+		}
+		HM_ASK_TO_LEAVE_SELECT = {
+			trigger = {
+				OR = {
+					has_ai_personality = hive_mind
+					has_ai_personality = devouring_swarm
+				}
+			}
+		}
+		E_ASK_TO_LEAVE_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = exterminators
+			}
+		}
+		S_ASK_TO_LEAVE_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = servitors
+			}
+		}
+		A_ASK_TO_LEAVE_SELECT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = assimilators
+			}
+		}
+		MECH_ASK_TO_LEAVE_SELECT = {
+			trigger = {
+				has_authority = auth_machine_intelligence
+			}
+		}
+		KET_ASK_TO_LEAVE_SELECT = {
+			weight = { weight = 100000 }
+			trigger = {
+				exists = event_target:ratling_country
+				is_same_empire = event_target:ratling_country
+			}
+		}
+		CORP_ASK_TO_LEAVE_SELECT = {
+			trigger = {
+				has_authority = auth_corporate
+			}
+		}
+	}
+
+	propose = {
+		01_ASK_TO_LEAVE_PROPOSE = {
+			trigger = {
+				NOR = {
+					has_ethic = ethic_gestalt_consciousness
+					has_authority = auth_corporate
+				}
+			}
+		}
+		HM_ASK_TO_LEAVE_PROPOSE = {
+			trigger = {
+				OR = {
+					has_ai_personality = hive_mind
+					has_ai_personality = devouring_swarm
+				}
+			}
+		}
+		E_ASK_TO_LEAVE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = exterminators
+			}
+		}
+		S_ASK_TO_LEAVE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = servitors
+			}
+		}
+		A_ASK_TO_LEAVE_PROPOSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = assimilators
+			}
+		}
+		MECH_ASK_TO_LEAVE_PROPOSE = {
+			trigger = {
+				has_authority = auth_machine_intelligence
+			}
+		}
+		KET_ASK_TO_LEAVE_PROPOSE = {
+			weight = { weight = 100000 }
+			trigger = {
+				exists = event_target:ratling_country
+				is_same_empire = event_target:ratling_country
+			}
+		}
+		CORP_ASK_TO_LEAVE_PROPOSE = {
+			trigger = {
+				has_authority = auth_corporate
+			}
+		}
+	}
+
+	accept = {
+		01_ASK_TO_LEAVE_ACCEPT = {
+			trigger = {
+				NOR = {
+					has_ethic = ethic_gestalt_consciousness
+					has_authority = auth_corporate
+				}
+			}
+		}
+		HM_ASK_TO_LEAVE_ACCEPT = {
+			trigger = {
+				OR = {
+					has_ai_personality = hive_mind
+					has_ai_personality = devouring_swarm
+				}
+			}
+		}
+		E_ASK_TO_LEAVE_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = exterminators
+			}
+		}
+		S_ASK_TO_LEAVE_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = servitors
+			}
+		}
+		A_ASK_TO_LEAVE_ACCEPT = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = assimilators
+			}
+		}
+		MECH_ASK_TO_LEAVE_ACCEPT = {
+			trigger = {
+				has_authority = auth_machine_intelligence
+			}
+		}
+		KET_ASK_TO_LEAVE_ACCEPT = {
+			weight = { weight = 100000 }
+			trigger = {
+				exists = event_target:ratling_country
+				is_same_empire = event_target:ratling_country
+			}
+		}
+		CORP_ASK_TO_LEAVE_ACCEPT = {
+			trigger = {
+				has_authority = auth_corporate
+			}
+		}
+	}
+
+	refuse = {
+		01_ASK_TO_LEAVE_REFUSE = {
+			trigger = {
+				NOR = {
+					has_ethic = ethic_gestalt_consciousness
+					has_authority = auth_corporate
+				}
+			}
+		}
+		HM_ASK_TO_LEAVE_REFUSE = {
+			trigger = {
+				OR = {
+					has_ai_personality = hive_mind
+					has_ai_personality = devouring_swarm
+				}
+			}
+		}
+		E_ASK_TO_LEAVE_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = exterminators
+			}
+		}
+		S_ASK_TO_LEAVE_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = servitors
+			}
+		}
+		A_ASK_TO_LEAVE_REFUSE = {
+			weight = { weight = 50 }
+			trigger = {
+				has_ai_personality = assimilators
+			}
+		}
+		MECH_ASK_TO_LEAVE_REFUSE = {
+			trigger = {
+				has_authority = auth_machine_intelligence
+			}
+		}
+		KET_ASK_TO_LEAVE_REFUSE = {
+			weight = { weight = 100000 }
+			trigger = {
+				exists = event_target:ratling_country
+				is_same_empire = event_target:ratling_country
+			}
+		}
+		CORP_ASK_TO_LEAVE_REFUSE = {
+			trigger = {
+				has_authority = auth_corporate
 			}
 		}
 	}

@@ -123,6 +123,16 @@ animation = {
 	file = "fungoid_01_orbital_station_science_section_idle.anim"
 }
 
+animation = {
+	name = "fungoid_01_upgraded_orbital_habitat_idle_animation"
+	file = "fungoid_01_habitat_level_3_idle.anim"
+}
+
+animation = {
+	name = "fungoid_01_upgraded_orbital_habitat_death_animation"
+	file = "fungoid_01_habitat_level_3_death.anim"
+}
+
 
 
 

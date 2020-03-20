@@ -4,6 +4,8 @@
 
 AVI2 = {
 
+	category = "Avian"
+	
 	language = "l_simp_chinese"
 	
 	ship_names = {

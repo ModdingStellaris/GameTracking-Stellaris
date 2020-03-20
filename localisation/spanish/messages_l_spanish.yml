@@ -433,3 +433,5 @@
  MESSAGE_BREAK_RESEARCH_AGREEMENT_TITLE:0 "Acuerdo de investigación roto"
  ACTION_FORM_RESEARCH_AGREEMENT_NOTIFICATION:0 "El §H[From.GetName]§! ha firmado un acuerdo de investigación con el §H[Root.GetName]§!.\n\nPuede que aprendan mucho el uno del otro."
  ACTION_BREAK_RESEARCH_AGREEMENT_NOTIFICATION:0 "El §H[From.GetName]§! ha roto su acuerdo de investigación con el §H[Root.GetName]§!.\n\nParece que ya no quieren compartir sus secretos..."
+ ACTION_DEMAND_SUBSIDIARY_NOTIFICATION:0 "§H[From.GetName]§! ha convertido §H[Root.GetName]§! en una filial.\n\nHan pasado a ser un activo corporativo a cambio de seguridad."
+ ACTION_ASK_TO_BECOME_SUBSIDIARY_NOTIFICATION:0 "§H[Root.GetName]§! ha convertido §H[From.GetName]§! en una filial.\n\nHan pasado a ser un activo corporativo a cambio de seguridad."

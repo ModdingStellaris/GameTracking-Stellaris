@@ -1,6 +1,8 @@
 ﻿### Mammalian 1
 MAM1 = {
 	### SHIPS
+	
+	category = "Mammalian"
 
 	language = "l_simp_chinese"
 	

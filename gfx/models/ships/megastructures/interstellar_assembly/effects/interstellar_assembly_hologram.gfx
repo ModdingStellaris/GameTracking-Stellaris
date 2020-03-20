@@ -1,0 +1,90 @@
+objectTypes = {
+	pdxmesh = {
+		name = "holo_earth_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/effects/globe_glow_1.mesh"
+
+		meshsettings = {
+			name = "polySurfaceShape12"
+			index = 0
+			texture_diffuse = "interstellar_asse_light_2.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+	pdxmesh = {
+		name = "holo_galaxy_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/effects/globe_galaxy.mesh"
+
+		meshsettings = {
+			name = "polySurfaceShape15"
+			index = 0
+			texture_diffuse = "hologram_assembly_earth.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "holo_light_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/effects/globe_glow_1.mesh"
+
+		meshsettings = {
+			name = "polySurfaceShape12"
+			index = 0
+			texture_diffuse = "hologram_light.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "interstellar_assembly_effect_2_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/interstellar_assembly_effect.mesh"
+			
+		meshsettings = {
+			index = 0
+			texture_diffuse = "interstellar_asse_light.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			
+		}
+	}
+
+
+	pdxmesh = {
+		name = "holo_globe_edge_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/effects/globe_edge.mesh"
+		animation = { id = "idle"    type = "globe_edge_idle_animation" }
+
+		meshsettings = {
+			name = "polySurface21Shape"
+			index = 0
+			texture_diffuse = "interstellar_asse_light_3.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "interstellar_light_shaft_mesh"
+		file = "gfx/models/ships/megastructures/interstellar_assembly/effects/light_shaft.mesh"
+
+
+		meshsettings = {
+			name = "pCylinder23Shape"
+			index = 0
+			texture_diffuse = "interstellar_asse_light_4.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+}

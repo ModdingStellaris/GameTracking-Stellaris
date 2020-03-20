@@ -99,6 +99,7 @@ default = {
 	relations = yes
 	observable = yes
 	can_use_invalid_technology = no
+	can_receive_envoys = yes
 
 	ai = {
 		enabled = yes
@@ -592,6 +593,7 @@ dormant_marauders = {
 	share_survey_data = no
 	enforces_borders = no
 	needs_survey = no
+	government = no
 	has_complete_sensor = yes
 	can_have_their_comms_shared = yes
 	custom_starbase = starbase_marauder
@@ -632,6 +634,7 @@ ruined_marauders = { # Diplomacy no longer possible
 		needs_border_access = no
 		generate_borders = no
 		needs_colony = no
+		auto_delete = no
 	}
 	modules = {
 		exclusive_diplomacy_module = {} # Nothing is allowed, but we need this for relationships.
@@ -1119,6 +1122,7 @@ enclave = {
 	blocks_piracy = yes
 	show_in_contacts_list = yes
 	can_have_their_comms_shared = yes
+	government = no
 	is_enclave = yes
 	observable = no
 	ai = {
@@ -1252,7 +1256,7 @@ extradimensional = {
 	has_capital = no
 	enforces_borders = no
 	home_system = extradimensional_origin_system
-	custom_starbase = starbase_exd
+	custom_starbase = starbase_exd_0
 	observable = yes
 	targets = {
 		extradimensional_2
@@ -1827,37 +1831,12 @@ ratlings = {
 	}
 }
 
-nivlacs = {
-	show_in_contacts_list = yes
-	government = yes
-	observable = no
-	ai = {
-		enabled = yes
-	}
-	faction = {
-		hostile = no
-		needs_border_access = no
-		generate_borders = yes
-		needs_colony = yes
-	}
-	modules = {
-		basic_technology_module = {}
-		standard_event_module = {}
-		exclusive_diplomacy_module = {
-			contact_rule = script_only
-			can_receive = {
-				action_declare_war
-				action_offer_peace
-			}
-		}
-	}
-}
-
 enigmatic_cache = {
 	is_space_critter = yes
 	destroys_starbases = no
 	#blocks_pirate = yes
 	observable = no
+	government = no
 	ai = {
 		enabled = no
 	}
@@ -1887,6 +1866,7 @@ gray_goo = {
 	needs_survey = no
 	has_complete_sensor = yes
 	can_have_their_comms_shared = yes
+	government = no
 	observable = no
 	ai = {
 		enabled = yes
@@ -1916,6 +1896,7 @@ gray_goo = {
 mechanocalibrator = {
 	share_communications = no
 	observable = no
+	government = no
 	ai = {
 		enabled = no
 		construction = no

@@ -300,6 +300,7 @@ ambient_object = {
 	description = "abandoned_ship_object_desc"
 	tooltip = "abandoned_ship_object_tooltip"
 }
+
 # Abandoned Observation Outpost
 ambient_object = {
 	name = "abandoned_observation_outpost"
@@ -309,6 +310,7 @@ ambient_object = {
 	tooltip = "broken_star_lifting_platform_tooltip"
 	description = "star_lifting_platform_desc"
 }
+
 # Derelict Particle Accelerator
 ambient_object = {
 	name = "derelict_particle_accelerator"
@@ -318,6 +320,7 @@ ambient_object = {
 	tooltip = "derelict_particle_accelerator_desc"
 	description = "derelict_particle_accelerator_desc"
 }
+
 # Grunur Research Facility
 ambient_object = {
 	name = "grunur_research_facility"

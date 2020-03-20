@@ -163,7 +163,7 @@ special_project = {
 special_project = {
 	key = "ABANDONED_TERRAFORMING_1_PROJECT"
 	event_chain = "abandoned_terraforming_chain"
-	cost = 5000
+	cost = 2000
 	tech_department = society_technology
 	icon = "gfx/interface/icons/situation_log/situation_log_planet.dds"
 	picture = GFX_evt_alien_nature
@@ -195,7 +195,7 @@ special_project = {
 special_project = {
 	key = "ABANDONED_TERRAFORMING_2_PROJECT"
 	event_chain = "abandoned_terraforming_chain"
-	days_to_research = 180
+	cost = 1000
 	tech_department = engineering_technology
 	icon = "gfx/interface/icons/situation_log/situation_log_debris.dds"
 	picture = GFX_evt_archaeological_dig
@@ -203,9 +203,10 @@ special_project = {
 	same_option_group_as = { ABANDONED_TERRAFORMING_1_PROJECT }
 	
 	event_scope = planet_event
-	
+
 	on_success = {
 		planet_event = { id = colony.101 }
+		remove_modifier = "abandoned_terraforming"
 		owner = { end_event_chain = "abandoned_terraforming_chain" }
 	}
 	
@@ -346,15 +347,6 @@ special_project = {
 	}
 	
 	on_fail = {
-		end_event_chain = "subterranean_civilization_chain"
-		random_list = {
-			60 = {
-				FROM = { planet_event = { id = colony.54 } }
-			}
-			40 = {
-				FROM = { planet_event = { id = colony.59 } }
-			}
-		}
 	}
 }
 
@@ -364,7 +356,7 @@ special_project = {
 	cost = 5000
 	tech_department = engineering_technology
 	picture = GFX_evt_nuclear_explosion
-	timelimit = 2
+	timelimit = 360
 	
 	same_option_group_as = { SEISMIC_DISTURBANCE_1_PROJECT }
 	
@@ -374,18 +366,20 @@ special_project = {
 		planet_event = { id = colony.52 }
 		owner = { end_event_chain = "subterranean_civilization_chain" }
 	}
-	
+
 	on_fail = {
 		end_event_chain = "subterranean_civilization_chain"
-		if = {
-			limit = {
-				FROM = {
-					owner = {
-						is_homicidal = yes
-					}
+		random_list = {
+			60 = {
+				FROM = { planet_event = { id = colony.54 } }
+			}
+			40 = {
+				FROM = { planet_event = { id = colony.59 } }
+				modifier = {
+					factor = 0
+					owner = { is_homicidal = yes }
 				}
 			}
-			FROM = { planet_event = { id = colony.54 } }
 		}
 	}
 }
@@ -416,24 +410,10 @@ special_project = {
 	event_scope = planet_event
 	
 	on_success = {
-		if = {
-			limit = {
-				free_housing > 50
-			}
-			random_list = {
-				33 = { planet_event = { id = colony.151 } }
-				33 = { planet_event = { id = colony.152 } }
-				33 = { planet_event = { id = colony.153 } }
-			}
-		}
-		if = {
-			limit = {
-				NOT = { free_housing > 50 }
-			}
-			random_list = {
-				50 = { planet_event = { id = colony.151 } }
-				50 = { planet_event = { id = colony.153 } }
-			}
+		random_list = {
+			33 = { planet_event = { id = colony.151 } }
+			33 = { planet_event = { id = colony.152 } }
+			33 = { planet_event = { id = colony.153 } }
 		}		
 	}
 	

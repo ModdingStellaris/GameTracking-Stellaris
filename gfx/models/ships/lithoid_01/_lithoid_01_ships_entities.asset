@@ -166,6 +166,20 @@ entity = {
 	scale = 1.0
 }
 
+entity = {
+	name = "lithoid_01_turret_xl_entity"
+	pdxmesh = "lithoid_01_turret_xl_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1
+	
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
 
 
 
@@ -406,15 +420,15 @@ entity = {
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_s" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	}
 	state = { name = "moving" animation = idle
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_s" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_exhaust_moving" keep_particle = yes trigger_once = yes}		
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_s_entity" trigger_once = no life = 6.25}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_s_entity" trigger_once = no life = 6.25}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_s_entity" trigger_once = no life = 6.25}
 	}
 	attach = { medium_gun_01 = "lithoid_01_turret_connection_m_3_entity" }
 	attach = { small_gun_01 = "lithoid_01_turret_connection_s_3_entity" }
@@ -435,14 +449,14 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" animation = idle
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_s" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	}
 	state = { name = "moving" animation = idle
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" keep_particle = yes trigger_once = yes }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_s" keep_particle = yes trigger_once = yes}	
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_exhaust_moving" keep_particle = yes trigger_once = yes}	
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_s_entity" trigger_once = no life = 6.25}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_s_entity" trigger_once = no life = 6.25}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_s_entity" trigger_once = no life = 6.25}
 	}
 	attach = { small_gun_01 = "lithoid_01_turret_connection_s_3_entity" }
 	attach = { small_gun_02 = "lithoid_01_turret_connection_s_3_entity" }
@@ -588,14 +602,14 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_s" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_25_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	}
 	state = { name = "moving" state_time = 2
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_s" keep_particle = yes trigger_once = yes}
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_5_exhaust_moving" keep_particle = yes trigger_once = yes}
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_s_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_s_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_s_entity" trigger_once = no life = 2}
 	}
 	state = { name = "death" state_time = 5 }
 	
@@ -618,14 +632,14 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_s" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_25_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	}
 	state = { name = "moving" state_time = 2
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_s" keep_particle = yes trigger_once = yes}
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_5_exhaust_moving" keep_particle = yes trigger_once = yes}
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_s_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_s_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_s_entity" trigger_once = no life = 2}
 	}
 	state = { name = "death" state_time = 5 }
 	
@@ -877,7 +891,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_m" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_75_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
@@ -888,9 +902,9 @@ entity = {
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 	
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_m" keep_particle = yes trigger_once = yes}
+		event = { time = 0 node = "engine_large" particle = "lithoid_2_25_exhaust_moving" keep_particle = yes trigger_once = yes}
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_m_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 2}
 #		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_m_entity" trigger_once = no life = 2}
 	}
 	state = { name = "death" state_time = 5 }
@@ -910,7 +924,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_m" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_75_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 	}
@@ -919,9 +933,9 @@ entity = {
 	
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_m" keep_particle = yes trigger_once = yes}
+		event = { time = 0 node = "engine_large" particle = "lithoid_2_25_exhaust_moving" keep_particle = yes trigger_once = yes}
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_m_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 2}
 	}
 	state = { name = "death" state_time = 5 }
 	attach = { small_gun_01 = "lithoid_01_turret_connection_s_3_entity" }
@@ -1221,7 +1235,7 @@ entity = {
 	default_state = idle
 	state = { name = "idle" state_time = 5
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_l" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_3_exhaust_idle" keep_particle = yes trigger_once = yes}		
 		
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 	}
@@ -1229,11 +1243,11 @@ entity = {
 	
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_l" keep_particle = yes trigger_once = yes}
+		event = { time = 0 node = "engine_large" particle = "lithoid_5_exhaust_moving" keep_particle = yes trigger_once = yes}
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "thruster_curve_2_xl_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "thruster_curve_2_xl_entity" trigger_once = no life = 2}
 	}
 	state = { name = "death" state_time = 5 }
 	
@@ -1253,15 +1267,15 @@ entity = {
 	locator = { name = "base"  position = { 0 0 0 }}
 	default_state = idle
 	state = { name = "idle" state_time = 2
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_l" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_3_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	}
 	state = { name = "moving" state_time = 5
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_l" keep_particle = yes trigger_once = yes}
+		event = { time = 0 node = "engine_large" particle = "lithoid_5_exhaust_moving" keep_particle = yes trigger_once = yes}
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "thruster_curve_2_xl_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "thruster_curve_2_xl_entity" trigger_once = no life = 2}
 	}
 	state = { name = "death" state_time = 5 }
 	
@@ -1350,17 +1364,17 @@ entity = {
 	state = { name = "idle" 						animation = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "lithoid_amb_construction_ship_hum" } }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_m" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_75_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_03" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" 						animation = "idle"
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_m" keep_particle = yes trigger_once = yes}	
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_75_exhaust_moving" keep_particle = yes trigger_once = yes}	
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_m_entity" trigger_once = no life = 6.25}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 6.25}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_m_entity" trigger_once = no life = 6.25}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 6.25}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_m_entity" trigger_once = no life = 6.25}
 
 		event = { trigger_once = yes sound = { soundeffect = "lithoid_moving_out_construction" } }
 	
@@ -1370,20 +1384,20 @@ entity = {
 	}
 	state = { name = "working"						animation = "working_start"		looping = no	next_state = working_looping 
 		start_event = { trigger_once = yes sound = { soundeffect = "construction_progress_loop" } }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_m" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_75_exhaust_idle" keep_particle = yes trigger_once = yes}		
 			
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_03" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		
-		event = { time = 0 node = "bot_1_exhaust" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_2_exhaust" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_3_exhaust" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_4_exhaust" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_1_exhaust" particle = "lithoid_05_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_2_exhaust" particle = "lithoid_05_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_3_exhaust" particle = "lithoid_05_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_4_exhaust" particle = "lithoid_05_exhaust_moving" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "working_looping"				animation = "working_looping" 
 		start_event = { trigger_once = yes sound = { soundeffect = "construction_progress_loop" } }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_m" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_75_exhaust_idle" keep_particle = yes trigger_once = yes}		
 		
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
@@ -1420,10 +1434,10 @@ entity = {
 		event = { time = 25.43 node = "bot_4_welding" particle = "construction_bot_welding_effect" trigger_once = yes keep_particle = yes sound = { soundeffect = "welding_bot" } }
 		event = { time = 34.16 node = "bot_4_welding" particle = "construction_bot_welding_effect" trigger_once = yes keep_particle = yes sound = { soundeffect = "welding_bot" } }
 		
-		event = { time = 0 node = "bot_1_exhaust" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_2_exhaust" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_3_exhaust" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_4_exhaust" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_1_exhaust" particle = "lithoid_05_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_2_exhaust" particle = "lithoid_05_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_3_exhaust" particle = "lithoid_05_exhaust_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_4_exhaust" particle = "lithoid_05_exhaust_moving" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death"							animation = "idle" looping = no
 		event = { time = 0.0 node = "cons_explosion_locator1" particle = "lithoid_ship_explosion_s_effect" sound = { soundeffect = ship_destroyed } }
@@ -1479,7 +1493,7 @@ entity = {
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_03" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_m" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_2_exhaust_idle" keep_particle = yes trigger_once = yes}		
 		start_event = { trigger_once = yes sound = { soundeffect = "lithoid_amb_colony_ship_hum" } }
 	}
 	state = { name = "moving" state_time = 2
@@ -1487,10 +1501,10 @@ entity = {
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_03" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_m" keep_particle = yes trigger_once = yes}	
+		event = { time = 0 node = "engine_large" particle = "lithoid_3_wide_exhaust_moving" keep_particle = yes trigger_once = yes}	
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_m_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_m_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_m_entity" trigger_once = no life = 2}
 
 		event = { trigger_once = yes sound = { soundeffect = "lithoid_moving_out_colony_ship" } }
 	}
@@ -1545,7 +1559,7 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "lithoid_amb_science_ship" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "lithoid_amb_science_pulsar" } }
 		
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_m" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_75_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
@@ -1558,7 +1572,8 @@ entity = {
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_03" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_science_exhaust" trigger_once = yes keep_particle = yes }
+#		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_science_exhaust" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large" particle = "lithoid_5_exhaust_moving" trigger_once = yes keep_particle = yes }
 
 	}
 	state = { name = "death" chance = 1 looping = no state_time = 10
@@ -1643,7 +1658,7 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_idle_m" keep_particle = yes trigger_once = yes}		
+		event = { time = 0 node = "engine_large" particle = "lithoid_1_75_exhaust_idle" keep_particle = yes trigger_once = yes}		
 	
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
@@ -1652,10 +1667,10 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "lithoid_amb_transport_ship_hum" } }
 	}
 	state = { name = "moving" state_time = 2
-		event = { time = 0 node = "engine_large" particle = "lithoid_01_ship_exhaust_m" keep_particle = yes trigger_once = yes}	
+		event = { time = 0 node = "engine_large" particle = "lithoid_2_5_wide_exhaust_moving" keep_particle = yes trigger_once = yes}	
 		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_m_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 2}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_m_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 2}
+#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_m_entity" trigger_once = no life = 2}
 	
 		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
@@ -1769,6 +1784,60 @@ entity = {
 		shader_type = ship
 		emissive_recolor_crunch = 2.0
 	}
+}
+
+entity = {
+	name = "lithoid_01_upgraded_orbital_habitat_entity"
+	locator = { name = part1 }
+	locator = { name = explosion_effect position = { 0 3 0 } }
+	
+	scale = 1.5
+	
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" state_time = 5 }
+	state = { name = "construction" state_time = 5 }
+	
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 node = "explosion_effect" particle = "lithoid_large_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 5.0
+	}
+	
+	attach = { name = "station" part1 = "lithoid_01_upgraded_orbital_habitat_section_entity" }
+}
+
+entity = {
+	name = "lithoid_01_upgraded_orbital_habitat_section_entity"
+	pdxmesh = "lithoid_01_upgraded_orbital_habitat_mesh"	
+	
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" animation = "idle" animation_speed = 0.3 propagate_state = { effect = idle }
+		start_event = { trigger_once = yes sound = { soundeffect = "habitat_station_hum" } }
+	}
+	
+	state = { name = "construction" animation = "idle" animation_speed = 0.0 }
+	
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "explosion_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.2 node = "explosion_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 2.0 node = "explosion_locator_03" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.5 node = "explosion_locator_04" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.7 node = "explosion_locator_05" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 4.2 node = "explosion_locator_06" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 4.7 node = "explosion_locator_07" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+	}
+	
+	attach = { name = effect "inner_section" = "lithoid_01_starbase_core_entity"	}	
+		
+	#locator = { name = "medium_gun_01"	position = { 0 0 0 } }
+	#locator = { name = "medium_gun_02"	position = { 0 0 0 } }
+	#locator = { name = "small_gun_01"	position = { 0 0 0 } }
+	#locator = { name = "small_gun_02"	position = { 0 0 0 } }
+	#locator = { name = "small_gun_03"	position = { 0 0 0 } }
+	#locator = { name = "small_gun_04"	position = { 0 0 0 } }
 }
 
 
@@ -2063,4 +2132,44 @@ entity = {
 		}
 	scale = 1.4
 }
+##################         	 METEOR ENTITIES         	  ########################
 
+entity = {
+	name = "lithoid_01_meteor_colonyship_entity"
+	pdxmesh = "asteroid_ship_mesh"
+	
+	locator = { name = part1 }
+
+	default_state = "idle"
+		state = { name = "idle"  state_time = 2		
+			event = { time = 0 node = "part1" particle = "lithoid_01_meteor_ship_idle_effect" trigger_once = yes keep_particle = yes }
+			event = { sound = { soundeffect = "amb_astroid_fields" } }
+		}
+	#state = { name = "idle" animation = "idle" time_offset = { 0 100 } }
+	
+		state = { name = "moving" state_time = 2.5
+		looping = no next_state = "moving_2" chance = 1
+			event = { time = 0 node = "part1" particle = "lithoid_01_meteor_ship_trail_effect" trigger_once = yes keep_particle = yes }
+		}
+	
+		state = { name = "moving_2" state_time = 1.5
+			event = { time = 0 node = "part1" particle = "lithoid_01_meteor_ship_trail_2_effect" trigger_once = yes keep_particle = yes }
+	}
+	
+	state = { name = "colonization" state_time = 1.5
+			event = { time = 0 node = "part1" particle = "lithoid_01_meteor_ship_colonization_effect" trigger_once = yes keep_particle = yes }
+	}
+	scale = 0.5
+}
+
+entity = {
+	name = "lithoid_01_meteor_colonyship_empty_entity"
+
+	default_state = "idle"
+		state = { name = "idle"  state_time = 2		
+
+		}
+
+	
+	scale = 0.5
+}

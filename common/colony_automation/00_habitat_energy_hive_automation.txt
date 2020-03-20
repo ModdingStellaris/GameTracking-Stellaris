@@ -29,10 +29,10 @@ automate_habitat_energy_hive_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_research_lab_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -56,10 +56,10 @@ automate_habitat_energy_hive_planet = {
 		}
 
 		6 = {
-			building = building_maintenance_depot
+			building = building_hive_warren
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					hive_warren_upkeep_affordable = yes
 				}
 			}
 		}
@@ -92,19 +92,19 @@ automate_habitat_energy_hive_planet = {
 		}
 
 		10 = {
-			building = building_maintenance_depot
+			building = building_refinery
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					refinery_upkeep_affordable = yes
 				}
 			}
 		}
 
 		11 = {
-			building = building_maintenance_depot
+			building = building_foundry_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					foundry_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -146,10 +146,10 @@ automate_habitat_energy_hive_planet = {
 		}
 
 		16 = {
-			building = building_maintenance_depot
+			building = building_hive_node
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					hive_node_upkeep_affordable = yes
 				}
 			}
 		}

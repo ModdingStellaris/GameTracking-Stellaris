@@ -1,15 +1,13 @@
 ﻿Greetings!
 
-Stellaris has (once again) undergone bold changes! In 2.2 the focus of the changes has been to rework how you develop planets and to deepen the game's economy. The purpose is to make the management of planets more fun and engaging.
+Stellaris has been updated!
 
-Tiles are gone, and have been replaced with Districts, Buildings, and Jobs. You will now instead construct City Districts, Farming Districts, Mining Districts, and Generator Districts, as well as various Buildings with more specialized roles. Districts and buildings provide Jobs, and a job worked by a Pop will produce resources.
+There is now a Galactic Community which can be formed once enough empires have established communications with each other. You will be able to use your diplomatic clout to pass resolutions that may aid your cause or to weaken your enemies.
 
-As a planet gains more Pops it will unlock more Building Slots. Buildings work similar to how they did before, but now most of them provide Jobs instead of producing resources directly.
+Federations have been reworked, and can now level up and unlock new perks. You will need to maintain your Federation's Cohesion in order to gain experience.
 
-2.2 also introduces a new Trade Route system. What you essentially want to do is to collect Trade Value (found in space and produced on planets) by upgrading a nearby starbase. You should then set up a Trade Route leading back to your home system. Trade Value is converted into usable resources when it reaches your Trade Capital.
-
-We recommend you to take a look at the updated tutorial!
+Envoys have been introduced to the game, and they allow you to perform certain diplomatic actions such as Improve Relations. Envoys can also be assigned to your Federation in order to improve Cohesion, or to the Galactic Community in order to increase your diplomatic clout.
 
 ---
 
-Due to the size and scope of the changes, saved games from previous versions will not be compatible with version 2.2. If you wish to continue your old save in version 2.2, follow the forum link below and read the thread "How to revert Stellaris to a previous version."
+Saved games from previous versions may not be compatible with version 2.6. If you wish to continue your old save in version 2.2, follow the forum link below and read the thread "How to revert Stellaris to a previous version."

@@ -31,19 +31,19 @@ automate_hiveworld_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_energy_grid
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					energy_grid_upkeep_affordable = yes
 				}
 			}
 		}
 
 		4 = {
-			building = building_energy_grid
+			building = building_hive_warren
 			available = {
 				owner = {
-					energy_grid_upkeep_affordable = yes
+					hive_warren_upkeep_affordable = yes
 				}
 			}
 		}
@@ -148,10 +148,10 @@ automate_hiveworld_planet = {
 		}
 
 		16 = {
-			building = building_maintenance_depot
+			building = building_refinery
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					refinery_upkeep_affordable = yes
 				}
 			}
 		}

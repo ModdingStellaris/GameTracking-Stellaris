@@ -1,8 +1,9 @@
-#####################
-# Primitive buildings
-#####################
+###########################
+# Fallen Empire buildings #
+###########################
 
 building_ancient_control_center = {
+	base_buildtime = @b3_time
 	capital = yes
 	can_build = no
 	can_demolish = yes
@@ -17,14 +18,21 @@ building_ancient_control_center = {
 		building_hive_major_capital
 		building_machine_major_capital
 		building_major_capital
+		building_ancient_palace
 	}
 
 	planet_modifier = {
+		planet_housing_add = 12
+		planet_amenities_add = 12
+		job_fe_maintenance_bot_add = 4
 		job_fe_guardian_bot_add = 5
 	}
 
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = 10
 		}
@@ -39,7 +47,7 @@ building_ancient_control_center = {
 }
 
 building_ancient_palace = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	capital = yes
 	can_build = no
 	can_demolish = yes
@@ -54,6 +62,12 @@ building_ancient_palace = {
 		building_hive_major_capital
 		building_machine_major_capital
 		building_major_capital
+		building_ancient_control_center
+	}
+
+	planet_modifier = {
+		planet_housing_add = 12
+		planet_amenities_add = 12
 	}
 
 	triggered_planet_modifier = {
@@ -80,6 +94,9 @@ building_ancient_palace = {
 
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = 10
 		}
@@ -93,8 +110,83 @@ building_ancient_palace = {
 	}	
 }
 
+
+# Habitat Administration
+building_hab_fe_capital = {
+	base_buildtime = @b2_time
+	capital = yes
+	can_build = no
+	can_demolish = yes
+	icon = building_capital
+
+	potential = {
+		is_planet_class = pc_habitat
+		exists = owner
+		owner = { is_fallen_empire = yes }
+	}
+
+	convert_to = {
+		building_hab_major_capital
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+		planet_amenities_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = no }
+			owner = { is_fallen_machine_empire = no }
+		}
+		modifier = {
+			job_fe_overseer_add = 1
+			job_fe_protector_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_sky_cardinal_add = 1
+			job_fe_protector_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_machine_empire = yes }
+		}
+		job_fe_guardian_bot_add = 2
+		job_fe_maintenance_bot_add = 1
+	}
+
+	upgrades = {
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+
 building_affluence_center = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = yes
 	can_demolish = yes
 	icon = building_hyper_entertainment_forum
@@ -116,6 +208,9 @@ building_affluence_center = {
 		category = planet_buildings
 		produces = {
 			consumer_goods = 50
+		}
+		cost = {
+			minerals = @b3_minerals
 		}
 		upkeep = {
 			minerals = 25
@@ -140,7 +235,7 @@ building_affluence_center = {
 }
 
 building_nourishment_center = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = yes
 	can_demolish = yes
 	icon = building_food_processing_center
@@ -166,6 +261,9 @@ building_nourishment_center = {
 		produces = {
 			food = 100
 		}
+		cost = {
+			minerals = @b3_minerals
+		}
 		upkeep = {
 			energy = 20
 		}
@@ -188,6 +286,7 @@ building_nourishment_center = {
 }
 
 building_dimensional_fabricator = {
+	base_buildtime = @b2_time
 	can_build = yes
 	can_demolish = yes
 	icon = building_nanite_transmuter
@@ -212,9 +311,9 @@ building_dimensional_fabricator = {
 		category = planet_buildings
 		produces = {
 			minerals = 100
-			rare_crystals = 2
-			exotic_gases = 2
-			volatile_motes = 2			
+			rare_crystals = @b3_rare_upkeep
+			exotic_gases = @b3_rare_upkeep
+			volatile_motes = @b3_rare_upkeep			
 		}
 		produces = {
 			trigger = {
@@ -224,7 +323,10 @@ building_dimensional_fabricator = {
 			sr_zro = 2
 			sr_dark_matter = 2
 			sr_living_metal = 2
-		}#Fixed fallen empire being unable to build new ships.
+		} 	# Fixed Fallen Empire being unable to build new ships.
+		cost = {
+			minerals = @b3_minerals
+		}
 		upkeep = {
 			energy = 20
 		}
@@ -248,7 +350,7 @@ building_dimensional_fabricator = {
 
 
 building_class_4_singularity = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = yes
 	can_demolish = yes
 	
@@ -270,6 +372,9 @@ building_class_4_singularity = {
 
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
 		produces = {
 			energy = 250
 		}
@@ -292,7 +397,7 @@ building_class_4_singularity = {
 }
 
 building_nano_forge = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = yes
 	can_demolish = yes
 	
@@ -317,6 +422,9 @@ building_nano_forge = {
 		produces = {
 			alloys = 25
 		}
+		cost = {
+			minerals = @b3_minerals
+		}
 		upkeep = {
 			minerals = 50
 			energy = 10
@@ -340,7 +448,7 @@ building_nano_forge = {
 }
 
 building_master_archive = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = no
 	can_demolish = yes
 	
@@ -362,6 +470,9 @@ building_master_archive = {
 			society_research = 100
 			engineering_research = 100
 		}
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = 20
 		}
@@ -372,7 +483,7 @@ building_master_archive = {
 }
 
 building_empyrean_shrine = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = no
 	can_demolish = yes
 	icon = building_citadel_of_faith
@@ -391,7 +502,10 @@ building_empyrean_shrine = {
 	}
 
 	resources = {
-		category = planet_buildings	
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}	
 		upkeep = {
 			energy = 10
 		}
@@ -402,7 +516,7 @@ building_empyrean_shrine = {
 }
 
 building_ancient_cryo_chamber = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = no
 	can_demolish = yes
 	
@@ -416,6 +530,9 @@ building_ancient_cryo_chamber = {
 
 	resources = {
 		category = planet_buildings	
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = 20
 		}
@@ -426,7 +543,7 @@ building_ancient_cryo_chamber = {
 }
 
 building_fe_xeno_zoo = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	capital = yes
 	can_build = no
 	can_demolish = yes
@@ -452,7 +569,10 @@ building_fe_xeno_zoo = {
 	}
 
 	resources = {
-		category = planet_buildings	
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
 		upkeep = {
 			energy = 10
 		}
@@ -463,7 +583,7 @@ building_fe_xeno_zoo = {
 }
 
 building_fe_dome = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = yes
 	icon = building_paradise_dome
 	
@@ -487,6 +607,9 @@ building_fe_dome = {
 	
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = 10
 		}
@@ -506,6 +629,7 @@ building_fe_dome = {
 }
 
 building_fe_stronghold = {
+	base_buildtime = @b2_time
 	can_build = no
 	icon = building_fortress
 	
@@ -523,7 +647,10 @@ building_fe_stronghold = {
 	}
 
 	resources = {
-		category = planet_buildings	
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = 10
 		}

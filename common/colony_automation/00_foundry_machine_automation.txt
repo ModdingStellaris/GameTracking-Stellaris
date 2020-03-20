@@ -38,10 +38,10 @@ automate_foundry_machine_planet = {
 		}
 
 		4 = {
-			building = building_maintenance_depot
+			building = building_foundry_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					foundry_1_upkeep_affordable = yes
 				}
 			}
 		}

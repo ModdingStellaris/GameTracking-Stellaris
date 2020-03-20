@@ -2,10 +2,13 @@
 ### Created by Henrik Thyrwall
 
 HUMAN3 = {
+
+	category = "Humanoid"
 	
 	language = "l_simp_chinese"
 
 	randomized = no
+	
 	alias = "Human3"
 
 	ship_names = {
@@ -32,6 +35,10 @@ HUMAN3 = {
 
 		colossus = {
 			"罗马治世" "无敌者索尔" "冥神帝乌斯"
+		}
+		
+		juggernaut = {
+			"阿卡 劳伦缇雅"帝皇浮士德勒母狼"大元帅" "最佳元首"
 		}
 		
 		science = {

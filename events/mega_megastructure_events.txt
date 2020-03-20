@@ -283,9 +283,6 @@ ship_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_ruined_matter_decompressor }
-		}
 		FROM = {
 			has_star_flag = ruined_matter_decompressor_system
 			any_system_megastructure = { is_megastructure_type = matter_decompressor_ruined }
@@ -294,7 +291,6 @@ ship_event = {
 	
 	immediate = {
 		FROM = { save_event_target_as = matter_decompressor_system }
-		owner = { set_country_flag = encountered_ruined_matter_decompressor }
 	}		
 	
 	option = {
@@ -372,9 +368,6 @@ ship_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_ruined_strategic_coordination_center }
-		}
 		FROM = {
 			has_star_flag = ruined_strategic_coordination_center_system
 			any_system_megastructure = { is_megastructure_type = strategic_coordination_center_ruined }
@@ -383,7 +376,6 @@ ship_event = {
 	
 	immediate = {
 		FROM = { save_event_target_as = strategic_coordination_center_system }
-		owner = { set_country_flag = encountered_ruined_strategic_coordination_center }
 	}		
 	
 	option = {
@@ -459,9 +451,6 @@ ship_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_ruined_mega_art_installation }
-		}
 		FROM = {
 			has_star_flag = ruined_mega_art_installation_system
 			any_system_megastructure = { is_megastructure_type = mega_art_installation_restored }
@@ -470,7 +459,6 @@ ship_event = {
 	
 	immediate = {
 		FROM = { save_event_target_as = mega_art_installation_system }
-		owner = { set_country_flag = encountered_ruined_mega_art_installation }
 	}		
 	
 	option = {
@@ -546,9 +534,6 @@ ship_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = encountered_ruined_interstellar_assembly }
-		}
 		FROM = {
 			has_star_flag = ruined_interstellar_assembly_system
 			any_system_megastructure = { is_megastructure_type = interstellar_assembly_ruined }
@@ -557,7 +542,6 @@ ship_event = {
 	
 	immediate = {
 		FROM = { save_event_target_as = interstellar_assembly_system }
-		owner = { set_country_flag = encountered_ruined_interstellar_assembly }
 	}		
 	
 	option = {

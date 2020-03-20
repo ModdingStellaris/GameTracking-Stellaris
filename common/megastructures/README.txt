@@ -13,7 +13,7 @@
 #	build_cost = {
 #		minerals = 8
 #		energy = 13
-#		influcence = 21
+#		influence = 21
 #	}
 #	monthly_production = {
 #		energy = 34

@@ -31,10 +31,10 @@ automate_refinery_hive_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_chemical_plant
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					chemical_plant_upkeep_affordable = yes
 				}
 			}
 		}
@@ -85,10 +85,10 @@ automate_refinery_hive_planet = {
 		}
 
 		9 = {
-			building = building_maintenance_depot
+			building = building_crystal_plant
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					crystal_plant_upkeep_affordable = yes
 				}
 			}
 		}

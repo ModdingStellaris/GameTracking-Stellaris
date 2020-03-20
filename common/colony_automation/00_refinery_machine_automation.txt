@@ -31,10 +31,10 @@ automate_refinery_machine_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_refinery
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					refinery_upkeep_affordable = yes
 				}
 			}
 		}
@@ -85,10 +85,10 @@ automate_refinery_machine_planet = {
 		}
 
 		9 = {
-			building = building_maintenance_depot
+			building = building_simulation_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					simulation_1_upkeep_affordable = yes
 				}
 			}
 		}

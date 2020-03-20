@@ -193,6 +193,15 @@
  PRESCRIPTED_ruler_title_hazbuzan: "Chief Executive"
  PRESCRIPTED_ruler_title_hazbuzan_female: "Chief Executive"
  PRESCRIPTED_ship_prefix_hazbuzan: "HZB"
+ PRESCRIPTED_species_name_khennet: "Khennet"
+ PRESCRIPTED_species_plural_khennet: "Khennet'e"
+ PRESCRIPTED_species_adjective_khennet: "Khennet'an"
+ PRESCRIPTED_adjective_khennet: "Khennet'na"
+ PRESCRIPTED_planet_name_khennet: "Ave'bonn"
+ PRESCRIPTED_system_name_khennet: "Barra Lhonn"
+ PRESCRIPTED_ruler_name_khennet: "J'hem Vhaawr"
+ PRESCRIPTED_ruler_title_khennet: "Archdruid"
+ PRESCRIPTED_ship_prefix_khennet: "KAV"
 
 
  #PRESCRIPTED_species_name_: ""

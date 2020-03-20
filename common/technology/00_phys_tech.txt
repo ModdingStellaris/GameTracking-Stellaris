@@ -22,6 +22,8 @@ tech_basic_science_lab_2 = {
 	prerequisites = { "tech_basic_science_lab_1" }
 	weight = @tier1weight3
 
+	# unlocks upgraded labs
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -59,8 +61,53 @@ tech_basic_science_lab_3 = {
 	prerequisites = { "tech_basic_science_lab_2" "tech_colonial_centralization" }
 	weight = @tier3weight1
 
+	# unlocks 2nd upgraded labs
+
 	weight_modifier = {
 		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+tech_global_research_initiative = {
+	area = physics
+	tier = 3
+	cost = @tier3cost1
+	category = { computing }
+	prerequisites = { "tech_basic_science_lab_2" "tech_colonial_centralization" }
+	weight = @tier3weight1
+
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_computing"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -111,6 +158,14 @@ tech_curator_lab = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_curator_lab }
+			}
+		}
+		modifier = {
 			factor = 0
 			NOR = {
 				research_leader = {
@@ -152,6 +207,14 @@ tech_archeology_lab_ancrel = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_archeology_lab_ancrel }
+			}
 		}
 		modifier = {
 			factor = 3
@@ -547,49 +610,6 @@ tech_physics_3 = {
 
 	ai_weight = {
 		weight = 10
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
-		}
-	}
-}
-
-tech_global_research_initiative = {
-	area = physics
-	tier = 3
-	cost = @tier3cost1
-	category = { computing }
-	prerequisites = { "tech_physics_1" "tech_colonial_centralization" }
-	weight = @tier3weight1
-
-	weight_modifier = {
-		factor = 1.5
-		modifier = {
-			factor = 0.25
-			NOR = {
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_computing"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_curator"
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
-		}
-	}
-
-	ai_weight = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -1031,6 +1051,14 @@ tech_combat_computers_3 = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_combat_computers_3 }
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
@@ -1098,6 +1126,14 @@ tech_combat_computers_autonomous = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_combat_computers_autonomous }
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -1214,6 +1250,96 @@ tech_synchronized_defences = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_synchronized_defences }
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+tech_consumer_good_refinement_1 = {
+	cost = @tier3cost1
+	area = physics
+	tier = 2
+	category = { computing }
+	prerequisites = { "tech_luxuries_1" "tech_administrative_ai" }
+	weight = @tier2weight1
+
+	modifier = {
+		planet_artisans_produces_mult = 0.10
+	}
+
+	potential = {
+		OR = {
+			is_gestalt = no
+			has_valid_civic = civic_machine_servitor
+		}
+	}
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+tech_consumer_good_refinement_2 = {
+	cost = @tier3cost1
+	area = physics
+	tier = 4
+	category = { computing }
+	prerequisites = { "tech_luxuries_2" "tech_consumer_good_refinement_1" "tech_self_aware_logic" }
+	weight = @tier4weight1
+
+	modifier = {
+		planet_artisans_produces_mult = 0.10
+	}
+
+	potential = {
+		OR = {
+			is_gestalt = no
+			has_valid_civic = civic_machine_servitor
+		}
+	}
+
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
 		}
 	}
 
@@ -1711,6 +1837,14 @@ tech_planetary_shield_generator = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_planetary_shield_generator }
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -2214,6 +2348,14 @@ tech_wormhole_stabilization = {
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_wormhole_stabilization }
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
@@ -2291,6 +2433,14 @@ tech_jump_drive_1 = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_jump_drive_1 }
+			}
 		}
 		modifier = {
 			factor = 1.25

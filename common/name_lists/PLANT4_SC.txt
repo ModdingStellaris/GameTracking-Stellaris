@@ -3,6 +3,8 @@
 ### Latin plant names theme
 PLANT4 = {	
 	### SHIPS
+	
+	category = "Plantoid"
 
 	language = "l_simp_chinese"
 	
@@ -34,6 +36,10 @@ PLANT4 = {
 
 		colossus = { 
 			"兰西 尤拉斯" "兰西 伊卡侬" "兰西 欧武思" "兰西 维克托" "兰西 埃瓦里斯" "兰西 亚克托" "兰西 乌拉" "泽莫·卡· 劳伦斯"
+		}
+		
+		juggernaut = {
+			"乌默尔·杰·弗洛林" "乌默尔·杰·欧肯提斯" "乌默尔·杰·荣特" "乌默尔·杰·伏热汀"
 		}
 		
 		science = {

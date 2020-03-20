@@ -48,7 +48,7 @@
  anomaly.4000.name:0 "Życie zawsze sobie radzi"
  anomaly.4000.desc:0 "[From.GetName]: Część tamtejszej flory wykształciła w procesie selekcji naturalnej skuteczne mechanizmy obronne. Liczne drzewa i grzyby wytwarzają zarodniki działające na organizmy nieroślinne jak §Ysilne kwasy§!. Na szczęście oficer naukowy [Root.GetLeaderName] zna sposób §Yprzeciwdziałania§! efektom wywoływanym przez niektóre szczepy tych zarodników, dzięki czemu tamtejsze lasy są dla nas mniej groźne!"
  anomaly.4000.a.tooltip:0 "[From.GetName] dostaje modyfikator §Yżrące dżungle§!:\n£blocker£ trujące bagno §R+3§!\n£society£ §G+2§!"
- anomaly.4005.name:0 "Na barkach gigantów"
+ anomaly.4005.name:1 "Fragmenty życia"
  anomaly.4005.desc:1 "Zdaje się, że asteroida [From.GetName] i otaczające ją szczątki pochodzą z nieistniejącej już planety!\n\nGłęboko w asteroidach możemy znaleźć ślady niezwykle cennych stopów. Znaleźliśmy też ślady życia bakteryjnego, które wymarło w kosmicznej próżni. To wskazuje, że na tym ciele niebieskim istniało kiedyś życie."
  anomaly.4005.a.tooltip:2 "[From.GetName] otrzymuje modyfikator §Ydawnej planety§! - \n£alloys£ §G+3§!"
  anomaly.4010.name:0 "Zagubieni w kosmosie"

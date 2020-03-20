@@ -3,6 +3,8 @@
 
 MAM3 = {
 
+	category = "Mammalian"
+
 	language = "l_simp_chinese"
 	
 	ship_names = {

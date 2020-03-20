@@ -47,10 +47,10 @@ automate_capital_machine_planet = {
 		}
 
 		5 = {
-			building = building_maintenance_depot
+			building = building_drone_storage
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					drone_storage_upkeep_affordable = yes
 				}
 			}
 		}
@@ -119,10 +119,10 @@ automate_capital_machine_planet = {
 		}
 
 		13 = {
-			building = building_maintenance_depot
+			building = building_simulation_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					simulation_1_upkeep_affordable = yes
 				}
 			}
 		}

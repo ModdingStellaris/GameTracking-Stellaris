@@ -23,9 +23,6 @@ country_event = {
 		random_rim_system = {
 			limit = {
 				NOR = {
-					#any_ship_in_system = {
-					#	exists = owner
-					#}
 					any_playable_country = {
 						intel_level = {
 							level > low

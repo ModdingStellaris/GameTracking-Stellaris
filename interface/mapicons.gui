@@ -153,7 +153,7 @@ guiTypes = {
 		iconType = {
 			name ="type"
 			spriteType = "GFX_ship_class_small"
-			position = { x = 98 y = 2 }
+			position = { x = 99 y = 2 }
 			alwaysTransparent = yes
 			#scale = 0.75
 		}
@@ -667,6 +667,12 @@ guiTypes = {
 			position = { x = 13 y = -16 }
 		}
 
+		iconType = {
+			name = "debug_ai_strategy"
+			quadTextureSprite = "GFX_debug_ai_strategy"
+			position = { x = 0 y = -20 }
+		}
+
 		### research icons
 
 		containerWindowType = {
@@ -776,7 +782,7 @@ guiTypes = {
 		iconType = {
 			name ="type"
 			spriteType = "GFX_ship_class_small"
-			position = { x = 4 y = 2 }
+			position = { x = 5 y = 2 }
 			alwaysTransparent = yes
 			#scale = 0.75
 		}
@@ -829,7 +835,7 @@ guiTypes = {
 		iconType = {
 			name ="type"
 			spriteType = "GFX_ship_class_small"
-			position = { x = 4 y = 2 }
+			position = { x = 5 y = 2 }
 			alwaysTransparent = yes
 			#scale = 0.75
 		}

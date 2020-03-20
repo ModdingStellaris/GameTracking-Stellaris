@@ -3,7 +3,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_at_federation_with_bg"
 		textureFile = "gfx/interface/waroverview/at_federation_with_bg.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 	}
 	
 	spriteType = {

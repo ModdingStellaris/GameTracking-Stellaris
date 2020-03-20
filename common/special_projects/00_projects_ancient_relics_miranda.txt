@@ -48,7 +48,7 @@
 #	from = project creation scope (usually equals location)
 
 special_project = {
-	key = "RUBRICATOR_SPACECRAFT"
+	key = RUBRICATOR_SPACECRAFT
 	event_chain = "rubricator_chain"
 	cost = 0
 	days_to_research = 90
@@ -65,6 +65,114 @@ special_project = {
 	
 	on_success = {
 		ship_event = { id = ancrel.4011 }
+	}
+	
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = DESTROY_SENTINELS
+	cost = 1000
+	tech_department = engineering_technology
+	picture = GFX_evt_archaeological_dig #TODO
+	location = no
+
+	event_scope = planet_event
+	
+	on_success = {
+		if = {
+			limit = {
+				has_planet_flag = destroy_sentinels
+			}
+			planet_event = { id = ancrel.4055 }
+		}
+		if = {
+			limit = {
+				has_planet_flag = investigate_sentinels
+			}
+			planet_event = { id = ancrel.4058 }
+		}
+		if = {
+			limit = {
+				has_planet_flag = dismantle_sentinels
+			}
+			planet_event = { id = ancrel.4058 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = SECRET_TOMB
+	days_to_research = 180
+	tech_department = engineering_technology
+	picture = GFX_evt_archaeological_dig #TODO
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+	
+	on_success = {
+		if = {
+			limit = {
+				FROM = { NOT = { has_planet_flag = sentinels_purged } }
+			}
+			ship_event = { id = ancrel.4056 }
+		}
+		if = {
+			limit = {
+				FROM = { has_planet_flag = sentinels_purged }
+			}
+			ship_event = { id = ancrel.4076 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = REPLICATE_THE_EVERMORE
+	days_to_research = 200
+	tech_department = engineering_technology
+	picture = GFX_evt_archaeological_dig #TODO
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+	
+	on_success = {
+		ship_event = { id = ancrel.4061 }
+	}
+	
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = REPURPOSE_THE_EVERMORE
+	days_to_research = 200
+	tech_department = engineering_technology
+	picture = GFX_evt_archaeological_dig #TODO
+
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+	
+	on_success = {
+		ship_event = { id = ancrel.4077 }
 	}
 	
 	on_fail = {

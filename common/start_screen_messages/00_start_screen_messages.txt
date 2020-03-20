@@ -169,8 +169,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -184,8 +184,8 @@ part = {
 		has_government = gov_plutocratic_oligarchy
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -199,8 +199,8 @@ part = {
 		has_government = gov_representative_democracy
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -218,8 +218,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -236,8 +236,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -251,8 +251,8 @@ part = {
 		has_government = gov_theocratic_republic
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -270,8 +270,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -285,8 +285,8 @@ part = {
 		has_government = gov_military_commissariat
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -304,8 +304,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -319,8 +319,8 @@ part = {
 		has_government = gov_assembly_of_clans
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -337,8 +337,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -352,8 +352,8 @@ part = {
 		has_government = gov_irenic_monarchy
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -370,8 +370,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -385,8 +385,8 @@ part = {
 		has_government = gov_moral_democracy
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -400,8 +400,8 @@ part = {
 		has_government = gov_celestial_empire
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -418,8 +418,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -433,8 +433,8 @@ part = {
 		has_government = gov_executive_committee
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -448,8 +448,8 @@ part = {
 		has_government = gov_direct_democracy
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -466,8 +466,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -481,8 +481,8 @@ part = {
 		has_government = gov_science_directorate
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -496,8 +496,8 @@ part = {
 		has_government = gov_rational_consensus
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -511,8 +511,8 @@ part = {
 		has_government = gov_trade_league
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -526,8 +526,8 @@ part = {
 		has_government = gov_megacorporation
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -541,8 +541,8 @@ part = {
 		has_government = gov_megachurch
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -556,8 +556,8 @@ part = {
 		has_government = gov_criminal_syndicate
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -571,8 +571,8 @@ part = {
 		has_government = gov_subversive_cult
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -586,8 +586,8 @@ part = {
 		has_government = gov_communal_parity
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -604,8 +604,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -624,8 +624,8 @@ part = {
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
-			has_civic = civic_post_apocalyptic
-			has_civic = civic_life_seeded
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
 		}
 	}
 }
@@ -726,7 +726,7 @@ part = {
 	localization = "START_SCREEN_POST_APOCALYPTIC"
 
 	trigger = {
-		has_civic = civic_post_apocalyptic
+		has_origin = origin_post_apocalyptic
 		NOT = { has_country_flag = custom_start_screen }
 	}
 }
@@ -737,7 +737,7 @@ part = {
 	localization = "START_SCREEN_POST_LIFE_SEEDED"
 
 	trigger = {
-		has_civic = civic_life_seeded
+		has_origin = origin_life_seeded
 		NOT = { has_country_flag = custom_start_screen }
 	}
 }
@@ -755,6 +755,139 @@ part = {
 			has_authority = auth_hive_mind
 			has_authority = auth_machine_intelligence
 		}
+	}
+}
+
+### Origins - Placed before the pre-scripted empires as only the first valid one is chosen.
+
+# Void Dwellers
+part = {
+	location = 0
+	localization = "START_SCREEN_VOID_DWELLERS"
+	
+	trigger = {
+		has_origin = origin_void_dwellers
+	}
+}
+
+# Shattered Ring 
+part = {
+	location = 0
+	localization = "START_SCREEN_SRW"
+	
+	trigger = {
+		has_origin = origin_shattered_ring
+	}
+}
+
+# Remnants
+part = {
+	location = 0
+	localization = "START_SCREEN_REMNANTS"
+	
+	trigger = {
+		has_origin = origin_remnants
+	}
+}
+
+# Tree of Life
+part = {
+	location = 0
+	localization = "START_SCREEN_TREE"
+	
+	trigger = {
+		has_origin = origin_tree_of_life
+	}
+}
+
+# Lithoid Origin
+part = {
+	location = 0
+	localization = "START_SCREEN_LITHOID"
+	
+	trigger = {
+		has_origin = origin_lithoid
+	}
+}
+
+# Scion
+part = {
+	location = 0
+	localization = "START_SCREEN_SCION"
+	
+	trigger = {
+		has_origin = origin_scion
+	}
+}
+
+### # Eldest Sibling
+### part = {
+### 	location = 0
+### 	localization = "START_SCREEN_ELDEST_SIBLING"
+### 	
+### 	trigger = {
+### 		has_origin = origin_eldest_sibling
+### 	}
+### }
+
+# On the Shoulders of Giants
+part = {
+	location = 0
+	localization = "START_SCREEN_SHOULDERS_OF_GIANTS"
+	
+	trigger = {
+		has_origin = origin_shoulders_of_giants
+	}
+}
+
+# Galactic Doorstep 
+part = {
+	location = 0
+	localization = "START_SCREEN_GALACTIC_DOORSTEP"
+	
+	trigger = {
+		has_origin = origin_galactic_doorstep
+	}
+}
+
+# Common Ground
+part = {
+	location = 0
+	localization = "START_SCREEN_COMMON_GROUND"
+	
+	trigger = {
+		has_origin = origin_common_ground
+	}
+}
+
+# Hegemon
+part = {
+	location = 0
+	localization = "START_SCREEN_HEGEMON"
+	
+	trigger = {
+		has_origin = origin_hegemon
+	}
+}
+
+# Doomsday
+part = {
+	location = 0
+	localization = "START_SCREEN_DOOMSDAY"
+	
+	trigger = {
+		has_origin = origin_doomsday
+	}
+}
+
+# Lost Colony
+part = {
+	location = 0
+	localization = "START_SCREEN_LOST_COLONY"
+	
+	trigger = {
+		has_origin = origin_lost_colony
+		NOT = { has_country_flag = human_2 }
 	}
 }
 

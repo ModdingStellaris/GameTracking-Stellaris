@@ -172,6 +172,51 @@ guiTypes = {
 			text_color_code = "E"
 			scrollbarType = "standardtext_slider"
 		}
+
+		containerWindowType = {
+			name = "origin_window"
+			size = { width = 450 height = 140 }
+			position = { x = 580 y = 530 }
+
+			buttonType = {
+				name = "origin_bg"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				size = { x = 450 y = 140 }
+				position = { x = 0 y = 0 }
+				clicksound = tab_click
+			}
+
+			iconType = {
+				name = "origin_icon"
+				position = { x = 10 y = 10 }
+				spriteType = "GFX_government_civic"
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType={
+				name = "origin_name"
+				font = "cg_16b"
+				text = "ORIGIN"
+				position = { x = 50 y = 15 }
+				maxWidth = 290
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "origin_desc"
+				position = { x = 10 y = 50 }
+				font = "cg_16b"
+				maxWidth = 430
+				maxHeight = 80
+				format = left
+				text_color_code = "E"
+				scrollbarType = "standardtext_slider"
+				alwaysTransparent = yes
+			}
+		}
 		
 		#portrait
 		containerWindowType = {

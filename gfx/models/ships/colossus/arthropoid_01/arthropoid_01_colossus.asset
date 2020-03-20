@@ -65,9 +65,9 @@ entity = {
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		
-		event = { time = 0 node = "large_engine_01" particle = "avian_01_3_0_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_02" particle = "avian_01_3_0_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_03" particle = "avian_01_3_0_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_01" particle = "generic_1_25_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_02" particle = "generic_1_25_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_03" particle = "generic_1_25_exhaust_line_idle" keep_particle = yes trigger_once = yes }
 	}
 	# Idle state when going from opened state to idle. 
 	state = { name = "idle" animation = "closing" looping = no next_state = "idle" 
@@ -97,9 +97,9 @@ entity = {
 		event = { time = 0 node = "wing_3_effect_2" particle = "arhtropoid_01_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "wing_3_effect_3" particle = "arhtropoid_01_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 	
-		event = { time = 0 node = "large_engine_01" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_02" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_03" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_01" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_02" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_03" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
 	}
 	# Actual moving state if going from idle/moving.
 	state = { name = "moving" animation = "idle" looping = yes next_state = "moving"
@@ -118,9 +118,9 @@ entity = {
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	
-		event = { time = 0 node = "large_engine_01" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_02" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_03" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_01" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_02" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_03" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
 	}
 	# Moving state if going from open/working, uses closing animation.
 	state = { name = "moving" animation = "closing" looping = no next_state = "moving"
@@ -150,9 +150,9 @@ entity = {
 		event = { time = 0 node = "wing_3_effect_2" particle = "arhtropoid_01_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "wing_3_effect_3" particle = "arhtropoid_01_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 	
-		event = { time = 0 node = "large_engine_01" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_02" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_03" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_01" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_02" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_03" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
 	}
 	# Opened state, going after "kill_planet".
 	state = { name = "working_looping" animation = "open" 
@@ -172,9 +172,9 @@ entity = {
 		event = { time = 0 node = "wing_3_effect_2" particle = "arhtropoid_01_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "wing_3_effect_3" particle = "arhtropoid_01_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 		
-		event = { time = 0 node = "large_engine_01" particle = "avian_01_3_0_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_02" particle = "avian_01_3_0_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_03" particle = "avian_01_3_0_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_01" particle = "generic_1_25_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_02" particle = "generic_1_25_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_03" particle = "generic_1_25_exhaust_line_idle" keep_particle = yes trigger_once = yes }
 	}
 	# Opening state, goes into "working_looping" state when done.
 	state = { name = "working" animation = "opening" looping = no next_state = "working_looping" 
@@ -197,9 +197,9 @@ entity = {
 		event = { time = 0 node = "wing_3_effect_2" particle = "arhtropoid_01_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "wing_3_effect_3" particle = "arhtropoid_01_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 	
-		event = { time = 0 node = "large_engine_01" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_02" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "large_engine_03" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_01" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_02" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "large_engine_03" particle = "generic_2_exhaust_line_moving" keep_particle = yes trigger_once = yes }
 		
 		event = { time = 6.33 node = "hatch_smoke_locator_01" particle = "colossus_hatch_smoke_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 6.33 node = "hatch_smoke_locator_02" particle = "colossus_hatch_smoke_effect" keep_particle = yes trigger_once = yes }

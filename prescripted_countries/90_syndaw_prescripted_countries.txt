@@ -40,6 +40,7 @@ tebrid = {
 	authority = "auth_machine_intelligence"
 	government = gov_machine_assimilator
 	civics = { "civic_machine_assimilator" "civic_machine_predictive_analysis" }
+	origin = "origin_default"
 	
 	planet_name = "Tebri"
 	planet_class = "pc_ocean"
@@ -82,7 +83,7 @@ tebrid = {
 custodianship = {
 	name = "custodianship"
 	adjective = "PRESCRIPTED_adjective_custodianship"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 	
 	playable = has_synthethic_dawn # scripted_triggers
@@ -119,6 +120,7 @@ custodianship = {
 	authority = "auth_machine_intelligence"
 	government = gov_machine_servitor
 	civics = { "civic_machine_servitor" "civic_machine_delegated_functions" }
+	origin = "origin_default"
 	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -188,6 +190,7 @@ xt489 = {
 	authority = "auth_machine_intelligence"
 	government = gov_machine_terminator
 	civics = { "civic_machine_terminator" "civic_machine_warbots" }
+	origin = "origin_default"
 	
 	planet_name = "PRESCRIPTED_planet_name_xt489"
 	planet_class = "pc_desert"

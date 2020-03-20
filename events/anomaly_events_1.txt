@@ -19,9 +19,9 @@ ship_event = {
 	picture = GFX_evt_mining_station
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-			
+
 	immediate = {
 		from = { clear_deposits = yes }
 	}
@@ -36,7 +36,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_society_3
 		}
 	}
@@ -47,14 +47,14 @@ ship_event = {
 	id = anomaly.5
 	title = "anomaly.5.name"
 	desc = "anomaly.5.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_treasure_pile
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
-	
+
 	option = {
 		name = anomaly.5.a
 		owner = {
@@ -81,16 +81,16 @@ ship_event = {
 	picture = GFX_evt_mining_station
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.2 days = 30 } }
 	}
-	
+
 	option = {
-		name = anomaly.10.a	
+		name = anomaly.10.a
 		hidden_effect = {
 			FROM = {
 				add_modifier = {
@@ -99,7 +99,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_society_3
 		}
 	}
@@ -110,15 +110,15 @@ ship_event = {
 	id = anomaly.15
 	title = "anomaly.15.name"
 	desc = "anomaly.15.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_landing_ship_2
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FASCINATING
-		owner = { 
+		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
 				value = @tier1researchreward
@@ -137,14 +137,14 @@ ship_event = {
 	picture = GFX_evt_mining_station
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = anomaly.25.a
 		hidden_effect = {
@@ -155,7 +155,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_engineering_3
 		}
 	}
@@ -166,17 +166,17 @@ ship_event = {
 	id = anomaly.30
 	title = "anomaly.30.name"
 	desc = "anomaly.30.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_junkheap
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = anomaly.30.a
 		hidden_effect = {
@@ -187,7 +187,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_minerals_3
 		}
 		owner = {
@@ -201,14 +201,14 @@ ship_event = {
 	id = anomaly.35
 	title = "anomaly.35.name"
 	desc = "anomaly.35.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_crashed_station
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
-	
+
 	option = {
 		name = anomaly.35.a
 		owner = {
@@ -242,8 +242,8 @@ ship_event = {
 	}
 	picture = GFX_evt_mining_station
 	show_sound = event_ship_bridge
-	location = FROM 
-	
+	location = FROM
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -255,7 +255,7 @@ ship_event = {
 			save_event_target_as = MiningPlanet
 		}
 	}
-	
+
 	option = {
 		name = EXCELLENT
 		trigger = {
@@ -300,7 +300,7 @@ ship_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = EXCELLENT
 		trigger = {
@@ -319,17 +319,17 @@ ship_event = {
 	id = anomaly.50
 	title = "anomaly.50.name"
 	desc = "anomaly.50.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_landing_ship_2
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.3 days = 30 } }
 	}
-	
+
 	option = {
 		name = INTERESTING
 		hidden_effect = {
@@ -340,7 +340,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_physics_3
 		}
 	}
@@ -351,19 +351,19 @@ ship_event = {
 	id = anomaly.55
 	title = "anomaly.55.name"
 	desc = "anomaly.55.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_landing_ship_2
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 	}
-	
+
 	option = {
 		name = anomaly.55.a
-		FROM = { 
+		FROM = {
 			set_deposit = d_minerals_3
 		}
 	}
@@ -377,9 +377,9 @@ ship_event = {
 	picture = GFX_evt_mining_station
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = REMARKABLE
 		owner = {
@@ -398,17 +398,17 @@ ship_event = {
 	id = anomaly.65
 	title = "anomaly.65.name"
 	desc = "anomaly.65.desc"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_crashed_station
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = EXCELLENT
 		hidden_effect = {
@@ -419,7 +419,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_minerals_3
 		}
 	}
@@ -430,17 +430,17 @@ ship_event = {
 	id = anomaly.300
 	title = "anomaly.300.name"
 	desc = "anomaly.300.desc"
-	picture = GFX_evt_microscopic_life
+	picture = GFX_evt_atmospheric_flight
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.2 days = 30 } }
 	}
-	
+
 	option = {
 		name = FASCINATING
 		hidden_effect = {
@@ -451,7 +451,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_society_3
 		}
 	}
@@ -462,12 +462,12 @@ ship_event = {
 	id = anomaly.305
 	title = "anomaly.305.name"
 	desc = "anomaly.305.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_atmospheric_flight
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
 
 	option = {
@@ -488,14 +488,14 @@ ship_event = {
 	id = anomaly.310
 	title = "anomaly.310.name"
 	desc = "anomaly.310.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_gas_giant_station
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
-	
+
 	option = {
 		name = INTRIGUING
 		owner = {
@@ -514,17 +514,17 @@ ship_event = {
 	id = anomaly.315
 	title = "anomaly.315.name"
 	desc = "anomaly.315.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_gas_giant_station
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = FASCINATING
 		hidden_effect = {
@@ -535,7 +535,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_engineering_3
 		}
 	}
@@ -546,17 +546,17 @@ ship_event = {
 	id = anomaly.320
 	title = "anomaly.320.name"
 	desc = "anomaly.320.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ruined_system
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = INTERESTING
 		hidden_effect = {
@@ -567,7 +567,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = {  
+		FROM = {
 			set_deposit = d_minerals_3
 		}
 	}
@@ -578,14 +578,14 @@ ship_event = {
 	id = anomaly.325
 	title = "anomaly.325.name"
 	desc = "anomaly.325.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_atmospheric_flight
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
-	
+
 	option = {
 		name = anomaly.325.a
 		owner = {
@@ -604,12 +604,12 @@ ship_event = {
 	id = anomaly.330
 	title = "anomaly.330.name"
 	desc = "anomaly.330.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		from = { clear_deposits = yes }
 	}
@@ -624,7 +624,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_physics_3
 		}
 	}
@@ -635,12 +635,12 @@ ship_event = {
 	id = anomaly.335
 	title = "anomaly.335.name"
 	desc = "anomaly.335.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_gas_giant_station
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FASCINATING
 		owner = {
@@ -659,12 +659,12 @@ ship_event = {
 	id = anomaly.340
 	title = "anomaly.340.name"
 	desc = "anomaly.340.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		from = { clear_deposits = yes }
 	}
@@ -679,7 +679,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_energy_3
 		}
 	}
@@ -690,12 +690,12 @@ ship_event = {
 	id = anomaly.600
 	title = "anomaly.600.name"
 	desc = "anomaly.600.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_2
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		from = { clear_deposits = yes }
 	}
@@ -710,7 +710,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_minerals_3
 		}
 	}
@@ -721,12 +721,12 @@ ship_event = {
 	id = anomaly.605
 	title = "anomaly.605.name"
 	desc = "anomaly.605.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = REMARKABLE
 		owner = {
@@ -748,9 +748,9 @@ ship_event = {
 	picture = GFX_evt_ship_in_orbit
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		from = { clear_deposits = yes }
 	}
@@ -765,7 +765,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_physics_3
 		}
 	}
@@ -776,12 +776,12 @@ ship_event = {
 	id = anomaly.615
 	title = "anomaly.615.name"
 	desc = "anomaly.615.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_travel
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = INTRIGUING
 		owner = {
@@ -803,11 +803,11 @@ ship_event = {
 	picture = GFX_evt_ship_in_orbit
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
-	
+
 	option = {
 		name = anomaly.625.a
 		owner = {
@@ -826,14 +826,14 @@ ship_event = {
 	id = anomaly.630
 	title = "anomaly.630.name"
 	desc = "anomaly.630.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_scanning_remains
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
-	
+
 	option = {
 		name = INTERESTING
 		owner = {
@@ -852,17 +852,17 @@ ship_event = {
 	id = anomaly.635
 	title = "anomaly.635.name"
 	desc = "anomaly.635.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = FASCINATING
 		hidden_effect = {
@@ -873,7 +873,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_society_3
 		}
 	}
@@ -884,14 +884,14 @@ ship_event = {
 	id = anomaly.650
 	title = "anomaly.650.name"
 	desc = "anomaly.650.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_travel
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
-	
+
 	option = {
 		name = anomaly.650.a
 		owner = {
@@ -910,14 +910,14 @@ ship_event = {
 	id = anomaly.655
 	title = "anomaly.655.name"
 	desc = "anomaly.655.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_travel
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
-	
+
 	option = {
 		name = INCREDIBLE
 		owner = {
@@ -939,14 +939,14 @@ ship_event = {
 	picture = GFX_evt_ship_in_orbit
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = INTERESTING
 		hidden_effect = {
@@ -957,7 +957,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_engineering_3
 		}
 	}
@@ -971,9 +971,9 @@ ship_event = {
 	picture = GFX_evt_city_ruins
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
@@ -989,7 +989,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			add_deposit = d_society_2
 			add_deposit = d_engineering_2
 		}
@@ -1004,14 +1004,14 @@ ship_event = {
 	picture = GFX_evt_dead_city
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = anomaly.670.a
 		hidden_effect = {
@@ -1022,7 +1022,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			add_deposit = d_society_2
 			add_deposit = d_physics_2
 		}
@@ -1037,14 +1037,14 @@ ship_event = {
 	picture = GFX_evt_alien_nature
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 2 } }
 	}
-	
+
 	option = {
 		name = FASCINATING
 		hidden_effect = {
@@ -1055,7 +1055,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_society_3
 		}
 	}
@@ -1069,14 +1069,14 @@ ship_event = {
 	picture = GFX_evt_underground_civilization
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.2 days = 30 } }
 	}
-	
+
 	option = {
 		name = INTRIGUING
 		hidden_effect = {
@@ -1087,7 +1087,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_minerals_3
 		}
 	}
@@ -1101,9 +1101,9 @@ ship_event = {
 	picture = GFX_evt_outpost
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = INTERESTING
 		FROM = {
@@ -1122,17 +1122,17 @@ ship_event = {
 	picture = GFX_evt_outpost
 	show_sound = event_ship_bridge
 	location = FROM
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = FASCINATING
-		FROM = { 
+		FROM = {
 			set_deposit = d_minerals_4
 		}
 	}
@@ -1146,9 +1146,9 @@ ship_event = {
 	picture = GFX_evt_ship_in_orbit
 	show_sound = event_scanner
 	location = FROMFROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FASCINATING
 		leader = { add_experience = 200 }
@@ -1168,18 +1168,18 @@ ship_event = {
 	id = anomaly.2510
 	title = "anomaly.2510.name"
 	desc = "anomaly.2510.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_microscopic_life
 	show_sound = event_scanner
 	location = FROM
 	trackable = yes
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.1 days = 30 } }
 	}
-	
+
 	option = {
 		name = INTERESTING
 		hidden_effect = {
@@ -1190,7 +1190,7 @@ ship_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			set_deposit = d_society_3
 			enable_special_project = {
 				name = "SEA_EXPEDITION_PROJECT"
@@ -1215,12 +1215,12 @@ ship_event = {
 		trigger = {	owner = { has_authority = auth_machine_intelligence } }
 		text = anomaly.2512.desc.mach
 	}
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_unspeakable_horror
 	show_sound = event_laboratory_sound
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = INTERESTING
 		leader = { add_experience = 200 }
@@ -1257,12 +1257,12 @@ ship_event = {
 	id = anomaly.2513
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2513.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_unspeakable_horror
 	show_sound = event_laboratory_sound
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = INTERESTING
 		leader = { add_experience = 200 }
@@ -1274,18 +1274,18 @@ ship_event = {
 	id = anomaly.2520
 	title = "anomaly.2520.name"
 	desc = "anomaly.2520.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_alien_wildlife
 	show_sound = event_ship_bridge
 	location = FROM
 	trackable = yes
-	
+
 	is_triggered_only = yes
 
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.2 days = 30 } }
 	}
-	
+
 	option = {
 		trigger = { owner = { NOT = { has_civic = civic_machine_terminator } } }
 		name = FASCINATING
@@ -1315,12 +1315,12 @@ ship_event = {
 	id = anomaly.2521
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2521.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_archaeological_dig
 	show_sound = event_scanner
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = INCREDIBLE
 		hidden_effect = {
@@ -1331,7 +1331,7 @@ ship_event = {
 				}
 			}
 		}
-		FROMFROM = { 
+		FROMFROM = {
 			add_deposit = d_society_3
 			add_deposit = d_engineering_3
 		}
@@ -1344,12 +1344,12 @@ ship_event = {
 	id = anomaly.2522
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2522.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_alien_wildlife
 	show_sound = event_scanner
 	location = FROMFROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ASTOUNDING
 		leader = { add_experience = 200 }
@@ -1369,13 +1369,13 @@ ship_event = {
 	id = anomaly.2530
 	title = "anomaly.2530.name"
 	desc = "anomaly.2530.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_relic_shipyard
 	show_sound = event_ship_bridge
 	location = FROM
 	trackable = yes
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
@@ -1398,12 +1398,12 @@ ship_event = {
 	id = anomaly.2531
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2531.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_archaeology_camp
 	show_sound = event_scanner
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = EXCELLENT
 		hidden_effect = {
@@ -1414,7 +1414,7 @@ ship_event = {
 				}
 			}
 		}
-		FROMFROM = { 
+		FROMFROM = {
 			set_deposit = d_engineering_3
 		}
 		leader = { add_experience = 200 }
@@ -1435,12 +1435,12 @@ ship_event = {
 	id = anomaly.2532
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2532.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_crashed_station
 	show_sound = event_scanner
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = INTERESTING
 		hidden_effect = {
@@ -1451,7 +1451,7 @@ ship_event = {
 				}
 			}
 		}
-		FROMFROM = { 
+		FROMFROM = {
 			set_deposit = d_engineering_3
 		}
 		leader = { add_experience = 200 }
@@ -1463,18 +1463,18 @@ ship_event = {
 	id = anomaly.2540
 	title = "anomaly.2540.name"
 	desc = "anomaly.2540.desc"
-	picture = GFX_evt_alien_ruins
+	picture = GFX_evt_ancient_records
 	show_sound = event_ship_bridge
 	location = FROM
 	trackable = yes
-	
+
 	is_triggered_only = yes
 
-	immediate = { 
+	immediate = {
 		from = { clear_deposits = yes }
 		owner = { country_event = { id = story.5 days = 30 } }
 	}
-	
+
 	option = {
 		name = FASCINATING
 		from = {
@@ -1492,12 +1492,12 @@ ship_event = {
 	id = anomaly.2541
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2541.desc"
-	picture = GFX_evt_alien_ruins
+	picture = GFX_evt_ancient_records
 	show_sound = event_ship_bridge
 	location = FROMFROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = AMAZING
 		leader = { add_experience = 200 }
@@ -1517,11 +1517,11 @@ ship_event = {
 	id = anomaly.2542
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2542.desc"
-	picture = GFX_evt_alien_ruins
+	picture = GFX_evt_ancient_records
 	location = FROMFROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = INTRIGUING
 		hidden_effect = {
@@ -1532,7 +1532,7 @@ ship_event = {
 				}
 			}
 		}
-		FROMFROM = { 
+		FROMFROM = {
 			add_deposit = d_society_2
 			add_deposit = d_engineering_2
 			add_deposit = d_physics_2
@@ -1546,14 +1546,14 @@ ship_event = {
 	id = anomaly.2550
 	title = "anomaly.2550.name"
 	desc = "anomaly.2550.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ruined_system
 	location = FROM
 	trackable = yes
-	
+
 	is_triggered_only = yes
 
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
-	
+
 	option = {
 		name = INTERESTING
 		from = {
@@ -1571,11 +1571,11 @@ ship_event = {
 	id = anomaly.2551
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2551.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ruined_system
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = EXCELLENT
 		owner = {
@@ -1584,7 +1584,7 @@ ship_event = {
 				name = "NAME_New_Ships"
 				settings = {
 					spawn_debris = no
-				}				
+				}
 				effect = {
 					set_owner = PREV
 					create_ship_design = {
@@ -1620,11 +1620,11 @@ ship_event = {
 	id = anomaly.2552
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2552.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ruined_system
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = EXCELLENT
 		owner = {
@@ -1633,7 +1633,7 @@ ship_event = {
 				name = "NAME_New_Ship"
 				settings = {
 					spawn_debris = no
-				}				
+				}
 				effect = {
 					set_owner = PREV
 					create_ship_design = {
@@ -1657,12 +1657,12 @@ ship_event = {
 	id = anomaly.2560
 	title = "anomaly.2560.name"
 	desc = "anomaly.2560.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_atmospheric_flight
 	location = FROM
 	trackable = yes
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
 
 	option = {
@@ -1688,11 +1688,11 @@ ship_event = {
 	id = anomaly.2561
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2561.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_atmospheric_flight
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = EXCELLENT
 		owner = {
@@ -1728,11 +1728,11 @@ ship_event = {
 	id = anomaly.2562
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2562.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_atmospheric_flight
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = UNFORTUNATE
 		leader = { add_experience = 200 }
@@ -1744,12 +1744,12 @@ ship_event = {
 	id = anomaly.2570
 	title = "anomaly.2570.name"
 	desc = "anomaly.2570.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	location = FROM
 	trackable = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FASCINATING
 		from = {
@@ -1767,11 +1767,11 @@ ship_event = {
 	id = anomaly.2571
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.2571.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	location = FROMFROM
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		fromfrom = {
 			save_event_target_as = CollisionLocation
@@ -1798,23 +1798,35 @@ ship_event = {
 	title = "anomaly.2575.name"
 	desc = {
 		text = anomaly.2575.desc.1
-		trigger = { 
-			NOT = { 
-				owner = { has_technology = "tech_climate_restoration" } 
+		trigger = {
+			NOT = {
+				owner = { has_technology = "tech_climate_restoration" }
+				solar_system = { has_star_flag = dyson_sphere_built }
 			}
 		}
 	}
 	desc = {
 		text = anomaly.2575.desc.2
-		trigger = { 
+		trigger = {
 			owner = { has_technology = "tech_climate_restoration" }
+			NOT = {
+				solar_system = {
+					has_star_flag = dyson_sphere_built
+				}
+			}
+		}
+	}
+	desc = {
+		text = anomaly.2575.desc.3
+		trigger = {
+			solar_system = { has_star_flag = dyson_sphere_built }
 		}
 	}
 	picture = GFX_evt_drilling_for_gas
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FASCINATING
 		custom_tooltip = TERRAFORMING_CANDIDATE_EFFECT
@@ -1824,7 +1836,21 @@ ship_event = {
 					modifier = "terraforming_candidate"
 					days = -1
 				}
-			}		
+			}
+		}
+	}
+	option = {
+		exclusive_trigger = {
+			solar_system = { has_star_flag = dyson_sphere_built }
+		}
+		name = UNFORTUNATE
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
 		}
 	}
 }
@@ -1836,9 +1862,9 @@ ship_event = {
 	desc = "anomaly.2576.desc"
 	picture = GFX_evt_mining_operations
 	location = FROM
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FASCINATING
 		hidden_effect = {

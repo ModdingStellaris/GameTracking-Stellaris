@@ -1,7 +1,9 @@
 ﻿### Arthropoid 4
 ### Created by Henrik Thyrwall
 
-ART4 = {	
+ART4 = {
+
+	category = "Arthropoid"
 	
 	language = "l_simp_chinese"
 

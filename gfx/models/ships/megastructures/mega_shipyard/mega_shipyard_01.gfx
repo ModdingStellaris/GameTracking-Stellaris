@@ -1,0 +1,32 @@
+objectTypes = {
+	pdxmesh = {
+		name = "mega_shipyard_01_stage_1_mesh"
+		file = "gfx/models/ships/megastructures/mega_shipyard/mega_shipyard_01_stage_1.mesh"
+		animation = { id = "idle" 			type = "mega_shipyard_01_stage_3_idle_animation" }
+		animation = { id = "death" 			type = "mega_shipyard_01_stage_3_death_animation" }
+	}
+	
+	pdxmesh = {
+		name = "mega_shipyard_01_stage_2_mesh"
+		file = "gfx/models/ships/megastructures/mega_shipyard/mega_shipyard_01_stage_2.mesh"
+		animation = { id = "idle" 			type = "mega_shipyard_01_stage_3_idle_animation" }
+		animation = { id = "death" 			type = "mega_shipyard_01_stage_3_death_animation" }
+	}
+	
+	pdxmesh = {
+		name = "mega_shipyard_01_stage_3_mesh"
+		file = "gfx/models/ships/megastructures/mega_shipyard/mega_shipyard_01_stage_3.mesh"
+		animation = { id = "idle" 			type = "mega_shipyard_01_stage_3_idle_animation" }
+		animation = { id = "death" 			type = "mega_shipyard_01_stage_3_death_animation" }
+	}
+	
+	
+	###### Destroyed ######
+	
+	pdxmesh = {
+		name = "mega_shipyard_01_destroyed_mesh"
+		file = "gfx/models/ships/megastructures/mega_shipyard/mega_shipyard_01_destroyed.mesh"
+	}
+
+}
+

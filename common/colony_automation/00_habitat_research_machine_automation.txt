@@ -29,10 +29,10 @@ automate_habitat_research_machine_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_research_lab_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -83,10 +83,10 @@ automate_habitat_research_machine_planet = {
 		}
 
 		9 = {
-			building = building_stronghold
+			building = building_research_lab_1
 			available = {
 				owner = {
-					stronghold_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -101,55 +101,55 @@ automate_habitat_research_machine_planet = {
 		}
 
 		11 = {
-			building = building_stronghold
+			building = building_research_lab_1
 			available = {
 				owner = {
-					stronghold_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
 
 		12 = {
-			building = building_stronghold
+			building = building_research_lab_1
 			available = {
 				owner = {
-					stronghold_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
 
 		13 = {
-			building = building_stronghold
+			building = building_research_lab_1
 			available = {
 				owner = {
-					stronghold_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
 
 		14 = {
-			building = building_stronghold
+			building = building_research_lab_1
 			available = {
 				owner = {
-					stronghold_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
 
 		15 = {
-			building = building_stronghold
+			building = building_research_lab_1
 			available = {
 				owner = {
-					stronghold_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
 
 		16 = {
-			building = building_stronghold
+			building = building_research_lab_1
 			available = {
 				owner = {
-					stronghold_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}

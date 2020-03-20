@@ -1,0 +1,1059 @@
+category = {
+ name = "Effects"
+ soundeffects = {
+
+    juggernaut_arthropoid_idle
+    juggernaut_arthropoid_move
+    juggernaut_avian_idle
+    juggernaut_avian_move
+    juggernaut_fungoid_idle
+    juggernaut_fungoid_move
+    juggernaut_humanoid_idle
+    juggernaut_humanoid_move
+    juggernaut_lithoid_idle
+    juggernaut_lithoid_move
+    juggernaut_mammalian_idle
+    juggernaut_mammalian_move
+    juggernaut_molluscoid_idle
+    juggernaut_molluscoid_move
+    juggernaut_plantoid_idle
+    juggernaut_plantoid_move
+    juggernaut_reptilian_idle
+    juggernaut_reptilian_move
+    mega_shipyard_idle
+    mega_shipyard_metal_amb
+    mega_shipyard_electricity_amb
+    bg_federation
+    bg_galactic_community
+    bg_senate_floor
+    button_federation_centralization_vote
+    button_senate_floor_propose_law
+    button_senate_floor_vote
+    event_announcement
+    event_assembly_fight
+    event_galactic_community
+    event_vote
+    notification_alert_breach
+    notification_denounced
+    notification_galactic_focus
+    notification_low_cohesion
+    notification_player_level_up
+    notification_player_lose_xp
+    notification_resolution_defeated
+    notification_resolution_passed
+    notification_resolution_vetoed
+    }
+}
+
+#########################################################
+#														#
+#					     ASSETS			    			#
+#														#
+#########################################################
+
+############### GUI & EVENTS
+
+sound =
+{
+    name = "sfx_bg_federation"
+    file = "sfx_bg_federation.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_bg_galactic_community"
+    file = "sfx_bg_galactic_community.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_bg_senate_floor"
+    file = "sfx_bg_senate_floor.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_button_federation_centralization_vote"
+    file = "sfx_button_federation_centralization_vote.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_button_senate_floor_propose_law"
+    file = "sfx_button_senate_floor_propose_law.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_button_senate_floor_vote"
+    file = "sfx_button_senate_floor_vote.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_event_announcement"
+    file = "sfx_event_announcement.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_event_assembly_fight"
+    file = "sfx_event_assembly_fight.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_event_galactic_community"
+    file = "sfx_event_galactic_community.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_event_vote"
+    file = "sfx_event_vote.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_notification_alert_breach"
+    file = "sfx_notification_alert_breach.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_notification_denounced"
+    file = "sfx_notification_denounced.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_notification_galactic_focus"
+    file = "sfx_notification_galactic_focus.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_notification_low_cohesion"
+    file = "sfx_notification_low_cohesion.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_notification_player_level_up"
+    file = "sfx_notification_player_level_up.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_notification_player_lose_xp"
+    file = "sfx_notification_player_lose_xp.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_notification_resolution_defeated"
+    file = "sfx_notification_resolution_defeated.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_notification_resolution_passed"
+    file = "sfx_notification_resolution_passed.wav"
+    volume = 1
+}
+sound =
+{
+    name = "sfx_notification_resolution_vetoed"
+    file = "sfx_notification_resolution_vetoed.wav"
+    volume = 1
+}
+
+############### JUGGERNAUTS
+
+sound = 
+{
+    name = "juggernaut_arthropoid_idle_01"
+    file = "juggernaut_arthropoid_idle_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_avian_idle_01"
+    file = "juggernaut_avian_idle_01.wav"
+    volume = 1
+}
+
+sound = 
+{
+    name = "juggernaut_fungoid_idle_01"
+    file = "juggernaut_fungoid_idle_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_humanoid_idle_01"
+    file = "juggernaut_humanoid_idle_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_lithoid_idle_01"
+    file = "juggernaut_lithoid_idle_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_mammalian_idle_01"
+    file = "juggernaut_mammalian_idle_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_molluscoid_idle_01"
+    file = "juggernaut_molluscoid_idle_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_plantoid_idle_01"
+    file = "juggernaut_plantoid_idle_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_reptilian_idle_01"
+    file = "juggernaut_reptilian_idle_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_idle_01"
+    file = "mega_shipyard_idle_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_metal_amb_01"
+    file = "mega_shipyard_metal_amb_01.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_metal_amb_02"
+    file = "mega_shipyard_metal_amb_02.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_metal_amb_03"
+    file = "mega_shipyard_metal_amb_03.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_metal_amb_04"
+    file = "mega_shipyard_metal_amb_04.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_metal_amb_05"
+    file = "mega_shipyard_metal_amb_05.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_metal_amb_06"
+    file = "mega_shipyard_metal_amb_06.wav"
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_01"
+    file = "mega_shipyard_electricity_amb_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_02"
+    file = "mega_shipyard_electricity_amb_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_03"
+    file = "mega_shipyard_electricity_amb_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_04"
+    file = "mega_shipyard_electricity_amb_04.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_05"
+    file = "mega_shipyard_electricity_amb_05.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_06"
+    file = "mega_shipyard_electricity_amb_06.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_07"
+    file = "mega_shipyard_electricity_amb_07.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_08"
+    file = "mega_shipyard_electricity_amb_08.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_09"
+    file = "mega_shipyard_electricity_amb_09.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "mega_shipyard_electricity_amb_10"
+    file = "mega_shipyard_electricity_amb_10.wav"
+    always_load = no
+    volume = 1
+}
+
+
+##########UNIT MOVEMENT######################
+
+sound =
+{
+    name = "juggernaut_arthropoid_move_01"
+    file = "juggernaut_arthropoid_move_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_arthropoid_move_02"
+    file = "juggernaut_arthropoid_move_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_arthropoid_move_03"
+    file = "juggernaut_arthropoid_move_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_avian_move_01"
+    file = "juggernaut_avian_move_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_avian_move_02"
+    file = "juggernaut_avian_move_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_avian_move_03"
+    file = "juggernaut_avian_move_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_fungoid_move_01"
+    file = "juggernaut_fungoid_move_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_fungoid_move_02"
+    file = "juggernaut_fungoid_move_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_fungoid_move_03"
+    file = "juggernaut_fungoid_move_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_humanoid_move_01"
+    file = "juggernaut_humanoid_move_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_humanoid_move_02"
+    file = "juggernaut_humanoid_move_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_humanoid_move_03"
+    file = "juggernaut_humanoid_move_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_lithoid_move_01"
+    file = "juggernaut_lithoid_move_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_lithoid_move_02"
+    file = "juggernaut_lithoid_move_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_lithoid_move_03"
+    file = "juggernaut_lithoid_move_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_mammalian_move_01"
+    file = "juggernaut_mammalian_move_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_mammalian_move_02"
+    file = "juggernaut_mammalian_move_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_mammalian_move_03"
+    file = "juggernaut_mammalian_move_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_molluscoid_move_01"
+    file = "juggernaut_molluscoid_move_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_molluscoid_move_02"
+    file = "juggernaut_molluscoid_move_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_molluscoid_move_03"
+    file = "juggernaut_molluscoid_move_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_plantoid_move_01"
+    file = "juggernaut_plantoid_move_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_plantoid_move_02"
+    file = "juggernaut_plantoid_move_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_plantoid_move_03"
+    file = "juggernaut_plantoid_move_03.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_reptilian_move_01"
+    file = "juggernaut_reptilian_move_01.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_reptilian_move_02"
+    file = "juggernaut_reptilian_move_02.wav"
+    always_load = no
+    volume = 1
+}
+sound = 
+{
+    name = "juggernaut_reptilian_move_03"
+    file = "juggernaut_reptilian_move_03.wav"
+    always_load = no
+    volume = 1
+}
+
+
+#########################################################
+#														#
+#					  SOUNDEFFECTS		    			#
+#														#
+#########################################################
+
+
+soundeffect = {
+    name = bg_federation
+    sounds = {
+        sound = sfx_bg_federation
+    }
+    volume = 0.30
+    max_audible = 1
+    max_audible_behaviour = fail
+    fade_in = 6
+    fade_out = 4
+}
+soundeffect = {
+    name = bg_galactic_community
+    sounds = {
+        sound = sfx_bg_galactic_community
+    }
+    volume = 0.30
+    max_audible = 1
+    max_audible_behaviour = fail
+    fade_in = 6
+    fade_out = 4
+}
+soundeffect = {
+    name = bg_senate_floor
+    sounds = {
+        sound = sfx_bg_senate_floor
+    }
+    volume = 0.30
+    max_audible = 1
+    max_audible_behaviour = fail
+    fade_in = 6
+    fade_out = 4
+}
+soundeffect = {
+    name = button_federation_centralization_vote
+    sounds = {
+        sound = sfx_button_federation_centralization_vote
+    }
+    volume = 0.35
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = button_senate_floor_propose_law
+    sounds = {
+        sound = sfx_button_senate_floor_propose_law
+    }
+    volume = 0.40
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = button_senate_floor_vote
+    sounds = {
+        sound = sfx_button_senate_floor_vote
+    }
+    volume = 0.30
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = event_announcement
+    sounds = {
+        sound = sfx_event_announcement
+    }
+    volume = 0.30
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = event_assembly_fight
+    sounds = {
+        sound = sfx_event_assembly_fight
+    }
+    volume = 0.30
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = event_galactic_community
+    sounds = {
+        sound = sfx_event_galactic_community
+    }
+    volume = 0.25
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = event_vote
+    sounds = {
+        sound = sfx_event_vote
+    }
+    volume = 0.35
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = notification_alert_breach
+    sounds = {
+        sound = sfx_notification_alert_breach
+    }
+    volume = 0.18
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = notification_denounced
+    sounds = {
+        sound = sfx_notification_denounced
+    }
+    volume = 0.18
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = notification_galactic_focus
+    sounds = {
+        sound = sfx_notification_galactic_focus
+    }
+    volume = 0.18
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = notification_low_cohesion
+    sounds = {
+        sound = sfx_notification_low_cohesion
+    }
+    volume = 0.18
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = notification_player_level_up
+    sounds = {
+        sound = sfx_notification_player_level_up
+    }
+    volume = 0.15
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = notification_player_lose_xp
+    sounds = {
+        sound = sfx_notification_player_lose_xp
+    }
+    volume = 0.25
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = notification_resolution_defeated
+    sounds = {
+        sound = sfx_notification_resolution_defeated
+    }
+    volume = 0.30
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = notification_resolution_passed
+    sounds = {
+        sound = sfx_notification_resolution_passed
+    }
+    volume = 0.22
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+soundeffect = {
+    name = notification_resolution_vetoed
+    sounds = {
+        sound = sfx_notification_resolution_vetoed
+    }
+    volume = 0.20
+    max_audible = 1
+    max_audible_behaviour = fail
+}
+
+################# JUGGERNAUTS
+
+soundeffect = {
+    name = juggernaut_plantoid_idle
+    sounds = {
+        sound = juggernaut_plantoid_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_colossus
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = juggernaut_plantoid_move
+    sounds = {
+        sound = juggernaut_plantoid_move_01
+        sound = juggernaut_plantoid_move_02
+        sound = juggernaut_plantoid_move_03
+    }
+    volume = 0.40
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    falloff = falloff_colossus
+}
+
+soundeffect = {
+    name = juggernaut_reptilian_idle
+    sounds = {
+        sound = juggernaut_reptilian_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_colossus
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = juggernaut_reptilian_move
+    sounds = {
+        sound = juggernaut_reptilian_move_01
+        sound = juggernaut_reptilian_move_02
+        sound = juggernaut_reptilian_move_03
+    }
+    volume = 0.40
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    falloff = falloff_colossus
+}
+
+
+soundeffect = {
+    name = juggernaut_arthropoid_idle
+    sounds = {
+        sound = juggernaut_arthropoid_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_colossus
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = juggernaut_arthropoid_move
+    sounds = {
+        sound = juggernaut_arthropoid_move_01
+        sound = juggernaut_arthropoid_move_02
+        sound = juggernaut_arthropoid_move_03
+    }
+    volume = 0.40
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    falloff = falloff_colossus
+}
+
+soundeffect = {
+    name = juggernaut_avian_idle
+    sounds = {
+        sound = juggernaut_avian_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_colossus
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = juggernaut_avian_move
+    sounds = {
+        sound = juggernaut_avian_move_01
+        sound = juggernaut_avian_move_02
+        sound = juggernaut_avian_move_03
+    }
+    volume = 0.40
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    falloff = falloff_colossus
+}
+
+soundeffect = {
+    name = juggernaut_fungoid_idle
+    sounds = {
+        sound = juggernaut_fungoid_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_colossus
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = juggernaut_fungoid_move
+    sounds = {
+        sound = juggernaut_fungoid_move_01
+        sound = juggernaut_fungoid_move_02
+        sound = juggernaut_fungoid_move_03
+    }
+    volume = 0.40
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    falloff = falloff_colossus
+}
+
+soundeffect = {
+    name = juggernaut_humanoid_idle
+    sounds = {
+        sound = juggernaut_humanoid_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_colossus
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = juggernaut_humanoid_move
+    sounds = {
+        sound = juggernaut_humanoid_move_01
+        sound = juggernaut_humanoid_move_02
+        sound = juggernaut_humanoid_move_03
+    }
+    volume = 0.40
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    falloff = falloff_colossus
+}
+
+soundeffect = {
+    name = juggernaut_lithoid_idle
+    sounds = {
+        sound = juggernaut_lithoid_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_colossus
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = juggernaut_lithoid_move
+    sounds = {
+        sound = juggernaut_lithoid_move_01
+        sound = juggernaut_lithoid_move_02
+        sound = juggernaut_lithoid_move_03
+    }
+    volume = 0.40
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    falloff = falloff_colossus
+}
+
+soundeffect = {
+    name = juggernaut_mammalian_idle
+    sounds = {
+        sound = juggernaut_mammalian_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_colossus
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = juggernaut_mammalian_move
+    sounds = {
+        sound = juggernaut_mammalian_move_01
+        sound = juggernaut_mammalian_move_02
+        sound = juggernaut_mammalian_move_03
+    }
+    volume = 0.40
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    falloff = falloff_colossus
+}
+
+soundeffect = {
+    name = juggernaut_molluscoid_idle
+    sounds = {
+        sound = juggernaut_molluscoid_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 1
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_colossus
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = juggernaut_molluscoid_move
+    sounds = {
+        sound = juggernaut_molluscoid_move_01
+        sound = juggernaut_molluscoid_move_02
+        sound = juggernaut_molluscoid_move_03
+    }
+    volume = 0.40
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    falloff = falloff_colossus
+}
+
+################# MEGA SHIPYARD
+
+
+soundeffect = {
+    name = mega_shipyard_idle
+    sounds = {
+        sound = mega_shipyard_idle_01
+    }
+    volume = 0.40
+    loop = yes
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_ambient
+    fade_in = 4
+    fade_out = 2
+}
+
+soundeffect = {
+    name = mega_shipyard_metal_amb
+    sounds = {
+        sound = mega_shipyard_metal_amb_01
+        sound = mega_shipyard_metal_amb_02
+        sound = mega_shipyard_metal_amb_03
+        sound = mega_shipyard_metal_amb_04
+        sound = mega_shipyard_metal_amb_05
+        sound = mega_shipyard_metal_amb_06
+    }
+    volume = 0.30
+    loop = yes
+    is3d = yes
+    max_audible = 2
+    max_audible_behaviour = fail
+    looping_delay_random_offset = yes
+	delay_random_offset = { 3.0 12.0 }
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_ambient
+    fade_in = 2
+    fade_out = 2
+
+}
+
+soundeffect = {
+    name = mega_shipyard_electricity_amb
+    sounds = {
+        sound = mega_shipyard_electricity_amb_01
+        sound = mega_shipyard_electricity_amb_02
+        sound = mega_shipyard_electricity_amb_03
+        sound = mega_shipyard_electricity_amb_04
+        sound = mega_shipyard_electricity_amb_05
+        sound = mega_shipyard_electricity_amb_06
+        sound = mega_shipyard_electricity_amb_07
+        sound = mega_shipyard_electricity_amb_08
+        sound = mega_shipyard_electricity_amb_09
+        sound = mega_shipyard_electricity_amb_10
+    }
+    volume = 1
+    is3d = yes
+    max_audible = 4
+    max_audible_behaviour = fail
+    looping_delay_random_offset = yes
+    playbackrate_random_offset = { -5.0 5.0 }
+    falloff = falloff_ambient
+    fade_out = 2
+
+}

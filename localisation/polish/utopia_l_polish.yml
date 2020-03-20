@@ -2,7 +2,7 @@
  ALLOW_PSI_ARMIES:0 "Teraz może tu powstać §H$psionic_army_plural$§!."
  leader_trait_admiral_cyborg:0 "Cyborg"
  habitat_0_MEGASTRUCTURE_DETAILS:1 "§Y$pc_habitat$§! to teoretycznie samowystarczalna stacja kosmiczna przeznaczona do stałego zamieszkania."
- habitat_0_CONSTRUCTION_INFO_DELAYED:3 "Na stacji mieszkalnej mogą znajdować się tylko £building£ §Ybudynki§! dla niej przeznaczone."
+ habitat_0_CONSTRUCTION_INFO_DELAYED:4 "W stacji mieszkalnej mogą się znaleźć tylko £building£ §Ybudynki§! dla niej specyficzne. Jeśli zostanie ona zbudowana na orbicie planety mającej źródła £minerals£ §Yminerałów§!, £energy£ §Yenergii§! lub §Ypunktów badań§! £physics£ £society£ £engineering£, dostępne będą specjalne £district£ §Ydzielnice§!."
  think_tank_0_MEGASTRUCTURE_DETAILS:1 "Laboratoria badawcze i bazy danych, którymi dysponuje §Y$think_tank_3$§!, generują olbrzymie ilości czystej, esencjonalnej nauki."
  think_tank_0_CONSTRUCTION_INFO_DELAYED:0 "§E$think_tank_1$\n£physics£ §G15§! £society£ §G15§! £engineering£ §G15§!\n£minerals£ §Y20000§! £time£ §H2400§!\n\n$think_tank_2$\n£physics£ §G30§! £society£ §G30§! £engineering£ §G30§!\n£minerals£ §Y20000§! £time£ §H2400§!\n\n$think_tank_3$\n£physics£ §G50§! £society£ §G50§! £engineering£ §G50§!\n£minerals£ §Y20000§! £time£ §H2400§!§!"
  ring_world_1_MEGASTRUCTURE_DETAILS:1 "§Y$pc_ringworld_habitable$§! pozwala tworzyć wiele stref przypominających planety, pochłaniając pozostałe planety układu, aby pozyskać surowce."
@@ -159,3 +159,4 @@
  allow_dyson_sphere:0 "§HOdblokowuje superkonstrukcję -§! Sfera Dysona"
  allow_hive_worlds:0 "§HOdblokowanie opcji terraformowania:§! Świat Roju"
  describe_hive_worlds:0 "§YŚwiaty Roju§! to specjalna klasa planet, na której nie mogą mieszkać populacje nie posiadające umysłu zbiorowego. Jednak jej cechy planetarne nie ograniczają liczby £district£ §Ydzielnic produkujących energię§!, §Ygórniczych§! i §Yrolniczych§!, które mogą się tam znajdować. £pop£ §YPopulacje§! zamieszkujące §Yświaty Roju§! mają §Yprodukcję zasobów§! większą o §G+10%§!."
+ requires_barren_planet:1 "$TRIGGER_FAIL$Można budować tylko na światach jałowych."

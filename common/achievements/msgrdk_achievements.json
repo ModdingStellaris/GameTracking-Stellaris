@@ -415,6 +415,46 @@
 		{
 			"pdx_id": "achievement_unlimited_power",
 			"xbla_id": "53"
+		},
+		{
+			"pdx_id": "achievement_league_of_nations",
+			"xbla_id": "105"
+		},
+		{
+			"pdx_id": "achievement_to_the_next_level",
+			"xbla_id": "106"
+		},
+		{
+			"pdx_id": "achievement_we_are_number_one",
+			"xbla_id": "107"
+		},
+		{
+			"pdx_id": "achievement_unstoppable_force",
+			"xbla_id": "108"
+		},
+		{
+			"pdx_id": "achievement_forge_among_the_stars",
+			"xbla_id": "109"
+		},
+		{
+			"pdx_id": "achievement_whatever_it_is_im_against_it",
+			"xbla_id": "110"
+		},
+		{
+			"pdx_id": "achievement_throw_your_weight_around",
+			"xbla_id": "111"
+		},
+		{
+			"pdx_id": "achievement_opposites_attract",
+			"xbla_id": "112"
+		},
+		{
+			"pdx_id": "achievement_humble_pie",
+			"xbla_id": "113"
+		},
+		{
+			"pdx_id": "achievement_see_you_in_court",
+			"xbla_id": "114"
 		}
 	]
 }

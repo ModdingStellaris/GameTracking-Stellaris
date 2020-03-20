@@ -57,6 +57,7 @@ create_early_primitive_empire = {
 				"null"
 			}
 		}
+		origin = "origin_enlightened" # Should only be visible if they become spacefaring
 		type = primitive
 	}
 	last_created_country = {
@@ -210,6 +211,7 @@ create_late_primitive_empire = {
 				"null"
 			}
 		}
+		origin = "origin_enlightened" # Should only be visible if they become spacefaring
 		type = primitive
 	}
 	last_created_country = {
@@ -490,6 +492,500 @@ setup_primitive_planet = {
 			}
 		}
 		create_primitive_blockers = yes
+	}
+}
+
+#Use in primitive country scope. set_primitive_age_effect = { primitive_age = stone_age }
+set_primitive_age_effect = {
+	hidden_effect = {
+		remove_country_flag = stone_age
+		remove_country_flag = bronze_age
+		remove_country_flag = iron_age
+		remove_country_flag = late_medieval_age
+		remove_country_flag = renaissance_age
+		remove_country_flag = steam_age
+		remove_country_flag = industrial_age
+		remove_country_flag = machine_age
+		remove_country_flag = atomic_age
+		remove_country_flag = early_space_age
+		set_primitive_age = $primitive_age$
+		set_country_flag = $primitive_age$
+		switch = {
+			trigger = has_country_flag
+			stone_age = {
+				change_government = {
+					civics = {
+						civic = civic_secret_of_fire
+						civic = civic_the_wheel
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 4
+						}
+						while = {
+							limit = {
+								num_pops > 4
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 4 }
+						while = {
+							limit = {
+								num_pops < 4
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_crude_huts
+				}
+			}
+			bronze_age = {
+				change_government = {
+					civics = {
+						civic = civic_secret_of_fire
+						civic = civic_the_wheel
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 8
+						}
+						while = {
+							limit = {
+								num_pops > 8
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 8 }
+						while = {
+							limit = {
+								num_pops < 8
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_primitive_dwellings
+					add_building = building_stone_palace
+				}
+			}
+			iron_age = {
+				change_government = {
+					civics = {
+						civic = civic_landed_nobility
+						civic = civic_flat_world_theory
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 9
+						}
+						while = {
+							limit = {
+								num_pops > 9
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 9 }
+						while = {
+							limit = {
+								num_pops < 9
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_primitive_dwellings
+					add_building = building_stone_palace
+				}
+			}
+			late_medieval_age = {
+				change_government = {
+					civics = {
+						civic = civic_landed_nobility
+						civic = civic_flat_world_theory
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 10
+						}
+						while = {
+							limit = {
+								num_pops > 10
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 10 }
+						while = {
+							limit = {
+								num_pops < 10
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_primitive_dwellings
+					add_building = building_primitive_dwellings
+					add_building = building_stone_palace
+				}
+			}
+			renaissance_age = {
+				change_government = {
+					civics = {
+						civic = civic_landed_nobility
+						civic = civic_flat_world_theory
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 12
+						}
+						while = {
+							limit = {
+								num_pops > 12
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 12 }
+						while = {
+							limit = {
+								num_pops < 12
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_primitive_dwellings
+					add_building = building_primitive_dwellings
+					add_building = building_stone_palace
+				}
+			}
+			steam_age = {
+				change_government = {
+					civics = {
+						civic = civic_landed_nobility
+						civic = civic_flat_world_theory
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 16
+						}
+						while = {
+							limit = {
+								num_pops > 16
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 16 }
+						while = {
+							limit = {
+								num_pops < 16
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_urban_dwellings
+					add_building = building_primitive_factory
+					add_building = building_primitive_mine
+					add_building = building_stone_palace
+				}
+			}
+			industrial_age = {
+				change_government = {
+					civics = {
+						civic = civic_increasing_urbanization
+						civic = civic_atmospheric_pollution
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 22
+						}
+						while = {
+							limit = {
+								num_pops > 22
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 22 }
+						while = {
+							limit = {
+								num_pops < 22
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_primitive_farm
+					add_building = building_primitive_factory
+					add_building = building_primitive_mine
+					add_building = building_primitive_power_plant
+					add_building = building_primitive_capital
+					add_building = building_urban_dwellings
+				}
+			}
+			machine_age = {
+				change_government = {
+					civics = {
+						civic = civic_increasing_urbanization
+						civic = civic_atmospheric_pollution
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 24
+						}
+						while = {
+							limit = {
+								num_pops > 24
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 24 }
+						while = {
+							limit = {
+								num_pops < 24
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_primitive_farm
+					add_building = building_primitive_factory
+					add_building = building_primitive_mine
+					add_building = building_primitive_power_plant
+					add_building = building_primitive_capital
+					add_building = building_urban_dwellings
+					add_deposit = d_decrepit_dwellings
+					add_deposit = d_failing_infrastructure
+				}
+			}
+			atomic_age = {
+				change_government = {
+					civics = {
+						civic = civic_increasing_urbanization
+						civic = civic_atmospheric_pollution
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 24
+						}
+						while = {
+							limit = {
+								num_pops > 24
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 24 }
+						while = {
+							limit = {
+								num_pops < 24
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_primitive_farm
+					add_building = building_primitive_factory
+					add_building = building_primitive_mine
+					add_building = building_primitive_power_plant
+					add_building = building_primitive_capital
+					add_building = building_urban_dwellings
+					add_deposit = d_decrepit_dwellings
+					add_deposit = d_failing_infrastructure
+				}
+			}
+			early_space_age = {
+				change_government = {
+					civics = {
+						civic = civic_increasing_urbanization
+						civic = civic_atmospheric_pollution
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							num_pops > 26
+						}
+						while = {
+							limit = {
+								num_pops > 26
+							}
+							random_owned_pop = {
+								kill_pop = yes
+							}
+						}
+					}
+					else_if = {
+						limit = { num_pops < 28 }
+						while = {
+							limit = {
+								num_pops < 28
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					remove_all_primitive_buildings = yes
+					add_building = building_primitive_farm
+					add_building = building_primitive_factory
+					add_building = building_primitive_mine
+					add_building = building_primitive_power_plant
+					add_building = building_primitive_capital
+					add_building = building_urban_dwellings
+					add_deposit = d_decrepit_dwellings
+					add_deposit = d_failing_infrastructure
+				}
+			}
+		}
+	}
+}
+
+remove_all_primitive_buildings = {
+	if = {
+		limit = { has_building = building_crude_huts }
+		while = {
+			limit = { has_building = building_crude_huts }
+			remove_building = building_crude_huts
+		}
+	}
+	if = {
+		limit = { has_building = building_primitive_dwellings }
+		while = {
+			limit = { has_building = building_primitive_dwellings }
+			remove_building = building_primitive_dwellings
+		}
+	}
+	if = {
+		limit = { has_building = building_stone_palace }
+		while = {
+			limit = { has_building = building_stone_palace }
+			remove_building = building_stone_palace
+		}
+	}
+	if = {
+		limit = { has_building = building_primitive_factory }
+		while = {
+			limit = { has_building = building_primitive_factory }
+			remove_building = building_primitive_factory
+		}
+	}
+	if = {
+		limit = { has_building = building_primitive_mine }
+		while = {
+			limit = { has_building = building_primitive_mine }
+			remove_building = building_primitive_mine
+		}
+	}
+	if = {
+		limit = { has_building = building_primitive_power_plant }
+		while = {
+			limit = { has_building = building_primitive_power_plant }
+			remove_building = building_primitive_power_plant
+		}
+	}
+	if = {
+		limit = { has_building = building_primitive_farm }
+		while = {
+			limit = { has_building = building_primitive_farm }
+			remove_building = building_primitive_farm
+		}
+	}
+	if = {
+		limit = { has_building = building_primitive_capital }
+		while = {
+			limit = { has_building = building_primitive_capital }
+			remove_building = building_primitive_capital
+		}
+	}
+	if = {
+		limit = { has_building = building_urban_dwellings }
+		while = {
+			limit = { has_building = building_urban_dwellings }
+			remove_building = building_urban_dwellings
+		}
+	}
+	if = {
+		limit = {
+			has_deposit = d_decrepit_dwellings
+		}
+		remove_deposit = d_decrepit_dwellings
+	}
+	if = {
+		limit = {
+			has_deposit = d_failing_infrastructure
+		}
+		remove_deposit = d_failing_infrastructure
 	}
 }
 

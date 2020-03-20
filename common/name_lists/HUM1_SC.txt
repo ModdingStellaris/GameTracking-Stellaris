@@ -2,6 +2,8 @@
 HUM1 = {
 	### SHIPS
 	
+	category = "Humanoid"
+	
 	language = "l_simp_chinese"
 	
 	ship_names = {

@@ -28,10 +28,10 @@ automate_habitat_mining_machine_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_simulation_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					simulation_1_upkeep_affordable = yes
 				}
 			}
 		}

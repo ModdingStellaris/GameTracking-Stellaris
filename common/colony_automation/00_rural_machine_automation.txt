@@ -30,19 +30,19 @@ automate_rural_machine_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_mineral_purification_plant
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					mineral_purification_plant_upkeep_affordable = yes
 				}
 			}
 		}
 
 		4 = {
-			building = building_mineral_purification_plant
+			building = building_refinery
 			available = {
 				owner = {
-					mineral_purification_plant_upkeep_affordable = yes
+					refinery_upkeep_affordable = yes
 				}
 			}
 		}
@@ -84,10 +84,10 @@ automate_rural_machine_planet = {
 		}
 
 		9 = {
-			building = building_maintenance_depot
+			building = building_simulation_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					simulation_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -120,10 +120,10 @@ automate_rural_machine_planet = {
 		}
 
 		13 = {
-			building = building_maintenance_depot
+			building = building_simulation_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					simulation_1_upkeep_affordable = yes
 				}
 			}
 		}

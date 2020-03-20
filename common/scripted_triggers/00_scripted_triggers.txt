@@ -233,7 +233,7 @@ is_fallen_empire_xenophile = {
 is_valid_fallen_empire_for_task = {
 	is_country_type = fallen_empire
 	is_at_war = no
-	fleet_power > 40000
+	fleet_power > 60000
 	OR = {
 		has_ethic = ethic_fanatic_spiritualist
 		has_ethic = ethic_fanatic_xenophile
@@ -274,6 +274,10 @@ has_humanoids = {
 
 has_lithoids = {
 	host_has_dlc = "Lithoids Species Pack"
+}
+
+has_federations_dlc = {
+	host_has_dlc = "Federations"
 }
 
 uninhabitable_regular_planet = {
@@ -358,7 +362,7 @@ is_guardian_country = {
 
 has_encountered_other_species = {
 	OR = {
-		has_civic = civic_syncretic_evolution
+		has_origin = origin_syncretic_evolution
 		has_civic = civic_machine_servitor
 		num_communications > 0
 		any_owned_pop = {
@@ -817,6 +821,7 @@ has_sapient_combat_computer = {
 		has_component = COMBAT_COMPUTER_LINE_SAPIENT
 		has_component = COMBAT_COMPUTER_PICKET_SAPIENT
 		has_component = COMBAT_COMPUTER_ARTILLERY_SAPIENT
+		has_component = COMBAT_COMPUTER_CARRIER_SAPIENT
 		has_component = COMBAT_COMPUTER_PLATFORM_SAPIENT
 	}
 }
@@ -903,6 +908,33 @@ is_hive_empire = {
 
 is_machine_empire = {
 	has_authority = auth_machine_intelligence
+}
+
+is_autocracy = { #Power of one
+	OR = {
+		has_ethic = ethic_gestalt_consciousness
+		has_authority = auth_imperial
+		has_authority = auth_dictatorial
+	}
+}
+
+is_oligarchy = { #Power of few
+	OR = {
+		has_authority = auth_oligarchic
+		has_authority = auth_corporate
+	}
+	NOR = {
+		has_ethic = ethic_egalitarian
+		has_ethic = ethic_fanatic_egalitarian
+	}
+}
+
+is_democracy = { #Power of many
+	has_authority = auth_democratic
+	AND = {
+		has_authority = auth_corporate
+		is_egalitarian = yes
+	}
 }
 
 can_set_ai_policy = {
@@ -1026,16 +1058,16 @@ has_isolated_system = {
 				has_star_flag = pirates_spawned
 				has_star_flag = precursor_system
 				has_star_flag = enclave
-				any_ship_in_system = {
+				any_fleet_in_system = {
 					exists = owner
 					owner = { is_hostile = root }
 				}
-				any_ship_in_system = {
+				any_fleet_in_system = {
 					is_ship_size = constructor
 					is_constructing = starbase
 				}
-				any_ship_in_system = {
-					fleet = { fleet_power > 1000 }
+				any_fleet_in_system = {
+					fleet_power > 1000
 				}
 			}
 			NOT = { exists = space_owner }
@@ -1067,7 +1099,7 @@ has_bordering_system = {
 				has_star_flag = pirates_spawned
 				has_star_flag = precursor_system
 				has_star_flag = enclave
-				any_ship_in_system = {
+				any_fleet_in_system = {
 					exists = owner
 					owner = { is_hostile = root }
 				}
@@ -1075,8 +1107,8 @@ has_bordering_system = {
 					is_ship_size = constructor
 					is_constructing = starbase
 				}
-				any_ship_in_system = {
-					fleet = { fleet_power > 1000 }
+				any_fleet_in_system = {
+					fleet_power > 1000
 				}
 			}
 			NOT = { exists = space_owner }
@@ -1344,6 +1376,13 @@ has_ancrel = {
 	host_has_dlc = "Ancient Relics Story Pack"
 }
 
+simulation_1_upkeep_affordable = {
+	has_monthly_income = {
+		resource = energy
+		value > 4
+	}
+}
+
 factory_1_upkeep_affordable = {
 	has_monthly_income = {
 		resource = energy
@@ -1601,7 +1640,7 @@ uplink_node_upkeep_affordable = {
 food_processing_facility_upkeep_affordable = {
 	has_monthly_income = {
 		resource = energy
-		value > 1
+		value > 2
 	}
 }
 
@@ -1645,6 +1684,13 @@ crystal_plant_upkeep_affordable = {
 	has_monthly_income = {
 		resource = minerals
 		value > 10
+	}
+}
+
+bureaucracy_upkeep_affordable = {
+	has_monthly_income = {
+		resource = energy
+		value > 2
 	}
 }
 
@@ -1793,11 +1839,48 @@ enigmatic_modifier_jobs = { # Only pops with jobs affecting resources without mo
 	}
 }
 
+is_specialist_researcher = { #Specialist traits for recruitable leaders
+	OR = {
+		has_trait = leader_trait_expertise_biology
+		has_trait = leader_trait_expertise_computing
+		has_trait = leader_trait_expertise_field_manipulation
+		has_trait = leader_trait_expertise_industry
+		has_trait = leader_trait_expertise_materials
+		has_trait = leader_trait_expertise_military_theory
+		has_trait = leader_trait_expertise_new_worlds
+		has_trait = leader_trait_expertise_particles
+		has_trait = leader_trait_expertise_propulsion
+		has_trait = leader_trait_expertise_psionics
+		has_trait = leader_trait_expertise_statecraft
+		has_trait = leader_trait_expertise_voidcraft
+	}
+}
+
 is_special_colony_type = {
 	OR = {
 		has_modifier = penal_colony
 		has_modifier = resort_colony
 		has_modifier = slave_colony
+	}
+}
+
+scion_has_techs = {
+	AND = {
+		has_technology = tech_alloys_1
+		has_technology = tech_mineral_purification_2
+		has_technology = tech_space_defense_station_improvement
+		has_technology = tech_battleships
+		has_technology = tech_battleship_hull_2
+		has_technology = tech_space_science_2
+		has_technology = tech_self_aware_logic
+		has_technology = tech_antimatter_power
+		has_technology = tech_combat_computers_autonomous
+		has_technology = tech_jump_drive_1
+		has_technology = tech_eco_simulation
+		has_technology = tech_society_2
+		has_technology = tech_colonization_4
+		has_technology = tech_climate_restoration
+		has_technology = tech_ascension_theory
 	}
 }
 

@@ -373,7 +373,6 @@ guiTypes = {
 					maxHeight = 65
 					fixedSize = yes
 					vertical_alignment = center
-					alwaystransparent = yes
 				}
 
 				buttonType = {

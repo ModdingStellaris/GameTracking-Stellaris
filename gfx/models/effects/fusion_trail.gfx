@@ -1,0 +1,84 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fusion_trail_mesh_mesh"
+		file = "gfx/models/effects/fusion_trail_mesh.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "fusion_trail_1.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "aurora_mesh_mesh"
+		file = "gfx/models/effects/aurora_mesh.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "aurora_1.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+###### Mirrored
+
+	pdxmesh = {
+		name = "fusion_trail_mesh_2"
+		file = "gfx/models/effects/fusion_trail_mesh_2.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "fusion_trail_1.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "aurora_mesh_1"
+		file = "gfx/models/effects/aurora_mesh_1.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "aurora_1.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+###### Straight
+
+	pdxmesh = {
+		name = "fusion_trail_mesh_3"
+		file = "gfx/models/effects/fusion_trail_mesh_3.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "fusion_trail_1.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "aurora_mesh_2"
+		file = "gfx/models/effects/aurora_mesh_2.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "aurora_1.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}}

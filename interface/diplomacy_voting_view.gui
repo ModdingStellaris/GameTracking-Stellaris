@@ -97,6 +97,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = "VOTE_NO"
 			format = center
+			clicksound = "button_federation_centralization_vote"
 		}
 			
 		buttonType = {
@@ -107,6 +108,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = "VOTE_YES"
 			format = center
+			clicksound = "button_federation_centralization_vote"
 		}
 	}
 	

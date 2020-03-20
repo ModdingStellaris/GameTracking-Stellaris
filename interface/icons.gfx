@@ -5,7 +5,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_imperialists.dds"
 		noOfFrames = 1
 	}
-	
+
 	spriteType = {
 		name = "GFX_faction_icon_prosperity"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_prosperity.dds"
@@ -16,14 +16,14 @@ spriteTypes = {
 		name = "GFX_faction_icon_colonialist"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_colonialist_lobby.dds"
 		noOfFrames = 1
-	}	
-	
+	}
+
 	spriteType = {
 		name = "GFX_faction_icon_isolationist"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_isolationists.dds"
 		noOfFrames = 1
 	}
-	
+
 	spriteType = {
 		name = "GFX_faction_icon_progressive"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_progressives.dds"
@@ -34,14 +34,14 @@ spriteTypes = {
 		name = "GFX_faction_icon_separatist"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_separatists.dds"
 		noOfFrames = 1
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_faction_icon_rebellious_slaves"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_rebellious_slaves.dds"
 		noOfFrames = 1
 	}
-	
+
 	spriteType = {
 		name = "GFX_faction_icon_supremacist"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_supremacists.dds"
@@ -53,24 +53,24 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_technologists.dds"
 		noOfFrames = 1
 	}
-	
+
 	spriteType = {
 		name = "GFX_faction_icon_totalitarian"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_totalitarians.dds"
 		noOfFrames = 1
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_faction_icon_traditionalist"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_traditionalists.dds"
 		noOfFrames = 1
-	}		
+	}
 
 	spriteType = {
 		name = "GFX_faction_icon_xenoist"
 		textureFile = "gfx/interface/icons/faction_icons/faction_icons_xenoists.dds"
 		noOfFrames = 1
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_army_attachment"
@@ -83,22 +83,22 @@ spriteTypes = {
 		textureFile = "gfx/interface/planetview/army_icon.dds"
 		noOfFrames = 12
 	}
-	
+
 	spriteType = {
 		name = "GFX_station_icon"
 		texturefile = "gfx/interface/icons/station_icon.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_fleet_size_icon"
 		texturefile = "gfx/interface/icons/fleet_size_icon.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_fleet_capacity_icon"
 		texturefile = "gfx/interface/icons/fleet_capacity_icon.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_research_icon"
 		texturefile = "gfx/interface/icons/research_icon.dds"
@@ -123,17 +123,17 @@ spriteTypes = {
 		name = "GFX_trade_cat_transfer_control"
 		texturefile = "gfx/interface/icons/trade_icons/trade_cat_transfer_control.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_trade_cat_sensor"
 		texturefile = "gfx/interface/icons/trade_icons/trade_cat_sensor.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_trade_cat_non_aggression_pledge"
 		texturefile = "gfx/interface/icons/trade_icons/trade_cat_non_aggression_pledge.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_trade_cat_food"
 		texturefile = "gfx/interface/icons/trade_icons/trade_cat_food.dds"
@@ -143,7 +143,7 @@ spriteTypes = {
 		name = "GFX_trade_cat_guarantee"
 		texturefile = "gfx/interface/icons/trade_icons/trade_cat_guarantee_independence.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_trade_cat_support_independence"
 		texturefile = "gfx/interface/icons/trade_icons/trade_cat_support_independence.dds"
@@ -157,7 +157,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trade_cat_migration_access"
 		texturefile = "gfx/interface/icons/trade_icons/trade_cat_migration_access.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_trade_cat_research_agreement"
@@ -167,6 +167,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trade_cat_open_borders"
 		texturefile = "gfx/interface/icons/trade_icons/trade_cat_border_access.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trade_cat_favors"
+		texturefile = "gfx/interface/icons/diplomacy/ask_favor.dds"
 	}
 
 	spriteType = {
@@ -243,7 +248,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/dot_red_green.dds"
 		noOfFrames = 2
 	}
-	
+
 	spriteType = {
 		name = "GFX_faction_attraction_icon"
 		texturefile = "gfx/interface/icons/faction_attraction_icon.dds"
@@ -300,7 +305,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/governments/civics/unknown.dds"
 		noOfFrames = 1
 	}
-	
+
 	spriteType = {
 		name = "GFX_government_civic_selected"
 		texturefile = "gfx/interface/icons/governments/civic_active_border.dds"
@@ -351,7 +356,7 @@ spriteTypes = {
 		name = "GFX_type_frame"
 		textureFile = "gfx/interface/system/map_gui_frame.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_clausewitz_logo"
 		textureFile = "gfx/interface/icons/clausewitz_logo.dds"
@@ -360,7 +365,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ship_class_small"
 		textureFile = "gfx/interface/icons/ship_classes.dds"
-		noOfFrames = 30
+		noOfFrames = 35
 	}
 
 	spriteType = {
@@ -374,17 +379,17 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/starbase_ship_sizes_medium.dds"
 		noOfFrames = 5
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_outliner"
 		textureFile = "gfx/interface/icons/starbase_outliner.dds"
-		noOfFrames = 5
+		noOfFrames = 6
 	}
 
 	spriteType = {
 		name = "GFX_ship_class_medium"
 		textureFile = "gfx/interface/icons/ship_classes_medium.dds"
-		noOfFrames = 30
+		noOfFrames = 35
 	}
 
 	spriteType = {
@@ -405,19 +410,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ship_sizes"
 		textureFile = "gfx/interface/icons/ship_parts/ship_sizes.dds"
-		noOfFrames = 12
+		noOfFrames = 13
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_sizes_top"
 		textureFile = "gfx/interface/icons/ship_parts/ship_sizes_top.dds"
-		noOfFrames = 12
+		noOfFrames = 13
 	}
 
 	spriteType = {
 		name = "GFX_ship_sizes_top_damaged"
 		textureFile = "gfx/interface/icons/ship_parts/ship_sizes_top_damaged.dds"
-		noOfFrames = 12
+		noOfFrames = 13
 	}
 
 	#spriteType = {
@@ -602,6 +607,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_message_election"
 		texturefile = "gfx/interface/icons/message/message_election.dds"
+	}
+	spriteType = {
+		name = "GFX_message_federation_law_passed"
+		texturefile = "gfx/interface/icons/message/message_laws_passed.dds"
+	}
+	spriteType = {
+		name = "GFX_message_federation_law_failed"
+		texturefile = "gfx/interface/icons/message/message_laws_failed.dds"
 	}
 	spriteType = {
 		name = "GFX_message_invite_to_federation"
@@ -799,111 +812,111 @@ spriteTypes = {
 		name = "GFX_message_conditional_effect_lost"
 		texturefile = "gfx/interface/icons/message/message_conditional_effect_lost.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_form_defensive_pact"
 		texturefile = "gfx/interface/icons/message/message_form_defensive_pact.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_break_defensive_pact"
 		texturefile = "gfx/interface/icons/message/message_break_defensive_pact.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_form_non_aggression_pact"
 		texturefile = "gfx/interface/icons/message/message_form_non_aggression_pact.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_break_non_aggression_pact"
 		texturefile = "gfx/interface/icons/message/message_break_non_aggression_pact.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_form_commercial_pact"
 		texturefile = "gfx/interface/icons/message/message_form_commercial_pact.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_break_commercial_pact"
 		texturefile = "gfx/interface/icons/message/message_break_commercial_pact.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_form_research_agreement"
 		texturefile = "gfx/interface/icons/message/message_form_research_agreement.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_break_research_agreement"
 		texturefile = "gfx/interface/icons/message/message_break_research_agreement.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_guarantee_independence"
 		texturefile = "gfx/interface/icons/message/message_guarantee_independence.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_break_guarantee"
 		texturefile = "gfx/interface/icons/message/message_break_guarantee.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_support_independence"
 		texturefile = "gfx/interface/icons/message/message_support_independence.dds"
-	}	
-	
+	}
+
 	spriteType = {
 		name = "GFX_message_break_support"
 		texturefile = "gfx/interface/icons/message/message_break_support.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_open_borders"
 		texturefile = "gfx/interface/icons/message/message_open_borders.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_close_borders"
 		texturefile = "gfx/interface/icons/message/message_close_borders.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_kick_from_alliance"
 		texturefile = "gfx/interface/icons/message/message_kick_from_alliance.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_form_migration_pact"
 		texturefile = "gfx/interface/icons/message/message_form_migration_pact.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_break_migration_pact"
 		texturefile = "gfx/interface/icons/message/message_break_migration_pact.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_retreat_casualties"
 		texturefile = "gfx/interface/icons/message/message_retreat_casualties.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_message_emergency_ftl_casualties"
 		texturefile = "gfx/interface/icons/message/message_emergency_ftl_casualties.dds"
-	}	
-	
+	}
+
 	spriteType = {
 		name = "GFX_message_megastructure_built"
 		texturefile = "gfx/interface/icons/message/message_megastructure_built.dds"
-	}	
-	
+	}
+
 	spriteType = {
 		name = "GFX_message_megastructure_upgraded"
 		texturefile = "gfx/interface/icons/message/message_megastructure_upgraded.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_message_auto_explore_canceled"
@@ -911,10 +924,60 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_message_resolution_passed"
+		texturefile = "gfx/interface/icons/message/message_resolution_passed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_resolution_failed"
+		texturefile = "gfx/interface/icons/message/message_resolution_defeated.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_emergency_measure"
+		texturefile = "gfx/interface/icons/message/message_emergency_measure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_senate_in_session"
+		texturefile = "gfx/interface/icons/message/message_senate_in_session.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_resolution_vetoed"
+		texturefile = "gfx/interface/icons/message/message_resolution_vetoed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_council_election_result"
+		texturefile = "gfx/interface/icons/message/message_council_election_result.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_federation_level_unlocked"
+		texturefile = "gfx/interface/icons/message/message_federation_level_unlocked.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_laws_change"
+		texturefile = "gfx/interface/icons/message/message_laws_change.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_laws_passed"
+		texturefile = "gfx/interface/icons/message/message_laws_passed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_laws_failed"
+		texturefile = "gfx/interface/icons/message/message_laws_failed.dds"
+	}
+
+	spriteType = {
 		name = "GFX_expand_icon"
 		texturefile = "gfx/interface/icons/expand_icon.dds"
 	}
-	
+
 #	spriteType = {
 #		name = "GFX_"
 #		texturefile = "gfx/interface/icons/message/message_diplomatic_alliance.dds"
@@ -976,12 +1039,12 @@ spriteTypes = {
 		name = "GFX_ship_part_kinetic_artillery_2"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_kinetic_artillery_2.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_mass_accelerator_1"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_mass_accelerator_1.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_mass_accelerator_2"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_mass_accelerator_2.dds"
@@ -1011,7 +1074,7 @@ spriteTypes = {
 		name = "GFX_ship_part_flak_batteries_2"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_flak_batteries_2.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_flak_batteries_3"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_flak_batteries_3.dds"
@@ -1236,12 +1299,12 @@ spriteTypes = {
 		name = "GFX_ship_part_thruster_4"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_thruster_4.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_thruster_5"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_thruster_5.dds"
-	}	
-	
+	}
+
 	spriteType = {
 		name = "GFX_ship_part_reactor_booster_1"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_reactor_booster_1.dds"
@@ -1250,12 +1313,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ship_part_reactor_booster_2"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_reactor_booster_2.dds"
-	}		
+	}
 
 	spriteType = {
 		name = "GFX_ship_part_reactor_booster_3"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_reactor_booster_3.dds"
-	}			
+	}
 
 	spriteType = {
 		name = "GFX_ship_part_reactor_1"
@@ -1356,7 +1419,7 @@ spriteTypes = {
 		name = "GFX_ship_part_psi_shield"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_psi_shield.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_afterburner_1"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_afterburners_1.dds"
@@ -1426,17 +1489,17 @@ spriteTypes = {
 		name = "GFX_ship_part_computer_swarm_advanced"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_swarm_advanced.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_swarm_sapient"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_swarm_sapient.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_swarm_precog"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_swarm_precog.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_picket_basic"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_picket_basic.dds"
@@ -1446,17 +1509,17 @@ spriteTypes = {
 		name = "GFX_ship_part_computer_picket_advanced"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_picket_advanced.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_picket_sapient"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_picket_sapient.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_picket_precog"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_picket_precog.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_line_basic"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_line_basic.dds"
@@ -1466,17 +1529,17 @@ spriteTypes = {
 		name = "GFX_ship_part_computer_line_advanced"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_line_advanced.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_line_sapient"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_line_sapient.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_line_precog"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_line_precog.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_artillery_basic"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_artillery_basic.dds"
@@ -1486,12 +1549,12 @@ spriteTypes = {
 		name = "GFX_ship_part_computer_artillery_advanced"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_artillery_advanced.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_artillery_sapient"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_artillery_sapient.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_artillery_precog"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_artillery_precog.dds"
@@ -1506,16 +1569,36 @@ spriteTypes = {
 		name = "GFX_ship_part_computer_platform_advanced"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_platform_advanced.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_platform_sapient"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_platform_sapient.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_computer_platform_precog"
 		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_platform_precog.dds"
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_computer_carrier_basic"
+		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_carrier_basic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_computer_carrier_advanced"
+		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_carrier_advanced.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_computer_carrier_sapient"
+		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_carrier_sapient.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_computer_carrier_precog"
+		texturefile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_role_carrier_precog.dds"
+	}
 
 	spriteType = {
 		name = "GFX_ship_part_strike_craft_scout_1"
@@ -1571,12 +1654,12 @@ spriteTypes = {
 		name = "GFX_ship_part_science_lab_1"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_science_lab_1.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_archeology_lab"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_archeology_lab.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_curator_lab"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_curator_lab.dds"
@@ -1625,7 +1708,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ship_part_aura_shield_dampener"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_aura_shield_dampener.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_ship_part_aura_quantum_destabilizer"
@@ -1671,7 +1754,7 @@ spriteTypes = {
 		name = "GFX_ship_part_yellow_crystal_weapon_1"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_yellow_crystal_weapon_1.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_red_crystal_weapon_1"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_red_crystal_weapon_1.dds"
@@ -1696,37 +1779,37 @@ spriteTypes = {
 		name = "GFX_ship_part_swarm_strike_craft_1"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_swarm_strike_craft_1.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_perdition_beam"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_perdition_beam.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_world_cracker"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_world_cracker.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_global_pacifier"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_global_pacifier.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_neutron_sweep"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_neutron_sweep.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_divine_enforcer"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_divine_enforcer.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_nanobot_diffuser"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_nanobot_diffuser.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_subspace_navigation"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_subspace_navigation.dds"
@@ -1736,10 +1819,35 @@ spriteTypes = {
 		name = "GFX_ship_part_orbital_trash_dispersal"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_orbital_trash_dispersal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_ship_part_null_void_weapon"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_null_void_weapon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aura_strike_craft"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aura_strike_craft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aura_hyperlane"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aura_hyperlane.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aura_bombardment"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aura_bombardment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aura_range"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aura_range.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aura_pd_penetration"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aura_pd_penetration.dds"
 	}
 
 	## Spaceport Modules ##
@@ -1754,12 +1862,12 @@ spriteTypes = {
 		name = "GFX_solar_panel_network"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_solar_panels.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_crew_quarters"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_crew_quarters.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_observatory"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_observatory.dds"
@@ -1804,7 +1912,7 @@ spriteTypes = {
 		name = "GFX_spaceport_module_satramene_refinery"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_satramene_refinery.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_fleet_academy"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_fleet_academy.dds"
@@ -1814,67 +1922,67 @@ spriteTypes = {
 		name = "GFX_spaceport_module_pioneering_terminal"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_pioneering_terminal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_atmospheric_manipulator"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_atmospheric_manipulator.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_dark_matter_factory"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_dark_matter_factory.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_cruiser_assembly_yard"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_cruiser_assembly_yard.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_teldar_refinery"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_teldar_refinery.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_orillium_plant"
 		texturefile = "gfx/interface/icons/modules/spaceport_orillium_plant.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_engos_refinery"
 		texturefile = "gfx/interface/icons/modules/spaceport_engos_refinery.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_pitharan_refinery"
 		texturefile = "gfx/interface/icons/modules/spaceport_pitharan_refinery.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_nebula_refinery"
 		texturefile = "gfx/interface/icons/modules/spaceport_nebula_refinery.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_orbital_mind_control_lazer"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_orbital_mind_control_lazer.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_battleship_assembly_yard"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_battleship_assembly_yard.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_living_metal_armory"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_living_metal_armory.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_colossus_assembly_yard"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_colossus_assembly_yard.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_spaceport_module_titan_assembly_yard"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_titan_assembly_yard.dds"
@@ -1884,83 +1992,83 @@ spriteTypes = {
 		name = "GFX_spaceport_module_resource_silo"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_resource_silo.dds"
 	}
-	
+
 	## Starbase Modules ##
-	
+
 	spriteType = {
 		name = "GFX_starbase_mining_terminal"
 		texturefile = "gfx/interface/icons/modules/sb_mining_terminal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_trading_hub"
 		texturefile = "gfx/interface/icons/modules/sb_trading_hub.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_shipyard"
 		texturefile = "gfx/interface/icons/modules/sb_shipyard.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_anchorage"
 		texturefile = "gfx/interface/icons/modules/sb_anchorage.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_missile_battery"
 		texturefile = "gfx/interface/icons/modules/sb_missile_battery.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_hangar_bay"
 		texturefile = "gfx/interface/icons/modules/sb_hangar_bay.dds"
 	}
-	
+
 	## Starbase Buildings ##
-	
+
 	spriteType = {
 		name = "GFX_starbase_communication_jammer"
 		texturefile = "gfx/interface/icons/modules/sb_communication_jammer.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_curator_think_tank"
 		texturefile = "gfx/interface/icons/modules/sb_curator_think_tank.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_deep_space_black_site"
 		texturefile = "gfx/interface/icons/modules/sb_deep_space_black_site.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_defense_grid_supercomputer"
 		texturefile = "gfx/interface/icons/modules/sb_defense_grid_supercomputer.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_offworld_trading_company"
 		texturefile = "gfx/interface/icons/modules/sb_offworld_trading_company.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_artist_college"
 		texturefile = "gfx/interface/icons/modules/sb_artist_college.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_command_center"
 		texturefile = "gfx/interface/icons/modules/sb_command_center.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_naval_logistics"
 		texturefile = "gfx/interface/icons/modules/sb_naval_logistics.dds"
 	}
 
 	# Sector type icons
-	
+
 		spriteType = {
 		name = "GFX_sector_focus_type_balanced"
 		texturefile = "gfx/interface/buttons/sector_balanced.dds"
@@ -1971,8 +2079,8 @@ spriteTypes = {
 		name = "GFX_sector_focus_type_balanced_selected"
 		texturefile = "gfx/interface/buttons/sector_balanced_selected.dds"
 	}
-	
-	
+
+
 	spriteType = {
 		name = "GFX_sector_agricultural_focus"
 		texturefile = "gfx/interface/buttons/sector_agricultural_focus.dds"
@@ -2073,7 +2181,7 @@ spriteTypes = {
 		name = "GFX_sector_focus_type_financial_selected"
 		texturefile = "gfx/interface/buttons/sector_financial_selected.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_sector_focus_type_agricultural"
 		texturefile = "gfx/interface/buttons/sector_agricultural_focus.dds"
@@ -2083,17 +2191,28 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_sector_focus_type_agricultural_selected"
 		texturefile = "gfx/interface/buttons/sector_agricultural_focus_selected.dds"
-	}	
+	}
 
 	spriteType = {
-		name = "GFX_sector_focus_type_production"
-		texturefile = "gfx/interface/buttons/sector_agricultural_focus.dds"
+		name = "GFX_resolution_view_supporters_button"
+		texturefile = "gfx/interface/buttons/resolution_view_supporters_button.dds"
 		noOfFrames = 3
 	}
 
 	spriteType = {
-		name = "GFX_sector_focus_type_production_selected"
-		texturefile = "gfx/interface/buttons/sector_agricultural_focus_selected.dds"
+		name = "GFX_resolution_view_supporters_button_selected"
+		texturefile = "gfx/interface/buttons/resolution_view_supporters_button_selected.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_details_button"
+		texturefile = "gfx/interface/buttons/resolution_details_button.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_resolution_details_button_selected"
+		texturefile = "gfx/interface/buttons/resolution_details_button_selected.dds"
 	}
 
 	spriteType = {
@@ -2105,7 +2224,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_sector_focus_type_disabled_selected"
 		texturefile = "gfx/interface/buttons/sector_no_focus_selected.dds"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_diplo_type_icon"
@@ -2194,50 +2313,232 @@ spriteTypes = {
 		name = "GFX_message_refugees_arrived"
 		texturefile = "gfx/interface/icons/message/message_refugees_arrived.dds"
 	}
-	
 
-	### DLCs ###
-
-	spriteType = {
-		name = "GFX_lithoidsspeciespack"
-		texturefile = "gfx/interface/icons/dlc/lithoids.dds"
-	}
+	### Resolutions ###
 
 	spriteType = {
-		name = "GFX_ancientrelicsstorypack"
-		texturefile = "gfx/interface/icons/dlc/ancient_relics.dds"
+		name = "GFX_resolution_establish_council"
+		texturefile = "gfx/interface/icons/resolutions/resolution_create_council.dds"
 	}
 
 	spriteType = {
-		name = "GFX_megacorp"
-		texturefile = "gfx/interface/icons/dlc/megacorp.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_apocalypse"
-		texturefile = "gfx/interface/icons/dlc/apocalypse.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_leviathansstorypack"
-		texturefile = "gfx/interface/icons/dlc/leviathans_story_pack.dds"
+		name = "GFX_resolution_artificial_intelligence"
+		texturefile = "gfx/interface/icons/resolutions/resolution_artificial_intelligence.dds"
 	}
 
 	spriteType = {
-		name = "GFX_utopia"
-		texturefile = "gfx/interface/icons/dlc/utopia.dds"
+		name = "GFX_resolution_bombardment"
+		texturefile = "gfx/interface/icons/resolutions/resolution_bombardment.dds"
 	}
 
 	spriteType = {
-		name = "GFX_syntheticdawnstorypack"
-		texturefile = "gfx/interface/icons/dlc/synthetic_dawn.dds" 
+		name = "GFX_resolution_border_status"
+		texturefile = "gfx/interface/icons/resolutions/resolution_border_status.dds"
 	}
 
 	spriteType = {
-		name = "GFX_distantstarsstorypack"
-		texturefile = "gfx/interface/icons/dlc/distant_stars.dds"
+		name = "GFX_resolution_colossus"
+		texturefile = "gfx/interface/icons/resolutions/resolution_colossus.dds"
 	}
-	
+
+	spriteType = {
+		name = "GFX_resolution_rules_of_war"
+		texturefile = "gfx/interface/icons/resolutions/resolution_rules_of_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_council_diplomatic_weight"
+		texturefile = "gfx/interface/icons/resolutions/resolution_council_diplomatic_weight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_council_member_permanent"
+		texturefile = "gfx/interface/icons/resolutions/resolution_council_member_permanent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_council_size"
+		texturefile = "gfx/interface/icons/resolutions/resolution_council_size.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_council_terms"
+		texturefile = "gfx/interface/icons/resolutions/resolution_council_terms.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_council_veto"
+		texturefile = "gfx/interface/icons/resolutions/resolution_council_veto.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_create_council"
+		texturefile = "gfx/interface/icons/resolutions/resolution_create_council.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_denounce_empire"
+		texturefile = "gfx/interface/icons/resolutions/resolution_denounce_empire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_diplomatic_weight"
+		texturefile = "gfx/interface/icons/resolutions/resolution_diplomatic_weight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_emergency_measure"
+		texturefile = "gfx/interface/icons/resolutions/resolution_emergency_measure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_form_galactic_market"
+		texturefile = "gfx/interface/icons/resolutions/resolution_form_galactic_market.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_galactic_market_leader"
+		texturefile = "gfx/interface/icons/resolutions/resolution_galactic_market_leader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_galactic_market_slave_trade"
+		texturefile = "gfx/interface/icons/resolutions/resolution_galactic_market_slave_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_galactic_market_tariff"
+		texturefile = "gfx/interface/icons/resolutions/resolution_galactic_market_tariff.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_galatic_focus_generic"
+		texturefile = "gfx/interface/icons/resolutions/resolution_galatic_focus_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_native_interference"
+		texturefile = "gfx/interface/icons/resolutions/resolution_native_interference.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_purges"
+		texturefile = "gfx/interface/icons/resolutions/resolution_purges.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_refugees"
+		texturefile = "gfx/interface/icons/resolutions/resolution_refugees.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_remove_council_member"
+		texturefile = "gfx/interface/icons/resolutions/resolution_remove_council_member.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_ecolgical_protection"
+		texturefile = "gfx/interface/icons/resolutions/resolution_ecolgical_protection.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_wars_of_aggression"
+		texturefile = "gfx/interface/icons/resolutions/resolution_wars_of_aggression.dds"
+	}
+
+	spriteType = {
+		name = "GFX_repeal_red"
+		texturefile = "gfx/interface/icons/resolutions/resolution_repeal_red.dds"
+	}
+
+	spriteType = {
+		name = "GFX_repeal_orange"
+		texturefile = "gfx/interface/icons/resolutions/resolution_repeal_orange.dds"
+	}
+
+	spriteType = {
+		name = "GFX_repeal_blue"
+		texturefile = "gfx/interface/icons/resolutions/resolution_repeal_blue.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sanctions_purple"
+		texturefile = "gfx/interface/icons/resolutions/resolution_diplomatic_sanctions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sanctions_blue"
+		texturefile = "gfx/interface/icons/resolutions/resolution_technological_sanctions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sanctions_red"
+		texturefile = "gfx/interface/icons/resolutions/resolution_military_sanctions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sanctions_orange"
+		texturefile = "gfx/interface/icons/resolutions/resolution_economic_sanctions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_galactic_commerce"
+		texturefile = "gfx/interface/icons/resolutions/resolution_galactic_commerce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_mutual_defense"
+		texturefile = "gfx/interface/icons/resolutions/resolution_mutual_defense.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_greater_good"
+		texturefile = "gfx/interface/icons/resolutions/resolution_greater_good.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_industrial_development"
+		texturefile = "gfx/interface/icons/resolutions/resolution_industrial_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_galactic_focus_category"
+		texturefile = "gfx/interface/icons/resolutions/resolution_community_reform.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_galactic_studies"
+		texturefile = "gfx/interface/icons/resolutions/resolution_galactic_studies.dds"
+	}
+
+	### Galactic Focus ###
+
+	spriteType = {
+		name = "GFX_galactic_focus_electing_the_council"
+		texturefile = "gfx/interface/icons/galactic_focus/galactic_focus_electing_the_council.dds"
+	}
+
+	spriteType = {
+		name = "GFX_galactic_focus_galactic_market"
+		texturefile = "gfx/interface/icons/galactic_focus/galactic_focus_galactic_market.dds"
+	}
+
+	spriteType = {
+		name = "GFX_galactic_focus_generic"
+		texturefile = "gfx/interface/icons/galactic_focus/galactic_focus_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_galactic_focus_threat_to_galaxy"
+		texturefile = "gfx/interface/icons/galactic_focus/galactic_focus_threat_to_galaxy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_galactic_focus_war_in_heaven"
+		texturefile = "gfx/interface/icons/galactic_focus/galactic_focus_war_in_heaven.dds"
+	}
+
+
 	### Universal ###
 
 	spriteType = {
@@ -2248,5 +2549,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_minus_29"
 		texturefile = "gfx/interface/icons/minus_29.dds"
+	}
+
+	### Temp ###
+
+	spriteType = {
+		name = "GFX_federation_temp"
+		texturefile = "gfx/interface/icons/federation/temp_federation.dds"
+		noOfFrames = 1
 	}
 }

@@ -151,7 +151,7 @@
  utopia.82.desc.b:0 "[From.GetName] rozpoczęli budowę kolejnego węzła naukowego, tym razem w układzie [think_tank_system.GetName]."
  utopia.82.a:0 "To prawdziwy monument inteligentnego życia we Wszechświecie."
  utopia.82.b:0 "Usiłują przeskoczyć samych siebie, jak zwykle."
- utopia.82.c:0 "Trzeba zmiażdżyć i spalić tych [From.GetSpeciesNameAdj]..."
+ utopia.82.c:0 "Trzeba zmiażdżyć i spalić tych [From.GetSpeciesAdj]..."
  utopia.83.name:0 "Ukończono centrum węzła naukowego"
  utopia.83.desc:0 "Centrum węzła naukowego zostało ukończone i wyposażone w supernowoczesny reaktor osobliwościowy. Nasi inżynierowie przygotowują się do budowy kolejnej, jeszcze trudniejszej części obiektu - czterech skrzydeł badawczych. Będą one wyposażone w pionierskie technologie zdolne do wytrzymania wszystkiego, od piekielnego gorąca po fale skrajnego ciśnienia i atak kosmicznych patogenów. Zapewnią też dach nad głową wielu naukowcom."
  utopia.83.a:0 "Przebyliśmy długą drogę."

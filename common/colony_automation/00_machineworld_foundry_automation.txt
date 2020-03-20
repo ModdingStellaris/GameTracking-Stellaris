@@ -30,10 +30,10 @@ automate_machineworld_foundry_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_foundry_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					foundry_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -93,10 +93,10 @@ automate_machineworld_foundry_planet = {
 		}
 
 		10 = {
-			building = building_maintenance_depot
+			building = building_foundry_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					foundry_1_upkeep_affordable = yes
 				}
 			}
 		}

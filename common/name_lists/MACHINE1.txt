@@ -2,6 +2,7 @@
 ### Written by Dee Majek
 
 MACHINE1 = {
+	category = "Machine"
 	should_name_home_system_planets = no
 	
 	ship_names = {
@@ -30,6 +31,10 @@ MACHINE1 = {
 		}
 
 		colossus = {
+			Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
+		}
+
+		juggernaut = {
 			Eradicator Annihilator Pacifier Retaliator Nullifier Exterminator Silencer Vaporizer Eliminator Obliterator Annulator Extinguisher Protector Defender Subduer Suppressor Abolisher Conqueror Vanquisher Prevailer Dominator Resister Assailer Assassin Decimator Disintegrator Vitiator Devastator Effacer Shatterer Ruiner Extirpator Subjugator Razer Dispatcher Liberator Redeemer Deliverer Arbiter Predator Ender Advancer Besieger Stunner Striker Ambusher Thresher Enforcer Marshaller
 		}
 		

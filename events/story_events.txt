@@ -86,7 +86,7 @@ country_event = {
 	desc = {
 		trigger = { has_ethic = ethic_gestalt_consciousness }
 		text = story.2.desc.gesta
-	}	
+	}
 	# Xenophile regardless of status
 	desc = {
 		trigger = {
@@ -169,7 +169,7 @@ country_event = {
 	desc = {
 		text = story.3.desc.gesta
 		trigger = { has_ethic = ethic_gestalt_consciousness }
-	}	
+	}
 	# Spiritualist regardless of status
 	desc = {
 		text = story.3.desc.spiri
@@ -231,7 +231,7 @@ country_event = {
 	desc = {
 		trigger = { has_ethic = ethic_gestalt_consciousness }
 		text = story.4.desc.gesta
-	}	
+	}
 	# Fanatic Spiritualist regardless of status
 	desc = {
 		trigger = { OR = { has_ethic = ethic_fanatic_spiritualist has_ethic = ethic_spiritualist } }
@@ -321,7 +321,7 @@ country_event = {
 	desc = {
 		trigger = { has_ethic = ethic_gestalt_consciousness }
 		text = story.5.desc.gesta
-	}	
+	}
 	# Xenophobe
 	desc = {
 		trigger = { OR = { has_ethic = ethic_fanatic_xenophobe has_ethic = ethic_xenophobe } }
@@ -387,7 +387,7 @@ country_event = {
 	desc = {
 		trigger = { has_ethic = ethic_gestalt_consciousness }
 		text = story.6.desc.gesta
-	}	
+	}
 	# Xenophobe
 	desc = {
 		trigger = { OR = { has_ethic = ethic_fanatic_xenophobe has_ethic = ethic_xenophobe } }
@@ -467,7 +467,7 @@ country_event = {
 	desc = {
 		trigger = { has_ethic = ethic_gestalt_consciousness }
 		text = story.7.desc.gesta
-	}	
+	}
 	# Xenophobe
 	desc = {
 		trigger = { OR = { has_ethic = ethic_fanatic_xenophobe has_ethic = ethic_xenophobe } }
@@ -681,6 +681,16 @@ country_event = {
 			has_authority = auth_machine_intelligence
 		}
 	}
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = encountered_dreadnought
+				}
+				remove_country_flag = encountered_dreadnought
+			}
+		}
+	}
 }
 
 ##############################
@@ -727,7 +737,7 @@ country_event = {
 			}
 		}
 	}
-	picture = GFX_evt_fleet_evil
+	picture = GFX_evt_unidentified_monster
 	show_sound = event_space_amoeba
 	location = fromfromfrom
 	trackable = yes
@@ -813,7 +823,7 @@ country_event = {
 			}
 		}
 	}
-	picture = GFX_evt_fleet_evil
+	picture = GFX_evt_friendly_amoeba
 	show_sound = event_space_amoeba
 	location = from
 
@@ -1007,7 +1017,7 @@ country_event = {
 
 	immediate = {
 		set_country_flag = crystal_hostile_approach
-		# changed on pacification project		
+		# changed on pacification project
 	}
 
 	option = { # Hunting Buff
@@ -1459,7 +1469,7 @@ country_event = {
 		trigger = { has_ancrel = no }
 		add_resource = { minerals = 4000 alloys = 500 }
 	}
-	
+
 	option = {
 		name = story.332.b
 		trigger = { has_ancrel = yes }
@@ -1479,7 +1489,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		random_planet_within_border = { 
+		random_planet_within_border = {
 			limit = { habitable_planet = no }
 			save_event_target_as = chosen_planet
 		}

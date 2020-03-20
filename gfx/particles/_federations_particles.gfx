@@ -1,0 +1,488 @@
+objectTypes = {
+	
+	pdxparticle = {
+		name = "fusion_drive_trail_effect"
+		type = "fusion_drive_trail_effect"
+		
+		scale = 2.0
+	}
+	
+	pdxparticle = {
+		name = "fusion_parking_lot_effect"
+		type = "fusion_parking_lot_effect"
+		
+		scale = 2.0
+	}
+
+	pdxparticle = {
+		name = "fusion_parking_lot_small_effect"
+		type = "fusion_parking_lot_small_effect"
+		
+		scale = 2.0
+	}
+	
+	pdxparticle = {
+		name = "juggernaut_hull_explosion_effect"
+		type = "juggernaut_hull_explosion_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "juggernaut_burn_effect"
+		type = "juggernaut_burn_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "juggernaut_explosion_particle"
+		type = "player_ship_explosion_effect"
+		scale = 4.0
+	}
+	
+	pdxparticle = {
+		name = "lithoid_juggernaut_explosion_particle"
+		type = "lithoid_player_ship_explosion_effect"
+		scale = 4.0
+	}
+### Humanoid
+
+	####Exhaust
+
+	pdxparticle = {
+		name = "juggernaut_exhaust_moving_circle_s"
+		type = "juggernaut_exhaust_moving_circle_file"
+		scale = 1.5
+	}	
+	
+	pdxparticle = {
+		name = "juggernaut_exhaust_moving_circle_m"
+		type = "juggernaut_exhaust_moving_circle_file"
+		scale = 2
+	}	
+
+	pdxparticle = {
+		name = "juggernaut_exhaust_moving_circle_l"
+		type = "juggernaut_exhaust_moving_circle_file"
+		scale = 3
+	}	
+
+	####Idle
+
+	pdxparticle = {
+		name = "juggernaut_exhaust_idle_circle_s"
+		type = "juggernaut_exhaust_idle_circle_file"
+		scale = 1.5                
+	}	                           
+								   
+	pdxparticle = {                
+		name = "juggernaut_exhaust_idle_circle_m"
+		type = "juggernaut_exhaust_idle_circle_file"
+		scale = 2                  
+	}	                           
+								   
+	pdxparticle = {                
+		name = "juggernaut_exhaust_idle_circle_l"
+		type = "juggernaut_exhaust_idle_circle_file"
+		scale = 3
+	}	
+	
+	
+### Reptilian
+	
+			####Exhaust                   
+						   
+	pdxparticle = {        
+		name = "juggernaut_rep_exhaust_moving_m"
+		type = "juggernaut_rep_exhaust_moving_file"
+		scale = 2.8        
+	}	
+	
+	pdxparticle = {        
+		name = "juggernaut_rep_exhaust_moving_l"
+		type = "juggernaut_rep_exhaust_moving_file"
+		scale = 3.5        
+	}	
+
+	pdxparticle = {        
+		name = "juggernaut_rep_exhaust_main_moving_l"
+		type = "juggernaut_rep_exhaust_main_moving_file"
+		scale = 3.5        
+	}		
+		####Idle                                    
+								   
+	pdxparticle = {               
+		name = "juggernaut_rep_exhaust_idle_l"
+		type = "juggernaut_rep_exhaust_idle_file"
+		scale = 3
+	}
+	
+
+### Molluscoid
+	
+		####Exhaust                   
+	pdxparticle = {        
+		name = "juggernaut_mol_exhaust_main_moving_l"
+		type = "juggernaut_mol_exhaust_main_moving_file"
+		scale = 4       
+	}
+	
+	pdxparticle = {        
+		name = "juggernaut_mol_exhaust_moving_s"
+		type = "juggernaut_mol_exhaust_moving_file"
+		scale = 2.5         
+	}
+	pdxparticle = {        
+		name = "juggernaut_mol_exhaust_moving_m"
+		type = "juggernaut_mol_exhaust_moving_file"
+		scale = 3.25         
+	}
+	pdxparticle = {        
+		name = "juggernaut_mol_exhaust_moving_l"
+		type = "juggernaut_mol_exhaust_moving_file"
+		scale = 4         
+	}	                  
+						  
+		####Idle                                    
+	pdxparticle = {        
+		name = "juggernaut_mol_exhaust_idle_s"
+		type = "juggernaut_mol_exhaust_idle_file"
+		scale = 2         
+	}
+
+	pdxparticle = {        
+		name = "juggernaut_mol_exhaust_idle_m"
+		type = "juggernaut_mol_exhaust_idle_file"
+		scale = 3         
+	}
+	
+	pdxparticle = {               
+		name = "juggernaut_mol_exhaust_idle_l"
+		type = "juggernaut_mol_exhaust_idle_file"
+		scale = 4
+	}
+	
+### Arthropoid
+	
+		####Exhaust                   
+						   
+
+	pdxparticle = {        
+		name = "juggernaut_arth_exhaust_moving_l"
+		type = "juggernaut_arth_exhaust_moving_file"
+		scale = 4         
+	}	                  
+						  
+		####Idle                                    
+
+	
+	pdxparticle = {               
+		name = "juggernaut_arth_exhaust_idle_l"
+		type = "juggernaut_arth_exhaust_idle_file"
+		scale = 4
+	}
+	
+### Lithoid
+
+		####Exhaust
+	pdxparticle = {               
+		name = "lithoid_01_juggernaut_exhaust_s"
+		type = "lithoid_01_juggernaut_exhaust_file"
+		scale = 5
+	}
+	
+	pdxparticle = {               
+		name = "lithoid_01_juggernaut_exhaust_m"
+		type = "lithoid_01_juggernaut_exhaust_file"
+		scale = 8
+	}
+	
+	pdxparticle = {               
+		name = "lithoid_01_juggernaut_exhaust_l"
+		type = "lithoid_01_juggernaut_exhaust_file"
+		scale = 17
+	}
+
+		####Idle
+	pdxparticle = {               
+		name = "lithoid_01_juggernaut_exhaust_l_idle"
+		type = "lithoid_01_juggernaut_exhaust_idle_file"
+		scale = 4
+	}
+		pdxparticle = {               
+		name = "lithoid_01_juggernaut_exhaust_m_idle"
+		type = "lithoid_01_juggernaut_exhaust_idle_file"
+		scale = 3
+	}
+	
+	pdxparticle = {               
+		name = "lithoid_01_juggernaut_exhaust_s_idle"
+		type = "lithoid_01_juggernaut_exhaust_idle_file"
+		scale = 2
+	}
+### Avian
+	
+		####Exhaust                   
+						   
+	pdxparticle = {        
+		name = "juggernaut_avian_exhaust_main_moving_l"
+		type = "juggernaut_avian_exhaust_main_moving_file"
+		scale = 4         
+	}	
+	
+	pdxparticle = {        
+		name = "juggernaut_avian_exhaust_moving_l"
+		type = "juggernaut_avian_exhaust_moving_file"
+		scale = 4         
+	}	                  
+	pdxparticle = {        
+		name = "juggernaut_avian_exhaust_moving_m"
+		type = "juggernaut_avian_exhaust_moving_file"
+		scale = 3         
+	}	
+
+	pdxparticle = {        
+		name = "juggernaut_avian_exhaust_moving_2_l"
+		type = "juggernaut_avian_exhaust_moving_2_file"
+		scale = 3         
+	}	
+		####Idle                                    
+
+	
+	pdxparticle = {               
+		name = "juggernaut_avian_exhaust_idle_l"
+		type = "juggernaut_avian_exhaust_idle_file"
+		scale = 4
+	}
+	pdxparticle = {               
+		name = "juggernaut_avian_exhaust_idle_m"
+		type = "juggernaut_avian_exhaust_idle_file"
+		scale = 3
+	}	
+
+	pdxparticle = {               
+		name = "juggernaut_avian_exhaust_idle_2_l"
+		type = "juggernaut_avian_exhaust_idle_2_file"
+		scale = 3
+	}	
+	
+### Plantoid
+
+	####Exhaust
+	pdxparticle = {
+		name = "juggernaut_plant_exhaust_moving_circle_m"
+		type = "juggernaut_pla_exhaust_moving_file"
+		scale = 1.8
+	}	
+
+	pdxparticle = {
+		name = "juggernaut_plant_exhaust_moving_circle_l"
+		type = "juggernaut_pla_exhaust_moving_file"
+		scale = 2.8
+	}	
+
+	####Idle                 							   
+	pdxparticle = {                
+		name = "juggernaut_plant_exhaust_idle_circle_m"
+		type = "juggernaut_exhaust_idle_circle_file"
+		scale = 1.4                  
+	}	                           
+								   
+	pdxparticle = {                
+		name = "juggernaut_plant_exhaust_idle_circle_l"
+		type = "juggernaut_exhaust_idle_circle_file"
+		scale = 2.4
+	}
+
+
+### Fungoid
+
+	####Exhaust
+
+	pdxparticle = {
+		name = "juggernaut_fun_exhaust_moving_l"
+		type = "juggernaut_fun_exhaust_moving_file"
+		scale = 3
+	}	
+
+	pdxparticle = {
+		name = "juggernaut_fun_exhaust_moving_2_l"
+		type = "juggernaut_fun_exhaust_moving_2_file"
+		scale = 3
+	}
+
+	pdxparticle = {
+		name = "juggernaut_fun_exhaust_moving_3_l"
+		type = "juggernaut_fun_exhaust_moving_3_file"
+		scale = 3
+	}		
+	####Idle                 							                            
+								   
+	pdxparticle = {                
+		name = "juggernaut_fun_exhaust_idle_l"
+		type = "juggernaut_fun_exhaust_idle_file"
+		scale = 3
+	}
+	
+	pdxparticle = {                
+		name = "juggernaut_fun_exhaust_idle_2_l"
+		type = "juggernaut_fun_exhaust_idle_2_file"
+		scale = 3
+	}
+	
+	
+### Mammalian
+
+	####Exhaust
+	pdxparticle = {
+		name = "juggernaut_mam_exhaust_moving_2_l"
+		type = "juggernaut_mam_exhaust_moving_2_file"
+		scale = 3
+	}	
+	
+	pdxparticle = {
+		name = "juggernaut_mam_exhaust_moving_l"
+		type = "juggernaut_mam_exhaust_moving_file"
+		scale = 3
+	}	
+
+	pdxparticle = {
+		name = "juggernaut_mam_exhaust_moving_m"
+		type = "juggernaut_mam_exhaust_moving_file"
+		scale = 1.5
+	}	
+	####Idle                 							                            
+								   
+	pdxparticle = {                
+		name = "juggernaut_mam_exhaust_idle_l"
+		type = "juggernaut_mam_exhaust_idle_file"
+		scale = 3
+	}
+	
+	pdxparticle = {                
+		name = "juggernaut_mam_exhaust_idle_m"
+		type = "juggernaut_mam_exhaust_idle_file"
+		scale = 1.5
+	}
+
+### Frontend
+
+	pdxparticle = {        
+		name = "federations_frontend_station_light_effect"
+		type = "federations_frontend_station_light_file"
+		scale = 1.0         
+	}
+
+	pdxparticle = {        
+		name = "federations_frontend_stars_effect"
+		type = "federations_frontend_stars_file"
+		scale = 1.0         
+	}
+
+	pdxparticle = {        
+		name = "federations_frontend_ring_smoke_effect"
+		type = "federations_frontend_ring_smoke_file"
+		scale = 1.0         
+	}
+
+	pdxparticle = {        
+		name = "federations_frontend_planet_smoke_effect"
+		type = "federations_frontend_planet_smoke_file"
+		scale = 1.0         
+	}
+
+	pdxparticle = {        
+		name = "federations_frontend_lensflare_effect"
+		type = "federations_frontend_lensflare_file"
+		scale = 1.0         
+	}
+	
+
+### Megashipyard
+	pdxparticle = {               
+		name = "mega_shipyard_core_effect"
+		type = "mega_shipyard_core_effect_file"
+		scale = 1
+	}	
+	pdxparticle = {               
+		name = "mega_shipyard_core_lightning_effect"
+		type = "mega_shipyard_core_lightning_effect_file"
+		scale = 1
+	}	
+	pdxparticle = {               
+		name = "mega_shipyard_core_lightning_exhaust_effect"
+		type = "mega_shipyard_core_lightning_exhaust_effect_file"
+		scale = 1
+	}
+
+	pdxparticle = {               
+		name = "mega_shipyard_lightning_charge_effect"
+		type = "mega_shipyard_lightning_charge_effect_file"
+		scale = 1
+	}
+	
+	pdxparticle = {               
+		name = "mega_shipyard_lightning_charge_2_effect"
+		type = "mega_shipyard_lightning_charge_2_effect_file"
+		scale = 1
+	}
+	
+		pdxparticle = {               
+		name = "mega_shipyard_lightning_charge_2_s_effect"
+		type = "mega_shipyard_lightning_charge_2_effect_file"
+		scale = 0.6
+	}
+	
+	pdxparticle = {               
+		name = "mega_shipyard_lightning_charge_s_effect"
+		type = "mega_shipyard_lightning_charge_effect_file"
+		scale = 0.6
+	}		
+	
+	pdxparticle = {               
+		name = "mega_shipyard_radiation_effect"
+		type = "mega_shipyard_radiation_file"
+		scale = 1
+	}
+
+	pdxparticle = {               
+		name = "mega_shipyard_radiation_2_effect"
+		type = "mega_shipyard_radiation_2_file"
+		scale = 1
+	}
+
+	pdxparticle = {               
+		name = "mega_shipyard_radiation_3_effect"
+		type = "mega_shipyard_radiation_3_file"
+		scale = 1
+	}
+
+	pdxparticle = {               
+		name = "mega_shipyard_radiation_4_effect"
+		type = "mega_shipyard_radiation_4_file"
+		scale = 1
+	}
+	
+	pdxparticle = {               
+		name = "mega_shipyard_radiation_5_effect"
+		type = "mega_shipyard_radiation_5_file"
+		scale = 1
+	}
+	
+	pdxparticle = {               
+		name = "mega_shipyard_radiation_6_effect"
+		type = "mega_shipyard_radiation_6_file"
+		scale = 1
+	}
+	
+	pdxparticle = {               
+		name = "mega_shipyard_radiation_7_effect"
+		type = "mega_shipyard_radiation_7_file"
+		scale = 1
+	}
+	
+
+}
+
+

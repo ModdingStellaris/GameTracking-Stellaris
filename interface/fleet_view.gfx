@@ -1842,6 +1842,13 @@ spriteTypes = {
 	}
 
 	corneredTileSpriteType = {
+		name = "GFX_fleet_view_main_shipyard_padding_bg"
+		textureFile = "gfx/interface/fleet_view/fleet_view_main_shipyard_padding_bg.dds"
+		borderSize = { x=5 y=5 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	corneredTileSpriteType = {
 		name = "GFX_tiles_dark_area_cut_8"
 		textureFile = "gfx/interface/tiles/dark_area_cut_8.dds"
 		borderSize = { x=8 y=8 }
@@ -2285,6 +2292,46 @@ spriteTypes = {
 		}
 	}
 	
+	spriteType = {
+		name = "GFX_fleet_order_button_shipyard"
+		texturefile = "gfx/interface/fleet_view/fleet_order_shipyard_action.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/fleet_view/fleet_task_button_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/action_button_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	
+	spriteType = {
+		name = "GFX_fleet_order_button_shipyard_selected"
+		texturefile = "gfx/interface/fleet_view/fleet_order_shipyard_selected.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/fleet_view/fleet_task_button_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/action_button_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+
 	progressbarType = {
 		name = "GFX_fleet_view_health"
 		color = { 1.0 1.0 1.0 }

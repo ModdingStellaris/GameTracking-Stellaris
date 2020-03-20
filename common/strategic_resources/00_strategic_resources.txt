@@ -146,6 +146,10 @@ volatile_motes = {
 	ai_weight = {
 		weight = 10
 	}
+
+	ai_wants = {
+		base = 10
+	}
 }
 
 exotic_gases = {
@@ -161,6 +165,10 @@ exotic_gases = {
 	ai_weight = {
 		weight = 10
 	}
+
+	ai_wants = {
+		base = 10
+	}
 }
 
 rare_crystals = {
@@ -175,6 +183,10 @@ rare_crystals = {
 	
 	ai_weight = {
 		weight = 10
+	}
+
+	ai_wants = {
+		base = 10
 	}
 }
 

@@ -1,7 +1,7 @@
-#Defensive armies can't transport off the planet
-#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
-#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
-#building spawned armies can't be built normally, but only created from pops working buildings
+# Defensive armies can't transport off the planet
+# Maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+# Morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+# Building spawned armies can't be built normally, but only created from pops working buildings
 
 # Rebel Armies
 rebel_army = {
@@ -433,6 +433,21 @@ care_defensive_protocols = {
 
 	icon_frame = 11
 
+	potential = {
+		always = no
+	}
+}
+
+# Sentinels
+sentinel_army = {
+	defensive = yes
+	damage = 4
+	morale_damage = 5
+	health = 7
+	has_morale = no
+	icon_frame = 11
+	has_species = no
+	
 	potential = {
 		always = no
 	}

@@ -1,0 +1,27 @@
+objectTypes = {
+	pdxmesh = {
+		name = "mega_shipyard_01_radiation_effect_mesh"
+		file = "gfx/models/ships/megastructures/mega_shipyard/mega_shipyard_01_radiation_effect.mesh"
+
+		meshsettings = {
+			index = 0
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+			texture_diffuse = "mega_shipyard_01_radiation_effect.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "mega_shipyard_01_radiation_effect_2_mesh"
+		file = "gfx/models/ships/megastructures/mega_shipyard/mega_shipyard_01_radiation_effect.mesh"
+
+		meshsettings = {
+			index = 0
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+			texture_diffuse = "mega_shipyard_01_radiation_effect_2.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+		}
+	}
+}

@@ -170,6 +170,20 @@ entity = {
 	scale = @turret
 }
 
+entity = {
+	name = "avian_01_turret_xl_entity"
+	pdxmesh = "avian_01_turret_xl_mesh"
+	
+	state = { name = "idle"	}
+	state = { name = "attack" looping = no next_state = "idle"
+	}
+	scale = 1
+	
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+}
+
 
 
 # ##################
@@ -409,16 +423,16 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_04_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_04_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
 		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -441,18 +455,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_025_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_04_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_04_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_04_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
 		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -474,14 +488,14 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_04_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
 		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -619,12 +633,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_7_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_7_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_line_moving" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
@@ -642,14 +656,14 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_7_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "avian_01_1_7_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
@@ -875,19 +889,19 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "avian_01_1_7_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "avian_01_1_7_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_04" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "avian_01_1_7_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "avian_01_2_2_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "avian_01_2_2_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "avian_01_1_7_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_075_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_04" particle = "generic_075_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -906,15 +920,15 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "avian_01_2_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "avian_01_2_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -1229,29 +1243,29 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" 	state_time = 5
-		event = { time = 0 node = "engine_large_01" particle = "avian_01_5_0_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_07" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_08" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_5_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 		
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" 		state_time = 5
-		event = { time = 0 node = "engine_large_01" particle = "avian_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_07" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_08" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1279,19 +1293,19 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" 	state_time = 5
-		event = { time = 0 node = "engine_medium_01_idle" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02_idle" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03_idle" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04_idle" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_05_idle" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_06_idle" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01_idle" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02_idle" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03_idle" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_04_idle" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_05_idle" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_06_idle" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" 	state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "avian_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "avian_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1305,29 +1319,29 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" 	state_time = 5
-		event = { time = 0 node = "engine_large_01" particle = "avian_01_5_0_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_07" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_08" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" 		state_time = 5
-		event = { time = 0 node = "engine_large_01" particle = "avian_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_07" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_08" particle = "avian_01_1_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "generic_075_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1355,19 +1369,19 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" 	state_time = 5
-		event = { time = 0 node = "engine_medium_01_idle" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02_idle" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03_idle" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04_idle" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_05_idle" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_06_idle" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01_idle" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02_idle" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03_idle" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_04_idle" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_05_idle" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_06_idle" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" 	state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "avian_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "avian_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_1_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1445,14 +1459,14 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" 						animation = "idle"
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_07" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_08" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_construction_ship_hum" } }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1460,14 +1474,14 @@ entity = {
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" 						animation = "idle"
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "avian_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "avian_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_07" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_08" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_05_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_05_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_construction" } } 
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1475,23 +1489,23 @@ entity = {
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "working"						animation = "working"		looping = no	next_state = working_looping 
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_07" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_08" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 		
-		event = { time = 0 node = "bot_1_exhaust1" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes sound = { soundeffect = construction_progress_loop } }
-		event = { time = 0 node = "bot_1_exhaust2" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_2_exhaust1" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_2_exhaust2" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_3_exhaust1" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_3_exhaust2" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_4_exhaust1" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_4_exhaust2" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_1_exhaust1" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes sound = { soundeffect = construction_progress_loop } }
+		event = { time = 0 node = "bot_1_exhaust2" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_2_exhaust1" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_2_exhaust2" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_3_exhaust1" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_3_exhaust2" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_4_exhaust1" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_4_exhaust2" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
 		
 		event = { time = 4.06 node = "bot_1_welding" particle = "construction_bot_welding_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 3.3 node = "bot_2_welding" particle = "construction_bot_welding_effect" trigger_once = yes keep_particle = yes }
@@ -1504,14 +1518,14 @@ entity = {
 		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "working_looping"				animation = "working_looping" 
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_03" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_04" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_05" particle = "avian_01_1_6_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_06" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_07" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_08" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_035_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_06" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_07" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_08" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 		
 		# Bot 1 welding
 		#event = { time = 0 node = "bot_1_welding" particle = "construction_bot_welding_effect" trigger_once = yes keep_particle = yes sound = { soundeffect = "welding_bot" } }
@@ -1545,14 +1559,14 @@ entity = {
 		event = { time = 32.8 node = "bot_4_welding" particle = "construction_bot_welding_effect" trigger_once = yes keep_particle = yes sound = { soundeffect = "welding_bot" } }
 		event = { time = 38.73 node = "bot_4_welding" particle = "construction_bot_welding_effect" trigger_once = yes keep_particle = yes sound = { soundeffect = "welding_bot" } }
 		
-		event = { time = 0 node = "bot_1_exhaust1" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_1_exhaust2" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_2_exhaust1" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_2_exhaust2" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_3_exhaust1" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_3_exhaust2" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_4_exhaust1" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "bot_4_exhaust2" particle = "mammalian_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_1_exhaust1" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_1_exhaust2" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_2_exhaust1" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_2_exhaust2" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_3_exhaust1" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_3_exhaust2" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_4_exhaust1" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "bot_4_exhaust2" particle = "generic_025_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
 	
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1620,18 +1634,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle"		state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_01" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_01" particle = "avian_01_5_0_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_05" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_06" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_07" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_08" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_09" particle = "avian_01_1_1_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_04" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_05" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_06" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_07" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_08" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_09" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_colony_ship_hum" } }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1642,18 +1656,18 @@ entity = {
 		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving"	state_time = 5
-		event = { time = 0 node = "engine_small_01_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_01_moving" particle = "avian_01_2_2_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_01_moving" particle = "avian_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_04_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_05_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_06_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_07_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_08_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_09_moving" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01_moving" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02_moving" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01_moving" particle = "generic_1_25_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02_moving" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03_moving" particle = "generic_04_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01_moving" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_04_moving" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_05_moving" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_06_moving" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_07_moving" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_08_moving" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_09_moving" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
 		event = { trigger_once = yes sound = { soundeffect = moving_out_colony_ship } }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1712,40 +1726,40 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0.0 node = "engine_small_01" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_02" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_03" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_04" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_05" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_06" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_07" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_08" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_09" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_010" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_011" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_012" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_013" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_014" particle = "avian_01_1_1_exhaust_oblong_idle_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_01" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_02" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_03" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_04" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_05" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_06" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_07" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_08" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_09" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_010" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_011" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_012" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_013" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_014" particle = "generic_025_exhaust_line_idle" keep_particle = yes trigger_once = yes }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_science_ship_hum" } }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0.0 node = "engine_small_01" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_02" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_03" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_04" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_05" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_06" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_07" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_08" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_09" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_010" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_011" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_012" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_013" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
-		event = { time = 0.0 node = "engine_small_014" particle = "avian_01_1_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_01" particle = "generic_025_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_02" particle = "generic_035_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_03" particle = "generic_035_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_04" particle = "generic_035_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_05" particle = "generic_035_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_06" particle = "generic_04_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_07" particle = "generic_04_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_08" particle = "generic_025_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_09" particle = "generic_035_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_010" particle = "generic_035_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_011" particle = "generic_035_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_012" particle = "generic_035_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_013" particle = "generic_04_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "engine_small_014" particle = "generic_04_exhaust_curve_moving" keep_particle = yes trigger_once = yes }
 		event = { trigger_once = yes sound = { soundeffect = moving_out_science } }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
@@ -1802,9 +1816,9 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "avian_01_3_0_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_2_2_exhaust_oblong_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_075_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_06_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_06_exhaust_line_idle" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -1813,9 +1827,9 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_transport_ship_hum" } }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "avian_01_3_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "avian_01_2_2_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "avian_01_2_2_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "generic_1_25_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_curve_moving" trigger_once = yes keep_particle = yes }
 	
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -1865,7 +1879,7 @@ entity = {
 			state = { name = "idle" state_time = 5 }
 			
 			state = { name = "death" state_time = 5 looping = no
-				event = { time = 4.9 particle = "large_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+				event = { time = 4.9 particle = "large_player_ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
 			}
 			
 			game_data = {
@@ -2046,6 +2060,63 @@ entity = {
 		shader_type = ship
 		emissive_recolor_crunch = 5.0
 	}
+}
+
+entity = {
+	name = "avian_01_upgraded_orbital_habitat_entity"
+	locator = { name = part1 }
+	
+	scale = 1.5
+	
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" state_time = 5 }
+	state = { name = "construction" state_time = 5 }
+	
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_player_ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 5.0
+	}
+	
+	attach = { name = "station" part1 = "avian_01_upgraded_orbital_habitat_section_entity" }
+}
+
+entity = {
+	name = "avian_01_upgraded_orbital_habitat_section_entity"
+	pdxmesh = "avian_01_upgraded_orbital_habitat_mesh"	
+	
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "habitat_station_hum" } }
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_07" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "construction" state_time = 5 }
+	
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 0.0 node = "explosion_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.2 node = "explosion_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 2.0 node = "explosion_locator_03" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.5 node = "explosion_locator_04" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 4.2 node = "explosion_locator_05" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 4.6 node = "explosion_locator_06" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+	}
+	
+	locator = { name = "medium_gun_01"	position = { 0 0 0 } }
+	locator = { name = "medium_gun_02"	position = { 0 0 0 } }
+	locator = { name = "small_gun_01"	position = { 0 0 0 } }
+	locator = { name = "small_gun_02"	position = { 0 0 0 } }
+	locator = { name = "small_gun_03"	position = { 0 0 0 } }
+	locator = { name = "small_gun_04"	position = { 0 0 0 } }
 }
 #entity = {
 #	name = "avian_01_orbital_habitat_phase_00_entity"

@@ -203,9 +203,10 @@ gateway_restored = {
 				finish_upgrade = yes
 			}
 		}
-		from = { 
+		from = {
 			country_event = { id = apoc.12 }
 			country_event = { id = apoc.10 }
+			country_event = { id = origin.1050 }
 		}
 	}
 }

@@ -29,19 +29,19 @@ automate_habitat_energy_machine_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_energy_grid
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					energy_grid_upkeep_affordable = yes
 				}
 			}
 		}
 
 		4 = {
-			building = building_energy_grid
+			building = building_research_lab_1
 			available = {
 				owner = {
-					energy_grid_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -56,10 +56,10 @@ automate_habitat_energy_machine_planet = {
 		}
 
 		6 = {
-			building = building_maintenance_depot
+			building = building_foundry_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					foundry_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -92,10 +92,10 @@ automate_habitat_energy_machine_planet = {
 		}
 
 		10 = {
-			building = building_maintenance_depot
+			building = building_research_lab_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					research_lab_1_upkeep_affordable = yes
 				}
 			}
 		}
@@ -128,10 +128,10 @@ automate_habitat_energy_machine_planet = {
 		}
 
 		14 = {
-			building = building_maintenance_depot
+			building = building_simulation_1
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					simulation_1_upkeep_affordable = yes
 				}
 			}
 		}

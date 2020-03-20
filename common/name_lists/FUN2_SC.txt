@@ -3,6 +3,8 @@
 
 FUN2 = {
 
+	category = "Fungoid"
+	
 	language = "l_simp_chinese"
 	
 	ship_names = {

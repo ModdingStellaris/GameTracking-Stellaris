@@ -101,13 +101,9 @@ slave_overseer = {
 			planet_crime_add = -10
 		}		
 	}
-	
-	weight = {
-		weight = @specialist_job_weight
-	}
 		
 	weight = {
-		weight = @worker_job_weight
+		weight = @specialist_job_weight
 	}
 }
 
@@ -491,6 +487,7 @@ criminal = {
 	can_set_priority = no
 	clothes_texture_index = 2
 	building_icon = building_residence
+	contributes_to_diplo_weight = no
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -524,6 +521,7 @@ deviant_drone = {
 	can_set_priority = no
 	clothes_texture_index = 2
 	icon = criminal
+	contributes_to_diplo_weight = no
 		
 	possible_pre_triggers = {
 		has_planet = yes
@@ -551,6 +549,7 @@ corrupt_drone = {
 	can_set_priority = no
 	clothes_texture_index = 2
 	icon = criminal
+	contributes_to_diplo_weight = no
 		
 	possible_pre_triggers = {
 		has_planet = yes

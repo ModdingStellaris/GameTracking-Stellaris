@@ -14,11 +14,11 @@ r_dragon_trophy = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -30,15 +30,15 @@ r_dragon_trophy = {
 
 	active_effect = {
 		add_modifier = {
-			modifier = "ether_drake_triumph" 
+			modifier = "ether_drake_triumph"
 			days = @triumph_duration
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
-			}		
+			}
 		}
 	}
 
@@ -63,7 +63,7 @@ r_khans_throne = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 		modifier = {
@@ -75,7 +75,7 @@ r_khans_throne = {
 			is_at_war = yes
 		}
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -87,15 +87,15 @@ r_khans_throne = {
 
 	active_effect = {
 		add_modifier = {
-			modifier = "drums_of_war" 
+			modifier = "drums_of_war"
 			days = @triumph_duration
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
-			}		
+			}
 		}
 	}
 
@@ -120,11 +120,11 @@ r_worm_scales = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -136,15 +136,15 @@ r_worm_scales = {
 
 	active_effect = {
 		add_modifier = {
-			modifier = "worm_scales" 
+			modifier = "worm_scales"
 			days = @triumph_duration
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
-			}		
+			}
 		}
 	}
 
@@ -173,7 +173,7 @@ r_rubricator = {
 			society_research = 20
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 150
 		modifier = {
@@ -195,7 +195,7 @@ r_rubricator = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 			add_resource = { minor_artifacts = 30 }
@@ -223,7 +223,7 @@ r_galaxy = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 		modifier = {
@@ -246,7 +246,7 @@ r_galaxy = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 			country_event = { id = ancrel.7007 }
@@ -258,7 +258,7 @@ r_galaxy = {
 		custom_tooltip = {
 			fail_text = "requires_relic_no_cooldown"
 			NOT = { has_modifier = relic_activation_cooldown }
-		}	
+		}
 	}
 }
 
@@ -275,7 +275,7 @@ r_omnicodex = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 		modifier = {
@@ -298,7 +298,7 @@ r_omnicodex = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 			country_event = { id = ancrel.6000 }
@@ -330,7 +330,7 @@ r_surveyor = {
 	ai_weight = {
 		weight = 120
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -345,7 +345,7 @@ r_surveyor = {
 		custom_tooltip = relic_triumph_cooldown_short
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration_short
 			}
 			country_event = { id = story.335 }
@@ -391,11 +391,12 @@ r_galatron = {
 	ai_weight = {
 		weight = 200
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
 		}
+		diplo_weight_mult = 1.0
 	}
 
 	score = 20000
@@ -405,7 +406,7 @@ r_galatron = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 			country_event = { id = cara.970 }
@@ -437,7 +438,7 @@ r_ancient_sword = {
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -450,13 +451,13 @@ r_ancient_sword = {
 
 	active_effect = {
 		add_modifier = {
-			modifier = "ancient_sword" 
+			modifier = "ancient_sword"
 			days = @triumph_duration
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 		}
@@ -487,7 +488,7 @@ r_severed_head = {
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -502,7 +503,7 @@ r_severed_head = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 			country_event = { id = ancrel.6131 }
@@ -537,11 +538,11 @@ r_prethoryn_queen = {
 			society_research = 30
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -555,10 +556,10 @@ r_prethoryn_queen = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
-			country_event = { id = crisis.250 }	
+			country_event = { id = crisis.250 }
 		}
 	}
 
@@ -567,7 +568,7 @@ r_prethoryn_queen = {
 		custom_tooltip = {
 			fail_text = "requires_relic_no_cooldown"
 			NOT = { has_modifier = relic_activation_cooldown }
-		}	
+		}
 	}
 }
 
@@ -583,7 +584,7 @@ r_unbidden_warlock = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 10
 		modifier = {
@@ -598,7 +599,7 @@ r_unbidden_warlock = {
 			}
 		}
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -610,15 +611,15 @@ r_unbidden_warlock = {
 
 	active_effect = {
 		add_modifier = {
-			modifier = "unbidden_ritual" 
+			modifier = "unbidden_ritual"
 			days = @triumph_duration
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
-			}		
+			}
 		}
 	}
 
@@ -643,11 +644,11 @@ r_contingency_core = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -659,15 +660,15 @@ r_contingency_core = {
 
 	active_effect = {
 		add_modifier = {
-			modifier = "contingency_calculation" 
+			modifier = "contingency_calculation"
 			days = @triumph_duration
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
-			}		
+			}
 		}
 	}
 
@@ -696,11 +697,11 @@ r_zro_crystal = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 200
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -715,10 +716,10 @@ r_zro_crystal = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
-			country_event = { id = ancrel.7006 }	
+			country_event = { id = ancrel.7006 }
 		}
 	}
 
@@ -743,7 +744,7 @@ r_the_last_baol = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 	}
@@ -774,7 +775,7 @@ r_the_last_baol = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 			if = {
@@ -807,7 +808,7 @@ r_the_defragmentor = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 		modifier = {
@@ -841,7 +842,7 @@ r_the_defragmentor = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 		}
@@ -872,11 +873,11 @@ r_reality_perforator = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -891,7 +892,7 @@ r_reality_perforator = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 			country_event = { id = precursor.105 }
@@ -919,11 +920,11 @@ r_pox_sample = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -938,13 +939,13 @@ r_pox_sample = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
 			}
 			add_modifier = {
-				modifier = "javorian_pox" 
+				modifier = "javorian_pox"
 				days = @triumph_duration
-			}	
+			}
 		}
 	}
 
@@ -969,11 +970,11 @@ r_cryo_core = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -986,15 +987,15 @@ r_cryo_core = {
 
 	active_effect = {
 		add_modifier = {
-			modifier = "yuht_cryo_core" 
+			modifier = "yuht_cryo_core"
 			days = @triumph_duration
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
-			}		
+			}
 		}
 	}
 
@@ -1019,11 +1020,11 @@ r_war_forge = {
 			influence = @activation_cost
 		}
 	}
-	
+
 	ai_weight = {
 		weight = 100
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -1035,15 +1036,15 @@ r_war_forge = {
 
 	active_effect = {
 		add_modifier = {
-			modifier = "cybrex_war_forge" 
+			modifier = "cybrex_war_forge"
 			days = @triumph_duration
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
-			}		
+			}
 		}
 	}
 

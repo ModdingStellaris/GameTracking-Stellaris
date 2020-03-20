@@ -1397,7 +1397,7 @@ planet_event = {
 		custom_tooltip = colony.2017.a.tooltip
 		add_modifier = {
 			modifier = scared_population
-			days = 7300
+			days = 1800
 		}
 		hidden_effect = {
 			owner = { remove_country_flag = odd_factory_pause }
@@ -1409,7 +1409,7 @@ planet_event = {
 		custom_tooltip = colony.2017.b.tooltip
 		add_modifier = {
 			modifier = secured_factory
-			days = 7300
+			days = 1800
 		}
 		hidden_effect = {
 			owner = { remove_country_flag = odd_factory_pause }

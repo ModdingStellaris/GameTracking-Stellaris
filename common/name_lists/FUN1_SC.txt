@@ -1,6 +1,8 @@
 ﻿### Fungoid 1
 FUN1 = {
 	### SHIPS
+	
+	category = "Fungoid"
 
 	language = "l_simp_chinese"
 	

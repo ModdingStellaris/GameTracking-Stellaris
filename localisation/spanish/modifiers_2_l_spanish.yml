@@ -173,3 +173,5 @@
  raided:0 "Saqueado"
  raided_desc:0 "§LNo hemos logrado defendernos de los expoliadores.§!"
  mod_damage_vs_country_type_gate_builders_mult:0 "Daño a los constructores del portal"
+ from_extra_federation_members:0 "De miembros"
+ empire_size_mods:0 "Tamaño del imperio"

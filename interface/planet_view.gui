@@ -300,30 +300,19 @@ guiTypes = {
 		# Governor			
 		containerWindowType = {
 			name = "title_governor"
-			size = { width = 180 height = 180 }
-			position = { x = 3 y = 85 }
+			size = { width = 85 height = 30 }
+			position = { x = 25 y = 120 }
+			clipping = no
 
-			iconType = {
-				name = "title_hex"
-				quadTextureSprite = "GFX_small_hex_bg"
-				position = { x = -10 y = 14 }
-			}
-
-			containerWindowType = {
-			name = "govNameContainer"
-				size = { width = 85 height = 30 }
-				position = { x = 20 y = 30 }
-
-				backGround = {
-					name = "govNameSkillsBG"
-					spriteType = "GFX_dark_area_cut"
-				}
+			backGround = {
+				name = "govNameSkillsBG"
+				spriteType = "GFX_dark_area_cut"
 			}
 
 			instantTextBoxType = {
 				name = "title_text"
 				font = "malgun_goth_24"
-				position = { x = 25 y = 32 }
+				position = { x = 8 y = 2 }
 				text = "GOVERNOR_TITLE"
 				maxWidth = 168
 				maxHeight = 20
@@ -519,10 +508,16 @@ guiTypes = {
 			position = { x = -5 y = 1 }
 			}
 			
-			iconType = {
-			name = "icon_background"
-			spriteType = "GFX_planetview_topright_bg_small"
-			position = { x = 14 y = 13 }
+
+			containerWindowType = {
+			name = "planet_actions_window"
+			position = { x = 10 y = 11 }
+			size = { width = 125 height = 75 }
+
+				background = {
+					name = "stability_pops_bg"
+					spriteType = "GFX_planetview_topright_bg_small"
+				}
 			}
 			
 			#background = {
@@ -1455,12 +1450,13 @@ guiTypes = {
 						name = "designation_name"
 						font = "cg_16b"
 						text = ""
-						position = { x = 60 y = -42 }
+						position = { x = 60 y = -53 }
 						maxWidth = 120
-						maxHeight = 16
+						maxHeight = 40
 						fixedSize = yes
 						format = left
 						orientation = lower_left
+						vertical_alignment = center
 						alwaysTransparent = yes
 					}
 
@@ -4198,7 +4194,7 @@ guiTypes = {
 				containerWindowType = {
 					name = "pop_job_info"
 					position = { x = 8 y = 320 }
-					size = { width = 273 height = 205 }		
+					size = { width = 273 height = 225 }		
 					
 					background = {
 						name = "pop_background"
@@ -4275,13 +4271,25 @@ guiTypes = {
 						fixedSize = yes
 						orientation = "UPPER_LEFT"
 						format = left
+					}
+
+					instantTextBoxType = {
+						name = "empire_sprawl"
+						font = "cg_16b"
+						text = "Empire Sprawl: 1"
+						position = { x = 5 y = 120 }
+						maxWidth = 260
+						maxHeight = 20
+						fixedSize = yes
+						orientation = "UPPER_LEFT"
+						format = left
 					}						
 
 					instantTextBoxType = {
 						name = "housing_needs"
 						font = "cg_16b"
 						text = "Housing Needs: 2"
-						position = { x = 5 y = 120 }
+						position = { x = 5 y = 140 }
 						maxWidth = 260
 						maxHeight = 20
 						fixedSize = yes
@@ -4293,7 +4301,7 @@ guiTypes = {
 						name = "amenities_usage"
 						font = "cg_16b"
 						text = "Amenities Usage: 2"
-						position = { x = 5 y = 140 }
+						position = { x = 5 y = 160 }
 						maxWidth = 260
 						maxHeight = 20
 						fixedSize = yes
@@ -4305,7 +4313,7 @@ guiTypes = {
 						name = "production"
 						font = "cg_16b"
 						text = "12 minerals"
-						position = { x = 5 y = 160 }
+						position = { x = 5 y = 180 }
 						maxWidth = 260
 						maxHeight = 20
 						fixedSize = yes
@@ -4317,7 +4325,7 @@ guiTypes = {
 						name = "upkeep"
 						font = "cg_16b"
 						text = "5 energy"
-						position = { x = 5 y = 180 }
+						position = { x = 5 y = 200 }
 						maxWidth = 260
 						maxHeight = 20
 						fixedSize = yes
@@ -4819,7 +4827,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = "Deposit effects go here"
 			position = { x = 85 y = 25 }
-			maxWidth = 200
+			maxWidth = 170
 			maxHeight = 80
 			fixedSize = yes
 			format = left
@@ -5795,6 +5803,7 @@ guiTypes = {
 		background = {
 			name = "job_background"
 			quadTextureSprite = "GFX_button_dark" # TODO: change background?
+			clicksound = "select_click"
 		}
 
 		iconType = {
@@ -6387,9 +6396,9 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "desc"
+			name = "title"
 			font = "cg_16b"
-			text = "Build queue desc" 
+			text = "" 
 			position = { x = 4 y = 3 }
 			maxWidth = 190
 			maxHeight = 20
@@ -6406,6 +6415,19 @@ guiTypes = {
 			maxHeight = 20
 			fixedSize = yes
 			format = left
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			font = "cg_16b"
+			text = ""
+			position = { x = 36 y = 18 }
+			maxWidth = 164
+			maxHeight = 20
+			fixedSize = yes
+			format = left
+			alwaysTransparent = yes
+			text_color_code = "E"
 		}
 
 		buttonType = {

@@ -532,7 +532,7 @@
  utopia.3400.b:0 "Möge [chosen_one.GetHerHis]e Herrschaft bis in die Unendlichkeit... und darüber hinaus reichen!"
  reject_god_emperor:0 "[chosen_one.GetName] wird [chosen_one.GetTitle] bleiben."
  utopia.3401.name:0 "[chosen_one.GetTitle] in [From.Capital.GetName] gekrönt"
- utopia.3401.desc:0 "Ein unglaublich mächtiger [chosen_one_species.GetName]er Psyioniker hat die Kontrolle über §H[From.GetName]§! erlangt! Dieses unsterbliche Wesen, das von[chosen_one.GetHerHis]en Anhängern auch als "Auserwählter" bezeichnet wird, wurde heute Morgen in einer üppigen Zeremonie auf [From.Capital.GetName] gekrönt. Kurz darauf wurde an alle interstellaren Regierungen ein Kommuniqué geschickt, dass die ewige Herrschaft von §H[chosen_one.GetRulerTitle] [chosen_one.GetRegnalName]§! feiert."
+ utopia.3401.desc:0 "Ein unglaublich mächtiger [chosen_one_species.GetName]er Psioniker hat die Kontrolle über §H[From.GetName]§! erlangt! Dieses unsterbliche Wesen, das von[chosen_one.GetHerHis]en Anhängern auch als "Auserwählter" bezeichnet wird, wurde heute Morgen in einer üppigen Zeremonie auf [From.Capital.GetName] gekrönt. Kurz darauf wurde an alle interstellaren Regierungen ein Kommuniqué geschickt, dass die ewige Herrschaft von §H[chosen_one.GetRulerTitle] [chosen_one.GetRegnalName]§! feiert."
  utopia.3401.a:0 "[chosen_one.GetName] wurde vom Schleier berührt."
  utopia.3401.b:0 "Abergläubischer Unsinn."
  utopia.3401.c:0 "Eine bedeutende Entwicklung."

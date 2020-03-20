@@ -984,3 +984,7 @@
  tech_habitat_1_desc:0 "Permite a construção de Habitats Orbitais autossuficientes."
  tech_archeology_lab_ancrel:0 "$tech_archeology_lab$"
  tech_archeology_lab_ancrel_desc:0 "$tech_archeology_lab_desc$"
+ tech_mega_assembly:0 "Sistemas de Mega-Montagem"
+ tech_mega_assembly_desc:0 "Modelos avançados nos permitem aumentar drasticamente a montagem de novas unidades."
+ tech_effective_bureaucracy:0 "Burocracia Efetiva"
+ tech_effective_bureaucracy_desc:0 "Algoritmos aprimorados para processamento e organização de várias quantidades de dados simplificaram a tomada de decisões e compartilhamento de informações pelo império."

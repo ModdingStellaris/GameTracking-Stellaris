@@ -1,4 +1,56 @@
 objectTypes = {
+##########
+# WARP Orig
+##########
+	
+	pdxparticle = {
+		name = "warp_in_orig_particle"
+		type = "warp_in_file"
+		scale = 1.0
+	}
+	
+
+	pdxparticle = {
+		name = "warp_wind_up_orig_effect"
+		type = "warp_wind_up_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "warp_wind_down_orig_effect"
+		type = "warp_wind_down_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "hyperlane_wind_up_orig_effect"
+		type = "hyperlane_wind_up_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "hyperlane_wind_down_orig_effect"
+		type = "hyperlane_wind_down_effect"
+		
+		scale = 1.0
+	}
+	
+	
+	
+	pdxparticle = {
+		name = "ftl_in_ship_orig_particle"
+		type = "ftl_in_ship_file"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ftl_out_ship_orig_particle"
+		type = "ftl_out_ship_file"
+		scale = 1.0
+	}
 	
 ##########
 # WARP
@@ -6,7 +58,7 @@ objectTypes = {
 	
 	pdxparticle = {
 		name = "warp_in_particle"
-		type = "warp_in_file"
+		type = "warp_in_2_file"
 		scale = 1.0
 	}
 	
@@ -24,28 +76,28 @@ objectTypes = {
 	
 	pdxparticle = {
 		name = "warp_wind_up_effect"
-		type = "warp_wind_up_effect"
+		type = "warp_wind_up_2_effect"
 		
 		scale = 1.0
 	}
 	
 	pdxparticle = {
 		name = "warp_wind_down_effect"
-		type = "warp_wind_down_effect"
+		type = "warp_wind_down_2_effect"
 		
 		scale = 1.0
 	}
 	
 	pdxparticle = {
 		name = "hyperlane_wind_up_effect"
-		type = "hyperlane_wind_up_effect"
+		type = "hyperlane_wind_up_2_effect"
 		
 		scale = 1.0
 	}
 	
 	pdxparticle = {
 		name = "hyperlane_wind_down_effect"
-		type = "hyperlane_wind_down_effect"
+		type = "hyperlane_wind_down_2_effect"
 		
 		scale = 1.0
 	}
@@ -54,13 +106,13 @@ objectTypes = {
 	
 	pdxparticle = {
 		name = "ftl_in_ship_particle"
-		type = "ftl_in_ship_file"
+		type = "ftl_in_ship_2_file"
 		scale = 1.0
 	}
 	
 	pdxparticle = {
 		name = "ftl_out_ship_particle"
-		type = "ftl_out_ship_file"
+		type = "ftl_out_ship_2_file"
 		scale = 1.0
 	}
 	
@@ -248,20 +300,20 @@ objectTypes = {
 		
 		scale = 1.0
 	}
-#	
-#	pdxparticle = {
-#		name = "large_station_explosion_particle"
-#		type = "station_explosion"
-#		
-#		scale = 3.0
-#	}
-#	
-#	pdxparticle = {
-#		name = "massive_station_explosion_particle"
-#		type = "station_explosion"
-#		
-#		scale = 5.0
-#	}
+	
+	pdxparticle = {
+		name = "large_station_explosion_particle"
+		type = "station_explosion"
+		
+		scale = 3.0
+	}
+	
+	pdxparticle = {
+		name = "massive_station_explosion_particle"
+		type = "station_explosion"
+		
+		scale = 5.0
+	}
 	
 	pdxparticle = {
 		name = "avian_tiny_ship_explosion_particle"

@@ -289,46 +289,6 @@ basic = {
 	}
 
 	building = {
-		key = building_maintenance_depot
-		weight = {
-			weight = 1
-
-			modifier = {
-				factor = 4
-				free_amenities < 0
-			}
-
-			modifier = {
-				factor = 0
-				free_amenities >= 0
-			}
-
-			# No one to work it anyway
-			modifier = {
-				factor = 0
-				NOT = {
-					any_owned_pop = { 
-						OR = { 
-							is_unemployed = yes 
-							has_job = servant 
-						}
-					}
-				}
-			}
-
-			modifier = {
-				factor = 0
-				controller = {
-					has_monthly_income = {
-						resource = energy
-						value < 1
-					}
-				}
-			}
-		}
-	}
-
-	building = {
 		key = building_spawning_pool
 		weight = {
 			weight = 1

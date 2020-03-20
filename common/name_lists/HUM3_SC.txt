@@ -4,6 +4,8 @@
 HUM3 = {
 	
 	language = "l_simp_chinese"
+	
+	category = "Humanoid"
 
 	ship_names = {
 

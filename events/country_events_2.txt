@@ -23,7 +23,16 @@ country_event = {
 			# Wanderlust
 			1 = { country_event = { id = country.1000 days = 30 random = 10 } }
 			# Mass Extinction
-			10 = { country_event = { id = country.1100 days = 30 random = 10 } }
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_origin = origin_void_dwellers
+						has_origin = origin_shattered_ring
+					}
+				}
+				country_event = { id = country.1100 days = 30 random = 10 }
+			}
 			# No starting event
 			69 = { set_country_flag = starting_event }
 		}
@@ -210,20 +219,20 @@ country_event = {
 		NOR = {
 			has_ethic = ethic_gestalt_consciousness
 			has_country_flag = starting_event
+			has_global_flag = wanderlust_ongoing
 		}
 	}
 
 	immediate = {
+		set_global_flag = wanderlust_ongoing
 		set_country_flag = starting_event
 		set_country_flag = scientist_country
 		random_owned_leader = {
 			limit = {
 				is_researching_area = physics
 			}
-			kill_leader = {
-				type = scientist
-				show_notification = no
-			}
+			save_global_event_target_as = wanderlust_scientist
+			exile_leader_as = exiled_wanderlust_scientist
 		}
 	}
 
@@ -536,12 +545,6 @@ country_event = {
 	}
 
 	immediate = {
-		random_owned_leader = {
-			limit = {
-				leader_class = scientist
-			}
-			save_event_target_as = scientist_portrait
-		}
 		set_country_flag = completed_rogue_scientist_1
 		fromfrom = {
 			set_star_flag = current_scientist_2_system
@@ -567,7 +570,7 @@ country_event = {
 	is_triggered_only = yes
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -600,7 +603,7 @@ country_event = {
 	is_triggered_only = yes
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -620,7 +623,7 @@ country_event = {
 	is_triggered_only = yes
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -845,40 +848,117 @@ country_event = {
 	trigger = { has_event_chain = rogue_scientist_2_chain }
 
 	immediate = {
-		random_owned_planet = { 
+		random_owned_planet = {
 			limit = { is_capital = yes }
 			save_event_target_as = capital_location
 		}
-		random_system = {
+		if = {
 			limit = {
-				NOR = {
-					has_star_flag = hostile_system
-					has_star_flag = capital_system
-					has_star_flag = current_scientist_1_system
-					has_star_flag = current_scientist_2_system
-					has_star_flag = scientist_system_1
-					has_star_flag = scientist_system_2
-					has_star_flag = scientist_system_3
-					is_star_class = sc_black_hole
-					exists = space_owner
-				}
-				is_pirate_system = no
-				distance = {
-					source = event_target:capital_location
-					use_bypasses = no
-					min_jumps = 3
-					max_jumps = 8
+				any_system = {
+					NOR = {
+						has_star_flag = hostile_system
+						has_star_flag = capital_system
+						has_star_flag = current_scientist_1_system
+						has_star_flag = current_scientist_2_system
+						has_star_flag = scientist_system_1
+						has_star_flag = scientist_system_2
+						has_star_flag = scientist_system_3
+						is_star_class = sc_black_hole
+						exists = space_owner
+					}
+					is_pirate_system = no
+					distance = {
+						source = event_target:capital_location
+						use_bypasses = no
+						min_jumps = 3
+						max_jumps = 8
+					}
 				}
 			}
-			set_star_flag = scientist_system_4
-			save_event_target_as = scientist_system_4
-			root = {
-				create_point_of_interest = {
-					id = scientist_poi.4
-					name = "scientist_poi_4"
-					desc = "scientist_poi_4_desc"
-					event_chain = "rogue_scientist_2_chain"
-					location = event_target:scientist_system_4
+			random_system = {
+				limit = {
+					NOR = {
+						has_star_flag = hostile_system
+						has_star_flag = capital_system
+						has_star_flag = current_scientist_1_system
+						has_star_flag = current_scientist_2_system
+						has_star_flag = scientist_system_1
+						has_star_flag = scientist_system_2
+						has_star_flag = scientist_system_3
+						is_star_class = sc_black_hole
+						exists = space_owner
+					}
+					is_pirate_system = no
+					distance = {
+						source = event_target:capital_location
+						use_bypasses = no
+						min_jumps = 3
+						max_jumps = 8
+					}
+				}
+				set_star_flag = scientist_system_4
+				save_event_target_as = scientist_system_4
+				root = {
+					create_point_of_interest = {
+						id = scientist_poi.4
+						name = "scientist_poi_4"
+						desc = "scientist_poi_4_desc"
+						event_chain = "rogue_scientist_2_chain"
+						location = event_target:scientist_system_4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_system = {
+					NOR = {
+						has_star_flag = hostile_system
+						has_star_flag = capital_system
+						has_star_flag = current_scientist_1_system
+						has_star_flag = current_scientist_2_system
+						has_star_flag = scientist_system_1
+						has_star_flag = scientist_system_2
+						has_star_flag = scientist_system_3
+						is_star_class = sc_black_hole
+					}
+					distance = {
+						source = event_target:capital_location
+						use_bypasses = no
+						min_jumps = 5
+						max_jumps = 10
+					}
+				}
+			}
+			random_system = {
+				limit = {
+					NOR = {
+						has_star_flag = hostile_system
+						has_star_flag = capital_system
+						has_star_flag = current_scientist_1_system
+						has_star_flag = current_scientist_2_system
+						has_star_flag = scientist_system_1
+						has_star_flag = scientist_system_2
+						has_star_flag = scientist_system_3
+						is_star_class = sc_black_hole
+					}
+					distance = {
+						source = event_target:capital_location
+						use_bypasses = no
+						min_jumps = 5
+						max_jumps = 10
+					}
+				}
+				set_star_flag = scientist_system_4
+				save_event_target_as = scientist_system_4
+				root = {
+					create_point_of_interest = {
+						id = scientist_poi.4
+						name = "scientist_poi_4"
+						desc = "scientist_poi_4_desc"
+						event_chain = "rogue_scientist_2_chain"
+						location = event_target:scientist_system_4
+					}
 				}
 			}
 		}
@@ -886,7 +966,7 @@ country_event = {
 }
 
 # Entering penultimate system
-ship_event = {
+fleet_event = {
 	id = country.1030
 	title = "country.1030.name"
 	desc = "country.1030.desc"
@@ -980,12 +1060,6 @@ country_event = {
 			amount = 1
 		}
 		end_event_chain = "rogue_scientist_2_chain"
-		random_owned_leader = {
-			limit = {
-				leader_class = scientist
-			}
-			save_event_target_as = scientist_portrait
-		}
 		country_event = { id = country.1035 }
 	}
 }
@@ -1000,7 +1074,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -1097,15 +1171,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
-		random_owned_leader = {
-			limit = {
-				leader_class = scientist
-			}
-			save_event_target_as = scientist_portrait
-		}
-	}
-
 	option = {
 		name = country.1041.a
 		trigger = {
@@ -1191,12 +1256,6 @@ country_event = {
 			remove_country_flag = scientist_aggressor_pirates
 			destroy_country = yes
 		}
-		random_owned_leader = {
-			limit = {
-				leader_class = scientist
-			}
-			save_event_target_as = scientist_portrait
-		}
 		country_event = { id = country.1045 }
 	}
 }
@@ -1218,7 +1277,7 @@ country_event = {
 	}
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -1245,7 +1304,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -1277,7 +1336,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -1373,7 +1432,7 @@ country_event = {
 }
 
 # 1050 final catchup with scientist
-ship_event = {
+fleet_event = {
 	id = country.1050
 	title = "country.1050.name"
 	desc = "country.1050.desc"
@@ -1394,12 +1453,6 @@ ship_event = {
 	immediate = {
 		owner = {
 			set_country_flag = scisys_5
-			random_owned_leader = {
-				limit = {
-					leader_class = scientist
-				}
-				save_event_target_as = scientist_portrait
-			}
 		}
 		solar_system = {
 			random_system_planet = {
@@ -1409,7 +1462,7 @@ ship_event = {
 		}
 		owner = {
 			save_event_target_as = owner_country
-			remove_point_of_interest = scientist_system_5
+			remove_point_of_interest = scientist_poi.5
 			add_event_chain_counter = {
 				event_chain = "rogue_scientist_3_chain"
 				counter = "scientist_apprehended"
@@ -1456,7 +1509,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -1489,7 +1542,7 @@ country_event = {
 	diplomatic = yes
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -1516,7 +1569,7 @@ country_event = {
 	is_triggered_only = yes
 
 	picture_event_data = {
-		portrait = event_target:scientist_portrait
+		portrait = event_target:wanderlust_scientist
 		room = ethic_spaceship_room
 	}
 
@@ -1543,6 +1596,11 @@ ship_event = {
 	is_triggered_only = yes
 
 	#trigger = { has_ship_flag = wandering_scientist_ship }
+
+	after = {
+		remove_global_flag = wanderlust_ongoing
+		clear_global_event_target = wanderlust_scientist
+	}
 
 	option = {
 		name = country.1055.a
@@ -1637,7 +1695,7 @@ country_event = {
 		is_ai = no
 		NOR = {
 			has_ethic = ethic_gestalt_consciousness
-			has_valid_civic = civic_life_seeded
+			has_origin = origin_life_seeded
 			has_country_flag = starting_event
 		}
 	}
@@ -1875,8 +1933,8 @@ country_event = {
 	}
 }
 
-# hidden, ship entering PoI system, porting to country event for each PoI
-ship_event = {
+# hidden, fleet entering PoI system, porting to country event for each PoI
+fleet_event = {
 	id = country.1102
 	hide_window = yes
 	is_triggered_only = yes

@@ -1,0 +1,221 @@
+﻿# Meta-information about all available DLCs.
+# "name" - must match the name used in the DLC files.
+# "localizable_name" - Loc key used to be processed and displayed to the user.
+# "category" - What type DLC the entry is (Expansion, content pack, species_pack etc)
+# "steam_id" - The AppID of the DLC on the Steam store
+# "microsoft_store_id" - The AppID of the DLC on the Microsoft store
+# "affects_gameplay" - Does the DLC change gameplay (Example: Music and portrait packs -> no Expansions -> yes)
+
+dlcs = {
+	dlc001 = {
+		name = "Symbols of Domination"
+		steam_id = ""
+		microsoft_store_id = ""
+		pops_id = "symbols_of_domination"
+		category = "content_pack"
+		gui = "symbols_of_domination"
+		icon = "GFX_symbols_of_domination"
+		show = no
+		affects_gameplay = no
+	}
+	dlc002 = {
+		name = "Arachnoid Portrait Pack"
+		steam_id = "447680"
+		microsoft_store_id = "9MT1H9QPRPZG"
+		pops_id = "arachnoid"
+		category = "content_pack"
+		gui = "arachnoid"
+		icon = "GFX_arachnoid"
+		show = no
+		affects_gameplay = no
+	}
+	dlc003 = {
+		name = "Paradox Account Sign-up Bonus"
+		steam_id = ""
+		microsoft_store_id = ""
+		pops_id = "signup_bonus"
+		category = "content_pack"
+		gui = "signup_bonus"
+		icon = "GFX_signup_bonus"
+		show = no
+		affects_gameplay = no
+	}
+	dlc004 = {
+		name = "Plantoid"
+		localizable_name = "PLANTOID_TITLE"
+		steam_id = "498870"
+		microsoft_store_id = "9NKD70CQDRF0"
+		pops_id = "plantoid"
+		category = "species_pack"
+		gui = "plantoid"
+		icon = "GFX_plantoidspeciespack"
+		show = yes
+		affects_gameplay = no
+	}
+	dlc010 = {
+		name = "Creatures of the Void Portrait Pack"
+		localizable_name = "CREATURES_OF_THE_VOID_TITLE"
+		steam_id = "633310"
+		microsoft_store_id = ""
+		pops_id = "creatures_of_the_void"
+		category = "content_pack"
+		gui = "creatures_of_the_void"
+		icon = "GFX_creatures_of_the_void"
+		show = no
+		affects_gameplay = no
+	}
+	dlc011 = {
+		name = "Original Game Soundrack"
+		localizable_name = "SOUNDTRACK_TITLE"
+		steam_id = "492740"
+		microsoft_store_id = "9MT1H9QPRPZG"
+		category = "soundtrack"
+		gui = "soundtrack"
+		icon = "GFX_completesoundtrack"
+		show = no
+		affects_gameplay = no
+	}
+	dlc012 = {
+		name = "Leviathans Story Pack"
+		localizable_name = "LEVIATHANS_TITLE"
+		steam_id = "518910"
+		microsoft_store_id = "9N98NVHJ9P8S"
+		pops_id = "leviathans"
+		category = "story_pack"
+		gui = "leviathans"
+		icon = "GFX_leviathansstorypack"
+		show = yes
+		affects_gameplay = yes
+	}
+	dlc013 = {
+		name = "Horizon Signal"
+		steam_id = ""
+		microsoft_store_id = ""
+		pops_id = "horizon_signal"
+		category = "content_pack"
+		gui = "horizon_signal"
+		icon = "GFX_horizon_signal"
+		show = no
+		affects_gameplay = yes
+	}
+	dlc014 = {
+		name = "Utopia"
+		localizable_name = "UTOPIA_TITLE"
+		steam_id = "553280"
+		microsoft_store_id = "9NB14N0SML1G"
+		pops_id = "utopia"
+		category = "expansion"
+		gui = "utopia"
+		icon = "GFX_utopia"
+		show = yes
+		affects_gameplay = yes
+	}
+	dlc015 = {
+		name = "Anniversary Portraits"
+		localizable_name = "ANNIVERSARY_TITLE"
+		steam_id = "633310"
+		microsoft_store_id = ""
+		pops_id = "anniversary"
+		category = "content_pack"
+		gui = "anniversary"
+		icon = "GFX_anniversary"
+		show = no
+		affects_gameplay = no
+	}
+	dlc016 = {
+		name = "Synthetic Dawn Story Pack"
+		localizable_name = "SYNTHETIC_DAWN_TITLE"
+		steam_id = "642750"
+		microsoft_store_id = "9P1S7Z51RWDZ"
+		pops_id = "synthetic_dawn"
+		category = "story_pack"
+		gui = "synthetic_dawn"
+		icon = "GFX_syntheticdawnstorypack"
+		show = yes
+		affects_gameplay = yes
+	}
+	dlc017 = {
+		name = "Apocalypse"
+		localizable_name = "APOCALYPSE_TITLE"
+		steam_id = "716670"
+		microsoft_store_id = "9PGQCF5QL47Z"
+		pops_id = "apocalypse"
+		category = "expansion"
+		gui = "apocalypse"
+		icon = "GFX_apocalypse"
+		show = yes
+		affects_gameplay = yes
+	}
+	dlc018 = {
+		name = "Humanoids Species Pack"
+		localizable_name = "HUMANOIDS_TITLE"
+		steam_id = "756010"
+		microsoft_store_id = "9PMJ0SPKSR4P"
+		pops_id = "humanoids"
+		category = "species_pack"
+		gui = "humanoids"
+		icon = "GFX_humanoidsspeciespack"
+		show = yes
+		affects_gameplay = no
+	}
+	dlc019 = {
+		name = "Distant Stars Story Pack"
+		localizable_name = "DISTANT_STARS_TITLE"
+		steam_id = "844810"
+		microsoft_store_id = "9N6L3BDM3XBN"
+		pops_id = "distant_stars"
+		category = "story_pack"
+		gui = "distant_stars"
+		icon = "GFX_distantstarsstorypack"
+		show = yes
+		affects_gameplay = yes
+	}
+	dlc020 = {
+		name = "Megacorp"
+		localizable_name = "MEGACORP_TITLE"
+		steam_id = "944290"
+		microsoft_store_id = "9N2GWHBSGG1C"
+		pops_id = "megacorp"
+		category = "expansion"
+		gui = "megacorp"
+		icon = "GFX_megacorp"
+		show = yes
+		affects_gameplay = yes
+	}
+	dlc021 = {
+		name = "Ancient Relics Story Pack"
+		localizable_name = "ANCIENT_RELICS_TITLE"
+		steam_id = "1045980"
+		microsoft_store_id = "9MTLRDD1945Z"
+		pops_id = "dlc021_ancient_relics"
+		category = "story_pack"
+		gui = "ancient_relics"
+		icon = "GFX_ancientrelicsstorypack"
+		show = yes
+		affects_gameplay = yes
+	}
+	dlc022 = {
+		name = "Lithoids Species Pack"
+		localizable_name = "LITHOIDS_TITLE"
+		steam_id = "1140000"
+		microsoft_store_id = "9P8CWXTX8SJR"
+		pops_id = "dlc022_lithoids"
+		category = "species_pack"
+		gui = "lithoids"
+		icon = "GFX_lithoidsspeciespack"
+		show = yes
+		affects_gameplay = yes
+	}
+	dlc023 = {
+		name = "Federations"
+		localizable_name = "FEDERATIONS_TITLE"
+		steam_id = "1140001"
+		microsoft_store_id = "9N80147NH3S2"
+		pops_id = "dlc023_federations"
+		category = "expansion"
+		gui = "federations"
+		icon = "GFX_federations"
+		show = yes
+		affects_gameplay = yes
+	}
+}

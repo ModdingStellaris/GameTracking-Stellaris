@@ -1,7 +1,11 @@
 ﻿### United Nations of Earth
 
 HUMAN1 = {
+
+	category = "Humanoid"
+	
 	randomized = no
+	
 	alias = "Human"
 
 	language = "l_simp_chinese"
@@ -96,6 +100,10 @@ HUMAN1 = {
 			欧迪斯 奥瑞恩 普罗维登斯 雷利恩特 佩格萨斯
 		}
 		
+		juggernaut = {
+			阿勒山"世界之轴" "大改革家"昆仑山地壳
+		}
+		
 		transport = {
 			探险者 女妖 女巫 根除者 折磨者 军团 报复 侵略者 突击 剁肉者 大将军 卓越 无敌 战神
 			马耳他 安蒂特姆 "巴吞鲁日 " 博波尔 阿布卡尔 隆德 伊苏斯 昌平 "条顿堡森林 " "贝尔街 " 穆克 萨拉曼卡 别列济纳 弗雷德里克斯堡 
@@ -108,7 +116,7 @@ HUMAN1 = {
 			欧博朗 安姆布雷尔 阿瑞尔 米兰达 崔顿 普鲁多 查伦
 		}
 		
-		ion_cannon = { = { 
+		ion_cannon = {
 			水星 金星 特拉 火星 木星 土星 天王星 海王星 月亮 火卫一 火卫二 谷神星 
 		}
 	}

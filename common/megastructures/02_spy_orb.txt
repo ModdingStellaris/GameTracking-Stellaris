@@ -93,9 +93,13 @@ spy_orb_0 = {
 
 		modifier = {
 			factor = 0.1
-			any_neighbor_system = { 
-				NOT = { 
-					owner = { is_same_value = from } 
+			any_neighbor_system = {
+				OR = {
+					NOT = { exists = owner }
+					AND = {
+						exists = owner
+						NOT = { owner = { is_same_value = from } }
+					}
 				}
 			}
 		}		

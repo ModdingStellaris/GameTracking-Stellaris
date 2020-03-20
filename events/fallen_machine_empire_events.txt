@@ -47,12 +47,8 @@ country_event = {
 		}		
 
 		# Changing country type resets resources, so give them full stores
-		add_resource = { minerals = 20000 }
-		add_resource = { energy = 5000 }
-		add_resource = { influence = 1000 }
-
-		# Add some more fleet
-		country_event = { id = fallen_empires.13 }
+		add_awakened_fallen_empire_resources = yes
+		add_awakened_fallen_empire_fleet = yes #also some more fleet
 
 		# Establish communications
 		every_country = {

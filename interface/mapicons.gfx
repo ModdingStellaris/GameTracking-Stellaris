@@ -66,6 +66,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_debug_ai_strategy"
+		texturefile = "gfx/interface/icons/skulls.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
 		name = "GFX_system_hazards_icon"
 		texturefile = "gfx/interface/icons/system_hazards_icon.dds"
 		noOfFrames = 2
@@ -92,7 +98,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_fleet_presence_overlay_icons"
 		texturefile = "gfx/interface/icons/ship_overlay_icons.dds"
-		noOfFrames = 80
+		noOfFrames = 88
 	}	
 
 	#spriteType = {

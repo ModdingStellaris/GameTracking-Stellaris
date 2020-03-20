@@ -1,0 +1,32 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "arthropoid_01_juggernaut_frame_mesh"
+		file = "gfx/models/ships/juggernauts/arthropoid_01/arthropoid_01_juggernaut_frame.mesh"
+		animation = { id = "idle" 			type = "arthropoid_01_juggernaut_frame_idle_animation" }
+		animation = { id = "death" 			type = "arthropoid_01_juggernaut_frame_death_animation" }
+	}
+	
+	pdxmesh = {
+		name = "arthropoid_01_juggernaut_mesh"
+		file = "gfx/models/ships/juggernauts/arthropoid_01/arthropoid_01_juggernaut.mesh"
+
+		meshsettings = {
+			name = "g_bodyShape"
+			index = 0
+			texture_diffuse = "arthropoid_01_juggernaut_diffuse.dds"
+			texture_normal = "arthropoid_01_juggernaut_normal.dds"
+			texture_specular = "arthropoid_01_juggernaut_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "g_bodyShape"
+			index = 1
+			texture_diffuse = "arthropoid_01_turret_xl_diffuse.dds"
+			texture_normal = "arthropoid_01_turret_xl_normal.dds"
+			texture_specular = "arthropoid_01_turret_xl_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -29,6 +29,7 @@ maweer = {
 		"civic_agrarian_idyll"
 	}
 	government="gov_irenic_dictatorship"
+	origin = "origin_default"
 
 	adjective = "PRESCRIPTED_adjective_maweer"
 	planet_name = "PRESCRIPTED_planet_name_maweer"

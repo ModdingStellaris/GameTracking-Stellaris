@@ -329,7 +329,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "actor_name"
-			maxWidth = 420
+			maxWidth = 200
 			maxHeight = 20
 			position = { x = 10 y = 80 }
 			font = "cg_16b"
@@ -339,7 +339,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "actor_type"
-			maxWidth = 420
+			maxWidth = 200
 			maxHeight = 20
 			position = { x = 10 y = 95 }
 			font = "cg_16b"
@@ -359,9 +359,9 @@ guiTypes = {
 			name = "recipient_name"
 			format = right
 			orientation = upper_right
-			maxWidth = 420
+			maxWidth = 200
 			maxHeight = 20
-			position = { x = -430 y = 80 }
+			position = { x = -210 y = 80 }
 			font = "cg_16b"
 			text = "empire name"
 			text_color_code = "H"
@@ -371,11 +371,28 @@ guiTypes = {
 			name = "recipient_type"
 			format = right
 			orientation = upper_right
-			maxWidth = 420
+			maxWidth = 200
 			maxHeight = 20
-			position = { x = -430 y = 95 }
+			position = { x = -210 y = 95 }
 			font = "cg_16b"
 			text = "empire type"
+		}
+
+		
+		iconType ={
+			name ="diplomacy_icon_bg"
+			quadTextureSprite = "GFX_diplomacy_icon_bg_ring" # Changed in code
+			position = { x = 214 y = 64 }
+			orientation = upper_left
+			#scale = 0.9
+		}
+
+		iconType ={
+			name ="diplomacy_icon"
+			quadTextureSprite = "GFX_diplo_type_icon" # Changed in code
+			position = { x = 222 y = 72 }
+			orientation = upper_left
+			#scale = 0.9
 		}
 
 		###
@@ -409,7 +426,7 @@ guiTypes = {
 			orientation = center_up
 			maxWidth = 420
 			maxHeight = 20
-			position = { x = -210 y = 120 }
+			position = { x = -210 y = 130 }
 			font = "cg_16b"
 			text = ""
 			text_color_code = "E"

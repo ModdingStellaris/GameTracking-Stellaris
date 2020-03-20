@@ -30,15 +30,6 @@ automate_rural_hive_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
-			available = {
-				owner = {
-					maintenance_depot_upkeep_affordable = yes
-				}
-			}
-		}
-
-		4 = {
 			building = building_mineral_purification_plant
 			available = {
 				owner = {
@@ -47,11 +38,20 @@ automate_rural_hive_planet = {
 			}
 		}
 
-		5 = {
+		4 = {
 			building = building_hive_node
 			available = {
 				owner = {
 					hive_node_upkeep_affordable = yes
+				}
+			}
+		}
+
+		5 = {
+			building = building_refinery
+			available = {
+				owner = {
+					refinery_upkeep_affordable = yes
 				}
 			}
 		}
@@ -84,10 +84,10 @@ automate_rural_hive_planet = {
 		}
 
 		9 = {
-			building = building_maintenance_depot
+			building = building_hive_node
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					hive_node_upkeep_affordable = yes
 				}
 			}
 		}
@@ -120,10 +120,10 @@ automate_rural_hive_planet = {
 		}
 
 		13 = {
-			building = building_maintenance_depot
+			building = building_chemical_plant
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					chemical_plant_upkeep_affordable = yes
 				}
 			}
 		}

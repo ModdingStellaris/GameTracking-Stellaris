@@ -8,7 +8,7 @@
 # possible values:
 # 	pre_triggers = {
 #		has_owner					# whether the  planet has an owner
-#		is_homeworld_				# whether the planet is its owner's homeworld
+#		is_homeworld				# whether the planet is its owner's homeworld
 #		original_owner				# whether the planet still belong to its original owner
 #		is_ai 						# whether the planet owner is controlled by the computer (vs controlled by a human)
 #		has_ground_combat			# whether ground combat is going on the planet

@@ -189,3 +189,5 @@
  mod_damage_vs_country_type_ai_empire_mult:2 "Dégâts infligés à la Contingence"
  mod_damage_vs_country_type_sentinels_mult:1 "Dégâts infligés aux Sentinelles"
  mod_damage_vs_country_type_gate_builders_mult:0 "Dégâts infligés aux constructeurs des portes"
+ from_extra_federation_members:0 "Membres"
+ empire_size_mods:0 "Extension de l'empire"

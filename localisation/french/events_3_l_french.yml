@@ -56,7 +56,7 @@
  anomaly.4000.name:0 "Sélection naturelle"
  anomaly.4000.desc:0 "Certaines espèces végétales de [From.GetName] semblent avoir développé des mécanismes de défense efficaces par voie de sélection naturelle. De nombreux arbres et champignons libèrent des spores qui agissent comme un §Ypuissant acide§! sur les organismes non végétaux. Mais heureusement, l'officier scientifique [Root.GetLeaderName] a trouvé un moyen de §Ycontrer§! certains composants de ces spores afin de rendre les forêts de la planète moins inhospitalières pour nous !"
  anomaly.4000.a.tooltip:1 "Confère le modificateur §YJungles acides§! à [From.GetName] :\n§R+3§!£blocker£ Marécages toxiques\n§G+2§!£society£ "
- anomaly.4005.name:0 "Sur les épaules des géants"
+ anomaly.4005.name:1 "Vie fragmentée"
  anomaly.4005.desc:1 "L'astéroïde [From.GetName] et les débris qui l'entourent proviennent vraisemblablement d'une ancienne planète !\n\nNous avons trouvé dans son coeur des traces de minéraux extrêmement précieux, ainsi que des éléments tendant à prouver la présence ancienne de bactéries, qui n'ont toutefois pas survécu dans le vide de l'espace. Quoi qu'il en soit, cela prouve que ce corps céleste abritait autrefois en lui la promesse de la vie."
  anomaly.4005.a.tooltip:2 "Confère à [From.GetName] le modificateur §Y$ex_planet$§! :\n§G+5§!£minerals£"
  anomaly.4010.name:0 "Perdu dans l'espace"

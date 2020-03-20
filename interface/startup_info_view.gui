@@ -25,7 +25,7 @@ guiTypes = {
 			position = { x = 26 y = 10 }
 			maxWidth = 600
 			maxHeight = 16
-			text = "Stellaris 2.2 'Le Guin'"
+			text = "Stellaris 2.6 'Verne'"
 			Orientation = "UPPER_LEFT"
 			format = left
 		}

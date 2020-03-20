@@ -21,12 +21,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -44,13 +44,13 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -68,18 +68,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part3" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part2_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part3_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
 }
 
 #####################################################
@@ -104,12 +104,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -127,13 +127,13 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -151,18 +151,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part3" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part2_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part3_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
 }
 
 
@@ -188,12 +188,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -211,13 +211,13 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -235,18 +235,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part3" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part2_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part3_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
 }
 
 
@@ -272,12 +272,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -295,13 +295,13 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -319,18 +319,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part3" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part2_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part3_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
 }
 
 
@@ -356,12 +356,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -379,13 +379,13 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -403,18 +403,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part3" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part2_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part3_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
 }
 
 
@@ -440,12 +440,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -463,13 +463,13 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -487,18 +487,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part3" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part2_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part3_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
 }
 
 
@@ -524,12 +524,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -547,13 +547,13 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -571,18 +571,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part3" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part2_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part3_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
 }
 
 
@@ -608,12 +608,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -631,13 +631,13 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 }
 
 entity = {
@@ -655,18 +655,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part3" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part2_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part3_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
 }
 
 
@@ -695,12 +695,12 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 	
 		game_data = {
 			emissive_recolor_crunch = 2.0
@@ -722,13 +722,13 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
 		
 		game_data = {
 			emissive_recolor_crunch = 2.0
@@ -750,18 +750,18 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_speed = 0.7 
-		start_event = { node = "part1" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part2" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "part3" particle = "mega_art_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
 
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
 	}
 	
-	attach = { part1_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part2_upper = "mega_art_institution_01_core_effect_entity" }
-	attach = { part3_upper = "mega_art_institution_01_core_effect_entity" }
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+	attach = { part2_upper = "mega_art_fountain_splash_entity" }
+	attach = { part3_upper = "mega_art_fountain_splash_entity" }
 	
 		game_data = {
 			emissive_recolor_crunch = 2.0
@@ -773,7 +773,7 @@ entity = {
 
 
 entity = {
-	name = "mega_art_institution_01_core_effect_entity"
+	name = "mega_art_instution_01_core_effect_entity"
 	pdxmesh = "mega_art_institution_01_core_effect_mesh"
 	
 	game_data = {
@@ -798,6 +798,19 @@ animation = {
 	file = "mega_art_institution_01_stage_3_idle.anim"
 }
 
+
+entity = {
+	name = "mega_art_fountain_splash_entity"
+	pdxmesh = "art_fountain_splash_mesh"
+	locator = { name = "base"  position = { 0 0 0 }}
+	scale = 1.2
+		
+		game_data = {
+		bloom_factor			= 1.2
+		uv_animation_speed 		= .4
+		uv_animation_direction 	= { .2 1.0 }
+		}
+}
 
 #### Destroyed Entity ####
 

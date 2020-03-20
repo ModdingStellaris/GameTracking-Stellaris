@@ -48,10 +48,10 @@ automate_capital_hive_planet = {
 		}
 
 		5 = {
-			building = building_maintenance_depot
+			building = building_hive_warren
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					hive_warren_upkeep_affordable = yes
 				}
 			}
 		}
@@ -120,10 +120,10 @@ automate_capital_hive_planet = {
 		}
 
 		13 = {
-			building = building_maintenance_depot
+			building = building_hive_warren
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					hive_warren_upkeep_affordable = yes
 				}
 			}
 		}

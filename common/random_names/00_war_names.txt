@@ -328,7 +328,7 @@ war_name_format = {
 				using_war_goal = {
 					type = wg_megacorp_subjugate
 					owner = attacker
-				}				
+				}
 			}
             attacker = {
 				has_federation = no
@@ -356,7 +356,7 @@ war_name_format = {
 				using_war_goal = {
 					type = wg_megacorp_subjugate
 					owner = attacker
-				}				
+				}
 			}
 			attacker = {
 				has_federation = yes
@@ -383,7 +383,7 @@ war_name_format = {
 				using_war_goal = {
 					type = wg_megacorp_subjugate
 					owner = attacker
-				}				
+				}
 			}
 			attacker = {
 				has_federation = no
@@ -410,7 +410,7 @@ war_name_format = {
 				using_war_goal = {
 					type = wg_megacorp_subjugate
 					owner = attacker
-				}				
+				}
 			}
             attacker = {
 				has_federation = no
@@ -652,13 +652,17 @@ war_name_format = {
 			add = 999
 			OR = {
 				using_war_goal = {
+					type = wg_renegade_containment
+					owner = attacker
+				}
+				using_war_goal = {
 					type = wg_end_threat
 					owner = attacker
 				}
 				using_war_goal = {
 					type = wg_end_threat_swarm
 					owner = attacker
-				}				
+				}
 			}
             attacker = {
 				has_federation = no
@@ -679,13 +683,17 @@ war_name_format = {
 			add = 999
 			OR = {
 				using_war_goal = {
+					type = wg_renegade_containment
+					owner = attacker
+				}
+				using_war_goal = {
 					type = wg_end_threat
 					owner = attacker
 				}
 				using_war_goal = {
 					type = wg_end_threat_swarm
 					owner = attacker
-				}				
+				}
 			}
 			attacker = {
 				has_federation = yes

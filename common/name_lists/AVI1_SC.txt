@@ -1,6 +1,8 @@
 ﻿### Template
 AVI1 = {
 	### SHIPS
+	
+	category = "Avian"
 
 	language = "l_simp_chinese"
 	

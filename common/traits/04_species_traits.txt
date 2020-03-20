@@ -86,7 +86,7 @@ trait_natural_sociologists = {
 trait_extremely_adaptive = {
 	cost = 4
 	potential_crossbreeding_chance = 1.0
-	opposites = { "trait_nonadaptive" "trait_adaptive" "trait_robust" }
+	opposites = { "trait_nonadaptive" "trait_adaptive" "trait_robust" "trait_adaptive_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		pop_environment_tolerance = 0.20
@@ -99,7 +99,7 @@ trait_extremely_adaptive = {
 trait_adaptive = {
 	cost = 2
 	potential_crossbreeding_chance = 1.0
-	opposites = { "trait_nonadaptive" "trait_extremely_adaptive" "trait_robust" }
+	opposites = { "trait_nonadaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		pop_environment_tolerance = 0.10
@@ -109,10 +109,27 @@ trait_adaptive = {
 	}
 }
 
+trait_adaptive_lithoid = {
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_adaptive.dds"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	potential_crossbreeding_chance = 0.5
+	opposites = { "trait_nonadaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive" }
+	allowed_archetypes = { LITHOID }
+	modifier = {
+		pop_environment_tolerance = 0.10
+	}
+	slave_cost = {
+		energy = 100
+	}
+}
+
 trait_nonadaptive = {
 	cost = -2
 	potential_crossbreeding_chance = 1.0
-	opposites = { "trait_adaptive" "trait_extremely_adaptive" "trait_robust" }
+	opposites = { "trait_adaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		pop_environment_tolerance = -0.10
@@ -128,7 +145,7 @@ trait_nonadaptive = {
 trait_rapid_breeders = {
 	cost = 2
 	potential_crossbreeding_chance = 1.0
-	opposites = { "trait_slow_breeders" "trait_fertile" }
+	opposites = { "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		pop_growth_speed = 0.10
@@ -138,10 +155,27 @@ trait_rapid_breeders = {
 	}
 }
 
+trait_rapid_breeders_lithoid = {
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_rapid_breeders.dds"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	potential_crossbreeding_chance = 0.5
+	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_fertile" }
+	allowed_archetypes = { LITHOID }
+	modifier = {
+		pop_growth_speed = 0.10
+	}
+	slave_cost = {
+		energy = 200
+	}
+}
+
 trait_slow_breeders = {
 	cost = -2
 	potential_crossbreeding_chance = 1.0
-	opposites = { "trait_rapid_breeders" "trait_fertile" }
+	opposites = { "trait_rapid_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		pop_growth_speed = -0.10
@@ -211,6 +245,26 @@ trait_quarrelsome = {
 			factor = 0
 			years_passed > 5
 		}
+	}
+}
+
+trait_docile = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	opposites = { "trait_unruly" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	modifier = {
+		species_empire_size_mult = -0.10
+	}
+}
+
+trait_unruly = {
+	cost = -2
+	potential_crossbreeding_chance = 1.0
+	opposites = { "trait_docile" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	modifier = {
+		species_empire_size_mult = 0.10
 	}
 }
 
@@ -601,7 +655,7 @@ trait_robust = {
 	initial = no
 	randomized = no
 	advanced_trait = yes
-	opposites = { "trait_nonadaptive" "trait_adaptive" "trait_extremely_adaptive" }
+	opposites = { "trait_nonadaptive" "trait_adaptive" "trait_extremely_adaptive" "trait_adaptive_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		pop_environment_tolerance = 0.30
@@ -795,5 +849,39 @@ trait_lithoid_volatile_excretions = {
 
 	slave_cost = {
 		energy = 100
+	}
+}
+
+trait_void_dweller_1 = {
+	icon = "gfx/interface/icons/traits/trait_void_dweller_positive.dds"
+	initial = no
+	modification = no
+	randomized = no
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	sorting_priority = 30
+	potential_crossbreeding_chance = 0.33
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.15
+		planet_jobs_worker_produces_mult = 0.15
+		pop_growth_speed = -0.1
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_void_dweller_2 = {
+	icon = "gfx/interface/icons/traits/trait_void_dweller.dds"
+	initial = no
+	modification = no
+	randomized = no
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	sorting_priority = 30
+	potential_crossbreeding_chance = 0.33
+	modifier = {
+		pop_growth_speed = -0.6
+	}
+	ai_weight = {
+		weight = 0
 	}
 }

@@ -27,10 +27,10 @@ automate_generator_hive_planet = {
 		}
 
 		3 = {
-			building = building_maintenance_depot
+			building = building_hive_node
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					hive_node_upkeep_affordable = yes
 				}
 			}
 		}
@@ -45,10 +45,10 @@ automate_generator_hive_planet = {
 		}
 
 		5 = {
-			building = building_hive_node
+			building = building_refinery
 			available = {
 				owner = {
-					hive_node_upkeep_affordable = yes
+					refinery_upkeep_affordable = yes
 				}
 			}
 		}
@@ -117,10 +117,10 @@ automate_generator_hive_planet = {
 		}
 
 		13 = {
-			building = building_maintenance_depot
+			building = building_hive_node
 			available = {
 				owner = {
-					maintenance_depot_upkeep_affordable = yes
+					hive_node_upkeep_affordable = yes
 				}
 			}
 		}

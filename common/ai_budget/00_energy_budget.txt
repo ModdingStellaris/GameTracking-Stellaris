@@ -31,7 +31,7 @@ energy_expenditure_trade = {
 	}
 	
 	fraction = {
-		weight = 0.3
+		weight = 0.5
 	}
 }
 
@@ -158,7 +158,7 @@ energy_expenditure_deposit_blockers = {
 
 	# base remove blocker cost
 	static_min = {
-		base = 350
+		base = 500
 	}
 
 	static_max = {

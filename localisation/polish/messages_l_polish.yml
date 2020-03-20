@@ -433,3 +433,5 @@
  MESSAGE_BREAK_RESEARCH_AGREEMENT_TITLE:0 "Zerwano porozumienie badawcze"
  ACTION_FORM_RESEARCH_AGREEMENT_NOTIFICATION:0 "§H[From.GetName]§! zawiera porozumienie badawcze z imperium §H[Root.GetAdj]§!.\n\nObie strony mogą się wiele od siebie nauczyć."
  ACTION_BREAK_RESEARCH_AGREEMENT_NOTIFICATION:0 "§H[From.GetName]§! zrywa porozumienie badawcze z imperium §H[Root.GetAdj]§!.\n\nChyba nie chcą dłużej dzielić się tajemnicami..."
+ ACTION_DEMAND_SUBSIDIARY_NOTIFICATION:0 "§H[From.GetName]§! czyni spółkę zależną z imperium §H[Root.GetName]§!.\n\nW zamian za bezpieczeństwo stało się ono zasobem korporacyjnym."
+ ACTION_ASK_TO_BECOME_SUBSIDIARY_NOTIFICATION:0 "§H[Root.GetName]§! czyni spółkę zależną z imperium §H[From.GetName]§!.\n\nW zamian za bezpieczeństwo stało się ono zasobem korporacyjnym."

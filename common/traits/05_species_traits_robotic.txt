@@ -22,7 +22,7 @@ trait_robot_superconductive = {
 	cost = 2
 
 	allowed_archetypes = { ROBOT MACHINE }
-	
+
 	# Droids and Machine only
 	species_potential_add = {
 		exists = from
@@ -30,7 +30,7 @@ trait_robot_superconductive = {
 			OR = {
 				has_authority = auth_machine_intelligence
 				has_technology = tech_droid_workers
-			}			
+			}
 		}
 	}
 
@@ -61,7 +61,7 @@ trait_robot_logic_engines = {
 			OR = {
 				has_authority = auth_machine_intelligence
 				has_technology = tech_synthetic_workers
-			}			
+			}
 			NOT = { has_policy_flag = ai_outlawed }
 		}
 	}
@@ -77,7 +77,7 @@ trait_robot_loyalty_circuits = {
 	cost = 2
 
 	allowed_archetypes = { ROBOT }
-	
+
 	# Synth only
 	species_potential_add = {
 		exists = from
@@ -94,12 +94,12 @@ trait_robot_loyalty_circuits = {
 
 trait_robot_domestic_protocols = {
 	cost = 2
-	
+
 	initial = no
 	randomized = no
 
 	allowed_archetypes = { ROBOT }
-	
+
 	# Synth and Droid only
 	species_potential_add = {
 		exists = from
@@ -141,13 +141,13 @@ trait_robot_enhanced_memory = {
 	cost = 2
 
 	allowed_archetypes = { ROBOT MACHINE }
-	
+
 	# Synth and Machine only
 	species_potential_add = {
 		exists = from
 		from = {
 			OR = {
-				has_authority = auth_machine_intelligence		
+				has_authority = auth_machine_intelligence
 				has_technology = tech_synthetic_leaders
 			}
 			NOT = { has_policy_flag = ai_outlawed }
@@ -209,13 +209,13 @@ trait_robot_learning_algorithms = {
 	opposites = { "trait_robot_repurposed_hardware" }
 
 	allowed_archetypes = { ROBOT MACHINE }
-	
+
 	# Synth and Machine only
 	species_potential_add = {
 		exists = from
 		from = {
 			OR = {
-				has_authority = auth_machine_intelligence		
+				has_authority = auth_machine_intelligence
 				has_technology = tech_synthetic_leaders
 			}
 			NOT = { has_policy_flag = ai_outlawed }
@@ -238,13 +238,13 @@ trait_robot_repurposed_hardware = {
 		exists = from
 		from = {
 			OR = {
-				has_authority = auth_machine_intelligence		
+				has_authority = auth_machine_intelligence
 				has_technology = tech_synthetic_leaders
 			}
 			NOT = { has_policy_flag = ai_outlawed }
 		}
 	}
-	
+
 	modifier = {
 		species_leader_exp_gain = -0.25
 	}
@@ -287,8 +287,8 @@ trait_robot_recycled = {
 	opposites = { "trait_robot_luxurious" }
 
 	allowed_archetypes = { ROBOT MACHINE }
-	
-	#assembling_modifier, declining_modifier, growing_modifier are applied to planet when pop is the one assembling/declining/growing	
+
+	#assembling_modifier, declining_modifier, growing_modifier are applied to planet when pop is the one assembling/declining/growing
 	assembling_modifier = {
 		planet_pop_assemblers_upkeep_mult = -0.20
 	}
@@ -300,7 +300,7 @@ trait_robot_luxurious = {
 
 	allowed_archetypes = { ROBOT MACHINE }
 
-	#assembling_modifier, declining_modifier, growing_modifier are applied to planet when pop is the one assembling/declining/growing	
+	#assembling_modifier, declining_modifier, growing_modifier are applied to planet when pop is the one assembling/declining/growing
 	assembling_modifier = {
 		planet_pop_assemblers_upkeep_mult = 0.20
 	}
@@ -317,7 +317,7 @@ trait_robot_propaganda_machines = {
 	cost = 1
 
 	allowed_archetypes = { ROBOT }
-	
+
 	# Synth and Droid only
 	species_potential_add = {
 		exists = from
@@ -332,4 +332,20 @@ trait_robot_propaganda_machines = {
 	}
 }
 
-#TODO [MAW] add army damage traits
+trait_robot_streamlined_protocols = {
+	cost = 2
+	opposites = { "trait_robot_high_bandwidth" }
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+		species_empire_size_mult = -0.10
+	}
+}
+
+trait_robot_high_bandwidth = {
+	cost = -2
+	opposites = { "trait_robot_streamlined_protocols" }
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+		species_empire_size_mult = 0.10
+	}
+}

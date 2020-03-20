@@ -591,6 +591,12 @@ cara_generate_deal2 = {
 						has_deposit = d_numas_breath
 					}
 				}
+				modifier = {
+					factor = 0
+					NOT = {
+						any_owned_planet = { habitable_planet = yes }
+					}
+				}
 				set_timed_country_flag = { flag = fleet2deal8 days = @fleet2dealdecay }
 			}
 			100 = {
@@ -638,7 +644,7 @@ cara_generate_deal2 = {
 		limit = { has_country_flag = fleet2deal8 }
 		random_owned_planet = {
 			limit = {
-				always = yes
+				habitable_planet = yes
 			}
 			weights = {
 			base = 1

@@ -2,6 +2,8 @@
 ### Created by Rufus Tronde Miranda van den Brink
 PLANT = {	
 	### SHIPS
+	
+	category = "Plantoid"
 
 	language = "l_simp_chinese"
 	
@@ -31,6 +33,10 @@ PLANT = {
 
 		colossus = { 
 			斯帕戈姆 达歌特姆 闪布棱戈姆 辛格洛 瓦戈罗戈 马许格里格 伊戈里姆 艾格斯姆 霍布罗格 古加那 瑟马格 沙班赫 威戈里姆 沃格西纳 斯普棱格 胡米格尔 库达特 卡戈姆 卡斯弗路德 科瓦布兰
+		}
+		
+		juggernaut = {
+			"亘古根须" "命运之藤蔓" "天命之根须"
 		}
 		
 		science = {

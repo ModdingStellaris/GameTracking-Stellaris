@@ -8,8 +8,7 @@ ship_section_template = {
 
 	component_slot = {
 		name = "PLANET_KILLER_GUN_01"
-		slot_size = planet_killer
-		slot_type = weapon
+		template = "invisible_planet_killer_fixed"
 		locatorname = "planet_killer_gun_01"
 	}
 

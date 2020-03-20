@@ -56,7 +56,7 @@
  anomaly.4000.name:0 "Das Leben findet einen Weg"
  anomaly.4000.desc:0 "Anscheinend hat die Pflanzenwelt von [From.GetName] durch natürliche Selektion effiziente Verteidigungsmechanismen entwickelt. Zahlreiche Bäume und Pilze verströmen Sporen, die auf nicht-pflanzliche Organismen wie §Ystarke Säure§! wirken. Glücklicherweise hat Wissenschaftsoffizier [Root.GetLeaderName] §YGegenmaßnahmen§! gegen einige Sporenstränge gefunden, weshalb die Wälder des Planeten für uns nun weniger bedrohlich sind!"
  anomaly.4000.a.tooltip:1 "Fügt [From.GetName] den Modifikator §YSäuredschungel§! hinzu:\n£blocker£ Giftiger Sumpf §R+3§!\n£society£ §G+2§!"
- anomaly.4005.name:0 "Auf den Schultern von Riesen"
+ anomaly.4005.name:1 "Fragmente des Lebens"
  anomaly.4005.desc:1 "Der Asteroid [From.GetName] und die ihn umgebenden Trümmer stammen anscheinend von einem §Yehemaligen Planeten§!!\n\nTief im Kern des Asteroiden finden wir Spuren von extrem wertvollen Legierungen. Es gibt außerdem Hinweise auf bakterielles Leben, das hier im Vakuum des Weltraums abgestorben ist. Dies zeigt uns, dass auf diesem Himmelskörper einst wohl Leben möglich gewesen ist."
  anomaly.4005.a.tooltip:2 "Fügt [From.GetName] den Modifikator §YEhemaliger Planet§! hinzu:\n£alloys£ §G+3§!"
  anomaly.4010.name:0 "Verloren im Weltraum"

@@ -3,6 +3,8 @@
 
 AVI4 = {
 
+	category = "Avian"
+	
 	language = "l_simp_chinese"
 
 	ship_names = {
@@ -29,6 +31,10 @@ AVI4 = {
 
 		colossus = {
 			"死亡爪" "最后一息" "最终飞行"
+		}
+		
+		juggernaut = {
+			"盛怒骚乱" "利刃台风" "炽热咆哮" "风暴使者" "无尽风暴" "不息狂风"
 		}
 		
 		constructor = {

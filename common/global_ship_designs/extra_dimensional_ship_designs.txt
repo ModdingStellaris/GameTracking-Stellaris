@@ -650,14 +650,14 @@ ship_design = {
 	}
 }
 
-# Dimensional Anchor
+# Starbase
 ship_design = {
-	name = "NAME_Unbidden_Anchor"
-	ship_size = starbase_exd
+	name = "NAME_Unbidden_Starbase"
+	ship_size = starbase_exd_0
 	country_type = extradimensional
 	
 	section = {
-		template = "ed_dimensional_anchor_key_blue"
+		template = "ed_starbase_key"
 		slot = "core"
 		
 		component = {
@@ -685,12 +685,130 @@ ship_design = {
 			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_PSI_SHIELD"
+		}		
+	}
+	required_component="SENSOR_4"
+}
+
+# Dimensional Anchor
+ship_design = {
+	name = "NAME_Unbidden_Anchor"
+	ship_size = starbase_exd
+	country_type = extradimensional
+	
+	section = {
+		template = "ed_dimensional_anchor_key_blue"
+		slot = "core"
+		
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
 			slot = "MEDIUM_GUN_03"
 			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
 			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_05"
+			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_06"
+			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_05"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_06"
+			template = "SMALL_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -763,6 +881,14 @@ ship_design = {
 			template = "LARGE_ED_WEAPON"
 		}
 		component = {
+			slot = "LARGE_GUN_05"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
 			slot = "MEDIUM_GUN_01"
 			template = "MEDIUM_ED_WEAPON"
 		}
@@ -777,6 +903,38 @@ ship_design = {
 		component = {
 			slot = "MEDIUM_GUN_04"
 			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_05"
+			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_06"
+			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_05"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_06"
+			template = "SMALL_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -817,7 +975,7 @@ ship_design = {
 		component = {
 			slot = "LARGE_UTILITY_10"
 			template = "LARGE_PSI_SHIELD"
-		}	
+		}
 	}
 	required_component="SENSOR_4"
 }
@@ -849,6 +1007,14 @@ ship_design = {
 			template = "LARGE_ED_WEAPON"
 		}
 		component = {
+			slot = "LARGE_GUN_05"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "LARGE_ED_WEAPON"
+		}
+		component = {
 			slot = "MEDIUM_GUN_01"
 			template = "MEDIUM_ED_WEAPON"
 		}
@@ -863,6 +1029,38 @@ ship_design = {
 		component = {
 			slot = "MEDIUM_GUN_04"
 			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_05"
+			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_06"
+			template = "MEDIUM_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_05"
+			template = "SMALL_ED_WEAPON"
+		}
+		component = {
+			slot = "SMALL_GUN_06"
+			template = "SMALL_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -903,7 +1101,7 @@ ship_design = {
 		component = {
 			slot = "LARGE_UTILITY_10"
 			template = "LARGE_PSI_SHIELD"
-		}	
+		}
 	}
 	required_component="SENSOR_4"
 }

@@ -3,7 +3,7 @@
 #############
 
 building_hydroponics_farm = {
-	base_buildtime = 360
+	base_buildtime = @b1_time
 
 	category = resource
 
@@ -27,16 +27,14 @@ building_hydroponics_farm = {
 
 	destroy_trigger = {
 		exists = owner
-		OR = {
-			planet = {
-				NOT = { is_planet_class = pc_habitat }
-				free_building_slots = 0
-				owner = {
-					is_ai = yes
-					has_monthly_income = {
-						resource = food
-						value > 100
-					}
+		planet = {
+			NOT = { is_planet_class = pc_habitat }
+			free_building_slots = 0
+			owner = {
+				is_ai = yes
+				has_monthly_income = {
+					resource = food
+					value > 100
 				}
 			}
 		}
@@ -48,7 +46,17 @@ building_hydroponics_farm = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_farmer_add = 2
+			job_farmer_add = @b1_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_origin = origin_void_dwellers }
+		}
+		modifier = {
+			job_farmer_add = 1
 		}
 	}
 
@@ -58,14 +66,14 @@ building_hydroponics_farm = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_agri_drone_add = 2
+			job_agri_drone_add = @b1_jobs
 		}
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 300
+			minerals = @b1_minerals
 		}
 		upkeep = {
 			energy = 2
@@ -94,7 +102,7 @@ building_hydroponics_farm = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 500
+			weight = 10
 			NOR = {
 				is_planet_class = pc_habitat
 				is_planet_class = pc_city
@@ -107,7 +115,7 @@ building_hydroponics_farm = {
 			OR = {
 				num_free_districts = { type = district_farming value = 0 }
 				free_district_slots = 0
-			}#Don't build when you can still get farming districts
+			}
 			owner = {
 				OR = {
 					is_mechanical_empire = no
@@ -126,7 +134,7 @@ building_hydroponics_farm = {
 			}
 		}
 		modifier = {
-			weight = 1000
+			weight = 20
 			OR = {
 				free_housing > 3
 				owner = { is_gestalt = no }
@@ -150,7 +158,7 @@ building_hydroponics_farm = {
 					}
 					has_monthly_income = {
 						resource = food
-						value < 125
+						value < 50
 					}
 				}
 				has_building = building_hydroponics_farm
@@ -167,7 +175,7 @@ building_hydroponics_farm = {
 }
 
 building_food_processing_facility = {
-	base_buildtime = 360
+	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
 
@@ -179,15 +187,15 @@ building_food_processing_facility = {
 		}
 	}
 	destroy_trigger = {
-		owner = { is_ai = yes }
+		exists = owner
 		OR = {
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
 		}
-		OR = {
-			num_districts = { type = district_farming value < 6 }
-			num_districts = { type = district_farming_uncapped value < 6 }
-		}
+	}
+
+	allow = {
+		buildings_simple_allow = yes
 	}
 
 	planet_modifier = {
@@ -217,10 +225,10 @@ building_food_processing_facility = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @b1_minerals
 		}
 		upkeep = {
-			energy = 1
+			energy = 2
 		}
 	}
 
@@ -250,12 +258,23 @@ building_food_processing_facility = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 600 #Needs to be higher than building_hydroponics_farm
+			weight = 30 #Needs to be higher than building_hydroponics_farm
 			OR = {
-				num_districts = { type = district_farming value > 5 }
-				num_districts = { type = district_farming_uncapped value > 5 }
+				num_districts = { type = district_farming value >= 3 }
+				num_districts = { type = district_farming_uncapped value >= 3 }
+				num_districts = { type = district_rw_farming value >= 1 }
 				owner = { is_hive_empire = yes } #Constantly short on food for some reason
 				has_building = building_hydroponics_farm
+			}
+		}
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 50
+				}
 			}
 		}
 	}
@@ -269,7 +288,7 @@ building_food_processing_facility = {
 }
 
 building_food_processing_center = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = no
 	category = resource
 
@@ -286,14 +305,7 @@ building_food_processing_center = {
 		OR = {
 			is_planet_class = pc_machine
 			has_modifier = resort_colony
-			AND = {
-				owner = { is_ai = yes }
-				OR = {
-					num_districts = { type = district_farming value < 6 }
-					num_districts = { type = district_farming_uncapped value < 6 }
-					buildings_no_motes = yes
-				}
-			}
+			buildings_no_motes = yes
 		}
 	}
 
@@ -320,12 +332,12 @@ building_food_processing_center = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
-			volatile_motes = 50
+			minerals = @b2_minerals
+			volatile_motes = @b2_rare_cost
 		}
 		upkeep = {
-			energy = 1
-			volatile_motes = 1
+			energy = 2
+			volatile_motes = @b2_rare_upkeep
 		}
 	}
 
@@ -351,8 +363,18 @@ building_food_processing_center = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 1
+			weight = 30
 			buildings_has_motes = yes
+		}
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = food
+					value < 50
+				}
+			}
 		}
 	}
 
@@ -385,9 +407,13 @@ building_food_processing_center = {
 }
 
 building_mineral_purification_plant = {
-	base_buildtime = 360
+	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
+
+	destroy_trigger = {
+		has_modifier = resort_colony
+	}
 
 	potential = {
 		NOT = { has_modifier = resort_colony }
@@ -400,6 +426,10 @@ building_mineral_purification_plant = {
 			NOT = { is_planet_class = pc_habitat }
 			has_planet_flag = mining_habitat
 		}
+	}
+
+	allow = {
+		buildings_simple_allow = yes
 	}
 
 	planet_modifier = {
@@ -470,7 +500,7 @@ building_mineral_purification_plant = {
 			alloys = 100
 		}
 		upkeep = {
-			energy = 1
+			energy = 2
 		}
 	}
 
@@ -500,19 +530,31 @@ building_mineral_purification_plant = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 91000
+			weight = 75
 			NOR = {
 				is_planet_class = pc_city
 				is_planet_class = pc_relic
 			}
 			OR = {
 				districts_good_minerals = yes
-				num_districts = { type = district_mining value > 4 }
+				num_districts = { type = district_mining value >= 3 }
+				num_districts = { type = district_mining_uncapped value >= 3 }
+				num_districts = { type = district_hab_mining value >= 2 }
 				owner = {
 					has_monthly_income = {
 						resource = minerals
 						value < 0
 					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value < 50
 				}
 			}
 		}
@@ -527,16 +569,20 @@ building_mineral_purification_plant = {
 }
 
 building_mineral_purification_hub = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = no
 	category = resource
 
 	allow = {
 		has_upgraded_capital = yes
+		NOT = { has_modifier = resort_colony }
 	}
 
 	destroy_trigger = {
-		buildings_no_motes = yes
+		OR = {
+			has_modifier = resort_colony
+			buildings_no_motes = yes
+		}
 	}
 
 	planet_modifier = {
@@ -595,8 +641,8 @@ building_mineral_purification_hub = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
-			volatile_motes = 50
+			minerals = @b2_minerals
+			volatile_motes = @b2_rare_cost
 		}
 		cost = {
 			trigger = {
@@ -608,8 +654,8 @@ building_mineral_purification_hub = {
 			alloys = 150
 		}
 		upkeep = {
-			energy = 1
-			volatile_motes = 1
+			energy = 2
+			volatile_motes = @b2_rare_upkeep
 		}
 	}
 
@@ -635,8 +681,18 @@ building_mineral_purification_hub = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 1
+			weight = 30
 			buildings_has_motes = yes
+		}
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = minerals
+					value < 50
+				}
+			}
 		}
 	}
 
@@ -669,9 +725,13 @@ building_mineral_purification_hub = {
 }
 
 building_energy_grid = {
-	base_buildtime = 360
+	base_buildtime = @b1_time
 	base_cap_amount = 1
 	category = resource
+
+	destroy_trigger = {
+		has_modifier = resort_colony
+	}
 
 	potential = {
 		NOT = { has_modifier = resort_colony }
@@ -683,6 +743,10 @@ building_energy_grid = {
 			}
 			has_planet_flag = energy_habitat
 		}
+	}
+
+	allow = {
+		buildings_simple_allow = yes
 	}
 
 	planet_modifier = {
@@ -741,7 +805,7 @@ building_energy_grid = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = @b1_minerals
 		}
 		cost = {
 			trigger = {
@@ -753,7 +817,7 @@ building_energy_grid = {
 			alloys = 100
 		}
 		upkeep = {
-			energy = 1
+			energy = 2
 		}
 	}
 
@@ -783,10 +847,36 @@ building_energy_grid = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 5
+			weight = 50
 			NOR = {
 				is_planet_class = pc_city
 				is_planet_class = pc_relic
+			}
+			OR = {
+				districts_good_energy = yes
+				num_districts = { type = district_generator value >= 3 }
+				num_districts = { type = district_generator_uncapped value >= 3 }
+				num_districts = { type = district_hab_energy value >= 2 }
+				num_districts = { type = district_rw_generator value >= 1 }
+				AND = {
+					exists = owner
+					owner = {
+						has_monthly_income = {
+							resource = energy
+							value < 0
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 50
+				}
 			}
 		}
 	}
@@ -800,7 +890,7 @@ building_energy_grid = {
 }
 
 building_energy_nexus = {
-	base_buildtime = 480
+	base_buildtime = @b2_time
 	can_build = no
 	category = resource
 
@@ -809,7 +899,10 @@ building_energy_nexus = {
 	}
 
 	destroy_trigger = {
-		buildings_no_exotic_gases = yes
+		OR = {
+			has_modifier = resort_colony
+			buildings_no_exotic_gases = yes
+		}
 	}
 
 	planet_modifier = {
@@ -869,8 +962,8 @@ building_energy_nexus = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
-			exotic_gases = 50
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
 		}
 		cost = {
 			trigger = {
@@ -882,8 +975,8 @@ building_energy_nexus = {
 			alloys = 150
 		}
 		upkeep = {
-			energy = 1
-			exotic_gases = 1
+			energy = 2
+			exotic_gases = @b2_rare_upkeep
 		}
 	}
 
@@ -909,8 +1002,18 @@ building_energy_nexus = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 1
+			weight = 30
 			buildings_has_exotic_gases = yes
+		}
+		modifier = {
+			factor = 2
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 50
+				}
+			}
 		}
 	}
 
@@ -953,15 +1056,9 @@ building_resource_silo = {
 			has_modifier = slave_colony
 		}
 	}
-	destroy_trigger = {
-		exists = owner
-		owner = {
-			is_ai = yes
-			OR = {
-				has_technology = tech_mega_engineering
-				NOT = { has_ascension_perk = ap_arcology_project }
-			}
-		}
+
+	allow = {
+		buildings_simple_allow = yes
 	}
 
 	triggered_planet_modifier = {
@@ -1019,12 +1116,31 @@ building_resource_silo = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 90000
+			weight = 5
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				has_swapped_tradition = tr_domination_modular_depot
+			}
+		}
+		modifier = {
+			weight = 50
+			is_active_resolution = "resolution_greatergood_balance_in_the_middle"
+		}
+		modifier = {
+			weight = 500
+			is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
+		}
+		modifier = {
+			factor = 10
 			owner = {
 				has_ascension_perk = ap_arcology_project
 				NOT = { has_technology = tech_mega_engineering }
 			}
-			NOT = { has_building = building_resource_silo }
+		}
+		modifier = {
+			factor = 0
+			has_building = building_resource_silo
 		}
 	}
 }
@@ -1069,15 +1185,17 @@ building_bio_reactor = {
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 50
+			weight = 25
+			buildings_unemployed = no # Don't build bioreactors if you need jobs
+			exists = owner
 			owner = {
 				has_monthly_income = {
 					resource = energy
-					value < 20
+					value < 50
 				}
 				has_monthly_income = {
 					resource = food
-					value > 25
+					value > 50
 				}
 				NOR = {
 					has_country_flag = buildings_new_reactor_building
@@ -1087,7 +1205,6 @@ building_bio_reactor = {
 			}
 		}
 	}
-
 
 	on_queued = {
 		IF = {

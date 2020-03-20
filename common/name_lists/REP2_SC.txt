@@ -1,6 +1,8 @@
 ﻿### Reptilian 1
 REP2 = {
 	### SHIPS
+	
+	category = "Reptilian"
 
 	language = "l_simp_chinese"
 	

@@ -6,7 +6,7 @@ buffer = {
 country = {
 	hidden = yes
 	generate_mult_modifiers = {
-		produces 
+		produces
 	}
 
 	generate_add_modifiers = {
@@ -27,6 +27,11 @@ trade = {
 
 trade_routes = {
 	parent = trade
+}
+
+resolutions = {
+	parent = country
+	use_for_ai_budget = yes
 }
 
 edicts = {
@@ -140,7 +145,7 @@ ships = {
 			is_ship_size = destroyer
 		}
 	}
-	
+
 	triggered_cost_modifier = {
 		key = ship_cruiser
 		use_parent_icon = yes
@@ -153,7 +158,7 @@ ships = {
 			is_ship_size = cruiser
 		}
 	}
-	
+
 	triggered_cost_modifier = {
 		key = ship_battleship
 		use_parent_icon = yes
@@ -166,7 +171,7 @@ ships = {
 			is_ship_size = battleship
 		}
 	}
-	
+
 	triggered_cost_modifier = {
 		key = ship_military_station_small
 		use_parent_icon = yes
@@ -352,7 +357,7 @@ planet_districts = {
 }
 
 planet_districts_cities = {
-	parent = planet_structures
+	parent = planet_districts
 
 	generate_mult_modifiers = {
 		cost
@@ -442,6 +447,16 @@ planet_jobs = {
 	}
 
 	triggered_produces_modifier = {
+		key = planet_jobs_ruler
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			is_pop_category = ruler
+		}
+	}
+
+	triggered_produces_modifier = {
 		key = planet_jobs_simple_drone
 		modifier_types = {
 			mult
@@ -449,8 +464,8 @@ planet_jobs = {
 		trigger = {
 			is_pop_category = simple_drone
 		}
-	}	
-	
+	}
+
 	triggered_produces_modifier = {
 		key = planet_jobs_complex_drone
 		modifier_types = {
@@ -459,7 +474,7 @@ planet_jobs = {
 		trigger = {
 			is_pop_category = complex_drone
 		}
-	}		
+	}
 
 	triggered_produces_modifier = {
 		key = planet_jobs_robotic
@@ -469,7 +484,7 @@ planet_jobs = {
 		trigger = {
 			is_robot_pop = yes
 		}
-	}	
+	}
 }
 
 planet_bio_trophies = {
@@ -536,6 +551,15 @@ planet_administrators = {
 	parent = planet_jobs
 }
 
+planet_bureaucrats = {
+	icon = "job_bureaucrat"
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+}
+
 planet_researchers = {
 	icon = "job_researcher"
 	parent = planet_jobs
@@ -555,6 +579,20 @@ planet_metallurgists = {
 }
 
 planet_culture_workers = {
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+	}
+}
+
+planet_evaluators = {
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+	}
+}
+
+planet_synapse_drones = {
 	parent = planet_jobs
 	generate_mult_modifiers = {
 		produces
@@ -596,6 +634,7 @@ planet_doctors = {
 planet_refiners = {
 	parent = planet_jobs
 	generate_mult_modifiers = {
+		produces
 		upkeep
 	}
 }
@@ -603,6 +642,7 @@ planet_refiners = {
 planet_translucers = {
 	parent = planet_jobs
 	generate_mult_modifiers = {
+		produces
 		upkeep
 	}
 }
@@ -610,6 +650,7 @@ planet_translucers = {
 planet_chemists = {
 	parent = planet_jobs
 	generate_mult_modifiers = {
+		produces
 		upkeep
 	}
 }
@@ -638,7 +679,7 @@ planet_pops = {
 			is_robot_pop = yes
 		}
 	}
-	
+
 	triggered_upkeep_modifier = {
 		key = planet_pops_organics
 		modifier_types = {
@@ -813,6 +854,9 @@ subjects = {
 
 federation = {
 	parent = diplomacy
+	generate_add_modifiers = {
+		produces
+	}
 }
 
 rivalries = {
@@ -820,6 +864,10 @@ rivalries = {
 }
 
 non_aggression_pacts = {
+	parent = diplomacy
+}
+
+migration_pacts = {
 	parent = diplomacy
 }
 
@@ -840,6 +888,9 @@ guarantees = {
 }
 
 monthly_trades = {
+	generate_add_modifiers = {
+		produces
+	}
 }
 
 claims = {
@@ -848,6 +899,14 @@ claims = {
 }
 
 subject_tax = {
+	parent = diplomacy
+}
+
+envoy_costs = {
+	parent = diplomacy
+}
+
+diplo_closed_borders = {
 	parent = diplomacy
 }
 

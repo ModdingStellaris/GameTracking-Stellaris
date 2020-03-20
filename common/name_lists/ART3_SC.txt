@@ -3,6 +3,8 @@
 
 ART3 = {
 
+	category = "Arthropoid"
+	
 	language = "l_simp_chinese"
 
 	ship_names = {

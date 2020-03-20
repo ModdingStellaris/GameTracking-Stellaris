@@ -78,7 +78,7 @@ has_major_upgraded_capital = {
 		}
 	}
 	custom_tooltip = {
-		fail_text = "requires_building_hive_major_capital"
+		fail_text = "requires_building_major_hive_capital"
 		OR = {
 			is_planet_class = pc_habitat
 			owner = { is_hive_empire = no }

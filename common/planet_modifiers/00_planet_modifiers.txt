@@ -59,7 +59,7 @@ pm_hazardous_weather = {
 			is_planet_class = "pc_savannah"
 		}				
 		modifier = {
-			add = 10
+			add = 0		# Gaia Worlds are Paradise Planets, hence no Hazardous Weather conditions.
 			is_planet_class = "pc_gaia"
 		}		
 		modifier = {
@@ -70,7 +70,6 @@ pm_hazardous_weather = {
 			factor = 0
 			has_planet_modifier = "pm_hazardous_weather"
 		}
-		
 		modifier = {
 			factor = 0
 			num_modifiers > 1
@@ -183,7 +182,7 @@ pm_weak_magnetic_field = {
 			is_planet_class = "pc_savannah"
 		}				
 		modifier = {
-			add = 10
+			add = 0 	# Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 			is_planet_class = "pc_gaia"
 		}		
 		modifier = {
@@ -251,7 +250,7 @@ pm_strong_magnetic_field = {
 			is_planet_class = "pc_savannah"
 		}				
 		modifier = {
-			add = 10
+			add = 0 	# Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 			is_planet_class = "pc_gaia"
 		}		
 		modifier = {
@@ -379,7 +378,7 @@ pm_tidal_locked = {
 			is_planet_class = "pc_savannah"
 		}			
 		modifier = {
-			add = 1
+			add = 0 	# Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 			is_planet_class = "pc_gaia"
 		}		
 		modifier = {
@@ -466,7 +465,7 @@ pm_asteroid_impacts = {
 			is_planet_class = "pc_savannah"
 		}				
 		modifier = {
-			add = 10
+			add = 0 	# Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 			is_planet_class = "pc_gaia"
 		}				
 		modifier = {
@@ -592,7 +591,7 @@ pm_wild_storms = {
 			is_planet_class = "pc_savannah"
 		}				
 		modifier = {
-			add = 10
+			add = 0 	# Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 			is_planet_class = "pc_gaia"
 		}				
 		modifier = {
@@ -652,7 +651,7 @@ pm_low_gravity = {
 			is_planet_class = "pc_savannah"
 		}				
 		modifier = {
-			add = 10
+			add = 0 	# Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 			is_planet_class = "pc_gaia"
 		}				
 		modifier = {
@@ -670,7 +669,6 @@ pm_low_gravity = {
 				is_planet_class = pc_arctic
 				is_planet_class = pc_tundra
 				is_planet_class = pc_arid
-				is_planet_class = pc_gaia
 				is_planet_class = pc_relic
 			}
 		}
@@ -685,7 +683,6 @@ pm_low_gravity = {
 				is_planet_class = pc_arctic
 				is_planet_class = pc_tundra
 				is_planet_class = pc_arid
-				is_planet_class = pc_gaia
 				is_planet_class = pc_relic
 			}
 		}
@@ -700,7 +697,6 @@ pm_low_gravity = {
 				is_planet_class = pc_arctic
 				is_planet_class = pc_tundra
 				is_planet_class = pc_arid
-				is_planet_class = pc_gaia
 				is_planet_class = pc_relic
 			}
 		}
@@ -715,7 +711,6 @@ pm_low_gravity = {
 				is_planet_class = pc_arctic
 				is_planet_class = pc_tundra
 				is_planet_class = pc_arid
-				is_planet_class = pc_gaia
 				is_planet_class = pc_relic
 			}
 		}
@@ -776,7 +771,7 @@ pm_high_gravity = {
 			is_planet_class = "pc_savannah"
 		}				
 		modifier = {
-			add = 10
+			add = 0 	# Gaia Planets are basically Paradise Worlds and shouldn't suffer from bad planet modifiers
 			is_planet_class = "pc_gaia"
 		}				
 		modifier = {
@@ -794,7 +789,6 @@ pm_high_gravity = {
 				is_planet_class = pc_arctic
 				is_planet_class = pc_tundra
 				is_planet_class = pc_arid
-				is_planet_class = pc_gaia
 				is_planet_class = pc_relic
 			}
 		}
@@ -809,7 +803,6 @@ pm_high_gravity = {
 				is_planet_class = pc_arctic
 				is_planet_class = pc_tundra
 				is_planet_class = pc_arid
-				is_planet_class = pc_gaia
 				is_planet_class = pc_relic
 			}
 		}
@@ -824,7 +817,6 @@ pm_high_gravity = {
 				is_planet_class = pc_arctic
 				is_planet_class = pc_tundra
 				is_planet_class = pc_arid
-				is_planet_class = pc_gaia
 				is_planet_class = pc_relic
 			}
 		}
@@ -839,7 +831,6 @@ pm_high_gravity = {
 				is_planet_class = pc_arctic
 				is_planet_class = pc_tundra
 				is_planet_class = pc_arid
-				is_planet_class = pc_gaia
 				is_planet_class = pc_relic
 			}
 		}

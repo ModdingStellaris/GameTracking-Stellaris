@@ -18,7 +18,7 @@ ship_event = {
 	id = anomaly.5000
 	title = "anomaly.5000.name"
 	desc = "anomaly.5000.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_atmospheric_flight
 	show_sound = event_alien_signal
 	location = FROM
 	trackable = yes
@@ -163,7 +163,7 @@ ship_event = {
 	id = anomaly.5004
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.5004.desc"
-	picture = GFX_evt_federation_fleet
+	picture = GFX_evt_cargoship_caravan
 	show_sound = event_ship_thrusters
 	location = FROMFROMFROM
 	
@@ -338,7 +338,7 @@ ship_event = {
 	id = anomaly.5008
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.5008.desc"
-	picture = GFX_evt_federation_fleet
+	picture = GFX_evt_cargoship_caravan
 	show_sound = event_ship_thrusters
 	location = FROMFROMFROM
 	
@@ -430,7 +430,7 @@ ship_event = {
 	id = anomaly.5010
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.5010.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_atmospheric_flight
 	show_sound = event_airlock
 	location = fromfrom
 	
@@ -605,7 +605,7 @@ ship_event = {
 	id = anomaly.5015
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.5015.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_ship_in_orbit_3
 	show_sound = event_airlock
 	location = FROMFROM
 	
@@ -773,7 +773,7 @@ ship_event = {
 	id = anomaly.5020
 	title = "PROJECT_COMPLETE"
 	desc = "anomaly.5020.desc"
-	picture = GFX_evt_ship_in_orbit
+	picture = GFX_evt_cargoship_caravan
 	show_sound = event_airlock
 	location = FROMFROM
 	

@@ -964,6 +964,11 @@ spriteTypes = {
 		name = "GFX_sector_cap_icon"
 		texturefile = "gfx/interface/icons/GFX_sector_cap_icon.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_empire_sprawl_icon"
+		texturefile = "gfx/interface/icons/empire_sprawl_icon.dds"
+	}
 
 	spriteType = {
 		name = "GFX_topbar_shield_decoration"

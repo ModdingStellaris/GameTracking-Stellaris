@@ -57,8 +57,6 @@ guiTypes = {
 			size = { width= 1042 height= 572 }
 			moveable = no
 			
-
-
 			containerWindowType = {
 				name = "empire_profile"
 			
@@ -433,6 +431,7 @@ guiTypes = {
 				name = "filter_checkbox_other"
 				position = { x = 552 y = 10 }
 				quadTextureSprite = "GFX_checkbox_20_20_01"
+				clicksound = select_click
 			}
 
 			instantTextBoxType = {
@@ -452,6 +451,7 @@ guiTypes = {
 				name = "filter_checkbox_primitive"
 				position = { x = 722 y = 10 }
 				quadTextureSprite = "GFX_checkbox_20_20_01"
+				clicksound = select_click
 			}
 
 			instantTextBoxType = {
@@ -471,6 +471,7 @@ guiTypes = {
 				name = "filter_checkbox_fallen_empire"
 				position = { x = 892 y = 10 }
 				quadTextureSprite = "GFX_checkbox_20_20_01"
+				clicksound = select_click
 			}
 
 			instantTextBoxType = {
@@ -490,6 +491,7 @@ guiTypes = {
 				name = "filter_checkbox_non_player"
 				position = { x = 1062 y = 10 }
 				quadTextureSprite = "GFX_checkbox_20_20_01"
+				clicksound = select_click
 			}
 
 			instantTextBoxType = {
@@ -524,9 +526,10 @@ guiTypes = {
 
 			iconType ={
 				name ="their_opinion_icon"
-				spriteType = "GFX_their_opinion"
-				position = { x = 636 y = 45 }
+				spriteType = "GFX_diplomacy_opinion"
+				position = { x = 636 y = 47 }
 				alwaystransparent = yes
+				scale = .85
 			}
 			
 			buttonType={
@@ -588,6 +591,34 @@ guiTypes = {
 					borderSize = { x = 0 y = 0 }
 				}
 			}
+		}
+
+		# tabs ----------------------------------------------
+		@tabheight = 1 
+		
+		buttonType = {
+			name = "tab_galaxy"
+			quadTextureSprite = "GFX_tab_1_inactive"
+			position = { x= -20 y = @tabheight }
+			font = "cg_16b"
+			buttonText = "topbar_button_contacts_name"
+			buttonFont = "cg_16b"
+			shortcut = "z"
+			clicksound = "tab_click"
+			Orientation = "LOWER_LEFT"
+			oversound = no_sound
+		}
+		buttonType = {
+			name = "tab_galaxy_active"
+			quadTextureSprite = "GFX_tab_1_active"
+			position = { x= -20 y = @tabheight }
+			font = "cg_16b"
+			buttonText = "topbar_button_contacts_name"
+			buttonFont = "cg_16b"
+			clicksound = "tab_click"
+			shortcut = "z"
+			Orientation = "LOWER_LEFT"
+			oversound = no_sound
 		}
 	}
 

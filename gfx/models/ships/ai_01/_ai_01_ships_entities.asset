@@ -793,7 +793,7 @@ entity = {
 ##################         	 CONSTRUCTION ENTITIES           ########################
 
 entity = {
-	name = "ai_01_starbase_starbase_construction_entity"
+	name = "ai_01_starbase_ai_construction_entity"
 	pdxmesh = "ai_01_station_large_mesh"	
 	
 	default_state = "idle"

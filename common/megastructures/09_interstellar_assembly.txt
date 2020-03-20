@@ -29,7 +29,7 @@ interstellar_assembly_0 = {
 		custom_tooltip = {
 			fail_text = "requires_no_existing_megastructure"
 			has_no_non_gate_megastructure = yes
-		}	
+		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
@@ -50,7 +50,7 @@ interstellar_assembly_0 = {
 		#	from.capital_scope.solar_system = { is_same_value = root }
 		#}
 	}
-	
+
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
@@ -82,28 +82,28 @@ interstellar_assembly_0 = {
 			}
 		}
 	}
-	
+
 	# root = system
-	# from = country	
+	# from = country
 	ai_weight = {
 		factor = 15
-		
+
 		modifier = {
 			factor = 0.1
 			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
-		}	
-		
+		}
+
 		modifier = {
 			factor = 0.1
 			any_neighbor_system = {
 				exists = owner
-				NOT = { 
-					owner = { is_same_value = from } 
+				NOT = {
+					owner = { is_same_value = from }
 				}
 			}
 		}
 	}
-	
+
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
@@ -137,7 +137,7 @@ interstellar_assembly_1 = {
 	prerequisites = { "tech_interstellar_assembly" }
 
 	country_modifier = {
-		planet_immigration_pull_mult = 0.25
+		diplo_weight_mult = 0.10
 		# enables triggered_opinion_of_interstellar_assembly_1
 	}
 
@@ -172,7 +172,8 @@ interstellar_assembly_2 = {
 	prerequisites = { "tech_interstellar_assembly" }
 
 	country_modifier = {
-		planet_immigration_pull_mult = 0.50
+		diplo_weight_mult = 0.20
+		envoys_add = 1
 		# enables triggered_opinion_of_interstellar_assembly_2
 	}
 
@@ -205,9 +206,10 @@ interstellar_assembly_3 = {
 	}
 
 	prerequisites = { "tech_interstellar_assembly" }
-	
+
 	country_modifier = {
-		planet_immigration_pull_mult = 0.75
+		diplo_weight_mult = 0.30
+		envoys_add = 1
 		# enables triggered_opinion_of_interstellar_assembly_3
 	}
 
@@ -234,7 +236,7 @@ interstellar_assembly_4 = {
 			energy = 40
 		}
 	}
-	
+
 	upgrade_from = {
 		interstellar_assembly_3
 	}
@@ -243,15 +245,16 @@ interstellar_assembly_4 = {
 	show_prereqs = yes
 
 	country_modifier = {
-		planet_immigration_pull_mult = 1
+		diplo_weight_mult = 0.40
+		envoys_add = 2
 		# enables triggered_opinion_of_interstellar_assembly_4
 	}
 
 	on_build_complete = {
 		set_star_flag = interstellar_assembly_built
-		from = { 
+		from = {
 			set_country_flag = has_built_or_repaired_megastructure
-			country_event = { id = mega.9009 } 
+			country_event = { id = mega.9009 }
 		}
 	}
 }
@@ -289,7 +292,7 @@ interstellar_assembly_restored = {
 			energy = 40
 		}
 	}
-	
+
 	upgrade_from = {
 		interstellar_assembly_ruined
 	}
@@ -299,7 +302,8 @@ interstellar_assembly_restored = {
 	}
 
 	country_modifier = {
-		planet_immigration_pull_mult = 1
+		diplo_weight_mult = 0.40
+		envoys_add = 2
 		# enables triggered_opinion_of_interstellar_assembly_4
 	}
 
@@ -312,9 +316,9 @@ interstellar_assembly_restored = {
 	on_build_complete = {
 		set_star_flag = interstellar_assembly_built
 		every_system_ambient_object = { destroy_ambient_object = this }
-		from = { 
+		from = {
 			set_country_flag = has_built_or_repaired_megastructure
-			country_event = { id = mega.9131 } 
+			country_event = { id = mega.9131 }
 		}
 	}
 }

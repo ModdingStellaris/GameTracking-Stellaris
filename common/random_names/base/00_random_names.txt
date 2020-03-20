@@ -1777,6 +1777,21 @@ star_names = {
 	Riggott
 	Meryl
 	"Il_Ya"
+
+	Elgerot
+	Berni
+	Mura
+	Thomso
+	Plessis
+	Poru
+	Lane
+	Aazrof
+	Burs
+	Daiglon
+	Potap
+	Depre
+	Meneth
+	Mathrop
 }
 
 nebula_names = {

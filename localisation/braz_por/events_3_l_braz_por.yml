@@ -48,7 +48,7 @@
  anomaly.4000.name:0 "A Vida Encontra um Jeito"
  anomaly.4000.desc:0 "Parece que parte da flora de [From.GetName] desenvolveu mecanismos de defesa eficazes através da seleção natural. Várias árvores e fungos expelem esporos que atuam como um §Ypoderoso ácido§! em organismos que não são vegetais. Felizmente, o Oficial Científico [Root.GetLeaderName] encontrou uma forma de §Ycontra atacar§! alguns tipos desses esporos, fazendo com que o planeta seja menos ameaçador a nós!"
  anomaly.4000.a.tooltip:0 "Adiciona o modificador §YSelvas Ácidas§! ao [From.GetName]:\n£blocker£ Pântano Venenoso §R+3§!\n£society£ §G+2§!"
- anomaly.4005.name:0 "Nos Ombros de Gigantes"
+ anomaly.4005.name:1 "Fragmentos de Vida"
  anomaly.4005.desc:1 "Parece que o asteroide [From.GetName] e os destroços ao seu redor têm sua origem em um antigo planeta!\n\nBem no centro do asteroide, podemos encontrar vestígios de ligas de metal extremamente valiosas. Também há pistas de vida bacteriana que já morreu no vácuo do espaço. Isso nos mostra que o corpo celestial já suportou a promessa de vida."
  anomaly.4005.a.tooltip:2 "Adiciona o modificador §YEx-Planeta§! ao [From.GetName]:\n£alloys£ §G+3§!"
  anomaly.4010.name:0 "Perdidos no Espaço"

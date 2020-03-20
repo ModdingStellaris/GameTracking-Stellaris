@@ -104,14 +104,14 @@ objectTypes = {
 #	}
 	
 	pdxparticle = {
-		name = "large_station_explosion_particle"
+		name = "lithoid_large_station_explosion_particle"
 		type = "lithoid_station_explosion_file"
 		
 		scale = 3.0
 	}
 	
 	pdxparticle = {
-		name = "massive_station_explosion_particle"
+		name = "lithoid_massive_station_explosion_particle"
 		type = "lithoid_station_explosion_file"
 		
 		scale = 5.0
@@ -268,5 +268,216 @@ objectTypes = {
 	
 		scale = 1
 	}
+
+#### Asteroid ship
+##################
+		pdxparticle = {               
+		name = "lithoid_01_meteor_ship_colonization_effect"
+		type = "lithoid_01_meteor_ship_colonization_effect"
+		scale = 2
+	}
 	
+	pdxparticle = {               
+		name = "lithoid_01_meteor_ship_trail_2_effect"
+		type = "lithoid_01_meteor_ship_trail_2_effect"
+		scale = 2
+	}
+	
+	pdxparticle = {               
+		name = "lithoid_01_meteor_ship_trail_effect"
+		type = "lithoid_01_meteor_ship_trail_effect"
+		scale = 2
+	}
+	
+	pdxparticle = {               
+		name = "lithoid_01_meteor_ship_idle_effect"
+		type = "lithoid_01_meteor_ship_idle_effect"
+		scale = 2
+	}	
+	
+#############################
+#	Engine Exhaust			#
+#############################
+	pdxparticle = {
+		name = "lithoid_8_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 8
+	}
+
+	pdxparticle = {
+		name = "lithoid_5_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 5
+	}
+	
+	pdxparticle = {
+		name = "lithoid_4_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 4
+	}
+
+	pdxparticle = {
+		name = "lithoid_3_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 3
+	}
+
+	pdxparticle = {
+		name = "lithoid_2_25_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 2.25
+	}
+	
+	pdxparticle = {
+		name = "lithoid_1_75_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 1.75
+	}
+	
+	pdxparticle = {
+		name = "lithoid_1_5_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "lithoid_1_25_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "lithoid_1_1_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 1.10
+	}
+	
+	pdxparticle = {
+		name = "lithoid_1_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "lithoid_075_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 0.750
+	}
+	
+	pdxparticle = {
+		name = "lithoid_06_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 0.60
+	}
+	
+	pdxparticle = {
+		name = "lithoid_05_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 0.50
+	}
+	
+	pdxparticle = {
+		name = "lithoid_025_exhaust_moving"
+		type = "lithoid_01_exhaust_file"
+		scale = 0.250
+	}
+	
+#######
+# Lithoid Wide
+
+	pdxparticle = {
+		name = "lithoid_3_wide_exhaust_moving"
+		type = "lithoid_01_wide_exhaust_file"
+		scale = 3
+	}
+	
+	pdxparticle = {
+		name = "lithoid_2_5_wide_exhaust_moving"
+		type = "lithoid_01_wide_exhaust_file"
+		scale = 2.5
+	}
+#############################
+#	Engine Idle			#
+#############################
+	
+	pdxparticle = {
+		name = "lithoid_5_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 5
+	}
+	
+	pdxparticle = {
+		name = "lithoid_4_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 4
+	}
+
+	pdxparticle = {
+		name = "lithoid_3_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 3
+	}
+	
+	pdxparticle = {
+		name = "lithoid_2_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 2
+	}
+	
+	pdxparticle = {
+		name = "lithoid_1_75_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 1.75
+	}
+	
+	pdxparticle = {
+		name = "lithoid_1_5_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "lithoid_1_25_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 1.250
+	}
+	
+	pdxparticle = {
+		name = "lithoid_1_1_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 1.10
+	}
+	
+	pdxparticle = {
+		name = "lithoid_1_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "lithoid_075_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 0.750
+	}
+	
+	pdxparticle = {
+		name = "lithoid_06_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 0.60
+	}
+	
+	pdxparticle = {
+		name = "lithoid_05_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 0.50
+	}
+	
+	pdxparticle = {
+		name = "lithoid_025_exhaust_idle"
+		type = "lithoid_01_exhaust_idle_file"
+		scale = 0.250
+	}
+	
+	
+
 }

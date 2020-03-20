@@ -4,6 +4,12 @@
  # Modifiers
  ####################################
 
+ #Federation
+ MOD_FEDERATION_COHESION_ADD:0 "Föderationskohäsion (Monatlich)"
+ MOD_FEDERATION_FLEET_COUNTRIBUTION_FACTOR:0 "Flottenbeitrag"
+ MOD_FEDERATION_JOIN_MALUS_MULT:0 "Malus auf Föderationskohäsion bei Beitritt"
+ MOD_FEDERATION_LEAVE_MALUS_MULT:0 "Malus auf Föderationskohäsion bei Verlassen"
+
  #Country
  MOD_BLANK_MODIFIER:0 "Leerer Modifikator"
  MOD_COUNTRY_OCCUPATION_ARMIES_ADD:0 "Max. Besatzungsgarnisonen"
@@ -66,6 +72,15 @@
  MOD_MEGASTRUCTURE_BUILD_SPEED_ADD:0 "Baugeschwindigkeit (Megastruktur)"
  MOD_MEGASTRUCTURE_PRODUCTION_MULT:0 "Ressourcenproduktion (Megastruktur)"
  MOD_MEGASTRUCTURE_BUILD_COST_MULT:0 "Baukosten (Megastruktur)"
+ MOD_DIPLO_WEIGHT_SPRAWL_MULT:0 "Diplomatische Bedeutung von Reichsausbreitung"
+ MOD_DIPLO_WEIGHT_NAVAL_MULT:0 "Diplomatische Bedeutung von Flottenstärke"
+ MOD_DIPLO_WEIGHT_ECONOMY_MULT:0 "Diplomatische Bedeutung von Wirtschaft"
+ MOD_DIPLO_WEIGHT_TECHNOLOGY_MULT:0 "Diplomatische Bedeutung von Technologie"
+ MOD_DIPLO_WEIGHT_STANCE_MULT:0 "Diplomatische Bedeutung von Haltung"
+ MOD_DIPLO_WEIGHT_POPS_MULT:0 "Diplomatische Bedeutung von Bewohnern"
+ MOD_DIPLO_WEIGHT_ENVOYS_MULT:0 "Diplomatische Bedeutung von Gesandten"
+ MOD_DIPLO_WEIGHT_COUNCIL_MULT:0 "Diplomatische Bedeutung vom Rat"
+ MOD_DIPLO_WEIGHT_MULT:0 "Diplomatische Bedeutung"
  MOD_DISTANCE_TO_CAPITAL_STATIC_MODIFIER_EFFICIENCY_MULT:0 "Abzüge wegen Entfernung zu Hauptwelt"
  MOD_COUNTRY_ASCENSION_PERKS_ADD:0 "Aufstiegsvorteile"
  MOD_COUNTRY_MODIFY_SPECIES_COST_MULT:0 "Kosten für Spezialprojekt Spezies modifizieren"
@@ -179,7 +194,7 @@
  MOD_SHIP_ARMOR_DAMAGE_MULT:0 "Schaden (Panzerung)"
  MOD_SHIP_ARMOR_PENETRATION_MULT:0 "Durchschlagskraft (Panzerung)"
  MOD_SHIP_BASE_SPEED_MULT:0 "Grundgeschwindigkeit (Schiffe)"
- MOD_SHIP_SPEED_MULT:0 "Unterlicht-Geschwindigkeit"
+ MOD_SHIP_SPEED_MULT:0 "Unterlichtgeschwindigkeit"
  MOD_SHIP_LANDING_TIME_MULT:0 "Landungsdauer"
  MOD_SHIP_ORBIT_UPKEEP_MULT:0 "Unterhalt (Angedockte Schiffe)"
  MOD_SHIP_ORBIT_UPKEEP_MULT_DESC:0 "Beeinflusst die Unterhaltskosten sämtlicher Schiffe, die eine Sternenbasis umkreisen."
@@ -1400,3 +1415,10 @@
  MOD_COUNTRY_EMIGRATION_PUSH_ADD:0 "Emigration (Reich)"
  MOD_COUNTRY_EMIGRATION_PUSH_MULT:0 "$MOD_COUNTRY_EMIGRATION_PUSH_ADD$"
  fe_ship_cost_modifier:0 "Aufgestiegene Schiffsbauer"
+ MOD_SHIP_FEDERATION_TERRITORY_SPEED_MULT:0 "Unterlichtgeschwindigkeit (Föderationsraum)"
+ MOD_SHIP_FEDERATION_TERRITORY_SPEED_MULT_DESC:0 "Beeinflusst die Geschwindigkeit von Schiffen, die durch Systeme eines Mitglieds der Föderation fliegen."
+ MOD_FEDERATION_RESEARCH_SHARING_MULT:0 "Forschungsteilung (Föderation)"
+ MOD_FEDERATION_RESEARCH_SHARING_MULT_DESC:0 "Fügt einer Technologie, die von einem anderen Föderationsmitglied bereits erforscht wurde, Forschungsgeschwindigkeit hinzu."
+ MOD_FEDERATION_LEADER_FLEET_SCALE_MODIFIER:0 "Flottengröße aus Einigkeit"
+ MOD_COUNTRY_FEDERATION_FLEET_CONTRIBUTION_DISCOUNT:0 "Beitragsnachlass für Föderationsflotte"
+ MOD_FEDERATION_DIPLO_WEIGHT_CONTRIBUTION_ADD:0 "Beitrag von diplomatischer Bedeutung für Föderation"

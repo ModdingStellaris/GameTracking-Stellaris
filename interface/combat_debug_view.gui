@@ -132,26 +132,26 @@ guiTypes = {
 			listBoxType = {
 				name ="scenarios"
 				position = { x=10 y=35 }	
-				size = { x=200 y=600 }
+				size = { x=220 y=600 }
 				scrollbartype = "standardlistbox_slider"
 			}
 			
 			listBoxType = {
 				name ="countries"
 				position = { x=230 y=35 }	
-				size = { x=200 y=600 }
+				size = { x=220 y=600 }
 				scrollbartype = "standardlistbox_slider"
 			}
 			listBoxType = {
 				name ="fleets"
 				position = { x=450 y=35 }	
-				size = { x=200 y=600 }
+				size = { x=220 y=600 }
 				scrollbartype = "standardlistbox_slider"
 			}
 			listBoxType = {
 				name ="ships"
 				position = { x=670 y=35 }	
-				size = { x=200 y=600 }
+				size = { x=220 y=600 }
 				scrollbartype = "standardlistbox_slider"
 			}
 			buttonType = {
