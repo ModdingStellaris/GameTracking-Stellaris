@@ -880,9 +880,9 @@
  CHAT_ERROR_ME_MISSINGARG:0 "Sintaxe inválida, esperado: /me <message>"
  CHAT_ERROR_REPLY_MISSINGARG:0 "Sintaxe inválida, esperado: /reply <message>"
  CHAT_ERROR_REPLY_MISSINGUSER:0 "Nenhum usuário conectado para responder"
- CHAT_ERROR_MUTE_MISSINGARGS: "Invalid syntax, expected: /mute <username>" “Sintaxe inválida, esperado: /mute <username>”
- CHAT_ERROR_UNMUTE_MISSINGARGS: "Invalid syntax, expected: /unmute <username>" “Sintaxe inválida, esperado: /unmute <username>”
- CHAT_ERROR_MUTEUNMUTE_SELF: "You cannot mute or unmute yourself!" “Você não pode silenciar ou dessilenciar a si mesmo!”
+ CHAT_ERROR_MUTE_MISSINGARGS: "Sintaxe inválida, esperado: /mute <username>"
+ CHAT_ERROR_UNMUTE_MISSINGARGS: "Sintaxe inválida, esperado: /unmute <username>"
+ CHAT_ERROR_MUTEUNMUTE_SELF: "Você não pode silenciar ou dessilenciar a si mesmo!"
  CHAT_ERROR_SLAP_MISSINGARG:0 "Sintaxe inválida, esperado: /slap <username>"
  CHAT_ERROR_UNKNOWNCHANNELUSER:0 "Não foi possível encontrar o usuário '$NAME$' no canal atual"
  CHAT_ERROR_UNKNOWNSLASH:0 "Comando desconhecido, digite '/help' ou '/?' para listar os comandos"
@@ -11581,6 +11581,7 @@
  EXPAND_BUTTON:0 "§HMais§!\n§GClique para mostrar botões adicionais§!"
  POPS_UNEXPECTED_ERROR:0 "Erro inesperado"
  SETTINGS_USE_RICH_PRESENCE_LABEL:0 "Presença de Rich"
+ 
  MSGRDK_SIGNIN_FAILED_TITLE:0 "Houve um problema"
  MSGRDK_SIGNIN_FAILED_TEXT:0 "Não conseguimos fazer o seu login com a conta Microsoft. Alguns recursos do jogo podem estar indisponíveis."
  MSGRDK_NO_PERMISSION_TITLE:0 "Permissão de conta"
@@ -11596,6 +11597,7 @@
  INVALID_PRIVILEGES:0 "Você deve se cadastrar em um perfil de usuário com privilégios de Entre Plataformas ativados"
  MATCHMAKING_SEARCH_CROSSPLAY_TOOLTIP:0 "Procurar sessões de qualquer plataforma distribuidora"
  MATCHMAKING_HOST_CROSSPLAY_TOOLTIP:0 "Disponível para descoberta de qualquer plataforma distribuidora"
+ 
  TRAIT_LITHOID_EFFECT:0 "Consome £minerals£ §YMinerais§! em vez de £food£ §YComida§!\n\n$MOD_POP_GROWTH_SPEED$: §R-25%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §G+50%§!\n$MOD_ARMY_HEALTH$: §G+50%§!\n$MOD_LEADER_AGE$: §G+50§!"
  GAMESETUP_SPECIES_TRAIT_MISSING:0 "Característica faltante: $TRAIT|H$"
  d_hibernating_lithoids:0 "£blocker£ Monólitos Litóides"

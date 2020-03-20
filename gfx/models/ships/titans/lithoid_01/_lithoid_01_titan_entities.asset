@@ -38,9 +38,9 @@ entity = {
 		emissive_recolor_crunch = 2.0
 	}
 	
-	attach = { part1 = "lithoid_01_titan_bow_entity" }
-	attach = { part2 = "lithoid_01_titan_mid_entity" }
-	attach = { part3 = "lithoid_01_titan_stern_entity" }
+#	attach = { part1 = "lithoid_01_titan_bow_entity" }
+#	attach = { part2 = "lithoid_01_titan_mid_entity" }
+#	attach = { part3 = "lithoid_01_titan_stern_entity" }
 }
 
 entity = {
@@ -117,7 +117,7 @@ entity = {
 	scale = 1
 	
 		game_data = {
-		bloom_factor			= 0.8
+		bloom_factor			= 0.9
 		uv_animation_speed 		= 0.15
 		uv_animation_direction 	= { 0.1 0.55 }
 		}

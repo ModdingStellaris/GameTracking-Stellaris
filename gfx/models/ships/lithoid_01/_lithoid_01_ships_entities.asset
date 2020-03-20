@@ -515,8 +515,8 @@ entity = {
 	
     scale = 1.0
 	
-	attach = { part1 = "lithoid_01_destroyer_bow_L1_entity" }
-	attach = { part2 = "lithoid_01_destroyer_stern_S2_entity" }
+#	attach = { part1 = "lithoid_01_destroyer_bow_L1_entity" }
+#	attach = { part2 = "lithoid_01_destroyer_stern_S2_entity" }
 	
 	game_data = {
 		size = @destroyer_scale
@@ -718,9 +718,9 @@ entity = {
 	
 	scale = 1.0
 	
-	attach = { part1 = "lithoid_01_cruiser_bow_L1_entity" }
-	attach = { part2 = "lithoid_01_cruiser_mid_S2HB_entity" }
-	attach = { part3 = "lithoid_01_cruiser_stern_M1_entity" }
+#	attach = { part1 = "lithoid_01_cruiser_bow_L1_entity" }
+#	attach = { part2 = "lithoid_01_cruiser_mid_S2HB_entity" }
+#	attach = { part3 = "lithoid_01_cruiser_stern_M1_entity" }
 	game_data = {
 		size = @cruiser_scale
 		emissive_recolor_crunch = 2.0
@@ -1013,9 +1013,9 @@ entity = {
 	
 	scale = 1.0
 	
-	attach = { part1 = "lithoid_01_battleship_bow_L1M1S2_entity" }
-	attach = { part2 = "lithoid_01_battleship_mid_L2M2_entity" }
-	attach = { part3 = "lithoid_01_battleship_stern_L1_entity" }
+#	attach = { part1 = "lithoid_01_battleship_bow_L1M1S2_entity" }
+#	attach = { part2 = "lithoid_01_battleship_mid_L2M2_entity" }
+#	attach = { part3 = "lithoid_01_battleship_stern_L1_entity" }
 	
 	game_data = {
 		size = @battleship_scale
@@ -1463,7 +1463,7 @@ entity = {
 		emissive_recolor_crunch = 2.0
 	}
 	
-	attach = { part1 = "lithoid_01_colony_ship_entity" }
+#	attach = { part1 = "lithoid_01_colony_ship_entity" }
 }
 
 entity = { name = "lithoid_01_sponsored_colonizer_entity" clone = "lithoid_01_colonizer_entity" }

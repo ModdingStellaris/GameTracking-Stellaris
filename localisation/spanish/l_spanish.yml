@@ -11522,7 +11522,6 @@
  MSGRDK_NO_PERMISSION_TITLE:0 "Permiso de cuenta"
  MSGRDK_NO_UGC_TEXT:0 "No tienes permiso para acceder al contenido generado por el usuario. Las modificaciones estarán deshabilitadas."
  MSGRDK_NO_MULTIPLAYER_TEXT:0 "Debes iniciar sesión con un perfil de usuario que tenga privilegios de multijugador para jugar en línea."
- 
  MATCHMAKING_SEARCH_CROSSPLAY_TOOLTIP:0 "Busca sesiones desde cualquier plataforma de distribución"
  MATCHMAKING_HOST_CROSSPLAY_TOOLTIP:0 "Disponible desde cualquier plataforma de distribución"
  LOAD_GAME_SYNC_FILES:0 "Sincronizando guardados"
@@ -11541,6 +11540,7 @@
  MSGRDK_JOIN_UNAVAILABLE_PRIVILEGE:0 "***Tu amigo juega en otra plataforma y los ajustes de tu perfil no permiten las partidas multijugador multiplataforma.***"
  MSGRDK_UGC_UNAVAILABLE_PRIVILEGE_TOOLTIP:0 "Bloqueado por falta del privilegio de contenido generado por el usuario en tu cuenta Microsoft."
  INVALID_PRIVILEGES:0 "Debes iniciar sesión con un perfil de usuario que tenga el privilegio de partidas cruzadas entre plataformas habilitado."
+ 
  TRAIT_LITHOID_EFFECT:0 "Consume £minerals£ §Yminerales§! en lugar de £food£ §Ycomida§!\n\n$MOD_POP_GROWTH_SPEED$: §R-25%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §G+50%§!\n$MOD_ARMY_HEALTH$: §G+50%§!\n$MOD_LEADER_AGE$: §G+50§!"
  GAMESETUP_SPECIES_TRAIT_MISSING:0 "Rasgo perdido: $TRAIT|H$"
  d_hibernating_lithoids:0 "£blocker£ Monolitos litoideos"
@@ -11575,4 +11575,4 @@
  decision_lithoid_swarm_consume_world_destroy_district_desc:0 "Se destruirá un distrito."
  d_lithoid_devastation:0 "£blocker£ Devastación litoidea"
  d_lithoid_devastation_desc:0 "Un enjambre devorador litoideo ha expoliado la región. Será posible reparar los daños con muchísimo esfuerzo."
- FE_IRONMAN_NO_POPS:0 “§RPara jugar al modo de hierro el usuario debe acceder con una cuenta Paradox.§!"
+ FE_IRONMAN_NO_POPS:0 "§RPara jugar al modo de hierro el usuario debe acceder con una cuenta Paradox.§!"

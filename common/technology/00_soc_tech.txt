@@ -222,12 +222,13 @@ tech_eco_simulation = {
 
 	weight_modifier = {
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			OR = {
 				is_machine_empire = yes
 				is_lithoid_empire = yes
 			}
 			NOR = {
+				has_country_flag = non_lithoid_subspecies
 				has_valid_civic = civic_machine_servitor
 				has_valid_civic = civic_machine_assimilator
 				any_owned_planet = {
@@ -251,23 +252,6 @@ tech_eco_simulation = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
-			}
-		}
-		modifier = {
-			factor = 0
-			is_lithoid_empire = yes
-			NOR = {
-				has_country_flag = non_lithoid_subspecies
-				any_owned_pop = {
-					is_organic_species = yes
-					is_lithoid = no
-				}
-				any_owned_planet = {
-					OR = {
-						num_districts = { type = district_farming value > 0 }
-						num_districts = { type = district_rw_farming value > 0 }
-					}
-				}
 			}
 		}
 	}
@@ -313,6 +297,7 @@ tech_gene_crops = {
 				is_lithoid_empire = yes
 			}
 			NOR = {
+				has_country_flag = non_lithoid_subspecies
 				has_valid_civic = civic_machine_servitor
 				has_valid_civic = civic_machine_assimilator
 				any_owned_planet = {
@@ -381,6 +366,7 @@ tech_nano_vitality_crops = {
 				is_lithoid_empire = yes
 			}
 			NOR = {
+				has_country_flag = non_lithoid_subspecies
 				has_valid_civic = civic_machine_servitor
 				has_valid_civic = civic_machine_assimilator
 				any_owned_planet = {
@@ -453,6 +439,7 @@ tech_nutrient_replication = {
 				is_lithoid_empire = yes
 			}
 			NOR = {
+				has_country_flag = non_lithoid_subspecies
 				has_valid_civic = civic_machine_servitor
 				has_valid_civic = civic_machine_assimilator
 				any_owned_planet = {
@@ -529,6 +516,7 @@ tech_hydroponics = {
 				is_lithoid_empire = yes
 			}
 			NOR = {
+				has_country_flag = non_lithoid_subspecies
 				has_valid_civic = civic_machine_servitor
 				has_valid_civic = civic_machine_assimilator
 				any_owned_planet = {
@@ -544,23 +532,6 @@ tech_hydroponics = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
-			}
-		}
-		modifier = {
-			factor = 0
-			is_lithoid_empire = yes
-			NOR = {
-				has_country_flag = non_lithoid_subspecies
-				any_owned_pop = {
-					is_organic_species = yes
-					is_lithoid = no
-				}
-				any_owned_planet = {
-					OR = {
-						num_districts = { type = district_farming value > 0 }
-						num_districts = { type = district_rw_farming value > 0 }
-					}
-				}
 			}
 		}
 	}
@@ -595,10 +566,14 @@ tech_food_processing_1 = {
 				is_lithoid_empire = yes
 			}
 			NOR = {
+				has_country_flag = non_lithoid_subspecies
 				has_valid_civic = civic_machine_servitor
 				has_valid_civic = civic_machine_assimilator
 				any_owned_planet = {
-					num_districts = { type = district_farming value > 0 }
+					OR = {
+						num_districts = { type = district_farming value > 0 }
+						num_districts = { type = district_rw_farming value > 0 }
+					}
 				}
 			}
 		}
@@ -640,10 +615,14 @@ tech_food_processing_2 = {
 				is_lithoid_empire = yes
 			}
 			NOR = {
+				has_country_flag = non_lithoid_subspecies
 				has_valid_civic = civic_machine_servitor
 				has_valid_civic = civic_machine_assimilator
 				any_owned_planet = {
-					num_districts = { type = district_farming value > 0 }
+					OR = {
+						num_districts = { type = district_farming value > 0 }
+						num_districts = { type = district_rw_farming value > 0 }
+					}
 				}
 			}
 		}

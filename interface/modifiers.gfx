@@ -273,7 +273,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mod_pop_happiness"
 		texturefile = "gfx/interface/icons/modifiers/mod_pop_happiness.dds"
-	}	
+	}
+	spriteType = {
+		name = "GFX_mod_lithoid_pop_happiness"
+		texturefile = "gfx/interface/icons/modifiers/mod_pop_happiness.dds"
+	}
 	spriteType = {
 		name = "GFX_mod_starbase_module_build_cost_mult"
 		texturefile = "gfx/interface/icons/modifiers/mod_starbase_module_build_cost_mult.dds"
@@ -385,6 +389,33 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mod_black_hole"
 		texturefile = "gfx/interface/icons/modifiers/mod_black_hole.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mod_lith_pop_growth_from_immigration"
+		texturefile = "gfx/interface/icons/modifiers/mod_pop_growth_from_immigration.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_bio_pop_growth_from_immigration"
+		texturefile = "gfx/interface/icons/modifiers/mod_pop_growth_from_immigration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mod_bio_pop_growth_speed"
+		texturefile = "gfx/interface/icons/modifiers/mod_pop_growth_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_lith_pop_growth_speed"
+		texturefile = "gfx/interface/icons/modifiers/mod_pop_growth_speed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mod_lith_pop_growth_speed_reduction"
+		texturefile = "gfx/interface/icons/modifiers/mod_pop_growth_speed_reduction.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_bio_pop_growth_speed_reduction"
+		texturefile = "gfx/interface/icons/modifiers/mod_pop_growth_speed_reduction.dds"
 	}
 
 	spriteType = {

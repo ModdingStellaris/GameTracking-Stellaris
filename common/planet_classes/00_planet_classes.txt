@@ -751,6 +751,7 @@ pc_gaia = {
 	modifier = {
 		planet_jobs_produces_mult = 0.10
 		biological_pop_happiness = 0.10
+		lithoid_pop_happiness = 0.10
 	}
 
 	min_distance_from_sun = 60
