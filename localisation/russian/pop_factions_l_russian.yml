@@ -265,7 +265,7 @@
  TECHNOLOGIST_TECH_LEAP_DESC:0 "[Root.GetName] будут довольны, если мы останемся на передовых позициях и не позволим другим империям выходить за пределы технического уровня, §Yаналогичного§! нашему."
  TECHNOLOGIST_TECH_LAG:0 "Задержка прогресса"
  TECHNOLOGIST_RESEARCH_TREATIES:0 "Наука без границ"
- TECHNOLOGIST_RESEARCH_TREATIES_DESC:0 "[Root.GetName] будут довольны в случае подписания договоров об исследованиях как минимум с §Yтремя§! другими империями."
+ TECHNOLOGIST_RESEARCH_TREATIES_DESC:0 "[Root.GetName] будут довольны в случае подписания договоров о научном сотрудничестве как минимум с §Yтремя§! другими империями."
  TECHNOLOGIST_FEW_RESEARCH_TREATIES:0 "$TECHNOLOGIST_RESEARCH_TREATIES$"
  TECHNOLOGIST_NO_SYNTH_ENVY:0 "Зависть к синтетикам"
  TECHNOLOGIST_NO_SYNTH_ENVY_DESC:0 "[Root.GetName] наверняка будут недовольны, если увидят, что другие звездные империи хвастаются любыми разными роботов, а ни в одном из наших миров ничего подобного не будет."

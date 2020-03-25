@@ -2446,6 +2446,111 @@ country_event = {
                 }
                 save_event_target_as = winning_thesis
             }
+			#Set thesis topic
+			event_target:winning_thesis = {
+				if = {
+					limit = {
+						OR = {
+							is_authoritarian = yes
+							is_egalitarian = yes
+						}
+					}
+					random_list = {
+						1 = { set_country_flag = thesis_xcratic1 }
+						1 = { set_country_flag = thesis_xcratic2 }
+						1 = { set_country_flag = thesis_xcratic3 }
+						1 = { set_country_flag = thesis_xcratic4 }
+						1 = { set_country_flag = thesis_xcratic5 }
+						1 = { set_country_flag = thesis_xcratic6 }
+						1 = { set_country_flag = thesis_xcratic7 }
+						1 = { set_country_flag = thesis_xcratic8 }
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_materialist = yes
+							is_spiritualist = yes
+						}
+					}
+					random_list = {
+						1 = { set_country_flag = thesis_souls1 }
+						1 = { set_country_flag = thesis_souls2 }
+						1 = { set_country_flag = thesis_souls3 }
+						1 = { set_country_flag = thesis_souls4 }
+						1 = { set_country_flag = thesis_souls5 }
+						1 = { set_country_flag = thesis_souls6 }
+						1 = { set_country_flag = thesis_souls7 }
+						1 = { set_country_flag = thesis_souls8 }
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_pacifist = yes
+							is_militarist = yes
+						}
+					}
+					random_list = {
+						1 = { set_country_flag = thesis_war1 }
+						1 = { set_country_flag = thesis_war2 }
+						1 = { set_country_flag = thesis_war3 }
+						1 = { set_country_flag = thesis_war4 }
+						1 = { set_country_flag = thesis_war5 }
+						1 = { set_country_flag = thesis_war6 }
+						1 = { set_country_flag = thesis_war7 }
+						1 = { set_country_flag = thesis_war8 }
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_xenophile = yes
+							is_xenophobe = yes
+						}
+					}
+					random_list = {
+						1 = { set_country_flag = thesis_xenos1 }
+						1 = { set_country_flag = thesis_xenos2 }
+						1 = { set_country_flag = thesis_xenos3 }
+						1 = { set_country_flag = thesis_xenos4 }
+						1 = { set_country_flag = thesis_xenos5 }
+						1 = { set_country_flag = thesis_xenos6 }
+						1 = { set_country_flag = thesis_xenos7 }
+						1 = { set_country_flag = thesis_xenos8 }
+					}
+				}
+				if = {
+					limit = { is_machine_empire = yes }
+					random_list = {
+						1 = { set_country_flag = thesis_machine1 }
+						1 = { set_country_flag = thesis_machine2 }
+						1 = { set_country_flag = thesis_machine3 }
+						1 = { set_country_flag = thesis_machine4 }
+						1 = { set_country_flag = thesis_machine5 }
+					}
+				}
+				if = {
+					limit = { is_hive_empire = yes }
+					random_list = {
+						1 = { set_country_flag = thesis_hive1 }
+						1 = { set_country_flag = thesis_hive2 }
+						1 = { set_country_flag = thesis_hive3 }
+						1 = { set_country_flag = thesis_hive4 }
+						1 = { set_country_flag = thesis_hive5 }
+					}
+				}
+				if = {
+					limit = { is_megacorp = yes }
+					random_list = {
+						1 = { set_country_flag = thesis_megacorp1 }
+						1 = { set_country_flag = thesis_megacorp2 }
+						1 = { set_country_flag = thesis_megacorp3 }
+						1 = { set_country_flag = thesis_megacorp4 }
+						1 = { set_country_flag = thesis_megacorp5 }
+					}
+				}
+			}
             every_member = {
                 country_event = { id = fedel.1506 } #Announce winner
             }
@@ -2463,7 +2568,7 @@ country_event = {
 	title = "fedel.1506.name"
     desc = { #For those empires with insufficient researchers
         trigger = {
-            event_target:winning_thesis = { NOT = { is_same_value = root } }
+            NOT = { event_target:winning_thesis = { is_same_value = root } }
             check_variable = {
                 which = thesis_assemble
                 value < 3
@@ -2506,7 +2611,7 @@ country_event = {
     }
 	desc = {
         trigger = {
-            event_target:winning_thesis = { NOT = { is_same_value = root } }
+            NOT = { event_target:winning_thesis = { is_same_value = root } }
             is_gestalt = no
             check_variable = {
                 which = thesis_assemble
@@ -2517,7 +2622,7 @@ country_event = {
     }
 	desc = {
         trigger = {
-            event_target:winning_thesis = { NOT = { is_same_value = root } }
+            NOT = { event_target:winning_thesis = { is_same_value = root } }
             is_gestalt = yes
             check_variable = {
                 which = thesis_assemble
@@ -2529,354 +2634,6 @@ country_event = {
 	picture = GFX_evt_announcement
 	show_sound = event_announcement
     is_triggered_only = yes
-
-    immediate = {
-        event_target:winning_thesis = {
-            if = {
-                limit = {
-                    OR = {
-                        is_authoritarian = yes
-                        is_egalitarian = yes
-                    }
-                }
-                random_list = {
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xcratic1
-                        }
-                        set_country_flag = thesis_xcratic1
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xcratic2
-                        }
-                        set_country_flag = thesis_xcratic2
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xcratic3
-                        }
-                        set_country_flag = thesis_xcratic3
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xcratic4
-                        }
-                        set_country_flag = thesis_xcratic4
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xcratic5
-                        }
-                        set_country_flag = thesis_xcratic5
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xcratic6
-                        }
-                        set_country_flag = thesis_xcratic6
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xcratic7
-                        }
-                        set_country_flag = thesis_xcratic7
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xcratic8
-                        }
-                        set_country_flag = thesis_xcratic8
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    OR = {
-                        is_materialist = yes
-				        is_spiritualist = yes
-                    }
-                }
-                random_list = {
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_souls1
-                        }
-                        set_country_flag = thesis_souls1
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_souls2
-                        }
-                        set_country_flag = thesis_souls2
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_souls3
-                        }
-                        set_country_flag = thesis_souls3
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_souls4
-                        }
-                        set_country_flag = thesis_souls4
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_souls5
-                        }
-                        set_country_flag = thesis_souls5
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_souls6
-                        }
-                        set_country_flag = thesis_souls6
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_souls7
-                        }
-                        set_country_flag = thesis_souls7
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_souls8
-                        }
-                        set_country_flag = thesis_souls8
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    OR = {
-                        is_pacifist = yes
-        				is_militarist = yes
-                    }
-                }
-                random_list = {
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_war1
-                        }
-                        set_country_flag = thesis_war1
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_war2
-                        }
-                        set_country_flag = thesis_war2
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_war3
-                        }
-                        set_country_flag = thesis_war3
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_war4
-                        }
-                        set_country_flag = thesis_war4
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_war5
-                        }
-                        set_country_flag = thesis_war5
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_war6
-                        }
-                        set_country_flag = thesis_war6
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_war7
-                        }
-                        set_country_flag = thesis_war7
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_war8
-                        }
-                        set_country_flag = thesis_war8
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    OR = {
-                        is_xenophile = yes
-				        is_xenophobe = yes
-                    }
-                }
-                random_list = {
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xenos1
-                        }
-                        set_country_flag = thesis_xenos1
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xenos2
-                        }
-                        set_country_flag = thesis_xenos2
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xenos3
-                        }
-                        set_country_flag = thesis_xenos3
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xenos4
-                        }
-                        set_country_flag = thesis_xenos4
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xenos5
-                        }
-                        set_country_flag = thesis_xenos5
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xenos6
-                        }
-                        set_country_flag = thesis_xenos6
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xenos7
-                        }
-                        set_country_flag = thesis_xenos7
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_xenos8
-                        }
-                        set_country_flag = thesis_xenos8
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    is_machine_empire = yes
-                }
-                random_list = {
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_machine1
-                        }
-                        set_country_flag = thesis_machine1
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_machine2
-                        }
-                        set_country_flag = thesis_machine2
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_machine3
-                        }
-                        set_country_flag = thesis_machine3
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_machine4
-                        }
-                        set_country_flag = thesis_machine4
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_machine5
-                        }
-                        set_country_flag = thesis_machine5
-                    }
-                }
-            }
-            if = {
-                limit = {
-			        is_hive_empire = yes
-                }
-                random_list = {
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_hive1
-                        }
-                        set_country_flag = thesis_hive1
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_hive2
-                        }
-                        set_country_flag = thesis_hive2
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_hive3
-                        }
-                        set_country_flag = thesis_hive3
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_hive4
-                        }
-                        set_country_flag = thesis_hive4
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_hive5
-                        }
-                        set_country_flag = thesis_hive5
-                    }
-                }
-            }
-            if = {
-                limit = {
-                   is_megacorp = yes
-                }
-                random_list = {
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_megacorp1
-                        }
-                        set_country_flag = thesis_megacorp1
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_megacorp2
-                        }
-                        set_country_flag = thesis_megacorp2
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_megacorp3
-                        }
-                        set_country_flag = thesis_megacorp3
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_megacorp4
-                        }
-                        set_country_flag = thesis_megacorp4
-                    }
-                    1 = {
-                        modifier = {
-                            factor = 0.1 has_country_flag = thesis_megacorp5
-                        }
-                        set_country_flag = thesis_megacorp5
-                    }
-                }
-            }
-        }
-    }
 
     option = {
         trigger = {
@@ -2896,7 +2653,7 @@ country_event = {
             }
         }
         name = CURSES
-        custom_tooltip = "tooltip_thesis_won"
+        custom_tooltip = "tooltip_thesis_lost"
     }
 }
 
@@ -2913,6 +2670,43 @@ country_event = {
             every_member = {
                 country_event = { id = fedel.1511 }
             }
+        }
+        event_target:winning_thesis = {
+            remove_country_flag = thesis_xcratic1
+            remove_country_flag = thesis_xcratic2
+            remove_country_flag = thesis_xcratic3
+            remove_country_flag = thesis_xcratic4
+            remove_country_flag = thesis_xcratic5
+            remove_country_flag = thesis_souls1
+            remove_country_flag = thesis_souls2
+            remove_country_flag = thesis_souls3
+            remove_country_flag = thesis_souls4
+            remove_country_flag = thesis_souls5
+            remove_country_flag = thesis_war1
+            remove_country_flag = thesis_war2
+            remove_country_flag = thesis_war3
+            remove_country_flag = thesis_war4
+            remove_country_flag = thesis_war5
+            remove_country_flag = thesis_xenos1
+            remove_country_flag = thesis_xenos2
+            remove_country_flag = thesis_xenos3
+            remove_country_flag = thesis_xenos4
+            remove_country_flag = thesis_xenos5
+            remove_country_flag = thesis_machine1
+            remove_country_flag = thesis_machine2
+            remove_country_flag = thesis_machine3
+            remove_country_flag = thesis_machine4
+            remove_country_flag = thesis_machine5
+            remove_country_flag = thesis_hive1
+            remove_country_flag = thesis_hive2
+            remove_country_flag = thesis_hive3
+            remove_country_flag = thesis_hive4
+            remove_country_flag = thesis_hive5
+            remove_country_flag = thesis_megacorp1
+            remove_country_flag = thesis_megacorp2
+            remove_country_flag = thesis_megacorp3
+            remove_country_flag = thesis_megacorp4
+            remove_country_flag = thesis_megacorp5
         }
     }
 }

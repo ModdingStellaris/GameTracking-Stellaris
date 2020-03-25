@@ -9,6 +9,7 @@ challenge_type_arena_combat = {
 				AND = {
 					NOT = { has_federation_law = challenge_type_arena_combat }
 					has_modifier = federation_law_category_challenge_cooldown
+					has_any_federation_law_in_category = law_category_challenge
 				}
 			}
 		}
@@ -94,6 +95,7 @@ challenge_type_psionic_battle = {
 				AND = {
 					NOT = { has_federation_law = challenge_type_psionic_battle }
 					has_modifier = federation_law_category_challenge_cooldown
+					has_any_federation_law_in_category = law_category_challenge
 				}
 			}
 		}
@@ -208,6 +210,7 @@ challenge_type_bidding_war = {
 				AND = {
 					NOT = { has_federation_law = challenge_type_bidding_war }
 					has_modifier = federation_law_category_challenge_cooldown
+					has_any_federation_law_in_category = law_category_challenge
 				}
 			}
 		}
@@ -242,6 +245,7 @@ challenge_type_thesis = {
 				AND = {
 					NOT = { has_federation_law = challenge_type_thesis }
 					has_modifier = federation_law_category_challenge_cooldown
+					has_any_federation_law_in_category = law_category_challenge
 				}
 			}
 		}

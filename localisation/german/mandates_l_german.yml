@@ -55,7 +55,7 @@
  mandate_fiscal_reserve_chain_desc:1 "[This.GetRulerTitle] [This.GetRulerName] wurde auf der Versprechensgrundlage von §YSparsamkeit§! und §Ysorgfältig überlegten Ausgaben§! gewählt, um den §H[Root.GetName]§!n §Yzum Ende ihrer Herrschaft§! Reserven in Höhe von §Ymindestens 1000§! Energie-Credits zu garantieren."
 
  mandate_emancipation_chain_title:0 "Großer Befreier-Mandat"
- mandate_emancipation_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] wurde auf der Versprechensgrundlage gewählt, während ihrer Herrschaft die §SYSklaverei abzuschaffen§! und als §Yillegal§! zu ächten.\n\nBelohnung:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
+ mandate_emancipation_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] wurde auf der Versprechensgrundlage gewählt, während ihrer Herrschaft die §YYSklaverei abzuschaffen§! und als §Yillegal§! zu ächten.\n\nBelohnung:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
  mandate_fulfilled:0 "Mandat erfüllt"
 
  mandate_emancipation2_chain_title:0 "Populistischer Befreier-Mandat"

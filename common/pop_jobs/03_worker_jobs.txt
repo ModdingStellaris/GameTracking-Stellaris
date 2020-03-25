@@ -680,6 +680,7 @@ farmer = {
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				owner = {
 					is_robot_empire = yes
 				}
@@ -690,6 +691,7 @@ farmer = {
 
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { has_valid_civic = civic_agrarian_idyll }
 		}
 		modifier = {
@@ -698,6 +700,7 @@ farmer = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { has_valid_civic = civic_agrarian_idyll }
 			OR = {
 				has_trait = trait_robot_domestic_protocols
@@ -710,6 +713,7 @@ farmer = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { has_valid_civic = civic_agrarian_idyll }
 			has_trait = trait_repugnant
 		}
@@ -877,6 +881,7 @@ soldier = {
 		category = planet_soldiers
 		produces = {
 			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_citizen_service }
 			}
 			unity = 2

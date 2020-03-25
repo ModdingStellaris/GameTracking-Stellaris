@@ -1198,7 +1198,13 @@ country_event = {
 				hidden_effect = {
 					root.federation = {
 						set_federation_flag = non_aligned_league
-						add_cohesion = 100
+						if = {
+							limit = {
+								has_federation_perk = cohesion_join_1
+							}
+							add_cohesion = 50
+						}
+						else = { add_cohesion = 100 }
 						add_federation_experience = 4200 #level 3 with some breathing room
 					}
 				}
@@ -1213,7 +1219,13 @@ country_event = {
 				}
 				hidden_effect = {
 					root.federation = { #counteract the -100 cohesion you'd normally get for new members
-						add_cohesion = 100
+						if = {
+							limit = {
+								has_federation_perk = cohesion_join_1
+							}
+							add_cohesion = 50
+						}
+						else = { add_cohesion = 100 }
 						add_federation_experience = 150
 					}
 				}

@@ -431,3 +431,5 @@
  marauder.707.name:0 "Lanzadera de tipo [marauder_neighbor_species.GetName]"
  marauder.707.desc:0 "Una pequeña lanzadera de tipo [marauder_neighbor_species.GetName] ha cruzado hace poco nuestro espacio en el sistema [border_system.GetName], perseguida por los corsarios del §H[marauder_neighbor.GetName]§!. No sabemos muy bien por qué estaba siendo perseguida por los suyos, pero los corsarios se han retirado al ver a nuestras patrullas fronterizas.\n\nHemos recuperado la lanzadera, que estaba muy dañada, y descubierto que la tripulación pereció poco después de entrar en [border_system.GetName]. Su bodega de carga está llena a rebosar de créditos de energía robados."
  marauder.707.a:0 "Los créditos son nuestros por haberlos rescatado."
+ leader_trait_ruler_great_khan:0 "$leader_trait_great_khan$"
+ leader_trait_ruler_great_khan_desc:0 "$leader_trait_great_khan_desc$"

@@ -8,7 +8,16 @@ succession_term_years_10 = {
 				AND = {
 					NOT = { has_federation_law = succession_term_years_10 }
 					has_modifier = federation_law_category_succession_term_cooldown
+					has_any_federation_law_in_category = law_category_succession_term
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_term_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_term_years_10 }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_term
 			}
 		}
 	}
@@ -32,10 +41,7 @@ succession_term_years_10 = {
 			is_federation_leader = yes
 			federation = {
 				has_federation_law = succession_term_status_change
-				OR = {
-					has_federation_law = succession_type_strongest
-					has_federation_law = succession_type_diplomatic_weight				
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 	}
@@ -49,7 +55,16 @@ succession_term_years_20 = {
 				AND = {
 					NOT = { has_federation_law = succession_term_years_20 }
 					has_modifier = federation_law_category_succession_term_cooldown
+					has_any_federation_law_in_category = law_category_succession_term
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_term_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_term_years_20 }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_term
 			}
 		}
 	}
@@ -73,10 +88,7 @@ succession_term_years_20 = {
 			is_federation_leader = yes
 			federation = {
 				has_federation_law = succession_term_status_change
-				OR = {
-					has_federation_law = succession_type_strongest
-					has_federation_law = succession_type_diplomatic_weight				
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 		modifier = {
@@ -93,10 +105,7 @@ succession_term_years_20 = {
 			is_federation_leader = no
 			federation = {			
 				federation_cohesion < 0
-				OR = {
-					has_federation_law = succession_type_strongest
-					has_federation_law = succession_type_diplomatic_weight				
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 		modifier = {
@@ -104,10 +113,7 @@ succession_term_years_20 = {
 			is_federation_leader = no
 			federation = {			
 				federation_cohesion < -25
-				OR = {
-					has_federation_law = succession_type_strongest
-					has_federation_law = succession_type_diplomatic_weight				
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 		modifier = {
@@ -115,10 +121,7 @@ succession_term_years_20 = {
 			is_federation_leader = no
 			federation = {			
 				federation_cohesion < -50
-				OR = {
-					has_federation_law = succession_type_strongest
-					has_federation_law = succession_type_diplomatic_weight				
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 		modifier = {
@@ -126,10 +129,7 @@ succession_term_years_20 = {
 			is_federation_leader = no
 			federation = {			
 				federation_cohesion < -75
-				OR = {
-					has_federation_law = succession_type_strongest
-					has_federation_law = succession_type_diplomatic_weight				
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 	}
@@ -143,7 +143,16 @@ succession_term_years_30 = {
 				AND = {
 					NOT = { has_federation_law = succession_term_years_30 }
 					has_modifier = federation_law_category_succession_term_cooldown
+					has_any_federation_law_in_category = law_category_succession_term
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_term_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_term_years_30 }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_term
 			}
 		}
 	}
@@ -167,10 +176,7 @@ succession_term_years_30 = {
 			is_federation_leader = yes
 			federation = {
 				has_federation_law = succession_term_status_change
-				OR = {
-					has_federation_law = succession_type_strongest
-					has_federation_law = succession_type_diplomatic_weight				
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 	}
@@ -184,7 +190,16 @@ succession_term_years_40 = {
 				AND = {
 					NOT = { has_federation_law = succession_term_years_40 }
 					has_modifier = federation_law_category_succession_term_cooldown
+					has_any_federation_law_in_category = law_category_succession_term
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_term_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_term_years_40 }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_term
 			}
 		}
 	}
@@ -208,10 +223,7 @@ succession_term_years_40 = {
 			is_federation_leader = yes
 			federation = {
 				has_federation_law = succession_term_status_change
-				OR = {
-					has_federation_law = succession_type_strongest
-					has_federation_law = succession_type_diplomatic_weight				
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 	}
@@ -232,7 +244,16 @@ succession_term_status_change = {
 				AND = {
 					NOT = { has_federation_law = succession_term_status_change }
 					has_modifier = federation_law_category_succession_term_cooldown
+					has_any_federation_law_in_category = law_category_succession_term
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_term_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_term_status_change }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_term
 			}
 		}
 	}

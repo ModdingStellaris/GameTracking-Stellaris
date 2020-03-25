@@ -8,6 +8,7 @@ free_migration_no = {
 				AND = {
 					NOT = { has_federation_law = free_migration_no }
 					has_modifier = federation_law_category_free_migration_cooldown
+					has_any_federation_law_in_category = law_category_free_migration
 				}
 			}
 		}
@@ -43,6 +44,7 @@ free_migration_yes = {
 				AND = {
 					NOT = { has_federation_law = free_migration_yes }
 					has_modifier = federation_law_category_free_migration_cooldown
+					has_any_federation_law_in_category = law_category_free_migration
 				}
 			}
 		}

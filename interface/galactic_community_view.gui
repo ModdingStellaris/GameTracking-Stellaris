@@ -862,7 +862,7 @@ guiTypes = {
 					size = { width = 910 height = 264 }
 
 					iconType ={
-						name ="senatefloor_bg"
+						name = "senatefloor_bg"
 						quadTextureSprite = "GFX_0_senate_floor_portrait_bg"
 						position = { x = 0 y = 0 }
 					}
@@ -1030,16 +1030,6 @@ guiTypes = {
 				format = center
 			}
 
-			buttonType = {
-				name = "call_in_favors"
-				quadTextureSprite = "GFX_standard_button_142_34_button"
-				position = { x = 335 y = -250 }
-				Orientation = "LOWER_LEFT"
-				buttonFont = "cg_16b"
-				buttonText = "CALL_IN_FAVOR_ICON"
-				pdx_tooltip = "CALL_IN_FAVOR_TOOLTIP"
-			}
-
 			# Senate Floor with supporters/opponents/abstainees ----------------
 			containerWindowType = {
 				name = "supporters_container"
@@ -1149,6 +1139,16 @@ guiTypes = {
 					text = "TOTAL POWER: 1000"
 					format = center
 				}
+			}
+
+			buttonType = {
+				name = "call_in_favors"
+				quadTextureSprite = "GFX_standard_button_142_34_button"
+				position = { x = 335 y = -250 }
+				Orientation = "LOWER_LEFT"
+				buttonFont = "cg_16b"
+				buttonText = "CALL_IN_FAVOR_ICON"
+				pdx_tooltip = "CALL_IN_FAVOR_TOOLTIP"
 			}
 		}
 

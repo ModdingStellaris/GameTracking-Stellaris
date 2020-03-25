@@ -41,3 +41,4 @@
  utopia.3401.c:0 "Um grande desenvolvimento."
  master_builders_habitats:1 "$ap_voidborn$: Expansão"
  master_builders_habitats_desc:0 "Este $pc_habitat$ foi expandido com um adicional de §Y2§! $MOD_PLANET_MAX_DISTRICTS_ADD$."
+ anomaly.2575.desc.3:0 "$anomaly.2575.desc.intro$\n\nInfelizmente, a §YEsfera de Dyson§! neste sistema removeu qualquer possibilidade de restaurar o planeta."

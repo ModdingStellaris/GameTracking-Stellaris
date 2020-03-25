@@ -132,14 +132,7 @@ origin_syncretic_evolution = {
 
 	possible = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		civics = {
-			NOR = {
-				value = civic_agrarian_idyll
-				value = civic_fanatic_purifiers
-				value = civic_shared_burden
-				value = civic_slaver_guilds
-			}
-		}
+		civics = { NOT = { value = civic_fanatic_purifiers } }
 	}
 
 	description = civic_tooltip_syncretic_evolution_effects

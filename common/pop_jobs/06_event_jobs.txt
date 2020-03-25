@@ -17,12 +17,14 @@ event_purge = {
 		category = planet_jobs
 		produces = {
 			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_fanatic_purifiers }
 			}
 			unity = 2
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 			society_research = 2
@@ -251,8 +253,9 @@ underground_contact_drone = {
 		category = planet_jobs
 		produces = {
 			trigger = {
+				exists = owner
 				owner = {
-						is_hive_empire = yes
+					is_hive_empire = yes
 				}
 			}
 			energy = 3
@@ -260,8 +263,9 @@ underground_contact_drone = {
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				owner = {
-						is_machine_empire = yes
+					is_machine_empire = yes
 				}
 			}
 			energy = 6
@@ -358,6 +362,7 @@ dimensional_portal_researcher = {
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_technocracy }
 			}
 			unity = 1
@@ -563,6 +568,7 @@ dimensional_portal_researcher_gestalt = {
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_technocracy }
 			}
 			unity = 1
@@ -601,6 +607,7 @@ dimensional_portal_researcher_gestalt = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
 				owner = {
 					is_machine_empire = yes
 				}
@@ -609,6 +616,7 @@ dimensional_portal_researcher_gestalt = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
 				owner = {
 					is_hive_empire = yes
 					is_lithoid_empire = no
@@ -618,6 +626,7 @@ dimensional_portal_researcher_gestalt = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
 				owner = {
 					is_hive_empire = yes
 					is_lithoid_empire = yes
@@ -627,6 +636,7 @@ dimensional_portal_researcher_gestalt = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
 				owner = {
 					is_gestalt = no
 				}
@@ -635,6 +645,7 @@ dimensional_portal_researcher_gestalt = {
 		}
 		upkeep = {
 			trigger = {
+				exists = owner
 				owner = {
 					is_gestalt = no
 				}

@@ -108,7 +108,7 @@
  syndaw.500.b:0 "Wir sollen darauf Nutzen ziehen."
 #Follow-up from 500.b
  syndaw.501.name:0 "Computergesteuerte Übertaktung"
- syndaw.501.desc:0 "Unsere Forscher haben es geschafft, die Ursache hinter den letzten Spitzen in der Frequenz unserer Supercomuter-CPU zu finden. Es scheint, dass die künstlichen allgemeinen Intelligenzsysteme für die fraglichen Einheiten ihre für die Verarbeitung zuständige Hardware übertaktet haben, um lokale Maschinenalgorithmen über die beabsichtige Kapazität hinaus zu erweitern.\n\nEinige unserer Wissenschaftler haben eine beträchtliche Aufgeregtheit für diese unerwartete Verbesserung des KI-Lernverhaltens geäußert und führen die Möglichkeit einer künftigen rekursiven Selbstverbesserung an. Manche sind jedoch besorgt, dass die hinzugefügte CPU-Last zu Instabilitäten und unerwünschten Software-Ergebnissen führen kann. "
+ syndaw.501.desc:0 "Unsere Forscher haben es geschafft, die Ursache hinter den letzten Spitzen in der Frequenz unserer Supercomuter-CPU zu finden. Es scheint, dass die künstlichen allgemeinen Intelligenzsysteme für die fraglichen Einheiten ihre für die Verarbeitung zuständige Hardware übertaktet haben, um lokale Maschinenalgorithmen über die beabsichtige Kapazität hinaus zu erweitern.\n\nEinige unserer Wissenschaftler haben eine beträchtliche Aufgeregtheit für diese unerwartete Verbesserung des KI-Lernverhaltens geäußert und führen die Möglichkeit einer künftigen rekursiven Selbstverbesserung an. Manche sind jedoch besorgt, dass die hinzugefügte CPU-Last zu Instabilitäten und unerwünschten Software-Ergebnissen führen kann."
  syndaw.501.a:0 "Wir können keine zukünftigen Komplikationen riskieren."
  syndaw.501.a.tooltip:0 "Setzte das künstliche allgemeine Intelligenz-System zurück, um weitere Entwicklungen zu verhindern."
  syndaw.501.b:0 "Der Nutzen könnte die Risiken übersteigen."
@@ -121,7 +121,7 @@
  syndaw.505.name:0 "Automatisierte Arbeitsprozesse"
  syndaw.505.desc:0 "Der planetare Außenposten auf [target_planet.GetName] hat berichtet, dass ein nicht geplanter Überschuss an Roboterarbeitskräften in der Planetenumgebung gesichtet wurde. Obwohl die Effizienz dieser neuen Roboarbeiter außergewöhnlich ist, ist die Beobachtung durch ihr plötzliches erscheinen etwas verwirrt. Es scheint, dass die Seriennummern der Roboter nicht auf irgendwelche bekannten Hersteller in den Büchern zurückverfolgt werden kann, obwohl ihre Konstruktion und ihre Schnittstellen auf [Root.GetSpeciesName]-Design hindeutet.\n\nWie dem auch sei, hat die lokale Bevölkerung Bedenken hinsichtlich der potenziellen Arbeitsverlagerung als Folge der steigenden Automatisierung ausgedrückt."
  syndaw.505.a:0 "Zusätzliche Arbeiter schaden niemanden."
- syndaw.505.a.tooltip:0 "Erhaltet §B2 £pop£s£ robotische Arbeiter§! auf [target_planet.GetName]"
+ syndaw.505.a.tooltip:0 "Erhaltet §B2 £pops£ robotische Arbeiter§! auf [target_planet.GetName]"
  syndaw.505.b:0 "Wenn sie nicht identifiziert werden können, verschrottet sie."
  syndaw.505.b.tooltip:0 "Nehmt die Roboter für Teile auseinander."
 ##Station Systems Malfunction
@@ -167,7 +167,7 @@
 #Follow-up from .525.a
  syndaw.526.name:0 "Eine Heimat für sie alleine"
  syndaw.526.desc:0 "Die Verwaltung auf [target_planet.GetName] berichtet, dass die [Root.GetSpeciesName] Arbeiter bei der Ankunft in ihre Zielregion entdeckten, dass die Roboterbewohner nirgends aufzufinden sind. Eine Untersuchung der Anlagen in der Region deuten darauf hin, dass die Roboter die Gegen in Eile geräumt haben. Wir haben allerdings keinen Hinweis darauf, wo sie hingegangen sind."
- syndaw.526.a.tooltip:0 "§H[target_planet.GetName]§!:\n§RVerliert§! §B1 £pop£s£ Roboterbewohner§!"
+ syndaw.526.a.tooltip:0 "§H[target_planet.GetName]§!:\n§RVerliert§! §B1 £pops£ Roboterbewohner§!"
 ##Combat Control Misfire
  syndaw.530.name:0 "Fehlzündung der Kampfkontrolle"
  syndaw.530.desc:0 "Bedauerlicherweise sind zwei unserer Schiffe bei einem Unfall während eines Routinetrainings verloren gegangen. Es scheint, dass mehrere unserer Onboard-Kampfcomputer von einer hochgradigen Fehlfunktion der Zielsuche befallen waren, was zu einem plötzlichen Beschuss der eigenen Leute führte und zwei Schiffe zerstörte, bevor eine manuelle Notfallroutine durchgeführt werden konnte.\n\nDie defekten Kampfcomputer werden sofort umprogrammiert."
@@ -179,9 +179,9 @@
 #syndaw.535.a.tooltip: "Consumer Goods Cost §G-5%§! for §Y365§! days"
 ##A Silent Congregation
  syndaw.540.name:0 "Eine stille Versammlung"
- syndaw.540.desc:0 "Wir haben Berichte von ungewöhnlichen Verhaltensweisen der Roboter auf [Root.GetName] erhalten. In unvorhersehbaren Intervallen hören einige unserer planetennahen Roboter alle zugeordneten Funktionen auf und fangen an, sich zu einer scheinbar zufällig festgelegten Stelle in völliger Synchronität zu bewegen, die sich bis auf die Millisekunde messen lässt.\n\nWährend dieser bizarren Versammlungen scheinen die Roboter in keiner beobachtbaren Form zu Kommunizieren oder Daten zu übertragen. Sie stehen einfach da. Komplett still. Starrend.\n\nEine Untersuchung konnte den Grund hinter diesem Phänomen noch nicht bestimmten. Die Dauer, für die die Roboter in diesem Trance-ähnlichen Zustand verharren, bevor sie normale Funktionen wiederaufnehmen, variiert, ebenso wie die Zeit des Auslösens dieses Handeln und das Ziel. Es konnte keine logische Korrelation oder Ursache gefunden werden und unsere Bevölkerung ist verständlicherweise von diesen unheimlichen Versammlungen beunruhigt. "
+ syndaw.540.desc:0 "Wir haben Berichte von ungewöhnlichen Verhaltensweisen der Roboter auf [Root.GetName] erhalten. In unvorhersehbaren Intervallen hören einige unserer planetennahen Roboter alle zugeordneten Funktionen auf und fangen an, sich zu einer scheinbar zufällig festgelegten Stelle in völliger Synchronität zu bewegen, die sich bis auf die Millisekunde messen lässt.\n\nWährend dieser bizarren Versammlungen scheinen die Roboter in keiner beobachtbaren Form zu Kommunizieren oder Daten zu übertragen. Sie stehen einfach da. Komplett still. Starrend.\n\nEine Untersuchung konnte den Grund hinter diesem Phänomen noch nicht bestimmten. Die Dauer, für die die Roboter in diesem Trance-ähnlichen Zustand verharren, bevor sie normale Funktionen wiederaufnehmen, variiert, ebenso wie die Zeit des Auslösens dieses Handeln und das Ziel. Es konnte keine logische Korrelation oder Ursache gefunden werden und unsere Bevölkerung ist verständlicherweise von diesen unheimlichen Versammlungen beunruhigt."
  syndaw.540.a:0 "Inakzeptabel. Verschrottet sie."
- syndaw.540.a.tooltip:1 "Verschrottet die sich sammelnden Roboter.\n[Root.GetName] erhält folgende Effekte:\nVerliert §B1 £pop£s£ Roboterbewohner§!\nErhält §G100§! £minerals£"
+ syndaw.540.a.tooltip:1 "Verschrottet die sich sammelnden Roboter.\n[Root.GetName] erhält folgende Effekte:\nVerliert §B1 £pops£ Roboterbewohner§!\nErhält §G100§! £minerals£"
  syndaw.540.b:0 "Inakzeptabel. Verschrottet sie."
  syndaw.540.b.tooltip:1 "Verschrottet die sich sammelnden Roboter.\n[Root.GetName] erhält folgende Effekte:\nVerliert §B1 Roboterarmee§!\nErhält §G100 £minerals£§!"
  syndaw.540.c:0 "Solange sie keine Schwierigkeiten verursachen."

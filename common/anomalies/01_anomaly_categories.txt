@@ -304,7 +304,7 @@ AST_SHRINE_1_CAT = {
 		modifier = {
 			factor = 0
 			from.owner = {
-				NOR = {
+				OR = {
 					has_ethic = ethic_gestalt_consciousness
 					has_origin = origin_shoulders_of_giants
 				}

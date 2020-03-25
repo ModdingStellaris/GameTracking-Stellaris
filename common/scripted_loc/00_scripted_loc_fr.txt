@@ -831,3 +831,53 @@ defined_text = {
 		localization_key = FRLOC_de
 	}
 }
+
+######################################
+###   LIMITED USE / USAGE LIMITÉ   ###
+######################################
+defined_text = {
+	name = GetAuteur
+	text = {
+		trigger = {
+			root.owner = {
+				OR = {
+					has_country_flag = human_1
+					has_country_flag = human_2
+				}
+			}
+		}
+		localization_key = FRLOC_Moliere
+	}
+	text = {
+		trigger = {
+			root.owner = {
+				NOR = {
+					has_country_flag = human_1
+					has_country_flag = human_2
+				}
+			}
+		}
+		localization_key = FRLOC_XXZY
+	}
+}
+defined_text = {
+	name = GetPiece
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = human_1
+				has_country_flag = human_2
+			}
+		}
+		localization_key = FRLOC_Piece_Moliere
+	}
+	text = {
+		trigger = {
+			NOR = {
+				has_country_flag = human_1
+				has_country_flag = human_2
+			}
+		}
+		localization_key = FRLOC_Piece_XXZY
+	}
+}

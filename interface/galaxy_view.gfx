@@ -210,6 +210,11 @@ spriteTypes = {
 		name = "GFX_diplomacy_status_closed_borders"
 		texturefile = "gfx/interface/icons/diplomacy/diplomacy_closed_borders.dds"
 	}
+
+	spriteType = {
+		name = "GFX_diplomacy_status_open_borders"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_open_borders.dds"
+	}
 	spriteType = {
 		name = "GFX_diplomacy_status_truce"
 		texturefile = "gfx/interface/icons/diplomacy/diplomacy_truce.dds"

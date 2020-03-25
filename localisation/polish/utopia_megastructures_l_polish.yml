@@ -39,3 +39,5 @@
  utopia.108.name:0 "Dr Xhaxxore uciekł!"
  utopia.108.desc:0 "[target_country.GetSpeciesNamePlural] nie byli zadowoleni, gdy zaprzeczyliśmy naszym związkom z porwaniami przedstawicieli ich gatunku. Co więcej, dr Xhaxxore - czując, że coś się święci - uciekł i zabrał ze sobą zapas serum, przez co uniemożliwił dalszą produkcję kremu Wieczność."
  utopia.108.a:0 "A niech to..."
+ utopia.4100.a.tooltip:0 "§H$spy_orb_0$§! jest na miejscu, czeka na dalszy rozwój wypadków, zanim zacznie działać."
+ utopia.4103.a.tooltip:0 "§H$spy_orb_1$§! działa. Zasięg naszych czujników powiększył się."

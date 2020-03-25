@@ -10,4 +10,4 @@ Envoys have been introduced to the game, and they allow you to perform certain d
 
 ---
 
-Saved games from previous versions may not be compatible with version 2.6. If you wish to continue your old save in version 2.2, follow the forum link below and read the thread "How to revert Stellaris to a previous version."
+Saved games from previous versions may not be compatible with version 2.6. If you wish to continue your old save in version 2.5.1, follow the forum link below and read the thread "How to revert Stellaris to a previous version."

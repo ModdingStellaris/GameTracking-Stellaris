@@ -313,9 +313,6 @@ civic_slaver_guilds = {
 				value = ethic_fanatic_authoritarian
 			}
 		}
-		origin = {
-			NOT = { value = origin_syncretic_evolution }
-		}
 	}
 	random_weight = { base = 5 }
 	modifier = {
@@ -486,14 +483,8 @@ civic_agrarian_idyll = {
 				value = ethic_fanatic_pacifist
 			}
 		}
-		civics = {
-			NOR = {
-				value = civic_slaver_guilds
-			}
-		}
 		origin = {
 			NOR = {
-				value = origin_syncretic_evolution
 				value = origin_post_apocalyptic
 				value = origin_shattered_ring
 				value = origin_void_dwellers
@@ -692,9 +683,6 @@ civic_shared_burden = {
 		}
 		civics = {
 			NOT = { value = civic_technocracy }
-		}
-		origin = {
-			NOT = { value = origin_syncretic_evolution }
 		}
 	}
 	modifier = {

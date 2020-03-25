@@ -96,11 +96,13 @@ utility_component_template = {
 		modifier = {
 			factor = 2.0
 			is_preferred_weapons = weapon_type_energy
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value > 0 }
 		}
 
 		modifier = {
 			factor = 0
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}

@@ -8,6 +8,7 @@ vote_weight_equal = {
 				AND = {
 					NOT = { has_federation_law = vote_weight_equal }
 					has_modifier = federation_law_category_voting_weight_cooldown
+					has_any_federation_law_in_category = law_category_voting_weight
 				}
 			}
 		}
@@ -37,6 +38,7 @@ vote_weight_diplomatic = {
 				AND = {
 					NOT = { has_federation_law = vote_weight_diplomatic }
 					has_modifier = federation_law_category_voting_weight_cooldown
+					has_any_federation_law_in_category = law_category_voting_weight
 				}
 			}
 		}

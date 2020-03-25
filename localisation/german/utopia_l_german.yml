@@ -59,13 +59,13 @@
  allow_machine_worlds:2 "§HFreischaltung der Terraformoption:§! Maschinenwelt"
  describe_machine_worlds:6 "§YMaschinenwelten§! sind eine spezielle Planetenklasse, die für die meisten organischen Wesen unbewohnbar sind, aber durch planetare Merkmale nicht darin limitiert sind, wie viele £district£ §YGenerator-§! und §YBergbaudistrikte§! sie unterstützen können. £pop£ §YBewohner§!, die auf §YMaschinenwelten§! leben, haben eine um §G+10%§! erhöhte §YRessourcenproduktion§! und eine um §G10%§! reduzierte §YWohnraumnutzung§!. Jeder existierende £district£ §YLandwirtschaftsdistrikt§! auf dem Planeten wird zerstört."
  allow_hive_worlds:0 "§HNeue Terraformingmöglichkeit:§! Schwarmwelt"
- describe_hive_worlds:0 "§YSchwarmwelten§! sind eine spezielle Planetenklasse, die für alle Wesen, die nicht dem Schwarm angehören, unbewohnbar sind, aber durch planetare Merkmale nicht darin limitiert sind, wie viele £district£ §YGenerator-§!, §YBergbau-§! und §YLandwirtschaftsdistrikte§! sie unterstützen können. £pop£ §YBewohner§!, die auf §YSchwarmwelten§! leben, haben eine um §G+10%§! erhöhte §YRessourcenproduktion§!."
+ describe_hive_worlds:1 "§YSchwarmwelten§! sind eine spezielle Klasse von Planeten, die für alle Wesen, die nicht dem Schwarm angehören, unbewohnbar sind, ohne durch planetare Merkmale darin limitiert zu sein, wie viele £district£ §YGenerator-§!, §YBergbau-§! und §YLandwirtschaftsdistrikte§! sie unterstützen können. Außerdem sind §YSchwarmdistrikte§! effizienter. £pop£ §YBewohner§!, die auf §YSchwarmwelten§! leben, haben eine um §G+10%§! erhöhte §YRessourcenproduktion§!."
 
  ALLOW_PSI_CORPS:0 "Das Gebbäude §H$building_psi_corps$§! steht jetzt zur Verfügung."
  ALLOW_PSI_ARMIES:0 "§H$psionic_army_plural$§! können jetzt rekrutiert werden."
  
  dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "Eine §Y$dyson_sphere_5$§! umfasst einen Stern vollständig und wandelt die entstehende Solarenergie direkt in £energy£ Energie-Credits um."
- dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "Eine $dyson_sphere_5$ vernichtet die Sonne und verwandelt sämtliche Planeten des Systems in karge oder gefrorene Welten."
+ dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:4 "Eine $dyson_sphere_5$ vernichtet die Sonne und verwandelt sämtliche Planeten des Systems in karge oder gefrorene Welten.\n\nJeder vorhandene Terraforming-Kandidat im System wird ebenfalls betroffen sein, was ein Terraformieren unmöglich macht."
  dyson_sphere_0:0 "Dyson-Sphäre-Baustelle"
  dyson_sphere_0_DESC:0 "Die Baustation dient als Basis für den zukünftigen Bau einer Dyson-Sphäre."
  dyson_sphere_1:0 "Dyson-Sphäre-Gerüst"

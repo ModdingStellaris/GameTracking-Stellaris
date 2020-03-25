@@ -288,7 +288,7 @@
  TECHNOLOGIST_TECH_LEAP_DESC:0 "Wenn wir der Zeit vorausbleiben und keinem anderem Reich gestatten, in technologischen Belangen mehr als §Ygleichwertig§! zu werden, sorgt das für Zustimmung bei [Root.GetName]."
  TECHNOLOGIST_TECH_LAG:0 "Technische Mitläufer"
  TECHNOLOGIST_RESEARCH_TREATIES:0 "Wissenschaft ohne Grenzen"
- TECHNOLOGIST_RESEARCH_TREATIES_DESC:0 "Wenn wir mit mindestens §Y3§! anderen Reichen Forschungsabkommen schließen, sorgt das für Zustimmung bei [Root.GetName]."
+ TECHNOLOGIST_RESEARCH_TREATIES_DESC:0 "Wenn wir mit mindestens §Y3§! anderen Reichen Forschungsabkommen schließen oder uns in einer Forschungskooperative befinden, sorgt dies für Zustimmung bei [Root.GetName]."
  TECHNOLOGIST_FEW_RESEARCH_TREATIES:0 "$TECHNOLOGIST_RESEARCH_TREATIES$"
  TECHNOLOGIST_NO_SYNTH_ENVY:0 "Roboterneid"
  TECHNOLOGIST_NO_SYNTH_ENVY_DESC:0 "Mit anzusehen, wie andere Sternennationen Roboterbewohner zur Schau stellen, während es auf keiner unserer Welten Vergleichbares gibt, sorgt für Missfallen bei [Root.GetName]."
@@ -314,13 +314,13 @@
  PROGRESSIVE_NO_FREE_MOVEMENT:0 "$PROGRESSIVE_FREE_MOVEMENT$"
  PROGRESSIVE_FREE_MOVEMENT_DESC:1 "Die freie Umsiedlung von Bewohnern durch das Verbot von Zwangsumsiedlung und das Deaktivieren der Migrationskontrolle sorgt für Zustimmung bei [Root.GetName]."
  PROGRESSIVE_REPRODUCTIVE_FREEDOM:0 "Reproduktive Freiheit"
- PROGRESSIVE_REPRODUCTIVE_FREEDOM_DESC:1 "Selektive Bevölkerungskontrolle zu verbannen, sorgt das für Zustimmung bei [Root.GetName]."
+ PROGRESSIVE_REPRODUCTIVE_FREEDOM_DESC:2 "Selektive Bevölkerungskontrolle zu verbannen, sorgt das für Zustimmung bei [Root.GetName]."
  PROGRESSIVE_NO_REPRODUCTIVE_FREEDOM:1 "$PROGRESSIVE_REPRODUCTIVE_FREEDOM$"
  PROGRESSIVE_SLAVERY_BANNED:1 "Sklavereiverbot"
  PROGRESSIVE_SLAVERY_BANNED_DESC:1 "Die ausbleibende Verbannung der Sklaverei sorgt für Missfallen bei [Root.GetName]."
  PROGRESSIVE_SLAVERY_ALLOWED:0 "Sklaverei gestattet"
  PROGRESSIVE_NO_STRATIFIED:0 "Anti-Differenzierung"
- PROGRESSIVE_NO_STRATIFIED_DESC:0 "Wenn wir Bürger unseres Reichs in einer differenzierten Wirtschaft arbeiten lassen, sorgt das für großes Missfallen bei [Root.GetName]."
+ PROGRESSIVE_NO_STRATIFIED_DESC:0 "Wenn wir Bürger unseres Reichs in einer §Ydifferenzierten Wirtschaft§! arbeiten lassen, sorgt das für großes Missfallen bei [Root.GetName]."
  PROGRESSIVE_STRATIFIED:0 "$PROGRESSIVE_NO_STRATIFIED$"
  PROGRESSIVE_NO_ELITISM:0 "Geboren in Gleichberechtigung"
  PROGRESSIVE_NO_ELITISM_DESC:0 "Wenn wir davon absehen, Richtlinien zu verfügen, welche die herrschende Elite begünstigen, sorgt das für Zustimmung bei [Root.GetName]."
@@ -453,7 +453,7 @@
  POP_FACTION_PLANET_SEPARATIST_GATHER_SUPPORT:0 "Konsolidierte Unterstützung"
  POP_FACTION_PLANET_SEPARATIST_GATHER_SUPPORT_DESC:0 "Die Separatisten bauen eine Unterstützerbasis - entweder durch den Wechsel der Ethik oder durch die Reduzierung der Zufriedenheit anderer Bewohner."
  POP_FACTION_PLANET_SEPARATIST_REORGANIZING:0 "Reorganisieren"
- POP_FACTION_PLANET_SEPARATIST_RECENTLY_FULL_SUPPORT:1 "Alle Bewohner auf dem Planeten in Fraktionen "
+ POP_FACTION_PLANET_SEPARATIST_RECENTLY_FULL_SUPPORT:1 "Alle Bewohner auf dem Planeten in Fraktionen"
  POP_FACTION_PLANET_SEPARATIST_IS_NOT_OCCUPIED:0 "Planet ist nicht besetzt"
  POP_FACTION_PLANET_SEPARATIST_NO_GROUND_COMBAT:0 "Auf dem Planeten gibt es keine Bodengefechte"
  POP_FACTION_PLANET_SEPARATIST_GRANT_INDEPENDENCE_TITLE:0 "Unabhängigkeit gewähren"
@@ -606,7 +606,7 @@
  ### LIBERATE
 
  # Demands
- POP_FACTION_LIBERATE_DEMAND_TITLE_1:0 "§Y[parameter:planet.GetName]§! befreien"
+ POP_FACTION_LIBERATE_DEMAND_TITLE_1:0 "§H[parameter:planet.GetName]§! befreien"
  POP_FACTION_LIBERATE_DEMAND_DESC_1:0 "Erklären Sie [parameter.enemy.GetName] den Krieg, um [parameter:planet.GetName] zurückzufordern."
 
  # Support Effects
@@ -762,7 +762,7 @@
  faction.103.desc:0 "Der [Root.GetName] wurde ein quasi unabhängiger Sektor gewährt, mit [parameter:planet.GetName] als lokalem Regierungssitz."
 
  faction.104.title:0 "Reich entlassen!"
- faction.104.desc:0 "Zur Beschwichtigung und faktischen Eliminierung der Separatisten ist die Kolonie auf [parameter:planet.GetName] aus dem [Root.Owner.GetName] entlassen worden.\n\nDie [Root.GetName] haben ihre eigene Nation gegründet. "
+ faction.104.desc:0 "Zur Beschwichtigung und faktischen Eliminierung der Separatisten ist die Kolonie auf [parameter:planet.GetName] aus dem [Root.Owner.GetName] entlassen worden.\n\nDie [Root.GetName] haben ihre eigene Nation gegründet."
 
  ### Crusaders
 
@@ -783,7 +783,7 @@
  faction.202.title:0 "[parameter:heathens.GetName] beleidigt"
  faction.202.desc:0 "Als Konsequenz des peinlichen Aussetzers unseres Sicherheitssystems haben die [Root.GetName] kurzzeitig Zugriff auf unsere diplomatischen Kommunikationskanäle bekommen. Diese Gelegenheit benutzten sie, um die [parameter:heathens.GetName] zu verdammen und beleidigen, wobei es um verschiedene Ketzereien und um moralische Mängel ihres Glaubens ging.\n\nDie tief religiösen [parameter:heathens.GetSpeciesPlural] haben den Vorfall nicht besonders gut aufgenommen."
  faction.202.a:0 "Wie peinlich."
- faction.202.a.tooltip:0 "§Y[parameter:enemy.GetName]§! fügt §Ihrem Reich§! den Meinungsmodifikator §YFraktionsbeleidigung§! hinzu."
+ faction.202.a.tooltip:0 "§Y[parameter:enemy.GetName]§! fügt §Yhrem Reich§! den Meinungsmodifikator §YFraktionsbeleidigung§! hinzu."
  faction.203.title:0 "Versuchte Beleidigung"
  faction.203.desc:0 "Als Konsequenz eines weiteren, hochnotpeinlichen Aussetzers unseres Sicherheitssystems haben die [Root.GetName] kurzzeitig Zugriff auf unsere diplomatischen Kommunikationskanäle bekommen. Diese Gelegenheit haben sie benutzt, um den heidnischen Glauben der [parameter:heathens.GetName] abermals schlechtzumachen.\n\nDie [parameter:heathens.GetSpeciesPlural] traf dieser erneute Vorfall aber verständlicherweise nicht unvorbereitet, weshalb sie es anscheinend gelassen hingenommen haben."
  faction.203.a:0 "Seufz ..."
@@ -824,7 +824,7 @@
  faction.501.title:0 "[parameter:enemy.GetName] beleidigt"
  faction.501.desc:0 "Als Konsequenz des peinlichen Aussetzers unseres Sicherheitssystems haben die [Root.GetName] kurzzeitig Zugriff auf unsere diplomatischen Kommunikationskanäle bekommen. Sie nutzten diese Gelegenheit, um die [parameter:enemy.GetName] schwer zu beleidigen und die sofortige Rückgabe von [parameter:planet.GetName] zu fordern.\n\nDie [parameter:enemy.GetSpeciesPlural] haben das gar nicht gut aufgenommen."
  faction.501.a:0 "Wie peinlich."
- faction.501.a.tooltip:0 "§Y[parameter:enemy.GetName]§! fügt §Ihrem Reich§! den Meinungsmodifikator §YFraktionsbeleidigung§! hinzu."
+ faction.501.a.tooltip:0 "§Y[parameter:enemy.GetName]§! fügt §Yhrem Reich§! den Meinungsmodifikator §YFraktionsbeleidigung§! hinzu."
  faction.502.title:0 "Versuchte Beleidigung"
  faction.502.desc:0 "Als Konsequenz eines weiteren, hochnotpeinlichen Aussetzers unseres Sicherheitssystems haben die [Root.GetName] kurzzeitig Zugriff auf unsere diplomatischen Kommunikationskanäle bekommen. Diese Gelegenheit haben sie benutzt, um die [parameter:enemy.GetName] abermals schwer zu beleidigen und die sofortige Rückgabe von [parameter:planet.GetName] zu fordern.\n\nDie [parameter:enemy.GetSpeciesPlural] traf dieser erneute Vorfall aber verständlicherweise nicht unvorbereitet, weshalb sie es anscheinend gelassen hingenommen haben."
  faction.502.a:0 "Seufz ..."

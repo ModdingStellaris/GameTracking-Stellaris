@@ -1994,8 +1994,21 @@ controller = { is_same_value = root.owner }
 			}
 		}
 		else = { # no original owner
+			random_owned_pop = {
+				limit = {
+					is_sapient = yes
+				}
+				save_event_target_as = rebel_pop
+			}
+			random_owned_pop = {
+				limit = {
+					is_sapient = yes
+					is_non_sapient_robot = no
+				}
+				save_event_target_as = rebel_pop
+			}
 			create_rebels = {
-				species = this
+				species = event_target:rebel_pop
 				ethos = random
 				authority = random
 				origin = "origin_separatists"

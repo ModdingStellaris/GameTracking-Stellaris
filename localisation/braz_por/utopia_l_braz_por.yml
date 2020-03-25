@@ -9,7 +9,7 @@
  ring_world_1_CONSTRUCTION_INFO_DELAYED:4 "Um Mundo Anel completo consiste de 4 Seções de Mundo Anel Concluídas, cada uma equivalente a um mundo Gaia gigantesco."
 
  dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "Uma §Y$dyson_sphere_5$§! envolve completamente uma estrela qualquer, convertendo toda a produção solar diretamente em £energy£ Créditos Energéticos."
- dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "Uma $dyson_sphere_5$ apagará o sol, transformando todos os planetas do sistema em Mundos Estéreis ou Congelados."
+ dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:4 "Uma $dyson_sphere_5$ apagará o sol, transformando todos os planetas do sistema em Mundos Estéreis ou Congelados.\n\nQuaisquer candidatos a Terraformação no sistema serão arruinados."
 
  spy_orb_0_MEGASTRUCTURE_DETAILS:1 "Os estágios da §Y$spy_orb_4$§! gradualmente aumentam o alcance dos sensores, até finalmente cobrir toda a galáxia."
  spy_orb_0_CONSTRUCTION_INFO_DELAYED:3 "Os estágios da $spy_orb_4$ gradualmente aumentam o alcance dos sensores, até finalmente cobrir toda a galáxia."
@@ -149,5 +149,5 @@
  opinion_maneuvers_canceled:0 "Manobras de Frota Canceladas"
  allow_dyson_sphere:0 "§HLibera a Megaestrutura:§! Esfera de Dyson"
  allow_hive_worlds:0 "§HLibera Opção de Terraformação:§! Mundo Colmeia"
- describe_hive_worlds:0 "§YMundos Colmeia§! são uma classe planetária especial que é inabitável para a maioria dos Pops que não tenham Mente Colmeia, mas não são limitados por Recursos Planetários em termos de quantos £district£ §YDistritos Geradores§!, §YMineração§! e §YAgricultura§! eles podem suportar. £pop£ §YPops§! vivendo em §YMundos Colmeia§! têm sua §YProdução de Eecursos§! aumentada em §G+10%§!."
+ describe_hive_worlds:1 "§YMundos Colmeia§! são uma classe planetária especial que é inabitável para a maioria dos Pops que não tenham Mente Colmeia, mas não são limitados por Recursos Planetários em termos de quantos £district£ §YDistritos Geradores§!, §YMineração§! e §YAgricultura§! eles podem suportar, e §YDistritos Colmeia§! são mais eficientes £pop£ §YPops§! vivendo em §YMundos Colmeia§! têm sua §YProdução de Recursos§! aumentada em §G+10%§!."
  requires_barren_planet:1 "$TRIGGER_FAIL$Só pode construir em mundos Inférteis."

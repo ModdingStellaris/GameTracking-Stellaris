@@ -431,3 +431,5 @@
  marauder.707.name:0 "Transporte [marauder_neighbor_species.GetName]"
  marauder.707.desc:0 "Um pequeno transporte [marauder_neighbor_species.GetName] cruzou nosso espaço recentemente no sistema [border_system.GetName], perseguido por invasores do §H[marauder_neighbor.GetName]§!. Não temos certeza por que eles estavam sendo perseguidos pelo seu próprio povo, mas os invasores recuaram quando foram desafiados por nossa patrulha de fronteira.\n\nO transporte muito danificado foi recuperado, revelando que a tripulação havia falecido logo após entrarem em [border_system.GetName]. Seu porão estava cheio até o topo de créditos energéticos roubados."
  marauder.707.a:0 "Por direito de resgate, os créditos são nossos."
+ leader_trait_ruler_great_khan:0 "$leader_trait_great_khan$"
+ leader_trait_ruler_great_khan_desc:0 "$leader_trait_great_khan_desc$"

@@ -1,0 +1,20 @@
+#reloadworldgfx
+gfx_settings = 
+{
+	# world tag identifier
+	world = customization_view_ringworld
+	
+    color_lut = "gfx/worldgfx/colorcorrection_neutral.tga"
+	environment_map = "gfx/worldgfx/cubemap_filtered_ldr.dds"
+	
+	cubemap_intensity = 0.7 #0.7
+	
+	galaxy_background_hsv_shift = { 0.0 0.0 0.0 }
+	galaxy_background_lut = "gfx/worldgfx/colorcorrection_neutral.tga"
+
+	system_back_light_diffuse = hsv { 0.58 0.5 1.5 }
+	
+	ambient = hsv { 0.55 0.25 0.2 }	#global ambient, no direction
+	
+	system_light="system_view_light"
+}

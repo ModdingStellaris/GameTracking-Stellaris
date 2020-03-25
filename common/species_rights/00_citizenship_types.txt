@@ -527,7 +527,7 @@ citizenship_slavery = {
 		modifier = {
 			factor = 0
 			from = {
-				is_authoritarian = yes
+				is_authoritarian = no
 				is_xenophobe = no
 			}
 		}

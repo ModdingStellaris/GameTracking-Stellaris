@@ -3365,8 +3365,11 @@ country_event = {
 	}
 
 	immediate = {
-		fromfrom = {
-			leader = { remove_leader_flag = marauder_merc_leader }
+		if = {
+			limit = {
+				exists = fromfrom.leader
+			}
+			fromfrom.leader = {  remove_leader_flag = marauder_merc_leader }
 		}
 		# Marauder 1
 		if = {

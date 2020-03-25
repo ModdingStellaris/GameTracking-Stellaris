@@ -431,3 +431,5 @@
  marauder.707.name:0 "Prom [marauder_neighbor_species.GetAdj]"
  marauder.707.desc:0 "Niewielki prom [marauder_neighbor_species.GetAdj] wleciał niedawno w naszą przestrzeń w układzie [border_system.GetAdj] ścigany przez piratów §H[marauder_neighbor.GetAdj]§!. Nie wiemy, dlaczego ścigali ich pobratymcy, ale naszej straży granicznej udało się ich przepędzić.\n\nPoważnie uszkodzony prom został przejęty, okazało się, że jego załoga zginęła na krótko przed wejściem do układu [border_system.GetName]. Ładownię po brzegi wypełniały skradzione kredyty energetyczne."
  marauder.707.a:0 "Zgodnie z prawem dotyczącym wraków te kredyty należą do nas."
+ leader_trait_ruler_great_khan:0 "$leader_trait_great_khan$"
+ leader_trait_ruler_great_khan_desc:0 "$leader_trait_great_khan_desc$"

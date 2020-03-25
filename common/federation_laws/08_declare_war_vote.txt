@@ -8,6 +8,7 @@ declare_war_unanimous_vote = {
 				AND = {
 					NOT = { has_federation_law = declare_war_unanimous_vote }
 					has_modifier = federation_law_category_war_declaration_vote_cooldown
+					has_any_federation_law_in_category = law_category_war_declaration_vote
 				}
 			}
 		}
@@ -51,6 +52,7 @@ declare_war_majority_vote = {
 				AND = {
 					NOT = { has_federation_law = declare_war_majority_vote }
 					has_modifier = federation_law_category_war_declaration_vote_cooldown
+					has_any_federation_law_in_category = law_category_war_declaration_vote
 				}
 			}
 		}
@@ -97,6 +99,7 @@ declare_war_majority_vote_hegemony = {
 				AND = {
 					NOT = { has_federation_law = declare_war_majority_vote_hegemony }
 					has_modifier = federation_law_category_war_declaration_vote_cooldown
+					has_any_federation_law_in_category = law_category_war_declaration_vote
 				}
 			}
 		}
@@ -138,6 +141,7 @@ declare_war_president_vote = {
 				AND = {
 					NOT = { has_federation_law = declare_war_president_vote }
 					has_modifier = federation_law_category_war_declaration_vote_cooldown
+					has_any_federation_law_in_category = law_category_war_declaration_vote
 				}
 			}
 		}

@@ -8,6 +8,7 @@ treaties_separate_no = {
 				AND = {
 					NOT = { has_federation_law = treaties_separate_no }
 					has_modifier = federation_law_category_separate_treaties_cooldown
+					has_any_federation_law_in_category = law_category_separate_treaties
 				}
 			}
 		}
@@ -56,6 +57,7 @@ treaties_separate_yes = {
 				AND = {
 					NOT = { has_federation_law = treaties_separate_yes }
 					has_modifier = federation_law_category_separate_treaties_cooldown
+					has_any_federation_law_in_category = law_category_separate_treaties
 				}
 			}
 		}

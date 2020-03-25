@@ -297,7 +297,7 @@ all_random_events = {
 			modifier = {
 				factor = 0
 				OR = {
-					planet = {
+					from.planet = {
 						NOT = { is_planet_class = pc_nuked }
 					}
 					leader.species = {
@@ -320,6 +320,10 @@ all_random_events = {
 				Owner = {
 					has_country_flag = triggered_lithoids_special_event
 				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { exists = leader }
 			}
 			fleet_event = { id = ancrel.4006 }
 		}
@@ -841,7 +845,7 @@ site_ruins_of_shallash_random_events = {
 			modifier = {
 				factor = 0
 				OR = {
-					planet = {
+					from.planet = {
 						NOT = { is_planet_class = pc_nuked }
 					}
 					leader.species = {

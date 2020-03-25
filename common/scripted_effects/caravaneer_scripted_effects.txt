@@ -1262,24 +1262,43 @@ cara_generate_deal3 = {
 	#Get planet tar for Deal 8
 	if = {
 		limit = { has_country_flag = fleet3deal8 }
-		random_owned_planet = {
+		if = {
 			limit = {
-				has_district = district_generator
-			}
-			weights = {
-				base = 1
-				modifier = { #Prio planets w many techies
-					mult = 100
-					count_pops = {
-						count > 5
-						limit = {
-							has_job = technician_drone
-						}
+				any_owned_planet = {
+					OR = {
+						has_district = district_rw_generator
+						has_district = district_generator
 					}
 				}
 			}
-			set_timed_planet_flag = { flag = fleet3deal8planet days = @fleet3dealdecay }
-			save_event_target_as = fleet3deal8planet
+			random_owned_planet = {
+				limit = {
+					OR = {
+						has_district = district_rw_generator
+						has_district = district_generator
+					}
+				}
+				weights = {
+					base = 1
+					modifier = { #Prio planets w many techies
+						mult = 100
+						count_pops = {
+							count > 5
+							limit = {
+								has_job = technician_drone
+							}
+						}
+					}
+				}
+				set_timed_planet_flag = { flag = fleet3deal8planet days = @fleet3dealdecay }
+				save_event_target_as = fleet3deal8planet
+			}
+		}
+		else = {
+			capital_scope = {
+				set_timed_planet_flag = { flag = fleet3deal8planet days = @fleet3dealdecay }
+				save_event_target_as = fleet3deal8planet
+			}
 		}
 	}
 }

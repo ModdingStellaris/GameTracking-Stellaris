@@ -222,6 +222,7 @@ living_standard_chemical_bliss = {
 					has_citizenship_type = { country = from type = citizenship_slavery }
 					NOR = {
 						has_slavery_type = { country = from type = slavery_military }
+						has_slavery_type = { country = from type = slavery_indentured }
 						has_slavery_type = { country = from type = slavery_livestock }
 						has_slavery_type = { country = from type = slavery_matrix }
 					}
@@ -567,6 +568,7 @@ living_standard_good = {
 					has_citizenship_type = { country = from type = citizenship_slavery }
 					NOR = {
 						has_slavery_type = { country = from type = slavery_military }
+						has_slavery_type = { country = from type = slavery_indentured }
 						has_slavery_type = { country = from type = slavery_livestock }
 						has_slavery_type = { country = from type = slavery_matrix }
 					}

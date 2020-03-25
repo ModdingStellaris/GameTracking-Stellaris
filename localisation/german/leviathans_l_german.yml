@@ -46,13 +46,13 @@
  spectral_residue_studies:0 "Spektralgeist-Rückstandsuntersuchungen"
 
  leviathans.5.name:1 "Wächter besiegt"
- leviathans.5.desc:0 "§Y[leviathan_destroyer_country.GetName]§! hat im entfernten [leviathan_destroyed_system.GetName]-System eine uralte Bedrohung eliminiert."
+ leviathans.5.desc:1 "§Y[leviathan_destroyer_country.GetName]§! hat im entfernten [leviathan_destroyed_system.GetName]-System eine uralte Bedrohung eliminiert."
 
  leviathans.98.name:0 "Kontakt hergestellt"
  leviathans.98.desc:1 "Wir empfangen eine Nachricht von der unabhängigen Weltraumstation der §Y[From.GetName]§!! Anscheinend haben sie unsere Sprache erfolgreich übersetzt."
  leviathans.98.a:0 "Interessant."
  leviathans.99.name:0 "Kontakt hergestellt"
- leviathans.99.desc:1 "Nachdem wir ihre Sprache erfolgreich übersetzen konnten, haben wir Kontakt mit der unabhängigen Weltraumstation der [From.From.GetName] hergestellt."
+ leviathans.99.desc:1 "Nachdem wir ihre Sprache erfolgreich übersetzen konnten, haben wir Kontakt mit der unabhängigen Weltraumstation der §Y[From.From.GetName]§! hergestellt."
 
  curator_government:0 "Kurator-Enklave"
  curator_government_desc:0 "§LEin uralter Akademikerorden, der sich der Bewahrung von Wissen und Technologie verschrieben hat.§!"
@@ -158,8 +158,8 @@
  leviathans.131.desc:1 "Dies ist ein Produkt, auf das wir hier bei der XuraCorp besonders stolz sind. Unsere medizinische Abteilung hat kürzlich damit begonnen ein neues Gas zu raffineriern, dessen einzigartige Eigenschaften den oft schwierigen Vorgang, sich an fremde planetare Bedingungen anzupassen, bedeutend erleichtert. Es scheint jedoch unkompatibel mit anderen Phyisiologien zu sein!\n\nWir sind bereit, euch zehn Standardjahre lang mit unserem exotischen Gas zu beliefern. Nach Ablauf dieser zehn Jahre wird der Vertrag dann neu ausgehandelt."
  leviathans.131.a.reply:0 "So läuft es bei der XuraCorp! Unsere Frachter werden sofort mit der Belieferung beginnen.\n\nDurch den Kauf dieses Produkts erklärt ihr euch damit einverstanden, dass die XuraCorp nicht für etwaige schädliche Wirkungen durch die Benutzung des Gels zur Verantwortung gezogen kann, insbesondere Hautirritationen, psychotische Anfälle, Augenverfärbungen, aggressive Mutationen, erhöhte Anzahl von Selbstmorden unter Kolonisten, präkognitive Trance-Episoden, Biosphäre-Abbau, gefährliche Strangelet-Produktion, Erzeugung von kleinen schwarzen Löchern, Getreideheber-Explosionen, gesellschaftlicher Zusammenbruch, Massensterben, unerwartete Supernova-Detonationen, vollständige oder partielle Vernichtung eurer Sternennation, plötzliche Gammastrahlen-Ausbrüche, Zeitreise-Widersprüche, Vakuum-Metastabilitätsereignisse, universelle Entropie, Zusammenbruch des Raum-Zeit-Kontinuums ..."
  #leviathans.131.a:0 "Wir werden dieses XuraGel kaufen."
- leviathans.132.desc:0 "Shi'rakkat-Du, oder Seltene Kristalle, wie sie außerhalb unserer Spezies genannt werden, sind zu einem Symbol unserer gesamten Zivilisation geworden. Wenn diese "singenden" Kristalle vibrieren, "spielen" sie einen einzigartigen Klang, der die meisten fühlenden Wesen beruhigt.\n\nObwohl wir die Wunder der Shi'rakkat-Du normalerweise nicht mit Außenstehenden teilen, sind wir bereit, in eurem Fall eine Ausnahme zu machen. Wenn ihr es euch leisten könnt, wären wir bereit, euch zehn Standardjahre lang mit unseren Kristallen zu beliefern."
- leviathans.132.a.reply:0 "Hervorragend. Unsere Händler werden sofort mit dem Transport der Kristalle zu euren Planeten beginnen. Mögen die Shi'rakkat-Du für euch singen."
+ leviathans.132.desc:1 "Shi'rakkat-Du, oder Seltene Kristalle, wie sie außerhalb unserer Spezies genannt werden, sind zu einem Symbol unserer gesamten Zivilisation geworden. Wenn diese "singenden" Kristalle vibrieren, "spielen" sie einen einzigartigen Klang, der die meisten fühlenden Wesen beruhigt.\n\nObwohl wir die Wunder der Shi'rakkat-Du normalerweise nicht mit Außenstehenden teilen, sind wir bereit, in eurem Fall eine Ausnahme zu machen. Wenn ihr es euch leisten könnt, wären wir bereit, euch zehn Standardjahre lang mit unseren Kristallen zu beliefern."
+ leviathans.132.a.reply:1 "Hervorragend. Unsere Händler werden sofort mit dem Transport der Kristalle zu euren Planeten beginnen. Mögen die Shi'rakkat-Du für euch singen."
  #leviathans.132.a:0 "Wir werden eure Kristalle kaufen."
 
  leviathans.133.name:0 "Strategische Ressource erlangt"
@@ -229,7 +229,7 @@
 
  ### GUARDIAN 300-399 ARTIST
  leviathans.300.name:0 "Die Künstlertruppe"
- leviathans.300.desc:0 "[my_country.GetRulerName], sei gegrüßt. Ich, [artist_enclave_country.GetRulerName], Direktor der Künstlertruppe, grüße dich.\nWas können wir für dich tun? Vielleicht ein Kunstwerk herstellen, an dem du dich erfreuen kannst? Oder möchtest du vielleicht unsere Enklave bei ihrer Schaffung von andersweltlicher Schönheit unterstützen?"
+ leviathans.300.desc:1 "Der Direktor der Künstlertruppe grüßt dich, [my_country.GetRulerName].\n\nWas können wir für dich tun? Vielleicht ein Kunstwerk herstellen, an dem du dich erfreuen kannst? Oder möchtest du vielleicht unsere Enklave bei ihrer Schaffung von andersweltlicher Schönheit unterstützen?"
  leviathans.300.desc.continued:0 "Nun gut. Können wir vielleicht etwas anderes für dich tun?"
  leviathans.300.a:0 "Wir möchten ein Kunstwerk in Auftrag geben."
  leviathans.300.a.reply:0 "Leider können wir dir nicht mehr anbieten, damit du nicht den Gefallen an denen verlierst, die du bereits gekauft hast. Wir dürfen unsere Integrität nicht außer Acht lassen, musst du wissen."
@@ -256,7 +256,7 @@
  leviathans.304.a.tooltip:0 "Erhält monatlich §G£opinion£ Meinung +1§! mit der §YKünstlertruppe§!\n\n"
  leviathans.304.a.reply:0 "Vielen herzlichen Dank! Dank deines großzügigen Beitrags sind wir jetzt in der Lage, das Konzept der Kunst an sich zu erweitern! Natürlich erhält jeder unsere Mäzene auch unseren regelmäßigen Newsletter."
  leviathans.307.desc:1 "Unsere Wirtschaft kann unser Mäzenatentum der Künstlertruppe nicht mehr unterstützen. Sie werden von unserem Reich keine weiteren Geldmittel erhalten. Dies wird unsere Beziehung zur Enklave sicherlich verbittern."
- leviathans.307.a.tooltip:0 "§REntfernt§! den Reichsmodifikator $enclave_artist_patron$"
+ leviathans.307.a.tooltip:0 "§REntfernt§! den Reichsmodifikator §Y$enclave_artist_patron$§!"
  leviathans.310.name:0 "Die Empörung"
  leviathans.310.desc:0 "Das von der Künstlertruppe organisierte Festival der Welten hat der Bevölkerung von [Root.GetName] große Freude bereitet. Leider war sie nicht von Dauer.\nAuf [this_planet.GetName] führten die Festival-Aktivitäten zu einer riesigen Massenpanik, bei der Tausende Bürger totgetrampelt wurden."
  leviathans.310.b:0 "Die Aufmerksamkeit der Medien ablenken"
@@ -346,7 +346,7 @@
  leviathans.506.a.reply:0 "Wir übermitteln euch jetzt die Erkundungsdaten."
 
  leviathans.507.name:0 "Forschungshilfe"
- leviathans.507.desc:1 "Natürlich. Wir sind bereit, euch begrenzten Zugang zu unseren umfangreichen Datenbanken für den Zeitraum von zehn Standardjahren zu bieten. Dies sollte einen erheblichen Schub für eure §HForschungslabore§! bieten.\n\nWir verlangen für diesen Dienst natürlich eine Gegenleistung, aber ich glaube ihr werdet feststellen, dass unser Preis vernünftig ist."
+ leviathans.507.desc:1 "Natürlich. Wir sind bereit, euch für den Zeitraum von zehn Standardjahren begrenzten Zugang zu unseren umfangreichen Datenbanken zu bieten. Dies sollte einen erheblichen Anschub für eure §HForschungslabore§! darstellen.\n\nWir verlangen für diesen Dienst natürlich eine Gegenleistung, doch ich glaube, ihr werdet feststellen, dass unser Preis vernünftig ist."
  leviathans.507.a:0 "Wir hätten diese Dienstleistung gerne gekauft."
  leviathans.507.a.reply:0 "Eine kluge Entscheidung, für die euch zukünftige [Root.GetSpeciesNamePlural]-Generationen zweifellos loben werden."
 
@@ -592,7 +592,7 @@
  # ENIGMATIC FORTRESS
  leviathans.2101.name:0 "Die Enigmatische Festung"
  leviathans.2101.desc:0 "Nachdem die Verteidigungsanlagen um die uralte Struktur herum außer Gefecht gesetzt wurden, könnten wir nun einen Weg zur Erkundung ihrer Geheimnisse finden. Die Struktur zu betreten oder zu überqueren, könnte schwierig werden. Aber wer sie gebaut hat, muss über Technologie verfügt haben, von der wir kaum träumen können. Wenn das nicht schon genug wäre, scheint sich die Festung auch noch zu erholen.\n\nEinige Anwesende, die bei der Entwaffnung der Festung geholfen hatten, meldeten sich freiwillig, um einen Weg hinein zu finden und sie zu erkunden. Unterstützt werden sie vom Hauptquartier auf [Root.Capital.GetName]. Unseren Teil zu erfüllen, wird uns zweifelsohne vor einige Herausforderungen stellen."
- leviathans.2101.desc.gesta:0 "Nachdem wir seine Verteidigung auseinandergenommen hatten, konnten wir schon bald ins Innere vordringen.\n\nSeine Korridore sind wie ein Labyrinth aus dichten Netzwerken aufgebaut und beweisen gleichermaßen, dass es fremd und undurchdringlich ist. Es gibt nur wenig für uns hier, aber die Festung könnte weiterhin eine Bedrohung darstellen. "
+ leviathans.2101.desc.gesta:0 "Nachdem wir seine Verteidigung auseinandergenommen hatten, konnten wir schon bald ins Innere vordringen.\n\nSeine Korridore sind wie ein Labyrinth aus dichten Netzwerken aufgebaut und beweisen gleichermaßen, dass es fremd und undurchdringlich ist. Es gibt nur wenig für uns hier, aber die Festung könnte weiterhin eine Bedrohung darstellen."
  guardian.fortress.continue:0 "Die Expedition des Außenteams geht weiter ..."
  leviathans.2101.a:0 "Das Startsignal geben."
  leviathans.2101.b:0 "Aus diesem Ding sollten wir besser herausbleiben."
@@ -601,7 +601,7 @@
  leviathans.2105.desc:0 "Am Rand des [fortress_system.GetName]-Systems haben wir eine gewaltige Weltrauminstallation entdeckt, die untätig im Weltall treibt. Obwohl erste Scans gezeigt haben, dass die Struktur sehr alt ist, verfügt sie über eine starke Energiesignatur. In der Nähe der Hauptstruktur scheinen mehrere kleinere, schwer bewaffnete Strukturen zu schweben.\n\nWenn wir mehr über dieses uralte Relikt erfahren möchten, müssen wir seine Verteidigungssysteme wohl mit Waffengewalt überwältigen ..."
  leviathans.2105.a:0 "Das wird nicht einfach werden."
  leviathans.2111.name:0 "Festung: Der Eingang"
- leviathans.2111.desc:0 "Trotz ganzer technologischer Zeitalter, die zwischen uns und den Erbauern der Festung stehen, gibt es eine zeitlose Gemeinsamkeit: eine verschlossene Tür. Nachdem wir die Festung zum Herunterfahren gezwungen haben, fanden wir sämtliche Eingänge verschlossen vor.\n\nDas Erkundungsteam fand bei der Festung eine Luftschleuse, die man anscheinend von außen öffnen kann. Sie scheint aber leider defekt zu sein. "
+ leviathans.2111.desc:0 "Trotz ganzer technologischer Zeitalter, die zwischen uns und den Erbauern der Festung stehen, gibt es eine zeitlose Gemeinsamkeit: eine verschlossene Tür. Nachdem wir die Festung zum Herunterfahren gezwungen haben, fanden wir sämtliche Eingänge verschlossen vor.\n\nDas Erkundungsteam fand bei der Festung eine Luftschleuse, die man anscheinend von außen öffnen kann. Sie scheint aber leider defekt zu sein."
  leviathans.2111.a:0 "Wir werden jemanden finden, der das Team unterstützen kann."
  leviathans.2111.a.tooltip:0 "Gibt Spezialprojekte aus: §Y$ENIGMATIC_FORTRESS_1A$§! und §Y$ENIGMATIC_FORTRESS_1B$§!"
  leviathans.2112.name:0 "Festung: Unkontrollierte Zerstörung"
@@ -789,7 +789,7 @@
  black_hole_pantagruel:1 "Der Spiegel des Wissens"
  black_hole_pantagruel_desc:1 "Das schwarze Loch Pantagruel ist zu einem Spiegel in ein neu geschaffenes Universum geworden. Sollten wir eine Station in seinem Orbit bauen, würde das unsere Forschungsbemühungen enorm voranbringen."
  black_hole_pantagruel_research:1 "$black_hole_pantagruel$"
- black_hole_pantagruel_research_desc:1 "Wir haben derzeit eine Station im Orbit des schwarzen Lochs Pantagruel. So können wir in sein Spiegeluniversum blicken und unsere Forschungsfähigkeiten verbessern."
+ black_hole_pantagruel_research_desc:2 "Wir haben derzeit eine Station im Orbit des schwarzen Lochs Pantagruel. So können wir in sein Spiegeluniversum blicken und unsere Forschungsfähigkeiten verbessern."
  technosphere_praising:0 "Technologie der Götter"
  technosphere_praising_desc:0 "Unser Leute preisen den gigantischen Kugelrechner als Zeichen der wahren Macht der Götter in unserer Welt."
 
@@ -899,3 +899,5 @@
  monthly_opinion1:0 "Monatliche Meinung: £opinion£ §G+1§!"
  monthly_opinion2:0 "Monatliche Meinung: £opinion£ §G+2§!"
  monthly_opinion3:0 "Monatliche Meinung: £opinion£ §G+3§!"
+ leader_trait_dragonbane:0 "Drachenfluch"
+ leader_trait_dragonbane_desc:0 "Dieser Anführer hat einige intensive Kämpfe erlebt, und er hat sie auch überlebt, um Geschichten davon erzählen zu können."

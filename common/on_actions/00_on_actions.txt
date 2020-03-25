@@ -108,6 +108,7 @@ on_decade_pulse = {
 		utopia.50
 		syndaw.10 # machine leader malfunction chance
 		syndaw.400 # machine uprising + warning events
+		galcom.14 # check if anyone's missing an invite to the Galactic Community
 	}
 }
 
@@ -1631,7 +1632,6 @@ on_fleet_enter_orbit = {
 #From = Joining member
 on_join_federation = {
 	events = {
-		action.202 # Cohesion Loss
 		fedev.499 # First Federation event
 	}
 }
@@ -1641,7 +1641,6 @@ on_join_federation = {
 on_leave_federation = {
 	events = {
 		action.201 # achievement flagging
-		action.202 # Cohesion Loss
 	}
 }
 

@@ -86,6 +86,7 @@ slave_overseer = {
 	
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = { has_non_swapped_tradition = tr_domination_judgment_corps }
 		}
 		modifier = {
@@ -307,12 +308,14 @@ purge = {
 		category = planet_jobs
 		produces = {
 			trigger = { 
+				exists = owner
 				owner = { has_valid_civic = civic_fanatic_purifiers } 
 			}
 			unity = 2
 		}
 		produces = {
 			trigger = { 	
+				exists = owner
 				owner = { has_valid_civic = civic_hive_devouring_swarm } 
 			}
 			society_research = 2
@@ -359,6 +362,8 @@ purge = {
 
 		modifier = {
 			factor = 200 # brings @special_job_weight up to 2
+			exists = planet
+			exists = planet.controller
 			OR = {
 				has_pop_flag = event_purge
 				planet.controller = {
@@ -377,6 +382,8 @@ purge = {
 
 		modifier = {
 			factor = 9999 # u die when crisis'd
+			exists = planet
+			exists = planet.controller
 			planet.controller = {
 				OR = {
 					is_country_type = swarm

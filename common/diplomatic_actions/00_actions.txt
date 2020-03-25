@@ -11,11 +11,12 @@
 #  should_show_accept_message, decides whether actor gets a response on acceptance (otherwise just on decline)
 #  should_show_auto_accept_message_recipient, boolean, decides if the recipient gets a message showing the diplomatic action.
 #  should_open_auto_accept_message_recipient, boolean, decides if the recipient automatically opens this message.
+#  should_notify_auto_recipient_on_vote_fail, boolean, decides if recipient is notified of vote failure if action was auto accepted.
 #  should_show_auto_accept_message_actor, boolean, decides if the actor gets a reply showing the diplomatic action.
 #  should_notify_all_communications, boolean, decides if a message notification is sent to all countries who have communications with actor or recipient
 #  AI_acceptance_base_value, default = 0
 #  potential, trigger, root is actor, from is recipient, decides if the action is shown
-#  possible, trigger, root is actor, from is recipient, decides if the action is still possible
+#  possible, trigger, root is actor, from is recipient, prev is either requester (if action is done in response to an ask_xxx counterpart) or same as root, decides if the action is still possible
 #  proposable, trigger, root is actor, from is recipient, decides if the action is proposable
 
 
@@ -31,6 +32,11 @@ action_improve_relation = {
 	requires_actor_independence = no
 	requires_recipient_independence = no
 	action_type = positive
+
+	potential = {
+		is_country_type = default
+		from = { is_country_type = default }
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -101,6 +107,11 @@ action_harm_relation = {
 	requires_actor_independence = no
 	requires_recipient_independence = no
 	action_type = negative
+
+	potential = {
+		is_country_type = default
+		from = { is_country_type = default }
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -1304,6 +1315,9 @@ action_invite_to_federation = {
 	should_notify_all_communications = yes
 	AI_acceptance_base_value = -50
 	action_type = positive
+	should_show_auto_accept_message_recipient = yes
+	should_open_auto_accept_message_recipient = yes
+	should_notify_auto_recipient_on_vote_fail = yes
 
 	potential = {
 		hidden_trigger = {
@@ -1399,6 +1413,7 @@ action_invite_to_federation = {
 			fail_text = "requires_excellent_or_better_opinion"
 
 			OR = {
+				from = { is_same_value = prevprev } # Bypass opinion check if we are proposing on behalf of recipient
 				opinion_level = { who = from level >= excellent }
 				is_improving_relations_with = from
 			}
@@ -1418,7 +1433,7 @@ action_vote_for_federation_law = {
 	diplo_view_acceptance_icon = yes
 	AI_acceptance_base_value = -50
 	action_type = neutral
-	
+
 	potential = {
 		custom_tooltip = {
 			fail_text = "IS_AT_WAR"
@@ -1602,7 +1617,7 @@ action_ask_to_leave_federation = {
 
 # Open borders towards another empire, allowing their ships to traverse your territory. Usable by and against regular empires only.
 action_open_borders = {
-	icon = "GFX_diplomacy_status_closed_borders"
+	icon = "GFX_diplomacy_status_open_borders"
 	auto_accepted = yes
 	requires_actor_independence = no
 	requires_recipient_independence = no

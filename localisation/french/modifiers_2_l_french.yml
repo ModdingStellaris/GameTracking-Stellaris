@@ -191,3 +191,5 @@
  mod_damage_vs_country_type_gate_builders_mult:0 "Dégâts infligés aux constructeurs des portes"
  from_extra_federation_members:0 "Membres"
  empire_size_mods:0 "Extension de l'empire"
+ spiritualist_attraction_desc:0 "Des militants spiritualistes s'opposent à notre vision matérialiste du cosmos, au prétexte que cela limiterait notre développement culturel."
+ materialist_attraction_desc:0 "Des partisans du matérialisme militent pour le développement de notre société en cherchant des réponses plus tangibles et progressistes aux questions que nous nous posons quant au cosmos."

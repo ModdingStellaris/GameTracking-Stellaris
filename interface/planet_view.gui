@@ -5562,7 +5562,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = "DASH"
 			position = { x = 24 y = 7 }
-			maxWidth = 18
+			maxWidth = 24
 			maxHeight = 18
 			fixedSize = yes
 			format = center

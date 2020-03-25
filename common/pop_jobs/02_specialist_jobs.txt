@@ -253,6 +253,7 @@ priest = {
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_exalted_priesthood }
 			}
 			unity = 1
@@ -484,6 +485,7 @@ enforcer = {
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_police_state }
 			}
 			unity = 1
@@ -641,6 +643,7 @@ telepath = {
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_police_state }
 			}
 			unity = 1

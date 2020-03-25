@@ -31,7 +31,6 @@ law_category_fleet_contribution = {
 
 law_category_succession_type = {
 	laws = {
-		succession_type_diplomatic_weight
 		succession_type_rotation
 		succession_type_random
 		succession_type_challenge

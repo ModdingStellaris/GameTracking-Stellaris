@@ -254,6 +254,34 @@ country_event = {
 	}
 }
 
+#on_decade_pulse to catch any stragglers
+event = {
+	id = galcom.14
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_playable_country = {
+			is_galactic_community_member = no
+			NOT = { has_country_flag = galcom_form_nay }
+		}
+	}
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				is_galactic_community_member = no
+				NOT = { has_country_flag = galcom_form_nay }
+				any_playable_country = {
+					has_communications = prev
+					is_galactic_community_member = yes
+				}
+			}
+			country_event = { id = galcom.16 }
+		}
+	}
+}
+
 # Ask other potential applicants (HIDDEN)
 country_event = {
 	id = galcom.15
@@ -281,7 +309,7 @@ country_event = {
 			country_event = { id = galcom.16 }
 		}
 		# Check again for new possible applicants
-		country_event = { id = galcom.15 days = 60 }
+		country_event = { id = galcom.15 days = 90 }
 	}
 }
 

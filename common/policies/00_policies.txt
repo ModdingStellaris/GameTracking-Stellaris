@@ -952,6 +952,7 @@ interference = {
 		}
 
 		on_enabled = {
+			hidden_effect = { set_country_flag = encountered_first_primitive }
 		}
 
 		valid = {
@@ -986,6 +987,10 @@ interference = {
 			interference_active
 		}
 		modifier = {}
+
+		on_enabled = {
+			hidden_effect = { set_country_flag = encountered_first_primitive }
+		}
 
 		valid = {
 			NOR = {
@@ -1033,6 +1038,9 @@ interference = {
 				has_ethic = "ethic_pacifist"
 				has_ethic = "ethic_fanatic_pacifist"
 			}
+		}
+		on_enabled = {
+			hidden_effect = { set_country_flag = encountered_first_primitive }
 		}
 		policy_flags = {
 			interference_full
@@ -1909,6 +1917,12 @@ pre_sapients = {
 			}
 		}
 
+		on_enabled = {
+			hidden_effect = {
+				set_country_flag = found_presapients
+			}
+		}
+
 		policy_flags = {
 			pre_sapients_protect
 		}
@@ -1933,6 +1947,12 @@ pre_sapients = {
 			}
 		}
 
+		on_enabled = {
+			hidden_effect = {
+				set_country_flag = found_presapients
+			}
+		}
+
 		policy_flags = {
 			pre_sapients_allow
 		}
@@ -1950,6 +1970,12 @@ pre_sapients = {
 			is_synthetic_empire = no
 			NOT = {
 				has_valid_civic = civic_fanatic_purifiers
+			}
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				set_country_flag = found_presapients
 			}
 		}
 
@@ -1982,6 +2008,12 @@ pre_sapients = {
 			NOR = {
 				has_ethic = "ethic_xenophile"
 				has_ethic = "ethic_fanatic_xenophile"
+			}
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				set_country_flag = found_presapients
 			}
 		}
 
@@ -2258,7 +2290,18 @@ purge = {
 		valid = {
 			NOR = {
 				is_subject_type = signatory
-				has_ethic = ethic_gestalt_consciousness
+				AND = {
+					has_ethic = ethic_gestalt_consciousness
+					OR = {
+						is_galactic_community_member = no
+						NOR = {
+							is_active_resolution = "resolution_rulesofwar_reverence_for_life"
+							is_active_resolution = "resolution_rulesofwar_independent_tribunals"
+							is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
+							is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+						}
+					}
+				}
 				has_ethic = ethic_xenophile
 				has_ethic = ethic_fanatic_xenophile
 			}

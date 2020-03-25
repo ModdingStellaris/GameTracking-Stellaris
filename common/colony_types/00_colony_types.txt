@@ -1849,7 +1849,7 @@ col_ring_generator = {
 
 # Ecumenpolis
 col_ecu_mix = {
-	icon = 18
+	icon = 1
 
 	potential = {
 		is_planet_class = pc_city
@@ -1867,7 +1867,7 @@ col_ecu_mix = {
 
 # Ecumenpolis Foundry
 col_ecu_foundry = {
-	icon = 18
+	icon = 5
 
 	potential = {
 		is_planet_class = pc_city
@@ -1942,7 +1942,7 @@ col_ecu_foundry = {
 
 # Ecumenpolis Factory
 col_ecu_factory = {
-	icon = 18
+	icon = 6
 
 	potential = {
 		is_planet_class = pc_city
@@ -2018,7 +2018,7 @@ col_ecu_factory = {
 
 # Ecumenpolis Research
 col_ecu_research = {
-	icon = 18
+	icon = 8
 
 	potential = {
 		is_planet_class = pc_city
@@ -2075,7 +2075,7 @@ col_ecu_research = {
 
 # Machine World
 col_mac = {
-	icon = 18
+	icon = 1
 
 	potential = {
 		is_planet_class = pc_machine
@@ -2096,7 +2096,7 @@ col_mac = {
 
 # Machine World Foundry
 col_mac_foundry = {
-	icon = 18
+	icon = 5
 
 	potential = {
 		is_planet_class = pc_machine
@@ -2158,7 +2158,7 @@ col_mac_foundry = {
 
 # Machine World Factory
 col_mac_factory = {
-	icon = 18
+	icon = 6
 
 	potential = {
 		is_planet_class = pc_machine
@@ -2217,7 +2217,7 @@ col_mac_factory = {
 
 # Hive World
 col_hiv = {
-	icon = 18
+	icon = 1
 
 	potential = {
 		is_planet_class = pc_hive
@@ -2237,7 +2237,7 @@ col_hiv = {
 
 # Hive World Foundry
 col_hiv_foundry = {
-	icon = 18
+	icon = 5
 
 	potential = {
 		is_planet_class = pc_hive

@@ -12,6 +12,7 @@ allow_subjects_to_join_no = {
 				AND = {
 					NOT = { has_federation_law = allow_subjects_to_join_no }
 					has_modifier = federation_law_category_allow_subjects_to_join_cooldown
+					has_any_federation_law_in_category = law_category_allow_subjects_to_join
 				}
 			}
 		}
@@ -48,6 +49,7 @@ allow_subjects_to_join_yes = {
 				AND = {
 					NOT = { has_federation_law = allow_subjects_to_join_yes }
 					has_modifier = federation_law_category_allow_subjects_to_join_cooldown
+					has_any_federation_law_in_category = law_category_allow_subjects_to_join
 				}
 			}
 		}

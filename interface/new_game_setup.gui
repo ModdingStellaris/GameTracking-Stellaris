@@ -161,17 +161,6 @@ guiTypes = {
 			position = { x = 580 y = 530 }
 			clicksound = tab_click
 		}
-		
-		instantTextBoxType = {
-			name = "species_description"
-			position = { x = 585 y = 535 }
-			font = "cg_16b"
-			maxWidth = 430
-			maxHeight = 128
-			format = left
-			text_color_code = "E"
-			scrollbarType = "standardtext_slider"
-		}
 
 		containerWindowType = {
 			name = "origin_window"
@@ -190,7 +179,6 @@ guiTypes = {
 				name = "origin_icon"
 				position = { x = 10 y = 10 }
 				spriteType = "GFX_government_civic"
-				alwaysTransparent = yes
 			}
 
 			instantTextBoxType={
@@ -202,19 +190,17 @@ guiTypes = {
 				maxHeight = 20
 				fixedSize = yes
 				format = left
-				alwaysTransparent = yes
 			}
 
 			instantTextBoxType = {
 				name = "origin_desc"
 				position = { x = 10 y = 50 }
 				font = "cg_16b"
-				maxWidth = 430
+				maxWidth = 425
 				maxHeight = 80
 				format = left
 				text_color_code = "E"
-				scrollbarType = "standardtext_slider"
-				alwaysTransparent = yes
+				scrollbarType = "standardtext_slider_small"
 			}
 		}
 		

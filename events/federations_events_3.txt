@@ -57,6 +57,14 @@ ship_event = { #Conclusion to the anomaly (WENKWORT_CAT) of Wenkwort Artem's gar
 
     option = {
         name = MARVELOUS
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+		}
         begin_event_chain = {
 			event_chain = "wenkwort_chain"
 			target = owner
@@ -385,7 +393,7 @@ planet_event = { #Wenkwort's enforcer fleet is about to arrive
 
 ### Relic Rails ###
 
-# Gateway Event
+# Trigger Event
 planet_event = {
     id = federations3.1000
     hide_window = yes
@@ -405,8 +413,10 @@ planet_event = {
                 is_planet_class = pc_ringworld_habitable
                 is_planet_class = pc_cybrex
                 is_planet_class = pc_habitat
+                is_capital = yes
             }
             is_colony = yes
+            num_pops < 30
             OR = {
                 last_building_changed = building_luxury_residence
                 last_building_changed = building_communal_housing
@@ -700,7 +710,10 @@ planet_event = {
         name = REMARKABLE
         owner = {
             medium_artifact_reward = yes
-            add_modifier = { modifier = peeyeps_legacy }
+            add_modifier = {
+                modifier = peeyeps_legacy
+                days = 4320
+            }
         }
     }
 }

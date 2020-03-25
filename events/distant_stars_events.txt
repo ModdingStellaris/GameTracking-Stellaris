@@ -6561,6 +6561,7 @@ country_event = { #Spawn Ratlings #Root = Global Event Country
 				civic = civic_functional_architecture
 				civic = civic_mining_guilds
 			}
+			origin = origin_default
 			flag = {
 				icon = {
 					category = "zoological"

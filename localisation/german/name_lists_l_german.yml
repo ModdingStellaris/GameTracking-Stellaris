@@ -149,7 +149,7 @@
  PLANT_sound_05:1 "Welken"
  PLANT_organ:1 "Nucellus"
  PLANT_mouth:1 "Blütenkelch"
- PLANT_hand:1 "$PRE_FUN_hand$"
+ PLANT_hand:0 "$PRE_FUN_hand$"
  PRE_MAM:0 "Säugetier"
  PRE_MAM_desc:0 ""
  PRE_MAM_plural:0 "Säugetiere"

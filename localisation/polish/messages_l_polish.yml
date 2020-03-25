@@ -435,3 +435,5 @@
  ACTION_BREAK_RESEARCH_AGREEMENT_NOTIFICATION:0 "§H[From.GetName]§! zrywa porozumienie badawcze z imperium §H[Root.GetAdj]§!.\n\nChyba nie chcą dłużej dzielić się tajemnicami..."
  ACTION_DEMAND_SUBSIDIARY_NOTIFICATION:0 "§H[From.GetName]§! czyni spółkę zależną z imperium §H[Root.GetName]§!.\n\nW zamian za bezpieczeństwo stało się ono zasobem korporacyjnym."
  ACTION_ASK_TO_BECOME_SUBSIDIARY_NOTIFICATION:0 "§H[Root.GetName]§! czyni spółkę zależną z imperium §H[From.GetName]§!.\n\nW zamian za bezpieczeństwo stało się ono zasobem korporacyjnym."
+ ACTION_OFFER_PEACE_VOTE_PASSED:0 "§H[Actor.GetAllianceName]§! głosuje za podpisaniem propozycji pokoju z imperium §H[Recipient.GetName]§!."
+ ACTION_OFFER_PEACE_VOTE_FAILED:0 "§H[Actor.GetAllianceName]§! głosuje za odrzuceniem propozycji pokoju z imperium §H[Recipient.GetName]§!."

@@ -378,7 +378,7 @@ guiTypes = {
 				name = "job_number"
 				position = { x=33 y = 44 }
 				font = "malgun_goth_24"
-				maxWidth = 28
+				maxWidth = 48
 				maxHeight = 28
 				text = "0"
 				format = left

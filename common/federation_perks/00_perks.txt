@@ -371,7 +371,7 @@ envoy_unity_2 = {
 cohesion_join_1 = {
 	federation_modifier = {
 		description = cohesion_join_1_effect
-		federation_join_malus_mult = 0.5
+		federation_join_malus_mult = -0.5
 	}
 }
 cohesion_failed_vote_1 = {

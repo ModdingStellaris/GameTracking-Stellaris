@@ -605,7 +605,13 @@ country_event = {
 	}
 
 	after = {
-		country_event = { id = fedel.905 days = 2 }
+		hidden_effect = {
+			federation = {
+				every_member = {
+					country_event = { id = fedel.905 days = 360 }
+				}
+			}
+		}
 	}
 
 	option = {

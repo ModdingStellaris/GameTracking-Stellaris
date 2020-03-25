@@ -1,4 +1,3 @@
-
 ################ Federations Megastructure  ################# 
 
 
@@ -144,6 +143,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = feda.6.a
+		name = EXCELLENT
 	}
 }

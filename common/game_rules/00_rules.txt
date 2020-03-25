@@ -1028,6 +1028,28 @@ can_resettle_pop = {
 		limit = { is_shackled_robot = yes }
 		is_shackled_robot = yes
 	}
+	ELSE_IF = {
+		limit = {
+			planet = {
+				OR = {
+					has_modifier = doomsday_1
+					has_modifier = doomsday_2
+					has_modifier = doomsday_3
+					has_modifier = doomsday_4
+					has_modifier = doomsday_5
+				}
+			}
+		}
+		planet = {
+			OR = {
+				has_modifier = doomsday_1
+				has_modifier = doomsday_2
+				has_modifier = doomsday_3
+				has_modifier = doomsday_4
+				has_modifier = doomsday_5
+			}
+		}
+	}
 	ELSE = {
 		owner = {
 			OR = {
@@ -1049,6 +1071,15 @@ can_resettle_planet = {
 			is_gestalt = yes
 			any_owned_pop = {
 				is_shackled_robot = yes
+			}
+			any_owned_planet = {
+				OR = {
+					has_modifier = doomsday_1
+					has_modifier = doomsday_2
+					has_modifier = doomsday_3
+					has_modifier = doomsday_4
+					has_modifier = doomsday_5
+				}
 			}
 		}
 	}
@@ -1310,7 +1341,7 @@ can_be_part_of_galactic_community = {
 		has_civic = civic_fanatic_purifiers
 		has_civic = civic_hive_devouring_swarm
 		has_civic = civic_machine_terminator
-	}	
+	}
 }
 
 # This = country
@@ -1329,7 +1360,7 @@ can_be_part_of_galactic_council = {
 		has_civic = civic_fanatic_purifiers
 		has_civic = civic_hive_devouring_swarm
 		has_civic = civic_machine_terminator
-	}	
+	}
 }
 
 # If, 'yes', forces an empire to be advanced at game start (overrides game settings)

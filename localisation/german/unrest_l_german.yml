@@ -72,7 +72,7 @@
 
  unrest.4220.name:0 "[From.GetName]-Annektierungsanfrage"
  unrest.4220.desc:0 "Sei gegrüßt, [Root.GetRulerTitle] [Root.GetRulerName]. Ich bin [From.GetRulerTitle] [From.GetRulerName] von [From.GetName], und ich spreche für das Volk von [From.From.GetName].\n\nWir haben uns jüngst aus den [rebelled_against.GetName]-Fängen befreit. Wir sind eine junge Nation und für ... räuberische Mächte immer noch ein leichtes Ziel. Viele von uns erinnern sich gerne an die [Root.GetAdj]e Herrschaft auf diesem Planeten zurück - wir bitten demütig darum, dass ihr uns wieder zurücknehmt."
- unrest.4220.a:0 "Wir werden euch eure hart erkämpfte Unabhängigkeit nicht gänzlich abnehmen."
+ unrest.4220.a:0 "Wir werden euch eure hart erkämpfte Unabhängigkeit nicht §Ygänzlich§! abnehmen."
  unrest.4220.a.tooltip:0 "§Y[From.GetName]§! vasallisieren."
  unrest.4220.b:0 "Wir waren schon immer ein Volk."
  unrest.4220.b.tooltip:0 "§Y[From.From.GetName]§! sofort annektieren."

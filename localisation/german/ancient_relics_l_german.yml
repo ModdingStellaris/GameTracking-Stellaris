@@ -105,7 +105,7 @@
  d_former_relic_world:0 "Ehemalige Reliktwelt"
  d_former_relic_world_desc:0 "Diese Ökumenopolis war einst eine verlassene Reliktwelt. Die meisten der alten Ruinen wurden beim Wiederaufbau der planetenumfassende Stadt umgestaltet oder abgetragen, aber es gibt noch immer viele Stätten, die von wissenschaftlichem Wert sind."
 
- CREATE_ARCHAEOLOGIC_SITE_TYPE:0 "Erstellt eine archäologische Stätte vom Typ $TYPE$ auf $WHERE|Y$\n"
+ CREATE_ARCHAEOLOGIC_SITE_TYPE:0 "Erstellt eine archäologische Stätte des Typs $TYPE$ auf $WHERE|Y$\n"
  CREATE_ARCHAEOLOGIC_SITE_RANDOM:0 "Erstellt eine zufällige archäologische Stätte auf $WHERE|Y$\n"
  DESTROY_ARCHAEOLOGIC_SITE:0 "Zerstört die archäologische Stätte $NAME|Y$\n"
  FLEETORDER_EXCAVATE_BUTTON:0 "Archäologische Stätte ausgraben"
@@ -283,7 +283,7 @@
  artifact_find_applications_cooldown:0 "Abklingzeit (Studium kleinerer Artefakte)"
  artifact_find_peaceful_applications:0 "Friedliche Anwendung finden"
  artifact_find_peaceful_applications_desc:0 "Versucht eine friedliche Anwendungsmöglichkeit für kleinere Artefakte zu finden."
- artifact_find_peaceful_applications_effect:1 "Zerlegt £minor_artifacts£kleinere Artefakte für zahlreiche nicht-militärische Boni.\n\nies durchzuführen wird Euch für eine Zeit lang daran hindern, militärische Anwendungsmöglichkeiten zu nutzen.\n\nAbklingzeit: £time£ §Y900§!"
+ artifact_find_peaceful_applications_effect:1 "Zerlegt £minor_artifacts£kleinere Artefakte für zahlreiche nicht-militärische Boni.\n\nDies durchzuführen wird Euch eine Zeit lang daran hindern, militärische Anwendungsmöglichkeiten zu nutzen.\n\nAbklingzeit: £time£ §Y900§!"
  artifact_find_peaceful_applications_no_cooldown:0 "$artifact_find_military_applications_no_cooldown$"
  artifact_find_peaceful_application_happy_bios:0 "Uralter Trend"
  artifact_find_peaceful_application_happy_bios_desc:0 "Das Studium kleinerer Artefakte hat unerwartet einen viralen Trend in Eurem Reich ausgelöst. Jeder macht es."
@@ -559,7 +559,7 @@
  r_pox_sample:0 "Probe der javorianischen Pocken"
  r_pox_sample_desc:0 "Eine Probe der gefürchteten javorianischen Pocken, die die Irassianer auslöschte. Obwohl er für die meisten anderen Lebensformen harmlos ist, hat der Virus, der die Krankheit verursacht, viele einzigartige genetische Eigenschaften, von denen einige das Leben der meisten organischen Lebewesen tatsächlich verlängern könnten.\n\nDas Virus könnte auch verwendet werden, um einen neuen Stamm der javorianischen Pocken heranzuzüchten, der auch Nicht-Irassianer infizieren kann. Er wird zwar nicht so ansteckend oder tödlich sein, wie es die ursprüngliche Krankheit für die Irassianer war, würde aber immer noch eine starke biologische Waffe darstellen."
  r_cryo_core:0 "Kryonischer Kern der Yuth"
- r_cryo_core_desc:0 "Da die Yuht nie die Existenz eines Hyperraums entdeckten, waren sie von ihrer langen Lebensdauer und der kryogenen Technologie abhängig, um zwischen den Sternen zu reisen. Dieser Prototyp eines kryonischen Kerns wurde von Yuht-Wissenschaftlern kurz vor dem Fall ihres Reiches an die Jabbardeeni geschaffen.\n\nDas Kryofeld, das durch diesen Kern erzeugt wird, liegt weit über unserem derzeitigen Stand der Technik."
+ r_cryo_core_desc:0 "Da die Yuht nie die Existenz eines Hyperraums entdeckten, waren sie von ihrer langen Lebensdauer und der kryogenen Technologie abhängig, um zwischen den Sternen zu reisen. Dieser Prototyp eines kryonischen Kerns wurde von Yuht-Wissenschaftlern kurz vor dem Fall ihres Reiches an die Jabbardeeni geschaffen.\n\nDas Kryofeld, das durch diesen Kern erzeugt wird, liegt weit über unserem derzeitigen Stand der Technik. "
  r_war_forge:0 "Kriegsschmiede der Cybrex"
  r_war_forge_desc:0 "Eine relativ kleine und tragbare Kriegsschmiede und die letzte ihrer Art im Universum. Sie ist ein Überbleibsel aus der Zeit, als die Cybrex der Galaxie den Krieg erklärten, noch bevor sie sich durch ihre "Anpassung" änderten.\n\nDie Fähigkeit der Schmiede, Kriegsmaschinen herzustellen, wurde durch die Cybrex dauerhaft deaktiviert, aber wenn sie einen Bauplan erhält, kann sie dennoch schnell komplexere Roboter bauen."
 
@@ -603,7 +603,7 @@
  oracle_administration:0 "Orakel"
  oracle_administration_desc:0 "Das Orakel verwaltet das Reich wie eine gut geölte Maschine ... wenn man sie denn ölt."
  chosen_of_zarqlan:0 "Die Auserwählten von Zarqlan"
- chosen_of_zarqlan_desc:0 "Als auserwählte von Zarqlan können wir ohne Gefahr Heilige Welten kolonisieren."
+ chosen_of_zarqlan_desc:0 "Als Auserwählte von Zarqlan können wir ohne Gefahr Heilige Welten kolonisieren."
  the_memorex:0 "Die Memorex"
  the_memorex_desc:0 "Das Memorex-Programm zum verbesserten Lernen schult die Bevölkerung während sie schläft, damit diese besser den Bedürfnissen des Reiches entspricht und verbessert ihre Leistung erheblich."
  opinion_destroyed_caravaneer_home:0 "Zerstörte die Heimat der Reisenden"
@@ -647,7 +647,7 @@
  ancrel.7006.b:0 "Fragt $relic_zro_entity_name$ über Angelegenheiten kriegerischer Natur."
  ancrel.7006.c:0 "Fragt $relic_zro_entity_name$ über Angelegenheiten der Staatskunst."
  ancrel.7007.name:0 "$r_galaxy$"
- ancrel.7007.desc:0 "In der Miniaturgalaxie fließt die Zeit schneller und während wir ihre Bewohner genau beobachten, können wir viel über fortschrittliche Technologien lernen."
+ ancrel.7007.desc:1 "In der Miniaturgalaxie fließt die Zeit schneller und während wir ihre Bewohner genau beobachten, können wir viel über fortschrittliche Technologien lernen."
  
  ##################
  # RINGWORLD SEGMENTS
@@ -682,7 +682,7 @@
  d_archaeological_site:0 "£blocker£ Archäologische Stätte"
  d_archaeological_site_desc:0 "Diese Region enthält antike archäologische Funde, die ausgegraben werden können."
  d_sentinels:0 "£blocker£ Wächter"
- d_sentinels_desc:0 "Dieses Land wird von den Wächtern beschützt. Sie dürfen nicht gestört werden."
+ d_sentinels_desc:1 "Dieses Land wird von den Wächtern beschützt. Sie dürfen nicht gestört werden. Die Wächter gelten als Verteidigungsarmeen und werden den Planeten bei einer Invasion verteidigen."
  d_hab_gas_1:0 "Exotisches Gasvorkommen"
  d_hab_gas_1_desc:0 "Dieses Habitat befindet sich in der Nähe einer ausbeutbaren Lagerstätte für exotische Gase."
  d_hab_gas_2:0 "$d_hab_gas_1$"
@@ -810,3 +810,4 @@
  herald_25:0 "$herald_75$"
  NAME_Sentinels:0 "Wächter"
  sentinels_army:0 "Wächter"
+ sentinel_army:0 "Wächter"

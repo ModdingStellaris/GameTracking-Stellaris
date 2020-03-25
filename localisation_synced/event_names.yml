@@ -498,3 +498,13 @@
  NAME_wenkwort_3: "Burave"
  NAME_wenkwort_4: "Machren"
  NAME_Gardeners: "Audon Caretakers"
+ NAME_wenkwort_asteroid: "Truin"
+ NAME_Wenkwort_Keeper: "Audon Custodian" #Species
+ NAME_Wenkwort_Keepers: "Audon Custodians"
+ NAME_Gardener_Drones: "Caretaker Division 14-WW" #Fleet
+ NAME_Gardener_Drone: "Audon Caretaker Unit" #Ship Design
+ NAME_Gardener1: "CT Perton"
+ NAME_Gardener2: "CT Sparton-Bron"
+ NAME_Gardener3: "CT Whisenton"
+ NAME_Wenkwort_Enforcers: "Enforcer Division 61-VL" #Fleet
+ NAME_Wenkwort_Enforcer: "Audon Cruiser" #Ship Design

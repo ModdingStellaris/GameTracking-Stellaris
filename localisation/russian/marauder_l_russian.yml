@@ -173,6 +173,8 @@
  leader_trait_general_mercenary_warrior_desc:0 "$leader_trait_mercenary_warrior_desc$"
  leader_trait_great_khan:0 "Великий хан"
  leader_trait_great_khan_desc:0 "Великий хан - это харизматичный лидер, блестящий тактик и, если слухи не врут, мощный экстрасенс."
+ leader_trait_ruler_great_khan:0 "$leader_trait_great_khan$"
+ leader_trait_ruler_great_khan_desc:0 "$leader_trait_great_khan_desc$"
  marauder.50.name:0 "Завершение контракта с наемниками"
  marauder.50.desc:0 "Наш контракт с наемниками из империи §H[Root.GetName]§! подошел к концу. Их лидер, адмирал [Root.Leader.GetName], предлагает немедленно продлить использование нами кораблей под [Root.Leader.GetHerHis] командованием еще на пять лет... за дополнительную плату.\n\nЕсли мы откажемся, то наемники отправятся искать себе работу в другом месте."
  marauder.50.a:0 "Продлить контракт."

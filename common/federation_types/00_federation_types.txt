@@ -28,7 +28,9 @@
 
 default_federation = {
 	icon = "GFX_default_federation"
-	potential = { always = yes }
+	potential = {
+		always = yes
+	}
 	allow = {
 		custom_tooltip = {
 			fail_text = requires_actor_not_barbaric_despoilers
@@ -292,7 +294,9 @@ default_federation = {
 
 trade_federation = {
 	icon = "GFX_trade_federation"
-	potential = { host_has_dlc = Federations }
+	potential = {
+		host_has_dlc = Federations
+	}
 	allow = {
 		custom_tooltip = {
 			fail_text = requires_megacorp_or_merchant
@@ -563,7 +567,9 @@ trade_federation = {
 
 research_federation = {
 	icon = "GFX_research_federation"
-	potential = { host_has_dlc = Federations }
+	potential = {
+		host_has_dlc = Federations
+	}
 	allow = {
 		OR = {
 			is_materialist = yes
@@ -830,7 +836,9 @@ research_federation = {
 
 military_federation = {
 	icon = "GFX_military_federation"
-	potential = { host_has_dlc = Federations }
+	potential = {
+		host_has_dlc = Federations
+	}
 	allow = {
 		is_militarist = yes
 	}
@@ -1090,7 +1098,9 @@ military_federation = {
 
 hegemony_federation = {
 	icon = "GFX_hegemony_federation"
-	potential = { host_has_dlc = Federations }
+	potential = {
+		host_has_dlc = Federations
+	}
 	allow = {
 		OR = {
 			has_civic = civic_machine_servitor

@@ -175,3 +175,5 @@
  mod_damage_vs_country_type_gate_builders_mult:0 "Daño a los constructores del portal"
  from_extra_federation_members:0 "De miembros"
  empire_size_mods:0 "Tamaño del imperio"
+ spiritualist_attraction_desc:0 "Un grupo de espiritualistas pone en tela de juicio las visiones materialistas del cosmos porque cree que limitan nuestro crecimiento cultural."
+ materialist_attraction_desc:0 "Un grupo de materialistas busca nuestro avance cultural con respuestas más tangibles y progresistas."

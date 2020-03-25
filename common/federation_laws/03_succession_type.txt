@@ -1,50 +1,4 @@
 @cooldown = 3600
-#Remove later
-succession_type_diplomatic_weight = {
-	potential = { always = no }
-	allow = { 
-		custom_tooltip = {
-			NOT = {
-				AND = {
-					NOT = { has_federation_law = succession_type_diplomatic_weight }
-					has_modifier = federation_law_category_succession_type_cooldown
-				}
-			}
-		}
-	}
-	on_enact = {
-		set_federation_succession_type = diplomatic_weight
-		if = {
-			limit = { has_federation_flag = enable_federation_cooldowns }
-			add_modifier = {
-				modifier = federation_law_category_succession_type_cooldown
-				days = @cooldown
-			}
-		}
-		add_cohesion = -5
-	}
-	
-	ai_weight = {
-		base = 1
-		modifier = {
-			add = 25
-			OR = {
-				has_ai_personality = federation_builders
-				has_ai_personality = harmonious_hierarchy
-				has_ai_personality = democratic_crusaders
-			}
-		}
-		modifier = {
-			add = 50
-			has_ai_personality = fanatic_befrienders
-		}
-		modifier = {
-			add = 100
-			is_federation_leader = yes
-			federation = { has_federation_law = succession_type_diplomatic_weight }
-		}
-	}
-}
 
 succession_type_rotation = {
 	potential = { always = yes }
@@ -54,7 +8,16 @@ succession_type_rotation = {
 				AND = {
 					NOT = { has_federation_law = succession_type_rotation }
 					has_modifier = federation_law_category_succession_type_cooldown
+					has_any_federation_law_in_category = law_category_succession_type
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_type_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_type_rotation }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_type
 			}
 		}
 	}
@@ -95,40 +58,28 @@ succession_type_rotation = {
 			add = 25
 			federation = {			
 				federation_cohesion < 0
-				OR = {
-					has_federation_law = succession_type_diplomatic_weight
-					has_federation_law = succession_type_strongest
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 		modifier = {
 			add = 25
 			federation = {			
 				federation_cohesion < -25
-				OR = {
-					has_federation_law = succession_type_diplomatic_weight
-					has_federation_law = succession_type_strongest
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 		modifier = {
 			add = 25
 			federation = {			
 				federation_cohesion < -50
-				OR = {
-					has_federation_law = succession_type_diplomatic_weight
-					has_federation_law = succession_type_strongest
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 		modifier = {
 			add = 25
 			federation = {			
 				federation_cohesion < -75
-				OR = {
-					has_federation_law = succession_type_diplomatic_weight
-					has_federation_law = succession_type_strongest
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 		
@@ -137,10 +88,7 @@ succession_type_rotation = {
 			add = -100
 			is_federation_leader = yes
 			federation = {
-				OR = {
-					has_federation_law = succession_type_diplomatic_weight
-					has_federation_law = succession_type_strongest
-				}
+				has_federation_law = succession_type_strongest
 			}
 		}
 		modifier = {
@@ -170,7 +118,16 @@ succession_type_challenge = {
 				AND = {
 					NOT = { has_federation_law = succession_type_challenge }
 					has_modifier = federation_law_category_succession_type_cooldown
+					has_any_federation_law_in_category = law_category_succession_type
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_type_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_type_challenge }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_type
 			}
 		}
 	}
@@ -265,7 +222,16 @@ succession_type_random = {
 				AND = {
 					NOT = { has_federation_law = succession_type_random }
 					has_modifier = federation_law_category_succession_type_cooldown
+					has_any_federation_law_in_category = law_category_succession_type
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_type_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_type_random }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_type
 			}
 		}
 	}
@@ -337,7 +303,16 @@ succession_type_strongest = {
 				AND = {
 					NOT = { has_federation_law = succession_type_strongest }
 					has_modifier = federation_law_category_succession_type_cooldown
+					has_any_federation_law_in_category = law_category_succession_type
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_type_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_type_strongest }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_type
 			}
 		}
 	}
@@ -396,9 +371,18 @@ succession_type_strongest_hegemony = {
 		custom_tooltip = {
 			NOT = {
 				AND = {
-					NOT = { has_federation_law = succession_type_strongest }
+					NOT = { has_federation_law = succession_type_strongest_hegemony }
 					has_modifier = federation_law_category_succession_type_cooldown
+					has_any_federation_law_in_category = law_category_succession_type
 				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = cannot_change_succession_type_during_war
+			NAND = {
+				NOT = { has_federation_law = succession_type_strongest_hegemony }
+				any_member = { is_at_war = yes }
+				has_any_federation_law_in_category = law_category_succession_type
 			}
 		}
 	}

@@ -617,3 +617,4 @@
  STARBASE_BUILD_NOT_AN_OWNER:0 "§RNie posiada bazy gwiezdnej!§!"
  FLEET_TEMPLATE_COMMAND_MAX_MULTIPLE:0 "Dodanie tej liczby okrętów ($NUM|Y$) spowoduje przekroczenie limitu dowodzenia floty."
  FLEET_TEMPLATE_COMMAND_MIN_MULTIPLE:0 "Nie można usunąć tej liczby okrętów ($NUM|Y$) z szablonu floty."
+ MEGASTRUCTURE_BUILD_CANNOT_MOVE_TO_TARGET:0 "Nie możesz zbudować bramy kosmicznej w układzie znajdującym się poza zasięgiem."

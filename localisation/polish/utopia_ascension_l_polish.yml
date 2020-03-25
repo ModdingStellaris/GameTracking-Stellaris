@@ -42,3 +42,4 @@
  utopia.3401.c:0 "To poważny krok naprzód."
  master_builders_habitats:1 "$ap_voidborn$ - ekspansja"
  master_builders_habitats_desc:0 "Ta $pc_habitat$ została rozbudowana o §Y2§! dodatkowe $MOD_PLANET_MAX_DISTRICTS_ADD$."
+ anomaly.2575.desc.3:0 "$anomaly.2575.desc.intro$\n\nNiestety §Ysfera Dysona§! w tym układzie uniemożliwia odbudowę planety."

@@ -40,3 +40,5 @@
  utopia.108.name:0 "¡El Dr. Xhaxxore ha huido!"
  utopia.108.desc:0 "A los [target_country.GetSpeciesNamePlural] no les gustó que negásemos nuestra participación en el secuestro de los de su especie. Encima, el Dr. Xhaxxore, al enterarse de los problemas, ha huido y se ha llevado la esencia consigo, por lo que es imposible producir más crema Eterno."
  utopia.108.a:0 "Maldición..."
+ utopia.4100.a.tooltip:0 "§H$spy_orb_0$§! está en su lugar, esperando a ver cómo se desarrollan las cosas antes de activarse."
+ utopia.4103.a.tooltip:0 "§H$spy_orb_1$§! se ha activado. El alcance de nuestros sensores ha aumentado."

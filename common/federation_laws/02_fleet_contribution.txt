@@ -14,6 +14,7 @@ fleet_contribution_none = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_none }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -28,6 +29,9 @@ fleet_contribution_none = {
 				modifier = federation_law_category_fleet_contribution_cooldown
 				days = @cooldown
 			}
+		}
+		hidden_effect = {
+			set_federation_flag = no_federation_fleet
 		}
 	}
 
@@ -93,6 +97,7 @@ fleet_contribution_low = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_low }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -118,6 +123,18 @@ fleet_contribution_low = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -202,6 +219,7 @@ fleet_contribution_medium = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_medium }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -227,6 +245,18 @@ fleet_contribution_medium = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -315,6 +345,7 @@ fleet_contribution_high = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_high }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -340,6 +371,18 @@ fleet_contribution_high = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -396,6 +439,7 @@ fleet_contribution_low_trade = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_low_trade }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -421,6 +465,18 @@ fleet_contribution_low_trade = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -509,6 +565,7 @@ fleet_contribution_medium_trade = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_medium_trade }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -534,6 +591,18 @@ fleet_contribution_medium_trade = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -626,6 +695,7 @@ fleet_contribution_high_trade = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_high_trade }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -651,6 +721,18 @@ fleet_contribution_high_trade = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -711,6 +793,7 @@ fleet_contribution_low_research = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_low_research }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -736,6 +819,18 @@ fleet_contribution_low_research = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -820,6 +915,7 @@ fleet_contribution_medium_research = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_medium_research }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -845,6 +941,18 @@ fleet_contribution_medium_research = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -898,6 +1006,7 @@ fleet_contribution_low_martial = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_low_martial }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -923,6 +1032,18 @@ fleet_contribution_low_martial = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -1007,6 +1128,7 @@ fleet_contribution_medium_martial = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_medium_martial }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -1032,6 +1154,18 @@ fleet_contribution_medium_martial = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -1120,6 +1254,7 @@ fleet_contribution_high_martial = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_high_martial }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -1145,6 +1280,18 @@ fleet_contribution_high_martial = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -1201,6 +1348,7 @@ fleet_contribution_low_hegemony = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_low_hegemony }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -1226,6 +1374,18 @@ fleet_contribution_low_hegemony = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -1310,6 +1470,7 @@ fleet_contribution_medium_hegemony = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_medium_hegemony }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -1335,6 +1496,18 @@ fleet_contribution_medium_hegemony = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -1419,6 +1592,7 @@ fleet_contribution_high_hegemony = {
 				AND = {
 					NOT = { has_federation_law = fleet_contribution_high_hegemony }
 					has_modifier = federation_law_category_fleet_contribution_cooldown
+					has_any_federation_law_in_category = law_category_fleet_contribution
 				}
 			}
 		}
@@ -1444,6 +1618,18 @@ fleet_contribution_high_hegemony = {
 			}
 		}
 		add_cohesion = -5
+		hidden_effect = {
+			if = {
+				limit = {
+					has_federation_flag = no_federation_fleet
+				}
+				remove_federation_flag = no_federation_fleet
+				set_timed_federation_flag = {
+					flag = no_federation_fleet_build_right_cooldown
+					days = 10
+				}
+			}
+		}
 	}
 	
 	ai_weight = {

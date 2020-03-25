@@ -435,3 +435,5 @@
  ACTION_BREAK_RESEARCH_AGREEMENT_NOTIFICATION:0 "§H[From.GetName]§! rompeu seu Acordo de Pesquisa com §H[Root.GetName]§!.\n\nParece que eles não querem mais compartilhar seus segredos."
  ACTION_DEMAND_SUBSIDIARY_NOTIFICATION:0 "§H[From.GetName]§! transformou §H[Root.GetName]§! em um Subsidiário.\n\nEles se tornaram um ativo corporativo em troca de segurança."
  ACTION_ASK_TO_BECOME_SUBSIDIARY_NOTIFICATION:0 "§H[Root.GetName]§! transformou §H[From.GetName]§! em um Subsidiário.\n\nEles se tornaram um ativo corporativo em troca de segurança."
+ ACTION_OFFER_PEACE_VOTE_PASSED:0 "§H[Actor.GetAllianceName]§! votou para aceitar a assinatura da oferta de paz com §H[Recipient.GetName]§!."
+ ACTION_OFFER_PEACE_VOTE_FAILED:0 "§H[Actor.GetAllianceName]§! votou para recusar a assinatura da oferta de paz com §H[Recipient.GetName]§!."

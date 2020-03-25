@@ -8,6 +8,7 @@ federation_build_fleets_everyone = {
 				AND = {
 					NOT = { has_federation_law = federation_build_fleets_everyone }
 					has_modifier = federation_law_category_build_fleets_cooldown
+					has_any_federation_law_in_category = law_category_build_fleets
 				}
 			}
 		}
@@ -15,6 +16,10 @@ federation_build_fleets_everyone = {
 	on_enact = {
 		set_only_leader_builds_fleets = no
 		if = {
+			limit = { has_federation_flag = no_federation_fleet_build_right_cooldown }
+			remove_federation_flag = no_federation_fleet_build_right_cooldown
+		}
+		else_if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
 			add_modifier = {
 				modifier = federation_law_category_build_fleets_cooldown
@@ -41,6 +46,7 @@ federation_build_fleets_only_leader = {
 				AND = {
 					NOT = { has_federation_law = federation_build_fleets_only_leader }
 					has_modifier = federation_law_category_build_fleets_cooldown
+					has_any_federation_law_in_category = law_category_build_fleets
 				}
 			}
 		}
@@ -51,6 +57,10 @@ federation_build_fleets_only_leader = {
 	on_enact = {
 		set_only_leader_builds_fleets = yes
 		if = {
+			limit = { has_federation_flag = no_federation_fleet_build_right_cooldown }
+			remove_federation_flag = no_federation_fleet_build_right_cooldown
+		}
+		else_if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
 			add_modifier = {
 				modifier = federation_law_category_build_fleets_cooldown

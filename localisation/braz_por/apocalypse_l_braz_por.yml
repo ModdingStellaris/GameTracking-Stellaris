@@ -618,3 +618,4 @@
  STARBASE_BUILD_NOT_AN_OWNER:0 "§RNão é dono de uma base estelar!§!"
  FLEET_TEMPLATE_COMMAND_MAX_MULTIPLE:0 "Adicionar $NUM|Y$ naves iria além do limite de comando da frota."
  FLEET_TEMPLATE_COMMAND_MIN_MULTIPLE:0 "Não é possível remover $NUM|Y$ naves do modelo de frota"
+ MEGASTRUCTURE_BUILD_CANNOT_MOVE_TO_TARGET:0 "Não é possível construir um Portal em um sistema inatingível"

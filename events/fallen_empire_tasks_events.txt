@@ -737,12 +737,11 @@ country_event = {
 	
 	trigger = {
 		num_pops > 10
-		NOT = { has_authority = auth_machine_intelligence }
+		is_gestalt = no
 		is_mechanical_empire = no	
 		is_country_type = default
 		NOR = {
 			has_valid_civic = civic_machine_terminator
-			has_valid_civic = civic_hive_devouring_swarm
 			has_valid_civic = civic_fanatic_purifiers
 		}		
 		NOT = { has_country_flag = fe_xenophile_asked_pop }

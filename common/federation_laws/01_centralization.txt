@@ -2,12 +2,13 @@
 
 centralization_minimal = {
 	unlocks_centralization = 1
-	allow = {		
+	allow = {
 		custom_tooltip = {
 			NOT = {
 				AND = {
 					NOT = { has_federation_law = centralization_minimal }
 					has_modifier = federation_law_category_centralization_cooldown
+					has_any_federation_law_in_category = law_category_centralization
 				}
 			}
 		}
@@ -71,6 +72,7 @@ centralization_low = {
 				AND = {
 					NOT = { has_federation_law = centralization_low }
 					has_modifier = federation_law_category_centralization_cooldown
+					has_any_federation_law_in_category = law_category_centralization
 				}
 			}
 		}
@@ -206,6 +208,7 @@ centralization_medium = {
 				AND = {
 					NOT = { has_federation_law = centralization_medium }
 					has_modifier = federation_law_category_centralization_cooldown
+					has_any_federation_law_in_category = law_category_centralization
 				}
 			}
 		}
@@ -349,6 +352,7 @@ centralization_high = {
 				AND = {
 					NOT = { has_federation_law = centralization_high }
 					has_modifier = federation_law_category_centralization_cooldown
+					has_any_federation_law_in_category = law_category_centralization
 				}
 			}
 		}
@@ -492,6 +496,7 @@ centralization_very_high = {
 				AND = {
 					NOT = { has_federation_law = centralization_very_high }
 					has_modifier = federation_law_category_centralization_cooldown
+					has_any_federation_law_in_category = law_category_centralization
 				}
 			}
 		}

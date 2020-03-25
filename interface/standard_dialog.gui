@@ -330,6 +330,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "actor_name"
 			maxWidth = 200
+			fixedSize = yes
 			maxHeight = 20
 			position = { x = 10 y = 80 }
 			font = "cg_16b"

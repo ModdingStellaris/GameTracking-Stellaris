@@ -2599,6 +2599,7 @@ country_event = {
 	
 	option = {
 		name = utopia.4100.a
+		custom_tooltip = utopia.4100.a.tooltip
 	}
 }
 
@@ -2670,6 +2671,7 @@ country_event = {
 	
 	option = {
 		name = OK
+		custom_tooltip = utopia.4103.a.tooltip
 	}
 }
 

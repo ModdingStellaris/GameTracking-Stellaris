@@ -12,7 +12,7 @@
  ring_world_1_CONSTRUCTION_INFO_DELAYED:4 "Un mundo anillo consiste en cuatro secciones del mundo anillo completas, cada una equivalente a un mundo Gaia inmenso."
 
  dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "Una §Y$dyson_sphere_5$§! envuelve completamente una estrella y convierte toda su energía solar en £energy£ créditos energéticos."
- dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "Una $dyson_sphere_5$ oscurecerá el sol y convertirá a todos los planetas del sistema en mundos yermos o helados."
+ dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:4 "Una $dyson_sphere_5$ oscurecerá el sol y convertirá todos los planetas del sistema en mundos yermos o helados.\n\nNo será posible terraformar ningún elemento del sistema."
 
  spy_orb_0_MEGASTRUCTURE_DETAILS:1 "Las fases del §Y$spy_orb_4$§! irán ampliando el alcance de los sensores hasta cubrir toda la galaxia."
  spy_orb_0_CONSTRUCTION_INFO_DELAYED:3 "Las fases del $spy_orb_4$ irán ampliando el alcance de los sensores hasta cubrir toda la galaxia."
@@ -164,5 +164,5 @@
  opinion_maneuvers_canceled:0 "Maniobras de flota canceladas"
  allow_dyson_sphere:0 "§HDesbloquea la megaestructura:§! esfera Dyson"
  allow_hive_worlds:0 "§HDesbloquea la opción de terraformación:§! mundo colmena"
- describe_hive_worlds:0 "Los §Ymundos colmena§! son una clase especial de planetas inhabitables para otras poblaciones que no sean colmena, pero no se ven limitados por las características planetarias en relación a cuántos £district£ §Ydistritos generadores§!, §Ymineros§! y §Yagrícolas§! pueden albergar. Las £pop£ §Ypoblaciones§! que viven en ellos aumentan su §Yproducción de recursos§! en un §G+10%§!."
+ describe_hive_worlds:1 "Los §Ymundos colmena§! son una clase especial de planetas inhabitables para otras poblaciones que no sean colmena, pero no se ven limitados por las características planetarias en relación a cuántos £district£ §Ydistritos generadores§!, §Ymineros§! y §Yagrícolas§! pueden albergar. Además, los §Ydistritos colmenas§! son más eficientes. Las £pop£ §Ypoblaciones§! que viven en ellos aumentan su §Yproducción de recursos§! en un §G+10%.§!"
  requires_barren_planet:1 "$TRIGGER_FAIL$Solo se puede construir en mundos estériles."

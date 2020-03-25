@@ -2071,6 +2071,7 @@ old_foes_system = {
 					trait = trait_charismatic
 					trait = trait_talented
 				}
+				homeworld = this
 			}
 			create_country = {
 				name = random
@@ -2146,6 +2147,7 @@ old_foes_system = {
 					trait = trait_charismatic
 					trait = trait_resilient
 				}
+				homeworld = this
 			}
 			create_country = {
 				name = random

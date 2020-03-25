@@ -276,6 +276,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -312,6 +313,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -348,6 +350,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -384,6 +387,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -419,6 +423,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -454,6 +459,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -582,6 +588,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}
@@ -619,6 +626,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}
@@ -656,6 +664,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}
@@ -693,6 +702,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}
@@ -729,6 +739,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}
@@ -765,6 +776,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}
@@ -864,6 +876,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -901,6 +914,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -938,6 +952,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -974,6 +989,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = rare_crystals value <= 0 }
 		}
 	}
@@ -1052,6 +1068,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}
@@ -1089,6 +1106,7 @@ weapon_component_template = {
 		weight = 1
 		modifier = {
 			factor = 0.0
+			is_country_type = default
 			has_monthly_income = { resource = exotic_gases value <= 0 }
 		}
 	}

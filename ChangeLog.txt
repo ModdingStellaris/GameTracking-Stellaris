@@ -1,166 +1,111 @@
-##############################################################
-########################## VERSION ########################
-##############################################################
-
-###################
-# Expansion Features
-###################
-
-###################
-# Free Features
-###################
+#################################################################
+######################### VERSION 2.6.1 ###########################
+#################################################################
 
 ###################
 # Balance
 ###################
 
-# Buildings
+* Titans now have access to the Carrier combat computer (so they can stay back with a carrier based fleet instead of closing to Artillery range).
+* "Interpretation Signal" anomaly event now also offers a reward in society research.
+* Removed Empire cohesion from the game.
+* Removed most restrictions from the Slaver Guilds civic. When combined with Syncretic Evolution, your main species will usually start in Indentured Servitude (unless species traits push them to a different slavery type).
+* The Galatron now increases Diplomatic Weight by +100%.
+* Envoys are sent home when their origin country enters war against their host country.
+* Empires may now forcefully resettle pops off of doomed planets regardless of their resettlement policy. The egalitarian faction has been paid off and will ignore this trampling of the rights to explode on your own terms.
+* Repeatable technologies now provide full points towards victory score and diplomatic weight.
+* Increased the effect technology has on diplomatic weight.
+* Reduced the effect fleet power has on diplomatic weight.
+* Denouncement resolutions can now only be proposed against rivals or empires you have poor relations with.
+* Empires are more likely to abstain from resolutions in the Galactic Community.
+* Increased the effect opinion of the proposer (or target, for targeted resolutions) has on willingness of AIs to support or oppose resolutions.
 
-# Colonization
+###################
+# Stability & Performance
+###################
 
-# Diplomacy
+* Fixed a CTD when debug tooltip was active in planet view for primitives.
+* Improved the performance of the AI checking what armies to build and what species to use for colonization.
+* Fixed memory leak and potential cause for CTD when generating half species.
+* Fixed a FLEET_MODIFIER OOS on hotjoin.
+* Fixed an OOS related to victory rankings.
+* Fixed an AI related OOS.
+* Fixed an OOS caused by AI commands being written and read as another command.
+* Fixed CTD on some edge cases of federation votes.
+* Fixed CTD that could happen when loading a safe file and it tried to repair some issues with strike craft.
 
-# Economy
-- Added an influence reward for establishing contact, or being established with. The former being more valuable. Slight bonus for Xenophiles.
+###################
+# UI
+###################
 
-# Governments
-
-# Leaders
-
-# Factions
-
-# Technology
-
-# Units
-
-# War
-
-#Components
-Arc Emitter I (Large)
-	- Armor penetration reduced from 100% to 50%
-	- Shield penetration reduced from 100% to 50%
-	- Shield damage increased from -100% to -50%
-	
-Arc Emitter II (Large)
-	- Armor penetration reduced from 100% to 50%
-	- Shield penetration reduced from 100% to 50%
-	- Shield damage increased from -100% to -50%
-
-Matter Disintegrator (Small)
-	- Cooldown increased from 20 to 25
-	- Range reduced from 30 to 20
-	- Accuracy increased from 75% to 78%
-
-Matter Disintegrator (Medium)
-	- Cooldown reduced from 30 to 25
-	- Accuracy increased from 70% to 75%
-	- Damage changed from [25 to 44] to [25 to 43]
-
-Matter Disintegrator (Large)
-	- Cooldown reduced from 40 to 25
-	- Range increased from 30 to 40
-	- Accuracy increased from 65% to 74%
-	- Damage changed from [55 to 93] to [55 to 100]
+* Added missing loc for Polish, Spanish, German, Russian, Simplified Chinese, and Brazilian Portuguese.
+* The Project Cornucopia planetary decision now has a description.
+* Localised event option for restoring a ruined mega shipyard.
+* Added a bunch of missing audio for different UI.
+* Senate floor portrait changes to reflect the current votes.
 
 ###################
 # AI
 ###################
 
-# Diplomacy
-
-# Economy
-
-# Governments
-
-# War
-
-###################
-# User Interface
-###################
-
-# Alerts
-
-# Notifications
-
-# Advisor
-
-# Launcher / Frontend
-
-# Map
-
-# Sounds
-
-# Government screen
-
-# Budget screen
-
-# Policy screen
-
-# Demographics screen
-
-# Planet screen
-
-# Leader screen
-
-# Faction screen
-
-# Contacts screen
-
-# Ship Designer screen
-
-# Situation Log screen
-
-# Technology screen
-
-# Fleet view
-
-# Planet view
-
-# Ship Details screen
-
-# Outliner
-
-# Multiplayer Lobby
+* Contingency will now be able to handle the case of not being spawned next to the empire it wants to destroy.
+* AI should now consider enemies on the path to target and abort if there's too much resistance on the way.
+* Fleets with passive repair effects should no longer be considered busy by Fleet AI.
+* Fixed AI ignoring hostile forces in occupied and systems within sensor range.
+* Made AI try to beef up offensive fleets up to a fraction of their offensive fleet power.
+* AI will now commit between 75% and 100% of fleet power to offensive missions if available.
+* Added a define for base offensive commitment.
+* Made AI merge fleet groups when possible.
+* Fixed edge case in average fleet power estimation when AI borders a Leviathan.
+* Fixed edge case bug when AI is 100% committed to offense but ends up splitting between all owned systems.
+* Default AI will now only consider capital and chokepoints as candidates to park defensive fleets.
+* AI will compute how many offensive fleets based upon the strength of allies and enemies at war.
+* Crisis AI will compute how many offensive fleets based upon the strength of their biggest foe.
+* AI debug tooltips will now show the minimum fleet power estimated for objective completion.
+* AI is no longer completely locked in to waiting for resources to get the highest prio one (counting all planets).
+* Non-Xenophobe Authoritarian AIs will enslave properly again.
 
 ###################
-# User modding
+# Modding
 ###################
 
-# Console & Commandline
-
-# Effects
-
-# History
-
-# Modifiers
-
-# Nation Designer
-
-# On Actions
-- Added on_pop_migration_end.
-
-# Triggers
-
-###################
-# Performance
-###################
+* Added trigger for checking the selected number of AI empires to spawn in galaxy setup.
 
 ###################
 # Bugfixes
 ###################
-- Reduced chance of generating the "Improbable Orbit" anomaly.
-- Fixed so that the correct option text triggers when a leader receives a negative trait on level up.
-- Fixed the Master's Teachings edicts "Philosophical Mindset" and "Warring States" not being applied after finishing the related special project.
-- Fixed "Colonial Failure" anomaly event handing out a Colonization tech you already had.
-- Fixed "Master's Teachings: Philosophical Mindset" edict not having a monthly influence cost.
-- Fixed an issue with "The Tree" anomaly event spawning amoeba creatures that weren't considered to belong to the amoeba container country.
-- Fixed an issue with the "Colonial Assassin" event not applying an opinion modifier correctly.
-- Space Monster contact projects should now always be valid and available once generated
-- Extradimensional Crisis should no longer spawn inside Fallen Empire borders
-- Fixed tooltip for Grand Mausoleum when invalid to build
-- Changed the way native reservations are placed for a colony event related to colonizing planets that have primitive natives.
-- Fixed several small issues with the sublight space probe questline. Making sure that there are indicators to show what you need to do in each system and that every step is shut down properly.
-- Fix for missing text when a leader gains the Engineer trait.
-- Fixed an issue where the Hyacinthe questline couldn't finish.
-- Potential fix for Alien Specimen Procurement chain spawning Special Projects in Fallen Empire space.
-- Egalitarian empires are now unable to get leaders with slaver mandates, and egalitarian pops are less likely to vote for candidates with slaver mandate.
+
+* Players are no longer allowed to spam federation invitations until they get an answer.
+* Clarifies localisation when invitíng to form a new federation, compared to when inviting more members.
+* Fleets now use pathfinding for both Megashipyards and Juggernauts for upgrading and repairing.
+* Federation Perk "Welcoming Nature" now correctly modifies the cost for countries to join the federation.
+* Leaving the galactic community should now correctly cost between 100 and 500 influence, scaling with administrative size.
+* Improved lighting settings for Ringworld preview in empire design.
+* Federation leader/member modifiers are now recalculated for old and new leader when leadership changes.
+* Indentured slaves can now be permitted to colonize and accept additional living standards.
+* Federation fleet ships will now properly check their special constraints (capacity, leadership...) in construction interface.
+* Fixed the "Whatever it is, I'm against it" achievement so that it is correctly fulfilled by leaving a federation (rather than being the leader of a federation where a federation member leaves!)
+* Fixed certain designations not using correct icons.
+* Upon changing Federation Fleet Contribution away from "None", the federation will no longer be locked to "Only Leader" Federation Fleet Construction for 10 years.
+* All federation members should get feedback on vote failure. Country asking to join a federation should get feedback on the vote result.
+* You can now no longer change federation succession type and term while at war, since changes would only come into effect after the actual war.
+* Losing a federation level and losing laws because of it will now set the new law to the next one down the level list even if a cooldown is active.
+* Closed starbase window that should be no longer accessible after returning a occupied starbase to its owner.
+* Events relating to construction of the Sentry Array now display some helpful information in their tooltips.
+* Tooltips for Galactic Community resolutions shows the empire name of the actual target and not only your own empire name.
+* Fix for Golden Rule election type, accounting for a scenario in which the sitting federation leader forfeits the challenge.
+* Added descriptions for the Spiritualist/Materialist Attraction modifiers, from "A Change of Heart".
+* You can no longer propose denouncing yourself in the Galactic Community, even if you really deserve it. (You can still vote in favor of it if someone else proposes it.)
+* Fixed a bug where disabling a building didn't update it immediately.
+* Megastructures can no longer be built by construction ships that are unable to reach the selected system.
+* Autogen of ship designs will now use components that require rare resources for non default empire types.
+* Event-generated enemy fleets will now fight.
+* Added missing localisations for job_fe_maintenance_bot_add (a modifier visible Ancient Control Centers).
+* Fallen Empires should no longer occasionally send their envoys to improve or harm relations with you.
+* Fixed an edge case where machine empires could be offered a caravaneers deal that would give it no benefit.
+* Policies relating to primitives and pre-sapients can no longer disappear in certain circumstances, messing up various elements of the game.
+* Envoy effect on relations now decays properly if no envoys are active.
+* Origins are shown in the Empire selection interface when the Empire has a biography.
+* Federation fleet is no longer counter for diplo weight and federation supremacy.
+* Federation votes should ignore abstainers when timer ends.
+* Asking to join a federation should bypass checks whether or not the recipient has good relations with the actor

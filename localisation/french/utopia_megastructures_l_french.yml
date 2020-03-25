@@ -39,3 +39,5 @@
  utopia.108.name:0 "Fuite du Dr Xhaxxore"
  utopia.108.desc:0 "Les [target_country.GetSpeciesNamePlural] ne sont visiblement pas satisfaits que nous ayons nié toute implication dans l'enlèvement de leurs concitoyens. Qui plus est, le Dr Xhaxxore, voyant les choses prendre mauvaise tournure, il s'est enfui en emportant ses réserves d'essence, ce qui rend impossible toute autre production de crème Sansâge."
  utopia.108.a:0 "Flûte !"
+ utopia.4100.a.tooltip:0 "Le §Hchantier du dispositif d'écoute§! est en place, attendant d'être davantage aménagé avant de pouvoir être mis en fonction."
+ utopia.4103.a.tooltip:0 "La §HPlateforme d'écoute§! est en état de fonctionnement. La portée des capteurs a été accrue."

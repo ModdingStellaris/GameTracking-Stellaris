@@ -175,3 +175,5 @@
  mod_damage_vs_country_type_gate_builders_mult:0 "Szkody zadawane budowniczym bramy"
  from_extra_federation_members:0 "Za członków:"
  empire_size_mods:0 "Wielkość imperium"
+ spiritualist_attraction_desc:0 "Grupa spirytualistów podważa materialistyczne poglądy o kosmosie i twierdzi, że ograniczają one nasz rozwój kulturowy."
+ materialist_attraction_desc:0 "Grupa materialistów pragnie przyspieszyć rozwój kulturowy, poszukując bardziej namacalnych i postępowych odpowiedzi."

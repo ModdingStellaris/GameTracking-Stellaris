@@ -234,7 +234,7 @@ guiTypes = {
 			#GFX_law_locked
 			quadTextureSprite = "GFX_centralization_locked"
 			position = { x = 45 y = -10 }
-			alwaysTransparent = yes
+			alwaysTransparent = no
 		}
 		
 		instantTextBoxType={
@@ -252,7 +252,7 @@ guiTypes = {
 			name = "centralization_lock"
 			quadTextureSprite = "GFX_law_locked"
 			position = { x = 59 y = -16 }
-			alwaysTransparent = yes
+			alwaysTransparent = no
 		}
 	}
 	
@@ -1512,9 +1512,9 @@ guiTypes = {
 			font = "cg_16b"
 			format = center
 			orientation = center_up
-			maxWidth = 380
+			maxWidth = 390
 			maxHeight = 0
-			position = { x = -190 y = 70 }
+			position = { x = -195 y = 70 }
 			alwaysTransparent = yes
 		}
 
