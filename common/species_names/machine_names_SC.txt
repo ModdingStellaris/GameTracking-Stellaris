@@ -1,4 +1,4 @@
-﻿# Generated species derive their names from here
+# Generated species derive their names from here
 
 ### MACHINES
 

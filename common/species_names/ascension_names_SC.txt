@@ -1,4 +1,3 @@
-﻿
 # Synthetic Evolution Species Names
 named_lists = {
 	robots_test = {
