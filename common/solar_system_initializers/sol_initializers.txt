@@ -804,10 +804,12 @@ com_sol_system = {
 			any_country = { 
 				has_country_flag = human_2
 				species_portrait = human
-				has_origin = origin_lost_colony
+				NOT = { has_origin = origin_lost_colony }
 			}
 			NOT = { any_system = { has_star_flag = sol } }
 			NOT = { has_star_flag = empire_cluster }
+			num_ai_empires_setting  = 0
+
 			add = 99999
 		}
 	}
@@ -921,9 +923,9 @@ com_sol_system = {
 				owner = event_target:npc_UNoE
 			}
 			generate_earth_deposits_and_blockers = yes
+			clear_blockers = yes
 			generate_start_buildings_and_districts = yes
 			generate_start_pops = yes
-			clear_blockers = yes
 			generate_lost_colony_parent_bonus = yes
 			event_target:npc_UNoE = {
 				set_country_flag = human_1
@@ -1599,9 +1601,9 @@ lost_colony_sol_system = {
 			}
 			set_planet_size = 20
 			generate_earth_deposits_and_blockers = yes
+			clear_blockers = yes
 			generate_start_buildings_and_districts = yes
 			generate_start_pops = yes
-			clear_blockers = yes
 			generate_lost_colony_parent_bonus = yes
 			event_target:lost_colony_parent = {
 				set_country_flag = lost_colony_parent

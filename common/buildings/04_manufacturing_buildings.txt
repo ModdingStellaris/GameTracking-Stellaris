@@ -9,24 +9,25 @@ building_foundry_1 = {
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
-		building_relaxed_basic_income_check = yes
+		OR = {
+			building_relaxed_basic_income_check = yes
+			AND = {
+				num_buildings = { type = building_foundry_1 value < 5 }
+				is_capital = yes
+				owner = {
+					OR = {
+						country_uses_consumer_goods = no
+						country_uses_food = no
+					}
+				}
+			}
+		}
 	}
 
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
-			AND = {
-				exists = owner
-				owner = {
-					is_ai = yes
-					has_monthly_income = {
-						resource = alloys
-						value > 200
-					}
-				}#Need to check alloy income to make sure that the AI has built a couple of alloy plants on the new city world.
-				is_planet_class = pc_city
-			}
 		}
 	}
 

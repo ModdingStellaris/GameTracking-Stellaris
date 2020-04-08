@@ -74,6 +74,7 @@ planet_event = {
 		# Swarm Situation Log counter
 		if = {
 			limit = {
+				exists = owner
 				owner = { is_country_type = swarm }
 			}
 			every_country = {
@@ -547,6 +548,7 @@ planet_event = {
 		# Swarm Situation Log counter
 		if = {
 			limit = {
+				exists = owner
 				owner = { is_country_type = swarm }
 			}
 			every_country = {
@@ -764,6 +766,7 @@ planet_event = {
 		# Swarm Situation Log counter
 		if = {
 			limit = {
+				exists = owner
 				owner = { is_country_type = swarm }
 			}
 			every_country = {

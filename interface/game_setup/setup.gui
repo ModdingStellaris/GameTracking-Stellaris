@@ -1197,7 +1197,7 @@ guiTypes = {
 					borderSize = {x =16 y = 16}
 					maxValue = 100
 					minValue = 0
-					stepSize =1
+					stepSize = 1
 					startValue = 20
 					horizontal = 1
 

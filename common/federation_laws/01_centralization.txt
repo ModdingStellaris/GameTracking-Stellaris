@@ -77,9 +77,7 @@ centralization_low = {
 			}
 		}
 	}
-	modifier = {
-		cohesion_add = -1
-	}
+	cohesion_growth = -1
 	on_enact = {
 		if = {
 			limit = {
@@ -213,9 +211,7 @@ centralization_medium = {
 			}
 		}
 	}
-	modifier = {
-		cohesion_add = -2
-	}
+	cohesion_growth = -2
 	on_enact = {
 		if = {
 			limit = {
@@ -357,9 +353,7 @@ centralization_high = {
 			}
 		}
 	}
-	modifier = {
-		cohesion_add = -3
-	}
+	cohesion_growth = -3
 	on_enact = {
 		if = {
 			limit = {
@@ -501,9 +495,7 @@ centralization_very_high = {
 			}
 		}
 	}
-	modifier = {
-		cohesion_add = -4
-	}
+	cohesion_growth = -4
 	on_enact = {
 		if = {
 			limit = {

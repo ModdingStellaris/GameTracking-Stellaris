@@ -1,4 +1,15 @@
 ﻿l_german:
+ FEDERATION_LAW_COHESION:0 "$LAW$ $CATEGORY$: $VALUE|2+=$"
+ FEDERATION_DIVERSE_ETHICS_PEN:0 "Verschiedene Ethiken ($COUNT$): $VALUE|2+=$"
+ FEDERATION_OPPOSING_ETHICS_PEN:0 "Gegensätzliche Ethiken ($COUNT$): $VALUE|2+=$"
+ FEDERATION_LAW_COHESION_DESC:0 "$MOD_FEDERATION_COHESION_ADD$: $VALUE|2+=$"
+ ENVOY_UNASSIGN_TITLE:0 "Gesandte abziehen"
+ ENVOY_UNASSIGN_DESC:0 "Durch das Abziehen von Gesandten werden diese ihren derzeitigen Auftrag beenden und anschließend in unsere Hauptstadt zurückkehren, um sich auf ihre nächste Aufgabe vorzubereiten."
+ CALL_IN_FAVOR_UNABLE:0 "Wir sind nicht in der Lage, Gefallen einzufordern."
+ CALL_IN_FAVOR_ONLY_IF_VOTING:0 "Wir müssen für oder gegen den Beschluss Stellung nehmen, um Gefallen einzufordern."
+ CALL_IN_FAVOR_ONLY_IF_IN_FAVOR:0 "Wir können nur dann einen Gefallen einfordern, wenn wir den Beschluss unterstützen."
+ d_ruin_bluelotus:0 "Blauer-Lotus-Ruine"
+ d_ruin_bluelotus_desc:0 "Die Ruine einer einst vielversprechenden Versuchsanlage für die Umwandlung von Gestein und anderen Materialien in Legierungen, von der heute nichts mehr übrig ist außer diesem kleinen Flöz."
  ORIGIN:0 "Ursprung"
  EMPIRE_ORIGIN:0 "$ORIGIN$"
  TOOLTIP_SETUP_ORIGIN:0 "Wählt einen Ursprung für Euer Reich."
@@ -3046,3 +3057,5 @@
  federations.10320.complygestalt:0 "Unser Reich ändert die Richtlinie §Y$policy_war_philosophy$§! zu §Y$no_wars_name$§!."
  federations.10330.desc:0 "Die Galaktische Gemeinschaft hat den Beschluss §Y$resolution_rulesofwar_demobilization_initiative$§! erlassen. Dieser verbannt die Richtlinie §Y$economic_policy_military$§!.\n\nUnser Reich verstößt derzeit gegen diesen Beschluss. Sollen wir unsere Politik ändern, um ihn einzuhalten?"
  federations.10330.comply:0 "Unser Reich ändert die Richtlinie §Y$policy_economic_policy$§! zu §Y$economic_policy_balanced$§!."
+
+ CURRENT_TERM_ENDS:0 "Ende der Amtszeit: $DATE|Y"

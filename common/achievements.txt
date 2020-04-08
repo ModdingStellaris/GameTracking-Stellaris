@@ -535,6 +535,7 @@ achievement_put_a_ring_on_it = {
 
 	possible = {
 		is_ironman = yes
+		NOT = { has_origin = origin_shattered_ring }
 	}
 
 	happened = {

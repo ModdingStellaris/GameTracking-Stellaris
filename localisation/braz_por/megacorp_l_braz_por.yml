@@ -1,4 +1,7 @@
 ﻿l_braz_por:
+ SECTOR_ADD_ALREADY_ASSIGNED:0 "§R$SYSTEM|Y$ já pertence a um setor.§!"
+ SECTOR_ADD_DONT_OWN_STARBASE:0 "§RNão somos donos da base estelar em $SYSTEM|Y$.§!"
+ SECTOR_ADD_FOREIGN_COLONIES:0 "§R$SYSTEM|Y$ contém colônias de propriedade de outros impérios.§!"
  PLANET_BUILDQUEUE_UP:0 "$STARBASE_BUILDQUEUE_UP$"
  PLANET_BUILDQUEUE_DOWN:0 "$STARBASE_BUILDQUEUE_DOWN$"
  NUM_MULT:0 "x$NUM$"

@@ -568,6 +568,7 @@ migrating_forests = {
 
 migrating_forests_2 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_lush.dds"
+	planet_max_districts_add = -1
 }
 
 dead_creatures = {

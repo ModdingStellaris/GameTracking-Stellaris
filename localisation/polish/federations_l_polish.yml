@@ -1,4 +1,15 @@
 ﻿l_polish:
+ FEDERATION_LAW_COHESION:0 "$LAW$ $CATEGORY$: $VALUE|2+=$"
+ FEDERATION_DIVERSE_ETHICS_PEN:0 "Zróżnicowane etyki ($COUNT$): $VALUE|2+=$"
+ FEDERATION_OPPOSING_ETHICS_PEN:0 "Przeciwstawne etyki ($COUNT$): $VALUE|2+=$"
+ FEDERATION_LAW_COHESION_DESC:0 "$MOD_FEDERATION_COHESION_ADD$: $VALUE|2+=$"
+ ENVOY_UNASSIGN_TITLE:0 "Anuluj przydzielenie posła"
+ ENVOY_UNASSIGN_DESC:0 "Anulowanie przydziałów sprawi, że poseł porzuci swoje zadanie i wróci do stolicy, gotów na następną misję."
+ CALL_IN_FAVOR_UNABLE:0 "Nie możemy powołać się na żadne przysługi."
+ CALL_IN_FAVOR_ONLY_IF_VOTING:0 "Aby powoływać się na przysługi, musimy zająć stanowisko w sprawie uchwały."
+ CALL_IN_FAVOR_ONLY_IF_IN_FAVOR:0 "Możemy powołać się na przysługi tylko jeśli popieramy uchwałę."
+ d_ruin_bluelotus:0 "Ruiny Błękitnego Lotosu"
+ d_ruin_bluelotus_desc:0 "Zrujnowany, niegdyś obiecujący eksperymentalny obiekt do przetwarzania skał i innej materii na stopy. Po wszystkim pozostała jedynie mała spoina."
  ORIGIN:0 "Pochodzenie"
  EMPIRE_ORIGIN:0 "$ORIGIN$"
  TOOLTIP_SETUP_ORIGIN:0 "Wybierz pochodzenie swojego imperium."
@@ -2605,3 +2616,5 @@
  federations.10320.complygestalt:0 "Nasze imperium zmieni politykę §Y$policy_war_philosophy$§! na: §Y$no_wars_name$§!."
  federations.10330.desc:0 "Rezolucja §Y$resolution_rulesofwar_demobilization_initiative$§! została przegłosowana przez Wspólnotę Galaktyczną. Zakazuje ona polityki §Y$economic_policy_military$§!.\n\nW tej chwili nasze imperium narusza tę rezolucję. Zmienimy naszą politykę, by się do niej dostosować?"
  federations.10330.comply:0 "Nasze imperium zmieni politykę §Y$policy_economic_policy$§! na: §Y$economic_policy_balanced$§!."
+
+ CURRENT_TERM_ENDS:0 "Koniec kadencji: $DATE|Y"

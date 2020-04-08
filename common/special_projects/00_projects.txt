@@ -296,7 +296,7 @@ special_project = {
 special_project = {
 	key = "MIGRATING_FORESTS_1_PROJECT"
 	event_chain = "migrating_forests_chain"
-	cost = 10000
+	cost = 7000
 	tech_department = society_technology
 	picture = GFX_evt_alien_nature
 	
@@ -314,7 +314,7 @@ special_project = {
 special_project = {
 	key = "MIGRATING_FORESTS_2_PROJECT"
 	event_chain = "migrating_forests_chain"
-	cost = 10000
+	cost = 7000
 	tech_department = engineering_technology
 	picture = GFX_evt_alien_nature
 	

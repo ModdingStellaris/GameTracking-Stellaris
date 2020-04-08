@@ -302,8 +302,17 @@ imperialist = {
 		}
 
 		trigger = {
-			owner = {
-				is_overlord = yes
+			OR = {
+				owner = {
+					is_overlord = yes
+				}
+				owner = {
+					has_federation = yes
+					federation = {
+						has_federation_type = hegemony_federation
+					}
+					is_federation_leader = yes
+				}
 			}
 		}
 	}

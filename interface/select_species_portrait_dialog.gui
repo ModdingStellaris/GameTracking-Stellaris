@@ -62,7 +62,6 @@ guiTypes = {
 				position = { x = 0 y = 0 }
 				size = { width = 466 height = 263 }
 				slotSize = { width = 93 height = 130 }
-				scrollbartype = "standardlistbox_slider"
 				max_slots_horizontal = 5
 				format = UPPER_LEFT
 			}

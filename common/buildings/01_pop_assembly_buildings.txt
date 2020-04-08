@@ -25,6 +25,16 @@ building_robot_assembly_plant = {
 		building_machine_assembly_plant
 	}
 	
+	allow = {
+		OR = {
+			owner = { is_ai = no }
+			AND = {
+				num_buildings = { type = any value <= 14 }
+				NOT = { is_planet_class = pc_habitat }
+			}
+		}
+	}
+
 	destroy_trigger = {
 		exists = owner
 		OR = {
@@ -79,12 +89,6 @@ building_robot_assembly_plant = {
 				is_planet_class = pc_habitat
 				is_planet_class = pc_city
 				num_buildings = { type = any value >= 14 }
-				owner = { 
-					has_monthly_income = {
-						resource = energy
-						value < 5
-					}
-				}
 			}
 		}
 	}
@@ -110,6 +114,16 @@ building_machine_assembly_plant = {
 		building_robot_assembly_plant
 	}
 	
+	allow = {
+		OR = {
+			owner = { is_ai = no }
+			AND = {
+				num_buildings = { type = any value <= 14 }
+				NOT = { is_planet_class = pc_habitat }
+			}
+		}
+	}
+
 	destroy_trigger = {
 		exists = owner
 		OR = {
@@ -181,10 +195,15 @@ building_machine_assembly_complex = {
 	}
 	
 	allow = {
-		has_major_upgraded_capital = yes
-		buildings_upgrade_allow = yes	
+		OR = {
+			owner = { is_ai = no }
+			AND = {
+				num_buildings = { type = any value <= 14 }
+				NOT = { is_planet_class = pc_habitat }
+			}
+		}
 	}
-	
+
 	destroy_trigger = {
 		exists = owner
 		OR = {

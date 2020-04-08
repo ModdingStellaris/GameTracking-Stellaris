@@ -889,17 +889,25 @@ generate_start_buildings_and_districts = {
 			# total - 24 jobs
 
 			# 3 jobs
-			add_district = district_city
+			add_district_and_planet_size_if_needed_effect = {
+				district = district_city
+			}
 
 			if = {
 				limit = {
 					owner = { NOT = { has_valid_civic = civic_agrarian_idyll } }
 				}
-				add_district = district_city
-				add_district = district_city
+				while = {
+					count = 2
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_city
+					}
+				}
 			}
 			else = {
-				add_district = district_farming
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_farming
+				}
 			}
 
 			# 4 - 6 jobs
@@ -912,38 +920,60 @@ generate_start_buildings_and_districts = {
 						}
 					}
 				}
-				add_district = district_farming
-				add_district = district_farming
+				while = {
+					count = 2
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_farming
+					}
+				}
 				if = {
 					limit = {
 						owner = { has_origin = origin_default }
 					}
-					add_district = district_farming
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_farming
+					}
 				}
 			}
 			else = {
-				add_district = district_mining
-				add_district = district_mining
+				while = {
+					count = 2
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_mining
+					}
+				}
 				if = {
 					limit = {
 						owner = { has_origin = origin_default }
 					}
-					add_district = district_mining
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_mining
+					}
 				}
 			}
 
 			# 4 jobs
-			add_district = district_mining
-			add_district = district_mining
+			while = {
+				count = 2
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_mining
+				}
+			}
 
 			# 2 jobs
-			add_district = district_generator
+			add_district_and_planet_size_if_needed_effect = {
+				district = district_generator
+			}
 
 			# 2 jobs
 			if = {
 				limit = { owner = { is_megacorp = no } }
-				add_district = district_generator
-				add_district = district_generator
+				while = {
+					count = 2
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_generator
+					}
+				}
 			}
 
 			# 2 jobs
@@ -951,7 +981,9 @@ generate_start_buildings_and_districts = {
 				limit = {
 					owner = { has_origin = origin_default }
 				}
-				add_district = district_generator
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_generator
+				}
 			}
 
 			# 3 jobs
@@ -972,7 +1004,9 @@ generate_start_buildings_and_districts = {
 			# 4 jobs
 			if = {
 				limit = { owner = { is_megacorp = yes } }
-				add_district = district_city
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_city
+				}
 				add_building = building_commercial_zone
 			}
 		}
@@ -983,19 +1017,29 @@ generate_start_buildings_and_districts = {
 			# total - 34 jobs
 
 			# 4 jobs
-			add_district = district_hive
-			add_district = district_hive
+			while = {
+				count = 2
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_hive
+				}
+			}
 
 			# 6-9 jobs
 			if = {
 				limit = { owner = { is_lithoid_empire = no } }
-				add_district = district_farming
-				add_district = district_farming
+				while = {
+					count = 2
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_farming
+					}
+				}
 				if = {
 					limit = {
 						owner = { has_origin = origin_default }
 					}
-					add_district = district_farming
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_farming
+					}
 				}
 			}
 			else = {
@@ -1005,32 +1049,47 @@ generate_start_buildings_and_districts = {
 					limit = {
 						owner = { has_origin = origin_default }
 					}
-					add_district = district_mining
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_mining
+					}
 				}
 			}
 
 			# 6 jobs
-			add_district = district_mining
-			add_district = district_mining
+			while = {
+				count = 2
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_mining
+				}
+			}
 
 			if = {
 				limit = {
 					owner = { has_origin = origin_tree_of_life }
 				}
 				remove_district = district_mining
-				add_district = district_farming
+				add_district = {
+					ignore_cap = yes
+					district_type = district_farming
+				}
 			}
 
 			# 6 jobs
-			add_district = district_generator
-			add_district = district_generator
+			while = {
+				count = 2
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_generator
+				}
+			}
 
 			# 3 jobs
 			if = {
 				limit = {
 					owner = { has_origin = origin_default }
 				}
-				add_district = district_generator
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_generator
+				}
 			}
 
 			# 5 jobs
@@ -1067,33 +1126,44 @@ generate_start_buildings_and_districts = {
 			# total - 27 jobs
 
 			# 3 jobs
-			add_district = district_nexus
+			add_district_and_planet_size_if_needed_effect = {
+				district = district_nexus
+			}
 
 			# 4 jobs
-			add_district = district_mining
-			add_district = district_mining
+			while = {
+				count = 2
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_mining
+				}
+			}
 
 			# 2 jobs
 			if = {
 				limit = {
 					owner = { has_origin = origin_default }
 				}
-				add_district = district_mining
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_mining
+				}
 			}
 
 			# 10 jobs
-			add_district = district_generator
-			add_district = district_generator
-			add_district = district_generator
-			add_district = district_generator
-			add_district = district_generator
+			while = {
+				count = 5
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_generator
+				}
+			}
 
 			# 2 jobs
 			if = {
 				limit = {
 					owner = { has_origin = origin_default }
 				}
-				add_district = district_generator
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_generator
+				}
 			}
 
 			# 6 jobs
@@ -1118,10 +1188,14 @@ generate_start_buildings_and_districts = {
 
 				if = {
 					limit = { owner = { has_country_flag = lithoid_subspecies } }
-					add_district = district_mining
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_mining
+					}
 				}
 				else = {
-					add_district = district_farming
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_farming
+					}
 				}
 			}
 
@@ -1131,13 +1205,19 @@ generate_start_buildings_and_districts = {
 
 				if = {
 					limit = { owner = { has_country_flag = lithoid_subspecies } }
-					add_district = district_mining
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_mining
+					}
 				}
 				else = {
-					add_district = district_farming
+					add_district_and_planet_size_if_needed_effect = {
+						district = district_farming
+					}
 				}
 
-				add_district = district_generator
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_generator
+				}
 				#remove_district = district_nexus
 				#remove_district = district_nexus #blocked removals for + 2 jobs and housing
 				add_building = building_organic_sanctuary
@@ -1464,7 +1544,9 @@ generate_start_pops = {
 		}
 
 		add_building = building_robot_assembly_plant
-		add_district = district_generator
+		add_district_and_planet_size_if_needed_effect = {
+			district = district_generator
+		}
 		while = {
 			limit = { num_pops < 27 }
 			create_pop = {
@@ -1732,8 +1814,19 @@ generate_home_planet_final_pass = {
 							is_planet_class = pc_gas_giant
 						}
 						change_pc = pc_molten
-						change_planet_size = -25
 						add_modifier = { modifier = chthonian_planet }
+						every_moon = {
+							limit = {
+								colonizeable_planet = no
+							}
+							remove_planet = yes
+						}
+						while = {
+							limit = {
+								planet_size >= 20
+							}
+							change_planet_size = -6
+						}
 					}
 				}
 			}
@@ -1875,4 +1968,28 @@ void_dweller_home_planet_setup = {
 			create_mining_station = { owner = event_target:void_dweller_owner }
 		}
 	}
+}
+
+add_district_and_planet_size_if_needed_effect = {
+	if = {
+		limit = {
+			free_district_slots >= 1
+		}
+		add_district = {
+			district_type = $district$
+			ignore_cap = yes
+		}
+	}
+	else_if = {
+		limit = {
+			free_district_slots = 0
+			planet_size < 25
+		}
+		change_planet_size = 1
+		add_district = {
+			district_type = $district$
+			ignore_cap = yes
+		}
+	}
+	#else do nothing
 }

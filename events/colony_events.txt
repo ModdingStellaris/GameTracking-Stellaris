@@ -211,7 +211,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_country_flag = burned_forests_rampaged
+		has_country_flag = burned_forests_rampaged_country
 		FROMFROM = { has_planet_flag = burned_forests_rampaged_planet }
 	}
 
@@ -489,6 +489,7 @@ planet_event = {
 
 	trigger = {
 		has_modifier = "migrating_forests"
+		NOT = { has_planet_flag = recent_migrating_forests_movement }
 	}
 
 	mean_time_to_happen = {
@@ -496,14 +497,15 @@ planet_event = {
 	}
 
 	immediate = {
-		add_planet_devastation = 10
+		set_timed_planet_flag = {
+			flag = recent_migrating_forests_movement
+			days = 360
+		}
 	}
 
 	option = {
 		name = PECULIAR
-		tooltip = {
-			add_planet_devastation = 10
-		}
+		add_planet_devastation = 10
 	}
 }
 

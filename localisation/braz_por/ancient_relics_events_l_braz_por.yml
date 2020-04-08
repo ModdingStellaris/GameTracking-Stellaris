@@ -1,4 +1,7 @@
 ﻿l_braz_por:
+ shard_wants_to_burn_this_planet_tooltip:0 "Nossos colonos em §H[FromFromFrom.Planet.GetName]§! estão em perigo grave."
+ ancrel.40182.name:0 "[Root.GetName] Destruído"
+ ancrel.40182.desc:0 "Após nossa falha em desafiar o dragão Estilhaço que surgiu no sistema [Root.System.GetName], ele se voltou sobre a nossa colônia no sistema, massacrando os colonos com uma carnificina gigante!"
  crisis.250.name:0 "Nova Ninhada"
  crisis.250.desc:0 "A Rainha Prethoryn gerou uma nova frota que entrou em órbita sobre [Root.Capital.GetName]. Com a Rainha sob nosso controle, as criaturas são totalmente leais e obedecerão a todos os nossos comandos."
  crisis.252.name:0 "Rainha Capturada"

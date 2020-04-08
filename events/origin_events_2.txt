@@ -1959,6 +1959,7 @@ country_event = {
 							is_star = no
 							is_asteroid = no
 							is_homeworld = no
+							NOT = { is_planet_class = pc_gas_giant }
 						}
 						create_archaeological_site = site_ex_gravitas
 					}
@@ -1966,6 +1967,146 @@ country_event = {
 						set_country_flag = arc_site_planet
 					}
 				}
+			}
+			solar_system = {
+				change_variable = {
+					which = origin_shoulders_of_giants_planets
+					value = 1
+				}
+				every_system_planet = {
+					limit = {
+						is_colonizable = no
+						is_star = no
+						is_asteroid = no
+						is_homeworld = no
+						NOT = { is_planet_class = pc_gas_giant }
+						NOT = { exists = archaeological_site }
+					}
+					prev = {
+						change_variable = {
+							which = origin_shoulders_of_giants_planets
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = origin_shoulders_of_giants_planets
+							value < 6
+						}
+					}
+					spawn_planet = {
+						class = pc_gas_giant
+						location = this
+						orbit_distance_offset = 190
+						orbit_angle_offset = 127
+						size = 21
+						init_effect = {
+							set_name = "Islena"
+							save_event_target_as = new_planet
+							solar_system = {
+								spawn_planet = {
+									class = pc_barren_cold
+									location = event_target:new_planet
+									orbit_location = yes
+									orbit_distance_offset = 15
+									orbit_angle_offset = 0
+									size = 18
+									init_effect = {
+										set_name = "Haradas"
+									}
+								}
+								change_variable = {
+									which = origin_shoulders_of_giants_planets
+									value = 1
+								}
+								if = {
+									limit = {
+										check_variable = {
+											which = origin_shoulders_of_giants_planets
+											value < 6
+										}
+									}
+									spawn_planet = {
+										class = pc_barren_cold
+										location = event_target:new_planet
+										orbit_location = yes
+										orbit_distance_offset = 21
+										orbit_angle_offset = 67
+										size = 11
+										init_effect = {
+											set_name = "Koras"
+										}
+									}
+								}
+								if = {
+									limit = {
+										check_variable = {
+											which = origin_shoulders_of_giants_planets
+											value < 6
+										}
+									}
+									spawn_planet = {
+										class = pc_barren
+										location = event_target:new_planet
+										orbit_location = yes
+										orbit_distance_offset = 27
+										orbit_angle_offset = 143
+										size = 14
+										init_effect = {
+											set_name = "Melidas"
+										}
+									}
+								}
+								if = {
+									limit = {
+										check_variable = {
+											which = origin_shoulders_of_giants_planets
+											value < 6
+										}
+									}
+									spawn_planet = {
+										class = pc_toxic
+										location = event_target:new_planet
+										orbit_location = yes
+										orbit_distance_offset = 32
+										orbit_angle_offset = 291
+										size = 16
+										init_effect = {
+											set_name = "Theros"
+										}
+									}
+								}
+								if = {
+									limit = {
+										check_variable = {
+											which = origin_shoulders_of_giants_planets
+											value < 6
+										}
+									}
+									spawn_planet = {
+										class = pc_toxic
+										location = event_target:new_planet
+										orbit_location = yes
+										orbit_distance_offset = 37
+										orbit_angle_offset = 5
+										size = 8
+										init_effect = {
+											set_name = "Ira"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		solar_system = {
+			set_variable = {
+				which = origin_shoulders_of_giants_planets
+				value = 0
 			}
 		}
 	}
@@ -1991,6 +2132,7 @@ country_event = {
 						is_star = no
 						is_asteroid = no
 						is_homeworld = no
+						NOT = { is_planet_class = pc_gas_giant }
 						NOT = { exists = archaeological_site }
 					}
 					create_archaeological_site = site_something_waiting
@@ -2020,6 +2162,7 @@ country_event = {
 						is_star = no
 						is_asteroid = no
 						is_homeworld = no
+						NOT = { is_planet_class = pc_gas_giant }
 						NOT = { exists = archaeological_site }
 					}
 					create_archaeological_site = site_buried_deep
@@ -2049,6 +2192,7 @@ country_event = {
 						is_star = no
 						is_asteroid = no
 						is_homeworld = no
+						NOT = { is_planet_class = pc_gas_giant }
 						NOT = { exists = archaeological_site }
 					}
 					create_archaeological_site = site_in_memoriam
@@ -2078,6 +2222,7 @@ country_event = {
 						is_star = no
 						is_asteroid = no
 						is_homeworld = no
+						NOT = { is_planet_class = pc_gas_giant }
 						NOT = { exists = archaeological_site }
 					}
 					create_archaeological_site = site_the_last_stand
@@ -2107,6 +2252,7 @@ country_event = {
 						is_star = no
 						is_asteroid = no
 						is_homeworld = no
+						NOT = { is_planet_class = pc_gas_giant }
 						NOT = { exists = archaeological_site }
 					}
 					create_archaeological_site = site_dark_secret

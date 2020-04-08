@@ -1369,6 +1369,7 @@ is_crossbreeding_possible = {
 		has_trait = trait_mechanical
 		has_trait = trait_hive_mind
 		has_trait = trait_self_modified
+		is_half_species = any
 	}
 }
 

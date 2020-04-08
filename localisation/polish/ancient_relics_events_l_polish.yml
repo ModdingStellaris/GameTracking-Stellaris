@@ -1,4 +1,7 @@
 ﻿l_polish:
+ shard_wants_to_burn_this_planet_tooltip:0 "§H[FromFromFrom.Planet.GetName]§!: Nasi koloniści są w wielkim niebezpieczeństwie."
+ ancrel.40182.name:0 "Zniszczono: [Root.GetName]"
+ ancrel.40182.desc:0 "Po tym jak nie udało nam się pokonać smoczycy Czachy, która pojawiła się w układzie [Root.System.GetName], zaatakowała ona naszą tamtejszą kolonię. Doszło do wielkiej masakry naszych kolonistów!"
  crisis.250.name:0 "Nowy rój"
  crisis.250.desc:0 "[Root.Capital.GetName]: Królowa roju wytworzyła nową flotę Pretorynów, która weszła na orbitę. Skoro królowa jest pod naszą kontrolą, te stwory są całkowicie posłuszne i wykonają każdy nasz rozkaz."
  crisis.252.name:0 "Schwytano królową roju"

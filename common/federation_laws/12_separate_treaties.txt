@@ -16,9 +16,7 @@ treaties_separate_no = {
 	required_centralization = {
 		base = 2
 	}
-	modifier = {
-		cohesion_add = -0.10
-	}
+	cohesion_growth = -0.10
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }

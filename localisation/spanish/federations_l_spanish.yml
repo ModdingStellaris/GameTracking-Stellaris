@@ -1,4 +1,15 @@
 ﻿l_spanish:
+ FEDERATION_LAW_COHESION:0 "$LAW$ $CATEGORY$: $VALUE|2+=$"
+ FEDERATION_DIVERSE_ETHICS_PEN:0 "Éticas diversas ($COUNT$): $VALUE|2+=$"
+ FEDERATION_OPPOSING_ETHICS_PEN:0 "Éticas opuestas ($COUNT$): $VALUE|2+=$"
+ FEDERATION_LAW_COHESION_DESC:0 "$MOD_FEDERATION_COHESION_ADD$: $VALUE|2+=$"
+ ENVOY_UNASSIGN_TITLE:0 "Anular asignación de enviados"
+ ENVOY_UNASSIGN_DESC:0 "Al anular la asignación de los enviados, estos dejarán su tarea actual y regresarán a nuestra capital, preparados para su nuevo cometido."
+ CALL_IN_FAVOR_UNABLE:0 "No podemos pedir favores."
+ CALL_IN_FAVOR_ONLY_IF_VOTING:0 "Debemos defender u oponernos a la resolución para pedir favores."
+ CALL_IN_FAVOR_ONLY_IF_IN_FAVOR:0 "Solo se pueden pedir favores si apoyamos la resolución."
+ d_ruin_bluelotus:0 "Ruinas del Loto azul"
+ d_ruin_bluelotus_desc:0 "Sitio en ruinas de lo que fueron unas instalaciones experimentales prometedoras para transmutar roca y otro tipo de materia en aleaciones. No queda nada, salvo esta pequeña veta."
  ORIGIN:0 "Origen"
  EMPIRE_ORIGIN:0 "$ORIGIN$"
  TOOLTIP_SETUP_ORIGIN:0 "Selecciona el origen de tu imperio."
@@ -2605,3 +2616,5 @@
  federations.10320.complygestalt:0 "Nuestro imperio cambiará nuestra política §Y$policy_war_philosophy$§! a §Y$no_wars_name$§!."
  federations.10330.desc:0 "La comunidad galáctica ha aprobado la resolución §Y$resolution_rulesofwar_demobilization_initiative$§!, que prohíbe la política §Y$economic_policy_military$§!.\n\nActualmente, nuestro imperio está quebrantando esta resolución. ¿Deberíamos cambiar nuestras políticas para cumplir con lo establecido?"
  federations.10330.comply:0 "Nuestro imperio cambiará nuestra política §Y$policy_economic_policy$§! a §Y$economic_policy_balanced$§!."
+
+ CURRENT_TERM_ENDS:0 "El mandato actual termina en: $DATE|Y$"

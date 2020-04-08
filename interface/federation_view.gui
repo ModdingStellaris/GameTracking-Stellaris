@@ -265,10 +265,7 @@ guiTypes = {
 			name = "background"
 			spriteType = "GFX_centralization_bg"
 			position = { x = 0 y = 0 }
-			alwaysTransparent = yes
 		}
-
-		
 
 		gridBoxType = {
 			name = "top_laws_grid_box"
@@ -293,7 +290,6 @@ guiTypes = {
 				name = "background"
 				spriteType = "GFX_dark_area_cut"
 				position = { x = 0 y = -22 }
-				alwaysTransparent = yes
 			}
 		}
 
@@ -426,6 +422,7 @@ guiTypes = {
 			position = { x = 85 y = 79 }
 			maxwidth = 300
 			text = "Federation Type"
+			text_color_code = "H" 
 			alwaysTransparent = yes
 		}
 		
@@ -465,26 +462,6 @@ guiTypes = {
 			position = { x = 32 y = 320 }
 			maxwidth = 286
 			text = "Federation Type"
-		}
-		
-		buttonType={
-			name = "assign_envoy_button"
-			id = "leave_button"
-			font = "cg_16b"
-			spriteType = "GFX_button_150_24"
-			position = { x = -890 y =545 }
-			text = "ASSIGN_ENVOY"
-			orientation = upper_right
-		}
-		
-		buttonType={
-			name = "leave_federation_button"
-			id = "leave_button"
-			font = "cg_16b"
-			spriteType = "GFX_button_164_24"
-			position = { x = -190 y = 545 }
-			text = "FEDERATION_VIEW_LEAVE_FEDERATION"
-			orientation = upper_right
 		}
 
 		containerWindowType = {
@@ -1246,6 +1223,26 @@ guiTypes = {
 			clicksound = "tab_click"
 			shortcut = "v"
 			Orientation = "LOWER_LEFT"
+		}
+		
+		buttonType={
+			name = "assign_envoy_button"
+			id = "leave_button"
+			font = "cg_16b"
+			spriteType = "GFX_button_150_24"
+			position = { x = -890 y =545 }
+			text = "ASSIGN_ENVOY"
+			orientation = upper_right
+		}
+		
+		buttonType={
+			name = "leave_federation_button"
+			id = "leave_button"
+			font = "cg_16b"
+			spriteType = "GFX_button_164_24"
+			position = { x = -190 y = 545 }
+			text = "FEDERATION_VIEW_LEAVE_FEDERATION"
+			orientation = upper_right
 		}
 	}
 

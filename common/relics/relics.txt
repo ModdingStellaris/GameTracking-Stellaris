@@ -1,6 +1,7 @@
 @activation_cost = 150
 @triumph_duration = 3600
 @triumph_duration_short = 1800
+@triumph_duration_veryshort = 900
 
 r_dragon_trophy = {
 	activation_duration = @triumph_duration
@@ -1018,6 +1019,7 @@ r_war_forge = {
 		# Activation cost
 		cost = {
 			influence = @activation_cost
+			minerals = 10000
 		}
 	}
 
@@ -1029,21 +1031,21 @@ r_war_forge = {
 		potential = {
 			always = yes
 		}
-		planet_pops_robotics_upkeep_mult = -0.10
+		country_alloys_produces_mult = 0.05
+		show_only_custom_tooltip = no
+		custom_tooltip = relic_cybrex_passive
 	}
 
 	score = 5000
 
 	active_effect = {
-		add_modifier = {
-			modifier = "cybrex_war_forge"
-			days = @triumph_duration
-		}
-		custom_tooltip = relic_triumph_cooldown
+		custom_tooltip = relic_cybrex_active
+		custom_tooltip = "relic_triumph_cooldown_veryshort"
 		hidden_effect = {
+			add_resource = { alloys = 5000 }
 			add_modifier = {
 				modifier = "relic_activation_cooldown"
-				days = @triumph_duration
+				days = @triumph_duration_veryshort
 			}
 		}
 	}

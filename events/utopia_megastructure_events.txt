@@ -3555,7 +3555,7 @@ country_event = {
 	show_sound = event_mystic_reveal
 	picture = GFX_evt_colony_settlement
 	is_triggered_only = yes
-	location = FromFromFrom.Planet
+	location = event_target:habitat_planet
 
 	option = {
 		name = EXCELLENT

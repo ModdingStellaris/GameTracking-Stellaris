@@ -243,7 +243,7 @@ origin_shattered_ring = {
 	picture = GFX_origin_shattered_ring
 
 	starting_colony = pc_ringworld_habitable
-	initializer = "shattered_ring_start"
+	initializers = { shattered_ring_start }
 	max_once_global = yes
 
 	playable = {
@@ -275,7 +275,7 @@ origin_void_dwellers = {
 	picture = GFX_origin_void_dwellers
 
 	starting_colony = pc_habitat
-	initializer = "void_dweller_system"
+	initializers = { void_dweller_system }
 	habitability_preference = pc_habitat
 	max_once_global = yes
 	preferred_planet_class_neighbor = no
@@ -542,10 +542,12 @@ origin_hegemon = {
 
 	possible = {
 		ethics = {
-			NOT = {
+			NOR = {
 				value = ethic_gestalt_consciousness
 				value = ethic_xenophobe
 				value = ethic_fanatic_xenophobe
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
 			}
 		}
 		civics = {

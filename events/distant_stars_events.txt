@@ -472,6 +472,49 @@ ship_event = {
 	}
 }
 
+ ## Make Rudimentary Robots not be presapients
+ planet_event = {
+	id = distar.2599 #I am sorry
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_planet_flag = primitive_robot_planet
+	}
+
+	immediate = {
+		create_species = {
+			name = "NAME_Primitive_Robot"
+			plural = "NAME_Primitive_Robots"
+			class = ROBOT
+			portrait = "default_robot"
+			namelist = "PRT1"
+			traits = {
+				trait = "trait_mechanical"
+			}
+			effect = {
+				set_species_flag = primitive_robots_flag
+				save_global_event_target_as = primitive_robot_species
+			}
+		}
+		while = {
+			count = 4
+			create_pop = {
+				species = event_target:primitive_robot_species
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					is_country_type = default
+					NOT = { has_country_flag = cured_rage_virus }
+				}
+			}
+			planet_event = { id = distar.26 days = 1 }
+		}
+	}
+}
+
  ## Rudimentary Robots -> Rage Virus Chain
 planet_event = {
 	id = distar.26
@@ -10106,7 +10149,7 @@ country_event = { #A useable Gray Goo Ship is built
 						save_event_target_as = nanite_ship_fleet
 					}
 					settings = {
-						can_upgrade = no
+						can_upgrade = yes
 						can_disband = yes
 						can_change_composition = yes
 						can_change_leader = yes

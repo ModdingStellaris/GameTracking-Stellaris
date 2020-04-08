@@ -359,6 +359,19 @@ building_corporate_embassy = {
 		branch_office_owner = { is_criminal_syndicate = no }
 	}
 
+	allow = {
+		num_pops >= 50
+	}
+
+	prerequisites = {
+		"tech_xeno_diplomacy"
+	}
+
+	show_tech_unlock_if = {
+		is_megacorp = yes
+		is_criminal_syndicate = no
+	}
+
 	country_modifier = {
 		diplo_weight_economy_mult = 0.1
 	}
@@ -378,7 +391,7 @@ building_corporate_embassy = {
 	}
 
 	ai_weight = {
-		weight = 2
+		weight = 50
 		modifier = {
 			factor = 10
 			branch_office_owner = {
@@ -764,6 +777,19 @@ building_disinformation_center = {
 		branch_office_owner = { is_criminal_syndicate = yes }
 	}
 
+	allow = {
+		num_pops >= 50
+	}
+
+	prerequisites = {
+		"tech_xeno_diplomacy"
+	}
+
+	show_tech_unlock_if = {
+		is_megacorp = yes
+		is_criminal_syndicate = yes
+	}
+
 	country_modifier = {
 		diplo_weight_economy_mult = 0.1
 	}
@@ -785,7 +811,7 @@ building_disinformation_center = {
 	}
 
 	ai_weight = {
-		weight = 2
+		weight = 50
 		modifier = {
 			factor = 10
 			branch_office_owner = {

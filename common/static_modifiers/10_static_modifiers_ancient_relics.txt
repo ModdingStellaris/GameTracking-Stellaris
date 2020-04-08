@@ -190,11 +190,8 @@ yuht_cryo_core = {
 	ships_upkeep_mult = -0.2
 }
 
-cybrex_war_forge = {
-	planet_pop_assembly_mult = 0.5
-}
-
 javorian_pox = {
+	icon = "gfx/interface/icons/modifiers/mod_javorian_pox.dds"
 }
 
 reality_perforator_1 = {

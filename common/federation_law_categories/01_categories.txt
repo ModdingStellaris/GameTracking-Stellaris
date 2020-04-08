@@ -55,6 +55,7 @@ law_category_succession_power = {
 }
 
 law_category_succession_term = {
+	show_succession_date = yes
 	laws = {
 		succession_term_years_10
 		succession_term_years_20

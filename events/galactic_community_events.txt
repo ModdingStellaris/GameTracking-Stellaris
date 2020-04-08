@@ -429,6 +429,10 @@ country_event = {
 					is_gestalt = no
 				}
 			}
+			every_country = {
+				remove_country_flag = galcom_form_aye
+				remove_country_flag = galcom_form_nay
+			}
 			random_playable_country = {
 				limit = {
 					perc_communications_with_playable >= 0.5

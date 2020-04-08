@@ -163,11 +163,10 @@ guiTypes = {
 			name = "desc"
 			font = "cg_16b"
 			text = ""
-			position = { x = 60 y = 70 }
+			position = { x = 60 y = 55 }
 			maxWidth = 550
-			maxHeight = 60
+			maxHeight = 80
 			fixedSize = yes
-			orientation = upper_left
 			vertical_alignment = center
 			format = center
 

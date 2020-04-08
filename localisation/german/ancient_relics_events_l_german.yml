@@ -1,5 +1,7 @@
 ﻿l_german:
-
+ shard_wants_to_burn_this_planet_tooltip:0 "Unsere Kolonisten auf §H[FromFromFrom.Planet.GetName]§! sind in großer Gefahr."
+ ancrel.40182.name:0 "[Root.GetName] vernichtet"
+ ancrel.40182.desc:0 "Da es uns nicht gelungen ist, den Scherbendrachen, der im [Root.System.GetName]-System aufgetaucht ist, zu besiegen, hat er sich gegen unsere Kolonie im System gewandt und alle Kolonisten getötet!"
  crisis.250.name:0 "Neue Brut"
  crisis.250.desc:0 "Die Brutkönigin hat eine neue Prethoryn-Flotte hervorgebracht, die einen Orbit über [Root.Capital.GetName] angenommen hat. Mit der Königin unter unserer Kontrolle sind die Kreaturen absolut loyal und werden jedem Befehl gehorchen."
  crisis.252.name:0 "Brutkönigin gefangen"

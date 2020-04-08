@@ -1,4 +1,7 @@
 ﻿l_french:
+ SECTOR_ADD_ALREADY_ASSIGNED:0 "§RLe système de $SYSTEM|Y$ relève déjà d'un secteur.§!"
+ SECTOR_ADD_DONT_OWN_STARBASE:0 "§RLa base stellaire du système de $SYSTEM|Y$ ne nous appartient pas.§!"
+ SECTOR_ADD_FOREIGN_COLONIES:0 "§RLe système de $SYSTEM|Y$ est colonisé par un autre empire.§!"
  PLANET_BUILDQUEUE_UP:0 "$STARBASE_BUILDQUEUE_UP$"
  PLANET_BUILDQUEUE_DOWN:0 "$STARBASE_BUILDQUEUE_DOWN$"
  NUM_MULT:0 "x$NUM$"
@@ -2757,7 +2760,7 @@
  CORP_ITOA_SELECT_01:1 "Êtes-vous prêts à donner le meilleur de vous-mêmes, [Root.GetSpeciesNamePlural] ? Avec la §Y[From.GetName]§!, le niveau est relevé..."
  CORP_ITOA_PROPOSE_01:2 "La marque [Root.GetAdj] est réputée pour sa qualité. Vous joindre à nous vous permettrait de bénéficier de notre crédibilité."
  CORP_CORP_ITOA_PROPOSE_01:0 "[From.GetSpeciesNamePlural], ensemble nous pourrions contrecarrer nos concurrents, gonfler les prix et dominer le marché. Qu'en pensez-vous ?"
- CORP_ITOA_ACCEPT_01:1 "Les projections de revenu d'une coopération [From.GetSpeciesAdj]-[Root.GetSpeciesAdj] paraissent tout à fait intéressantes, [From.GetLeaderName]. Ou devrais-je dire, « partenaire » ! Allez, laissez-vous tenter !"
+ CORP_ITOA_ACCEPT_01:1 "Les projections de revenu d'une coopération [From.GetSpeciesAdj]-[Root.GetSpeciesAdj] paraissent tout à fait intéressantes, [From.GetRulerName]. Ou devrais-je dire, « partenaire » ! Allez, laissez-vous tenter !"
  CORP_ITOA_REFUSE_01:1 "La marque [Root.GetAdj] est synonyme de qualité exigeante. Nous ne pouvons donc nous permettre de la voir associée à la [From.GetName]."
  CORP_ASK_JOIN_A_SELECT_01:1 "En avez-vous vraiment les capacités, [From.GetSpeciesNamePlural] ? Avez-vous ce qu'il faut pour intégrer la §Y[Root.GetAllianceName]§! ?"
  CORP_ASK_JOIN_A_PROPOSE_01:1 "Des solutions flexibles et centrées sur l'utilisateur, ainsi que l'optimisation des résultats ne sont que l'un des nombreux aspects de ce que la [From.GetName] a à offrir à la §Y[Root.GetAllianceName]§!. Est-ce un « oui » ? Je crois que j'ai entendu « oui »..."

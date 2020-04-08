@@ -758,32 +758,88 @@ fleet_event = {
 					is_colony = yes
 				}
 			}
+			custom_tooltip = shard_wants_to_burn_this_planet_tooltip
+			hidden_effect = {
+				fromfromfrom.planet = {
+					planet_event = { id = ancrel.40181 days = 720 }
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = ancrel.40181
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		exists = owner
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				solar_system = {
+					any_fleet_in_system = {
+						is_same_value = event_target:rubricator_dragon_fleet
+					}
+				}
+			}
 			if = {
 				limit = {
-					owner = {
-						NOT = { has_policy_flag = ai_full_rights }
-					}
-					fromfromfrom.planet = {
-						NOT = {
-							any_owned_pop = {
-								species = {
-									NOT = { is_archetype = MACHINE }
-									NOT = { is_archetype = ROBOT }
-								}
+					NOT = {
+						solar_system = {
+							any_fleet_in_system = {
+								is_ship_class = shipclass_military
+								owner = { is_same_value = root.owner }
+								fleet_power >= 500
 							}
 						}
 					}
 				}
-				custom_tooltip = ancrel.4018.after_tooltipB
+				planet_event = { id = ancrel.40182 }
 			}
 			else = {
-				custom_tooltip = ancrel.4018.after_tooltip
+				planet_event = { id = ancrel.40181 days = 360 }
 			}
-			hidden_effect = {
-				fromfromfrom.planet = {
-					destroy_colony = yes
+		}
+	}
+}
+
+planet_event = {
+	id = ancrel.40182
+	title = ancrel.40182.name
+	desc = ancrel.40182.desc
+	picture = GFX_evt_exploding_planet
+	show_sound = event_dangerous_animals
+	location = root
+
+	is_triggered_only = yes
+
+	option = {
+		name = UNFORTUNATE
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_policy_flag = ai_full_rights }
+				}
+				NOT = {
+					any_owned_pop = {
+						species = {
+							NOT = { is_archetype = MACHINE }
+							NOT = { is_archetype = ROBOT }
+						}
+					}
 				}
 			}
+			custom_tooltip = ancrel.4018.after_tooltipB
+		}
+		else = {
+			custom_tooltip = ancrel.4018.after_tooltip
+		}
+		hidden_effect = {
+			destroy_colony = yes
 		}
 	}
 }

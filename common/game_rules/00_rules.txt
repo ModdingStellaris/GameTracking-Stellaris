@@ -1282,6 +1282,10 @@ can_crossbreed_species_on_planet = {
 can_crossbreed_species = {
 	is_crossbreeding_possible = yes
 	root = { is_crossbreeding_possible = yes }
+	NOR = {
+		is_subspecies = root
+		root = { is_subspecies = prev }
+	}
 }
 
 # No scope

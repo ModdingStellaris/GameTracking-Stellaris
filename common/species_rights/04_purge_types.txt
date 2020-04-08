@@ -24,18 +24,15 @@ purge_normal = {
 		else = {
 			custom_tooltip = {
 				fail_text = PURGES_ALLOWED
-				from = {
-					OR = {
-						has_ethic = ethic_gestalt_consciousness
-						has_valid_civic = civic_fanatic_purifiers
-						has_policy_flag = purge_allowed
-						root = { 
-							OR = { 
-								has_trait = trait_machine_unit 
-								has_trait = trait_mechanical
-							}
-						}
-					}			
+				OR = {
+					is_robotic_species = yes
+					from = {
+						OR = {
+							has_ethic = ethic_gestalt_consciousness
+							has_valid_civic = civic_fanatic_purifiers
+							has_policy_flag = purge_allowed
+						}			
+					}
 				}
 			}	
 		}
@@ -64,6 +61,10 @@ purge_neutering = {
 	potential = {
 		host_has_dlc = "Utopia"
 		from = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+		OR = {
+			is_robotic_species = no
+			species_has_happiness_with_owner = from
+		}
 	}
 	
 	allow = {
@@ -86,6 +87,13 @@ purge_neutering = {
 				}					
 			}
 		}
+		# custom_tooltip = {
+		# 	fail_text = "CANNOT_NEUTER_NON_SENTIENT_ROBOTS"
+		# 	OR = {
+		# 		is_robotic_species = no
+		# 		species_has_happiness_with_owner = from
+		# 	}
+		# }
 	}
 
 	ai_will_do = {
@@ -139,7 +147,11 @@ purge_displacement = {
 				has_trait = trait_machine_unit
 				has_trait = trait_mechanical	
 			}			
-		}		
+		}	
+		OR = {
+			is_robotic_species = no
+			species_has_happiness_with_owner = from
+		}
 	}
 	
 	allow = {
@@ -159,6 +171,13 @@ purge_displacement = {
 				is_same_species = from
 			}
 		}
+		# custom_tooltip = {
+		# 	fail_text = "CANNOT_DISPLACE_NON_SENTIENT_ROBOTS"
+		# 	OR = {
+		# 		is_robotic_species = no
+		# 		species_has_happiness_with_owner = from
+		# 	}
+		# }
 	}
 	ai_will_do = {
 		factor = 1

@@ -156,16 +156,7 @@ guiTypes = {
 			}			
 		}
 
-		# Join/Leave button
-		buttonType = {
-			name = "join_leave_button"
-			position = { x = -150 y = -50 }
-			spriteType = "GFX_button_116_24"
-			buttonFont = "cg_16b"
-			text = "JOIN OR LEAVE"
-			font = "cg_16b"
-			orientation = "LOWER_RIGHT"
-		}
+		
 
 		# Community Window ----------------------------------------------------------
 		containerWindowType = {
@@ -486,6 +477,12 @@ guiTypes = {
 					position = { x = 10 y = 34 }
 					size = { width = 280 height = 150 }
 					clipping = yes
+					verticalScrollBar = "right_vertical_slider_s"
+
+					background = {
+						name = "bg"
+						quadTextureSprite = "GFX_tiled_window_transparent"
+					}
 
 					gridBoxType = {
 						name = "members_gridbox"
@@ -493,7 +490,6 @@ guiTypes = {
 						size = { width = 280 height = 150 }
 						slotsize = { width = 34 height = 34 }
 						max_slots_horizontal = 8
-						scrollbartype = "standardtext_slider_small"	
 						format = UPPER_LEFT
 					}
 				}
@@ -706,7 +702,6 @@ guiTypes = {
 						slotsize = { width = 34 height = 34 }
 						add_horizontal = yes
 						max_slots_horizontal = 9
-						scrollbartype = "standardtext_slider"
 						format = UPPER_LEFT
 
 					}
@@ -723,9 +718,11 @@ guiTypes = {
 						name = "proposal_decisions_bg"
 						position = { x = 0 y = 8 }
 						size = { width = 245 height = 210 }
+
 						background = {
 							name = "highlighted_bg"
 							spriteType = "GFX_dark_area_cut_light"
+							alwaystransparent = yes
 						}
 					}
 					
@@ -753,11 +750,11 @@ guiTypes = {
 	
 					smoothListBoxType = {
 						name = "decisions_list"
-						position = { x = -4 y = 3 }
-						size = { x = 252 y = 216 }
+						position = { x = 5 y = 10 }
+						size = { x = 230 y = 208 }
 						scrollbartype = "standardlistbox_slider"
 						orientation = "UPPER_LEFT"
-						spacing = 7
+						spacing = 3
 						defaultSelection = yes
 					}	
 				}	
@@ -1250,6 +1247,17 @@ guiTypes = {
 			}
 		}
 
+		# Join/Leave button
+		buttonType = {
+			name = "join_leave_button"
+			position = { x = -150 y = -50 }
+			spriteType = "GFX_button_116_24"
+			buttonFont = "cg_16b"
+			text = "JOIN OR LEAVE"
+			font = "cg_16b"
+			orientation = "LOWER_RIGHT"
+		}
+
 		# Tabs ----------------------------------------------------------------------
 		@tabheight = -2
 
@@ -1588,21 +1596,21 @@ guiTypes = {
 	containerWindowType = {
 		name = "proposal_decision_entry"
 		position = { x = 0 y = 0 }
-		size = { width = 230 height = 34 }
+		size = { width = 230 height = 36 }
 		clipping = no
 
 		buttonType = {
 			name = "proposal_decision_button"
 			quadTextureSprite = "GFX_standard_button_230_34_button"
-			position = { x = 0 y = 0  }
+			position = { x = -12 y = -12  }
 			clicksound = "select_click"
 		}
 
 		containerWindowType = {
 			name = "selected_overlay"
-			position = { x = 12 y = 12 }
+			position = { x = 0 y = 0 }
 
-			size = { width = 100% height = 110% }
+			size = { width = 100% height = 37 }
 			background = {
 				name = "selected_bg"
 				spriteType = "GFX_glow_tile_orange_no_padding"
@@ -1613,7 +1621,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "proposal_decision_text"
 			font = "cg_16b"
-			position = { x = 10 y = 20 }
+			position = { x = 10 y = 8 }
 			maxWidth = 230
 			maxHeight = 20
 			format = center
@@ -1624,7 +1632,7 @@ guiTypes = {
 		iconType = {
 			name ="proposal_decision_icon"
 			quadTextureSprite = "GFX_abstain"
-			position = { x = 20 y = 14 }
+			position = { x = 20 y = 2 }
 			alwaysTransparent = yes
 			scale = 0.6
 		}

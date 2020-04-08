@@ -1058,7 +1058,25 @@ building_resource_silo = {
 	}
 
 	allow = {
-		buildings_simple_allow = yes
+		exists = owner
+		OR = {
+			owner = { is_ai = no }
+			AND = {
+				NOT = { has_building = building_resource_silo }
+				OR = {
+					owner = {
+						is_machine_empire = yes
+						has_swapped_tradition = tr_domination_modular_depot
+					}
+					is_active_resolution = "resolution_greatergood_balance_in_the_middle"
+					is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
+					owner = {
+						has_ascension_perk = ap_arcology_project
+						NOT = { has_technology = tech_mega_engineering }
+					}
+				}
+			}
+		}
 	}
 
 	triggered_planet_modifier = {

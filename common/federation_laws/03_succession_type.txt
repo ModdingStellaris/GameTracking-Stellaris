@@ -21,9 +21,7 @@ succession_type_rotation = {
 			}
 		}
 	}
-	modifier = {
-		cohesion_add = 0.50
-	}
+	cohesion_growth = -0.50
 	on_enact = {
 		set_federation_succession_type = rotation
 		if = {
@@ -319,9 +317,7 @@ succession_type_strongest = {
 	required_centralization = {
 		base = 4
 	}
-	modifier = {
-		cohesion_add = -1
-	}
+	cohesion_growth = -1.00
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }

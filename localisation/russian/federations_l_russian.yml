@@ -1,4 +1,15 @@
 ﻿l_russian:
+ FEDERATION_LAW_COHESION:0 "$LAW$ $CATEGORY$: $VALUE|2+=$"
+ FEDERATION_DIVERSE_ETHICS_PEN:0 "Многообразие принципов ($COUNT$): $VALUE|2+=$"
+ FEDERATION_OPPOSING_ETHICS_PEN:0 "Конфликтующие принципы ($COUNT$): $VALUE|2+=$"
+ FEDERATION_LAW_COHESION_DESC:0 "$MOD_FEDERATION_COHESION_ADD$: $VALUE|2+=$"
+ ENVOY_UNASSIGN_TITLE:0 "Отозвать послов"
+ ENVOY_UNASSIGN_DESC:0 "Отозванные послы оставят свои текущие посты и вернутся в столицу, где будут ожидать следующего назначения."
+ CALL_IN_FAVOR_UNABLE:0 "У нас нет возможности попросить кого бы то ни было об одолжениях."
+ CALL_IN_FAVOR_ONLY_IF_VOTING:0 "Прежде чем просить об одолжениях, мы должны высказаться за или против обсуждаемой резолюции."
+ CALL_IN_FAVOR_ONLY_IF_IN_FAVOR:0 "Мы можем просить об одолжениях, только если поддержим обсуждаемую резолюцию."
+ d_ruin_bluelotus:0 "Развалины «Синего лотоса»"
+ d_ruin_bluelotus_desc:0 "Разрушенные останки некогда многообещающего опытного полигона, где проводились эксперименты по преобразованию обычных силикатных пород в полезные сплавы. На этом месте осталась только небольшая рудная жила."
  IS_YOU:0 "Это вы"
  ORIGIN:0 "Происхождение"
  EMPIRE_ORIGIN:0 "$ORIGIN$"
@@ -2604,3 +2615,5 @@
  federations.10320.complygestalt:0 "Наша империя подчинится. §Y$policy_war_philosophy$§! уступит место новой политике: §Y$no_wars_name$§!."
  federations.10330.desc:0 "Новая резолюция галактического сообщества, §Y$resolution_rulesofwar_demobilization_initiative$§!, не позволяет империям следовать политике «§Y$economic_policy_military$§!».\n\nВ данный момент наша империя нарушает положения этой резолюции. Следует ли нам изменить текущую политику в соответствии с новыми требованиями?"
  federations.10330.comply:0 "Наша империя подчинится. §Y$policy_economic_policy$§! уступит место новой политике: §Y$economic_policy_balanced$§!."
+
+ CURRENT_TERM_ENDS:0 "Конец текущего срока: $DATE|Y"

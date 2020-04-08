@@ -1182,7 +1182,7 @@ d_archaeological_site = {	#Added via event
 
 # Hibernating Lithoids are generated on lithoid homeworlds at game-start
 d_hibernating_lithoids = {
-	icon = d_hibernating_lithoids
+	icon = d_buried_lithoids
 	time = 360
 
 	is_for_colonizeable = yes
@@ -1277,18 +1277,4 @@ d_lithoid_devastation = {
 			energy = 1000
 		}
 	}
-}
-
-d_sentinels = {	#Added via event
-	icon = d_archaeological_dig
-	
-	potential = { always = no }
-	can_be_cleared = { always = no }
-
-	planet_modifier = { 
-		planet_max_districts_add = -1
-	}
-	
-	is_for_colonizeable = yes
-	category = deposit_cat_rare_blocker	
 }

@@ -1,4 +1,15 @@
 ﻿l_simp_chinese:
+ FEDERATION_LAW_COHESION:0 "$LAW$$CATEGORY$：$VALUE|2+=$"
+ FEDERATION_DIVERSE_ETHICS_PEN:0 "多元思潮（$COUNT$）：$VALUE|2+=$"
+ FEDERATION_OPPOSING_ETHICS_PEN:0 "对立思潮（$COUNT$）：$VALUE|2+=$"
+ FEDERATION_LAW_COHESION_DESC:0 "$MOD_FEDERATION_COHESION_ADD$: $VALUE|2+=$"
+ ENVOY_UNASSIGN_TITLE:0 "解除特使指派"
+ ENVOY_UNASSIGN_DESC:0 "解除特使指派会使得特使终止当前指派的任务并返回我国首都，等待下一项任务的分配。"
+ CALL_IN_FAVOR_UNABLE:0 "我们无法请求任何外交支持。"
+ CALL_IN_FAVOR_ONLY_IF_VOTING:0 "我们必须表态支持或反对议案才能请求外交支持。"
+ CALL_IN_FAVOR_ONLY_IF_IN_FAVOR:0 "唯有支持议案才能请求外交支持。"
+ d_ruin_bluelotus:0 "蓝荷废墟"
+ d_ruin_bluelotus_desc:0 "一处曾经大有希望的实验设施，能将岩石及其他物质转变为合金。如今除了一片窄小的矿层，这里什么也不剩了。"
  IS_YOU:0 "这是你"
  ORIGIN:0 "起源"
  EMPIRE_ORIGIN:0 "$ORIGIN$"
@@ -2604,3 +2615,5 @@
  federations.10320.complygestalt:0 "我们的帝国会将我们的§Y$policy_war_philosophy$§!政策调整为§Y$no_wars_name$§!。"
  federations.10330.desc:0 "星海共同体通过了§Y$resolution_rulesofwar_demobilization_initiative$§!议案，将禁止§Y$economic_policy_military$§!政策。\n\n我们的帝国目前不符合该项议案决定。是否要据此调整政策？"
  federations.10330.comply:0 "我们的帝国会将我们的§Y$policy_economic_policy$§!政策调整为§Y$economic_policy_balanced$§!。"
+
+ CURRENT_TERM_ENDS:0 "当前任期止于:$DATE|Y$"

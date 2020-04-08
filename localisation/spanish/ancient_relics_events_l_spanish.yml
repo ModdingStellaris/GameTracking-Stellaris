@@ -1,4 +1,7 @@
 ﻿l_spanish:
+ shard_wants_to_burn_this_planet_tooltip:0 "Los colonos de §H[FromFromFrom.Planet.GetName]§! están en grave peligro."
+ ancrel.40182.name:0 "Destrucción de [Root.GetName]"
+ ancrel.40182.desc:0 "¡Como no pudimos vencer al dragón Shard que emergió en el sistema [Root.System.GetName], ahora este se ha puesto en contra de la colonia que tenemos en ese sistema y ha masacrado a los colonos!"
  crisis.250.name:0 "Nueva cría"
  crisis.250.desc:0 "La reina de la camada ha engendrado una flota prethoryn que ha entrado en órbita en [Root.Capital.GetName]. Ahora que controlamos a la reina, las criaturas son totalmente fieles y obedecerán nuestras órdenes."
  crisis.252.name:0 "Reina de camada capturada"

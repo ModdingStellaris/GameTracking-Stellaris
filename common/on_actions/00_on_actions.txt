@@ -614,7 +614,7 @@ on_colonized = {
 		#factions.105 # Colonialists New Colony
 		akx.9499
 		distar.5
-		distar.26
+		distar.2599
 		distar.1014
 		distar.72
 		distar.73

@@ -18,6 +18,7 @@
 		name = "GFX_law_button_small"
 		textureFile = "gfx/interface/federation/law_button_small.dds"
 		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	
 	spriteType = {

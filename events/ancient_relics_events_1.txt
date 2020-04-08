@@ -949,6 +949,18 @@ fleet_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		solar_system = {
+			random_system_planet = {
+				limit = {
+					is_colony = no
+				}
+				set_planet_flag = arc_anomaly_planet
+				save_event_target_as = arc_anomaly_planet
+			}
+		}
+	}
+
 	option = {
 		name = OK
 		medium_artifact_reward = yes
@@ -961,16 +973,11 @@ fleet_event = {
 			}
 		}
 		
-		solar_system = {
-			random_system_planet = {
-				limit = {
-					is_colony = no
-				}
-				#set_planet_flag = test_flag
-				add_anomaly =  {
-					category = ANCREL_ARC_CAT
-				}
+		event_target:arc_anomaly_planet = {
+			add_anomaly =  {
+				category = ANCREL_ARC_CAT
 			}
+			hidden_effect = { remove_planet_flag = arc_anomaly_planet }
 		}
 	}
 }
@@ -1014,6 +1021,17 @@ ship_event = { #
 	location = from
 
 	immediate = {
+		solar_system = {
+			random_system_planet = {
+				limit = {
+					exists = archaeological_site
+					archaeological_site = {
+						is_site_type = it_was_aliens_site
+					}
+				}
+				save_event_target_as = arc_site_planet
+			}
+		}
 		FROM = { 
 			random_list = {
 				20 = {
@@ -1048,7 +1066,20 @@ ship_event = { #
 			FROM = { has_planet_flag = aliens_site_nothing }
 		}
 		FROM = {
-			set_deposit = d_minerals_8
+			if = {
+				limit = { 
+					OR =  {
+						has_deposit_for = shipclass_research_station
+						has_deposit_for = shipclass_mining_station
+					}
+				}
+				root.owner = {
+					add_resource = { minerals = 1000 }
+				}
+			}
+			else = {
+				set_deposit = d_minerals_8
+			}
 		}
 		name = CURIOUS
 	}

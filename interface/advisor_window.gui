@@ -129,6 +129,11 @@ guiTypes = {
 			orientation = LOWER_LEFT
 			clipping = no
 			
+			background = {
+				name = "bg"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+			
 			gridBoxType = {
 				name = "options"
 				slotSize = { width = 290 height = 34 }

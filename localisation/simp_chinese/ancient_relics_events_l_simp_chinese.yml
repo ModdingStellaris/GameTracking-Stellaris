@@ -1,4 +1,7 @@
 ﻿l_simp_chinese:
+ shard_wants_to_burn_this_planet_tooltip:0 "我们在§H[FromFromFrom.Planet.GetName]§!上的居民危在旦夕。"
+ ancrel.40182.name:0 "[Root.GetName]被毁"
+ ancrel.40182.desc:0 "我们未能击败出现在[Root.System.GetName]星系中的裂爪龙，随后，它向我们在这一恒星系中的殖民地发动攻击，居民遭到屠杀，伤亡极为惨重！"
  crisis.250.name:0 "新虫群"
  crisis.250.desc:0 "虫后已经孕育出了一支新的索林原虫舰队，该舰队将环绕[Root.Capital.GetName]的轨道。当女王处于我们的控制下时，这些生物是绝对忠诚的，并会服从我们的全部命令。"
  crisis.252.name:0 "捕获虫后"

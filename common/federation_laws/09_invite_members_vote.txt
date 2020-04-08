@@ -54,9 +54,7 @@ invite_members_president_vote = {
 	required_centralization = {
 		base = 4
 	}
-	modifier = {
-		cohesion_add = -0.25
-	}
+	cohesion_growth = -0.25
 	on_enact = {
 		set_diplomacy_action_setting = {
 			action = action_invite_to_federation
@@ -105,9 +103,7 @@ invite_members_president_vote_hegemony = {
 			}
 		}
 	}
-	modifier = {
-		cohesion_add = -0.25
-	}
+	cohesion_growth = -0.25
 	on_enact = {
 		set_diplomacy_action_setting = {
 			action = action_invite_to_federation

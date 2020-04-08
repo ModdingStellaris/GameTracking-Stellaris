@@ -1651,7 +1651,7 @@ primitive_robot_system = {
 
 	usage = misc_system_init
 	usage_odds = {
-		base = 90000
+		base = 9000
 		modifier = {
 			factor = 0
 			has_distar = no
@@ -1704,26 +1704,6 @@ primitive_robot_system = {
 			set_planet_flag = primitive_robot_planet
 			add_modifier = { modifier = primitive_robots years = -1 }
 			prevent_anomaly = yes
-			create_species = {
-				name = "NAME_Primitive_Robot"
-				plural = "NAME_Primitive_Robots"
-				class = ROBOT
-				portrait = "default_robot"
-				namelist = "PRT1"
-				traits = {
-					trait = "trait_mechanical"
-				}
-				effect = {
-					set_species_flag = primitive_robots_flag
-					save_global_event_target_as = primitive_robot_species
-				}
-			}
-			while = {
-				count = 4
-				create_pop = {
-					species = event_target:primitive_robot_species
-				}
-			}
 			#clear_blockers = yes
 			add_deposit = d_city_ruins
 			add_deposit = d_city_ruins

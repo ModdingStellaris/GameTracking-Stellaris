@@ -1,4 +1,10 @@
 ﻿l_polish:
+ relic_triumph_cooldown_veryshort:0 "\n$relic_activation_cooldown$: £time£ §Y900§!"
+ cybrex_warform:0 "Maszyna bojowa Cybrexu"
+ cybrex_warform_desc:0 "Ten gigantyczny robot góruje nad większością budynków, a jego siła ognia pozwala równać z ziemią całe miasta."
+ relic_cybrex_passive:0 "Pozwala tworzyć w stolicy armie: §Y$cybrex_warform$§!."
+ relic_cybrex_active:0 "Wytwarza §Y5000§!£alloys£."
+ sentinel_army_desc:0 "Żywe posągi z mechanicznym wnętrzem, szumiące ciała i świecąca skóra, ich rdzenie emitują promieniowanie. Są gotowe zniszczyć każdego wroga!"
  minor_artifacts:0 "Pomniejsze artefakty"
  minor_artifacts_desc:0 "Pomniejsze artefakty ( £minor_artifacts£ ) to mało znana technologia i częściowo zapomniana wiedza przejęta od archaicznych cywilizacji, tylko częściowo rozumiana przez naszą naukę. Są powszechniejsze od reliktów i można je wykorzystywać do wprowadzania różnych efektów oddziałujących na całe imperium."
  artifact_actions:0 "Działania artefaktów"

@@ -2,6 +2,15 @@
  ####################################
  # Triggers
  ####################################
+ NUM_SYSTEM_PLANETS_TRIGGER:0 "Anzahl an Planeten im System ($VALUE1|0Y$) ist $COMPARE$ $VALUE2|0Y$"
+ NUM_SYSTEM_PLANETS_NOT_TRIGGER:0 "Anzahl an Planeten im System ($VALUE1|0Y$) ist NICHT $COMPARE$ $VALUE2|0Y$"
+ effect_every_owned_species:0 "$effect_every_owned_pop_species$"
+ GALAXY_SIZE_IS:0 "Galaxiegröße ist $SIZE|Y$"
+ GALAXY_SIZE_IS_NOT:0 "Galaxiegröße ist NICHT $SIZE|Y$"
+ HAS_HAPPINESS_TRIGGER:0 "Ist zufrieden"
+ HAS_NOT_HAPPINESS_TRIGGER:0 "Ist NICHT zufrieden"
+ IS_IN_BREACH_OF_TRIGGER:0 "Verstößt gegen den Beschluss "$RESOLUTION$""
+ IS_NOT_IN_BREACH_OF_TRIGGER:0 "Verstößt NICHT gegen den Beschluss "$RESOLUTION$""
  TRIGGER_IS_IN_COMBAT:0 "Steht im Gefecht"
  TRIGGER_IS_NOT_IN_COMBAT:0 "Steht NICHT im Gefecht"
  HAS_OWNER:0 "Ist kolonisiert"

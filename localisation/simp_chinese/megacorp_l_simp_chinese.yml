@@ -1,4 +1,7 @@
 ﻿l_simp_chinese:
+ SECTOR_ADD_ALREADY_ASSIGNED:0 "§R$SYSTEM|Y$已有所属星域 。§!"
+ SECTOR_ADD_DONT_OWN_STARBASE:0 "§R$SYSTEM|Y$中的恒星基地不归我们所有。§!"
+ SECTOR_ADD_FOREIGN_COLONIES:0 "§R$SYSTEM|Y$具有属于其他帝国的殖民地。§!"
  BASE_JOB_INPUT:0 "岗位基础维护费：$RESOURCES$"
  BASE_JOB_OUTPUT:0 "岗位基础产出：$RESOURCES$"
  PLANET_BUILDQUEUE_UP:0 "$STARBASE_BUILDQUEUE_UP$"
@@ -3494,7 +3497,7 @@
  CORP_ITOA_SELECT_01:0 "[Root.GetSpeciesNamePlural]你这次准备好全力以赴了吗？§Y[From.GetName]§!像原来那样可不行啊……"
  CORP_ITOA_PROPOSE_01:0 "[Root.GetAdj]的牌子因为其品质而响当当！加入我们，你也可以从这个好名声中受益。"
  CORP_CORP_ITOA_PROPOSE_01:0 "[From.GetName]！我们联手一定可以一骑绝尘，垄断市场。现在就看你了。"
- CORP_ITOA_ACCEPT_01:0 "[From.GetSpeciesAdj]-[Root.GetSpeciesAdj]联盟的模拟收益看起来很不错，[From.GetLeaderName]，或者应该说伙伴？我们加入！"
+ CORP_ITOA_ACCEPT_01:0 "[From.GetSpeciesAdj]-[Root.GetSpeciesAdj]联盟的模拟收益看起来很不错，[From.GetRulerName]，或者应该说伙伴？我们加入！"
  CORP_ITOA_REFUSE_01:0 "[Root.GetAdj]就是高级品质的代名词。我们不能让[From.GetSpeciesNamePlural]坏了我们的名声。"
  CORP_ASK_JOIN_A_SELECT_01:0 "[From.GetSpeciesNamePlural]，你有多大本事啊？你的本事足不足够让你加入§Y[Root.GetAllianceName]§!啊？"
  CORP_ASK_JOIN_A_PROPOSE_01:0 "灵活快速，用户至上的解决方案和收益最大化只不过是[From.GetName]能够带给§Y[Root.GetAllianceName]§!的一小部分罢了……你这是答应了？我确实听到你答应了……"

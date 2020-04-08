@@ -1,4 +1,10 @@
 ﻿l_german:
+ relic_triumph_cooldown_veryshort:0 "\n$relic_activation_cooldown$: £time£ §Y900§!"
+ cybrex_warform:0 "Cybrex-Kriegsform"
+ cybrex_warform_desc:0 "Dieser titanische Roboter überragt die meisten Gebäude und hat genug Feuerkraft, um Städte zu vernichten."
+ relic_cybrex_passive:0 "Ermöglicht den Bau von §Y$cybrex_warform$en§! in Eurer Hauptstadt."
+ relic_cybrex_active:0 "Produziert £alloys£§Y5000§!."
+ sentinel_army_desc:0 "Lebende Statuen mit einem mechanischen Grundaufbau, einem summenden Körper und einer glühenden Haut, die Strahlung aus ihren Kernen absondern und bereit dazu sind, Vernichtung auf ihre Feinde herabregnen zu lassen!"
  minor_artifacts:0 "Kleinere Artefakte"
  minor_artifacts_desc:0 "Kleinere Artefakte ( £minor_artifacts£ ) repräsentieren schwer verständliche Technologien und halb vergessene Überlieferungen aus alten Zivilisationen, die nur teilweise von unserer eigenen Wissenschaft verstanden werden. Man findet sie häufiger als Relikte und sie können dazu verwendet werden, um verschiedene Effekte für das gesamte Reich zu erlassen."
  artifact_actions:0 "Artefaktaktionen"

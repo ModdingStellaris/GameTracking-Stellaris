@@ -183,9 +183,9 @@ building_bureaucratic_2 = {
 		job_bureaucrat_add = 5
 	}
 
-	#upgrades = {
-	#	"building_bureaucratic_3"
-	#}
+# 	upgrades = {
+# 		"building_bureaucratic_3"
+# 	}
 
 	prerequisites = {
 		"tech_colonial_bureaucracy"
@@ -235,6 +235,7 @@ building_bureaucratic_2 = {
 	}
 }
 
+# T3 Admin Cap buildings intentionally removed for regular empires, left in a partial state to not break existing games
 building_bureaucratic_3 = {
 	base_buildtime = @b3_time
 	can_build = no
@@ -242,11 +243,9 @@ building_bureaucratic_3 = {
 	category = government
 
 	potential = {
-		exists = owner
-		OR = {
-			buildings_no_crystals = yes
-			owner = { is_regular_empire = no }
-		}
+		always = no
+#		exists = owner
+#		owner = { is_regular_empire = yes }
 	}
 
 	allow = {
@@ -255,7 +254,10 @@ building_bureaucratic_3 = {
 
 	destroy_trigger = {
 		exists = owner
-		owner = { is_regular_empire = no }
+		OR = {
+			buildings_no_crystals = yes
+			owner = { is_regular_empire = no }
+		}
 	}
 
 	resources = {
@@ -279,7 +281,8 @@ building_bureaucratic_3 = {
 	}
 
 	show_tech_unlock_if = {
-		is_regular_empire = yes
+# 		is_regular_empire = yes
+		always = no
 	}
 
 	triggered_desc = {
@@ -634,6 +637,23 @@ building_precinct_house = {
 		NOT = { has_modifier = slave_colony }
 	}
 
+	allow = {
+		OR = {
+			owner = { is_ai = no }
+			AND = {
+				planet_crime > 15
+				NOR = {
+					AND = {
+						has_building = building_precinct_house
+						owner = { has_technology = tech_colonial_centralization }
+					}
+					has_building = building_hall_judgment
+					num_buildings = { type = building_precinct_house value = 3 }
+				}
+			}
+		}
+	}
+
 	destroy_trigger = {
 		exists = owner
 		OR = {
@@ -753,6 +773,16 @@ building_sentinel_posts = {
 	potential = {
 		exists = owner
 		owner = { is_gestalt = yes }
+	}
+
+	allow = {
+		OR = {
+			owner = { is_ai = no }
+			AND = {
+				buildings_simple_allow = yes
+				NOT = { has_building = building_sentinel_posts }
+			}
+		}
 	}
 
 	destroy_trigger = {

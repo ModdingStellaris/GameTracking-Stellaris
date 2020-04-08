@@ -149,9 +149,7 @@ declare_war_president_vote = {
 	required_centralization = {
 		base = 4
 	}
-	modifier = {
-		cohesion_add = -0.50
-	}
+	cohesion_growth = -0.50
 	on_enact = {
 		set_diplomacy_action_setting = {
 			action = action_declare_war

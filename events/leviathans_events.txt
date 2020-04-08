@@ -1462,7 +1462,7 @@ country_event = {
 				immortal = yes
 				effect = {
 					set_leader_flag = trader_leader
-					root = { set_country_flag = recruited_trader_leader }
+					owner = { set_country_flag = recruited_trader_leader }
 				}
 			}
 			if = {

@@ -54,9 +54,7 @@ kick_members_president_vote = {
 	required_centralization = {
 		base = 5
 	}
-	modifier = {
-		cohesion_add = -0.50
-	}
+	cohesion_growth = -0.50
 	on_enact = {
 		set_diplomacy_action_setting = {
 			action = action_kick_from_federation
@@ -106,9 +104,7 @@ kick_members_president_vote_hegemony = {
 		}
 	}
 
-	modifier = {
-		cohesion_add = -0.50
-	}
+	cohesion_growth = -0.50
 	on_enact = {
 		set_diplomacy_action_setting = {
 			action = action_kick_from_federation

@@ -100,9 +100,11 @@ strike_craft_component_template = {
 	launch_time = 1.0
 
 	damage = { min = 8 max = 12 }
-	cooldown = 8
+	cooldown = 2
 	range = 10
+	engagement_range = 120
 	accuracy = 1.0
+	tracking = 0.8
 
 	health = 80
 	armor = 20
@@ -110,7 +112,7 @@ strike_craft_component_template = {
 	evasion = 0.80
 
 	speed = 400
-	rotation_speed = 0.2
+	rotation_speed = 0.5
 	acceleration = 0.5
 
 	shield_damage = 1.0
@@ -119,7 +121,7 @@ strike_craft_component_template = {
 
 	ship_behavior = "bombers_behavior"
 
-	weapon_type = instant
+	weapon_type = instant # Not PD, unlike normal strike craft
 	projectile_gfx = "small_space_amoeba_weapon"
 
 	prerequisites = { "tech_swarm_strike_craft_1" }

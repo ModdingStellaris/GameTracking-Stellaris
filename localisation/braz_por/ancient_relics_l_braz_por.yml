@@ -1,4 +1,10 @@
 ﻿l_braz_por:
+ relic_triumph_cooldown_veryshort:0 "\n$relic_activation_cooldown$: £time£ §Y900§!"
+ cybrex_warform:0 "Forma de Guerra Cybrex"
+ cybrex_warform_desc:0 "Este robô titânico é muito maior que a maioria das construções, com poder de fogo suficiente para devastar cidades."
+ relic_cybrex_passive:0 "Permite construir exércitos de §Y$cybrex_warform$§! na sua capital."
+ relic_cybrex_active:0 "Produz £alloys£§Y5000§!."
+ sentinel_army_desc:0 "Estátuas vivas com um núcleo mecânico, corpos zunindo e pele brilhando, radiação pulsando de seus núcleos, prontas para fazer chover destruição sobre seus inimigos!"
  minor_artifacts:0 "Artefatos Menores"
  minor_artifacts_desc:0 "Artefatos menores ( £minor_artifacts£ ) representam tecnologias obscuras e conhecimento quase esquecido de civilizações arcaicas, somente compreendidos parcialmente por nossa própria ciência. Eles são mais comuns que Relíquias, e podem ser gastos para executar diversos efeitos sobre o império."
  artifact_actions:0 "Ações de Artefato"

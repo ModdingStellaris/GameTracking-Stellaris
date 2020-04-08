@@ -333,7 +333,7 @@ d_tree_of_life_colony = {
 #Lithoid origin
 # Buried Lithoids are generated on lithoid-origin colonisation
 d_buried_lithoids = {
-	icon = d_hibernating_lithoids #TODO replace with custom
+	icon = d_buried_lithoids
 	time = 360
 
 	is_for_colonizeable = yes

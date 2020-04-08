@@ -16,7 +16,7 @@ pop_event = {
 
 	immediate = {
 		if = {
-			limit = { 
+			limit = {
 				has_trait = trait_pc_habitat_preference
 				NOT = { has_trait = trait_void_dweller_1 }
 				from = { is_planet_class = pc_habitat }
@@ -73,30 +73,30 @@ country_event = {
 			}
 			if = {
 				limit = { is_spiritualist = yes }
-				random_system = { 
+				random_system = {
 					limit = { has_owner = no }
-					spawn_system = { initializer = "scion_fallen_2" } 
-				} 
+					spawn_system = { initializer = "scion_fallen_2" }
+				}
 			}
 			else_if = {
 				limit = { is_materialist = yes }
-				random_system = { 
+				random_system = {
 					limit = { has_owner = no }
-					spawn_system = { initializer = "scion_fallen_1" } 
+					spawn_system = { initializer = "scion_fallen_1" }
 				}
 			}
 			else_if = {
 				random_list = {
 					10 = {
-						random_system = { 
+						random_system = {
 							limit = { has_owner = no }
 							spawn_system = { initializer = "scion_fallen_1" }
 						}
 					}
 					10 = {
-						random_system = { 
+						random_system = {
 							limit = { has_owner = no }
-							spawn_system = { initializer = "scion_fallen_2" } 
+							spawn_system = { initializer = "scion_fallen_2" }
 						}
 					}
 				}
@@ -104,7 +104,7 @@ country_event = {
 		}
 
 		else_if = {
-			limit = { 
+			limit = {
 				is_spiritualist = yes
 				any_country = { has_country_flag = fallen_empire_2 }
 			}
@@ -132,7 +132,7 @@ country_event = {
 			}
 		}
 		else_if = {
-			limit = { 
+			limit = {
 				is_materialist = yes
 				any_country = { has_country_flag = fallen_empire_1 }
 			}
@@ -227,11 +227,11 @@ country_event = {
 		}
 		text = "origin.10.b.desc"
 	}
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -243,7 +243,7 @@ country_event = {
 	immediate = {
 		overlord = { save_event_target_as = scion_master }
 	}
-	
+
 	option = {
 		name = origin.10.a
 		trigger = {
@@ -267,7 +267,7 @@ country_event = {
 
 	immediate = {
 		every_playable_country = {
-			limit = { 
+			limit = {
 				has_origin = origin_scion
 				is_subject_type = scion
 				root = { is_overlord_to = prev }
@@ -350,11 +350,11 @@ country_event = {
 		}
 		text = "origin.21.b.desc"
 	}
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -366,7 +366,7 @@ country_event = {
 	immediate = {
 		overlord = { save_event_target_as = scion_master }
 	}
-	
+
 	option = {
 		name = origin.21.a
 		scion_engineering_tech = yes
@@ -389,11 +389,11 @@ country_event = {
 		}
 		text = "origin.21.b.desc"
 	}
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -405,7 +405,7 @@ country_event = {
 	immediate = {
 		overlord = { save_event_target_as = scion_master }
 	}
-	
+
 	option = {
 		name = origin.21.a
 		scion_physics_tech = yes
@@ -428,11 +428,11 @@ country_event = {
 		}
 		text = "origin.21.b.desc"
 	}
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -444,7 +444,7 @@ country_event = {
 	immediate = {
 		overlord = { save_event_target_as = scion_master }
 	}
-	
+
 	option = {
 		name = origin.21.a
 		scion_society_tech = yes
@@ -467,11 +467,11 @@ country_event = {
 		}
 		text = "origin.21.b.desc"
 	}
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -483,7 +483,7 @@ country_event = {
 	immediate = {
 		overlord = { save_event_target_as = scion_master }
 	}
-	
+
 	option = {
 		name = origin.21.a
 		locked_random_list = {
@@ -526,11 +526,11 @@ event = {
 							has_country_flag = scion_requested_leader
 							count_recruited_leader = {
 							    limit = {
-							    	NOR = { 
+							    	NOR = {
 							    		leader_class = ruler
 							    		has_leader_flag = fe_gifted_leader
 							    	}
-							        has_skill >= 5 
+							        has_skill >= 5
 							    }
 							    count = 0
 							}
@@ -562,11 +562,11 @@ country_event = {
 	id = origin.26
 	title = TRANSMISSION
 	desc = "origin.26.desc"
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -580,7 +580,7 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_leader = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -589,7 +589,7 @@ country_event = {
 			}
 			random_owned_leader = {
 				limit = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -601,7 +601,7 @@ country_event = {
 		else_if = {
 			limit = {
 				any_owned_leader = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -610,7 +610,7 @@ country_event = {
 			}
 			random_owned_leader = {
 				limit = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -622,7 +622,7 @@ country_event = {
 		else_if = {
 			limit = {
 				any_owned_leader = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -631,7 +631,7 @@ country_event = {
 			}
 			random_owned_leader = {
 				limit = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -643,7 +643,7 @@ country_event = {
 		else_if = {
 			limit = {
 				any_owned_leader = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -652,7 +652,7 @@ country_event = {
 			}
 			random_owned_leader = {
 				limit = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -664,7 +664,7 @@ country_event = {
 		else_if = {
 			limit = {
 				any_owned_leader = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -673,7 +673,7 @@ country_event = {
 			}
 			random_owned_leader = {
 				limit = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -685,7 +685,7 @@ country_event = {
 		else_if = {
 			limit = {
 				any_owned_leader = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -694,7 +694,7 @@ country_event = {
 			}
 			random_owned_leader = {
 				limit = {
-					NOT = { 
+					NOT = {
 						ruler = { is_same_value = prev }
 						has_leader_flag = fe_gifted_leader
 					}
@@ -705,7 +705,7 @@ country_event = {
 		}
 		set_country_flag = scion_requested_leader
 	}
-	
+
 	option = {
 		name = origin.26.a
 		response_text = origin.26.a.response
@@ -717,7 +717,7 @@ country_event = {
 				}
 			}
 			event_target:desired_leader = {
-				kill_leader = { show_notification = no } 
+				kill_leader = { show_notification = no }
 			}
 		}
 	}
@@ -732,11 +732,11 @@ country_event = {
 	id = origin.27
 	title = TRANSMISSION
 	desc = "origin.27.desc"
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -746,13 +746,13 @@ country_event = {
 	}
 
 	immediate = {
-		overlord = { 
+		overlord = {
 			save_event_target_as = scion_master
 			owner_species = { save_event_target_as = fe_species }
 		}
 		set_country_flag = scion_gave_leader
 	}
-	
+
 	option = {
 		name = origin.27.a
 		response_text = origin.27.a.response
@@ -830,11 +830,11 @@ country_event = {
 	id = origin.28
 	title = TRANSMISSION
 	desc = "origin.28.desc"
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -847,7 +847,7 @@ country_event = {
 		overlord = { save_event_target_as = scion_master }
 		set_country_flag = scion_gave_ships
 	}
-	
+
 	option = {
 		name = origin.28.a
 		custom_tooltip = origin.28.tooltip
@@ -929,7 +929,7 @@ event = {
 							}
 						}
 					}
-					attacker_war_exhaustion > 0.8	
+					attacker_war_exhaustion > 0.8
 					defender_war_exhaustion < 0.6
 				}
 			}
@@ -984,7 +984,7 @@ event = {
 								}
 							}
 						}
-						attacker_war_exhaustion > 0.8	
+						attacker_war_exhaustion > 0.8
 						defender_war_exhaustion < 0.6
 					}
 				}
@@ -999,11 +999,11 @@ country_event = {
 	id = origin.51
 	title = TRANSMISSION
 	desc = "origin.51.desc"
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -1013,13 +1013,13 @@ country_event = {
 	}
 
 	immediate = {
-		overlord = { 
+		overlord = {
 			save_event_target_as = scion_master
 			owner_species = { save_event_target_as = fe_species }
 		}
 		set_timed_country_flag = { flag = scion_war_help days = 7200 } # 20 year cooldown
 	}
-	
+
 	option = {
 		name = origin.51.a
 		hidden_effect = {
@@ -1112,11 +1112,11 @@ country_event = {
 	id = origin.53
 	title = TRANSMISSION
 	desc = "origin.53.desc"
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -1128,7 +1128,7 @@ country_event = {
 	immediate = {
 		overlord = { save_event_target_as = scion_master }
 	}
-	
+
 	option = {
 		name = origin.53.a
 	}
@@ -1139,11 +1139,11 @@ country_event = {
 	id = origin.29
 	title = TRANSMISSION
 	desc = "origin.29.desc"
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -1200,7 +1200,7 @@ country_event = {
 		}
 		remove_country_flag = borrowed_fleet_from@event_target:scion_master
 	}
-	
+
 	option = {
 		name = origin.29.a
 	}
@@ -1237,11 +1237,11 @@ country_event = {
 	id = origin.54
 	title = TRANSMISSION
 	desc = "origin.54.desc"
-	
+
 	diplomatic = yes
-	
+
 	is_triggered_only = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:scion_master
 		planet_background = event_target:scion_master
@@ -1255,13 +1255,13 @@ country_event = {
 		random_owned_fleet = {
 			limit = { has_fleet_flag = scion_borrowed_fleet }
 			leader = {
-				kill_leader = { show_notification = no } 
+				kill_leader = { show_notification = no }
 			}
 			delete_fleet = this
 		}
 		remove_country_flag = borrowed_fleet_from@event_target:scion_master
 	}
-	
+
 	option = {
 		name = origin.54.a
 	}
@@ -1316,7 +1316,7 @@ country_event = {
 						}
 					}
 					closest_system = {
-						limit = { 
+						limit = {
 							NOT = { has_star_flag = neighbor_t1_first_colony }
 							has_owner = no
 							any_system_planet = {
@@ -1383,7 +1383,7 @@ country_event = {
 						}
 					}
 					closest_system = {
-						limit = { 
+						limit = {
 							NOT = { has_star_flag = fed_origin_system_1 }
 							has_owner = no
 							any_system_planet = {
@@ -1546,9 +1546,10 @@ country_event = {
 		}
 		if = {
 			limit = { has_origin = origin_hegemon }
-			federation = { 
+			federation = {
 				set_federation_type = hegemony_federation
 				set_name = random
+				set_federation_law = succession_term_years_20
 			}
 		}
 		set_federation_leader = root
@@ -1611,7 +1612,7 @@ planet_event = {
 	id = origin.65
 	title = "origin.65.name"
 	desc = {
-		trigger = { 
+		trigger = {
 			owner = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 			}
@@ -1619,7 +1620,7 @@ planet_event = {
 		text = "origin.65.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			owner = { has_ethic = ethic_gestalt_consciousness }
 		}
 		text = "origin.65.2.desc"
@@ -1655,7 +1656,7 @@ planet_event = {
 	id = origin.70
 	title = "origin.70.name"
 	desc = {
-		trigger = { 
+		trigger = {
 			owner = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 			}
@@ -1663,7 +1664,7 @@ planet_event = {
 		text = "origin.70.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			owner = { has_ethic = ethic_gestalt_consciousness }
 		}
 		text = "origin.70.2.desc"
@@ -1717,7 +1718,7 @@ planet_event = {
 	id = origin.75
 	title = "origin.75.name"
 	desc = {
-		trigger = { 
+		trigger = {
 			owner = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 			}
@@ -1725,7 +1726,7 @@ planet_event = {
 		text = "origin.75.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			owner = { has_ethic = ethic_gestalt_consciousness }
 		}
 		text = "origin.75.2.desc"
@@ -1761,7 +1762,7 @@ planet_event = {
 	id = origin.76
 	title = "origin.76.name"
 	desc = {
-		trigger = { 
+		trigger = {
 			owner = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 			}
@@ -1769,7 +1770,7 @@ planet_event = {
 		text = "origin.76.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			owner = { has_ethic = ethic_gestalt_consciousness }
 		}
 		text = "origin.76.2.desc"
@@ -1794,67 +1795,67 @@ planet_event = {
 	id = origin.80
 	title = "origin.80.name"
 	desc = {
-		trigger = { 
+		trigger = {
 			has_planet_flag = doomsday_lost_some_pops
 			has_planet_flag = doomsday_still_original_owner
-			event_target:doomsday_owner = { 
+			event_target:doomsday_owner = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 			}
 		}
 		text = "origin.80.1.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			has_planet_flag = doomsday_lost_some_pops
 			has_planet_flag = doomsday_still_original_owner
-			event_target:doomsday_owner = { 
+			event_target:doomsday_owner = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
 		text = "origin.80.1.gestalt.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			has_planet_flag = doomsday_lost_many_pops
 			has_planet_flag = doomsday_still_original_owner
-			event_target:doomsday_owner = { 
+			event_target:doomsday_owner = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 			}
 		}
 		text = "origin.80.2.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			has_planet_flag = doomsday_lost_many_pops
 			has_planet_flag = doomsday_still_original_owner
-			event_target:doomsday_owner = { 
+			event_target:doomsday_owner = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
 		text = "origin.80.2.gestalt.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			has_planet_flag = doomsday_lost_everything
 			has_planet_flag = doomsday_still_original_owner
-			event_target:doomsday_owner = { 
+			event_target:doomsday_owner = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 			}
 		}
 		text = "origin.80.4.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			has_planet_flag = doomsday_lost_everything
 			has_planet_flag = doomsday_still_original_owner
-			event_target:doomsday_owner = { 
+			event_target:doomsday_owner = {
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}
 		text = "origin.80.4.gestalt.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			NOT = { has_planet_flag = doomsday_still_original_owner }
 		}
 		text = "origin.80.5.desc"
@@ -1867,7 +1868,7 @@ planet_event = {
 
 	immediate = {
 		if = {
-			limit = { 
+			limit = {
 				has_owner = yes
 				owner = { is_same_value = event_target:doomsday_owner }
 			}
@@ -1897,7 +1898,7 @@ planet_event = {
 				every_relation = {
 					limit = {
 						is_ai = no
-						has_communications = prev 
+						has_communications = prev
 					}
 					country_event = { id = origin.90 }
 				}
@@ -2016,19 +2017,19 @@ planet_event = {
 	id = origin.85
 	title = "origin.85.name"
 	desc = {
-		trigger = { 
+		trigger = {
 			habitability = {
 				who = root.owner.owner_species
-				value >= 0.5 
+				value >= 0.5
 			}
 		}
 		text = "origin.85.1.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			habitability = {
 				who = root.owner.owner_species
-				value < 0.5 
+				value < 0.5
 			}
 		}
 		text = "origin.85.2.desc"
@@ -2043,7 +2044,7 @@ planet_event = {
 		name = origin_85.a
 		owner = {
 			add_modifier = {
-				modifier = "doomsday_first_colony" 
+				modifier = "doomsday_first_colony"
 				days = 1800
 			}
 		}
@@ -2055,7 +2056,7 @@ country_event = {
 	id = origin.90
 	title = "origin.90.name"
 	desc = {
-		trigger = { 
+		trigger = {
 			from = { has_planet_flag = doomsday_lost_some_pops }
 			event_target:doomsday_owner = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
@@ -2064,14 +2065,14 @@ country_event = {
 		text = "origin.90.1.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			from = { has_planet_flag = doomsday_lost_some_pops }
 			event_target:doomsday_owner = { has_ethic = ethic_gestalt_consciousness }
 		}
 		text = "origin.90.1.gestalt.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			from = { has_planet_flag = doomsday_lost_many_pops }
 			event_target:doomsday_owner = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
@@ -2080,14 +2081,14 @@ country_event = {
 		text = "origin.90.2.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			from = { has_planet_flag = doomsday_lost_many_pops }
 			event_target:doomsday_owner = { has_ethic = ethic_gestalt_consciousness }
 		}
 		text = "origin.90.2.gestalt.desc"
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			from = { has_planet_flag = doomsday_lost_everything }
 		}
 		text = "origin.90.3.desc"

@@ -223,7 +223,7 @@ special_project = {
 	requirements = {
 		shipclass_science_ship = 1
 		leader = scientist
-		skill = 5
+#		skill = 5
 	}
 	
 	on_success = {
@@ -322,7 +322,7 @@ special_project = {
 	requirements = {
 		shipclass_science_ship = 1
 		leader = scientist
-		skill = 3
+#		skill = 3
 	}
 	
 	on_success = {
@@ -343,7 +343,7 @@ special_project = {
 	requirements = {
 		shipclass_science_ship = 1
 		leader = scientist
-		skill = 5
+#		skill = 5
 	}
 	
 	on_success = {
@@ -375,7 +375,7 @@ special_project = {
 	requirements = {
 		shipclass_science_ship = 1
 		leader = scientist
-		skill = 5
+#		skill = 5
 	}
 	
 	on_success = {

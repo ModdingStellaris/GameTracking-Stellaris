@@ -112,8 +112,8 @@ fleet_contribution_low = {
 		description = "fleet_contribution_low_effect"
 		federation_fleet_contribution_factor = @contribution_low
 		federation_fleet_cap_add = @fleet_cap_low
-		cohesion_add = -0.25
 	}
+	cohesion_growth = -0.25
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -234,8 +234,8 @@ fleet_contribution_medium = {
 		description = "fleet_contribution_medium_effect"
 		federation_fleet_contribution_factor = @contribution_medium
 		federation_fleet_cap_add = @fleet_cap_medium
-		cohesion_add = -0.50
 	}
+	cohesion_growth = -0.50
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -360,8 +360,8 @@ fleet_contribution_high = {
 		description = "fleet_contribution_high_effect"
 		federation_fleet_contribution_factor = @contribution_high
 		federation_fleet_cap_add = @fleet_cap_high
-		cohesion_add = -0.75
 	}
+	cohesion_growth = -0.75
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -454,8 +454,8 @@ fleet_contribution_low_trade = {
 		description = "fleet_contribution_low_effect"
 		federation_fleet_contribution_factor = @contribution_low
 		federation_fleet_cap_add = @fleet_cap_low
-		cohesion_add = -0.25
 	}
+	cohesion_growth = -0.25
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -580,8 +580,8 @@ fleet_contribution_medium_trade = {
 		description = "fleet_contribution_medium_effect"
 		federation_fleet_contribution_factor = @contribution_medium
 		federation_fleet_cap_add = @fleet_cap_medium
-		cohesion_add = -0.50
 	}
+	cohesion_growth = -0.50
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -710,8 +710,8 @@ fleet_contribution_high_trade = {
 		description = "fleet_contribution_high_effect"
 		federation_fleet_contribution_factor = @contribution_high
 		federation_fleet_cap_add = @fleet_cap_high
-		cohesion_add = -0.75
 	}
+	cohesion_growth = -0.75
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -808,8 +808,8 @@ fleet_contribution_low_research = {
 		description = "fleet_contribution_low_effect"
 		federation_fleet_contribution_factor = @contribution_low
 		federation_fleet_cap_add = @fleet_cap_low
-		cohesion_add = -0.25
 	}
+	cohesion_growth = -0.25
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -930,8 +930,8 @@ fleet_contribution_medium_research = {
 		description = "fleet_contribution_medium_effect"
 		federation_fleet_contribution_factor = @contribution_medium
 		federation_fleet_cap_add = @fleet_cap_medium
-		cohesion_add = -0.50
 	}
+	cohesion_growth = -0.50
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -1021,8 +1021,8 @@ fleet_contribution_low_martial = {
 		description = "fleet_contribution_low_effect"
 		federation_fleet_contribution_factor = @contribution_low
 		federation_fleet_cap_add = @fleet_cap_low
-		cohesion_add = -0.25
 	}
+	cohesion_growth = -0.25
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -1143,8 +1143,8 @@ fleet_contribution_medium_martial = {
 		description = "fleet_contribution_medium_effect"
 		federation_fleet_contribution_factor = @contribution_medium
 		federation_fleet_cap_add = @fleet_cap_medium
-		cohesion_add = -0.50
 	}
+	cohesion_growth = -0.50
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -1269,8 +1269,8 @@ fleet_contribution_high_martial = {
 		description = "fleet_contribution_high_effect"
 		federation_fleet_contribution_factor = @contribution_high
 		federation_fleet_cap_add = @fleet_cap_high
-		cohesion_add = -0.75
 	}
+	cohesion_growth = -0.75
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -1363,8 +1363,8 @@ fleet_contribution_low_hegemony = {
 		description = "fleet_contribution_low_effect"
 		federation_fleet_contribution_factor = @contribution_low
 		federation_fleet_cap_add = @fleet_cap_low
-		cohesion_add = -0.25
 	}
+	cohesion_growth = -0.25
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -1485,8 +1485,8 @@ fleet_contribution_medium_hegemony = {
 		description = "fleet_contribution_medium_effect"
 		federation_fleet_contribution_factor = @contribution_medium
 		federation_fleet_cap_add = @fleet_cap_medium
-		cohesion_add = -0.50
 	}
+	cohesion_growth = -0.50
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }
@@ -1607,8 +1607,8 @@ fleet_contribution_high_hegemony = {
 		description = "fleet_contribution_high_effect"
 		federation_fleet_contribution_factor = @contribution_high
 		federation_fleet_cap_add = @fleet_cap_high
-		cohesion_add = -0.75
 	}
+	cohesion_growth = -0.75
 	on_enact = {
 		if = {
 			limit = { has_federation_flag = enable_federation_cooldowns }

@@ -1,6 +1,6 @@
 # Synthetic Evolution Species Names
 named_lists = {
-	robots_test = {
+	ascension_list = {
 		Species_1 = {
 			language = "l_simp_chinese"
 			name = 拉克瑟

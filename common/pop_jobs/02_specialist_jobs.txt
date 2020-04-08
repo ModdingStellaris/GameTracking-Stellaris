@@ -1505,7 +1505,7 @@ roboticist = {
 	resources = {
 		category = planet_pop_assemblers
 		upkeep = {
-			minerals = 6
+			alloys = 2
 		}
 	}
 
@@ -1764,7 +1764,7 @@ bluelotus_technician = {
 	possible = {
 		worker_job_check_trigger = yes
 	}
-	
+
 	resources = {
 		category = planet_metallurgists
 		produces = {
@@ -1772,25 +1772,27 @@ bluelotus_technician = {
 		}
 
 		upkeep = {
-			trigger = { 
+			trigger = {
 				is_organic_species = yes
 				is_lithoid = no
 			}
 			food = @living_standard_food_normal
 		}
 		upkeep = {
-			trigger = { 
+			trigger = {
 				is_lithoid = yes
 			}
 			minerals = @living_standard_food_normal
 		}
 		upkeep = {
-			trigger = { 
+			trigger = {
 				is_robotic_species = yes
 			}
 			energy = @living_standard_energy_normal
 		}
 	}
 
-	weight = @specialist_job_weight
+	weight = {
+		weight = @specialist_job_weight
+	}
 }

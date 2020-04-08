@@ -10,6 +10,7 @@ mega_shipyard_0 = {
 		category = megastructures
 		cost = {
 			alloys = 3000
+			influence = 300
 		}
 
 		upkeep = {
@@ -311,7 +312,12 @@ mega_shipyard_restored = {
 
 	on_build_complete = {
 		set_star_flag = mega_shipyard_built
-		every_system_ambient_object = { destroy_ambient_object = this }
+		every_system_ambient_object = { 
+			limit = {
+				has_ambient_object_flag = mega_shipyard_ruined_debris
+			}
+			destroy_ambient_object = this
+		}
 		from = {
 			set_country_flag = has_built_or_repaired_megastructure
 			country_event = { id = feda.6 }

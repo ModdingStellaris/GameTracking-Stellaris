@@ -477,767 +477,615 @@ country_event = {
 	}
 }
 
-# Greater Good Breach Resolutions - temporarily cut for performance reasons
 # Five Year Plans
-# country_event = {
-#	id = federations.10200
-#	title = "resolution_greatergood_five_year_plans"
-#
-#	desc = {
-#		text = "federations.10200.desc"
-#	}
-#
-#	picture = GFX_evt_galactic_senate
-#	show_sound = event_factions
-#
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = FED_WE_MUST_COMPLY
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					has_living_standard = { type = living_standard_subsistence }
-#				}
-#				set_living_standard = { type = living_standard_normal }
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10200.living_standard_normal"
-#	}
-#
-#	option = {
-#		name = FED_THE_BAREST_MINIMUM
-#
-#		trigger = {
-#			OR = {
-#				has_ethic = "ethic_authoritarian"
-#				has_ethic = "ethic_fanatic_authoritarian"
-#			}
-#		}
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					has_living_standard = { type = living_standard_subsistence }
-#				}
-#				set_living_standard = { type = living_standard_stratified }
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10200.living_standard_stratified"
-#	}
-#
-#	option = {
-#		name = FED_WE_WILL_RETAIN
-#
-#		trigger = {
-#			NOR = {
-#				has_ethic = "ethic_xenophobe"
-#				has_ethic = "ethic_fanatic_xenophobe"
-#				has_ethic = "ethic_authoritarian"
-#				has_ethic = "ethic_fanatic_authoritarian"
-#			}
-#		}
-#
-#		add_monthly_resource_mult = {
-#			resource = unity
-#			value = @tier1unityreward
-#			min = @tier1unitymin
-#			max = @tier1unitymax
-#		}
-#
-#		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
-#	}
-#
-#	option = {
-#		name = FED_WE_WILL_NOT_SUBMIT
-#
-#		trigger = {
-#			OR = {
-#				has_ethic = "ethic_xenophobe"
-#				has_ethic = "ethic_fanatic_xenophobe"
-#				has_ethic = "ethic_authoritarian"
-#				has_ethic = "ethic_fanatic_authoritarian"
-#			}
-#		}
-#
-#		add_monthly_resource_mult = {
-#			resource = unity
-#			value = @tier2unityreward
-#			min = @tier2unitymin
-#			max = @tier2unitymax
-#		}
-#
-#		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
-#	}
-#}
-#
-## Greater Than Ourselves
-#country_event = {
-#	id = federations.10210
-#	title = "resolution_greatergood_greater_than_ourselves"
-#
-#	desc = {
-#		text = "federations.10210.desc"
-#	}
-#
-#	picture = GFX_evt_galactic_senate
-#	show_sound = event_factions
-#
-#	is_triggered_only = yes
-#
-#	option = { # In violation of both halves, is militarist so can create battle thralls (with Utopia)
-#		trigger = {
-#			host_has_dlc = "Utopia"
-#			is_gestalt = no
-#			OR = {
-#				has_ethic = "ethic_militarist"
-#				has_ethic = "ethic_fanatic_militarist"
-#			}
-#			any_owned_pop = {
-#				is_sapient = yes
-#				OR = {
-#					has_living_standard = { type = living_standard_subsistence }
-#					has_living_standard = { type = living_standard_stratified }
-#				}
-#			}
-#			any_owned_pop = {
-#				is_enslaved = yes
-#				OR = {
-#					has_slavery_type = { type = slavery_normal }
-#					has_slavery_type = { type = slavery_livestock }
-#				}
-#			}
-#		}
-#
-#		name = "federations.10210.complythralls"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					OR = {
-#						has_living_standard = { type = living_standard_subsistence }
-#						has_living_standard = { type = living_standard_stratified }
-#					}
-#				}
-#				set_living_standard = { type = living_standard_normal }
-#			}
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					is_enslaved = yes
-#					OR = {
-#						has_slavery_type = { type = slavery_normal }
-#						has_slavery_type = { type = slavery_livestock }
-#					}
-#				}
-#				set_slavery_type = { type = slavery_military }
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10200.living_standard_normal"
-#		custom_tooltip = "federations.10210.thralls"
-#	}
-#
-#	option = { # In violation of both halves, will create domestic servants (with Utopia)
-#		trigger = {
-#			host_has_dlc = "Utopia"
-#			is_gestalt = no
-#			any_owned_pop = {
-#				is_sapient = yes
-#				OR = {
-#					has_living_standard = { type = living_standard_subsistence }
-#					has_living_standard = { type = living_standard_stratified }
-#				}
-#			}
-#			any_owned_pop = {
-#				is_enslaved = yes
-#				OR = {
-#					has_slavery_type = { type = slavery_normal }
-#					has_slavery_type = { type = slavery_livestock }
-#				}
-#			}
-#		}
-#
-#		name = "federations.10210.complyservants"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					OR = {
-#						has_living_standard = { type = living_standard_subsistence }
-#						has_living_standard = { type = living_standard_stratified }
-#					}
-#				}
-#				set_living_standard = { type = living_standard_normal }
-#			}
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					is_enslaved = yes
-#					OR = {
-#						has_slavery_type = { type = slavery_normal }
-#						has_slavery_type = { type = slavery_livestock }
-#					}
-#				}
-#				set_slavery_type = { type = slavery_domestic }
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10200.living_standard_normal"
-#		custom_tooltip = "federations.10210.servants"
-#	}
-#
-#	option = { # Slave violation only, is militarist so can create battle thralls (with Utopia)
-#		trigger = {
-#			host_has_dlc = "Utopia"
-#			is_gestalt = no
-#			OR = {
-#				has_ethic = "ethic_militarist"
-#				has_ethic = "ethic_fanatic_militarist"
-#			}
-#			NOT = {
-#				any_owned_pop = {
-#					is_sapient = yes
-#					OR = {
-#						has_living_standard = { type = living_standard_subsistence }
-#						has_living_standard = { type = living_standard_stratified }
-#					}
-#				}
-#			}
-#			any_owned_pop = {
-#				is_enslaved = yes
-#				OR = {
-#					has_slavery_type = { type = slavery_normal }
-#					has_slavery_type = { type = slavery_livestock }
-#				}
-#			}
-#		}
-#
-#		name = "federations.10210.complythralls"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					is_enslaved = yes
-#					OR = {
-#						has_slavery_type = { type = slavery_normal }
-#						has_slavery_type = { type = slavery_livestock }
-#					}
-#				}
-#				set_slavery_type = { type = slavery_military }
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10210.thralls"
-#	}
-#
-#	option = { # Slave violation only, will create domestic servants (with Utopia)
-#		trigger = {
-#			host_has_dlc = "Utopia"
-#			is_gestalt = no
-#			NOT = {
-#				any_owned_pop = {
-#					is_sapient = yes
-#					OR = {
-#						has_living_standard = { type = living_standard_subsistence }
-#						has_living_standard = { type = living_standard_stratified }
-#					}
-#				}
-#			}
-#			any_owned_pop = {
-#				is_enslaved = yes
-#				OR = {
-#					has_slavery_type = { type = slavery_normal }
-#					has_slavery_type = { type = slavery_livestock }
-#				}
-#			}
-#		}
-#
-#		name = "federations.10210.complyservants"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					is_enslaved = yes
-#					OR = {
-#						has_slavery_type = { type = slavery_normal }
-#						has_slavery_type = { type = slavery_livestock }
-#					}
-#				}
-#				set_slavery_type = { type = slavery_domestic }
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10210.servants"
-#	}
-#
-#	option = {
-#		trigger = {
-#			is_gestalt = yes
-#		}
-#
-#		name = "federations.10210.gestalt"
-#
-#		custom_tooltip = "federations.10210.displace_gestalt"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					NOR = {
-#						has_trait = trait_machine_unit
-#						has_trait = trait_mechanical
-#					}
-#					AND = {
-#						is_enslaved = yes
-#						OR = {
-#							has_slavery_type = { type = slavery_normal }
-#							has_slavery_type = { type = slavery_livestock }
-#							has_slavery_type = { type = slavery_matrix }
-#						}
-#					}
-#				}
-#				species = {
-#					set_citizenship_type = { type = citizenship_purge }
-#					set_purge_type = { type = purge_displacement }
-#				}
-#			}
-#		}
-#
-#	}
-#
-#	option = { # Living Standard violation
-#		trigger = {
-#			is_gestalt = no
-#			any_owned_pop = {
-#				is_sapient = yes
-#				OR = {
-#					has_living_standard = { type = living_standard_subsistence }
-#					has_living_standard = { type = living_standard_stratified }
-#				}
-#			}
-#			NOT = {
-#				any_owned_pop = {
-#					is_enslaved = yes
-#					OR = {
-#						has_slavery_type = { type = slavery_normal }
-#						has_slavery_type = { type = slavery_livestock }
-#					}
-#				}
-#			}
-#		}
-#
-#		name = "FED_WE_MUST_COMPLY"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					OR = {
-#						has_living_standard = { type = living_standard_subsistence }
-#						has_living_standard = { type = living_standard_stratified }
-#					}
-#				}
-#				set_living_standard = { type = living_standard_normal }
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10200.living_standard_normal"
-#	}
-#
-#	option = { # No Utopia
-#		trigger = {
-#			NOT = { host_has_dlc = "Utopia" }
-#		}
-#
-#		name = "FED_WE_MUST_COMPLY"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					OR = {
-#						has_living_standard = { type = living_standard_subsistence }
-#						has_living_standard = { type = living_standard_stratified }
-#					}
-#				}
-#				set_living_standard = { type = living_standard_normal }
-#			}
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					is_enslaved = yes
-#				}
-#				species = {
-#					set_citizenship_type = { type = citizenship_limited }
-#				}
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10200.living_standard_normal"
-#		custom_tooltip = "federations.10210.freeslaves"
-#	}
-#
-#	option = {
-#		name = FED_WE_WILL_RETAIN
-#
-#		trigger = {
-#			NOR = {
-#				has_ethic = "ethic_xenophobe"
-#				has_ethic = "ethic_fanatic_xenophobe"
-#				has_ethic = "ethic_authoritarian"
-#				has_ethic = "ethic_fanatic_authoritarian"
-#			}
-#		}
-#
-#		add_monthly_resource_mult = {
-#			resource = unity
-#			value = @tier1unityreward
-#			min = @tier1unitymin
-#			max = @tier1unitymax
-#		}
-#
-#		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
-#	}
-#
-#	option = {
-#		name = FED_WE_WILL_NOT_SUBMIT
-#
-#		trigger = {
-#			OR = {
-#				has_ethic = "ethic_xenophobe"
-#				has_ethic = "ethic_fanatic_xenophobe"
-#				has_ethic = "ethic_authoritarian"
-#				has_ethic = "ethic_fanatic_authoritarian"
-#			}
-#		}
-#
-#		add_monthly_resource_mult = {
-#			resource = unity
-#			value = @tier2unityreward
-#			min = @tier2unitymin
-#			max = @tier2unitymax
-#		}
-#
-#		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
-#	}
-#}
-#
-## Balance in the Middle
-#country_event = {
-#	id = federations.10220
-#	title = "resolution_greatergood_balance_in_the_middle"
-#
-#	desc = {
-#		text = "federations.10220.desc"
-#	}
-#
-#	picture = GFX_evt_galactic_senate
-#	show_sound = event_factions
-#
-#	is_triggered_only = yes
-#
-#	option = { # In violation of both halves
-#		trigger = {
-#			is_gestalt = no
-#			any_owned_pop = {
-#				is_sapient = yes
-#				OR = {
-#					has_living_standard = { type = living_standard_subsistence }
-#					has_living_standard = { type = living_standard_stratified }
-#					has_living_standard = { type = living_standard_normal }
-#					has_living_standard = { type = living_standard_academic_privilege }
-#				}
-#			}
-#			any_owned_pop = {
-#				is_sapient = yes
-#				is_enslaved = yes
-#			}
-#		}
-#
-#		name = "FED_WE_MUST_COMPLY"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					OR = {
-#						has_living_standard = { type = living_standard_subsistence }
-#						has_living_standard = { type = living_standard_stratified }
-#						has_living_standard = { type = living_standard_normal }
-#						has_living_standard = { type = living_standard_academic_privilege }
-#					}
-#				}
-#				set_living_standard = { type = living_standard_good }
-#			}
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#					is_enslaved = yes
-#				}
-#				species = {
-#					set_citizenship_type = { type = citizenship_limited }
-#				}
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10220.living_standard"
-#		custom_tooltip = "federations.10210.freeslaves"
-#	}
-#
-#	option = {
-#		trigger = {
-#			is_gestalt = yes
-#		}
-#
-#		name = "federations.10210.gestalt"
-#
-#		custom_tooltip = "federations.10210.displace_gestalt"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					NOR = {
-#						has_trait = trait_machine_unit
-#						has_trait = trait_mechanical
-#					}
-#					is_sapient = yes
-#					is_enslaved = yes
-#				}
-#				species = {
-#					set_citizenship_type = { type = citizenship_purge }
-#					set_purge_type = { type = purge_displacement }
-#				}
-#			}
-#		}
-#	}
-#
-#	option = {
-#		name = FED_WE_WILL_RETAIN
-#
-#		trigger = {
-#			NOR = {
-#				has_ethic = "ethic_xenophobe"
-#				has_ethic = "ethic_fanatic_xenophobe"
-#				has_ethic = "ethic_authoritarian"
-#				has_ethic = "ethic_fanatic_authoritarian"
-#			}
-#		}
-#
-#		add_monthly_resource_mult = {
-#			resource = unity
-#			value = @tier1unityreward
-#			min = @tier1unitymin
-#			max = @tier1unitymax
-#		}
-#
-#		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
-#	}
-#
-#	option = {
-#		name = FED_WE_WILL_NOT_SUBMIT
-#
-#		trigger = {
-#			OR = {
-#				has_ethic = "ethic_xenophobe"
-#				has_ethic = "ethic_fanatic_xenophobe"
-#				has_ethic = "ethic_authoritarian"
-#				has_ethic = "ethic_fanatic_authoritarian"
-#			}
-#		}
-#
-#		add_monthly_resource_mult = {
-#			resource = unity
-#			value = @tier2unityreward
-#			min = @tier2unitymin
-#			max = @tier2unitymax
-#		}
-#
-#		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
-#	}
-#}
-#
-## Universal Prosperity Mandate
-#country_event = {
-#	id = federations.10230
-#	title = "resolution_greatergood_universal_prosperity_mandate"
-#
-#	desc = {
-#		text = "federations.10230.desc"
-#	}
-#
-#	picture = GFX_evt_galactic_senate
-#	show_sound = event_factions
-#
-#	is_triggered_only = yes
-#
-#	option = {
-#		trigger = {
-#			is_gestalt = no
-#			any_owned_pop = {
-#				is_sapient = yes
-#				OR = {
-#					has_living_standard = { type = living_standard_subsistence }
-#					has_living_standard = { type = living_standard_stratified }
-#					has_living_standard = { type = living_standard_normal }
-#					has_living_standard = { type = living_standard_academic_privilege }
-#					has_living_standard = { type = living_standard_good }
-#				}
-#			}
-#		}
-#
-#		allow = {
-#			OR = {
-#				has_ethic = "ethic_egalitarian"
-#				has_ethic = "ethic_fanatic_egalitarian"
-#			}
-#		}
-#
-#		name = "federations.10230.utopian"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#				}
-#				set_living_standard = { type = living_standard_utopian }
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10230.complyutopian"
-#	}
-#
-#	option = {
-#		trigger = {
-#			is_gestalt = no
-#			any_owned_pop = {
-#				is_sapient = yes
-#				OR = {
-#					has_living_standard = { type = living_standard_subsistence }
-#					has_living_standard = { type = living_standard_stratified }
-#					has_living_standard = { type = living_standard_normal }
-#					has_living_standard = { type = living_standard_academic_privilege }
-#					has_living_standard = { type = living_standard_good }
-#				}
-#			}
-#		}
-#
-#		allow = {
-#			has_technology = "tech_subdermal_stimulation"
-#		}
-#
-#		name = "federations.10230.chemical"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					is_sapient = yes
-#				}
-#				set_living_standard = { type = living_standard_chemical_bliss }
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10230.complychemical"
-#	}
-#
-#	option = {
-#		trigger = {
-#			is_gestalt = yes
-#		}
-#
-#		name = "federations.10210.gestalt"
-#
-#		hidden_effect = {
-#			every_owned_pop = {
-#				limit = {
-#					NOR = {
-#						has_trait = trait_machine_unit
-#						has_trait = trait_mechanical
-#					}
-#					is_sapient = yes
-#					is_enslaved = yes
-#				}
-#				species = {
-#					set_citizenship_type = { type = citizenship_purge }
-#					set_purge_type = { type = purge_displacement }
-#				}
-#			}
-#		}
-#
-#		custom_tooltip = "federations.10210.displace_gestalt"
-#	}
-#
-#	option = {
-#		name = FED_WE_WILL_RETAIN
-#
-#		trigger = {
-#			NOR = {
-#				has_ethic = "ethic_xenophobe"
-#				has_ethic = "ethic_fanatic_xenophobe"
-#				has_ethic = "ethic_authoritarian"
-#				has_ethic = "ethic_fanatic_authoritarian"
-#				has_civic = "civic_machine_assimilator"
-#			}
-#		}
-#
-#		add_monthly_resource_mult = {
-#			resource = unity
-#			value = @tier1unityreward
-#			min = @tier1unitymin
-#			max = @tier1unitymax
-#		}
-#
-#		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
-#	}
-#
-#	option = {
-#		name = FED_WE_WILL_NOT_SUBMIT
-#
-#		trigger = {
-#			OR = {
-#				has_ethic = "ethic_xenophobe"
-#				has_ethic = "ethic_fanatic_xenophobe"
-#				has_ethic = "ethic_authoritarian"
-#				has_ethic = "ethic_fanatic_authoritarian"
-#			}
-#		}
-#
-#		add_monthly_resource_mult = {
-#			resource = unity
-#			value = @tier2unityreward
-#			min = @tier2unitymin
-#			max = @tier2unitymax
-#		}
-#
-#		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
-#	}
-#
-#	option = {
-#		name = "federations.10230.assimilator"
-#
-#		trigger = {
-#			has_civic = "civic_machine_assimilator"
-#		}
-#
-#		add_monthly_resource_mult = {
-#			resource = unity
-#			value = @tier2unityreward
-#			min = @tier2unitymin
-#			max = @tier2unitymax
-#		}
-#
-#		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
-#	}
-#}
+country_event = {
+	id = federations.10200
+	title = "resolution_greatergood_five_year_plans"
+
+	desc = {
+		text = "federations.10200.desc"
+	}
+
+	picture = GFX_evt_galactic_senate
+	show_sound = event_factions
+
+	is_triggered_only = yes
+
+	option = {
+		name = FED_WE_MUST_COMPLY
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					has_living_standard = { type = living_standard_subsistence country = prev }
+				}
+				set_living_standard = { type = living_standard_normal country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10200.living_standard_normal"
+	}
+
+	option = {
+		name = FED_THE_BAREST_MINIMUM
+
+		trigger = {
+			OR = {
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+			}
+		}
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					has_living_standard = { type = living_standard_subsistence country = prev }
+				}
+				set_living_standard = { type = living_standard_stratified country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10200.living_standard_stratified"
+	}
+
+	option = {
+		name = FED_WE_WILL_RETAIN
+
+		trigger = {
+			NOR = {
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+
+		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
+	}
+
+	option = {
+		name = FED_WE_WILL_NOT_SUBMIT
+
+		trigger = {
+			OR = {
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+
+		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
+	}
+}
+
+# Greater Than Ourselves
+country_event = {
+	id = federations.10210
+	title = "resolution_greatergood_greater_than_ourselves"
+
+	desc = {
+		text = "federations.10210.desc"
+	}
+
+	picture = GFX_evt_galactic_senate
+	show_sound = event_factions
+
+	is_triggered_only = yes
+
+	option = { # Is militarist so can create battle thralls (with Utopia)
+		trigger = {
+			host_has_dlc = "Utopia"
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+			}
+			any_owned_species = {
+				has_citizenship_type = { type = citizenship_slavery country = prev }
+			}
+		}
+
+		name = "federations.10210.complythralls"
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					has_citizenship_type = { type = citizenship_slavery country = prev }
+					OR = {
+						has_slavery_type = { type = slavery_normal country = prev }
+						has_slavery_type = { type = slavery_livestock country = prev }
+					}
+				}
+				set_slavery_type = { type = slavery_military country = prev }
+			}
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					OR = {
+						has_living_standard = { type = living_standard_subsistence country = prev }
+						has_living_standard = { type = living_standard_stratified country = prev }
+					}
+				}
+				set_living_standard = { type = living_standard_normal country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10200.living_standard_normal"
+		custom_tooltip = "federations.10210.thralls"
+	}
+
+	option = { # Will create domestic servants (with Utopia)
+		trigger = {
+			host_has_dlc = "Utopia"
+			is_gestalt = no
+			any_owned_species = {
+				has_citizenship_type = { type = citizenship_slavery country = prev }
+			}
+		}
+
+		name = "federations.10210.complyservants"
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					has_citizenship_type = { type = citizenship_slavery country = prev }
+					OR = {
+						has_slavery_type = { type = slavery_normal country = prev }
+						has_slavery_type = { type = slavery_livestock country = prev }
+					}
+				}
+				set_slavery_type = { type = slavery_domestic country = prev }
+			}
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					OR = {
+						has_living_standard = { type = living_standard_subsistence country = prev }
+						has_living_standard = { type = living_standard_stratified country = prev }
+					}
+				}
+				set_living_standard = { type = living_standard_normal country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10200.living_standard_normal"
+		custom_tooltip = "federations.10210.servants"
+	}
+
+	option = { # Living Standards Only
+		trigger = {
+			is_gestalt = no
+			NOT = {
+				any_owned_species = {
+					has_citizenship_type = { type = citizenship_slavery country = prev }
+				}
+			}
+		}
+
+		name = "FED_WE_MUST_COMPLY"
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					OR = {
+						has_living_standard = { type = living_standard_subsistence country = prev }
+						has_living_standard = { type = living_standard_stratified country = prev }
+					}
+				}
+				set_living_standard = { type = living_standard_normal country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10200.living_standard_normal"
+	}
+
+	option = { # No Utopia
+		trigger = {
+			NOT = { host_has_dlc = "Utopia" }
+			NOR = {
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		name = "FED_WE_MUST_COMPLY"
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					has_citizenship_type = { type = citizenship_slavery country = prev }
+				}
+				set_citizenship_type = { type = citizenship_limited country = prev }
+			}
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					OR = {
+						has_living_standard = { type = living_standard_subsistence country = prev }
+						has_living_standard = { type = living_standard_stratified country = prev }
+					}
+				}
+				set_living_standard = { type = living_standard_normal country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10200.living_standard_normal"
+		custom_tooltip = "federations.10210.freeslaves"
+	}
+
+	option = {
+		name = FED_WE_WILL_RETAIN
+
+		trigger = {
+			NOR = {
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+
+		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
+	}
+
+	option = {
+		name = FED_WE_WILL_NOT_SUBMIT
+
+		trigger = {
+			OR = {
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+
+		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
+	}
+}
+
+# Balance in the Middle
+country_event = {
+	id = federations.10220
+	title = "resolution_greatergood_balance_in_the_middle"
+
+	desc = {
+		text = "federations.10220.desc"
+	}
+
+	picture = GFX_evt_galactic_senate
+	show_sound = event_factions
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			is_gestalt = no
+			NOR = {
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		name = "FED_WE_MUST_COMPLY"
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					has_citizenship_type = { type = citizenship_slavery country = prev }
+				}
+				set_citizenship_type = { type = citizenship_limited country = prev }
+			}
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+					OR = {
+						has_living_standard = { type = living_standard_subsistence country = prev }
+						has_living_standard = { type = living_standard_stratified country = prev }
+						has_living_standard = { type = living_standard_normal country = prev }
+						has_living_standard = { type = living_standard_academic_privilege country = prev }
+					}
+				}
+				set_living_standard = { type = living_standard_good country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10220.living_standard"
+		custom_tooltip = "federations.10210.freeslaves"
+	}
+
+	option = {
+		trigger = {
+			is_gestalt = yes
+		}
+
+		name = "federations.10210.gestalt"
+
+		custom_tooltip = "federations.10210.displace_gestalt"
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+					has_citizenship_type = { type = citizenship_slavery country = prev }
+				}
+				set_citizenship_type = { type = citizenship_purge country = prev }
+				set_purge_type = { type = purge_displacement country = prev }
+
+			}
+		}
+	}
+
+	option = {
+		name = FED_WE_WILL_RETAIN
+
+		trigger = {
+			NOR = {
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+
+		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
+	}
+
+	option = {
+		name = FED_WE_WILL_NOT_SUBMIT
+
+		trigger = {
+			OR = {
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+
+		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
+	}
+}
+
+# Universal Prosperity Mandate
+country_event = {
+	id = federations.10230
+	title = "resolution_greatergood_universal_prosperity_mandate"
+
+	desc = {
+		text = "federations.10230.desc"
+	}
+
+	picture = GFX_evt_galactic_senate
+	show_sound = event_factions
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			is_gestalt = no
+			any_owned_species = {
+				is_sapient = yes
+				OR = {
+					has_living_standard = { type = living_standard_subsistence country = prev }
+					has_living_standard = { type = living_standard_stratified country = prev }
+					has_living_standard = { type = living_standard_normal country = prev }
+					has_living_standard = { type = living_standard_academic_privilege country = prev }
+					has_living_standard = { type = living_standard_good country = prev }
+				}
+			}
+		}
+
+		allow = {
+			OR = {
+				has_ethic = "ethic_egalitarian"
+				has_ethic = "ethic_fanatic_egalitarian"
+			}
+		}
+
+		name = "federations.10230.utopian"
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+				}
+				set_living_standard = { type = living_standard_utopian country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10230.complyutopian"
+	}
+
+	option = {
+		trigger = {
+			is_gestalt = no
+			any_owned_species = {
+				is_sapient = yes
+				OR = {
+					has_living_standard = { type = living_standard_subsistence country = prev }
+					has_living_standard = { type = living_standard_stratified country = prev }
+					has_living_standard = { type = living_standard_normal country = prev }
+					has_living_standard = { type = living_standard_academic_privilege country = prev }
+					has_living_standard = { type = living_standard_good country = prev }
+				}
+			}
+		}
+
+		allow = {
+			has_technology = "tech_subdermal_stimulation"
+		}
+
+		name = "federations.10230.chemical"
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					is_sapient = yes
+				}
+				set_living_standard = { type = living_standard_chemical_bliss country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10230.complychemical"
+	}
+
+	option = {
+		trigger = {
+			is_gestalt = yes
+		}
+
+		name = "federations.10210.gestalt"
+
+		hidden_effect = {
+			every_owned_species = {
+				limit = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+					has_citizenship_type = { type = citizenship_slavery country = prev }
+				}
+				set_citizenship_type = { type = citizenship_purge country = prev }
+				set_purge_type = { type = purge_displacement country = prev }
+			}
+		}
+
+		custom_tooltip = "federations.10210.displace_gestalt"
+	}
+
+	option = {
+		name = FED_WE_WILL_RETAIN
+
+		trigger = {
+			NOR = {
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_civic = "civic_machine_assimilator"
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier1unityreward
+			min = @tier1unitymin
+			max = @tier1unitymax
+		}
+
+		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
+	}
+
+	option = {
+		name = FED_WE_WILL_NOT_SUBMIT
+
+		trigger = {
+			OR = {
+				has_ethic = "ethic_xenophobe"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ethic = "ethic_authoritarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_slaver_guilds
+			}
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+
+		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
+	}
+
+	option = {
+		name = "federations.10230.assimilator"
+
+		trigger = {
+			has_civic = "civic_machine_assimilator"
+		}
+
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+
+		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
+	}
+}
 
 # Reverence for Life
 country_event = {

@@ -2,6 +2,9 @@
  ####################################
  # Misc
  ####################################
+ CANNOT_DISPLACE_NON_SENTIENT_ROBOTS:0 "$TRIGGER_FAIL$Kann nicht-fühlende Roboter nicht umsiedeln."
+ CANNOT_NEUTER_NON_SENTIENT_ROBOTS:0 "$TRIGGER_FAIL$Kann nicht-fühlende Roboter nicht umsiedeln."
+ FLEET_JUGGERNAUT_REPAIR:0 "§RJuggernaut kann nicht zur Reparatur geschickt werden.§!"
  SEPARATOR:0 "---"
 
  ADJ_WITH_THE:0 "$ADJ|Y$"
@@ -1663,6 +1666,7 @@
  TRADE_TRANSFER_SYSTEM:0 "Systeme transferieren"
  TRADE_OFFER_RESOURCES:0 "Ressourcen: $RESOURCES$."
  TRADE_NO_OTHER_PROPOSALS:0 "£trigger_no£ $RECEPIENT|H$ zieht derzeit eine andere Handelsaktion von uns in Betracht."
+ TRADE_TOO_MANY_FAVORS:0 "Ein Reich can nicht mehr Gefallen kaufen als es besitzen kann"
  CANCEL_TRADE_DEAL_TITLE:0 "Handelsabkommen kündigen"
  CANCEL_TRADE_DEAL_DESC:0 "Möchten Sie das Handelsabkommen wirklich kündigen?"
  STRATEGIC_RESOURCES:0 "§EStrategische Ressource§!"
@@ -10612,7 +10616,7 @@
  attitude_neutral:4 "§WNeutral§!"
  attitude_unfriendly:2 "§WArgwöhnisch§!"
  attitude_cordial:1 "§WHerzlich§!"
- attitude_rival:1 "§RRivale§!"
+ attitude_rival:1 "§WRivale§!"
  attitude_dismissive:2 "§WUnwichtig§!"
  attitude_enigmatic:1 "§WRätselhaft§!"
  attitude_patronizing:1 "§WBevormunden§!"

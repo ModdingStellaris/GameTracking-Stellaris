@@ -68,8 +68,8 @@ MAM = {
 
 	mekonass = {
 		language = "l_simp_chinese"
-		name = 梅科·纳斯
-		plural = 梅科·纳西
+		name = "梅科·纳斯"
+		plural = "梅科·纳西"
 		home_planet = 戈德兰
 		home_system = "戈德兰"
 		name_list = "MAM1"

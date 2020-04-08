@@ -789,18 +789,9 @@ country_event = {
 	}
 
 	immediate = {
-		random_country = {
-			limit = {
-				is_country_type = default
-				num_owned_relics > 0
-				NOT = { is_same_value = root }
-			}
-			root = {
-				steal_relic = {
-					target = prev
-					relic = r_galatron
-				}
-			}
+		if = {
+			limit = { galaxy_size = medium }
+			add_resource = { minerals = 1000 }
 		}
 	}
 }

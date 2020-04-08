@@ -1,4 +1,10 @@
 ﻿l_spanish:
+ relic_triumph_cooldown_veryshort:0 "\n$relic_activation_cooldown$: £time£ §Y900§!"
+ cybrex_warform:0 "Forma de guerra cibrex"
+ cybrex_warform_desc:0 "Este titánico robot se alza más allá de casi cualquier edifico y puede devastar ciudades."
+ relic_cybrex_passive:0 "Permite construir ejércitos de §Y$cybrex_warform$§! en tu capital."
+ relic_cybrex_active:0 "Produce £alloys£ §Y5000§!."
+ sentinel_army_desc:0 "Estatuas vivientes de corazón mecánico, cuerpo resonante y piel brillante. ¡Listas para emitir radiación desde su interior y sembrar la destrucción entre las filas enemigas!"
  minor_artifacts:0 "Artefactos menores"
  minor_artifacts_desc:0 "Los artefactos menores ( £minor_artifacts£ ) representan la tecnología y la tradición medio olvidada de civilizaciones arcaicas que nuestra ciencia solo puede comprender en parte. Son más comunes que las reliquias y pueden usarse para conseguir varios efectos por todo el imperio."
  artifact_actions:0 "Acciones de artefacto"

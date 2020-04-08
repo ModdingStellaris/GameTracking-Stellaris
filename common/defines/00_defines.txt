@@ -745,8 +745,8 @@
 		POP_ETHOS_UPPER_ETHIC_THRESHOLD				= 2.0	# If the % of pops following an ethic is >= this relative to its attraction do not diverge to it
 		POP_MIN_ETHIC_RELATIVE_ATTRACTION			= 0.1	# If relative attraction is less than this, do not diverge to this ethic
 		POP_ETHOS_DIVERGENCE_INTERVAL				= 360	# Number of days until a Pop has a change to diverge from empire ethos
-		POP_ETHOS_DIVERGENCE_RATE_MULT				= 0.02	# Chance of a pop evaluating its ethics every year
-		POP_CHANGE_FACTION_CHANCE					= 0.02	# Once every month a pop has X chance to change faction but only if the pop wants to
+		POP_ETHOS_DIVERGENCE_RATE_MULT				= 0.05	# Chance of a pop evaluating its ethics every year
+		POP_CHANGE_FACTION_CHANCE					= 0.05	# Once every month a pop has X chance to change faction but only if the pop wants to
 		POP_CURRENT_FACTION_WEIGHT					= 1.25	# Weight for current faction is multiplied by this much for pops
 		POP_FACTION_APPROVAL_VERY_LOW				= 0.20	# Below this level of approval a faction will have severe happiness penalties
 		POP_FACTION_APPROVAL_LOW					= 0.40	# Below this level of approval a faction will have severe happiness penalties
@@ -788,6 +788,7 @@
 		FEDERATION_MEMBERS_PENALTY			= -0.25	# penalty for each federation member
 		FEDERATION_NO_MEMBERS_PENALTY		= -100.0	# penalty if the federation has no members
 		FEDERATION_ETHICS_PENALTY			= -0.15	# Federation cohesion penalty for extra unique ethics
+		FEDERATION_OPPOSING_ETHICS_PENALTY	= -0.5	# Federation cohesion for opposing ethics
 		FEDERATION_BASE_COHESION			= 5.0 	# base federation cohesion
 		FEDERATION_COHESION_RANGE			= 100	# max cohesion range
 		FEDERATION_COHESION_TO_XP			= 0.1	# cohesion to xp conversion
